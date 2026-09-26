@@ -183,29 +183,29 @@ def cmd_summary(date: str) -> None:
         print(title[:220])
 
 
-def http_ok(url: str) -> bool:
+def fetch(url: str) -> bytes | None:
     request = urllib.request.Request(url, headers={"User-Agent": "daily-news-verify"})
     try:
         with urllib.request.urlopen(request, timeout=20) as response:
-            return response.status == 200
+            return response.read() if response.status == 200 else None
     except (urllib.error.URLError, TimeoutError):
-        return False
+        return None
 
 
 def cmd_verify_live(date: str, base: str, timeout: int) -> None:
+    """Chờ tới khi mọi file của site trên Pages giống hệt bản vừa build (tức bản deploy mới đã lên)."""
     base = base.rstrip("/")
-    today = next(href for published, href in feed_entries() if published == date)
     paths = ["index.html", "feed.xml", "assets/style.css"] + [href for _, href in feed_entries()]
     deadline = time.monotonic() + timeout
-    # Chờ bản deploy mới (trang bài hôm nay lên) rồi mới kiểm tra toàn bộ.
-    while not http_ok(f"{base}/{today}?v={int(time.time())}"):
+    while True:
+        pending = [p for p in paths if fetch(f"{base}/{p}?v={int(time.time())}") != (NEWS / p).read_bytes()]
+        if not pending:
+            break
         if time.monotonic() > deadline:
-            fail(f"quá {timeout}s mà {base}/{today} chưa trả 200")
+            fail(f"quá {timeout}s mà Pages vẫn chưa khớp bản build: {pending}")
         time.sleep(15)
-    broken = [p for p in paths if not http_ok(f"{base}/{p}?v={int(time.time())}")]
-    if broken:
-        fail(f"trang live lỗi: {broken}")
-    print(f"OK: {len(paths)} URL live trả 200 — {base}/{today}")
+    today = next(href for published, href in feed_entries() if published == date)
+    print(f"OK: {len(paths)} URL live trả 200 và khớp bản build — {base}/{today}")
 
 
 def main() -> None:

@@ -16,8 +16,10 @@ if [[ -f .env.local ]]; then set -a; source .env.local; set +a; fi
 
 DATE="${1:-}"
 NO_PUSH=0; [[ "${2:-}" == "--no-push" ]] && NO_PUSH=1
-STEP="init"
 LOG="$(mktemp)"
+# Mỗi bước ghi dòng bắt đầu trong LOG để thông báo lỗi chỉ chứa output của đúng bước đó.
+step() { STEP="$1"; STEP_LINE=$(( $(wc -l < "$LOG") + 1 )); }
+step init
 
 on_error() {
   local code=$?
@@ -25,7 +27,7 @@ on_error() {
   echo "publish.sh: THẤT BẠI ở bước '$STEP' (exit $code)" >&2
   local notify_date="$DATE"
   [[ "$notify_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || notify_date="$(TZ="$NEWS_TZ" date +%F)"
-  bash scripts/notify.sh failure "$notify_date" "$STEP" "$(tail -n 6 "$LOG")" || true
+  bash scripts/notify.sh failure "$notify_date" "$STEP" "$(tail -n "+$STEP_LINE" "$LOG" | tail -n 8)" || true
   rm -f "$LOG"
   exit "$code"
 }
@@ -35,20 +37,20 @@ run() { "$@" 2>&1 | tee -a "$LOG"; }
 
 [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "cần DATE dạng YYYY-MM-DD, nhận '$DATE'" >>"$LOG"; false; }
 
-STEP="branch"
+step branch
 branch="$(git rev-parse --abbrev-ref HEAD)"
 [[ "$branch" == main ]] || { echo "đang ở branch '$branch', phải là main" | tee -a "$LOG"; false; }
 
-STEP="validate"
+step validate
 run python3 scripts/news.py validate "$DATE"
 
-STEP="build"
+step build
 run python3 scripts/news.py site "$DATE"
 
-STEP="guard"
+step guard
 run bash scripts/guard.sh worktree
 
-STEP="commit"
+step commit
 git add -A -- news/
 if git diff --cached --quiet; then
   echo "Không có thay đổi so với HEAD — bỏ qua commit" | tee -a "$LOG"
@@ -56,30 +58,30 @@ else
   run git commit --quiet -m "news: $DATE"
 fi
 
-STEP="guard"
+step guard
 run bash scripts/guard.sh outgoing
 
 if [[ $NO_PUSH == 1 ]]; then
   echo "--no-push: bỏ qua push và kiểm tra Pages" | tee -a "$LOG"
-  STEP="notify"
+  step notify
   DRY_RUN=1 bash scripts/notify.sh success "$DATE" | tee -a "$LOG"
   rm -f "$LOG"
   exit 0
 fi
 
-STEP="push"
+step push
 if ! run git push origin main; then
   # main trên remote đã đi trước: rebase commit news chưa publish lên trên rồi thử lại đúng 1 lần.
   run git fetch origin main
   run git rebase origin/main || { git rebase --abort || true; false; }
-  STEP="guard"; run bash scripts/guard.sh outgoing
-  STEP="push";  run git push origin main
+  step guard; run bash scripts/guard.sh outgoing
+  step push;  run git push origin main
 fi
 
-STEP="deploy"
+step deploy
 run python3 scripts/news.py verify-live "$DATE" --base "$PAGES_BASE_URL" --timeout 420
 
-STEP="notify"
+step notify
 run bash scripts/notify.sh success "$DATE"
 rm -f "$LOG"
 echo "✅ Xong: news: $DATE"

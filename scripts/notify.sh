@@ -26,7 +26,8 @@ sanitize() {
   done
   printf '%s' "$text" \
     | sed -E 's#https://chat\.googleapis\.com/[^[:space:]"]*#[webhook]#g; s#(([Kk][Ee][Yy]|[Tt][Oo][Kk][Ee][Nn])=)[^&[:space:]"]+#\1***#g' \
-    | tr '\n\t' '  ' | tr -s ' ' | cut -c1-300
+    | tr '\n\t' '  ' | tr -s ' ' \
+    | python3 -c 'import sys; print(sys.stdin.read().strip()[:300], end="")'  # cắt theo ký tự, không vỡ UTF-8
 }
 
 pretty_date() { local d="$1"; echo "${d:8:2}/${d:5:2}/${d:0:4}"; }

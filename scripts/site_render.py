@@ -21,6 +21,7 @@ BULLET = re.compile(r"^\s*[-*]\s+(.+?)\s*$")
 LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 CODE = re.compile(r"`([^`]+)`")
+SUMMARY_PREFIX = re.compile(r"^(?:[-*•]|\d+[.)])\s*")
 
 
 @dataclass
@@ -38,6 +39,7 @@ class Issue:
     title: str
     items: list[Item]
     paragraphs: list[str]  # nội dung ngoài danh sách tin (ngày không có tin)
+    summary: list[str] | None  # 3 dòng tóm tắt từ news/raw/<DATE>-summary.txt (nếu có)
 
 
 def inline(text: str) -> str:
@@ -47,6 +49,20 @@ def inline(text: str) -> str:
                              f'target="_blank" rel="noopener">{m.group(1)}</a>', out)
     out = BOLD.sub(r"<strong>\1</strong>", out)
     return CODE.sub(r"<code>\1</code>", out)
+
+
+def summary_path(news_dir: Path, day: date) -> Path:
+    return news_dir / "raw" / f"{day.isoformat()}-summary.txt"
+
+
+def read_summary(news_dir: Path, day: date) -> list[str] | None:
+    """Đúng 3 dòng tóm tắt (đã bỏ gạch đầu dòng/số thứ tự), hoặc None nếu thiếu/sai format."""
+    path = summary_path(news_dir, day)
+    if not path.is_file():
+        return None
+    lines = [SUMMARY_PREFIX.sub("", line.strip()) for line in path.read_text(encoding="utf-8").splitlines()]
+    lines = [line for line in lines if line]
+    return lines if len(lines) == 3 else None
 
 
 def parse_issue(path: Path, day: date, href: str) -> Issue:
@@ -67,7 +83,8 @@ def parse_issue(path: Path, day: date, href: str) -> Issue:
                 current.bullets.append(text)
         elif line.strip() and current is None and not line.startswith("#"):
             paragraphs.append(line.strip())
-    return Issue(day, href, title or f"Daily News {day:%d/%m/%Y}", items, paragraphs)
+    return Issue(day, href, title or f"Daily News {day:%d/%m/%Y}", items, paragraphs,
+                 read_summary(path.parent, day))
 
 
 def item_card(item: Item) -> str:
@@ -95,14 +112,24 @@ def count_label(issue: Issue) -> str:
     return f"{len(issue.items)} tin" if issue.items else "không có tin mới"
 
 
-def day_card(issue: Issue) -> str:
-    heads = "".join(f"<li>{inline(i.title)}</li>" for i in issue.items[:3])
-    body = f"<ol>{heads}</ol>" if heads else '<p class="meta">😴 Không có tin mới nổi bật.</p>'
-    more = f"+{len(issue.items) - 3} tin khác · " if len(issue.items) > 3 else ""
+def card_lines(issue: Issue) -> list[str]:
+    """1–3 dòng cho card trên trang chủ: tóm tắt đã lưu → tiêu đề các tin → câu 'không có tin'."""
+    if issue.summary:
+        return issue.summary
+    if issue.items:
+        return [item.title for item in issue.items[:3]]
+    text = " ".join(issue.paragraphs).removeprefix("😴").strip()
+    return [text or "Không có tin mới nổi bật."]
+
+
+def day_card(issue: Issue, *, latest: bool = False) -> str:
+    lines = "".join(f"<li>{inline(line)}</li>" for line in card_lines(issue))
+    badge = '<span class="badge">Mới nhất</span>' if latest else ""
     return (f'<a class="card day-card" href="{html.escape(issue.href)}">'
-            f'<div><div class="date">{issue.day:%d/%m/%Y}</div>'
-            f'<div class="meta">{WEEKDAYS[issue.day.weekday()]} · {count_label(issue)}</div></div>'
-            f'{body}<span class="more">{more}Đọc bản tin →</span></a>')
+            f'<div class="day-head"><h3>{html.escape(issue.title)}</h3>{badge}</div>'
+            f'<div class="meta">{WEEKDAYS[issue.day.weekday()]} · {count_label(issue)}</div>'
+            f'<ul class="summary">{lines}</ul>'
+            f'<span class="more">Đọc bản tin →</span></a>')
 
 
 def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str]) -> list[Path]:
@@ -137,7 +164,7 @@ def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str]) -> list
             next_link=nav(newer, f"{newer.day:%d/%m/%Y} →" if newer else ""),
         ))
 
-    latest, archive = (issues[0], issues[1:]) if issues else (None, [])
+    latest = issues[0] if issues else None
     total = sum(len(issue.items) for issue in issues)
     stats = "".join(f'<div class="stat"><b>{value}</b><span>{label}</span></div>' for value, label in [
         (len(issues), "số bản tin"),
@@ -146,10 +173,8 @@ def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str]) -> list
     ])
     write(news_dir / "index.html", index_tpl.safe_substitute(
         stats=stats,
-        latest_label=(f'<a href="{html.escape(latest.href)}">{latest.day:%d/%m/%Y}</a>' if latest else "—"),
-        latest_cards=issue_cards(latest) if latest else "",
-        archive_cards="".join(day_card(i) for i in archive)
-        or '<article class="card empty"><p>Chưa có số nào trước đó.</p></article>',
+        issue_cards="".join(day_card(issue, latest=pos == 0) for pos, issue in enumerate(issues))
+        or '<article class="card empty"><p>Chưa có bản tin nào.</p></article>',
         updated=f"{latest.day:%d/%m/%Y}" if latest else "—",
     ))
 

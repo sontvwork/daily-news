@@ -1,25 +1,25 @@
 /* Daily News — card dashboard theme. Build copy: news/assets/style.css (đừng sửa bản copy). */
 :root {
-  --bg: #f4f5fa;
+  --bg: #f5f6f7;
   --surface: #ffffff;
-  --text: #1a1e2b;
-  --muted: #5f6678;
-  --border: #e2e5ee;
-  --accent: #4f46e5;
-  --accent-soft: #eef0ff;
-  --shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 6px 16px rgba(16, 24, 40, 0.06);
+  --text: #1b1f24;
+  --muted: #5c6570;
+  --border: #e3e6ea;
+  --accent: #0f766e;
+  --accent-soft: #e3f4f1;
+  --shadow: 0 1px 2px rgba(16, 24, 32, 0.05), 0 6px 16px rgba(16, 24, 32, 0.06);
   --radius: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0e1016;
-    --surface: #161922;
-    --text: #e6e8ee;
-    --muted: #9aa1b3;
-    --border: #262a37;
-    --accent: #8f8cff;
-    --accent-soft: #1e2040;
+    --bg: #0f1113;
+    --surface: #171a1d;
+    --text: #e7e9eb;
+    --muted: #9ba3ab;
+    --border: #282d32;
+    --accent: #2dd4bf;
+    --accent-soft: #10302c;
     --shadow: none;
   }
 }
@@ -52,17 +52,14 @@ a { color: var(--accent); }
 .tagline { margin: 6px 0 0; color: var(--muted); }
 .back { display: inline-block; margin-bottom: 8px; font-size: 14px; font-weight: 600; text-decoration: none; }
 
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
+.badge {
+  flex: none;
+  padding: 3px 10px;
   border-radius: 999px;
   background: var(--accent-soft);
   color: var(--accent);
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
   white-space: nowrap;
 }
 
@@ -128,12 +125,13 @@ a { color: var(--accent); }
 .card-foot a { font-size: 14px; font-weight: 600; text-decoration: none; }
 .card-foot a:hover { text-decoration: underline; }
 
-/* Day cards (archive) */
-.day-card { text-decoration: none; color: inherit; }
-.day-card .date { font-size: 19px; font-weight: 800; }
+/* Day cards (trang chủ: mỗi bản tin một card) */
+.day-card { gap: 8px; text-decoration: none; color: inherit; }
+.day-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.day-head h3 { margin: 0; font-size: 18px; line-height: 1.35; }
 .day-card .meta { color: var(--muted); font-size: 14px; }
-.day-card ol { display: grid; gap: 4px; margin: 0; padding-left: 20px; font-size: 15px; }
-.day-card .more { margin-top: auto; color: var(--accent); font-size: 14px; font-weight: 600; }
+.day-card .summary { display: grid; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; font-size: 15px; }
+.day-card .more { margin-top: auto; padding-top: 6px; color: var(--accent); font-size: 14px; font-weight: 600; }
 
 .empty { grid-column: 1 / -1; align-items: center; padding: 40px 20px; color: var(--muted); text-align: center; }
 .empty .big { font-size: 40px; }

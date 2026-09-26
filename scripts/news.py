@@ -4,7 +4,7 @@
   news.py validate    DATE   kiểm tra news/DATE.md đúng format bản tin
   news.py site        DATE   feed.xml bằng `library feed` + trang card dashboard (theme/), kiểm tra link local
   news.py link        DATE   in đường dẫn tương đối của trang bài DATE (lấy từ feed.xml)
-  news.py summary     DATE   in đúng 3 dòng tóm tắt (.cache/work/summary.txt, fallback: 3 tiêu đề đầu)
+  news.py summary     DATE   in đúng 3 dòng tóm tắt (news/raw/DATE-summary.txt, fallback: 3 tiêu đề đầu)
   news.py verify-live DATE   poll GitHub Pages tới khi index, feed và mọi trang bài trả 200
 """
 
@@ -24,14 +24,14 @@ from datetime import date as Date, datetime, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
-from site_render import render_site
+from site_render import read_summary, render_site, summary_path
 
 ROOT = Path(__file__).resolve().parent.parent
 NEWS = ROOT / "news"
 THEME = ROOT / "theme"
 ENGINE = ROOT / ".claude/skills/last30days/scripts/last30days.py"
 LIBRARY_ID = ".last30days-library-id"
-SUMMARY_FILE = ROOT / ".cache/work/summary.txt"
+LEGACY_SUMMARY = ROOT / ".cache/work/summary.txt"  # vị trí cũ, trước khi tóm tắt được lưu kèm bài
 ATOM = "{http://www.w3.org/2005/Atom}"
 DAILY_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
 ITEM_HEADING = re.compile(r"^###\s+(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
@@ -69,6 +69,7 @@ def cmd_validate(date: str) -> None:
     if not items:
         if NO_NEWS_PHRASE not in text:
             fail(f"không có tin '### 1. ...' nào và cũng không có câu '{NO_NEWS_PHRASE}'")
+        check_summary(date)
         print(f"OK: {path.name} — ngày không có tin mới")
         return
     numbers = [int(n) for n, _ in items]
@@ -78,7 +79,22 @@ def cmd_validate(date: str) -> None:
     for block in re.split(r"^###\s+\d+\.", text, flags=re.MULTILINE)[1:]:
         if not re.search(r"^\s*[-*]\s+\S", block, re.MULTILINE):
             fail("mỗi tin phải có ít nhất một bullet")
+    check_summary(date)
     print(f"OK: {path.name} — {len(items)} tin")
+
+
+def check_summary(date: str) -> None:
+    """news/raw/DATE-summary.txt: đúng 3 dòng, mỗi dòng ≤ 200 ký tự. Thiếu file chỉ cảnh báo."""
+    path = summary_path(NEWS, Date.fromisoformat(date))
+    if not path.is_file():
+        print(f"news.py: cảnh báo — thiếu {path.relative_to(ROOT)}, trang chủ và Google Chat sẽ dùng tiêu đề tin",
+              file=sys.stderr)
+        return
+    lines = read_summary(NEWS, Date.fromisoformat(date))
+    if lines is None:
+        fail(f"{path.relative_to(ROOT)} phải có đúng 3 dòng không rỗng")
+    if too_long := [line for line in lines if len(line) > 200]:
+        fail(f"{path.relative_to(ROOT)}: dòng dài quá 200 ký tự: {too_long[0][:60]}…")
 
 
 def normalize_mtimes() -> None:
@@ -163,13 +179,15 @@ def cmd_link(date: str) -> None:
 
 
 def cmd_summary(date: str) -> None:
-    if SUMMARY_FILE.is_file():
-        lines = [line.strip() for line in SUMMARY_FILE.read_text(encoding="utf-8").splitlines() if line.strip()]
-        if len(lines) == 3:
-            for line in lines:
-                print(re.sub(r"^(?:[-*•]|\d+[.)])\s*", "", line)[:220])
-            return
-        print(f"news.py: summary.txt có {len(lines)} dòng (cần 3) — dùng fallback", file=sys.stderr)
+    lines = read_summary(NEWS, Date.fromisoformat(date))
+    if lines is None and LEGACY_SUMMARY.is_file():
+        legacy = [line.strip() for line in LEGACY_SUMMARY.read_text(encoding="utf-8").splitlines() if line.strip()]
+        lines = legacy if len(legacy) == 3 else None
+    if lines:
+        for line in lines:
+            print(re.sub(r"^(?:[-*•]|\d+[.)])\s*", "", line)[:220])
+        return
+    print("news.py: không có tóm tắt 3 dòng hợp lệ — dùng tiêu đề tin", file=sys.stderr)
     text = daily_path(date).read_text(encoding="utf-8")
     titles = [title for _, title in ITEM_HEADING.findall(text)][:3]
     if not titles:

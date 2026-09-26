@@ -92,7 +92,7 @@ Format bắt buộc (script `news.py validate` sẽ kiểm tra):
 - Nếu không còn tin nào đạt tiêu chí, file chỉ gồm title và đoạn:
   `😴 Không có tin mới nổi bật trong 24 giờ qua về AI coding tools. Hẹn bạn ngày mai!`
 
-Sau đó ghi `.cache/work/summary.txt` gồm **đúng 3 dòng** tiếng Việt, mỗi dòng ≤ 150 ký tự, không đánh số, là 3 ý đáng chú ý nhất hôm nay. Ngày không có tin thì 3 dòng lần lượt là: câu "không có tin mới", các nguồn đã quét, và lời hẹn ngày mai.
+Sau đó ghi `news/raw/<DATE>-summary.txt` (ghi đè nếu đã có) gồm **đúng 3 dòng** tiếng Việt, mỗi dòng ≤ 150 ký tự, không đánh số, là 3 ý đáng chú ý nhất hôm nay. Ngày không có tin thì 3 dòng lần lượt là: câu "không có tin mới", các nguồn đã quét, và lời hẹn ngày mai.
 
 Chạy `python3 scripts/news.py validate <DATE>`. Nếu fail, sửa file rồi chạy lại (tối đa 3 lần). Sau 3 lần vẫn fail thì báo lỗi bước `write` rồi dừng.
 

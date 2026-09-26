@@ -1,0 +1,17 @@
+# Secrets — chỉ nằm trong env của cloud environment / GitHub secrets / .env.local (local)
+.env
+.env.*
+*.local
+.claude/settings.local.json
+.claude/last30days.env
+
+# Nháp research của routine (handoff, research.db, judgments, summary)
+.cache/
+
+# Artefact phụ của last30days library feed
+news/**/*.bak*
+news/.last30days-library.db*
+
+__pycache__/
+*.pyc
+.DS_Store

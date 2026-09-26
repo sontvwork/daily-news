@@ -1,0 +1,29 @@
+name: Watchdog
+
+# Lưới an toàn cho trường hợp routine không chạy / chết giữa chừng (không tự báo được):
+# 08:30 giờ VN mà main chưa có news/<hôm nay>.md thì báo Google Chat.
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Kiểm tra bản tin hôm nay
+        env:
+          GCHAT_WEBHOOK_URL: ${{ secrets.GCHAT_WEBHOOK_URL }}
+        run: |
+          DATE=$(TZ=Asia/Ho_Chi_Minh date +%F)
+          if [ -f "news/$DATE.md" ]; then
+            echo "OK: có news/$DATE.md"
+            exit 0
+          fi
+          bash scripts/notify.sh failure "$DATE" watchdog \
+            "08:30 chưa có news/$DATE.md trên main. Routine có thể không chạy, hết quota, mất kết nối GitHub hoặc dừng giữa chừng — mở claude.ai/code/routines để xem run." || true
+          exit 1

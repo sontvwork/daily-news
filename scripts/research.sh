@@ -76,7 +76,8 @@ case "$cmd" in
     slug="${1:?slug}"; need_date "${2:-}"; json="news/raw/$2-$slug.json"
     [[ -f "$json" ]] || { echo "outcome=missing"; exit 0; }
     jq -r '"outcome=\(.outcome) topics=\(.results | length)",
-           (.source_status // {} | to_entries[] | "source \(.key)=\(.value.state // .value)")' "$json"
+           (.source_status // {} | to_entries[]
+            | "source \(.key)=\(if (.value | type) == "object" then .value.state else .value end)")' "$json"
     ;;
   *)
     sed -n '2,13p' "$0" >&2; exit 2

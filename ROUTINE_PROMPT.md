@@ -66,11 +66,17 @@ Sau khi xong mọi slug:
 Loại bỏ: paper/arXiv, benchmark học thuật, architecture chuyên sâu, chủ đề AI chung chung không gắn với dev tool, tin cũ hơn ~24 giờ.
 
 ## Bước 2 — Viết bản tin tiếng Việt (tên bước khi lỗi: `write`)
-Ghi đè file `news/<DATE>.md`. Chỉ dùng dữ kiện có trong `news/raw/<DATE>-*.json` (`topic`, `why_spiking`, `top_comment`, `evidence_urls`, `sources`) và file `.md` tương ứng. KHÔNG bịa tên, số liệu hay link. Tin nào không đạt tiêu chí biên tập thì bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức quan trọng.
+Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện được phép dùng:
+- `news/raw/<DATE>-*.json` và `.md`: danh sách chủ đề đã qua ngưỡng tin cậy (`topic`, `why_spiking`, `top_comment`).
+- File bundle `.cache/work/<slug>/discover-nominations.json`: bài gốc của từng chủ đề (tiêu đề, snippet, **URL gốc**, engagement của leg 1). Đây là dữ kiện đáng tin nhất.
+
+Lưu ý: số tương tác tổng hợp ở pha research (view YouTube/TikTok hàng triệu…) thường lẫn cả nội dung không liên quan, nên KHÔNG trích các con số đó. Chỉ trích engagement của bài gốc trong bundle (ví dụ điểm và số bình luận HN). `evidence_urls` thường chỉ là các post mạng xã hội ngẫu nhiên, nên link `🔗` phải ưu tiên URL gốc trong bundle (blog chính thức, repo GitHub, bài HN), chỉ khi không có mới dùng `evidence_urls`.
+
+KHÔNG bịa tên, số liệu, tính năng hay link. Chủ đề nào chỉ có mỗi tiêu đề mà không đủ dữ kiện để viết cho đúng thì bỏ. Tin nào không đạt tiêu chí biên tập cũng bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức quan trọng.
 
 Format bắt buộc (script `news.py validate` sẽ kiểm tra):
 - Dòng đầu tiên là `# Daily News DD/MM/YYYY` (theo DATE). Trước dòng này không có gì, không lời chào, không câu dẫn. Toàn file chỉ có đúng một heading cấp 1.
-- Mỗi tin là một heading `### N. <Tiêu đề tiếng Việt>`, N đánh số liên tục từ 1. Theo sau là 1–3 bullet có emoji điểm nhấn, tóm tắt sự kiện và nêu ứng dụng/lợi ích thực tế cho developer (cách dùng, so sánh ngắn, cách áp dụng ngay). Thêm một bullet cuối `- 🔗 [Nguồn](<url đầu tiên trong evidence_urls>)`.
+- Mỗi tin là một heading `### N. <Tiêu đề tiếng Việt>`, N đánh số liên tục từ 1. Theo sau là 1–3 bullet có emoji điểm nhấn, tóm tắt sự kiện và nêu ứng dụng/lợi ích thực tế cho developer (cách dùng, so sánh ngắn, cách áp dụng ngay). Thêm một bullet cuối `- 🔗 [Nguồn](<URL gốc, xem ưu tiên ở trên>)`.
 - Viết toàn bộ bằng tiếng Việt, giọng thân mật vừa phải, ngắn gọn, dễ scan. Giữ nguyên tên riêng, tên sản phẩm và số liệu.
 - Ví dụ:
 

@@ -127,7 +127,6 @@ def day_card(issue: Issue, *, latest: bool = False) -> str:
     badge = '<span class="badge">Mới nhất</span>' if latest else ""
     return (f'<a class="card day-card" href="{html.escape(issue.href)}">'
             f'<div class="day-head"><h3>{html.escape(issue.title)}</h3>{badge}</div>'
-            f'<div class="meta">{WEEKDAYS[issue.day.weekday()]} · {count_label(issue)}</div>'
             f'<ul class="summary">{lines}</ul>'
             f'<span class="more">Đọc bản tin →</span></a>')
 

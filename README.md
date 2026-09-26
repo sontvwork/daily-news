@@ -9,7 +9,7 @@ Bản tin tiếng Việt hằng ngày về **AI ứng dụng trong phát triển
 Claude Code Routine (07:00 VN = cron 0 0 * * * UTC, cloud)
   → scripts/research.sh: last30days --discover (3 leg, --days 1) cho từng domain → news/raw/
   → Claude viết news/YYYY-MM-DD.md (tiếng Việt) + 3 dòng tóm tắt
-  → scripts/publish.sh: library feed → guard → commit "news: DATE" → push main
+  → scripts/publish.sh: feed.xml (library feed) + trang card (theme/) → guard → commit "news: DATE" → push main
       → GitHub Actions deploy news/ lên Pages → kiểm tra link live → Google Chat
   (lỗi ở bất kỳ bước nào → Google Chat báo bước bị fail)
 GitHub Actions watchdog 08:30 VN: chưa có bản tin hôm nay → Google Chat
@@ -22,11 +22,12 @@ GitHub Actions watchdog 08:30 VN: chưa có bản tin hôm nay → Google Chat
 | `.claude/skills/last30days/` | Skill vendored, pin commit trong `.vendored-from` |
 | `config/news.env` | Cấu hình không bí mật: domain, lookback, URL Pages |
 | `scripts/research.sh` | Wrapper engine: `preflight`, `nominate`, `research`, `finalize`, `oneshot`, `status` |
-| `scripts/news.py` | `validate`, `site` (library feed + kiểm tra link), `link`, `summary`, `verify-live` |
+| `scripts/news.py` | `validate`, `site` (feed.xml + render trang + kiểm tra link), `link`, `summary`, `verify-live` |
+| `scripts/site_render.py` + `theme/` | Renderer riêng: template `index.html`, `brief.html`, `style.css` (card dashboard, light/dark) |
 | `scripts/guard.sh` | Hàng rào an toàn: chỉ cho phép thay đổi trong `news/`, không xoá, không lộ secret |
 | `scripts/publish.sh` | Cách duy nhất để commit/push; mọi lỗi đều gửi Google Chat |
 | `scripts/notify.sh` | Google Chat webhook (`jq` + `curl`), hỗ trợ `DRY_RUN=1` |
-| `news/` | Site root: `YYYY-MM-DD.md`, `raw/`, `index.html`, `feed.xml`, `briefs/` |
+| `news/` | Site root: `YYYY-MM-DD.md`, `raw/`, `index.html`, `feed.xml`, `briefs/`, `assets/style.css` (bản copy từ `theme/`) |
 | `ROUTINE_PROMPT.md` | Prompt dán vào routine |
 
 **Vì sao vendor skill:** cloud session không cài plugin, kể cả plugin khai báo trong `.claude/settings.json`. Nó chỉ dùng được skill đã commit trong repo. Docs không xác nhận cloud có clone submodule, còn setup script thì bị cache và phiên bản có thể trôi. Vendor pin cứng một commit và không cần mạng lúc chạy.
@@ -94,6 +95,7 @@ Nếu UI của bạn vẫn hiện toggle **Allow unrestricted branch pushes** (t
 
 ## Vận hành
 - **Đổi chủ đề / cửa sổ thời gian**: sửa `config/news.env` (`DOMAINS`, `LOOKBACK_DAYS`) bằng tay. Routine không được sửa file này.
+- **Đổi giao diện**: sửa `theme/style.css`, `theme/index.html`, `theme/brief.html` (placeholder `$tên` của `string.Template`). HTML của từng card nằm trong `scripts/site_render.py`. Xem thử bằng `python3 scripts/news.py site <DATE>` rồi mở `news/index.html`, sau đó commit tay; lần chạy kế tiếp routine sẽ render lại mọi trang theo theme mới. `library feed` của engine giờ chỉ dùng để tạo `feed.xml`: nó chạy trong thư mục tạm, và tên trang bài lấy từ feed nên link cũ không đổi.
 - **Cập nhật skill**: `scripts/vendor_skill.sh [ref]`, review diff rồi commit tay.
 - **Chạy lại trong ngày**: `news/YYYY-MM-DD.md` bị ghi đè, không sinh file trùng. Tên trang bài ổn định nên `library feed` không phải xoá trang nào.
 - **Thứ bị chặn bởi guard**: file ngoài `news/`, xoá hoặc đổi tên file, merge commit, commit message khác `news: YYYY-MM-DD`, secret nằm trong nội dung.

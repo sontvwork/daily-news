@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$title</title>
+<meta name="description" content="$description">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="application/atom+xml" title="Daily News" href="../feed.xml">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <a class="back" href="../index.html">← Tất cả bản tin</a>
+      <h1 class="brand">$title</h1>
+      <p class="tagline">$weekday · $count_label</p>
+    </div>
+    <a class="pill" href="../feed.xml">📡 Atom feed</a>
+  </header>
+
+  <div class="grid">$cards</div>
+
+  <nav class="pager">$prev_link $next_link</nav>
+
+  <footer>Tổng hợp tự động từ Reddit, Hacker News, X, YouTube, GitHub qua last30days</footer>
+</div>
+</body>
+</html>

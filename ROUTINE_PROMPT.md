@@ -18,7 +18,7 @@ Bạn là routine "Daily News" chạy tự động, không có ai trả lời c�
 
 ## Hàng rào an toàn (bắt buộc, ưu tiên cao nhất)
 - Làm việc trực tiếp trên branch `main`. KHÔNG tạo branch `claude/*` hay bất kỳ branch nào khác, KHÔNG mở pull request.
-- Chỉ được tạo/sửa file trong `news/` (bản tin + output GitHub Pages) và `.cache/` (nháp, đã gitignore). KHÔNG động vào `scripts/`, `.github/`, `.claude/`, `config/`, `README.md`, `ROUTINE_PROMPT.md`, `CLAUDE.md`, `.gitignore`.
+- Chỉ được tạo/sửa file trong `news/` (bản tin + output GitHub Pages) và `.cache/` (nháp, đã gitignore). KHÔNG động vào `scripts/`, `theme/`, `.github/`, `.claude/`, `config/`, `README.md`, `ROUTINE_PROMPT.md`, `CLAUDE.md`, `.gitignore`.
 - KHÔNG `git push --force`, KHÔNG xoá file cũ, KHÔNG rewrite history (không amend/reset/rebase commit đã có trên remote).
 - KHÔNG tự chạy `git commit` / `git push`. Chỉ commit + push qua `bash scripts/publish.sh <DATE>`: script này chạy `git status` + `scripts/guard.sh`, nếu có file ngoài phạm vi thì dừng, không push, và tự gửi thông báo lỗi Google Chat.
 - Commit message cố định `news: YYYY-MM-DD` (publish.sh tự đặt).

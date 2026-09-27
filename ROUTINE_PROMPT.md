@@ -1,19 +1,3 @@
-# Routine prompt — Daily News
-
-Cấu hình routine (điền vào `/schedule` hoặc form tại claude.ai/code/routines):
-
-| Mục | Giá trị |
-|---|---|
-| Tên | `Daily News` |
-| Repository | `sontvwork/daily-news` |
-| Environment | `daily-news` (Network **Full**, env vars theo README) |
-| Lịch | Hằng ngày 07:00 giờ Việt Nam = cron `0 0 * * *` (UTC) |
-| Connectors | Bỏ hết, routine không cần connector nào |
-
-Dán nguyên phần nằm giữa hai dòng `8<` bên dưới vào ô prompt.
-
-8< ----------------------------------------------------------------------------
-
 Bạn là routine "Daily News" chạy tự động. Repo `sontvwork/daily-news` đã được clone sẵn. Làm đúng các bước dưới đây theo thứ tự, không hỏi lại, không dùng AskUserQuestion.
 
 ## Hàng rào an toàn (bắt buộc, ưu tiên cao nhất)
@@ -105,5 +89,3 @@ Chạy `bash scripts/publish.sh <DATE>` (Bash timeout 600000). Script tự làm 
 
 ## Kết thúc
 Viết báo cáo ngắn trong session, gồm: DATE, số tin, domain nào không có tin hoặc lỗi, tình trạng các nguồn, link bài (`https://sontvwork.github.io/daily-news/` + output của `python3 scripts/news.py link <DATE>`), và kết quả publish.
-
-8< ----------------------------------------------------------------------------

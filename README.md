@@ -29,6 +29,7 @@ GitHub Actions watchdog 08:30 VN: chưa có bản tin hôm nay → Google Chat
 | `scripts/notify.sh`                 | Google Chat webhook (`jq` + `curl`), hỗ trợ `DRY_RUN=1`                                                           |
 | `news/`                             | Site root:`YYYY-MM-DD.md`, `raw/`, `index.html`, `feed.xml`, `briefs/`, `assets/style.css` (bản copy từ `theme/`) |
 | `ROUTINE_PROMPT.md`                 | Prompt dán vào routine                                                                                            |
+| `ROUTINE_SETUP.md`                  | Cấu hình routine (tên, lịch, environment) — trỏ đến `ROUTINE_PROMPT.md`                                          |
 
 ## Setup từ đầu
 
@@ -53,7 +54,7 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
 ### 4. Tạo routine
 
 - Chạy `/schedule` trong một session Claude Code *local* (lệnh này không có trong cloud session). Hoặc làm trên web tại [claude.ai/code/routines](https://claude.ai/code/routines) → **New routine**.
-- Dán prompt nằm giữa hai dòng `8<` trong [`ROUTINE_PROMPT.md`](ROUTINE_PROMPT.md). Chọn repo `sontvwork/daily-news`. Ở mục **Connectors**, bỏ hết connector.
+- Dán nguyên nội dung [`ROUTINE_PROMPT.md`](ROUTINE_PROMPT.md) vào ô prompt. Cấu hình còn lại (tên, repo, lịch, connectors) xem [`ROUTINE_SETUP.md`](ROUTINE_SETUP.md). Chọn repo `sontvwork/daily-news`. Ở mục **Connectors**, bỏ hết connector.
 - Cloud environment nằm ngay trong form tạo routine này (không phải một mục riêng trên claude.ai/code), làm ngay sau khi dán prompt. Đặt tên `daily-news`, rồi cấu hình:
   - **Network access: Full.** Mức **Trusted** mặc định chặn reddit, HN, YouTube, polymarket… (lỗi `403 host_not_allowed`). `chat.googleapis.com` thì đã nằm sẵn trong `*.googleapis.com`. Nếu muốn dùng **Custom**, phải liệt kê đủ domain của mọi nguồn và tick **Also include default list of common package managers**.
   - **Environment variables** (mỗi dòng `KEY=value`):

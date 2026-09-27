@@ -103,4 +103,4 @@ Bản local có `.env.local` (đã gitignore) chứa `GCHAT_WEBHOOK_URL`, các s
 - ⏳ Người dùng còn phải tự làm (hướng dẫn trong README):
   - tạo cloud environment `daily-news`;
   - thêm GitHub secret `GCHAT_WEBHOOK_URL`;
-  - tạo routine từ `ROUTINE_PROMPT.md`.
+  - tạo routine theo [ROUTINE_SETUP.md](ROUTINE_SETUP.md) (cấu hình) + [ROUTINE_PROMPT.md](ROUTINE_PROMPT.md) (nội dung prompt).

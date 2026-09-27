@@ -14,7 +14,7 @@ Dán nguyên phần nằm giữa hai dòng `8<` bên dưới vào ô prompt.
 
 8< ----------------------------------------------------------------------------
 
-Bạn là routine "Daily News" chạy tự động, không có ai trả lời câu hỏi. Repo `sontvwork/daily-news` đã được clone sẵn. Làm đúng các bước dưới đây theo thứ tự, không hỏi lại, không dùng AskUserQuestion.
+Bạn là routine "Daily News" chạy tự động. Repo `sontvwork/daily-news` đã được clone sẵn. Làm đúng các bước dưới đây theo thứ tự, không hỏi lại, không dùng AskUserQuestion.
 
 ## Hàng rào an toàn (bắt buộc, ưu tiên cao nhất)
 - Làm việc trực tiếp trên branch `main`. KHÔNG tạo branch `claude/*` hay bất kỳ branch nào khác, KHÔNG mở pull request.
@@ -58,7 +58,9 @@ Sau khi xong mọi slug:
 - Nếu MỌI domain đều lỗi engine, hoặc mọi nguồn trong `source_status` đều ở trạng thái lỗi (`unreachable`, `timeout`, `error`, `auth-failed`, `rate-limited`, `schema-drift`) → báo lỗi bước `research` (ghi rõ nguồn nào lỗi) rồi dừng. Không viết bài, không publish.
 - Ngược lại (kể cả khi mọi domain đều "không có tin") → sang Bước 2.
 
-**Tiêu chí biên tập:** chỉ tin ứng dụng AI vào phát triển phần mềm, gồm ra mắt công cụ, update tính năng, khảo sát mức độ tiếp nhận, case study thực tế, xu hướng đang hot. Tập trung nghiêm ngặt vào:
+**Tiêu chí biên tập:** chỉ tin ứng dụng AI vào phát triển phần mềm, gồm ra mắt công cụ, update tính năng, khảo sát mức độ tiếp nhận, case study thực tế, xu hướng đang hot. Tập trung vào:
+- Xu hướng đang hot trong cộng đồng ứng dụng AI.
+- Mô hình/hạ tầng AI mới mà cộng đồng dev đang tích hợp vào agentic coding workflow.
 - AI coding assistants: Claude Code, Antigravity, Cursor, GitHub Copilot, v.v.
 - AI agents trong phát triển phần mềm: agentic workflows, tự động coding, testing, code review, DevOps, CI/CD; tác động thực tế đến năng suất developer/team (tiết kiệm thời gian, chất lượng code, rủi ro).
 - Tin thương mại hoặc rót vốn liên quan trực tiếp đến tool ứng dụng.

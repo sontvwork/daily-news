@@ -2,6 +2,7 @@
 """Tiện ích cho pipeline Daily News (chỉ dùng stdlib).
 
   news.py validate    DATE   kiểm tra news/DATE.md đúng format bản tin
+  news.py prune       DATE   xoá .md/raw/briefs có ngày < DATE − (RETENTION_DAYS − 1)
   news.py site        DATE   feed.xml bằng `library feed` + trang card dashboard (theme/), kiểm tra link local
   news.py link        DATE   in đường dẫn tương đối của trang bài DATE (lấy từ feed.xml)
   news.py summary     DATE   in đúng 3 dòng tóm tắt (news/raw/DATE-summary.txt, fallback: 3 tiêu đề đầu)
@@ -20,8 +21,9 @@ import tempfile
 import time
 import urllib.error
 import urllib.request
-from datetime import date as Date, datetime, timezone
+from datetime import date as Date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 from xml.etree import ElementTree as ET
 
 from site_render import read_summary, render_site, summary_path
@@ -29,11 +31,18 @@ from site_render import read_summary, render_site, summary_path
 ROOT = Path(__file__).resolve().parent.parent
 NEWS = ROOT / "news"
 THEME = ROOT / "theme"
+CONFIG = ROOT / "config/news.env"
 ENGINE = ROOT / ".claude/skills/last30days/scripts/last30days.py"
 LIBRARY_ID = ".last30days-library-id"
 LEGACY_SUMMARY = ROOT / ".cache/work/summary.txt"  # vị trí cũ, trước khi tóm tắt được lưu kèm bài
 ATOM = "{http://www.w3.org/2005/Atom}"
 DAILY_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
+# File có ngày của bản tin — chỉ những file này mới bị prune xoá (guard.sh giữ bản regex riêng, khớp với đây).
+DATED_FILES = [
+    (NEWS, DAILY_FILE),
+    (NEWS / "raw", re.compile(r"^(\d{4}-\d{2}-\d{2})-[a-z0-9-]+\.(?:md|json|txt)$")),
+    (NEWS / "briefs", re.compile(r"^[a-z0-9-]+-[0-9a-f]{8}-(\d{4}-\d{2}-\d{2})\.html$")),
+]
 ITEM_HEADING = re.compile(r"^###\s+(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
 NO_NEWS_PHRASE = "Không có tin mới nổi bật"
 
@@ -50,6 +59,26 @@ def title_for(date: str) -> str:
 
 def daily_path(date: str) -> Path:
     return NEWS / f"{date}.md"
+
+
+def config_value(key: str) -> str:
+    """Giá trị `KEY=value` / `KEY="value"` trong config/news.env (không chạy bash)."""
+    match = re.search(rf'^{key}=(?:"([^"]*)"|(\S*))', CONFIG.read_text(encoding="utf-8"), re.MULTILINE)
+    if not match:
+        fail(f"config/news.env thiếu {key}")
+    return match.group(1) if match.group(1) is not None else match.group(2)
+
+
+def retention_days() -> int:
+    value = config_value("RETENTION_DAYS")
+    if not re.fullmatch(r"[1-9]\d*", value):
+        fail(f"RETENTION_DAYS phải là số nguyên ≥ 1, đang là {value!r}")
+    return int(value)
+
+
+def site_base_path() -> str:
+    """Đường dẫn gốc của site trên Pages (vd /daily-news/) — trang 404 được phục vụ ở mọi độ sâu."""
+    return urlsplit(config_value("PAGES_BASE_URL")).path.rstrip("/") + "/"
 
 
 def cmd_validate(date: str) -> None:
@@ -95,6 +124,32 @@ def check_summary(date: str) -> None:
         fail(f"{path.relative_to(ROOT)} phải có đúng 3 dòng không rỗng")
     if too_long := [line for line in lines if len(line) > 200]:
         fail(f"{path.relative_to(ROOT)}: dòng dài quá 200 ký tự: {too_long[0][:60]}…")
+
+
+def cmd_prune(date: str) -> None:
+    """Xoá file có ngày < DATE − (RETENTION_DAYS − 1). Mốc chỉ phụ thuộc DATE nên chạy lại không xoá thêm."""
+    if not daily_path(date).is_file():
+        fail(f"không thấy {daily_path(date).relative_to(ROOT)} — chỉ prune theo bản tin đã có")
+    keep = retention_days()
+    cutoff = Date.fromisoformat(date) - timedelta(days=keep - 1)
+    removed = []
+    for folder, pattern in DATED_FILES:
+        if not folder.is_dir():
+            continue
+        for path in sorted(folder.iterdir()):
+            match = pattern.match(path.name)
+            if not match or path.is_symlink() or not path.is_file():
+                continue
+            try:
+                day = Date.fromisoformat(match.group(1))
+            except ValueError:
+                continue
+            if day < cutoff:
+                path.unlink()
+                removed.append(path.relative_to(ROOT).as_posix())
+    for path in removed:
+        print(f"  xoá {path}")
+    print(f"OK: giữ {keep} ngày (từ {cutoff.isoformat()}), xoá {len(removed)} file quá hạn")
 
 
 def normalize_mtimes() -> None:
@@ -156,14 +211,13 @@ def cmd_site(date: str) -> None:
     dailies = {DAILY_FILE.match(p.name).group(1) for p in NEWS.glob("*.md") if DAILY_FILE.match(p.name)}
     if len(pages) != len(entries) or {d.isoformat() for d in pages} != dailies:
         fail(f"feed.xml không khớp 1-1 với news/YYYY-MM-DD.md ({len(entries)} entry, {len(dailies)} file)")
-    render_site(NEWS, THEME, pages)
+    render_site(NEWS, THEME, pages, retention_days=retention_days(), base_path=site_base_path())
 
     missing = [href for _, href in entries if not (NEWS / href).is_file()]
     index_html = (NEWS / "index.html").read_text(encoding="utf-8")
     local_links = set(re.findall(r'href="((?:briefs|assets)/[^"#]+)"', index_html))
     missing += [href for href in local_links if not (NEWS / href).is_file()]
-    if not (NEWS / "assets/style.css").is_file():
-        missing.append("assets/style.css")
+    missing += [page for page in ("assets/style.css", "404.html") if not (NEWS / page).is_file()]
     if missing:
         fail(f"link hỏng: {sorted(set(missing))}")
     if date not in dailies:
@@ -213,7 +267,7 @@ def fetch(url: str) -> bytes | None:
 def cmd_verify_live(date: str, base: str, timeout: int) -> None:
     """Chờ tới khi mọi file của site trên Pages giống hệt bản vừa build (tức bản deploy mới đã lên)."""
     base = base.rstrip("/")
-    paths = ["index.html", "feed.xml", "assets/style.css"] + [href for _, href in feed_entries()]
+    paths = ["index.html", "404.html", "feed.xml", "assets/style.css"] + [href for _, href in feed_entries()]
     deadline = time.monotonic() + timeout
     while True:
         pending = [p for p in paths if fetch(f"{base}/{p}?v={int(time.time())}") != (NEWS / p).read_bytes()]
@@ -228,7 +282,7 @@ def cmd_verify_live(date: str, base: str, timeout: int) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["validate", "site", "link", "summary", "verify-live"])
+    parser.add_argument("command", choices=["validate", "prune", "site", "link", "summary", "verify-live"])
     parser.add_argument("date")
     parser.add_argument("--base", default=os.environ.get("PAGES_BASE_URL", ""))
     parser.add_argument("--timeout", type=int, default=420)
@@ -237,6 +291,8 @@ def main() -> None:
         fail("DATE phải dạng YYYY-MM-DD")
     if args.command == "validate":
         cmd_validate(args.date)
+    elif args.command == "prune":
+        cmd_prune(args.date)
     elif args.command == "site":
         cmd_site(args.date)
     elif args.command == "link":

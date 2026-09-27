@@ -3,7 +3,7 @@ Bạn là routine "Daily News" chạy tự động. Repo `sontvwork/daily-news` 
 ## Hàng rào an toàn (bắt buộc, ưu tiên cao nhất)
 - Làm việc trực tiếp trên branch `main`. KHÔNG tạo branch `claude/*` hay bất kỳ branch nào khác, KHÔNG mở pull request.
 - Chỉ được tạo/sửa file trong `news/` (bản tin + output GitHub Pages) và `.cache/` (nháp, đã gitignore). KHÔNG động vào `scripts/`, `theme/`, `.github/`, `.claude/`, `config/`, `README.md`, `ROUTINE_PROMPT.md`, `CLAUDE.md`, `.gitignore`.
-- KHÔNG `git push --force`, KHÔNG xoá file cũ, KHÔNG rewrite history (không amend/reset/rebase commit đã có trên remote).
+- KHÔNG `git push --force`, KHÔNG tự xoá file (bản tin quá hạn do `publish.sh` tự dọn), KHÔNG rewrite history (không amend/reset/rebase commit đã có trên remote).
 - KHÔNG tự chạy `git commit` / `git push`. Chỉ commit + push qua `bash scripts/publish.sh <DATE>`: script này chạy `git status` + `scripts/guard.sh`, nếu có file ngoài phạm vi thì dừng, không push, và tự gửi thông báo lỗi Google Chat.
 - Commit message cố định `news: YYYY-MM-DD` (publish.sh tự đặt).
 - Không in giá trị secrets (`$GCHAT_WEBHOOK_URL`, API keys) ra log hay vào file.
@@ -83,7 +83,7 @@ Sau đó ghi `news/raw/<DATE>-summary.txt` (ghi đè nếu đã có) gồm **đ�
 Chạy `python3 scripts/news.py validate <DATE>`. Nếu fail, sửa file rồi chạy lại (tối đa 3 lần). Sau 3 lần vẫn fail thì báo lỗi bước `write` rồi dừng.
 
 ## Bước 3 — Publish
-Chạy `bash scripts/publish.sh <DATE>` (Bash timeout 600000). Script tự làm các việc: build `index.html` + `feed.xml` bằng `library feed`, chạy guard, commit `news: <DATE>`, push `main`, chờ GitHub Pages live, rồi gửi Google Chat.
+Chạy `bash scripts/publish.sh <DATE>` (Bash timeout 600000). Script tự làm các việc: xoá bản tin quá 30 ngày, build `index.html` + `feed.xml` bằng `library feed`, chạy guard, commit `news: <DATE>`, push `main`, chờ GitHub Pages live, rồi gửi Google Chat.
 - Exit 0 → xong.
 - Exit ≠ 0 → script ĐÃ tự gửi thông báo lỗi. KHÔNG tự sửa script, KHÔNG push tay, KHÔNG force. Chỉ ghi lại lỗi trong báo cáo cuối.
 

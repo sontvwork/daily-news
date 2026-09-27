@@ -143,14 +143,19 @@ def issue_list(issues: list[Issue]) -> str:
     )
 
 
-def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str]) -> list[Path]:
-    """Ghi index.html, briefs/*.html, assets/style.css. `pages`: ngày → href từ feed.xml."""
+def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str], *,
+                retention_days: int, base_path: str) -> list[Path]:
+    """Ghi index.html, 404.html, briefs/*.html, assets/style.css. `pages`: ngày → href từ feed.xml.
+
+    `base_path` (vd /daily-news/) là <base> của 404.html, vì Pages trả trang 404 ngay tại URL hỏng.
+    """
     issues = sorted(
         (parse_issue(news_dir / f"{day.isoformat()}.md", day, href) for day, href in pages.items()),
         key=lambda issue: issue.day, reverse=True,
     )
     brief_tpl = Template((theme_dir / "brief.html").read_text(encoding="utf-8"))
     index_tpl = Template((theme_dir / "index.html").read_text(encoding="utf-8"))
+    not_found_tpl = Template((theme_dir / "404.html").read_text(encoding="utf-8"))
     written: list[Path] = []
 
     def write(path: Path, content: str) -> None:
@@ -178,14 +183,18 @@ def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str]) -> list
     latest = issues[0] if issues else None
     total = sum(len(issue.items) for issue in issues)
     stats = "".join(f'<div class="stat"><b>{value}</b><span>{label}</span></div>' for value, label in [
-        (len(issues), "số bản tin"),
-        (total, "tin đã tổng hợp"),
+        (len(issues), f"bản tin · {retention_days} ngày"),
+        (total, f"tin · {retention_days} ngày"),
         (f"{latest.day:%d/%m}" if latest else "—", "số mới nhất"),
     ])
     write(news_dir / "index.html", index_tpl.safe_substitute(
         stats=stats,
         issue_cards=issue_list(issues) or '<article class="card empty"><p>Chưa có bản tin nào.</p></article>',
         updated=f"{latest.day:%d/%m/%Y}" if latest else "—",
+    ))
+    write(news_dir / "404.html", not_found_tpl.safe_substitute(
+        base=html.escape(base_path),
+        retention_days=retention_days,
     ))
 
     css_target = news_dir / "assets" / "style.css"

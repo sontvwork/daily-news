@@ -3,7 +3,8 @@
 #
 #   publish.sh <DATE> [--no-push]
 #
-# validate → build site → guard worktree → commit "news: DATE" → guard outgoing → push main
+# validate → prune (xoá bản tin quá RETENTION_DAYS ngày) → build site → guard worktree
+# → commit "news: DATE" (gồm cả file vừa xoá) → guard outgoing → push main
 # → chờ Pages live → notify success.  Bất kỳ bước nào lỗi: notify failure <bước> rồi exit ≠ 0.
 # --no-push: dừng sau guard outgoing, gửi tin tóm tắt ở chế độ DRY_RUN (dùng để test local).
 set -Eeuo pipefail
@@ -44,11 +45,14 @@ branch="$(git rev-parse --abbrev-ref HEAD)"
 step validate
 run python3 scripts/news.py validate "$DATE"
 
+step prune
+run python3 scripts/news.py prune "$DATE"
+
 step build
 run python3 scripts/news.py site "$DATE"
 
 step guard
-run bash scripts/guard.sh worktree
+run bash scripts/guard.sh worktree "$DATE"
 
 step commit
 git add -A -- news/

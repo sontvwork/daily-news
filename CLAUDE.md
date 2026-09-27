@@ -22,13 +22,14 @@ Repo `sontvwork/daily-news` (public) chỉ làm một việc: xuất bản bản
 2. **Viết bài** — Claude viết `news/<DATE>.md` bằng tiếng Việt, đúng format, và `news/raw/<DATE>-summary.txt` gồm đúng 3 dòng. File tóm tắt này được dùng cho card trên trang chủ và cho tin Google Chat.
 3. **Publish** — [publish.sh](scripts/publish.sh) `<DATE>` chạy lần lượt:
    1. `news.py validate`
-   2. `news.py site`
-   3. `guard.sh worktree`
-   4. commit `news: <DATE>`
-   5. `guard.sh outgoing`
-   6. push `main`
-   7. `news.py verify-live`
-   8. `notify.sh success`
+   2. `news.py prune` — xoá `news/<ngày>.md`, `news/raw/<ngày>-*`, `news/briefs/*-<ngày>.html` có ngày < `DATE − (RETENTION_DAYS − 1)`
+   3. `news.py site`
+   4. `guard.sh worktree <DATE>`
+   5. commit `news: <DATE>` (gồm cả file vừa xoá)
+   6. `guard.sh outgoing`
+   7. push `main`
+   8. `news.py verify-live`
+   9. `notify.sh success`
 
    Lỗi ở bất kỳ bước nào → `notify.sh failure <bước>` gửi Google Chat.
 
@@ -43,11 +44,13 @@ Repo `sontvwork/daily-news` (public) chỉ làm một việc: xuất bản bản
 |---|---|
 | Chủ đề/domain, cửa sổ ngày, nguồn bị loại | [config/news.env](config/news.env): `DOMAINS` (`"slug\|domain"`), `LOOKBACK_DAYS`, `EXCLUDE_SOURCES` |
 | URL site | `PAGES_BASE_URL` trong `config/news.env`, cùng các link trong README và ROUTINE_PROMPT |
+| Số ngày lưu trữ | `RETENTION_DAYS` trong `config/news.env` (hằng số, news.py tự parse). Mẫu file được xoá: `DATED_FILES` trong news.py **và** `DATED_RES` trong guard.sh — sửa cả hai |
 | Tiêu chí biên tập, cách chấm, format bản tin | [ROUTINE_PROMPT.md](ROUTINE_PROMPT.md) (Bước 1–2). Sửa xong phải **dán lại vào routine**, vì routine giữ bản copy riêng |
 | Luật kiểm tra format | `cmd_validate` trong [news.py](scripts/news.py). Giữ khớp với ROUTINE_PROMPT Bước 2 và `parse_issue` trong site_render.py |
 | Màu, font, spacing, light/dark | [theme/style.css](theme/style.css) (biến trong `:root` và khối `prefers-color-scheme: dark`) |
 | Bố cục trang chủ | [theme/index.html](theme/index.html), placeholder: `$stats $issue_cards $updated`. Mỗi bản tin (ngày) là một card |
 | Bố cục trang bài | [theme/brief.html](theme/brief.html), placeholder: `$title $description $weekday $count_label $cards $prev_link $next_link` |
+| Trang 404 (link bản tin đã quá hạn) | [theme/404.html](theme/404.html), placeholder: `$base $retention_days`. Có `<base href>` = path của `PAGES_BASE_URL`, vì Pages trả 404 ngay tại URL hỏng |
 | HTML của card, ô thống kê, nhãn tiếng Việt | [site_render.py](scripts/site_render.py): `item_card` (tin trên trang bài), `day_card` (card ngày trên trang chủ), `render_site` |
 | Dòng tóm tắt trên card trang chủ | `news/raw/<DATE>-summary.txt` (3 dòng). Nếu thiếu thì `card_lines` trong site_render.py lấy tiêu đề 3 tin đầu |
 | Nội dung tin Google Chat | [notify.sh](scripts/notify.sh) (`success` / `failure`). Nguồn 3 dòng: `news/raw/<DATE>-summary.txt`; fallback nằm ở `cmd_summary` trong news.py |
@@ -71,13 +74,13 @@ python3 scripts/news.py verify-live "$DATE" --base https://sontvwork.github.io/d
 Bản local có `.env.local` (đã gitignore) chứa `GCHAT_WEBHOOK_URL`, các script tự `source` file này. Nghĩa là chạy `notify.sh` hay `publish.sh` mà **không** đặt `DRY_RUN=1` thì tin sẽ gửi thật. Tuyệt đối không in hay commit nội dung file này.
 
 ## Bất biến — đừng phá
-- **Không sửa tay output build:** `news/index.html`, `news/briefs/*.html`, `news/feed.xml`, `news/assets/style.css` đều bị ghi đè mỗi lần build. Muốn đổi thì sửa `theme/` hoặc `site_render.py`, rồi build lại.
+- **Không sửa tay output build:** `news/index.html`, `news/404.html`, `news/briefs/*.html`, `news/feed.xml`, `news/assets/style.css` đều bị ghi đè mỗi lần build. Muốn đổi thì sửa `theme/` hoặc `site_render.py`, rồi build lại.
 - **Không sửa `.claude/skills/last30days/`** (bản vendored). Muốn cập nhật thì chạy `vendor_skill.sh`.
-- **Link bài phải giữ ổn định:** tên trang bài có dạng `briefs/<slug>-<hash8>-<date>.html`, lấy từ `feed.xml`. Slug sinh từ H1 của file ngày, hash tính từ topic + tên file. Vì vậy H1 luôn phải là `# Daily News DD/MM/YYYY`; đổi H1 thì link đã gửi vào Chat sẽ gãy.
+- **Link bài phải giữ ổn định:** tên trang bài có dạng `briefs/<slug>-<hash8>-<date>.html`, lấy từ `feed.xml`. Slug sinh từ H1 của file ngày, hash tính từ topic + tên file. Vì vậy H1 luôn phải là `# Daily News DD/MM/YYYY`; đổi H1 thì link đã gửi vào Chat sẽ gãy. Link chỉ sống trong `RETENTION_DAYS` ngày; sau đó trang bị prune và Pages trả `404.html`.
 - **Ngày của entry lấy từ mtime,** nên phải build qua `news.py site`, vì chỉ bước này chuẩn hoá mtime về 12:00Z. Build cần tất định.
 - **Hàng rào của routine** (guard.sh):
   - chỉ được đổi `news/**`;
-  - không xoá hay đổi tên file;
+  - không xoá hay đổi tên file, **trừ** file có ngày của bản tin đã quá hạn (mốc tính từ DATE trong tham số `worktree` / message từng commit; DATE ở tương lai hoặc không có `news/DATE.md` thì cấm xoá);
   - commit message đúng `news: YYYY-MM-DD`;
   - không có merge commit;
   - không để lộ secret.

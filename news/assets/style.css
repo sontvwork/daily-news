@@ -173,6 +173,23 @@ a { color: var(--accent); }
 .empty { grid-column: 1 / -1; align-items: center; padding: 40px 20px; color: var(--muted); text-align: center; }
 .empty .big { font-size: 40px; }
 
+/* Trang 404 (bản tin quá hạn lưu trữ) */
+.gone { gap: 14px; padding: 48px 24px; }
+.gone:hover { transform: none; border-color: var(--border); }
+.gone h2 { margin: 0; color: var(--text); font-size: 22px; line-height: 1.3; }
+.gone p { max-width: 520px; margin: 0; }
+.button {
+  margin-top: 6px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+.button:hover { opacity: 0.9; }
+.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
 /* Pager + footer */
 .pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 28px; }
 .pager a { font-weight: 600; text-decoration: none; }

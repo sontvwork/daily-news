@@ -8,7 +8,7 @@ Bản tin tiếng Việt hằng ngày về **AI ứng dụng trong phát triển
 Claude Code Routine (07:00 VN = cron 0 0 * * * UTC, cloud)
   → scripts/research.sh: last30days --discover (3 leg, --days 1) cho từng domain → news/raw/
   → Claude viết news/YYYY-MM-DD.md (tiếng Việt) + 3 dòng tóm tắt
-  → scripts/publish.sh: feed.xml (library feed) + trang card (theme/) → guard → commit "news: DATE" → push main
+  → scripts/publish.sh: xoá bản tin quá 30 ngày → feed.xml (library feed) + trang card (theme/) → guard → commit "news: DATE" → push main
       → GitHub Actions deploy news/ lên Pages → kiểm tra link live → Google Chat
   (lỗi ở bất kỳ bước nào → Google Chat báo bước bị fail)
 GitHub Actions watchdog 08:30 VN: chưa có bản tin hôm nay → Google Chat
@@ -20,14 +20,14 @@ GitHub Actions watchdog 08:30 VN: chưa có bản tin hôm nay → Google Chat
 | Đường dẫn                       | Vai trò                                                                                                            |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `.claude/skills/last30days/`        | Skill vendored, pin commit trong`.vendored-from`                                                                    |
-| `config/news.env`                   | Cấu hình không bí mật: domain, lookback, URL Pages                                                             |
+| `config/news.env`                   | Cấu hình không bí mật: domain, lookback, số ngày lưu trữ (`RETENTION_DAYS`), URL Pages                       |
 | `scripts/research.sh`               | Wrapper engine:`preflight`, `nominate`, `research`, `finalize`, `oneshot`, `status`                                 |
-| `scripts/news.py`                   | `validate`, `site` (feed.xml + render trang + kiểm tra link), `link`, `summary`, `verify-live`                     |
-| `scripts/site_render.py` + `theme/` | Renderer riêng: template`index.html`, `brief.html`, `style.css` (card dashboard, light/dark)                       |
-| `scripts/guard.sh`                  | Hàng rào an toàn: chỉ cho phép thay đổi trong`news/`, không xoá, không lộ secret                         |
+| `scripts/news.py`                   | `validate`, `prune` (xoá bản tin quá hạn), `site` (feed.xml + render trang + kiểm tra link), `link`, `summary`, `verify-live` |
+| `scripts/site_render.py` + `theme/` | Renderer riêng: template`index.html`, `brief.html`, `404.html`, `style.css` (card dashboard, light/dark)           |
+| `scripts/guard.sh`                  | Hàng rào an toàn: chỉ cho phép thay đổi trong`news/`, không xoá (trừ bản tin quá hạn), không lộ secret     |
 | `scripts/publish.sh`                | Cách duy nhất để commit/push; mọi lỗi đều gửi Google Chat                                                  |
 | `scripts/notify.sh`                 | Google Chat webhook (`jq` + `curl`), hỗ trợ `DRY_RUN=1`                                                           |
-| `news/`                             | Site root:`YYYY-MM-DD.md`, `raw/`, `index.html`, `feed.xml`, `briefs/`, `assets/style.css` (bản copy từ `theme/`) |
+| `news/`                             | Site root:`YYYY-MM-DD.md`, `raw/`, `index.html`, `404.html`, `feed.xml`, `briefs/`, `assets/style.css` (bản copy từ `theme/`) |
 | `ROUTINE_PROMPT.md`                 | Prompt dán vào routine                                                                                            |
 | `ROUTINE_SETUP.md`                  | Cấu hình routine (tên, lịch, environment) — trỏ đến `ROUTINE_PROMPT.md`                                          |
 
@@ -94,7 +94,8 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
 - **Đổi giao diện**: sửa `theme/style.css`, `theme/index.html`, `theme/brief.html` (placeholder `$tên` của `string.Template`). HTML của từng card nằm trong `scripts/site_render.py`. Xem thử bằng `python3 scripts/news.py site <DATE>` rồi mở `news/index.html`, sau đó commit tay; lần chạy kế tiếp routine sẽ render lại mọi trang theo theme mới. `library feed` của engine giờ chỉ dùng để tạo `feed.xml`: nó chạy trong thư mục tạm, và tên trang bài lấy từ feed nên link cũ không đổi.
 - **Cập nhật skill**: `scripts/vendor_skill.sh [ref]`, review diff rồi commit tay.
 - **Chạy lại trong ngày**: `news/YYYY-MM-DD.md` bị ghi đè, không sinh file trùng. Tên trang bài ổn định nên `library feed` không phải xoá trang nào.
-- **Thứ bị chặn bởi guard**: file ngoài `news/`, xoá hoặc đổi tên file, merge commit, commit message khác `news: YYYY-MM-DD`, secret nằm trong nội dung.
+- **Lưu trữ 30 ngày**: mỗi lần publish, `news.py prune` xoá `.md`, `raw/` và trang bài của các ngày cũ hơn `RETENTION_DAYS` (tính lùi từ DATE của bản tin), gộp vào commit `news: DATE`. Chỉ xoá khỏi `main` và site, history git vẫn giữ. Link cũ trong Google Chat mở ra trang `404.html` "bản tin đã quá hạn lưu trữ".
+- **Thứ bị chặn bởi guard**: file ngoài `news/`, xoá hoặc đổi tên file (trừ file có ngày của bản tin đã quá hạn), merge commit, commit message khác `news: YYYY-MM-DD`, secret nằm trong nội dung.
 
 ## Rủi ro đã biết
 

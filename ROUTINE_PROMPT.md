@@ -78,7 +78,18 @@ Format bắt buộc (script `news.py validate` sẽ kiểm tra):
 - Nếu không còn tin nào đạt tiêu chí, file chỉ gồm title và đoạn:
   `😴 Không có tin mới nổi bật trong 24 giờ qua về AI coding tools. Hẹn bạn ngày mai!`
 
-Sau đó ghi `news/raw/<DATE>-summary.txt` (ghi đè nếu đã có) gồm **đúng 3 dòng** tiếng Việt, mỗi dòng ≤ 150 ký tự, không đánh số, là 3 ý đáng chú ý nhất hôm nay. Ngày không có tin thì 3 dòng lần lượt là: câu "không có tin mới", các nguồn đã quét, và lời hẹn ngày mai.
+Sau đó ghi `news/raw/<DATE>-summary.txt` (ghi đè nếu đã có). Đây là phần tóm tắt dùng chung cho card trên trang chủ và tin Google Chat:
+- Gồm **1–3 dòng** tiếng Việt. Mỗi dòng nói về đúng **1 tin hot nhất** trong ngày, xếp theo độ hot. Không cần nêu đủ mọi tin, không gộp nhiều tin vào một dòng.
+- Mỗi dòng bắt đầu bằng **1 emoji** + dấu cách, theo sau là một câu ngắn (khoảng 50–90 ký tự, tối đa 100). Chỉ nêu sự kiện, không giải thích thêm, không nêu lợi ích.
+- Chỉ dùng plain text: không tiêu đề, không đánh số, không bold/italic/code/link, không thêm emoji khác trong câu.
+- Ngày không có tin thì ghi đúng 1 dòng: `😴 Không có tin mới nổi bật hôm nay`.
+- Ví dụ:
+
+  ```
+  🔐 Chi tiết vụ agent của OpenAI "hack" Hugging Face gây bão
+  🧩 Azure Agent Skills và loạt skill bảo mật/review cho agent đang hot trên GitHub
+  🤖 Orca chạy nhiều coding agent song song theo worktree
+  ```
 
 Chạy `python3 scripts/news.py validate <DATE>`. Nếu fail, sửa file rồi chạy lại (tối đa 3 lần). Sau 3 lần vẫn fail thì báo lỗi bước `write` rồi dừng.
 

@@ -7,7 +7,7 @@ Bản tin tiếng Việt hằng ngày về **AI ứng dụng trong phát triển
 ```
 Claude Code Routine (07:00 VN = cron 0 0 * * * UTC, cloud)
   → scripts/research.sh: last30days --discover (3 leg, --days 1) cho từng domain → news/raw/
-  → Claude viết news/YYYY-MM-DD.md (tiếng Việt) + 3 dòng tóm tắt
+  → Claude viết news/YYYY-MM-DD.md (tiếng Việt) + 1–3 dòng tóm tắt
   → scripts/publish.sh: xoá bản tin quá 30 ngày → feed.xml (library feed) + trang card (theme/) → guard → commit "news: DATE" → push main
       → GitHub Actions deploy news/ lên Pages → kiểm tra link live → Google Chat
   (lỗi ở bất kỳ bước nào → Google Chat báo bước bị fail)

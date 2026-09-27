@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Gửi thông báo Google Chat (incoming webhook) — payload {"text": ...} dựng bằng jq.
 #
-#   notify.sh success <DATE>                    # tiêu đề + đúng 3 dòng tóm tắt + link bài trên Pages
+#   notify.sh success <DATE>                    # tiêu đề + 1–3 dòng tóm tắt (y hệt trang chủ) + link bài trên Pages
 #   notify.sh failure <DATE> <STEP> <DETAIL>    # báo lỗi ngắn kèm bước bị fail
 #
 # Env: GCHAT_WEBHOOK_URL (secret), DRY_RUN=1 (chỉ in payload), NOTIFY_PREFIX (vd "[TEST] ").
@@ -61,9 +61,10 @@ case "$mode" in
     link="$(python3 scripts/news.py link "$DATE")"
     lines=()
     while IFS= read -r line; do lines+=("$line"); done < <(python3 scripts/news.py summary "$DATE")
-    [[ ${#lines[@]} -eq 3 ]] || { echo "notify.sh: summary phải đúng 3 dòng" >&2; exit 2; }
-    send "$(printf '%s📰 *%s*\n1️⃣ %s\n2️⃣ %s\n3️⃣ %s\n🔗 %s' "${NOTIFY_PREFIX:-}" "$TITLE" \
-      "${lines[0]}" "${lines[1]}" "${lines[2]}" "${PAGES_BASE_URL%/}/$link")"
+    [[ ${#lines[@]} -ge 1 && ${#lines[@]} -le 3 ]] || { echo "notify.sh: summary phải có 1–3 dòng" >&2; exit 2; }
+    text="${NOTIFY_PREFIX:-}📰 *$TITLE*"
+    for line in "${lines[@]}"; do text+=$'\n'"$line"; done
+    send "$text"$'\n'"🔗 ${PAGES_BASE_URL%/}/$link"
     ;;
   failure)
     step="${3:-unknown}"; detail="$(sanitize "${4:-}")"

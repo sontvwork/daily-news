@@ -40,7 +40,7 @@ class Issue:
     title: str
     items: list[Item]
     paragraphs: list[str]  # nội dung ngoài danh sách tin (ngày không có tin)
-    summary: list[str] | None  # 3 dòng tóm tắt từ news/raw/<DATE>-summary.txt (nếu có)
+    summary: list[str] | None  # 1–3 dòng tóm tắt từ news/raw/<DATE>-summary.txt (nếu có)
 
 
 def inline(text: str) -> str:
@@ -52,18 +52,23 @@ def inline(text: str) -> str:
     return CODE.sub(r"<code>\1</code>", out)
 
 
+def plain(text: str) -> str:
+    """Bỏ markdown inline (link → chữ, bold, code) để còn plain text."""
+    return CODE.sub(r"\1", BOLD.sub(r"\1", LINK.sub(r"\1", text)))
+
+
 def summary_path(news_dir: Path, day: date) -> Path:
     return news_dir / "raw" / f"{day.isoformat()}-summary.txt"
 
 
 def read_summary(news_dir: Path, day: date) -> list[str] | None:
-    """Đúng 3 dòng tóm tắt (đã bỏ gạch đầu dòng/số thứ tự), hoặc None nếu thiếu/sai format."""
+    """1–3 dòng tóm tắt (đã bỏ gạch đầu dòng/số thứ tự), hoặc None nếu thiếu/sai số dòng."""
     path = summary_path(news_dir, day)
     if not path.is_file():
         return None
     lines = [SUMMARY_PREFIX.sub("", line.strip()) for line in path.read_text(encoding="utf-8").splitlines()]
     lines = [line for line in lines if line]
-    return lines if len(lines) == 3 else None
+    return lines if 1 <= len(lines) <= 3 else None
 
 
 def parse_issue(path: Path, day: date, href: str) -> Issue:
@@ -113,18 +118,21 @@ def count_label(issue: Issue) -> str:
     return f"{len(issue.items)} tin" if issue.items else "không có tin mới"
 
 
-def card_lines(issue: Issue) -> list[str]:
-    """1–3 dòng cho card trên trang chủ: tóm tắt đã lưu → tiêu đề các tin → câu 'không có tin'."""
+def summary_lines(issue: Issue) -> list[str]:
+    """1–3 dòng plain text, dùng chung cho card trang chủ và tin Google Chat (`news.py summary`).
+
+    Tóm tắt đã lưu → tiêu đề các tin → câu 'không có tin'.
+    """
     if issue.summary:
         return issue.summary
     if issue.items:
-        return [item.title for item in issue.items[:3]]
-    text = " ".join(issue.paragraphs).removeprefix("😴").strip()
-    return [text or "Không có tin mới nổi bật."]
+        return [f"📌 {plain(item.title)}" for item in issue.items[:3]]
+    text = plain(" ".join(issue.paragraphs)).removeprefix("😴").strip()
+    return [f"😴 {text or 'Không có tin mới nổi bật.'}"]
 
 
 def day_card(issue: Issue, *, latest: bool = False) -> str:
-    lines = "".join(f"<li>{inline(line)}</li>" for line in card_lines(issue))
+    lines = "".join(f"<li>{html.escape(line, quote=False)}</li>" for line in summary_lines(issue))
     badge = '<span class="badge">Mới nhất</span>' if latest else ""
     classes = "issue" + (" is-latest" if latest else "") + ("" if issue.items else " is-quiet")
     return (f'<a class="{classes}" href="{html.escape(issue.href)}" aria-label="{html.escape(issue.title)}">'

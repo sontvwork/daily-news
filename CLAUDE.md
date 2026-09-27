@@ -19,7 +19,7 @@ Repo `sontvwork/daily-news` (public) chỉ làm một việc: xuất bản bản
    - Giữa leg 1 và leg 2, Claude đọc `discover-nominations.json` và ghi `judgments.json`.
    - Tham số: `--days 1`, `--save-dir .cache/work/<slug>`.
    - Kết quả: `news/raw/<DATE>-<slug>.{md,json}`.
-2. **Viết bài** — Claude viết `news/<DATE>.md` bằng tiếng Việt, đúng format, và `news/raw/<DATE>-summary.txt` gồm đúng 3 dòng. File tóm tắt này được dùng cho card trên trang chủ và cho tin Google Chat.
+2. **Viết bài** — Claude viết `news/<DATE>.md` bằng tiếng Việt, đúng format, và `news/raw/<DATE>-summary.txt` gồm 1–3 dòng (mỗi dòng 1 tin hot: 1 emoji + câu ngắn, plain text). File tóm tắt này dùng chung cho card trên trang chủ và tin Google Chat.
 3. **Publish** — [publish.sh](scripts/publish.sh) `<DATE>` chạy lần lượt:
    1. `news.py validate`
    2. `news.py prune` — xoá `news/<ngày>.md`, `news/raw/<ngày>-*`, `news/briefs/*-<ngày>.html` có ngày < `DATE − (RETENTION_DAYS − 1)`
@@ -52,8 +52,8 @@ Repo `sontvwork/daily-news` (public) chỉ làm một việc: xuất bản bản
 | Bố cục trang bài | [theme/brief.html](theme/brief.html), placeholder: `$title $description $weekday $count_label $cards $prev_link $next_link` |
 | Trang 404 (link bản tin đã quá hạn) | [theme/404.html](theme/404.html), placeholder: `$base $retention_days`. Có `<base href>` = path của `PAGES_BASE_URL`, vì Pages trả 404 ngay tại URL hỏng |
 | HTML của card, ô thống kê, nhãn tiếng Việt | [site_render.py](scripts/site_render.py): `item_card` (tin trên trang bài), `day_card` (card ngày trên trang chủ), `render_site` |
-| Dòng tóm tắt trên card trang chủ | `news/raw/<DATE>-summary.txt` (3 dòng). Nếu thiếu thì `card_lines` trong site_render.py lấy tiêu đề 3 tin đầu |
-| Nội dung tin Google Chat | [notify.sh](scripts/notify.sh) (`success` / `failure`). Nguồn 3 dòng: `news/raw/<DATE>-summary.txt`; fallback nằm ở `cmd_summary` trong news.py |
+| Dòng tóm tắt (card trang chủ + tin Google Chat, dùng chung) | `news/raw/<DATE>-summary.txt` (1–3 dòng; luật viết ở ROUTINE_PROMPT Bước 2, luật kiểm tra ở `check_summary` trong news.py). Cả hai nơi lấy qua `summary_lines` trong site_render.py; nếu thiếu file thì hàm này lấy tiêu đề 3 tin đầu |
+| Khung tin Google Chat | [notify.sh](scripts/notify.sh) (`success`: tiêu đề + dòng tóm tắt + link; `failure`) |
 | Phạm vi routine được phép sửa, luật chặn | [guard.sh](scripts/guard.sh) |
 | Giờ chạy | Cấu hình routine trên claude.ai/code/routines (không nằm trong repo). Giờ của watchdog: `watchdog.yml` |
 | Phiên bản last30days | `scripts/vendor_skill.sh [ref]`. Commit đang pin nằm trong `.claude/skills/last30days/.vendored-from` |

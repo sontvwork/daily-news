@@ -5,7 +5,7 @@
   news.py prune       DATE   xoá .md/raw/briefs có ngày < DATE − (RETENTION_DAYS − 1)
   news.py site        DATE   feed.xml bằng `library feed` + trang card dashboard (theme/), kiểm tra link local
   news.py link        DATE   in đường dẫn tương đối của trang bài DATE (lấy từ feed.xml)
-  news.py summary     DATE   in đúng 3 dòng tóm tắt (news/raw/DATE-summary.txt, fallback: 3 tiêu đề đầu)
+  news.py summary     DATE   in 1–3 dòng tóm tắt, y hệt card trang chủ (news/raw/DATE-summary.txt, fallback: tiêu đề tin)
   news.py verify-live DATE   poll GitHub Pages tới khi index, feed và mọi trang bài trả 200
 """
 
@@ -19,6 +19,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 from datetime import date as Date, datetime, timedelta, timezone
@@ -26,7 +27,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from xml.etree import ElementTree as ET
 
-from site_render import read_summary, render_site, summary_path
+from site_render import parse_issue, read_summary, render_site, summary_lines, summary_path
 
 ROOT = Path(__file__).resolve().parent.parent
 NEWS = ROOT / "news"
@@ -34,7 +35,6 @@ THEME = ROOT / "theme"
 CONFIG = ROOT / "config/news.env"
 ENGINE = ROOT / ".claude/skills/last30days/scripts/last30days.py"
 LIBRARY_ID = ".last30days-library-id"
-LEGACY_SUMMARY = ROOT / ".cache/work/summary.txt"  # vị trí cũ, trước khi tóm tắt được lưu kèm bài
 ATOM = "{http://www.w3.org/2005/Atom}"
 DAILY_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
 # File có ngày của bản tin — chỉ những file này mới bị prune xoá (guard.sh giữ bản regex riêng, khớp với đây).
@@ -45,6 +45,9 @@ DATED_FILES = [
 ]
 ITEM_HEADING = re.compile(r"^###\s+(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
 NO_NEWS_PHRASE = "Không có tin mới nổi bật"
+SUMMARY_MAX_CHARS = 100
+# Markdown bị cấm trong tóm tắt: bold/italic/code/strike, link, _nghiêng_.
+SUMMARY_MARKDOWN = re.compile(r"[*`]|~~|\]\(|(?<!\w)_\S[^_]*_(?!\w)")
 
 
 def fail(message: str) -> None:
@@ -113,17 +116,25 @@ def cmd_validate(date: str) -> None:
 
 
 def check_summary(date: str) -> None:
-    """news/raw/DATE-summary.txt: đúng 3 dòng, mỗi dòng ≤ 200 ký tự. Thiếu file chỉ cảnh báo."""
+    """news/raw/DATE-summary.txt: 1–3 dòng plain text, mỗi dòng = 1 emoji + câu ngắn. Thiếu file chỉ cảnh báo."""
     path = summary_path(NEWS, Date.fromisoformat(date))
+    name = path.relative_to(ROOT)
     if not path.is_file():
-        print(f"news.py: cảnh báo — thiếu {path.relative_to(ROOT)}, trang chủ và Google Chat sẽ dùng tiêu đề tin",
-              file=sys.stderr)
+        print(f"news.py: cảnh báo — thiếu {name}, trang chủ và Google Chat sẽ dùng tiêu đề tin", file=sys.stderr)
         return
     lines = read_summary(NEWS, Date.fromisoformat(date))
     if lines is None:
-        fail(f"{path.relative_to(ROOT)} phải có đúng 3 dòng không rỗng")
-    if too_long := [line for line in lines if len(line) > 200]:
-        fail(f"{path.relative_to(ROOT)}: dòng dài quá 200 ký tự: {too_long[0][:60]}…")
+        fail(f"{name} phải có 1–3 dòng không rỗng")
+    for line in lines:
+        head, _, rest = line.partition(" ")
+        if unicodedata.category(head[0]) != "So" or any(ch.isalnum() for ch in head) or not rest.strip():
+            fail(f"{name}: mỗi dòng phải mở đầu bằng 1 emoji + dấu cách: {line[:60]!r}")
+        if any(unicodedata.category(ch) == "So" for ch in rest):
+            fail(f"{name}: mỗi dòng chỉ được 1 emoji (ở đầu dòng): {line[:60]!r}")
+        if SUMMARY_MARKDOWN.search(line):
+            fail(f"{name}: không dùng markdown (bold/italic/code/link): {line[:60]!r}")
+        if len(line) > SUMMARY_MAX_CHARS:
+            fail(f"{name}: dòng dài {len(line)} > {SUMMARY_MAX_CHARS} ký tự: {line[:60]!r}")
 
 
 def cmd_prune(date: str) -> None:
@@ -233,26 +244,12 @@ def cmd_link(date: str) -> None:
 
 
 def cmd_summary(date: str) -> None:
-    lines = read_summary(NEWS, Date.fromisoformat(date))
-    if lines is None and LEGACY_SUMMARY.is_file():
-        legacy = [line.strip() for line in LEGACY_SUMMARY.read_text(encoding="utf-8").splitlines() if line.strip()]
-        lines = legacy if len(legacy) == 3 else None
-    if lines:
-        for line in lines:
-            print(re.sub(r"^(?:[-*•]|\d+[.)])\s*", "", line)[:220])
-        return
-    print("news.py: không có tóm tắt 3 dòng hợp lệ — dùng tiêu đề tin", file=sys.stderr)
-    text = daily_path(date).read_text(encoding="utf-8")
-    titles = [title for _, title in ITEM_HEADING.findall(text)][:3]
-    if not titles:
-        titles = [f"😴 {NO_NEWS_PHRASE} trong 24 giờ qua."]
-    fillers = [
-        "🔎 Nguồn: Reddit, Hacker News, X, YouTube, GitHub, web (last30days).",
-        "📚 Xem chi tiết và các số trước qua link bên dưới.",
-    ]
-    titles += fillers[len(titles) - 1:][: 3 - len(titles)]
-    for title in titles:
-        print(title[:220])
+    """In 1–3 dòng tóm tắt — đúng những dòng trên card trang chủ (site_render.summary_lines)."""
+    issue = parse_issue(daily_path(date), Date.fromisoformat(date), "")
+    if issue.summary is None:
+        print("news.py: không có tóm tắt hợp lệ — dùng tiêu đề tin", file=sys.stderr)
+    for line in summary_lines(issue):
+        print(line)
 
 
 def fetch(url: str) -> bytes | None:

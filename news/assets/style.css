@@ -7,6 +7,7 @@
   --border: #e3e6ea;
   --accent: #0f766e;
   --accent-soft: #e3f4f1;
+  --on-accent: #ffffff;
   --shadow: 0 1px 2px rgba(16, 24, 32, 0.05), 0 6px 16px rgba(16, 24, 32, 0.06);
   --radius: 14px;
 }
@@ -20,6 +21,7 @@
     --border: #282d32;
     --accent: #2dd4bf;
     --accent-soft: #10302c;
+    --on-accent: #0f1113;
     --shadow: none;
   }
 }
@@ -63,17 +65,16 @@ a { color: var(--accent); }
   white-space: nowrap;
 }
 
-/* Stats row */
-.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-.stat {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 14px 18px;
+/* Stats row (trang chủ): dải mảnh, không phải card, để card bản tin nổi bật */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-block: 1px solid var(--border);
 }
-.stat b { display: block; font-size: 24px; line-height: 1.2; }
-.stat span { color: var(--muted); font-size: 14px; }
+.stat { padding: 12px 0 12px 20px; border-left: 1px solid var(--border); }
+.stat:first-child { padding-left: 0; border-left: 0; }
+.stat b { display: block; font-size: 22px; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: 13px; }
 
 .section-title {
   margin: 36px 0 14px;
@@ -125,13 +126,49 @@ a { color: var(--accent); }
 .card-foot a { font-size: 14px; font-weight: 600; text-decoration: none; }
 .card-foot a:hover { text-decoration: underline; }
 
-/* Day cards (trang chủ: mỗi bản tin một card) */
-.day-card { gap: 8px; text-decoration: none; color: inherit; }
-.day-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-.day-head h3 { margin: 0; font-size: 18px; line-height: 1.35; }
-.day-card .meta { color: var(--muted); font-size: 14px; }
-.day-card .summary { display: grid; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; font-size: 15px; }
-.day-card .more { margin-top: auto; padding-top: 6px; color: var(--accent); font-size: 14px; font-weight: 600; }
+/* Trang chủ: một cột, mỗi bản tin một card dẫn đầu bằng ô lịch (trang bài là lưới tin đánh số) */
+.home .wrap { max-width: 840px; }
+
+.issue-list { display: grid; gap: 12px; }
+.issue {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 18px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: border-color 0.15s ease;
+}
+.issue:hover { border-color: var(--accent); }
+.issue:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.issue-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: none;
+  width: 72px;
+  padding: 10px 0 9px;
+  border-radius: 12px;
+  background: var(--bg);
+  line-height: 1.1;
+}
+.issue-date b { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.issue-date span { margin-top: 5px; color: var(--muted); font-size: 12px; font-weight: 600; white-space: nowrap; }
+.is-latest .issue-date { background: var(--accent); color: var(--on-accent); }
+.is-latest .issue-date span { color: inherit; opacity: 0.85; }
+
+.issue-body { display: flex; flex-direction: column; gap: 12px; flex: 1; min-width: 0; }
+.issue-summary { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 15px; }
+.is-quiet .issue-summary { color: var(--muted); }
+.issue-foot { display: flex; align-items: center; gap: 12px; }
+.issue .more { margin-left: auto; color: var(--muted); font-size: 14px; font-weight: 600; transition: color 0.15s ease; }
+.issue:hover .more { color: var(--accent); }
 
 .empty { grid-column: 1 / -1; align-items: center; padding: 40px 20px; color: var(--muted); text-align: center; }
 .empty .big { font-size: 40px; }
@@ -143,9 +180,12 @@ footer { margin-top: 48px; color: var(--muted); font-size: 13px; text-align: cen
 
 @media (max-width: 640px) {
   .brand { font-size: 24px; }
-  .stats { gap: 8px; }
-  .stat { padding: 10px 12px; }
-  .stat b { font-size: 20px; }
+  .stat { padding-left: 12px; }
+  .stat b { font-size: 19px; }
   .stat span { font-size: 12px; }
   .grid { grid-template-columns: 1fr; }
+  .issue { gap: 14px; padding: 14px; }
+  .issue-date { width: 56px; padding: 8px 0 7px; border-radius: 10px; }
+  .issue-date b { font-size: 24px; }
+  .issue-date span { font-size: 11px; }
 }

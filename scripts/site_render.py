@@ -12,6 +12,7 @@ import re
 import shutil
 from dataclasses import dataclass, field
 from datetime import date
+from itertools import groupby
 from pathlib import Path
 from string import Template
 
@@ -125,10 +126,21 @@ def card_lines(issue: Issue) -> list[str]:
 def day_card(issue: Issue, *, latest: bool = False) -> str:
     lines = "".join(f"<li>{inline(line)}</li>" for line in card_lines(issue))
     badge = '<span class="badge">Mới nhất</span>' if latest else ""
-    return (f'<a class="card day-card" href="{html.escape(issue.href)}">'
-            f'<div class="day-head"><h3>{html.escape(issue.title)}</h3>{badge}</div>'
-            f'<ul class="summary">{lines}</ul>'
-            f'<span class="more">Đọc bản tin →</span></a>')
+    classes = "issue" + (" is-latest" if latest else "") + ("" if issue.items else " is-quiet")
+    return (f'<a class="{classes}" href="{html.escape(issue.href)}" aria-label="{html.escape(issue.title)}">'
+            f'<time class="issue-date" datetime="{issue.day.isoformat()}">'
+            f'<b>{issue.day.day}</b><span>{WEEKDAYS[issue.day.weekday()]}</span></time>'
+            f'<div class="issue-body"><ul class="issue-summary">{lines}</ul>'
+            f'<div class="issue-foot">{badge}<span class="more">Đọc bản tin →</span></div></div></a>')
+
+
+def issue_list(issues: list[Issue]) -> str:
+    """Card các bản tin trên trang chủ, gom theo tháng. `issues` đã sắp mới nhất trước."""
+    return "".join(
+        f'<h2 class="section-title">Tháng {month} · {year}</h2><div class="issue-list">'
+        + "".join(day_card(issue, latest=issue is issues[0]) for issue in group) + "</div>"
+        for (year, month), group in groupby(issues, key=lambda issue: (issue.day.year, issue.day.month))
+    )
 
 
 def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str]) -> list[Path]:
@@ -172,8 +184,7 @@ def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str]) -> list
     ])
     write(news_dir / "index.html", index_tpl.safe_substitute(
         stats=stats,
-        issue_cards="".join(day_card(issue, latest=pos == 0) for pos, issue in enumerate(issues))
-        or '<article class="card empty"><p>Chưa có bản tin nào.</p></article>',
+        issue_cards=issue_list(issues) or '<article class="card empty"><p>Chưa có bản tin nào.</p></article>',
         updated=f"{latest.day:%d/%m/%Y}" if latest else "—",
     ))
 

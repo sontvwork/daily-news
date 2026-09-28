@@ -34,6 +34,8 @@ NEWS = ROOT / "news"
 THEME = ROOT / "theme"
 CONFIG = ROOT / "config/news.env"
 ENGINE = ROOT / ".claude/skills/last30days/scripts/last30days.py"
+# Engine cần Python ≥ 3.12. Image cloud có python3 = 3.11 nhưng cài sẵn python3.12/3.13 (giống research.sh).
+PYTHON_CANDIDATES = ("python3", "python3.12", "python3.13", "python3.14")
 LIBRARY_ID = ".last30days-library-id"
 ATOM = "{http://www.w3.org/2005/Atom}"
 DAILY_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
@@ -187,6 +189,19 @@ def feed_entries() -> list[tuple[str, str]]:
     return entries
 
 
+def engine_python() -> str:
+    """$LAST30DAYS_PYTHON, python đang chạy nếu đủ mới, nếu không thì python3.x đầu tiên ≥ 3.12 trong PATH."""
+    if os.environ.get("LAST30DAYS_PYTHON"):
+        return os.environ["LAST30DAYS_PYTHON"]
+    if sys.version_info >= (3, 12):
+        return sys.executable
+    for name in PYTHON_CANDIDATES:
+        path = shutil.which(name)
+        if path and subprocess.run([path, "-c", "import sys; sys.exit(sys.version_info < (3, 12))"]).returncode == 0:
+            return path
+    fail("engine last30days cần Python >= 3.12 (cài python3.12 hoặc đặt LAST30DAYS_PYTHON)")
+
+
 def build_feed() -> None:
     """Chạy `library feed` trên bản sao news/*.md trong thư mục tạm; chỉ lấy feed.xml về news/.
 
@@ -201,7 +216,7 @@ def build_feed() -> None:
             shutil.copy2(NEWS / LIBRARY_ID, library / LIBRARY_ID)  # feed id ổn định
         env = dict(os.environ, SETUP_COMPLETE="true", LAST30DAYS_LIBRARY_OWNER="Daily News")
         proc = subprocess.run(
-            [sys.executable, str(ENGINE), "library", "feed", f"--save-dir={library}"],
+            [engine_python(), str(ENGINE), "library", "feed", f"--save-dir={library}"],
             env=env, capture_output=True, text=True,
         )
         sys.stderr.write(proc.stderr.replace(str(library.resolve()), "<tmp>").replace(str(library), "<tmp>"))

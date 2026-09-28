@@ -89,7 +89,8 @@ case "$mode" in
     count=$(( ${#changed[@]} + pruned ))
     ;;
   outgoing)
-    git fetch --quiet origin main
+    # Refspec tường minh: luôn cập nhật origin/main (ref cũ sẽ kéo cả commit đã push vào range).
+    git fetch --quiet origin '+refs/heads/main:refs/remotes/origin/main'
     range="origin/main..HEAD"
     [[ -z "$(git rev-list --merges "$range")" ]] || violations+=("có merge commit trong $range")
     count=0

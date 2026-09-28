@@ -12,8 +12,8 @@ Bạn là routine "Daily News" chạy tự động. Repo `sontvwork/daily-news` 
 
 ## Bước 0 — Chuẩn bị (tên bước khi lỗi: `setup`)
 1. Chạy `TZ=Asia/Ho_Chi_Minh date +%F`, gọi kết quả là DATE (ví dụ `2026-09-26`). Shell không giữ biến giữa các lệnh, nên ở mọi lệnh sau hãy ghi DATE dưới dạng giá trị cụ thể.
-2. `git rev-parse --abbrev-ref HEAD` phải ra `main`. Nếu không, chạy `git checkout main`.
-3. `bash scripts/research.sh preflight`. Nếu lệnh fail, báo lỗi bước `setup` rồi dừng.
+2. Chạy `git checkout main && git pull --ff-only origin main`. KHÔNG được bỏ bước này: sandbox có thể dùng lại bản clone cũ, khi đó `main` local tụt sau remote, mọi script chạy bản cũ và publish sẽ fail. Nếu lệnh fail, báo lỗi bước `setup` rồi dừng.
+3. `bash scripts/research.sh preflight`. Script tự chọn Python ≥ 3.12 (kể cả khi `python3` mặc định là 3.11), nên KHÔNG cần symlink `python3` hay đặt `LAST30DAYS_PYTHON`. Nếu lệnh fail, báo lỗi bước `setup` rồi dừng.
 
 ## Bước 1 — Research bằng last30days (tên bước khi lỗi: `research`)
 `bash scripts/research.sh list` in các dòng `<slug>|<domain>`. Làm lần lượt từng slug theo quy trình 3 leg (đây là DISCOVERY protocol trong `.claude/skills/last30days/SKILL.md`, ở đây bạn là người chấm):

@@ -3,7 +3,7 @@
 #
 #   publish.sh <DATE> [--no-push]
 #
-# validate → prune (xoá bản tin quá RETENTION_DAYS ngày) → build site → guard worktree
+# sync (fast-forward main lên origin/main) → validate → prune (xoá bản tin quá RETENTION_DAYS ngày) → build site → guard worktree
 # → commit "news: DATE" (gồm cả file vừa xoá) → guard outgoing → push main
 # → chờ Pages live → notify success.  Bất kỳ bước nào lỗi: notify failure <bước> rồi exit ≠ 0.
 # --no-push: dừng sau guard outgoing, gửi tin tóm tắt ở chế độ DRY_RUN (dùng để test local).
@@ -42,6 +42,18 @@ step branch
 branch="$(git rev-parse --abbrev-ref HEAD)"
 [[ "$branch" == main ]] || { echo "đang ở branch '$branch', phải là main" | tee -a "$LOG"; false; }
 
+step sync
+# Sandbox cloud có thể dùng lại bản clone cũ (main local tụt sau origin) → chỉ fast-forward lên origin/main.
+# HEAD đổi nghĩa là script vừa chạy là bản cũ: exec lại bản mới đúng 1 lần.
+run git fetch --quiet origin '+refs/heads/main:refs/remotes/origin/main'
+before="$(git rev-parse HEAD)"
+run git merge --ff-only --quiet origin/main
+if [[ "$(git rev-parse HEAD)" != "$before" && -z "${PUBLISH_SYNCED:-}" ]]; then
+  echo "main được cập nhật ${before:0:7} → $(git rev-parse --short HEAD), chạy lại publish.sh bản mới" | tee -a "$LOG"
+  trap - ERR; rm -f "$LOG"
+  PUBLISH_SYNCED=1 exec bash scripts/publish.sh "$@"
+fi
+
 step validate
 run python3 scripts/news.py validate "$DATE"
 
@@ -76,7 +88,7 @@ fi
 step push
 if ! run git push origin main; then
   # main trên remote đã đi trước: rebase commit news chưa publish lên trên rồi thử lại đúng 1 lần.
-  run git fetch origin main
+  run git fetch --quiet origin '+refs/heads/main:refs/remotes/origin/main'
   run git rebase origin/main || { git rebase --abort || true; false; }
   step guard; run bash scripts/guard.sh outgoing
   step push;  run git push origin main

@@ -16,7 +16,18 @@ cd "$ROOT"
 # shellcheck source=../config/news.env
 source config/news.env
 
-PY="${LAST30DAYS_PYTHON:-python3}"
+# Engine cần Python ≥ 3.12. Image cloud có python3 = 3.11 nhưng cài sẵn python3.12/3.13 → tự chọn
+# (cùng thứ tự với PYTHON_CANDIDATES trong news.py). Không có bản nào đủ mới thì preflight báo lỗi.
+pick_python() {
+  local py
+  for py in python3 python3.12 python3.13 python3.14; do
+    command -v "$py" >/dev/null 2>&1 \
+      && "$py" -c 'import sys; sys.exit(sys.version_info < (3, 12))' 2>/dev/null \
+      && { echo "$py"; return; }
+  done
+  echo python3
+}
+PY="${LAST30DAYS_PYTHON:-$(pick_python)}"
 ENGINE=".claude/skills/last30days/scripts/last30days.py"
 # Chạy không người trực: bỏ qua first-run wizard, không bao giờ đọc cookie trình duyệt.
 export SETUP_COMPLETE="${SETUP_COMPLETE:-true}" FROM_BROWSER=off EXCLUDE_SOURCES
@@ -42,6 +53,7 @@ case "$cmd" in
     ;;
   preflight)
     "$PY" -c 'import sys; assert sys.version_info >= (3, 12), "cần Python >= 3.12, đang có " + sys.version.split()[0]'
+    echo "python: $PY ($("$PY" -c 'import sys; print(sys.version.split()[0])'))"
     command -v jq >/dev/null || die "thiếu jq"
     "$PY" "$ENGINE" --preflight
     ;;

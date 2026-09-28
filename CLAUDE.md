@@ -21,15 +21,16 @@ Repo `sontvwork/daily-news` (public) chỉ làm một việc: xuất bản bản
    - Kết quả: `news/raw/<DATE>-<slug>.{md,json}`.
 2. **Viết bài** — Claude viết `news/<DATE>.md` bằng tiếng Việt, đúng format, và `news/raw/<DATE>-summary.txt` gồm 1–3 dòng (mỗi dòng 1 tin hot: 1 emoji + câu ngắn, plain text). File tóm tắt này dùng chung cho card trên trang chủ và tin Google Chat.
 3. **Publish** — [publish.sh](scripts/publish.sh) `<DATE>` chạy lần lượt:
-   1. `news.py validate`
-   2. `news.py prune` — xoá `news/<ngày>.md`, `news/raw/<ngày>-*`, `news/briefs/*-<ngày>.html` có ngày < `DATE − (RETENTION_DAYS − 1)`
-   3. `news.py site`
-   4. `guard.sh worktree <DATE>`
-   5. commit `news: <DATE>` (gồm cả file vừa xoá)
-   6. `guard.sh outgoing`
-   7. push `main`
-   8. `news.py verify-live`
-   9. `notify.sh success`
+   1. `sync` — fetch rồi fast-forward `main` lên `origin/main`; nếu HEAD đổi thì exec lại `publish.sh` bản mới
+   2. `news.py validate`
+   3. `news.py prune` — xoá `news/<ngày>.md`, `news/raw/<ngày>-*`, `news/briefs/*-<ngày>.html` có ngày < `DATE − (RETENTION_DAYS − 1)`
+   4. `news.py site`
+   5. `guard.sh worktree <DATE>`
+   6. commit `news: <DATE>` (gồm cả file vừa xoá)
+   7. `guard.sh outgoing`
+   8. push `main`
+   9. `news.py verify-live`
+   10. `notify.sh success`
 
    Lỗi ở bất kỳ bước nào → `notify.sh failure <bước>` gửi Google Chat.
 
@@ -99,6 +100,8 @@ Bản local có `.env.local` (đã gitignore) chứa `GCHAT_WEBHOOK_URL`, các s
 - Pha research sâu của last30days cho số tương tác bị nhiễu (lẫn video không liên quan), còn `evidence_urls` thường chỉ là post mạng xã hội. Khi viết bài, lấy dữ kiện và URL gốc từ `discover-nominations.json`.
 - Ở máy local, Reddit hay trả `Connection refused`; X và HN vẫn chạy. Trên cloud, IP datacenter cũng dễ bị chặn. Environment cần Network = Full và `SETUP_COMPLETE=true`.
 - Docs Routines (kiểm tra ngày 26/09/2026) không có toggle "Allow unrestricted branch pushes". Push thẳng `main` chạy được khi đáp ứng các điều kiện ở mục Git phía trên.
+- **Sandbox cloud dùng lại bản clone cũ** (log ghi "Fetching repository" thay vì "Cloning"): session bắt đầu ở branch `claude/*`, còn `main` và `origin/main` local vẫn nằm ở commit của lần clone đầu. Vì vậy ROUTINE_PROMPT Bước 0 bắt buộc `git pull --ff-only origin main`, `publish.sh` có bước `sync` (fast-forward, rồi exec lại bản mới), và mọi lệnh fetch dùng refspec tường minh `+refs/heads/main:refs/remotes/origin/main`. Routine không tự `rebase` được, vì auto-mode classifier chặn; git trong script thì không bị chặn.
+- **Image cloud có `python3` = 3.11**, nhưng cài sẵn `python3.12`/`python3.13`. `research.sh` (`pick_python`) và `news.py` (`engine_python`) tự chọn bản ≥ 3.12 để chạy engine. `LAST30DAYS_PYTHON` dùng để ép một bản cụ thể.
 - `--days 1` khá hay cho kết quả "nothing solid". Khi đó vẫn publish trang "😴 Không có tin mới nổi bật", không coi là lỗi.
 
 ## Trạng thái hạ tầng (cập nhật 26/09/2026, cần kiểm tra lại trước khi giả định)

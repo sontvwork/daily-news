@@ -62,7 +62,7 @@ case "$mode" in
     lines=()
     while IFS= read -r line; do lines+=("$line"); done < <(python3 scripts/news.py summary "$DATE")
     [[ ${#lines[@]} -ge 1 && ${#lines[@]} -le 3 ]] || { echo "notify.sh: summary phải có 1–3 dòng" >&2; exit 2; }
-    text="${NOTIFY_PREFIX:-}📰 *$TITLE*"
+    text="${NOTIFY_PREFIX:-}*$TITLE*"
     for line in "${lines[@]}"; do text+=$'\n'"$line"; done
     send "$text"$'\n'"🔗 ${PAGES_BASE_URL%/}/$link"
     ;;

@@ -1,0 +1,62 @@
+{
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "feeds": {
+    "category": null,
+    "sources": [
+      "hackernews",
+      "reddit"
+    ],
+    "subreddits": []
+  },
+  "generated_at": "2026-09-28T00:28:59.320164Z",
+  "kind": "discovery",
+  "outcome": "ok",
+  "results": [
+    {
+      "command": "/last30days \"Coding agents fix bugs at symptom\"",
+      "corroboration_count": 2,
+      "covered": false,
+      "engagement": {
+        "hackernews": {
+          "comments": 9,
+          "points": 19
+        },
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "evidence_urls": [
+        "https://twitter.com/__tinygrad__/status/2044354852663558370",
+        "https://github.com/jatoran/swe-mux",
+        "https://github.com/rayson-tech/nomarmy",
+        "https://www.reddit.com/r/ChatGPTCoding/comments/1wri3ux/coding_agents_fix_bugs_where_the_error_shows_up/"
+      ],
+      "last_surfaced": null,
+      "momentum": "new-this-week",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 1,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "top_comment": "\"stack-trace patches are the dry win. tag the bad value at creation with a request-id, then force the agent to edit the one producer function instead of every throw site.\" - DevWorkflowBuilder (3 votes)",
+      "topic": "Coding agents fix bugs at symptom",
+      "velocity_score": 58.55,
+      "why_spiking": "4 evidence items on hackernews and reddit generated 48 native interactions. Coding agents fix bugs where the error shows up, not where it starts",
+      "x_article_angle": null
+    }
+  ],
+  "schema_version": "1.1",
+  "source_status": {
+    "digg": "skipped-unconfigured",
+    "hackernews": "ok",
+    "reddit": "ok",
+    "x": "skipped-unconfigured"
+  },
+  "warnings": [
+    "Fewer than five topic clusters cleared the confidence floor this window."
+  ],
+  "weak_signal": null,
+  "window_days": 1
+}

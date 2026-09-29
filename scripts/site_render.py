@@ -1,8 +1,8 @@
 """Renderer riêng của Daily News: news/YYYY-MM-DD.md → trang card dashboard (chỉ stdlib).
 
 Template + CSS nằm trong theme/ (người sửa, routine không động vào). Tên trang bài
-(briefs/<slug>-<hash>-<date>.html) lấy từ feed.xml của `library feed` nên link trong feed
-và link đã gửi Google Chat luôn khớp.
+(briefs/<date>.html) lấy từ feed.xml — news.py đã đổi link của `library feed` sang mẫu này —
+nên link trong feed và link đã gửi Google Chat luôn khớp.
 """
 
 from __future__ import annotations

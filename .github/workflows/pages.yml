@@ -1,6 +1,6 @@
 name: Deploy Pages
 
-# Site = thư mục news/ (index.html, feed.xml, briefs/ do `library feed` sinh ra).
+# Site = thư mục news/ (index.html, feed.xml, briefs/<DATE>.html do `news.py site` build sẵn).
 on:
   push:
     branches: [main]

@@ -3,7 +3,7 @@
 
   news.py validate    DATE   kiểm tra news/DATE.md đúng format bản tin
   news.py prune       DATE   xoá .md/raw/briefs có ngày < DATE − (RETENTION_DAYS − 1)
-  news.py site        DATE   feed.xml bằng `library feed` + trang card dashboard (theme/), kiểm tra link local
+  news.py site        DATE   feed.xml bằng `library feed` (link đổi thành briefs/DATE.html) + trang card dashboard (theme/), kiểm tra link local
   news.py link        DATE   in đường dẫn tương đối của trang bài DATE (lấy từ feed.xml)
   news.py summary     DATE   in 1–3 dòng tóm tắt, y hệt card trang chủ (news/raw/DATE-summary.txt, fallback: tiêu đề tin)
   news.py verify-live DATE   poll GitHub Pages tới khi index, feed và mọi trang bài trả 200
@@ -43,8 +43,13 @@ DAILY_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
 DATED_FILES = [
     (NEWS, DAILY_FILE),
     (NEWS / "raw", re.compile(r"^(\d{4}-\d{2}-\d{2})-[a-z0-9-]+\.(?:md|json|txt)$")),
+    (NEWS / "briefs", re.compile(r"^(\d{4}-\d{2}-\d{2})\.html$")),
+    # Tên cũ do engine đặt (<slug>-<hash8>-<date>.html) — giữ để còn dọn file sót.
     (NEWS / "briefs", re.compile(r"^[a-z0-9-]+-[0-9a-f]{8}-(\d{4}-\d{2}-\d{2})\.html$")),
 ]
+FEED_ENTRY = re.compile(r"<entry>.*?</entry>", re.DOTALL)
+FEED_PUBLISHED = re.compile(r"<published>(\d{4}-\d{2}-\d{2})T")
+FEED_LINK_HREF = re.compile(r'(<link href=")[^"]*(")')
 ITEM_HEADING = re.compile(r"^###\s+(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
 NO_NEWS_PHRASE = "Không có tin mới nổi bật"
 SUMMARY_MAX_CHARS = 100
@@ -64,6 +69,11 @@ def title_for(date: str) -> str:
 
 def daily_path(date: str) -> Path:
     return NEWS / f"{date}.md"
+
+
+def brief_href(date: str) -> str:
+    """Đường dẫn trang bài của DATE, tương đối với news/ — dùng cho feed.xml và mọi link."""
+    return f"briefs/{date}.html"
 
 
 def config_value(key: str) -> str:
@@ -205,7 +215,8 @@ def engine_python() -> str:
 def build_feed() -> None:
     """Chạy `library feed` trên bản sao news/*.md trong thư mục tạm; chỉ lấy feed.xml về news/.
 
-    HTML của engine bị bỏ — trang do site_render dựng, cùng tên file với link trong feed.
+    HTML của engine bị bỏ — trang do site_render dựng. Link trong feed được đổi thành
+    briefs/<DATE>.html (rewrite_feed_links), <id> của entry giữ nguyên.
     """
     with tempfile.TemporaryDirectory(prefix="daily-news-library-") as tmp:
         library = Path(tmp)
@@ -227,6 +238,28 @@ def build_feed() -> None:
         shutil.copyfile(library / "feed.xml", NEWS / "feed.xml")
         if not (NEWS / LIBRARY_ID).is_file():
             shutil.copy2(library / LIBRARY_ID, NEWS / LIBRARY_ID)
+    rewrite_feed_links()
+
+
+def rewrite_feed_links() -> None:
+    """Đổi <link href> của từng entry trong news/feed.xml thành brief_href(<published>).
+
+    Sửa trên text (không qua ElementTree) nên ngoài href, feed giữ nguyên từng byte — <id> không đổi,
+    feed reader không coi là bài mới.
+    """
+    feed = NEWS / "feed.xml"
+
+    def fix(match: re.Match[str]) -> str:
+        entry = match.group(0)
+        published = FEED_PUBLISHED.search(entry)
+        if not published:
+            fail("feed.xml có entry thiếu <published>")
+        entry, count = FEED_LINK_HREF.subn(rf"\g<1>{brief_href(published.group(1))}\g<2>", entry)
+        if count != 1:
+            fail(f"entry ngày {published.group(1)} trong feed.xml cần đúng 1 <link href>, thấy {count}")
+        return entry
+
+    feed.write_text(FEED_ENTRY.sub(fix, feed.read_text(encoding="utf-8")), encoding="utf-8")
 
 
 def cmd_site(date: str) -> None:
@@ -237,6 +270,9 @@ def cmd_site(date: str) -> None:
     dailies = {DAILY_FILE.match(p.name).group(1) for p in NEWS.glob("*.md") if DAILY_FILE.match(p.name)}
     if len(pages) != len(entries) or {d.isoformat() for d in pages} != dailies:
         fail(f"feed.xml không khớp 1-1 với news/YYYY-MM-DD.md ({len(entries)} entry, {len(dailies)} file)")
+    wrong = [href for day, href in pages.items() if href != brief_href(day.isoformat())]
+    if wrong:
+        fail(f"link trong feed.xml sai mẫu briefs/<DATE>.html: {sorted(wrong)}")
     render_site(NEWS, THEME, pages, retention_days=retention_days(), base_path=site_base_path())
 
     missing = [href for _, href in entries if not (NEWS / href).is_file()]

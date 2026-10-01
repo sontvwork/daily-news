@@ -6,7 +6,7 @@
 #   dev.sh notify <DATE> [--send]   # chỉ notify success (link lấy từ news/feed.xml hiện có)
 #
 # Mặc định notify chạy DRY_RUN (chỉ in payload). --send: gửi Google Chat thật, tiền tố NOTIFY_PREFIX="[TEST] ".
-# Bước viết bài (news/DATE.md + news/raw/DATE-summary.txt) do Claude làm trong phiên chat — xem CLAUDE.local.md.
+# Bước viết bài (news/DATE.md + news/raw/DATE/summary.txt) do Claude làm trong phiên chat — xem CLAUDE.local.md.
 # Bỏ kết quả test: git checkout -- news/ && git clean -fd news/
 set -euo pipefail
 

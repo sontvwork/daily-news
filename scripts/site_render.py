@@ -40,7 +40,7 @@ class Issue:
     title: str
     items: list[Item]
     paragraphs: list[str]  # nội dung ngoài danh sách tin (ngày không có tin)
-    summary: list[str] | None  # 1–3 dòng tóm tắt từ news/raw/<DATE>-summary.txt (nếu có)
+    summary: list[str] | None  # 1–3 dòng tóm tắt từ news/raw/<DATE>/summary.txt (nếu có)
 
 
 def inline(text: str) -> str:
@@ -58,7 +58,7 @@ def plain(text: str) -> str:
 
 
 def summary_path(news_dir: Path, day: date) -> Path:
-    return news_dir / "raw" / f"{day.isoformat()}-summary.txt"
+    return news_dir / "raw" / day.isoformat() / "summary.txt"
 
 
 def read_summary(news_dir: Path, day: date) -> list[str] | None:

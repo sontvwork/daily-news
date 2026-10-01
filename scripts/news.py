@@ -5,7 +5,7 @@
   news.py prune       DATE   xoá .md/raw/briefs có ngày < DATE − (RETENTION_DAYS − 1)
   news.py site        DATE   feed.xml bằng `library feed` (link đổi thành briefs/DATE.html) + trang card dashboard (theme/), kiểm tra link local
   news.py link        DATE   in đường dẫn tương đối của trang bài DATE (lấy từ feed.xml)
-  news.py summary     DATE   in 1–3 dòng tóm tắt, y hệt card trang chủ (news/raw/DATE-summary.txt, fallback: tiêu đề tin)
+  news.py summary     DATE   in 1–3 dòng tóm tắt, y hệt card trang chủ (news/raw/DATE/summary.txt, fallback: tiêu đề tin)
   news.py history     DATE   in PREVIOUS_ISSUES bản tin có tin gần nhất trước DATE (để routine tránh đăng trùng)
   news.py verify-live DATE   poll GitHub Pages tới khi index, feed và mọi trang bài trả 200
 """
@@ -40,13 +40,15 @@ PYTHON_CANDIDATES = ("python3", "python3.12", "python3.13", "python3.14")
 LIBRARY_ID = ".last30days-library-id"
 ATOM = "{http://www.w3.org/2005/Atom}"
 DAILY_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
-# File có ngày của bản tin — chỉ những file này mới bị prune xoá (guard.sh giữ bản regex riêng, khớp với đây).
+# File có ngày của bản tin (đường dẫn tương đối với news/) — chỉ những file này mới bị prune xoá.
+# guard.sh giữ bản regex riêng (DATED_RES), khớp với đây.
 DATED_FILES = [
-    (NEWS, DAILY_FILE),
-    (NEWS / "raw", re.compile(r"^(\d{4}-\d{2}-\d{2})-[a-z0-9-]+\.(?:md|json|txt)$")),
-    (NEWS / "briefs", re.compile(r"^(\d{4}-\d{2}-\d{2})\.html$")),
-    # Tên cũ do engine đặt (<slug>-<hash8>-<date>.html) — giữ để còn dọn file sót.
-    (NEWS / "briefs", re.compile(r"^[a-z0-9-]+-[0-9a-f]{8}-(\d{4}-\d{2}-\d{2})\.html$")),
+    DAILY_FILE,
+    re.compile(r"^raw/(\d{4}-\d{2}-\d{2})/[a-z0-9-]+\.(?:md|json|txt)$"),
+    re.compile(r"^briefs/(\d{4}-\d{2}-\d{2})\.html$"),
+    # Tên cũ — giữ để còn dọn file sót: raw chưa chia thư mục, brief do engine đặt (<slug>-<hash8>-<date>.html).
+    re.compile(r"^raw/(\d{4}-\d{2}-\d{2})-[a-z0-9-]+\.(?:md|json|txt)$"),
+    re.compile(r"^briefs/[a-z0-9-]+-[0-9a-f]{8}-(\d{4}-\d{2}-\d{2})\.html$"),
 ]
 FEED_ENTRY = re.compile(r"<entry>.*?</entry>", re.DOTALL)
 FEED_PUBLISHED = re.compile(r"<published>(\d{4}-\d{2}-\d{2})T")
@@ -174,7 +176,7 @@ def check_repeats(date: str, text: str) -> None:
 
 
 def check_summary(date: str) -> None:
-    """news/raw/DATE-summary.txt: 1–3 dòng plain text, mỗi dòng = 1 emoji + câu ngắn. Thiếu file chỉ cảnh báo."""
+    """news/raw/DATE/summary.txt: 1–3 dòng plain text, mỗi dòng = 1 emoji + câu ngắn. Thiếu file chỉ cảnh báo."""
     path = summary_path(NEWS, Date.fromisoformat(date))
     name = path.relative_to(ROOT)
     if not path.is_file():
@@ -202,11 +204,11 @@ def cmd_prune(date: str) -> None:
     keep = retention_days()
     cutoff = Date.fromisoformat(date) - timedelta(days=keep - 1)
     removed = []
-    for folder, pattern in DATED_FILES:
-        if not folder.is_dir():
-            continue
-        for path in sorted(folder.iterdir()):
-            match = pattern.match(path.name)
+    for dirpath, _, filenames in os.walk(NEWS):  # không đi theo symlink thư mục
+        for filename in sorted(filenames):
+            path = Path(dirpath) / filename
+            rel = path.relative_to(NEWS).as_posix()
+            match = next((m for m in (pattern.match(rel) for pattern in DATED_FILES) if m), None)
             if not match or path.is_symlink() or not path.is_file():
                 continue
             try:
@@ -216,7 +218,11 @@ def cmd_prune(date: str) -> None:
             if day < cutoff:
                 path.unlink()
                 removed.append(path.relative_to(ROOT).as_posix())
-    for path in removed:
+    # Thư mục news/raw/DATE/ rỗng sau khi xoá thì bỏ luôn (git không giữ thư mục rỗng).
+    for folder in sorted({(ROOT / path).parent for path in removed}):
+        if folder.parent == NEWS / "raw" and not any(folder.iterdir()):
+            folder.rmdir()
+    for path in sorted(removed):
         print(f"  xoá {path}")
     print(f"OK: giữ {keep} ngày (từ {cutoff.isoformat()}), xoá {len(removed)} file quá hạn")
 

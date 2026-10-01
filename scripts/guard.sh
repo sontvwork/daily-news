@@ -5,8 +5,8 @@
 #   guard.sh outgoing         # trước push: từng commit origin/main..HEAD chỉ chạm news/, message "news: YYYY-MM-DD"
 #
 # Chặn: file ngoài news/, xoá/đổi tên file, merge commit, secret lọt vào nội dung.
-# Ngoại lệ duy nhất: xoá file có ngày của bản tin (news/DATE.md, news/raw/DATE-*, news/briefs/DATE.html
-# và tên cũ news/briefs/*-DATE.html)
+# Ngoại lệ duy nhất: xoá file có ngày của bản tin (news/DATE.md, news/raw/DATE/*, news/briefs/DATE.html
+# và tên cũ news/raw/DATE-*, news/briefs/*-DATE.html)
 # khi ngày đó < DATE − (RETENTION_DAYS − 1). DATE = tham số (worktree) hoặc message của từng commit (outgoing).
 # Vi phạm → in danh sách, exit 3.
 set -euo pipefail
@@ -22,7 +22,8 @@ SECRET_VARS=(GCHAT_WEBHOOK_URL SCRAPECREATORS_API_KEY XAI_API_KEY BRAVE_API_KEY 
 # Mẫu file có ngày được phép xoá khi quá hạn (khớp DATED_FILES trong news.py). Nhóm 1 = ngày.
 DATE_RE='^[0-9]{4}-[0-9]{2}-[0-9]{2}$'
 DATED_RES=('^news/([0-9]{4}-[0-9]{2}-[0-9]{2})\.md$'
-           '^news/raw/([0-9]{4}-[0-9]{2}-[0-9]{2})-[a-z0-9-]+\.(md|json|txt)$'
+           '^news/raw/([0-9]{4}-[0-9]{2}-[0-9]{2})/[a-z0-9-]+\.(md|json|txt)$'
+           '^news/raw/([0-9]{4}-[0-9]{2}-[0-9]{2})-[a-z0-9-]+\.(md|json|txt)$'  # tên cũ (chưa chia thư mục)
            '^news/briefs/([0-9]{4}-[0-9]{2}-[0-9]{2})\.html$'
            '^news/briefs/[a-z0-9-]+-[0-9a-f]{8}-([0-9]{4}-[0-9]{2}-[0-9]{2})\.html$')  # tên cũ, để dọn file sót
 violations=()

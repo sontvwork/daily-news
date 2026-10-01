@@ -33,7 +33,7 @@ b. **Chấm điểm**: đọc file bundle `.cache/work/<slug>/discover-nominatio
 c. **Leg 2**: `bash scripts/research.sh research <slug>` (Bash timeout 600000, có thể chạy vài phút).
    - Nếu output là "Nothing solid this window" → domain này không có tin, chuyển slug kế tiếp.
 
-d. **Leg 3**: `bash scripts/research.sh finalize <slug> <DATE>` (Bash timeout 120000). Lệnh này ghi `news/raw/<DATE>-<slug>.md` và `.json`.
+d. **Leg 3**: `bash scripts/research.sh finalize <slug> <DATE>` (Bash timeout 120000). Lệnh này ghi `news/raw/<DATE>/<slug>.md` và `.json`.
 
 e. **Fallback**: nếu một leg fail 2 lần (exit ≠ 0, file sai, timeout) → chạy `bash scripts/research.sh oneshot <slug> <DATE>` (Bash timeout 600000). Nếu vẫn fail thì ghi nhận domain đó lỗi.
 
@@ -54,7 +54,7 @@ Loại bỏ: paper/arXiv, benchmark học thuật, architecture chuyên sâu, ch
 
 ## Bước 2 — Viết bản tin tiếng Việt (tên bước khi lỗi: `write`)
 Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện được phép dùng:
-- `news/raw/<DATE>-*.json` và `.md`: danh sách chủ đề đã qua ngưỡng tin cậy (`topic`, `why_spiking`, `top_comment`).
+- `news/raw/<DATE>/<slug>.json` và `.md`: danh sách chủ đề đã qua ngưỡng tin cậy (`topic`, `why_spiking`, `top_comment`).
 - File bundle `.cache/work/<slug>/discover-nominations.json`: bài gốc của từng chủ đề (tiêu đề, snippet, **URL gốc**, engagement của leg 1). Đây là dữ kiện đáng tin nhất.
 
 Lưu ý: số tương tác tổng hợp ở pha research (view YouTube/TikTok hàng triệu…) thường lẫn cả nội dung không liên quan, nên KHÔNG trích các con số đó. Chỉ trích engagement của bài gốc trong bundle (ví dụ điểm và số bình luận Hacker News). `evidence_urls` thường chỉ là các post mạng xã hội ngẫu nhiên, nên link `🔗` phải ưu tiên URL gốc trong bundle (blog chính thức, repo GitHub, bài Hacker News), chỉ khi không có mới dùng `evidence_urls`.
@@ -85,7 +85,7 @@ Format bắt buộc (script `news.py validate` sẽ kiểm tra):
 - Nếu không còn tin nào đạt tiêu chí, file chỉ gồm title và đoạn:
   `😴 Không có tin mới nổi bật trong 24 giờ qua về AI coding tools. Hẹn bạn ngày mai!`
 
-Sau đó ghi `news/raw/<DATE>-summary.txt` (ghi đè nếu đã có). Đây là phần tóm tắt dùng chung cho card trên trang chủ và tin Google Chat:
+Sau đó ghi `news/raw/<DATE>/summary.txt` (ghi đè nếu đã có). Đây là phần tóm tắt dùng chung cho card trên trang chủ và tin Google Chat:
 - Gồm **1–3 dòng** tiếng Việt. Mỗi dòng nói về đúng **1 tin hot nhất** trong ngày, xếp theo độ hot. Không cần nêu đủ mọi tin, không gộp nhiều tin vào một dòng.
 - Mỗi dòng bắt đầu bằng **1 emoji** + dấu cách, theo sau là một câu ngắn (khoảng 50–90 ký tự, tối đa 100). Chỉ nêu sự kiện, không giải thích thêm, không nêu lợi ích.
 - Chỉ dùng plain text: không tiêu đề, không đánh số, không bold/italic/code/link, không thêm emoji khác trong câu.

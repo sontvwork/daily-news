@@ -314,7 +314,7 @@ The single most common failure mode of this skill is the model reading this file
 Branching rule:
 
 - **If the user asks what is trending — globally or in a domain** (for example, `/last30days trending`, `/last30days --trending`, `/last30days what's hot right now?`, `/last30days what's exploding in AI agents?`): this is DISCOVERY. Complete the first-run wizard if needed, **and after the wizard finishes return to THIS branch (do NOT fall through to Parse User Intent / Step 0.45 / normal topic research - onboarding must not downgrade a discovery request into a topic run)**. Discovery is the THREE-COMMAND HOST-JUDGED PROTOCOL mandated by LAW 11: the engine sweeps and nominates, YOU judge, the engine researches, YOU write content angles, the engine renders. Do not run Step 0.5, Step 0.55, Step 0.75, WebSearch supplements, or the normal synthesis pass; the protocol below is the complete discovery flow. Two domain variants, resolved once and applied to leg 1 only:
-  - **Global trending** (no domain named — "trending", "what's hot", "what's happening"): bare `--discover` with NO domain argument (NOT a request to ask the user for a domain). It sweeps every river feed's own hot list (r/all, HN front page, Digg) with no keyword gate. A user-typed `--trending` token (`/last30days --trending`) is trigger phrasing for this bare global-trending run - it is NOT an engine flag and NOT a topic; never pass `--trending` through to the engine and never research it as a topic string.
+  - **Global trending** (no domain named — "trending", "what's hot", "what's happening"): bare `--discover` with NO domain argument (NOT a request to ask the user for a domain). It sweeps every river feed's own hot list (r/all, Hacker News front page, Digg) with no keyword gate. A user-typed `--trending` token (`/last30days --trending`) is trigger phrasing for this bare global-trending run - it is NOT an engine flag and NOT a topic; never pass `--trending` through to the engine and never research it as a topic string.
   - **Domain trending** (a domain phrase is named): set `DISCOVERY_DOMAIN` to the domain phrase and pass it as the `--discover` argument on leg 1. Legs 2 and 3 read the domain from the handoff files, so they always use bare `--discover`.
 
   **Leg 1 - nominate (Bash timeout 180000).** Sweep the listings and write the nominations bundle:
@@ -360,7 +360,7 @@ JUDGE_EOF
 "${LAST30DAYS_PYTHON}" "${SKILL_DIR}/scripts/last30days.py" --discover --judgments "$JUDGMENTS_FILE" --save-dir="${LAST30DAYS_MEMORY_DIR}"
 ```
 
-  This is the protocol's deep research pass: every judged survivor gets a full per-topic research run (Reddit with comments, X, YouTube, Techmeme, arXiv, HN, Polymarket, web). Expect several minutes of wall clock - that is the point, not a hang. `LAST30DAYS_ENRICH_BUDGET_SECONDS` (default 450) widens the deep-tier research budget; keep it under ~500 so the 600000ms Bash timeout outlives the post-budget bookkeeping. Its stdout ends with per-topic angle inputs: a JSON object keyed by surviving nomination id, each entry carrying the applied topic `name`, evidence `titles`, the `top_comment`, and an `engagement` phrase. If zero topics clear the confidence floor, leg 2 prints the nothing-solid brief instead: relay it verbatim and STOP - no leg 3.
+  This is the protocol's deep research pass: every judged survivor gets a full per-topic research run (Reddit with comments, X, YouTube, Techmeme, arXiv, Hacker News, Polymarket, web). Expect several minutes of wall clock - that is the point, not a hang. `LAST30DAYS_ENRICH_BUDGET_SECONDS` (default 450) widens the deep-tier research budget; keep it under ~500 so the 600000ms Bash timeout outlives the post-budget bookkeeping. Its stdout ends with per-topic angle inputs: a JSON object keyed by surviving nomination id, each entry carrying the applied topic `name`, evidence `titles`, the `top_comment`, and an `engagement` phrase. If zero topics clear the confidence floor, leg 2 prints the nothing-solid brief instead: relay it verbatim and STOP - no leg 3.
 
   **Angles (YOU - no engine call).** For each surviving topic id in the angle inputs, write two one-sentence hooks, each 200 characters or less, grounded in the evidence leg 2 emitted (quote-worthy tension, numbers, named entities - not generic filler):
   - `podcast` - a tension or question that carries a podcast segment.
@@ -562,18 +562,18 @@ When both `LAST30DAYS_API_KEY` and `LAST30DAYS_API_BASE` are set, the engine run
 **Step 2 - Welcome + setup choice (one modal).** Call AskUserQuestion with EXACTLY this question and these options. Reproduce the question verbatim, including the welcome pitch on the first lines:
 
 Question:
-"Welcome to /last30days! I research any topic across Reddit, X, YouTube, TikTok, Digg, arXiv, Techmeme, HN, Polymarket & more - pulling what people actually said in the last 30 days.
+"Welcome to /last30days! I research any topic across Reddit, X, YouTube, TikTok, Digg, arXiv, Techmeme, Hacker News, Polymarket & more - pulling what people actually said in the last 30 days.
 
 How would you like to set up?"
 
 Options:
-- "Auto setup (~30s)" - description: "Scan browser cookies for X + install yt-dlp (YouTube), Digg, arXiv, Techmeme. Reddit/HN/Polymarket/GitHub/Web work out of the box. Add TikTok + Instagram after via ScrapeCreators (10k free calls)."
+- "Auto setup (~30s)" - description: "Scan browser cookies for X + install yt-dlp (YouTube), Digg, arXiv, Techmeme. Reddit/Hacker News/Polymarket/GitHub/Web work out of the box. Add TikTok + Instagram after via ScrapeCreators (10k free calls)."
 - "Manual setup" - description: "Show me each source and credential to configure by hand."
-- "Skip for now" - description: "Just the free no-setup sources: Reddit (with comments), HN, Polymarket, GitHub, Web."
+- "Skip for now" - description: "Just the free no-setup sources: Reddit (with comments), Hacker News, Polymarket, GitHub, Web."
 
 **Step 3 - Run setup based on the choice.**
 
-**If the user picks Skip for now:** write `SETUP_COMPLETE=true` to `~/.config/last30days/.env` (append-only; run `mkdir -p ~/.config/last30days && touch ~/.config/last30days/.env` first if the file does not exist) so the wizard does NOT re-fire on every subsequent run, then skip straight to Step 6 (the topic picker). Do not run any `setup` command - the always-on sources (Reddit, HN, Polymarket, GitHub, Web) need no setup.
+**If the user picks Skip for now:** write `SETUP_COMPLETE=true` to `~/.config/last30days/.env` (append-only; run `mkdir -p ~/.config/last30days && touch ~/.config/last30days/.env` first if the file does not exist) so the wizard does NOT re-fire on every subsequent run, then skip straight to Step 6 (the topic picker). Do not run any `setup` command - the always-on sources (Reddit, Hacker News, Polymarket, GitHub, Web) need no setup.
 
 **If the user picks Auto setup:**
 
@@ -828,7 +828,7 @@ Known keyword-trap classes and how to handle each:
 - Action: **Mandatory pre-flight steps for non-English topics:**
   1. **Force `--web-backend brave`** in the engine command. Brave indexes non-English web (Ynet/Walla/Mako for Hebrew; Haber7/Hurriyet for Turkish; etc.) and is the only available source with real-language coverage.
   2. **Skip `--subreddits` targeting unless the topic has a known English-speaking community.** Generic subreddits (r/food, r/Israel) return English noise; omit them or scope tightly to known bilingual communities.
-  3. **Note in the Resolved block:** "Non-English topic detected ([language]). Routing to `--web-backend brave`; Reddit/HN/GitHub will likely return zero on-topic results."
+  3. **Note in the Resolved block:** "Non-English topic detected ([language]). Routing to `--web-backend brave`; Reddit/Hacker News/GitHub will likely return zero on-topic results."
   4. **X/Twitter and YouTube are the highest-value missing sources for non-English topics.** Surface this clearly in the output so the user knows what would unlock deeper coverage.
 - Do NOT skip this class check for mixed-script queries (e.g. "קפה עלית Elite Coffee") - if any non-Latin characters are present, Class 5 applies.
 
@@ -1035,7 +1035,7 @@ Agent mode report format:
 
 ```
 ## Research Report: {TOPIC}
-Generated: {date} | Sources: Reddit, X, Bluesky, YouTube, TikTok, HN, Polymarket, Web
+Generated: {date} | Sources: Reddit, X, Bluesky, YouTube, TikTok, Hacker News, Polymarket, Web
 
 ### Key Findings
 [3-5 bullet points, highest-signal insights with citations]
@@ -1474,7 +1474,7 @@ Use a **timeout of 300000** (5 minutes) on the Bash call. The script typically t
 The script will automatically:
 - Detect available API keys
 - Run Reddit/X/YouTube/TikTok/Instagram/Hacker News/Polymarket searches
-- Output ALL results including YouTube transcripts, TikTok captions, Instagram captions, HN comments, and prediction market odds
+- Output ALL results including YouTube transcripts, TikTok captions, Instagram captions, Hacker News comments, and prediction market odds
 
 **Read the ENTIRE output.** It contains EIGHT data sections in this order: Reddit items, X items, YouTube items, TikTok items, Instagram Reels items, Hacker News items, Polymarket items, and WebSearch items. If you miss sections, you will produce incomplete stats.
 
@@ -1916,9 +1916,9 @@ CITATION PRIORITY (most to least preferred). Examples are shown in plain-label s
 3. YouTube channels - `per channel name on YouTube` (transcript-backed insights)
 4. TikTok creators - `per @creator on TikTok` (viral/trending signal)
 5. Instagram creators - `per @creator on Instagram` (influencer/creator signal)
-6. HN discussions - `per HN` or `per hn/username` (developer community signal)
+6. Hacker News discussions - `per Hacker News` or `per hn/username` (developer community signal)
 7. Polymarket - `Polymarket has X at Y% (up/down Z%)` with specific odds and movement
-8. Web sources - ONLY when Reddit/X/YouTube/TikTok/Instagram/HN/Polymarket don't cover that specific fact; name the publication: `per Rolling Stone`
+8. Web sources - ONLY when Reddit/X/YouTube/TikTok/Instagram/Hacker News/Polymarket don't cover that specific fact; name the publication: `per Rolling Stone`
 
 The tool's value is surfacing what PEOPLE are saying, not what journalists wrote.
 When both a web article and an X post cover the same fact, cite the X post.
@@ -2214,7 +2214,7 @@ After delivering a prompt, end with:
 ```
 ---
 📚 Expert in: {TOPIC} for {TARGET_TOOL}
-📊 Based on: {n} Reddit threads ({sum} upvotes) + {n} X posts ({sum} likes) + {n} YouTube videos ({sum} views) + {n} TikTok videos ({sum} views) + {n} Instagram reels ({sum} views) + {n} HN stories ({sum} points) + {n} web pages
+📊 Based on: {n} Reddit threads ({sum} upvotes) + {n} X posts ({sum} likes) + {n} YouTube videos ({sum} views) + {n} TikTok videos ({sum} views) + {n} Instagram reels ({sum} views) + {n} Hacker News stories ({sum} points) + {n} web pages
 
 Want another prompt? Just tell me what you're creating next.
 ```
@@ -2227,7 +2227,7 @@ Want another prompt? Just tell me what you're creating next.
 - Sends search queries to ScrapeCreators API (`api.scrapecreators.com`) for TikTok and Instagram search, and as a Reddit search backup when the free Reddit path returns no items (requires SCRAPECREATORS_API_KEY; empty-only by default — see `LAST30DAYS_REDDIT_SC_MIN_ITEMS` / `LAST30DAYS_REDDIT_BACKEND`)
 - Legacy: Sends search queries to OpenAI's Responses API (`api.openai.com`) for Reddit discovery (fallback if no SCRAPECREATORS_API_KEY)
 - Sends search queries to X/Twitter via optional user-provided `AUTH_TOKEN`/`CT0` env vars, explicit browser-cookie opt-in (`FROM_BROWSER` or setup consent), xAI's API (`api.x.ai` by default), Xquik's API (`xquik.com` by default), or the official X API v2 via xurl CLI (OAuth2, auto-detected when installed and authenticated)
-- Sends search queries to Algolia HN Search API (`hn.algolia.com`) for Hacker News story and comment discovery (free, no auth)
+- Sends search queries to Algolia Hacker News Search API (`hn.algolia.com`) for Hacker News story and comment discovery (free, no auth)
 - Sends search queries to Polymarket Gamma API (`gamma-api.polymarket.com`) for prediction market discovery (free, no auth)
 - Runs `yt-dlp` locally for YouTube search and transcript extraction (no API key, public data)
 - Sends search queries to ScrapeCreators API (`api.scrapecreators.com`) for TikTok and Instagram search, transcript/caption extraction (10,000 free calls, then PAYG)

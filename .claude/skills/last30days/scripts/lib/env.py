@@ -965,7 +965,7 @@ def is_youtube_sc_available(config: dict[str, Any]) -> bool:
 def is_hackernews_available() -> bool:
     """Check if Hacker News source is available.
 
-    Always returns True - HN uses free Algolia API, no key needed.
+    Always returns True - Hacker News uses free Algolia API, no key needed.
     """
     return True
 

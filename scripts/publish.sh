@@ -6,7 +6,7 @@
 # sync (fast-forward main lên origin/main) → validate → prune (xoá bản tin quá RETENTION_DAYS ngày) → build site → guard worktree
 # → commit "news: DATE" (gồm cả file vừa xoá) → guard outgoing → push main
 # → chờ Pages live → notify success.  Bất kỳ bước nào lỗi: notify failure <bước> rồi exit ≠ 0.
-# --no-push: dừng sau guard outgoing, gửi tin tóm tắt ở chế độ DRY_RUN (dùng để test local).
+# --no-push: dừng sau guard outgoing; mọi tin Google Chat (kể cả tin lỗi) ở chế độ DRY_RUN (dùng để test local).
 set -Eeuo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -17,6 +17,7 @@ if [[ -f .env.local ]]; then set -a; source .env.local; set +a; fi
 
 DATE="${1:-}"
 NO_PUSH=0; [[ "${2:-}" == "--no-push" ]] && NO_PUSH=1
+[[ $NO_PUSH == 1 ]] && export DRY_RUN=1
 LOG="$(mktemp)"
 # Mỗi bước ghi dòng bắt đầu trong LOG để thông báo lỗi chỉ chứa output của đúng bước đó.
 step() { STEP="$1"; STEP_LINE=$(( $(wc -l < "$LOG") + 1 )); }
@@ -80,7 +81,7 @@ run bash scripts/guard.sh outgoing
 if [[ $NO_PUSH == 1 ]]; then
   echo "--no-push: bỏ qua push và kiểm tra Pages" | tee -a "$LOG"
   step notify
-  DRY_RUN=1 bash scripts/notify.sh success "$DATE" | tee -a "$LOG"
+  bash scripts/notify.sh success "$DATE" | tee -a "$LOG"
   rm -f "$LOG"
   exit 0
 fi

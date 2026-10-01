@@ -1,0 +1,548 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "d18cf439afbf0047",
+  "generated_at": "2026-10-01T23:51:24.735338Z",
+  "from_date": "2026-09-30",
+  "to_date": "2026-10-01",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-01T23:51:24.732711Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-01T23:51:24.732730Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-10-01T23:51:23.660159Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 8,
+      "attempted": true,
+      "at": "2026-10-01T23:51:24.732292Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude solves an important mathematical problem",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 178
+        }
+      },
+      "nomination": {
+        "name": "Claude solves an important mathematical problem",
+        "seed_score": 977.9287,
+        "summary": "Claude solves an important mathematical problem.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Claude solves an important mathematical problem.",
+            "body": "Claude solves an important mathematical problem.",
+            "url": "https://www.reddit.com/r/singularity/comments/1wu72qu/claude_solves_an_important_mathematical_problem/",
+            "container": "singularity",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 744,
+              "num_comments": 178
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude solves an important mathematical problem.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Gemini 4 AI Productivity Indexes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 AI Productivity Indexes",
+        "seed_score": 142.5,
+        "summary": "While not at the top for coding, Gemini 4 does well on other AI Productivity Indexes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R12",
+            "source": "reddit",
+            "title": "While not at the top for coding, Gemini 4 does well on other AI Productivity Indexes",
+            "body": "While not at the top for coding, Gemini 4 does well on other AI Productivity Indexes",
+            "url": "https://www.reddit.com/r/singularity/comments/1wuuu14/while_not_at_the_top_for_coding_gemini_4_does/",
+            "container": "singularity",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 69,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing",
+            "snippet": "While not at the top for coding, Gemini 4 does well on other AI Productivity Indexes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4875
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Open-source Astra-level",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 20,
+          "points": 71
+        }
+      },
+      "nomination": {
+        "name": "Open-source Astra-level",
+        "seed_score": 96.5201,
+        "summary": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49911500",
+            "source": "hackernews",
+            "title": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+            "body": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+            "url": "https://news.ycombinator.com/item?id=49911500",
+            "author": "adchurch",
+            "container": "Hacker News",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 71,
+              "comments": 20
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Show HN: Open-source model routing for coding agents at Astr",
+            "snippet": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49911500",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Rhun",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 8,
+          "points": 26
+        }
+      },
+      "nomination": {
+        "name": "Rhun",
+        "seed_score": 51.0,
+        "summary": "Show HN: Rhun, an open-source code editor written in assembly",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49926726",
+            "source": "hackernews",
+            "title": "Show HN: Rhun, an open-source code editor written in assembly",
+            "body": "Show HN: Rhun, an open-source code editor written in assembly",
+            "url": "https://rhun.app/",
+            "author": "vladcodes",
+            "container": "Hacker News",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 26,
+              "comments": 8
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: Rhun, an open-source code editor written in assembl",
+            "snippet": "Show HN: Rhun, an open-source code editor written in assembly",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49926726",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.251
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "1am",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "1am",
+        "seed_score": 23.3345,
+        "summary": "third night this week my coding agent stopped at 1am and waited for me",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "third night this week my coding agent stopped at 1am and waited for me",
+            "body": "third night this week my coding agent stopped at 1am and waited for me",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wug2e6/third_night_this_week_my_coding_agent_stopped_at/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "third night this week my coding agent stopped at 1am and waited for me",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 22,
+            "source_quality": 0.6,
+            "local_rank_score": 0.09250000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "4-phase",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "4-phase",
+        "seed_score": 13.7886,
+        "summary": "Why the 4-phase agent workflow fails at the coding phase (and why text plans need schema contracts)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Why the 4-phase agent workflow fails at the coding phase (and why text plans need schema contracts)",
+            "body": "Why the 4-phase agent workflow fails at the coding phase (and why text plans need schema contracts)",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wufqsf/why_the_4phase_agent_workflow_fails_at_the_coding/",
+            "container": "PromptEngineering",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Why the 4-phase agent workflow fails at the coding phase (and why text plans need schema contracts)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.092
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Qwen3.8-27B Q4_K_M RTX 3090 OpenCode",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-27B Q4_K_M RTX 3090 OpenCode",
+        "seed_score": 7.5,
+        "summary": "Qwen3.8-27B Q4_K_M on one RTX 3090 + OpenCode: throughput, four coding tasks, and a reasoning-budget failure",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "Qwen3.8-27B Q4_K_M on one RTX 3090 + OpenCode: throughput, four coding tasks, and a reasoning-budget failure",
+            "body": "Qwen3.8-27B Q4_K_M on one RTX 3090 + OpenCode: throughput, four coding tasks, and a reasoning-budget failure",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv9rzc/qwen3827b_q4_k_m_on_one_rtx_3090_opencode/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8-27B Q4_K_M on one RTX 3090 + OpenCode: throughput, four coding tasks, and a reasoning-budget failure",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.279
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Staring",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Staring",
+        "seed_score": 4.5,
+        "summary": "Staring at code all day is wrecking my eyes, what worked for you?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Staring at code all day is wrecking my eyes, what worked for you?",
+            "body": "Staring at code all day is wrecking my eyes, what worked for you?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wuws44/staring_at_code_all_day_is_wrecking_my_eyes_what/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Staring at code all day is wrecking my eyes, what worked for you?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2595
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "ChatGPT Pro 100/month vs Claude Max",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Pro 100/month vs Claude Max",
+        "seed_score": 3.0,
+        "summary": "ChatGPT Pro ($100/month) vs Claude Max 5x ($100/month) which is better for coding + technical work?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "ChatGPT Pro ($100/month) vs Claude Max 5x ($100/month) which is better for coding + technical work?",
+            "body": "ChatGPT Pro ($100/month) vs Claude Max 5x ($100/month) which is better for coding + technical work?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wve4ny/chatgpt_pro_100month_vs_claude_max_5x_100month/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing",
+            "snippet": "ChatGPT Pro ($100/month) vs Claude Max 5x ($100/month) which is better for coding + technical work?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 5,
+            "source_quality": 0.6,
+            "local_rank_score": 0.321
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Built Codex/Claude Code wastes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Built Codex/Claude Code wastes",
+        "seed_score": 1.5,
+        "summary": "Built a tool to see where Codex/Claude Code wastes my tokens",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Built a tool to see where Codex/Claude Code wastes my tokens",
+            "body": "Built a tool to see where Codex/Claude Code wastes my tokens",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wvet1a/built_a_tool_to_see_where_codexclaude_code_wastes/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Built a tool to see where Codex/Claude Code wastes my tokens",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.303
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,802 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "900c40b91a200fe3",
+  "generated_at": "2026-10-01T23:52:08.977348Z",
+  "from_date": "2026-09-30",
+  "to_date": "2026-10-01",
+  "domain": "AI agents software development testing code review DevOps CI/CD",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-01T23:52:08.964927Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-01T23:52:08.964950Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-01T23:52:07.676350Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 32,
+      "attempted": true,
+      "at": "2026-10-01T23:52:08.964552Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "death of web development education",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 98,
+          "points": 130
+        }
+      },
+      "nomination": {
+        "name": "death of web development education",
+        "seed_score": 342.0,
+        "summary": "The death of web development education",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49927100",
+            "source": "hackernews",
+            "title": "The death of web development education",
+            "body": "The death of web development education",
+            "url": "https://molily.de/web-dev-education/",
+            "author": "ibobev",
+            "container": "Hacker News",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 130,
+              "comments": 98
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about The death of web development education",
+            "snippet": "The death of web development education",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49927100",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 93,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3765
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Magnitude YC S25 Self-optimizing",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 96,
+          "points": 191
+        }
+      },
+      "nomination": {
+        "name": "Magnitude YC S25 Self-optimizing",
+        "seed_score": 304.4095,
+        "summary": "Launch HN: Magnitude (YC S25) \u2013 Self-optimizing inference engine for agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49911995",
+            "source": "hackernews",
+            "title": "Launch HN: Magnitude (YC S25) \u2013 Self-optimizing inference engine for agents",
+            "body": "Launch HN: Magnitude (YC S25) \u2013 Self-optimizing inference engine for agents",
+            "url": "https://github.com/magnitudedev/magnitude",
+            "author": "anerli",
+            "container": "Hacker News",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 191,
+              "comments": 96
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Launch HN: Magnitude (YC S25) \u2013 Self-optimizing inference en",
+            "snippet": "Launch HN: Magnitude (YC S25) \u2013 Self-optimizing inference engine for agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49911995",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 133
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 246.0732,
+        "summary": "What is an AI agent that changed your life for real?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "What is an AI agent that changed your life for real?",
+            "body": "What is an AI agent that changed your life for real?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wu2d7b/what_is_an_ai_agent_that_changed_your_life_for/",
+            "container": "AI_Agents",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 99,
+              "num_comments": 133
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "Reddit listing",
+            "snippet": "What is an AI agent that changed your life for real?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2875
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "GPT-6.1 Sol 77",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 71
+        }
+      },
+      "nomination": {
+        "name": "GPT-6.1 Sol 77",
+        "seed_score": 142.1285,
+        "summary": "GPT-6.1 Sol is cheap. We made it 77% cheaper by never letting it write code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "GPT-6.1 Sol is cheap. We made it 77% cheaper by never letting it write code",
+            "body": "GPT-6.1 Sol is cheap. We made it 77% cheaper by never letting it write code",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wtrix3/gpt61_sol_is_cheap_we_made_it_77_cheaper_by_never/",
+            "container": "AI_Agents",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 63,
+              "num_comments": 71
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "GPT-6.1 Sol is cheap. We made it 77% cheaper by never letting it write code",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.138
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "18 RAG Google FRAMES 78.9 92.7",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "18 RAG Google FRAMES 78.9 92.7",
+        "seed_score": 132.0,
+        "summary": "We benchmarked 18 RAG pipelines against an agent loop on Google's FRAMES. The best pipeline hit 78.9%. The agent loop hit 92.7%.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "We benchmarked 18 RAG pipelines against an agent loop on Google's FRAMES. The best pipeline hit 78.9%. The agent loop hit 92.7%.",
+            "body": "We benchmarked 18 RAG pipelines against an agent loop on Google's FRAMES. The best pipeline hit 78.9%. The agent loop hit 92.7%.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv0lww/we_benchmarked_18_rag_pipelines_against_an_agent/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 45,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "We benchmarked 18 RAG pipelines against an agent loop on Google's FRAMES. The best pipeline hit 78.9%. The agent loop hit 92.7%.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30300000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Open-source Astra-level",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 20,
+          "points": 71
+        }
+      },
+      "nomination": {
+        "name": "Open-source Astra-level",
+        "seed_score": 96.5201,
+        "summary": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49911500",
+            "source": "hackernews",
+            "title": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+            "body": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+            "url": "https://news.ycombinator.com/item?id=49911500",
+            "author": "adchurch",
+            "container": "Hacker News",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 71,
+              "comments": 20
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Show HN: Open-source model routing for coding agents at Astr",
+            "snippet": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49911500",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 57,
+            "source_quality": 0.8,
+            "local_rank_score": 0.121
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 73.5,
+        "summary": "How much autonomy should we actually give AI agents?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "How much autonomy should we actually give AI agents?",
+            "body": "How much autonomy should we actually give AI agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wur22s/how_much_autonomy_should_we_actually_give_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing",
+            "snippet": "How much autonomy should we actually give AI agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4865
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "50",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "50",
+        "seed_score": 73.1856,
+        "summary": "I cut my token spend 50%+ by adding a shared memory layer across agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "I cut my token spend 50%+ by adding a shared memory layer across agents",
+            "body": "I cut my token spend 50%+ by adding a shared memory layer across agents",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wu31ir/i_cut_my_token_spend_50_by_adding_a_shared_memory/",
+            "container": "AI_Agents",
+            "published_at": "2026-09-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 32,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "I cut my token spend 50%+ by adding a shared memory layer across agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "CSS Bed Classless CSS themes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 8,
+          "points": 35
+        }
+      },
+      "nomination": {
+        "name": "CSS Bed Classless CSS themes",
+        "seed_score": 64.5,
+        "summary": "CSS Bed: Classless CSS themes to use as starting points in web development",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49927212",
+            "source": "hackernews",
+            "title": "CSS Bed: Classless CSS themes to use as starting points in web development",
+            "body": "CSS Bed: Classless CSS themes to use as starting points in web development",
+            "url": "https://www.cssbed.com",
+            "author": "sea-gold",
+            "container": "Hacker News",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 35,
+              "comments": 8
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about CSS Bed: Classless CSS themes to use as starting points in w",
+            "snippet": "CSS Bed: Classless CSS themes to use as starting points in web development",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49927212",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.8,
+            "local_rank_score": 0.29400000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Letting",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "Letting",
+        "seed_score": 63.0,
+        "summary": "As you add more tools to an agent, it starts calling the wrong ones. Letting the model write code to call them is the fix.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "As you add more tools to an agent, it starts calling the wrong ones. Letting the model write code to call them is the fix.",
+            "body": "As you add more tools to an agent, it starts calling the wrong ones. Letting the model write code to call them is the fix.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wv0rpo/as_you_add_more_tools_to_an_agent_it_starts/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "As you add more tools to an agent, it starts calling the wrong ones. Letting the model write code to call them is the fix.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3025
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Rhun",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 8,
+          "points": 26
+        }
+      },
+      "nomination": {
+        "name": "Rhun",
+        "seed_score": 51.0,
+        "summary": "Show HN: Rhun, an open-source code editor written in assembly",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49926726",
+            "source": "hackernews",
+            "title": "Show HN: Rhun, an open-source code editor written in assembly",
+            "body": "Show HN: Rhun, an open-source code editor written in assembly",
+            "url": "https://rhun.app/",
+            "author": "vladcodes",
+            "container": "Hacker News",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 26,
+              "comments": 8
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: Rhun, an open-source code editor written in assembl",
+            "snippet": "Show HN: Rhun, an open-source code editor written in assembly",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49926726",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.8,
+            "local_rank_score": 0.276
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI Codex Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "AI Codex Claude Code",
+        "seed_score": 49.5,
+        "summary": "What AI products have a subscription price similar to Codex or Claude Code but offer better value?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "What AI products have a subscription price similar to Codex or Claude Code but offer better value?",
+            "body": "What AI products have a subscription price similar to Codex or Claude Code but offer better value?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wuyayb/what_ai_products_have_a_subscription_price/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing",
+            "snippet": "What AI products have a subscription price similar to Codex or Claude Code but offer better value?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.451
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI access",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "AI access",
+        "seed_score": 45.0,
+        "summary": "Has anyone here given an AI agent access to real tools or business systems? How comfortable were you with that",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "Has anyone here given an AI agent access to real tools or business systems? How comfortable were you with that",
+            "body": "Has anyone here given an AI agent access to real tools or business systems? How comfortable were you with that",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wuwney/has_anyone_here_given_an_ai_agent_access_to_real/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "Has anyone here given an AI agent access to real tools or business systems? How comfortable were you with that",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40499999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "consent line on our voice agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "consent line on our voice agent",
+        "seed_score": 39.0,
+        "summary": "The consent line on our voice agent gets skipped whenever callers speak early",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "The consent line on our voice agent gets skipped whenever callers speak early",
+            "body": "The consent line on our voice agent gets skipped whenever callers speak early",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wv5wj6/the_consent_line_on_our_voice_agent_gets_skipped/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "The consent line on our voice agent gets skipped whenever callers speak early",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.274
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Three",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Three",
+        "seed_score": 39.0,
+        "summary": "Three of our agents worked the same account in the same week. None of them knew about the others.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Three of our agents worked the same account in the same week. None of them knew about the others.",
+            "body": "Three of our agents worked the same account in the same week. None of them knew about the others.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wuxij7/three_of_our_agents_worked_the_same_account_in/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Three of our agents worked the same account in the same week. None of them knew about the others.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.312
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -26,6 +26,7 @@ GitHub Actions watchdog 08:30 VN: chưa có bản tin hôm nay → Google Chat
 | `scripts/site_render.py` + `theme/` | Renderer riêng: template`index.html`, `brief.html`, `404.html`, `style.css` (card dashboard, light/dark)           |
 | `scripts/guard.sh`                  | Hàng rào an toàn: chỉ cho phép thay đổi trong`news/`, không xoá (trừ bản tin quá hạn), không lộ secret     |
 | `scripts/publish.sh`                | Cách duy nhất để commit/push; mọi lỗi đều gửi Google Chat                                                  |
+| `scripts/dev.sh`                    | Chạy lại ở local để test (`build`, `notify`): không commit/push, guard chỉ cảnh báo, Google Chat mặc định dry-run |
 | `scripts/notify.sh`                 | Google Chat webhook (`jq` + `curl`), hỗ trợ `DRY_RUN=1`                                                           |
 | `news/`                             | Site root:`YYYY-MM-DD.md`, `raw/`, `index.html`, `404.html`, `feed.xml`, `briefs/`, `assets/style.css` (bản copy từ `theme/`) |
 | `ROUTINE_PROMPT.md`                 | Prompt dán vào routine                                                                                            |
@@ -84,6 +85,15 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
   DATE=$(TZ=Asia/Ho_Chi_Minh date +%F)
   bash scripts/publish.sh "$DATE" --no-push                                  # build + guard, tin nhắn ở chế độ dry-run
   DRY_RUN=1 bash scripts/notify.sh failure "$DATE" test 'thử "ký tự" đặc biệt'
+  ```
+
+  Chạy lại để test (không commit/push, code chưa commit vẫn chạy được):
+
+  ```bash
+  # Viết lại bài: yêu cầu Claude Code "Chạy lại bước viết bài cho $DATE" (dữ liệu: news/raw/$DATE-*), rồi:
+  bash scripts/dev.sh build  "$DATE"          # validate → prune → build → guard (chỉ cảnh báo) → notify dry-run
+  bash scripts/dev.sh notify "$DATE" --send   # chỉ gửi lại tin Google Chat thật, tiền tố "[TEST] "
+  git checkout -- news/ && git clean -fd news/  # bỏ kết quả test
   ```
 
   Config local của last30days (`~/.config/last30days/.env`) có thể bật nhiều nguồn hơn trên cloud.

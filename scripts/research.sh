@@ -6,7 +6,7 @@
 #   research.sh preflight                 # kiểm tra python + permission preflight của engine
 #   research.sh nominate  <slug>          # leg 1: quét listing, ghi discover-nominations.json
 #   research.sh research  <slug>          # leg 2: đọc .cache/work/<slug>/judgments.json, research sâu
-#   research.sh finalize  <slug> <DATE>   # leg 3: news/raw/<DATE>-<slug>.md + .json
+#   research.sh finalize  <slug> <DATE>   # leg 3: news/raw/<DATE>-<slug>.md + .json (+ -nominations.json)
 #   research.sh oneshot   <slug> <DATE>   # fallback khi một leg fail 2 lần: news/raw/<DATE>-<slug>.json
 #   research.sh status    <slug> <DATE>   # outcome + tình trạng từng nguồn (từ JSON)
 set -euo pipefail
@@ -77,6 +77,10 @@ case "$cmd" in
     # Finalize lặp lại là idempotent trong TTL: lấy thêm bản JSON (evidence_urls, source_status).
     "$PY" "$ENGINE" --discover --finalize --emit=json --output "news/raw/$2-$slug.json" \
       --save-dir="$dir" >/dev/null
+    # Lưu bundle leg 1 (URL gốc, engagement) để chạy lại bước viết bài ở local; prune theo mẫu news/raw/DATE-*.
+    if [[ -f "$dir/discover-nominations.json" ]]; then
+      cp "$dir/discover-nominations.json" "news/raw/$2-$slug-nominations.json"
+    fi
     ;;
   oneshot)
     slug="${1:?slug}"; need_date "${2:-}"; domain="$(domain_for "$slug")"; dir=".cache/work/$slug"

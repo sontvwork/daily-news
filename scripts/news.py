@@ -6,6 +6,7 @@
   news.py site        DATE   feed.xml bằng `library feed` (link đổi thành briefs/DATE.html) + trang card dashboard (theme/), kiểm tra link local
   news.py link        DATE   in đường dẫn tương đối của trang bài DATE (lấy từ feed.xml)
   news.py summary     DATE   in 1–3 dòng tóm tắt, y hệt card trang chủ (news/raw/DATE-summary.txt, fallback: tiêu đề tin)
+  news.py history     DATE   in PREVIOUS_ISSUES bản tin có tin gần nhất trước DATE (để routine tránh đăng trùng)
   news.py verify-live DATE   poll GitHub Pages tới khi index, feed và mọi trang bài trả 200
 """
 
@@ -51,6 +52,9 @@ FEED_ENTRY = re.compile(r"<entry>.*?</entry>", re.DOTALL)
 FEED_PUBLISHED = re.compile(r"<published>(\d{4}-\d{2}-\d{2})T")
 FEED_LINK_HREF = re.compile(r'(<link href=")[^"]*(")')
 ITEM_HEADING = re.compile(r"^###\s+(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
+SOURCE_LINK = re.compile(r"🔗\s*\[[^\]]*\]\(([^)\s]+)\)")
+# Số bản tin cũ routine đọc lại để tránh đăng trùng (history + cảnh báo trùng nguồn trong validate).
+PREVIOUS_ISSUES = 2
 NO_NEWS_PHRASE = "Không có tin mới nổi bật"
 SUMMARY_MAX_CHARS = 100
 # Markdown bị cấm trong tóm tắt: bold/italic/code/strike, link, _nghiêng_.
@@ -124,7 +128,49 @@ def cmd_validate(date: str) -> None:
         if not re.search(r"^\s*[-*]\s+\S", block, re.MULTILINE):
             fail("mỗi tin phải có ít nhất một bullet")
     check_summary(date)
+    check_repeats(date, text)
     print(f"OK: {path.name} — {len(items)} tin")
+
+
+def previous_issues(date: str) -> list[Path]:
+    """PREVIOUS_ISSUES bản tin có ít nhất 1 tin, gần nhất trước DATE (mới nhất trước). Ngày 😴 bị bỏ qua."""
+    found = []
+    for path in sorted(NEWS.glob("*.md"), reverse=True):
+        match = DAILY_FILE.match(path.name)
+        if not match or match.group(1) >= date:
+            continue
+        if ITEM_HEADING.search(path.read_text(encoding="utf-8")):
+            found.append(path)
+            if len(found) == PREVIOUS_ISSUES:
+                break
+    return found
+
+
+def item_sources(text: str) -> list[tuple[str, str, str]]:
+    """(số, tiêu đề, URL 🔗) của từng tin trong một bản tin."""
+    headings = list(ITEM_HEADING.finditer(text))
+    sources = []
+    for i, heading in enumerate(headings):
+        end = headings[i + 1].start() if i + 1 < len(headings) else len(text)
+        for url in SOURCE_LINK.findall(text, heading.end(), end):
+            sources.append((heading.group(1), heading.group(2), url))
+    return sources
+
+
+def check_repeats(date: str, text: str) -> None:
+    """Cảnh báo (không fail) tin dùng lại link 🔗 của bản tin cũ — dấu hiệu đăng trùng."""
+    seen: dict[str, tuple[str, str, str]] = {}
+    for path in previous_issues(date):
+        for number, title, url in item_sources(path.read_text(encoding="utf-8")):
+            seen.setdefault(url.rstrip("/"), (path.stem, number, title))
+    for number, title, url in item_sources(text):
+        if url.rstrip("/") in seen:
+            day, old_number, old_title = seen[url.rstrip("/")]
+            print(
+                f"news.py: cảnh báo — tin {number} ({title[:60]!r}) trùng nguồn với bản tin {day}, "
+                f"tin {old_number} ({old_title[:60]!r}). Chỉ giữ nếu tin chỉ nói phần cập nhật mới.",
+                file=sys.stderr,
+            )
 
 
 def check_summary(date: str) -> None:
@@ -303,6 +349,17 @@ def cmd_summary(date: str) -> None:
         print(line)
 
 
+def cmd_history(date: str) -> None:
+    """In nguyên văn các bản tin cũ cần đối chiếu (mới nhất trước)."""
+    issues = previous_issues(date)
+    if not issues:
+        print(f"(không có bản tin nào có tin trước {date})")
+    for path in issues:
+        print(f"===== {path.relative_to(ROOT).as_posix()} =====")
+        print(path.read_text(encoding="utf-8").rstrip())
+        print()
+
+
 def fetch(url: str) -> bytes | None:
     request = urllib.request.Request(url, headers={"User-Agent": "daily-news-verify"})
     try:
@@ -330,7 +387,7 @@ def cmd_verify_live(date: str, base: str, timeout: int) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["validate", "prune", "site", "link", "summary", "verify-live"])
+    parser.add_argument("command", choices=["validate", "prune", "site", "link", "summary", "history", "verify-live"])
     parser.add_argument("date")
     parser.add_argument("--base", default=os.environ.get("PAGES_BASE_URL", ""))
     parser.add_argument("--timeout", type=int, default=420)
@@ -347,6 +404,8 @@ def main() -> None:
         cmd_link(args.date)
     elif args.command == "summary":
         cmd_summary(args.date)
+    elif args.command == "history":
+        cmd_history(args.date)
     else:
         if not args.base:
             fail("thiếu --base hoặc PAGES_BASE_URL")

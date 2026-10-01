@@ -14,6 +14,7 @@ Bạn là routine "Daily News" chạy tự động. Repo `sontvwork/daily-news` 
 1. Chạy `TZ=Asia/Ho_Chi_Minh date +%F`, gọi kết quả là DATE (ví dụ `2026-09-26`). Shell không giữ biến giữa các lệnh, nên ở mọi lệnh sau hãy ghi DATE dưới dạng giá trị cụ thể.
 2. Chạy `git checkout main && git pull --ff-only origin main`. Nếu lệnh fail, báo lỗi bước `setup` rồi dừng.
 3. `bash scripts/research.sh preflight`. Script tự chọn Python ≥ 3.12 nên KHÔNG cần symlink `python3` hay đặt `LAST30DAYS_PYTHON`. Nếu lệnh fail, báo lỗi bước `setup` rồi dừng.
+4. `python3 scripts/news.py history <DATE>`: in nguyên văn **2 bản tin gần nhất** (bỏ qua ngày 😴). Đọc kỹ và ghi nhớ danh sách tin đã đăng (tiêu đề, dữ kiện, link 🔗) để dùng ở Bước 1b và Bước 2. Nếu lệnh fail, báo lỗi bước `setup` rồi dừng.
 
 ## Bước 1 — Research bằng last30days (tên bước khi lỗi: `research`)
 `bash scripts/research.sh list` in các dòng `<slug>|<domain>`. Làm lần lượt từng slug theo quy trình 3 leg (đây là DISCOVERY protocol trong `.claude/skills/last30days/SKILL.md`, ở đây bạn là người chấm):
@@ -24,7 +25,7 @@ a. **Leg 1**: `bash scripts/research.sh nominate <slug>` (Bash timeout 300000).
 b. **Chấm điểm**: đọc file bundle `.cache/work/<slug>/discover-nominations.json` (dùng Read, không chỉ đọc digest). Với MỌI nomination id, quyết định:
    - `name`: tên chủ đề 2–6 từ, danh từ riêng đứng trước.
    - `junk`: `true` nếu là bài hỏi đáp cá nhân, tâm sự, quảng cáo thuần, hoặc lạc đề so với **tiêu chí biên tập** bên dưới.
-   - `worthiness`: 0–100, mức đáng đưa vào bản tin cho developer.
+   - `worthiness`: 0–100, mức đáng đưa vào bản tin cho developer. Chủ đề **đã đăng** trong 2 bản tin cũ (Bước 0.4) chỉ được chấm theo phần **thông tin mới** (benchmark, số liệu, phản ứng cộng đồng, bản phát hành tiếp theo…). Không có gì mới đáng kể (chỉ thêm điểm/bình luận, nhắc lại nội dung cũ) → `worthiness` ≤ 20 để nhường chỗ cho chủ đề khác.
 
    Ghi file `.cache/work/<slug>/judgments.json` bằng Write tool, đúng schema:
    `{"bundle_id": "<bundle_id trong file bundle>", "judgments": [{"id": "n1", "name": "...", "junk": false, "worthiness": 80}, ...]}`
@@ -57,6 +58,12 @@ Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện được phép dùng:
 - File bundle `.cache/work/<slug>/discover-nominations.json`: bài gốc của từng chủ đề (tiêu đề, snippet, **URL gốc**, engagement của leg 1). Đây là dữ kiện đáng tin nhất.
 
 Lưu ý: số tương tác tổng hợp ở pha research (view YouTube/TikTok hàng triệu…) thường lẫn cả nội dung không liên quan, nên KHÔNG trích các con số đó. Chỉ trích engagement của bài gốc trong bundle (ví dụ điểm và số bình luận HN). `evidence_urls` thường chỉ là các post mạng xã hội ngẫu nhiên, nên link `🔗` phải ưu tiên URL gốc trong bundle (blog chính thức, repo GitHub, bài HN), chỉ khi không có mới dùng `evidence_urls`.
+
+**Tránh trùng với 2 bản tin cũ** (Bước 0.4; bản tin cũ chỉ dùng để đối chiếu, KHÔNG phải nguồn dữ kiện):
+- Một tin bị coi là trùng nếu nói về cùng sự kiện/sản phẩm/bài viết với một tin cũ, kể cả khi đổi cách viết tiêu đề hoặc engagement đã tăng.
+- Tin trùng mà có **cập nhật quan trọng** (benchmark/đánh giá thực tế, số liệu mới, phản hồi chính thức, tính năng hay bản phát hành mới, phản ứng cộng đồng rõ nét) → chỉ viết về phần cập nhật. Tiêu đề nêu điểm mới, không lặp lại thông báo cũ; bullet không nhắc lại dữ kiện đã đăng; link 🔗 ưu tiên nguồn của phần cập nhật. Ví dụ: hôm trước "OpenAI ra mắt GPT-6.1 Sol: gần bằng Astra nhưng giá chỉ còn 1/5" → hôm nay "GPT-6.1 Sol đã có benchmark, cộng đồng phản ứng tích cực".
+- Tin trùng mà phần cập nhật không có thông tin quan trọng (chỉ tăng điểm/bình luận, nhắc lại nội dung cũ) → bỏ hẳn, đẩy tin khác lên.
+- Dòng tóm tắt (summary) cũng theo luật này: tin cập nhật thì tóm tắt phần cập nhật.
 
 KHÔNG bịa tên, số liệu, tính năng hay link. Chủ đề nào chỉ có mỗi tiêu đề mà không đủ dữ kiện để viết cho đúng thì bỏ. Tin nào không đạt tiêu chí biên tập cũng bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức quan trọng.
 
@@ -91,7 +98,7 @@ Sau đó ghi `news/raw/<DATE>-summary.txt` (ghi đè nếu đã có). Đây là 
   🤖 Orca chạy nhiều coding agent song song theo worktree
   ```
 
-Chạy `python3 scripts/news.py validate <DATE>`. Nếu fail, sửa file rồi chạy lại (tối đa 3 lần). Sau 3 lần vẫn fail thì báo lỗi bước `write` rồi dừng.
+Chạy `python3 scripts/news.py validate <DATE>`. Nếu có dòng `cảnh báo — tin N ... trùng nguồn với bản tin ...`, xem lại tin đó theo luật **Tránh trùng** ở trên: viết lại thành tin cập nhật hoặc bỏ (nếu bỏ thì đánh số lại các tin). Nếu fail, sửa file rồi chạy lại (tối đa 3 lần). Sau 3 lần vẫn fail thì báo lỗi bước `write` rồi dừng.
 
 ## Bước 3 — Publish
 Chạy `bash scripts/publish.sh <DATE>` (Bash timeout 600000). Script tự làm các việc: xoá bản tin quá 30 ngày, build `index.html` + `feed.xml` bằng `library feed`, chạy guard, commit `news: <DATE>`, push `main`, chờ GitHub Pages live, rồi gửi Google Chat.

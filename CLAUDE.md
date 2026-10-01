@@ -47,6 +47,7 @@ Repo `sontvwork/daily-news` (public) chỉ làm một việc: xuất bản bản
 | URL site | `PAGES_BASE_URL` trong `config/news.env`, cùng các link trong README và ROUTINE_PROMPT |
 | Số ngày lưu trữ | `RETENTION_DAYS` trong `config/news.env` (hằng số, news.py tự parse). Mẫu file được xoá: `DATED_FILES` trong news.py **và** `DATED_RES` trong guard.sh — sửa cả hai |
 | Tiêu chí biên tập, cách chấm, format bản tin | [ROUTINE_PROMPT.md](ROUTINE_PROMPT.md) (Bước 1–2). Sửa xong phải **dán lại vào routine**, vì routine giữ bản copy riêng |
+| Chống trùng tin với bản tin cũ | Luật biên tập: ROUTINE_PROMPT Bước 0.4, 1b, 2 (mục "Tránh trùng"). Số bản tin đối chiếu: `PREVIOUS_ISSUES` trong news.py (`news.py history`, cảnh báo trùng link 🔗 trong `validate`) |
 | Luật kiểm tra format | `cmd_validate` trong [news.py](scripts/news.py). Giữ khớp với ROUTINE_PROMPT Bước 2 và `parse_issue` trong site_render.py |
 | Màu, font, spacing, light/dark | [theme/style.css](theme/style.css) (biến trong `:root` và khối `prefers-color-scheme: dark`) |
 | Bố cục trang chủ | [theme/index.html](theme/index.html), placeholder: `$stats $issue_cards $updated`. Mỗi bản tin (ngày) là một card |
@@ -63,6 +64,7 @@ Repo `sontvwork/daily-news` (public) chỉ làm một việc: xuất bản bản
 ## Lệnh hay dùng
 ```bash
 DATE=$(TZ=Asia/Ho_Chi_Minh date +%F)
+python3 scripts/news.py history "$DATE"       # 2 bản tin có tin gần nhất trước DATE (routine đọc để tránh trùng)
 python3 scripts/news.py site "$DATE"          # build lại feed + mọi trang (tất định: chạy lại không sinh diff)
 open news/index.html                           # xem thử local
 bash scripts/publish.sh "$DATE" --no-push      # validate + build + guard, tin nhắn ở chế độ dry-run

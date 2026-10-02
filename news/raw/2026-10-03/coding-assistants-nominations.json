@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "627071ccd10f63ce",
+  "generated_at": "2026-10-02T23:50:58.186564Z",
+  "from_date": "2026-10-01",
+  "to_date": "2026-10-02",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-02T23:50:58.183997Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-02T23:50:58.184009Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-10-02T23:50:57.357438Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-02T23:50:58.183668Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Harvard physicist spent 3 months",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 181
+        }
+      },
+      "nomination": {
+        "name": "Harvard physicist spent 3 months",
+        "seed_score": 1890.0,
+        "summary": "A Harvard physicist spent 3 months doing research with Claude Fable 5: it reproduced weeks of work in 20 minutes, completed 15 never-before-solved physics calculations, and contributed to 36 papers across 18 fields",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R10",
+            "source": "reddit",
+            "title": "A Harvard physicist spent 3 months doing research with Claude Fable 5: it reproduced weeks of work in 20 minutes, completed 15 never-before-solved physics calculations, and contributed to 36 papers across 18 fields",
+            "body": "A Harvard physicist spent 3 months doing research with Claude Fable 5: it reproduced weeks of work in 20 minutes, completed 15 never-before-solved physics calculations, and contributed to 36 papers across 18 fields",
+            "url": "https://www.reddit.com/r/singularity/comments/1wvfbua/a_harvard_physicist_spent_3_months_doing_research/",
+            "container": "singularity",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1079,
+              "num_comments": 181
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "A Harvard physicist spent 3 months doing research with Claude Fable 5: it reproduced weeks of work in 20 minutes, completed 15 never-before-solved physics calculations, and contributed to 36 papers across 18 fields",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "One GLM 5.3 Flash",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 71,
+          "points": 91
+        }
+      },
+      "nomination": {
+        "name": "One GLM 5.3 Flash",
+        "seed_score": 243.0,
+        "summary": "One month coding with GLM 5.3 Flash",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49934620",
+            "source": "hackernews",
+            "title": "One month coding with GLM 5.3 Flash",
+            "body": "One month coding with GLM 5.3 Flash",
+            "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
+            "author": "ThibWeb",
+            "container": "Hacker News",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 91,
+              "comments": 71
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about One month coding with GLM 5.3 Flash",
+            "snippet": "One month coding with GLM 5.3 Flash",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49934620",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.33349999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google Gemini 4 Argon Claude 3D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "Google Gemini 4 Argon Claude 3D",
+        "seed_score": 228.0,
+        "summary": "Google\u2019s new Gemini 4 Argon is already hanging with Claude\u2019s best on 3D game generation",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "Google\u2019s new Gemini 4 Argon is already hanging with Claude\u2019s best on 3D game generation",
+            "body": "Google\u2019s new Gemini 4 Argon is already hanging with Claude\u2019s best on 3D game generation",
+            "url": "https://www.reddit.com/r/singularity/comments/1wvxh40/googles_new_gemini_4_argon_is_already_hanging/",
+            "container": "singularity",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 125,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Google\u2019s new Gemini 4 Argon is already hanging with Claude\u2019s best on 3D game generation",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.329
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Week 1 Claude 1,000 995.66 0.8",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Week 1 Claude 1,000 995.66 0.8",
+        "seed_score": 42.0,
+        "summary": "Week 1: Claude's $1,000 paper portfolio is at $995.66, 0.8 points behind the S&P 500",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "Week 1: Claude's $1,000 paper portfolio is at $995.66, 0.8 points behind the S&P 500",
+            "body": "Week 1: Claude's $1,000 paper portfolio is at $995.66, 0.8 points behind the S&P 500",
+            "url": "https://www.reddit.com/r/singularity/comments/1ww5jo8/week_1_claudes_1000_paper_portfolio_is_at_99566/",
+            "container": "singularity",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Week 1: Claude's $1,000 paper portfolio is at $995.66, 0.8 points behind the S&P 500",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "ChatGPT Pro 100/month vs Claude Max",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Pro 100/month vs Claude Max",
+        "seed_score": 23.3345,
+        "summary": "ChatGPT Pro ($100/month) vs Claude Max 5x ($100/month) which is better for coding + technical work?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "ChatGPT Pro ($100/month) vs Claude Max 5x ($100/month) which is better for coding + technical work?",
+            "body": "ChatGPT Pro ($100/month) vs Claude Max 5x ($100/month) which is better for coding + technical work?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wve4ny/chatgpt_pro_100month_vs_claude_max_5x_100month/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing",
+            "snippet": "ChatGPT Pro ($100/month) vs Claude Max 5x ($100/month) which is better for coding + technical work?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 10,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14500000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude Max 5x Codex 200/month",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Claude Max 5x Codex 200/month",
+        "seed_score": 1.5,
+        "summary": "Claude Max 5x + Codex: is splitting a $200/month budget worth it?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Claude Max 5x + Codex: is splitting a $200/month budget worth it?",
+            "body": "Claude Max 5x + Codex: is splitting a $200/month budget worth it?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wvrjzf/claude_max_5x_codex_is_splitting_a_200month/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Max 5x + Codex: is splitting a $200/month budget worth it?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "you know those websites where scrolling",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "you know those websites where scrolling",
+        "seed_score": 1.5,
+        "summary": "you know those websites where scrolling moves a camera through a scene, like a film? claude can build one now. you describe the shot, it generates the footage and wires it to your scroll",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "you know those websites where scrolling moves a camera through a scene, like a film? claude can build one now. you describe the shot, it generates the footage and wires it to your scroll",
+            "body": "you know those websites where scrolling moves a camera through a scene, like a film? claude can build one now. you describe the shot, it generates the footage and wires it to your scroll",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wvp855/you_know_those_websites_where_scrolling_moves_a/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "you know those websites where scrolling moves a camera through a scene, like a film? claude can build one now. you describe the shot, it generates the footage and wires it to your scroll",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    }
+  ]
+}

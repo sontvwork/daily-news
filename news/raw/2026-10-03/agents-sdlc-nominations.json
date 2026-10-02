@@ -1,0 +1,796 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "0670d902a5c1d61b",
+  "generated_at": "2026-10-02T23:51:01.451101Z",
+  "from_date": "2026-10-01",
+  "to_date": "2026-10-02",
+  "domain": "AI agents software development testing code review DevOps CI/CD",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-02T23:51:01.435974Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-02T23:51:01.435987Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-02T23:51:00.306712Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 32,
+      "attempted": true,
+      "at": "2026-10-02T23:51:01.435547Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Shimano Bicycle Museum Review",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 71,
+          "points": 281
+        }
+      },
+      "nomination": {
+        "name": "Shimano Bicycle Museum Review",
+        "seed_score": 528.0,
+        "summary": "Shimano Bicycle Museum Review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49930047",
+            "source": "hackernews",
+            "title": "Shimano Bicycle Museum Review",
+            "body": "Shimano Bicycle Museum Review",
+            "url": "https://inrng.com/2026/10/shimano-bicycle-museum/",
+            "author": "pietroppeter",
+            "container": "Hacker News",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 281,
+              "comments": 71
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Shimano Bicycle Museum Review",
+            "snippet": "Shimano Bicycle Museum Review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49930047",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35550000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "death of web development education",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 184,
+          "points": 230
+        }
+      },
+      "nomination": {
+        "name": "death of web development education",
+        "seed_score": 439.1133,
+        "summary": "The death of web development education",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49927100",
+            "source": "hackernews",
+            "title": "The death of web development education",
+            "body": "The death of web development education",
+            "url": "https://molily.de/web-dev-education/",
+            "author": "ibobev",
+            "container": "Hacker News",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 230,
+              "comments": 184
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about The death of web development education",
+            "snippet": "The death of web development education",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49927100",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "AI AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "AI AI",
+        "seed_score": 87.0,
+        "summary": "The hardest part of building AI agents has nothing to do with AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "The hardest part of building AI agents has nothing to do with AI",
+            "body": "The hardest part of building AI agents has nothing to do with AI",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvofgj/the_hardest_part_of_building_ai_agents_has/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 37,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing",
+            "snippet": "The hardest part of building AI agents has nothing to do with AI",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.533
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Google",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Google",
+        "seed_score": 79.5,
+        "summary": "Google has open sourced their internal agent orchestrator.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Google has open sourced their internal agent orchestrator.",
+            "body": "Google has open sourced their internal agent orchestrator.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvzaep/google_has_open_sourced_their_internal_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 40,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Google has open sourced their internal agent orchestrator.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.319
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anatomy Lean",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 6,
+          "points": 68
+        }
+      },
+      "nomination": {
+        "name": "Anatomy Lean",
+        "seed_score": 78.4889,
+        "summary": "Anatomy of a Lean proof for software engineers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49925602",
+            "source": "hackernews",
+            "title": "Anatomy of a Lean proof for software engineers",
+            "body": "Anatomy of a Lean proof for software engineers",
+            "url": "https://agostbiro.net/posts/2026-10-anatomy-of-a-lean-proof/",
+            "author": "abiro",
+            "container": "Hacker News",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 68,
+              "comments": 6
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Anatomy of a Lean proof for software engineers",
+            "snippet": "Anatomy of a Lean proof for software engineers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49925602",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07700000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "you guys running yours from your",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "you guys running yours from your",
+        "seed_score": 76.5,
+        "summary": "How are you guys running yours from your phone? All my agent stuff only works when I'm at my laptop",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "How are you guys running yours from your phone? All my agent stuff only works when I'm at my laptop",
+            "body": "How are you guys running yours from your phone? All my agent stuff only works when I'm at my laptop",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvjqdk/how_are_you_guys_running_yours_from_your_phone/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are you guys running yours from your phone? All my agent stuff only works when I'm at my laptop",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 88,
+            "source_quality": 0.6,
+            "local_rank_score": 0.313
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Letting",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "Letting",
+        "seed_score": 49.851,
+        "summary": "As you add more tools to an agent, it starts calling the wrong ones. Letting the model write code to call them is the fix.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "As you add more tools to an agent, it starts calling the wrong ones. Letting the model write code to call them is the fix.",
+            "body": "As you add more tools to an agent, it starts calling the wrong ones. Letting the model write code to call them is the fix.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wv0rpo/as_you_add_more_tools_to_an_agent_it_starts/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "As you add more tools to an agent, it starts calling the wrong ones. Letting the model write code to call them is the fix.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 10,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "consent line on our voice agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "consent line on our voice agent",
+        "seed_score": 47.7297,
+        "summary": "The consent line on our voice agent gets skipped whenever callers speak early",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "The consent line on our voice agent gets skipped whenever callers speak early",
+            "body": "The consent line on our voice agent gets skipped whenever callers speak early",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wv5wj6/the_consent_line_on_our_voice_agent_gets_skipped/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 30,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "The consent line on our voice agent gets skipped whenever callers speak early",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 90,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11500000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "my agent told our sales team",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "my agent told our sales team",
+        "seed_score": 45.6084,
+        "summary": "my agent told our sales team a company was \"hiring aggressively\". they had laid off half their staff in july",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "my agent told our sales team a company was \"hiring aggressively\". they had laid off half their staff in july",
+            "body": "my agent told our sales team a company was \"hiring aggressively\". they had laid off half their staff in july",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvcffe/my_agent_told_our_sales_team_a_company_was_hiring/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "my agent told our sales team a company was \"hiring aggressively\". they had laid off half their staff in july",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11200000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 45.0,
+        "summary": "I let a Claude Code agent run growth for my side project for a week, behind a one-word approval gate. What worked, and what I had to block",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "I let a Claude Code agent run growth for my side project for a week, behind a one-word approval gate. What worked, and what I had to block",
+            "body": "I let a Claude Code agent run growth for my side project for a week, behind a one-word approval gate. What worked, and what I had to block",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvsp9y/i_let_a_claude_code_agent_run_growth_for_my_side/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "I let a Claude Code agent run growth for my side project for a week, behind a one-word approval gate. What worked, and what I had to block",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3195
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI Codex Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "AI Codex Claude Code",
+        "seed_score": 37.1231,
+        "summary": "What AI products have a subscription price similar to Codex or Claude Code but offer better value?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "What AI products have a subscription price similar to Codex or Claude Code but offer better value?",
+            "body": "What AI products have a subscription price similar to Codex or Claude Code but offer better value?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wuyayb/what_ai_products_have_a_subscription_price/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing",
+            "snippet": "What AI products have a subscription price similar to Codex or Claude Code but offer better value?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 10,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.276
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Multi-agent system burns 4-5 LLM Groq",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Multi-agent system burns 4-5 LLM Groq",
+        "seed_score": 30.0,
+        "summary": "Multi-agent system burns 4-5 LLM calls per task and I keep hitting Groq's free-tier limit. How do people handle this?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Multi-agent system burns 4-5 LLM calls per task and I keep hitting Groq's free-tier limit. How do people handle this?",
+            "body": "Multi-agent system burns 4-5 LLM calls per task and I keep hitting Groq's free-tier limit. How do people handle this?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvy6b7/multiagent_system_burns_45_llm_calls_per_task_and/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Multi-agent system burns 4-5 LLM calls per task and I keep hitting Groq's free-tier limit. How do people handle this?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "14 photo-to-Blender",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "14 photo-to-Blender",
+        "seed_score": 27.0,
+        "summary": "Same agent loop, 14 models, hard caps: what I learned building a photo-to-Blender agent",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Same agent loop, 14 models, hard caps: what I learned building a photo-to-Blender agent",
+            "body": "Same agent loop, 14 models, hard caps: what I learned building a photo-to-Blender agent",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvqi05/same_agent_loop_14_models_hard_caps_what_i/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Same agent loop, 14 models, hard caps: what I learned building a photo-to-Blender agent",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 27.0,
+        "summary": "Anyone running AI agents in prod, how are you handling permissions?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Anyone running AI agents in prod, how are you handling permissions?",
+            "body": "Anyone running AI agents in prod, how are you handling permissions?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1ww1xxo/anyone_running_ai_agents_in_prod_how_are_you/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anyone running AI agents in prod, how are you handling permissions?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4765
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Our agent finished the task but",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Our agent finished the task but",
+        "seed_score": 27.0,
+        "summary": "Our agent finished the task, but the caller never got an answer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "Our agent finished the task, but the caller never got an answer",
+            "body": "Our agent finished the task, but the caller never got an answer",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvutnm/our_agent_finished_the_task_but_the_caller_never/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Our agent finished the task, but the caller never got an answer",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.272
+          }
+        ]
+      }
+    }
+  ]
+}

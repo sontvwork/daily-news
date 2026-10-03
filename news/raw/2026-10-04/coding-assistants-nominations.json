@@ -1,0 +1,679 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "cb7e99e44e962fac",
+  "generated_at": "2026-10-03T23:50:32.430536Z",
+  "from_date": "2026-10-02",
+  "to_date": "2026-10-03",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-03T23:50:32.426688Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-03T23:50:32.426701Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-03T23:50:31.102709Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 11,
+      "attempted": true,
+      "at": "2026-10-03T23:50:32.426305Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Harvard physicist spent 3 months",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 183
+        }
+      },
+      "nomination": {
+        "name": "Harvard physicist spent 3 months",
+        "seed_score": 1406.4354,
+        "summary": "A Harvard physicist spent 3 months doing research with Claude Fable 5: it reproduced weeks of work in 20 minutes, completed 15 never-before-solved physics calculations, and contributed to 36 papers across 18 fields",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "A Harvard physicist spent 3 months doing research with Claude Fable 5: it reproduced weeks of work in 20 minutes, completed 15 never-before-solved physics calculations, and contributed to 36 papers across 18 fields",
+            "body": "A Harvard physicist spent 3 months doing research with Claude Fable 5: it reproduced weeks of work in 20 minutes, completed 15 never-before-solved physics calculations, and contributed to 36 papers across 18 fields",
+            "url": "https://www.reddit.com/r/singularity/comments/1wvfbua/a_harvard_physicist_spent_3_months_doing_research/",
+            "container": "singularity",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1143,
+              "num_comments": 183
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "A Harvard physicist spent 3 months doing research with Claude Fable 5: it reproduced weeks of work in 20 minutes, completed 15 never-before-solved physics calculations, and contributed to 36 papers across 18 fields",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "One GLM 5.3 Flash",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 177,
+          "points": 220
+        },
+        "reddit": {
+          "num_comments": 50
+        }
+      },
+      "nomination": {
+        "name": "One GLM 5.3 Flash",
+        "seed_score": 589.4694,
+        "summary": "One month coding with GLM 5.3 Flash",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49934620",
+            "source": "hackernews",
+            "title": "One month coding with GLM 5.3 Flash",
+            "body": "One month coding with GLM 5.3 Flash",
+            "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
+            "author": "ThibWeb",
+            "container": "Hacker News",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 220,
+              "comments": 177
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about One month coding with GLM 5.3 Flash",
+            "snippet": "One month coding with GLM 5.3 Flash",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49934620",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1835
+          },
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "Two local Qwen ( 3.8 27b unsloth Q6 and Qwen flash next strata coder ) models vs Claude Opus 4.6 on the same 3 coding tasks. One of them tied it. Not here to start a fight, just sharing numbers",
+            "body": "Two local Qwen ( 3.8 27b unsloth Q6 and Qwen flash next strata coder ) models vs Claude Opus 4.6 on the same 3 coding tasks. One of them tied it. Not here to start a fight, just sharing numbers",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwrgx1/two_local_qwen_38_27b_unsloth_q6_and_qwen_flash/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 50
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing",
+            "snippet": "Two local Qwen ( 3.8 27b unsloth Q6 and Qwen flash next strata coder ) models vs Claude Opus 4.6 on the same 3 coding tasks. One of them tied it. Not here to start a fight, just sharing numbers",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34950000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Getting Opus 5.5 Claude Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 95,
+          "points": 142
+        }
+      },
+      "nomination": {
+        "name": "Getting Opus 5.5 Claude Claude Code",
+        "seed_score": 355.5,
+        "summary": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49946567",
+            "source": "hackernews",
+            "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "body": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+            "author": "saikatsg",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 142,
+              "comments": 95
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "snippet": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49946567",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3865
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Pi Run",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 27,
+          "points": 69
+        }
+      },
+      "nomination": {
+        "name": "Pi Run",
+        "seed_score": 101.8234,
+        "summary": "Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on your own server",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49937304",
+            "source": "hackernews",
+            "title": "Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on your own server",
+            "body": "Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on your own server",
+            "url": "https://pipod.dev/",
+            "author": "edverma2",
+            "container": "Hacker News",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 69,
+              "comments": 27
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on y",
+            "snippet": "Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on your own server",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49937304",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07050000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Any good advice for the young",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "Any good advice for the young",
+        "seed_score": 88.5,
+        "summary": "Any good advice for the young people out there pursuing coding?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "Any good advice for the young people out there pursuing coding?",
+            "body": "Any good advice for the young people out there pursuing coding?",
+            "url": "https://www.reddit.com/r/singularity/comments/1wwp5aw/any_good_advice_for_the_young_people_out_there/",
+            "container": "singularity",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Any good advice for the young people out there pursuing coding?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3105
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "MIT",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "MIT",
+        "seed_score": 69.0,
+        "summary": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+            "body": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wws6o6/i_built_a_code_knowledge_graph_tool_thats/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.292
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Coding agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Coding agents",
+        "seed_score": 21.0,
+        "summary": "Coding agents say \"fixed\" when they mean \"I changed the code\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Coding agents say \"fixed\" when they mean \"I changed the code\"",
+            "body": "Coding agents say \"fixed\" when they mean \"I changed the code\"",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wwjgvu/coding_agents_say_fixed_when_they_mean_i_changed/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Coding agents say \"fixed\" when they mean \"I changed the code\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.324
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Claude ChatGPT working together",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Claude ChatGPT working together",
+        "seed_score": 18.0,
+        "summary": "Claude + ChatGPT working together",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Claude + ChatGPT working together",
+            "body": "Claude + ChatGPT working together",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wwitrc/claude_chatgpt_working_together/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude + ChatGPT working together",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 18,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30800000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude Max 5x Codex 200/month",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "Claude Max 5x Codex 200/month",
+        "seed_score": 16.9706,
+        "summary": "Claude Max 5x + Codex: is splitting a $200/month budget worth it?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Claude Max 5x + Codex: is splitting a $200/month budget worth it?",
+            "body": "Claude Max 5x + Codex: is splitting a $200/month budget worth it?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wvrjzf/claude_max_5x_codex_is_splitting_a_200month/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Max 5x + Codex: is splitting a $200/month budget worth it?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.09150000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "What the hardest part of debugging",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "What the hardest part of debugging",
+        "seed_score": 4.5,
+        "summary": "What the hardest part of debugging when ai generated more code for you",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "What the hardest part of debugging when ai generated more code for you",
+            "body": "What the hardest part of debugging when ai generated more code for you",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wwfhq6/what_the_hardest_part_of_debugging_when_ai/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "What the hardest part of debugging when ai generated more code for you",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "ChatGPT AI Coding Tools Helping",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT AI Coding Tools Helping",
+        "seed_score": 3.182,
+        "summary": "ChatGPT and AI Coding Tools: Are They Helping Us Build Projects Faster or Just Creating More Bugs?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "ChatGPT and AI Coding Tools: Are They Helping Us Build Projects Faster or Just Creating More Bugs?",
+            "body": "ChatGPT and AI Coding Tools: Are They Helping Us Build Projects Faster or Just Creating More Bugs?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1ww65es/chatgpt_and_ai_coding_tools_are_they_helping_us/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "Reddit listing",
+            "snippet": "ChatGPT and AI Coding Tools: Are They Helping Us Build Projects Faster or Just Creating More Bugs?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 10,
+            "engagement_score": 1,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2145
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "you know those websites where scrolling",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "you know those websites where scrolling",
+        "seed_score": 3.182,
+        "summary": "you know those websites where scrolling moves a camera through a scene, like a film? claude can build one now. you describe the shot, it generates the footage and wires it to your scroll",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "you know those websites where scrolling moves a camera through a scene, like a film? claude can build one now. you describe the shot, it generates the footage and wires it to your scroll",
+            "body": "you know those websites where scrolling moves a camera through a scene, like a film? claude can build one now. you describe the shot, it generates the footage and wires it to your scroll",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wvp855/you_know_those_websites_where_scrolling_moves_a/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "you know those websites where scrolling moves a camera through a scene, like a film? claude can build one now. you describe the shot, it generates the footage and wires it to your scroll",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 1,
+            "source_quality": 0.6,
+            "local_rank_score": 0.065
+          }
+        ]
+      }
+    }
+  ]
+}

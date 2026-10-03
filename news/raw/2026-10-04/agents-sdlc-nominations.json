@@ -1,0 +1,799 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "3a2078102254d2bf",
+  "generated_at": "2026-10-03T23:51:37.425134Z",
+  "from_date": "2026-10-02",
+  "to_date": "2026-10-03",
+  "domain": "AI agents software development testing code review DevOps CI/CD",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-03T23:51:37.418642Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-03T23:51:37.418665Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-03T23:51:36.574932Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 20,
+      "attempted": true,
+      "at": "2026-10-03T23:51:37.418006Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Shimano Bicycle Museum Review",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 80,
+          "points": 302
+        }
+      },
+      "nomination": {
+        "name": "Shimano Bicycle Museum Review",
+        "seed_score": 405.1722,
+        "summary": "Shimano Bicycle Museum Review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49930047",
+            "source": "hackernews",
+            "title": "Shimano Bicycle Museum Review",
+            "body": "Shimano Bicycle Museum Review",
+            "url": "https://inrng.com/2026/10/shimano-bicycle-museum/",
+            "author": "pietroppeter",
+            "container": "Hacker News",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 302,
+              "comments": 80
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Shimano Bicycle Museum Review",
+            "snippet": "Shimano Bicycle Museum Review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49930047",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Getting Opus 5.5 Claude Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 95,
+          "points": 142
+        }
+      },
+      "nomination": {
+        "name": "Getting Opus 5.5 Claude Claude Code",
+        "seed_score": 355.5,
+        "summary": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49946567",
+            "source": "hackernews",
+            "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "body": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+            "author": "saikatsg",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 142,
+              "comments": 95
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "snippet": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49946567",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "Google",
+        "seed_score": 105.0054,
+        "summary": "Google has open sourced their internal agent orchestrator.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "Google has open sourced their internal agent orchestrator.",
+            "body": "Google has open sourced their internal agent orchestrator.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvzaep/google_has_open_sourced_their_internal_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 73,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Google has open sourced their internal agent orchestrator.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Pi Run",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 27,
+          "points": 69
+        }
+      },
+      "nomination": {
+        "name": "Pi Run",
+        "seed_score": 101.8234,
+        "summary": "Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on your own server",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49937304",
+            "source": "hackernews",
+            "title": "Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on your own server",
+            "body": "Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on your own server",
+            "url": "https://pipod.dev/",
+            "author": "edverma2",
+            "container": "Hacker News",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 69,
+              "comments": 27
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on y",
+            "snippet": "Show HN: Pi pod \u2013 Run your pi coding agent in sandboxes on your own server",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49937304",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 39,
+            "source_quality": 0.8,
+            "local_rank_score": 0.064
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "AI AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "AI AI",
+        "seed_score": 78.4889,
+        "summary": "The hardest part of building AI agents has nothing to do with AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "The hardest part of building AI agents has nothing to do with AI",
+            "body": "The hardest part of building AI agents has nothing to do with AI",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wvofgj/the_hardest_part_of_building_ai_agents_has/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 45,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing",
+            "snippet": "The hardest part of building AI agents has nothing to do with AI",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 10,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "MIT",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "MIT",
+        "seed_score": 69.0,
+        "summary": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+            "body": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wws6o6/i_built_a_code_knowledge_graph_tool_thats/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.327
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "What the worst mistake a voice",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 35
+        }
+      },
+      "nomination": {
+        "name": "What the worst mistake a voice",
+        "seed_score": 60.4576,
+        "summary": "What\u2019s the worst mistake a voice agent could make without anyone noticing?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "What\u2019s the worst mistake a voice agent could make without anyone noticing?",
+            "body": "What\u2019s the worst mistake a voice agent could make without anyone noticing?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1ww7tqx/whats_the_worst_mistake_a_voice_agent_could_make/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 35
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "What\u2019s the worst mistake a voice agent could make without anyone noticing?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10700000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 16,
+          "points": 22
+        }
+      },
+      "nomination": {
+        "name": "Agents",
+        "seed_score": 57.0,
+        "summary": "Agents don't need memory, they need documentation",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49945933",
+            "source": "hackernews",
+            "title": "Agents don't need memory, they need documentation",
+            "body": "Agents don't need memory, they need documentation",
+            "url": "https://liao.gg/blog/agents-dont-need-memory",
+            "author": "kmeh",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 22,
+              "comments": 16
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Agents don't need memory, they need documentation",
+            "snippet": "Agents don't need memory, they need documentation",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49945933",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 51.0,
+        "summary": "What do you actually use AI agents for these days, and what still doesn\u2019t work well?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "What do you actually use AI agents for these days, and what still doesn\u2019t work well?",
+            "body": "What do you actually use AI agents for these days, and what still doesn\u2019t work well?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wwl8w5/what_do_you_actually_use_ai_agents_for_these_days/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "Reddit listing",
+            "snippet": "What do you actually use AI agents for these days, and what still doesn\u2019t work well?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4785
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI Something",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "AI Something",
+        "seed_score": 37.5,
+        "summary": "I\u2019m a non-engineer testing long-term AI continuity. Something interesting started happening.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "I\u2019m a non-engineer testing long-term AI continuity. Something interesting started happening.",
+            "body": "I\u2019m a non-engineer testing long-term AI continuity. Something interesting started happening.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wwj7cw/im_a_nonengineer_testing_longterm_ai_continuity/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "Reddit listing",
+            "snippet": "I\u2019m a non-engineer testing long-term AI continuity. Something interesting started happening.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4725
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Anyone else notice coding agents enter",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Anyone else notice coding agents enter",
+        "seed_score": 34.5,
+        "summary": "Anyone else notice coding agents enter an \"apology death spiral\" when given direct fixes?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Anyone else notice coding agents enter an \"apology death spiral\" when given direct fixes?",
+            "body": "Anyone else notice coding agents enter an \"apology death spiral\" when given direct fixes?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wwurum/anyone_else_notice_coding_agents_enter_an_apology/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anyone else notice coding agents enter an \"apology death spiral\" when given direct fixes?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "For people deploying agents on real",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "For people deploying agents on real",
+        "seed_score": 33.0,
+        "summary": "For people deploying agents on real business processes: is the model the bottleneck, or the missing context?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "For people deploying agents on real business processes: is the model the bottleneck, or the missing context?",
+            "body": "For people deploying agents on real business processes: is the model the bottleneck, or the missing context?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wwvbjp/for_people_deploying_agents_on_real_business/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "For people deploying agents on real business processes: is the model the bottleneck, or the missing context?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.312
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "open the door to the agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "open the door to the agents",
+        "seed_score": 33.0,
+        "summary": "open the door to the agents without handing the keys?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "open the door to the agents without handing the keys?",
+            "body": "open the door to the agents without handing the keys?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wwqwz3/open_the_door_to_the_agents_without_handing_the/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "open the door to the agents without handing the keys?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.319
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "run multiple harnesses How do you",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "run multiple harnesses How do you",
+        "seed_score": 30.0,
+        "summary": "Do you run multiple harnesses? How do you decide which agent gets which task?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Do you run multiple harnesses? How do you decide which agent gets which task?",
+            "body": "Do you run multiple harnesses? How do you decide which agent gets which task?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wwv51z/do_you_run_multiple_harnesses_how_do_you_decide/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Do you run multiple harnesses? How do you decide which agent gets which task?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Anybody using massively parallel agents to",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Anybody using massively parallel agents to",
+        "seed_score": 25.5,
+        "summary": "Anybody using massively parallel agents to build different apps at the same time?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Anybody using massively parallel agents to build different apps at the same time?",
+            "body": "Anybody using massively parallel agents to build different apps at the same time?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wwry8u/anybody_using_massively_parallel_agents_to_build/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anybody using massively parallel agents to build different apps at the same time?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.305
+          }
+        ]
+      }
+    }
+  ]
+}

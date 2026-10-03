@@ -63,8 +63,7 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
     ```
     SETUP_COMPLETE=true
     GCHAT_WEBHOOK_URL=<url webhook>
-    SCRAPECREATORS_API_KEY=<key>      # tuỳ chọn: dự phòng Reddit/YouTube khi IP cloud bị chặn, nguồn X
-    XAI_API_KEY=<key>                 # tuỳ chọn: nguồn X/Twitter không cần cookie
+    SCRAPECREATORS_API_KEY=<key>      # tuỳ chọn: dự phòng Reddit/YouTube khi IP cloud bị chặn (không phải nguồn X)
     BRAVE_API_KEY=<key>               # tuỳ chọn: web search
     ```
 
@@ -110,7 +109,7 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
 ## Rủi ro đã biết
 
 - GitHub không dùng được làm nguồn trên cloud: proxy của sandbox chỉ cho gọi `repos/{owner}/{repo}/...` của repo gắn với session, còn `/search/*` luôn trả 403 *"sessions are bound to their configured repositories"*. Proxy thay header Authorization, nên đổi token/PAT hay thêm repo cho GitHub App đều vô ích. Vì vậy `EXCLUDE_SOURCES` mặc định có `github`.
-- Nguồn X trên cloud chỉ bật khi có `XAI_API_KEY` hoặc `SCRAPECREATORS_API_KEY` trong env (xem bước 4). Nếu thiếu, `research.sh preflight` sẽ không liệt kê `x`.
+- Không dùng nguồn X (`EXCLUDE_SOURCES` mặc định có `x`). Trên cloud, X chỉ bật được bằng key trả phí: `XAI_API_KEY` (key API xAI/Grok tạo ở console.x.ai; engine gọi Grok với tool `x_search`, và khi env không có key Google/OpenAI thì Grok còn được dùng để lập kế hoạch truy vấn và xếp hạng lại tin) hoặc `XQUIK_API_KEY` (xquik.com). `SCRAPECREATORS_API_KEY` **không** bật được X. Muốn bật lại: thêm key vào env của cloud environment và bỏ `x` khỏi `EXCLUDE_SOURCES` trong `config/news.env`.
 - IP datacenter của cloud dễ bị Reddit/YouTube chặn. ScrapeCreators đỡ được một phần. Xem `bash scripts/research.sh status <slug> <DATE>`.
 - `--days 1` và ngưỡng tin cậy của engine khiến có ngày ra "không có tin mới nổi bật". Đây là kết quả hợp lệ.
 - Routines đang research preview: UI, giới hạn và quy tắc push có thể thay đổi. Routine tính vào hạn mức run mỗi ngày của tài khoản.

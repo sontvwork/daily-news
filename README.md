@@ -1,6 +1,6 @@
 # Daily News
 
-Bản tin tiếng Việt hằng ngày về **AI ứng dụng trong phát triển phần mềm**. Nội dung tổng hợp từ Reddit, Hacker News, X, YouTube, GitHub và web thông qua skill [last30days](https://github.com/mvanhorn/last30days-skill).
+Bản tin tiếng Việt hằng ngày về **AI ứng dụng trong phát triển phần mềm**. Nội dung tổng hợp từ Reddit, Hacker News, X, YouTube và web thông qua skill [last30days](https://github.com/mvanhorn/last30days-skill).
 
 - 🌐 Trang: https://sontvwork.github.io/daily-news/
 
@@ -109,6 +109,8 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
 
 ## Rủi ro đã biết
 
+- GitHub không dùng được làm nguồn trên cloud: proxy của sandbox chỉ cho gọi `repos/{owner}/{repo}/...` của repo gắn với session, còn `/search/*` luôn trả 403 *"sessions are bound to their configured repositories"*. Proxy thay header Authorization, nên đổi token/PAT hay thêm repo cho GitHub App đều vô ích. Vì vậy `EXCLUDE_SOURCES` mặc định có `github`.
+- Nguồn X trên cloud chỉ bật khi có `XAI_API_KEY` hoặc `SCRAPECREATORS_API_KEY` trong env (xem bước 4). Nếu thiếu, `research.sh preflight` sẽ không liệt kê `x`.
 - IP datacenter của cloud dễ bị Reddit/YouTube chặn. ScrapeCreators đỡ được một phần. Xem `bash scripts/research.sh status <slug> <DATE>`.
 - `--days 1` và ngưỡng tin cậy của engine khiến có ngày ra "không có tin mới nổi bật". Đây là kết quả hợp lệ.
 - Routines đang research preview: UI, giới hạn và quy tắc push có thể thay đổi. Routine tính vào hạn mức run mỗi ngày của tài khoản.

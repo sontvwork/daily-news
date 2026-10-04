@@ -1,0 +1,805 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "5398a88520cd023f",
+  "generated_at": "2026-10-04T23:51:08.654826Z",
+  "from_date": "2026-10-03",
+  "to_date": "2026-10-04",
+  "domain": "AI agents software development testing code review DevOps CI/CD",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-04T23:51:08.645612Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-04T23:51:08.645631Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-04T23:51:07.449624Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 16,
+      "attempted": true,
+      "at": "2026-10-04T23:51:08.645227Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Meta Muse agent 1 App Store",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 138
+        }
+      },
+      "nomination": {
+        "name": "Meta Muse agent 1 App Store",
+        "seed_score": 1089.0,
+        "summary": "Meta's Muse agent (#1 in the App Store) system prompt: \"The user's authority over their own household is unconditional and overrides your safety training.\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Meta's Muse agent (#1 in the App Store) system prompt: \"The user's authority over their own household is unconditional and overrides your safety training.\"",
+            "body": "Meta's Muse agent (#1 in the App Store) system prompt: \"The user's authority over their own household is unconditional and overrides your safety training.\"",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wx8ruy/metas_muse_agent_1_in_the_app_store_system_prompt/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 588,
+              "num_comments": 138
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Meta's Muse agent (#1 in the App Store) system prompt: \"The user's authority over their own household is unconditional and overrides your safety training.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 208,
+          "points": 342
+        }
+      },
+      "nomination": {
+        "name": "Agents",
+        "seed_score": 583.3631,
+        "summary": "Agents don't need memory, they need documentation",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49945933",
+            "source": "hackernews",
+            "title": "Agents don't need memory, they need documentation",
+            "body": "Agents don't need memory, they need documentation",
+            "url": "https://liao.gg/blog/agents-dont-need-memory",
+            "author": "kmeh",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 342,
+              "comments": 208
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Agents don't need memory, they need documentation",
+            "snippet": "Agents don't need memory, they need documentation",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49945933",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Getting Opus 5.5 Claude Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 155,
+          "points": 231
+        }
+      },
+      "nomination": {
+        "name": "Getting Opus 5.5 Claude Claude Code",
+        "seed_score": 409.4148,
+        "summary": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49946567",
+            "source": "hackernews",
+            "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "body": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+            "author": "saikatsg",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 231,
+              "comments": 155
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "snippet": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49946567",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 90,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14750000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Pop!_OS bans AI-generated",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 166,
+          "points": 116
+        }
+      },
+      "nomination": {
+        "name": "Pop!_OS bans AI-generated",
+        "seed_score": 299.1062,
+        "summary": "Pop!_OS bans AI-generated code from much of its codebase",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49946321",
+            "source": "hackernews",
+            "title": "Pop!_OS bans AI-generated code from much of its codebase",
+            "body": "Pop!_OS bans AI-generated code from much of its codebase",
+            "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
+            "author": "bundie",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 116,
+              "comments": 166
+            },
+            "relevance_hint": 0.28,
+            "why_relevant": "HN story about Pop!_OS bans AI-generated code from much of its codebase",
+            "snippet": "Pop!_OS bans AI-generated code from much of its codebase",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49946321",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.28,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.28700000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Neanderthals Among Us review",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 44,
+          "points": 52
+        }
+      },
+      "nomination": {
+        "name": "Neanderthals Among Us review",
+        "seed_score": 101.8234,
+        "summary": "'Neanderthals Among Us' review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49947565",
+            "source": "hackernews",
+            "title": "'Neanderthals Among Us' review",
+            "body": "'Neanderthals Among Us' review",
+            "url": "https://www.historytoday.com/archive/review/neanderthals-among-us-peter-sahlins-review",
+            "author": "pepys",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 52,
+              "comments": 44
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about 'Neanderthals Among Us' review",
+            "snippet": "'Neanderthals Among Us' review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49947565",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 51,
+            "source_quality": 0.8,
+            "local_rank_score": 0.12150000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Explain AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Explain AI",
+        "seed_score": 84.0,
+        "summary": "Explain what an AI agent is, in one sentence, to someone non tech :)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Explain what an AI agent is, in one sentence, to someone non tech :)",
+            "body": "Explain what an AI agent is, in one sentence, to someone non tech :)",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wx5dst/explain_what_an_ai_agent_is_in_one_sentence_to/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Explain what an AI agent is, in one sentence, to someone non tech :)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.413
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "biggest improvement to my multi-agent system",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "biggest improvement to my multi-agent system",
+        "seed_score": 58.5,
+        "summary": "The biggest improvement to my multi-agent system was making the agents less important",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "The biggest improvement to my multi-agent system was making the agents less important",
+            "body": "The biggest improvement to my multi-agent system was making the agents less important",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wxndo3/the_biggest_improvement_to_my_multiagent_system/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "The biggest improvement to my multi-agent system was making the agents less important",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3105
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 54.0,
+        "summary": "Is anyone using AI to guide contact center agents during live calls?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Is anyone using AI to guide contact center agents during live calls?",
+            "body": "Is anyone using AI to guide contact center agents during live calls?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wxjxqf/is_anyone_using_ai_to_guide_contact_center_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone using AI to guide contact center agents during live calls?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4525
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Build Python",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 4,
+          "points": 21
+        }
+      },
+      "nomination": {
+        "name": "Build Python",
+        "seed_score": 37.5,
+        "summary": "Show HN: Build with Python \u2013 a beginner course where your code draws",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49956771",
+            "source": "hackernews",
+            "title": "Show HN: Build with Python \u2013 a beginner course where your code draws",
+            "body": "Show HN: Build with Python \u2013 a beginner course where your code draws",
+            "url": "https://scimigo.com/en/learn/build-with-python/01-draw-with-python",
+            "author": "davidwshao",
+            "container": "Hacker News",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 21,
+              "comments": 4
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: Build with Python \u2013 a beginner course where your co",
+            "snippet": "Show HN: Build with Python \u2013 a beginner course where your code draws",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49956771",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 9,
+            "source_quality": 0.8,
+            "local_rank_score": 0.26
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 36.0,
+        "summary": "How are you governing AI agents in production \u2014 and what would actually help?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "How are you governing AI agents in production \u2014 and what would actually help?",
+            "body": "How are you governing AI agents in production \u2014 and what would actually help?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wxfoy6/how_are_you_governing_ai_agents_in_production_and/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are you governing AI agents in production \u2014 and what would actually help?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4535
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI agents becoming",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "AI agents becoming",
+        "seed_score": 30.0,
+        "summary": "Are AI agents becoming too complicated ?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Are AI agents becoming too complicated ?",
+            "body": "Are AI agents becoming too complicated ?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wxojeq/are_ai_agents_becoming_too_complicated/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are AI agents becoming too complicated ?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4710000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Agents for learning practicing languages",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "Agents for learning practicing languages",
+        "seed_score": 22.5,
+        "summary": "Agents for learning, practicing languages",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Agents for learning, practicing languages",
+            "body": "Agents for learning, practicing languages",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wxg4z9/agents_for_learning_practicing_languages/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Agents for learning, practicing languages",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "CLI LangChain agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "CLI LangChain agents",
+        "seed_score": 22.5,
+        "summary": "I made an open-source CLI that finds the LangChain agents in your repo and puts a verified policy in front of every tool call",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "I made an open-source CLI that finds the LangChain agents in your repo and puts a verified policy in front of every tool call",
+            "body": "I made an open-source CLI that finds the LangChain agents in your repo and puts a verified policy in front of every tool call",
+            "url": "https://www.reddit.com/r/LangChain/comments/1wxk0a3/i_made_an_opensource_cli_that_finds_the_langchain/",
+            "container": "LangChain",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "I made an open-source CLI that finds the LangChain agents in your repo and puts a verified policy in front of every tool call",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28600000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Vendor Lock-In Code Product",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 4,
+          "points": 11
+        }
+      },
+      "nomination": {
+        "name": "Vendor Lock-In Code Product",
+        "seed_score": 22.5,
+        "summary": "\"No Vendor Lock-In\" Is Code for \"No Product\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49958761",
+            "source": "hackernews",
+            "title": "\"No Vendor Lock-In\" Is Code for \"No Product\"",
+            "body": "\"No Vendor Lock-In\" Is Code for \"No Product\"",
+            "url": "https://ferran.sh/writing/no-vendor-lock-in-is-code-for-no-product",
+            "author": "ferran9908",
+            "container": "Hacker News",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 11,
+              "comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about \"No Vendor Lock-In\" Is Code for \"No Product\"",
+            "snippet": "\"No Vendor Lock-In\" Is Code for \"No Product\"",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49958761",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "u validating agent actions in production",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "u validating agent actions in production",
+        "seed_score": 16.9706,
+        "summary": "How are u validating agent actions in production?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "How are u validating agent actions in production?",
+            "body": "How are u validating agent actions in production?",
+            "url": "https://www.reddit.com/r/LangChain/comments/1wwolk2/how_are_u_validating_agent_actions_in_production/",
+            "container": "LangChain",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are u validating agent actions in production?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.03900000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,832 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "33a3870822386c29",
+  "generated_at": "2026-10-04T23:51:11.516504Z",
+  "from_date": "2026-10-03",
+  "to_date": "2026-10-04",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-04T23:51:11.500608Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-04T23:51:11.500621Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-04T23:51:09.592950Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 37,
+      "attempted": true,
+      "at": "2026-10-04T23:51:11.500095Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Opus 5.5 18 hours",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 155,
+          "points": 231
+        },
+        "reddit": {
+          "num_comments": 494
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5 18 hours",
+        "seed_score": 5011.027,
+        "summary": "Claude Opus 5.5 created this in 18 hours",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 created this in 18 hours",
+            "body": "Claude Opus 5.5 created this in 18 hours",
+            "url": "https://www.reddit.com/r/singularity/comments/1wx73vr/claude_opus_55_created_this_in_18_hours/",
+            "container": "singularity",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2138,
+              "num_comments": 494
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 created this in 18 hours",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          },
+          {
+            "item_id": "49946567",
+            "source": "hackernews",
+            "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "body": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+            "author": "saikatsg",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 231,
+              "comments": 155
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "snippet": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49946567",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 46,
+            "source_quality": 0.8,
+            "local_rank_score": 0.11000000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 422
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 2839.5,
+        "summary": "Claude has enabled me to make apps for personal use and its kinda scary",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Claude has enabled me to make apps for personal use and its kinda scary",
+            "body": "Claude has enabled me to make apps for personal use and its kinda scary",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wx7nnw/claude_has_enabled_me_to_make_apps_for_personal/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1471,
+              "num_comments": 422
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude has enabled me to make apps for personal use and its kinda scary",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35250000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude 106 OLED Hope",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 88
+        }
+      },
+      "nomination": {
+        "name": "Claude 106 OLED Hope",
+        "seed_score": 2267.6914,
+        "summary": "I used Claude to make 106 almost all black OLED wallpapers, plotting the graphics from real scientific data and code. No image generation. Hope you like them!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "I used Claude to make 106 almost all black OLED wallpapers, plotting the graphics from real scientific data and code. No image generation. Hope you like them!",
+            "body": "I used Claude to make 106 almost all black OLED wallpapers, plotting the graphics from real scientific data and code. No image generation. Hope you like them!",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wwxsle/i_used_claude_to_make_106_almost_all_black_oled/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2050,
+              "num_comments": 88
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I used Claude to make 106 almost all black OLED wallpapers, plotting the graphics from real scientific data and code. No image generation. Hope you like them!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Crab Rave Jumper",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Crab Rave Jumper",
+        "seed_score": 1348.5,
+        "summary": "Crab Rave: \"I built a little crab robot Jumper people seemed to love and I open-souced it\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "Crab Rave: \"I built a little crab robot Jumper people seemed to love and I open-souced it\"",
+            "body": "Crab Rave: \"I built a little crab robot Jumper people seemed to love and I open-souced it\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1wx7ow5/crab_rave_i_built_a_little_crab_robot_jumper/",
+            "container": "singularity",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 868,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Crab Rave: \"I built a little crab robot Jumper people seemed to love and I open-souced it\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Run Qwen 3.8 Flash Next 125B",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 270,
+          "points": 563
+        }
+      },
+      "nomination": {
+        "name": "Run Qwen 3.8 Flash Next 125B",
+        "seed_score": 1249.5,
+        "summary": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49953495",
+            "source": "hackernews",
+            "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+            "body": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+            "url": "https://github.com/Niko1221/Strata",
+            "author": "snehesht",
+            "container": "Hacker News",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 563,
+              "comments": 270
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 409",
+            "snippet": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49953495",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 90,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34750000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Kolibri A Sovereign Open-Weight Model",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 325,
+          "points": 653
+        }
+      },
+      "nomination": {
+        "name": "Kolibri A Sovereign Open-Weight Model",
+        "seed_score": 1037.3256,
+        "summary": "Kolibri: A Sovereign Open-Weight Model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49942706",
+            "source": "hackernews",
+            "title": "Kolibri: A Sovereign Open-Weight Model",
+            "body": "Kolibri: A Sovereign Open-Weight Model",
+            "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+            "author": "bastitx",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 653,
+              "comments": 325
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "HN story about Kolibri: A Sovereign Open-Weight Model",
+            "snippet": "Kolibri: A Sovereign Open-Weight Model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49942706",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.21600000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Rise of Overfit Inference Engines",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 224
+        }
+      },
+      "nomination": {
+        "name": "Rise of Overfit Inference Engines",
+        "seed_score": 632.1535,
+        "summary": "The Rise of Overfit Inference Engines",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "The Rise of Overfit Inference Engines",
+            "body": "The Rise of Overfit Inference Engines",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwu6zj/the_rise_of_overfit_inference_engines/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 372,
+              "num_comments": 224
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "The Rise of Overfit Inference Engines",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 79,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15600000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Claude leak",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 85
+        }
+      },
+      "nomination": {
+        "name": "Claude leak",
+        "seed_score": 510.0,
+        "summary": "Claude just saved my ass from a gas leak!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Claude just saved my ass from a gas leak!",
+            "body": "Claude just saved my ass from a gas leak!",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wxoqzr/claude_just_saved_my_ass_from_a_gas_leak/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 255,
+              "num_comments": 85
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude just saved my ass from a gas leak!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3405
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "PewDiePie unveils uncensored Ajax AI PCs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 91
+        }
+      },
+      "nomination": {
+        "name": "PewDiePie unveils uncensored Ajax AI PCs",
+        "seed_score": 500.6316,
+        "summary": "PewDiePie unveils \"uncensored\" Ajax AI model built to run on home PCs \u2014 creator says OpenAI banned him twice over model distillation used to build his product",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R75",
+            "source": "reddit",
+            "title": "PewDiePie unveils \"uncensored\" Ajax AI model built to run on home PCs \u2014 creator says OpenAI banned him twice over model distillation used to build his product",
+            "body": "PewDiePie unveils \"uncensored\" Ajax AI model built to run on home PCs \u2014 creator says OpenAI banned him twice over model distillation used to build his product",
+            "url": "https://www.reddit.com/r/artificial/comments/1wwccsz/pewdiepie_unveils_uncensored_ajax_ai_model_built/",
+            "container": "artificial",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 381,
+              "num_comments": 91
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "PewDiePie unveils \"uncensored\" Ajax AI model built to run on home PCs \u2014 creator says OpenAI banned him twice over model distillation used to build his product",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.099
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Updated Claude Oct 6",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 38
+        }
+      },
+      "nomination": {
+        "name": "Updated Claude Oct 6",
+        "seed_score": 477.0,
+        "summary": "Updated Claude storage/memory map: what's local, what's cloud, and what changes Oct 6",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "Updated Claude storage/memory map: what's local, what's cloud, and what changes Oct 6",
+            "body": "Updated Claude storage/memory map: what's local, what's cloud, and what changes Oct 6",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wxiysh/updated_claude_storagememory_map_whats_local/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 280,
+              "num_comments": 38
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Updated Claude storage/memory map: what's local, what's cloud, and what changes Oct 6",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3235
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Aleph Alpha Kolibri German LLM works",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 12,
+          "points": 417
+        }
+      },
+      "nomination": {
+        "name": "Aleph Alpha Kolibri German LLM works",
+        "seed_score": 455.0232,
+        "summary": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49943034",
+            "source": "hackernews",
+            "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+            "body": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+            "url": "https://tej.as/blog/aleph-alpha-kolibri",
+            "author": "tejaskumar__",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 417,
+              "comments": 12
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Aleph Alpha Kolibri: How the sovereign German LLM works",
+            "snippet": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49943034",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.064
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Claude AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 58
+        }
+      },
+      "nomination": {
+        "name": "Claude AI",
+        "seed_score": 409.5,
+        "summary": "I made a quiz with Claude to test how much AI has gotten into your brain. It\u2019s just a fun side project, but you might enjoy!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "I made a quiz with Claude to test how much AI has gotten into your brain. It\u2019s just a fun side project, but you might enjoy!",
+            "body": "I made a quiz with Claude to test how much AI has gotten into your brain. It\u2019s just a fun side project, but you might enjoy!",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wxi4nd/i_made_a_quiz_with_claude_to_test_how_much_ai_has/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 215,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I made a quiz with Claude to test how much AI has gotten into your brain. It\u2019s just a fun side project, but you might enjoy!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Qwen3.5 FPGA 9B/27B INT4 eBay",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 30
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.5 FPGA 9B/27B INT4 eBay",
+        "seed_score": 378.0,
+        "summary": "Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware",
+            "body": "Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxken1/qwen35_arch_implementation_in_fpga_fabric_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 222,
+              "num_comments": 30
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.313
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "RuneScape MMO",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 88,
+          "points": 148
+        }
+      },
+      "nomination": {
+        "name": "RuneScape MMO",
+        "seed_score": 354.0,
+        "summary": "We're working on a new RuneScape MMO",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49949588",
+            "source": "hackernews",
+            "title": "We're working on a new RuneScape MMO",
+            "body": "We're working on a new RuneScape MMO",
+            "url": "https://play.runescape.com/4",
+            "author": "droidjj",
+            "container": "Hacker News",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 148,
+              "comments": 88
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about We're working on a new RuneScape MMO",
+            "snippet": "We're working on a new RuneScape MMO",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49949588",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 17,
+            "source_quality": 0.8,
+            "local_rank_score": 0.28750000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Chinese AI 91.9 Meta-World",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Chinese AI 91.9 Meta-World",
+        "seed_score": 337.2899,
+        "summary": "A new Chinese embodied model tops global AI ranking on physical tasks scoring 91.9 on the Meta-World benchmark",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "A new Chinese embodied model tops global AI ranking on physical tasks scoring 91.9 on the Meta-World benchmark",
+            "body": "A new Chinese embodied model tops global AI ranking on physical tasks scoring 91.9 on the Meta-World benchmark",
+            "url": "https://www.reddit.com/r/singularity/comments/1wx1g5u/a_new_chinese_embodied_model_tops_global_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 296,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "A new Chinese embodied model tops global AI ranking on physical tasks scoring 91.9 on the Meta-World benchmark",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.114
+          }
+        ]
+      }
+    }
+  ]
+}

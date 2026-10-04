@@ -1,0 +1,633 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c1b72a7f918981ca",
+  "generated_at": "2026-10-04T23:51:06.548551Z",
+  "from_date": "2026-10-03",
+  "to_date": "2026-10-04",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-04T23:51:06.545301Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-04T23:51:06.545322Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-04T23:51:05.371779Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 9,
+      "attempted": true,
+      "at": "2026-10-04T23:51:06.544969Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Opus 5.5 18 hours",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 155,
+          "points": 231
+        },
+        "reddit": {
+          "num_comments": 494
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5 18 hours",
+        "seed_score": 5011.027,
+        "summary": "Claude Opus 5.5 created this in 18 hours",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 created this in 18 hours",
+            "body": "Claude Opus 5.5 created this in 18 hours",
+            "url": "https://www.reddit.com/r/singularity/comments/1wx73vr/claude_opus_55_created_this_in_18_hours/",
+            "container": "singularity",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2138,
+              "num_comments": 494
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 created this in 18 hours",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38349999999999995
+          },
+          {
+            "item_id": "49946567",
+            "source": "hackernews",
+            "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "body": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+            "author": "saikatsg",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 231,
+              "comments": 155
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "snippet": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49946567",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Pop!_OS bans AI-generated",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 166,
+          "points": 116
+        }
+      },
+      "nomination": {
+        "name": "Pop!_OS bans AI-generated",
+        "seed_score": 299.1062,
+        "summary": "Pop!_OS bans AI-generated code from much of its codebase",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49946321",
+            "source": "hackernews",
+            "title": "Pop!_OS bans AI-generated code from much of its codebase",
+            "body": "Pop!_OS bans AI-generated code from much of its codebase",
+            "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
+            "author": "bundie",
+            "container": "Hacker News",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 116,
+              "comments": 166
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "HN story about Pop!_OS bans AI-generated code from much of its codebase",
+            "snippet": "Pop!_OS bans AI-generated code from much of its codebase",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49946321",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 89,
+            "source_quality": 0.8,
+            "local_rank_score": 0.309
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Build Python",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 4,
+          "points": 21
+        }
+      },
+      "nomination": {
+        "name": "Build Python",
+        "seed_score": 37.5,
+        "summary": "Show HN: Build with Python \u2013 a beginner course where your code draws",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49956771",
+            "source": "hackernews",
+            "title": "Show HN: Build with Python \u2013 a beginner course where your code draws",
+            "body": "Show HN: Build with Python \u2013 a beginner course where your code draws",
+            "url": "https://scimigo.com/en/learn/build-with-python/01-draw-with-python",
+            "author": "davidwshao",
+            "container": "Hacker News",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 21,
+              "comments": 4
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: Build with Python \u2013 a beginner course where your co",
+            "snippet": "Show HN: Build with Python \u2013 a beginner course where your code draws",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49956771",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.8,
+            "local_rank_score": 0.261
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Coding agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Coding agents",
+        "seed_score": 25.4558,
+        "summary": "Coding agents say \"fixed\" when they mean \"I changed the code\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Coding agents say \"fixed\" when they mean \"I changed the code\"",
+            "body": "Coding agents say \"fixed\" when they mean \"I changed the code\"",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wwjgvu/coding_agents_say_fixed_when_they_mean_i_changed/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Coding agents say \"fixed\" when they mean \"I changed the code\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.129
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 22.5,
+        "summary": "I got tired of hunting through AI coding sessions, so I put them on a physical control deck",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "I got tired of hunting through AI coding sessions, so I put them on a physical control deck",
+            "body": "I got tired of hunting through AI coding sessions, so I put them on a physical control deck",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxbjqp/i_got_tired_of_hunting_through_ai_coding_sessions/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "I got tired of hunting through AI coding sessions, so I put them on a physical control deck",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.44300000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Three",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "Three",
+        "seed_score": 22.5,
+        "summary": "Three things I changed today running several coding agents at once",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Three things I changed today running several coding agents at once",
+            "body": "Three things I changed today running several coding agents at once",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxe9b3/three_things_i_changed_today_running_several/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Three things I changed today running several coding agents at once",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28950000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Vendor Lock-In Code Product",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 4,
+          "points": 11
+        }
+      },
+      "nomination": {
+        "name": "Vendor Lock-In Code Product",
+        "seed_score": 22.5,
+        "summary": "\"No Vendor Lock-In\" Is Code for \"No Product\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49958761",
+            "source": "hackernews",
+            "title": "\"No Vendor Lock-In\" Is Code for \"No Product\"",
+            "body": "\"No Vendor Lock-In\" Is Code for \"No Product\"",
+            "url": "https://ferran.sh/writing/no-vendor-lock-in-is-code-for-no-product",
+            "author": "ferran9908",
+            "container": "Hacker News",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 11,
+              "comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about \"No Vendor Lock-In\" Is Code for \"No Product\"",
+            "snippet": "\"No Vendor Lock-In\" Is Code for \"No Product\"",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49958761",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Claude ChatGPT working together",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Claude ChatGPT working together",
+        "seed_score": 18.0312,
+        "summary": "Claude + ChatGPT working together",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Claude + ChatGPT working together",
+            "body": "Claude + ChatGPT working together",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wwitrc/claude_chatgpt_working_together/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude + ChatGPT working together",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.113
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Gemini",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Gemini",
+        "seed_score": 15.0,
+        "summary": "How to optimize Gemini for coding?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "How to optimize Gemini for coding?",
+            "body": "How to optimize Gemini for coding?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxhttn/how_to_optimize_gemini_for_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "How to optimize Gemini for coding?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3115
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI built",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "AI built",
+        "seed_score": 7.5,
+        "summary": "I built a live token optimizer for AI coding sessions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "I built a live token optimizer for AI coding sessions",
+            "body": "I built a live token optimizer for AI coding sessions",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wx48gb/i_built_a_live_token_optimizer_for_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built a live token optimizer for AI coding sessions",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4485
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Sonny-Personal-Assistant",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Sonny-Personal-Assistant",
+        "seed_score": 3.0,
+        "summary": "Sonny-Personal-Assistant",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Sonny-Personal-Assistant",
+            "body": "Sonny-Personal-Assistant",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxqhhu/sonnypersonalassistant/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Sonny-Personal-Assistant",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    }
+  ]
+}

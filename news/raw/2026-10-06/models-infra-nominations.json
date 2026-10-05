@@ -1,0 +1,823 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "8f29a72e3460468c",
+  "generated_at": "2026-10-05T23:51:30.900037Z",
+  "from_date": "2026-10-04",
+  "to_date": "2026-10-05",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-05T23:51:30.873551Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-05T23:51:30.873565Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-05T23:51:29.418778Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 50,
+      "attempted": true,
+      "at": "2026-10-05T23:51:30.873221Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Opus 5.5 18 hours",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 550
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5 18 hours",
+        "seed_score": 3433.357,
+        "summary": "Claude Opus 5.5 created this in 18 hours",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R65",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 created this in 18 hours",
+            "body": "Claude Opus 5.5 created this in 18 hours",
+            "url": "https://www.reddit.com/r/singularity/comments/1wx73vr/claude_opus_55_created_this_in_18_hours/",
+            "container": "singularity",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2687,
+              "num_comments": 550
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 created this in 18 hours",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 500
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 2518.0072,
+        "summary": "Claude has enabled me to make apps for personal use and its kinda scary",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Claude has enabled me to make apps for personal use and its kinda scary",
+            "body": "Claude has enabled me to make apps for personal use and its kinda scary",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wx7nnw/claude_has_enabled_me_to_make_apps_for_personal/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1874,
+              "num_comments": 500
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude has enabled me to make apps for personal use and its kinda scary",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 96,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1535
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "27b GPT 4o",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 275
+        }
+      },
+      "nomination": {
+        "name": "27b GPT 4o",
+        "seed_score": 1750.5,
+        "summary": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+            "body": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyefkt/how_is_it_possible_that_qwen_27b_is_so_good_when/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 892,
+              "num_comments": 275
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37500000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Run Qwen 3.8 Flash Next 125B",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 411,
+          "points": 910
+        }
+      },
+      "nomination": {
+        "name": "Run Qwen 3.8 Flash Next 125B",
+        "seed_score": 1401.1321,
+        "summary": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49953495",
+            "source": "hackernews",
+            "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+            "body": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+            "url": "https://github.com/Niko1221/Strata",
+            "author": "snehesht",
+            "container": "Hacker News",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 910,
+              "comments": 411
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 409",
+            "snippet": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49953495",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Reflection AI Release Open-Weight Model Take",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 72,
+          "points": 270
+        },
+        "reddit": {
+          "num_comments": 95
+        }
+      },
+      "nomination": {
+        "name": "Reflection AI Release Open-Weight Model Take",
+        "seed_score": 1316.175,
+        "summary": "Reflection AI Is About to Release a US Open-Weight Model to Take On DeepSeek and Qwen",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Reflection AI Is About to Release a US Open-Weight Model to Take On DeepSeek and Qwen",
+            "body": "Reflection AI Is About to Release a US Open-Weight Model to Take On DeepSeek and Qwen",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wy0jrc/reflection_ai_is_about_to_release_a_us_openweight/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 326,
+              "num_comments": 95
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "Reflection AI Is About to Release a US Open-Weight Model to Take On DeepSeek and Qwen",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43150000000000005
+          },
+          {
+            "item_id": "49969183",
+            "source": "hackernews",
+            "title": "Beam: Reflection's 501B open-weight model",
+            "body": "Beam: Reflection's 501B open-weight model",
+            "url": "https://reflection.ai/blog/introducing-beam",
+            "author": "Philpax",
+            "container": "Hacker News",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 270,
+              "comments": 72
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about Beam: Reflection's 501B open-weight model",
+            "snippet": "Beam: Reflection's 501B open-weight model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49969183",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude leak",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 221
+        }
+      },
+      "nomination": {
+        "name": "Claude leak",
+        "seed_score": 1247.3364,
+        "summary": "Claude just saved my ass from a gas leak!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Claude just saved my ass from a gas leak!",
+            "body": "Claude just saved my ass from a gas leak!",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wxoqzr/claude_just_saved_my_ass_from_a_gas_leak/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 955,
+              "num_comments": 221
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude just saved my ass from a gas leak!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15550000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Crab Rave Jumper",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "Crab Rave Jumper",
+        "seed_score": 1150.8163,
+        "summary": "Crab Rave: \"I built a little crab robot Jumper people seemed to love and I open-souced it\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R72",
+            "source": "reddit",
+            "title": "Crab Rave: \"I built a little crab robot Jumper people seemed to love and I open-souced it\"",
+            "body": "Crab Rave: \"I built a little crab robot Jumper people seemed to love and I open-souced it\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1wx7ow5/crab_rave_i_built_a_little_crab_robot_jumper/",
+            "container": "singularity",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1049,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Crab Rave: \"I built a little crab robot Jumper people seemed to love and I open-souced it\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "3 10,000\u00d7 GPT-6 Astra 10\u00d7",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 66
+        }
+      },
+      "nomination": {
+        "name": "3 10,000\u00d7 GPT-6 Astra 10\u00d7",
+        "seed_score": 1002.0,
+        "summary": "A researcher spent 3 months making software for designing quantum circuits ~10,000\u00d7 faster. GPT-6 Astra took the already-optimized code and made it another ~10\u00d7 faster overnight",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "A researcher spent 3 months making software for designing quantum circuits ~10,000\u00d7 faster. GPT-6 Astra took the already-optimized code and made it another ~10\u00d7 faster overnight",
+            "body": "A researcher spent 3 months making software for designing quantum circuits ~10,000\u00d7 faster. GPT-6 Astra took the already-optimized code and made it another ~10\u00d7 faster overnight",
+            "url": "https://www.reddit.com/r/singularity/comments/1wxxz1n/a_researcher_spent_3_months_making_software_for/",
+            "container": "singularity",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 602,
+              "num_comments": 66
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "A researcher spent 3 months making software for designing quantum circuits ~10,000\u00d7 faster. GPT-6 Astra took the already-optimized code and made it another ~10\u00d7 faster overnight",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.324
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "DeepMind AI 99\u00d7 90\u00b0C",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "DeepMind AI 99\u00d7 90\u00b0C",
+        "seed_score": 733.5,
+        "summary": "DeepMind\u2019s new AI designed enzymes from scratch, one made a chemical building block found in many medicines 99\u00d7 more often than the competing product, while another broke down a plastic pollutant at 90\u00b0C where natural enzymes failed",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "DeepMind\u2019s new AI designed enzymes from scratch, one made a chemical building block found in many medicines 99\u00d7 more often than the competing product, while another broke down a plastic pollutant at 90\u00b0C where natural enzymes failed",
+            "body": "DeepMind\u2019s new AI designed enzymes from scratch, one made a chemical building block found in many medicines 99\u00d7 more often than the competing product, while another broke down a plastic pollutant at 90\u00b0C where natural enzymes failed",
+            "url": "https://www.reddit.com/r/singularity/comments/1wyft2i/deepminds_new_ai_designed_enzymes_from_scratch/",
+            "container": "singularity",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 457,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "DeepMind\u2019s new AI designed enzymes from scratch, one made a chemical building block found in many medicines 99\u00d7 more often than the competing product, while another broke down a plastic pollutant at 90\u00b0C where natural enzymes failed",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "URL Alibaba",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 167
+        }
+      },
+      "nomination": {
+        "name": "URL Alibaba",
+        "seed_score": 711.0,
+        "summary": "My qwen model hallucinated a signed URL to Alibaba cloud, normal or sketchy?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "My qwen model hallucinated a signed URL to Alibaba cloud, normal or sketchy?",
+            "body": "My qwen model hallucinated a signed URL to Alibaba cloud, normal or sketchy?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxvt41/my_qwen_model_hallucinated_a_signed_url_to/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 307,
+              "num_comments": 167
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "My qwen model hallucinated a signed URL to Alibaba cloud, normal or sketchy?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Chat GPT PC",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 96
+        }
+      },
+      "nomination": {
+        "name": "Chat GPT PC",
+        "seed_score": 645.0,
+        "summary": "Chat GPT fixed my PC after different technicians over the years couldn't or wouldn't",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Chat GPT fixed my PC after different technicians over the years couldn't or wouldn't",
+            "body": "Chat GPT fixed my PC after different technicians over the years couldn't or wouldn't",
+            "url": "https://www.reddit.com/r/singularity/comments/1wy8c0l/chat_gpt_fixed_my_pc_after_different_technicians/",
+            "container": "singularity",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 334,
+              "num_comments": 96
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Chat GPT fixed my PC after different technicians over the years couldn't or wouldn't",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "China AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 193
+        }
+      },
+      "nomination": {
+        "name": "China AI",
+        "seed_score": 560.0286,
+        "summary": "China making AI open source for all their citizens. It looks like they will be the first country to reach the age of abundance and post scarcity.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R64",
+            "source": "reddit",
+            "title": "China making AI open source for all their citizens. It looks like they will be the first country to reach the age of abundance and post scarcity.",
+            "body": "China making AI open source for all their citizens. It looks like they will be the first country to reach the age of abundance and post scarcity.",
+            "url": "https://www.reddit.com/r/singularity/comments/1wxlq3q/china_making_ai_open_source_for_all_their/",
+            "container": "singularity",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 335,
+              "num_comments": 193
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "China making AI open source for all their citizens. It looks like they will be the first country to reach the age of abundance and post scarcity.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "PewDiePie OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 68
+        }
+      },
+      "nomination": {
+        "name": "PewDiePie OpenAI",
+        "seed_score": 552.0,
+        "summary": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy \ud83d\udc80",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy \ud83d\udc80",
+            "body": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy \ud83d\udc80",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wymgu6/pewdiepie_getting_banned_twice_by_openai_while/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 300,
+              "num_comments": 68
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy \ud83d\udc80",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29200000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "German lab Aleph Alpha releases Kolibri",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 76
+        }
+      },
+      "nomination": {
+        "name": "German lab Aleph Alpha releases Kolibri",
+        "seed_score": 478.5,
+        "summary": "German lab Aleph Alpha releases Kolibri: a sovereign open-weight model,78B parameters, 3.46B active. Up to 1M tokens of context.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "German lab Aleph Alpha releases Kolibri: a sovereign open-weight model,78B parameters, 3.46B active. Up to 1M tokens of context.",
+            "body": "German lab Aleph Alpha releases Kolibri: a sovereign open-weight model,78B parameters, 3.46B active. Up to 1M tokens of context.",
+            "url": "https://www.reddit.com/r/singularity/comments/1wy5b5g/german_lab_aleph_alpha_releases_kolibri_a/",
+            "container": "singularity",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 243,
+              "num_comments": 76
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "German lab Aleph Alpha releases Kolibri: a sovereign open-weight model,78B parameters, 3.46B active. Up to 1M tokens of context.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3495
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Qwen3.5 FPGA 9B/27B INT4 eBay",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 40
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.5 FPGA 9B/27B INT4 eBay",
+        "seed_score": 405.1722,
+        "summary": "Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware",
+            "body": "Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxken1/qwen35_arch_implementation_in_fpga_fabric_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 342,
+              "num_comments": 40
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.5 arch implementation in FPGA fabric for 9B/27B INT4 models on relatively cheap eBay mining hardware",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.116
+          }
+        ]
+      }
+    }
+  ]
+}

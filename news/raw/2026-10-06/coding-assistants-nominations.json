@@ -1,0 +1,790 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "46f4d1c4ef36b750",
+  "generated_at": "2026-10-05T23:51:25.986878Z",
+  "from_date": "2026-10-04",
+  "to_date": "2026-10-05",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-05T23:51:25.982528Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-05T23:51:25.982540Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-10-05T23:51:24.651021Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 14,
+      "attempted": true,
+      "at": "2026-10-05T23:51:25.982166Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Opus 5.5 18 hours",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 550
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5 18 hours",
+        "seed_score": 3432.2963,
+        "summary": "Claude Opus 5.5 created this in 18 hours",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 created this in 18 hours",
+            "body": "Claude Opus 5.5 created this in 18 hours",
+            "url": "https://www.reddit.com/r/singularity/comments/1wx73vr/claude_opus_55_created_this_in_18_hours/",
+            "container": "singularity",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2686,
+              "num_comments": 550
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 created this in 18 hours",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "3 10,000\u00d7 GPT-6 Astra 10\u00d7",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 66
+        }
+      },
+      "nomination": {
+        "name": "3 10,000\u00d7 GPT-6 Astra 10\u00d7",
+        "seed_score": 1002.0,
+        "summary": "A researcher spent 3 months making software for designing quantum circuits ~10,000\u00d7 faster. GPT-6 Astra took the already-optimized code and made it another ~10\u00d7 faster overnight",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "A researcher spent 3 months making software for designing quantum circuits ~10,000\u00d7 faster. GPT-6 Astra took the already-optimized code and made it another ~10\u00d7 faster overnight",
+            "body": "A researcher spent 3 months making software for designing quantum circuits ~10,000\u00d7 faster. GPT-6 Astra took the already-optimized code and made it another ~10\u00d7 faster overnight",
+            "url": "https://www.reddit.com/r/singularity/comments/1wxxz1n/a_researcher_spent_3_months_making_software_for/",
+            "container": "singularity",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 602,
+              "num_comments": 66
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "A researcher spent 3 months making software for designing quantum circuits ~10,000\u00d7 faster. GPT-6 Astra took the already-optimized code and made it another ~10\u00d7 faster overnight",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3165
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Linux 500 2016",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 21,
+          "points": 89
+        }
+      },
+      "nomination": {
+        "name": "Linux 500 2016",
+        "seed_score": 165.0,
+        "summary": "Linux containers in 500 lines of code (2016)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49965118",
+            "source": "hackernews",
+            "title": "Linux containers in 500 lines of code (2016)",
+            "body": "Linux containers in 500 lines of code (2016)",
+            "url": "https://blog.lizzie.io/linux-containers-in-500-loc.html",
+            "author": "mkornaukhov",
+            "container": "Hacker News",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 89,
+              "comments": 21
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Linux containers in 500 lines of code (2016)",
+            "snippet": "Linux containers in 500 lines of code (2016)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49965118",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3075
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "gemini chatgpt and claude all lean",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "gemini chatgpt and claude all lean",
+        "seed_score": 112.5,
+        "summary": "gemini, chatgpt and claude all lean towards agreeing with you. there's a name for it and it's not you imagining it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "gemini, chatgpt and claude all lean towards agreeing with you. there's a name for it and it's not you imagining it",
+            "body": "gemini, chatgpt and claude all lean towards agreeing with you. there's a name for it and it's not you imagining it",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wy10ki/gemini_chatgpt_and_claude_all_lean_towards/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 57,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "gemini, chatgpt and claude all lean towards agreeing with you. there's a name for it and it's not you imagining it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Reviewing",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 45
+        }
+      },
+      "nomination": {
+        "name": "Reviewing",
+        "seed_score": 102.0,
+        "summary": "Reviewing agent code killed my love for programming",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Reviewing agent code killed my love for programming",
+            "body": "Reviewing agent code killed my love for programming",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wya2ua/reviewing_agent_code_killed_my_love_for/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 45
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Reviewing agent code killed my love for programming",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2975
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Beam 501B 23B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Beam 501B 23B",
+        "seed_score": 45.0,
+        "summary": "Beam announcement, open model with 501B parameters and 23B active, full weights to be released later this month, undergoing final red-teaming and evaluations, focus on coding and agentic performance",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Beam announcement, open model with 501B parameters and 23B active, full weights to be released later this month, undergoing final red-teaming and evaluations, focus on coding and agentic performance",
+            "body": "Beam announcement, open model with 501B parameters and 23B active, full weights to be released later this month, undergoing final red-teaming and evaluations, focus on coding and agentic performance",
+            "url": "https://www.reddit.com/r/singularity/comments/1wyij6g/beam_announcement_open_model_with_501b_parameters/",
+            "container": "singularity",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Beam announcement, open model with 501B parameters and 23B active, full weights to be released later this month, undergoing final red-teaming and evaluations, focus on coding and agentic performance",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29300000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Gemini",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "Gemini",
+        "seed_score": 23.3345,
+        "summary": "How to optimize Gemini for coding?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "How to optimize Gemini for coding?",
+            "body": "How to optimize Gemini for coding?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxhttn/how_to_optimize_gemini_for_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "How to optimize Gemini for coding?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 10,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1215
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Three",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Three",
+        "seed_score": 19.0919,
+        "summary": "Three things I changed today running several coding agents at once",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Three things I changed today running several coding agents at once",
+            "body": "Three things I changed today running several coding agents at once",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxe9b3/three_things_i_changed_today_running_several/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Three things I changed today running several coding agents at once",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.0845
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 18.0312,
+        "summary": "I got tired of hunting through AI coding sessions, so I put them on a physical control deck",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "I got tired of hunting through AI coding sessions, so I put them on a physical control deck",
+            "body": "I got tired of hunting through AI coding sessions, so I put them on a physical control deck",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxbjqp/i_got_tired_of_hunting_through_ai_coding_sessions/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "I got tired of hunting through AI coding sessions, so I put them on a physical control deck",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.241
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "AI code",
+        "seed_score": 18.0,
+        "summary": "AI coding tools solved writing code and replaced it with reading walls of text",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "AI coding tools solved writing code and replaced it with reading walls of text",
+            "body": "AI coding tools solved writing code and replaced it with reading walls of text",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wygsaf/ai_coding_tools_solved_writing_code_and_replaced/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.37,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI coding tools solved writing code and replaced it with reading walls of text",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.37,
+            "freshness": 90,
+            "engagement_score": 12,
+            "source_quality": 0.6,
+            "local_rank_score": 0.47750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI Windows GUI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "AI Windows GUI",
+        "seed_score": 12.0,
+        "summary": "What AI coding tools work well for native Windows desktop development and GUI debugging?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "What AI coding tools work well for native Windows desktop development and GUI debugging?",
+            "body": "What AI coding tools work well for native Windows desktop development and GUI debugging?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wy4uls/what_ai_coding_tools_work_well_for_native_windows/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "What AI coding tools work well for native Windows desktop development and GUI debugging?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42600000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "LLM",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 12.0,
+        "summary": "How do you control what context your coding agent sends to an LLM? I built a local tool to measure and audit it \u2014 looking for blunt feedback",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "How do you control what context your coding agent sends to an LLM? I built a local tool to measure and audit it \u2014 looking for blunt feedback",
+            "body": "How do you control what context your coding agent sends to an LLM? I built a local tool to measure and audit it \u2014 looking for blunt feedback",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wy9e5k/how_do_you_control_what_context_your_coding_agent/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you control what context your coding agent sends to an LLM? I built a local tool to measure and audit it \u2014 looking for blunt feedback",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.274
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Git Worktree Claude Code sessions",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Git Worktree Claude Code sessions",
+        "seed_score": 9.0,
+        "summary": "The Git Worktree guide for parallel Claude Code sessions: fixing path drift and shared state corruption",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "The Git Worktree guide for parallel Claude Code sessions: fixing path drift and shared state corruption",
+            "body": "The Git Worktree guide for parallel Claude Code sessions: fixing path drift and shared state corruption",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wy0sfv/the_git_worktree_guide_for_parallel_claude_code/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "The Git Worktree guide for parallel Claude Code sessions: fixing path drift and shared state corruption",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3035
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "AI built",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "AI built",
+        "seed_score": 5.3033,
+        "summary": "I built a live token optimizer for AI coding sessions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "I built a live token optimizer for AI coding sessions",
+            "body": "I built a live token optimizer for AI coding sessions",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wx48gb/i_built_a_live_token_optimizer_for_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built a live token optimizer for AI coding sessions",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24550000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "7 GPT 4 PRs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "7 GPT 4 PRs",
+        "seed_score": 3.182,
+        "summary": "I compared 7 GPT models for code review on 4 PRs: bugs, false positives and cost",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "I compared 7 GPT models for code review on 4 PRs: bugs, false positives and cost",
+            "body": "I compared 7 GPT models for code review on 4 PRs: bugs, false positives and cost",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxql0j/i_compared_7_gpt_models_for_code_review_on_4_prs/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I compared 7 GPT models for code review on 4 PRs: bugs, false positives and cost",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.051000000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

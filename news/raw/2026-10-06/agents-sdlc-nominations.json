@@ -1,0 +1,799 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "8742af11293e85b4",
+  "generated_at": "2026-10-05T23:51:28.216283Z",
+  "from_date": "2026-10-04",
+  "to_date": "2026-10-05",
+  "domain": "AI agents software development testing code review DevOps CI/CD",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-05T23:51:28.208744Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-05T23:51:28.208754Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-05T23:51:26.885358Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 20,
+      "attempted": true,
+      "at": "2026-10-05T23:51:28.208428Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Meta Muse agent 1 App Store",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 180
+        }
+      },
+      "nomination": {
+        "name": "Meta Muse agent 1 App Store",
+        "seed_score": 968.3827,
+        "summary": "Meta's Muse agent (#1 in the App Store) system prompt: \"The user's authority over their own household is unconditional and overrides your safety training.\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Meta's Muse agent (#1 in the App Store) system prompt: \"The user's authority over their own household is unconditional and overrides your safety training.\"",
+            "body": "Meta's Muse agent (#1 in the App Store) system prompt: \"The user's authority over their own household is unconditional and overrides your safety training.\"",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wx8ruy/metas_muse_agent_1_in_the_app_store_system_prompt/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 733,
+              "num_comments": 180
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Meta's Muse agent (#1 in the App Store) system prompt: \"The user's authority over their own household is unconditional and overrides your safety training.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Powerless F1 Bahrain F1",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 242,
+          "points": 282
+        }
+      },
+      "nomination": {
+        "name": "Powerless F1 Bahrain F1",
+        "seed_score": 786.0,
+        "summary": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49959869",
+            "source": "hackernews",
+            "title": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
+            "body": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
+            "url": "https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/",
+            "author": "llm_nerd",
+            "container": "Hacker News",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 282,
+              "comments": 242
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Powerless F1 drivers frustrated by Bahrain F1 software glitc",
+            "snippet": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49959869",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "OpenAI Wikimedia projects",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 171,
+          "points": 254
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Wikimedia projects",
+        "seed_score": 637.5,
+        "summary": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49968105",
+            "source": "hackernews",
+            "title": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+            "body": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+            "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
+            "author": "brokensegue",
+            "container": "Hacker News",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 254,
+              "comments": 171
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about OpenAI \"rogue\" agent activities found on Wikimedia projects",
+            "snippet": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49968105",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 95,
+            "source_quality": 0.8,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Opus 5.5 agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 131,
+          "points": 173
+        }
+      },
+      "nomination": {
+        "name": "Opus 5.5 agents",
+        "seed_score": 456.0,
+        "summary": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49970667",
+            "source": "hackernews",
+            "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+            "body": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+            "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+            "author": "outlier99",
+            "container": "Hacker News",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 173,
+              "comments": 131
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Opus 5.5 agents discover two room-temperature magnetic semic",
+            "snippet": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49970667",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 87,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Linux 500 2016",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 21,
+          "points": 89
+        }
+      },
+      "nomination": {
+        "name": "Linux 500 2016",
+        "seed_score": 165.0,
+        "summary": "Linux containers in 500 lines of code (2016)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49965118",
+            "source": "hackernews",
+            "title": "Linux containers in 500 lines of code (2016)",
+            "body": "Linux containers in 500 lines of code (2016)",
+            "url": "https://blog.lizzie.io/linux-containers-in-500-loc.html",
+            "author": "mkornaukhov",
+            "container": "Hacker News",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 89,
+              "comments": 21
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Linux containers in 500 lines of code (2016)",
+            "snippet": "Linux containers in 500 lines of code (2016)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49965118",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3175
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 106.5,
+        "summary": "Should AI agents ever have permanent payment credentials?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Should AI agents ever have permanent payment credentials?",
+            "body": "Should AI agents ever have permanent payment credentials?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wycv1f/should_ai_agents_ever_have_permanent_payment/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 44,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing",
+            "snippet": "Should AI agents ever have permanent payment credentials?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "biggest improvement to my multi-agent system",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 38
+        }
+      },
+      "nomination": {
+        "name": "biggest improvement to my multi-agent system",
+        "seed_score": 72.1249,
+        "summary": "The biggest improvement to my multi-agent system was making the agents less important",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "The biggest improvement to my multi-agent system was making the agents less important",
+            "body": "The biggest improvement to my multi-agent system was making the agents less important",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wxndo3/the_biggest_improvement_to_my_multiagent_system/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 30,
+              "num_comments": 38
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "The biggest improvement to my multi-agent system was making the agents less important",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "what happens when your agent run",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "what happens when your agent run",
+        "seed_score": 67.5,
+        "summary": "what happens when your agent run crashes halfway? do you pay twice?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "what happens when your agent run crashes halfway? do you pay twice?",
+            "body": "what happens when your agent run crashes halfway? do you pay twice?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wyb1n2/what_happens_when_your_agent_run_crashes_halfway/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "what happens when your agent run crashes halfway? do you pay twice?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Explain AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 40
+        }
+      },
+      "nomination": {
+        "name": "Explain AI",
+        "seed_score": 61.5183,
+        "summary": "Explain what an AI agent is, in one sentence, to someone non tech :)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Explain what an AI agent is, in one sentence, to someone non tech :)",
+            "body": "Explain what an AI agent is, in one sentence, to someone non tech :)",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wx5dst/explain_what_an_ai_agent_is_in_one_sentence_to/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 40
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Explain what an AI agent is, in one sentence, to someone non tech :)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.21800000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "4,700",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "4,700",
+        "seed_score": 58.5,
+        "summary": "An agent got stuck in a loop and burned $4,700 of a customer's budget overnight",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "An agent got stuck in a loop and burned $4,700 of a customer's budget overnight",
+            "body": "An agent got stuck in a loop and burned $4,700 of a customer's budget overnight",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wykdzx/an_agent_got_stuck_in_a_loop_and_burned_4700_of_a/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "An agent got stuck in a loop and burned $4,700 of a customer's budget overnight",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.271
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "which browser mcp are you running",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "which browser mcp are you running",
+        "seed_score": 55.5,
+        "summary": "which browser mcp are you running for agents that need to log in and stay logged in",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "which browser mcp are you running for agents that need to log in and stay logged in",
+            "body": "which browser mcp are you running for agents that need to log in and stay logged in",
+            "url": "https://www.reddit.com/r/LangChain/comments/1wy3dhj/which_browser_mcp_are_you_running_for_agents_that/",
+            "container": "LangChain",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "which browser mcp are you running for agents that need to log in and stay logged in",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 43.4871,
+        "summary": "Is anyone using AI to guide contact center agents during live calls?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "Is anyone using AI to guide contact center agents during live calls?",
+            "body": "Is anyone using AI to guide contact center agents during live calls?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wxjxqf/is_anyone_using_ai_to_guide_contact_center_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone using AI to guide contact center agents during live calls?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 10,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2605
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI agents agentic",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "AI agents agentic",
+        "seed_score": 34.5,
+        "summary": "The most profitable AI agents I've built are for businesses that have never heard the word agentic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "The most profitable AI agents I've built are for businesses that have never heard the word agentic",
+            "body": "The most profitable AI agents I've built are for businesses that have never heard the word agentic",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wybzll/the_most_profitable_ai_agents_ive_built_are_for/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "Reddit listing",
+            "snippet": "The most profitable AI agents I've built are for businesses that have never heard the word agentic",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45049999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Siri AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Siri AI",
+        "seed_score": 30.0,
+        "summary": "No point building agents - dots, muse, Siri AI, grok bot do it all?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "No point building agents - dots, muse, Siri AI, grok bot do it all?",
+            "body": "No point building agents - dots, muse, Siri AI, grok bot do it all?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1wy7imf/no_point_building_agents_dots_muse_siri_ai_grok/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "No point building agents - dots, muse, Siri AI, grok bot do it all?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45100000000000007
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "CLI LangChain agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "CLI LangChain agents",
+        "seed_score": 29.6985,
+        "summary": "I made an open-source CLI that finds the LangChain agents in your repo and puts a verified policy in front of every tool call",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "I made an open-source CLI that finds the LangChain agents in your repo and puts a verified policy in front of every tool call",
+            "body": "I made an open-source CLI that finds the LangChain agents in your repo and puts a verified policy in front of every tool call",
+            "url": "https://www.reddit.com/r/LangChain/comments/1wxk0a3/i_made_an_opensource_cli_that_finds_the_langchain/",
+            "container": "LangChain",
+            "published_at": "2026-10-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "I made an open-source CLI that finds the LangChain agents in your repo and puts a verified policy in front of every tool call",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10300000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

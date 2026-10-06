@@ -1,0 +1,826 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "65209fcc8efaf395",
+  "generated_at": "2026-10-06T23:51:02.930883Z",
+  "from_date": "2026-10-05",
+  "to_date": "2026-10-06",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-06T23:51:02.925594Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-06T23:51:02.925614Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-06T23:51:01.774594Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 13,
+      "attempted": true,
+      "at": "2026-10-06T23:51:02.925140Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Woman",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 211
+        }
+      },
+      "nomination": {
+        "name": "Woman",
+        "seed_score": 1057.5,
+        "summary": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "body": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz5b30/woman_used_claude_as_her_diary_and_got_reported/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 494,
+              "num_comments": 211
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Vibecoding",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 253,
+          "points": 178
+        },
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Vibecoding",
+        "seed_score": 781.2876,
+        "summary": "Vibecoding isn't as fun as writing code by hand",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49979306",
+            "source": "hackernews",
+            "title": "Vibecoding isn't as fun as writing code by hand",
+            "body": "Vibecoding isn't as fun as writing code by hand",
+            "url": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
+            "author": "Curiositry",
+            "container": "Hacker News",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 178,
+              "comments": 253
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Vibecoding isn't as fun as writing code by hand",
+            "snippet": "Vibecoding isn't as fun as writing code by hand",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49979306",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35750000000000004
+          },
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "AI coding tools solved writing code and replaced it with reading walls of text",
+            "body": "AI coding tools solved writing code and replaced it with reading walls of text",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wygsaf/ai_coding_tools_solved_writing_code_and_replaced/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.37,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI coding tools solved writing code and replaced it with reading walls of text",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.37,
+            "freshness": 10,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3055
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Astra Claude 11 Lean",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 90
+        }
+      },
+      "nomination": {
+        "name": "Astra Claude 11 Lean",
+        "seed_score": 493.5,
+        "summary": "Astra and Claude prove the best known square packing for 11 squares is optimal (formalized in Lean)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Astra and Claude prove the best known square packing for 11 squares is optimal (formalized in Lean)",
+            "body": "Astra and Claude prove the best known square packing for 11 squares is optimal (formalized in Lean)",
+            "url": "https://www.reddit.com/r/singularity/comments/1wzf641/astra_and_claude_prove_the_best_known_square/",
+            "container": "singularity",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 239,
+              "num_comments": 90
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Astra and Claude prove the best known square packing for 11 squares is optimal (formalized in Lean)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34900000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Tencent releases Octop AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "Tencent releases Octop AI",
+        "seed_score": 388.5,
+        "summary": "Tencent releases Octop, a self-hosted AI assistant",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Tencent releases Octop, a self-hosted AI assistant",
+            "body": "Tencent releases Octop, a self-hosted AI assistant",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyzef4/tencent_releases_octop_a_selfhosted_ai_assistant/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 218,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Tencent releases Octop, a self-hosted AI assistant",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.458
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 37,
+          "points": 67
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 156.0,
+        "summary": "Claude Code\u2019s suggested message feature: I think the real customer is the model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49981905",
+            "source": "hackernews",
+            "title": "Claude Code\u2019s suggested message feature: I think the real customer is the model",
+            "body": "Claude Code\u2019s suggested message feature: I think the real customer is the model",
+            "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+            "author": "zed_labs_dev",
+            "container": "Hacker News",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 67,
+              "comments": 37
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Claude Code\u2019s suggested message feature: I think the real cu",
+            "snippet": "Claude Code\u2019s suggested message feature: I think the real customer is the model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49981905",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.8,
+            "local_rank_score": 0.331
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Im",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 44
+        }
+      },
+      "nomination": {
+        "name": "Im",
+        "seed_score": 145.5,
+        "summary": "Im tired of reviewing code nobody actually wrote",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Im tired of reviewing code nobody actually wrote",
+            "body": "Im tired of reviewing code nobody actually wrote",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wz72y2/im_tired_of_reviewing_code_nobody_actually_wrote/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 53,
+              "num_comments": 44
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Im tired of reviewing code nobody actually wrote",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3195
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Reviewing",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 54
+        }
+      },
+      "nomination": {
+        "name": "Reviewing",
+        "seed_score": 106.066,
+        "summary": "Reviewing agent code killed my love for programming",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Reviewing agent code killed my love for programming",
+            "body": "Reviewing agent code killed my love for programming",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wya2ua/reviewing_agent_code_killed_my_love_for/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 46,
+              "num_comments": 54
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Reviewing agent code killed my love for programming",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1195
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "gemini chatgpt and claude all lean",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "gemini chatgpt and claude all lean",
+        "seed_score": 103.9447,
+        "summary": "gemini, chatgpt and claude all lean towards agreeing with you. there's a name for it and it's not you imagining it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "gemini, chatgpt and claude all lean towards agreeing with you. there's a name for it and it's not you imagining it",
+            "body": "gemini, chatgpt and claude all lean towards agreeing with you. there's a name for it and it's not you imagining it",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wy10ki/gemini_chatgpt_and_claude_all_lean_towards/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 77,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "gemini, chatgpt and claude all lean towards agreeing with you. there's a name for it and it's not you imagining it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "GitHub refuses",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 21,
+          "points": 38
+        }
+      },
+      "nomination": {
+        "name": "GitHub refuses",
+        "seed_score": 88.5,
+        "summary": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49982498",
+            "source": "hackernews",
+            "title": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+            "body": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+            "url": "https://news.ycombinator.com/item?id=49982498",
+            "author": "IvanK_net",
+            "container": "Hacker News",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 38,
+              "comments": 21
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Tell HN: GitHub refuses to remove cracked copies of my softw",
+            "snippet": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49982498",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 18.0,
+        "summary": "How is your team standardizing AI coding workflows across repos?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "How is your team standardizing AI coding workflows across repos?",
+            "body": "How is your team standardizing AI coding workflows across repos?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wysqo1/how_is_your_team_standardizing_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "How is your team standardizing AI coding workflows across repos?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4615
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI Windows GUI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "AI Windows GUI",
+        "seed_score": 9.5459,
+        "summary": "What AI coding tools work well for native Windows desktop development and GUI debugging?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "What AI coding tools work well for native Windows desktop development and GUI debugging?",
+            "body": "What AI coding tools work well for native Windows desktop development and GUI debugging?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wy4uls/what_ai_coding_tools_work_well_for_native_windows/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "What AI coding tools work well for native Windows desktop development and GUI debugging?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.231
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "LLM",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 8.4853,
+        "summary": "How do you control what context your coding agent sends to an LLM? I built a local tool to measure and audit it \u2014 looking for blunt feedback",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "How do you control what context your coding agent sends to an LLM? I built a local tool to measure and audit it \u2014 looking for blunt feedback",
+            "body": "How do you control what context your coding agent sends to an LLM? I built a local tool to measure and audit it \u2014 looking for blunt feedback",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wy9e5k/how_do_you_control_what_context_your_coding_agent/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you control what context your coding agent sends to an LLM? I built a local tool to measure and audit it \u2014 looking for blunt feedback",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "20",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "20",
+        "seed_score": 7.4246,
+        "summary": "I tested 20+ ways to make a cheap coding model act like an expensive one. Here's what worked and what didn't",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "I tested 20+ ways to make a cheap coding model act like an expensive one. Here's what worked and what didn't",
+            "body": "I tested 20+ ways to make a cheap coding model act like an expensive one. Here's what worked and what didn't",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wyjt5t/i_tested_20_ways_to_make_a_cheap_coding_model_act/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "I tested 20+ ways to make a cheap coding model act like an expensive one. Here's what worked and what didn't",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.079
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Git Worktree Claude Code sessions",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Git Worktree Claude Code sessions",
+        "seed_score": 7.4246,
+        "summary": "The Git Worktree guide for parallel Claude Code sessions: fixing path drift and shared state corruption",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "The Git Worktree guide for parallel Claude Code sessions: fixing path drift and shared state corruption",
+            "body": "The Git Worktree guide for parallel Claude Code sessions: fixing path drift and shared state corruption",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wy0sfv/the_git_worktree_guide_for_parallel_claude_code/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "The Git Worktree guide for parallel Claude Code sessions: fixing path drift and shared state corruption",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 10,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "AI answer",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "AI answer",
+        "seed_score": 3.0,
+        "summary": "Can an AI assistant tell members when it doesn\u2019t know the answer?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Can an AI assistant tell members when it doesn\u2019t know the answer?",
+            "body": "Can an AI assistant tell members when it doesn\u2019t know the answer?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wzg23z/can_an_ai_assistant_tell_members_when_it_doesnt/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "Can an AI assistant tell members when it doesn\u2019t know the answer?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37450000000000006
+          }
+        ]
+      }
+    }
+  ]
+}

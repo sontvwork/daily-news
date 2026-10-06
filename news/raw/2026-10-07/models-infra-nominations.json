@@ -1,0 +1,855 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "1f3cecba3b3e7e7e",
+  "generated_at": "2026-10-06T23:51:07.816556Z",
+  "from_date": "2026-10-05",
+  "to_date": "2026-10-06",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-06T23:51:07.793027Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-06T23:51:07.793039Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 8,
+      "attempted": true,
+      "at": "2026-10-06T23:51:06.095497Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 44,
+      "attempted": true,
+      "at": "2026-10-06T23:51:07.792700Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "PewDiePie OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 438
+        }
+      },
+      "nomination": {
+        "name": "PewDiePie OpenAI",
+        "seed_score": 4369.9199,
+        "summary": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy \ud83d\udc80",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy \ud83d\udc80",
+            "body": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy \ud83d\udc80",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wymgu6/pewdiepie_getting_banned_twice_by_openai_while/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3682,
+              "num_comments": 438
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy \ud83d\udc80",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Realizing Claude Claude responses",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 105
+        }
+      },
+      "nomination": {
+        "name": "Realizing Claude Claude responses",
+        "seed_score": 2116.5,
+        "summary": "Realizing that your job is forwarding instructions from your boss to Claude and taking Claude\u2019s responses to send them back to your boss",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Realizing that your job is forwarding instructions from your boss to Claude and taking Claude\u2019s responses to send them back to your boss",
+            "body": "Realizing that your job is forwarding instructions from your boss to Claude and taking Claude\u2019s responses to send them back to your boss",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wyqfa4/realizing_that_your_job_is_forwarding/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1306,
+              "num_comments": 105
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Realizing that your job is forwarding instructions from your boss to Claude and taking Claude\u2019s responses to send them back to your boss",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "27b GPT 4o",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 376
+        }
+      },
+      "nomination": {
+        "name": "27b GPT 4o",
+        "seed_score": 1962.2213,
+        "summary": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+            "body": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyefkt/how_is_it_possible_that_qwen_27b_is_so_good_when/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1474,
+              "num_comments": 376
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 90,
+            "source_quality": 0.6,
+            "local_rank_score": 0.18
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Microsoft confirms OpenAI Looped Transformers GPT-6",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 196
+        }
+      },
+      "nomination": {
+        "name": "Microsoft confirms OpenAI Looped Transformers GPT-6",
+        "seed_score": 1530.0,
+        "summary": "Microsoft confirms OpenAI has been using Looped Transformers in the GPT-6 series",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Microsoft confirms OpenAI has been using Looped Transformers in the GPT-6 series",
+            "body": "Microsoft confirms OpenAI has been using Looped Transformers in the GPT-6 series",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz00vv/microsoft_confirms_openai_has_been_using_looped/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 824,
+              "num_comments": 196
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Microsoft confirms OpenAI has been using Looped Transformers in the GPT-6 series",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anthropic Claude Team 1,000 45,000",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 99
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Claude Team 1,000 45,000",
+        "seed_score": 1473.0,
+        "summary": "Anthropic is giving startups a free year of Claude Team, $1,000 in credits and up to $45,000 in perks",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Anthropic is giving startups a free year of Claude Team, $1,000 in credits and up to $45,000 in perks",
+            "body": "Anthropic is giving startups a free year of Claude Team, $1,000 in credits and up to $45,000 in perks",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wz9oim/anthropic_is_giving_startups_a_free_year_of/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 883,
+              "num_comments": 99
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic is giving startups a free year of Claude Team, $1,000 in credits and up to $45,000 in perks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Microsoft GPT-6.1 Sol GPT-6 Sol 2",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 103
+        }
+      },
+      "nomination": {
+        "name": "Microsoft GPT-6.1 Sol GPT-6 Sol 2",
+        "seed_score": 1158.0,
+        "summary": "Microsoft has accidentally revealed GPT-6.1 Sol uses the same base weights as GPT-6 Sol, but with only 2 inference passes instead of 3.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "Microsoft has accidentally revealed GPT-6.1 Sol uses the same base weights as GPT-6 Sol, but with only 2 inference passes instead of 3.",
+            "body": "Microsoft has accidentally revealed GPT-6.1 Sol uses the same base weights as GPT-6 Sol, but with only 2 inference passes instead of 3.",
+            "url": "https://www.reddit.com/r/singularity/comments/1wyu0ss/microsoft_has_accidentally_revealed_gpt61_sol/",
+            "container": "singularity",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 669,
+              "num_comments": 103
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Microsoft has accidentally revealed GPT-6.1 Sol uses the same base weights as GPT-6 Sol, but with only 2 inference passes instead of 3.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3585
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Woman",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 211
+        }
+      },
+      "nomination": {
+        "name": "Woman",
+        "seed_score": 1057.5,
+        "summary": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "body": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz5b30/woman_used_claude_as_her_diary_and_got_reported/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 494,
+              "num_comments": 211
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "ChatGPT Yorker cartoons",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 399,
+          "points": 539
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Yorker cartoons",
+        "seed_score": 994.8992,
+        "summary": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49971846",
+            "source": "hackernews",
+            "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+            "body": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+            "url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
+            "author": "rdmuser",
+            "container": "Hacker News",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 539,
+              "comments": 399
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about ChatGPT is adding real cartoonists' signatures to fake New Y",
+            "snippet": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49971846",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Qwen 4 October",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 158
+        }
+      },
+      "nomination": {
+        "name": "Qwen 4 October",
+        "seed_score": 924.0,
+        "summary": "Qwen 4 apparently coming out at the end of October",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Qwen 4 apparently coming out at the end of October",
+            "body": "Qwen 4 apparently coming out at the end of October",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz1pqn/qwen_4_apparently_coming_out_at_the_end_of_october/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 458,
+              "num_comments": 158
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen 4 apparently coming out at the end of October",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.338
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Woman Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 190
+        }
+      },
+      "nomination": {
+        "name": "Woman Claude",
+        "seed_score": 879.2873,
+        "summary": "Woman arrested after Claude's human reviewers reported her diary entry to police",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "Woman arrested after Claude's human reviewers reported her diary entry to police",
+            "body": "Woman arrested after Claude's human reviewers reported her diary entry to police",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wyjohe/woman_arrested_after_claudes_human_reviewers/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 639,
+              "num_comments": 190
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Woman arrested after Claude's human reviewers reported her diary entry to police",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Princeton 4B LLM 2700 Elo",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 119
+        }
+      },
+      "nomination": {
+        "name": "Princeton 4B LLM 2700 Elo",
+        "seed_score": 814.5,
+        "summary": "Princeton researchers train a 4B LLM to reach 2700 Elo in chess (with no signs of a plateau when they stopped training) and can explain its moves accurately. They say the training technique can also be applied to other games, robotics, and computer use",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R76",
+            "source": "reddit",
+            "title": "Princeton researchers train a 4B LLM to reach 2700 Elo in chess (with no signs of a plateau when they stopped training) and can explain its moves accurately. They say the training technique can also be applied to other games, robotics, and computer use",
+            "body": "Princeton researchers train a 4B LLM to reach 2700 Elo in chess (with no signs of a plateau when they stopped training) and can explain its moves accurately. They say the training technique can also be applied to other games, robotics, and computer use",
+            "url": "https://www.reddit.com/r/artificial/comments/1wypjue/princeton_researchers_train_a_4b_llm_to_reach/",
+            "container": "artificial",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 424,
+              "num_comments": 119
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Princeton researchers train a 4B LLM to reach 2700 Elo in chess (with no signs of a plateau when they stopped training) and can explain its moves accurately. They say the training technique can also be applied to other games, robotics, and computer use",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.322
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Beam Reflection 501B open-weight model",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 167,
+          "points": 540
+        }
+      },
+      "nomination": {
+        "name": "Beam Reflection 501B open-weight model",
+        "seed_score": 749.8867,
+        "summary": "Beam: Reflection's 501B open-weight model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49969183",
+            "source": "hackernews",
+            "title": "Beam: Reflection's 501B open-weight model",
+            "body": "Beam: Reflection's 501B open-weight model",
+            "url": "https://reflection.ai/blog/introducing-beam",
+            "author": "Philpax",
+            "container": "Hacker News",
+            "published_at": "2026-10-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 540,
+              "comments": 167
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about Beam: Reflection's 501B open-weight model",
+            "snippet": "Beam: Reflection's 501B open-weight model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49969183",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 91,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "OpenTPU AI AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 273,
+          "points": 209
+        }
+      },
+      "nomination": {
+        "name": "OpenTPU AI AI",
+        "seed_score": 723.0,
+        "summary": "OpenTPU \u2013 An open-source AI accelerator, developed by AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49980715",
+            "source": "hackernews",
+            "title": "OpenTPU \u2013 An open-source AI accelerator, developed by AI",
+            "body": "OpenTPU \u2013 An open-source AI accelerator, developed by AI",
+            "url": "https://github.com/FeSens/openTPU",
+            "author": "fsbonetto",
+            "container": "Hacker News",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 209,
+              "comments": 273
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenTPU \u2013 An open-source AI accelerator, developed by AI",
+            "snippet": "OpenTPU \u2013 An open-source AI accelerator, developed by AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49980715",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-21",
+      "heuristic_name": "EmbeddingGemma 2",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 26,
+          "points": 191
+        },
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "EmbeddingGemma 2",
+        "seed_score": 653.775,
+        "summary": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49980487",
+            "source": "hackernews",
+            "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+            "body": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+            "author": "ilreb",
+            "container": "Hacker News",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 191,
+              "comments": 26
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about EmbeddingGemma 2: An open, lightweight multimodal embedding",
+            "snippet": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49980487",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.8,
+            "local_rank_score": 0.323
+          },
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Introducing EmbeddingGemma 2: An open model for natively multimodal embeddings",
+            "body": "Introducing EmbeddingGemma 2: An open model for natively multimodal embeddings",
+            "url": "https://www.reddit.com/r/singularity/comments/1wzafmg/introducing_embeddinggemma_2_an_open_model_for/",
+            "container": "singularity",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 31,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Introducing EmbeddingGemma 2: An open model for natively multimodal embeddings",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28800000000000003
+          },
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Introducing EmbeddingGemma 2: A best-in-class open model for natively multimodal embeddings | Google",
+            "body": "Introducing EmbeddingGemma 2: A best-in-class open model for natively multimodal embeddings | Google",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz7faa/introducing_embeddinggemma_2_a_bestinclass_open/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 107,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Introducing EmbeddingGemma 2: A best-in-class open model for natively multimodal embeddings | Google",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3055
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "GPT-6.1 Sol 1,152 AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 219
+        }
+      },
+      "nomination": {
+        "name": "GPT-6.1 Sol 1,152 AI",
+        "seed_score": 633.0,
+        "summary": "I tested GPT-6.1 Sol with 1,152 race-swapped prompts. A blinded AI judge found a substantial difference in favourable treatment.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "I tested GPT-6.1 Sol with 1,152 race-swapped prompts. A blinded AI judge found a substantial difference in favourable treatment.",
+            "body": "I tested GPT-6.1 Sol with 1,152 race-swapped prompts. A blinded AI judge found a substantial difference in favourable treatment.",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1wz772w/i_tested_gpt61_sol_with_1152_raceswapped_prompts/",
+            "container": "ChatGPT",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 203,
+              "num_comments": 219
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I tested GPT-6.1 Sol with 1,152 race-swapped prompts. A blinded AI judge found a substantial difference in favourable treatment.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.319
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -15,6 +15,8 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 # shellcheck source=../config/news.env
 source config/news.env
+# Local: API key của nguồn (XAI_API_KEY, XQUIK_API_KEY, …) đặt trong .env.local. Cloud: env vars của environment.
+if [[ -f .env.local ]]; then set -a; source .env.local; set +a; fi
 
 # Engine cần Python ≥ 3.12. Image cloud có python3 = 3.11 nhưng cài sẵn python3.12/3.13 → tự chọn
 # (cùng thứ tự với PYTHON_CANDIDATES trong news.py). Không có bản nào đủ mới thì preflight báo lỗi.

@@ -63,6 +63,8 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
     ```
     SETUP_COMPLETE=true
     GCHAT_WEBHOOK_URL=<url webhook>
+    XAI_API_KEY=<key>                 # tuỳ chọn: bật nguồn X qua Grok x_search (trả phí, console.x.ai)
+    XQUIK_API_KEY=<key>               # tuỳ chọn: bật nguồn X qua xquik.com (thay cho XAI_API_KEY)
     SCRAPECREATORS_API_KEY=<key>      # tuỳ chọn: dự phòng Reddit/YouTube khi IP cloud bị chặn (không phải nguồn X)
     BRAVE_API_KEY=<key>               # tuỳ chọn: web search
     ```
@@ -78,6 +80,7 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
 
   ```bash
   printf 'GCHAT_WEBHOOK_URL=%s\n' '<url>' > .env.local && chmod 600 .env.local   # bỏ bước này để dry-run
+  printf 'XAI_API_KEY=%s\n' '<key>' >> .env.local                               # tuỳ chọn: bật nguồn X (hoặc XQUIK_API_KEY)
   bash scripts/research.sh preflight
   # Mở Claude Code trong repo và yêu cầu: "Làm theo prompt trong ROUTINE_PROMPT.md"
   # Hoặc tự chạy từng lệnh trong ROUTINE_PROMPT.md.
@@ -109,7 +112,10 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
 ## Rủi ro đã biết
 
 - GitHub không dùng được làm nguồn trên cloud: proxy của sandbox chỉ cho gọi `repos/{owner}/{repo}/...` của repo gắn với session, còn `/search/*` luôn trả 403 *"sessions are bound to their configured repositories"*. Proxy thay header Authorization, nên đổi token/PAT hay thêm repo cho GitHub App đều vô ích. Vì vậy `EXCLUDE_SOURCES` mặc định có `github`.
-- Không dùng nguồn X (`EXCLUDE_SOURCES` mặc định có `x`). Trên cloud, X chỉ bật được bằng key trả phí: `XAI_API_KEY` (key API xAI/Grok tạo ở console.x.ai; engine gọi Grok với tool `x_search`, và khi env không có key Google/OpenAI thì Grok còn được dùng để lập kế hoạch truy vấn và xếp hạng lại tin) hoặc `XQUIK_API_KEY` (xquik.com). `SCRAPECREATORS_API_KEY` **không** bật được X. Muốn bật lại: thêm key vào env của cloud environment và bỏ `x` khỏi `EXCLUDE_SOURCES` trong `config/news.env`.
+- Nguồn X chỉ chạy khi có key trả phí trong env (cloud: env vars của environment, bước 4; local: `.env.local`, `research.sh` tự `source`). Không có key thì engine tự bỏ qua X, `research.sh preflight` không liệt kê `x`.
+  - `XAI_API_KEY`: key API xAI/Grok tạo ở console.x.ai. Engine gọi Grok với tool `x_search`. Khi env không có key Google/OpenAI, Grok còn được dùng để lập kế hoạch truy vấn và xếp hạng lại tin, nên tốn thêm token.
+  - `XQUIK_API_KEY`: xquik.com. Có cả hai key thì engine ưu tiên xAI, xquik làm dự phòng; ép một backend bằng `LAST30DAYS_X_BACKEND=xai|xquik`.
+  - `SCRAPECREATORS_API_KEY` **không** bật được X. Muốn tắt hẳn X: thêm `x` vào `EXCLUDE_SOURCES` trong `config/news.env`.
 - IP datacenter của cloud dễ bị Reddit/YouTube chặn. ScrapeCreators đỡ được một phần. Xem `bash scripts/research.sh status <slug> <DATE>`.
 - `--days 1` và ngưỡng tin cậy của engine khiến có ngày ra "không có tin mới nổi bật". Đây là kết quả hợp lệ.
 - Routines đang research preview: UI, giới hạn và quy tắc push có thể thay đổi. Routine tính vào hạn mức run mỗi ngày của tài khoản.

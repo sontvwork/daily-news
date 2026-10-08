@@ -1,0 +1,862 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "e32c4b9a7db35145",
+  "generated_at": "2026-10-08T23:55:34.452622Z",
+  "from_date": "2026-10-07",
+  "to_date": "2026-10-08",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-08T23:55:34.429201Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-08T23:55:34.429217Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 8,
+      "attempted": true,
+      "at": "2026-10-08T23:55:32.665290Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 49,
+      "attempted": true,
+      "at": "2026-10-08T23:55:34.428709Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 643
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 6260.0163,
+        "summary": "I think I found a planet nobody knew existed. I used Claude Code to find it.",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "I think I found a planet nobody knew existed. I used Claude Code to find it.",
+            "body": "I think I found a planet nobody knew existed. I used Claude Code to find it.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wzw8zd/i_think_i_found_a_planet_nobody_knew_existed_i/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5259,
+              "num_comments": 643
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "I think I found a planet nobody knew existed. I used Claude Code to find it.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Introducing Claude Haiku 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 481,
+          "points": 1031
+        },
+        "reddit": {
+          "num_comments": 325
+        }
+      },
+      "nomination": {
+        "name": "Introducing Claude Haiku 5.5",
+        "seed_score": 5083.9563,
+        "summary": "Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we\u2019ve ever released",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we\u2019ve ever released",
+            "body": "Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we\u2019ve ever released",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x03k4j/introducing_claude_haiku_55_the_cheapest_fastest/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2331,
+              "num_comments": 325
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we\u2019ve ever released",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14650000000000002
+          },
+          {
+            "item_id": "49996437",
+            "source": "hackernews",
+            "title": "Claude Haiku 5.5",
+            "body": "Claude Haiku 5.5",
+            "url": "https://www.anthropic.com/claude-haiku-5-5",
+            "author": "sfkgtbor",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1031,
+              "comments": 481
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about Claude Haiku 5.5",
+            "snippet": "Claude Haiku 5.5",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49996437",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.20950000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Starting November 12th 2026 Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 511
+        }
+      },
+      "nomination": {
+        "name": "Starting November 12th 2026 Claude",
+        "seed_score": 2163.0,
+        "summary": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+            "body": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+            "url": "https://www.reddit.com/r/singularity/comments/1x0x0o8/starting_november_12th_2026_abusive_or_cruel/",
+            "container": "singularity",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 931,
+              "num_comments": 511
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.336
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude DOS 1991",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 89
+        }
+      },
+      "nomination": {
+        "name": "Claude DOS 1991",
+        "seed_score": 2113.8957,
+        "summary": "Claude fixed a bug in a DOS game from 1991 and now my kid can relive the magic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "Claude fixed a bug in a DOS game from 1991 and now my kid can relive the magic",
+            "body": "Claude fixed a bug in a DOS game from 1991 and now my kid can relive the magic",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x06hmp/claude_fixed_a_bug_in_a_dos_game_from_1991_and/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1904,
+              "num_comments": 89
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude fixed a bug in a DOS game from 1991 and now my kid can relive the magic",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "GPT\u20116 and Intelligent UI for everyone",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 447,
+          "points": 740
+        },
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "GPT\u20116 and Intelligent UI for everyone",
+        "seed_score": 1891.1791,
+        "summary": "GPT\u20116 and Intelligent UI for everyone",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49996425",
+            "source": "hackernews",
+            "title": "GPT\u20116 and Intelligent UI for everyone",
+            "body": "GPT\u20116 and Intelligent UI for everyone",
+            "url": "https://openai.com/index/gpt-6-for-everyone/",
+            "author": "joshuawright11",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 740,
+              "comments": 447
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about GPT\u20116 and Intelligent UI for everyone",
+            "snippet": "GPT\u20116 and Intelligent UI for everyone",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49996425",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 94,
+            "source_quality": 0.8,
+            "local_rank_score": 0.171
+          },
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "GPT-6 and Intelligent UI for everyone",
+            "body": "GPT-6 and Intelligent UI for everyone",
+            "url": "https://www.reddit.com/r/singularity/comments/1x0lj2h/gpt6_and_intelligent_ui_for_everyone/",
+            "container": "singularity",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 209,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "GPT-6 and Intelligent UI for everyone",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.337
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Abuse Claude November 12th 2026",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 375
+        }
+      },
+      "nomination": {
+        "name": "Abuse Claude November 12th 2026",
+        "seed_score": 1569.0,
+        "summary": "Abuse Claude, get banned coming November 12th, 2026",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Abuse Claude, get banned coming November 12th, 2026",
+            "body": "Abuse Claude, get banned coming November 12th, 2026",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x11k9j/abuse_claude_get_banned_coming_november_12th_2026/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 671,
+              "num_comments": 375
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Abuse Claude, get banned coming November 12th, 2026",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Last South Korea AI ARTEX",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 150
+        }
+      },
+      "nomination": {
+        "name": "Last South Korea AI ARTEX",
+        "seed_score": 1357.5,
+        "summary": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "body": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 755,
+              "num_comments": 150
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing",
+            "snippet": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3855
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Claude Haiku 5.5 cost 12x",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 131
+        }
+      },
+      "nomination": {
+        "name": "Claude Haiku 5.5 cost 12x",
+        "seed_score": 1286.5808,
+        "summary": "Claude Haiku 5.5 cost 12x more than GPT-6 Luna for the same voxel pagoda",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Claude Haiku 5.5 cost 12x more than GPT-6 Luna for the same voxel pagoda",
+            "body": "Claude Haiku 5.5 cost 12x more than GPT-6 Luna for the same voxel pagoda",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x0agoh/claude_haiku_55_cost_12x_more_than_gpt6_luna_for/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1082,
+              "num_comments": 131
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Haiku 5.5 cost 12x more than GPT-6 Luna for the same voxel pagoda",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.168
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Claude tells Ben Thompson Mac Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 135
+        }
+      },
+      "nomination": {
+        "name": "Claude tells Ben Thompson Mac Mini",
+        "seed_score": 1264.3069,
+        "summary": "Claude tells Ben Thompson his Mac Mini is compromised",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Claude tells Ben Thompson his Mac Mini is compromised",
+            "body": "Claude tells Ben Thompson his Mac Mini is compromised",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1wzkpu9/claude_tells_ben_thompson_his_mac_mini_is/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1057,
+              "num_comments": 135
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude tells Ben Thompson his Mac Mini is compromised",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Fields Medalist Terence Tao Association",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 478
+        }
+      },
+      "nomination": {
+        "name": "Fields Medalist Terence Tao Association",
+        "seed_score": 1096.5,
+        "summary": "Fields Medalist Terence Tao reposts statement from the Association for Human Mathematics urging mathematicians to stop working with OpenAI for continuing to solve open math problems against their recommendations",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Fields Medalist Terence Tao reposts statement from the Association for Human Mathematics urging mathematicians to stop working with OpenAI for continuing to solve open math problems against their recommendations",
+            "body": "Fields Medalist Terence Tao reposts statement from the Association for Human Mathematics urging mathematicians to stop working with OpenAI for continuing to solve open math problems against their recommendations",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1x0gr48/fields_medalist_terence_tao_reposts_statement/",
+            "container": "ChatGPT",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 253,
+              "num_comments": 478
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Fields Medalist Terence Tao reposts statement from the Association for Human Mathematics urging mathematicians to stop working with OpenAI for continuing to solve open math problems against their recommendations",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Visa Mastercard",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 431,
+          "points": 591
+        }
+      },
+      "nomination": {
+        "name": "Visa Mastercard",
+        "seed_score": 1083.9947,
+        "summary": "Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49993914",
+            "source": "hackernews",
+            "title": "Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",
+            "body": "Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",
+            "url": "https://www.classaction.org/news/visa-mastercard-major-banks-facing-new-litigation-over-anticompetitive-merchant-credit-card-transaction-fees",
+            "author": "DeepLogin",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 591,
+              "comments": 431
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Visa, Mastercard, major banks facing new litigation over 'an",
+            "snippet": "Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49993914",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 91,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14850000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "24 hours",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 73
+        }
+      },
+      "nomination": {
+        "name": "24 hours",
+        "seed_score": 1065.0,
+        "summary": "chatgpt's new intelligent ui was reverse engineered in less than 24 hours, and apparently you can recreate it with local llms",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "chatgpt's new intelligent ui was reverse engineered in less than 24 hours, and apparently you can recreate it with local llms",
+            "body": "chatgpt's new intelligent ui was reverse engineered in less than 24 hours, and apparently you can recreate it with local llms",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0y4lv/chatgpts_new_intelligent_ui_was_reverse/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 637,
+              "num_comments": 73
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "chatgpt's new intelligent ui was reverse engineered in less than 24 hours, and apparently you can recreate it with local llms",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.322
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Fields Medalist Terence Tao LLMs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 454
+        }
+      },
+      "nomination": {
+        "name": "Fields Medalist Terence Tao LLMs",
+        "seed_score": 1062.0,
+        "summary": "Fields Medalist Terence Tao quips about LLMs: \u201cOpenAI Releases Final Ten Minutes of 500 Previously Unreleased Films, Ushering in New Era of Movie Watching\u201d, plus addt\u2019l notes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Fields Medalist Terence Tao quips about LLMs: \u201cOpenAI Releases Final Ten Minutes of 500 Previously Unreleased Films, Ushering in New Era of Movie Watching\u201d, plus addt\u2019l notes",
+            "body": "Fields Medalist Terence Tao quips about LLMs: \u201cOpenAI Releases Final Ten Minutes of 500 Previously Unreleased Films, Ushering in New Era of Movie Watching\u201d, plus addt\u2019l notes",
+            "url": "https://www.reddit.com/r/singularity/comments/1x0q7vz/fields_medalist_terence_tao_quips_about_llms/",
+            "container": "singularity",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 254,
+              "num_comments": 454
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Fields Medalist Terence Tao quips about LLMs: \u201cOpenAI Releases Final Ten Minutes of 500 Previously Unreleased Films, Ushering in New Era of Movie Watching\u201d, plus addt\u2019l notes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "DeepSeek 4.1 Flash",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 293,
+          "points": 338
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek 4.1 Flash",
+        "seed_score": 946.5,
+        "summary": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50000488",
+            "source": "hackernews",
+            "title": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+            "body": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+            "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+            "author": "jonotime",
+            "container": "Hacker News",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 338,
+              "comments": 293
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Why isn't the industry freaking out about DeepSeek 4.1 Flash",
+            "snippet": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50000488",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.8,
+            "local_rank_score": 0.343
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Meta Microsoft Claude AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 381,
+          "points": 367
+        }
+      },
+      "nomination": {
+        "name": "Meta Microsoft Claude AI",
+        "seed_score": 793.3738,
+        "summary": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49997161",
+            "source": "hackernews",
+            "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "body": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+            "author": "speckx",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 367,
+              "comments": 381
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Meta and Microsoft take steps to reduce employee usage of Cl",
+            "snippet": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49997161",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 83,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1405
+          }
+        ]
+      }
+    }
+  ]
+}

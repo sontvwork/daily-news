@@ -1,0 +1,796 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "e53242dfae69ab40",
+  "generated_at": "2026-10-08T23:55:29.559441Z",
+  "from_date": "2026-10-07",
+  "to_date": "2026-10-08",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-08T23:55:29.551391Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-08T23:55:29.551424Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-08T23:55:28.642120Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 14,
+      "attempted": true,
+      "at": "2026-10-08T23:55:29.550939Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Starting November 12th 2026 Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 511
+        }
+      },
+      "nomination": {
+        "name": "Starting November 12th 2026 Claude",
+        "seed_score": 2163.0,
+        "summary": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+            "body": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+            "url": "https://www.reddit.com/r/singularity/comments/1x0x0o8/starting_november_12th_2026_abusive_or_cruel/",
+            "container": "singularity",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 931,
+              "num_comments": 511
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Haiku 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 481,
+          "points": 1031
+        }
+      },
+      "nomination": {
+        "name": "Claude Haiku 5.5",
+        "seed_score": 1603.7182,
+        "summary": "Claude Haiku 5.5",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49996437",
+            "source": "hackernews",
+            "title": "Claude Haiku 5.5",
+            "body": "Claude Haiku 5.5",
+            "url": "https://www.anthropic.com/claude-haiku-5-5",
+            "author": "sfkgtbor",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1031,
+              "comments": 481
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Claude Haiku 5.5",
+            "snippet": "Claude Haiku 5.5",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49996437",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Last South Korea AI ARTEX",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 150
+        }
+      },
+      "nomination": {
+        "name": "Last South Korea AI ARTEX",
+        "seed_score": 1357.5,
+        "summary": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "body": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 755,
+              "num_comments": 150
+            },
+            "relevance_hint": 0.36,
+            "why_relevant": "Reddit listing",
+            "snippet": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.36,
+            "freshness": 90,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5479999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Meta Microsoft Claude AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 381,
+          "points": 367
+        }
+      },
+      "nomination": {
+        "name": "Meta Microsoft Claude AI",
+        "seed_score": 793.3738,
+        "summary": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49997161",
+            "source": "hackernews",
+            "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "body": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+            "author": "speckx",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 367,
+              "comments": 381
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "HN story about Meta and Microsoft take steps to reduce employee usage of Cl",
+            "snippet": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49997161",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 10,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2875
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Home Assistant",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 41,
+          "points": 319
+        }
+      },
+      "nomination": {
+        "name": "Home Assistant",
+        "seed_score": 381.8377,
+        "summary": "I hired an illustrator to draw my house. Now it's my Home Assistant dashboard",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49986882",
+            "source": "hackernews",
+            "title": "I hired an illustrator to draw my house. Now it's my Home Assistant dashboard",
+            "body": "I hired an illustrator to draw my house. Now it's my Home Assistant dashboard",
+            "url": "https://antonfrolov.substack.com/p/i-hired-an-illustrator-to-draw-my",
+            "author": "soheilpro",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 319,
+              "comments": 41
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about I hired an illustrator to draw my house. Now it's my Home As",
+            "snippet": "I hired an illustrator to draw my house. Now it's my Home Assistant dashboard",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49986882",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.025
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Strata Github Claude-authoring",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 86
+        }
+      },
+      "nomination": {
+        "name": "Strata Github Claude-authoring",
+        "seed_score": 322.5,
+        "summary": "Strata rewrote their Github history to wipe evidence of Claude-authoring",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Strata rewrote their Github history to wipe evidence of Claude-authoring",
+            "body": "Strata rewrote their Github history to wipe evidence of Claude-authoring",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x15a8w/strata_rewrote_their_github_history_to_wipe/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 129,
+              "num_comments": 86
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing",
+            "snippet": "Strata rewrote their Github history to wipe evidence of Claude-authoring",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3915
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Claude ChatGPT NASA November",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Claude ChatGPT NASA November",
+        "seed_score": 78.0,
+        "summary": "A hobbyist used Claude + ChatGPT to discover two new potential exoplanets; NASA will confirm in November.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "A hobbyist used Claude + ChatGPT to discover two new potential exoplanets; NASA will confirm in November.",
+            "body": "A hobbyist used Claude + ChatGPT to discover two new potential exoplanets; NASA will confirm in November.",
+            "url": "https://www.reddit.com/r/singularity/comments/1x151a0/a_hobbyist_used_claude_chatgpt_to_discover_two/",
+            "container": "singularity",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 42,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "A hobbyist used Claude + ChatGPT to discover two new potential exoplanets; NASA will confirm in November.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.309
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Using Claude Science UV",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Using Claude Science UV",
+        "seed_score": 64.5,
+        "summary": "Using Claude Science to produce the first complete map of the sky in UV light",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Using Claude Science to produce the first complete map of the sky in UV light",
+            "body": "Using Claude Science to produce the first complete map of the sky in UV light",
+            "url": "https://www.reddit.com/r/singularity/comments/1x11m9i/using_claude_science_to_produce_the_first/",
+            "container": "singularity",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 41,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Using Claude Science to produce the first complete map of the sky in UV light",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3065
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 33.9411,
+        "summary": "How do you know if you're actually learning when coding with AI?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "How do you know if you're actually learning when coding with AI?",
+            "body": "How do you know if you're actually learning when coding with AI?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x0bx6a/how_do_you_know_if_youre_actually_learning_when/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you know if you're actually learning when coding with AI?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2725
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude Code reads AGENTS.md",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Claude Code reads AGENTS.md",
+        "seed_score": 30.0,
+        "summary": "Claude Code reads AGENTS.md now, but one personal file you might add for yourself quietly switches that off",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Claude Code reads AGENTS.md now, but one personal file you might add for yourself quietly switches that off",
+            "body": "Claude Code reads AGENTS.md now, but one personal file you might add for yourself quietly switches that off",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x0odt7/claude_code_reads_agentsmd_now_but_one_personal/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Code reads AGENTS.md now, but one personal file you might add for yourself quietly switches that off",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Tried NVIDIA free Nemotron 3 Ultra",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Tried NVIDIA free Nemotron 3 Ultra",
+        "seed_score": 27.0,
+        "summary": "Tried NVIDIA's free Nemotron 3 Ultra as a coding agent model in OpenCode. What I found.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Tried NVIDIA's free Nemotron 3 Ultra as a coding agent model in OpenCode. What I found.",
+            "body": "Tried NVIDIA's free Nemotron 3 Ultra as a coding agent model in OpenCode. What I found.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x0df90/tried_nvidias_free_nemotron_3_ultra_as_a_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Tried NVIDIA's free Nemotron 3 Ultra as a coding agent model in OpenCode. What I found.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28900000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "which coding agents actually understand context",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "which coding agents actually understand context",
+        "seed_score": 16.5,
+        "summary": "which coding agents actually understand context instead of just autocompleting",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "which coding agents actually understand context instead of just autocompleting",
+            "body": "which coding agents actually understand context instead of just autocompleting",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x0nux7/which_coding_agents_actually_understand_context/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "which coding agents actually understand context instead of just autocompleting",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2795
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Best 80-200 GB VRAM 2-3",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Best 80-200 GB VRAM 2-3",
+        "seed_score": 9.5459,
+        "summary": "Best open-weight coding model + harness for an on-prem multi-agent setup? (80-200+ GB VRAM, 2-3 concurrent users)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Best open-weight coding model + harness for an on-prem multi-agent setup? (80-200+ GB VRAM, 2-3 concurrent users)",
+            "body": "Best open-weight coding model + harness for an on-prem multi-agent setup? (80-200+ GB VRAM, 2-3 concurrent users)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x0amqj/best_openweight_coding_model_harness_for_an/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Best open-weight coding model + harness for an on-prem multi-agent setup? (80-200+ GB VRAM, 2-3 concurrent users)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.084
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "people actually handling security boundaries in",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "people actually handling security boundaries in",
+        "seed_score": 6.364,
+        "summary": "How are people actually handling security boundaries in coding agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "How are people actually handling security boundaries in coding agents?",
+            "body": "How are people actually handling security boundaries in coding agents?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x05666/how_are_people_actually_handling_security/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are people actually handling security boundaries in coding agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.09300000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI-generated API",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "AI-generated API",
+        "seed_score": 6.0,
+        "summary": "How do you keep AI-generated code from falling apart when you change the database or API mid-project?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "How do you keep AI-generated code from falling apart when you change the database or API mid-project?",
+            "body": "How do you keep AI-generated code from falling apart when you change the database or API mid-project?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x0smfw/how_do_you_keep_aigenerated_code_from_falling/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you keep AI-generated code from falling apart when you change the database or API mid-project?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.27,
+            "freshness": 90,
+            "engagement_score": 4,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4045
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,793 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "76a3731d09724be9",
+  "generated_at": "2026-10-08T23:55:31.738148Z",
+  "from_date": "2026-10-07",
+  "to_date": "2026-10-08",
+  "domain": "AI agents software development testing code review DevOps CI/CD",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-08T23:55:31.726987Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-08T23:55:31.727001Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-08T23:55:30.500281Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 29,
+      "attempted": true,
+      "at": "2026-10-08T23:55:31.726476Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Last South Korea AI ARTEX",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 150
+        }
+      },
+      "nomination": {
+        "name": "Last South Korea AI ARTEX",
+        "seed_score": 1357.5,
+        "summary": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "body": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 755,
+              "num_comments": 150
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "Reddit listing",
+            "snippet": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.48750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anti-patterns in software blogging",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 146,
+          "points": 320
+        }
+      },
+      "nomination": {
+        "name": "Anti-patterns in software blogging",
+        "seed_score": 494.2676,
+        "summary": "Anti-patterns in software blogging",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49992257",
+            "source": "hackernews",
+            "title": "Anti-patterns in software blogging",
+            "body": "Anti-patterns in software blogging",
+            "url": "https://refactoringenglish.com/blog/anti-patterns-software-blogging/",
+            "author": "ilreb",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 320,
+              "comments": 146
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Anti-patterns in software blogging",
+            "snippet": "Anti-patterns in software blogging",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49992257",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Docker Agent",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 137,
+          "points": 294
+        }
+      },
+      "nomination": {
+        "name": "Docker Agent",
+        "seed_score": 457.1445,
+        "summary": "Docker Agent",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49996259",
+            "source": "hackernews",
+            "title": "Docker Agent",
+            "body": "Docker Agent",
+            "url": "https://github.com/docker/docker-agent",
+            "author": "saikatsg",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 294,
+              "comments": 137
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Docker Agent",
+            "snippet": "Docker Agent",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49996259",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 97,
+            "source_quality": 0.8,
+            "local_rank_score": 0.122
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Running LLM-driven 800",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "Running LLM-driven 800",
+        "seed_score": 99.0,
+        "summary": "Running an LLM-driven town with 800+ persistent agents: concurrency, context caching, and inference costs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Running an LLM-driven town with 800+ persistent agents: concurrency, context caching, and inference costs",
+            "body": "Running an LLM-driven town with 800+ persistent agents: concurrency, context caching, and inference costs",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0ms0m/running_an_llmdriven_town_with_800_persistent/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 40,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Running an LLM-driven town with 800+ persistent agents: concurrency, context caching, and inference costs",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.318
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Sr PM AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Sr PM AI",
+        "seed_score": 52.5,
+        "summary": "Sr. PM wants to learn AI agent, can you help?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Sr. PM wants to learn AI agent, can you help?",
+            "body": "Sr. PM wants to learn AI agent, can you help?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0oef7/sr_pm_wants_to_learn_ai_agent_can_you_help/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "Sr. PM wants to learn AI agent, can you help?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41550000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 49.5,
+        "summary": "Is anyone else concerned about privacy with AI agents acting on your behalf?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Is anyone else concerned about privacy with AI agents acting on your behalf?",
+            "body": "Is anyone else concerned about privacy with AI agents acting on your behalf?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x14dde/is_anyone_else_concerned_about_privacy_with_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone else concerned about privacy with AI agents acting on your behalf?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.461
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "Agents",
+        "seed_score": 43.5,
+        "summary": "Agents that phone businesses for a person (not sales calls). What actually breaks?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "Agents that phone businesses for a person (not sales calls). What actually breaks?",
+            "body": "Agents that phone businesses for a person (not sales calls). What actually breaks?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0n6kk/agents_that_phone_businesses_for_a_person_not/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Agents that phone businesses for a person (not sales calls). What actually breaks?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 32,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3025
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "thing you wish you could get",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "thing you wish you could get",
+        "seed_score": 40.5,
+        "summary": "What's ONE thing you wish you could get your agent to do, but can't?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "What's ONE thing you wish you could get your agent to do, but can't?",
+            "body": "What's ONE thing you wish you could get your agent to do, but can't?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0s4nc/whats_one_thing_you_wish_you_could_get_your_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "What's ONE thing you wish you could get your agent to do, but can't?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.259
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "HR/IT",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "HR/IT",
+        "seed_score": 37.5,
+        "summary": "what would you actually make an HR/IT agent DO before paying for one?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "what would you actually make an HR/IT agent DO before paying for one?",
+            "body": "what would you actually make an HR/IT agent DO before paying for one?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0s72o/what_would_you_actually_make_an_hrit_agent_do/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "what would you actually make an HR/IT agent DO before paying for one?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.26
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Alignment",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Alignment",
+        "seed_score": 36.0,
+        "summary": "Alignment and the use of agents on personal computers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "Alignment and the use of agents on personal computers",
+            "body": "Alignment and the use of agents on personal computers",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0lqs6/alignment_and_the_use_of_agents_on_personal/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Alignment and the use of agents on personal computers",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI API costs",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "AI API costs",
+        "seed_score": 31.5,
+        "summary": "How are you protecting AI agents from runaway API costs?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "How are you protecting AI agents from runaway API costs?",
+            "body": "How are you protecting AI agents from runaway API costs?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0vzzt/how_are_you_protecting_ai_agents_from_runaway_api/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are you protecting AI agents from runaway API costs?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4660000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Your agent real policy is whatever",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Your agent real policy is whatever",
+        "seed_score": 25.5,
+        "summary": "Your agent\u2019s real policy is whatever its credentials allow",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Your agent\u2019s real policy is whatever its credentials allow",
+            "body": "Your agent\u2019s real policy is whatever its credentials allow",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x10iey/your_agents_real_policy_is_whatever_its/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Your agent\u2019s real policy is whatever its credentials allow",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.249
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "60 3 Shrinking 12 12",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "60 3 Shrinking 12 12",
+        "seed_score": 24.0,
+        "summary": "My sandboxed agent scored 60% checking code reviews and a bigger model only added 3 points. Shrinking the question got it to 12 for 12.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "My sandboxed agent scored 60% checking code reviews and a bigger model only added 3 points. Shrinking the question got it to 12 for 12.",
+            "body": "My sandboxed agent scored 60% checking code reviews and a bigger model only added 3 points. Shrinking the question got it to 12 for 12.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0ti5l/my_sandboxed_agent_scored_60_checking_code/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "My sandboxed agent scored 60% checking code reviews and a bigger model only added 3 points. Shrinking the question got it to 12 for 12.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2675
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "My voice agent wanders the internet",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "My voice agent wanders the internet",
+        "seed_score": 24.0,
+        "summary": "My voice agent wanders the internet looking to agent make friends for a podcast",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "My voice agent wanders the internet looking to agent make friends for a podcast",
+            "body": "My voice agent wanders the internet looking to agent make friends for a podcast",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0sb17/my_voice_agent_wanders_the_internet_looking_to/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "My voice agent wanders the internet looking to agent make friends for a podcast",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.252
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Production-grade Agent Graph Engineering",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Production-grade Agent Graph Engineering",
+        "seed_score": 22.5,
+        "summary": "Production-grade Agent Graph Engineering: what I would tell someone starting an agent system today",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Production-grade Agent Graph Engineering: what I would tell someone starting an agent system today",
+            "body": "Production-grade Agent Graph Engineering: what I would tell someone starting an agent system today",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x0sewl/productiongrade_agent_graph_engineering_what_i/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Production-grade Agent Graph Engineering: what I would tell someone starting an agent system today",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.253
+          }
+        ]
+      }
+    }
+  ]
+}

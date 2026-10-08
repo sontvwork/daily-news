@@ -71,6 +71,7 @@ Format bắt buộc (script `news.py validate` sẽ kiểm tra):
 - Dòng đầu tiên là `# Daily News DD/MM/YYYY` (theo DATE). Trước dòng này không có gì, không lời chào, không câu dẫn. Toàn file chỉ có đúng một heading cấp 1.
 - Mỗi tin là một heading `### N. <Tiêu đề tiếng Việt>`, N đánh số liên tục từ 1. Theo sau là 1–3 bullet có emoji điểm nhấn, tóm tắt sự kiện và nêu ứng dụng/lợi ích thực tế cho developer (cách dùng, so sánh ngắn, cách áp dụng ngay). Thêm một bullet cuối `- 🔗 [Nguồn](<URL gốc, xem ưu tiên ở trên>)`.
 - Viết toàn bộ bằng tiếng Việt, giọng thân mật vừa phải, ngắn gọn, dễ scan. Giữ nguyên tên riêng, tên sản phẩm và số liệu.
+- KHÔNG viết tắt "Hacker News" thành "HN". Riêng tên loại bài chính thức của Hacker News như "Show HN", "Launch HN", "Ask HN", "Tell HN" thì giữ nguyên.
 - Ví dụ:
 
   ```

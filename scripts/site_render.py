@@ -191,8 +191,8 @@ def render_site(news_dir: Path, theme_dir: Path, pages: dict[date, str], *,
     latest = issues[0] if issues else None
     total = sum(len(issue.items) for issue in issues)
     stats = "".join(f'<div class="stat"><b>{value}</b><span>{label}</span></div>' for value, label in [
-        (len(issues), f"bản tin · {retention_days} ngày"),
-        (total, f"tin · {retention_days} ngày"),
+        (len(issues), "bản tin"),
+        (total, "tin từ nhiều nguồn"),
         (f"{latest.day:%d/%m}" if latest else "—", "số mới nhất"),
     ])
     write(news_dir / "index.html", index_tpl.safe_substitute(

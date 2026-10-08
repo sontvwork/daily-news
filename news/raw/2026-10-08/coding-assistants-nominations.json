@@ -1,0 +1,836 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c2f30d647c0d8fbd",
+  "generated_at": "2026-10-07T23:56:37.066106Z",
+  "from_date": "2026-10-06",
+  "to_date": "2026-10-07",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-07T23:56:37.055453Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-10-07T23:56:19.653915Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 8,
+      "attempted": true,
+      "at": "2026-10-07T23:56:21.008394Z"
+    },
+    "x": {
+      "source": "x",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-10-07T23:56:37.054733Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Haiku 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 306,
+          "points": 626
+        },
+        "reddit": {
+          "num_comments": 101
+        }
+      },
+      "nomination": {
+        "name": "Claude Haiku 5.5",
+        "seed_score": 2653.05,
+        "summary": "Claude Haiku 5.5",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49996437",
+            "source": "hackernews",
+            "title": "Claude Haiku 5.5",
+            "body": "Claude Haiku 5.5",
+            "url": "https://www.anthropic.com/claude-haiku-5-5",
+            "author": "sfkgtbor",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 626,
+              "comments": 306
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Claude Haiku 5.5",
+            "snippet": "Claude Haiku 5.5",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49996437",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4225
+          },
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Introducing Claude Haiku 5.5",
+            "body": "Introducing Claude Haiku 5.5",
+            "url": "https://www.reddit.com/r/singularity/comments/1x03oya/introducing_claude_haiku_55/",
+            "container": "singularity",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 505,
+              "num_comments": 101
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "Introducing Claude Haiku 5.5",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3825
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Woman",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 302
+        }
+      },
+      "nomination": {
+        "name": "Woman",
+        "seed_score": 1141.2703,
+        "summary": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "body": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz5b30/woman_used_claude_as_her_diary_and_got_reported/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 774,
+              "num_comments": 302
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Woman used claude as her diary - and got reported to the police for contents of her diary",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Astra Claude 11 Lean",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 244
+        }
+      },
+      "nomination": {
+        "name": "Astra Claude 11 Lean",
+        "seed_score": 1130.6637,
+        "summary": "Astra and Claude prove the best known square packing for 11 squares is optimal (formalized in Lean)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Astra and Claude prove the best known square packing for 11 squares is optimal (formalized in Lean)",
+            "body": "Astra and Claude prove the best known square packing for 11 squares is optimal (formalized in Lean)",
+            "url": "https://www.reddit.com/r/singularity/comments/1wzf641/astra_and_claude_prove_the_best_known_square/",
+            "container": "singularity",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 822,
+              "num_comments": 244
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Astra and Claude prove the best known square packing for 11 squares is optimal (formalized in Lean)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.162
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "GitHub refuses",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 298,
+          "points": 509
+        }
+      },
+      "nomination": {
+        "name": "GitHub refuses",
+        "seed_score": 855.9528,
+        "summary": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49982498",
+            "source": "hackernews",
+            "title": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+            "body": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+            "url": "https://news.ycombinator.com/item?id=49982498",
+            "author": "IvanK_net",
+            "container": "Hacker News",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 509,
+              "comments": 298
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Tell HN: GitHub refuses to remove cracked copies of my softw",
+            "snippet": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49982498",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Meta Microsoft Claude AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 242,
+          "points": 249
+        }
+      },
+      "nomination": {
+        "name": "Meta Microsoft Claude AI",
+        "seed_score": 736.5,
+        "summary": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49997161",
+            "source": "hackernews",
+            "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "body": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+            "author": "speckx",
+            "container": "Hacker News",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 249,
+              "comments": 242
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "HN story about Meta and Microsoft take steps to reduce employee usage of Cl",
+            "snippet": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49997161",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4485
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Vibecoding",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 284,
+          "points": 192
+        }
+      },
+      "nomination": {
+        "name": "Vibecoding",
+        "seed_score": 504.8742,
+        "summary": "Vibecoding isn't as fun as writing code by hand",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49979306",
+            "source": "hackernews",
+            "title": "Vibecoding isn't as fun as writing code by hand",
+            "body": "Vibecoding isn't as fun as writing code by hand",
+            "url": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
+            "author": "Curiositry",
+            "container": "Hacker News",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 192,
+              "comments": 284
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Vibecoding isn't as fun as writing code by hand",
+            "snippet": "Vibecoding isn't as fun as writing code by hand",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49979306",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 13,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07050000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 152,
+          "points": 262
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 439.1133,
+        "summary": "Claude Code\u2019s suggested message feature: I think the real customer is the model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "49981905",
+            "source": "hackernews",
+            "title": "Claude Code\u2019s suggested message feature: I think the real customer is the model",
+            "body": "Claude Code\u2019s suggested message feature: I think the real customer is the model",
+            "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+            "author": "zed_labs_dev",
+            "container": "Hacker News",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 262,
+              "comments": 152
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Claude Code\u2019s suggested message feature: I think the real cu",
+            "snippet": "Claude Code\u2019s suggested message feature: I think the real customer is the model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=49981905",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.10300000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Im",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 82
+        }
+      },
+      "nomination": {
+        "name": "Im",
+        "seed_score": 226.9813,
+        "summary": "Im tired of reviewing code nobody actually wrote",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Im tired of reviewing code nobody actually wrote",
+            "body": "Im tired of reviewing code nobody actually wrote",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wz72y2/im_tired_of_reviewing_code_nobody_actually_wrote/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 132,
+              "num_comments": 82
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Im tired of reviewing code nobody actually wrote",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Tested in Coding Strata",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "Tested in Coding Strata",
+        "seed_score": 66.0,
+        "summary": "Tested in Coding: Strata",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "Tested in Coding: Strata",
+            "body": "Tested in Coding: Strata",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0b0iq/tested_in_coding_strata/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 24,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "Tested in Coding: Strata",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33349999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Cursor Vibe Claude Code Codex ChatGPT",
+      "heuristic_junk": false,
+      "sources": [
+        "x"
+      ],
+      "engagement_by_source": {
+        "x": {
+          "likes": 14,
+          "quotes": 1,
+          "replies": 18,
+          "reposts": 1
+        }
+      },
+      "nomination": {
+        "name": "Cursor Vibe Claude Code Codex ChatGPT",
+        "seed_score": 36.0624,
+        "summary": "Cursor for Vibe coding. Claude Code for deep coding. Codex for agentic work. ChatGPT for everything else.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "X8",
+            "source": "x",
+            "title": "Cursor for Vibe coding. Claude Code for deep coding. Codex for agentic work. ChatGPT for everything else.",
+            "body": "Cursor for Vibe coding. Claude Code for deep coding. Codex for agentic work. ChatGPT for everything else.",
+            "url": "https://x.com/chanduuu_cs/status/2107509569719243063",
+            "author": "chanduuu_cs",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "likes": 14,
+              "reposts": 1,
+              "replies": 18,
+              "quotes": 1
+            },
+            "relevance_hint": 0.95,
+            "why_relevant": "Direct comparison of Cursor, Claude Code, and other AI coding assistants",
+            "snippet": "Cursor for Vibe coding. Claude Code for deep coding. Codex for agentic work. ChatGPT for everything else.",
+            "metadata": {},
+            "local_relevance": 0.28,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.68,
+            "local_rank_score": 0.30700000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 28.6378,
+        "summary": "How is your team standardizing AI coding workflows across repos?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "How is your team standardizing AI coding workflows across repos?",
+            "body": "How is your team standardizing AI coding workflows across repos?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wysqo1/how_is_your_team_standardizing_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "How is your team standardizing AI coding workflows across repos?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2635
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Antigravity \u3068 GitHub Copilot \u3092\u7a4d\u6975\u7684\u306b\u4f7f\u3046\u7406\u7531\u306f\u306a\u3044\u3063\u3066\u8a8d\u8b58\u3067OK\uff1f\uff08Claude Code\u3084Codex\u3092\u4f7f\u3048\u308b\u3082\u306e\u3068\u3059\u308b\uff09",
+      "heuristic_junk": false,
+      "sources": [
+        "x"
+      ],
+      "engagement_by_source": {
+        "x": {
+          "likes": 22,
+          "quotes": 0,
+          "replies": 2,
+          "reposts": 0
+        }
+      },
+      "nomination": {
+        "name": "Antigravity \u3068 GitHub Copilot \u3092\u7a4d\u6975\u7684\u306b\u4f7f\u3046\u7406\u7531\u306f\u306a\u3044\u3063\u3066\u8a8d\u8b58\u3067OK\uff1f\uff08Claude Code\u3084Codex\u3092\u4f7f\u3048\u308b\u3082\u306e\u3068\u3059\u308b\uff09",
+        "seed_score": 25.4558,
+        "summary": "Antigravity \u3068 GitHub Copilot \u3092\u7a4d\u6975\u7684\u306b\u4f7f\u3046\u7406\u7531\u306f\u306a\u3044\u3063\u3066\u8a8d\u8b58\u3067OK\uff1f\uff08Claude Code\u3084Codex\u3092\u4f7f\u3048\u308b\u3082\u306e\u3068\u3059\u308b\uff09",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "X4",
+            "source": "x",
+            "title": "Antigravity \u3068 GitHub Copilot \u3092\u7a4d\u6975\u7684\u306b\u4f7f\u3046\u7406\u7531\u306f\u306a\u3044\u3063\u3066\u8a8d\u8b58\u3067OK\uff1f\uff08Claude Code\u3084Codex\u3092\u4f7f\u3048\u308b\u3082\u306e\u3068\u3059\u308b\uff09",
+            "body": "Antigravity \u3068 GitHub Copilot \u3092\u7a4d\u6975\u7684\u306b\u4f7f\u3046\u7406\u7531\u306f\u306a\u3044\u3063\u3066\u8a8d\u8b58\u3067OK\uff1f\uff08Claude Code\u3084Codex\u3092\u4f7f\u3048\u308b\u3082\u306e\u3068\u3059\u308b\uff09",
+            "url": "https://x.com/ynishi2015/status/2107376307977978142",
+            "author": "ynishi2015",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "likes": 22,
+              "reposts": 0,
+              "replies": 2,
+              "quotes": 0
+            },
+            "relevance_hint": 0.8,
+            "why_relevant": "Japanese post questioning need for Antigravity or Copilot when Claude Code/Codex available",
+            "snippet": "Antigravity \u3068 GitHub Copilot \u3092\u7a4d\u6975\u7684\u306b\u4f7f\u3046\u7406\u7531\u306f\u306a\u3044\u3063\u3066\u8a8d\u8b58\u3067OK\uff1f\uff08Claude Code\u3084Codex\u3092\u4f7f\u3048\u308b\u3082\u306e\u3068\u3059\u308b\uff09",
+            "metadata": {},
+            "local_relevance": 0.36,
+            "freshness": 10,
+            "engagement_score": 84,
+            "source_quality": 0.68,
+            "local_rank_score": 0.343
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Claude Code Boris Cherny Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "x"
+      ],
+      "engagement_by_source": {
+        "x": {
+          "likes": 12,
+          "quotes": 0,
+          "replies": 3,
+          "reposts": 0
+        }
+      },
+      "nomination": {
+        "name": "Claude Code Boris Cherny Anthropic",
+        "seed_score": 15.9099,
+        "summary": "The engineer who created Claude Code went on stage and showed exactly how he uses it. His name is Boris Cherny. This talk is from Anthropic's 'Code with Claude' conference...",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "X1",
+            "source": "x",
+            "title": "The engineer who created Claude Code went on stage and showed exactly how he uses it. His name is Boris Cherny. This talk is from Anthropic'",
+            "body": "The engineer who created Claude Code went on stage and showed exactly how he uses it. His name is Boris Cherny. This talk is from Anthropic's 'Code with Claude' conference...",
+            "url": "https://x.com/uuexgk/status/2107570862610416127",
+            "author": "uuexgk",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "likes": 12,
+              "reposts": 0,
+              "replies": 3,
+              "quotes": 0
+            },
+            "relevance_hint": 0.95,
+            "why_relevant": "Detailed breakdown of Claude Code features and workflows compared to other AI coding tools",
+            "snippet": "The engineer who created Claude Code went on stage and showed exactly how he uses it. His name is Boris Cherny. This talk is from Anthropic's 'Code with Claude' conference...",
+            "metadata": {},
+            "local_relevance": 0.11,
+            "freshness": 10,
+            "engagement_score": 67,
+            "source_quality": 0.68,
+            "local_rank_score": 0.1635
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "people actually handling security boundaries in",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "people actually handling security boundaries in",
+        "seed_score": 7.5,
+        "summary": "How are people actually handling security boundaries in coding agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "How are people actually handling security boundaries in coding agents?",
+            "body": "How are people actually handling security boundaries in coding agents?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x05666/how_are_people_actually_handling_security/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are people actually handling security boundaries in coding agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI answer",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "AI answer",
+        "seed_score": 7.4246,
+        "summary": "Can an AI assistant tell members when it doesn\u2019t know the answer?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Can an AI assistant tell members when it doesn\u2019t know the answer?",
+            "body": "Can an AI assistant tell members when it doesn\u2019t know the answer?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1wzg23z/can_an_ai_assistant_tell_members_when_it_doesnt/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "Can an AI assistant tell members when it doesn\u2019t know the answer?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 10,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.17650000000000002
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,799 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "bd08e0a6f4260f33",
+  "generated_at": "2026-10-09T23:55:44.791966Z",
+  "from_date": "2026-10-08",
+  "to_date": "2026-10-09",
+  "domain": "AI agents software development testing code review DevOps CI/CD",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-09T23:55:44.778113Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-09T23:55:44.778128Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-09T23:55:43.584610Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 33,
+      "attempted": true,
+      "at": "2026-10-09T23:55:44.777571Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Last South Korea AI ARTEX",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 179
+        }
+      },
+      "nomination": {
+        "name": "Last South Korea AI ARTEX",
+        "seed_score": 1142.331,
+        "summary": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "body": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 898,
+              "num_comments": 179
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "Reddit listing",
+            "snippet": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2875
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Let AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 161,
+          "points": 363
+        }
+      },
+      "nomination": {
+        "name": "Let AI agents",
+        "seed_score": 786.0,
+        "summary": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50018817",
+            "source": "hackernews",
+            "title": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+            "body": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+            "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+            "author": "franze",
+            "container": "Hacker News",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 363,
+              "comments": 161
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "HN story about Show HN: Let your AI agents paint big arrows, boxes and text",
+            "snippet": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50018817",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.5135
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": true,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 127,
+          "points": 263
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 413.6575,
+        "summary": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50002665",
+            "source": "hackernews",
+            "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+            "body": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+            "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
+            "author": "pyduan",
+            "container": "Hacker News",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 263,
+              "comments": 127
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about I think I found a planet nobody knew existed. I used Claude",
+            "snippet": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50002665",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 91,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14200000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "MXC a sandboxed code execution system",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 80,
+          "points": 177
+        }
+      },
+      "nomination": {
+        "name": "MXC a sandboxed code execution system",
+        "seed_score": 385.5,
+        "summary": "MXC - a sandboxed code execution system",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50016489",
+            "source": "hackernews",
+            "title": "MXC - a sandboxed code execution system",
+            "body": "MXC - a sandboxed code execution system",
+            "url": "https://github.com/microsoft/mxc",
+            "author": "nreece",
+            "container": "Hacker News",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 177,
+              "comments": 80
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about MXC - a sandboxed code execution system",
+            "snippet": "MXC - a sandboxed code execution system",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50016489",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.8,
+            "local_rank_score": 0.342
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 52
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 138.0,
+        "summary": "I gave my AI agent a voice and now I can't live without it!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "I gave my AI agent a voice and now I can't live without it!",
+            "body": "I gave my AI agent a voice and now I can't live without it!",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x183wp/i_gave_my_ai_agent_a_voice_and_now_i_cant_live/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 40,
+              "num_comments": 52
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "I gave my AI agent a voice and now I can't live without it!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43450000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Tested Mellum2.1-12B-A2.5B PI Coding Agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Tested Mellum2.1-12B-A2.5B PI Coding Agent",
+        "seed_score": 88.5,
+        "summary": "Tested Mellum2.1-12B-A2.5B on PI Coding Agent - surprisingly usable, but not great at one-shot projects",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Tested Mellum2.1-12B-A2.5B on PI Coding Agent - surprisingly usable, but not great at one-shot projects",
+            "body": "Tested Mellum2.1-12B-A2.5B on PI Coding Agent - surprisingly usable, but not great at one-shot projects",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x1owjv/tested_mellum2112ba25b_on_pi_coding_agent/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 46,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Tested Mellum2.1-12B-A2.5B on PI Coding Agent - surprisingly usable, but not great at one-shot projects",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 72.0,
+        "summary": "Is anyone using AI agents to handle customer support?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Is anyone using AI agents to handle customer support?",
+            "body": "Is anyone using AI agents to handle customer support?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1whua/is_anyone_using_ai_agents_to_handle_customer/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 26,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone using AI agents to handle customer support?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4765
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI agents acting",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 34
+        }
+      },
+      "nomination": {
+        "name": "AI agents acting",
+        "seed_score": 68.9429,
+        "summary": "Is anyone else concerned about privacy with AI agents acting on your behalf?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Is anyone else concerned about privacy with AI agents acting on your behalf?",
+            "body": "Is anyone else concerned about privacy with AI agents acting on your behalf?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x14dde/is_anyone_else_concerned_about_privacy_with_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 31,
+              "num_comments": 34
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone else concerned about privacy with AI agents acting on your behalf?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.274
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Dumping",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Dumping",
+        "seed_score": 64.5,
+        "summary": "Dumping your whole site into the agent is making it worse and everyone keeps doing it anyway",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Dumping your whole site into the agent is making it worse and everyone keeps doing it anyway",
+            "body": "Dumping your whole site into the agent is making it worse and everyone keeps doing it anyway",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1qlji/dumping_your_whole_site_into_the_agent_is_making/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Dumping your whole site into the agent is making it worse and everyone keeps doing it anyway",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.273
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI bottleneck",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "AI bottleneck",
+        "seed_score": 43.5,
+        "summary": "The real bottleneck of building with AI isn\u2019t code generation\u2014it\u2019s human review fatigue.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "The real bottleneck of building with AI isn\u2019t code generation\u2014it\u2019s human review fatigue.",
+            "body": "The real bottleneck of building with AI isn\u2019t code generation\u2014it\u2019s human review fatigue.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1h82c/the_real_bottleneck_of_building_with_ai_isnt_code/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "The real bottleneck of building with AI isn\u2019t code generation\u2014it\u2019s human review fatigue.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4805
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "OpenAI Navier-Stokes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 2,
+          "points": 26
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Navier-Stokes",
+        "seed_score": 42.0,
+        "summary": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50026734",
+            "source": "hackernews",
+            "title": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
+            "body": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
+            "url": "https://www.newscientist.com/article/2592824-openai-mistranslated-mathematics-into-code-for-its-navier-stokes-proof/",
+            "author": "danielmorozoff",
+            "container": "Hacker News",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 26,
+              "comments": 2
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about OpenAI mistranslated mathematics into code for its Navier-St",
+            "snippet": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50026734",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.251
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI agents computer",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "AI agents computer",
+        "seed_score": 39.0,
+        "summary": "How do you remotely use AI agents on your computer from your phone?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "How do you remotely use AI agents on your computer from your phone?",
+            "body": "How do you remotely use AI agents on your computer from your phone?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1mvjl/how_do_you_remotely_use_ai_agents_on_your/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you remotely use AI agents on your computer from your phone?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.47000000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Developing AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Developing AI",
+        "seed_score": 36.0,
+        "summary": "Developing a tool that let's AI agent take a human's help to make a phone call",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Developing a tool that let's AI agent take a human's help to make a phone call",
+            "body": "Developing a tool that let's AI agent take a human's help to make a phone call",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1qmvf/developing_a_tool_that_lets_ai_agent_take_a/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "Developing a tool that let's AI agent take a human's help to make a phone call",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3965
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "agents re-solve the same problem every",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "agents re-solve the same problem every",
+        "seed_score": 30.0,
+        "summary": "Do your agents re-solve the same problem every time? I tried caching solutions instead, here is what broke",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Do your agents re-solve the same problem every time? I tried caching solutions instead, here is what broke",
+            "body": "Do your agents re-solve the same problem every time? I tried caching solutions instead, here is what broke",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1t3s4/do_your_agents_resolve_the_same_problem_every/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Do your agents re-solve the same problem every time? I tried caching solutions instead, here is what broke",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29300000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI absolutely",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "AI absolutely",
+        "seed_score": 28.5,
+        "summary": "Anyone else built an AI agent at work and then thought \u201cabsolutely fucking not\u201d?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Anyone else built an AI agent at work and then thought \u201cabsolutely fucking not\u201d?",
+            "body": "Anyone else built an AI agent at work and then thought \u201cabsolutely fucking not\u201d?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1w978/anyone_else_built_an_ai_agent_at_work_and_then/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anyone else built an AI agent at work and then thought \u201cabsolutely fucking not\u201d?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39150000000000007
+          }
+        ]
+      }
+    }
+  ]
+}

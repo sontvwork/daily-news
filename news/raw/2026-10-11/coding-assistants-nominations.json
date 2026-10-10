@@ -1,0 +1,793 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "7161ce814bb551ea",
+  "generated_at": "2026-10-10T23:55:34.347764Z",
+  "from_date": "2026-10-09",
+  "to_date": "2026-10-10",
+  "domain": "AI coding assistants Claude Code Cursor GitHub Copilot Antigravity",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-10T23:55:34.335871Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-10T23:55:34.335895Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-10-10T23:55:33.133387Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 22,
+      "attempted": true,
+      "at": "2026-10-10T23:55:34.335387Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "One developer used Claude LG webOS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 184
+        }
+      },
+      "nomination": {
+        "name": "One developer used Claude LG webOS",
+        "seed_score": 2614.5273,
+        "summary": "One developer used Claude to reverse-engineer LG\u2019s webOS media stack and build a native Rust Plex client from scratch\u2014on the same 2019 TV it cuts the profile screen from ~30 seconds to ~3, runs at 60 FPS, and supports 4K, Dolby Vision and Atmos",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "One developer used Claude to reverse-engineer LG\u2019s webOS media stack and build a native Rust Plex client from scratch\u2014on the same 2019 TV it cuts the profile screen from ~30 seconds to ~3, runs at 60 FPS, and supports 4K, Dolby Vision and Atmos",
+            "body": "One developer used Claude to reverse-engineer LG\u2019s webOS media stack and build a native Rust Plex client from scratch\u2014on the same 2019 TV it cuts the profile screen from ~30 seconds to ~3, runs at 60 FPS, and supports 4K, Dolby Vision and Atmos",
+            "url": "https://www.reddit.com/r/singularity/comments/1x18s0b/one_developer_used_claude_to_reverseengineer_lgs/",
+            "container": "singularity",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2281,
+              "num_comments": 184
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "One developer used Claude to reverse-engineer LG\u2019s webOS media stack and build a native Rust Plex client from scratch\u2014on the same 2019 TV it cuts the profile screen from ~30 seconds to ~3, runs at 60 FPS, and supports 4K, Dolby Vision and Atmos",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "New carbon model from google opus",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 92
+        }
+      },
+      "nomination": {
+        "name": "New carbon model from google opus",
+        "seed_score": 305.4701,
+        "summary": "New \"carbon\" model from google (opus like coding from early reports)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "New \"carbon\" model from google (opus like coding from early reports)",
+            "body": "New \"carbon\" model from google (opus like coding from early reports)",
+            "url": "https://www.reddit.com/r/singularity/comments/1x1w15d/new_carbon_model_from_google_opus_like_coding/",
+            "container": "singularity",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 196,
+              "num_comments": 92
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "New \"carbon\" model from google (opus like coding from early reports)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14150000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "MXC a sandboxed code execution system",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 84,
+          "points": 194
+        }
+      },
+      "nomination": {
+        "name": "MXC a sandboxed code execution system",
+        "seed_score": 294.8635,
+        "summary": "MXC - a sandboxed code execution system",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50016489",
+            "source": "hackernews",
+            "title": "MXC - a sandboxed code execution system",
+            "body": "MXC - a sandboxed code execution system",
+            "url": "https://github.com/microsoft/mxc",
+            "author": "nreece",
+            "container": "Hacker News",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 194,
+              "comments": 84
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about MXC - a sandboxed code execution system",
+            "snippet": "MXC - a sandboxed code execution system",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50016489",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic Bans Abusive",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 99
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Bans Abusive",
+        "seed_score": 237.5879,
+        "summary": "Anthropic Bans \u201cAbusive or Cruel Behavior\u201d Toward Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Anthropic Bans \u201cAbusive or Cruel Behavior\u201d Toward Claude",
+            "body": "Anthropic Bans \u201cAbusive or Cruel Behavior\u201d Toward Claude",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x17jpo/anthropic_bans_abusive_or_cruel_behavior_toward/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 125,
+              "num_comments": 99
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic Bans \u201cAbusive or Cruel Behavior\u201d Toward Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14500000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anthropic/ChatGPT Github",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 68
+        }
+      },
+      "nomination": {
+        "name": "Anthropic/ChatGPT Github",
+        "seed_score": 224.86,
+        "summary": "My \"Anthropic/ChatGPT in a box\" is... now open source and publicly hosted on Github.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "My \"Anthropic/ChatGPT in a box\" is... now open source and publicly hosted on Github.",
+            "body": "My \"Anthropic/ChatGPT in a box\" is... now open source and publicly hosted on Github.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x1zlxh/my_anthropicchatgpt_in_a_box_is_now_open_source/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 144,
+              "num_comments": 68
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "My \"Anthropic/ChatGPT in a box\" is... now open source and publicly hosted on Github.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Qwen3.8-27B 3090 140 tok/s",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-27B 3090 140 tok/s",
+        "seed_score": 159.0,
+        "summary": "Qwen3.8-27B on a single 3090: 140 tok/s on code with a custom megakernel",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "Qwen3.8-27B on a single 3090: 140 tok/s on code with a custom megakernel",
+            "body": "Qwen3.8-27B on a single 3090: 140 tok/s on code with a custom megakernel",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2erdj/qwen3827b_on_a_single_3090_140_toks_on_code_with/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 65,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8-27B on a single 3090: 140 tok/s on code with a custom megakernel",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.307
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AlphaFold 250k DNA AlphaGenome 30x DeepMind",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "AlphaFold 250k DNA AlphaGenome 30x DeepMind",
+        "seed_score": 129.0,
+        "summary": "You're familiar with AlphaFold that cracked the shape of 250k proteins from DNA, now AlphaGenome is 30x bigger with way more capability --- \"DeepMind's New AI Just Cracked The Code Of Life\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "You're familiar with AlphaFold that cracked the shape of 250k proteins from DNA, now AlphaGenome is 30x bigger with way more capability --- \"DeepMind's New AI Just Cracked The Code Of Life\"",
+            "body": "You're familiar with AlphaFold that cracked the shape of 250k proteins from DNA, now AlphaGenome is 30x bigger with way more capability --- \"DeepMind's New AI Just Cracked The Code Of Life\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1x23t8s/youre_familiar_with_alphafold_that_cracked_the/",
+            "container": "singularity",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 74,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing",
+            "snippet": "You're familiar with AlphaFold that cracked the shape of 250k proteins from DNA, now AlphaGenome is 30x bigger with way more capability --- \"DeepMind's New AI Just Cracked The Code Of Life\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.27,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4495
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "CMU Astra 3D 27 KB 25",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "CMU Astra 3D 27 KB 25",
+        "seed_score": 64.5,
+        "summary": "CMU graphics professor uses Astra to create a detailed 3D dragon from just 27 KB of code, with ~25 hours of AI calls. Meanwhile, graphics researchers have demonstrated up to 629\u00d7 faster rendering and 1,000\u00d7 faster geometry evaluation using the same mathematical 3D modeling technique",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "CMU graphics professor uses Astra to create a detailed 3D dragon from just 27 KB of code, with ~25 hours of AI calls. Meanwhile, graphics researchers have demonstrated up to 629\u00d7 faster rendering and 1,000\u00d7 faster geometry evaluation using the same mathematical 3D modeling technique",
+            "body": "CMU graphics professor uses Astra to create a detailed 3D dragon from just 27 KB of code, with ~25 hours of AI calls. Meanwhile, graphics researchers have demonstrated up to 629\u00d7 faster rendering and 1,000\u00d7 faster geometry evaluation using the same mathematical 3D modeling technique",
+            "url": "https://www.reddit.com/r/singularity/comments/1x2kc61/cmu_graphics_professor_uses_astra_to_create_a/",
+            "container": "singularity",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 34,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing",
+            "snippet": "CMU graphics professor uses Astra to create a detailed 3D dragon from just 27 KB of code, with ~25 hours of AI calls. Meanwhile, graphics researchers have demonstrated up to 629\u00d7 faster rendering and 1,000\u00d7 faster geometry evaluation using the same mathematical 3D modeling technique",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.27,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4405
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Claude AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Claude AI",
+        "seed_score": 52.5,
+        "summary": "Claude will pick a design style that fits your business, build every page in it, then audit its own work for the generic AI look and fix it. You just pick the vibe",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "Claude will pick a design style that fits your business, build every page in it, then audit its own work for the generic AI look and fix it. You just pick the vibe",
+            "body": "Claude will pick a design style that fits your business, build every page in it, then audit its own work for the generic AI look and fix it. You just pick the vibe",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x2849r/claude_will_pick_a_design_style_that_fits_your/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 33,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude will pick a design style that fits your business, build every page in it, then audit its own work for the generic AI look and fix it. You just pick the vibe",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4445
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "3,200",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "3,200",
+        "seed_score": 49.851,
+        "summary": "Our coding agent got stuck in a loop and burned $3,200 overnight",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "Our coding agent got stuck in a loop and burned $3,200 overnight",
+            "body": "Our coding agent got stuck in a loop and burned $3,200 overnight",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x1ks1u/our_coding_agent_got_stuck_in_a_loop_and_burned/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Our coding agent got stuck in a loop and burned $3,200 overnight",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08650000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI-generated",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 35
+        }
+      },
+      "nomination": {
+        "name": "AI-generated",
+        "seed_score": 49.851,
+        "summary": "How do you handle reviewing large amounts of AI-generated code?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "How do you handle reviewing large amounts of AI-generated code?",
+            "body": "How do you handle reviewing large amounts of AI-generated code?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x17k3i/how_do_you_handle_reviewing_large_amounts_of/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 35
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you handle reviewing large amounts of AI-generated code?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.259
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus",
+        "seed_score": 46.5,
+        "summary": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus 5.5 on a 5090",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus 5.5 on a 5090",
+            "body": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus 5.5 on a 5090",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2r5jx/qwen38flashnext_strata_pi_beat_claudecode_opus_55/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus 5.5 on a 5090",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33699999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "800K LOC Uber 7 Claude Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 30
+        }
+      },
+      "nomination": {
+        "name": "800K LOC Uber 7 Claude Codex",
+        "seed_score": 45.0,
+        "summary": "built an 800K LOC Uber competitor in 7 months. Claude wrote the code. Codex reviewed it. I was the entire engineering team.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "built an 800K LOC Uber competitor in 7 months. Claude wrote the code. Codex reviewed it. I was the entire engineering team.",
+            "body": "built an 800K LOC Uber competitor in 7 months. Claude wrote the code. Codex reviewed it. I was the entire engineering team.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x2da4k/built_an_800k_loc_uber_competitor_in_7_months/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 30
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "built an 800K LOC Uber competitor in 7 months. Claude wrote the code. Codex reviewed it. I was the entire engineering team.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "anyone give a coding agent the",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "anyone give a coding agent the",
+        "seed_score": 42.0,
+        "summary": "Why would anyone give a coding agent the keys to prod?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Why would anyone give a coding agent the keys to prod?",
+            "body": "Why would anyone give a coding agent the keys to prod?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x2ae60/why_would_anyone_give_a_coding_agent_the_keys_to/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Why would anyone give a coding agent the keys to prod?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Five months",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 7,
+          "points": 30
+        }
+      },
+      "nomination": {
+        "name": "Five months",
+        "seed_score": 39.2444,
+        "summary": "Five months treating bugs like patients and coding agents like a medical team",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50021899",
+            "source": "hackernews",
+            "title": "Five months treating bugs like patients and coding agents like a medical team",
+            "body": "Five months treating bugs like patients and coding agents like a medical team",
+            "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
+            "author": "rafiss",
+            "container": "Hacker News",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 30,
+              "comments": 7
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Five months treating bugs like patients and coding agents li",
+            "snippet": "Five months treating bugs like patients and coding agents like a medical team",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50021899",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07050000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

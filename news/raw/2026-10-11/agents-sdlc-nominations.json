@@ -1,0 +1,802 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "10bca13311bb3139",
+  "generated_at": "2026-10-10T23:55:36.707389Z",
+  "from_date": "2026-10-09",
+  "to_date": "2026-10-10",
+  "domain": "AI agents software development testing code review DevOps CI/CD",
+  "tier": "deep",
+  "mock": false,
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-10T23:55:36.689829Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-10T23:55:36.689847Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-10-10T23:55:35.270546Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 30,
+      "attempted": true,
+      "at": "2026-10-10T23:55:36.689183Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Let AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 188,
+          "points": 412
+        }
+      },
+      "nomination": {
+        "name": "Let AI agents",
+        "seed_score": 636.3961,
+        "summary": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50018817",
+            "source": "hackernews",
+            "title": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+            "body": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+            "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+            "author": "franze",
+            "container": "Hacker News",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 412,
+              "comments": 188
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "HN story about Show HN: Let your AI agents paint big arrows, boxes and text",
+            "snippet": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50018817",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3135
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Talorys AI Cloudflare",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 118,
+          "points": 233
+        }
+      },
+      "nomination": {
+        "name": "Talorys AI Cloudflare",
+        "seed_score": 526.5,
+        "summary": "Talorys \u2013 A self-hosted personal AI agent on Cloudflare's free tier",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50031614",
+            "source": "hackernews",
+            "title": "Talorys \u2013 A self-hosted personal AI agent on Cloudflare's free tier",
+            "body": "Talorys \u2013 A self-hosted personal AI agent on Cloudflare's free tier",
+            "url": "https://github.com/rociiu/talorys",
+            "author": "rociiu",
+            "container": "Hacker News",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 233,
+              "comments": 118
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "HN story about Talorys \u2013 A self-hosted personal AI agent on Cloudflare's fr",
+            "snippet": "Talorys \u2013 A self-hosted personal AI agent on Cloudflare's free tier",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50031614",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.8,
+            "local_rank_score": 0.44250000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "FDA",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 79,
+          "points": 166
+        }
+      },
+      "nomination": {
+        "name": "FDA",
+        "seed_score": 367.5,
+        "summary": "FDA may allow some toxic chemicals to be added to food without safety review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50033638",
+            "source": "hackernews",
+            "title": "FDA may allow some toxic chemicals to be added to food without safety review",
+            "body": "FDA may allow some toxic chemicals to be added to food without safety review",
+            "url": "https://www.theguardian.com/us-news/2026/oct/10/fda-toxic-chemicals-food-analysis",
+            "author": "NewJazz",
+            "container": "Hacker News",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 166,
+              "comments": 79
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about FDA may allow some toxic chemicals to be added to food witho",
+            "snippet": "FDA may allow some toxic chemicals to be added to food without safety review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50033638",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.319
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "MXC a sandboxed code execution system",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 84,
+          "points": 194
+        }
+      },
+      "nomination": {
+        "name": "MXC a sandboxed code execution system",
+        "seed_score": 294.8635,
+        "summary": "MXC - a sandboxed code execution system",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50016489",
+            "source": "hackernews",
+            "title": "MXC - a sandboxed code execution system",
+            "body": "MXC - a sandboxed code execution system",
+            "url": "https://github.com/microsoft/mxc",
+            "author": "nreece",
+            "container": "Hacker News",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 194,
+              "comments": 84
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about MXC - a sandboxed code execution system",
+            "snippet": "MXC - a sandboxed code execution system",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50016489",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 72,
+            "source_quality": 0.8,
+            "local_rank_score": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Engineer Gemma4-31B Qwen3.8-27B 6.1-Sol",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 54
+        }
+      },
+      "nomination": {
+        "name": "Engineer Gemma4-31B Qwen3.8-27B 6.1-Sol",
+        "seed_score": 175.5,
+        "summary": "Engineer / developer observations of Gemma4-31B, Qwen3.8-27B, and 6.1-Sol for software engineering work",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Engineer / developer observations of Gemma4-31B, Qwen3.8-27B, and 6.1-Sol for software engineering work",
+            "body": "Engineer / developer observations of Gemma4-31B, Qwen3.8-27B, and 6.1-Sol for software engineering work",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2mw1o/engineer_developer_observations_of_gemma431b/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 63,
+              "num_comments": 54
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Engineer / developer observations of Gemma4-31B, Qwen3.8-27B, and 6.1-Sol for software engineering work",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Qwen3.8-27B 3090 140 tok/s",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-27B 3090 140 tok/s",
+        "seed_score": 159.0,
+        "summary": "Qwen3.8-27B on a single 3090: 140 tok/s on code with a custom megakernel",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Qwen3.8-27B on a single 3090: 140 tok/s on code with a custom megakernel",
+            "body": "Qwen3.8-27B on a single 3090: 140 tok/s on code with a custom megakernel",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2erdj/qwen3827b_on_a_single_3090_140_toks_on_code_with/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 65,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8-27B on a single 3090: 140 tok/s on code with a custom megakernel",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 97,
+            "source_quality": 0.6,
+            "local_rank_score": 0.348
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 62
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 117.7333,
+        "summary": "I gave my AI agent a voice and now I can't live without it!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "I gave my AI agent a voice and now I can't live without it!",
+            "body": "I gave my AI agent a voice and now I can't live without it!",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x183wp/i_gave_my_ai_agent_a_voice_and_now_i_cant_live/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 49,
+              "num_comments": 62
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "I gave my AI agent a voice and now I can't live without it!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 10,
+            "engagement_score": 97,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2715
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "build your own agent harness",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "build your own agent harness",
+        "seed_score": 99.0,
+        "summary": "Did you guys build your own agent harness?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Did you guys build your own agent harness?",
+            "body": "Did you guys build your own agent harness?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x29w1n/did_you_guys_build_your_own_agent_harness/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 27,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Did you guys build your own agent harness?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.308
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 79.5495,
+        "summary": "Is anyone using AI agents to handle customer support?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Is anyone using AI agents to handle customer support?",
+            "body": "Is anyone using AI agents to handle customer support?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1whua/is_anyone_using_ai_agents_to_handle_customer/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 36,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone using AI agents to handle customer support?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 10,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3135
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI agents building",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "AI agents building",
+        "seed_score": 69.0,
+        "summary": "Is it just me or is building AI agents harder than people make it look?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Is it just me or is building AI agents harder than people make it look?",
+            "body": "Is it just me or is building AI agents harder than people make it look?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x2fc3u/is_it_just_me_or_is_building_ai_agents_harder/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is it just me or is building AI agents harder than people make it look?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.49500000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus",
+        "seed_score": 46.5,
+        "summary": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus 5.5 on a 5090",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus 5.5 on a 5090",
+            "body": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus 5.5 on a 5090",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2r5jx/qwen38flashnext_strata_pi_beat_claudecode_opus_55/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8-Flash-Next Strata pi beat Claude-code Opus 5.5 on a 5090",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.312
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI absolutely",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "AI absolutely",
+        "seed_score": 41.3657,
+        "summary": "Anyone else built an AI agent at work and then thought \u201cabsolutely fucking not\u201d?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "Anyone else built an AI agent at work and then thought \u201cabsolutely fucking not\u201d?",
+            "body": "Anyone else built an AI agent at work and then thought \u201cabsolutely fucking not\u201d?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x1w978/anyone_else_built_an_ai_agent_at_work_and_then/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anyone else built an AI agent at work and then thought \u201cabsolutely fucking not\u201d?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.23249999999999998
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Five months",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 7,
+          "points": 30
+        }
+      },
+      "nomination": {
+        "name": "Five months",
+        "seed_score": 39.2444,
+        "summary": "Five months treating bugs like patients and coding agents like a medical team",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50021899",
+            "source": "hackernews",
+            "title": "Five months treating bugs like patients and coding agents like a medical team",
+            "body": "Five months treating bugs like patients and coding agents like a medical team",
+            "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
+            "author": "rafiss",
+            "container": "Hacker News",
+            "published_at": "2026-10-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 30,
+              "comments": 7
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Five months treating bugs like patients and coding agents li",
+            "snippet": "Five months treating bugs like patients and coding agents like a medical team",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50021899",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.064
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "AI Mostly",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "AI Mostly",
+        "seed_score": 37.5,
+        "summary": "I opened my small website to AI agents and logged who showed up. Mostly it\u2019s bots indexing bots.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "I opened my small website to AI agents and logged who showed up. Mostly it\u2019s bots indexing bots.",
+            "body": "I opened my small website to AI agents and logged who showed up. Mostly it\u2019s bots indexing bots.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x2ianl/i_opened_my_small_website_to_ai_agents_and_logged/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.28,
+            "why_relevant": "Reddit listing",
+            "snippet": "I opened my small website to AI agents and logged who showed up. Mostly it\u2019s bots indexing bots.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.28,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.466
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Our voice agent made up a",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Our voice agent made up a",
+        "seed_score": 33.0,
+        "summary": "Our voice agent made up a delivery date and then defended it for three turns",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "Our voice agent made up a delivery date and then defended it for three turns",
+            "body": "Our voice agent made up a delivery date and then defended it for three turns",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x2ct3o/our_voice_agent_made_up_a_delivery_date_and_then/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Our voice agent made up a delivery date and then defended it for three turns",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.281
+          }
+        ]
+      }
+    }
+  ]
+}

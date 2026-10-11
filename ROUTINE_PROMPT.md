@@ -26,7 +26,6 @@ b. **Chấm điểm**: đọc file bundle `.cache/work/<slug>/discover-nominatio
    - `name`: tên chủ đề 2–6 từ, danh từ riêng đứng trước.
    - `junk`: `true` nếu là bài hỏi đáp cá nhân, tâm sự, quảng cáo thuần, hoặc lạc đề so với **tiêu chí biên tập** bên dưới.
    - `worthiness`: 0–100, mức đáng đưa vào bản tin cho developer. Chủ đề **đã đăng** trong 2 bản tin cũ (Bước 0.4) chỉ được chấm theo phần **thông tin mới** (benchmark, số liệu, phản ứng cộng đồng, bản phát hành tiếp theo…). Không có gì mới đáng kể (chỉ thêm điểm/bình luận, nhắc lại nội dung cũ) → `worthiness` ≤ 20 để nhường chỗ cho chủ đề khác.
-   - Thang chấm theo mức developer **hành động được ngay**: cao (70+) khi tin giúp họ dùng hoặc đổi cách làm việc với AI (công cụ ra mắt/update, workflow hay case study có kết quả cụ thể, đổi giá/chính sách của tool đang dùng); thấp (≤ 40) khi chỉ gây ấn tượng mà không đổi được việc họ làm (con số tốc độ/chi phí/quy mô do cá nhân tự báo cáo, tin đồn, so sánh model chưa kiểm chứng, thuần phần cứng). Điểm tương tác cao không tự nâng `worthiness`.
 
    Ghi file `.cache/work/<slug>/judgments.json` bằng Write tool, đúng schema:
    `{"bundle_id": "<bundle_id trong file bundle>", "judgments": [{"id": "n1", "name": "...", "junk": false, "worthiness": 80}, ...]}`
@@ -66,7 +65,7 @@ Lưu ý: số tương tác tổng hợp ở pha research (view YouTube/TikTok h�
 - Tin trùng mà phần cập nhật không có thông tin quan trọng (chỉ tăng điểm/bình luận, nhắc lại nội dung cũ) → bỏ hẳn, đẩy tin khác lên.
 - Dòng tóm tắt (summary) cũng theo luật này: tin cập nhật thì tóm tắt phần cập nhật.
 
-KHÔNG bịa tên, số liệu, tính năng hay link. Chủ đề nào chỉ có mỗi tiêu đề mà không đủ dữ kiện để viết cho đúng thì bỏ. Tin nào không đạt tiêu chí biên tập cũng bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức hữu ích với developer (theo thang ở Bước 1b), không theo điểm tương tác.
+KHÔNG bịa tên, số liệu, tính năng hay link. Chủ đề nào chỉ có mỗi tiêu đề mà không đủ dữ kiện để viết cho đúng thì bỏ. Tin nào không đạt tiêu chí biên tập cũng bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức quan trọng.
 
 Format bắt buộc (script `news.py validate` sẽ kiểm tra):
 - Dòng đầu tiên là `# Daily News DD/MM/YYYY` (theo DATE). Trước dòng này không có gì, không lời chào, không câu dẫn. Toàn file chỉ có đúng một heading cấp 1.

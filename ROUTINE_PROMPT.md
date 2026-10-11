@@ -50,7 +50,7 @@ Sau khi xong mọi slug:
 - AI agents trong phát triển phần mềm: agentic workflows, tự động coding, testing, code review, DevOps, CI/CD; tác động thực tế đến năng suất developer/team (tiết kiệm thời gian, chất lượng code, rủi ro).
 - Tin thương mại hoặc rót vốn liên quan trực tiếp đến tool ứng dụng.
 
-Loại bỏ: paper/arXiv, benchmark học thuật, architecture chuyên sâu, chủ đề AI chung chung không gắn với dev tool, tin cũ hơn ~24 giờ.
+Loại bỏ: paper/arXiv, benchmark học thuật, architecture chuyên sâu, chủ đề AI chung chung không gắn với dev tool, tin cũ hơn ~24 giờ, bài do cá nhân chia sẻ về việc chạy model local/self-host trên phần cứng cá nhân.
 
 ## Bước 2 — Viết bản tin tiếng Việt (tên bước khi lỗi: `write`)
 Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện được phép dùng:

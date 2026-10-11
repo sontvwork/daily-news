@@ -79,7 +79,7 @@ Format bắt buộc (script `news.py validate` sẽ kiểm tra):
 
   ### 1. Anthropic ra mắt Claude Haiku 5.5: model nhỏ rẻ nhất, nhanh nhất của hãng
   - 🚀 Haiku 5.5 chỉ $0.10 / $0.50 mỗi triệu token (rẻ hơn Haiku 4.5 khoảng 75%), Terminal-Bench 4.0 tăng từ 0% lên 39,2%
-  - ⚡ Phù hợp cho các tác vụ agent cần độ trễ thấp và chi phí thấp (sub-agent, tự động hoá hàng loạt); nên tự benchmark trên codebase của bạn trước khi chuyển
+  - ⚡ Phù hợp cho các tác vụ agent cần độ trễ thấp và chi phí thấp (sub-agent, tự động hoá hàng loạt)
   - 🔗 [Nguồn](https://www.anthropic.com/claude-haiku-5-5)
   ```
 

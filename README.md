@@ -67,6 +67,10 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
     XQUIK_API_KEY=<key>               # tuỳ chọn: bật nguồn X qua xquik.com (thay cho XAI_API_KEY)
     SCRAPECREATORS_API_KEY=<key>      # tuỳ chọn: dự phòng Reddit/YouTube khi IP cloud bị chặn (không phải nguồn X)
     BRAVE_API_KEY=<key>               # tuỳ chọn: web search
+    OPENROUTER_API_KEY=<key>          # tuỳ chọn: LLM lập kế hoạch truy vấn + xếp hạng lại tin (leg 2), ~$1.3/tháng
+    LAST30DAYS_REASONING_PROVIDER=openrouter        # đi kèm OPENROUTER_API_KEY: ép dùng OpenRouter
+    LAST30DAYS_PLANNER_MODEL=anthropic/claude-haiku-5.5
+    LAST30DAYS_RERANK_MODEL=anthropic/claude-haiku-5.5
     ```
 
     ⚠️ Ai dùng chung environment này đều đọc được các biến trên, nên hãy giữ environment ở chế độ riêng tư. Mục **API credentials** (chỉ có trên Pro/Max) không dùng được cho webhook, vì key của webhook nằm trong URL chứ không nằm trong header. Engine cũng chỉ bật nguồn khi thấy key trong env, nên các API key vẫn phải để ở env vars. **Không** đưa `AUTH_TOKEN`/`CT0` (cookie X) lên cloud.
@@ -116,6 +120,10 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
   - `XAI_API_KEY`: key API xAI/Grok tạo ở console.x.ai. Engine gọi Grok với tool `x_search`. Khi env không có key Google/OpenAI, Grok còn được dùng để lập kế hoạch truy vấn và xếp hạng lại tin, nên tốn thêm token.
   - `XQUIK_API_KEY`: xquik.com. Có cả hai key thì engine ưu tiên xAI, xquik làm dự phòng; ép một backend bằng `LAST30DAYS_X_BACKEND=xai|xquik`.
   - `SCRAPECREATORS_API_KEY` **không** bật được X. Muốn tắt hẳn X: thêm `x` vào `EXCLUDE_SOURCES` trong `config/news.env`.
+- Bước research sâu (leg 2) dùng LLM để lập kế hoạch truy vấn và xếp hạng lại tin. Engine tự chọn provider theo key có trong env (Google → OpenAI → xAI → OpenRouter); không có key nào thì dùng điểm từ khoá (kém chính xác hơn rõ rệt).
+  - Nên dùng OpenRouter + `anthropic/claude-haiku-5.5` cho cả hai vai trò (benchmark 11/10/2026: rẻ hơn và chính xác hơn `google/gemini-3.1-flash-lite`; `deepseek/deepseek-v4.1-flash` có lúc phản hồi chậm hơn timeout 90s của engine nên bị gửi lại và tính tiền 2 lần).
+  - Luôn đặt `LAST30DAYS_REASONING_PROVIDER=openrouter`: nếu không, khi env có `XAI_API_KEY` thì Grok sẽ giành vai trò này và tốn hơn nhiều.
+  - Dùng key OpenRouter riêng, có đặt credit limit. Model trả JSON hỏng thì engine âm thầm quay về điểm từ khoá; dấu hiệu trong log: `[Planner]`/`[Rerank] ... failed`.
 - IP datacenter của cloud dễ bị Reddit/YouTube chặn. ScrapeCreators đỡ được một phần. Xem `bash scripts/research.sh status <slug> <DATE>`.
 - `--days 1` và ngưỡng tin cậy của engine khiến có ngày ra "không có tin mới nổi bật". Đây là kết quả hợp lệ.
 - Routines đang research preview: UI, giới hạn và quy tắc push có thể thay đổi. Routine tính vào hạn mức run mỗi ngày của tài khoản.

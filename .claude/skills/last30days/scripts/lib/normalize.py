@@ -18,7 +18,12 @@ def filter_by_date_range(
     filtered: list[schema.SourceItem] = []
     for item in items:
         if not item.published_at:
-            if not require_date:
+            basis = item.metadata.get("date_window_basis") if item.source == "grounding" else None
+            if (
+                not require_date
+                or basis == "server_bounds"
+                or basis == "server_start_current"
+            ):
                 filtered.append(item)
             continue
         if item.published_at < from_date or item.published_at > to_date:
@@ -58,6 +63,9 @@ def normalize_source_items(
         "threads": lambda s, i, idx, fd, td: _normalize_microblog(
             s, i, idx, fd, td, "TH", "Threads post"
         ),
+        "telegram": lambda s, i, idx, fd, td: _normalize_microblog(
+            s, i, idx, fd, td, "TG", "Telegram post"
+        ),
         "xquik": _normalize_x,
         "pinterest": _normalize_pinterest,
         "polymarket": _normalize_polymarket,
@@ -65,6 +73,8 @@ def normalize_source_items(
         "arxiv": _normalize_arxiv,
         "techmeme": _normalize_techmeme,
         "trustpilot": _normalize_trustpilot,
+        "amazon": _normalize_amazon,
+        "meta_ads": _normalize_meta_ads,
         "grounding": _normalize_grounding,
         "xiaohongshu": _normalize_grounding,
         "github": _normalize_github,
@@ -79,6 +89,10 @@ def normalize_source_items(
         normalizer(source, item, index, from_date, to_date)
         for index, item in enumerate(items)
     ]
+    if source == "arxiv":
+        # The adapter owns arXiv's 365-day recency contract. Applying the
+        # report window again here drops relevant papers the adapter accepted.
+        return normalized
     if source == "jobs":
         # A careers board is a snapshot of CURRENTLY OPEN roles. An open posting
         # is current evidence regardless of when it was posted, so date-windowing
@@ -92,6 +106,20 @@ def normalize_source_items(
     )
     if filtered:
         return filtered
+    # YouTube search already keeps out-of-window videos when fewer than 3
+    # are recent, then pays for transcripts. A second hard date filter here
+    # dropped those transcribed items to zero (#1043). Keep transcript-backed
+    # retrieved items instead of paying for transcripts that never appear in
+    # the brief. Metadata-only / caption-failed videos are not that rescue.
+    if source == "youtube" and normalized:
+        transcribed = [
+            item for item in normalized if str(item.snippet or "").strip()
+        ]
+        if transcribed:
+            if require_date:
+                dated = [item for item in transcribed if item.published_at]
+                return dated or transcribed
+            return transcribed
     if freshness_mode == "evergreen_ok" and source == "youtube":
         if require_date:
             return [item for item in normalized if item.published_at]
@@ -696,6 +724,92 @@ def _normalize_techmeme(
     )
 
 
+def _normalize_meta_ads(
+    source: str,
+    item: dict[str, Any],
+    index: int,
+    from_date: str,
+    to_date: str,
+) -> schema.SourceItem:
+    """Normalizer for Meta Ad Library creatives.
+
+    One item per distinct creative launched inside the window. Identity is the
+    Ad Library permalink, never the landing URL: many creatives for one product
+    share a landing page, and fusion merges by normalized URL, so keying on the
+    landing page would collapse a whole campaign into one candidate and lose
+    every transcript but the first.
+
+    Grounding-exempt on the Amazon precedent. Ad copy is written to sell, not
+    to name the brand -- "Stop making boring drinks" never repeats the topic --
+    and the advertiser page was already resolved by name before any of these
+    were created, so they are on-entity by construction.
+    """
+    body = str(item.get("text") or "").strip()
+    transcript = str(item.get("transcript") or "").strip()
+    advertiser = str(item.get("advertiser") or "").strip()
+    cta = str(item.get("cta") or "").strip()
+    landing = str(item.get("landing_url") or "").strip()
+    placements = [str(p) for p in (item.get("placements") or [])]
+    promo = str(item.get("promo_code") or "").strip()
+
+    # The spoken script is usually the sharper version of the pitch, so it
+    # leads the evidence snippet when present.
+    snippet_parts = [part for part in [body, transcript] if part]
+    # The adapter deliberately keeps creatives that launched inside the window
+    # and have since ended -- a one-week promo push is exactly the signal this
+    # source exists for -- so the wording has to follow the stored state rather
+    # than calling every creative active.
+    running = bool(item.get("is_active"))
+    ended_on = str(item.get("ended_on") or "").strip()
+    if running:
+        state_word = "Running paid creative"
+    elif ended_on:
+        state_word = f"Paid creative that ran until {ended_on}"
+    else:
+        state_word = "Paid creative that has since ended"
+    default_why = f"{state_word} from {advertiser}" if advertiser else state_word
+    context = " │ ".join(
+        part
+        for part in [
+            cta or "",
+            f"code {promo}" if promo else "",
+            landing,
+        ]
+        if part
+    )
+    return _source_item(
+        item_id=str(item.get("id") or f"MA{index + 1}"),
+        source=source,
+        title=str(item.get("title") or "").strip() or body[:140] or f"Meta ad {index + 1}",
+        body=body,
+        url=str(item.get("url") or "").strip(),
+        author=advertiser,
+        container="Meta Ad Library",
+        published_at=item.get("date"),
+        date_confidence=_date_confidence(item, from_date, to_date, default="high"),
+        engagement={"variants": int(item.get("variants") or 1)},
+        relevance_hint=0.8,
+        why_relevant=str(item.get("why_relevant") or "") or default_why,
+        snippet=" ".join(snippet_parts)[:400],
+        metadata={
+            "grounding_exempt": True,
+            "advertiser": advertiser,
+            "page_id": str(item.get("page_id") or ""),
+            "is_active": bool(item.get("is_active")),
+            "ended_on": item.get("ended_on"),
+            "display_format": str(item.get("display_format") or ""),
+            "placements": placements,
+            "cta": cta,
+            "landing_url": landing,
+            "promo_code": promo,
+            "variants": int(item.get("variants") or 1),
+            "has_video": bool(item.get("has_video")),
+            "transcript_snippet": transcript[:400],
+            "ad_context": context,
+        },
+    )
+
+
 def _normalize_trustpilot(
     source: str,
     item: dict[str, Any],
@@ -732,6 +846,87 @@ def _normalize_trustpilot(
             "trustScore": item.get("trustScore"),
             "reviewCount": item.get("reviewCount"),
             "aiSummary": summary,
+        },
+    )
+
+
+def _normalize_amazon(
+    source: str,
+    item: dict[str, Any],
+    index: int,
+    from_date: str,
+    to_date: str,
+) -> schema.SourceItem:
+    """Normalizer for Amazon product-and-review signals.
+
+    One item per product. The aggregate rating is current-state evidence, so
+    the item is stamped with today's date on the Trustpilot precedent -- a
+    live 4.4-star average is a fact about now, not about whenever the
+    product launched.
+
+    Reviews arrive already in the shared score/excerpt comment shape (built
+    in the amazon adapter, deliberately not routed through _remap_comments,
+    which would strip the rating/date/verified keys this source needs), so
+    they pass straight through to metadata.
+    """
+    name = str(item.get("name") or "").strip()
+    brand = str(item.get("brand") or "").strip()
+    top_comments = item.get("top_comments") or []
+    comment_text = _join_comment_excerpts(top_comments, "excerpt")
+    rating = item.get("product_rating") if item.get("product_rating") is not None else item.get("rating")
+    ratings_total = item.get("product_rating_count") or item.get("num_ratings") or 0
+
+    headline = " ".join(
+        part for part in [
+            f"{rating}/5" if rating is not None else "",
+            f"({ratings_total:,} ratings)" if ratings_total else "",
+        ] if part
+    )
+    # The brand rides in its own field and is usually absent from the name,
+    # so prepend it -- unless the name already leads with it, which would
+    # otherwise read "Weber Weber Spirit E-325".
+    if brand and not name.lower().startswith(brand.lower()):
+        product_label = f"{brand} {name}".strip()
+    else:
+        product_label = name or brand
+    title = " - ".join(part for part in [product_label, headline] if part)
+    body = "\n".join(part for part in [title, comment_text] if part)
+
+    return _source_item(
+        item_id=str(item.get("asin") or f"AMZ{index + 1}"),
+        source=source,
+        title=title or f"Amazon product {index + 1}",
+        body=body,
+        url=str(item.get("url") or ""),
+        author=brand or None,
+        container="Amazon",
+        published_at=item.get("date"),
+        date_confidence=_date_confidence(item, from_date, to_date, default="low"),
+        engagement=item.get("engagement") or {"ratings": ratings_total},
+        relevance_hint=item.get("relevance", 0.6),
+        why_relevant=str(item.get("why_relevant") or ""),
+        snippet=comment_text[:400],
+        metadata={
+            "asin": str(item.get("asin") or ""),
+            "name": name,
+            "short_name": item.get("short_name") or "",
+            "brand": brand,
+            "rating": item.get("rating"),
+            "num_ratings": item.get("num_ratings") or 0,
+            "price": item.get("price"),
+            "currency": item.get("currency") or "",
+            "badge": item.get("badge") or "",
+            # Recorded, never used as a filter: the flag's distribution
+            # swings with keyword phrasing, so filtering can blank the lane.
+            "sponsored": bool(item.get("sponsored")),
+            "top_comments": top_comments,
+            "product_rating": item.get("product_rating"),
+            "product_rating_count": item.get("product_rating_count") or 0,
+            "star_distribution": item.get("star_distribution") or {},
+            # Relevant by construction: the adapter already gated products
+            # against the model-supplied keyword, and review text rarely
+            # names the product (KTD8).
+            "grounding_exempt": True,
         },
     )
 

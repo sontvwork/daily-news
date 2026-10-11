@@ -26,6 +26,10 @@ ENTITY_MISS_PENALTY = 25.0
 FALLBACK_ENTITY_MISS_CONFIDENCE_ESCAPE = 0.5
 FALLBACK_ENTITY_MISS_TOPIC_ESCAPE = 0.25
 _FALLBACK_ENTITY_MISS_EXPLANATION = "fallback-local-score (entity-miss demotion)"
+# Explanation stamped on a first-party post whose entity-miss marker was
+# cleared by _apply_first_party_floor. Carries no "entity-miss" substring, so
+# every downstream relevance gate treats the post as grounded.
+_FIRST_PARTY_EXPLANATION = "first-party post (authored by a resolved handle)"
 
 # Small additive credit for a post authored by one of the run's resolved
 # handles (see rerank_candidates / _fallback_tuple). Deliberately small: the
@@ -191,20 +195,23 @@ INTERACTION_FLOOR = 35.0
 # not a win.
 FIRST_PARTY_FLOOR = 25.0
 
-# Intent modifiers to strip before extracting the primary entity so that,
-# for example, "Hermes Agent use cases" yields primary_entity="hermes agent"
-# rather than "hermes agent use cases". Kept in sync with
-# planner._INTENT_MODIFIER_PATTERNS.
-_INTENT_MODIFIER_RE = re.compile(
+# Only strip trailing intent modifiers. A word such as "review" may instead be
+# the subject of a longer topic ("AI code review bottleneck").
+_TRAILING_INTENT_MODIFIER_RE = re.compile(
+    r"(?:\s+(?:and|or|&|,)\s*)?"
     r"\b("
     r"use cases|use case|workflows|workflow|"
     r"examples|example|tutorial|tutorials|"
     r"review|reviews|comparison|applications|"
     r"in practice|production use|production|"
     r"how i use"
-    r")\b",
+    r")\b[\s?.,:;!]*$",
     re.IGNORECASE,
 )
+
+_GENERIC_GROUNDING_MIN_TOKENS = 4
+_GROUNDING_ANCHOR_MIN_LENGTH = 6
+_GROUNDING_LOW_SIGNAL_TOKENS = relevance.LOW_SIGNAL_QUERY_TOKENS | {"still", "work"}
 
 INTENT_SCORING_HINTS: dict[str, str] = {
     "comparison": (
@@ -310,12 +317,33 @@ def _intent_hint_block(plan: schema.QueryPlan) -> str:
     return ""
 
 
+_UNTRUSTED_FENCE_TAG = re.compile(r"<\s*/?\s*untrusted_content\s*>", re.IGNORECASE)
+
+
+def _defang_untrusted_fence(value: str) -> str:
+    """Scraped content must not be able to terminate the fence that contains it.
+
+    A title carrying the literal closing tag would otherwise end the block
+    early, leaving the rest of the scraped text outside the fence and
+    indistinguishable from engine-authored prompt text.
+
+    Only the tag form is rewritten. A bare ``untrusted_content`` identifier in
+    scraped prose or code is left byte-exact: this is a research tool, and
+    altering evidence to defend the fence would corrupt what the judge scores.
+    Matched case-insensitively and tolerant of inner whitespace because the
+    reader is a model, not an XML parser.
+    """
+    return _UNTRUSTED_FENCE_TAG.sub(
+        lambda match: match.group(0).replace("_", "-"), value
+    )
+
+
 def _fenced_untrusted_content(candidate_block: str) -> str:
     return (
         f"{UNTRUSTED_CONTENT_NOTICE}\n\n"
         "Candidates:\n"
         "<untrusted_content>\n"
-        f"{candidate_block}\n"
+        f"{_defang_untrusted_fence(candidate_block)}\n"
         "</untrusted_content>"
     )
 
@@ -537,8 +565,18 @@ def _apply_first_party_floor(
     if not resolved_handles:
         return
     for c in candidates:
-        if _is_first_party(c, resolved_handles) and c.final_score < FIRST_PARTY_FLOOR:
+        if not _is_first_party(c, resolved_handles):
+            continue
+        if c.final_score < FIRST_PARTY_FLOOR:
             c.final_score = FIRST_PARTY_FLOOR
+        # Clear the entity-miss marker here, at the one site that knows the
+        # resolved handles. Downstream relevance gates key on the marker, not
+        # on handle knowledge, so neutralizing it once lets the carve-out
+        # propagate instead of forcing every gate to re-derive first-party.
+        # A first-party post is entity-grounded by authorship: nobody repeats
+        # their own name in their own post.
+        if c.explanation and "entity-miss" in c.explanation.lower():
+            c.explanation = _FIRST_PARTY_EXPLANATION
 
 
 def _apply_engagement_rescue(
@@ -607,18 +645,33 @@ def _entity_grounded(haystack: str, primary_entity: str) -> bool:
     items that omit the descriptor. Items that never name the brand at all still
     miss the head token and stay demoted.
 
-    Trade-off: a proper noun with a generic head ("New York Times" -> "new")
-    under-demotes rather than over-demotes - the safe direction, since the
-    observed harm was burying real high-engagement signal. Substring (not
-    word-boundary) matching is likewise deliberate: it catches plurals and
-    compounds ("stripes"), and vacuous matches from very short heads ("X",
-    "Go") merely disable the penalty rather than burying good items.
+    Long natural-language topics with a generic head use stronger trailing
+    anchors. Short generic-headed topics remain a safe no-op so entities such as
+    "Go" are not falsely demoted.
     """
     haystack = haystack.lower()
-    tokens = primary_entity.lower().split()
+    tokens = re.findall(r"\w+", primary_entity.lower())
     if not tokens:
         return True
-    return tokens[0] in haystack
+    head = tokens[0]
+    if len(head) > 3 and head not in relevance.LOW_SIGNAL_QUERY_TOKENS:
+        return head in haystack
+
+    # A long natural-language topic headed by "AI", "how", or another generic
+    # word needs a stronger anchor. Short entity-like topics keep the historical
+    # safe no-op rather than risking false demotion.
+    if len(tokens) < _GENERIC_GROUNDING_MIN_TOKENS:
+        return True
+    anchors = [
+        token
+        for token in tokens[1:]
+        if len(token) >= _GROUNDING_ANCHOR_MIN_LENGTH
+        and token not in relevance.STOPWORDS
+        and token not in _GROUNDING_LOW_SIGNAL_TOKENS
+    ]
+    if not anchors:
+        return True
+    return any(re.search(rf"\b{re.escape(token)}", haystack) for token in anchors)
 
 
 def _fallback_tuple(
@@ -642,6 +695,17 @@ def _fallback_tuple(
     if resolved_handles and _is_first_party(candidate, resolved_handles):
         score += FIRST_PARTY_AUTHOR_CREDIT
         return max(0.0, min(100.0, score)), "fallback-local-score (first-party authorship)"
+    # Grounding-exempt evidence (currently Amazon): the adapter gated these
+    # against the model-supplied keyword before they existed, so the
+    # entity-miss demotion below would punish them for a match they were
+    # never going to make -- a "Weber Grills" run legitimately surfaces a
+    # product called "Spirit E-325" whose reviews discuss searing, not Weber.
+    # Returning here also skips _final_score's secondary penalty, which greps
+    # the reason string for "entity-miss": one flag, both paths, per the
+    # propagation pattern in
+    # docs/solutions/logic-errors/entity-grounding-full-phrase-false-demotion.md
+    if _is_grounding_exempt(candidate):
+        return max(0.0, min(100.0, score)), "fallback-local-score (grounding-exempt source)"
     # Entity-grounding demotion: subtract ENTITY_MISS_PENALTY when the candidate
     # never mentions the primary entity's head token, across all text surfaces
     # (title, snippet, transcript, transcript highlights, top comments,
@@ -664,10 +728,31 @@ def _primary_entity(topic: str) -> str:
     string for topics that are all intent modifier with no entity, so
     callers can skip the grounding check.
     """
-    stripped = _INTENT_MODIFIER_RE.sub(" ", topic)
-    # Also collapse multiple spaces and strip punctuation.
+    stripped = topic
+    while True:
+        shortened = _TRAILING_INTENT_MODIFIER_RE.sub("", stripped, count=1)
+        if shortened == stripped:
+            break
+        stripped = shortened
     stripped = re.sub(r"\s+", " ", stripped).strip(" \t\r\n?.,:;!")
     return stripped
+
+
+def _is_grounding_exempt(candidate: schema.Candidate) -> bool:
+    """True when the candidate carries the relevant-by-construction label.
+
+    Set by adapters that already gated their results against an explicit
+    keyword at retrieval time (see normalize._normalize_amazon). Checked on
+    the candidate's own metadata and on any of its source items, since
+    clustering can build a candidate from several items.
+    """
+    metadata = candidate.metadata or {}
+    if isinstance(metadata, dict) and metadata.get("grounding_exempt"):
+        return True
+    return any(
+        isinstance(item.metadata, dict) and item.metadata.get("grounding_exempt")
+        for item in candidate.source_items
+    )
 
 
 def _is_corpus_candidate(candidate: schema.Candidate) -> bool:
@@ -728,6 +813,15 @@ def prune_fallback_entity_misses(
 #: the dilute penalty. This backstop makes the demotion actually decisive.
 ENTITY_MISS_FINAL_PENALTY = 20.0
 
+#: Multiplier applied to a candidate whose every dated item falls outside the
+#: run's window. The tool's whole promise is the window, so a stale item must
+#: not lead the ranked clusters however relevant it reads — a 2025-10 video
+#: ranked #1 in a 2026-07 brief, and a 2025-12 one ranked #5, both correctly
+#: flagged [date:low] and both ranked anyway. Scaling rather than subtracting
+#: keeps the ordering *among* older items intact, so the "still worth reading"
+#: signal survives underneath the in-window evidence.
+OUT_OF_WINDOW_FINAL_MULTIPLIER = 0.35
+
 
 def _final_score(candidate: schema.Candidate) -> float:
     normalized_rrf = _normalized_rrf(candidate.rrf_score)
@@ -752,6 +846,9 @@ def _final_score(candidate: schema.Candidate) -> float:
     # at final_score level so engagement signal can't mask the demotion.
     if candidate.explanation and "entity-miss" in candidate.explanation:
         base = max(0.0, base - ENTITY_MISS_FINAL_PENALTY)
+    # Recency contract: out-of-window evidence never leads the ranked output.
+    if schema.candidate_out_of_window(candidate):
+        base *= OUT_OF_WINDOW_FINAL_MULTIPLIER
     return base
 
 
@@ -810,7 +907,10 @@ def _extract_comment_text(candidate: schema.Candidate) -> str:
     parts = []
     for item in candidate.source_items:
         for comment in item.metadata.get("top_comments", [])[:3]:
-            body = comment.get("body", "") if isinstance(comment, dict) else str(comment)
+            body = (
+                comment.get("excerpt") or comment.get("body", "")
+                if isinstance(comment, dict) else str(comment)
+            )
             if body:
                 parts.append(body[:150])
         for insight in item.metadata.get("comment_insights", [])[:2]:
@@ -829,7 +929,7 @@ def _extract_comment_text_scored(candidate: schema.Candidate) -> str:
     for item in candidate.source_items:
         for comment in item.metadata.get("top_comments", [])[:3]:
             if isinstance(comment, dict):
-                body = comment.get("body", "")
+                body = comment.get("excerpt") or comment.get("body", "")
                 if not body:
                     continue
                 score = comment.get("score")
@@ -891,3 +991,24 @@ def _normalized_rrf(rrf_score: float) -> float:
     # Max single-stream RRF at rank 1 is 1/(K+1) ~ 0.016; multi-stream
     # accumulation reaches ~0.08.
     return max(0.0, min(100.0, (rrf_score / 0.08) * 100.0))
+
+
+def candidate_relevance_ok(candidate: schema.Candidate) -> bool:
+    """Shared gate: is this candidate topically usable for display surfaces?
+
+    Single owner of the entity-miss demotion test. Render-side surfaces (Best
+    Takes, cluster visibility) must call this rather than re-testing the
+    explanation string themselves -- a second copy of the predicate is how the
+    documented mirrored-predicate drift bug recurs, and it means a carve-out
+    added here silently fails to reach them.
+
+    First-party posts are handled upstream: ``_apply_first_party_floor`` clears
+    their entity-miss marker at the one site that knows the resolved handles,
+    so this predicate needs no handle knowledge.
+    """
+    explanation = (candidate.explanation or "").lower()
+    if "entity-miss" in explanation:
+        return False
+    if (candidate.final_score or 0.0) <= 0.0:
+        return False
+    return True

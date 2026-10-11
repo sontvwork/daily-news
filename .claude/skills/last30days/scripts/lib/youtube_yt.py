@@ -89,6 +89,8 @@ _search_cache_lock = threading.Lock()
 # comment API can never dominate a run's wall clock (bounded to 3 videos).
 _COMMENT_TIMEOUT = 20
 _SC_LOW_CREDIT_THRESHOLD = 50  # warn once ScrapeCreators credits drop below this
+_SC_TRANSCRIPT_MAX_LANGUAGES = 3
+_SC_TRANSCRIPT_TIMEOUT = 30
 # Transient = worth retrying (and definitely not "no captions").
 _TRANSIENT_RE = re.compile(
     r"429|too many requests|sign in to confirm|not a bot|rate.?limit"
@@ -296,7 +298,7 @@ def is_ytdlp_installed() -> bool:
 # Host aliases must be plain hostnames / SSH config aliases — no flags, no
 # shell metacharacters. Rejects any value that could be reinterpreted by ssh
 # (or the surrounding shell) as something other than a destination.
-_SSH_HOST_ALIAS_RE = re.compile(r"^[a-zA-Z0-9._-]+$")
+_SSH_HOST_ALIAS_RE = re.compile(r"^(?!-)[a-zA-Z0-9._-]+$")
 
 
 def _ytdlp_ssh_host() -> Optional[str]:
@@ -338,6 +340,67 @@ def _ytdlp_ssh_host() -> Optional[str]:
     return host
 
 
+_PLAYER_CLIENT_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+
+
+def _ytdlp_player_client() -> Optional[str]:
+    """Return the yt-dlp YouTube player_client, or None to leave the default.
+
+    Default is ``android``, which bypasses the web bot-gate without cookies.
+    Set ``LAST30DAYS_YT_PLAYER_CLIENT`` empty to disable; any other value is
+    passed through when it is a safe extractor token.
+    """
+    if "LAST30DAYS_YT_PLAYER_CLIENT" in os.environ:
+        raw = os.environ.get("LAST30DAYS_YT_PLAYER_CLIENT", "").strip()
+        if not raw:
+            return None
+    else:
+        raw = "android"
+    if not _PLAYER_CLIENT_RE.match(raw):
+        sys.stderr.write(
+            f"[youtube_yt] WARNING: LAST30DAYS_YT_PLAYER_CLIENT={raw!r} "
+            "is not a plain player-client token; ignoring.\n"
+        )
+        return None
+    return raw
+
+
+def _ytdlp_cmd_needs_player_client(cmd: List[str]) -> bool:
+    blob = " ".join(cmd)
+    return any(
+        marker in blob
+        for marker in (
+            "ytsearch",
+            "youtube.com",
+            "--write-comments",
+            "--write-auto-subs",
+        )
+    )
+
+
+def _inject_youtube_player_client(cmd: List[str]) -> List[str]:
+    """Merge player_client into a single youtube --extractor-args (#1052).
+
+    yt-dlp does not merge two ``--extractor-args`` for the same extractor;
+    the last one wins. Always fold into an existing ``youtube:`` spec.
+    """
+    client = _ytdlp_player_client()
+    if not client or not _ytdlp_cmd_needs_player_client(cmd):
+        return list(cmd)
+    out = list(cmd)
+    needle = f"player_client={client}"
+    for i, arg in enumerate(out):
+        if arg == "--extractor-args" and i + 1 < len(out):
+            spec = out[i + 1]
+            if spec.startswith("youtube:"):
+                if "player_client=" in spec:
+                    return out
+                out[i + 1] = f"{spec};{needle}"
+                return out
+    out.extend(["--extractor-args", f"youtube:{needle}"])
+    return out
+
+
 def _wrap_ytdlp_cmd(cmd: List[str]) -> List[str]:
     """Wrap a yt-dlp command list with `ssh <host>` when SSH routing is set.
 
@@ -346,6 +409,7 @@ def _wrap_ytdlp_cmd(cmd: List[str]) -> List[str]:
     The `--` option terminator prevents an SSH option-injection if
     LAST30DAYS_YOUTUBE_SSH_HOST were ever set to a value starting with `-`.
     """
+    cmd = _inject_youtube_player_client(cmd)
     host = _ytdlp_ssh_host()
     if not host:
         return cmd
@@ -486,16 +550,19 @@ def search_youtube(
             return published
 
         stdout = result.stdout
-        if ssh_host and result.returncode != 0 and not stdout.strip():
+        if result.returncode != 0 and not stdout.strip():
             stderr_first = (result.stderr or "").strip().splitlines()
             first_line = stderr_first[0] if stderr_first else "(no stderr)"
-            _log(
-                f"YouTube search via SSH host {ssh_host!r} failed "
-                f"(rc={result.returncode}): {first_line}"
-            )
-            published = _publish(
-                {"items": [], "error": f"SSH routing to {ssh_host!r} failed: {first_line}"},
-            )
+            if ssh_host:
+                _log(
+                    f"YouTube search via SSH host {ssh_host!r} failed "
+                    f"(rc={result.returncode}): {first_line}"
+                )
+                error = f"SSH routing to {ssh_host!r} failed: {first_line}"
+            else:
+                _log(f"YouTube search failed (rc={result.returncode}): {first_line}")
+                error = f"yt-dlp search failed: {first_line}"
+            published = _publish({"items": [], "error": error})
             return published
         if not stdout.strip():
             _log("YouTube search returned 0 results")
@@ -701,10 +768,17 @@ def _fetch_transcript_ytdlp_via_ssh(video_id: str, ssh_host: str) -> Optional[st
     url = f"https://www.youtube.com/watch?v={video_id}"
     quoted_url = shlex.quote(url)
     sub_langs = shlex.quote(_ytdlp_sub_langs())
+    client = _ytdlp_player_client()
+    extractor = (
+        f"--extractor-args {shlex.quote(f'youtube:player_client={client}')} "
+        if client
+        else ""
+    )
     remote_script = (
         "set -e; "
         "TMPD=$(mktemp -d); "
         "yt-dlp --ignore-config --no-cookies-from-browser "
+        f"{extractor}"
         f"--write-auto-subs --sub-lang {sub_langs} --sub-format vtt "
         "--skip-download --no-warnings "
         f'-o "$TMPD/%(id)s" {quoted_url} >/dev/null 2>&1 || true; '
@@ -825,6 +899,7 @@ def _fetch_transcript_ytdlp(
         "-o", f"{temp_dir}/%(id)s",
         f"https://www.youtube.com/watch?v={video_id}",
     ]
+    cmd = _inject_youtube_player_client(cmd)
 
     timeout = _transcript_fast_timeout() if fast_fail else _TRANSCRIPT_TIMEOUT
     attempts = 1 if fast_fail else _TRANSCRIPT_MAX_RETRIES + 1
@@ -1482,11 +1557,12 @@ def search_youtube_sc(
     to_date: str,
     depth: str = "default",
     token: str = None,
+    skip_transcript_ids: Optional[Set[str]] = None,
 ) -> Dict[str, Any]:
-    """Search YouTube via ScrapeCreators API (fallback when yt-dlp is unavailable).
+    """Search YouTube via ScrapeCreators when yt-dlp is absent, empty, or thin.
 
     Uses SC keyword search to find videos and SC transcript endpoint to
-    fetch transcripts. Called by pipeline.py when yt-dlp fails.
+    fetch transcripts. The pipeline uses the configured thin-result floor.
 
     Args:
         topic: Search topic
@@ -1494,6 +1570,7 @@ def search_youtube_sc(
         to_date: End date (YYYY-MM-DD)
         depth: 'quick', 'default', or 'deep'
         token: ScrapeCreators API key
+        skip_transcript_ids: Video IDs already transcribed by the free search
 
     Returns:
         Dict with 'items' list of video metadata dicts.
@@ -1566,14 +1643,19 @@ def search_youtube_sc(
     # Step 2: Fetch transcripts for top videos
     transcript_limit = TRANSCRIPT_LIMITS.get(depth, TRANSCRIPT_LIMITS["default"])
     if transcript_limit > 0 and items:
-        attempt_count = min(len(items), transcript_limit * 3)
         # Same in-window-first ordering as search_and_transcribe(): don't let
         # an out-of-window back-catalog (kept by the soft date filter above)
         # consume the transcript budget of videos the freshness scorer keeps.
         in_window = [i for i in items if i.get("date") and i["date"] >= from_date]
         out_of_window = [i for i in items if not (i.get("date") and i["date"] >= from_date)]
+        excluded_ids = skip_transcript_ids or set()
+        transcript_candidates = [
+            item for item in in_window + out_of_window
+            if item["video_id"] not in excluded_ids
+        ]
+        attempt_count = min(len(transcript_candidates), transcript_limit * 3)
         _log(f"Fetching SC transcripts for up to {attempt_count} videos (target: {transcript_limit})")
-        for item in (in_window + out_of_window)[:attempt_count]:
+        for item in transcript_candidates[:attempt_count]:
             vid = item["video_id"]
             if not vid:
                 continue
@@ -1653,32 +1735,46 @@ def _sc_fetch_transcript(video_id: str, token: str) -> Optional[str]:
         Plaintext transcript string, or None if unavailable.
     """
     video_url = f"https://www.youtube.com/watch?v={video_id}"
-    try:
-        # Isolate SC transcript fetch errors from the pipeline-level
-        # capture_failures() context.
-        with http.capture_failures() as _tf:
-            data = http.get(
-                f"{SCRAPECREATORS_YT_BASE}/video/transcript",
-                params={"url": video_url},
-                headers=http.scrapecreators_headers(token),
-                timeout=30,
-                retries=1,
-            )
-    except Exception as exc:
-        _log(f"SC transcript error for {video_id}: {exc}")
-        return None
+    transcript = None
+    deadline = time.monotonic() + _SC_TRANSCRIPT_TIMEOUT
+    # Without a language the endpoint may return an auto-dubbed track (#1169).
+    languages = list(dict.fromkeys(_ytdlp_sub_langs().split(",")))[:_SC_TRANSCRIPT_MAX_LANGUAGES]
+    for language in languages:
+        if time.monotonic() >= deadline:
+            break
+        try:
+            # Isolate SC transcript fetch errors from the pipeline-level
+            # capture_failures() context.
+            with http.capture_failures() as _tf:
+                data = http.get(
+                    f"{SCRAPECREATORS_YT_BASE}/video/transcript",
+                    params={"url": video_url, "language": language},
+                    headers=http.scrapecreators_headers(token),
+                    timeout=_SC_TRANSCRIPT_TIMEOUT,
+                    retries=1,
+                    max_429_retries=0,
+                    deadline_monotonic=deadline,
+                    owned_get=True,
+                )
+        except Exception as exc:
+            _log(f"SC transcript error for {video_id} ({language}): {exc}")
+            if getattr(exc, "status_code", None) == 404:
+                continue
+            return None
 
-    _warn_low_sc_credits(data)
+        _warn_low_sc_credits(data)
 
-    transcript = data.get("transcript")
+        transcript = data.get("transcript")
+        if isinstance(transcript, list):
+            transcript = " ".join(_sc_segment_text(seg) for seg in transcript).strip()
+        if not isinstance(transcript, str):
+            transcript = None
+            continue
+        transcript = _clean_vtt(transcript)
+        if transcript:
+            break
     if not transcript:
         return None
-
-    if isinstance(transcript, list):
-        transcript = " ".join(_sc_segment_text(seg) for seg in transcript).strip()
-
-    # Clean VTT formatting if present
-    transcript = _clean_vtt(transcript)
 
     # Truncate to max words
     words = transcript.split()

@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import contextlib
 import copy
+from collections.abc import Iterable, Iterator, Mapping
 import math
 import queue
 import re
@@ -11,7 +13,7 @@ import sys
 import threading
 import time
 from collections import Counter
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, as_completed, wait as futures_wait
 from dataclasses import dataclass, field, replace
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -19,9 +21,11 @@ from shutil import which
 from typing import Any
 
 from . import (
+    amazon,
     arxiv,
     bird_x,
     bluesky,
+    brightdata,
     corpus,
     dates,
     dedupe,
@@ -30,6 +34,7 @@ from . import (
     entity_extract,
     env,
     github,
+    grok_x,
     grounding,
     hackernews,
     health,
@@ -41,6 +46,7 @@ from . import (
     library,
     library_index,
     log,
+    meta_ads,
     normalize,
     permission_preflight,
     perplexity,
@@ -59,11 +65,15 @@ from . import (
     snippet,
     stocktwits,
     techmeme,
+    telegram,
     threads,
     tiktok,
     topic_shape,
     truthsocial,
     trustpilot,
+    x_api,
+    x_envelope,
+    x_judge,
     xai_x,
     xiaohongshu_api,
     xquik,
@@ -71,7 +81,9 @@ from . import (
     youtube_yt,
 )
 from .cluster import cluster_candidates
-from .fusion import weighted_rrf
+from . import fusion
+from . import render
+from .fusion import collapse_duplicate_urls, weighted_rrf
 
 DISCOVERY_SOURCES = ("reddit", "hackernews", "digg", "x")
 _DISCOVERY_GENERIC_DOMAIN_TERMS = {
@@ -90,13 +102,162 @@ SEARCH_ALIAS = {
     "truth": "truthsocial",
     "web": "grounding",
     "xhs": "xiaohongshu",
+    "meta": "meta_ads",
+    "meta-ads": "meta_ads",
     "xquik": "x",  # xquik is a backend of the single "x" source, not its own source
 }
 
 # trustpilot is capped at 1: every subquery would use the identical company
 # identifier, so N streams are pure redundancy -- and each extra stream risks
 # its own WAF-cookie Chrome harvest.
-MAX_SOURCE_FETCHES: dict[str, int] = {"x": 2, "jobs": 1, "linkedin": 1, "stocktwits": 1, "trustpilot": 1}
+# amazon is capped at 1 for the same reason as trustpilot: the model supplies
+# one product keyword for the run, so every subquery would issue the identical
+# product search. Extra streams would be pure redundancy at one credit each.
+# meta_ads is capped at 1 for the same reason as amazon: one advertiser page is
+# resolved per run, so every subquery would issue the identical page fetch.
+MAX_SOURCE_FETCHES: dict[str, int] = {
+    "x": 2, "jobs": 1, "linkedin": 1, "stocktwits": 1, "trustpilot": 1, "amazon": 1,
+    "telegram": 1, "meta_ads": 1,
+}
+
+# Sources whose thin result is their normal success state, so the "<3 items"
+# retry would re-fetch them after every success -- bypassing
+# MAX_SOURCE_FETCHES and, for the resolved-entity sources, re-resolving
+# WITHOUT the caller's override (a lookalike-misattribution path).
+#   trustpilot returns at most ONE item by design.
+#   perplexity answers once per run.
+#   meta_ads resolves one advertiser page per run, so a brand that genuinely
+#   ran two creatives this month is complete; a retry would re-resolve the
+#   page and re-spend the discovery credit.
+THIN_RETRY_EXEMPT: frozenset[str] = frozenset({"trustpilot", "perplexity", "meta_ads"})
+
+# Stream-artifact keys promoted to named top-level report artifacts. A stream
+# artifact only ever reaches the report as an anonymous entry in the grounding
+# list, so anything the renderer needs by name has to be lifted out of it --
+# most importantly on a zero-item run, which is exactly when naming the
+# resolved advertiser and its counts matters most.
+STREAM_ARTIFACT_LIFT_KEYS: tuple[str, ...] = ("meta_ads_page", "meta_ads_tally")
+
+# Shared wall-clock bounds for fan-out waits (CR-012/CR-016). Each bounded
+# fan-out waits with futures_wait(timeout=...) inside _abandoning_executor, so
+# a hung lane degrades to a TIMEOUT partial instead of stalling run() forever.
+# Worst case per stream is one timeout ceiling (+ one inline 5xx retry in the
+# main fan-out, itself bounded by the lane's own timeouts); no new config knobs.
+STREAM_FUTURE_TIMEOUT_SECONDS = 180.0
+DISCOVERY_FUTURE_TIMEOUT_SECONDS = 60.0
+THIN_RETRY_FUTURE_TIMEOUT_SECONDS = 120.0
+# One X source, ordered backends: grok (up to 240s/call) + xai (90-180s) would
+# stack sequentially inside one unbounded future under MCP's kill. The chain
+# owns a shared monotonic deadline (x_api's TIMEOUT 30/RETRIES 2/DEADLINE 90
+# pattern); backends past the deadline are skipped.
+X_CHAIN_DEADLINE_SECONDS = 90.0
+
+
+def _research_stopped(config: dict[str, Any]) -> bool:
+    cancel = config.get("_enrich_cancel")
+    deadline = config.get("_research_deadline")
+    return bool(
+        (cancel is not None and cancel.is_set())
+        or (deadline is not None and time.monotonic() >= deadline)
+    )
+
+
+def _research_deadline(config: dict[str, Any], seconds: float) -> float:
+    deadline = time.monotonic() + seconds
+    inherited = config.get("_research_deadline")
+    return min(deadline, inherited) if inherited is not None else deadline
+
+
+def _check_research(config: dict[str, Any]) -> None:
+    if _research_stopped(config):
+        raise TimeoutError("research budget exhausted or cancelled")
+
+
+def _wait_for_research(futures, config: dict[str, Any]):
+    pending = set(futures)
+    done = set()
+    while pending and not _research_stopped(config):
+        remaining = config["_research_deadline"] - time.monotonic()
+        completed, pending = futures_wait(
+            pending, timeout=max(0, min(0.1, remaining)), return_when=FIRST_COMPLETED,
+        )
+        done.update(completed)
+    return done, pending
+
+
+@contextlib.contextmanager
+def _abandoning_executor(max_workers: int) -> Iterator[ThreadPoolExecutor]:
+    """ThreadPoolExecutor whose exit does not join running workers.
+
+    The stock context manager exits via shutdown(wait=True), which blocks on
+    the very straggler a futures_wait budget just declared timed out, so the
+    budget would bound only the wait, not the caller. Exiting with
+    shutdown(wait=False, cancel_futures=True) drops queued work and lets a
+    running straggler finish and discard its result in the background (the
+    amazon review-lane pattern). The interpreter still joins those threads at
+    exit, so each straggler stays bounded by its lane's own timeouts.
+    """
+    pool = ThreadPoolExecutor(max_workers=max_workers)
+    try:
+        yield pool
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
+
+
+def _lift_stream_artifacts(bundle) -> None:
+    """Promote per-stream artifacts the renderer reads by name."""
+    for stream_artifact in bundle.artifacts.get("grounding", []):
+        if not isinstance(stream_artifact, dict):
+            continue
+        for key in STREAM_ARTIFACT_LIFT_KEYS:
+            value = stream_artifact.get(key)
+            if value:
+                bundle.artifacts[key] = value
+
+
+_FAILURE_SPECIFICITY = {
+    health.AUTH_FAILED: 0,
+    health.PAYMENT_REQUIRED: 1,
+    health.RATE_LIMITED: 2,
+    health.SCHEMA_DRIFT: 3,
+    health.TIMEOUT: 4,
+    health.UNREACHABLE: 5,
+    health.ERROR: 6,
+}
+
+
+@dataclass
+class PaidSourceBudget:
+    """Command-wide, thread-safe budget for paid source adapter calls."""
+
+    used: int = 0
+    owner: str | None = None
+    _lock: Any = field(default_factory=threading.Lock, repr=False)
+
+    def try_consume(self, limit: int, *, claimant: str | None = None) -> bool:
+        with self._lock:
+            if self.owner is not None and claimant != self.owner:
+                return False
+            if self.used >= limit:
+                return False
+            self.used += 1
+            return True
+
+
+def _source_fetch_cap(source: str, config: dict[str, Any]) -> int | None:
+    """Return the effective per-run cap for one source.
+
+    Every Perplexity adapter call is paid, and ``both`` performs two paid POSTs.
+    A generic fetch-cap override must not multiply either normal or Deep
+    Research mode across planner subqueries.
+    """
+    override = config.get("_max_source_fetches")
+    if source == "perplexity":
+        return 1 if override is None else min(1, int(override))
+    cap = MAX_SOURCE_FETCHES.get(source)
+    if cap is not None and override is not None:
+        return int(override)
+    return cap
 
 
 def _resolve_depth_settings(depth: str, config: dict[str, Any]) -> dict[str, int]:
@@ -130,7 +291,11 @@ RELATED_HANDLE_COUNT_PER = 3
 
 
 def _has_perplexity_provider(config: dict[str, Any]) -> bool:
-    return bool(config.get("PERPLEXITY_API_KEY") or config.get("OPENROUTER_API_KEY"))
+    # Prefer direct Agent/Search APIs, but preserve the synchronous OpenRouter
+    # Sonar fallback for existing installs.
+    return bool(
+        config.get("PERPLEXITY_API_KEY") or config.get("OPENROUTER_API_KEY")
+    )
 
 MOCK_AVAILABLE_SOURCES = [
     "reddit",
@@ -152,10 +317,13 @@ MOCK_AVAILABLE_SOURCES = [
     "arxiv",
     "techmeme",
     "trustpilot",
+    "amazon",
+    "meta_ads",
     "jobs",
     "linkedin",
     "corpus",
     "dripstack",
+    "telegram",
 ]
 
 
@@ -176,6 +344,8 @@ def available_sources(
     *,
     x_pending: bool | None = None,
     local_only: bool = False,
+    x_envelope: bool = False,
+    suppress_x_host_lane: bool = False,
 ) -> list[str]:
     """List the sources the next run can serve.
 
@@ -183,6 +353,13 @@ def available_sources(
     block): availability is answered from local evidence only, so the X
     check never spawns xurl's live ``whoami`` network call. Research-time
     callers keep the default live semantics.
+
+    X is listed when an engine backend is available, or browser auth is
+    pending, or the hosting model declared the X connector lane
+    (``env.x_host_lane_declared``), or a validated ``--x-posts`` envelope is
+    present for this run (``x_envelope``), in every cookie mode.
+    ``suppress_x_host_lane`` turns only the lane branch off (discovery
+    enrichment passes); an envelope still counts.
     """
     available: list[str] = []
     # reddit_public needs no API key - always available
@@ -194,6 +371,12 @@ def available_sources(
     if config.get("SCRAPECREATORS_API_KEY"):
         available.extend(["tiktok", "instagram"])
     if env.get_x_source(config, local_only=local_only):
+        available.append("x")
+    elif x_envelope or (
+        not suppress_x_host_lane and env.x_host_lane_declared(config)
+    ):
+        # Host-fetched X lane: the model passes connector results through
+        # --x-posts, so X is served without an engine backend.
         available.append("x")
     else:
         # Safe inspection (--diagnose/--preflight) skips browser-cookie
@@ -253,7 +436,7 @@ def available_sources(
         available.append("grounding")
     if requested_sources and "jobs" in requested_sources:
         available.append("jobs")
-    # Perplexity Sonar: opt-in additive source via INCLUDE_SOURCES=perplexity
+    # Perplexity Agent API: opt-in additive source via INCLUDE_SOURCES=perplexity
     if _has_perplexity_provider(config) and (
         "perplexity" in include_sources or (requested_sources and "perplexity" in requested_sources)
     ):
@@ -275,6 +458,27 @@ def available_sources(
         "trustpilot" in include_sources or (requested_sources and "trustpilot" in requested_sources)
     ):
         available.append("trustpilot")
+    # Amazon: opt-in additive source, dual-gated. The Bright Data CLI must be
+    # on the agent subprocess PATH and carry a credential signal, AND the run
+    # must ask for it -- the model per-run via --search, or the user durably
+    # via INCLUDE_SOURCES=amazon. Never inferred from topic shape: the engine
+    # misroutes most shopping phrasings, and auto-firing would spend a CLI
+    # owner's credits on runs that have nothing to do with products.
+    if brightdata.is_available(config) and (
+        "amazon" in include_sources or (requested_sources and "amazon" in requested_sources)
+    ):
+        available.append("amazon")
+    # Meta Ads: opt-in additive source on the Amazon precedent. The
+    # ScrapeCreators key must be present AND the run must ask for it -- the
+    # model per-run via --search, or the user durably via
+    # INCLUDE_SOURCES=meta_ads. Never inferred from topic shape: keyword ad
+    # search on a non-brand topic returns a wrong-entity advertiser, and
+    # auto-firing would spend credits resolving it.
+    if config.get("SCRAPECREATORS_API_KEY") and (
+        "meta_ads" in include_sources
+        or (requested_sources and "meta_ads" in requested_sources)
+    ):
+        available.append("meta_ads")
     if (
         "xiaohongshu" in include_sources
         or (requested_sources and "xiaohongshu" in requested_sources)
@@ -294,6 +498,14 @@ def available_sources(
         "pinterest" in include_sources or (requested_sources and "pinterest" in requested_sources)
     ):
         available.append("pinterest")
+    # Telegram: opt-in via INCLUDE_SOURCES AND requires a channel list. The
+    # channel list (TELEGRAM_SOURCES env or --telegram-sources CLI) is the gate:
+    # without named channels there is no discovery endpoint to call.
+    if config.get("SCRAPECREATORS_API_KEY") and (
+        "telegram" in include_sources or (requested_sources and "telegram" in requested_sources)
+    ):
+        if telegram.is_telegram_configured(config):
+            available.append("telegram")
     # xquik is a backend of the single "x" source (see env.x_backend_chain),
     # not a separate parallel source — registered via the "x" entry above.
     exclude = {s.strip().lower() for s in (config.get("EXCLUDE_SOURCES") or "").split(",") if s.strip()}
@@ -399,6 +611,7 @@ def _fetch_discovery_source(
     mock: bool,
     config: dict[str, Any],
     keyword_gate: bool = True,
+    warnings: list[str] | None = None,
 ) -> tuple[list[dict[str, Any]], str | None]:
     """Fetch one listing/river source for the nominate stage.
 
@@ -407,8 +620,11 @@ def _fetch_discovery_source(
     keeps the gate on; global trending (``--discover`` with no domain) turns it
     off, because there is no keyword to gate against - the river feeds ARE the
     "what is hot right now" signal, and the confidence floor downstream is what
-    keeps junk out, not a keyword match.
+    keeps junk out, not a keyword match. ``warnings``, when given, collects
+    backend receipts that are not failures (xapi's truncated window).
     """
+    if _research_stopped(config):
+        return [], "discovery research cancelled or timed out"
     if mock:
         return _mock_discovery_items(source, plan.domain, to_date), None
     if source == "reddit":
@@ -454,16 +670,18 @@ def _fetch_discovery_source(
             ]
         return items, result.get("error")
     if source == "x":
-        subquery = schema.SubQuery(
-            label="discovery-listings",
-            search_query=plan.domain,
-            ranking_query=f"What is accelerating in {plan.domain}?",
-            sources=["x"],
-        )
+        # Discovery uses domain directly as query (no planner search_query)
+        query = plan.domain
         last_error = ""
+        chain_deadline = _research_deadline(config, X_CHAIN_DEADLINE_SECONDS)
+        x_warnings: list[str] = []
         for backend in env.x_backend_chain(config):
-            items, error = _fetch_x_backend(
-                backend, subquery, from_date, to_date, depth, config,
+            if _research_stopped(config) or time.monotonic() >= chain_deadline:
+                last_error = f"{last_error}; X chain budget exhausted (timed out or cancelled)".strip("; ")
+                break
+            items, error, _ = _attempt_x_backend(
+                backend, query, from_date, to_date, depth, config,
+                warnings=x_warnings, deadline=chain_deadline,
             )
             if items:
                 # Earlier failed-over backends' errors are observability, not
@@ -471,9 +689,13 @@ def _fetch_discovery_source(
                 # these items are partial and must surface as such.
                 if last_error:
                     print(f"[x] earlier backend failed: {last_error}", file=sys.stderr)
+                if warnings is not None:
+                    warnings.extend(x_warnings)
                 return items, error or None
             if error:
                 last_error = f"{backend}: {error}"
+        if warnings is not None:
+            warnings.extend(x_warnings)
         return [], last_error or None
     raise ValueError(f"Unsupported discovery source: {source}")
 
@@ -533,7 +755,12 @@ def nominate_candidates(
     run - the confidence floor decides whether the surviving evidence is enough.
     """
     bundle = schema.RetrievalBundle()
-    with ThreadPoolExecutor(max_workers=max(1, len(plan.sources))) as executor:
+    config = dict(config)
+    config["_research_deadline"] = _research_deadline(config, DISCOVERY_FUTURE_TIMEOUT_SECONDS)
+    # Shared receipts sink: only X appends (xapi's truncated window); the
+    # executor submit below passes it to every source, the rest ignore it.
+    x_receipts: list[str] = []
+    with _abandoning_executor(max_workers=max(1, len(plan.sources))) as executor:
         futures = {
             executor.submit(
                 _fetch_discovery_source,
@@ -545,14 +772,35 @@ def nominate_candidates(
                 mock=mock,
                 config=config,
                 keyword_gate=keyword_gate,
+                warnings=x_receipts,
             ): source
             for source in plan.sources
         }
-        for future in as_completed(futures):
+        # Bounded wait (reddit-lane futures_wait pattern): a hung feed degrades
+        # to a TIMEOUT partial instead of stalling nominate forever.
+        done, not_done = _wait_for_research(futures, config)
+        for future in not_done:
+            source = futures[future]
+            bundle.mark_attempted(source)
+            future.cancel()
+            detail = f"{source} timed out after {DISCOVERY_FUTURE_TIMEOUT_SECONDS:g}s"
+            bundle.errors_by_source[source] = detail
+            bundle.record_failure(
+                source,
+                health.TIMEOUT,
+                detail,
+                attempted=True,
+            )
+        for future in done:
             source = futures[future]
             bundle.mark_attempted(source)
             try:
-                raw_items, partial_error = future.result()
+                raw_items, partial_error = future.result(timeout=0)
+            except Exception as exc:
+                state, attempted = _classify_source_failure(exc)
+                bundle.record_failure(source, state, str(exc), attempted=attempted)
+                continue
+            try:
                 normalized = normalize.normalize_source_items(
                     source,
                     raw_items,
@@ -589,6 +837,14 @@ def nominate_candidates(
             except Exception as exc:
                 state, attempted = _classify_source_failure(exc)
                 bundle.record_failure(source, state, str(exc), attempted=attempted)
+    # Backend receipts that are not failures (xapi's truncated window): the
+    # same x_partial_coverage key the main path uses. X extends the sink just
+    # before returning, so a finished X future's receipts are complete. The
+    # executor exit does not join stragglers: a timed-out X can still append
+    # after the wait, and its receipts are dropped along with its items.
+    x_finished = any(futures[future] == "x" for future in done)
+    if x_finished and x_receipts:
+        bundle.artifacts.setdefault("x_partial_coverage", []).extend(list(x_receipts))
     return bundle
 
 
@@ -706,6 +962,7 @@ def nominate_topic_pool(
     query_plan: schema.QueryPlan,
     plan: schema.DiscoveryPlan,
     *,
+    from_date: str,
     to_date: str,
     limit: int,
 ) -> list[tuple[Nomination, str]]:
@@ -737,7 +994,13 @@ def nominate_topic_pool(
     confidence floor downstream decides whether what survived is worth
     showing.
     """
-    candidates = weighted_rrf(bundle.items_by_source_and_query, query_plan, pool_limit=80)
+    candidates = weighted_rrf(
+        bundle.items_by_source_and_query,
+        query_plan,
+        pool_limit=80,
+        range_from=from_date,
+        range_to=to_date,
+    )
     for candidate in candidates:
         velocity = rerank.discovery_velocity_score(candidate.source_items, as_of_date=to_date)
         candidate.final_score = min(100.0, 12.0 * math.log1p(velocity)) if velocity else 0.0
@@ -806,6 +1069,7 @@ def nominate_topics(
     query_plan: schema.QueryPlan,
     plan: schema.DiscoveryPlan,
     *,
+    from_date: str,
     to_date: str,
     limit: int,
 ) -> list[Nomination]:
@@ -814,7 +1078,7 @@ def nominate_topics(
     return [
         nomination
         for nomination, _cluster_id in nominate_topic_pool(
-            bundle, query_plan, plan, to_date=to_date, limit=limit,
+            bundle, query_plan, plan, from_date=from_date, to_date=to_date, limit=limit,
         )
     ]
 
@@ -869,16 +1133,31 @@ def enrich_nominations(
     if not nominations:
         return []
 
+    # Cooperative cancel: not-yet-started sub-runs and streams skip new
+    # network work once the batch budget expires. The event rides the
+    # per-worker config copy into run() -> _retrieve_stream_impl, which exits
+    # early when set; in-flight requests still run to their own timeouts.
+    cancel = threading.Event()
+    deadline = _research_deadline(config, max(1.0, budget_seconds))
+
     def _run_one(nomination: Nomination) -> schema.Report:
+        worker_config = dict(config)
+        worker_config["_enrich_cancel"] = cancel
+        worker_config["_research_deadline"] = deadline
+        _check_research(worker_config)
         return run(
             topic=nomination.name,
-            config=config,
+            config=worker_config,
             depth=depth,
             requested_sources=requested_sources,
             mock=mock,
             lookback_days=lookback_days,
             as_of_date=as_of_date,
             internal_subrun=True,
+            # Enrichment passes never carry a connector envelope, so the
+            # per-session lane signal must not plan X in and record a
+            # spurious X error on every nominated topic.
+            suppress_x_host_lane=True,
         )
 
     # Daemon threads + a semaphore instead of ThreadPoolExecutor: executor
@@ -895,6 +1174,9 @@ def enrich_nominations(
 
     def _worker(nomination: Nomination) -> None:
         with slots:
+            if cancel.is_set():
+                results_queue.put((nomination, None, TimeoutError("enrichment budget exhausted")))
+                return
             try:
                 results_queue.put((nomination, _run_one(nomination), None))
             except Exception as exc:  # noqa: BLE001 - containment is the contract
@@ -908,30 +1190,38 @@ def enrich_nominations(
             daemon=True,
         ).start()
 
-    deadline = time.monotonic() + max(1.0, budget_seconds)
     pending = len(nominations)
-    while pending and (remaining := deadline - time.monotonic()) > 0:
-        try:
-            nomination, report, exc = results_queue.get(timeout=min(remaining, 0.5))
-        except queue.Empty:
-            continue
-        pending -= 1
-        if exc is None:
-            enriched[nomination.name] = EnrichedTopic(
-                nomination=nomination, report=report,
-            )
-        else:
-            enriched[nomination.name] = EnrichedTopic(
-                nomination=nomination,
-                error=f"{type(exc).__name__}: {exc}",
-            )
-            print(
-                f"[Discover] enrichment failed for {nomination.name!r}: "
-                f"{type(exc).__name__}: {exc}",
-                file=sys.stderr,
-            )
-    # Budget expired (or all done): unfinished topics fall through below as
-    # nomination-only; their daemon workers are abandoned and cannot block exit.
+    try:
+        while pending and (remaining := deadline - time.monotonic()) > 0:
+            try:
+                nomination, report, exc = results_queue.get(timeout=min(remaining, 0.5))
+            except queue.Empty:
+                continue
+            if time.monotonic() >= deadline:
+                break
+            pending -= 1
+            if exc is None:
+                enriched[nomination.name] = EnrichedTopic(
+                    nomination=nomination, report=report,
+                )
+            else:
+                enriched[nomination.name] = EnrichedTopic(
+                    nomination=nomination,
+                    error=f"{type(exc).__name__}: {exc}",
+                )
+                print(
+                    f"[Discover] enrichment failed for {nomination.name!r}: "
+                    f"{type(exc).__name__}: {exc}",
+                    file=sys.stderr,
+                )
+    finally:
+        # Budget expired (or all done, or the drain itself failed):
+        # unfinished topics fall through below as nomination-only; their
+        # daemon workers are abandoned and cannot block exit. Signal
+        # cooperative cancel so queued workers skip new sub-runs and
+        # not-yet-started streams exit early; in-flight spend continues to
+        # its own timeout.
+        cancel.set()
 
     results: list[EnrichedTopic] = []
     for nomination in nominations:
@@ -1127,6 +1417,7 @@ class DiscoverNominateResult:
     to_date: str
     source_status: dict[str, schema.SourceOutcome]
     pool: list[tuple[Nomination, str]]
+    warnings: list[str] = field(default_factory=list)
 
 
 def run_discover_nominate(
@@ -1161,6 +1452,7 @@ def run_discover_nominate(
     )
     pool = nominate_topic_pool(
         sweep.bundle, sweep.query_plan, sweep.plan,
+        from_date=sweep.from_date,
         to_date=sweep.to_date,
         limit=rerank.JUDGE_POOL_LIMIT,
     )
@@ -1170,6 +1462,7 @@ def run_discover_nominate(
         to_date=sweep.to_date,
         source_status=sweep.source_status,
         pool=pool,
+        warnings=list(sweep.bundle.artifacts.get("x_partial_coverage", [])),
     )
 
 
@@ -1183,6 +1476,7 @@ def nominate_nothing_solid_report(result: DiscoverNominateResult) -> schema.Disc
     failed = _degraded_discovery_sources(result.source_status)
     if failed:
         warnings.append(f"Some discovery sources degraded: {', '.join(sorted(failed))}.")
+    warnings.extend(result.warnings)
     return schema.DiscoveryReport(
         domain=result.plan.domain,
         range_from=result.from_date,
@@ -1436,6 +1730,7 @@ def run_discover(
     topic_limit = max(5, min(10, limit))
     nominations = nominate_topics(
         sweep.bundle, sweep.query_plan, plan,
+        from_date=from_date,
         to_date=to_date,
         limit=ENRICH_LIMIT if enrich else topic_limit,
     )
@@ -1476,7 +1771,10 @@ def run_discover(
         plan=plan,
         topics=topics,
         source_status=source_status,
-        warnings=_discovery_report_warnings(topics, outcome, source_status),
+        warnings=(
+            _discovery_report_warnings(topics, outcome, source_status)
+            + sweep.bundle.artifacts.get("x_partial_coverage", [])
+        ),
         outcome=outcome,
         weak_signal=weak_signal[1] if weak_signal and not topics else None,
     )
@@ -1691,7 +1989,10 @@ def run_discover_resume(
         plan=plan,
         topics=topics,
         source_status=source_status,
-        warnings=_discovery_report_warnings(topics, outcome, source_status),
+        warnings=(
+            _discovery_report_warnings(topics, outcome, source_status)
+            + list(getattr(bundle, "warnings", None) or [])
+        ),
         outcome=outcome,
         weak_signal=weak_signal[1] if weak_signal and not topics else None,
     )
@@ -1703,7 +2004,11 @@ def diagnose(
     requested_sources: list[str] | None = None,
     *,
     safe: bool = False,
+    x_envelope: bool = False,
 ) -> dict[str, Any]:
+    # ``x_envelope`` is True when a validated --x-posts envelope is present for
+    # this invocation, so available_sources lists x even without a backend
+    # and the optional-source omission note does not fire.
     requested_sources = normalize_requested_sources(requested_sources)
     google_key = _google_key(config)
     x_status = env.get_x_source_status(config, probe=not safe)
@@ -1735,8 +2040,13 @@ def diagnose(
         "arxiv-pp-cli": bool(which("arxiv-pp-cli")),
         "techmeme-pp-cli": bool(which("techmeme-pp-cli")),
         "trustpilot-pp-cli": bool(which("trustpilot-pp-cli")),
+        "brightdata": bool(which("brightdata")),
         "gh": bool(which("gh")),
     }
+    # Network-free two-field probe (bird_installed/bird_authenticated
+    # precedent): "installed" is PATH resolution, "authenticated" is a
+    # presence-only credential signal that never reads the secret.
+    brightdata_status = brightdata.gate_status(config)
     credential_destinations = {
         "global_env": str(env.CONFIG_FILE) if env.CONFIG_FILE else None,
     }
@@ -1756,7 +2066,11 @@ def diagnose(
         "providers": providers_status,
         "local_mode": not reasoning_provider_available,
         "reasoning_provider": (config.get("LAST30DAYS_REASONING_PROVIDER") or "auto").lower(),
-        "x_backend": x_status["source"],
+        # The host-fetched connector lane serves X when no engine backend
+        # exists and the model declared the lane.
+        "x_backend": x_status["source"] or (
+            "connector" if env.x_host_lane_declared(config) else None
+        ),
         "bird_installed": x_status["bird_installed"],
         "bird_authenticated": x_status["bird_authenticated"],
         "bird_username": x_status["bird_username"],
@@ -1768,11 +2082,14 @@ def diagnose(
         "native_search": env.is_native_search(config),
         "has_scrapecreators": bool(config.get("SCRAPECREATORS_API_KEY")),
         "has_github": bool(config.get("GITHUB_TOKEN") or which("gh")),
+        "brightdata_installed": brightdata_status["brightdata_installed"],
+        "brightdata_authenticated": brightdata_status["brightdata_authenticated"],
         # safe=True (doctor/--diagnose/--preflight) must stay network-free:
         # answer X availability from local evidence only. x_pending is
         # precomputed by diagnose() to avoid double evaluation.
         "available_sources": available_sources(
-            config, requested_sources, x_pending=x_pending, local_only=safe
+            config, requested_sources, x_pending=x_pending, local_only=safe,
+            x_envelope=x_envelope,
         ),
         "safe": safe,
         "config_source": config.get("_CONFIG_SOURCE"),
@@ -1907,10 +2224,18 @@ def run(
     trustpilot_domain_is_hint: bool = False,
     hiring_signals_mode: bool = False,
     internal_subrun: bool = False,
+    suppress_x_host_lane: bool = False,
     save_dir: Path | str | None = None,
     corpus_dirs: list[str] | None = None,
     corpus_all_time: bool = False,
+    x_posts: x_envelope.Envelope | None = None,
 ) -> schema.Report:
+    _check_research(config)
+    # ``suppress_x_host_lane`` is distinct from ``internal_subrun``: comparison
+    # entities share the latter and must still honor the connector lane;
+    # only discovery enrichment passes set the former.
+    # ``x_posts`` is a validated ``--x-posts`` envelope: when present
+    # it replaces the engine's X fetch for this run and is served once.
     # Standalone runs (not competitor/discover sub-runs) own the YouTube
     # search-cache lifecycle. Comparison fan-out clears once before submit so
     # parallel entity sub-runs can still share in-run hits.
@@ -1918,6 +2243,10 @@ def run(
         youtube_yt.reset_search_cache()
     settings = _resolve_depth_settings(depth, config)
     requested_sources = normalize_requested_sources(requested_sources)
+    # Wall-clock origin for budget-aware enrichment lanes. Amazon review
+    # enrichment starts at search time (inside _retrieve_stream_impl) so it
+    # overlaps other sources instead of waiting for them all to finish.
+    run_started = time.monotonic()
     from_date, to_date = dates.get_date_range(lookback_days, as_of_date=as_of_date)
     resolved_corpus_dirs = corpus.resolve_directories(
         corpus_dirs or config.get("_CORPUS_DIRS"),
@@ -1932,6 +2261,35 @@ def run(
     corpus_requested = bool(requested_sources and "corpus" in requested_sources)
     if corpus_enabled and requested_sources and "corpus" not in requested_sources:
         requested_sources = [*requested_sources, "corpus"]
+
+    # Host-fetched X lane. EXCLUDE_SOURCES=x or a --search list without
+    # x wins: the envelope is ignored with a receipt line and stays unconsumed.
+    envelope = x_posts
+    if envelope is not None and (
+        "x" in excluded_sources
+        or (requested_sources and "x" not in requested_sources)
+    ):
+        log.source_log(
+            "x", "host-fetched X: envelope ignored (x is excluded from this run)",
+            tty_only=False,
+        )
+        envelope = None
+    # The lane signal without an envelope is a broken handoff, not a reason to
+    # spend a backup backend: X records the fixed not-passed outcome.
+    x_lane_missing = (
+        envelope is None
+        and not mock
+        and not suppress_x_host_lane
+        and env.x_host_lane_declared(config)
+    )
+    if envelope is not None or x_lane_missing:
+        # Ride the config dict (the _polymarket_keywords idiom) so the stream
+        # workers and the handle-lane section see it without widening their
+        # signatures. Copy first: comparison entities shallow-copy the shared
+        # config and must never inherit another entity's envelope.
+        config = dict(config)
+        config["_x_envelope"] = envelope
+        config["_x_lane_missing"] = x_lane_missing
 
     # Gate StockTwits to ticker/crypto topics. Single chokepoint: when False,
     # available_sources() never registers stocktwits, so the planner can't
@@ -1950,7 +2308,11 @@ def run(
             available = [source for source in available if source != "jobs"]
     else:
         runtime, reasoning_provider = providers.resolve_runtime(config, depth)
-        available = available_sources(config, requested_sources)
+        available = available_sources(
+            config, requested_sources,
+            suppress_x_host_lane=suppress_x_host_lane,
+            x_envelope=envelope is not None,
+        )
         if requested_sources:
             available = [source for source in available if source in requested_sources]
     # Keep an explicitly requested but unconfigured corpus in the plan long
@@ -1960,7 +2322,7 @@ def run(
         available.append("corpus")
     if web_backend == "none":
         available = [s for s in available if s != "grounding"]
-    elif web_backend in ("brave", "exa", "serper", "parallel", "keyless") and "grounding" not in available:
+    elif web_backend in ("brave", "exa", "serper", "parallel", "parallel-mcp", "keyless") and "grounding" not in available:
         available.append("grounding")
     if (
         hiring_signals_mode
@@ -1985,9 +2347,11 @@ def run(
         planner.validate_external_plan(external_plan)
         plan = planner._sanitize_plan(
             external_plan, topic, available, planner_requested_sources, depth,
+            honor_plan_sources=True,
         )
         plan_source = "external"
     else:
+        _check_research(config)
         plan = planner.plan_query(
             topic=topic,
             available_sources=available,
@@ -2007,6 +2371,7 @@ def run(
         else:
             plan_source = "deterministic"
 
+    _check_research(config)
     # Safety net: ensure grounding appears in all subqueries even if the planner
     # omits it. This is redundant when the planner includes grounding via
     # SOURCE_CAPABILITIES, but kept as a fallback.
@@ -2032,6 +2397,17 @@ def run(
             plan.source_weights["corpus"] = 1.0
             plan.source_weights = planner._normalize_weights(plan.source_weights)
 
+    # Add the paid-only Perplexity lane after all normal-source safety nets.
+    # This preserves the planner's primary subquery, gives the bounded paid
+    # call the whole user topic, and prevents grounding, jobs, or corpus from
+    # being attached to the dedicated lane.
+    _ensure_perplexity_in_plan(
+        plan,
+        topic,
+        available,
+        force=bool(config.get("_deep_research")),
+    )
+
     # Always-on planner trace. Emits one summary line plus one per subquery
     # so retrieval-breadth failures like the 2026-04-19 Hermes Agent Use Cases
     # disaster are visible without --debug. Stderr only; does not leak into
@@ -2054,6 +2430,45 @@ def run(
         print("[Planner]   (no subqueries in plan)", file=sys.stderr)
 
     bundle = schema.RetrievalBundle(artifacts={"grounding": []})
+    deferred_retryable_failures: dict[str, dict[str, Any]] = {}
+    if envelope is not None:
+        # The footer names the X provenance (render._render_stats).
+        bundle.artifacts["x_provenance"] = envelope.provenance
+    # Handles the user named explicitly. Available before any retrieval, unlike
+    # the entity-extracted set, so Phase 1 and quick-depth runs get first-party
+    # protection too. Without this the exemption reached only the Phase 2
+    # supplement path -- which quick runs skip entirely -- so a subject-authored
+    # post retrieved in Phase 1 was still pruned before fusion, which is exactly
+    # the evidence loss this change exists to prevent.
+    explicit_first_party = {
+        h.lstrip("@").strip().lower()
+        for h in ([x_handle, github_user, *(x_related or [])])
+        if h and h.strip()
+    }
+    # Creator accounts named via --ig-creators / --creators carry the same
+    # explicit intent: the run is searching those accounts, and a creator's
+    # caption rarely repeats the topic's literal tokens, so without an
+    # exemption the relevance floor prunes them as third-party noise (issue
+    # #1101: 36 creator reels fetched, 0 reported). The exemption is scoped
+    # per platform, NOT merged into the global set: each flag names accounts
+    # on one platform, and an unrelated same-name account elsewhere must not
+    # bypass the floors.
+    creator_first_party = _creator_first_party_by_source(tiktok_creators, ig_creators)
+    # Real X handles: --x-handle, --x-related, or @mentions in the topic. These
+    # determine whether the deferred X floor applies. Topic words like "peter"
+    # are NOT real handles and should not trigger the floor — when no real
+    # handle is identified, the floor is skipped entirely (policy: a noisier
+    # report beats losing the subject's evidence).
+    explicit_x_handles = {
+        h.lstrip("@").strip().lower()
+        for h in ([x_handle, *(x_related or [])])
+        if h and h.strip()
+    } | _topic_handle_mentions(topic)
+    # Plus handle-shaped tokens from the topic. Phase 1 and quick-depth runs
+    # never reach automatic handle resolution, so without this a quick search
+    # naming a subject still discards everything that subject wrote.
+    explicit_first_party |= _topic_first_party_candidates(topic)
+
     for source in (requested_sources or []):
         if source not in available:
             bundle.record_failure(
@@ -2078,6 +2493,14 @@ def run(
     # the LAW 7 degraded-run and Step 0.55 pre-research banners do not apply -
     # they would contradict the documented jobs-scoped flow. Suppress them.
     bundle.artifacts["hiring_signals_mode"] = hiring_signals_mode
+    # Record the resolved Amazon keyword whenever the lane is active, so the
+    # footer can name it on an empty result. A search that matched nothing
+    # still spent a credit, and the fix is almost always the keyword -- a
+    # suppressed line means nobody ever learns it was wrong.
+    if "amazon" in (available or []):
+        bundle.artifacts["amazon_query"] = (
+            str(config.get("_amazon_query") or "").strip() or topic
+        )
 
     # Project-mode or person-mode GitHub: run once before the main subquery loop
     _github_custom_done = False
@@ -2205,7 +2628,9 @@ def run(
         if source in available and source != "corpus"
     )
     max_workers = _inner_max_workers(stream_count, internal_subrun=internal_subrun)
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    stream_config = dict(config)
+    stream_config["_research_deadline"] = _research_deadline(config, STREAM_FUTURE_TIMEOUT_SECONDS)
+    with _abandoning_executor(max_workers=max_workers) as executor:
         for subquery in plan.subqueries:
             for source in subquery.sources:
                 if source not in available:
@@ -2218,15 +2643,30 @@ def run(
                 # Enforce per-source fetch cap. A CLI override (issue #716) raises
                 # the cap for capped sources so every X subquery in a multi-angle
                 # --plan fetches, instead of only the first two.
-                cap = MAX_SOURCE_FETCHES.get(source)
-                _cap_override = config.get("_max_source_fetches")
-                if cap is not None and _cap_override is not None:
-                    # `is not None` so --max-source-fetches 0 (disable fetching a
-                    # capped source) is honored instead of falling back to default.
-                    cap = int(_cap_override)
+                cap = _source_fetch_cap(source, config)
                 if cap is not None:
+                    if cap <= 0:
+                        continue
                     current = source_fetch_count.get(source, 0)
                     if current >= cap:
+                        continue
+                    shared_paid_budget = config.get("_perplexity_paid_budget")
+                    if (
+                        source == "perplexity"
+                        and isinstance(shared_paid_budget, PaidSourceBudget)
+                        and not shared_paid_budget.try_consume(
+                            cap,
+                            claimant=topic,
+                        )
+                    ):
+                        bundle.artifacts.setdefault("paid_source_budget", {})[
+                            "perplexity"
+                        ] = {
+                            "state": "skipped-budget",
+                            "attempted": False,
+                            "owner": shared_paid_budget.owner,
+                            "claimant": topic,
+                        }
                         continue
                     source_fetch_count[source] = current + 1
                 bundle.mark_attempted(source)
@@ -2236,7 +2676,7 @@ def run(
                         topic=topic,
                         subquery=subquery,
                         source=source,
-                        config=config,
+                        config=stream_config,
                         depth=depth,
                         date_range=(from_date, to_date),
                         runtime=runtime,
@@ -2251,13 +2691,29 @@ def run(
                         ig_creators=ig_creators,
                         trustpilot_domain=trustpilot_domain,
                         trustpilot_domain_is_hint=trustpilot_domain_is_hint,
+                        run_started=run_started,
                     )
                 ] = (subquery, source)
 
-        for future in as_completed(futures):
+        # Bounded fan-out (reddit-lane futures_wait pattern): the whole Phase 1
+        # waits at most STREAM_FUTURE_TIMEOUT_SECONDS, so a hung lane degrades
+        # to a TIMEOUT partial instead of stalling run() forever. Worst case
+        # per stream is the wait ceiling plus, for a stream that failed fast
+        # with a 5xx while budget remained, one inline retry bounded by that
+        # lane's own timeouts. No retry starts after the wait timed out or
+        # the enrichment cancel fired.
+        done, not_done = _wait_for_research(futures, stream_config)
+        budget_expired = bool(not_done)
+        for future in not_done:
+            subquery, source = futures[future]
+            future.cancel()
+            detail = f"{source} timed out after {STREAM_FUTURE_TIMEOUT_SECONDS:g}s"
+            bundle.errors_by_source[source] = detail
+            bundle.record_failure(source, health.TIMEOUT, detail, attempted=True)
+        for future in done:
             subquery, source = futures[future]
             try:
-                raw_items, artifact = future.result()
+                raw_items, artifact = future.result(timeout=0)
             except Exception as exc:
                 # Share 429 signal so pending futures skip this source
                 if _is_rate_limit_error(exc):
@@ -2267,13 +2723,28 @@ def run(
                     state, attempted = _classify_source_failure(exc)
                     bundle.record_failure(source, state, str(exc), attempted=attempted)
                     continue
-                # Retry once for transient 5xx errors
+                # Retry once for transient 5xx errors, but never after the
+                # wait already timed out or cancel fired: the retry's lane
+                # timeouts plus the blocking sleep would run past the budget
+                # that just expired.
                 if _is_transient_error(exc):
-                    time.sleep(3)
+                    if budget_expired or _research_stopped(stream_config):
+                        bundle.errors_by_source[source] = str(exc)
+                        state, attempted = _classify_source_failure(exc)
+                        bundle.record_failure(source, state, str(exc), attempted=attempted)
+                        continue
+                    delay = min(3, max(0, stream_config["_research_deadline"] - time.monotonic()))
+                    cancel = stream_config.get("_enrich_cancel")
+                    if cancel is None:
+                        time.sleep(delay)
+                    else:
+                        cancel.wait(delay)
                     try:
-                        raw_items, artifact = _retrieve_stream(
+                        _check_research(stream_config)
+                        retry_future = executor.submit(
+                            _retrieve_stream,
                             topic=topic, subquery=subquery, source=source,
-                            config=config, depth=depth, date_range=(from_date, to_date),
+                            config=stream_config, depth=depth, date_range=(from_date, to_date),
                             runtime=runtime, mock=mock,
                             rate_limited_sources=rate_limited_sources,
                             rate_limit_lock=rate_limit_lock,
@@ -2285,7 +2756,13 @@ def run(
                             ig_creators=ig_creators,
                             trustpilot_domain=trustpilot_domain,
                             trustpilot_domain_is_hint=trustpilot_domain_is_hint,
+                            run_started=run_started,
                         )
+                        retry_done, _ = _wait_for_research([retry_future], stream_config)
+                        if not retry_done:
+                            retry_future.cancel()
+                            raise TimeoutError("stream retry timed out")
+                        raw_items, artifact = retry_future.result(timeout=0)
                     except Exception as retry_exc:
                         detail = f"{exc} (retried once, still failed: {retry_exc})"
                         bundle.errors_by_source[source] = detail
@@ -2301,27 +2778,83 @@ def run(
             if isinstance(artifact, dict) and artifact.get("_source_outcome"):
                 artifact = dict(artifact)
                 outcome_note = artifact.pop("_source_outcome")
-                bundle.record_failure(
-                    source,
-                    outcome_note["state"],
-                    outcome_note["detail"],
-                    attempted=outcome_note.get("attempted", True),
+                if (
+                    source == "youtube"
+                    and not raw_items
+                    and _retryable_youtube_outcome(outcome_note)
+                ):
+                    deferred_retryable_failures.setdefault(source, outcome_note)
+                else:
+                    bundle.record_failure(
+                        source,
+                        outcome_note["state"],
+                        outcome_note["detail"],
+                        attempted=outcome_note.get("attempted", True),
+                    )
+            if isinstance(artifact, dict) and artifact.get("_source_outcome_detail"):
+                artifact = dict(artifact)
+                detail_rate_limited = _detail_rate_limits_source(source, artifact)
+                lane_state = artifact.pop("_source_outcome_detail_state", None)
+                detail_note = artifact.pop("_source_outcome_detail")
+                bundle.record_detail(
+                    source, detail_note, state=lane_state
                 )
+                if detail_rate_limited:
+                    # Do not re-fan-out against a host still inside its window.
+                    with rate_limit_lock:
+                        rate_limited_sources.add(source)
+            if isinstance(artifact, dict) and artifact.get("_source_outcome_deferred"):
+                artifact = dict(artifact)
+                deferred_retryable_failures.setdefault(
+                    source, artifact.pop("_source_outcome_deferred")
+                )
+            if isinstance(artifact, dict):
+                artifact.pop("_x_backup_not_rate_limited", None)
             normalized = _normalize_score_dedupe(
                 source, raw_items, from_date, to_date,
                 freshness_mode=plan.freshness_mode,
                 ranking_query=subquery.ranking_query,
+                first_party_handles=explicit_first_party,
+                first_party_by_source=creator_first_party,
+                # X defers its relevance floor until resolved_handles exists.
+                # Everything else prunes here as before.
+                defer_relevance_prune=(source == "x"),
             )
             # Jobs is exempt from per_stream_limit: a careers board is a complete
             # snapshot of open roles, and truncating it to the default 12 drops
             # strategic postings (the whole point of hiring-signals coverage).
+            # A host-fetched envelope serves every topic row to the first X
+            # stream, so that one stream carries what the backend's X streams
+            # together would have (per_stream_limit x the X fetch cap).
             if source != "jobs":
-                normalized = normalized[: settings["per_stream_limit"]]
+                stream_limit = settings["per_stream_limit"]
+                host_fetched_x = source == "x" and config.get("_x_envelope") is not None
+                if host_fetched_x:
+                    stream_limit *= _source_fetch_cap("x", config) or 1
+                normalized = _apply_reddit_stream_keepers(
+                    source, normalized, stream_limit, topic,
+                    host_fetched_x=host_fetched_x, protected_authors=explicit_first_party,
+                )
+            if isinstance(artifact, dict) and artifact.get("_source_outcome_if_empty"):
+                artifact = dict(artifact)
+                deferred_outcome = artifact.pop("_source_outcome_if_empty")
+                if not normalized:
+                    if _retryable_youtube_outcome(deferred_outcome):
+                        deferred_retryable_failures.setdefault(source, deferred_outcome)
+                    else:
+                        bundle.record_failure(
+                            source,
+                            deferred_outcome["state"],
+                            deferred_outcome["detail"],
+                            attempted=deferred_outcome.get("attempted", True),
+                        )
             bundle.add_items(subquery.label, source, normalized)
             if artifact:
                 bundle.artifacts.setdefault("grounding", []).append(artifact)
 
     # Phase 2: supplemental entity-based searches
+    _check_research(config)
+    supplemental_handles: list[str] = []
     _run_supplemental_searches(
         topic=topic,
         bundle=bundle,
@@ -2335,6 +2868,7 @@ def run(
         rate_limit_lock=rate_limit_lock,
         x_handle=x_handle,
         x_related=x_related,
+        resolved_handles_out=supplemental_handles,
     )
 
     # Phase 2b: retry thin sources with simplified query
@@ -2343,6 +2877,10 @@ def run(
     _github_skip_retry = {"corpus"}
     if _github_person_done or _github_custom_done:
         _github_skip_retry.add("github")
+    pre_retry_counts = {
+        source: len(bundle.items_by_source.get(source, []))
+        for source in deferred_retryable_failures
+    }
     _retry_thin_sources(
         topic=topic,
         bundle=bundle,
@@ -2361,7 +2899,20 @@ def run(
         tiktok_hashtags=tiktok_hashtags,
         tiktok_creators=tiktok_creators,
         ig_creators=ig_creators,
+        first_party_handles=explicit_first_party,
+        first_party_by_source=creator_first_party,
+        run_started=run_started,
     )
+    for source, outcome in deferred_retryable_failures.items():
+        if (
+            source in bundle.errors_by_source
+            or len(bundle.items_by_source.get(source, [])) > pre_retry_counts[source]
+        ):
+            continue
+        bundle.record_failure(
+            source, outcome["state"], outcome["detail"],
+            attempted=outcome.get("attempted", True),
+        )
 
     # Reclassify partial failures as DEGRADED instead of silently dropping them.
     # A source that 429'd on one subquery but succeeded on another is not a hard
@@ -2383,21 +2934,83 @@ def run(
     if hiring_summary:
         bundle.artifacts["hiring_signals"] = hiring_summary
 
+    _check_research(config)
     items_by_source = _finalize_items_by_source(
         bundle.items_by_source, topic=topic, config=config, depth=depth, mock=mock,
+        elapsed=time.monotonic() - run_started,
     )
     source_status = _finalize_source_status(bundle.source_status, items_by_source)
-    candidates = weighted_rrf(bundle.items_by_source_and_query, plan, pool_limit=settings["pool_limit"])
     # Normalized set of handles this run resolved for the topic. A candidate
     # authored by one of these is first-party and is exempted from the
     # entity-miss demotion in rerank (a post never repeats its own author's
     # name, so the body-text grounding check would otherwise zero out the
-    # subject's own highest-signal posts).
-    resolved_handles = {
+    # subject's own highest-signal posts). Built before fusion so the
+    # per-author cap can give the topic's subject a higher allowance than an
+    # incidental third-party account.
+    resolved_handles = explicit_first_party | {
         h.lstrip("@").strip().lower()
-        for h in ([x_handle, github_user, *(x_related or [])])
+        for h in supplemental_handles
+        if h and h.strip()
+    } | {h for handles in creator_first_party.values() for h in handles}
+    # resolved_handles feeds rerank/fusion, where the first-party marks only
+    # resist demotion of items that already passed the inclusion floors and a
+    # named account is treated as the subject across surfaces. The inclusion
+    # gate (prune_low_relevance) instead gets the platform-scoped
+    # creator_first_party map so a cross-platform name collision cannot
+    # bypass the floors.
+    # Real X handles from explicit flags, @mentions in topic, or Phase 2 discovery.
+    # When no real handle is identified, skip the X floor entirely — a noisier
+    # report beats losing the subject's evidence. Topic tokens like "peter" are
+    # NOT real handles: they populate resolved_handles for downstream first-party
+    # protection but should NOT trigger the floor.
+    real_x_handles = explicit_x_handles | {
+        h.lstrip("@").strip().lower()
+        for h in supplemental_handles
         if h and h.strip()
     }
+    # Deferred X relevance floor. Phase 1 skipped it so this could run with the
+    # run's actual resolved handles rather than a guess made before anyone knew
+    # who the subject was. Applied per subquery stream so fusion sees the same
+    # shape it always has. Only applied when we have real X handles — topic
+    # tokens alone cannot identify the subject.
+    if real_x_handles:
+        # IG/TikTok creator exemptions stay on their own platforms: a creator
+        # handle must not exempt a same-name X account from this floor. Only
+        # creator-ONLY handles are subtracted, where X provenance means
+        # real_x_handles (explicit X flags, @mentions in the topic, Phase 2
+        # discovery) - a plain topic token or --github-user match is NOT X
+        # provenance and does not preserve the exemption.
+        x_floor_handles = resolved_handles - _creator_only_handles(
+            creator_first_party, real_x_handles
+        )
+        for key, stream in list(bundle.items_by_source_and_query.items()):
+            if key[1] != "x" or not stream:
+                continue
+            pruned = signals.prune_low_relevance(
+                stream,
+                first_party_handles=x_floor_handles,
+                first_party_by_source=creator_first_party,
+            )
+            _log_prune_drop("x", len(stream), len(pruned), scope="per-query stream")
+            bundle.items_by_source_and_query[key] = pruned
+        if bundle.items_by_source.get("x"):
+            x_stream = bundle.items_by_source["x"]
+            pruned = signals.prune_low_relevance(
+                x_stream,
+                first_party_handles=x_floor_handles,
+                first_party_by_source=creator_first_party,
+            )
+            _log_prune_drop("x", len(x_stream), len(pruned), scope="merged stream")
+            bundle.items_by_source["x"] = pruned
+
+    candidates = weighted_rrf(
+        bundle.items_by_source_and_query,
+        plan,
+        pool_limit=settings["pool_limit"],
+        range_from=from_date,
+        range_to=to_date,
+        first_party_handles=resolved_handles,
+    )
     private_candidates = [
         candidate
         for candidate in candidates
@@ -2408,6 +3021,7 @@ def run(
     public_candidates = [
         candidate for candidate in candidates if id(candidate) not in private_candidate_ids
     ]
+    _check_research(config)
     ranked_public = rerank.rerank_candidates(
         topic=topic,
         plan=plan,
@@ -2430,18 +3044,31 @@ def run(
         resolved_handles=resolved_handles,
     )
     ranked_public = rerank.prune_fallback_entity_misses(ranked_public, topic=topic)
+    if hiring_summary:
+        # The diagnostic source dump retains pruned jobs; hiring aggregation
+        # needs their rejection identities after they leave the ranked pool.
+        retained_ids = {candidate.candidate_id for candidate in ranked_public}
+        hiring_summary["rejected_job_keys"] = sorted({
+            fusion.candidate_key(item)
+            for candidate in public_candidates
+            if candidate.candidate_id not in retained_ids
+            for item in candidate.source_items
+            if item.source == "jobs"
+        })
     # Private corpus already cleared a body-aware retrieval floor; do not apply
     # the public title/snippet visibility gate (filenames often omit the head
     # token even when the document body matched).
     ranked_candidates = sorted(
         [*ranked_public, *ranked_private],
         key=lambda candidate: (
+            1 if schema.candidate_out_of_window(candidate) else 0,
             -candidate.final_score,
             -(candidate.engagement or -1),
             min(candidate.native_ranks.values(), default=999),
             candidate.title,
         ),
     )
+    _check_research(config)
     rerank.score_fun(
         topic=topic,
         candidates=ranked_public,
@@ -2460,6 +3087,7 @@ def run(
     # gh-credential fallback) outside the _retrieve_stream seam, so it gets its
     # own fixture exchange keyed by phase.
     if "github" in available and not mock:
+        _check_research(config)
         star_request = {
             "source": "github",
             "phase": "post_rerank_star_enrichment",
@@ -2482,6 +3110,20 @@ def run(
 
     clusters = cluster_candidates(ranked_candidates, plan)
     warnings = _warnings(items_by_source, ranked_candidates, bundle.errors_by_source, degraded_by_source)
+    # One-sided entity coverage is a reporting warning, not a source failure:
+    # marking the source PARTIAL would trip LAST30DAYS_STRICT_EXIT on runs that
+    # returned good X results.
+    warnings.extend(bundle.artifacts.get("x_partial_coverage", []))
+    # Backend receipts that are not failures (xapi's truncated window), and
+    # the Meta Ads footer inputs. A stream artifact only ever reaches the
+    # report as an anonymous entry in this list, so the advertiser and the
+    # pre-truncation counts have to be lifted to named top-level artifacts or
+    # the footer cannot render them -- least of all on a zero-item run, which
+    # is exactly when naming the advertiser matters most.
+    for stream_artifact in bundle.artifacts.get("grounding", []):
+        if isinstance(stream_artifact, dict):
+            warnings.extend(stream_artifact.get("x_receipts", []))
+    _lift_stream_artifacts(bundle)
     library_context, library_warning = _load_library_context(
         topic=topic,
         config=config,
@@ -2494,6 +3136,7 @@ def run(
     )
     if library_warning:
         warnings.append(library_warning)
+    bundle.artifacts["usage"] = reasoning_provider.total_usage if reasoning_provider else None
 
     return schema.Report(
         topic=topic,
@@ -2687,6 +3330,178 @@ def merge_drill_report(
     return merged
 
 
+def _batch_subject_handles(raw_items: list[dict], *, top_n: int = 2) -> set[str]:
+    """Most-mentioned handles in a batch of X items, as first-party candidates.
+
+    Mirrors entity_extract's ranking but runs before pruning rather than after,
+    and keys on *mentions only* rather than mentions plus authors. That
+    distinction is the safety property: a prolific commentator inflates the
+    author count, but being mentioned by other accounts is what identifies the
+    subject of a topic. Capped at the top few so a busy thread cannot exempt
+    the whole batch.
+    """
+    counts: Counter = Counter()
+    for item in raw_items or []:
+        text = str((item or {}).get("text") or "")
+        for mention in re.findall(r"@([A-Za-z0-9_]{1,15})", text):
+            counts[mention.lower()] += 1
+    if not counts:
+        return set()
+    return {handle for handle, _ in counts.most_common(top_n)}
+
+
+# Reddit engagement keepers: per stream, the top-N threads by upvotes plus
+# comments that clear the relevance floor and name the primary entity survive
+# per_stream_limit truncation even when their local rank score is low. The
+# stream order is 65% title relevance, so the month's most-discussed on-topic
+# thread (16K upvotes, 0.19 relevance) was otherwise cut behind one-upvote
+# posts with better title overlap.
+REDDIT_STREAM_KEEPERS = 3
+
+
+def _x_raw_engagement(item: schema.SourceItem) -> float:
+    """Likes, reposts, replies, and quotes as a plain number."""
+    eng = item.engagement or {}
+    return float(sum(
+        value for key in ("likes", "reposts", "replies", "quotes")
+        if isinstance(value := eng.get(key), (int, float)) and not isinstance(value, bool)
+    ))
+
+
+def _x_post_qualifies(item: schema.SourceItem, entity: str, floor: float) -> bool:
+    """On-topic enough for an engagement slot: clears the floor and names the entity."""
+    if (item.local_relevance or 0.0) < floor or _x_raw_engagement(item) <= 0:
+        return False
+    if not entity:
+        return True
+    return rerank._entity_grounded(f"{item.title or ''} {item.body or ''}", entity)
+
+
+def _apply_reddit_stream_keepers(
+    source: str,
+    items: list[schema.SourceItem],
+    limit: int,
+    topic: str,
+    *,
+    host_fetched_x: bool = False,
+    protected_authors: Iterable[str] = (),
+) -> list[schema.SourceItem]:
+    """Truncate a stream to *limit*, holding slots for engagement keepers.
+
+    Reddit holds a few slots for its most-engaged on-topic threads. A
+    host-fetched X stream holds half its slots for its most-engaged on-topic
+    posts, because its popular pass reaches back across the whole window and
+    those posts would otherwise lose to fresher low-engagement ones. Posts by
+    ``protected_authors`` (the run's explicitly named handles) are never
+    displaced, because the first-party relevance exemption runs after this cut.
+    """
+    kept = list(items[:limit])
+    if len(items) <= limit:
+        return kept
+    entity = rerank._primary_entity(topic or "") if topic else ""
+    floor = fusion.relevance_floor_for_entity(entity)
+    if source == "reddit":
+        keepers = [
+            item
+            for item in sorted(items, key=fusion.raw_engagement, reverse=True)
+            if fusion.reddit_thread_qualifies(item, entity, floor)
+        ][:REDDIT_STREAM_KEEPERS]
+    elif source == "x" and host_fetched_x:
+        keepers = [
+            item
+            for item in sorted(items, key=_x_raw_engagement, reverse=True)
+            if _x_post_qualifies(item, entity, floor)
+        ][: max(1, limit // 2)]
+    else:
+        return kept
+    keeper_ids = {id(item) for item in keepers}
+    protected = {author.lstrip("@").lower() for author in protected_authors if author}
+    for keeper in keepers:
+        if any(item is keeper for item in kept):
+            continue
+        # Displace the lowest-ranked non-keeper so the slice stays at limit;
+        # when the slice is already all keepers or protected posts there is
+        # nothing to trade.
+        displaced = False
+        for index in range(len(kept) - 1, -1, -1):
+            if id(kept[index]) in keeper_ids:
+                continue
+            if (kept[index].author or "").lstrip("@").lower() in protected:
+                continue
+            del kept[index]
+            displaced = True
+            break
+        if displaced or len(kept) < limit:
+            kept.append(keeper)
+    return kept[:limit]
+
+
+
+def _creator_first_party_by_source(
+    tiktok_creators: Iterable[str] | None,
+    ig_creators: Iterable[str] | None,
+) -> dict[str, set[str]]:
+    """Platform-scoped creator handles for the relevance prune.
+
+    --ig-creators names Instagram accounts and --creators names TikTok
+    accounts; each exemption applies only on its own platform. Merging both
+    into one global handle set would let an unrelated same-name account on
+    another platform bypass the relevance and engagement floors.
+    """
+
+    def _norm(handles: Iterable[str] | None) -> set[str]:
+        return {
+            h.lstrip("@").strip().lower()
+            for h in (handles or [])
+            if h and h.strip()
+        }
+
+    return {"instagram": _norm(ig_creators), "tiktok": _norm(tiktok_creators)}
+
+
+def _creator_only_handles(
+    creator_first_party: Mapping[str, set[str]],
+    *x_provenance_sets: Iterable[str],
+) -> set[str]:
+    """Creator handles that carry no X provenance.
+
+    A handle named ONLY via --ig-creators / --creators must not exempt a
+    same-name X account from the deferred X floor. But the same person is
+    often named on both surfaces (--x-handle foo --ig-creators foo): the
+    normalized sets collapse that to one string, so subtracting the whole
+    creator set would strip the explicitly requested X exemption too. The
+    subtraction therefore covers only handles absent from every
+    X-provenance set (explicit flags, topic mentions, Phase 2 discovery).
+    """
+    creator_flat = {h for handles in creator_first_party.values() for h in handles}
+    x_provenance = {h for handles in x_provenance_sets for h in handles}
+    return creator_flat - x_provenance
+
+
+def _log_prune_drop(
+    source: str, before: int, after: int, scope: str | None = None
+) -> None:
+    """Log when the relevance prune removes items from a stream.
+
+    The prune is silent by design inside ``signals`` (a pure function), but a
+    silent drop is invisible to the user: issue #1101 fetched 36 creator reels
+    and reported zero with no line explaining why. Log the count and the reason
+    class here, next to the other per-stream retrieval logs. The all-weak
+    ``filtered or items`` rescue keeps the originals, so before == after and
+    nothing is logged - a rescue is not a drop.
+    """
+    dropped = before - after
+    if dropped <= 0:
+        return
+    scope_note = f" ({scope})" if scope else ""
+    log.source_log(
+        render.SOURCE_LABELS.get(source, source.capitalize()),
+        f"relevance prune dropped {dropped} of {before} items below the "
+        f"relevance/engagement floor{scope_note}",
+        tty_only=False,
+    )
+
+
 def _normalize_score_dedupe(
     source: str,
     raw_items: list[dict],
@@ -2694,8 +3509,21 @@ def _normalize_score_dedupe(
     to_date: str,
     freshness_mode: str,
     ranking_query: str,
+    first_party_handles: Iterable[str] | None = None,
+    first_party_by_source: Mapping[str, Iterable[str]] | None = None,
+    defer_relevance_prune: bool = False,
 ) -> list[schema.SourceItem]:
-    """Normalize, annotate, prune, dedupe, and extract snippets for a batch of raw items."""
+    """Normalize, annotate, prune, dedupe, and extract snippets for a batch of raw items.
+
+    ``defer_relevance_prune`` skips the relevance floor here so the caller can
+    apply it once the run has resolved who the topic's subject is. Pruning X
+    before handle resolution is the ordering bug behind the whole first-party
+    evidence loss: the floor cannot exempt an author nobody has identified yet,
+    and no amount of guessing at prune time substitutes for knowing.
+
+    ``first_party_handles`` names accounts this run is explicitly searching, so
+    their own posts survive the relevance floor (see signals.prune_low_relevance).
+    """
     normalized = normalize.normalize_source_items(
         source, raw_items, from_date, to_date,
         freshness_mode=freshness_mode,
@@ -2712,8 +3540,28 @@ def _normalize_score_dedupe(
         reference_date=to_date,
         max_days=lookback_window_days,
     )
-    if source != "jobs":
-        normalized = signals.prune_low_relevance(normalized)
+    if source != "jobs" and not defer_relevance_prune:
+        floor_handles = set(first_party_handles or ())
+        if source == "x":
+            # Union, never a fallback. The caller's set is derived partly from
+            # topic tokens, so it is non-empty for essentially every real topic
+            # -- gating this on "no handles supplied" would make it dead code
+            # and leave the name-only case exactly as broken as before.
+            #
+            # Reuses the engine's own resolution signal on the batch already in
+            # hand: posts *about* a subject mention their handle, so the
+            # most-mentioned account in a topic's own results is the subject.
+            # Costs nothing extra -- no search, no network -- and closes the
+            # case where the handle never appears in the topic at all
+            # ("Peter Steinberger" -> @steipete).
+            floor_handles |= _batch_subject_handles(raw_items)
+        pre_prune_count = len(normalized)
+        normalized = signals.prune_low_relevance(
+            normalized,
+            first_party_handles=floor_handles,
+            first_party_by_source=first_party_by_source,
+        )
+        _log_prune_drop(source, pre_prune_count, len(normalized))
     normalized = dedupe.dedupe_items(normalized)
     for item in normalized:
         item.snippet = snippet.extract_best_snippet(item, prepared_query)
@@ -2726,10 +3574,16 @@ def _finalize_items_by_source(
     config: dict | None = None,
     depth: str = "default",
     mock: bool = False,
+    elapsed: float = 0.0,
 ) -> dict[str, list[schema.SourceItem]]:
     finalized = {}
     for source, items in items_by_source_raw.items():
+        _check_research(config or {})
         items = sorted(items, key=lambda item: item.local_rank_score or 0.0, reverse=True)
+        # Same thread from two subquery streams: fold the enriched copy into
+        # the first before the text-similarity dedupe, which would otherwise
+        # keep whichever copy ranked higher and drop its comments.
+        items = collapse_duplicate_urls(items)
         items = dedupe.dedupe_items(items)
         enrichment_request = {
             "source": source,
@@ -2778,6 +3632,24 @@ def _finalize_items_by_source(
                 items = _merge_replayed_enrichment(items, replayed)
             else:
                 digg.enrich_source_items(items, top_k=3)
+                http.fixture_source_record(enrichment_request, schema.to_dict(items))
+        if source == "amazon" and items and not mock:
+            # Attach-if-missing: review enrichment now runs at search time in
+            # _retrieve_stream_impl, so items arriving here should already have
+            # top_comments. enrich_source_items no-ops when top_comments is set.
+            # This path handles fixture replay and any edge cases where retrieve
+            # didn't enrich (e.g., run_started was not passed).
+            matched, replayed = http.fixture_source_replay(enrichment_request)
+            if matched:
+                items = _merge_replayed_enrichment(items, replayed)
+            else:
+                amazon.enrich_source_items(
+                    items,
+                    depth=depth,
+                    config=config,
+                    keyword=str((config or {}).get("_amazon_query") or "").strip() or topic,
+                    elapsed=elapsed,
+                )
                 http.fixture_source_record(enrichment_request, schema.to_dict(items))
         finalized[source] = items
     return finalized
@@ -2841,6 +3713,46 @@ def _ensure_jobs_in_plan(
     for subquery in plan.subqueries:
         if "jobs" not in subquery.sources:
             subquery.sources.append("jobs")
+
+
+def _ensure_perplexity_in_plan(
+    plan: schema.QueryPlan,
+    topic: str,
+    available: list[str],
+    *,
+    force: bool,
+) -> None:
+    """Route a bounded paid Perplexity action through the whole topic.
+
+    Deep Research forces its explicit lane. Normal modes are rerouted only when
+    the sanitized plan already selected Perplexity.
+    """
+    if "perplexity" not in available:
+        return
+    planned = any(
+        "perplexity" in subquery.sources for subquery in plan.subqueries
+    )
+    if not force and not planned:
+        return
+    retained: list[schema.SubQuery] = []
+    for subquery in plan.subqueries:
+        sources = [
+            source for source in subquery.sources if source != "perplexity"
+        ]
+        if sources:
+            retained.append(replace(subquery, sources=sources))
+    retained.append(
+        schema.SubQuery(
+            label="deep-research" if force else "perplexity-whole-topic",
+            search_query=topic,
+            ranking_query=f"What current source-grounded evidence matters for {topic}?",
+            sources=["perplexity"],
+            weight=1.0,
+        ),
+    )
+    plan.subqueries = planner._normalize_subquery_weights(retained)
+    plan.source_weights.setdefault("perplexity", 1.0)
+    plan.source_weights = planner._normalize_weights(plan.source_weights)
 
 
 def _company_topic_likely(topic: str) -> bool:
@@ -2918,11 +3830,41 @@ def _warnings(
     return warnings
 
 
+_STATUS_PREFIX = r"\b(?:https?(?:/\d(?:\.\d)?)?(?:\s+error)?|status(?:[\s_]*code)?|code)\s*[:=#]?\s*"
+
+
+def _mentions_status(msg: str, code_pattern: str, phrases: tuple[str, ...]) -> bool:
+    """True when ``msg`` names an HTTP status matching ``code_pattern``.
+
+    A bare number is not enough (``"batch 429 failed"`` is not a rate
+    limit): the code must follow an HTTP/status/code marker, or co-occur
+    with one of ``phrases`` (``"rate limited (429)"``). Digit-aware
+    boundaries keep ``"14293"`` from reading as a 429.
+    """
+    if not msg:
+        return False
+    code = r"(?:" + code_pattern + r")(?!\d)"
+    if re.search(_STATUS_PREFIX + code, msg, re.IGNORECASE):
+        return True
+    lowered = msg.lower()
+    return any(p in lowered for p in phrases) and re.search(r"(?<!\d)" + code, msg) is not None
+
+
+_RATE_LIMIT_PHRASES = ("rate limit", "rate-limit", "ratelimit", "too many requests")
+_SERVER_ERROR_PHRASES = (
+    "server error",
+    "bad gateway",
+    "service unavailable",
+    "gateway timeout",
+    "gateway time-out",
+)
+
+
 def _is_rate_limit_error(exc: Exception) -> bool:
     """Detect 429 rate-limit errors by status code or message text."""
     if hasattr(exc, "status_code") and getattr(exc, "status_code", None) == 429:
         return True
-    return "429" in str(exc)
+    return _mentions_status(str(exc), "429", _RATE_LIMIT_PHRASES)
 
 
 class SourceRunError(RuntimeError):
@@ -2941,7 +3883,16 @@ def _classify_source_failure(exc: Exception) -> tuple[schema.RunOutcomeState, bo
         return schema.SKIPPED_UNCONFIGURED, False
     if any(
         marker in lowered
-        for marker in ("cookie expired", "expired cookie", "login required", "not logged in")
+        for marker in (
+            "cookie expired",
+            "expired cookie",
+            "login required",
+            "not logged in",
+            "grok session expired",
+            "session expired or was revoked",
+            "invalid_grant",
+            "not signed in",
+        )
     ):
         return schema.AUTH_FAILED, True
     state = getattr(exc, "outcome_state", None) or http.classify_failure(
@@ -3001,22 +3952,45 @@ def _legacy_artifact_outcome(
     explicit = artifact.get("_source_outcome")
     if isinstance(explicit, dict):
         return explicit
-    if source == "perplexity" and artifact.get("error"):
-        error = str(artifact["error"])
-        detail = str(
-            artifact.get("asyncErrorMessage")
-            or artifact.get("message")
-            or error
-        )
-        state = (
-            health.TIMEOUT
-            if error.lower() == "timeout"
-            else http.classify_failure(
-                status_code=artifact.get("statusCode"),
-                message=f"{error}: {detail}",
+    if source == "perplexity":
+        candidates: list[tuple[str | None, dict[str, Any]]] = [(None, artifact)]
+        if artifact.get("mode") == "both":
+            for leg in ("search", "agent"):
+                value = artifact.get(leg)
+                if isinstance(value, dict):
+                    candidates.append((leg, value))
+        outcomes: list[dict[str, Any]] = []
+        for leg, candidate in candidates:
+            if not candidate.get("error"):
+                continue
+            error = str(candidate["error"])
+            detail = str(
+                candidate.get("backgroundErrorMessage")
+                or candidate.get("backgroundPollError")
+                or candidate.get("agentErrorMessage")
+                or candidate.get("asyncErrorMessage")
+                or candidate.get("message")
+                or error
             )
-        )
-        return _outcome_artifact(state, detail)["_source_outcome"]
+            if leg:
+                detail = f"{leg} leg: {detail}"
+            status_code = candidate.get("statusCode")
+            if status_code is None:
+                status_code = candidate.get("backgroundPollStatusCode")
+            state = (
+                health.TIMEOUT
+                if error.lower() == "timeout"
+                else http.classify_failure(
+                    status_code=status_code,
+                    message=f"{error}: {detail}",
+                )
+            )
+            outcomes.append(_outcome_artifact(state, detail)["_source_outcome"])
+        if outcomes:
+            return min(
+                outcomes,
+                key=lambda outcome: _FAILURE_SPECIFICITY.get(outcome["state"], 9),
+            )
     if (
         source == "grounding"
         and artifact.get("reason") == "keyless-search-unavailable"
@@ -3026,6 +4000,36 @@ def _legacy_artifact_outcome(
             "Keyless web search unavailable",
         )["_source_outcome"]
     return None
+
+
+def _summarize_lane_failures(failures: list[http.HTTPError], source: str = "") -> str:
+    """One line naming what a source lost to swallowed sub-request failures.
+
+    ``"3 sub-requests rate-limited (HTTP 429); 1 sub-request blocked (HTTP 403)"``.
+    Used as ``SourceOutcome.detail`` on a source that still delivered items,
+    so the loss is visible to ``doctor --postmortem`` without branding the
+    source partial (issue #985 wording; PR #959 semantics).
+    """
+    counts: dict[tuple[str, int | None], int] = {}
+    for failure in failures:
+        state = getattr(failure, "outcome_state", None) or health.ERROR
+        code = getattr(failure, "status_code", None)
+        counts[(state, code)] = counts.get((state, code), 0) + 1
+    labels = {
+        health.RATE_LIMITED: "rate-limited",
+        health.AUTH_FAILED: "blocked",
+        health.PAYMENT_REQUIRED: health.credits_exhausted_label(source),
+        health.TIMEOUT: "timed out",
+        health.UNREACHABLE: "unreachable",
+        health.SCHEMA_DRIFT: "returned an unexpected shape",
+    }
+    parts = []
+    for (state, code), n in sorted(counts.items(), key=lambda kv: -kv[1]):
+        noun = "sub-request" if n == 1 else "sub-requests"
+        label = labels.get(state, "failed")
+        suffix = f" (HTTP {code})" if code else ""
+        parts.append(f"{n} {noun} {label}{suffix}")
+    return "; ".join(parts)
 
 
 def _resolve_stream_outcome(
@@ -3040,14 +4044,6 @@ def _resolve_stream_outcome(
     # Pick the most specific failure rather than the last-appended one:
     # parallel workers append in nondeterministic order, and an auth failure
     # must not be masked by a later 429 (wrong doctor prescription).
-    _FAILURE_SPECIFICITY = {
-        health.AUTH_FAILED: 0,
-        health.RATE_LIMITED: 1,
-        health.SCHEMA_DRIFT: 2,
-        health.TIMEOUT: 3,
-        health.UNREACHABLE: 4,
-        health.ERROR: 5,
-    }
     failure = min(
         failures,
         key=lambda f: _FAILURE_SPECIFICITY.get(f.outcome_state, 9),
@@ -3082,7 +4078,7 @@ def _finalize_source_status(
             detail = None
             fix_hint = None
         elif state == health.OK and not count:
-            state = schema.NO_RESULTS
+            state = outcome.lane_failure_state or schema.NO_RESULTS
         elif state == schema.PARTIAL and not count:
             state = http.classify_failure(message=detail or "")
         finalized[source] = schema.SourceOutcome(
@@ -3093,6 +4089,7 @@ def _finalize_source_status(
             detail=detail,
             at=outcome.at,
             fix_hint=fix_hint,
+            lane_failure_state=outcome.lane_failure_state,
         )
     return finalized
 
@@ -3102,8 +4099,82 @@ def _is_transient_error(exc: Exception) -> bool:
     status = getattr(exc, "status_code", None)
     if isinstance(status, int) and 500 <= status < 600:
         return True
-    msg = str(exc)
-    return any(code in msg for code in ("500", "502", "503", "504"))
+    return _mentions_status(str(exc), r"5\d\d", _SERVER_ERROR_PHRASES)
+
+
+def _retryable_youtube_outcome(outcome: dict[str, Any]) -> bool:
+    state = outcome.get("state")
+    if state in (health.TIMEOUT, health.UNREACHABLE):
+        return True
+    return state == health.ERROR and _is_transient_error(
+        SourceRunError(str(outcome.get("detail") or ""))
+    )
+
+
+def _retryable_youtube_error(message: str, state: str | None = None) -> bool:
+    return _retryable_youtube_outcome({
+        "state": state or youtube_yt.classify_run_failure(message),
+        "detail": message,
+    })
+
+
+def _topic_handle_mentions(topic: str) -> set[str]:
+    """@mentions in the topic, which are real X handles.
+
+    These are used to determine whether the subject was identified: an
+    @mention like "@steipete" is a real handle that can exempt its owner from
+    the relevance floor. Regular words like "Peter" are not real handles.
+    """
+    return {
+        mention.lower()
+        for mention in re.findall(r"@([A-Za-z0-9_]{1,15})", topic or "")
+    }
+
+
+def _topic_first_party_candidates(topic: str) -> set[str]:
+    """Handle-shaped tokens in the topic itself, usable before any retrieval.
+
+    Phase 1 runs before automatic handle resolution, and a quick-depth run
+    skips that resolution entirely, so neither has access to the extracted
+    handle set. Without this a quick search for "Peter Steinberger steipete"
+    still drops every post steipete wrote, which is the exact failure this
+    branch exists to fix.
+
+    Deliberately permissive about what looks like a handle and strict about
+    what it does: a candidate only ever matters if a retrieved post's *author*
+    matches it, so an ordinary word like "lunch" costs nothing -- no author is
+    named "lunch". The realistic false positive is an account named after a
+    topic word, which the frequency-ranked path could surface anyway.
+    """
+    tokens = set()
+    for mention in re.findall(r"@([A-Za-z0-9_]{1,15})", topic or ""):
+        tokens.add(mention.lower())
+    for word in re.findall(r"[A-Za-z0-9_]{3,15}", topic or ""):
+        lowered = word.lower()
+        if lowered not in relevance.STOPWORDS:
+            tokens.add(lowered)
+    return tokens
+
+
+def _name_lane_subject(topic: str) -> str:
+    """Resolve the entity name to search for by name, not the whole topic.
+
+    Phrase-quoting a raw topic ("Peter Steinberger steipete") matches nothing
+    on X: nobody writes the handle and the display name together. Prefer a
+    title-cased proper noun the way the planner's keyword query does, and fall
+    back to the first compound term, then to the topic.
+    """
+    import re as _re
+    compounds = query.extract_compound_terms(topic) or []
+    title_cased = [
+        term for term in compounds
+        if _re.match(r"^(?:[A-Z][a-z]+\s+){1,}[A-Z][a-z]+$", term)
+    ]
+    if title_cased:
+        return title_cased[0]
+    if compounds:
+        return compounds[0]
+    return topic.strip()
 
 
 def _run_supplemental_searches(
@@ -3120,12 +4191,35 @@ def _run_supplemental_searches(
     rate_limit_lock: threading.Lock,
     x_handle: str | None = None,
     x_related: list[str] | None = None,
+    resolved_handles_out: list[str] | None = None,
 ) -> None:
     """Phase 2: extract entities from Phase 1 results, run targeted supplemental searches."""
-    if depth == "quick" or mock:
+    if _research_stopped(config):
+        return
+    # The sanitized plan already intersects requested, available, and excluded
+    # sources. A handle or host envelope must not expand that source boundary.
+    if not any("x" in subquery.sources for subquery in plan.subqueries):
+        return
+    from_date, to_date = date_range
+
+    # Host-fetched X lane: the envelope's lane calls replace the backend
+    # lanes and are served at every depth (the host already paid for them),
+    # before the quick/mock return and before the chain is recomputed.
+    # Extracted-handle promotion is skipped on envelope runs; a declared lane
+    # without an envelope runs no lane at all (the topic stream already
+    # recorded the not-passed outcome).
+    if config.get("_x_lane_missing"):
+        return
+    envelope = config.get("_x_envelope")
+    if envelope is not None:
+        _serve_envelope_lanes(
+            envelope, bundle=bundle, plan=plan, x_handle=x_handle, x_related=x_related,
+            from_date=from_date, to_date=to_date,
+        )
         return
 
-    from_date, to_date = date_range
+    if depth == "quick" or mock:
+        return
 
     # Convert SourceItems to dicts for entity_extract. All X items (whatever
     # backend fetched them — bird, xai, xurl, xquik) land under the single "x"
@@ -3172,40 +4266,219 @@ def _run_supplemental_searches(
             if rh_clean and rh_clean != primary_lower and rh_clean not in [h.lower() for h in handles]:
                 related_handles.append(rh_clean)
 
+    # Surface every handle this run resolved back to the caller. resolved_handles
+    # is built later from --x-handle / --github-user / --x-related only, so
+    # without this an auto-discovered subject handle never reaches it and every
+    # downstream first-party protection (entity-miss exemption, FIRST_PARTY_FLOOR,
+    # interaction floor) stays inert on any run that did not pass --x-handle.
+    # Populated before the early return below so a run whose lanes cannot execute
+    # still contributes its resolved handles.
+    if resolved_handles_out is not None:
+        # Only corroborated handles get first-party status. The extracted set is
+        # frequency-ranked over retrieved post text, so a prolific commentator --
+        # or an engagement-farming account that posts on every topic -- lands in
+        # it without being the subject. First-party status is strong: it exempts
+        # an author from the relevance floor entirely and raises their per-author
+        # cap, so granting it on frequency alone would let a spam account buy
+        # immunity from filtering. Require the handle to look like the topic's
+        # subject, or to have been named explicitly by the user.
+        explicit = {
+            h.lstrip("@").strip().lower()
+            for h in ([x_handle] + list(x_related or []))
+            if h and h.strip()
+        }
+        topic_tokens = {t for t in re.findall(r"[a-z0-9]+", topic.lower()) if len(t) > 2}
+        seen = {h.lower() for h in resolved_handles_out}
+        for h in [*handles, *related_handles]:
+            clean = h.lstrip("@").strip().lower()
+            if not clean or clean in seen:
+                continue
+            corroborated = clean in explicit or any(
+                token in clean or clean in token for token in topic_tokens
+            )
+            if corroborated:
+                resolved_handles_out.append(clean)
+                seen.add(clean)
+
     if not handles and not related_handles:
         return
 
     # Pick the X handle-search backend: the first handle-capable backend in the
-    # chain (bird or xquik). These supplemental from:/mentions lanes are
+    # chain (grok, bird, xapi, or xquik). These supplemental from:/mentions lanes are
     # complementary to the topic search, so when the topic primary can't run
     # them (xai/xurl have no handle-lane implementation) but a capable backend
     # is available, use it rather than skipping Phase 2. bird scrapes X GraphQL
     # with the user's browser cookies; xquik runs the same lanes over its REST
     # API. All items land under the single "x" slug.
     x_slug = "x"
+
+    def _record_handle_lane_failures(lane: str, failures: list[str]) -> bool:
+        """Surface handle-lane failures the adapter would otherwise swallow.
+
+        bird and xquik report a per-handle failure by returning no items, so an
+        empty lane is indistinguishable from a subject who simply did not post.
+        Left unrecorded, the run reports the X source as a clean zero and the
+        report states as fact that nothing was posted.
+
+        Returns True when the failure is auth-shaped, so the caller's existing
+        AUTH_FAILED branch owns the message and the fix hint. Everything else
+        (timeout, spawn failure, non-zero exit, bad JSON) is recorded here.
+        ``record_failure`` keeps already-returned items as partial.
+        """
+        if not failures:
+            return False
+        detail = "; ".join(failures[:3])
+        if len(failures) > 3:
+            detail += f" (+{len(failures) - 3} more)"
+        # Only xquik reports an auth-shaped handle-lane failure; bird's are all
+        # transport (timeout / spawn / exit / JSON). Match the two phrases
+        # xquik._execute_search actually emits rather than adding a fifth
+        # copy of this repo's auth-marker vocabulary.
+        lowered = detail.lower()
+        if "auth failed" in lowered or "key unpaid" in lowered:
+            return True
+        bundle.record_failure(
+            x_slug,
+            health.TIMEOUT if any(marker in lowered for marker in ("timed out", "cancelled")) else health.UNREACHABLE,
+            f"Phase 2 {lane}-lane: {detail}",
+            attempted=True,
+        )
+        return False
+
     chain = env.x_backend_chain(config)
     # Trust an explicit runtime backend as the head of the chain.
     pinned = runtime.x_search_backend
     if pinned:
         chain = [pinned] + [b for b in chain if b != pinned]
-    primary = next((b for b in chain if b in ("bird", "xquik")), None)
+    primary = next((b for b in chain if b in ("grok", "bird", "xapi", "xquik")), None)
 
-    if primary == "bird":
-        def _from_lane(hs: list, count: int) -> list:
-            return bird_x.search_handles(hs, topic, from_date, count_per=count)
+    # Name lane (posts naming the subject in plain text, no @-mention) is
+    # grok-only for now: it needs phrase-quoting and negation operators the
+    # other handle-capable backends do not expose uniformly. It is NOT a
+    # fallback for the mention lane -- most discussion of a person or company
+    # never @-mentions them, so the two lanes reach disjoint sets.
+    _name_lane = None
+    cancel = config.get("_enrich_cancel")
+    supplemental_deadline = _research_deadline(config, x_api.LANE_BUDGET_SECONDS)
 
-        def _about_lane(hs: list, count: int) -> list:
-            return bird_x.search_mentions(hs, from_date, count_per=count)
+    if primary == "grok":
+        # One budget shared by all three lanes, started here rather than per
+        # lane: the point is to bound the total, not each part.
+        lane_deadline = _research_deadline(config, grok_x.LANE_BUDGET_SECONDS)
+
+        def _from_lane(hs: list, count: int, and_topic: bool = False) -> tuple[list, bool]:
+            items, revoked = grok_x.search_handles(
+                hs, topic, from_date, to_date, count_per=count,
+                deadline=lane_deadline, and_topic=and_topic, cancel=cancel,
+            )
+            return items, revoked
+
+        def _about_lane(hs: list, count: int) -> tuple[list, bool]:
+            items, revoked = grok_x.search_mentions(
+                hs, from_date, to_date, topic=topic, count_per=count,
+                deadline=lane_deadline, cancel=cancel,
+            )
+            return items, revoked
+
+        def _name_lane(hs: list, count: int) -> tuple[list, bool]:
+            # Use the resolved entity name, not the raw topic. Phrase-quoting
+            # the whole topic ("Peter Steinberger steipete") matches nothing on
+            # X; the subject's name is what other people actually write.
+            subject = _name_lane_subject(topic)
+            if not subject.strip():
+                return [], False
+            items, revoked = grok_x.search_name(
+                subject, from_date, to_date, exclude_handles=hs, count_per=count,
+                deadline=lane_deadline, cancel=cancel,
+            )
+            return items, revoked
+    elif primary == "bird":
+        def _from_lane(hs: list, count: int, and_topic: bool = False) -> tuple[list, bool]:
+            # bird_x.search_handles doesn't support and_topic yet
+            failures: list[str] = []
+            items = bird_x.search_handles(
+                hs, topic, from_date, count_per=count, failure_out=failures,
+                to_date=to_date, deadline=supplemental_deadline, cancel=cancel,
+            )
+            return items, _record_handle_lane_failures("FROM", failures)
+
+        def _about_lane(hs: list, count: int) -> tuple[list, bool]:
+            failures: list[str] = []
+            items = bird_x.search_mentions(
+                hs, from_date, count_per=count, failure_out=failures,
+                to_date=to_date, deadline=supplemental_deadline, cancel=cancel,
+            )
+            return items, _record_handle_lane_failures("ABOUT", failures)
+    elif primary == "xapi":
+        # Direct X API v2 with the app-only bearer: from:/@ lanes run over
+        # search/all with the recent-search fallback. One budget shared by
+        # every lane below (same shape as the grok lanes): a slow key bounds
+        # the whole supplemental phase, not each call.
+        xapi_token = config.get("X_BEARER_TOKEN") or ""
+        xapi_deadline = _research_deadline(config, x_api.LANE_BUDGET_SECONDS)
+
+        def _xapi_lane_receipt(lane_warnings: list[str]) -> None:
+            # A deadline stop is incomplete coverage, reported in
+            # report.warnings (the x_partial_coverage artifact), never a
+            # healthy-looking silence and never a source failure.
+            sink = bundle.artifacts.setdefault("x_partial_coverage", [])
+            for note in lane_warnings:
+                line = f"X handle lanes: {note}"
+                if line not in sink:
+                    sink.append(line)
+
+        def _from_lane(hs: list, count: int, and_topic: bool = False) -> tuple[list, bool]:
+            # x_api.search_handles doesn't support and_topic; topic ranks only
+            lane_warnings: list[str] = []
+            items = x_api.search_handles(
+                hs, topic, from_date, to_date, count_per=count, token=xapi_token,
+                deadline=xapi_deadline, warnings=lane_warnings, cancel=cancel,
+            )
+            _xapi_lane_receipt(lane_warnings)
+            return items, False
+
+        def _about_lane(hs: list, count: int) -> tuple[list, bool]:
+            lane_warnings: list[str] = []
+            items = x_api.search_mentions(
+                hs, from_date, to_date, topic=topic, count_per=count, token=xapi_token,
+                deadline=xapi_deadline, warnings=lane_warnings, cancel=cancel,
+            )
+            _xapi_lane_receipt(lane_warnings)
+            return items, False
     elif primary == "xquik":
         xquik_token = env.get_xquik_token(config)
 
-        def _from_lane(hs: list, count: int) -> list:
-            return xquik.search_handles(hs, topic, from_date, to_date, count_per=count, token=xquik_token)
+        def _from_lane(hs: list, count: int, and_topic: bool = False) -> tuple[list, bool]:
+            # xquik.search_handles doesn't support and_topic yet
+            failures: list[str] = []
+            items = xquik.search_handles(
+                hs, topic, from_date, to_date, count_per=count, token=xquik_token,
+                failure_out=failures, deadline=supplemental_deadline, cancel=cancel,
+            )
+            return items, _record_handle_lane_failures("FROM", failures)
 
-        def _about_lane(hs: list, count: int) -> list:
-            return xquik.search_mentions(hs, from_date, to_date, topic=topic, count_per=count, token=xquik_token)
+        def _about_lane(hs: list, count: int) -> tuple[list, bool]:
+            failures: list[str] = []
+            items = xquik.search_mentions(
+                hs, from_date, to_date, topic=topic, count_per=count,
+                token=xquik_token, failure_out=failures, deadline=supplemental_deadline, cancel=cancel,
+            )
+            return items, _record_handle_lane_failures("ABOUT", failures)
     else:
         return  # primary X backend has no handle-lane support (xai/xurl) or none configured
+
+    def _guard_lane(lane):
+        def guarded(*args, **kwargs):
+            if _research_stopped(config) or time.monotonic() >= supplemental_deadline:
+                bundle.record_failure(x_slug, health.TIMEOUT, "X supplemental research cancelled or timed out", attempted=True)
+                return [], False
+            return lane(*args, **kwargs)
+        return guarded
+
+    _from_lane = _guard_lane(_from_lane)
+    _about_lane = _guard_lane(_about_lane)
+    if _name_lane is not None:
+        _name_lane = _guard_lane(_name_lane)
 
     # Skip if the X source is rate-limited.
     if x_slug in rate_limited_sources:
@@ -3222,29 +4495,86 @@ def _run_supplemental_searches(
     ranking_query = plan.subqueries[0].ranking_query if plan.subqueries else topic
     primary_label = plan.subqueries[0].label if plan.subqueries else "primary"
 
+    # Split FROM promotion: determine which handles get FROM lane and how.
+    # - Primary explicit handle (--x-handle): always FROM, no AND topic, full weight
+    # - x_related handles: searched separately with lower weight (0.3), kept in
+    #   related_handles variable for the supplemental-related section below
+    # - Extracted handles: FROM only if ≥2 on-topic hits AND ratio ≥0.5,
+    #   and those pulls DO AND the topic (from:handle Rome)
+    primary_explicit = [x_handle] if x_handle else []
+
+    explicit_promotable, extracted_promotable = x_judge.promotable_handles(
+        x_dicts,  # Phase 1 X items for judging
+        topic,
+        handles,  # entity_extract handles
+        explicit_handles=primary_explicit,
+        ranking_query=ranking_query,
+    )
+
+    # All promotable handles for ABOUT and NAME lanes (primary only, not related)
+    all_promotable = list(set(explicit_promotable + extracted_promotable))
+
     # Search primary handles (full weight): FROM lane (their own tweets) +
     # ABOUT lane (tweets mentioning them). Both engagement-weighted and deduped
     # by URL at normalize time.
-    if handles:
+    any_revoked = False  # Track auth revocation across lanes
+    if all_promotable:
         # Independent try/except per lane so a failure in one does not discard
         # the other's already-computed results.
         from_items: list = []
         about_items: list = []
+        about_revoked = False
+        name_revoked = False
+
+        # FROM lane: explicit handles without AND topic (person posts omit their own name)
+        if explicit_promotable:
+            try:
+                explicit_items, explicit_revoked = _from_lane(explicit_promotable, FROM_LANE_COUNT_PER, and_topic=False)
+                from_items.extend(explicit_items)
+                if explicit_revoked:
+                    any_revoked = True
+                    bundle.record_failure(
+                        x_slug, schema.AUTH_FAILED,
+                        f"Phase 2 FROM-lane (explicit): {primary} authentication failed (session expired, revoked, or key unpaid)",
+                        attempted=True,
+                    )
+            except Exception as exc:
+                print(f"[Pipeline] Phase 2 FROM-lane (explicit) failed: {exc}", file=sys.stderr)
+                state, attempted = _classify_source_failure(exc)
+                bundle.record_failure(
+                    x_slug, state, f"Phase 2 FROM-lane (explicit): {exc}", attempted=attempted,
+                )
+
+        # FROM lane: extracted handles WITH AND topic (from:handle Rome)
+        if extracted_promotable:
+            try:
+                extracted_items, extracted_revoked = _from_lane(extracted_promotable, FROM_LANE_COUNT_PER, and_topic=True)
+                from_items.extend(extracted_items)
+                if extracted_revoked:
+                    any_revoked = True
+                    bundle.record_failure(
+                        x_slug, schema.AUTH_FAILED,
+                        f"Phase 2 FROM-lane (extracted): {primary} authentication failed (session expired, revoked, or key unpaid)",
+                        attempted=True,
+                    )
+            except Exception as exc:
+                print(f"[Pipeline] Phase 2 FROM-lane (extracted) failed: {exc}", file=sys.stderr)
+                state, attempted = _classify_source_failure(exc)
+                bundle.record_failure(
+                    x_slug, state, f"Phase 2 FROM-lane (extracted): {exc}", attempted=attempted,
+                )
+                if not bundle.items_by_source.get(x_slug):
+                    bundle.errors_by_source[x_slug] = f"Phase 2 FROM-lane: {exc}"
+
         try:
-            from_items = _from_lane(handles, FROM_LANE_COUNT_PER)
-        except Exception as exc:
-            print(f"[Pipeline] Phase 2 FROM-lane search failed: {exc}", file=sys.stderr)
-            state, attempted = _classify_source_failure(exc)
-            bundle.record_failure(
-                x_slug,
-                state,
-                f"Phase 2 FROM-lane: {exc}",
-                attempted=attempted,
-            )
-            if not bundle.items_by_source.get(x_slug):
-                bundle.errors_by_source[x_slug] = f"Phase 2 FROM-lane: {exc}"
-        try:
-            about_items = _about_lane(handles, MENTION_LANE_COUNT_PER)
+            about_items, about_revoked = _about_lane(all_promotable, MENTION_LANE_COUNT_PER)
+            if about_revoked:
+                any_revoked = True
+                bundle.record_failure(
+                    x_slug, schema.AUTH_FAILED,
+                    f"Phase 2 ABOUT-lane: {primary} authentication failed (session expired, revoked, or key unpaid)",
+                    attempted=True,
+                )
         except Exception as exc:
             print(f"[Pipeline] Phase 2 ABOUT-lane search failed: {exc}", file=sys.stderr)
             state, attempted = _classify_source_failure(exc)
@@ -3254,13 +4584,61 @@ def _run_supplemental_searches(
                 f"Phase 2 ABOUT-lane: {exc}",
                 attempted=attempted,
             )
-        raw_items = from_items + about_items
+        name_items: list = []
+        if _name_lane is not None:
+            try:
+                name_items, name_revoked = _name_lane(all_promotable, MENTION_LANE_COUNT_PER)
+                if name_revoked:
+                    any_revoked = True
+                    bundle.record_failure(
+                        x_slug, schema.AUTH_FAILED,
+                        f"Phase 2 NAME-lane: {primary} authentication failed (session expired, revoked, or key unpaid)",
+                        attempted=True,
+                    )
+            except Exception as exc:
+                print(f"[Pipeline] Phase 2 NAME-lane search failed: {exc}", file=sys.stderr)
+                state, attempted = _classify_source_failure(exc)
+                bundle.record_failure(
+                    x_slug, state, f"Phase 2 NAME-lane: {exc}", attempted=attempted,
+                )
+
+        raw_items = from_items + about_items + name_items
+
+        # Partial coverage is a reportable outcome, not a normal result: a
+        # report carrying only one side of an entity topic is incomplete, and
+        # without this it looks indistinguishable from genuinely thin
+        # discussion.
+        if _name_lane is not None:
+            empty = [
+                label for label, items in
+                (("by", from_items), ("mention", about_items), ("name", name_items))
+                if not items
+            ]
+            if empty and len(empty) < 3:
+                # A warning, not a source outcome. record_failure would set the
+                # X source to PARTIAL, which is outside _STRICT_EXIT_OK_STATES
+                # and would make wrappers using LAST30DAYS_STRICT_EXIT exit 3 on
+                # runs that returned perfectly good X coverage. An empty lane is
+                # common and legitimate: the name lane carries an engagement
+                # floor and the mention lane is empty for most non-famous
+                # handles.
+                bundle.artifacts.setdefault("x_partial_coverage", []).append(
+                    f"X partial coverage: {', '.join(empty)} lane(s) returned "
+                    "nothing; the report may show only one side of this entity."
+                )
 
         if raw_items:
+            # First-party handles: only primary explicit handle, not promoted commentators
+            # (first-party exempts from relevance floor; granting to commentators
+            # would let junk become un-prunable)
+            first_party_for_normalize = list(set(
+                h.lower().lstrip("@") for h in primary_explicit if h
+            ))
             normalized = _normalize_score_dedupe(
                 x_slug, raw_items, from_date, to_date,
                 freshness_mode=plan.freshness_mode,
                 ranking_query=ranking_query,
+                first_party_handles=first_party_for_normalize,
             )
             # Deduplicate against Phase 1 URLs
             normalized = [item for item in normalized if item.url not in existing_urls]
@@ -3272,9 +4650,17 @@ def _run_supplemental_searches(
                         existing_urls.add(item.url)
 
     # Search related handles with lower weight (0.3)
+    # Related handles are explicit (--x-related), so FROM without AND topic.
     if related_handles:
         try:
-            raw_items = _from_lane(related_handles, RELATED_HANDLE_COUNT_PER)
+            raw_items, rel_revoked = _from_lane(related_handles, RELATED_HANDLE_COUNT_PER, and_topic=False)
+            if rel_revoked:
+                any_revoked = True
+                bundle.record_failure(
+                    x_slug, schema.AUTH_FAILED,
+                    f"Phase 2 related handle search: {primary} authentication failed (session expired, revoked, or key unpaid)",
+                    attempted=True,
+                )
         except Exception as exc:
             print(f"[Pipeline] Phase 2 related handle search failed: {exc}", file=sys.stderr)
             state, attempted = _classify_source_failure(exc)
@@ -3291,6 +4677,7 @@ def _run_supplemental_searches(
                 x_slug, raw_items, from_date, to_date,
                 freshness_mode=plan.freshness_mode,
                 ranking_query=ranking_query,
+                first_party_handles=related_handles,
             )
             # Deduplicate against all existing URLs (Phase 1 + primary handles)
             normalized = [item for item in normalized if item.url not in existing_urls]
@@ -3330,22 +4717,25 @@ def _retry_thin_sources(
     tiktok_hashtags: list[str] | None = None,
     tiktok_creators: list[str] | None = None,
     ig_creators: list[str] | None = None,
+    first_party_handles: Iterable[str] | None = None,
+    first_party_by_source: Mapping[str, Iterable[str]] | None = None,
+    run_started: float | None = None,
 ) -> None:
     """Retry sources with thin results using simplified core subject query."""
     if depth == "quick":
         return
+    # No new paid/network work after the enrichment budget expired.
+    if _research_stopped(config):
+        return
+    config = dict(config)
+    config["_research_deadline"] = _research_deadline(config, THIN_RETRY_FUTURE_TIMEOUT_SECONDS)
 
     planned_sources: list[str] = []
     for subquery in plan.subqueries:
         for source in subquery.sources:
             if source not in planned_sources:
                 planned_sources.append(source)
-    # trustpilot returns at most ONE item by design, so the "<3 items" rule
-    # would re-fetch it after every successful lookup -- bypassing
-    # MAX_SOURCE_FETCHES and re-resolving WITHOUT the caller's
-    # --trustpilot-domain (a lookalike-misattribution path). Its thin result
-    # is its normal success state; never retry it here.
-    _skip = (skip_sources or set()) | {"trustpilot"}
+    _skip = (skip_sources or set()) | THIN_RETRY_EXEMPT
     thin_sources = [
         source
         for source in planned_sources
@@ -3396,8 +4786,15 @@ def _retry_thin_sources(
             tiktok_hashtags=tiktok_hashtags,
             tiktok_creators=tiktok_creators,
             ig_creators=ig_creators,
+            run_started=run_started,
+            # Skip Amazon review enrichment here to avoid duplicate Bright Data
+            # pulls for ASINs already enriched in Phase 1. Finalize will enrich
+            # any genuinely new products that weren't in Phase 1.
+            skip_amazon_enrichment=True,
         )
         outcome_note = artifact.get("_source_outcome") if isinstance(artifact, dict) else None
+        detail_note = artifact.get("_source_outcome_detail") if isinstance(artifact, dict) else None
+        detail_state = artifact.get("_source_outcome_detail_state") if isinstance(artifact, dict) else None
         normalized = _normalize_score_dedupe(
             source,
             raw_items,
@@ -3405,20 +4802,52 @@ def _retry_thin_sources(
             to_date,
             freshness_mode=plan.freshness_mode,
             ranking_query=retry_subquery.ranking_query,
+            first_party_handles=first_party_handles,
+            first_party_by_source=first_party_by_source,
+            # Match Phase 1: X defers its relevance floor until the run has
+            # resolved handles. Applying it here would discard a subject-
+            # authored post that does not repeat the subject's name, and the
+            # later resolved-handle floor cannot recover a post that never
+            # entered the bundle.
+            defer_relevance_prune=(source == "x"),
         )
         if source == "jobs":
-            return source, normalized, outcome_note
-        return source, normalized[:settings["per_stream_limit"]], outcome_note
+            return source, normalized, outcome_note, (detail_note, detail_state)
+        normalized = _apply_reddit_stream_keepers(
+            source, normalized, settings["per_stream_limit"], topic
+        )
+        if isinstance(artifact, dict) and artifact.get("_source_outcome_deferred"):
+            outcome_note = outcome_note or artifact["_source_outcome_deferred"]
+        if not normalized and isinstance(artifact, dict):
+            outcome_note = outcome_note or artifact.get("_source_outcome_if_empty")
+        return source, normalized, outcome_note, (detail_note, detail_state)
 
     retryable = [s for s in thin_sources if s not in rate_limited_sources]
 
-    from concurrent.futures import ThreadPoolExecutor, as_completed
-    with ThreadPoolExecutor(max_workers=min(4, len(retryable) or 1)) as executor:
+    with _abandoning_executor(max_workers=min(4, len(retryable) or 1)) as executor:
         futures = {executor.submit(_retry_one_source, s): s for s in retryable}
-        for future in as_completed(futures):
+        done, not_done = _wait_for_research(futures, config)
+        for future in not_done:
+            source = futures[future]
+            future.cancel()
+            detail = f"{source} timed out after {THIN_RETRY_FUTURE_TIMEOUT_SECONDS:g}s"
+            print(f"[Pipeline] Retry timed out for {source}: {detail}", file=sys.stderr)
+            bundle.record_failure(source, health.TIMEOUT, f"Simplified-query retry failed: {detail}", attempted=True)
+        for future in done:
             source = futures[future]
             try:
-                source, normalized, outcome_note = future.result()
+                source, normalized, outcome_note, (detail_note, detail_state) = future.result(timeout=0)
+            except Exception as exc:
+                print(f"[Pipeline] Retry failed for {source}: {type(exc).__name__}: {exc}", file=sys.stderr)
+                state, attempted = _classify_source_failure(exc)
+                bundle.record_failure(
+                    source,
+                    state,
+                    f"Simplified-query retry failed: {exc}",
+                    attempted=attempted,
+                )
+                continue
+            try:
                 if outcome_note:
                     bundle.record_failure(
                         source,
@@ -3426,6 +4855,8 @@ def _retry_thin_sources(
                         outcome_note["detail"],
                         attempted=outcome_note.get("attempted", True),
                     )
+                if detail_note:
+                    bundle.record_detail(source, detail_note, state=detail_state)
                 existing_urls = {item.url for item in bundle.items_by_source.get(source, []) if item.url}
                 new_items = [item for item in normalized if item.url not in existing_urls]
 
@@ -3443,31 +4874,92 @@ def _retry_thin_sources(
                 )
 
 
-def _fetch_x_backend(backend, subquery, from_date, to_date, depth, config):
+def _fetch_x_backend(backend, query, from_date, to_date, depth, config, warnings=None, deadline=None):
     """Fetch X items from a single backend. Returns (items, error_str).
+
+    ``warnings``, when given, collects backend receipts that are not
+    failures (Bird's skipped optional retries or xapi's recent-search window
+    truncation) so the X branch can surface them as run artifacts.
+    ``deadline`` is the chain's shared ``time.monotonic()`` budget; backends
+    that accept one (bird/grok/xai/xurl/xquik/xapi) clamp their waits to the
+    time left.
 
     Backends are tried in priority order by the caller (env.x_backend_chain);
     a non-empty error_str signals a hard failure (auth/payment/etc.) so the
     caller can fail over to the next backend or surface the error honestly.
+
+    For grok, auth_revoked signals mid-run session revocation: the error
+    string includes "grok session expired" so _classify_source_failure maps
+    it to AUTH_FAILED with a proper fix hint, distinct from "never signed in".
+
+    The ``query`` parameter is the compiled search query - typically
+    ``raw_topic or topic`` (like Reddit/YouTube), NOT the planner's
+    ``search_query`` which may contain operator strings like "Rome Italy".
     """
-    query = subquery.search_query
+    if _research_stopped(config) or (deadline is not None and time.monotonic() >= deadline):
+        return [], "X research cancelled or timed out"
+    cancel = config.get("_enrich_cancel")
     if backend == "bird":
-        result = bird_x.search_x(query, from_date, to_date, depth=depth)
+        result = bird_x.search_x(query, from_date, to_date, depth=depth, deadline=deadline, cancel=cancel)
         items = bird_x.parse_bird_response(result, query=query)
+    elif backend == "grok":
+        result = grok_x.search_x(
+            query, from_date, to_date, depth=depth, deadline=deadline,
+            cancel=config.get("_enrich_cancel"),
+        )
+        items = result.get("items", []) if isinstance(result, dict) else []
+        if isinstance(result, dict) and result.get("auth_revoked"):
+            err = result.get("error") or "grok session expired or was revoked"
+            return items, f"grok: {err}"
     elif backend == "xai":
         model = config.get("LAST30DAYS_X_MODEL") or config.get("XAI_MODEL_PIN") or providers.XAI_DEFAULT
-        result = xai_x.search_x(config["XAI_API_KEY"], model, query, from_date, to_date, depth=depth)
+        result = xai_x.search_x(config["XAI_API_KEY"], model, query, from_date, to_date, depth=depth, deadline_monotonic=deadline, cancel=cancel)
         items = xai_x.parse_x_response(result)
     elif backend == "xurl":
-        result = xurl_x.search_x(query, depth=depth)
+        result = xurl_x.search_x(query, depth=depth, deadline=deadline)
         items = xurl_x.parse_x_response(result, topic=query)
     elif backend == "xquik":
-        result = xquik.search_xquik(query, from_date, to_date, depth=depth, token=env.get_xquik_token(config))
+        result = xquik.search_xquik(query, from_date, to_date, depth=depth, token=env.get_xquik_token(config), deadline=deadline, cancel=cancel)
         items = xquik.parse_xquik_response(result)
+    elif backend == "xapi":
+        result = x_api.search_x(config.get("X_BEARER_TOKEN") or "", query, from_date, to_date, depth=depth, deadline=deadline, cancel=cancel)
+        items = result.get("items", []) if isinstance(result, dict) else []
     else:
         return [], f"unknown X backend: {backend}"
+    warning = result.get("warning") if isinstance(result, dict) else None
+    if warning:
+        print(f"[X] {backend}: {warning}", file=sys.stderr)
+        if warnings is not None:
+            warnings.append(f"X: {backend} {warning}")
     err = result.get("error") if isinstance(result, dict) else ""
     return items, (err or "")
+
+
+def _attempt_x_backend(backend, query, from_date, to_date, depth, config, warnings=None, deadline=None):
+    try:
+        items, error = _fetch_x_backend(
+            backend, query, from_date, to_date, depth, config,
+            warnings=warnings, deadline=deadline,
+        )
+    except http.HTTPError as exc:
+        detail = str(exc)
+        cause = (
+            f"HTTP {exc.status_code}"
+            if exc.status_code is not None
+            else {
+                health.AUTH_FAILED: "authentication failed",
+                health.PAYMENT_REQUIRED: "payment required",
+                health.RATE_LIMITED: "rate limited",
+                health.TIMEOUT: "timed out",
+                health.UNREACHABLE: "connection error",
+                health.SCHEMA_DRIFT: "invalid JSON",
+            }.get(exc.outcome_state)
+        )
+        if cause and cause.lower() not in detail.lower():
+            detail = f"{cause}: {detail}"
+        return [], detail, exc.outcome_state
+    detail = str(error or "")
+    return items, detail, http.classify_failure(message=detail) if detail else None
 
 
 def _reddit_post_key(item: dict) -> str:
@@ -3493,9 +4985,41 @@ def _merge_reddit_items(free: list[dict], sc: list[dict]) -> list[dict]:
     return merged
 
 
+def _merge_youtube_items(free: list[dict], sc: list[dict]) -> list[dict]:
+    merged = copy.deepcopy(free)
+    by_id = {item.get("video_id"): item for item in merged if item.get("video_id")}
+    for item in sc:
+        video_id = item.get("video_id")
+        if not video_id:
+            continue
+        existing = by_id.get(video_id)
+        if existing is None:
+            merged.append(item)
+            by_id[video_id] = item
+        elif not str(existing.get("transcript_snippet") or "").strip() and item.get("transcript_snippet"):
+            existing["transcript_snippet"] = item["transcript_snippet"]
+            existing["transcript_highlights"] = item.get("transcript_highlights", [])
+    return merged
+
+
+def _detail_rate_limits_source(source: str, artifact: dict) -> bool:
+    if artifact.get("_source_outcome_detail_state") != health.RATE_LIMITED:
+        return False
+    return source != "x" or not bool(artifact.get("_x_backup_not_rate_limited"))
+
+
 def _retrieve_stream(*args, **kwargs) -> tuple[list[dict], dict]:
     """Run one stream and retain HTTP failures swallowed by source adapters."""
+    # run_started is passed through but not used here; it goes to _retrieve_stream_impl
     source = str(kwargs.get("source") or "")
+
+    def publish_rate_limit(state):
+        limited = kwargs.get("rate_limited_sources")
+        if state == health.RATE_LIMITED and limited is not None:
+            lock = kwargs.get("rate_limit_lock")
+            with lock if lock is not None else contextlib.nullcontext():
+                limited.add(source)
+
     fixture_request = {
         "source": source,
         "topic": kwargs.get("topic") or "",
@@ -3517,6 +5041,10 @@ def _retrieve_stream(*args, **kwargs) -> tuple[list[dict], dict]:
     if module_backed:
         matched, replayed = http.fixture_source_replay(fixture_request)
         if matched:
+            replay_artifact = replayed[1] or {}
+            publish_rate_limit((replay_artifact.get("_source_outcome") or {}).get("state"))
+            if _detail_rate_limits_source(source, replay_artifact):
+                publish_rate_limit(health.RATE_LIMITED)
             return replayed[0], replayed[1]
     try:
         with http.capture_failures() as failures, \
@@ -3525,8 +5053,12 @@ def _retrieve_stream(*args, **kwargs) -> tuple[list[dict], dict]:
     except Exception as exc:
         recorded_exc = exc
         if failures and not getattr(exc, "outcome_state", None):
-            failure = failures[-1]
+            failure = min(
+                failures,
+                key=lambda f: _FAILURE_SPECIFICITY.get(f.outcome_state, 9),
+            )
             recorded_exc = SourceRunError(str(exc), failure.outcome_state)
+        publish_rate_limit(_classify_source_failure(recorded_exc)[0])
         if module_backed:
             http.fixture_source_record_error(fixture_request, recorded_exc)
         if recorded_exc is not exc:
@@ -3538,11 +5070,162 @@ def _retrieve_stream(*args, **kwargs) -> tuple[list[dict], dict]:
         failures,
     )
     if outcome_note:
-        artifact = dict(artifact or {})
-        artifact["_source_outcome"] = outcome_note
+        # Lane-level HTTP failures (e.g. a blocked shreddit partial on a
+        # datacenter IP) are captured by the sink even when the source
+        # delivered items. Only attach them when the run produced nothing,
+        # or when the impl attached its own explicit outcome artifact (e.g.
+        # "primary failed; fallback returned N items"). A swallowed lane
+        # failure must not brand a successful source auth-failed/partial.
+        # An adapter-declared outcome (typed ``_source_outcome`` or a legacy
+        # ``{"error": ...}`` / per-leg artifact) is explicit and always
+        # brands the source, even with items; only failures the adapter
+        # swallowed into the capture sink are demoted to detail.
+        explicit = isinstance(artifact, dict) and (
+            bool(artifact.get("_source_outcome"))
+            or _legacy_artifact_outcome(str(kwargs.get("source") or ""), artifact) is not None
+        )
+        if explicit or not items:
+            artifact = dict(artifact or {})
+            artifact["_source_outcome"] = outcome_note
+        elif failures:
+            # The source delivered items. Keep it ``ok`` but carry what the
+            # swallowed sub-requests lost, so doctor can still show it, and
+            # the most specific failure state so a later empty filter result
+            # or the thin-source retry can act on it.
+            # Append to any detail the impl already set (e.g. a Reddit
+            # backfill note) rather than overwriting it.
+            artifact = dict(artifact or {})
+            summary = _summarize_lane_failures(failures, str(kwargs.get("source") or ""))
+            prior = artifact.get("_source_outcome_detail")
+            artifact["_source_outcome_detail"] = f"{prior}; {summary}" if prior else summary
+            states = [f.outcome_state for f in failures]
+            if artifact.get("_source_outcome_detail_state"):
+                states.append(artifact["_source_outcome_detail_state"])
+            artifact["_source_outcome_detail_state"] = min(
+                states, key=lambda state: _FAILURE_SPECIFICITY.get(state, 9)
+            )
+    publish_rate_limit((artifact.get("_source_outcome") or {}).get("state"))
+    if _detail_rate_limits_source(source, artifact):
+        publish_rate_limit(health.RATE_LIMITED)
     if module_backed:
         http.fixture_source_record(fixture_request, [items, artifact])
     return items, artifact
+
+
+def _serve_envelope_topic(envelope: x_envelope.Envelope) -> tuple[list[dict], dict]:
+    """Serve the envelope's topic-lane rows once.
+
+    The first X subquery takes the rows and the envelope-status outcome;
+    every later call (a second planner subquery, judge-retry, thin-retry)
+    gets no items and no error, and no backend is ever consulted.
+    """
+    items = envelope.take_topic()
+    if items is None:
+        return [], {}
+    artifact: dict[str, Any] = {}
+    if envelope.warnings:
+        # A narrower host window is a receipt (report.warnings), not a failure.
+        artifact["x_receipts"] = [f"X: {warning}" for warning in envelope.warnings]
+    outcome = envelope.outcome()
+    if outcome is not None:
+        state, detail = outcome
+        artifact.update(_outcome_artifact(state, detail))
+    return items, artifact
+
+
+def _serve_envelope_lanes(
+    envelope: x_envelope.Envelope,
+    *,
+    bundle: schema.RetrievalBundle,
+    plan: schema.QueryPlan,
+    x_handle: str | None,
+    x_related: list[str] | None,
+    from_date: str,
+    to_date: str,
+) -> None:
+    """Serve the envelope's from/mention/related calls into the lane merge.
+
+    Mirrors the backend lanes: primary-handle rows (from + mention) join the
+    primary subquery with first-party handling for the explicit handle and
+    the per-handle lane counts; related rows join ``supplemental-related``
+    at the 0.3 weight. Lane claims were already validated at read time.
+    """
+    calls = envelope.take_lanes()
+    if not calls:
+        return
+    x_slug = "x"
+    existing_urls = {
+        item.url
+        for items in bundle.items_by_source.values()
+        for item in items
+        if item.url
+    }
+    ranking_query = plan.subqueries[0].ranking_query if plan.subqueries else ""
+    primary_label = plan.subqueries[0].label if plan.subqueries else "primary"
+    primary_handles = sorted(
+        {x_handle.lstrip("@").strip().lower()} if x_handle and x_handle.strip() else set()
+    )
+    related_handles = [
+        h.lstrip("@").strip().lower()
+        for h in (x_related or [])
+        if h.strip() and h.lstrip("@").strip().lower() not in primary_handles
+    ]
+
+    def _cap_per_author(posts: list[dict], cap: int) -> list[dict]:
+        seen: Counter[str] = Counter()
+        kept: list[dict] = []
+        for post in posts:
+            author = str(post.get("author_handle") or "").lower()
+            if seen[author] >= cap:
+                continue
+            seen[author] += 1
+            kept.append(post)
+        return kept
+
+    primary_items: list[dict] = []
+    related_items: list[dict] = []
+    for call in calls:
+        if call.lane == "from":
+            primary_items.extend(_cap_per_author(call.posts, FROM_LANE_COUNT_PER))
+        elif call.lane == "mention":
+            primary_items.extend(
+                call.posts[: MENTION_LANE_COUNT_PER * max(1, len(call.handles))]
+            )
+        elif call.lane == "related":
+            related_items.extend(_cap_per_author(call.posts, RELATED_HANDLE_COUNT_PER))
+
+    if primary_items:
+        normalized = _normalize_score_dedupe(
+            x_slug, primary_items, from_date, to_date,
+            freshness_mode=plan.freshness_mode,
+            ranking_query=ranking_query,
+            first_party_handles=primary_handles,
+        )
+        normalized = [item for item in normalized if item.url not in existing_urls]
+        if normalized:
+            bundle.add_items(primary_label, x_slug, normalized)
+            existing_urls.update(item.url for item in normalized if item.url)
+
+    if related_items:
+        normalized = _normalize_score_dedupe(
+            x_slug, related_items, from_date, to_date,
+            freshness_mode=plan.freshness_mode,
+            ranking_query=ranking_query,
+            first_party_handles=related_handles,
+        )
+        normalized = [item for item in normalized if item.url not in existing_urls]
+        if normalized:
+            bundle.add_items("supplemental-related", x_slug, normalized)
+            if not any(sq.label == "supplemental-related" for sq in plan.subqueries):
+                plan.subqueries.append(
+                    schema.SubQuery(
+                        label="supplemental-related",
+                        search_query=", ".join(related_handles),
+                        ranking_query=ranking_query,
+                        sources=[x_slug],
+                        weight=0.3,
+                    )
+                )
 
 
 def _retrieve_stream_impl(
@@ -3565,10 +5248,18 @@ def _retrieve_stream_impl(
     ig_creators: list[str] | None = None,
     trustpilot_domain: str | None = None,
     trustpilot_domain_is_hint: bool = False,
+    run_started: float | None = None,
+    skip_amazon_enrichment: bool = False,
 ) -> tuple[list[dict], dict]:
     # Early exit if source was rate-limited by a sibling future
     if rate_limited_sources is not None and source in rate_limited_sources:
         return [], {}
+    # Cooperative enrichment cancel: the batch budget expired, so skip new
+    # network work instead of burning credits past the deadline.
+    if _research_stopped(config):
+        return [], {"_source_outcome": {
+            "state": health.TIMEOUT, "detail": "research cancelled or timed out", "attempted": False,
+        }}
     from_date, to_date = date_range
     if mock:
         return _mock_stream_results(source, subquery)
@@ -3599,7 +5290,7 @@ def _retrieve_stream_impl(
             # env.REDDIT_BACKEND_PIN_VAR=scrapecreators: SC primary, public fallback
             primary_failure: Exception | None = None
             try:
-                result = reddit.search_and_enrich(
+                result = reddit.search_and_enrich_memo(
                     reddit_query, from_date, to_date, depth=depth,
                     token=config.get("SCRAPECREATORS_API_KEY"),
                     subreddits=subreddits,
@@ -3652,13 +5343,10 @@ def _retrieve_stream_impl(
             return [], {}
 
         # Default: public Reddit first (free). ScrapeCreators backfills when the
-        # free path is empty OR returns fewer than the configured thinness floor
-        # (env.REDDIT_SC_MIN_ITEMS_VAR, default 0 = empty-only — today's
-        # behavior, no extra credit spend unless the user opts in).
-        try:
-            min_items = int(config.get(env.REDDIT_SC_MIN_ITEMS_VAR) or 0)
-        except (TypeError, ValueError):
-            min_items = 0
+        # free path returns fewer than the thinness floor (env.reddit_sc_min_items:
+        # unset -> env.REDDIT_SC_MIN_ITEMS_DEFAULT, explicit 0 -> empty-only,
+        # malformed -> 0 so a typo never spends extra credits).
+        min_items = env.reddit_sc_min_items(config)
         public_results: list[dict] = []
         public_failure: Exception | None = None
         try:
@@ -3686,12 +5374,23 @@ def _retrieve_stream_impl(
                 f"[Reddit] Free path returned {len(public_results)} "
                 f"(below the {min_items}-item floor); backfilling with ScrapeCreators\n"
             )
+        # With free items in hand, scope the backfill's own HTTP failures
+        # away from the stream's capture sink: a ScrapeCreators 429 is not a
+        # reddit.com rate limit, and a RATE_LIMITED lane state would put
+        # 'reddit' in rate_limited_sources and skip later Reddit streams and
+        # the thin-source retry. Its failures become the detail note instead.
+        # With no free items the backfill IS the source, so failures reach
+        # the stream sink as before.
+        backfill_scope = (
+            http.capture_failures() if public_results else contextlib.nullcontext([])
+        )
         try:
-            result = reddit.search_and_enrich(
-                reddit_query, from_date, to_date, depth=depth,
-                token=config.get("SCRAPECREATORS_API_KEY"),
-                subreddits=subreddits,
-            )
+            with backfill_scope as backfill_failures:
+                result = reddit.search_and_enrich_memo(
+                    reddit_query, from_date, to_date, depth=depth,
+                    token=config.get("SCRAPECREATORS_API_KEY"),
+                    subreddits=subreddits,
+                )
             sc_items = reddit.parse_reddit_response(result)
         except Exception as exc:
             sys.stderr.write(
@@ -3699,6 +5398,20 @@ def _retrieve_stream_impl(
                 f"({type(exc).__name__}: {exc})\n"
             )
             state = reddit.classify_run_failure(str(exc))
+            if public_results:
+                # The free path delivered: Reddit is working. The failed
+                # backfill is a detail note, never the source's outcome.
+                artifact = {
+                    "_source_outcome_detail": (
+                        f"ScrapeCreators backfill failed after "
+                        f"{len(public_results)} free items: {exc}"
+                    ),
+                }
+                if state != health.RATE_LIMITED:
+                    # A ScrapeCreators rate limit says nothing about
+                    # reddit.com (and the run memo already stops a retry).
+                    artifact["_source_outcome_detail_state"] = state
+                return public_results, artifact
             return public_results, _outcome_artifact(
                 state,
                 f"Reddit backup failed after {len(public_results)} public items: {exc}",
@@ -3711,8 +5424,32 @@ def _retrieve_stream_impl(
                 f"Reddit public search failed; backup returned {len(sc_items)} items: "
                 f"{public_failure}",
             )
-        return merged, {}
+        trigger = (
+            f"below the {min_items}-item floor" if min_items > 0 else "free path empty"
+        )
+        backfill_detail = (
+            f"ScrapeCreators backfill ran ({len(public_results)} free items, "
+            f"{trigger}); added {len(merged) - len(public_results)} items"
+        )
+        if backfill_failures:
+            summary = _summarize_lane_failures(backfill_failures, "reddit")
+            backfill_detail = f"{backfill_detail}; ScrapeCreators backfill lost {summary}"
+        return merged, {"_source_outcome_detail": backfill_detail}
     if source == "x":
+        if config.get("_x_lane_missing"):
+            # The model declared the connector lane but passed no envelope.
+            return [], _outcome_artifact(health.ERROR, x_envelope.DETAIL_NOT_PASSED)
+        envelope = config.get("_x_envelope")
+        if envelope is not None:
+            # Host-fetched lane: the envelope replaces the backend chain and
+            # is single-serve, so no backend runs and no judge-retry follows.
+            return _serve_envelope_topic(envelope)
+
+        # Compile X query from raw_topic (like Reddit/YouTube), not planner's
+        # search_query which may contain operator strings like "Rome Italy".
+        x_query = raw_topic or topic or subquery.search_query
+        ranking_query = subquery.ranking_query
+
         # One X source, an ordered chain of interchangeable backends. Try the
         # primary; fall through to the next only if it returns nothing or errors.
         chain = env.x_backend_chain(config)
@@ -3722,41 +5459,216 @@ def _retrieve_stream_impl(
         if pinned:
             chain = [pinned] + [b for b in chain if b != pinned]
         if not chain:
-            raise RuntimeError("No X backend is available.")
+            raise SourceRunError(
+                "No X backend is available (not configured).",
+                schema.SKIPPED_UNCONFIGURED,
+            )
         last_error = ""
+        chain_errors: list[tuple[str, schema.RunOutcomeState]] = []
+        last_state = health.ERROR
+        items = []
+        used_backend = None
+        x_warnings: list[str] = []
+        chain_deadline = _research_deadline(config, X_CHAIN_DEADLINE_SECONDS)
         for i, backend in enumerate(chain):
-            items, err = _fetch_x_backend(backend, subquery, from_date, to_date, depth, config)
+            if _research_stopped(config) or time.monotonic() >= chain_deadline:
+                msg = "X chain budget exhausted (timed out or cancelled)"
+                last_error = f"{last_error}; {msg}".strip("; ") if last_error else msg
+                last_state = health.TIMEOUT
+                chain_errors.append((msg, last_state))
+                print("[X] chain budget exhausted; skipping remaining backends", file=sys.stderr)
+                break
+            with http.tee_failures() as backend_failures:
+                items, err, err_state = _attempt_x_backend(
+                    backend, x_query, from_date, to_date, depth, config, warnings=x_warnings,
+                    deadline=chain_deadline,
+                )
             if items:
                 if i > 0:
-                    print(f"[X] primary backend(s) returned nothing; used fallback '{backend}'", file=sys.stderr)
-                if last_error:
-                    state = (
-                        bird_x.classify_run_failure(last_error)
-                        if last_error.startswith("bird:")
-                        else http.classify_failure(message=last_error)
+                    # xapi is metered: name the spend when it served as a backup.
+                    spend = " (spends X API credits)" if backend == "xapi" else ""
+                    print(
+                        f"[X] primary backend(s) returned nothing; used fallback '{backend}'{spend}",
+                        file=sys.stderr,
                     )
+                # Check for auth errors before proceeding to judge-retry
+                if last_error:
+                    # Preserve a prior auth failure even when the backup served
+                    # items. Session backends alone need re-login guidance.
+                    prior_state = last_state
+                    backup_rate_limited = err_state == health.RATE_LIMITED or any(
+                        failure.outcome_state == health.RATE_LIMITED for failure in backend_failures
+                    )
+                    detail = f"X served via {backend} after {last_error}"
+                    if err:
+                        detail += f"; {backend}: {err}"
+                    if backup_rate_limited and err_state != health.RATE_LIMITED:
+                        detail += f"; {backend} also rate-limited"
+                    if prior_state == schema.AUTH_FAILED:
+                        repair = (
+                            "; re-login needed for primary backend"
+                            if last_error.startswith(("grok:", "bird:")) else ""
+                        )
+                        artifact = _outcome_artifact(
+                            schema.AUTH_FAILED,
+                            f"{detail}{repair}",
+                        )
+                        if backup_rate_limited:
+                            artifact["_source_outcome_detail"] = f"{backend} also rate-limited"
+                            artifact["_source_outcome_detail_state"] = health.RATE_LIMITED
+                        return items, artifact
+                    # Prior error was non-auth. Check if *current* backend also
+                    # reported an error (e.g., grok returned items + revocation).
+                    if err:
+                        current_state = err_state
+                        if current_state == schema.AUTH_FAILED:
+                            repair = "; re-login needed" if backend in ("grok", "bird") else ""
+                            return items, _outcome_artifact(
+                                schema.AUTH_FAILED,
+                                f"X served {len(items)} items via {backend} but also errored: {err}{repair}",
+                            )
+                    return items, {
+                        "_source_outcome_detail": detail,
+                        "_source_outcome_detail_state": health.RATE_LIMITED if backup_rate_limited else prior_state,
+                        "_x_backup_not_rate_limited": not backup_rate_limited,
+                    }
+                if err:
+                    # Mixed result: backend returned items BUT also hit an error
+                    # (e.g., grok got some posts then auth was revoked mid-fanout).
+                    # Surface the error so the user gets re-login guidance.
+                    state = err_state
                     return items, _outcome_artifact(
                         state,
-                        f"X fallback '{backend}' returned {len(items)} items after {last_error}",
+                        f"X returned {len(items)} items but also errored: {err}",
                     )
-                return items, {}
+                # No auth issues and no prior errors - proceed to judge-retry
+                used_backend = backend
+                break
             if err:
                 last_error = f"{backend}: {err}"
+                last_state = err_state
+                chain_errors.append((last_error, last_state))
                 print(f"[X] backend '{backend}' failed ({err}); trying next", file=sys.stderr)
-        if last_error:
+
+        if not items and last_error:
+            # A credit-exhaustion failure earlier in the chain is the most
+            # specific outcome (top up, not re-authenticate); a later
+            # backend's generic failure must not mask it.
+            for candidate, candidate_state in chain_errors:
+                if candidate_state == health.PAYMENT_REQUIRED:
+                    last_error, last_state = candidate, candidate_state
+                    break
+            state = (
+                health.TIMEOUT
+                if _research_stopped(config) or time.monotonic() >= chain_deadline
+                else bird_x.classify_run_failure(last_error)
+                if last_error.startswith("bird:")
+                else last_state
+            )
+            raise SourceRunError(f"All X backends failed — {last_error}", state)
+
+        # Retrieve-judge-retry: judge corpus and retry if off-topic flood.
+        # Skip retry on quick/mock (same as Phase 2).
+        artifact = {}
+        if x_warnings:
+            # e.g. xapi's "window truncated to 7 days": a receipt that reaches
+            # report.warnings (see the grounding artifacts walk in
+            # _build_report), never a source failure.
+            artifact["x_receipts"] = list(x_warnings)
+        if items and depth != "quick" and not mock:
+            items_for_judge = [
+                {"author_handle": it.get("author_handle", ""), "text": it.get("text", "")}
+                for it in items
+            ]
+            if x_judge.should_retry_x_search(items_for_judge, x_query, ranking_query=ranking_query, depth=depth):
+                # Retry with cleaned query (1 retry, ≤2 extra grok calls)
+                # Strip noise words but preserve all significant terms to avoid
+                # losing disambiguating terms (e.g., "react server components")
+                core_tokens = query.extract_core_subject(x_query)
+                retry_query = core_tokens or x_query
+                print(f"[X] corpus off-topic; retrying with '{retry_query}'", file=sys.stderr)
+
+                if used_backend:
+                    if _research_stopped(config) or time.monotonic() >= chain_deadline:
+                        print("[X] chain budget exhausted; skipping judge retry", file=sys.stderr)
+                    else:
+                        retry_items, retry_err, _ = _attempt_x_backend(
+                            used_backend, retry_query, from_date, to_date, depth, config,
+                            deadline=chain_deadline,
+                        )
+                        if retry_items:
+                            # Judge retry corpus
+                            retry_for_judge = [
+                                {"author_handle": it.get("author_handle", ""), "text": it.get("text", "")}
+                                for it in retry_items
+                            ]
+                            retry_judgment = x_judge.judge_x_corpus(
+                                retry_for_judge, x_query, ranking_query=ranking_query
+                            )
+                            orig_judgment = x_judge.judge_x_corpus(
+                                items_for_judge, x_query, ranking_query=ranking_query
+                            )
+                            # Use retry if better on-topic ratio
+                            if retry_judgment["on_topic_ratio"] > orig_judgment["on_topic_ratio"]:
+                                print(
+                                    f"[X] retry improved on-topic ratio: "
+                                    f"{orig_judgment['on_topic_ratio']:.0%} -> "
+                                    f"{retry_judgment['on_topic_ratio']:.0%}",
+                                    file=sys.stderr,
+                                )
+                                items = retry_items
+
+            # Prune off-topic items before the pool. Eight on-topic → ok with 8.
+            # Zero on-topic after retry → no-results, not ok with 40 junk.
+            # Only prune items that have text to judge; items without text pass through.
+            original_count = len(items)
+            items_with_text = [(i, it) for i, it in enumerate(items) if it.get("text", "").strip()]
+
+            if items_with_text:
+                items_for_prune = [
+                    {"author_handle": it.get("author_handle", ""), "text": it.get("text", "")}
+                    for _, it in items_with_text
+                ]
+                judgment = x_judge.judge_x_corpus(
+                    items_for_prune, x_query, ranking_query=ranking_query
+                )
+                # Build set of indices for on-topic items
+                on_topic_indices = set()
+                for (orig_idx, _), pruned_item in zip(items_with_text, items_for_prune):
+                    if pruned_item in judgment["on_topic_items"]:
+                        on_topic_indices.add(orig_idx)
+
+                # Keep items that are on-topic OR have no text (can't judge)
+                items = [
+                    it for i, it in enumerate(items)
+                    if i in on_topic_indices or not it.get("text", "").strip()
+                ]
+
+                # Record warning if significant pruning occurred (artifact, not failure)
+                if len(items) < original_count:
+                    pruned = original_count - len(items)
+                    artifact.setdefault("_warnings", []).append(
+                        f"X: pruned {pruned} off-topic items; {len(items)} on-topic remain"
+                    )
+
+        if last_error and items:
             state = (
                 bird_x.classify_run_failure(last_error)
                 if last_error.startswith("bird:")
                 else http.classify_failure(message=last_error)
             )
-            raise SourceRunError(f"All X backends failed — {last_error}", state)
-        return [], {}
+            return items, _outcome_artifact(
+                state,
+                f"X fallback '{used_backend}' returned {len(items)} items after {last_error}",
+            )
+        return items, artifact
     if source == "youtube":
         # Use raw_topic so expand_youtube_queries() generates diverse variants
         # from the original user topic, not the planner's narrowed search_query.
         yt_query = raw_topic or subquery.search_query
         result = None
         youtube_failure: str | None = None
+        recovered_failure: str | None = None
         # ScrapeCreators key (when present) is the default-on backup tier: it
         # powers the per-video transcript fallback, the SC search fallback, and
         # comment enrichment. None when no key, which keeps everything keyless.
@@ -3775,17 +5687,79 @@ def _retrieve_stream_impl(
             except Exception as exc:
                 youtube_failure = str(exc)
                 result = None
-        # Fall back to SC YouTube search if yt-dlp failed or isn't installed.
-        if (result is None or not result.get("items")) and sc_token:
+        free_items = list((result or {}).get("items") or [])
+        min_items = env.youtube_sc_min_items(config)
+        backfill_thin = bool(free_items) and len(free_items) < min_items
+        thin_detail: str | None = None
+        thin_error = False
+        thin_retryable = False
+        if (not free_items or backfill_thin) and sc_token:
+            backfill_scope = (
+                http.capture_failures() if free_items else contextlib.nullcontext([])
+            )
             try:
-                result = youtube_yt.search_youtube_sc(
-                    yt_query, from_date, to_date, depth=depth, token=sc_token,
-                )
-                if result.get("error"):
-                    youtube_failure = str(result["error"])
+                with backfill_scope as sc_failures:
+                    transcribed_free_ids = {
+                        item["video_id"] for item in free_items
+                        if item.get("video_id")
+                        and str(item.get("transcript_snippet") or "").strip()
+                    }
+                    sc_result = youtube_yt.search_youtube_sc(
+                        yt_query, from_date, to_date, depth=depth, token=sc_token,
+                        skip_transcript_ids=transcribed_free_ids,
+                    )
+                sc_error = str(sc_result["error"]) if sc_result.get("error") else None
+                if backfill_thin:
+                    merged = _merge_youtube_items(free_items, sc_result.get("items") or [])
+                    result = {"items": merged}
+                    thin_detail = (
+                        f"yt-dlp returned {len(free_items)} videos below the "
+                        f"{min_items}-video backfill floor; ScrapeCreators added "
+                        f"{len(merged) - len(free_items)} videos"
+                    )
+                    if youtube_failure:
+                        thin_detail += f"; yt-dlp search: {youtube_failure}"
+                    if sc_error:
+                        thin_detail += f"; ScrapeCreators search: {sc_error}"
+                    if sc_failures:
+                        thin_detail += f"; ScrapeCreators: {_summarize_lane_failures(sc_failures, 'youtube')}"
+                    thin_error = bool(youtube_failure or sc_error or sc_failures)
+                    thin_retryable = thin_error and (
+                        len(merged) < min_items
+                        and (not youtube_failure or _retryable_youtube_error(youtube_failure))
+                        and (not sc_error or _retryable_youtube_error(sc_error))
+                        and all(
+                            _retryable_youtube_error(str(f), f.outcome_state)
+                            for f in sc_failures
+                        )
+                    )
+                    youtube_failure = None
+                    recovered_failure = None
+                else:
+                    result = sc_result
+                    if sc_error:
+                        youtube_failure = sc_error
+                    elif result.get("items") and youtube_failure:
+                        recovered_failure = youtube_failure
+                        youtube_failure = None
             except Exception as exc:
+                prior_youtube_failure = youtube_failure
                 youtube_failure = str(exc)
-                result = None
+                result = {"items": free_items} if free_items else None
+                if backfill_thin:
+                    thin_error = True
+                    thin_detail = (
+                        f"yt-dlp returned {len(free_items)} videos below the "
+                        f"{min_items}-video backfill floor; ScrapeCreators failed: {exc}"
+                    )
+                    if prior_youtube_failure:
+                        thin_detail += f"; yt-dlp search: {prior_youtube_failure}"
+                    thin_retryable = (
+                        _retryable_youtube_error(
+                            str(exc), getattr(exc, "outcome_state", None)
+                        )
+                        and (not prior_youtube_failure or _retryable_youtube_error(prior_youtube_failure))
+                    )
         if result is None:
             result = {"items": []}
         # Enrich top videos with comments (default-on when a key is present).
@@ -3794,10 +5768,28 @@ def _retrieve_stream_impl(
             youtube_yt.enrich_with_comments(
                 items, token=config.get("SCRAPECREATORS_API_KEY", ""),
             )
+        if thin_detail:
+            if not thin_error:
+                return items, {"_source_outcome_detail": thin_detail}
+            outcome = _outcome_artifact(health.PARTIAL, thin_detail)
+            if thin_retryable:
+                return items, {
+                    "_source_outcome_detail": thin_detail,
+                    "_source_outcome_deferred": outcome["_source_outcome"],
+                }
+            return items, outcome
         if youtube_failure:
             state = youtube_yt.classify_run_failure(youtube_failure)
             attempted = state != schema.SKIPPED_UNCONFIGURED
             return items, _outcome_artifact(state, youtube_failure, attempted=attempted)
+        if recovered_failure:
+            state = youtube_yt.classify_run_failure(recovered_failure)
+            attempted = state != schema.SKIPPED_UNCONFIGURED
+            return items, {
+                "_source_outcome_if_empty": _outcome_artifact(
+                    state, recovered_failure, attempted=attempted,
+                )["_source_outcome"]
+            }
         return items, {}
     if source == "tiktok":
         # Use raw_topic so expand_tiktok_queries() generates diverse variants
@@ -3855,10 +5847,11 @@ def _retrieve_stream_impl(
         return items, _result_outcome_artifact(source, result)
     if source == "hackernews":
         result = hackernews.search_hackernews(subquery.search_query, from_date, to_date, depth=depth)
-        return (
-            hackernews.parse_hackernews_response(result, query=subquery.search_query),
-            _result_outcome_artifact(source, result),
-        )
+        items = hackernews.parse_hackernews_response(result, query=subquery.search_query)
+        # Attach top-level comments to the highest-point stories (bounded by
+        # hackernews.ENRICH_LIMITS per depth).
+        items = hackernews.enrich_top_stories(items, depth=depth)
+        return items, _result_outcome_artifact(source, result)
     if source == "stocktwits":
         # Pass raw_topic so symbol detection sees the full topic, not the
         # narrowed per-subquery search_query (same rationale as reddit).
@@ -3912,6 +5905,87 @@ def _retrieve_stream_impl(
             trustpilot.parse_trustpilot_response(result, query=relevance_topic),
             _result_outcome_artifact(source, result),
         )
+    if source == "amazon":
+        # The search keyword is model-supplied and may differ from the topic
+        # ("Matt Van Horn" searches "June Oven"), so it keys off the stable
+        # research topic rather than the narrowed per-subquery search_query.
+        keyword = (
+            str((config or {}).get("_amazon_query") or "").strip()
+            or raw_topic or topic or subquery.search_query
+        )
+        domain = str((config or {}).get("LAST30DAYS_AMAZON_DOMAIN") or amazon.DEFAULT_DOMAIN)
+        result = amazon.search_products(keyword, domain=domain, config=config)
+        products = amazon.parse_search_response(result, keyword, domain=domain)
+        artifact = _result_outcome_artifact(source, result)
+
+        # Skip enrichment when called from thin retry (_retry_thin_sources) to
+        # avoid duplicate Bright Data pulls for ASINs already enriched in Phase 1.
+        # Finalize will enrich any NEW products (enrich_source_items no-ops when
+        # top_comments is already set, so duplicates get skipped there too).
+        if skip_amazon_enrichment:
+            return products, artifact
+
+        # Start review enrichment now, while other sources are still running.
+        # Elapsed is measured from run_started so multi-source runs that finish
+        # search quickly (30-90s) still have 190-250s of budget (clamped to 180).
+        # This replaces the old deferred-to-finalize path which left only crumbs
+        # (e.g. 11s) after long retrieval phases.
+        elapsed = time.monotonic() - run_started if run_started else 0.0
+        enriched, review_status = amazon.enrich_with_reviews(
+            products,
+            depth=depth,
+            config=config,
+            elapsed=elapsed,
+            keyword=keyword,
+        )
+
+        # Record PARTIAL status if review lane was skipped or all pulls dropped
+        if review_status:
+            artifact = artifact or {}
+            artifact = dict(artifact) if artifact else {}
+            artifact["_source_outcome"] = {
+                "state": schema.PARTIAL,
+                "detail": review_status,
+                "attempted": True,
+            }
+
+        return enriched, artifact
+    if source == "meta_ads":
+        # The advertiser is resolved from the stable research topic, not the
+        # narrowed per-subquery search_query: a subquery like "kettle reviews"
+        # would resolve a different page than the brand the run is about.
+        brand = raw_topic or topic or subquery.search_query
+        result = meta_ads.search_meta_ads(
+            brand,
+            from_date,
+            to_date,
+            depth=depth,
+            token=(config or {}).get("SCRAPECREATORS_API_KEY") or "",
+            country=str(
+                (config or {}).get("LAST30DAYS_META_ADS_COUNTRY")
+                or meta_ads.DEFAULT_COUNTRY
+            ),
+            page_override=str((config or {}).get("_meta_ads_page") or "").strip(),
+        )
+        if result.get("partial"):
+            # A partial lane carries `error` too, so the generic classifier
+            # would run and have its verdict overwritten here regardless.
+            artifact = {
+                "_source_outcome": {
+                    "state": schema.PARTIAL,
+                    "detail": str(result.get("error") or "partial"),
+                    "attempted": True,
+                }
+            }
+        else:
+            artifact = dict(_result_outcome_artifact(source, result) or {})
+        # The footer needs the resolved advertiser and the pre-truncation
+        # counts even on a run that produced zero items, and stream artifacts
+        # only reach the report through the grounding list, so they ride here
+        # and are lifted to top-level artifacts after retrieval.
+        artifact["meta_ads_page"] = result.get("page") or {}
+        artifact["meta_ads_tally"] = result.get("tally") or {}
+        return result.get("ads") or [], artifact
     if source == "bluesky":
         result = bluesky.search_bluesky(subquery.search_query, from_date, to_date, depth=depth, config=config)
         return bluesky.parse_bluesky_response(result), _result_outcome_artifact(source, result)
@@ -3922,6 +5996,14 @@ def _retrieve_stream_impl(
             token=config.get("SCRAPECREATORS_API_KEY"),
         )
         return threads.parse_threads_response(result), _result_outcome_artifact(source, result)
+    if source == "telegram":
+        result = telegram.search_telegram(
+            subquery.search_query, from_date, to_date,
+            depth=depth,
+            token=config.get("SCRAPECREATORS_API_KEY"),
+            config=config,
+        )
+        return telegram.parse_telegram_response(result), _result_outcome_artifact(source, result)
     if source == "truthsocial":
         result = truthsocial.search_truthsocial(subquery.search_query, from_date, to_date, depth=depth, config=config)
         return truthsocial.parse_truthsocial_response(result), _result_outcome_artifact(source, result)
@@ -4119,6 +6201,110 @@ def _mock_stream_results(source: str, subquery: schema.SubQuery) -> tuple[list[d
                 "why_relevant": "Mock Trustpilot sentiment",
             },
         ],
+        # Three products spanning the drift states the footer renders: one
+        # sagging below its all-time average (with enough in-window reviews
+        # to clear the arrow threshold), one steady, and one too new to have
+        # a baseline. Mock runs exercise the full R1c line without a CLI.
+        "amazon": [
+            {
+                "asin": "B0MOCK00X1",
+                "date": dates.get_date_range(1)[1],
+                "name": f"{subquery.search_query} Pro Model | Flagship Edition",
+                "short_name": "Pro Model",
+                "brand": subquery.search_query.split()[0].title() if subquery.search_query else "Example",
+                "url": "https://www.amazon.com/dp/B0MOCK00X1",
+                "rating": 4.4,
+                "num_ratings": 459,
+                "price": 39.99,
+                "currency": "USD",
+                "badge": "Best Seller",
+                "sponsored": False,
+                "relevance": 0.85,
+                "why_relevant": "Mock Amazon product",
+                "product_rating": 4.4,
+                "product_rating_count": 459,
+                "star_distribution": {
+                    "one_star": 28, "two_star": 9, "three_star": 28,
+                    "four_star": 60, "five_star": 335,
+                },
+                "top_comments": [
+                    {
+                        "score": 3, "rating": 2, "verified": True,
+                        "date": dates.get_date_range(3)[1],
+                        "excerpt": "The tray shifts in transit and the lid jams shut.",
+                        "title": "Lid jams",
+                    },
+                    {
+                        "score": 1, "rating": 4, "verified": True,
+                        "date": dates.get_date_range(9)[1],
+                        "excerpt": "Solid build, but arrived with a dented panel.",
+                        "title": "Shipping dent",
+                    },
+                    {
+                        "score": 0, "rating": 5, "verified": True,
+                        "date": dates.get_date_range(14)[1],
+                        "excerpt": "Keeps everything cold through a full school day.",
+                        "title": "Works great",
+                    },
+                    {
+                        "score": 0, "rating": 4, "verified": True,
+                        "date": dates.get_date_range(19)[1],
+                        "excerpt": "Good size for the price.",
+                        "title": "Good value",
+                    },
+                    {
+                        "score": 0, "rating": 4, "verified": False,
+                        "date": dates.get_date_range(24)[1],
+                        "excerpt": "Does the job, nothing fancy.",
+                        "title": "Fine",
+                    },
+                ],
+            },
+            {
+                "asin": "B0MOCK00X2",
+                "date": dates.get_date_range(1)[1],
+                "name": f"{subquery.search_query} Classic | Everyday Model",
+                "short_name": "Classic",
+                "brand": subquery.search_query.split()[0].title() if subquery.search_query else "Example",
+                "url": "https://www.amazon.com/dp/B0MOCK00X2",
+                "rating": 4.7,
+                "num_ratings": 8446,
+                "price": 24.99,
+                "currency": "USD",
+                "sponsored": False,
+                "relevance": 0.8,
+                "why_relevant": "Mock Amazon product",
+                "product_rating": 4.7,
+                "product_rating_count": 8446,
+                "star_distribution": {
+                    "one_star": 120, "two_star": 90, "three_star": 300,
+                    "four_star": 1010, "five_star": 6926,
+                },
+                "top_comments": [
+                    {
+                        "score": 12, "rating": 5, "verified": True,
+                        "date": dates.get_date_range(4)[1],
+                        "excerpt": "Third one we've bought. They last.",
+                        "title": "Repeat buyer",
+                    },
+                ],
+            },
+            {
+                "asin": "B0MOCK00X3",
+                "date": dates.get_date_range(1)[1],
+                "name": f"{subquery.search_query} Mini | New Release",
+                "short_name": "Mini",
+                "brand": subquery.search_query.split()[0].title() if subquery.search_query else "Example",
+                "url": "https://www.amazon.com/dp/B0MOCK00X3",
+                "rating": None,
+                "num_ratings": 57,
+                "price": 19.99,
+                "currency": "USD",
+                "sponsored": False,
+                "relevance": 0.72,
+                "why_relevant": "Mock Amazon product",
+            },
+        ],
         "jobs": [
             {
                 "id": "J1",
@@ -4157,4 +6343,3 @@ def _mock_stream_results(source: str, subquery: schema.SubQuery) -> tuple[list[d
             "resultCount": 1,
         }
     return payloads.get(source, []), {}
-

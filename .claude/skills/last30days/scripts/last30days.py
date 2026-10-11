@@ -15,7 +15,6 @@ import re
 import signal
 import sqlite3
 import sys
-import threading
 from collections.abc import Callable
 from pathlib import Path
 
@@ -51,36 +50,50 @@ if os.name == "nt":
 SCRIPT_DIR = Path(__file__).parent.resolve()
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from lib import competitors as competitors_mod, corpus, dates, discovery_handoff, env, freshness, html_render, http, permission_preflight, pipeline, registers, render, schema, ui
+from lib import competitors as competitors_mod, corpus, dates, discovery_handoff, env, freshness, html_render, http, permission_preflight, pipeline, reddit, registers, render, schema, subproc, ui, x_envelope
 
-_child_pids: set[int] = set()
-_child_pids_lock = threading.Lock()
-
-
-def register_child_pid(pid: int) -> None:
-    with _child_pids_lock:
-        _child_pids.add(pid)
+atexit.register(subproc.cleanup_children)
 
 
-def unregister_child_pid(pid: int) -> None:
-    with _child_pids_lock:
-        _child_pids.discard(pid)
+def _on_sigterm(signum, frame) -> None:
+    """SIGTERM handler: clean descendant groups, then die as SIGTERM.
+
+    Every run_with_timeout child runs in its own pgid (lib/subproc.py via
+    os.setsid), so a group kill aimed at the engine can never reach them;
+    only the lib.subproc registry can. atexit never runs on a signal death,
+    so without this handler an MCP timeout would orphan node bird-search,
+    yt-dlp, and the digg CLI. The MCP server SIGTERMs the engine group
+    first, giving this handler room to killpg() each registered child
+    group before the SIGKILL backstop. Restoring the default disposition
+    and re-raising preserves killed-by-SIGTERM semantics for the parent.
+    """
+    subproc.cleanup_children()
+    signal.signal(signal.SIGTERM, signal.SIG_DFL)
+    os.kill(os.getpid(), signal.SIGTERM)
 
 
-def _cleanup_children() -> None:
-    with _child_pids_lock:
-        pids = list(_child_pids)
-    for pid in pids:
-        try:
-            if hasattr(os, "killpg"):
-                os.killpg(os.getpgid(pid), signal.SIGTERM)
-            else:
-                os.kill(pid, signal.SIGTERM)
-        except (ProcessLookupError, PermissionError, OSError):
-            continue
+def _install_sigterm_handler() -> None:
+    try:
+        signal.signal(signal.SIGTERM, _on_sigterm)
+    except (ValueError, OSError, RuntimeError):
+        pass
 
 
-atexit.register(_cleanup_children)
+def parse_meta_ads_page(raw: str) -> str:
+    """Extract an Ad Library page id from a flag value, or "" if there is none.
+
+    Accepts a bare numeric id or any Ad Library URL carrying
+    ``view_all_page_id``. A ``facebook.com/<vanity>`` URL is deliberately
+    rejected rather than guessed at: a vanity handle is not a page id, and one
+    live check resolved a brand-looking handle to a private person's profile.
+    """
+    value = str(raw or "").strip()
+    if not value:
+        return ""
+    if re.fullmatch(r"\d{5,20}", value):
+        return value
+    match = re.search(r"view_all_page_id=(\d{5,20})", value)
+    return match.group(1) if match else ""
 
 
 def parse_search_flag(raw: str, flag_name: str = "--search") -> list[str]:
@@ -117,6 +130,42 @@ def resolve_requested_sources(args_search: str | None, config: dict) -> list[str
     if default_search:
         return parse_search_flag(default_search, flag_name="LAST30DAYS_DEFAULT_SEARCH")
     return None
+
+
+def add_deep_research_source(
+    requested_sources: list[str] | None,
+) -> list[str] | None:
+    """Add Perplexity without replacing the default-source sentinel.
+
+    ``None`` means that the planner can use the normal configured source set.
+    Deep Research enables Perplexity through ``INCLUDE_SOURCES`` separately, so
+    converting this sentinel to ``["perplexity"]`` would suppress every normal
+    source.
+    """
+    if requested_sources is None:
+        return None
+    if "perplexity" in requested_sources:
+        return requested_sources
+    return [*requested_sources, "perplexity"]
+
+
+def enable_deep_research_source(config: dict) -> None:
+    """Enable the exact Perplexity token or reject a hard exclusion."""
+    excluded = {
+        token.strip().lower()
+        for token in str(config.get("EXCLUDE_SOURCES") or "").split(",")
+        if token.strip()
+    }
+    if "perplexity" in excluded:
+        raise ValueError(
+            "--deep-research conflicts with EXCLUDE_SOURCES=perplexity"
+        )
+
+    include = str(config.get("INCLUDE_SOURCES") or "")
+    tokens = [token.strip() for token in include.split(",") if token.strip()]
+    if "perplexity" not in {token.lower() for token in tokens}:
+        tokens.append("perplexity")
+        config["INCLUDE_SOURCES"] = ",".join(tokens)
 
 
 def plan_has_explicit_trustpilot_domain(comp_plan: dict | None) -> bool:
@@ -174,6 +223,49 @@ def activate_trustpilot_for_explicit_domain(
     return requested_sources
 
 
+def activate_telegram_for_explicit_sources(
+    config: dict,
+    requested_sources: list[str] | None,
+    *,
+    channels: str,
+) -> list[str] | None:
+    """Activate the opt-in Telegram source when the user pinned channel(s).
+
+    Passing ``--telegram-sources`` is unambiguous intent — silently ignoring it
+    when Telegram is not in ``INCLUDE_SOURCES`` / ``--search`` is the same
+    failure mode as #873 (Trustpilot). Auto-activate the source.
+
+    ``EXCLUDE_SOURCES=telegram`` still wins. Mutates ``config`` in place and
+    returns the (possibly extended) ``requested_sources`` list.
+    """
+    excluded = {
+        token.strip().lower()
+        for token in str(config.get("EXCLUDE_SOURCES") or "").split(",")
+        if token.strip()
+    }
+    if "telegram" in excluded:
+        sys.stderr.write(
+            f"[Telegram] --telegram-sources={channels} ignored: telegram is in EXCLUDE_SOURCES\n"
+        )
+        return requested_sources
+
+    config["TELEGRAM_SOURCES"] = channels
+
+    include = str(config.get("INCLUDE_SOURCES") or "")
+    tokens = [token.strip() for token in include.split(",") if token.strip()]
+    if "telegram" not in {token.lower() for token in tokens}:
+        tokens.append("telegram")
+        config["INCLUDE_SOURCES"] = ",".join(tokens)
+        sys.stderr.write(
+            f"[Telegram] --telegram-sources={channels} activated telegram source "
+            "(add to INCLUDE_SOURCES permanently to skip this auto-enable)\n"
+        )
+
+    if requested_sources is not None and "telegram" not in requested_sources:
+        requested_sources = [*requested_sources, "telegram"]
+    return requested_sources
+
+
 def slugify(value: str, max_length: int = 180) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
     if len(slug) > max_length:
@@ -183,6 +275,19 @@ def slugify(value: str, max_length: int = 180) -> str:
         digest = hashlib.sha1(slug.encode("utf-8")).hexdigest()[:10]
         slug = f"{slug[:max_length].rstrip('-')}-{digest}"
     return slug or "last30days"
+
+
+def sanitize_suffix(suffix: str) -> str:
+    """Sanitize a user-provided ``--save-suffix`` into a path-safe token.
+
+    The suffix is glued directly into the saved-report filename, so restrict it
+    to the same ``[a-z0-9-]`` class as the topic slug. This neutralizes path
+    separators and parent refs (``/``, ``..``) so a suffix can never escape the
+    save directory, while leaving ordinary values ('v3', 'gemini', a client
+    slug) unchanged. Unlike ``slugify`` there is no fallback token: a suffix
+    that sanitizes to nothing simply drops, yielding no suffix part.
+    """
+    return re.sub(r"[^a-z0-9]+", "-", suffix.lower()).strip("-")
 
 
 def _report_has_private_corpus(report: schema.Report) -> bool:
@@ -231,7 +336,8 @@ def save_output(
     slug = slugify(topic_override or report.topic)
     extension = "json" if emit == "json" else "html" if emit == "html" else "md"
     raw_label = "raw-html" if emit == "html" else "raw"
-    suffix_part = f"-{suffix}" if suffix else ""
+    safe_suffix = sanitize_suffix(suffix)
+    suffix_part = f"-{safe_suffix}" if safe_suffix else ""
     base = path / f"{slug}-{raw_label}{suffix_part}.{extension}"
     date_str = datetime.now().strftime('%Y-%m-%d')
     candidates = [base]
@@ -460,6 +566,17 @@ def comparison_topic(entity_reports: list[tuple[str, schema.Report]]) -> str:
     return " vs ".join(label for label, _ in entity_reports)
 
 
+def comparison_label_key(label: str) -> str:
+    """Normalize an entity label for duplicate detection.
+
+    Comparison labels double as keys in the fan-out's results dict, so two
+    entities differing only in case, surrounding space, or a repeated space
+    collide there while still looking distinct on the command line. Spaces
+    are collapsed, never stripped: "Open AI" stays distinct from "OpenAI".
+    """
+    return " ".join(label.split()).casefold()
+
+
 def compute_save_path_display(save_dir: str, topic: str, suffix: str, emit: str) -> str:
     """Compute the user-friendly save path string that will be shown in the footer.
 
@@ -471,7 +588,8 @@ def compute_save_path_display(save_dir: str, topic: str, suffix: str, emit: str)
     slug = slugify(topic)
     extension = "json" if emit == "json" else "html" if emit == "html" else "md"
     raw_label = "raw-html" if emit == "html" else "raw"
-    suffix_part = f"-{suffix}" if suffix else ""
+    safe_suffix = sanitize_suffix(suffix)
+    suffix_part = f"-{safe_suffix}" if safe_suffix else ""
     raw = path / f"{slug}-{raw_label}{suffix_part}.{extension}"
     try:
         home = _Path.home().resolve()
@@ -518,7 +636,7 @@ def persist_report(report: schema.Report, store_db: Path | None = None) -> dict[
         store.init_db()
         if private_corpus:
             store.ensure_private_db_files()
-        topic_row = store.add_topic(report.topic)
+        topic_row = store.add_topic(report.topic, update_existing=False)
         topic_id = topic_row["id"]
         source_mode = ",".join(sorted(report.items_by_source)) or "v3"
         run_id = store.record_run(topic_id, source_mode=source_mode, status="running")
@@ -654,6 +772,10 @@ def build_parser() -> argparse.ArgumentParser:
                         help="Disable browser-cookie extraction even when FROM_BROWSER is configured")
     parser.add_argument("--save-dir", help="Optional directory for saving the rendered output")
     parser.add_argument(
+        "--resolve-save-dir", action="store_true",
+        help="Print the skill save directory from flags/config, then exit without research",
+    )
+    parser.add_argument(
         "--corpus",
         action="append",
         default=[],
@@ -676,12 +798,25 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--store", action="store_true", help="Persist ranked findings to the SQLite research store")
     parser.add_argument("--x-handle", help="X handle for targeted supplemental search")
     parser.add_argument("--x-related", help="Comma-separated related X handles (searched with lower weight)")
+    parser.add_argument(
+        "--x-posts",
+        dest="x_posts",
+        metavar="PATH",
+        help=(
+            "Path to a last30days-x-posts/1 JSON envelope of posts the hosting "
+            "model fetched through its X connector; replaces the engine's X "
+            "fetch for this run. A file path only (never inline JSON); on a "
+            "comparison run use the per-entity x_posts field of --competitors-plan."
+        ),
+    )
     parser.add_argument("--web-backend", default="auto",
-                        choices=["auto", "brave", "exa", "serper", "parallel", "keyless", "none"],
-                        help="Web search backend (default: auto, tries Brave then Exa then Serper then Parallel; "
-                             "keyless forces the zero-key DuckDuckGo/SearXNG floor)")
+                        choices=["auto", "brave", "exa", "serper", "parallel", "parallel-mcp", "keyless", "none"],
+                        help="Web search backend (default: auto; parallel-mcp explicitly opts into the "
+                             "anonymous hosted MCP; keyless forces the zero-key floor)")
+    parser.add_argument("--perplexity-search-type", choices=["web", "fast"],
+                        help="Search backend for direct Perplexity Search API and Agent web_search; overrides LAST30DAYS_PERPLEXITY_SEARCH_TYPE. Does not enable the paid source or select an Agent preset.")
     parser.add_argument("--deep-research", action="store_true",
-                        help="Use Perplexity Deep Research (~$0.90/query) for in-depth analysis. Requires PERPLEXITY_API_KEY or OPENROUTER_API_KEY.")
+                        help="Use at most one Perplexity Deep Research run. Direct PERPLEXITY_API_KEY uses the Agent API background path; OPENROUTER_API_KEY keeps the synchronous Sonar fallback; cannot be combined with competitor or vs-mode.")
     parser.add_argument("--hiring-signals", action="store_true",
                         help="Analyze public jobs/careers postings as evidence-backed company focus signals.")
     parser.add_argument("--plan", help="JSON query plan (skips internal LLM planner). Can be a JSON string or a file path.")
@@ -730,6 +865,39 @@ def build_parser() -> argparse.ArgumentParser:
             "Used verbatim, bypasses the brand-shape gate, and auto-activates the "
             "opt-in Trustpilot source for this run (unless EXCLUDE_SOURCES=trustpilot). "
             "Find the domain with `trustpilot-pp-cli search '<name>'`."
+        ),
+    )
+    parser.add_argument(
+        "--amazon-query",
+        help=(
+            "Product keyword the amazon source searches, when that source is active. "
+            "Defaults to the topic. Supply it whenever the topic is not the product: "
+            "a person topic searches their company's product line "
+            "(--amazon-query='June Oven'), and a brand searches brand-plus-category "
+            "(--amazon-query='Weber grill', not 'Weber' -- a bare brand keyword lands "
+            "on an ad-heavy page that can miss the brand's own bestsellers). "
+            "Requires the brightdata CLI on PATH and logged in."
+        ),
+    )
+    parser.add_argument(
+        "--meta-ads-page",
+        help=(
+            "Meta Ad Library page id for the topic's advertiser, when the meta_ads "
+            "source is active. Skips name-based page resolution and its discovery "
+            "credit. Accepts a bare numeric page id (e.g. 123456789012345) or an Ad "
+            "Library URL carrying view_all_page_id. A facebook.com vanity URL is not "
+            "a page id and is rejected. Use it when a brand advertises under product "
+            "names, or when resolution picked the wrong company."
+        ),
+    )
+    parser.add_argument(
+        "--telegram-sources",
+        help=(
+            "Comma-separated list of public Telegram channel handles or t.me URLs. "
+            "Auto-activates the opt-in Telegram source for this run. "
+            "Accepts: bare handle (aipost), @handle (@aipost), "
+            "t.me URL (https://t.me/aipost), or preview URL (https://t.me/s/aipost). "
+            "Rejects joinchat links and numeric -100 supergroup IDs."
         ),
     )
     parser.add_argument(
@@ -803,6 +971,7 @@ def parse_competitors_plan(raw: str | None) -> dict[str, dict]:
     known_fields = {
         "x_handle", "x_related", "subreddits",
         "github_user", "github_repos", "trustpilot_domain", "context",
+        "x_posts",
     }
     normalized: dict[str, dict] = {}
     for entity, entry in parsed.items():
@@ -1038,8 +1207,8 @@ def _missing_sources_for_promo(diag: dict[str, object]) -> str | None:
     missing = []
     if "reddit" not in available:
         missing.append("reddit")
-    if "x" not in available:
-        missing.append("x")
+    # X is optional. A successful run without X must reach the research output
+    # without an authentication or browser-cookie promo in front of it.
     # The web promo nudges toward a paid backend for higher-quality web search.
     # Grounding is now available keyless on non-native hosts, so key the promo on
     # the absence of a *paid* backend, not on grounding availability. Suppress it
@@ -1049,9 +1218,28 @@ def _missing_sources_for_promo(diag: dict[str, object]) -> str | None:
         missing.append("web")
     if not missing:
         return None
-    if "reddit" in missing and "x" in missing:
-        return "both"
     return missing[0]
+
+
+def _optional_x_omission_text(
+    diag: dict[str, object],
+    requested_sources: list[str] | None,
+) -> str | None:
+    """Return a non-blocking post-result note for a default run without X.
+
+    Explicit ``--search`` runs already define their intended source boundary,
+    so they do not need an omission note. Doctor/diagnose remains the place for
+    X setup or repair instructions.
+    """
+    if requested_sources is not None:
+        return None
+    available = set(diag.get("available_sources") or [])
+    if "x" in available:
+        return None
+    return (
+        "Optional source omitted: X/Twitter was not enabled; research "
+        "continued with the available sources."
+    )
 
 
 def _show_runtime_ui(
@@ -1122,7 +1310,11 @@ def _write_last_run(
     topic: str,
     report: "schema.Report",
     entity_reports: list[tuple[str, schema.Report]] | None = None,
+    *,
+    x_envelope_sha256: str | None = None,
 ) -> bool:
+    # ``x_envelope_sha256`` binds the cached report to the --x-posts file it
+    # was built from; _load_last_report_cache misses on any mismatch.
     try:
         if env.CONFIG_DIR is None:
             return False
@@ -1148,6 +1340,7 @@ def _write_last_run(
             "topic": topic,
             "timestamp": payload["timestamp"],
             "comparison": bool(entity_reports),
+            "x_envelope_sha256": x_envelope_sha256 or None,
             "reports": [
                 {"entity": label, "report": schema.to_dict(cached_report)}
                 for label, cached_report in cached_reports
@@ -1168,6 +1361,8 @@ def _write_last_run(
 def _load_last_report_cache(
     topic: str | None,
     ttl_seconds: int = DEFAULT_REPORT_CACHE_TTL_SECONDS,
+    *,
+    x_envelope_sha256: str | None = None,
 ) -> tuple[schema.Report, list[tuple[str, schema.Report]] | None, Path] | None:
     cache_path = _last_report_cache_path()
     if cache_path is None or not cache_path.exists():
@@ -1179,6 +1374,12 @@ def _load_last_report_cache(
         if payload.get("schema") != REPORT_CACHE_VERSION:
             return None
         if not _is_report_cache_fresh(payload.get("timestamp"), ttl_seconds):
+            return None
+        # A report built from a --x-posts envelope is only reusable with the
+        # same envelope content; a digest on either side that does not match
+        # the other is a miss.
+        cached_digest = payload.get("x_envelope_sha256") or None
+        if (cached_digest or x_envelope_sha256) and cached_digest != x_envelope_sha256:
             return None
         cached_topic = str(payload.get("topic") or "").strip().lower()
         if topic is not None and cached_topic != topic.strip().lower():
@@ -1473,7 +1674,8 @@ def _save_discovery_output(
     directory = Path(save_dir).expanduser().resolve()
     directory.mkdir(parents=True, exist_ok=True)
     extension = "json" if emit == "json" else "md"
-    suffix_part = f"-{suffix}" if suffix else ""
+    safe_suffix = sanitize_suffix(suffix)
+    suffix_part = f"-{safe_suffix}" if safe_suffix else ""
     stem = f"{slugify(domain)}-discover-raw{suffix_part}"
     date_str = datetime.datetime.now().strftime("%Y-%m-%d")
     candidates = [directory / f"{stem}.{extension}", directory / f"{stem}-{date_str}.{extension}"]
@@ -1935,6 +2137,7 @@ def _run_discover_nominate(args: argparse.Namespace, config: dict[str, object]) 
         # 2-3 report degraded coverage instead of silently reading clean; the
         # mock stamp keeps mock-born and real state from cross-finalizing.
         source_status=result.source_status,
+        warnings=result.warnings,
         mock=args.mock,
         # Same resolution as _discover_handoff_state_dir: save dir when
         # given, else the config dir.
@@ -2304,6 +2507,15 @@ def _render_save_and_print(
                     json_profile=args.json_profile,
                     register=audience.name,
                 )
+            if args.emit not in {"json", "html"} and not entity_reports:
+                # Markdown saves keep the complete debug artifact (all clusters
+                # and per-source items), matching the render_fn-less path in
+                # save_output and the comparison peer saves. Saving the compact
+                # stdout render instead made most collected evidence
+                # unrecoverable from the raw file (#923). The stdout re-render
+                # above still runs so the visible footer cites the real path,
+                # and the saved artifact carries the same citation.
+                return render.render_full(report, save_path=display)
             return rendered
 
         save_path = save_output(
@@ -2425,7 +2637,84 @@ SETUP_PASSTHROUGH_FLAGS = {
     "--github-start",
     "--github-poll",
     "--openclaw",
+    "--store-key",
 }
+
+STORE_KEY_FLAG = "--store-key"
+
+
+def _split_store_key(extra_argv: list[str]) -> tuple[bool, str, list[str]]:
+    """Pull ``--store-key <NAME>`` / ``--store-key=<NAME>`` out of ``extra_argv``.
+
+    Returns ``(present, name, remaining)``. ``name`` is "" when the flag has
+    no value; ``remaining`` is every other passthrough token, so the regular
+    allowlist check still applies to them.
+    """
+    present = False
+    name = ""
+    remaining: list[str] = []
+    i = 0
+    while i < len(extra_argv):
+        arg = extra_argv[i]
+        if arg == STORE_KEY_FLAG:
+            present = True
+            if i + 1 < len(extra_argv) and not extra_argv[i + 1].startswith("-"):
+                name = extra_argv[i + 1]
+                i += 2
+                continue
+            i += 1
+            continue
+        if arg.startswith(STORE_KEY_FLAG + "="):
+            present = True
+            name = arg[len(STORE_KEY_FLAG) + 1:]
+            i += 1
+            continue
+        remaining.append(arg)
+        i += 1
+    return present, name, remaining
+
+
+# One credential line: longer than any real token, short enough that a
+# misdirected stream on stdin cannot grow memory.
+STORE_KEY_MAX_BYTES = 64 * 1024
+
+
+def _run_store_key(name: str) -> int:
+    """``setup --store-key <NAME>``: persist one allowlisted credential from stdin.
+
+    Reads exactly one line from stdin (bounded to ``STORE_KEY_MAX_BYTES``),
+    strips whitespace, and writes it to the global ``.env`` as a 0o600 secret
+    through ``setup_wizard.write_api_key``. An existing line for the same
+    name is replaced, so a rejected credential can be rotated by running the
+    command again. The value never reaches stdout or stderr: stdout carries
+    ``NAME=****`` plus a JSON line ``{"persisted": bool, "key": NAME}``. A
+    name outside ``env.KEYCHAIN_KEYS`` or an empty value exits 2 without
+    echoing anything.
+    """
+    from lib import setup_wizard
+
+    if name not in env.KEYCHAIN_KEYS:
+        # Do not enumerate the allowlist here: on an official-only host a
+        # failure hint must not name the legacy credential keys.
+        sys.stderr.write(
+            "[last30days] setup --store-key: unknown or missing key name "
+            "(must be a credential name the engine loads from its .env; "
+            "see CONFIGURATION.md).\n"
+        )
+        return 2
+    value = sys.stdin.readline(STORE_KEY_MAX_BYTES).strip()
+    if not value:
+        sys.stderr.write(
+            f"[last30days] setup --store-key {name}: empty value on stdin; "
+            "pipe the credential as a single line.\n"
+        )
+        return 2
+    persisted = bool(
+        setup_wizard.write_api_key(env.CONFIG_FILE, value, key_name=name, replace=True)
+    )
+    print(f"{name}=****")
+    print(json.dumps({"persisted": persisted, "key": name}))
+    return 0 if persisted else 1
 
 SKILL_ONLY_FLAGS = {
     "--agent",
@@ -2443,10 +2732,151 @@ DOCTOR_PASSTHROUGH_FLAGS = {
 }
 
 
+def _looks_inline_json(value: str) -> bool:
+    """True when a --x-posts argument is JSON text rather than a path."""
+    stripped = value.strip()
+    return stripped.startswith(("{", "[")) or "\n" in value
+
+
+def _comparison_requested(args: argparse.Namespace, topic: str) -> bool:
+    """Whether this invocation is a comparison run (vs-topic or competitor flags)."""
+    from lib import planner as _planner
+
+    return any(
+        value is not None
+        for value in (args.competitors, args.competitors_list, args.competitors_plan)
+    ) or len(_planner._comparison_entities(topic, uncapped=True)) >= 2
+
+
+LAW7_HOST_PLAN_EXIT = 2
+
+
+def _law7_host_plan_message(signal: str) -> str:
+    return (
+        "[Planner] LAW 7: no --plan passed, and this run is agent-hosted "
+        f"({signal} is set). The engine stopped before retrieval and did not "
+        "call its internal planner. If you are the reasoning model hosting "
+        "this skill, YOU ARE the planner; no API key or provider is needed. "
+        "Write the JSON query plan (references/research-runbook.md Step 0.75) "
+        "to a tmpfile with a "
+        "quoted heredoc - QUERY_PLAN_FILE=$(mktemp "
+        "\"${TMPDIR:-/tmp}/last30days-plan.XXXXXX\"); "
+        "cat >| \"$QUERY_PLAN_FILE\" <<'PLAN_EOF' ... PLAN_EOF - and re-run "
+        "with --plan \"$QUERY_PLAN_FILE\" (see Research Execution in that "
+        "runbook). With no "
+        "web-search tool, pass --auto-resolve instead. For headless or cron "
+        f"runs under an agent, set {env.ALLOW_ENGINE_PLAN_VAR}=1 to let the "
+        "engine plan internally.\n"
+    )
+
+
+def _law7_host_plan_signal(args: argparse.Namespace, topic: str) -> str:
+    """Identify a blocked agent run before configuration probes run."""
+    if not topic:
+        return ""
+    if args.plan or args.mock or args.hiring_signals or args.auto_resolve:
+        return ""
+    if _comparison_requested(args, topic):
+        return ""
+    if env.engine_plan_allowed():
+        return ""
+    return env.agent_host_signal()
+
+
+def _law7_host_plan_gate(args: argparse.Namespace, topic: str) -> int | None:
+    """Stop a plan-less agent research run after dispatch and cache exemptions."""
+    signal = _law7_host_plan_signal(args, topic)
+    if not signal:
+        return None
+    sys.stderr.write(_law7_host_plan_message(signal))
+    return LAW7_HOST_PLAN_EXIT
+
+
+def _read_x_envelope(
+    path: str,
+    topic: str,
+    args: argparse.Namespace,
+    *,
+    x_handle: str | None,
+    x_related: list[str] | None,
+) -> x_envelope.Envelope:
+    """Validate a host-fetched X envelope against this run's window and topic."""
+    from_date, to_date = dates.get_date_range(
+        args.lookback_days or 30, as_of_date=args.as_of_date
+    )
+    return x_envelope.read(
+        path,
+        (from_date, to_date),
+        topic,
+        handles=[x_handle] if x_handle else [],
+        related=[h for h in (x_related or []) if h and h.strip()],
+    )
+
+
+def _attach_entity_envelopes(comp_plan: dict[str, dict], args: argparse.Namespace) -> None:
+    """Validate every per-entity ``x_posts`` path in a --competitors-plan.
+
+    Each envelope is checked against its own entity (topic) and that entry's
+    ``x_handle``/``x_related`` handles, and stored on the entry as
+    ``_x_envelope`` for the entity sub-run. Raises EnvelopeContractError.
+    """
+    for entry in comp_plan.values():
+        raw = entry.get("x_posts")
+        if not raw:
+            continue
+        if not isinstance(raw, str) or _looks_inline_json(raw):
+            raise x_envelope.EnvelopeContractError(
+                f"--competitors-plan entry {entry.get('_name', '')!r}: x_posts must "
+                "be a file path to a last30days-x-posts/1 envelope, never inline JSON. "
+                "Rewrite the plan entry, or drop its x_posts field."
+            )
+        related = entry.get("x_related") if isinstance(entry.get("x_related"), list) else None
+        entry["_x_envelope"] = _read_x_envelope(
+            raw, str(entry.get("_name") or ""), args,
+            x_handle=entry.get("x_handle") if isinstance(entry.get("x_handle"), str) else None,
+            x_related=[str(h) for h in related] if related else None,
+        )
+
+
+def _combine_envelope_digests(main_sha256: str | None, entity_sha256: dict[str, str]) -> str | None:
+    """One digest binding the last-report cache to every envelope a run uses.
+
+    A single top-level envelope is bound by its own file digest; per-entity
+    comparison envelopes are folded, name-sorted, into one digest. Both the
+    cache write (validated envelopes) and the cache lookup (planned paths)
+    must go through here so a comparison cache can be reused.
+    """
+    parts: list[str] = []
+    if main_sha256:
+        parts.append(main_sha256)
+    for name in sorted(entity_sha256):
+        parts.append(f"{name}:{entity_sha256[name]}")
+    if not parts:
+        return None
+    if len(parts) == 1 and main_sha256:
+        return main_sha256
+    return hashlib.sha256("|".join(parts).encode("utf-8")).hexdigest()
+
+
+def _x_envelope_digest(
+    main: x_envelope.Envelope | None, comp_plan: dict[str, dict] | None
+) -> str | None:
+    """Digest of the validated envelopes this run used (cache write side)."""
+    entity_sha256 = {
+        name: entry["_x_envelope"].sha256
+        for name, entry in (comp_plan or {}).items()
+        if entry.get("_x_envelope") is not None
+    }
+    return _combine_envelope_digests(main.sha256 if main is not None else None, entity_sha256)
+
+
 def _validate_extra_argv(parser: argparse.ArgumentParser, topic: str, extra_argv: list[str]) -> None:
     if not extra_argv:
         return
     if topic.lower() == "setup":
+        # --store-key carries a value token; the name itself is allowlisted
+        # later in _run_store_key, not here.
+        _, _, extra_argv = _split_store_key(extra_argv)
         unsupported = [arg for arg in extra_argv if arg not in SETUP_PASSTHROUGH_FLAGS]
         if unsupported:
             parser.error(
@@ -2505,6 +2935,9 @@ def _config_policy_for_args(args: argparse.Namespace, topic: str, extra_argv: li
         browser_mode = "plan_only"
     elif normalized_topic == "setup":
         browser_mode = "read" if _setup_allows_browser_cookies(args, extra_argv) else "off"
+    elif _law7_host_plan_signal(args, topic):
+        # Hosted and cached paths need config before dispatch, but no browser read.
+        browser_mode = "plan_only"
     else:
         browser_mode = "read"
     return env.ConfigLoadPolicy(
@@ -2737,6 +3170,40 @@ def _run_library_search(
     return 0
 
 
+def _looks_like_entity_topic(topic: str) -> bool:
+    """Whether a topic names a person, company, or product rather than a theme.
+
+    Keys on brevity, not capitalization. People type lowercase: "bentgo",
+    "peter steinberger" and "getenergy.com" are entity searches every bit as
+    much as their title-cased forms, and requiring a capital meant the most
+    common real-world spelling never resolved a handle.
+
+    A short topic is an entity search; a longer one is a theme. "Peter
+    Steinberger", "bentgo" and "getenergy.com" qualify; "best AI coding tools
+    2026" and "how to build agents that scale" do not. Question-shaped topics
+    are themes regardless of length.
+
+    Used only to decide whether resolving an X handle is worth one web search,
+    so a false negative costs the old behavior and a false positive costs a
+    single search.
+    """
+    text = (topic or "").strip()
+    if not text or text.endswith("?"):
+        return False
+    words = [w for w in re.findall(r"[A-Za-z0-9_.@'-]+", text) if w]
+    if not words or len(words) > 4:
+        return False
+    if any(w.startswith("@") for w in words):
+        return True
+    # A theme reads as a phrase built from common words; an entity does not.
+    common = {
+        "best", "top", "how", "why", "what", "when", "vs", "versus", "guide",
+        "tips", "review", "reviews", "news", "latest", "update", "updates",
+        "trends", "tools", "and", "or", "for", "the", "with", "about",
+    }
+    return not any(w.lower() in common for w in words)
+
+
 def main() -> int:
     parser = build_parser()
     # Use parse_known_args so setup sub-flags (--device-auth, --github,
@@ -2746,6 +3213,38 @@ def main() -> int:
         with http.recording_requests(Path(args.record_fixtures)):
             return _main(parser, args, extra_argv)
     return _main(parser, args, extra_argv)
+
+
+def _quality_research_results(report, diag, yt_fetch_stats):
+    youtube_items = report.items_by_source.get("youtube") or []
+    instagram_items = report.items_by_source.get("instagram") or []
+    x_outcome = report.source_status.get("x")
+    x_degraded_error = None
+    if (
+        report.items_by_source.get("x")
+        and x_outcome is not None
+        and x_outcome.detail
+        and x_outcome.detail.startswith("X served via ")
+        and " after xai:" in x_outcome.detail
+    ):
+        x_degraded_error = x_outcome.detail
+    return {
+        "active_sources": diag.get("available_sources") or [],
+        "youtube_videos_count": len(youtube_items),
+        "youtube_transcripts_count": sum(
+            1 for it in youtube_items
+            if (it.metadata.get("transcript_highlights") or it.metadata.get("transcript_snippet"))
+        ),
+        "youtube_error": report.errors_by_source.get("youtube"),
+        "x_error": report.errors_by_source.get("x"),
+        "x_degraded_error": x_degraded_error,
+        "youtube_captions_disabled_count": sum(
+            1 for it in youtube_items if it.metadata.get("captions_disabled")
+        ),
+        "youtube_transcript_fetch_attempts": yt_fetch_stats["attempts"],
+        "youtube_transcript_fetch_failures": yt_fetch_stats["failures"],
+        "instagram_items_count": len(instagram_items),
+    }
 
 
 def _main(
@@ -2764,12 +3263,34 @@ def _main(
     topic = " ".join(args.topic).strip()
     original_topic = topic
     _validate_extra_argv(parser, topic, extra_argv)
+    if args.resolve_save_dir:
+        print(env.resolve_memory_dir(args.save_dir))
+        return 0
+    if args.x_posts is not None and _looks_inline_json(args.x_posts):
+        sys.stderr.write(
+            "[last30days] --x-posts accepts a file path only (inline JSON is not "
+            "accepted); write the envelope to a .json file and pass its path.\n"
+        )
+        return 2
     if args.publish and topic.lower() != "library feed":
         sys.stderr.write(
             "[last30days] --publish is only supported by the 'library feed' command.\n"
         )
         return 2
+    if topic.lower() == "setup":
+        # Persisting a credential needs no config load (no Keychain / pass
+        # probes, no cookie policy), so it dispatches before get_config.
+        store_key_present, store_key_name, _ = _split_store_key(extra_argv)
+        if store_key_present:
+            return _run_store_key(store_key_name)
+
     config = env.get_config(policy=_config_policy_for_args(args, topic, extra_argv))
+    if args.perplexity_search_type is not None:
+        config["LAST30DAYS_PERPLEXITY_SEARCH_TYPE"] = args.perplexity_search_type
+    # One memo per command: comparison mode runs pipeline.run per entity in
+    # parallel, so the reset must not live inside the pipeline.
+    http.reset_reddit_keyless_memo()
+    reddit.reset_scrapecreators_memo()
     resolved_corpus_dirs = corpus.resolve_directories(
         args.corpus, config.get("LAST30DAYS_CORPUS_DIRS")
     )
@@ -2887,28 +3408,45 @@ def _main(
             config,
             allow_browser_cookies=_setup_allows_browser_cookies(args, extra_argv),
         )
-        # Persist FROM_BROWSER only when every service's cookies came from the
-        # SAME single browser — then we can fast-path future runs to it. If
-        # different services matched different browsers, or none matched, leave
-        # FROM_BROWSER unset so the safe default remains no browser-cookie
-        # reads. We deliberately do NOT pin "auto" here (it would re-probe
-        # Chrome and re-trigger the prompt) nor a single browser (it would
-        # silently skip the service that used the other one).
-        found_browsers = set(results.get("cookies_found", {}).values())
-        from_browser = found_browsers.pop() if len(found_browsers) == 1 else None
-        # Pin only a silent winner (firefox/safari). Pinning a Chromium browser
-        # would make every steady-state run re-read its Keychain-encrypted store
-        # and can re-trigger the "Always Allow" prompt, so Chrome is used for the
-        # first-run scan but never pinned.
-        if from_browser in {"chrome", "brave", "edge", "vivaldi", "opera", "arc", "chromium"}:
-            from_browser = None
-        setup_wizard.write_setup_config(env.CONFIG_FILE, from_browser=from_browser)
-        results["env_written"] = True
+        # Keep only successful browsers, including distinct service winners;
+        # "auto" would also probe browsers that did not supply any cookies.
+        found_browsers = dict.fromkeys(
+            "firefox" if browser == "firefox-wsl" else browser
+            for browser in results.get("cookies_found", {}).values()
+        )
+        from_browser = ",".join(found_browsers) or None
+        denied_browsers = (
+            results.get("x_cookie_access_denied", [])
+            if results.get("browser_cookie_scan_attempted") else []
+        )
+        prior_denial = config.get("LAST30DAYS_X_COOKIE_ACCESS_DENIED")
+        denial_marker = (
+            ",".join(denied_browsers) or ("none" if prior_denial else None)
+            if results.get("browser_cookie_scan_attempted") else None
+        )
+        results["env_written"] = setup_wizard.write_setup_config(
+            env.CONFIG_FILE,
+            from_browser=from_browser,
+            x_cookie_access_denied=denial_marker,
+            browser_consent=(
+                None if args.diagnose else _setup_allows_browser_cookies(args, extra_argv)
+            ),
+        )
+        if not results["env_written"]:
+            sys.stderr.write("Setup configuration could not be fully saved; some settings may already be saved.\n")
+            return 1
         sys.stderr.write(setup_wizard.get_setup_status_text(results) + "\n")
         return 0
 
     # Bare --discover (no domain) is global trending, so the dispatch keys on
     # "flag present" (is not None), never on the domain string's truthiness.
+    if args.deep_research and not topic:
+        sys.stderr.write(
+            "[last30days] --deep-research requires a normal positional topic; "
+            "it cannot be combined with discovery, drill, or cached-only modes.\n"
+        )
+        return 2
+
     if args.discover is not None:
         if topic:
             sys.stderr.write(
@@ -3028,6 +3566,41 @@ def _main(
     if args.lookback_days is None:
         args.lookback_days = 30
 
+    if args.deep_research and not args.diagnose:
+        from lib import planner as _planner
+
+        if not (
+            config.get("PERPLEXITY_API_KEY")
+            or config.get("OPENROUTER_API_KEY")
+        ):
+            print(
+                "Error: --deep-research requires PERPLEXITY_API_KEY or "
+                "OPENROUTER_API_KEY",
+                file=sys.stderr,
+            )
+            return 1
+        comparison_requested = any(
+            value is not None
+            for value in (
+                args.competitors,
+                args.competitors_list,
+                args.competitors_plan,
+            )
+        ) or len(_planner._comparison_entities(topic, uncapped=True)) >= 2
+        if comparison_requested:
+            sys.stderr.write(
+                "Error: --deep-research cannot be combined with competitor or vs-mode. "
+                "It permits one paid Deep Research run per user action; run each topic "
+                "separately.\n"
+            )
+            return 2
+        config["_deep_research"] = True
+        try:
+            enable_deep_research_source(config)
+        except ValueError as exc:
+            print(f"Error: {exc}", file=sys.stderr)
+            return 2
+
     # Reject a misspelled configured register before remote submission or any
     # local source retrieval. Excluded modes resolve to default and remain
     # unaffected by the register setting.
@@ -3051,6 +3624,26 @@ def _main(
         sys.stderr.write(
             "[last30days] Local corpus configured; bypassing the hosted backend so files stay on this machine.\n"
         )
+    # An explicit --perplexity-search-type is per-invocation intent the hosted
+    # backend cannot honor, so it runs locally, but only when a direct
+    # PERPLEXITY_API_KEY can apply it; otherwise the switch would trade hosted
+    # coverage for nothing. Key on the parsed CLI flag only: a value from
+    # LAST30DAYS_PERPLEXITY_SEARCH_TYPE must never move routing.
+    elif (
+        topic
+        and args.perplexity_search_type is not None
+        and config.get("PERPLEXITY_API_KEY")
+        and not args.diagnose
+        and not args.mock
+        and not args.record_fixtures
+        and not args.deep_research
+        and env.read_secret_env("LAST30DAYS_API_KEY")
+        and os.environ.get("LAST30DAYS_API_BASE")
+    ):
+        sys.stderr.write(
+            "[last30days] --perplexity-search-type set; bypassing the hosted backend "
+            "because it does not apply the Perplexity search type.\n"
+        )
     if (
         topic
         and not args.diagnose
@@ -3059,7 +3652,18 @@ def _main(
         and env.read_secret_env("LAST30DAYS_API_KEY")
         and os.environ.get("LAST30DAYS_API_BASE")
         and not resolved_corpus_dirs
+        and not args.deep_research
+        and (args.perplexity_search_type is None or not config.get("PERPLEXITY_API_KEY"))
     ):
+        if args.perplexity_search_type is not None:
+            sys.stderr.write(
+                "hosted backend does not apply --perplexity-search-type and no direct "
+                "PERPLEXITY_API_KEY is configured to run it locally; skipping\n"
+            )
+        elif config.get("LAST30DAYS_PERPLEXITY_SEARCH_TYPE"):
+            sys.stderr.write(
+                "hosted backend does not apply LAST30DAYS_PERPLEXITY_SEARCH_TYPE; skipping\n"
+            )
         if _freshness_enabled(args, config):
             if args.verify_freshness is True:
                 sys.stderr.write(
@@ -3074,6 +3678,14 @@ def _main(
             sys.stderr.write(
                 "[last30days] --json-profile=agent requires the local Report; "
                 "the remote API backend only supports --json-profile=raw.\n"
+            )
+            return 2
+        if args.x_posts is not None:
+            # The envelope is a local-engine contract; the remote API has no
+            # lane to receive it.
+            sys.stderr.write(
+                "[last30days] --x-posts is not supported by the hosted backend; "
+                "run locally or omit --x-posts.\n"
             )
             return 2
         from lib import hosted
@@ -3093,6 +3705,8 @@ def _main(
         return hosted.run_hosted(topic, depth, **hosted_kwargs)
 
     requested_sources = resolve_requested_sources(args.search, config)
+    if args.deep_research:
+        requested_sources = add_deep_research_source(requested_sources)
     # Explicit --trustpilot-domain is user intent: activate the opt-in source
     # before diagnose/run so the flag cannot silently no-op (#873). Auto-resolve
     # hints are applied later and must not call this path.
@@ -3105,11 +3719,59 @@ def _main(
             requested_sources,
             reason=f"--trustpilot-domain={cli_trustpilot_domain}",
         )
-    diag = pipeline.diagnose(config, requested_sources, safe=args.diagnose)
-
+    # Explicit --telegram-sources is user intent: activate the opt-in source
+    # before diagnose/run so the flag cannot silently no-op (same pattern as
+    # Trustpilot #873). Sets TELEGRAM_SOURCES in config for pipeline.
+    cli_telegram_sources = (
+        args.telegram_sources.strip() if args.telegram_sources else ""
+    )
+    if cli_telegram_sources:
+        requested_sources = activate_telegram_for_explicit_sources(
+            config,
+            requested_sources,
+            channels=cli_telegram_sources,
+        )
+    # Host-fetched X envelope: validated before diagnose so a present
+    # envelope plans X in (available_sources) and a bad one fails closed here.
+    x_posts_envelope: x_envelope.Envelope | None = None
+    if args.x_posts is not None:
+        if not topic:
+            sys.stderr.write("[last30days] --x-posts requires a research topic.\n")
+            return 2
+        if _comparison_requested(args, topic):
+            sys.stderr.write(
+                "[last30days] --x-posts applies to a single-topic run; on a "
+                "comparison run pass each entity's envelope through the "
+                "x_posts field of its --competitors-plan entry.\n"
+            )
+            return 2
+        try:
+            x_posts_envelope = _read_x_envelope(
+                args.x_posts, topic, args,
+                x_handle=args.x_handle,
+                x_related=args.x_related.split(",") if args.x_related else None,
+            )
+        except x_envelope.EnvelopeContractError as exc:
+            sys.stderr.write(f"[last30days] {exc.message}\n")
+            return 2
     if args.diagnose:
+        diag = pipeline.diagnose(
+            config, requested_sources, safe=True,
+            x_envelope=x_posts_envelope is not None,
+        )
         print(json.dumps(diag, indent=2, sort_keys=True))
         return 0
+
+    # Per-entity host-fetched X envelopes are validated here, on the main
+    # thread and BEFORE the report-cache lookup, so a bad or stale one fails
+    # closed (exit 2) instead of silently dropping that entity inside the
+    # fan-out or being served from a cache built while it was still valid.
+    comp_plan = parse_competitors_plan(args.competitors_plan)
+    try:
+        _attach_entity_envelopes(comp_plan, args)
+    except x_envelope.EnvelopeContractError as exc:
+        sys.stderr.write(f"[last30days] {exc.message}\n")
+        return 2
 
     if not topic:
         parser.print_usage(sys.stderr)
@@ -3132,10 +3794,15 @@ def _main(
             sys.stderr.write(refuse_msg)
             return 2
 
-    if args.emit == "html" and synthesis_md is not None:
+    if (
+        args.emit == "html"
+        and synthesis_md is not None
+        and not args.deep_research
+    ):
         cached = _load_last_report_cache(
             topic,
             ttl_seconds=_report_cache_ttl_seconds(config),
+            x_envelope_sha256=_x_envelope_digest(x_posts_envelope, comp_plan),
         )
         if cached is not None:
             cached_report, cached_entity_reports, cache_path = cached
@@ -3162,6 +3829,22 @@ def _main(
             "--emit=html --synthesis-file; running fresh research.\n"
         )
         sys.stderr.flush()
+
+    # LAW 7: an agent host that skipped --plan stops before live diagnostics,
+    # auto-resolve, the internal planner, or any source retrieval can spend.
+    law7_exit = _law7_host_plan_gate(args, topic)
+    if law7_exit is not None:
+        return law7_exit
+
+    diag = pipeline.diagnose(
+        config, requested_sources, safe=False,
+        x_envelope=x_posts_envelope is not None,
+    )
+
+    # Competitor sub-runs shallow-copy this config. The shared object makes the
+    # paid Perplexity cap command-wide and thread-safe across that fanout. Keep
+    # this runtime-only object out of the safe diagnose configuration contract.
+    config["_perplexity_paid_budget"] = pipeline.PaidSourceBudget()
 
     progress = ui.ProgressDisplay(topic, show_banner=True)
     progress.start_processing()
@@ -3215,15 +3898,45 @@ def _main(
         # without WebSearch (OpenClaw, Codex, raw CLI).
         repos_from_auto_resolve = False
         trustpilot_domain_is_hint = False
+        # Resolve automatically for entity-shaped topics even without the flag.
+        # A person or company topic whose handle the user did not supply is the
+        # case where first-party evidence is hardest to protect: the handle is
+        # absent from the topic and may never appear in retrieved mentions, so
+        # nothing downstream can identify the subject's own posts. One web
+        # search closes that. If it returns nothing, pipeline.run skips the X
+        # relevance floor entirely — a noisier report beats losing evidence.
+        # Skipped when a handle was already supplied, when an external plan
+        # owns resolution, or in mock runs.
+        auto_resolve_topic = topic
+        if args.competitors_list is None and (args.competitors is None or comp_plan):
+            from lib import planner as _planner
+            vs_entities = _planner._comparison_entities(topic, uncapped=True)
+            if len(vs_entities) >= 2:
+                auto_resolve_topic = vs_entities[0]
+        if (
+            not args.auto_resolve
+            and not external_plan
+            and not args.x_handle
+            and not args.mock
+            and _looks_like_entity_topic(auto_resolve_topic)
+        ):
+            args.auto_resolve = True
+            sys.stderr.write(
+                "[AutoResolve] entity-shaped topic with no --x-handle; "
+                "resolving the subject's handle so its own posts are not pruned\n"
+            )
+
         if args.auto_resolve and not external_plan:
             from lib import resolve
-            resolution = resolve.auto_resolve(topic, config)
+            resolution = resolve.auto_resolve(auto_resolve_topic, config)
             if resolution.get("subreddits") and not subreddits:
                 subreddits = resolution["subreddits"]
                 sys.stderr.write(f"[AutoResolve] Subreddits: {', '.join(subreddits)}\n")
             if resolution.get("x_handle") and not args.x_handle:
                 args.x_handle = resolution["x_handle"]
                 sys.stderr.write(f"[AutoResolve] X handle: @{args.x_handle}\n")
+            # Empty x_handle is intentional: do not invent a lexical stand-in.
+            # pipeline.run treats an unidentified subject as "skip the X floor".
             if resolution.get("github_user") and not args.github_user:
                 args.github_user = resolution["github_user"]
                 sys.stderr.write(f"[AutoResolve] GitHub user: @{args.github_user}\n")
@@ -3252,7 +3965,8 @@ def _main(
         trustpilot_domain = args.trustpilot_domain.strip() if args.trustpilot_domain else None
 
         comp_enabled, comp_count, comp_explicit = resolve_competitors_args(args)
-        comp_plan = parse_competitors_plan(args.competitors_plan)
+        # comp_plan was parsed, and its per-entity envelopes validated, before
+        # the report-cache lookup above.
 
         # Plan-level trustpilot_domain pins are the same user intent as the CLI
         # flag (already activated above). Auto-resolve hints must not activate.
@@ -3277,17 +3991,6 @@ def _main(
                     f"{','.join(original_github_repos)} -> {','.join(github_repos)}\n"
                 )
 
-        # --deep-research: auto-enable perplexity source and set deep flag
-        if args.deep_research:
-            if not (config.get("PERPLEXITY_API_KEY") or config.get("OPENROUTER_API_KEY")):
-                print("Error: --deep-research requires PERPLEXITY_API_KEY or OPENROUTER_API_KEY", file=sys.stderr)
-                sys.exit(1)
-            config["_deep_research"] = True
-            # Auto-enable perplexity in INCLUDE_SOURCES
-            include = config.get("INCLUDE_SOURCES") or ""
-            if "perplexity" not in include.lower():
-                config["INCLUDE_SOURCES"] = f"{include},perplexity" if include else "perplexity"
-
         # Polymarket disambiguation: if user passed --polymarket-keywords,
         # store on config so the polymarket adapter can filter matches.
         if args.polymarket_keywords:
@@ -3299,6 +4002,53 @@ def _main(
             if keywords:
                 config["_polymarket_keywords"] = keywords
 
+        # Product keyword for the amazon source. Carried on config rather than
+        # threaded through the run signature (the _polymarket_keywords idiom):
+        # it is one optional string consumed in exactly two places.
+        if getattr(args, "amazon_query", None):
+            config["_amazon_query"] = args.amazon_query.strip()
+            # Unlike --trustpilot-domain, this flag deliberately does NOT
+            # auto-activate its source: the lane spends metered credits, so
+            # turning it on stays an explicit request. But silence is the
+            # wrong failure mode -- a model that resolves the keyword and
+            # forgets the --search token would otherwise get no signal at
+            # all that the flag did nothing.
+            _amazon_requested = (
+                (requested_sources and "amazon" in requested_sources)
+                or "amazon" in str(config.get("INCLUDE_SOURCES") or "").lower()
+            )
+            if not _amazon_requested:
+                sys.stderr.write(
+                    "[Amazon] --amazon-query was set but the amazon source was not "
+                    "requested; add it to --search (e.g. --search reddit,x,amazon) "
+                    "or set INCLUDE_SOURCES=amazon. Ignoring the keyword.\n"
+                )
+
+        # Advertiser page override for the meta_ads source. Same shape as
+        # --amazon-query (config-carried, warn-not-activate) and for the same
+        # reason: the lane spends metered credits per call.
+        if getattr(args, "meta_ads_page", None):
+            page_id = parse_meta_ads_page(args.meta_ads_page)
+            if not page_id:
+                sys.stderr.write(
+                    "[Meta Ads] --meta-ads-page must be a numeric Ad Library page id "
+                    "or an Ad Library URL containing view_all_page_id; a facebook.com "
+                    "vanity URL is not a page id. Ignoring the override.\n"
+                )
+            else:
+                config["_meta_ads_page"] = page_id
+                _meta_ads_requested = (
+                    (requested_sources and "meta_ads" in requested_sources)
+                    or "meta_ads" in str(config.get("INCLUDE_SOURCES") or "").lower()
+                )
+                if not _meta_ads_requested:
+                    sys.stderr.write(
+                        "[Meta Ads] --meta-ads-page was set but the meta_ads source "
+                        "was not requested; add it to --search (e.g. --search "
+                        "reddit,x,meta_ads) or set INCLUDE_SOURCES=meta_ads. "
+                        "Ignoring the page.\n"
+                    )
+
         # vs-mode / plan routing: split a vs-topic into main + peers unless
         # discover-N or an explicit --competitors-list already decided who runs.
         topic, comp_enabled, comp_count, comp_explicit = apply_vs_competitor_routing(
@@ -3309,6 +4059,10 @@ def _main(
             comp_explicit=comp_explicit,
             comp_plan=comp_plan,
         )
+        if comp_enabled:
+            config["_perplexity_paid_budget"] = pipeline.PaidSourceBudget(
+                owner=topic,
+            )
 
         # Plan alone with zero peers (empty/invalid JSON object, or all entries
         # skipped) must not fall through to discover-N with a misleading abort.
@@ -3357,6 +4111,10 @@ def _main(
                 save_dir=args.save_dir,
                 corpus_dirs=args.corpus,
                 corpus_all_time=args.corpus_all_time,
+                x_posts=(
+                    comp_plan.get(topic.strip().lower(), {}).get("_x_envelope")
+                    if comp_enabled else x_posts_envelope
+                ),
             )
             r.artifacts["resolved"] = {
                 "entity": topic,
@@ -3389,7 +4147,7 @@ def _main(
                         "  3. Re-invoke: /last30days '{topic} vs {peer1} vs {peer2}' "
                         "--competitors-plan '{\"Peer1\":{\"x_handle\":\"h1\",\"subreddits\":"
                         "[\"s1\"],...},\"Peer2\":{...}}'.\n"
-                        "See SKILL.md 'Competitor mode' for the full protocol.\n"
+                        "See the skill's references/competitors.md for the full protocol.\n"
                         "\n"
                         "HEADLESS / CRON PATH (no hosting model available): set "
                         "BRAVE_API_KEY / EXA_API_KEY / SERPER_API_KEY / PARALLEL_API_KEY / "
@@ -3410,15 +4168,52 @@ def _main(
                     )
                     return 2
 
+            # run_competitor_fanout keys its results by label, so two
+            # submissions sharing one collapse to a single report while the
+            # returned list still carries two entries. That yields a
+            # comparison of an entity against itself, and it hides a failed
+            # main topic from the survivor check below: the duplicate peer's
+            # report answers for the label the main run was supposed to fill.
+            distinct_peers: list[str] = []
+            claimed_labels = {comparison_label_key(topic)}
+            for peer in discovered:
+                key = comparison_label_key(peer)
+                if key in claimed_labels:
+                    sys.stderr.write(
+                        f"[Competitors] Dropping {peer!r}: duplicates the main "
+                        "topic or an earlier peer.\n"
+                    )
+                    continue
+                claimed_labels.add(key)
+                distinct_peers.append(peer)
+            if not distinct_peers:
+                sys.stderr.write(
+                    f"[Competitors] No peer distinct from {topic!r} remains; "
+                    "there is nothing to compare against. Pass "
+                    "--competitors-list with distinct entities.\n"
+                )
+                return 2
+            discovered = distinct_peers
+
             sys.stderr.write(
                 f"[Competitors] Comparing: {topic} vs " + " vs ".join(discovered) + "\n"
             )
 
             def _competitor_runner(entity: str) -> schema.Report:
-                # Deep-copy config so per-entity auto_resolve context does not
-                # leak across sub-runs. Each sub-run writes its own
-                # `_auto_resolve_context` into its local config copy.
+                # Resolution belongs to each entity, not the shared command.
                 entity_config = dict(config)
+                entity_config.pop("_auto_resolve_context", None)
+                # The Amazon keyword is entity-SPECIFIC, unlike the depth caps
+                # this shallow copy exists to inherit. Leaving the main topic's
+                # keyword in place would search Weber SKUs for a Traeger peer,
+                # render a rival's products as that peer's buyer evidence, and
+                # multiply the metered spend by the number of entities. Drop it
+                # so each peer derives its own keyword from its own topic; a
+                # per-entity keyword can ride in the --competitors-plan entry.
+                entity_config.pop("_amazon_query", None)
+                # An advertiser page is per-entity state by definition: left in
+                # place it would render one brand's ads as every peer's.
+                entity_config.pop("_meta_ads_page", None)
                 plan_entry = comp_plan.get(entity.strip().lower(), {})
                 resolved = {
                     "entity": entity,
@@ -3496,6 +4291,7 @@ def _main(
                     save_dir=args.save_dir,
                     corpus_dirs=args.corpus,
                     corpus_all_time=args.corpus_all_time,
+                    x_posts=plan_entry.get("_x_envelope"),
                 )
                 report.artifacts["resolved"] = resolved_effective
                 return report
@@ -3506,6 +4302,25 @@ def _main(
                 competitors=discovered,
                 competitor_runner=_competitor_runner,
             )
+            # run_competitor_fanout drops a failed sub-run from the list, and
+            # the render takes entity_reports[0] as the comparison's subject.
+            # Without this check, a main topic that raised while >=2 peers
+            # succeeded silently promoted a competitor to be the subject: the
+            # report was headed by that peer, saved under its slug, and the
+            # topic the user actually asked about went unmentioned.
+            survived = {label for label, _ in entity_reports}
+            dropped = [
+                label for label in (topic, *discovered) if label not in survived
+            ]
+            if topic not in survived:
+                progress.end_processing()
+                sys.stderr.write(
+                    f"[Competitors] The main topic {topic!r} failed; "
+                    f"{len(entity_reports)} competitor sub-run(s) survived. "
+                    "Refusing to render a comparison headed by a competitor. "
+                    "Check the warnings above.\n"
+                )
+                return 1
             if len(entity_reports) < 2:
                 progress.end_processing()
                 sys.stderr.write(
@@ -3515,6 +4330,14 @@ def _main(
                 )
                 return 1
             report = entity_reports[0][1]
+            if dropped:
+                # A narrower comparison than the user asked for is a result
+                # they need to see, not a silent substitution.
+                report.warnings.append(
+                    "Comparison is incomplete: "
+                    f"{len(dropped)} of {len(discovered) + 1} entities failed and "
+                    f"were dropped ({', '.join(dropped)})."
+                )
         else:
             entity_reports = None
             report = _main_runner()
@@ -3529,7 +4352,10 @@ def _main(
         report, progress, diag,
         suppress_web_promo=bool(external_plan or comp_plan),
     )
-    _write_last_run(original_topic, report, entity_reports=entity_reports)
+    _write_last_run(
+        original_topic, report, entity_reports=entity_reports,
+        x_envelope_sha256=_x_envelope_digest(x_posts_envelope, comp_plan),
+    )
     # LAST30DAYS_STORE env var = persistence default-on. Read both os.environ
     # (for shell-exported users) and config (for users who set it in
     # ~/.config/last30days/.env, which env.py loads but does not propagate
@@ -3553,39 +4379,9 @@ def _main(
         try:
             from lib import quality_nudge
             from lib import youtube_yt as _youtube_yt
-            # Populate transcript-fetch ratio so quality_nudge can detect the
-            # degraded-YouTube failure mode (videos returned but transcripts
-            # silently failed - typically a stale yt-dlp binary).
-            youtube_items = report.items_by_source.get("youtube") or []
-            _yt_fetch_stats = _youtube_yt.get_transcript_fetch_stats()
-            instagram_items = report.items_by_source.get("instagram") or []
-            research_results = {
-                "youtube_videos_count": len(youtube_items),
-                "youtube_transcripts_count": sum(
-                    1 for it in youtube_items
-                    if (it.metadata.get("transcript_highlights") or it.metadata.get("transcript_snippet"))
-                ),
-                "youtube_error": report.errors_by_source.get("youtube"),
-                "x_error": report.errors_by_source.get("x"),
-                # Captions-disabled videos can never produce a transcript regardless
-                # of yt-dlp version; subtract them from the degraded-ratio
-                # denominator so a single uploader-disabled video does not trip the
-                # "stale yt-dlp" nudge.
-                "youtube_captions_disabled_count": sum(
-                    1 for it in youtube_items if it.metadata.get("captions_disabled")
-                ),
-                # Actual yt-dlp fetch outcomes for this run. The counts above are
-                # computed from post-pruning items, so they can't tell "fetches
-                # failed (stale binary)" from "fetches succeeded but the videos
-                # were pruned downstream"; the latter was producing false
-                # stale-yt-dlp nudges (#531).
-                "youtube_transcript_fetch_attempts": _yt_fetch_stats["attempts"],
-                "youtube_transcript_fetch_failures": _yt_fetch_stats["failures"],
-                # Track Instagram returned-zero-items so quality_nudge can detect
-                # the silent-failure case (SC configured but the v2 reels endpoint
-                # 500'd through both the original query and the hashtag retry).
-                "instagram_items_count": len(instagram_items),
-            }
+            research_results = _quality_research_results(
+                report, diag, _youtube_yt.get_transcript_fetch_stats()
+            )
             quality = quality_nudge.compute_quality_score(config, research_results)
             if quality.get("nudge_text"):
                 sys.stderr.write(f"\n{quality['nudge_text']}\n")
@@ -3607,8 +4403,15 @@ def _main(
     )
     report.artifacts["pre_research_flags_present"] = pre_research_flags_present
 
-    return _render_save_and_print(args, report, entity_reports, synthesis_md, config)
+    exit_code = _render_save_and_print(args, report, entity_reports, synthesis_md, config)
+    if args.emit in {"compact", "md", "brief"}:
+        x_omission = _optional_x_omission_text(diag, requested_sources)
+        if x_omission:
+            sys.stderr.write(f"\n{x_omission}\n")
+            sys.stderr.flush()
+    return exit_code
 
 
 if __name__ == "__main__":
+    _install_sigterm_handler()
     raise SystemExit(main())

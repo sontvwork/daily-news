@@ -16,9 +16,12 @@ from __future__ import annotations
 import os
 import shutil
 import subprocess
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
+
+from . import subproc
 
 # Health states, best to worst.
 OK = "ok"
@@ -34,9 +37,20 @@ NO_RESULTS = "no-results"
 PARTIAL = "partial"
 RATE_LIMITED = "rate-limited"
 AUTH_FAILED = "auth-failed"
+PAYMENT_REQUIRED = "payment-required"  # HTTP 402 / credits exhausted: top up, not re-login
 UNREACHABLE = "unreachable"
 SCHEMA_DRIFT = "schema-drift"
 SKIPPED_UNCONFIGURED = "skipped-unconfigured"
+
+
+def credits_exhausted_label(source: str) -> str:
+    """Human label for a ``PAYMENT_REQUIRED`` outcome on ``source``.
+
+    The X source names the API whose credits ran out; every other source
+    gets the generic phrasing so the same label serves render summaries and
+    the doctor post-mortem without each surface hand-writing its own.
+    """
+    return "X API credits exhausted" if source == "x" else "credits exhausted"
 
 
 @dataclass
@@ -132,7 +146,7 @@ _PP_CLI_SUFFIX = "-pp-cli"
 _PRINTING_PRESS_NPM = "@mvanhorn/printing-press-library@0.1.16"
 
 # Dependencies the doctor probes by default.
-KNOWN_DEPENDENCIES: Tuple[str, ...] = ("yt-dlp", "digg-pp-cli", "node", "ffmpeg")
+KNOWN_DEPENDENCIES: Tuple[str, ...] = ("yt-dlp", "digg-pp-cli", "node", "ffmpeg", "grok")
 
 # Cheap side-effect-free version invocation per dependency (default --version).
 _VERSION_ARGS: Dict[str, List[str]] = {
@@ -157,6 +171,15 @@ _MANAGER_PRESCRIPTIONS: Dict[str, Dict[str, Tuple[str, str]]] = {
         "brew": ("brew install ffmpeg", "brew reinstall ffmpeg"),
         "apt": ("sudo apt-get install -y ffmpeg", "sudo apt-get install -y --reinstall ffmpeg"),
     },
+    # The official installer is the primary path; npm is a real alternative
+    # (the package is published as @xai-official/grok) and fits the existing
+    # manager-preference machinery.
+    "grok": {
+        "npm": (
+            "npm install -g @xai-official/grok",
+            "reinstall the Grok CLI: npm install -g @xai-official/grok@latest",
+        ),
+    },
 }
 
 # Last-resort prescriptions when no known package manager is detected.
@@ -172,6 +195,10 @@ _FALLBACK_PRESCRIPTIONS: Dict[str, Tuple[str, str]] = {
     "ffmpeg": (
         "install ffmpeg (https://ffmpeg.org/download.html) and ensure it is on PATH",
         "reinstall ffmpeg (https://ffmpeg.org/download.html); the current binary won't run",
+    ),
+    "grok": (
+        "install the Grok CLI: curl -fsSL https://x.ai/cli/install.sh | bash, then run `grok login`",
+        "reinstall the Grok CLI: curl -fsSL https://x.ai/cli/install.sh | bash; the current binary won't run",
     ),
 }
 
@@ -364,6 +391,7 @@ def probe_dependency(name: str, timeout: float = PROBE_TIMEOUT) -> DependencyPro
 
 
 def _probe_dependency_uncached(name: str, timeout: float) -> DependencyProbe:
+    deadline = time.monotonic() + timeout
     resolved = shutil.which(name)
     if resolved is None:
         off_path = _off_path_binary(name)
@@ -388,11 +416,13 @@ def _probe_dependency_uncached(name: str, timeout: float) -> DependencyProbe:
 
     command = [name] + _VERSION_ARGS.get(name, ["--version"])
     try:
-        proc = subprocess.run(
+        cleanup_grace = 0.1
+        proc = subproc.run_with_timeout(
             command,
-            capture_output=True,
-            text=True,
-            timeout=timeout,
+            timeout=max(0, deadline - time.monotonic() - 2 * cleanup_grace),
+            deadline_monotonic=deadline - 2 * cleanup_grace,
+            cleanup_grace=cleanup_grace,
+            capture_limit_bytes=64 * 1024,
         )
     except (FileNotFoundError, OSError) as exc:
         prescription, manager = _prescription(name, "reinstall")
@@ -403,7 +433,7 @@ def _probe_dependency_uncached(name: str, timeout: float) -> DependencyProbe:
             prescription=prescription,
             owner_pkg_manager=manager,
         )
-    except subprocess.TimeoutExpired:
+    except subproc.SubprocTimeout:
         prescription, manager = _prescription(name, "reinstall")
         return DependencyProbe(
             name=name,

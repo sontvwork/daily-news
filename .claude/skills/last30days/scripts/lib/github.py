@@ -102,7 +102,7 @@ def _fetch_json(
 
     req = urllib.request.Request(url, headers=headers)
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with http.open_request(req, timeout) as resp:
             body = resp.read().decode("utf-8")
             return json.loads(body)
     except urllib.error.HTTPError as e:
@@ -166,6 +166,79 @@ def _compute_relevance(
     return round(relevance, 2)
 
 
+# GitHub search qualifiers the planner sometimes writes straight into the topic
+# string (e.g. "open source AI stars:>1000 created:>2025-03-20"). They must not
+# reach the query builder in `search_github`: it appends its own
+# `created:>{from_date}`, and when two `created:` qualifiers collide GitHub
+# honours the FIRST and silently ignores ours. The API then returns
+# out-of-window items that `parse_github_response`'s date filter drops
+# wholesale — a source that fetches results and reports zero (issue #949).
+# Qualifiers may also arrive fully wrapped in one pair of parens/brackets/
+# quotes ("(created:>2025-03-20)", '"stars:>1000"'), which an LLM planner
+# plausibly emits; _WRAPPED_QUALIFIER_RE consumes the whole wrapper pair with
+# the qualifier so no stray `()`/`""` residue reaches the query (issue #952).
+# The plain regex's boundary also accepts wrapper openers so a qualifier with
+# a missing closer ("(created:>2025-03-20") is still stripped rather than
+# leaking into the query; only the stray opener survives, harmlessly.
+QUALIFIER_KEYS = frozenset({
+    "archived", "assignee", "author", "base", "closed", "comments", "commenter",
+    "created", "fork", "forks", "head", "in", "interactions", "involves", "is",
+    "label", "language", "license", "linked", "mentions", "merged", "milestone",
+    "no", "org", "project", "pushed", "reactions", "repo", "review",
+    "review-requested", "reviewed-by", "size", "sort", "stars", "state", "team",
+    "topic", "topics", "type", "updated", "user",
+})
+
+_QUALIFIER_KEYS_ALT = "|".join(sorted(QUALIFIER_KEYS))
+
+_QUALIFIER_RE = re.compile(
+    r"(?:(?<=[\s,;(\[\"'])|^)(?:" + _QUALIFIER_KEYS_ALT + r"):(?:[<>]=?)?(?:\"[^\"]*\"|[^\s,;()\[\]]+)[,;]?",
+    re.IGNORECASE,
+)
+
+# A qualifier fully wrapped in a single pair of parens/brackets/quotes. The
+# wrapper pair is consumed with the qualifier, so stripping leaves no residue.
+# An unbalanced quote (e.g. `label:"bug`) is not a wrapper shape and is left
+# to _QUALIFIER_RE, which strips the qualifier as before.
+_WRAPPED_QUALIFIER_RE = re.compile(
+    r"[\(\[\"'](?:" + _QUALIFIER_KEYS_ALT + r"):(?:[<>]=?)?(?:\"[^\"]*\"|[^\s,;()\[\]]+)[\)\]\"']",
+    re.IGNORECASE,
+)
+
+# Empty wrapper pairs left behind when a nested wrapper collapses (e.g. the
+# `()` from "((created:>2025-03-20))"). Removed to fixpoint; a pair enclosing
+# real text stays.
+_EMPTY_WRAPPER_RE = re.compile(r"\(\s*\)|\[\s*\]|\"\s*\"|'\s*'")
+
+
+def strip_search_qualifiers(text: str) -> str:
+    """Strip GitHub search qualifiers from a topic, leaving plain-language text.
+
+    Whitespace is collapsed. Returns an empty string when the topic was nothing
+    but qualifiers; callers must handle that rather than searching on an empty
+    term, which would match the entire site.
+    """
+    stripped = _WRAPPED_QUALIFIER_RE.sub(" ", text)
+    stripped = _QUALIFIER_RE.sub(" ", stripped)
+    while True:
+        cleaned = _EMPTY_WRAPPER_RE.sub("", stripped)
+        if cleaned == stripped:
+            break
+        stripped = cleaned
+    return " ".join(stripped.split())
+
+
+# Bound topic fragments in logs/error envelopes so fanout cannot blow them up (#954).
+_DIAGNOSTIC_TOPIC_LIMIT = 120
+
+
+def _truncate_diagnostic(text: str, limit: int = _DIAGNOSTIC_TOPIC_LIMIT) -> str:
+    """Cap a topic fragment used in logs or error envelopes."""
+    if len(text) <= limit:
+        return text
+    return f"{text[:limit]}..."
+
+
 def search_github(
     topic: str,
     from_date: str,
@@ -193,6 +266,26 @@ def search_github(
     """
     count = DEPTH_LIMITS.get(depth, DEPTH_LIMITS["default"])
     core = extract_core_subject(topic)
+    plain_core = strip_search_qualifiers(core)
+    if not plain_core:
+        # A qualifier-only (or empty) topic leaves nothing to search on.
+        # Skip the network rather than querying an empty term, which would
+        # match the whole site (#949). Return a clean empty envelope, not an
+        # error, so the pipeline records NO_RESULTS instead of ERROR (#953)
+        # and GitHub is not marked as a failed attempt. Mixed-topic strip
+        # logs below stay bounded by _truncate_diagnostic (#954).
+        _log("Topic contained only search qualifiers or was empty; nothing to search")
+        return {
+            "items": [],
+            "context": {"core": core, "from_date": from_date,
+                        "to_date": to_date, "count": count},
+        }
+    if plain_core != core:
+        _log(
+            "Stripped search qualifiers: "
+            f"'{_truncate_diagnostic(core)}' -> '{_truncate_diagnostic(plain_core)}'"
+        )
+    core = plain_core
     resolved_token = _resolve_token(token)
     authed = bool(resolved_token)
     if not authed:
@@ -203,21 +296,66 @@ def search_github(
     _log(f"Searching for '{core}' (raw: '{topic}', since {from_date}, count={count})")
 
     # Build search query with date filter
-    q = f"{core} created:>{from_date}"
-    params = {
-        "q": q,
-        "sort": "reactions",
-        "order": "desc",
-        "per_page": str(min(count, 100)),
-    }
-    url = f"{SEARCH_URL}?{urllib.parse.urlencode(params)}"
+    base_q = f"{core} created:>{from_date}"
+
+    def _search(qualifier: Optional[str]) -> Optional[Dict[str, Any]]:
+        q = f"{base_q} {qualifier}" if qualifier else base_q
+        params = {
+            "q": q,
+            "sort": "reactions",
+            "order": "desc",
+            "per_page": str(min(count, 100)),
+        }
+        url = f"{SEARCH_URL}?{urllib.parse.urlencode(params)}"
+        return _fetch_json(url, token=resolved_token, timeout=30,
+                           failure_out=fetch_failures)
 
     fetch_failures: List[str] = []
-    data = _fetch_json(url, token=resolved_token, timeout=30, failure_out=fetch_failures)
+    partition_failure: Optional[str] = None
+    if authed:
+        # GitHub rejects AUTHENTICATED /search/issues queries that carry
+        # neither `is:issue` nor `is:pull-request` (HTTP 422). Anonymous
+        # queries are still grandfathered, which is why this only bites once
+        # a token is present -- including via the `gh auth token` fallback.
+        #
+        # Appending a single qualifier would silently halve the corpus: for
+        # "rust async created:>2026-08-02" GitHub reports 1,072 issues and
+        # 7,044 pull requests against 8,115 combined, so `is:issue` alone
+        # drops ~87% of matches. Query both and merge instead, which keeps
+        # coverage AND the authenticated rate limit.
+        merged: List[Dict[str, Any]] = []
+        seen_ids = set()
+        failed_qualifiers: List[str] = []
+        for qualifier in ("is:issue", "is:pull-request"):
+            part = _search(qualifier)
+            if part is None:
+                failed_qualifiers.append(qualifier)
+                continue
+            for item in part.get("items", []):
+                item_id = item.get("id")
+                if item_id in seen_ids:
+                    continue
+                seen_ids.add(item_id)
+                merged.append(item)
+        # Both sub-queries are reaction-sorted; the merge is not, so re-sort
+        # before truncating or the second query's tail would outrank the
+        # first query's head.
+        merged.sort(key=lambda i: (i.get("reactions") or {}).get("total_count", 0),
+                    reverse=True)
+        data = {"items": merged[:count]} if merged else None
+        if failed_qualifiers:
+            partition_failure = (
+                f"GitHub partition(s) failed: {', '.join(failed_qualifiers)}"
+                + (f" ({fetch_failures[-1]})" if fetch_failures else "")
+            )
+    else:
+        data = _search(None)
     if not data:
         envelope = {"items": [], "context": {"core": core, "from_date": from_date,
                                              "to_date": to_date, "count": count}}
-        if authed and fetch_failures:
+        if authed and partition_failure:
+            envelope["error"] = partition_failure
+        elif authed and fetch_failures:
             # Authenticated transport failures must not be laundered into a
             # clean no-results outcome (issue #384).
             envelope["error"] = f"GitHub API request failed: {fetch_failures[-1]}"
@@ -234,7 +372,7 @@ def search_github(
     raw_items = data.get("items", [])
     _log(f"Found {len(raw_items)} issues/PRs")
 
-    return {
+    envelope: Dict[str, Any] = {
         "items": raw_items,
         "context": {
             "core": core,
@@ -243,6 +381,9 @@ def search_github(
             "count": count,
         },
     }
+    if partition_failure:
+        envelope["error"] = partition_failure
+    return envelope
 
 
 def parse_github_response(response: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -442,7 +583,7 @@ def _fetch_readme_snippet(repo: str, token: str, max_chars: int = 500) -> Option
 
     req = urllib.request.Request(url, headers=headers)
     try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        with http.open_request(req, 10) as resp:
             raw = resp.read().decode("utf-8", errors="replace")
     except (urllib.error.HTTPError, urllib.error.URLError, OSError, TimeoutError):
         return None

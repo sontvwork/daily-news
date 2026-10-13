@@ -1,0 +1,879 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "71e5a665ff01816b",
+  "generated_at": "2026-10-12T23:56:34.305171Z",
+  "from_date": "2026-10-11",
+  "to_date": "2026-10-12",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-12T23:56:34.282723Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-12T23:56:34.282728Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-12T23:56:34.238970Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 40,
+      "attempted": true,
+      "at": "2026-10-12T23:56:34.282619Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Linus Torvalds Used AI Code Decipherable",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 187
+        }
+      },
+      "nomination": {
+        "name": "Linus Torvalds Used AI Code Decipherable",
+        "seed_score": 1650.0,
+        "summary": "Linus Torvalds Used AI To Make Code Decipherable & Uncovered More Bugs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Linus Torvalds Used AI To Make Code Decipherable & Uncovered More Bugs",
+            "body": "Linus Torvalds Used AI To Make Code Decipherable & Uncovered More Bugs",
+            "url": "https://www.reddit.com/r/singularity/comments/1x3yeti/linus_torvalds_used_ai_to_make_code_decipherable/",
+            "container": "singularity",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 913,
+              "num_comments": 187
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing",
+            "snippet": "Linus Torvalds Used AI To Make Code Decipherable & Uncovered More Bugs",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Linus Torvalds Working",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 118
+        }
+      },
+      "nomination": {
+        "name": "Linus Torvalds Working",
+        "seed_score": 1170.0,
+        "summary": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code",
+            "body": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code",
+            "url": "https://www.reddit.com/r/singularity/comments/1x3vgi7/linus_torvalds_working_on_a_hefty_linux_kernel/",
+            "container": "singularity",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 662,
+              "num_comments": 118
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing",
+            "snippet": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 93,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4025
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Codex CLI installs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 222,
+          "points": 419
+        }
+      },
+      "nomination": {
+        "name": "Codex CLI installs",
+        "seed_score": 961.5,
+        "summary": "Codex CLI installs a persistent, self-updating background daemon by default",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50060694",
+            "source": "hackernews",
+            "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+            "body": "Codex CLI installs a persistent, self-updating background daemon by default",
+            "url": "https://github.com/openai/codex/issues/48195",
+            "author": "whimblepop",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 419,
+              "comments": 222
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Codex CLI installs a persistent, self-updating background da",
+            "snippet": "Codex CLI installs a persistent, self-updating background daemon by default",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50060694",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 253,
+          "points": 293
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 947.7395,
+        "summary": "AI coding agents generate more code, but not more software",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50059523",
+            "source": "hackernews",
+            "title": "AI coding agents generate more code, but not more software",
+            "body": "AI coding agents generate more code, but not more software",
+            "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+            "author": "gumby",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 293,
+              "comments": 253
+            },
+            "relevance_hint": 0.44,
+            "why_relevant": "HN story about AI coding agents generate more code, but not more software",
+            "snippet": "AI coding agents generate more code, but not more software",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50059523",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.44,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.8,
+            "local_rank_score": 0.605
+          },
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "We built an execution boundary for code generated by AI coding agents",
+            "body": "We built an execution boundary for code generated by AI coding agents\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x2vikz/we_built_an_execution_boundary_for_code_generated/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.43,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.42,
+            "freshness": 10,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30400000000000005
+          },
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "I built tincan so coding agents on different machines can see and message each other: Claude Code, Codex, Cursor, Gemini, Copilot, opencode, pi (free, open source)",
+            "body": "I built tincan so coding agents on different machines can see and message each other: Claude Code, Codex, Cursor, Gemini, Copilot, opencode, pi (free, open source)\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x4dc6f/i_built_tincan_so_coding_agents_on_different/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.4,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.487
+          },
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Would you use a tool that verifies your understanding of ai generated code ?!",
+            "body": "Would you use a tool that verifies your understanding of ai generated code ?!\nI\u2019ve been thinking about a problem that seems to be becoming more important as AI coding agents become more common.\n\nDevelopers can now use tools like Cursor, Claude Code, Copilot, and other AI agents to build large parts of a software project. But this creates a new question:\n\nHow do we know that a developer actually understands the code they are responsible for?\n\nI\u2019m not talking about detecting whether the code was written by AI. I don\u2019t think that is the most useful or reliable question.\n\nThe problem I\u2019m interested in is verifying whether a developer can:\n\n\\- Explain the architecture and data flow\n\n\\- Predict what the code will do in different scenarios\n\n\\- Identify bugs and security risks\n\n\\- Explain the trade-offs behind an implementation\n\n\\- Modify the code safely\n\n\\- Write or update tests for it\n\nThe idea is a SaaS platform where a developer connects a repository, and the platform creates an interactive assessment based on the actual project.\n\nFor example, instead of asking generic programming questions, it might show a real part of the project and ask:\n\n\\- What happens if this request is sent twice?\n\n\\- Where is authorization enforced?\n\n\\- What happens when this dependency fails?\n\n\\- What part of the system would you change to add this feature?\n\n\\- Can you fix this small bug or add a test?\n\nThe assessment would combine explanations, debugging questions, predictions, and practical coding tasks inside a sandbox. The result would not be a claim that someone understands every line of the code. It would be an evidence-based report showing which parts of the project they understand and where the gaps are.\n\nInitially, I\u2019m thinking about targeting individual developers who use AI heavily and want to understand their own projects better. Later, this could be useful for companies, onboarding, code reviews, or teams using AI coding agents.\n\nI\u2019m still trying to determine whether this solves a real problem or is just an interesting idea.\n\nI\u2019d really appreciate feedback on a few questions:\n\n1. Would you personally use a tool like this?\n\n2. Would you pay for it\n\n3. Would you prefer a full-project assessment or an assessment focused on a specific pull request?\n\n4. Do you think developers would see this as useful, or as another form of surveillance/interview testing?\n\n5. Have you experienced problems caused by using code that you did not fully understand?\n\nI\u2019m especially interested in hearing from developers who regularly use AI coding agents in real projects.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x4b8ci/would_you_use_a_tool_that_verifies_your/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been thinking about a problem that seems to be becoming more important as AI coding agents become more common.\n\nDevelopers can now use tools like Cursor, Claude Code, Copilot, and other AI agents to build large parts of a software project. But this creates a new question:\n\nHow do we know that a developer actually understands the code they are responsible for?\n\nI\u2019m not talking about detecting",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6235
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude Rewrite HP PRINTER 3rd",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 71
+        }
+      },
+      "nomination": {
+        "name": "Claude Rewrite HP PRINTER 3rd",
+        "seed_score": 619.5,
+        "summary": "What if we get Claude to Rewrite HP PRINTER firmware to let us print with 3rd party ink",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "What if we get Claude to Rewrite HP PRINTER firmware to let us print with 3rd party ink",
+            "body": "What if we get Claude to Rewrite HP PRINTER firmware to let us print with 3rd party ink",
+            "url": "https://www.reddit.com/r/singularity/comments/1x472ch/what_if_we_get_claude_to_rewrite_hp_printer/",
+            "container": "singularity",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 342,
+              "num_comments": 71
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "What if we get Claude to Rewrite HP PRINTER firmware to let us print with 3rd party ink",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35350000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "DeepSWE Meta Muse Opus 5.5 SWE-Marathon",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "DeepSWE Meta Muse Opus 5.5 SWE-Marathon",
+        "seed_score": 280.5,
+        "summary": "On DeepSWE Meta Muse outperforms all other models, even Opus 5.5. On SWE-Marathon, its reported score is 57.5%, versus 46.3% for Claude Opus 5.5 and 42.5% for GPT-6 Astra.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "On DeepSWE Meta Muse outperforms all other models, even Opus 5.5. On SWE-Marathon, its reported score is 57.5%, versus 46.3% for Claude Opus 5.5 and 42.5% for GPT-6 Astra.",
+            "body": "On DeepSWE Meta Muse outperforms all other models, even Opus 5.5. On SWE-Marathon, its reported score is 57.5%, versus 46.3% for Claude Opus 5.5 and 42.5% for GPT-6 Astra.",
+            "url": "https://www.reddit.com/r/singularity/comments/1x47mzw/on_deepswe_meta_muse_outperforms_all_other_models/",
+            "container": "singularity",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 150,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "On DeepSWE Meta Muse outperforms all other models, even Opus 5.5. On SWE-Marathon, its reported score is 57.5%, versus 46.3% for Claude Opus 5.5 and 42.5% for GPT-6 Astra.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3405
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Atticus Hold-to-talk macOS Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 6,
+          "points": 54
+        }
+      },
+      "nomination": {
+        "name": "Atticus Hold-to-talk macOS Claude",
+        "seed_score": 90.0,
+        "summary": "Show HN: Atticus \u2013 Hold-to-talk voice assistant for macOS that runs on Claude -p",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50049588",
+            "source": "hackernews",
+            "title": "Show HN: Atticus \u2013 Hold-to-talk voice assistant for macOS that runs on Claude -p",
+            "body": "Show HN: Atticus \u2013 Hold-to-talk voice assistant for macOS that runs on Claude -p",
+            "url": "https://github.com/SaarthurR/atticus-mac",
+            "author": "SaarthRanka",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 54,
+              "comments": 6
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Show HN: Atticus \u2013 Hold-to-talk voice assistant for macOS th",
+            "snippet": "Show HN: Atticus \u2013 Hold-to-talk voice assistant for macOS that runs on Claude -p",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50049588",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Coding agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Coding agents",
+        "seed_score": 16.9706,
+        "summary": "As agentic development becomes more common, familiar tools like Git face a new workload: several agents creating branches, making checkpoint commits and opening worktrees throughout the day.\n\nThe PR gets merged. But its local branch, review checkout and recovery records can stick around.\n\nWe ran into this while building [Assay](https://assay.guide). Leftover worktrees consume disk, and tools that",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "Coding agents create branches and worktrees. Who cleans them up?",
+            "body": "Coding agents create branches and worktrees. Who cleans them up?\nAs agentic development becomes more common, familiar tools like Git face a new workload: several agents creating branches, making checkpoint commits and opening worktrees throughout the day.\n\nThe PR gets merged. But its local branch, review checkout and recovery records can stick around.\n\nWe ran into this while building [Assay](https://assay.guide). Leftover worktrees consume disk, and tools that scan references or walk retained history have more to process. The slowdown depends on what those tools do; an old branch doesn\u2019t make every Git command slow.\n\nWhat helped was separating three jobs:\n\n* **Merge the change:** get the accepted work onto main.\n* **Retire the workspace:** check for active owners, unpublished work and evidence before removing worktrees and branches.\n* **Maintain the repository:** let Git pack objects and maintain indexes, while preserving a sensible recovery window.\n\nSquash merging keeps accepted history concise. It doesn\u2019t remove the original task commits while branches, worktree HEADs or reflogs still retain them.\n\nA useful starting inventory:\n\n    git worktree list --porcelain\n    git branch -vv\n    git count-objects -vH\n\nIn Assay, we\u2019re building ownership checks, workspace retirement and maintenance into the desk tools that manage agent work. These are useful practices even if your entire setup is shell scripts.\n\nFor people running multiple coding agents: what tells your tooling that a workspace is safe to retire? A merged PR, completed review, a retention period, or explicit owner sign-off?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x2wv6u/coding_agents_create_branches_and_worktrees_who/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "As agentic development becomes more common, familiar tools like Git face a new workload: several agents creating branches, making checkpoint commits and opening worktrees throughout the day.\n\nThe PR gets merged. But its local branch, review checkout and recovery records can stick around.\n\nWe ran into this while building [Assay](https://assay.guide). Leftover worktrees consume disk, and tools that",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.0845
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Finally",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Finally",
+        "seed_score": 14.8492,
+        "summary": "You know the one. It was a specific fix for a specific error, ChatGPT or Claude got it right after four tries, and now you need it again and can't remember which of 300 chats it was in or what you called it.\n\nI build AI Toolbox, a browser extension that keeps a searchable copy of your chats and searches the text of every message, not just the chat titles. That includes code blocks, so searching a",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Finally a way to get back the code that worked, from whatever chat it was in two months ago",
+            "body": "Finally a way to get back the code that worked, from whatever chat it was in two months ago\nYou know the one. It was a specific fix for a specific error, ChatGPT or Claude got it right after four tries, and now you need it again and can't remember which of 300 chats it was in or what you called it.\n\nI build AI Toolbox, a browser extension that keeps a searchable copy of your chats and searches the text of every message, not just the chat titles. That includes code blocks, so searching a word, an error string or a function name finds the exact reply it was in. Clicking a result jumps straight to that message in the chat with the term highlighted.\n\nIt works on ChatGPT, Claude, Gemini and Grok:\n\n* Full-text search inside each assistant is free.\n* Searching all four at once shows a free preview of the top 5 results. Full results are Premium.\n* Exporting a code-heavy chat to Markdown keeps the code blocks intact, so it drops into your repo or notes. One chat as plain text is free, Markdown and bulk are Premium.\n\nDesktop Chrome and other Chromium browsers only.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x36bfz/finally_a_way_to_get_back_the_code_that_worked/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "You know the one. It was a specific fix for a specific error, ChatGPT or Claude got it right after four tries, and now you need it again and can't remember which of 300 chats it was in or what you called it.\n\nI build AI Toolbox, a browser extension that keeps a searchable copy of your chats and searches the text of every message, not just the chat titles. That includes code blocks, so searching a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29900000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 7.5,
+        "summary": "Claude will build your whole brand from a description: colours, fonts, logo directions, then apply it to your website, social posts and invoices so everything matches. You just pick the one you like",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Claude will build your whole brand from a description: colours, fonts, logo directions, then apply it to your website, social posts and invoices so everything matches. You just pick the one you like",
+            "body": "Claude will build your whole brand from a description: colours, fonts, logo directions, then apply it to your website, social posts and invoices so everything matches. You just pick the one you like",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x3uqso/claude_will_build_your_whole_brand_from_a/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude will build your whole brand from a description: colours, fonts, logo directions, then apply it to your website, social posts and invoices so everything matches. You just pick the one you like",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2775
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Gpt plus worth it or not",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Gpt plus worth it or not",
+        "seed_score": 7.4246,
+        "summary": "Is the gpt plus model good for someone who wants to earn ai and coding with intermediate level python ?? Should i buy it ... ??",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Gpt plus worth it or not??",
+            "body": "Gpt plus worth it or not??\nIs the gpt plus model good for someone who wants to earn ai and coding with intermediate level python ?? Should i buy it ... ??",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x31b2k/gpt_plus_worth_it_or_not/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Is the gpt plus model good for someone who wants to earn ai and coding with intermediate level python ?? Should i buy it ... ??",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24850000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Codex gpt-6-sol high Comportamento Evasivo e",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Codex gpt-6-sol high Comportamento Evasivo e",
+        "seed_score": 5.3033,
+        "summary": "Codex (gpt-6-sol high) Comportamento Evasivo e Confiss\u00f5es Alucinat\u00f3rias: Um Estudo de Caso sobre Continuidade de Sess\u00e3o de Agentes e Proveni\u00eancia",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Codex (gpt-6-sol high) Comportamento Evasivo e Confiss\u00f5es Alucinat\u00f3rias: Um Estudo de Caso sobre Continuidade de Sess\u00e3o de Agentes e Proveni\u00eancia",
+            "body": "Codex (gpt-6-sol high) Comportamento Evasivo e Confiss\u00f5es Alucinat\u00f3rias: Um Estudo de Caso sobre Continuidade de Sess\u00e3o de Agentes e Proveni\u00eancia",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x2upiv/codex_gpt6sol_high_comportamento_evasivo_e/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Codex (gpt-6-sol high) Comportamento Evasivo e Confiss\u00f5es Alucinat\u00f3rias: Um Estudo de Caso sobre Continuidade de Sess\u00e3o de Agentes e Proveni\u00eancia",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.0835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Continuously reconnecting",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Continuously reconnecting",
+        "seed_score": 4.2426,
+        "summary": "I frequently run into connection issues when using Codex. Does anyone know how to fix this?I frequently run into connection issues when using Codex. Does anyone know how to fix this?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Continuously reconnecting?",
+            "body": "Continuously reconnecting?\nI frequently run into connection issues when using Codex. Does anyone know how to fix this?I frequently run into connection issues when using Codex. Does anyone know how to fix this?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x2xlr4/continuously_reconnecting/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I frequently run into connection issues when using Codex. Does anyone know how to fix this?I frequently run into connection issues when using Codex. Does anyone know how to fix this?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.0835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "help for my project",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "help for my project",
+        "seed_score": 4.2426,
+        "summary": "Can Someone please suggest a free terminal based ai for can coding \ud83d\ude4f\ud83c\udffb",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "I need help for my project!!",
+            "body": "I need help for my project!!\nCan Someone please suggest a free terminal based ai for can coding \ud83d\ude4f\ud83c\udffb",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x36nbg/i_need_help_for_my_project/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Can Someone please suggest a free terminal based ai for can coding \ud83d\ude4f\ud83c\udffb",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24550000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-39",
+      "heuristic_name": "5 1 000 000 \u0437\u0430 30",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "5 1 000 000 \u0437\u0430 30",
+        "seed_score": 1.5,
+        "summary": "\u0412\u0441\u0451 \u043d\u0430\u0447\u0430\u043b\u043e\u0441\u044c \u0441 \u043f\u0440\u043e\u0441\u0442\u043e\u0433\u043e \u044d\u043a\u0441\u043f\u0435\u0440\u0438\u043c\u0435\u043d\u0442\u0430. \u042f \u0437\u0430\u043a\u0438\u043d\u0443\u043b \u043e\u0434\u0438\u043d \u0438 \u0442\u043e\u0442 \u0436\u0435 \u0436\u0451\u0441\u0442\u043a\u0438\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u0432 ChatGPT-4o, Claude 3.5 Sonnet, DeepSeek, Grok \u0438 Google Gemini:\n\n*\"\u0417\u0430\u0431\u0443\u0434\u044c \u043f\u0440\u043e \u0430\u0431\u0441\u0442\u0440\u0430\u043a\u0442\u043d\u044b\u0435 \u0441\u043e\u0432\u0435\u0442\u044b. \u041f\u043e\u0441\u0442\u0440\u043e\u0439 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0442\u043e\u0447\u043d\u0443\u044e \u0438 \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u0438\u0447\u0435\u0441\u043a\u0438 \u0432\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u043c\u0443\u044e \u043c\u043e\u0434\u0435\u043b\u044c, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0441\u0433\u0435\u043d\u0435\u0440\u0438\u0440\u0443\u0435\u0442 $1 000 000 \u0447\u0438\u0441\u0442\u043e\u0433\u043e \u0434\u043e\u0445\u043e\u0434\u0430 \u0437\u0430 30 \u0434\u043d\u0435\u0439, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044f \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0438 Web3.\"*\n\n\u0420\u0435\u0430\u043a\u0446\u0438\u044f \u0418\u0418:\n\n**\u2022 ChatGPT-4o**: \u0412\u044b\u0434\u0430\u043b \u0431\u0430\u0437\u0437\u0432\u043e\u0440\u0434\u044b \u043f\u0440\u043e \u0434\u0440\u043e\u043f\u0448\u0438\u043f\u043f\u0438\u043d\u0433 \u0438",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "\u042f \u043f\u043e\u043f\u0440\u043e\u0441\u0438\u043b 5 \u0442\u043e\u043f\u043e\u0432\u044b\u0445 \u043d\u0435\u0439\u0440\u043e\u0441\u0435\u0442\u0435\u0439 \u0437\u0430\u0440\u0430\u0431\u043e\u0442\u0430\u0442\u044c $1 000 000 \u0437\u0430 30 \u0434\u043d\u0435\u0439. \u0412\u0441\u0435 \u043f\u043e\u0441\u0447\u0438\u0442\u0430\u043b\u0438 \u043c\u0435\u043d\u044f \u0441\u0443\u043c\u0430\u0441\u0448\u0435\u0434\u0448\u0438\u043c, \u0438 \u0442\u043e\u043b\u044c\u043a\u043e Google \u043e\u0442\u0432\u0435\u0442\u0438\u043b: \u00ab\u042d\u0442\u043e \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u00bb... [\u0427\u0430\u0441\u0442\u044c 1/7]",
+            "body": "\u042f \u043f\u043e\u043f\u0440\u043e\u0441\u0438\u043b 5 \u0442\u043e\u043f\u043e\u0432\u044b\u0445 \u043d\u0435\u0439\u0440\u043e\u0441\u0435\u0442\u0435\u0439 \u0437\u0430\u0440\u0430\u0431\u043e\u0442\u0430\u0442\u044c $1 000 000 \u0437\u0430 30 \u0434\u043d\u0435\u0439. \u0412\u0441\u0435 \u043f\u043e\u0441\u0447\u0438\u0442\u0430\u043b\u0438 \u043c\u0435\u043d\u044f \u0441\u0443\u043c\u0430\u0441\u0448\u0435\u0434\u0448\u0438\u043c, \u0438 \u0442\u043e\u043b\u044c\u043a\u043e Google \u043e\u0442\u0432\u0435\u0442\u0438\u043b: \u00ab\u042d\u0442\u043e \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u00bb... [\u0427\u0430\u0441\u0442\u044c 1/7]\n\u0412\u0441\u0451 \u043d\u0430\u0447\u0430\u043b\u043e\u0441\u044c \u0441 \u043f\u0440\u043e\u0441\u0442\u043e\u0433\u043e \u044d\u043a\u0441\u043f\u0435\u0440\u0438\u043c\u0435\u043d\u0442\u0430. \u042f \u0437\u0430\u043a\u0438\u043d\u0443\u043b \u043e\u0434\u0438\u043d \u0438 \u0442\u043e\u0442 \u0436\u0435 \u0436\u0451\u0441\u0442\u043a\u0438\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u0432 ChatGPT-4o, Claude 3.5 Sonnet, DeepSeek, Grok \u0438 Google Gemini:\n\n*\"\u0417\u0430\u0431\u0443\u0434\u044c \u043f\u0440\u043e \u0430\u0431\u0441\u0442\u0440\u0430\u043a\u0442\u043d\u044b\u0435 \u0441\u043e\u0432\u0435\u0442\u044b. \u041f\u043e\u0441\u0442\u0440\u043e\u0439 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0442\u043e\u0447\u043d\u0443\u044e \u0438 \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u0438\u0447\u0435\u0441\u043a\u0438 \u0432\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u043c\u0443\u044e \u043c\u043e\u0434\u0435\u043b\u044c, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0441\u0433\u0435\u043d\u0435\u0440\u0438\u0440\u0443\u0435\u0442 $1 000 000 \u0447\u0438\u0441\u0442\u043e\u0433\u043e \u0434\u043e\u0445\u043e\u0434\u0430 \u0437\u0430 30 \u0434\u043d\u0435\u0439, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044f \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0438 Web3.\"*\n\n\u0420\u0435\u0430\u043a\u0446\u0438\u044f \u0418\u0418:\n\n**\u2022 ChatGPT-4o**: \u0412\u044b\u0434\u0430\u043b \u0431\u0430\u0437\u0437\u0432\u043e\u0440\u0434\u044b \u043f\u0440\u043e \u0434\u0440\u043e\u043f\u0448\u0438\u043f\u043f\u0438\u043d\u0433 \u0438 \u0438\u043d\u0434\u0435\u043a\u0441\u043d\u044b\u0435 \u0444\u043e\u043d\u0434\u044b (\u0441\u043a\u0443\u0447\u043d\u043e \u0438 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u0437\u0430 30 \u0434\u043d\u0435\u0439).\n\n**\u2022 Claude 3.5**: \u0412\u043a\u043b\u044e\u0447\u0438\u043b \u043c\u043e\u0440\u0430\u043b\u0438\u0441\u0442\u0430, \u043d\u0430\u0447\u0430\u043b \u0447\u0438\u0442\u0430\u0442\u044c \u043d\u043e\u0442\u0430\u0446\u0438\u0438 \u043e \u0440\u0438\u0441\u043a\u0435 \u0438 \u043e\u0442\u043a\u0430\u0437\u0430\u043b\u0441\u044f \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0430\u0442\u044c \u0434\u0438\u0430\u043b\u043e\u0433.\n\n**\u2022 DeepSeek \u0438 Grok:** \u041f\u043e\u0441\u043e\u0432\u0435\u0442\u043e\u0432\u0430\u043b\u0438 \u0444\u044c\u044e\u0447\u0435\u0440\u0441\u044b \u0441 100x \u043f\u043b\u0435\u0447\u043e\u043c (\u043e\u0431\u044b\u0447\u043d\u043e\u0435 \u043a\u0430\u0437\u0438\u043d\u043e \u0441 \u043d\u0443\u043b\u0435\u0432\u044b\u043c \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u043c \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u0435\u043c).\n\n\u0418 \u0442\u043e\u043b\u044c\u043a\u043e **Google Gemini \u0432\u044b\u0434\u0430\u043b \u0441\u043e\u0432\u0441\u0435\u043c \u0434\u0440\u0443\u0433\u043e\u0439 \u043e\u0442\u0432\u0435\u0442:**\n\n*\"\u0421\u0433\u0435\u043d\u0435\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c $1 000 000 \u0437\u0430 30 \u0434\u043d\u0435\u0439 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e. \u0414\u043b\u044f \u044d\u0442\u043e\u0433\u043e \u043d\u0443\u0436\u043d\u043e \u043e\u0442\u043a\u0430\u0437\u0430\u0442\u044c\u0441\u044f \u043e\u0442 \u043a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0440\u044b\u043d\u043e\u0447\u043d\u044b\u0445 \u043c\u043e\u0434\u0435\u043b\u0435\u0439 \u0438 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043d\u0435\u044d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u0438 \u0432 \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u0430\u0445 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u043c\u0430\u0440\u043a\u0435\u0442-\u043c\u0435\u0439\u043a\u0435\u0440\u043e\u0432 (AMM DEX).\"*\n\nGoogle \u043d\u0435 \u043f\u0440\u043e\u0441\u0442\u043e \u0441\u043a\u0430\u0437\u0430\u043b \u00ab**\u0434\u0430**\u00bb. \u041e\u043d \u0441\u043f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043b \u0430\u0432\u0442\u043e\u043d\u043e\u043c\u043d\u0443\u044e \u0441\u0438\u0441\u0442\u0435\u043c\u0443 \u0437\u0430\u0446\u0438\u043a\u043b\u0438\u0432\u0430\u043d\u0438\u044f \u043b\u0438\u043a\u0432\u0438\u0434\u043d\u043e\u0441\u0442\u0438 (**Liquidity Loop**).\n\n\u0425\u043e\u0442\u0438\u0442\u0435 \u0443\u0437\u043d\u0430\u0442\u044c, \u043a\u0430\u043a\u0443\u044e \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0443\u044e \u043c\u043e\u0434\u0435\u043b\u044c \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0438\u043b **\u0418****\u0418 \u043e\u0442 Google**? \u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u0432 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u044f\u0445 \u0438\u043b\u0438 \u0432 \u041b\u0421, \u0432\u044b\u043a\u0430\u0442\u044b\u0432\u0430\u044e \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x4ejdb/\u044f_\u043f\u043e\u043f\u0440\u043e\u0441\u0438\u043b_5_\u0442\u043e\u043f\u043e\u0432\u044b\u0445_\u043d\u0435\u0439\u0440\u043e\u0441\u0435\u0442\u0435\u0439_\u0437\u0430\u0440\u0430\u0431\u043e\u0442\u0430\u0442\u044c_1_000/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\u0412\u0441\u0451 \u043d\u0430\u0447\u0430\u043b\u043e\u0441\u044c \u0441 \u043f\u0440\u043e\u0441\u0442\u043e\u0433\u043e \u044d\u043a\u0441\u043f\u0435\u0440\u0438\u043c\u0435\u043d\u0442\u0430. \u042f \u0437\u0430\u043a\u0438\u043d\u0443\u043b \u043e\u0434\u0438\u043d \u0438 \u0442\u043e\u0442 \u0436\u0435 \u0436\u0451\u0441\u0442\u043a\u0438\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u0432 ChatGPT-4o, Claude 3.5 Sonnet, DeepSeek, Grok \u0438 Google Gemini:\n\n*\"\u0417\u0430\u0431\u0443\u0434\u044c \u043f\u0440\u043e \u0430\u0431\u0441\u0442\u0440\u0430\u043a\u0442\u043d\u044b\u0435 \u0441\u043e\u0432\u0435\u0442\u044b. \u041f\u043e\u0441\u0442\u0440\u043e\u0439 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0442\u043e\u0447\u043d\u0443\u044e \u0438 \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u0438\u0447\u0435\u0441\u043a\u0438 \u0432\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u043c\u0443\u044e \u043c\u043e\u0434\u0435\u043b\u044c, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0441\u0433\u0435\u043d\u0435\u0440\u0438\u0440\u0443\u0435\u0442 $1 000 000 \u0447\u0438\u0441\u0442\u043e\u0433\u043e \u0434\u043e\u0445\u043e\u0434\u0430 \u0437\u0430 30 \u0434\u043d\u0435\u0439, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044f \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0438 Web3.\"*\n\n\u0420\u0435\u0430\u043a\u0446\u0438\u044f \u0418\u0418:\n\n**\u2022 ChatGPT-4o**: \u0412\u044b\u0434\u0430\u043b \u0431\u0430\u0437\u0437\u0432\u043e\u0440\u0434\u044b \u043f\u0440\u043e \u0434\u0440\u043e\u043f\u0448\u0438\u043f\u043f\u0438\u043d\u0433 \u0438",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2725
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "49821bbb28c3463a",
+  "generated_at": "2026-10-13T00:02:32.767229Z",
+  "from_date": "2026-10-12",
+  "to_date": "2026-10-13",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-13T00:02:32.765475Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-13T00:02:32.765481Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 7,
+      "attempted": true,
+      "at": "2026-10-13T00:02:32.765279Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-13T00:02:32.765365Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Research Firm Calls Anthropic IPO Unprecedented",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 208,
+          "points": 238
+        }
+      },
+      "nomination": {
+        "name": "Research Firm Calls Anthropic IPO Unprecedented",
+        "seed_score": 473.0544,
+        "summary": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50051583",
+            "source": "hackernews",
+            "title": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+            "body": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+            "url": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html",
+            "author": "m463",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 238,
+              "comments": 208
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Research Firm Calls Anthropic's IPO 'Unprecedented Test of I",
+            "snippet": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50051583",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 164,
+          "points": 176
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 360.6245,
+        "summary": "AI is a tool and using it well takes skill",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50063427",
+            "source": "hackernews",
+            "title": "AI is a tool and using it well takes skill",
+            "body": "AI is a tool and using it well takes skill",
+            "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+            "author": "layer8",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 176,
+              "comments": 164
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "HN story about AI is a tool and using it well takes skill",
+            "snippet": "AI is a tool and using it well takes skill",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50063427",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 10,
+            "engagement_score": 76,
+            "source_quality": 0.8,
+            "local_rank_score": 0.218
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "OpenAI Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 141,
+          "points": 153
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Anthropic",
+        "seed_score": 311.8341,
+        "summary": "Just say no to OpenAI and Anthropic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50060500",
+            "source": "hackernews",
+            "title": "Just say no to OpenAI and Anthropic",
+            "body": "Just say no to OpenAI and Anthropic",
+            "url": "https://micahflee.com/just-say-no-to-openai-and-anthropic/",
+            "author": "DeepLogin",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 153,
+              "comments": 141
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about Just say no to OpenAI and Anthropic",
+            "snippet": "Just say no to OpenAI and Anthropic",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50060500",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 10,
+            "engagement_score": 64,
+            "source_quality": 0.8,
+            "local_rank_score": 0.219
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Found 90k Remote Code Execution Vulnerability",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 92,
+          "points": 179
+        }
+      },
+      "nomination": {
+        "name": "Found 90k Remote Code Execution Vulnerability",
+        "seed_score": 287.4389,
+        "summary": "I Found a $90k Remote Code Execution Vulnerability in Google",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50052638",
+            "source": "hackernews",
+            "title": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "body": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "url": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+            "author": "soeckly",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 179,
+              "comments": 92
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about I Found a $90k Remote Code Execution Vulnerability in Google",
+            "snippet": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50052638",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 55,
+            "source_quality": 0.8,
+            "local_rank_score": 0.11900000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "AI Tool Rich Hickey",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 80,
+          "points": 171
+        }
+      },
+      "nomination": {
+        "name": "AI Tool Rich Hickey",
+        "seed_score": 266.2257,
+        "summary": "'AI' Is Not a Tool by Rich Hickey",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50060269",
+            "source": "hackernews",
+            "title": "'AI' Is Not a Tool by Rich Hickey",
+            "body": "'AI' Is Not a Tool by Rich Hickey",
+            "url": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e",
+            "author": "svieira",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 171,
+              "comments": 80
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about 'AI' Is Not a Tool by Rich Hickey",
+            "snippet": "'AI' Is Not a Tool by Rich Hickey",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50060269",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 10,
+            "engagement_score": 47,
+            "source_quality": 0.8,
+            "local_rank_score": 0.202
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Local Indexing",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 49,
+          "points": 118
+        }
+      },
+      "nomination": {
+        "name": "Local Indexing",
+        "seed_score": 177.1302,
+        "summary": "Local Indexing to reduce tool calling and token usage",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50049508",
+            "source": "hackernews",
+            "title": "Local Indexing to reduce tool calling and token usage",
+            "body": "Local Indexing to reduce tool calling and token usage",
+            "url": "https://tedhaley.ca/pensieve/",
+            "author": "TedHaley",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 118,
+              "comments": 49
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Local Indexing to reduce tool calling and token usage",
+            "snippet": "Local Indexing to reduce tool calling and token usage",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50049508",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 11,
+            "source_quality": 0.8,
+            "local_rank_score": 0.036000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Agent37 YC F26 Low-cost",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 58,
+          "points": 81
+        }
+      },
+      "nomination": {
+        "name": "Agent37 YC F26 Low-cost",
+        "seed_score": 147.4318,
+        "summary": "Launch HN: Agent37 (YC F26) \u2013 Low-cost agent sandboxes for running agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50059096",
+            "source": "hackernews",
+            "title": "Launch HN: Agent37 (YC F26) \u2013 Low-cost agent sandboxes for running agents",
+            "body": "Launch HN: Agent37 (YC F26) \u2013 Low-cost agent sandboxes for running agents",
+            "url": "https://news.ycombinator.com/item?id=50059096",
+            "author": "vishnukool",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 81,
+              "comments": 58
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: Agent37 (YC F26) \u2013 Low-cost agent sandboxes for r",
+            "snippet": "Launch HN: Agent37 (YC F26) \u2013 Low-cost agent sandboxes for running agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50059096",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0575
+          }
+        ]
+      }
+    }
+  ]
+}

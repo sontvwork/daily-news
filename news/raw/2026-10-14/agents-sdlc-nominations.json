@@ -1,0 +1,829 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "0e9e05e0d6567abb",
+  "generated_at": "2026-10-13T23:56:46.649349Z",
+  "from_date": "2026-10-12",
+  "to_date": "2026-10-13",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-13T23:56:46.614429Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-13T23:56:46.614441Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 56,
+      "attempted": true,
+      "at": "2026-10-13T23:56:46.612989Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-10-13T23:56:46.614276Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "China AI Tencent open-sourced Agent Memory",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 72
+        }
+      },
+      "nomination": {
+        "name": "China AI Tencent open-sourced Agent Memory",
+        "seed_score": 726.0,
+        "summary": "China just made AI memory startups sweat \ud83d\udc80 Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "China just made AI memory startups sweat \ud83d\udc80 Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+            "body": "China just made AI memory startups sweat \ud83d\udc80 Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x4pdtc/china_just_made_ai_memory_startups_sweat_tencent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 287,
+              "num_comments": 54
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing",
+            "snippet": "China just made AI memory startups sweat \ud83d\udc80 Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4165
+          },
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+            "body": "Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x50rgo/tencent_opensourced_agent_memory_and_it_runs_100/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 125,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 299,
+          "points": 359
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 697.9144,
+        "summary": "AI coding agents generate more code, but not more software",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50059523",
+            "source": "hackernews",
+            "title": "AI coding agents generate more code, but not more software",
+            "body": "AI coding agents generate more code, but not more software",
+            "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+            "author": "gumby",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 359,
+              "comments": 299
+            },
+            "relevance_hint": 0.37,
+            "why_relevant": "HN story about AI coding agents generate more code, but not more software",
+            "snippet": "AI coding agents generate more code, but not more software",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50059523",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.37,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.36550000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Qwen released QwenGyre RL AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "Qwen released QwenGyre RL AI agents",
+        "seed_score": 562.1499,
+        "summary": "Qwen released QwenGyre - RL framework for training AI agents on extremely long complex tasks",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Qwen released QwenGyre - RL framework for training AI agents on extremely long complex tasks",
+            "body": "Qwen released QwenGyre - RL framework for training AI agents on extremely long complex tasks",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x41myz/qwen_released_qwengyre_rl_framework_for_training/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 482,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen released QwenGyre - RL framework for training AI agents on extremely long complex tasks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2615
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Turn WiFi 7 Router",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 116,
+          "points": 410
+        }
+      },
+      "nomination": {
+        "name": "Turn WiFi 7 Router",
+        "seed_score": 557.9073,
+        "summary": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50055593",
+            "source": "hackernews",
+            "title": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+            "body": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+            "url": "https://github.com/h0m3us3r/w1700k-sdr",
+            "author": "djfergus",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 410,
+              "comments": 116
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Turn a WiFi 7 Router into a 320Msps Software Defined Radio R",
+            "snippet": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50055593",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 89,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14650000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Found 90k Remote Code Execution Vulnerability",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 115,
+          "points": 231
+        }
+      },
+      "nomination": {
+        "name": "Found 90k Remote Code Execution Vulnerability",
+        "seed_score": 366.9884,
+        "summary": "I Found a $90k Remote Code Execution Vulnerability in Google",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50052638",
+            "source": "hackernews",
+            "title": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "body": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "url": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+            "author": "soeckly",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 231,
+              "comments": 115
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about I Found a $90k Remote Code Execution Vulnerability in Google",
+            "snippet": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50052638",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.131
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "AI harness",
+      "heuristic_junk": true,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 54,
+          "points": 118
+        }
+      },
+      "nomination": {
+        "name": "AI harness",
+        "seed_score": 258.0,
+        "summary": "How to engineer an AI harness for game development",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50072120",
+            "source": "hackernews",
+            "title": "How to engineer an AI harness for game development",
+            "body": "How to engineer an AI harness for game development",
+            "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+            "author": "kkukshtel",
+            "container": "Hacker News",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 118,
+              "comments": 54
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "HN story about How to engineer an AI harness for game development",
+            "snippet": "How to engineer an AI harness for game development",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50072120",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.27,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4595
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Ai agent",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 57
+        }
+      },
+      "nomination": {
+        "name": "Ai agent",
+        "seed_score": 145.5,
+        "summary": "How to create an Ai agent?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "How to create an Ai agent?",
+            "body": "How to create an Ai agent?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x4n0r6/how_to_create_an_ai_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 40,
+              "num_comments": 57
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "How to create an Ai agent?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.44650000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 82.7315,
+        "summary": "Are we getting way too comfortable giving AI agents access to our personal accounts?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "Are we getting way too comfortable giving AI agents access to our personal accounts?",
+            "body": "Are we getting way too comfortable giving AI agents access to our personal accounts?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x43y9o/are_we_getting_way_too_comfortable_giving_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 36,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are we getting way too comfortable giving AI agents access to our personal accounts?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.23600000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "8M Spotify",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "8M Spotify",
+        "seed_score": 81.6708,
+        "summary": "A guy earned $8M from creating agents and making them listen to their songs on Spotify",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "A guy earned $8M from creating agents and making them listen to their songs on Spotify",
+            "body": "A guy earned $8M from creating agents and making them listen to their songs on Spotify",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x46izi/a_guy_earned_8m_from_creating_agents_and_making/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 41,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "A guy earned $8M from creating agents and making them listen to their songs on Spotify",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI actually",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "AI actually",
+        "seed_score": 52.5,
+        "summary": "What AI agent stack do you actually recommend for enterprise use?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "What AI agent stack do you actually recommend for enterprise use?",
+            "body": "What AI agent stack do you actually recommend for enterprise use?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x4z2hh/what_ai_agent_stack_do_you_actually_recommend_for/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing",
+            "snippet": "What AI agent stack do you actually recommend for enterprise use?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39299999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Parsimony AI models",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 2,
+          "points": 33
+        }
+      },
+      "nomination": {
+        "name": "Parsimony AI models",
+        "seed_score": 52.5,
+        "summary": "Show HN: Parsimony \u2013 an open-source benchmark for how much code AI models add",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50077619",
+            "source": "hackernews",
+            "title": "Show HN: Parsimony \u2013 an open-source benchmark for how much code AI models add",
+            "body": "Show HN: Parsimony \u2013 an open-source benchmark for how much code AI models add",
+            "url": "https://parsimony.lasu.dev/",
+            "author": "lasu",
+            "container": "Hacker News",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 33,
+              "comments": 2
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about Show HN: Parsimony \u2013 an open-source benchmark for how much c",
+            "snippet": "Show HN: Parsimony \u2013 an open-source benchmark for how much code AI models add",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50077619",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "AI AI",
+        "seed_score": 46.5,
+        "summary": "When AI and human reviewers disagree on an AI agent's call, who decides?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "When AI and human reviewers disagree on an AI agent's call, who decides?",
+            "body": "When AI and human reviewers disagree on an AI agent's call, who decides?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x4xb35/when_ai_and_human_reviewers_disagree_on_an_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing",
+            "snippet": "When AI and human reviewers disagree on an AI agent's call, who decides?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3765
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "let a coding agent port your",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "let a coding agent port your",
+        "seed_score": 45.0,
+        "summary": "How to let a coding agent port your code and know what it ported",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "How to let a coding agent port your code and know what it ported",
+            "body": "How to let a coding agent port your code and know what it ported",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x4ve3h/how_to_let_a_coding_agent_port_your_code_and_know/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "How to let a coding agent port your code and know what it ported",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.296
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "CRM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "CRM",
+        "seed_score": 44.5477,
+        "summary": "Our voice agent filled every CRM field correctly yet none of the payments went through",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "Our voice agent filled every CRM field correctly yet none of the payments went through",
+            "body": "Our voice agent filled every CRM field correctly yet none of the payments went through",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x42unw/our_voice_agent_filled_every_crm_field_correctly/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Our voice agent filled every CRM field correctly yet none of the payments went through",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08100000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "ICLR AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "ICLR AI",
+        "seed_score": 36.0,
+        "summary": "ICLR reviewers, are you using AI to review papers or still doing it the old-school way? [D]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "ICLR reviewers, are you using AI to review papers or still doing it the old-school way? [D]",
+            "body": "ICLR reviewers, are you using AI to review papers or still doing it the old-school way? [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1x50ptr/iclr_reviewers_are_you_using_ai_to_review_papers/",
+            "container": "MachineLearning",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "ICLR reviewers, are you using AI to review papers or still doing it the old-school way? [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.393
+          }
+        ]
+      }
+    }
+  ]
+}

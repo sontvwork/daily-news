@@ -1,0 +1,419 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c8204e43a2ee7a95",
+  "generated_at": "2026-10-13T23:57:06.400219Z",
+  "from_date": "2026-10-12",
+  "to_date": "2026-10-13",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-13T23:57:06.398554Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-13T23:57:06.398561Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-13T23:57:06.396201Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 7,
+      "attempted": true,
+      "at": "2026-10-13T23:57:06.398494Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Redesigning source control at Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 476,
+          "points": 480
+        }
+      },
+      "nomination": {
+        "name": "Redesigning source control at Anthropic",
+        "seed_score": 1434.0,
+        "summary": "Redesigning source control at Anthropic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50073633",
+            "source": "hackernews",
+            "title": "Redesigning source control at Anthropic",
+            "body": "Redesigning source control at Anthropic",
+            "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+            "author": "Philpax",
+            "container": "Hacker News",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 480,
+              "comments": 476
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Redesigning source control at Anthropic",
+            "snippet": "Redesigning source control at Anthropic",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50073633",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.36100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 509,
+          "points": 642
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 1220.8199,
+        "summary": "AI is a tool and using it well takes skill",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50063427",
+            "source": "hackernews",
+            "title": "AI is a tool and using it well takes skill",
+            "body": "AI is a tool and using it well takes skill",
+            "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+            "author": "layer8",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 642,
+              "comments": 509
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "HN story about AI is a tool and using it well takes skill",
+            "snippet": "AI is a tool and using it well takes skill",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50063427",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.242
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 305,
+          "points": 341
+        }
+      },
+      "nomination": {
+        "name": "OpenAI",
+        "seed_score": 969.0,
+        "summary": "OpenAI engineer arrested in bugging of executive conference room",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50078141",
+            "source": "hackernews",
+            "title": "OpenAI engineer arrested in bugging of executive conference room",
+            "body": "OpenAI engineer arrested in bugging of executive conference room",
+            "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+            "author": "forthwall",
+            "container": "Hacker News",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 341,
+              "comments": 305
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about OpenAI engineer arrested in bugging of executive conference",
+            "snippet": "OpenAI engineer arrested in bugging of executive conference room",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50078141",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.8,
+            "local_rank_score": 0.316
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "OpenAI Fourier transforms",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 155,
+          "points": 237
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Fourier transforms",
+        "seed_score": 588.0,
+        "summary": "A look at the math that OpenAI claims computes faster Fourier transforms",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50065932",
+            "source": "hackernews",
+            "title": "A look at the math that OpenAI claims computes faster Fourier transforms",
+            "body": "A look at the math that OpenAI claims computes faster Fourier transforms",
+            "url": "https://www.argmin.net/p/faster-fourier-transforms",
+            "author": "mochomocha",
+            "container": "Hacker News",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 237,
+              "comments": 155
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about A look at the math that OpenAI claims computes faster Fourie",
+            "snippet": "A look at the math that OpenAI claims computes faster Fourier transforms",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50065932",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 12,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2695
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "AI Tool Rich Hickey",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 175,
+          "points": 302
+        }
+      },
+      "nomination": {
+        "name": "AI Tool Rich Hickey",
+        "seed_score": 505.9349,
+        "summary": "'AI' Is Not a Tool by Rich Hickey",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50060269",
+            "source": "hackernews",
+            "title": "'AI' Is Not a Tool by Rich Hickey",
+            "body": "'AI' Is Not a Tool by Rich Hickey",
+            "url": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e",
+            "author": "svieira",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 302,
+              "comments": 175
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about 'AI' Is Not a Tool by Rich Hickey",
+            "snippet": "'AI' Is Not a Tool by Rich Hickey",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50060269",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 10,
+            "engagement_score": 27,
+            "source_quality": 0.8,
+            "local_rank_score": 0.182
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Research Firm Calls Anthropic IPO Unprecedented",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 217,
+          "points": 242
+        }
+      },
+      "nomination": {
+        "name": "Research Firm Calls Anthropic IPO Unprecedented",
+        "seed_score": 486.843,
+        "summary": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50051583",
+            "source": "hackernews",
+            "title": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+            "body": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+            "url": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html",
+            "author": "m463",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 242,
+              "comments": 217
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Research Firm Calls Anthropic's IPO 'Unprecedented Test of I",
+            "snippet": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50051583",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 25,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0825
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Found 90k Remote Code Execution Vulnerability",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 115,
+          "points": 231
+        }
+      },
+      "nomination": {
+        "name": "Found 90k Remote Code Execution Vulnerability",
+        "seed_score": 366.9884,
+        "summary": "I Found a $90k Remote Code Execution Vulnerability in Google",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50052638",
+            "source": "hackernews",
+            "title": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "body": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "url": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+            "author": "soeckly",
+            "container": "Hacker News",
+            "published_at": "2026-10-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 231,
+              "comments": 115
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about I Found a $90k Remote Code Execution Vulnerability in Google",
+            "snippet": "I Found a $90k Remote Code Execution Vulnerability in Google",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50052638",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.064
+          }
+        ]
+      }
+    }
+  ]
+}

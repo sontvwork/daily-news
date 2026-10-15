@@ -3,8 +3,8 @@
 #
 #   publish.sh <DATE> [--no-push]
 #
-# sync (fast-forward main lên origin/main) → validate → prune (xoá bản tin quá RETENTION_DAYS ngày) → build site → guard worktree
-# → commit "news: DATE" (gồm cả file vừa xoá) → guard outgoing → push main
+# sync (fast-forward main lên origin/main) → validate → prune (xoá bản tin quá RETENTION_DAYS ngày + follow-up due ≤ DATE)
+# → build site → guard worktree → commit "news: DATE" (gồm cả file vừa xoá) → guard outgoing → push main
 # → chờ Pages live → notify success.  Bất kỳ bước nào lỗi: notify failure <bước> rồi exit ≠ 0.
 # --no-push: dừng sau guard outgoing; mọi tin Google Chat (kể cả tin lỗi) ở chế độ DRY_RUN (dùng để test local).
 set -Eeuo pipefail
@@ -69,6 +69,9 @@ run bash scripts/guard.sh worktree "$DATE"
 
 step commit
 git add -A -- news/
+# followups/: chỉ có thể là file follow-up vừa prune (guard worktree đã chặn mọi thay đổi khác).
+# Pathspec không khớp file nào (chưa từng có follow-up) thì git add báo lỗi → chỉ add khi có.
+if [[ -n "$(git ls-files -- followups/)" ]]; then git add -A -- followups/; fi
 if git diff --cached --quiet; then
   echo "Không có thay đổi so với HEAD — bỏ qua commit" | tee -a "$LOG"
 else

@@ -2,7 +2,7 @@
 """Tiện ích cho pipeline Daily News (chỉ dùng stdlib).
 
   news.py validate    DATE   kiểm tra news/DATE.md đúng format bản tin
-  news.py prune       DATE   xoá .md/raw/briefs có ngày < DATE − (RETENTION_DAYS − 1)
+  news.py prune       DATE   xoá .md/raw/briefs có ngày < DATE − (RETENTION_DAYS − 1) + follow-up có due ≤ DATE
   news.py site        DATE   feed.xml bằng `library feed` (link đổi thành briefs/DATE.html) + trang card dashboard (theme/), kiểm tra link local
   news.py link        DATE   in đường dẫn tương đối của trang bài DATE (lấy từ feed.xml)
   news.py summary     DATE   in 1–3 dòng tóm tắt, y hệt card trang chủ (news/raw/DATE/summary.txt, fallback: tiêu đề tin)
@@ -28,6 +28,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from xml.etree import ElementTree as ET
 
+from followup import due_followups
 from site_render import parse_issue, read_summary, render_site, summary_lines, summary_path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -198,7 +199,10 @@ def check_summary(date: str) -> None:
 
 
 def cmd_prune(date: str) -> None:
-    """Xoá file có ngày < DATE − (RETENTION_DAYS − 1). Mốc chỉ phụ thuộc DATE nên chạy lại không xoá thêm."""
+    """Xoá file có ngày < DATE − (RETENTION_DAYS − 1) và follow-up có due ≤ DATE (đã xử lý trong bản tin DATE).
+
+    Mốc chỉ phụ thuộc DATE nên chạy lại không xoá thêm. guard.sh chỉ cho xoá đúng các file này.
+    """
     if not daily_path(date).is_file():
         fail(f"không thấy {daily_path(date).relative_to(ROOT)} — chỉ prune theo bản tin đã có")
     keep = retention_days()
@@ -222,9 +226,14 @@ def cmd_prune(date: str) -> None:
     for folder in sorted({(ROOT / path).parent for path in removed}):
         if folder.parent == NEWS / "raw" and not any(folder.iterdir()):
             folder.rmdir()
-    for path in sorted(removed):
+    consumed = []
+    for path, _ in due_followups(date):
+        path.unlink()
+        consumed.append(path.relative_to(ROOT).as_posix())
+    for path in sorted(removed) + consumed:
         print(f"  xoá {path}")
-    print(f"OK: giữ {keep} ngày (từ {cutoff.isoformat()}), xoá {len(removed)} file quá hạn")
+    print(f"OK: giữ {keep} ngày (từ {cutoff.isoformat()}), xoá {len(removed)} file quá hạn, "
+          f"{len(consumed)} follow-up đã xử lý")
 
 
 def normalize_mtimes() -> None:

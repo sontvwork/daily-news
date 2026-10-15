@@ -8,6 +8,9 @@
 #   research.sh research  <slug>          # leg 2: đọc .cache/work/<slug>/judgments.json, research sâu
 #   research.sh finalize  <slug> <DATE>   # leg 3: news/raw/<DATE>/<slug>.md + .json (+ <slug>-nominations.json)
 #   research.sh oneshot   <slug> <DATE>   # fallback khi một leg fail 2 lần: news/raw/<DATE>/<slug>.json
+#   research.sh topic  <fu-slug> <DATE>   # follow-up: topic mode với query/days trong followups/<due>-<slug>.json
+#                                         #   plan: .cache/work/<fu-slug>/plan.json (thiếu thì engine tự plan)
+#                                         #   → news/raw/<DATE>/<fu-slug>.json
 #   research.sh status    <slug> <DATE>   # outcome + tình trạng từng nguồn (từ JSON)
 set -euo pipefail
 
@@ -90,14 +93,28 @@ case "$cmd" in
     "$PY" "$ENGINE" --discover "$domain" --days "$LOOKBACK_DAYS" --emit=json \
       --output "news/raw/$2/$slug.json" --save-dir="$dir" >/dev/null
     ;;
+  topic)
+    slug="${1:?fu-slug}"; need_date "${2:-}"; dir=".cache/work/$slug"
+    file="$(python3 scripts/followup.py path "$slug" "$2")" || exit 2
+    query="$(jq -r .query "$file")"; days="$(jq -r .days "$file")"
+    mkdir -p "$dir" "news/raw/$2"
+    # Chạy dưới agent thì engine bắt buộc có --plan (LAW 7): sub-agent là planner. Không có plan thì
+    # --auto-resolve để engine tự plan (planner LLM nếu env có key, không thì heuristic).
+    if [[ -s "$dir/plan.json" ]]; then plan=(--plan "$dir/plan.json"); else plan=(--auto-resolve); fi
+    # stdout của engine là cả JSON (vài chục KB) → chỉ ghi file, không đổ vào context của agent.
+    "$PY" "$ENGINE" "$query" --days "$days" "${plan[@]}" --emit=json \
+      --output "news/raw/$2/$slug.json" --save-dir="$dir" >"$dir/topic.out"
+    echo "RAW: news/raw/$2/$slug.json"
+    ;;
   status)
     slug="${1:?slug}"; need_date "${2:-}"; json="news/raw/$2/$slug.json"
     [[ -f "$json" ]] || { echo "outcome=missing"; exit 0; }
-    jq -r '"outcome=\(.outcome) topics=\(.results | length)",
+    # Topic mode (fu-*) không có .outcome: suy ra từ số kết quả.
+    jq -r '"outcome=\(.outcome // (if (.results | length) > 0 then "ok" else "nothing-solid" end)) topics=\(.results | length)",
            (.source_status // {} | to_entries[]
             | "source \(.key)=\(if (.value | type) == "object" then .value.state else .value end)")' "$json"
     ;;
   *)
-    sed -n '2,13p' "$0" >&2; exit 2
+    sed -n '2,16p' "$0" >&2; exit 2
     ;;
 esac

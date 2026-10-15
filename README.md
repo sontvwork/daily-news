@@ -6,12 +6,16 @@ Bản tin tiếng Việt hằng ngày về **AI ứng dụng trong phát triển
 
 ```
 Claude Code Routine (07:00 VN = cron 0 0 * * * UTC, cloud)
-  → scripts/research.sh: last30days --discover (3 leg, --days 1) cho từng domain → news/raw/
-  → Claude viết news/YYYY-MM-DD.md (tiếng Việt) + 1–3 dòng tóm tắt
-  → scripts/publish.sh: xoá bản tin quá 30 ngày → feed.xml (library feed) + trang card (theme/) → guard → commit "news: DATE" → push main
+  → sub-agent news-researcher (tối đa 2 cái song song), mỗi cái lo 1 slug → news/raw/:
+      domain: scripts/research.sh = last30days --discover (3 leg, --days 1)
+      follow-up tới hạn (followups/): last30days topic mode (--days N)
+  → Claude viết news/YYYY-MM-DD.md (tiếng Việt; follow-up là các tin đầu) + 1–3 dòng tóm tắt
+  → scripts/publish.sh: xoá bản tin quá 30 ngày + follow-up đã xử lý → feed.xml (library feed) + trang card (theme/) → guard → commit "news: DATE" → push main
       → GitHub Actions deploy news/ lên Pages → kiểm tra link live → Google Chat
   (lỗi ở bất kỳ bước nào → Google Chat báo bước bị fail)
 GitHub Actions watchdog 08:30 VN: chưa có bản tin hôm nay → Google Chat
+Reply vào session routine "ngày mai báo cáo về X" → skill news-followup → scripts/followup.sh
+  → followups/<DUE>-<slug>.json, commit "followup: add DUE slug", push main
 ```
 
 ## Cấu trúc
@@ -21,10 +25,14 @@ GitHub Actions watchdog 08:30 VN: chưa có bản tin hôm nay → Google Chat
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `.claude/skills/last30days/`        | Skill vendored, pin commit trong`.vendored-from`                                                                    |
 | `config/news.env`                   | Cấu hình không bí mật: domain, lookback, số ngày lưu trữ (`RETENTION_DAYS`), URL Pages                       |
-| `scripts/research.sh`               | Wrapper engine:`preflight`, `nominate`, `research`, `finalize`, `oneshot`, `status`                                 |
+| `scripts/research.sh`               | Wrapper engine:`preflight`, `nominate`, `research`, `finalize`, `oneshot`, `topic` (follow-up), `status`             |
+| `.claude/agents/news-researcher.md` | Sub-agent research 1 slug (domain hoặc follow-up), trả báo cáo tin ứng viên cho agent chính                       |
+| `.claude/skills/news-followup/`     | Skill ghi chỉ thị follow-up khi người dùng reply vào session routine                                               |
+| `scripts/followup.py` + `followup.sh` | Follow-up: luật (ngày, slug, tối đa 3/ngày) + `add`/`cancel`/`list`/`due`; `followup.sh` commit + push           |
+| `followups/`                        | Chỉ thị đang chờ: `<DUE>-<slug>.json` (ngoài `news/` nên không deploy Pages)                                        |
 | `scripts/news.py`                   | `validate`, `prune` (xoá bản tin quá hạn), `site` (feed.xml + render trang + kiểm tra link), `link`, `summary`, `verify-live` |
 | `scripts/site_render.py` + `theme/` | Renderer riêng: template`index.html`, `brief.html`, `404.html`, `style.css` (card dashboard, light/dark)           |
-| `scripts/guard.sh`                  | Hàng rào an toàn: chỉ cho phép thay đổi trong`news/`, không xoá (trừ bản tin quá hạn), không lộ secret     |
+| `scripts/guard.sh`                  | Hàng rào an toàn: chỉ cho phép thay đổi trong`news/` (+ commit `followup:` đúng 1 file), không xoá (trừ bản tin quá hạn, follow-up đã xử lý), không lộ secret |
 | `scripts/publish.sh`                | Cách duy nhất để commit/push; mọi lỗi đều gửi Google Chat                                                  |
 | `scripts/dev.sh`                    | Chạy lại ở local để test (`build`, `notify`): không commit/push, guard chỉ cảnh báo, Google Chat mặc định dry-run |
 | `scripts/notify.sh`                 | Google Chat webhook (`jq` + `curl`), hỗ trợ `DRY_RUN=1`                                                           |
@@ -99,7 +107,7 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
   # Viết lại bài: yêu cầu Claude Code "Chạy lại bước viết bài cho $DATE" (dữ liệu: news/raw/$DATE/), rồi:
   bash scripts/dev.sh build  "$DATE"          # validate → prune → build → guard (chỉ cảnh báo) → notify dry-run
   bash scripts/dev.sh notify "$DATE" --send   # chỉ gửi lại tin Google Chat thật, tiền tố "[TEST] "
-  git checkout -- news/ && git clean -fd news/  # bỏ kết quả test
+  git checkout -- news/ followups/ && git clean -fd news/ followups/  # bỏ kết quả test
   ```
 
   Config local của last30days (`~/.config/last30days/.env`) có thể bật nhiều nguồn hơn trên cloud.
@@ -111,7 +119,10 @@ Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy
 - **Cập nhật skill**: `scripts/vendor_skill.sh [ref]`, review diff rồi commit tay.
 - **Chạy lại trong ngày**: `news/YYYY-MM-DD.md` bị ghi đè, không sinh file trùng. Tên trang bài ổn định nên `library feed` không phải xoá trang nào.
 - **Lưu trữ 30 ngày**: mỗi lần publish, `news.py prune` xoá `.md`, `raw/` và trang bài của các ngày cũ hơn `RETENTION_DAYS` (tính lùi từ DATE của bản tin), gộp vào commit `news: DATE`. Chỉ xoá khỏi `main` và site, history git vẫn giữ. Link cũ trong Google Chat mở ra trang `404.html` "bản tin đã quá hạn lưu trữ".
-- **Thứ bị chặn bởi guard**: file ngoài `news/`, xoá hoặc đổi tên file (trừ file có ngày của bản tin đã quá hạn), merge commit, commit message khác `news: YYYY-MM-DD`, secret nằm trong nội dung.
+- **Theo dõi riêng một topic (follow-up)**: sau khi routine chạy xong, reply vào session đó, ví dụ *"ngày mai báo cáo về phản ứng của cộng đồng về Gemini 4 Argon"*. Skill `news-followup` sẽ ghi `followups/<DUE>-<slug>.json` rồi push (commit `followup: add DUE slug`). Tới ngày `DUE`, routine research topic bằng last30days topic mode và đặt thành tin đầu tiên (nhiều follow-up thì là tin 1…N). Không có dữ liệu thì vẫn có 1 tin ngắn "chưa thấy phản ứng đáng kể". Publish xong thì follow-up bị xoá trong commit `news: DATE`.
+  - Luật: `DUE` từ ngày mai tới +14 ngày, tối đa 3 follow-up/ngày, slug không trùng. Follow-up trễ (ngày `DUE` routine lỗi) được làm bù ở lần chạy sau.
+  - Huỷ / xem: reply *"huỷ theo dõi X"*, *"đang theo dõi gì"*; hoặc ở local `bash scripts/followup.sh cancel <slug>` / `list`.
+- **Thứ bị chặn bởi guard**: file ngoài `news/` (trừ commit `followup:` chạm đúng file của nó), xoá hoặc đổi tên file (trừ file có ngày của bản tin đã quá hạn và follow-up có due ≤ DATE), merge commit, commit message khác `news: YYYY-MM-DD` / `followup: add|cancel YYYY-MM-DD slug`, secret nằm trong nội dung.
 
 ## Rủi ro đã biết
 

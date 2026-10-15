@@ -2,12 +2,17 @@
 # Hàng rào an toàn trước commit/push của routine.
 #
 #   guard.sh worktree [DATE]  # trước commit: mọi thay đổi (kể cả untracked) phải nằm trong news/
-#   guard.sh outgoing         # trước push: từng commit origin/main..HEAD chỉ chạm news/, message "news: YYYY-MM-DD"
+#   guard.sh outgoing         # trước push: từng commit origin/main..HEAD phải là một trong hai loại:
+#                             #   "news: YYYY-MM-DD"                   — chỉ chạm news/ (+ dọn follow-up)
+#                             #   "followup: add|cancel YYYY-MM-DD SLUG" — chỉ chạm followups/YYYY-MM-DD-SLUG.json
+#                             #     (add: thêm/sửa, cancel: xoá) — do followup.sh tạo
 #
 # Chặn: file ngoài news/, xoá/đổi tên file, merge commit, secret lọt vào nội dung.
-# Ngoại lệ duy nhất: xoá file có ngày của bản tin (news/DATE.md, news/raw/DATE/*, news/briefs/DATE.html
-# và tên cũ news/raw/DATE-*, news/briefs/*-DATE.html)
-# khi ngày đó < DATE − (RETENTION_DAYS − 1). DATE = tham số (worktree) hoặc message của từng commit (outgoing).
+# Ngoại lệ của bản tin DATE (DATE = tham số của worktree, hoặc message của từng commit news: khi outgoing):
+#  - xoá file có ngày của bản tin (news/DATE.md, news/raw/DATE/*, news/briefs/DATE.html
+#    và tên cũ news/raw/DATE-*, news/briefs/*-DATE.html) khi ngày đó < DATE − (RETENTION_DAYS − 1);
+#  - xoá followups/<due>-<slug>.json khi due ≤ DATE (follow-up đã được xử lý trong bản tin DATE).
+# Cả hai chỉ áp dụng khi DATE hợp lệ, không ở tương lai và đã có news/DATE.md.
 # Vi phạm → in danh sách, exit 3.
 set -euo pipefail
 
@@ -26,8 +31,11 @@ DATED_RES=('^news/([0-9]{4}-[0-9]{2}-[0-9]{2})\.md$'
            '^news/raw/([0-9]{4}-[0-9]{2}-[0-9]{2})-[a-z0-9-]+\.(md|json|txt)$'  # tên cũ (chưa chia thư mục)
            '^news/briefs/([0-9]{4}-[0-9]{2}-[0-9]{2})\.html$'
            '^news/briefs/[a-z0-9-]+-[0-9a-f]{8}-([0-9]{4}-[0-9]{2}-[0-9]{2})\.html$')  # tên cũ, để dọn file sót
+# File follow-up (khớp FOLLOWUP_FILE trong followup.py). Nhóm 1 = due, nhóm 2 = slug.
+FOLLOWUP_RE='^followups/([0-9]{4}-[0-9]{2}-[0-9]{2})-([a-z0-9]+(-[a-z0-9]+)*)\.json$'
 violations=()
 pruned=0
+consumed=0
 
 # In mốc xoá cho bản tin DATE: file có ngày < mốc mới được xoá. In rỗng (= cấm xoá) nếu RETENTION_DAYS
 # sai, DATE sai format / ở tương lai, hoặc không có news/DATE.md (trên đĩa, hoặc trong <commit> nếu có).
@@ -53,7 +61,15 @@ is_expired() {  # <path> <mốc>: 0 nếu path là file có ngày của bản ti
   return 1
 }
 
-check_path() {  # <status> <path> <mốc xoá, rỗng = cấm xoá>
+check_path() {  # <status> <path> <mốc xoá, rỗng = cấm xoá> [DATE bản tin, rỗng = cấm dọn follow-up]
+  if [[ "$2" =~ $FOLLOWUP_RE ]]; then
+    if [[ "$1" == *D* && -n "${4:-}" && ! "${BASH_REMATCH[1]}" > "$4" ]]; then
+      consumed=$((consumed + 1))
+    else
+      violations+=("follow-up chỉ được xoá khi đã tới hạn (due ≤ ${4:-?}): $2")
+    fi
+    return 0
+  fi
   case "$1" in
     *D*) if is_expired "$2" "$3"; then pruned=$((pruned + 1)); else violations+=("xoá file: $2"); fi ;;
   esac
@@ -77,6 +93,7 @@ cutoffs=""
 case "$mode" in
   worktree)
     cutoff="$(cutoff_for "${2:-}")"; cutoffs="$cutoff"
+    day="${cutoff:+${2:-}}"  # rỗng khi cutoff_for từ chối DATE → cấm dọn follow-up
     changed=()
     while IFS= read -r -d '' entry; do
       xy="${entry:0:2}"; path="${entry:3}"
@@ -85,11 +102,11 @@ case "$mode" in
         violations+=("đổi tên/copy: $orig -> $path")
         continue
       fi
-      check_path "$xy" "$path" "$cutoff"
+      check_path "$xy" "$path" "$cutoff" "$day"
       [[ -f "$path" ]] && changed+=("$path")
     done < <(git status --porcelain=v1 -z --untracked-files=all --no-renames)
     if [[ ${#changed[@]} -gt 0 ]]; then scan_secrets < <(cat -- "${changed[@]}"); fi
-    count=$(( ${#changed[@]} + pruned ))
+    count=$(( ${#changed[@]} + pruned + consumed ))
     ;;
   outgoing)
     # Refspec tường minh: luôn cập nhật origin/main (ref cũ sẽ kéo cả commit đã push vào range).
@@ -100,15 +117,28 @@ case "$mode" in
     # Từng commit một (không dùng diff gộp): commit sau xoá file mà commit trước thêm vẫn bị bắt.
     while IFS= read -r commit; do
       subject="$(git log -1 --format=%s "$commit")"
-      cutoff=""
+      cutoff=""; day=""; fu_action=""; fu_path=""
       if [[ "$subject" =~ ^news:\ ([0-9]{4}-[0-9]{2}-[0-9]{2})$ ]]; then
-        cutoff="$(cutoff_for "${BASH_REMATCH[1]}" "$commit")"
+        day="${BASH_REMATCH[1]}"
+        cutoff="$(cutoff_for "$day" "$commit")"
+        [[ -n "$cutoff" ]] || day=""
+      elif [[ "$subject" =~ ^followup:\ (add|cancel)\ ([0-9]{4}-[0-9]{2}-[0-9]{2})\ ([a-z0-9]+(-[a-z0-9]+)*)$ ]]; then
+        fu_action="${BASH_REMATCH[1]}"; fu_path="followups/${BASH_REMATCH[2]}-${BASH_REMATCH[3]}.json"
       else
         violations+=("commit message sai format: '$subject'")
       fi
       [[ -n "$cutoff" ]] && cutoffs="$cutoff"
       while IFS= read -r -d '' status && IFS= read -r -d '' path; do
-        check_path "$status" "$path" "$cutoff"; count=$((count + 1))
+        count=$((count + 1))
+        if [[ -n "$fu_action" ]]; then
+          # Commit follow-up: đúng 1 file của chính nó; add = thêm/sửa, cancel = xoá.
+          case "$fu_action:$status" in
+            add:A|add:M|cancel:D) [[ "$path" == "$fu_path" ]] || violations+=("commit '$subject' chạm file khác: $path") ;;
+            *) violations+=("commit '$subject' không được $status: $path") ;;
+          esac
+        else
+          check_path "$status" "$path" "$cutoff" "$day"
+        fi
       done < <(git diff-tree -r -z --no-commit-id --no-renames --name-status "$commit")
     done < <(git rev-list "$range")
     scan_secrets < <(git diff origin/main HEAD)
@@ -125,4 +155,5 @@ if [[ ${#violations[@]} -gt 0 ]]; then
 fi
 note=""
 [[ $pruned -gt 0 ]] && note=" · xoá $pruned file quá hạn (ngày < $cutoffs)"
-echo "GUARD OK ($mode): $count file, tất cả trong news/$note"
+[[ $consumed -gt 0 ]] && note="$note · dọn $consumed follow-up đã xử lý"
+echo "GUARD OK ($mode): $count file, tất cả trong news/ hoặc followups/ hợp lệ$note"

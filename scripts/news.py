@@ -161,7 +161,14 @@ def item_sources(text: str) -> list[tuple[str, str, str]]:
 
 
 def check_repeats(date: str, text: str) -> None:
-    """Cảnh báo (không fail) tin dùng lại link 🔗 của bản tin cũ — dấu hiệu đăng trùng."""
+    """Cảnh báo (không fail) tin dùng lại link 🔗 của bản tin cũ, hoặc 2 tin cùng bản tin chung link — dấu hiệu đăng trùng."""
+    first: dict[str, str] = {}
+    for number, _, url in item_sources(text):
+        key = url.rstrip("/")
+        if key in first and first[key] != number:
+            print(f"news.py: cảnh báo — tin {first[key]} và tin {number} cùng nguồn {url}. Gộp nếu cùng một chuyện.",
+                  file=sys.stderr)
+        first.setdefault(key, number)
     seen: dict[str, tuple[str, str, str]] = {}
     for path in previous_issues(date):
         for number, title, url in item_sources(path.read_text(encoding="utf-8")):

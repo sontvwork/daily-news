@@ -60,7 +60,7 @@ KHÔNG bịa tên, số liệu, tính năng hay link. Chủ đề nào chỉ có
 **Follow-up** (nếu Bước 0.5 có):
 - N follow-up là tin `### 1.` … `### N.`, đúng thứ tự `[tin 1]`, `[tin 2]`… của Bước 0.5. Tin thường đánh số tiếp từ N+1. Giới hạn 8 tin chỉ tính tin thường.
 - Mỗi follow-up đúng 1 tin, trả lời đúng `title`/`angle` của chỉ thị, dữ kiện lấy từ `news/raw/<DATE>/fu-<…>.json` (qua báo cáo sub-agent). Hai follow-up cùng một sự kiện thì gộp thành 1 tin. Tin thường trùng chủ đề với một follow-up thì gộp dữ kiện vào tin follow-up, bỏ tin thường.
-- Luật **Tránh trùng** (bỏ tin đã đăng) và luật "tin cũ hơn ~24 giờ" KHÔNG áp dụng cho tin follow-up: follow-up vốn là phần cập nhật, cửa sổ thời gian là `days` của nó. Vẫn không bịa.
+- Tin follow-up VẪN theo luật **Tránh trùng** về cách viết, nhưng được miễn 2 luật: "bỏ hẳn tin trùng không có gì mới" (không có gì mới thì viết tin ngắn như mục dưới, KHÔNG bỏ) và "tin cũ hơn ~24 giờ" (cửa sổ thời gian là `days` của follow-up).
 - Follow-up không có dữ liệu (sub-agent `nothing-solid` hoặc lỗi): vẫn viết 1 tin ngắn, tiêu đề nêu topic, 1 bullet `🔎 Chưa thấy phản ứng/thông tin đáng kể về <topic> trong <days> ngày qua`, thêm bullet 🔗 nếu có URL gốc của sự kiện.
 - Ngày không có tin thường nhưng có follow-up: bản tin chỉ gồm các tin follow-up, KHÔNG ghi câu 😴.
 
@@ -75,7 +75,7 @@ Format bắt buộc (script `news.py validate` sẽ kiểm tra):
   # Daily News 08/10/2026
 
   ### 1. Anthropic ra mắt Claude Haiku 5.5: model nhỏ rẻ nhất, nhanh nhất của hãng
-  - 🚀 Haiku 5.5 chỉ $0.10 / $0.50 mỗi triệu token (rẻ hơn Haiku 4.5 khoảng 75%), Terminal-Bench 4.0 tăng từ 0% lên 39,2%
+  - 🚀 Haiku 5.5 chỉ $0.10 / $0.50 mỗi triệu token (rẻ hơn Haiku 4.5 khoảng 75%), Benchmark vượt trội
   - ⚡ Phù hợp cho các tác vụ agent cần độ trễ thấp và chi phí thấp (sub-agent, tự động hoá hàng loạt)
   - 🔗 [Nguồn](https://www.anthropic.com/claude-haiku-5-5)
   ```
@@ -97,7 +97,7 @@ Sau đó ghi `news/raw/<DATE>/summary.txt` (ghi đè nếu đã có). Đây là 
   🖥️ OpenAI tung GPT-6 cùng Intelligent UI cho mọi người dùng
   ```
 
-Chạy `python3 scripts/news.py validate <DATE>`. Nếu có dòng `cảnh báo — tin N ... trùng nguồn với bản tin ...`, xem lại tin đó theo luật **Tránh trùng** ở trên: viết lại thành tin cập nhật hoặc bỏ (nếu bỏ thì đánh số lại các tin). Nếu fail, sửa file rồi chạy lại (tối đa 3 lần). Sau 3 lần vẫn fail thì báo lỗi bước `write` rồi dừng.
+Chạy `python3 scripts/news.py validate <DATE>`. Nếu có dòng `cảnh báo — tin N ... trùng nguồn với bản tin ...`, xem lại tin đó theo luật **Tránh trùng** ở trên: viết lại thành tin cập nhật hoặc bỏ (nếu bỏ thì đánh số lại các tin). Riêng tin follow-up thì KHÔNG bỏ: kiểm tra bullet không nhắc lại dữ kiện cũ, đổi 🔗 sang nguồn của phần phản ứng/cập nhật nếu có, không có thì giữ nguyên. Nếu có dòng `cảnh báo — tin N và tin M cùng nguồn`, hai tin đó đang nói cùng một chuyện: gộp lại (tin follow-up giữ, tin thường bỏ) rồi đánh số lại. Nếu fail, sửa file rồi chạy lại (tối đa 3 lần). Sau 3 lần vẫn fail thì báo lỗi bước `write` rồi dừng.
 
 ## Bước 3 — Publish
 Chạy `bash scripts/publish.sh <DATE>`

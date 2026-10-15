@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "7fd9dba6a353744e",
+  "generated_at": "2026-10-14T23:57:17.210844Z",
+  "from_date": "2026-10-13",
+  "to_date": "2026-10-14",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-14T23:57:17.208220Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-14T23:57:17.208228Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-14T23:57:17.208008Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-14T23:57:17.208142Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Redesigning source control at Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 962,
+          "points": 866
+        }
+      },
+      "nomination": {
+        "name": "Redesigning source control at Anthropic",
+        "seed_score": 1938.8868,
+        "summary": "Redesigning source control at Anthropic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50073633",
+            "source": "hackernews",
+            "title": "Redesigning source control at Anthropic",
+            "body": "Redesigning source control at Anthropic",
+            "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+            "author": "Philpax",
+            "container": "Hacker News",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 866,
+              "comments": 962
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Redesigning source control at Anthropic",
+            "snippet": "Redesigning source control at Anthropic",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50073633",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 528,
+          "points": 641
+        }
+      },
+      "nomination": {
+        "name": "OpenAI",
+        "seed_score": 1239.9117,
+        "summary": "OpenAI engineer arrested in bugging of executive conference room",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50078141",
+            "source": "hackernews",
+            "title": "OpenAI engineer arrested in bugging of executive conference room",
+            "body": "OpenAI engineer arrested in bugging of executive conference room",
+            "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+            "author": "forthwall",
+            "container": "Hacker News",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 641,
+              "comments": 528
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about OpenAI engineer arrested in bugging of executive conference",
+            "snippet": "OpenAI engineer arrested in bugging of executive conference room",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50078141",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 76,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "AOSP Source Releases",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 234,
+          "points": 480
+        }
+      },
+      "nomination": {
+        "name": "AOSP Source Releases",
+        "seed_score": 1071.0,
+        "summary": "AOSP Source Releases Are So Late Developers Disassemble Libraries to Report Bugs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50083130",
+            "source": "hackernews",
+            "title": "AOSP Source Releases Are So Late Developers Disassemble Libraries to Report Bugs",
+            "body": "AOSP Source Releases Are So Late Developers Disassemble Libraries to Report Bugs",
+            "url": "https://github.com/android/ndk/issues/2260",
+            "author": "tharen",
+            "container": "Hacker News",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 480,
+              "comments": 234
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about AOSP Source Releases Are So Late Developers Disassemble Libr",
+            "snippet": "AOSP Source Releases Are So Late Developers Disassemble Libraries to Report Bugs",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50083130",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.8,
+            "local_rank_score": 0.272
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Google",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 92,
+          "points": 347
+        }
+      },
+      "nomination": {
+        "name": "Google",
+        "seed_score": 658.5,
+        "summary": "Google is silently linking your phone number across all signed-in accounts",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50090349",
+            "source": "hackernews",
+            "title": "Google is silently linking your phone number across all signed-in accounts",
+            "body": "Google is silently linking your phone number across all signed-in accounts",
+            "url": "https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/",
+            "author": "Brajeshwar",
+            "container": "Hacker News",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 347,
+              "comments": 92
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google is silently linking your phone number across all sign",
+            "snippet": "Google is silently linking your phone number across all signed-in accounts",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50090349",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2715
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anthropic Scion Mononoke",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 93,
+          "points": 212
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Scion Mononoke",
+        "seed_score": 457.5,
+        "summary": "Anthropic's Scion is heavily inspired by Mononoke",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50094694",
+            "source": "hackernews",
+            "title": "Anthropic's Scion is heavily inspired by Mononoke",
+            "body": "Anthropic's Scion is heavily inspired by Mononoke",
+            "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+            "author": "sunshowers",
+            "container": "Hacker News",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 212,
+              "comments": 93
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Anthropic's Scion is heavily inspired by Mononoke",
+            "snippet": "Anthropic's Scion is heavily inspired by Mononoke",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50094694",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "OpenAI Fourier transforms",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 164,
+          "points": 244
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Fourier transforms",
+        "seed_score": 432.7494,
+        "summary": "A look at the math that OpenAI claims computes faster Fourier transforms",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50065932",
+            "source": "hackernews",
+            "title": "A look at the math that OpenAI claims computes faster Fourier transforms",
+            "body": "A look at the math that OpenAI claims computes faster Fourier transforms",
+            "url": "https://www.argmin.net/p/faster-fourier-transforms",
+            "author": "mochomocha",
+            "container": "Hacker News",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 244,
+              "comments": 164
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about A look at the math that OpenAI claims computes faster Fourie",
+            "snippet": "A look at the math that OpenAI claims computes faster Fourier transforms",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50065932",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 18,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0755
+          }
+        ]
+      }
+    }
+  ]
+}

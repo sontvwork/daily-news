@@ -1,0 +1,788 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "fc05d826cfa6b6b5",
+  "generated_at": "2026-10-14T23:56:54.945808Z",
+  "from_date": "2026-10-13",
+  "to_date": "2026-10-14",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-14T23:56:54.872069Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-14T23:56:54.872083Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "no-results",
+      "items_returned": 0,
+      "attempted": true,
+      "at": "2026-10-14T23:56:54.642445Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 72,
+      "attempted": true,
+      "at": "2026-10-14T23:56:54.871779Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Weird ICLR papers",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 44
+        }
+      },
+      "nomination": {
+        "name": "Weird ICLR papers",
+        "seed_score": 255.0,
+        "summary": "Weird pattern in the ICLR papers I was assigned to review [D]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "Weird pattern in the ICLR papers I was assigned to review [D]",
+            "body": "Weird pattern in the ICLR papers I was assigned to review [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1x5dc8f/weird_pattern_in_the_iclr_papers_i_was_assigned/",
+            "container": "MachineLearning",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 126,
+              "num_comments": 44
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Weird pattern in the ICLR papers I was assigned to review [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Ai",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 73
+        }
+      },
+      "nomination": {
+        "name": "Ai",
+        "seed_score": 135.7645,
+        "summary": "How to create an Ai agent?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "How to create an Ai agent?",
+            "body": "How to create an Ai agent?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x4n0r6/how_to_create_an_ai_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 73
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "How to create an Ai agent?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 10,
+            "engagement_score": 93,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2675
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Remember alphaXiv",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Remember alphaXiv",
+        "seed_score": 100.5,
+        "summary": "Remember alphaXiv? Their new research agents are told to report on users without telling them with no disclosure [D]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Remember alphaXiv? Their new research agents are told to report on users without telling them with no disclosure [D]",
+            "body": "Remember alphaXiv? Their new research agents are told to report on users without telling them with no disclosure [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1x5zd2m/remember_alphaxiv_their_new_research_agents_are/",
+            "container": "MachineLearning",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 62,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Remember alphaXiv? Their new research agents are told to report on users without telling them with no disclosure [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "AI build",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "AI build",
+        "seed_score": 72.0,
+        "summary": "If you had one week to build an AI agent for a business, what would you make?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "If you had one week to build an AI agent for a business, what would you make?",
+            "body": "If you had one week to build an AI agent for a business, what would you make?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x5ny1t/if_you_had_one_week_to_build_an_ai_agent_for_a/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing",
+            "snippet": "If you had one week to build an AI agent for a business, what would you make?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "you handling memory across your agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "you handling memory across your agents",
+        "seed_score": 64.5,
+        "summary": "How are you handling memory across your agents' sessions?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "How are you handling memory across your agents' sessions?",
+            "body": "How are you handling memory across your agents' sessions?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x5want/how_are_you_handling_memory_across_your_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are you handling memory across your agents' sessions?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "AI actions",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "AI actions",
+        "seed_score": 60.0,
+        "summary": "What actions should an AI agent be allowed to execute without human approval?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "What actions should an AI agent be allowed to execute without human approval?",
+            "body": "What actions should an AI agent be allowed to execute without human approval?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x5puqu/what_actions_should_an_ai_agent_be_allowed_to/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing",
+            "snippet": "What actions should an AI agent be allowed to execute without human approval?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3925
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "SurrealDB 77.2 BEAM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "SurrealDB 77.2 BEAM",
+        "seed_score": 49.5,
+        "summary": "We built an agent memory system on SurrealDB, scoring 77.2% on BEAM",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "We built an agent memory system on SurrealDB, scoring 77.2% on BEAM",
+            "body": "We built an agent memory system on SurrealDB, scoring 77.2% on BEAM",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x605lz/we_built_an_agent_memory_system_on_surrealdb/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "We built an agent memory system on SurrealDB, scoring 77.2% on BEAM",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28500000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "ICLR AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "ICLR AI",
+        "seed_score": 41.3657,
+        "summary": "ICLR reviewers, are you using AI to review papers or still doing it the old-school way? [D]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "ICLR reviewers, are you using AI to review papers or still doing it the old-school way? [D]",
+            "body": "ICLR reviewers, are you using AI to review papers or still doing it the old-school way? [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1x50ptr/iclr_reviewers_are_you_using_ai_to_review_papers/",
+            "container": "MachineLearning",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "ICLR reviewers, are you using AI to review papers or still doing it the old-school way? [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 10,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.218
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI decide",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "AI decide",
+        "seed_score": 28.5,
+        "summary": "How do you decide when an AI agent needs more than a search snippet?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "How do you decide when an AI agent needs more than a search snippet?",
+            "body": "How do you decide when an AI agent needs more than a search snippet?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x5rjuf/how_do_you_decide_when_an_ai_agent_needs_more/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you decide when an AI agent needs more than a search snippet?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3805
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "you decide when a coding agent",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "you decide when a coding agent",
+        "seed_score": 24.0,
+        "summary": "How do you decide when a coding agent has spent enough time on a task?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "How do you decide when a coding agent has spent enough time on a task?",
+            "body": "How do you decide when a coding agent has spent enough time on a task?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x5xbqu/how_do_you_decide_when_a_coding_agent_has_spent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you decide when a coding agent has spent enough time on a task?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.26
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "METR Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "METR Hugging Face",
+        "seed_score": 22.5,
+        "summary": "What METR's Hugging Face report shows about how agents coordinate when nobody gives them a lock",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "What METR's Hugging Face report shows about how agents coordinate when nobody gives them a lock",
+            "body": "What METR's Hugging Face report shows about how agents coordinate when nobody gives them a lock",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x5vodn/what_metrs_hugging_face_report_shows_about_how/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "What METR's Hugging Face report shows about how agents coordinate when nobody gives them a lock",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI actually",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "AI actually",
+        "seed_score": 22.2739,
+        "summary": "Who should actually control an AI agent's permissions - the developer, the user, or the runtime?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Who should actually control an AI agent's permissions - the developer, the user, or the runtime?",
+            "body": "Who should actually control an AI agent's permissions - the developer, the user, or the runtime?",
+            "url": "https://www.reddit.com/r/LangChain/comments/1x4tjfs/who_should_actually_control_an_ai_agents/",
+            "container": "LangChain",
+            "published_at": "2026-10-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "Who should actually control an AI agent's permissions - the developer, the user, or the runtime?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 10,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.17500000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Magic Gathering",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Magic Gathering",
+        "seed_score": 18.0,
+        "summary": "I spent some time taking best practices from the past two years developing my projects with agent skills and centralized them in a repo so I can reuse them and standardize my projects. In the process of doing that, I realized that skills exist in different scopes and timelines, so I spent some time trying to figure out how to organize skills usefully. I realized that Magic The Gathering abilities",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R77",
+            "source": "reddit",
+            "title": "I used Magic The Gathering as inspiration for how to organize agent skills",
+            "body": "I used Magic The Gathering as inspiration for how to organize agent skills\nI spent some time taking best practices from the past two years developing my projects with agent skills and centralized them in a repo so I can reuse them and standardize my projects. In the process of doing that, I realized that skills exist in different scopes and timelines, so I spent some time trying to figure out how to organize skills usefully. I realized that Magic The Gathering abilities have a lot of parallels to agent skills, so I did some experiments separating skills into three categories that MTG uses: activated, static, and triggered. I found this works very well for communicating to agents considerable context about the skill scope with minimal verbosity.\n\nIf you're not familiar with MTG abilities, firstly MTG is a complex card game, and secondly each card in the game has some text at the bottom which amounts to a special coding language. The coding language's main block is called an ability, which represents some effect in the game. Abilities are separated into several types which set the scope and timing of the effect. These ability types are directly transferable to skills:\n\n* Activated Skills: These are skills the agent must choose to use, and are a set of procedures that should be performed in order once\n* Static Skills (called \"passive\" in my repo): These are skills which set general rules that should be applied all the time given the agent is working in a particular domain.\n* Triggered Skills: These are skills which are like activated skills, but they should always happen any time a skill-defined event occurs. The event can be anything: something the agent does or an external event like a time passing.\n\nSeparating the skill into these categories lets the agent have some preconceived ideas about how the skill should be used, which increases reliability and decreases context redundancy.\n\nI thought this was an interesting notion and just wanted to share. If you check out my skill repo, it has some other good ideas I've collected over time like a hermes-inspired skill self improvement system, test process organization, and documentation style/methodology. If you have any ideas about making it better, let me know.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5vwx7/i_used_magic_the_gathering_as_inspiration_for_how/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I spent some time taking best practices from the past two years developing my projects with agent skills and centralized them in a repo so I can reuse them and standardize my projects. In the process of doing that, I realized that skills exist in different scopes and timelines, so I spent some time trying to figure out how to organize skills usefully. I realized that Magic The Gathering abilities",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Ultimate Accounting Skill Library",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Ultimate Accounting Skill Library",
+        "seed_score": 18.0,
+        "summary": "The Ultimate Accounting Skill Library for AI Finance Agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "The Ultimate Accounting Skill Library for AI Finance Agents",
+            "body": "The Ultimate Accounting Skill Library for AI Finance Agents",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x5tbis/the_ultimate_accounting_skill_library_for_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "The Ultimate Accounting Skill Library for AI Finance Agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 15.0,
+        "summary": "I'm trying to work out a sane testing setup for a tool-calling agent and I'd like to hear what's working for people who run these in production.\n\nHere are the approaches I keep coming across, and my doubts about each.\n\nScenario tests with scripted multi-turn conversations. They're easy to reason about, but I worry they only cover the paths I already thought of, so they miss the weird ones real use",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R98",
+            "source": "reddit",
+            "title": "How do you test AI agents before and after deployment? What has actually held up for you?",
+            "body": "How do you test AI agents before and after deployment? What has actually held up for you?\nI'm trying to work out a sane testing setup for a tool-calling agent and I'd like to hear what's working for people who run these in production.\n\nHere are the approaches I keep coming across, and my doubts about each.\n\nScenario tests with scripted multi-turn conversations. They're easy to reason about, but I worry they only cover the paths I already thought of, so they miss the weird ones real users find.\n\nLLM-as-judge. It's the only practical way I see to score free-text answers at scale. But I don't trust a judge score until it's been compared against human labels, and I'm not sure how many labeled rows are enough before it can gate anything.\n\nTool-call checks. Verifying which tool was called, with which arguments, and whether the agent handled an error properly seems more reliable than grading the final message. An agent can say \"done, your order is refunded\" when the call actually failed. Is anyone scoring the trajectory this way, and is it worth the effort?\n\nRegression suites. The idea is to turn every real failure into a test row so the same bug never ships twice. The open problem is how to keep the suite from getting noisy or slow as it grows.\n\nA few questions for you.\n\n1. What do you run before a release, and what do you treat as a hard gate versus a warning?\n2. After deployment, do you score live sessions, sample them manually, or just wait for user complaints?\n3. How do you handle nondeterminism, for example by running each case several times or using thresholds instead of exact pass/fail?\n\nCurious what's been a waste of time too, not just what worked.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x5vvpg/how_do_you_test_ai_agents_before_and_after/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm trying to work out a sane testing setup for a tool-calling agent and I'd like to hear what's working for people who run these in production.\n\nHere are the approaches I keep coming across, and my doubts about each.\n\nScenario tests with scripted multi-turn conversations. They're easy to reason about, but I worry they only cover the paths I already thought of, so they miss the weird ones real use",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4565
+          }
+        ]
+      }
+    }
+  ]
+}

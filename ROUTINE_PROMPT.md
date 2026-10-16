@@ -47,7 +47,12 @@ Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện được phép dùng:
 - `news/raw/<DATE>/<slug>.json` và `.md`: danh sách chủ đề đã qua ngưỡng tin cậy (`topic`, `why_spiking`, `top_comment`); với `fu-*` là kết quả topic mode (post, bình luận, URL).
 - File bundle `.cache/work/<slug>/discover-nominations.json`: bài gốc của từng chủ đề (tiêu đề, snippet, **URL gốc**, engagement của leg 1). Đây là dữ kiện đáng tin nhất.
 
-Lưu ý: số tương tác tổng hợp ở pha research (view YouTube/TikTok hàng triệu…) thường lẫn cả nội dung không liên quan, nên KHÔNG trích các con số đó. `evidence_urls` thường chỉ là các post mạng xã hội ngẫu nhiên, nên link `🔗` phải ưu tiên URL gốc trong bundle (blog chính thức, repo GitHub, bài Hacker News), chỉ khi không có mới dùng `evidence_urls`.
+Số tương tác (điểm, vote, bình luận):
+- KHÔNG trích số tổng hợp ở pha research (view YouTube/TikTok hàng triệu…), vì thường lẫn nội dung không liên quan.
+- Mặc định không nêu số. Chỉ nêu khi con số là luận điểm của câu (mức quan tâm nổi bật, bằng chứng cho phản ứng cộng đồng).
+- Khi nêu, lồng số vào câu một cách tự nhiên, không lặp một mẫu câu giữa các tin.
+
+`evidence_urls` thường chỉ là các post mạng xã hội ngẫu nhiên, nên link `🔗` phải ưu tiên URL gốc trong bundle (blog chính thức, repo GitHub, bài Hacker News), chỉ khi không có mới dùng `evidence_urls`.
 
 **Tránh trùng với 2 bản tin cũ** (Bước 0.4; bản tin cũ chỉ dùng để đối chiếu, KHÔNG phải nguồn dữ kiện):
 - Một tin bị coi là trùng nếu nói về cùng sự kiện/sản phẩm/bài viết với một tin cũ, kể cả khi đổi cách viết tiêu đề hoặc engagement đã tăng.

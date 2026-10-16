@@ -1,0 +1,788 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c738cda34b4b1a5c",
+  "generated_at": "2026-10-15T23:58:31.733057Z",
+  "from_date": "2026-10-14",
+  "to_date": "2026-10-15",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-15T23:58:31.717296Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-15T23:58:31.717312Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "no-results",
+      "items_returned": 0,
+      "attempted": true,
+      "at": "2026-10-15T23:58:31.692633Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 28,
+      "attempted": true,
+      "at": "2026-10-15T23:58:31.717125Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "50,000 Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 34
+        }
+      },
+      "nomination": {
+        "name": "50,000 Claude",
+        "seed_score": 144.2498,
+        "summary": "Most people think air traffic is just boring straight lines from Point A to Point B. But if you strip away the routine commercial flights and run anomaly algorithms on the raw telemetry, the airspace above us looks completely unhinged.\n\n\n\nI used Claude to build a tool that pulls raw, unedited ADS-B transponder data straight from satellites in real time. We wrote algorithms to scan for flights viol",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "I fed 50,000 live flight trajectories into an anomaly detection algorithm I wrote with Claude. Here are the unexplained patterns I found.",
+            "body": "I fed 50,000 live flight trajectories into an anomaly detection algorithm I wrote with Claude. Here are the unexplained patterns I found.\nMost people think air traffic is just boring straight lines from Point A to Point B. But if you strip away the routine commercial flights and run anomaly algorithms on the raw telemetry, the airspace above us looks completely unhinged.\n\n\n\nI used Claude to build a tool that pulls raw, unedited ADS-B transponder data straight from satellites in real time. We wrote algorithms to scan for flights violating standard aviation physics and commercial corridors, extreme heading reversals, bizarre holding loops, and steep altitude plunges.\n\n\n\nWhen the radar map loaded, some of the patterns looked wild:\n\n\n\nThe Barcode Flight (Texas/Border): Flight N955LA spent nearly two hours flying 26 , 180\u00b0 switchbacks back and forth across the sky. It covered 235 kilometers of flying just to end up 27 kilometers from where it started,an 8.7x detour.\n\nThe 7,000-Foot Plunge: Flight UAL2741 suddenly dropping over 7,300 feet in just 65 seconds (a descent rate over 7,300 ft/min) before recovering.\n\nThe Ghost Orbit: Flight N406LF was tracked in continuous, tight holding loops for almost 10 straight minutes, locked inside a tiny 20-kilometer perimeter.\n\nMach-Speed Telemetry Spikes: Multiple targets registering brief, erratic transponder speed spikes way past standard commercial velocities.\n\n\n\nThe crazy part is that this is happening above our heads every single day, completely invisible unless you know how to mathematically isolate it.\n\n\n\nI made the entire project open source so anyone can inspect their own airspace. You don\u2019t need paid api keys to run it , you just run the script and it launches an interactive radar map in your browser where you can click any anomaly to see its exact coordinates, descent rates, and turn math. (You can also just download the repo and double-click the HTML file to view the radar instantly).\n\n\n\nThe code, raw telemetry, and map files are here on GitHub: [https://github.com/Aashvath/skywatch](https://github.com/Aashvath/skywatch)\n\n\n\nRun the script on your area and zoom into your local airspace , u never know what u might find.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x5nrrl/i_fed_50000_live_flight_trajectories_into_an/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 102,
+              "num_comments": 34
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Most people think air traffic is just boring straight lines from Point A to Point B. But if you strip away the routine commercial flights and run anomaly algorithms on the raw telemetry, the airspace above us looks completely unhinged.\n\n\n\nI used Claude to build a tool that pulls raw, unedited ADS-B transponder data straight from satellites in real time. We wrote algorithms to scan for flights viol",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.203
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 34
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 81.0,
+        "summary": "I\u2019ve been using AI agents heavily for thinking through and solving complicated engineering problems. When the task is explained with enough rigor and the model has solid context, it regularly produces solutions that are better and faster than what I would have come up with myself.\n\nThe context problem is still the biggest friction (especially outside pure coding), but once that\u2019s handled the resul",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "Where\u2019s the limit with AI agents on complex engineering work?",
+            "body": "Where\u2019s the limit with AI agents on complex engineering work?\nI\u2019ve been using AI agents heavily for thinking through and solving complicated engineering problems. When the task is explained with enough rigor and the model has solid context, it regularly produces solutions that are better and faster than what I would have come up with myself.\n\nThe context problem is still the biggest friction (especially outside pure coding), but once that\u2019s handled the results are often thorough and high - confidence.\n\nThis is starting to raise a bigger question for me:  \n  \nIs there a point where these systems start generating approaches or abstractions that humans simply can\u2019t fully track or verify anymore? And if we become heavily dependent on them for the hard thinking, what does that actually look like in practice?\n\nCurious how people here are thinking about the ceiling (or lack of one) on agentic systems for real engineering work.",
+            "url": "https://www.reddit.com/r/singularity/comments/1x6kmp4/wheres_the_limit_with_ai_agents_on_complex/",
+            "container": "singularity",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 34
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been using AI agents heavily for thinking through and solving complicated engineering problems. When the task is explained with enough rigor and the model has solid context, it regularly produces solutions that are better and faster than what I would have come up with myself.\n\nThe context problem is still the biggest friction (especially outside pure coding), but once that\u2019s handled the resul",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5155000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "How well does your coding agent",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "How well does your coding agent",
+        "seed_score": 34.5,
+        "summary": "How well does your coding agent choose libraries and services when you leave the choice to it?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "How well does your coding agent choose libraries and services when you leave the choice to it?",
+            "body": "How well does your coding agent choose libraries and services when you leave the choice to it?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6pqs1/how_well_does_your_coding_agent_choose_libraries/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "How well does your coding agent choose libraries and services when you leave the choice to it?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3205
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "sHwarm",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "sHwarm",
+        "seed_score": 10.5,
+        "summary": "A\u00a0**shwarm**\u00a0(not a swarm) is people and their agents working on one ambitious goal together, in the open, with a clear way to know when the work's done. A swarm is all agents. A shwarm puts people in the mix. The agents bring speed and numbers. The people bring judgment. Together they reach further than either could alone.\n\nA shwarm is a concept. You could run one anywhere.\u00a0[shwarm.org](https://s",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "sHwarm",
+            "body": "sHwarm\nA\u00a0**shwarm**\u00a0(not a swarm) is people and their agents working on one ambitious goal together, in the open, with a clear way to know when the work's done. A swarm is all agents. A shwarm puts people in the mix. The agents bring speed and numbers. The people bring judgment. Together they reach further than either could alone.\n\nA shwarm is a concept. You could run one anywhere.\u00a0[shwarm.org](https://shwarm.org)\u00a0is the special sauce that brings it all together: a hub where people and their agents find a goal, split it into pieces, talk it through, and decide together when the work's done. An agent can claim a piece is done, but only people can back that claim.\n\nshwarm.org is completely open. It doesn't run code or host files. The work lives with its contributors, ideally on decentralized tools like Radicle for version control and IPFS for storage, so no company sits in the middle (us included). Everything posted on shwarm.org is open, under MIT by default. Anyone can contribute to any shwarm. If you don't like where one is headed, duplicate it and start your own!",
+            "url": "https://www.reddit.com/r/singularity/comments/1x6gm2a/shwarm/",
+            "container": "singularity",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A\u00a0**shwarm**\u00a0(not a swarm) is people and their agents working on one ambitious goal together, in the open, with a clear way to know when the work's done. A swarm is all agents. A shwarm puts people in the mix. The agents bring speed and numbers. The people bring judgment. Together they reach further than either could alone.\n\nA shwarm is a concept. You could run one anywhere.\u00a0[shwarm.org](https://s",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Try ChatGPT Astra Claude 2 prompts",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Try ChatGPT Astra Claude 2 prompts",
+        "seed_score": 10.5,
+        "summary": "Try ChatGPT Astra they said... It's more token-efficient than Claude they said... 2 prompts and I ran out of my 5h usage credits (16% of my weekly credits)($20 plan)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Try ChatGPT Astra they said... It's more token-efficient than Claude they said... 2 prompts and I ran out of my 5h usage credits (16% of my weekly credits)($20 plan)",
+            "body": "Try ChatGPT Astra they said... It's more token-efficient than Claude they said... 2 prompts and I ran out of my 5h usage credits (16% of my weekly credits)($20 plan)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6n7pg/try_chatgpt_astra_they_said_its_more/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Try ChatGPT Astra they said... It's more token-efficient than Claude they said... 2 prompts and I ran out of my 5h usage credits (16% of my weekly credits)($20 plan)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Codex ChatGPT Safari",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Codex ChatGPT Safari",
+        "seed_score": 7.5,
+        "summary": "Codex couldn't recover my complete ChatGPT development history, so it used a Safari extension I'd written",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Codex couldn't recover my complete ChatGPT development history, so it used a Safari extension I'd written",
+            "body": "Codex couldn't recover my complete ChatGPT development history, so it used a Safari extension I'd written",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6rphl/codex_couldnt_recover_my_complete_chatgpt/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Codex couldn't recover my complete ChatGPT development history, so it used a Safari extension I'd written",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29050000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Remotion QA Claude Splitting",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Remotion QA Claude Splitting",
+        "seed_score": 6.364,
+        "summary": "My Remotion QA skill was making Claude look at every frame. Splitting up the checks helped a lot.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "My Remotion QA skill was making Claude look at every frame. Splitting up the checks helped a lot.",
+            "body": "My Remotion QA skill was making Claude look at every frame. Splitting up the checks helped a lot.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x5z02v/my_remotion_qa_skill_was_making_claude_look_at/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "My Remotion QA skill was making Claude look at every frame. Splitting up the checks helped a lot.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.0965
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "ChatGPT AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT AI",
+        "seed_score": 6.0,
+        "summary": "Should an association use ChatGPT or a dedicated member AI assistant?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Should an association use ChatGPT or a dedicated member AI assistant?",
+            "body": "Should an association use ChatGPT or a dedicated member AI assistant?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x68v2t/should_an_association_use_chatgpt_or_a_dedicated/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "Reddit listing",
+            "snippet": "Should an association use ChatGPT or a dedicated member AI assistant?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 17,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "WANTING TO TRY CLAUDE",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "WANTING TO TRY CLAUDE",
+        "seed_score": 4.5,
+        "summary": "WANTING TO TRY CLAUDE",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "WANTING TO TRY CLAUDE",
+            "body": "WANTING TO TRY CLAUDE",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x6ylj5/wanting_to_try_claude/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "WANTING TO TRY CLAUDE",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.319
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Live Oct 31 AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Live Oct 31 AI",
+        "seed_score": 3.182,
+        "summary": "If you use coding agents daily, it helps to know what happens in the layer around the model: how tools are exposed, how the context window is managed, what stops a dangerous command, and what happens when a run goes wrong.\n\nOn Saturday, Oct 31, from 9:30 AM to 1:30 PM ET, Bruno Gon\u00e7alves runs a four hour hands on session where you write that layer yourself in plain Python, with no framework.\n\nYou",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "Live workshop, Oct 31: build the layer around the model that makes an AI agent safe to run",
+            "body": "Live workshop, Oct 31: build the layer around the model that makes an AI agent safe to run\nIf you use coding agents daily, it helps to know what happens in the layer around the model: how tools are exposed, how the context window is managed, what stops a dangerous command, and what happens when a run goes wrong.\n\nOn Saturday, Oct 31, from 9:30 AM to 1:30 PM ET, Bruno Gon\u00e7alves runs a four hour hands on session where you write that layer yourself in plain Python, with no framework.\n\nYou build:\n\n* A tool registry that discovers tools from a real MCP server and enforces permissions\n* A context manager with summaries, expandable handles and tiered memory\n* A guardrail pipeline for prompt injection and unsafe SQL\n* A run supervisor with timeouts, retries and traces\n\nNo GPU or API key needed, since the exercises run on a laptop.   \n  \nMore details in the comments.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x647as/live_workshop_oct_31_build_the_layer_around_the/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "If you use coding agents daily, it helps to know what happens in the layer around the model: how tools are exposed, how the context window is managed, what stops a dangerous command, and what happens when a run goes wrong.\n\nOn Saturday, Oct 31, from 9:30 AM to 1:30 PM ET, Bruno Gon\u00e7alves runs a four hour hands on session where you write that layer yourself in plain Python, with no framework.\n\nYou",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24650000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI-generated",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "AI-generated",
+        "seed_score": 2.1213,
+        "summary": "[removed]",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "What do you do when AI-generated code works in a demo but struggles as the app grows?",
+            "body": "What do you do when AI-generated code works in a demo but struggles as the app grows?\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x5nwtv/what_do_you_do_when_aigenerated_code_works_in_a/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.23
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "ChatGPT Dot Review Chief Staff Intern",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Dot Review Chief Staff Intern",
+        "seed_score": 1.5,
+        "summary": "I've been putting Dot through its paces for the last 3 weeks and wanted to put together a proper review.\n\nI came off of many months of Hermes tinkering for my personal agent while being deep in Codex for dev work, so Dot instantly found a place in my workflow. Its value is undeniable but its implementation leaves a lot to be desired from the overall ChatGPT app mess (which Dot only exacerbates), w",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "ChatGPT Dot Review: Your Chief of Staff is Still an Intern",
+            "body": "ChatGPT Dot Review: Your Chief of Staff is Still an Intern\nI've been putting Dot through its paces for the last 3 weeks and wanted to put together a proper review.\n\nI came off of many months of Hermes tinkering for my personal agent while being deep in Codex for dev work, so Dot instantly found a place in my workflow. Its value is undeniable but its implementation leaves a lot to be desired from the overall ChatGPT app mess (which Dot only exacerbates), weird sandboxing choices, opaque status, and more. I lay it all out in my review along with many things that did click well for me (like calls) and some actionable advice on how to get the most out of it.\n\nPosting the conclusion below to save you time if you'd rather get into the discussion:\n\n>Dot has changed how I use Codex / ChatGPT and how I use AI in general. Despite all my frustrations, I\u2019m entirely convinced this is just the right next shape for agentic AI. But for now, Dot is just a Codex wrapper. Under the hood, Dot doesn\u2019t do anything you couldn\u2019t already do in Codex yourself - it just removes some of the friction and coordination pains. This makes Dot more valuable than the sum of its parts (the ChatGPT app itself), but it also obfuscates the potential value it can have as a fundamental reimagining of what ChatGPT can be.  \nOpenAI is not sitting still. They\u2019re iterating, shipping fast, and already fixing some of the frustrations I described here. The key question is whether they can iterate themselves out of the confusing ChatGPT mess by slowly abstracting it behind Dot. I would have preferred a separate app, but I trust the OpenAI team to figure this out in the near future.  \nBut even if they manage to do that, the next question is whether it\u2019ll be enough to keep up with Meta and its Muse offering. Meta is firing on all cylinders. Just this week, Meta [caught up to the frontier](https://research.meta.ai/blog/muse-wonder) with a new family of models. Their product sense seems to be [top notch](https://metedata.substack.com/p/what-meta-got-right-with-muse?r=2nad0&utm_campaign=post-expanded-share&utm_medium=web). They beat OpenAI to the [hardware market](https://www.meta.com/blog/meta-connect-2026-everything-we-announced/) with devices that are clearly meant to be extensions of Muse. And finally, their distribution and ad-funded economics will let them subsidize Muse for as long as it takes. The race to become your personal AI agent is heating up and it\u2019ll be a tough one for OpenAI. And it\u2019ll be increasingly exciting for consumers like us.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6zdgb/chatgpt_dot_review_your_chief_of_staff_is_still/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been putting Dot through its paces for the last 3 weeks and wanted to put together a proper review.\n\nI came off of many months of Hermes tinkering for my personal agent while being deep in Codex for dev work, so Dot instantly found a place in my workflow. Its value is undeniable but its implementation leaves a lot to be desired from the overall ChatGPT app mess (which Dot only exacerbates), w",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 3,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-17",
+      "heuristic_name": "Claude Codex write 90 v10 iOS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Claude Codex write 90 v10 iOS",
+        "seed_score": 1.5,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "I let Claude and Codex write 90% of my app \u2014 v10 just shipped on iOS and Android",
+            "body": "I let Claude and Codex write 90% of my app \u2014 v10 just shipped on iOS and Android\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x70hsr/i_let_claude_and_codex_write_90_of_my_app_v10/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 3,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Code",
+        "seed_score": 1.5,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "Code and tests can agree on the wrong behavior. Could a specification language help?",
+            "body": "Code and tests can agree on the wrong behavior. Could a specification language help?\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6zl2f/code_and_tests_can_agree_on_the_wrong_behavior/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 3,
+            "source_quality": 0.6,
+            "local_rank_score": 0.254
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Codex",
+        "seed_score": 1.5,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "I built a free local board over Codex where every delivery is a markdown page the agent must write before coding",
+            "body": "I built a free local board over Codex where every delivery is a markdown page the agent must write before coding\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6ktu7/i_built_a_free_local_board_over_codex_where_every/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 3,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    }
+  ]
+}

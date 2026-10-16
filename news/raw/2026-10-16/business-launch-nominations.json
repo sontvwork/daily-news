@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "978eeafafb0d3554",
+  "generated_at": "2026-10-16T00:02:30.093258Z",
+  "from_date": "2026-10-15",
+  "to_date": "2026-10-16",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-16T00:02:30.092312Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-16T00:02:30.092321Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-10-16T00:02:30.092147Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-16T00:02:30.092241Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic Scion ripping off Mononoke",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 69,
+          "points": 216
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Scion ripping off Mononoke",
+        "seed_score": 302.2881,
+        "summary": "More on Anthropic's Scion ripping off Mononoke",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50106738",
+            "source": "hackernews",
+            "title": "More on Anthropic's Scion ripping off Mononoke",
+            "body": "More on Anthropic's Scion ripping off Mononoke",
+            "url": "https://sunshowers.io/posts/anthropic-mononoke-2/",
+            "author": "sunshowers",
+            "container": "Hacker News",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 216,
+              "comments": 69
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about More on Anthropic's Scion ripping off Mononoke",
+            "snippet": "More on Anthropic's Scion ripping off Mononoke",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50106738",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.114
+          }
+        ]
+      }
+    }
+  ]
+}

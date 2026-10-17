@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "40ae23fe62953980",
+  "generated_at": "2026-10-16T23:59:21.300306Z",
+  "from_date": "2026-10-15",
+  "to_date": "2026-10-16",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-16T23:59:21.298684Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-16T23:59:21.298693Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-16T23:59:21.296374Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-16T23:59:21.298602Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Rep Announces Congressional Legislation",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 102,
+          "points": 182
+        }
+      },
+      "nomination": {
+        "name": "Rep Announces Congressional Legislation",
+        "seed_score": 426.0,
+        "summary": "US Rep Announces Congressional Legislation to Protect Video Game Ownership",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50120101",
+            "source": "hackernews",
+            "title": "US Rep Announces Congressional Legislation to Protect Video Game Ownership",
+            "body": "US Rep Announces Congressional Legislation to Protect Video Game Ownership",
+            "url": "https://ritchietorres.house.gov/posts/rep-torres-announces-power-to-the-players-act-legislation-to-ensure-gamers-own-their-games",
+            "author": "DeepLogin",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 182,
+              "comments": 102
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about US Rep Announces Congressional Legislation to Protect Video",
+            "snippet": "US Rep Announces Congressional Legislation to Protect Video Game Ownership",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50120101",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anthropic June",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 58,
+          "points": 195
+        }
+      },
+      "nomination": {
+        "name": "Anthropic June",
+        "seed_score": 379.5,
+        "summary": "Anthropic assigned highest junk credit rating in June",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122112",
+            "source": "hackernews",
+            "title": "Anthropic assigned highest junk credit rating in June",
+            "body": "Anthropic assigned highest junk credit rating in June",
+            "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+            "author": "JumpCrisscross",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 195,
+              "comments": 58
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Anthropic assigned highest junk credit rating in June",
+            "snippet": "Anthropic assigned highest junk credit rating in June",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122112",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.8,
+            "local_rank_score": 0.274
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic Scion ripping off Mononoke",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 87,
+          "points": 251
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Scion ripping off Mononoke",
+        "seed_score": 358.5031,
+        "summary": "More on Anthropic's Scion ripping off Mononoke",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50106738",
+            "source": "hackernews",
+            "title": "More on Anthropic's Scion ripping off Mononoke",
+            "body": "More on Anthropic's Scion ripping off Mononoke",
+            "url": "https://sunshowers.io/posts/anthropic-mononoke-2/",
+            "author": "sunshowers",
+            "container": "Hacker News",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 251,
+              "comments": 87
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about More on Anthropic's Scion ripping off Mononoke",
+            "snippet": "More on Anthropic's Scion ripping off Mononoke",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50106738",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "dev/null social network for developers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 102,
+          "points": 115
+        }
+      },
+      "nomination": {
+        "name": "dev/null social network for developers",
+        "seed_score": 325.5,
+        "summary": "/dev/null: social network for developers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50121004",
+            "source": "hackernews",
+            "title": "/dev/null: social network for developers",
+            "body": "/dev/null: social network for developers",
+            "url": "https://dev-null.sh",
+            "author": "mnapoli",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 115,
+              "comments": 102
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about /dev/null: social network for developers",
+            "snippet": "/dev/null: social network for developers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50121004",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    }
+  ]
+}

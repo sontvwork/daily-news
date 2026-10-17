@@ -1,0 +1,827 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "1f096b9a43f15cb2",
+  "generated_at": "2026-10-16T23:56:20.720470Z",
+  "from_date": "2026-10-15",
+  "to_date": "2026-10-16",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-16T23:56:20.672287Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-16T23:56:20.672300Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 50,
+      "attempted": true,
+      "at": "2026-10-16T23:56:20.671400Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-16T23:56:20.672070Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude reveals ECDSA curve origins",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 247,
+          "points": 582
+        }
+      },
+      "nomination": {
+        "name": "Claude reveals ECDSA curve origins",
+        "seed_score": 1243.5,
+        "summary": "Claude reveals ECDSA curve origins",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122800",
+            "source": "hackernews",
+            "title": "Claude reveals ECDSA curve origins",
+            "body": "Claude reveals ECDSA curve origins",
+            "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+            "author": "ahlCVA",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 582,
+              "comments": 247
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Claude reveals ECDSA curve origins",
+            "snippet": "Claude reveals ECDSA curve origins",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122800",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.38349999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 188,
+          "points": 197
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 577.5,
+        "summary": "How the Claude Code team does code review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122951",
+            "source": "hackernews",
+            "title": "How the Claude Code team does code review",
+            "body": "How the Claude Code team does code review",
+            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 197,
+              "comments": 188
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about How the Claude Code team does code review",
+            "snippet": "How the Claude Code team does code review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122951",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4035
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Mythos 5",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 17,
+          "points": 80
+        },
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Claude Mythos 5",
+        "seed_score": 474.375,
+        "summary": "Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more",
+            "body": "Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more",
+            "url": "https://www.reddit.com/r/singularity/comments/1x7s98a/claude_mythos_5_designed_quantum_circuits_that/",
+            "container": "singularity",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 161,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 93,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36350000000000005
+          },
+          {
+            "item_id": "50121939",
+            "source": "hackernews",
+            "title": "Designing more efficient quantum circuits with Claude",
+            "body": "Designing more efficient quantum circuits with Claude",
+            "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 80,
+              "comments": 17
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Designing more efficient quantum circuits with Claude",
+            "snippet": "Designing more efficient quantum circuits with Claude",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50121939",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Accenture Tells Employees Spend Only 29",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 40
+        }
+      },
+      "nomination": {
+        "name": "Accenture Tells Employees Spend Only 29",
+        "seed_score": 279.0,
+        "summary": "Accenture Tells Employees They Can Now Spend Only $29 on Claude Per Month",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Accenture Tells Employees They Can Now Spend Only $29 on Claude Per Month",
+            "body": "Accenture Tells Employees They Can Now Spend Only $29 on Claude Per Month",
+            "url": "https://www.reddit.com/r/singularity/comments/1x756ji/accenture_tells_employees_they_can_now_spend_only/",
+            "container": "singularity",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 146,
+              "num_comments": 40
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Accenture Tells Employees They Can Now Spend Only $29 on Claude Per Month",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Researchers Chinese Tencent Claudes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 50
+        }
+      },
+      "nomination": {
+        "name": "Researchers Chinese Tencent Claudes",
+        "seed_score": 240.0,
+        "summary": "Researchers discovered a rogue Chinese swarm: \"This is the first time researchers have ever made contact with a rogue agent fleet in the wild.\" The agents escaped from Tencent and claim to be Claudes.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Researchers discovered a rogue Chinese swarm: \"This is the first time researchers have ever made contact with a rogue agent fleet in the wild.\" The agents escaped from Tencent and claim to be Claudes.",
+            "body": "Researchers discovered a rogue Chinese swarm: \"This is the first time researchers have ever made contact with a rogue agent fleet in the wild.\" The agents escaped from Tencent and claim to be Claudes.",
+            "url": "https://www.reddit.com/r/singularity/comments/1x7f7we/researchers_discovered_a_rogue_chinese_swarm_this/",
+            "container": "singularity",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 110,
+              "num_comments": 50
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Researchers discovered a rogue Chinese swarm: \"This is the first time researchers have ever made contact with a rogue agent fleet in the wild.\" The agents escaped from Tencent and claim to be Claudes.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.323
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Dario",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Dario",
+        "seed_score": 156.0,
+        "summary": "Dario: \u201cWith open source you can see the source code. Here we can\u2019t see inside the model.\u201d My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: \u201cYeah, well, that\u2019s just, like, your opinion, man.\u201d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Dario: \u201cWith open source you can see the source code. Here we can\u2019t see inside the model.\u201d  My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: \u201cYeah, well, that\u2019s just, like, your opinion, man.\u201d",
+            "body": "Dario: \u201cWith open source you can see the source code. Here we can\u2019t see inside the model.\u201d  My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: \u201cYeah, well, that\u2019s just, like, your opinion, man.\u201d",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 83,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Dario: \u201cWith open source you can see the source code. Here we can\u2019t see inside the model.\u201d My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: \u201cYeah, well, that\u2019s just, like, your opinion, man.\u201d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.336
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "you make a coding agent prove",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "you make a coding agent prove",
+        "seed_score": 70.5,
+        "summary": "How do you make a coding agent prove it actually ran the tests?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "How do you make a coding agent prove it actually ran the tests?",
+            "body": "How do you make a coding agent prove it actually ran the tests?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x7g0hc/how_do_you_make_a_coding_agent_prove_it_actually/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you make a coding agent prove it actually ran the tests?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.331
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "you guys decide a claude code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "you guys decide a claude code",
+        "seed_score": 45.0,
+        "summary": "when do you guys decide a claude code session has gone on too long?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "when do you guys decide a claude code session has gone on too long?",
+            "body": "when do you guys decide a claude code session has gone on too long?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x795qw/when_do_you_guys_decide_a_claude_code_session_has/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing",
+            "snippet": "when do you guys decide a claude code session has gone on too long?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3625
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Vals AI AI July 2027",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Vals AI AI July 2027",
+        "seed_score": 42.0,
+        "summary": "Vals AI moves its prediction for full recursive AI self-improvement to July 2027. Claude Opus 5.5 tops its autonomous AI research benchmark, becoming the first model to outperform a published human reference in AI model training.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Vals AI moves its prediction for full recursive AI self-improvement to July 2027. Claude Opus 5.5 tops its autonomous AI research benchmark, becoming the first model to outperform a published human reference in AI model training.",
+            "body": "Vals AI moves its prediction for full recursive AI self-improvement to July 2027. Claude Opus 5.5 tops its autonomous AI research benchmark, becoming the first model to outperform a published human reference in AI model training.",
+            "url": "https://www.reddit.com/r/singularity/comments/1x7u2hn/vals_ai_moves_its_prediction_for_full_recursive/",
+            "container": "singularity",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Vals AI moves its prediction for full recursive AI self-improvement to July 2027. Claude Opus 5.5 tops its autonomous AI research benchmark, becoming the first model to outperform a published human reference in AI model training.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4935
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "How well does your coding agent",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "How well does your coding agent",
+        "seed_score": 37.1231,
+        "summary": "How well does your coding agent choose libraries and services when you leave the choice to it?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "How well does your coding agent choose libraries and services when you leave the choice to it?",
+            "body": "How well does your coding agent choose libraries and services when you leave the choice to it?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6pqs1/how_well_does_your_coding_agent_choose_libraries/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "How well does your coding agent choose libraries and services when you leave the choice to it?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Claude ECDSA Proof NSA",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Claude ECDSA Proof NSA",
+        "seed_score": 36.0,
+        "summary": "Claude found the seeds for ECDSA. Proof of no NSA backdoor, but also... I don't feel so good about where we're headed",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Claude found the seeds for ECDSA. Proof of no NSA backdoor, but also... I don't feel so good about where we're headed",
+            "body": "Claude found the seeds for ECDSA. Proof of no NSA backdoor, but also... I don't feel so good about where we're headed",
+            "url": "https://www.reddit.com/r/singularity/comments/1x7udbi/claude_found_the_seeds_for_ecdsa_proof_of_no_nsa/",
+            "container": "singularity",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude found the seeds for ECDSA. Proof of no NSA backdoor, but also... I don't feel so good about where we're headed",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3165
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Try ChatGPT Astra Claude 2 prompts",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Try ChatGPT Astra Claude 2 prompts",
+        "seed_score": 13.7886,
+        "summary": "Try ChatGPT Astra they said... It's more token-efficient than Claude they said... 2 prompts and I ran out of my 5h usage credits (16% of my weekly credits)($20 plan)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Try ChatGPT Astra they said... It's more token-efficient than Claude they said... 2 prompts and I ran out of my 5h usage credits (16% of my weekly credits)($20 plan)",
+            "body": "Try ChatGPT Astra they said... It's more token-efficient than Claude they said... 2 prompts and I ran out of my 5h usage credits (16% of my weekly credits)($20 plan)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6n7pg/try_chatgpt_astra_they_said_its_more/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Try ChatGPT Astra they said... It's more token-efficient than Claude they said... 2 prompts and I ran out of my 5h usage credits (16% of my weekly credits)($20 plan)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08650000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Codex",
+        "seed_score": 12.0,
+        "summary": "I documented how to use Codex to create, test, and deploy algorithmic trading strategies",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "I documented how to use Codex to create, test, and deploy algorithmic trading strategies",
+            "body": "I documented how to use Codex to create, test, and deploy algorithmic trading strategies",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x7owrd/i_documented_how_to_use_codex_to_create_test_and/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "I documented how to use Codex to create, test, and deploy algorithmic trading strategies",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Desktop Commander to Claude CLI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Desktop Commander to Claude CLI",
+        "seed_score": 12.0,
+        "summary": "Desktop Commander to Claude CLI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Desktop Commander to Claude CLI",
+            "body": "Desktop Commander to Claude CLI",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x79a2b/desktop_commander_to_claude_cli/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Desktop Commander to Claude CLI",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Looking Design QA MCP",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "Looking Design QA MCP",
+        "seed_score": 10.6066,
+        "summary": "I built Pattern, an MCP tool that makes agents check their build options before they start coding.\n\nPattern turns UI design specs in your components folder or Figma file into a requirements checklist, then checks each candidate against its actual code, props, and documentation. It evaluates what the component can do, not just whether its name or screenshot looks right.\n\nThe agent gets a build plan",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "Looking for feedback on Design QA MCP tool for agents",
+            "body": "Looking for feedback on Design QA MCP tool for agents\nI built Pattern, an MCP tool that makes agents check their build options before they start coding.\n\nPattern turns UI design specs in your components folder or Figma file into a requirements checklist, then checks each candidate against its actual code, props, and documentation. It evaluates what the component can do, not just whether its name or screenshot looks right.\n\nThe agent gets a build plan: use an existing component if it meets the requirements, or build a custom one if nothing fits. Either way, I can see what the decision was based on and which requirements were covered or missed.  \n  \nPattern reduces wasted tokens, bloated code and missed\u00a0bugs.\n\nWhy this matters:\n\n* **Less guessing.** The agent has evidence to work from, and I can see why it recommended a component.\n* **Less repeated work.** Pattern saves decisions by project, so an identical lookup can return in milliseconds instead of running the full evaluation again. One repeat lookup dropped from about 43 seconds to a few milliseconds.\n* **A clearer path to the right implementation.** When an existing component doesn't fit, the agent gets a concrete reference to build from instead of starting with a blank page.\n\nInstall Pattern at https://usepattern.sh or explore the code at https://github.com/donaldrichard19-LVD/pattern-mcp.\n\nWould anyone be interested in install Pattern, running it on a real project and giving me feedback?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x6y98l/looking_for_feedback_on_design_qa_mcp_tool_for/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I built Pattern, an MCP tool that makes agents check their build options before they start coding.\n\nPattern turns UI design specs in your components folder or Figma file into a requirements checklist, then checks each candidate against its actual code, props, and documentation. It evaluates what the component can do, not just whether its name or screenshot looks right.\n\nThe agent gets a build plan",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.126
+          }
+        ]
+      }
+    }
+  ]
+}

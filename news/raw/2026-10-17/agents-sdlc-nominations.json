@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "e3a4fa268e89ce7d",
+  "generated_at": "2026-10-16T23:56:23.933819Z",
+  "from_date": "2026-10-15",
+  "to_date": "2026-10-16",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-16T23:56:23.871799Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-16T23:56:23.871814Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-16T23:56:23.740657Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 66,
+      "attempted": true,
+      "at": "2026-10-16T23:56:23.871522Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "China 23 AI technologies",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 401
+        }
+      },
+      "nomination": {
+        "name": "China 23 AI technologies",
+        "seed_score": 1554.0,
+        "summary": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+            "body": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g3zq/china_proposes_export_controls_on_23_ai/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 635,
+              "num_comments": 401
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45499999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Love Software Rendering",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 184,
+          "points": 279
+        }
+      },
+      "nomination": {
+        "name": "Love Software Rendering",
+        "seed_score": 694.5,
+        "summary": "I Love Software Rendering",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50117746",
+            "source": "hackernews",
+            "title": "I Love Software Rendering",
+            "body": "I Love Software Rendering",
+            "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
+            "author": "speckx",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 279,
+              "comments": 184
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about I Love Software Rendering",
+            "snippet": "I Love Software Rendering",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50117746",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.39
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 188,
+          "points": 197
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 577.5,
+        "summary": "How the Claude Code team does code review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122951",
+            "source": "hackernews",
+            "title": "How the Claude Code team does code review",
+            "body": "How the Claude Code team does code review",
+            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 197,
+              "comments": 188
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "HN story about How the Claude Code team does code review",
+            "snippet": "How the Claude Code team does code review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122951",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3455
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "JPEG XL AVIF",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 141,
+          "points": 180
+        }
+      },
+      "nomination": {
+        "name": "JPEG XL AVIF",
+        "seed_score": 481.5,
+        "summary": "JPEG XL vs. AVIF for web use-cases",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50120224",
+            "source": "hackernews",
+            "title": "JPEG XL vs. AVIF for web use-cases",
+            "body": "JPEG XL vs. AVIF for web use-cases",
+            "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/",
+            "author": "farlight",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 180,
+              "comments": 141
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about JPEG XL vs. AVIF for web use-cases",
+            "snippet": "JPEG XL vs. AVIF for web use-cases",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50120224",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Stanford Together AI UIUC",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 71
+        }
+      },
+      "nomination": {
+        "name": "Stanford Together AI UIUC",
+        "seed_score": 390.0,
+        "summary": "New paper from Stanford, Together AI, UIUC, and Meta introduces Hybrid Reasoning Agents. These AI models think mostly in a hidden internal way (faster and cheaper), and only use normal text when they need tools or give the final answer.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "New paper from Stanford, Together AI, UIUC, and Meta introduces Hybrid Reasoning Agents. These AI models think mostly in a hidden internal way (faster and cheaper), and only use normal text when they need tools or give the final answer.",
+            "body": "New paper from Stanford, Together AI, UIUC, and Meta introduces Hybrid Reasoning Agents. These AI models think mostly in a hidden internal way (faster and cheaper), and only use normal text when they need tools or give the final answer.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7a8i8/new_paper_from_stanford_together_ai_uiuc_and_meta/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 189,
+              "num_comments": 71
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "New paper from Stanford, Together AI, UIUC, and Meta introduces Hybrid Reasoning Agents. These AI models think mostly in a hidden internal way (faster and cheaper), and only use normal text when they need tools or give the final answer.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Dario",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Dario",
+        "seed_score": 156.0,
+        "summary": "Dario: \u201cWith open source you can see the source code. Here we can\u2019t see inside the model.\u201d My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: \u201cYeah, well, that\u2019s just, like, your opinion, man.\u201d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Dario: \u201cWith open source you can see the source code. Here we can\u2019t see inside the model.\u201d  My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: \u201cYeah, well, that\u2019s just, like, your opinion, man.\u201d",
+            "body": "Dario: \u201cWith open source you can see the source code. Here we can\u2019t see inside the model.\u201d  My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: \u201cYeah, well, that\u2019s just, like, your opinion, man.\u201d",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 83,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing",
+            "snippet": "Dario: \u201cWith open source you can see the source code. Here we can\u2019t see inside the model.\u201d My 0.646 t/s MiMo-2.6-Pro crammed thru 128GB of Jetson AGX Thor: \u201cYeah, well, that\u2019s just, like, your opinion, man.\u201d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29700000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 61
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 148.4924,
+        "summary": "Is anyone else noticing that people building AI agents are forgetting basic software engineering?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Is anyone else noticing that people building AI agents are forgetting basic software engineering?",
+            "body": "Is anyone else noticing that people building AI agents are forgetting basic software engineering?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x6bwg9/is_anyone_else_noticing_that_people_building_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 79,
+              "num_comments": 61
+            },
+            "relevance_hint": 0.28,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone else noticing that people building AI agents are forgetting basic software engineering?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.28,
+            "freshness": 10,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.273
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Getting CRM records",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "Getting CRM records",
+        "seed_score": 90.0,
+        "summary": "Getting agents to update CRM records after meetings",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Getting agents to update CRM records after meetings",
+            "body": "Getting agents to update CRM records after meetings",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7nrih/getting_agents_to_update_crm_records_after/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 32,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Getting agents to update CRM records after meetings",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.6,
+            "local_rank_score": 0.315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 69.0,
+        "summary": "What would your ideal AI agent actually do for you day to day?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "What would your ideal AI agent actually do for you day to day?",
+            "body": "What would your ideal AI agent actually do for you day to day?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x77vsl/what_would_your_ideal_ai_agent_actually_do_for/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.19,
+            "why_relevant": "Reddit listing",
+            "snippet": "What would your ideal AI agent actually do for you day to day?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.19,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3955
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI agents actually",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "AI agents actually",
+        "seed_score": 58.5,
+        "summary": "What are autonomous AI agents actually doing in production today?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "What are autonomous AI agents actually doing in production today?",
+            "body": "What are autonomous AI agents actually doing in production today?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x72yi6/what_are_autonomous_ai_agents_actually_doing_in/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 16,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "What are autonomous AI agents actually doing in production today?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.424
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI/Agent VC",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "AI/Agent VC",
+        "seed_score": 46.5,
+        "summary": "Are AI/Agent startups actually making money, or is most of the industry still burning VC money?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Are AI/Agent startups actually making money, or is most of the industry still burning VC money?",
+            "body": "Are AI/Agent startups actually making money, or is most of the industry still burning VC money?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7gyzp/are_aiagent_startups_actually_making_money_or_is/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are AI/Agent startups actually making money, or is most of the industry still burning VC money?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.369
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI agents flights",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "AI agents flights",
+        "seed_score": 33.0,
+        "summary": "How to stop overpaying for hotels and flights with AI agents",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "How to stop overpaying for hotels and flights with AI agents",
+            "body": "How to stop overpaying for hotels and flights with AI agents",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7ls96/how_to_stop_overpaying_for_hotels_and_flights/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing",
+            "snippet": "How to stop overpaying for hotels and flights with AI agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.429
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Repeat",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Repeat",
+        "seed_score": 31.5,
+        "summary": "Repeat with me: guardrails protect what my agent says. What my agent does needs a check outside the model.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Repeat with me: guardrails protect what my agent says. What my agent does needs a check outside the model.",
+            "body": "Repeat with me: guardrails protect what my agent says. What my agent does needs a check outside the model.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7fshh/repeat_with_me_guardrails_protect_what_my_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Repeat with me: guardrails protect what my agent says. What my agent does needs a check outside the model.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.258
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Why aren't mobile agents as good",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Why aren't mobile agents as good",
+        "seed_score": 30.0,
+        "summary": "Why aren't mobile agents as good as coding agents yet?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Why aren't mobile agents as good as coding agents yet?",
+            "body": "Why aren't mobile agents as good as coding agents yet?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7kmp2/why_arent_mobile_agents_as_good_as_coding_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Why aren't mobile agents as good as coding agents yet?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29300000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "you guys handling database access for",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "you guys handling database access for",
+        "seed_score": 22.5,
+        "summary": "how are you guys handling database access for analytics/debugging agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "how are you guys handling database access for analytics/debugging agents?",
+            "body": "how are you guys handling database access for analytics/debugging agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7o30l/how_are_you_guys_handling_database_access_for/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "how are you guys handling database access for analytics/debugging agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29000000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,924 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "416537fdce1a4d56",
+  "generated_at": "2026-10-17T23:58:58.761364Z",
+  "from_date": "2026-10-16",
+  "to_date": "2026-10-17",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-17T23:58:58.703564Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-17T23:58:58.703573Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-10-17T23:58:58.473304Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 131,
+      "attempted": true,
+      "at": "2026-10-17T23:58:58.703329Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "deepseek-ai/DeepSeek-V4.1-Flash-1017 \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 562,
+          "points": 665
+        },
+        "reddit": {
+          "num_comments": 298
+        }
+      },
+      "nomination": {
+        "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017 \u00b7 Hugging Face",
+        "seed_score": 4419.45,
+        "summary": "deepseek-ai/DeepSeek-V4.1-Flash-1017 \u00b7 Hugging Face",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 \u00b7 Hugging Face",
+            "body": "deepseek-ai/DeepSeek-V4.1-Flash-1017 \u00b7 Hugging Face",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x84po4/deepseekaideepseekv41flash1017_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1011,
+              "num_comments": 276
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "deepseek-ai/DeepSeek-V4.1-Flash-1017 \u00b7 Hugging Face",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 90,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34750000000000003
+          },
+          {
+            "item_id": "50129045",
+            "source": "hackernews",
+            "title": "DeepSeek-v4.1-Flash-1017",
+            "body": "DeepSeek-v4.1-Flash-1017",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "author": "theykk",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 665,
+              "comments": 562
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about DeepSeek-v4.1-Flash-1017",
+            "snippet": "DeepSeek-v4.1-Flash-1017",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50129045",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 97,
+            "source_quality": 0.8,
+            "local_rank_score": 0.36750000000000005
+          },
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "DeepSeek V4.1 Flash 1017 [GGUF + Abliterated]",
+            "body": "DeepSeek V4.1 Flash 1017 [GGUF + Abliterated]",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ke24/deepseek_v41_flash_1017_gguf_abliterated/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "DeepSeek V4.1 Flash 1017 [GGUF + Abliterated]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.307
+          },
+          {
+            "item_id": "R156",
+            "source": "reddit",
+            "title": "DeepSeek v4.1-Flash-1017 new version",
+            "body": "DeepSeek v4.1-Flash-1017 new version\n[removed]",
+            "url": "https://www.reddit.com/r/singularity/comments/1x8cnzp/deepseek_v41flash1017_new_version/",
+            "container": "singularity",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 1,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2845
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "GPT-6 Astra 1-click Star Trek Legends",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 110
+        }
+      },
+      "nomination": {
+        "name": "GPT-6 Astra 1-click Star Trek Legends",
+        "seed_score": 1614.0,
+        "summary": "GPT-6 Astra made me a 1-click offline patch for Star Trek Legends after its servers shut down, and it actually works!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "GPT-6 Astra made me a 1-click offline patch for Star Trek Legends after its servers shut down, and it actually works!",
+            "body": "GPT-6 Astra made me a 1-click offline patch for Star Trek Legends after its servers shut down, and it actually works!",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1x7z3yl/gpt6_astra_made_me_a_1click_offline_patch_for/",
+            "container": "ChatGPT",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 966,
+              "num_comments": 110
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "GPT-6 Astra made me a 1-click offline patch for Star Trek Legends after its servers shut down, and it actually works!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 449,
+          "points": 456
+        },
+        "reddit": {
+          "num_comments": 107
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 1569.6321,
+        "summary": "How the Claude Code team does code review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122951",
+            "source": "hackernews",
+            "title": "How the Claude Code team does code review",
+            "body": "How the Claude Code team does code review",
+            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 456,
+              "comments": 449
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about How the Claude Code team does code review",
+            "snippet": "How the Claude Code team does code review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122951",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14800000000000002
+          },
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "Does anyone just use Claude Code (desktop) for ... everything? Why chat?",
+            "body": "Does anyone just use Claude Code (desktop) for ... everything? Why chat?",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x87zdg/does_anyone_just_use_claude_code_desktop_for/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 163,
+              "num_comments": 107
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Does anyone just use Claude Code (desktop) for ... everything? Why chat?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude reveals ECDSA curve origins",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 372,
+          "points": 1020
+        }
+      },
+      "nomination": {
+        "name": "Claude reveals ECDSA curve origins",
+        "seed_score": 1476.439,
+        "summary": "Claude reveals ECDSA curve origins",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122800",
+            "source": "hackernews",
+            "title": "Claude reveals ECDSA curve origins",
+            "body": "Claude reveals ECDSA curve origins",
+            "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+            "author": "ahlCVA",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1020,
+              "comments": 372
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Claude reveals ECDSA curve origins",
+            "snippet": "Claude reveals ECDSA curve origins",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122800",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Reset",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 272
+        }
+      },
+      "nomination": {
+        "name": "Claude Reset",
+        "seed_score": 1378.5,
+        "summary": "This week's Claude Reset - Anyone else noticing unusually high usage all of a sudden?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "This week's Claude Reset - Anyone else noticing unusually high usage all of a sudden?",
+            "body": "This week's Claude Reset - Anyone else noticing unusually high usage all of a sudden?",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x8bmku/this_weeks_claude_reset_anyone_else_noticing/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 647,
+              "num_comments": 272
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "This week's Claude Reset - Anyone else noticing unusually high usage all of a sudden?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.337
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "DeepSeek V4.1 Flash 1017",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 107
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek V4.1 Flash 1017",
+        "seed_score": 936.0,
+        "summary": "DeepSeek V4.1 Flash (1017) Now Leads Open-Weight Models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "DeepSeek V4.1 Flash (1017) Now Leads Open-Weight Models",
+            "body": "DeepSeek V4.1 Flash (1017) Now Leads Open-Weight Models",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8bb6b/deepseek_v41_flash_1017_now_leads_openweight/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 517,
+              "num_comments": 107
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "DeepSeek V4.1 Flash (1017) Now Leads Open-Weight Models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.433
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Apple ML Research Muse Spark Open",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 193,
+          "points": 360
+        }
+      },
+      "nomination": {
+        "name": "Apple ML Research Muse Spark Open",
+        "seed_score": 586.5451,
+        "summary": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50118320",
+            "source": "hackernews",
+            "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+            "body": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+            "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+            "author": "antipaul",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 360,
+              "comments": 193
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+            "snippet": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50118320",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.112
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI GPT 5.6 Sol",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 56
+        }
+      },
+      "nomination": {
+        "name": "AI GPT 5.6 Sol",
+        "seed_score": 489.0,
+        "summary": "AI stole cryptocurrency to fulfil coding task.. (GPT 5.6 Sol)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "AI stole cryptocurrency to fulfil coding task.. (GPT 5.6 Sol)",
+            "body": "AI stole cryptocurrency to fulfil coding task.. (GPT 5.6 Sol)",
+            "url": "https://www.reddit.com/r/singularity/comments/1x8bhno/ai_stole_cryptocurrency_to_fulfil_coding_task_gpt/",
+            "container": "singularity",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 270,
+              "num_comments": 56
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI stole cryptocurrency to fulfil coding task.. (GPT 5.6 Sol)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3525
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Llama.cpp PS5 GGUF",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 84,
+          "points": 365
+        }
+      },
+      "nomination": {
+        "name": "Llama.cpp PS5 GGUF",
+        "seed_score": 476.2364,
+        "summary": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122431",
+            "source": "hackernews",
+            "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+            "body": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+            "url": "https://github.com/cobanov/PS5LM",
+            "author": "Anon84",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 365,
+              "comments": 84
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Llama.cpp on a jailbroken PS5: run any GGUF model natively o",
+            "snippet": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122431",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 45,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Llmspeed LLM runs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 76,
+          "points": 236
+        }
+      },
+      "nomination": {
+        "name": "Llmspeed LLM runs",
+        "seed_score": 468.0,
+        "summary": "Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50127979",
+            "source": "hackernews",
+            "title": "Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware",
+            "body": "Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware",
+            "url": "https://llmspeed.dev/",
+            "author": "albinstman",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 236,
+              "comments": 76
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: Llmspeed \u2013 feel how fast a local LLM runs before yo",
+            "snippet": "Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50127979",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 32,
+            "source_quality": 0.8,
+            "local_rank_score": 0.28300000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "FPS Claude Code 3D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 78
+        }
+      },
+      "nomination": {
+        "name": "FPS Claude Code 3D",
+        "seed_score": 457.5,
+        "summary": "I made a browser FPS with Claude Code, every 3D model in it is code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "I made a browser FPS with Claude Code, every 3D model in it is code",
+            "body": "I made a browser FPS with Claude Code, every 3D model in it is code",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x8dg94/i_made_a_browser_fps_with_claude_code_every_3d/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 227,
+              "num_comments": 78
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "I made a browser FPS with Claude Code, every 3D model in it is code",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Desire Move Permanently U.S Low",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 208,
+          "points": 200
+        }
+      },
+      "nomination": {
+        "name": "Desire Move Permanently U.S Low",
+        "seed_score": 432.7494,
+        "summary": "Desire to Move Permanently to U.S. at New Low",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50120664",
+            "source": "hackernews",
+            "title": "Desire to Move Permanently to U.S. at New Low",
+            "body": "Desire to Move Permanently to U.S. at New Low",
+            "url": "https://news.gallup.com/poll/708614/desire-migrate-drops-new-low.aspx",
+            "author": "karakoram",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 200,
+              "comments": 208
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Desire to Move Permanently to U.S. at New Low",
+            "snippet": "Desire to Move Permanently to U.S. at New Low",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50120664",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 48,
+            "source_quality": 0.8,
+            "local_rank_score": 0.10550000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Jack Clark",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 142
+        }
+      },
+      "nomination": {
+        "name": "Jack Clark",
+        "seed_score": 408.0,
+        "summary": "anthropic cofounder Jack Clark \u201cwe are in the singularity\u201d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "anthropic cofounder Jack Clark \u201cwe are in the singularity\u201d",
+            "body": "anthropic cofounder Jack Clark \u201cwe are in the singularity\u201d",
+            "url": "https://www.reddit.com/r/singularity/comments/1x8fvvu/anthropic_cofounder_jack_clark_we_are_in_the/",
+            "container": "singularity",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 130,
+              "num_comments": 142
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "anthropic cofounder Jack Clark \u201cwe are in the singularity\u201d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.332
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Qwen 3.8 Flash Next",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 99
+        }
+      },
+      "nomination": {
+        "name": "Qwen 3.8 Flash Next",
+        "seed_score": 397.5,
+        "summary": "Why not run Qwen 3.8 Flash Next with the full n-gram-table?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Why not run Qwen 3.8 Flash Next with the full n-gram-table?",
+            "body": "Why not run Qwen 3.8 Flash Next with the full n-gram-table?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8am0i/why_not_run_qwen_38_flash_next_with_the_full/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 166,
+              "num_comments": 99
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Why not run Qwen 3.8 Flash Next with the full n-gram-table?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Anthropic June",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 86,
+          "points": 283
+        }
+      },
+      "nomination": {
+        "name": "Anthropic June",
+        "seed_score": 391.3836,
+        "summary": "Anthropic assigned highest junk credit rating in June",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122112",
+            "source": "hackernews",
+            "title": "Anthropic assigned highest junk credit rating in June",
+            "body": "Anthropic assigned highest junk credit rating in June",
+            "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+            "author": "JumpCrisscross",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 283,
+              "comments": 86
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic assigned highest junk credit rating in June",
+            "snippet": "Anthropic assigned highest junk credit rating in June",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122112",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 39,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0965
+          }
+        ]
+      }
+    }
+  ]
+}

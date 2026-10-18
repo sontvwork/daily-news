@@ -1,0 +1,833 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "e8d4c18f9d15259c",
+  "generated_at": "2026-10-17T23:55:48.862166Z",
+  "from_date": "2026-10-16",
+  "to_date": "2026-10-17",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-17T23:55:48.826714Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-17T23:55:48.826726Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 36,
+      "attempted": true,
+      "at": "2026-10-17T23:55:48.825446Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-10-17T23:55:48.826553Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude reveals ECDSA curve origins",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 372,
+          "points": 1020
+        }
+      },
+      "nomination": {
+        "name": "Claude reveals ECDSA curve origins",
+        "seed_score": 1476.439,
+        "summary": "Claude reveals ECDSA curve origins",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122800",
+            "source": "hackernews",
+            "title": "Claude reveals ECDSA curve origins",
+            "body": "Claude reveals ECDSA curve origins",
+            "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+            "author": "ahlCVA",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1020,
+              "comments": 372
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Claude reveals ECDSA curve origins",
+            "snippet": "Claude reveals ECDSA curve origins",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122800",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 449,
+          "points": 456
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 959.8975,
+        "summary": "How the Claude Code team does code review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122951",
+            "source": "hackernews",
+            "title": "How the Claude Code team does code review",
+            "body": "How the Claude Code team does code review",
+            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 456,
+              "comments": 449
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about How the Claude Code team does code review",
+            "snippet": "How the Claude Code team does code review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122951",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 10,
+            "engagement_score": 87,
+            "source_quality": 0.8,
+            "local_rank_score": 0.22250000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Mythos 5",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 36,
+          "points": 170
+        },
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Claude Mythos 5",
+        "seed_score": 855.0512,
+        "summary": "Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more",
+            "body": "Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more",
+            "url": "https://www.reddit.com/r/singularity/comments/1x7s98a/claude_mythos_5_designed_quantum_circuits_that/",
+            "container": "singularity",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 456,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1655
+          },
+          {
+            "item_id": "50121939",
+            "source": "hackernews",
+            "title": "Designing more efficient quantum circuits with Claude",
+            "body": "Designing more efficient quantum circuits with Claude",
+            "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 170,
+              "comments": 36
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Designing more efficient quantum circuits with Claude",
+            "snippet": "Designing more efficient quantum circuits with Claude",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50121939",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 30,
+            "source_quality": 0.8,
+            "local_rank_score": 0.11349999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude ECDSA Proof NSA",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 56
+        }
+      },
+      "nomination": {
+        "name": "Claude ECDSA Proof NSA",
+        "seed_score": 612.0009,
+        "summary": "Claude found the seeds for ECDSA. Proof of no NSA backdoor, but also... I don't feel so good about where we're headed",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Claude found the seeds for ECDSA. Proof of no NSA backdoor, but also... I don't feel so good about where we're headed",
+            "body": "Claude found the seeds for ECDSA. Proof of no NSA backdoor, but also... I don't feel so good about where we're headed",
+            "url": "https://www.reddit.com/r/singularity/comments/1x7udbi/claude_found_the_seeds_for_ecdsa_proof_of_no_nsa/",
+            "container": "singularity",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 521,
+              "num_comments": 56
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude found the seeds for ECDSA. Proof of no NSA backdoor, but also... I don't feel so good about where we're headed",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "AI GPT 5.6 Sol",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 56
+        }
+      },
+      "nomination": {
+        "name": "AI GPT 5.6 Sol",
+        "seed_score": 486.0,
+        "summary": "AI stole cryptocurrency to fulfil coding task.. (GPT 5.6 Sol)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "AI stole cryptocurrency to fulfil coding task.. (GPT 5.6 Sol)",
+            "body": "AI stole cryptocurrency to fulfil coding task.. (GPT 5.6 Sol)",
+            "url": "https://www.reddit.com/r/singularity/comments/1x8bhno/ai_stole_cryptocurrency_to_fulfil_coding_task_gpt/",
+            "container": "singularity",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 268,
+              "num_comments": 56
+            },
+            "relevance_hint": 0.35,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI stole cryptocurrency to fulfil coding task.. (GPT 5.6 Sol)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.35,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5445
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Source Estonian",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 126,
+          "points": 141
+        }
+      },
+      "nomination": {
+        "name": "Source Estonian",
+        "seed_score": 400.5,
+        "summary": "Source code of the Estonian online voting system",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50127586",
+            "source": "hackernews",
+            "title": "Source code of the Estonian online voting system",
+            "body": "Source code of the Estonian online voting system",
+            "url": "https://github.com/valimised/ivxv",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 141,
+              "comments": 126
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Source code of the Estonian online voting system",
+            "snippet": "Source code of the Estonian online voting system",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50127586",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.8,
+            "local_rank_score": 0.31
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Codex Desktop continuously generates Crashpad",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 24,
+          "points": 46
+        }
+      },
+      "nomination": {
+        "name": "Codex Desktop continuously generates Crashpad",
+        "seed_score": 105.0,
+        "summary": "Codex Desktop continuously generates Crashpad pending dumps",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50133231",
+            "source": "hackernews",
+            "title": "Codex Desktop continuously generates Crashpad pending dumps",
+            "body": "Codex Desktop continuously generates Crashpad pending dumps",
+            "url": "https://github.com/openai/codex/issues/25921",
+            "author": "AIorNot",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 46,
+              "comments": 24
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Codex Desktop continuously generates Crashpad pending dumps",
+            "snippet": "Codex Desktop continuously generates Crashpad pending dumps",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50133231",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "you make a coding agent prove",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 67
+        }
+      },
+      "nomination": {
+        "name": "you make a coding agent prove",
+        "seed_score": 77.4282,
+        "summary": "How do you make a coding agent prove it actually ran the tests?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "How do you make a coding agent prove it actually ran the tests?",
+            "body": "How do you make a coding agent prove it actually ran the tests?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x7g0hc/how_do_you_make_a_coding_agent_prove_it_actually/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 67
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you make a coding agent prove it actually ran the tests?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.127
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "you guys decide a claude code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "you guys decide a claude code",
+        "seed_score": 44.5477,
+        "summary": "when do you guys decide a claude code session has gone on too long?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "when do you guys decide a claude code session has gone on too long?",
+            "body": "when do you guys decide a claude code session has gone on too long?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x795qw/when_do_you_guys_decide_a_claude_code_session_has/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing",
+            "snippet": "when do you guys decide a claude code session has gone on too long?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15750000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 22.5,
+        "summary": "Claude found a security hole in my app and then refused to fix it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Claude found a security hole in my app and then refused to fix it",
+            "body": "Claude found a security hole in my app and then refused to fix it",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x852zo/claude_found_a_security_hole_in_my_app_and_then/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude found a security hole in my app and then refused to fix it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Claude buying",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Claude buying",
+        "seed_score": 15.9099,
+        "summary": "been copy-pasting from a free chatbot and i want Claude in the repo without buying the top plan",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "been copy-pasting from a free chatbot and i want Claude in the repo without buying the top plan",
+            "body": "been copy-pasting from a free chatbot and i want Claude in the repo without buying the top plan",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x7teqt/been_copypasting_from_a_free_chatbot_and_i_want/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "been copy-pasting from a free chatbot and i want Claude in the repo without buying the top plan",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10350000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Desktop Commander to Claude CLI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Desktop Commander to Claude CLI",
+        "seed_score": 10.6066,
+        "summary": "Desktop Commander to Claude CLI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Desktop Commander to Claude CLI",
+            "body": "Desktop Commander to Claude CLI",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x79a2b/desktop_commander_to_claude_cli/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Desktop Commander to Claude CLI",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.113
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Claude userbase so toxic",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Claude userbase so toxic",
+        "seed_score": 5.3033,
+        "summary": "I like to use AI to mod and decomp games (so I can then mod them).\n\nI don't post any of this online, it's all for my own personal enjoyment. It stays only on my own computer.\n\nClaude however has this stupid overactive filter in place that sometimes flags what I'm having it do for me as \"cyber crime\". Decompiling a game, injecting code into a game (Claude says it needs to do this sometimes to see h",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "Why is the Claude userbase so toxic?",
+            "body": "Why is the Claude userbase so toxic?\nI like to use AI to mod and decomp games (so I can then mod them).\n\nI don't post any of this online, it's all for my own personal enjoyment. It stays only on my own computer.\n\nClaude however has this stupid overactive filter in place that sometimes flags what I'm having it do for me as \"cyber crime\". Decompiling a game, injecting code into a game (Claude says it needs to do this sometimes to see how a game works), editing files, decrypting files all trigger it very commonly. Games that don't have a like 20 year old community of people making mods and decompiling the game fully already have bad luck with me modding it because of this filter.\n\nSo sometimes I'll get a bit frustrated and complain about how the filter is too active, that it's treating me decompiling a game the exact same as someone making malware when it's not even remotely similar.\n\nAnd all I get from Claude users is:  \n\"So you're doing something illegal and crying that Claude won't ignore the law and do it anyway?\"  \n\"just casually admitting to doing cybercrime lol enjoy your visit by the police\"  \n\"you're just using it to steal other people's shit\"\n\nhttps://i.redd.it/j3btpf0srwvh1.png\n\n\"so it's saying no and you're trying to force it do it anyway and break it's rules? am i understanding this right?\"  \n\"amazing, it flags you and you keep trying to work around it and keep going. hope they ban your ass\"  \n\"how about you just do it yourself instead huh? or are you too lazy and want ai to commit your crimes for you?\"\n\nNeed to remind everyone that there are multiple game decomp subs on Reddit where people share their progress, post decomp projects, share mods they made and give downloads to them. They even use AI sometimes. There are also multiple sites online just for this. Ocarina of Time is a fully decompiled game and has the popular Ship of Harkinian. Downloadable online, lots of people use it, lots of people make mods for it. Mario 64 is the same.\n\nBut they're saying I'm a criminal, I should be in jail, I'm committing evil, I'm stealing from the creators, I'm breaking the law, I need to just stop and realize I'm in the wrong, etc.\n\nWhat the hell is wrong with the Claude userbase? Why is it like this? Any time I've ever complained about the filter being too strict and locking you out of harmless things, they act like this. They get pissed and start insulting me, saying I need to just respect the filter, and the fact I want to get around it means I'm a bad person.",
+            "url": "https://www.reddit.com/r/singularity/comments/1x7uhl4/why_is_the_claude_userbase_so_toxic/",
+            "container": "singularity",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I like to use AI to mod and decomp games (so I can then mod them).\n\nI don't post any of this online, it's all for my own personal enjoyment. It stays only on my own computer.\n\nClaude however has this stupid overactive filter in place that sometimes flags what I'm having it do for me as \"cyber crime\". Decompiling a game, injecting code into a game (Claude says it needs to do this sometimes to see h",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 4.2426,
+        "summary": "What is a governed AI assistant for associations?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "What is a governed AI assistant for associations?",
+            "body": "What is a governed AI assistant for associations?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x7tfc9/what_is_a_governed_ai_assistant_for_associations/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.29,
+            "why_relevant": "Reddit listing",
+            "snippet": "What is a governed AI assistant for associations?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.29,
+            "freshness": 10,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "AI actually",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "AI actually",
+        "seed_score": 3.182,
+        "summary": "I\u2019m a senior SWE and use Claude Code/Codex daily. I built **optimAIzr** over the past month because I wanted to understand where my tokens were actually going and how much I could save.\n\nIt breaks down your AI coding usage turn by turn, tracks costs and rate limits, catches waste, explains why it\u2019s happening, recommends live optimizations, and lets you simulate, apply, and verify changes to see wh",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "I got tired of guessing where my AI coding tokens were going",
+            "body": "I got tired of guessing where my AI coding tokens were going\nI\u2019m a senior SWE and use Claude Code/Codex daily. I built **optimAIzr** over the past month because I wanted to understand where my tokens were actually going and how much I could save.\n\nIt breaks down your AI coding usage turn by turn, tracks costs and rate limits, catches waste, explains why it\u2019s happening, recommends live optimizations, and lets you simulate, apply, and verify changes to see what actually saves you money.\n\nIt now supports Claude Code, Codex, and OpenCode. Free, open source, and runs locally.\n\n3k+ npm downloads and 72 GitHub stars so far. Still a lot to improve.\n\ngit: https://github.com/blendbunjaku/optimaizr",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x7dpoz/i_got_tired_of_guessing_where_my_ai_coding_tokens/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019m a senior SWE and use Claude Code/Codex daily. I built **optimAIzr** over the past month because I wanted to understand where my tokens were actually going and how much I could save.\n\nIt breaks down your AI coding usage turn by turn, tracks costs and rate limits, catches waste, explains why it\u2019s happening, recommends live optimizations, and lets you simulate, apply, and verify changes to see wh",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 10,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43050000000000005
+          }
+        ]
+      }
+    }
+  ]
+}

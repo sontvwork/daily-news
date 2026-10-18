@@ -1,0 +1,862 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "b6d580210077993b",
+  "generated_at": "2026-10-17T23:55:50.507967Z",
+  "from_date": "2026-10-16",
+  "to_date": "2026-10-17",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-17T23:55:50.455641Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-17T23:55:50.455652Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 54,
+      "attempted": true,
+      "at": "2026-10-17T23:55:50.454162Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-17T23:55:50.455450Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "China 23 AI technologies",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 453
+        }
+      },
+      "nomination": {
+        "name": "China 23 AI technologies",
+        "seed_score": 1289.7628,
+        "summary": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+            "body": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g3zq/china_proposes_export_controls_on_23_ai/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 763,
+              "num_comments": 453
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 449,
+          "points": 456
+        },
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 1110.7821,
+        "summary": "How the Claude Code team does code review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50122951",
+            "source": "hackernews",
+            "title": "How the Claude Code team does code review",
+            "body": "How the Claude Code team does code review",
+            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 456,
+              "comments": 449
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "HN story about How the Claude Code team does code review",
+            "snippet": "How the Claude Code team does code review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50122951",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1965
+          },
+          {
+            "item_id": "R78",
+            "source": "reddit",
+            "title": "I built a 16-subagent team in Claude Code with hard guardrails. Overkill, or what would you change?",
+            "body": "I built a 16-subagent team in Claude Code with hard guardrails. Overkill, or what would you change?\nSolo dev. Every change goes dev \u2192 code + security review \u2192 QA \u2192 release. Python hooks block deploys, secrets and pushes to main. 9 agents on Opus, 41 evals I rarely run (they cost money). Is this a solid setup or overbuilt? What would you cut, merge or add?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8ezh5/i_built_a_16subagent_team_in_claude_code_with/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Solo dev. Every change goes dev \u2192 code + security review \u2192 QA \u2192 release. Python hooks block deploys, secrets and pushes to main. 9 agents on Opus, 41 evals I rarely run (they cost money). Is this a solid setup or overbuilt? What would you cut, merge or add?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3025
+          },
+          {
+            "item_id": "R75",
+            "source": "reddit",
+            "title": "What Anthropic\u2019s 90% agent-written codebase reveals about breaking review loops in AI agents",
+            "body": "What Anthropic\u2019s 90% agent-written codebase reveals about breaking review loops in AI agents\nLetting an AI coding agent generate code is easy; preventing an automated review\r\n\nloop from spiraling into fifty turns of pedantic nitpicking is where the real engineering\r\n\nbegins. Anthropic's breakdown of how Claude writes ninety percent of Claude Code's\r\n\nown repository highlights three architectural constraints every builder deploying\r\n\ncoding agents needs to implement.\n\n\r\n\nWhen you scale code generation past toy prototypes, three specific guardrails keep\r\n\nvelocity from collapsing:\r\n\n\u25cf Fresh-context review agents: The agent reviewing a pull request must never\r\n\nshare the execution history of the agent that wrote the patch. Spawning a fresh\r\n\ncontext window to evaluate the isolated diff prevents prompt priming and\r\n\neliminates self-confirmation bias.\r\n\n\u25cf Hard iteration caps: Autonomous agent-on-agent review loops suffer severe\r\n\ndiminishing returns. Capping automated review passes at three rounds forces\r\n\nthe generator to address substantive architectural issues up front rather than\r\n\ncycling endlessly on formatting.\r\n\n\u25cf Risk-tiered approval gating: Zero-human auto-merges only work when\r\n\nchanges pass strict classifiers. Low-risk documentation or test updates can\r\n\nmerge automatically, while core schema and permission changes route directly\r\n\nto human reviewers.\r\n\nMost teams building internal coding agents assume the bottleneck is model\r\n\nintelligence. In practice, the bottleneck is pipeline design: running parallel linters\r\n\nbefore LLM inspection, voting across multiple reviewer calls, and treating automated\r\n\ncode generation as an asynchronous queue rather than a live conversational session.\n\n\r\n\nFor teams running autonomous coding agents in production repositories, what\r\n\nthresholds or heuristics are you using to decide when a PR requires human eyes?\n\nTL;DR: Scaling agent-generated code requires fresh-context reviewer agents, hard\r\n\niteration caps, and risk-classified human approval gates.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8gfxl/what_anthropics_90_agentwritten_codebase_reveals/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Letting an AI coding agent generate code is easy; preventing an automated review\r\n\nloop from spiraling into fifty turns of pedantic nitpicking is where the real engineering\r\n\nbegins. Anthropic's breakdown of how Claude writes ninety percent of Claude Code's\r\n\nown repository highlights three architectural constraints every builder deploying\r\n\ncoding agents needs to implement.\n\n\r\n\nWhen you scale cod",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.28,
+            "freshness": 90,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41300000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "I love software rendering",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 229,
+          "points": 368
+        }
+      },
+      "nomination": {
+        "name": "I love software rendering",
+        "seed_score": 633.2141,
+        "summary": "I love software rendering",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50117746",
+            "source": "hackernews",
+            "title": "I love software rendering",
+            "body": "I love software rendering",
+            "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
+            "author": "speckx",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 368,
+              "comments": 229
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about I love software rendering",
+            "snippet": "I love software rendering",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50117746",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 79,
+            "source_quality": 0.8,
+            "local_rank_score": 0.169
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "JPEG XL AVIF",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 209,
+          "points": 317
+        }
+      },
+      "nomination": {
+        "name": "JPEG XL AVIF",
+        "seed_score": 557.9073,
+        "summary": "JPEG XL vs. AVIF for web use-cases",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50120224",
+            "source": "hackernews",
+            "title": "JPEG XL vs. AVIF for web use-cases",
+            "body": "JPEG XL vs. AVIF for web use-cases",
+            "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/",
+            "author": "farlight",
+            "container": "Hacker News",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 317,
+              "comments": 209
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about JPEG XL vs. AVIF for web use-cases",
+            "snippet": "JPEG XL vs. AVIF for web use-cases",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50120224",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.098
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Source Estonian",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 126,
+          "points": 141
+        }
+      },
+      "nomination": {
+        "name": "Source Estonian",
+        "seed_score": 400.5,
+        "summary": "Source code of the Estonian online voting system",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50127586",
+            "source": "hackernews",
+            "title": "Source code of the Estonian online voting system",
+            "body": "Source code of the Estonian online voting system",
+            "url": "https://github.com/valimised/ivxv",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 141,
+              "comments": 126
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Source code of the Estonian online voting system",
+            "snippet": "Source code of the Estonian online voting system",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50127586",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2985
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Development statistics for the 7.2 kernel",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 100,
+          "points": 122
+        }
+      },
+      "nomination": {
+        "name": "Development statistics for the 7.2 kernel",
+        "seed_score": 333.0,
+        "summary": "Development statistics for the 7.2 kernel",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50132950",
+            "source": "hackernews",
+            "title": "Development statistics for the 7.2 kernel",
+            "body": "Development statistics for the 7.2 kernel",
+            "url": "https://lwn.net/Articles/1088776/",
+            "author": "farlight",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 122,
+              "comments": 100
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Development statistics for the 7.2 kernel",
+            "snippet": "Development statistics for the 7.2 kernel",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50132950",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.8,
+            "local_rank_score": 0.32300000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Microsoft CMU",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 60,
+          "points": 52
+        }
+      },
+      "nomination": {
+        "name": "Microsoft CMU",
+        "seed_score": 168.0,
+        "summary": "Microsoft and CMU team up to train early career software engineers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50133830",
+            "source": "hackernews",
+            "title": "Microsoft and CMU team up to train early career software engineers",
+            "body": "Microsoft and CMU team up to train early career software engineers",
+            "url": "https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise",
+            "author": "azhenley",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 52,
+              "comments": 60
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Microsoft and CMU team up to train early career software eng",
+            "snippet": "Microsoft and CMU team up to train early career software engineers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50133830",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Getting CRM records",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 40
+        }
+      },
+      "nomination": {
+        "name": "Getting CRM records",
+        "seed_score": 79.5495,
+        "summary": "Getting agents to update CRM records after meetings",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Getting agents to update CRM records after meetings",
+            "body": "Getting agents to update CRM records after meetings",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7nrih/getting_agents_to_update_crm_records_after/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 35,
+              "num_comments": 40
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Getting agents to update CRM records after meetings",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11800000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "51 AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "51 AI",
+        "seed_score": 63.0,
+        "summary": "I collected 51 AI agent setups people actually use - what I found.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "I collected 51 AI agent setups people actually use - what I found.",
+            "body": "I collected 51 AI agent setups people actually use - what I found.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8i1fj/i_collected_51_ai_agent_setups_people_actually/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing",
+            "snippet": "I collected 51 AI agent setups people actually use - what I found.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3785
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 34
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 63.0,
+        "summary": "AI agents exceeded their assigned scope. What actually enforces the boundary before execution?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "AI agents exceeded their assigned scope. What actually enforces the boundary before execution?",
+            "body": "AI agents exceeded their assigned scope. What actually enforces the boundary before execution?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8ait0/ai_agents_exceeded_their_assigned_scope_what/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 34
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI agents exceeded their assigned scope. What actually enforces the boundary before execution?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40800000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 50.9117,
+        "summary": "What would your ideal AI agent actually do for you day to day?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "What would your ideal AI agent actually do for you day to day?",
+            "body": "What would your ideal AI agent actually do for you day to day?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x77vsl/what_would_your_ideal_ai_agent_actually_do_for/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.19,
+            "why_relevant": "Reddit listing",
+            "snippet": "What would your ideal AI agent actually do for you day to day?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.19,
+            "freshness": 10,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1955
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Right",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Right",
+        "seed_score": 46.669,
+        "summary": "Right now a million developers are making software factory patterns..",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "Right now a million developers are making software factory patterns..",
+            "body": "Right now a million developers are making software factory patterns..",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7vlbc/right_now_a_million_developers_are_making/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Right now a million developers are making software factory patterns..",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11000000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI agents autonomous",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "AI agents autonomous",
+        "seed_score": 42.4264,
+        "summary": "What are autonomous AI agents actually doing in production today?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "What are autonomous AI agents actually doing in production today?",
+            "body": "What are autonomous AI agents actually doing in production today?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x72yi6/what_are_autonomous_ai_agents_actually_doing_in/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 16,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "What are autonomous AI agents actually doing in production today?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 44,
+            "source_quality": 0.6,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "AI/Agent VC",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "AI/Agent VC",
+        "seed_score": 36.0624,
+        "summary": "Are AI/Agent startups actually making money, or is most of the industry still burning VC money?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Are AI/Agent startups actually making money, or is most of the industry still burning VC money?",
+            "body": "Are AI/Agent startups actually making money, or is most of the industry still burning VC money?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x7gyzp/are_aiagent_startups_actually_making_money_or_is/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 16,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are AI/Agent startups actually making money, or is most of the industry still burning VC money?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 10,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.171
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Learning iOS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Learning iOS",
+        "seed_score": 31.5,
+        "summary": "Learning creating local agents for iOS. Are these statements true?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Learning creating local agents for iOS. Are these statements true?",
+            "body": "Learning creating local agents for iOS. Are these statements true?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8b6r6/learning_creating_local_agents_for_ios_are_these/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Learning creating local agents for iOS. Are these statements true?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29500000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

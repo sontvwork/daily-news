@@ -1,0 +1,836 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "4e20df5cb415dc34",
+  "generated_at": "2026-10-18T23:56:05.892500Z",
+  "from_date": "2026-10-17",
+  "to_date": "2026-10-18",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-18T23:56:05.844770Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-18T23:56:05.844780Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-18T23:56:05.800610Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 53,
+      "attempted": true,
+      "at": "2026-10-18T23:56:05.844599Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Someone behind the software",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 116,
+          "points": 276
+        }
+      },
+      "nomination": {
+        "name": "Someone behind the software",
+        "seed_score": 588.0,
+        "summary": "Someone behind the software",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50142573",
+            "source": "hackernews",
+            "title": "Someone behind the software",
+            "body": "Someone behind the software",
+            "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+            "author": "tosh",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 276,
+              "comments": 116
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Someone behind the software",
+            "snippet": "Someone behind the software",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50142573",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.8,
+            "local_rank_score": 0.36100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Sphinx AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 81,
+          "points": 238
+        }
+      },
+      "nomination": {
+        "name": "Sphinx AI",
+        "seed_score": 478.5,
+        "summary": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50137950",
+            "source": "hackernews",
+            "title": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+            "body": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+            "url": "https://sphinx-six-theta.vercel.app/",
+            "author": "critiquebrowser",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 238,
+              "comments": 81
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "HN story about Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code",
+            "snippet": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50137950",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3945000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Source Estonian",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 219,
+          "points": 230
+        }
+      },
+      "nomination": {
+        "name": "Source Estonian",
+        "seed_score": 476.2364,
+        "summary": "Source code of the Estonian online voting system",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50127586",
+            "source": "hackernews",
+            "title": "Source code of the Estonian online voting system",
+            "body": "Source code of the Estonian online voting system",
+            "url": "https://github.com/valimised/ivxv",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 230,
+              "comments": 219
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Source code of the Estonian online voting system",
+            "snippet": "Source code of the Estonian online voting system",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50127586",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Hybrid Reasoning Agents LLM agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 89,
+          "points": 150
+        },
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Hybrid Reasoning Agents LLM agents",
+        "seed_score": 448.5,
+        "summary": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50145337",
+            "source": "hackernews",
+            "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+            "body": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+            "url": "https://arxiv.org/abs/2610.18861",
+            "author": "allinonai",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 150,
+              "comments": 89
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Hybrid Reasoning Agents: LLM agents that think in latent spa",
+            "snippet": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50145337",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          },
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Hybrid Reasoning Agents",
+            "body": "Hybrid Reasoning Agents",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9fc1x/hybrid_reasoning_agents/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Hybrid Reasoning Agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.342
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Websites AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 125,
+          "points": 133
+        }
+      },
+      "nomination": {
+        "name": "Websites AI agents",
+        "seed_score": 387.0,
+        "summary": "Websites are closing their doors to AI agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50141657",
+            "source": "hackernews",
+            "title": "Websites are closing their doors to AI agents",
+            "body": "Websites are closing their doors to AI agents",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+            "author": "evolve2k",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 133,
+              "comments": 125
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "HN story about Websites are closing their doors to AI agents",
+            "snippet": "Websites are closing their doors to AI agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50141657",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 90,
+            "engagement_score": 13,
+            "source_quality": 0.8,
+            "local_rank_score": 0.40700000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Google Open Sources Harness2",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Google Open Sources Harness2",
+        "seed_score": 304.5,
+        "summary": "Google Open Sources Harness2 for Self Improving AI Agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "Google Open Sources Harness2 for Self Improving AI Agents",
+            "body": "Google Open Sources Harness2 for Self Improving AI Agents",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9gfnb/google_open_sources_harness2_for_self_improving/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 188,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Google Open Sources Harness2 for Self Improving AI Agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.481
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Development statistics for the 7.2 kernel",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 114,
+          "points": 138
+        }
+      },
+      "nomination": {
+        "name": "Development statistics for the 7.2 kernel",
+        "seed_score": 267.2864,
+        "summary": "Development statistics for the 7.2 kernel",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50132950",
+            "source": "hackernews",
+            "title": "Development statistics for the 7.2 kernel",
+            "body": "Development statistics for the 7.2 kernel",
+            "url": "https://lwn.net/Articles/1088776/",
+            "author": "farlight",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 138,
+              "comments": 114
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Development statistics for the 7.2 kernel",
+            "snippet": "Development statistics for the 7.2 kernel",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50132950",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 10,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Agents running 24/7 on your laptop",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 61
+        }
+      },
+      "nomination": {
+        "name": "Agents running 24/7 on your laptop",
+        "seed_score": 175.5,
+        "summary": "Agents running 24/7 on your laptop",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Agents running 24/7 on your laptop",
+            "body": "Agents running 24/7 on your laptop",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8zcex/agents_running_247_on_your_laptop/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 56,
+              "num_comments": 61
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Agents running 24/7 on your laptop",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 96,
+            "source_quality": 0.6,
+            "local_rank_score": 0.373
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "51 AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 44
+        }
+      },
+      "nomination": {
+        "name": "51 AI",
+        "seed_score": 119.8546,
+        "summary": "I collected 51 AI agent setups people actually use - what I found.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "I collected 51 AI agent setups people actually use - what I found.",
+            "body": "I collected 51 AI agent setups people actually use - what I found.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8i1fj/i_collected_51_ai_agent_setups_people_actually/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 69,
+              "num_comments": 44
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing",
+            "snippet": "I collected 51 AI agent setups people actually use - what I found.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 10,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Mem0 Zep",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Mem0 Zep",
+        "seed_score": 100.5,
+        "summary": "How are you handling long-term memory for your agents? Mem0, Zep, or rolling your own?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "How are you handling long-term memory for your agents? Mem0, Zep, or rolling your own?",
+            "body": "How are you handling long-term memory for your agents? Mem0, Zep, or rolling your own?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8z0tj/how_are_you_handling_longterm_memory_for_your/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 28,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are you handling long-term memory for your agents? Mem0, Zep, or rolling your own?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "agent says done and that when",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "agent says done and that when",
+        "seed_score": 36.0,
+        "summary": "the agent says \"done\" and that's when my actual job starts",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "the agent says \"done\" and that's when my actual job starts",
+            "body": "the agent says \"done\" and that's when my actual job starts",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x98zzc/the_agent_says_done_and_thats_when_my_actual_job/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "the agent says \"done\" and that's when my actual job starts",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.273
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "MCP 70 GTM tools",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "MCP 70 GTM tools",
+        "seed_score": 27.0,
+        "summary": "I gave my agent one MCP that reaches 70 GTM tools",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "I gave my agent one MCP that reaches 70 GTM tools",
+            "body": "I gave my agent one MCP that reaches 70 GTM tools",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x8zyj1/i_gave_my_agent_one_mcp_that_reaches_70_gtm_tools/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "I gave my agent one MCP that reaches 70 GTM tools",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.273
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Ur agents memory",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Ur agents memory",
+        "seed_score": 25.5,
+        "summary": "Ur agents\u2019 memory",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Ur agents\u2019 memory",
+            "body": "Ur agents\u2019 memory",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x9ag85/ur_agents_memory/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Ur agents\u2019 memory",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.331
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI Agent chat board",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "AI Agent chat board",
+        "seed_score": 19.5,
+        "summary": "AI Agent chat board",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "AI Agent chat board",
+            "body": "AI Agent chat board",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x93nce/ai_agent_chat_board/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI Agent chat board",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Mega AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "Mega AI agents",
+        "seed_score": 18.0,
+        "summary": "Is someone trying to create a local \"Mega brain\" for all of their AI agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "Is someone trying to create a local \"Mega brain\" for all of their AI agents?",
+            "body": "Is someone trying to create a local \"Mega brain\" for all of their AI agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x9dk39/is_someone_trying_to_create_a_local_mega_brain/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is someone trying to create a local \"Mega brain\" for all of their AI agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39350000000000007
+          }
+        ]
+      }
+    }
+  ]
+}

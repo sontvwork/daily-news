@@ -1,0 +1,862 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "d5323de0aeaadc64",
+  "generated_at": "2026-10-18T23:58:47.760745Z",
+  "from_date": "2026-10-17",
+  "to_date": "2026-10-18",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-18T23:58:47.706645Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-18T23:58:47.706654Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-10-18T23:58:47.429685Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 136,
+      "attempted": true,
+      "at": "2026-10-18T23:58:47.706415Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude 25 NSA 30 25 years",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 299
+        }
+      },
+      "nomination": {
+        "name": "Claude 25 NSA 30 25 years",
+        "seed_score": 6091.5,
+        "summary": "Claude solved a 25 year old NSA cryptography mystery in 30 minutes. Its first reaction was to throw shade at us \ud83e\udd72 \"is it suspicious that such an obvious thing wasn't discovered in 25 years?\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "Claude solved a 25 year old NSA cryptography mystery in 30 minutes. Its first reaction was to throw shade at us \ud83e\udd72 \"is it suspicious that such an obvious thing wasn't discovered in 25 years?\"",
+            "body": "Claude solved a 25 year old NSA cryptography mystery in 30 minutes. Its first reaction was to throw shade at us \ud83e\udd72 \"is it suspicious that such an obvious thing wasn't discovered in 25 years?\"",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x8v3sn/claude_solved_a_25_year_old_nsa_cryptography/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3762,
+              "num_comments": 299
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude solved a 25 year old NSA cryptography mystery in 30 minutes. Its first reaction was to throw shade at us \ud83e\udd72 \"is it suspicious that such an obvious thing wasn't discovered in 25 years?\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "DeepSeek-v4.1-Flash-1017",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 704,
+          "points": 935
+        },
+        "reddit": {
+          "num_comments": 103
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek-v4.1-Flash-1017",
+        "seed_score": 2846.1603,
+        "summary": "DeepSeek-v4.1-Flash-1017",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50129045",
+            "source": "hackernews",
+            "title": "DeepSeek-v4.1-Flash-1017",
+            "body": "DeepSeek-v4.1-Flash-1017",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "author": "theykk",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 935,
+              "comments": 704
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about DeepSeek-v4.1-Flash-1017",
+            "snippet": "DeepSeek-v4.1-Flash-1017",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50129045",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1705
+          },
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF \u00b7 Hugging Face",
+            "body": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF \u00b7 Hugging Face",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x95491/unslothdeepseekv41flash1017gguf_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 265,
+              "num_comments": 76
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF \u00b7 Hugging Face",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3265
+          },
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "DeepSeek v4.1 Flash 1017 for Dwarfstar (ds4)",
+            "body": "DeepSeek v4.1 Flash 1017 for Dwarfstar (ds4)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8tr2c/deepseek_v41_flash_1017_for_dwarfstar_ds4/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 123,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "DeepSeek v4.1 Flash 1017 for Dwarfstar (ds4)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anthropic 20 2 50",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 271
+        }
+      },
+      "nomination": {
+        "name": "Anthropic 20 2 50",
+        "seed_score": 2005.5,
+        "summary": "Anthropic creates a public benefit fund, pledging 20% of its shares to the public good, with another 2% potentially added for every 50% increase in its valuation",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R63",
+            "source": "reddit",
+            "title": "Anthropic creates a public benefit fund, pledging 20% of its shares to the public good, with another 2% potentially added for every 50% increase in its valuation",
+            "body": "Anthropic creates a public benefit fund, pledging 20% of its shares to the public good, with another 2% potentially added for every 50% increase in its valuation",
+            "url": "https://www.reddit.com/r/singularity/comments/1x9a50t/anthropic_creates_a_public_benefit_fund_pledging/",
+            "container": "singularity",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1066,
+              "num_comments": 271
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic creates a public benefit fund, pledging 20% of its shares to the public good, with another 2% potentially added for every 50% increase in its valuation",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 88,
+            "source_quality": 0.6,
+            "local_rank_score": 0.339
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 278
+        }
+      },
+      "nomination": {
+        "name": "Anthropic",
+        "seed_score": 1542.0,
+        "summary": "Anthropic is on track to stop hiring technical juniors next year",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "Anthropic is on track to stop hiring technical juniors next year",
+            "body": "Anthropic is on track to stop hiring technical juniors next year",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x90vwp/anthropic_is_on_track_to_stop_hiring_technical/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 750,
+              "num_comments": 278
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic is on track to stop hiring technical juniors next year",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anthropic 2 Trillion 35 SaaS Companies",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 286
+        }
+      },
+      "nomination": {
+        "name": "Anthropic 2 Trillion 35 SaaS Companies",
+        "seed_score": 1347.0,
+        "summary": "Anthropic at $2 Trillion vs. 35 SaaS Companies at $948 Billion \u2014 Are AI Valuations Getting Out of Control?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Anthropic at $2 Trillion vs. 35 SaaS Companies at $948 Billion \u2014 Are AI Valuations Getting Out of Control?",
+            "body": "Anthropic at $2 Trillion vs. 35 SaaS Companies at $948 Billion \u2014 Are AI Valuations Getting Out of Control?",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x9ain3/anthropic_at_2_trillion_vs_35_saas_companies_at/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 612,
+              "num_comments": 286
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic at $2 Trillion vs. 35 SaaS Companies at $948 Billion \u2014 Are AI Valuations Getting Out of Control?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "DeepSeek 0.75 per 1000",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 252,
+          "points": 529
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek 0.75 per 1000",
+        "seed_score": 1171.5,
+        "summary": "DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50138531",
+            "source": "hackernews",
+            "title": "DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests",
+            "body": "DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests",
+            "url": "https://api-docs.deepseek.com/guides/search/",
+            "author": "fagnerbrack",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 529,
+              "comments": 252
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about DeepSeek search and fetch \u2013 $0.75 per 1000 successful reques",
+            "snippet": "DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50138531",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Claude 39x",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Claude 39x",
+        "seed_score": 765.0,
+        "summary": "Claude designed quantum circuits up to 39x cheaper than the best published ones",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Claude designed quantum circuits up to 39x cheaper than the best published ones",
+            "body": "Claude designed quantum circuits up to 39x cheaper than the best published ones",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x956d5/claude_designed_quantum_circuits_up_to_39x/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 479,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude designed quantum circuits up to 39x cheaper than the best published ones",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "72 24GB NVIDIA",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 159
+        }
+      },
+      "nomination": {
+        "name": "72 24GB NVIDIA",
+        "seed_score": 741.0,
+        "summary": "72 hours, four big open weights drops. The only one that fits in 24GB came from NVIDIA, of all companies.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "72 hours, four big open weights drops. The only one that fits in 24GB came from NVIDIA, of all companies.",
+            "body": "72 hours, four big open weights drops. The only one that fits in 24GB came from NVIDIA, of all companies.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9d23j/72_hours_four_big_open_weights_drops_the_only_one/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 335,
+              "num_comments": 159
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "72 hours, four big open weights drops. The only one that fits in 24GB came from NVIDIA, of all companies.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.326
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Anthropic changing",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 113
+        }
+      },
+      "nomination": {
+        "name": "Anthropic changing",
+        "seed_score": 714.0,
+        "summary": "How employment is changing at Anthropic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R66",
+            "source": "reddit",
+            "title": "How employment is changing at Anthropic",
+            "body": "How employment is changing at Anthropic",
+            "url": "https://www.reddit.com/r/singularity/comments/1x8ztaj/how_employment_is_changing_at_anthropic/",
+            "container": "singularity",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 363,
+              "num_comments": 113
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "How employment is changing at Anthropic",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Super Mario 64 GBA Claude Mario",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 58
+        }
+      },
+      "nomination": {
+        "name": "Super Mario 64 GBA Claude Mario",
+        "seed_score": 591.0,
+        "summary": "A Super Mario 64 demake for the GBA built with Claude. Mario\u2019s physics are bit-identical to the original",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "A Super Mario 64 demake for the GBA built with Claude. Mario\u2019s physics are bit-identical to the original",
+            "body": "A Super Mario 64 demake for the GBA built with Claude. Mario\u2019s physics are bit-identical to the original",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x99sel/a_super_mario_64_demake_for_the_gba_built_with/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 336,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "A Super Mario 64 demake for the GBA built with Claude. Mario\u2019s physics are bit-identical to the original",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Rebuilt 2000 RTS Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 58
+        }
+      },
+      "nomination": {
+        "name": "Rebuilt 2000 RTS Claude Code",
+        "seed_score": 523.5,
+        "summary": "Rebuilt a 2000 RTS from scratch with Claude Code, working from the original's disassembly",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "Rebuilt a 2000 RTS from scratch with Claude Code, working from the original's disassembly",
+            "body": "Rebuilt a 2000 RTS from scratch with Claude Code, working from the original's disassembly",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1x91lor/rebuilt_a_2000_rts_from_scratch_with_claude_code/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 291,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Rebuilt a 2000 RTS from scratch with Claude Code, working from the original's disassembly",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Anthropic proposed AI 50 1B",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 161,
+          "points": 152
+        }
+      },
+      "nomination": {
+        "name": "Anthropic proposed AI 50 1B",
+        "seed_score": 469.5,
+        "summary": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50141429",
+            "source": "hackernews",
+            "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+            "body": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+            "author": "f-serif",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 152,
+              "comments": 161
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Anthropic's proposed AI safety bill only kicks in if 50 deat",
+            "snippet": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50141429",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.8,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Llmspeed LLM runs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 86,
+          "points": 321
+        }
+      },
+      "nomination": {
+        "name": "Llmspeed LLM runs",
+        "seed_score": 431.6887,
+        "summary": "Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50127979",
+            "source": "hackernews",
+            "title": "Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware",
+            "body": "Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware",
+            "url": "https://llmspeed.dev/",
+            "author": "albinstman",
+            "container": "Hacker News",
+            "published_at": "2026-10-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 321,
+              "comments": 86
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: Llmspeed \u2013 feel how fast a local LLM runs before yo",
+            "snippet": "Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50127979",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 69,
+            "source_quality": 0.8,
+            "local_rank_score": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Legal experts warn Meta",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 60,
+          "points": 216
+        }
+      },
+      "nomination": {
+        "name": "Legal experts warn Meta",
+        "seed_score": 414.0,
+        "summary": "Legal experts warn Meta's new terms still grant broad scraping permissions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50139692",
+            "source": "hackernews",
+            "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
+            "body": "Legal experts warn Meta's new terms still grant broad scraping permissions",
+            "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
+            "author": "DeepLogin",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 216,
+              "comments": 60
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Legal experts warn Meta's new terms still grant broad scrapi",
+            "snippet": "Legal experts warn Meta's new terms still grant broad scraping permissions",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50139692",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3065
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Hybrid Reasoning Agents LLM agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 89,
+          "points": 150
+        }
+      },
+      "nomination": {
+        "name": "Hybrid Reasoning Agents LLM agents",
+        "seed_score": 358.5,
+        "summary": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50145337",
+            "source": "hackernews",
+            "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+            "body": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+            "url": "https://arxiv.org/abs/2610.18861",
+            "author": "allinonai",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 150,
+              "comments": 89
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Hybrid Reasoning Agents: LLM agents that think in latent spa",
+            "snippet": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50145337",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.312
+          }
+        ]
+      }
+    }
+  ]
+}

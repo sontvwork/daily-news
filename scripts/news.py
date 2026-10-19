@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import argparse
+import http.client
 import os
 import re
 import shutil
@@ -382,13 +383,30 @@ def cmd_history(date: str) -> None:
         print()
 
 
-def fetch(url: str) -> bytes | None:
+def fetch(url: str) -> tuple[bytes | None, str]:
+    """Trả (nội dung, lý do). Mọi lỗi mạng/HTTP đều coi là "chưa sẵn sàng" để vòng poll thử lại:
+    lúc Pages đang deploy, server/proxy hay đóng kết nối giữa chừng (RemoteDisconnected, IncompleteRead…)."""
     request = urllib.request.Request(url, headers={"User-Agent": "daily-news-verify"})
     try:
         with urllib.request.urlopen(request, timeout=20) as response:
-            return response.read() if response.status == 200 else None
-    except (urllib.error.URLError, TimeoutError):
-        return None
+            if response.status != 200:
+                return None, f"HTTP {response.status}"
+            return response.read(), ""
+    except urllib.error.HTTPError as error:
+        return None, f"HTTP {error.code}"
+    except (OSError, http.client.HTTPException) as error:
+        return None, f"{type(error).__name__}: {error}"[:120]
+
+
+def describe_pending(pending: dict[str, str]) -> str:
+    """Gom URL theo lý do (tin lỗi Google Chat chỉ giữ 300 ký tự đầu)."""
+    groups: dict[str, list[str]] = {}
+    for path, why in pending.items():
+        groups.setdefault(why, []).append(path)
+    return "; ".join(
+        f"{why} — {', '.join(paths[:3])}" + (f" +{len(paths) - 3}" if len(paths) > 3 else "")
+        for why, paths in groups.items()
+    )
 
 
 def cmd_verify_live(date: str, base: str, timeout: int) -> None:
@@ -397,11 +415,16 @@ def cmd_verify_live(date: str, base: str, timeout: int) -> None:
     paths = ["index.html", "404.html", "feed.xml", "assets/style.css"] + [href for _, href in feed_entries()]
     deadline = time.monotonic() + timeout
     while True:
-        pending = [p for p in paths if fetch(f"{base}/{p}?v={int(time.time())}") != (NEWS / p).read_bytes()]
+        pending = {}
+        for path in paths:
+            body, error = fetch(f"{base}/{path}?v={int(time.time())}")
+            if body != (NEWS / path).read_bytes():
+                pending[path] = error or "khác bản build"
         if not pending:
             break
         if time.monotonic() > deadline:
-            fail(f"quá {timeout}s mà Pages vẫn chưa khớp bản build: {pending}")
+            detail = describe_pending(pending)
+            fail(f"quá {timeout}s mà Pages vẫn chưa khớp bản build ({len(pending)}/{len(paths)} URL): {detail}")
         time.sleep(15)
     today = next(href for published, href in feed_entries() if published == date)
     print(f"OK: {len(paths)} URL live trả 200 và khớp bản build — {base}/{today}")

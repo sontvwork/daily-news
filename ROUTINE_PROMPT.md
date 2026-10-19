@@ -71,7 +71,7 @@ KHÔNG bịa tên, số liệu, tính năng hay link. Chủ đề nào chỉ có
 
 Format bắt buộc (script `news.py validate` sẽ kiểm tra):
 - Dòng đầu tiên là `# Daily News DD/MM/YYYY` (theo DATE). Trước dòng này không có gì, không lời chào, không câu dẫn. Toàn file chỉ có đúng một heading cấp 1.
-- Mỗi tin là một heading `### N. <Tiêu đề tiếng Việt>`, N đánh số liên tục từ 1. Theo sau là 1–3 bullet có emoji điểm nhấn, tóm tắt sự kiện và nêu ứng dụng/lợi ích thực tế cho developer (cách dùng, so sánh ngắn, cách áp dụng ngay). Thêm một bullet cuối `- 🔗 [Nguồn](<URL gốc, xem ưu tiên ở trên>)`.
+- Mỗi tin là một heading `### N. <Tiêu đề tiếng Việt>`, N đánh số liên tục từ 1. Theo sau là 2–5 bullet có emoji điểm nhấn, tóm tắt sự kiện và nêu ứng dụng/lợi ích thực tế cho developer (cách dùng, so sánh ngắn, cách áp dụng ngay). Thêm một bullet cuối `- 🔗 [Nguồn](<URL gốc, xem ưu tiên ở trên>)`.
 - Viết toàn bộ bằng tiếng Việt, giọng thân mật vừa phải, ngắn gọn, dễ scan. Giữ nguyên tên riêng, tên sản phẩm và số liệu.
 - KHÔNG viết tắt "Hacker News" thành "HN".
 - Ví dụ:
@@ -79,11 +79,23 @@ Format bắt buộc (script `news.py validate` sẽ kiểm tra):
   ```
   # Daily News 08/10/2026
 
-  ### 1. Anthropic ra mắt Claude Haiku 5.5: model nhỏ rẻ nhất, nhanh nhất của hãng
-  - 🚀 Haiku 5.5 chỉ $0.10 / $0.50 mỗi triệu token (rẻ hơn Haiku 4.5 khoảng 75%), Benchmark vượt trội
-  - ⚡ Phù hợp cho các tác vụ agent cần độ trễ thấp và chi phí thấp (sub-agent, tự động hoá hàng loạt)
+  ### 1. Anthropic ra mắt Claude Haiku 5.5: rẻ bằng 1/10 Haiku 4.5, có effort setting như Opus
+  - 💰 Giá $0.10 / $0.50 mỗi triệu token input/output (prompt dưới 100K token), so với $1 / $5 của Haiku 4.5. Anthropic ước tính chi phí chạy thực tế giảm trung bình 75%
+  - 🎚️ Model Haiku đầu tiên có effort setting (Low → Max): chạy nhanh với tác vụ đơn giản, tăng effort khi cần suy luận
+  - 📊 Terminal-Bench 4.0 đạt 39.2% (Haiku 4.5: 0%, GPT-6 Luna: 16.4%), nhưng vẫn kém xa Sonnet 5.5 (70.6%)
+  - ⚡ Box thử nghiệm thấy độ trễ chỉ khoảng một nửa Haiku 4.5
+  - 🛠️ Anthropic khuyên dùng làm sub-agent cạnh Opus/Sonnet cho tác vụ coding, hoặc cho tóm tắt, compaction, phân loại. Đã có trên API (`claude-haiku-5-5`), AWS, Google Cloud, Azure
   - 🔗 [Nguồn](https://www.anthropic.com/claude-haiku-5-5)
+
+  ### 2. Sphinx: hook bắt dev trả lời câu hỏi về code do AI viết trước khi được push
+  - 🧩 Show HN giới thiệu công cụ mã nguồn mở: khi `git push` lên branch được bảo vệ, Sphinx chặn lại và hỏi dev về thay đổi sắp ship
+  - 🕵️ Câu hỏi xoáy vào tình huống lỗi, ví dụ webhook timeout thì retry thế nào. Trả lời đúng mới push được, sai thì được giải thích và hỏi câu khác
+  - 💬 Trên Hacker News, phần lớn ý kiến hoài nghi: người muốn hiểu code thì đã tự đọc, người không quan tâm sẽ tìm cách né, còn code review vốn đã làm việc này
+  - 💡 Vài người đã tự viết skill "quiz me on this PR" cho agent và thấy hữu ích khi review PR lớn. Gợi ý được đồng tình: đặt chốt ở bước mở PR thay vì lúc push, để không tốn thời gian người review
+  - 🔗 [Nguồn](https://sphinx-six-theta.vercel.app/)
   ```
+
+  (Ví dụ chỉ minh hoạ cách viết, KHÔNG dùng làm dữ kiện cho bản tin.)
 
 - Nếu không còn tin nào đạt tiêu chí, file chỉ gồm title và đoạn:
   `😴 Không có tin mới nổi bật trong 24 giờ qua về AI coding tools. Hẹn bạn ngày mai!`

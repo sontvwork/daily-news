@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "597e0a5e3d7efbbf",
+  "generated_at": "2026-10-20T00:01:05.950157Z",
+  "from_date": "2026-10-19",
+  "to_date": "2026-10-20",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-20T00:01:05.948912Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-20T00:01:05.948918Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-20T00:01:05.948768Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-20T00:01:05.948857Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic IPO",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 99,
+          "points": 129
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO",
+        "seed_score": 241.8305,
+        "summary": "The obscure trust looming over Anthropic's IPO",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50151376",
+            "source": "hackernews",
+            "title": "The obscure trust looming over Anthropic's IPO",
+            "body": "The obscure trust looming over Anthropic's IPO",
+            "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
+            "author": "1vuio0pswjnm7",
+            "container": "Hacker News",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 129,
+              "comments": 99
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about The obscure trust looming over Anthropic's IPO",
+            "snippet": "The obscure trust looming over Anthropic's IPO",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50151376",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Harness2 Google Research Recursive Agent Harnessing",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 17,
+          "points": 72
+        }
+      },
+      "nomination": {
+        "name": "Harness2 Google Research Recursive Agent Harnessing",
+        "seed_score": 94.3988,
+        "summary": "Harness2 by Google Research \u2013 Recursive Agent Harnessing",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50151059",
+            "source": "hackernews",
+            "title": "Harness2 by Google Research \u2013 Recursive Agent Harnessing",
+            "body": "Harness2 by Google Research \u2013 Recursive Agent Harnessing",
+            "url": "https://github.com/google-research/harness2",
+            "author": "irthomasthomas",
+            "container": "Hacker News",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 72,
+              "comments": 17
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Harness2 by Google Research \u2013 Recursive Agent Harnessing",
+            "snippet": "Harness2 by Google Research \u2013 Recursive Agent Harnessing",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50151059",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 12,
+            "source_quality": 0.8,
+            "local_rank_score": 0.076
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Laminar YC S24 RL-trained",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 22,
+          "points": 44
+        }
+      },
+      "nomination": {
+        "name": "Laminar YC S24 RL-trained",
+        "seed_score": 70.0036,
+        "summary": "Launch HN: Laminar (YC S24) \u2013 RL-trained model that finds errors in agent traces",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50154029",
+            "source": "hackernews",
+            "title": "Launch HN: Laminar (YC S24) \u2013 RL-trained model that finds errors in agent traces",
+            "body": "Launch HN: Laminar (YC S24) \u2013 RL-trained model that finds errors in agent traces",
+            "url": "https://news.ycombinator.com/item?id=50154029",
+            "author": "skull8888888",
+            "container": "Hacker News",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 44,
+              "comments": 22
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: Laminar (YC S24) \u2013 RL-trained model that finds er",
+            "snippet": "Launch HN: Laminar (YC S24) \u2013 RL-trained model that finds errors in agent traces",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50154029",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0575
+          }
+        ]
+      }
+    }
+  ]
+}

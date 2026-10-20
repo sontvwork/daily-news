@@ -1,0 +1,794 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "a04ab07310234416",
+  "generated_at": "2026-10-19T23:56:13.234160Z",
+  "from_date": "2026-10-18",
+  "to_date": "2026-10-19",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-19T23:56:13.221076Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-19T23:56:13.221083Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 28,
+      "attempted": true,
+      "at": "2026-10-19T23:56:13.220535Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-10-19T23:56:13.220986Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Six frontier AIs 3D-print",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 60
+        }
+      },
+      "nomination": {
+        "name": "Six frontier AIs 3D-print",
+        "seed_score": 1005.0,
+        "summary": "Six frontier AIs competed to design and 3D-print egg-protecting capsules. Claude Opus 5.5's egg survived a 20-foot drop without a crack. GPT-6 Astra failed at 8 feet, while Gemini 4 Argon, Grok 4.7, Qwen 3.8-Max, and Muse Wonder failed at 4 feet. Claude dominates another real-world engineering chall",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Six frontier AIs competed to design and 3D-print egg-protecting capsules. Claude Opus 5.5's egg survived a 20-foot drop without a crack. GPT-6 Astra failed at 8 feet, while Gemini 4 Argon, Grok 4.7, Qwen 3.8-Max, and Muse Wonder failed at 4 feet. Claude dominates another real-world engineering chall",
+            "body": "Six frontier AIs competed to design and 3D-print egg-protecting capsules. Claude Opus 5.5's egg survived a 20-foot drop without a crack. GPT-6 Astra failed at 8 feet, while Gemini 4 Argon, Grok 4.7, Qwen 3.8-Max, and Muse Wonder failed at 4 feet. Claude dominates another real-world engineering chall",
+            "url": "https://www.reddit.com/r/singularity/comments/1x9m4gs/six_frontier_ais_competed_to_design_and_3dprint/",
+            "container": "singularity",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 610,
+              "num_comments": 60
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Six frontier AIs competed to design and 3D-print egg-protecting capsules. Claude Opus 5.5's egg survived a 20-foot drop without a crack. GPT-6 Astra failed at 8 feet, while Gemini 4 Argon, Grok 4.7, Qwen 3.8-Max, and Muse Wonder failed at 4 feet. Claude dominates another real-world engineering chall",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI-written",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 367,
+          "points": 223
+        }
+      },
+      "nomination": {
+        "name": "AI-written",
+        "seed_score": 885.0,
+        "summary": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50151036",
+            "source": "hackernews",
+            "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+            "body": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+            "url": "https://news.ycombinator.com/item?id=50151036",
+            "author": "rzk",
+            "container": "Hacker News",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 223,
+              "comments": 367
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "HN story about Ask HN: How to deal with shipping AI-written code you don't",
+            "snippet": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50151036",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.533
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "AI Mario 64",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 60
+        }
+      },
+      "nomination": {
+        "name": "AI Mario 64",
+        "seed_score": 366.0,
+        "summary": "I used an AI coding agent to solve one of gaming's \"millennium problems\": what the Mario 64 plaque really says",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "I used an AI coding agent to solve one of gaming's \"millennium problems\": what the Mario 64 plaque really says",
+            "body": "I used an AI coding agent to solve one of gaming's \"millennium problems\": what the Mario 64 plaque really says",
+            "url": "https://www.reddit.com/r/singularity/comments/1x9x7gw/i_used_an_ai_coding_agent_to_solve_one_of_gamings/",
+            "container": "singularity",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 184,
+              "num_comments": 60
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "I used an AI coding agent to solve one of gaming's \"millennium problems\": what the Mario 64 plaque really says",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Sphinx AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 89,
+          "points": 252
+        }
+      },
+      "nomination": {
+        "name": "Sphinx AI",
+        "seed_score": 361.6851,
+        "summary": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50137950",
+            "source": "hackernews",
+            "title": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+            "body": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+            "url": "https://sphinx-six-theta.vercel.app/",
+            "author": "critiquebrowser",
+            "container": "Hacker News",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 252,
+              "comments": 89
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "HN story about Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code",
+            "snippet": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50137950",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.233
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Biggest Weaknesses Frontier Coding Models",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Biggest Weaknesses Frontier Coding Models",
+        "seed_score": 37.1231,
+        "summary": "What Are the Biggest Weaknesses of Frontier Coding Models Like Claude Opus 5.5 and GPT-6?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "What Are the Biggest Weaknesses of Frontier Coding Models Like Claude Opus 5.5 and GPT-6?",
+            "body": "What Are the Biggest Weaknesses of Frontier Coding Models Like Claude Opus 5.5 and GPT-6?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x9d1kp/what_are_the_biggest_weaknesses_of_frontier/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "What Are the Biggest Weaknesses of Frontier Coding Models Like Claude Opus 5.5 and GPT-6?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 10,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.178
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "IPython Qwen3.5-9B TB-Lite",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "IPython Qwen3.5-9B TB-Lite",
+        "seed_score": 36.0,
+        "summary": "A bare IPython harness ties production coding agents with Qwen3.5-9B on TB-Lite, and tool-output normalization fixed most of the run-to-run variance",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "A bare IPython harness ties production coding agents with Qwen3.5-9B on TB-Lite, and tool-output normalization fixed most of the run-to-run variance",
+            "body": "A bare IPython harness ties production coding agents with Qwen3.5-9B on TB-Lite, and tool-output normalization fixed most of the run-to-run variance",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9vtt9/a_bare_ipython_harness_ties_production_coding/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "A bare IPython harness ties production coding agents with Qwen3.5-9B on TB-Lite, and tool-output normalization fixed most of the run-to-run variance",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3115
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "7 AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "7 AI",
+        "seed_score": 23.3345,
+        "summary": "What I learned building a session watcher for 7 AI coding agents: process detection isn't enough, and deep links are the hard part",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "What I learned building a session watcher for 7 AI coding agents: process detection isn't enough, and deep links are the hard part",
+            "body": "What I learned building a session watcher for 7 AI coding agents: process detection isn't enough, and deep links are the hard part",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x9217f/what_i_learned_building_a_session_watcher_for_7/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "What I learned building a session watcher for 7 AI coding agents: process detection isn't enough, and deep links are the hard part",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2765
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Tried Cline Claude Code Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Tried Cline Claude Code Codex",
+        "seed_score": 18.0,
+        "summary": "Tried Cline for a week after living in Claude Code and Codex, some notes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Tried Cline for a week after living in Claude Code and Codex, some notes",
+            "body": "Tried Cline for a week after living in Claude Code and Codex, some notes",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x9ptpf/tried_cline_for_a_week_after_living_in_claude/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Tried Cline for a week after living in Claude Code and Codex, some notes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.399
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Built 4-agent consensus",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Built 4-agent consensus",
+        "seed_score": 12.0,
+        "summary": "Built a prompt framework that simulates a 4-agent consensus board before writing full-stack code (sharing template + architecture)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Built a prompt framework that simulates a 4-agent consensus board before writing full-stack code (sharing template + architecture)",
+            "body": "Built a prompt framework that simulates a 4-agent consensus board before writing full-stack code (sharing template + architecture)",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xa1f5j/built_a_prompt_framework_that_simulates_a_4agent/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Built a prompt framework that simulates a 4-agent consensus board before writing full-stack code (sharing template + architecture)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.276
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "ZeroBotForge Telegram No-Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "ZeroBotForge Telegram No-Code",
+        "seed_score": 7.4246,
+        "summary": "ZeroBotForge project: creating a Telegram bot easily, without coding, without terminal commands, completely No-Code, only by connecting nodes together and desired customization of nodes without coding, only with the user interface.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "ZeroBotForge project: creating a Telegram bot easily, without coding, without terminal commands, completely No-Code, only by connecting nodes together and desired customization of nodes without coding, only with the user interface.",
+            "body": "ZeroBotForge project: creating a Telegram bot easily, without coding, without terminal commands, completely No-Code, only by connecting nodes together and desired customization of nodes without coding, only with the user interface.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x9bebx/zerobotforge_project_creating_a_telegram_bot/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "ZeroBotForge project: creating a Telegram bot easily, without coding, without terminal commands, completely No-Code, only by connecting nodes together and desired customization of nodes without coding, only with the user interface.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.126
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Open-source Claude Code I/O Opus",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Open-source Claude Code I/O Opus",
+        "seed_score": 4.2426,
+        "summary": "Open-source Claude Code plugin: cheaper subagents do the I/O and implementation, Opus does judgment and review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Open-source Claude Code plugin: cheaper subagents do the I/O and implementation, Opus does judgment and review",
+            "body": "Open-source Claude Code plugin: cheaper subagents do the I/O and implementation, Opus does judgment and review",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1x9himh/opensource_claude_code_plugin_cheaper_subagents/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Open-source Claude Code plugin: cheaper subagents do the I/O and implementation, Opus does judgment and review",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11800000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI CI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "AI CI",
+        "seed_score": 3.0,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "Your AI coding agent might be cheating to pass CI. Here's how to catch it!",
+            "body": "Your AI coding agent might be cheating to pass CI. Here's how to catch it!\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x9icap/your_ai_coding_agent_might_be_cheating_to_pass_ci/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45300000000000007
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Nvidia Maxwell running Strata",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Nvidia Maxwell running Strata",
+        "seed_score": 3.0,
+        "summary": "2 Quadro M6000 24GB (48GB VRAM)\n\nrunning Qwen3.8-Flash-Next-GSQ-RCO-IQ1 on Strata since I only had 32GB of RAM.\n\nPretty impressive prefill numbers on this inference engine.  The decode has always been decent for the maxwell flagships.\n\nThis has 3.5 bits per weight so it is actually way more slower to run than a Qwen3.8-Flash-Next-GSQ-RCO-Q2.  So if you have 40GB of ram, the Q2 will even be a faste",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "older Nvidia Maxwell running Strata",
+            "body": "older Nvidia Maxwell running Strata\n2 Quadro M6000 24GB (48GB VRAM)\n\nrunning Qwen3.8-Flash-Next-GSQ-RCO-IQ1 on Strata since I only had 32GB of RAM.\n\nPretty impressive prefill numbers on this inference engine.  The decode has always been decent for the maxwell flagships.\n\nThis has 3.5 bits per weight so it is actually way more slower to run than a Qwen3.8-Flash-Next-GSQ-RCO-Q2.  So if you have 40GB of ram, the Q2 will even be a faster model to run.\n\nI simply lifted the restriction on the strata code to allow lower than architecture 52.  it is still running the same pipeline as the experimental pascal.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa0vfz/older_nvidia_maxwell_running_strata/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "2 Quadro M6000 24GB (48GB VRAM)\n\nrunning Qwen3.8-Flash-Next-GSQ-RCO-IQ1 on Strata since I only had 32GB of RAM.\n\nPretty impressive prefill numbers on this inference engine.  The decode has always been decent for the maxwell flagships.\n\nThis has 3.5 bits per weight so it is actually way more slower to run than a Qwen3.8-Flash-Next-GSQ-RCO-Q2.  So if you have 40GB of ram, the Q2 will even be a faste",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.257
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "One Cursor Claude Code Copilot Windsurf",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "One Cursor Claude Code Copilot Windsurf",
+        "seed_score": 2.1213,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "One source of truth for Cursor, Claude Code, Copilot and Windsurf rules",
+            "body": "One source of truth for Cursor, Claude Code, Copilot and Windsurf rules\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x938ku/one_source_of_truth_for_cursor_claude_code/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.17500000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "pNet Plex Codex Claude Code Antigravity",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "pNet Plex Codex Claude Code Antigravity",
+        "seed_score": 2.1213,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "pNet Plex \u2014 multi-agent teams for Codex, Claude Code and Antigravity",
+            "body": "pNet Plex \u2014 multi-agent teams for Codex, Claude Code and Antigravity\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x97swp/pnet_plex_multiagent_teams_for_codex_claude_code/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 10,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24000000000000002
+          }
+        ]
+      }
+    }
+  ]
+}

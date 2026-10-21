@@ -1,0 +1,794 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "b351bc1743049c8b",
+  "generated_at": "2026-10-20T23:56:04.122169Z",
+  "from_date": "2026-10-19",
+  "to_date": "2026-10-20",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-20T23:56:04.101909Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-20T23:56:04.101915Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-10-20T23:56:04.061535Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 43,
+      "attempted": true,
+      "at": "2026-10-20T23:56:04.101837Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AI-written",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 689,
+          "points": 586
+        }
+      },
+      "nomination": {
+        "name": "AI-written",
+        "seed_score": 1352.3417,
+        "summary": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50151036",
+            "source": "hackernews",
+            "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+            "body": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+            "url": "https://news.ycombinator.com/item?id=50151036",
+            "author": "rzk",
+            "container": "Hacker News",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 586,
+              "comments": 689
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "HN story about Ask HN: How to deal with shipping AI-written code you don't",
+            "snippet": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50151036",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.333
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Oh AI assistants",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 79
+        }
+      },
+      "nomination": {
+        "name": "Oh AI assistants",
+        "seed_score": 799.5,
+        "summary": "Oh god. This is not what I meant by having AI assistants",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Oh god. This is not what I meant by having AI assistants",
+            "body": "Oh god. This is not what I meant by having AI assistants",
+            "url": "https://www.reddit.com/r/singularity/comments/1xaoob5/oh_god_this_is_not_what_i_meant_by_having_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 454,
+              "num_comments": 79
+            },
+            "relevance_hint": 0.37,
+            "why_relevant": "Reddit listing",
+            "snippet": "Oh god. This is not what I meant by having AI assistants",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.37,
+            "freshness": 90,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5605
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Six frontier AIs 3D-print",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 84
+        }
+      },
+      "nomination": {
+        "name": "Six frontier AIs 3D-print",
+        "seed_score": 782.7672,
+        "summary": "Six frontier AIs competed to design and 3D-print egg-protecting capsules. Claude Opus 5.5's egg survived a 20-foot drop without a crack. GPT-6 Astra failed at 8 feet, while Gemini 4 Argon, Grok 4.7, Qwen 3.8-Max, and Muse Wonder failed at 4 feet. Claude dominates another real-world engineering chall",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Six frontier AIs competed to design and 3D-print egg-protecting capsules. Claude Opus 5.5's egg survived a 20-foot drop without a crack. GPT-6 Astra failed at 8 feet, while Gemini 4 Argon, Grok 4.7, Qwen 3.8-Max, and Muse Wonder failed at 4 feet. Claude dominates another real-world engineering chall",
+            "body": "Six frontier AIs competed to design and 3D-print egg-protecting capsules. Claude Opus 5.5's egg survived a 20-foot drop without a crack. GPT-6 Astra failed at 8 feet, while Gemini 4 Argon, Grok 4.7, Qwen 3.8-Max, and Muse Wonder failed at 4 feet. Claude dominates another real-world engineering chall",
+            "url": "https://www.reddit.com/r/singularity/comments/1x9m4gs/six_frontier_ais_competed_to_design_and_3dprint/",
+            "container": "singularity",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 654,
+              "num_comments": 84
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Six frontier AIs competed to design and 3D-print egg-protecting capsules. Claude Opus 5.5's egg survived a 20-foot drop without a crack. GPT-6 Astra failed at 8 feet, while Gemini 4 Argon, Grok 4.7, Qwen 3.8-Max, and Muse Wonder failed at 4 feet. Claude dominates another real-world engineering chall",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic SEC Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "Anthropic SEC Claude Code",
+        "seed_score": 273.0,
+        "summary": "Anthropic SEC financials reveal that Claude Code masively increased revenue but now growth has flatlined (since june)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "Anthropic SEC financials reveal that Claude Code masively increased revenue but now growth has flatlined (since june)",
+            "body": "Anthropic SEC financials reveal that Claude Code masively increased revenue but now growth has flatlined (since june)",
+            "url": "https://www.reddit.com/r/singularity/comments/1xb5a4x/anthropic_sec_financials_reveal_that_claude_code/",
+            "container": "singularity",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 135,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic SEC financials reveal that Claude Code masively increased revenue but now growth has flatlined (since june)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.381
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Qwen3.8-Flash-Next vs Opus 5.5 Six-way Rust",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 78
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-Flash-Next vs Opus 5.5 Six-way Rust",
+        "seed_score": 264.0,
+        "summary": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+            "body": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xatxqk/qwen38flashnext_vs_opus_55_sixway_benchmark_on_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 98,
+              "num_comments": 78
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.381
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 57,
+          "points": 87
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 216.0,
+        "summary": "Claude designed protein binders against scorpion neurotoxins",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50170021",
+            "source": "hackernews",
+            "title": "Claude designed protein binders against scorpion neurotoxins",
+            "body": "Claude designed protein binders against scorpion neurotoxins",
+            "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+            "author": "artninja1988",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 87,
+              "comments": 57
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Claude designed protein binders against scorpion neurotoxins",
+            "snippet": "Claude designed protein binders against scorpion neurotoxins",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50170021",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Claude 318,484 64 300 AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "Claude 318,484 64 300 AI agents",
+        "seed_score": 205.5,
+        "summary": "A five-person investment team with almost no biology experience used Claude to design 318,484 proteins in just 64 hours, coordinating over 300 AI agents. Independent laboratories tested 211 candidates and confirmed 17 could bind dangerous scorpion neurotoxins.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "A five-person investment team with almost no biology experience used Claude to design 318,484 proteins in just 64 hours, coordinating over 300 AI agents. Independent laboratories tested 211 candidates and confirmed 17 could bind dangerous scorpion neurotoxins.",
+            "body": "A five-person investment team with almost no biology experience used Claude to design 318,484 proteins in just 64 hours, coordinating over 300 AI agents. Independent laboratories tested 211 candidates and confirmed 17 could bind dangerous scorpion neurotoxins.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xb2pme/a_fiveperson_investment_team_with_almost_no/",
+            "container": "singularity",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 111,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "A five-person investment team with almost no biology experience used Claude to design 318,484 proteins in just 64 hours, coordinating over 300 AI agents. Independent laboratories tested 211 candidates and confirmed 17 could bind dangerous scorpion neurotoxins.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5105
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 21.0,
+        "summary": "Are your dev teams noticing a massive wave of \"AI code debt\" and subtle race conditions lately?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Are your dev teams noticing a massive wave of \"AI code debt\" and subtle race conditions lately?",
+            "body": "Are your dev teams noticing a massive wave of \"AI code debt\" and subtle race conditions lately?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xasmix/are_your_dev_teams_noticing_a_massive_wave_of_ai/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are your dev teams noticing a massive wave of \"AI code debt\" and subtle race conditions lately?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43500000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Tried Cline Claude Code Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Tried Cline Claude Code Codex",
+        "seed_score": 16.9706,
+        "summary": "Tried Cline for a week after living in Claude Code and Codex, some notes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Tried Cline for a week after living in Claude Code and Codex, some notes",
+            "body": "Tried Cline for a week after living in Claude Code and Codex, some notes",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x9ptpf/tried_cline_for_a_week_after_living_in_claude/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Tried Cline for a week after living in Claude Code and Codex, some notes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.203
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "ChatGPT Coding Environment Suddenly Unavailable",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Coding Environment Suddenly Unavailable",
+        "seed_score": 16.5,
+        "summary": "ChatGPT Coding Environment Suddenly Unavailable in Work Mode.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "ChatGPT Coding Environment Suddenly Unavailable in Work Mode.",
+            "body": "ChatGPT Coding Environment Suddenly Unavailable in Work Mode.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xaxas8/chatgpt_coding_environment_suddenly_unavailable/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "ChatGPT Coding Environment Suddenly Unavailable in Work Mode.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30600000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Designing Agent Skill AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Designing Agent Skill AI",
+        "seed_score": 12.0,
+        "summary": "Designing an Agent Skill prompt to prevent comprehension loss from AI coding",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Designing an Agent Skill prompt to prevent comprehension loss from AI coding",
+            "body": "Designing an Agent Skill prompt to prevent comprehension loss from AI coding",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xatbe0/designing_an_agent_skill_prompt_to_prevent/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing",
+            "snippet": "Designing an Agent Skill prompt to prevent comprehension loss from AI coding",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4700000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Built 4-agent consensus",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Built 4-agent consensus",
+        "seed_score": 10.6066,
+        "summary": "Built a prompt framework that simulates a 4-agent consensus board before writing full-stack code (sharing template + architecture)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Built a prompt framework that simulates a 4-agent consensus board before writing full-stack code (sharing template + architecture)",
+            "body": "Built a prompt framework that simulates a 4-agent consensus board before writing full-stack code (sharing template + architecture)",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xa1f5j/built_a_prompt_framework_that_simulates_a_4agent/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Built a prompt framework that simulates a 4-agent consensus board before writing full-stack code (sharing template + architecture)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.07900000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "iPhone Qwen3.5 0.8B/2B/4B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "iPhone Qwen3.5 0.8B/2B/4B",
+        "seed_score": 3.0,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "I shipped a free iPhone assistant that runs Qwen3.5 (0.8B/2B/4B) on-device with llama.cpp: tool calling, memory, photo understanding, works in airplane mode",
+            "body": "I shipped a free iPhone assistant that runs Qwen3.5 (0.8B/2B/4B) on-device with llama.cpp: tool calling, memory, photo understanding, works in airplane mode\n[removed]",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xaxi3x/i_shipped_a_free_iphone_assistant_that_runs/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.232
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Using Claude Gemini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Using Claude Gemini",
+        "seed_score": 3.0,
+        "summary": "Using Claude or Gemini to learn something new? This tutoring prompt quizzes you on the last session before it teaches anything new",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Using Claude or Gemini to learn something new? This tutoring prompt quizzes you on the last session before it teaches anything new",
+            "body": "Using Claude or Gemini to learn something new? This tutoring prompt quizzes you on the last session before it teaches anything new",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xb0d3y/using_claude_or_gemini_to_learn_something_new/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Using Claude or Gemini to learn something new? This tutoring prompt quizzes you on the last session before it teaches anything new",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2775
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-17",
+      "heuristic_name": "AI CI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "AI CI",
+        "seed_score": 2.1213,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Your AI coding agent might be cheating to pass CI. Here's how to catch it!",
+            "body": "Your AI coding agent might be cheating to pass CI. Here's how to catch it!\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1x9icap/your_ai_coding_agent_might_be_cheating_to_pass_ci/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 10,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.253
+          }
+        ]
+      }
+    }
+  ]
+}

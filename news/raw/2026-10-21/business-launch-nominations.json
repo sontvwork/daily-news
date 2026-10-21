@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "b243ecea63adf3fe",
+  "generated_at": "2026-10-21T00:00:34.560120Z",
+  "from_date": "2026-10-20",
+  "to_date": "2026-10-21",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-21T00:00:34.558802Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-21T00:00:34.558808Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-21T00:00:34.556932Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-10-21T00:00:34.558722Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Google Cloud Europe",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 165,
+          "points": 319
+        }
+      },
+      "nomination": {
+        "name": "Google Cloud Europe",
+        "seed_score": 513.3595,
+        "summary": "Google Cloud outage affects almost all banking and other operations in Europe",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50163961",
+            "source": "hackernews",
+            "title": "Google Cloud outage affects almost all banking and other operations in Europe",
+            "body": "Google Cloud outage affects almost all banking and other operations in Europe",
+            "url": "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/",
+            "author": "paweladamczuk",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 319,
+              "comments": 165
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google Cloud outage affects almost all banking and other ope",
+            "snippet": "Google Cloud outage affects almost all banking and other operations in Europe",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50163961",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "MicroG Free-libre Google proprietary Android",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 94,
+          "points": 377
+        }
+      },
+      "nomination": {
+        "name": "MicroG Free-libre Google proprietary Android",
+        "seed_score": 499.5709,
+        "summary": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50162177",
+            "source": "hackernews",
+            "title": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+            "body": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+            "url": "https://github.com/microg/GmsCore/wiki",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 377,
+              "comments": 94
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about MicroG: Free-libre re-implementation of Google's proprietary",
+            "snippet": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50162177",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 92,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14950000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google open-sources TorchTPU PyTorch TPUs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 57,
+          "points": 241
+        }
+      },
+      "nomination": {
+        "name": "Google open-sources TorchTPU PyTorch TPUs",
+        "seed_score": 316.0767,
+        "summary": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50169053",
+            "source": "hackernews",
+            "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+            "body": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+            "url": "https://github.com/google-pytorch/torch_tpu",
+            "author": "ilreb",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 241,
+              "comments": 57
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google open-sources TorchTPU, a native PyTorch back end for",
+            "snippet": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50169053",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 70,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic 80B 2026",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 47,
+          "points": 85
+        }
+      },
+      "nomination": {
+        "name": "Anthropic 80B 2026",
+        "seed_score": 140.0071,
+        "summary": "Anthropic logged net loss of over $80B in first half of 2026",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50171966",
+            "source": "hackernews",
+            "title": "Anthropic logged net loss of over $80B in first half of 2026",
+            "body": "Anthropic logged net loss of over $80B in first half of 2026",
+            "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/",
+            "author": "throwa356262",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 85,
+              "comments": 47
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic logged net loss of over $80B in first half of 2026",
+            "snippet": "Anthropic logged net loss of over $80B in first half of 2026",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50171966",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 40,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0975
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Respan YC W24 Open-source Rust AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 16,
+          "points": 41
+        }
+      },
+      "nomination": {
+        "name": "Respan YC W24 Open-source Rust AI",
+        "seed_score": 60.4576,
+        "summary": "Launch HN: Respan (YC W24) \u2013 Open-source Rust AI gateway built around plugins",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50167583",
+            "source": "hackernews",
+            "title": "Launch HN: Respan (YC W24) \u2013 Open-source Rust AI gateway built around plugins",
+            "body": "Launch HN: Respan (YC W24) \u2013 Open-source Rust AI gateway built around plugins",
+            "url": "https://news.ycombinator.com/item?id=50167583",
+            "author": "Andydy25",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 41,
+              "comments": 16
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about Launch HN: Respan (YC W24) \u2013 Open-source Rust AI gateway bui",
+            "snippet": "Launch HN: Respan (YC W24) \u2013 Open-source Rust AI gateway built around plugins",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50167583",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.155
+          }
+        ]
+      }
+    }
+  ]
+}

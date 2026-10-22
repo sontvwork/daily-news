@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "43db73e87f1aeacd",
+  "generated_at": "2026-10-22T00:01:04.814846Z",
+  "from_date": "2026-10-21",
+  "to_date": "2026-10-22",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-22T00:01:04.813470Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-22T00:01:04.813478Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-22T00:01:04.811421Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-22T00:01:04.813399Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "OpenAI Google Cloud",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 94,
+          "points": 218
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Google Cloud",
+        "seed_score": 330.926,
+        "summary": "OpenAI models are coming to Google Cloud",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50180079",
+            "source": "hackernews",
+            "title": "OpenAI models are coming to Google Cloud",
+            "body": "OpenAI models are coming to Google Cloud",
+            "url": "https://openai.com/index/openai-models-google-cloud/",
+            "author": "armcat",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 218,
+              "comments": 94
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "HN story about OpenAI models are coming to Google Cloud",
+            "snippet": "OpenAI models are coming to Google Cloud",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50180079",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.21600000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Google Rust Style Guide",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 104,
+          "points": 161
+        }
+      },
+      "nomination": {
+        "name": "Google Rust Style Guide",
+        "seed_score": 281.0749,
+        "summary": "Google's Rust Style Guide",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50186010",
+            "source": "hackernews",
+            "title": "Google's Rust Style Guide",
+            "body": "Google's Rust Style Guide",
+            "url": "https://google.github.io/styleguide/rustguide.html",
+            "author": "kaycebasques",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 161,
+              "comments": 104
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Google's Rust Style Guide",
+            "snippet": "Google's Rust Style Guide",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50186010",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 92,
+            "source_quality": 0.8,
+            "local_rank_score": 0.16900000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google AI contracts",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 19,
+          "points": 104
+        }
+      },
+      "nomination": {
+        "name": "Google AI contracts",
+        "seed_score": 130.4612,
+        "summary": "Google staff resign in backlash over its AI contracts with military",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50186043",
+            "source": "hackernews",
+            "title": "Google staff resign in backlash over its AI contracts with military",
+            "body": "Google staff resign in backlash over its AI contracts with military",
+            "url": "https://www.bbc.com/news/articles/cmreyvepnv0po",
+            "author": "saikatsg",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 104,
+              "comments": 19
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "HN story about Google staff resign in backlash over its AI contracts with m",
+            "snippet": "Google staff resign in backlash over its AI contracts with military",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50186043",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 10,
+            "engagement_score": 28,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2025
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Alter YC S25 Access",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 20,
+          "points": 44
+        }
+      },
+      "nomination": {
+        "name": "Alter YC S25 Access",
+        "seed_score": 67.8823,
+        "summary": "Launch HN: Alter (YC S25) \u2013 Access control for multi-user agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50176908",
+            "source": "hackernews",
+            "title": "Launch HN: Alter (YC S25) \u2013 Access control for multi-user agents",
+            "body": "Launch HN: Alter (YC S25) \u2013 Access control for multi-user agents",
+            "url": "https://alterauth.com/",
+            "author": "simfinii",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 44,
+              "comments": 20
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: Alter (YC S25) \u2013 Access control for multi-user ag",
+            "snippet": "Launch HN: Alter (YC S25) \u2013 Access control for multi-user agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50176908",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0575
+          }
+        ]
+      }
+    }
+  ]
+}

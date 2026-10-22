@@ -1,0 +1,855 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "9ba262473395b3e3",
+  "generated_at": "2026-10-21T23:56:21.347372Z",
+  "from_date": "2026-10-20",
+  "to_date": "2026-10-21",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-21T23:56:21.320768Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-21T23:56:21.320775Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 36,
+      "attempted": true,
+      "at": "2026-10-21T23:56:21.320043Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-21T23:56:21.320659Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Security Critical",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 649,
+          "points": 1503
+        }
+      },
+      "nomination": {
+        "name": "Security Critical",
+        "seed_score": 2282.5407,
+        "summary": "Security advisory: Critical remote code execution vulnerabilities, update now",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50172041",
+            "source": "hackernews",
+            "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+            "body": "Security advisory: Critical remote code execution vulnerabilities, update now",
+            "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+            "author": "xd",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1503,
+              "comments": 649
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Security advisory: Critical remote code execution vulnerabil",
+            "snippet": "Security advisory: Critical remote code execution vulnerabilities, update now",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50172041",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Duet",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 248,
+          "points": 342
+        },
+        "reddit": {
+          "num_comments": 72
+        }
+      },
+      "nomination": {
+        "name": "Claude Duet",
+        "seed_score": 1750.875,
+        "summary": "Claude Duet",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50186037",
+            "source": "hackernews",
+            "title": "Claude Duet",
+            "body": "Claude Duet",
+            "url": "https://claude.com/product/claude-duet",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 288,
+              "comments": 242
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Claude Duet",
+            "snippet": "Claude Duet",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50186037",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3875
+          },
+          {
+            "item_id": "50186455",
+            "source": "hackernews",
+            "title": "Claude Duet",
+            "body": "Claude Duet",
+            "url": "https://claude.com/resources/articles/claude-duet",
+            "author": "zaevlad",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 54,
+              "comments": 6
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Claude Duet",
+            "snippet": "Claude Duet",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50186455",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3225
+          },
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "body": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xbz98o/anthropic_unveils_claude_duet_a_proactive_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 353,
+              "num_comments": 72
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "3 Linux Kernel AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 121
+        }
+      },
+      "nomination": {
+        "name": "3 Linux Kernel AI",
+        "seed_score": 1363.5,
+        "summary": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "body": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xbe2tf/as_of_3_hours_ago_the_linux_kernel_no_longer/",
+            "container": "singularity",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 788,
+              "num_comments": 121
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.52
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Oh AI assistants",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 103
+        }
+      },
+      "nomination": {
+        "name": "Oh AI assistants",
+        "seed_score": 780.6459,
+        "summary": "Oh god. This is not what I meant by having AI assistants",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Oh god. This is not what I meant by having AI assistants",
+            "body": "Oh god. This is not what I meant by having AI assistants",
+            "url": "https://www.reddit.com/r/singularity/comments/1xaoob5/oh_god_this_is_not_what_i_meant_by_having_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 633,
+              "num_comments": 103
+            },
+            "relevance_hint": 0.37,
+            "why_relevant": "Reddit listing",
+            "snippet": "Oh god. This is not what I meant by having AI assistants",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.37,
+            "freshness": 10,
+            "engagement_score": 96,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36150000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Qwen3-Coder writes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 117,
+          "points": 238
+        }
+      },
+      "nomination": {
+        "name": "Qwen3-Coder writes",
+        "seed_score": 532.5,
+        "summary": "Qwen3-Coder writes less secure code when told it's for a US persona",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50179706",
+            "source": "hackernews",
+            "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "body": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
+            "author": "mattifrank",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 238,
+              "comments": 117
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Qwen3-Coder writes less secure code when told it's for a US",
+            "snippet": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50179706",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.304
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Anthropic SEC Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 133
+        }
+      },
+      "nomination": {
+        "name": "Anthropic SEC Claude Code",
+        "seed_score": 513.3595,
+        "summary": "Anthropic SEC financials reveal that Claude Code masively increased revenue but now growth has flatlined (since june)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Anthropic SEC financials reveal that Claude Code masively increased revenue but now growth has flatlined (since june)",
+            "body": "Anthropic SEC financials reveal that Claude Code masively increased revenue but now growth has flatlined (since june)",
+            "url": "https://www.reddit.com/r/singularity/comments/1xb5a4x/anthropic_sec_financials_reveal_that_claude_code/",
+            "container": "singularity",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 351,
+              "num_comments": 133
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic SEC financials reveal that Claude Code masively increased revenue but now growth has flatlined (since june)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.195
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Oblivion Remastered Mod Built Using Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 38
+        }
+      },
+      "nomination": {
+        "name": "Oblivion Remastered Mod Built Using Claude",
+        "seed_score": 417.0,
+        "summary": "Oblivion Remastered Mod Built Using Claude AI Boosts FPS By Over 40% And Drastically Reduces Stuttering Without Sacrificing Visual Quality",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Oblivion Remastered Mod Built Using Claude AI Boosts FPS By Over 40% And Drastically Reduces Stuttering Without Sacrificing Visual Quality",
+            "body": "Oblivion Remastered Mod Built Using Claude AI Boosts FPS By Over 40% And Drastically Reduces Stuttering Without Sacrificing Visual Quality",
+            "url": "https://www.reddit.com/r/singularity/comments/1xbwun6/oblivion_remastered_mod_built_using_claude_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 240,
+              "num_comments": 38
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Oblivion Remastered Mod Built Using Claude AI Boosts FPS By Over 40% And Drastically Reduces Stuttering Without Sacrificing Visual Quality",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5175000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Qwen3.8-Flash-Next vs Opus 5.5 Six-way Rust",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 38
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-Flash-Next vs Opus 5.5 Six-way Rust",
+        "seed_score": 148.5,
+        "summary": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+            "body": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbipsl/qwen38flashnext_vs_opus_55_sixway_benchmark_on_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 61,
+              "num_comments": 38
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8-Flash-Next vs Opus 5.5: Six-way benchmark on a real Rust feature with Claude Code and Pi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.367
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "STT 5 7.5 MB Apache-2.0",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "STT 5 7.5 MB Apache-2.0",
+        "seed_score": 97.5,
+        "summary": "I built a small on-device voice front-end for local assistants: type any wake word, keep only your voice before STT (5 models, 7.5 MB, Apache-2.0, early preview)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "I built a small on-device voice front-end for local assistants: type any wake word, keep only your voice before STT (5 models, 7.5 MB, Apache-2.0, early preview)",
+            "body": "I built a small on-device voice front-end for local assistants: type any wake word, keep only your voice before STT (5 models, 7.5 MB, Apache-2.0, early preview)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbmhct/i_built_a_small_ondevice_voice_frontend_for_local/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 59,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built a small on-device voice front-end for local assistants: type any wake word, keep only your voice before STT (5 models, 7.5 MB, Apache-2.0, early preview)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3205
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "ChatGPT Coding Environment Suddenly Unavailable",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Coding Environment Suddenly Unavailable",
+        "seed_score": 22.2739,
+        "summary": "ChatGPT Coding Environment Suddenly Unavailable in Work Mode.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "ChatGPT Coding Environment Suddenly Unavailable in Work Mode.",
+            "body": "ChatGPT Coding Environment Suddenly Unavailable in Work Mode.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xaxas8/chatgpt_coding_environment_suddenly_unavailable/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "ChatGPT Coding Environment Suddenly Unavailable in Work Mode.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11200000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 20.1525,
+        "summary": "Are your dev teams noticing a massive wave of \"AI code debt\" and subtle race conditions lately?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Are your dev teams noticing a massive wave of \"AI code debt\" and subtle race conditions lately?",
+            "body": "Are your dev teams noticing a massive wave of \"AI code debt\" and subtle race conditions lately?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xasmix/are_your_dev_teams_noticing_a_massive_wave_of_ai/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are your dev teams noticing a massive wave of \"AI code debt\" and subtle race conditions lately?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.235
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI best",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "AI best",
+        "seed_score": 18.0,
+        "summary": "What\u2019s one coding task AI still struggles with, even with the best models?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "What\u2019s one coding task AI still struggles with, even with the best models?",
+            "body": "What\u2019s one coding task AI still struggles with, even with the best models?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xbegno/whats_one_coding_task_ai_still_struggles_with/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing",
+            "snippet": "What\u2019s one coding task AI still struggles with, even with the best models?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4680000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Designing Agent Skill AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Designing Agent Skill AI",
+        "seed_score": 13.7886,
+        "summary": "Designing an Agent Skill prompt to prevent comprehension loss from AI coding",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Designing an Agent Skill prompt to prevent comprehension loss from AI coding",
+            "body": "Designing an Agent Skill prompt to prevent comprehension loss from AI coding",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xatbe0/designing_an_agent_skill_prompt_to_prevent/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing",
+            "snippet": "Designing an Agent Skill prompt to prevent comprehension loss from AI coding",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 10,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "change compiler errors to help coding",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "change compiler errors to help coding",
+        "seed_score": 12.0,
+        "summary": "Do you change compiler errors to help coding agents, or just feed them the raw output?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Do you change compiler errors to help coding agents, or just feed them the raw output?",
+            "body": "Do you change compiler errors to help coding agents, or just feed them the raw output?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xbooyu/do_you_change_compiler_errors_to_help_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Do you change compiler errors to help coding agents, or just feed them the raw output?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29050000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Best TTS DIY JARVIS AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Best TTS DIY JARVIS AI",
+        "seed_score": 3.0,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "Best free, natural-sounding TTS voice for a DIY JARVIS AI assistant? (Raspberry Pi 4 / Python)",
+            "body": "Best free, natural-sounding TTS voice for a DIY JARVIS AI assistant? (Raspberry Pi 4 / Python)\n[removed]",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbpg8r/best_free_naturalsounding_tts_voice_for_a_diy/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 5,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37950000000000006
+          }
+        ]
+      }
+    }
+  ]
+}

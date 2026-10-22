@@ -1,0 +1,894 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "9cf6e6c575f4d9a5",
+  "generated_at": "2026-10-22T00:00:11.212347Z",
+  "from_date": "2026-10-20",
+  "to_date": "2026-10-21",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-22T00:00:11.162609Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-22T00:00:11.162617Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 11,
+      "attempted": true,
+      "at": "2026-10-22T00:00:10.946906Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 129,
+      "attempted": true,
+      "at": "2026-10-22T00:00:11.162408Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Samsung TV",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 318
+        }
+      },
+      "nomination": {
+        "name": "Claude Samsung TV",
+        "seed_score": 4948.5,
+        "summary": "I used Claude to fix my Samsung TV",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "I used Claude to fix my Samsung TV",
+            "body": "I used Claude to fix my Samsung TV",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbj7jr/i_used_claude_to_fix_my_samsung_tv/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2981,
+              "num_comments": 318
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "I used Claude to fix my Samsung TV",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "DeepInfer High-performance DeepSeek models",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 881,
+          "points": 2300
+        }
+      },
+      "nomination": {
+        "name": "DeepInfer High-performance DeepSeek models",
+        "seed_score": 3373.96,
+        "summary": "DeepInfer: High-performance inference framework for DeepSeek models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50163277",
+            "source": "hackernews",
+            "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+            "body": "DeepInfer: High-performance inference framework for DeepSeek models",
+            "url": "https://github.com/deepseek-ai/DeepInfer",
+            "author": "ggcr",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 2300,
+              "comments": 881
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about DeepInfer: High-performance inference framework for DeepSeek",
+            "snippet": "DeepInfer: High-performance inference framework for DeepSeek models",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50163277",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.23550000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 2758.5,
+        "summary": "What it feels like to use Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "What it feels like to use Claude",
+            "body": "What it feels like to use Claude",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xbvr3w/what_it_feels_like_to_use_claude/",
+            "container": "ChatGPT",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1798,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "What it feels like to use Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35350000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude Duet Anthropic Muses Bots Dots",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 248,
+          "points": 342
+        },
+        "reddit": {
+          "num_comments": 112
+        }
+      },
+      "nomination": {
+        "name": "Claude Duet Anthropic Muses Bots Dots",
+        "seed_score": 2504.7,
+        "summary": "Claude Duet: Anthropic just casually dropped the personal assistant calling it a proactive agent. This is the response to Muses, Bots and Dots",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Claude Duet: Anthropic just casually dropped the personal assistant calling it a proactive agent. This is the response to Muses, Bots and Dots",
+            "body": "Claude Duet: Anthropic just casually dropped the personal assistant calling it a proactive agent. This is the response to Muses, Bots and Dots",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbwkgf/claude_duet_anthropic_just_casually_dropped_the/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 750,
+              "num_comments": 112
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Duet: Anthropic just casually dropped the personal assistant calling it a proactive agent. This is the response to Muses, Bots and Dots",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35800000000000004
+          },
+          {
+            "item_id": "50186037",
+            "source": "hackernews",
+            "title": "Claude Duet",
+            "body": "Claude Duet",
+            "url": "https://claude.com/product/claude-duet",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 288,
+              "comments": 242
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Claude Duet",
+            "snippet": "Claude Duet",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50186037",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.8,
+            "local_rank_score": 0.362
+          },
+          {
+            "item_id": "50186455",
+            "source": "hackernews",
+            "title": "Claude Duet",
+            "body": "Claude Duet",
+            "url": "https://claude.com/resources/articles/claude-duet",
+            "author": "zaevlad",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 54,
+              "comments": 6
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Claude Duet",
+            "snippet": "Claude Duet",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50186455",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.303
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "3 Linux Kernel AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 121
+        }
+      },
+      "nomination": {
+        "name": "3 Linux Kernel AI",
+        "seed_score": 1363.5,
+        "summary": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "body": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xbe2tf/as_of_3_hours_ago_the_linux_kernel_no_longer/",
+            "container": "singularity",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 788,
+              "num_comments": 121
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing",
+            "snippet": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Man AI 29-year-old Interpol Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 149
+        }
+      },
+      "nomination": {
+        "name": "Man AI 29-year-old Interpol Claude",
+        "seed_score": 1107.0,
+        "summary": "Man arrested after telling AI chatbot about \u2018plans for mass shooting\u2019 | A 29-year-old man has been remanded in custody after Interpol flagged his conversation with Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "Man arrested after telling AI chatbot about \u2018plans for mass shooting\u2019 | A 29-year-old man has been remanded in custody after Interpol flagged his conversation with Claude",
+            "body": "Man arrested after telling AI chatbot about \u2018plans for mass shooting\u2019 | A 29-year-old man has been remanded in custody after Interpol flagged his conversation with Claude",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbroz9/man_arrested_after_telling_ai_chatbot_about_plans/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 589,
+              "num_comments": 149
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Man arrested after telling AI chatbot about \u2018plans for mass shooting\u2019 | A 29-year-old man has been remanded in custody after Interpol flagged his conversation with Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Meta 25B Mexico Cambridge Analytica",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 188,
+          "points": 313
+        }
+      },
+      "nomination": {
+        "name": "Meta 25B Mexico Cambridge Analytica",
+        "seed_score": 751.5,
+        "summary": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50184820",
+            "source": "hackernews",
+            "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+            "body": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+            "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+            "author": "cbg0",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 313,
+              "comments": 188
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Meta ordered to pay $25B penalty in New Mexico Cambridge Ana",
+            "snippet": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50184820",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3015
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Anthropic unveils Claude Duet AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 74
+        }
+      },
+      "nomination": {
+        "name": "Anthropic unveils Claude Duet AI",
+        "seed_score": 646.5,
+        "summary": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "body": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xbz98o/anthropic_unveils_claude_duet_a_proactive_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 357,
+              "num_comments": 74
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Google Cloud Europe",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 203,
+          "points": 400
+        }
+      },
+      "nomination": {
+        "name": "Google Cloud Europe",
+        "seed_score": 639.5781,
+        "summary": "Google Cloud outage affects almost all banking and other operations in Europe",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50163961",
+            "source": "hackernews",
+            "title": "Google Cloud outage affects almost all banking and other operations in Europe",
+            "body": "Google Cloud outage affects almost all banking and other operations in Europe",
+            "url": "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/",
+            "author": "paweladamczuk",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 400,
+              "comments": 203
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google Cloud outage affects almost all banking and other ope",
+            "snippet": "Google Cloud outage affects almost all banking and other operations in Europe",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50163961",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1185
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Qwen 3.8 Flash Next",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 130
+        }
+      },
+      "nomination": {
+        "name": "Qwen 3.8 Flash Next",
+        "seed_score": 613.5,
+        "summary": "OK, fine, Qwen 3.8 Flash Next is nice",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "OK, fine, Qwen 3.8 Flash Next is nice",
+            "body": "OK, fine, Qwen 3.8 Flash Next is nice",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbqxh5/ok_fine_qwen_38_flash_next_is_nice/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 279,
+              "num_comments": 130
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "OK, fine, Qwen 3.8 Flash Next is nice",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.338
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "GPT-6.1-Sol German",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 65
+        }
+      },
+      "nomination": {
+        "name": "GPT-6.1-Sol German",
+        "seed_score": 594.0,
+        "summary": "GPT-6.1-Sol's reasoning traces show its inventing German from first principles...",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "GPT-6.1-Sol's reasoning traces show its inventing German from first principles...",
+            "body": "GPT-6.1-Sol's reasoning traces show its inventing German from first principles...",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xbnxes/gpt61sols_reasoning_traces_show_its_inventing/",
+            "container": "ChatGPT",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 331,
+              "num_comments": 65
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "GPT-6.1-Sol's reasoning traces show its inventing German from first principles...",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3285
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Claude Code TV TV Wi-Fi",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 93
+        }
+      },
+      "nomination": {
+        "name": "Claude Code TV TV Wi-Fi",
+        "seed_score": 586.5,
+        "summary": "I gave Claude Code my parents' TV model number. It found the TV on Wi-Fi and cleaned out the ads. The interesting part: the prompt is mostly a list of things it must NOT do",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "I gave Claude Code my parents' TV model number. It found the TV on Wi-Fi and cleaned out the ads. The interesting part: the prompt is mostly a list of things it must NOT do",
+            "body": "I gave Claude Code my parents' TV model number. It found the TV on Wi-Fi and cleaned out the ads. The interesting part: the prompt is mostly a list of things it must NOT do",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbrzo0/i_gave_claude_code_my_parents_tv_model_number_it/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 298,
+              "num_comments": 93
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "I gave Claude Code my parents' TV model number. It found the TV on Wi-Fi and cleaned out the ads. The interesting part: the prompt is mostly a list of things it must NOT do",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3165
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "MicroG Free-libre Google proprietary Android",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 131,
+          "points": 421
+        }
+      },
+      "nomination": {
+        "name": "MicroG Free-libre Google proprietary Android",
+        "seed_score": 585.4844,
+        "summary": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50162177",
+            "source": "hackernews",
+            "title": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+            "body": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+            "url": "https://github.com/microg/GmsCore/wiki",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-10-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 421,
+              "comments": 131
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about MicroG: Free-libre re-implementation of Google's proprietary",
+            "snippet": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50162177",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 57,
+            "source_quality": 0.8,
+            "local_rank_score": 0.108
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Built 3D Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 51
+        }
+      },
+      "nomination": {
+        "name": "Built 3D Claude Code",
+        "seed_score": 553.5,
+        "summary": "Built a live 3D airport with real flights using Claude Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "Built a live 3D airport with real flights using Claude Code",
+            "body": "Built a live 3D airport with real flights using Claude Code",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbl9av/built_a_live_3d_airport_with_real_flights_using/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 318,
+              "num_comments": 51
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Built a live 3D airport with real flights using Claude Code",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-19",
+      "heuristic_name": "OpenAI Google Cloud",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 94,
+          "points": 218
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Google Cloud",
+        "seed_score": 541.65,
+        "summary": "OpenAI models are coming to Google Cloud",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50180079",
+            "source": "hackernews",
+            "title": "OpenAI models are coming to Google Cloud",
+            "body": "OpenAI models are coming to Google Cloud",
+            "url": "https://openai.com/index/openai-models-google-cloud/",
+            "author": "armcat",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 218,
+              "comments": 94
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about OpenAI models are coming to Google Cloud",
+            "snippet": "OpenAI models are coming to Google Cloud",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50180079",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.8,
+            "local_rank_score": 0.39999999999999997
+          },
+          {
+            "item_id": "R98",
+            "source": "reddit",
+            "title": "OpenAI models are coming to Google Cloud",
+            "body": "OpenAI models are coming to Google Cloud\nWhat does this mean? Faster inference speed?",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xbxauo/openai_models_are_coming_to_google_cloud/",
+            "container": "ChatGPT",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "What does this mean? Faster inference speed?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.361
+          }
+        ]
+      }
+    }
+  ]
+}

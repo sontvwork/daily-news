@@ -1,0 +1,824 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "769c717362c93f2d",
+  "generated_at": "2026-10-22T23:56:25.967319Z",
+  "from_date": "2026-10-21",
+  "to_date": "2026-10-22",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-22T23:56:25.935986Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-22T23:56:25.935993Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 36,
+      "attempted": true,
+      "at": "2026-10-22T23:56:25.935380Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-10-22T23:56:25.935868Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic unveils Claude Duet AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 510,
+          "points": 545
+        },
+        "reddit": {
+          "num_comments": 176
+        }
+      },
+      "nomination": {
+        "name": "Anthropic unveils Claude Duet AI",
+        "seed_score": 2620.0428,
+        "summary": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "body": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xbz98o/anthropic_unveils_claude_duet_a_proactive_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 917,
+              "num_comments": 176
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic unveils Claude Duet, a proactive AI agent powered by Opus 5.5. It works while you're away, monitors your apps, handles complex tasks using its own cloud computer, and alerts you when needed. It supports 6,000+ integrations and remembers your context.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3395
+          },
+          {
+            "item_id": "50186037",
+            "source": "hackernews",
+            "title": "Claude Duet",
+            "body": "Claude Duet",
+            "url": "https://claude.com/product/claude-duet",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 545,
+              "comments": 510
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Claude Duet",
+            "snippet": "Claude Duet",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50186037",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "3 Linux Kernel AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 138
+        }
+      },
+      "nomination": {
+        "name": "3 Linux Kernel AI",
+        "seed_score": 1073.3881,
+        "summary": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "body": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xbe2tf/as_of_3_hours_ago_the_linux_kernel_no_longer/",
+            "container": "singularity",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 874,
+              "num_comments": 138
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "As of 3 hours ago, the Linux Kernel no longer requires the usage of AI to be declared for new code submissions.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 97,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Oblivion Remastered Mod Built Using Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 83
+        }
+      },
+      "nomination": {
+        "name": "Oblivion Remastered Mod Built Using Claude",
+        "seed_score": 693.6718,
+        "summary": "Oblivion Remastered Mod Built Using Claude AI Boosts FPS By Over 40% And Drastically Reduces Stuttering Without Sacrificing Visual Quality",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Oblivion Remastered Mod Built Using Claude AI Boosts FPS By Over 40% And Drastically Reduces Stuttering Without Sacrificing Visual Quality",
+            "body": "Oblivion Remastered Mod Built Using Claude AI Boosts FPS By Over 40% And Drastically Reduces Stuttering Without Sacrificing Visual Quality",
+            "url": "https://www.reddit.com/r/singularity/comments/1xbwun6/oblivion_remastered_mod_built_using_claude_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 571,
+              "num_comments": 83
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Oblivion Remastered Mod Built Using Claude AI Boosts FPS By Over 40% And Drastically Reduces Stuttering Without Sacrificing Visual Quality",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3285
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Qwen3-Coder writes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 117,
+          "points": 241
+        }
+      },
+      "nomination": {
+        "name": "Qwen3-Coder writes",
+        "seed_score": 379.7163,
+        "summary": "Qwen3-Coder writes less secure code when told it's for a US persona",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50179706",
+            "source": "hackernews",
+            "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "body": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
+            "author": "mattifrank",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 241,
+              "comments": 117
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Qwen3-Coder writes less secure code when told it's for a US",
+            "snippet": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50179706",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.051000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Ling-3.0-tiny-UBTree DFlash 8 61",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Ling-3.0-tiny-UBTree DFlash 8 61",
+        "seed_score": 33.0,
+        "summary": "Ling-3.0-tiny-UBTree DFlash draft for stock mainline llama.cpp (+8% prose, +61% code speedup)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "Ling-3.0-tiny-UBTree DFlash draft for stock mainline llama.cpp (+8% prose, +61% code speedup)",
+            "body": "Ling-3.0-tiny-UBTree DFlash draft for stock mainline llama.cpp (+8% prose, +61% code speedup)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcnsrj/ling30tinyubtree_dflash_draft_for_stock_mainline/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Ling-3.0-tiny-UBTree DFlash draft for stock mainline llama.cpp (+8% prose, +61% code speedup)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 24.3952,
+        "summary": "What\u2019s one coding task AI still struggles with, even with the best models?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "What\u2019s one coding task AI still struggles with, even with the best models?",
+            "body": "What\u2019s one coding task AI still struggles with, even with the best models?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xbegno/whats_one_coding_task_ai_still_struggles_with/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing",
+            "snippet": "What\u2019s one coding task AI still struggles with, even with the best models?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 10,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.276
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "change compiler errors to help coding",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "change compiler errors to help coding",
+        "seed_score": 22.2739,
+        "summary": "Do you change compiler errors to help coding agents, or just feed them the raw output?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Do you change compiler errors to help coding agents, or just feed them the raw output?",
+            "body": "Do you change compiler errors to help coding agents, or just feed them the raw output?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xbooyu/do_you_change_compiler_errors_to_help_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Do you change compiler errors to help coding agents, or just feed them the raw output?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1015
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Using Codex Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Using Codex Claude Code",
+        "seed_score": 12.0,
+        "summary": "Using Codex and Claude Code every day: what's still hard once the code part works?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Using Codex and Claude Code every day: what's still hard once the code part works?",
+            "body": "Using Codex and Claude Code every day: what's still hard once the code part works?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xcsi0d/using_codex_and_claude_code_every_day_whats_still/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Using Codex and Claude Code every day: what's still hard once the code part works?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.382
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "100 dollars",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "100 dollars",
+        "seed_score": 3.0,
+        "summary": "im paying for pro. 100 dollars a month. and it genuinely feels like this ai cannot do the most basic tasks. it always fucks up. a big task it just gets everything wrong, and on a small task it over-engineers everything to the point where the code is useless.\n\nwhat the hell is the deal here? i tried so many things.   \n  \nive written down like a dozen handoff essays on all the rules it should follow",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "i need legitimate advice on how to get the most of this ai",
+            "body": "i need legitimate advice on how to get the most of this ai\nim paying for pro. 100 dollars a month. and it genuinely feels like this ai cannot do the most basic tasks. it always fucks up. a big task it just gets everything wrong, and on a small task it over-engineers everything to the point where the code is useless.\n\nwhat the hell is the deal here? i tried so many things.   \n  \nive written down like a dozen handoff essays on all the rules it should follow. it always ignores the rules\n\nive used the \"custom instructions\" section to the max. its literally 1500 characters of the instructions being explained over and over in detail, it ignores\n\nive tried multiple step work, where step 1 is the talking phase, step 2 is the analysis, step 3 is the code, step 4 is the debug. to get nothing but the same rushed low quality bullshit, simply passed down multiple times. \n\n  \nwhat the hell is the strategy here? i only swapped to pro a month ago, plus was way more limited, but it geninely felt much more complete. like, it could only work for 20 minutes, but in those 20 minutes it would always deliver. pro works for 50 minutes. does 3 times as much work, but half of that work is terribly scoped, terribly coded, or just done wrong.\n\n  \nis there magic instructions? theres no way i didnt \"explain enough\". and i try to split it into multiple steps, only for it to just pass down the same low quality patch over the steps.\n\n  \nthe only models that actually do anything are sol max or astra high. astra is miles better than sol but uses all tokens. while sol always divides everthing into sub agents that each individually do nothing,.\n\n  \nsomeone give me a real guide",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xciao5/i_need_legitimate_advice_on_how_to_get_the_most/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.28,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "im paying for pro. 100 dollars a month. and it genuinely feels like this ai cannot do the most basic tasks. it always fucks up. a big task it just gets everything wrong, and on a small task it over-engineers everything to the point where the code is useless.\n\nwhat the hell is the deal here? i tried so many things.   \n  \nive written down like a dozen handoff essays on all the rules it should follow",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 4,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42400000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "ChatGPT Plus vs Cursor Premium 2026",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Plus vs Cursor Premium 2026",
+        "seed_score": 3.0,
+        "summary": "ChatGPT Plus vs Cursor Premium in 2026 \u2014 which one is actually worth it?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "ChatGPT Plus vs Cursor Premium in 2026 \u2014 which one is actually worth it?",
+            "body": "ChatGPT Plus vs Cursor Premium in 2026 \u2014 which one is actually worth it?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xcd4jc/chatgpt_plus_vs_cursor_premium_in_2026_which_one/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "ChatGPT Plus vs Cursor Premium in 2026 \u2014 which one is actually worth it?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 4,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2745
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI allowing",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "AI allowing",
+        "seed_score": 2.1213,
+        "summary": "A professional association can have years of research papers, technical standards, policy updates, webinar transcripts and educational resources, yet members still struggle to find specific answers, traditional keyword search often falls short because members don\u2019t necessarily use the same terminology as the documents they\u2019re searching\n\nAI powered semantic search could change that by allowing memb",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "How can members search association knowledge with AI?",
+            "body": "How can members search association knowledge with AI?\nA professional association can have years of research papers, technical standards, policy updates, webinar transcripts and educational resources, yet members still struggle to find specific answers, traditional keyword search often falls short because members don\u2019t necessarily use the same terminology as the documents they\u2019re searching\n\nAI powered semantic search could change that by allowing members to ask questions naturally and receive answers based on the associations actual content, customgpt.ai offers an interesting approach here, using an organizations existing documents and website content to generate responses with source citations, that could be particularly valuable when someone needs a specific regulation, certification requirement, or professional guideline without searching through dozens of pdf, but theres a prompt engineering challenge: how do you make the assistant distinguish between information explicitly supported by the knowledge base and conclusions it generates on its own???\n\nWould you enforce strict source only instructions, require citations for every answer or use a separate verification step before displaying results and how would you handle situations where two official documents contain conflicting or outdated information?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xbh9qx/how_can_members_search_association_knowledge_with/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.28,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A professional association can have years of research papers, technical standards, policy updates, webinar transcripts and educational resources, yet members still struggle to find specific answers, traditional keyword search often falls short because members don\u2019t necessarily use the same terminology as the documents they\u2019re searching\n\nAI powered semantic search could change that by allowing memb",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 10,
+            "engagement_score": 4,
+            "source_quality": 0.6,
+            "local_rank_score": 0.17850000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Codex Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Codex Claude Code",
+        "seed_score": 2.1213,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Codex can now pick up exactly where Claude Code left off (and the other way round)",
+            "body": "Codex can now pick up exactly where Claude Code left off (and the other way round)\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xbjpw1/codex_can_now_pick_up_exactly_where_claude_code/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "engagement_score": 4,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1655
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-31",
+      "heuristic_name": "4 5.5 5.5 400 4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "4 5.5 5.5 400 4",
+        "seed_score": 1.5,
+        "summary": "two frontier labs killed the temperature knob in the last few weeks and I noticed this migrating stuff off older models and it\u2019s a bigger deal than the changelogs make it sound\n\nboth gemini 4 argon and claude sonnet 5.5 have effectively removed control over sampling and on sonnet 5.5, sending any non-default temperature or top\\_p returns a 400, it refuses the request outright while gemini 4 argon,",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "two frontier labs killed the temperature knob and nobody\u2019s really talking about it",
+            "body": "two frontier labs killed the temperature knob and nobody\u2019s really talking about it\ntwo frontier labs killed the temperature knob in the last few weeks and I noticed this migrating stuff off older models and it\u2019s a bigger deal than the changelogs make it sound\n\nboth gemini 4 argon and claude sonnet 5.5 have effectively removed control over sampling and on sonnet 5.5, sending any non-default temperature or top\\_p returns a 400, it refuses the request outright while gemini 4 argon, you can still send temperature, top\\_p and top\\_k, but they\u2019re silently ignored, no error, the values do nothing. so one lab fails loud and the other fails quiet, and the quiet one is scarier cause your code looks like it\u2019s still pinning temperature at 0 when it isn\u2019t\n\nthe official line is that these are thinking models and the reasoning process handles variability, so the old knobs don\u2019t apply. fine. but for two years the standard advice for anything that had to come out the same every time, extraction, classification, structured output, was turn the temperature down. a huge amount of production glue is built on exactly that assumption, and it\u2019s now a no-op or a hard error depending on which api you hit\n\nthis is the thing i keep coming back to with local models. on my own llama or qwen setup i control temperature, top\\_k, the seed, the whole sampler, and nobody ships an update that changes what those do without telling you. a closed api can change the meaning of your parameters between one week and the next and the only way you find out is your outputs drift and your logs don\u2019t explain why, because the request you sent never changed\n\nthe counterargument is real too cause if a reasoning model gives more consistent structured output at its default than an old model did at temp 0, then the knob mattering less is fine, honestly even an upgrade. i haven\u2019t seen anyone actually measure that rather than assume it though.\n\nso i\u2019m testing it. same 200 extraction inputs, run each 20 times, measure how often the output is byte-identical. on my local qwen at temp 0 it\u2019s near perfect. argon and 5.5 at their defaults i\u2019m still collecting. if you route through a gateway you can point the same eval set at several models and diff the outputs without rewriting anything, which is how i\u2019m doing the closed ones (Orq AI\u2019s experiments for that, litellm if you want the routing without the eval harness) and whoever\u2019s run this on argon already, os it true abt determinism actually hold without the knob, or did you lose the lever??",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcp8mh/two_frontier_labs_killed_the_temperature_knob_and/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "two frontier labs killed the temperature knob in the last few weeks and I noticed this migrating stuff off older models and it\u2019s a bigger deal than the changelogs make it sound\n\nboth gemini 4 argon and claude sonnet 5.5 have effectively removed control over sampling and on sonnet 5.5, sending any non-default temperature or top\\_p returns a 400, it refuses the request outright while gemini 4 argon,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.485
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-29",
+      "heuristic_name": "AI 14 PHP Meanwhile AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "AI 14 PHP Meanwhile AI",
+        "seed_score": 1.5,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "So, AI found a 14 year old hole in PHP. Meanwhile regular devs still can't point that same AI at their own code",
+            "body": "So, AI found a 14 year old hole in PHP. Meanwhile regular devs still can't point that same AI at their own code\n[removed]",
+            "url": "https://www.reddit.com/r/singularity/comments/1xceg7o/so_ai_found_a_14_year_old_hole_in_php_meanwhile/",
+            "container": "singularity",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-21",
+      "heuristic_name": "AI tools",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "AI tools",
+        "seed_score": 1.5,
+        "summary": "As a developer, one thing that genuinely started annoying me was how much time I spent switching between apps just to get my work done.\n\nMy usual workflow looked something like this:\n\n1. Come up with an idea or encounter a problem while coding.\n2. Open ChatGPT, Claude, or Gemini and explain what I want.\n3. Get a polished prompt.\n4. Copy it and paste it into Antigravity or Kiro.\n5. If something bre",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "I got tired of switching between AI tools just to write prompts, so I tried building a better workflow",
+            "body": "I got tired of switching between AI tools just to write prompts, so I tried building a better workflow\nAs a developer, one thing that genuinely started annoying me was how much time I spent switching between apps just to get my work done.\n\nMy usual workflow looked something like this:\n\n1. Come up with an idea or encounter a problem while coding.\n2. Open ChatGPT, Claude, or Gemini and explain what I want.\n3. Get a polished prompt.\n4. Copy it and paste it into Antigravity or Kiro.\n5. If something breaks, go back to ChatGPT, explain the error, get another prompt, and paste it again.\n\nRepeat this process over and over again. \ud83d\udc80\n\nI tried using Wispr Flow because I thought dictating my ideas would make things faster. It was definitely useful for turning speech into text and cleaning up my sentences, but it wasn't quite what I needed for AI-assisted development. I wanted something that could actually understand my intent and turn my rough thoughts into proper prompts.\n\nThat's when I came across **JUSKOE**.\n\nThe difference is that it's not just dictation. It has AI built in, so I can literally speak my idea in my own words, and it turns that into a structured, detailed prompt that I can use for coding.\n\nBut it doesn't stop at prompts. I've also been using it to:\n\n* **Write emails:** Tell it something like \"Write an email to my boss explaining the project delay,\" and it generates a properly written email.\n* **Generate code:** Describe what I want to build or implement, and it can turn my spoken instructions into code.\n* **Express ideas naturally:** Instead of worrying about how to phrase everything perfectly, I can just speak and let the AI clean things up.\n\nHonestly, it's made my workflow feel much more natural. I can focus on explaining *what I want to build* instead of spending so much time figuring out how to phrase the perfect prompt.\n\nI'm curious, though: **How do you guys handle prompting in your development workflow?**\n\nDo you use voice input, dedicated prompt tools, or just stick to typing everything out? And do you think voice-first AI tools could become a bigger part of how we interact with coding agents?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xcmxzx/i_got_tired_of_switching_between_ai_tools_just_to/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "As a developer, one thing that genuinely started annoying me was how much time I spent switching between apps just to get my work done.\n\nMy usual workflow looked something like this:\n\n1. Come up with an idea or encounter a problem while coding.\n2. Open ChatGPT, Claude, or Gemini and explain what I want.\n3. Get a polished prompt.\n4. Copy it and paste it into Antigravity or Kiro.\n5. If something bre",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6215
+          }
+        ]
+      }
+    }
+  ]
+}

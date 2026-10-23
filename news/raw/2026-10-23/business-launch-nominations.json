@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "96b962f8d7303d4a",
+  "generated_at": "2026-10-23T00:00:46.034474Z",
+  "from_date": "2026-10-22",
+  "to_date": "2026-10-23",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-23T00:00:46.032981Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-23T00:00:46.032988Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-23T00:00:46.031046Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-23T00:00:46.032922Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Google cleared 300 Finnish",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 230,
+          "points": 316
+        }
+      },
+      "nomination": {
+        "name": "Google cleared 300 Finnish",
+        "seed_score": 579.1205,
+        "summary": "Google cleared 300 hectares of Finnish forest",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50196837",
+            "source": "hackernews",
+            "title": "Google cleared 300 hectares of Finnish forest",
+            "body": "Google cleared 300 hectares of Finnish forest",
+            "url": "https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html",
+            "author": "wetwater",
+            "container": "Hacker News",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 316,
+              "comments": 230
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Google cleared 300 hectares of Finnish forest",
+            "snippet": "Google cleared 300 hectares of Finnish forest",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50196837",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI CLI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 109,
+          "points": 229
+        }
+      },
+      "nomination": {
+        "name": "OpenAI CLI",
+        "seed_score": 358.5031,
+        "summary": "OpenAI CLI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50191507",
+            "source": "hackernews",
+            "title": "OpenAI CLI",
+            "body": "OpenAI CLI",
+            "url": "https://github.com/openai/openai-cli",
+            "author": "armcat",
+            "container": "Hacker News",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 229,
+              "comments": 109
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about OpenAI CLI",
+            "snippet": "OpenAI CLI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50191507",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 75,
+            "source_quality": 0.8,
+            "local_rank_score": 0.18450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "OpenAI 100 companies",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 59,
+          "points": 54
+        }
+      },
+      "nomination": {
+        "name": "OpenAI 100 companies",
+        "seed_score": 119.8546,
+        "summary": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50200997",
+            "source": "hackernews",
+            "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+            "body": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+            "url": "https://news.ycombinator.com/item?id=50200997",
+            "author": "ex-aws-dude",
+            "container": "Hacker News",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 54,
+              "comments": 59
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Ask HN: If the models are so good, why doesn't OpenAI just s",
+            "snippet": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50200997",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 24,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0815
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Works Google Docs Sheets Slides",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 10,
+          "points": 85
+        }
+      },
+      "nomination": {
+        "name": "Claude Works Google Docs Sheets Slides",
+        "seed_score": 100.7627,
+        "summary": "Claude Now Works with Google Docs, Sheets, and Slides",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50190357",
+            "source": "hackernews",
+            "title": "Claude Now Works with Google Docs, Sheets, and Slides",
+            "body": "Claude Now Works with Google Docs, Sheets, and Slides",
+            "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+            "author": "gmays",
+            "container": "Hacker News",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 85,
+              "comments": 10
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Claude Now Works with Google Docs, Sheets, and Slides",
+            "snippet": "Claude Now Works with Google Docs, Sheets, and Slides",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50190357",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.064
+          }
+        ]
+      }
+    }
+  ]
+}

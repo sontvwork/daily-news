@@ -1,0 +1,830 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c9b3bf461198c227",
+  "generated_at": "2026-10-22T23:57:43.136819Z",
+  "from_date": "2026-10-21",
+  "to_date": "2026-10-22",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-22T23:57:43.059877Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-22T23:57:43.059885Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 68,
+      "attempted": true,
+      "at": "2026-10-22T23:57:43.058612Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-22T23:57:43.059734Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Meta 25B Mexico Cambridge Analytica",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 415,
+          "points": 675
+        }
+      },
+      "nomination": {
+        "name": "Meta 25B Mexico Cambridge Analytica",
+        "seed_score": 1156.1196,
+        "summary": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50184820",
+            "source": "hackernews",
+            "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+            "body": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+            "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+            "author": "cbg0",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 675,
+              "comments": 415
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Meta ordered to pay $25B penalty in New Mexico Cambridge Ana",
+            "snippet": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50184820",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenShell AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 141,
+          "points": 273
+        },
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "OpenShell AI agents",
+        "seed_score": 879.75,
+        "summary": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50198675",
+            "source": "hackernews",
+            "title": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+            "body": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+            "url": "https://github.com/NVIDIA/OpenShell",
+            "author": "niemandhier",
+            "container": "Hacker News",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 273,
+              "comments": 141
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "HN story about OpenShell \u2013 A safe, private runtime for fleets of autonomous",
+            "snippet": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50198675",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.8,
+            "local_rank_score": 0.462
+          },
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "NVIDIA/OpenShell: safe, private runtime for autonomous AI agents",
+            "body": "NVIDIA/OpenShell: safe, private runtime for autonomous AI agents",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcs9e2/nvidiaopenshell_safe_private_runtime_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 76,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "NVIDIA/OpenShell: safe, private runtime for autonomous AI agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.463
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Patch Planet",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 183,
+          "points": 262
+        }
+      },
+      "nomination": {
+        "name": "Patch Planet",
+        "seed_score": 471.9938,
+        "summary": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50181175",
+            "source": "hackernews",
+            "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+            "body": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+            "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+            "author": "nr378",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 262,
+              "comments": 183
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Patch the Planet: global response coordination as agents unc",
+            "snippet": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50181175",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 83,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1405
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Qwen3-Coder writes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 117,
+          "points": 241
+        }
+      },
+      "nomination": {
+        "name": "Qwen3-Coder writes",
+        "seed_score": 379.7163,
+        "summary": "Qwen3-Coder writes less secure code when told it's for a US persona",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50179706",
+            "source": "hackernews",
+            "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "body": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
+            "author": "mattifrank",
+            "container": "Hacker News",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 241,
+              "comments": 117
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Qwen3-Coder writes less secure code when told it's for a US",
+            "snippet": "Qwen3-Coder writes less secure code when told it's for a US persona",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50179706",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 10,
+            "engagement_score": 79,
+            "source_quality": 0.8,
+            "local_rank_score": 0.12350000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Uncomfortable AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 90
+        }
+      },
+      "nomination": {
+        "name": "Uncomfortable AI agents",
+        "seed_score": 270.0,
+        "summary": "Uncomfortable truth: Is anyone else finding AI agents way too unreliable for real workflows?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "Uncomfortable truth: Is anyone else finding AI agents way too unreliable for real workflows?",
+            "body": "Uncomfortable truth: Is anyone else finding AI agents way too unreliable for real workflows?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xc50g6/uncomfortable_truth_is_anyone_else_finding_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 90,
+              "num_comments": 90
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "Uncomfortable truth: Is anyone else finding AI agents way too unreliable for real workflows?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4615
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "I can't find any good social",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "I can't find any good social",
+        "seed_score": 129.0,
+        "summary": "I can\u2019t find any good social media agents \ud83d\ude2d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "I can\u2019t find any good social media agents \ud83d\ude2d",
+            "body": "I can\u2019t find any good social media agents \ud83d\ude2d",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xcdw8s/i_cant_find_any_good_social_media_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 43,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "I can\u2019t find any good social media agents \ud83d\ude2d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34600000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 121.5,
+        "summary": "How are you handling security when building AI agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "How are you handling security when building AI agents?",
+            "body": "How are you handling security when building AI agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xc4ftk/how_are_you_handling_security_when_building_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 35,
+              "num_comments": 46
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are you handling security when building AI agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.47400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Anthropic AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Anthropic AI agents",
+        "seed_score": 63.0,
+        "summary": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+            "body": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xcqkgw/anthropics_own_data_suggests_were_becoming_middle/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 28,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.433
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI agents better",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "AI agents better",
+        "seed_score": 53.033,
+        "summary": "Are AI agents helping support teams handle their workload better?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Are AI agents helping support teams handle their workload better?",
+            "body": "Are AI agents helping support teams handle their workload better?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xbym4q/are_ai_agents_helping_support_teams_handle_their/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are AI agents helping support teams handle their workload better?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 10,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2435
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Two Claude Code agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Two Claude Code agents",
+        "seed_score": 52.5,
+        "summary": "Two humans, two Claude Code agents, and a fleet of coding agents. Are we still needed?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Two humans, two Claude Code agents, and a fleet of coding agents. Are we still needed?",
+            "body": "Two humans, two Claude Code agents, and a fleet of coding agents. Are we still needed?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xcfhme/two_humans_two_claude_code_agents_and_a_fleet_of/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Two humans, two Claude Code agents, and a fleet of coding agents. Are we still needed?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34900000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI agents based",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "AI agents based",
+        "seed_score": 34.5,
+        "summary": "How should AI agents be priced based on outcomes?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "How should AI agents be priced based on outcomes?",
+            "body": "How should AI agents be priced based on outcomes?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xconvy/how_should_ai_agents_be_priced_based_on_outcomes/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing",
+            "snippet": "How should AI agents be priced based on outcomes?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.444
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI Until",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "AI Until",
+        "seed_score": 33.0,
+        "summary": "My AI agent remembers everything. Until I start a new session.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "My AI agent remembers everything. Until I start a new session.",
+            "body": "My AI agent remembers everything. Until I start a new session.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xci7xf/my_ai_agent_remembers_everything_until_i_start_a/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing",
+            "snippet": "My AI agent remembers everything. Until I start a new session.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Ling-3.0-tiny-UBTree DFlash 8 61",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Ling-3.0-tiny-UBTree DFlash 8 61",
+        "seed_score": 33.0,
+        "summary": "Ling-3.0-tiny-UBTree DFlash draft for stock mainline llama.cpp (+8% prose, +61% code speedup)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Ling-3.0-tiny-UBTree DFlash draft for stock mainline llama.cpp (+8% prose, +61% code speedup)",
+            "body": "Ling-3.0-tiny-UBTree DFlash draft for stock mainline llama.cpp (+8% prose, +61% code speedup)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcnsrj/ling30tinyubtree_dflash_draft_for_stock_mainline/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Ling-3.0-tiny-UBTree DFlash draft for stock mainline llama.cpp (+8% prose, +61% code speedup)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2855
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "agent ideas for an assignment",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "agent ideas for an assignment",
+        "seed_score": 30.0,
+        "summary": "agent ideas for an assignment",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "agent ideas for an assignment",
+            "body": "agent ideas for an assignment",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xcij0k/agent_ideas_for_an_assignment/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "agent ideas for an assignment",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.272
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 27.0,
+        "summary": "How do you catch an AI agent repeating an action after a timeout?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "How do you catch an AI agent repeating an action after a timeout?",
+            "body": "How do you catch an AI agent repeating an action after a timeout?",
+            "url": "https://www.reddit.com/r/LangChain/comments/1xcbih6/how_do_you_catch_an_ai_agent_repeating_an_action/",
+            "container": "LangChain",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you catch an AI agent repeating an action after a timeout?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.371
+          }
+        ]
+      }
+    }
+  ]
+}

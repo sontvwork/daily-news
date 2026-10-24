@@ -6,7 +6,7 @@
 #   research.sh preflight                 # kiểm tra python + permission preflight của engine
 #   research.sh nominate  <slug>          # leg 1: quét listing, ghi discover-nominations.json
 #   research.sh research  <slug>          # leg 2: đọc .cache/work/<slug>/judgments.json, research sâu
-#   research.sh finalize  <slug> <DATE>   # leg 3: news/raw/<DATE>/<slug>.md + .json (+ <slug>-nominations.json)
+#   research.sh finalize  <slug> <DATE>   # leg 3: news/raw/<DATE>/<slug>.md + .json (+ <slug>-nominations.json, <slug>-judgments.json)
 #   research.sh oneshot   <slug> <DATE>   # fallback khi một leg fail 2 lần: news/raw/<DATE>/<slug>.json
 #   research.sh topic  <fu-slug> <DATE>   # follow-up: topic mode với query/days trong followups/<due>-<slug>.json
 #                                         #   plan: .cache/work/<fu-slug>/plan.json (thiếu thì engine tự plan)
@@ -85,6 +85,10 @@ case "$cmd" in
     # Lưu bundle leg 1 (URL gốc, engagement) để chạy lại bước viết bài ở local; prune theo mẫu news/raw/DATE/*.
     if [[ -f "$dir/discover-nominations.json" ]]; then
       cp "$dir/discover-nominations.json" "$raw/$slug-nominations.json"
+    fi
+    # Lưu điểm sub-agent chấm (junk, worthiness) để so với topic qua leg 2 (đo vai trò cổng lọc của leg 2).
+    if [[ -f "$dir/judgments.json" ]]; then
+      cp "$dir/judgments.json" "$raw/$slug-judgments.json"
     fi
     ;;
   oneshot)

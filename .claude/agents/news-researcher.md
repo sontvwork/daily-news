@@ -68,9 +68,10 @@ f. `bash scripts/research.sh status <slug> <DATE>` để lấy `outcome` và tì
    (`.clusters[]` gom các item theo chủ đề: `title`, `summary`, `sources`, `engagement_total`.) Chọn các post/bình luận thực sự nói về topic, đúng `angle`. Bỏ item lạc đề (trùng tên, chủ đề khác) và item `published_at` ngoài cửa sổ `days`.
 
 ## Lưu ý khi trích dữ kiện
-- Với domain: dữ kiện đáng tin nhất là bundle `.cache/work/<slug>/discover-nominations.json` (tiêu đề, snippet, **URL gốc**, engagement leg 1); `news/raw/<DATE>/<slug>.json`/`.md` cho `topic`, `why_spiking`, `top_comment`.
-- Số tương tác tổng hợp ở pha research (view YouTube/TikTok hàng triệu…) thường lẫn nội dung không liên quan → KHÔNG trích.
-- URL: ưu tiên URL gốc (blog chính thức, repo GitHub, bài Hacker News); chỉ khi không có mới dùng `evidence_urls` / URL post mạng xã hội.
+- Với domain: dữ kiện chỉ lấy từ bundle `.cache/work/<slug>/discover-nominations.json` (tiêu đề, snippet, **URL gốc**, engagement leg 1, `metadata.hn_url`). `news/raw/<DATE>/<slug>.json`/`.md` chỉ cho biết chủ đề nào qua leg 2 (`topic`).
+- KHÔNG lấy `why_spiking`, `top_comment`, `evidence_urls` của leg 2 làm dữ kiện: leg 2 tìm lại theo keyword nên gom cả bài lạc đề (comment, URL, số tương tác của chủ đề khác).
+- Item Hacker News/Reddit trong bundle thường chỉ có tiêu đề (`body` = `title`, `top_comments` rỗng). KHÔNG suy diễn nội dung từ tiêu đề; ghi `nội dung: chỉ tiêu đề`, agent chính sẽ đọc bài gốc + comment (deep-read) trước khi viết.
+- URL: ưu tiên URL gốc (blog chính thức, repo GitHub); không có thì bài Hacker News. Không dùng `evidence_urls`.
 
 ## Báo cáo
 Ghi `.cache/work/<slug>/report.md` (Write tool) và trả về **đúng nội dung đó** làm câu trả lời cuối:
@@ -84,7 +85,9 @@ raw: news/raw/<DATE>/<slug>.json (+ .md nếu có)
 ## Ứng viên (xếp theo mức quan trọng; follow-up: các ý chính về angle)
 1. <tiêu đề ngắn, tiếng Việt>
    - dữ kiện: <1–3 dữ kiện cụ thể, có số liệu/tên riêng nếu có trong nguồn>
+   - nội dung: snippet | chỉ tiêu đề
    - url: <URL gốc>
+   - hn: <metadata.hn_url nếu có, không thì bỏ dòng này>
    - worthiness: <0–100> · trùng bản tin cũ: không | <ngày, tin số — và phần mới là gì>
 ```
 

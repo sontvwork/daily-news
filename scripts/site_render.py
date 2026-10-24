@@ -23,6 +23,7 @@ LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 CODE = re.compile(r"`([^`]+)`")
 SUMMARY_PREFIX = re.compile(r"^(?:[-*•]|\d+[.)])\s*")
+QUIET_LINE = "💤 Hôm nay hơi ít tin nóng"  # dòng đầu tóm tắt của ngày chỉ có 1 tin, cho card/tin Google Chat đỡ trống
 
 
 @dataclass
@@ -121,14 +122,15 @@ def count_label(issue: Issue) -> str:
 def summary_lines(issue: Issue) -> list[str]:
     """1–3 dòng plain text, dùng chung cho card trang chủ và tin Google Chat (`news.py summary`).
 
-    Tóm tắt đã lưu → tiêu đề các tin → câu 'không có tin'.
+    Tóm tắt đã lưu → tiêu đề các tin → câu 'không có tin'. Ngày chỉ có 1 tin thì thêm QUIET_LINE lên đầu.
     """
-    if issue.summary:
-        return issue.summary
-    if issue.items:
-        return [f"📌 {plain(item.title)}" for item in issue.items[:3]]
-    text = plain(" ".join(issue.paragraphs)).removeprefix("😴").strip()
-    return [f"😴 {text or 'Không có tin mới nổi bật.'}"]
+    if not issue.items:
+        text = plain(" ".join(issue.paragraphs)).removeprefix("😴").strip()
+        return [f"😴 {text or 'Không có tin mới nổi bật.'}"]
+    lines = issue.summary or [f"📌 {plain(item.title)}" for item in issue.items[:3]]
+    if len(issue.items) == 1 and QUIET_LINE not in lines:
+        lines = [QUIET_LINE, *lines][:3]
+    return lines
 
 
 def day_card(issue: Issue, *, latest: bool = False) -> str:

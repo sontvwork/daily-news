@@ -57,6 +57,8 @@ FEED_PUBLISHED = re.compile(r"<published>(\d{4}-\d{2}-\d{2})T")
 FEED_LINK_HREF = re.compile(r'(<link href=")[^"]*(")')
 ITEM_HEADING = re.compile(r"^###\s+(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
 SOURCE_LINK = re.compile(r"🔗\s*\[[^\]]*\]\(([^)\s]+)\)")
+# Câu rào đón kiểu "nguồn chỉ có tiêu đề": tin không đủ dữ kiện phải bỏ, không viết kèm lời rào (ROUTINE_PROMPT Bước 2).
+TITLE_ONLY = re.compile(r"(?:chỉ|mới)\s+có\s+(?:mỗi\s+)?tiêu\s+đề", re.IGNORECASE)
 # Số bản tin cũ routine đọc lại để tránh đăng trùng (history + cảnh báo trùng nguồn trong validate).
 PREVIOUS_ISSUES = 2
 NO_NEWS_PHRASE = "Không có tin mới nổi bật"
@@ -131,6 +133,10 @@ def cmd_validate(date: str) -> None:
     for block in re.split(r"^###\s+\d+\.", text, flags=re.MULTILINE)[1:]:
         if not re.search(r"^\s*[-*]\s+\S", block, re.MULTILINE):
             fail("mỗi tin phải có ít nhất một bullet")
+    if match := TITLE_ONLY.search(text):
+        number = len(ITEM_HEADING.findall(text, 0, match.start()))
+        fail(f"tin {number} ghi '{match.group(0)}': tin không đủ dữ kiện ngoài tiêu đề thì bỏ hẳn "
+             f"(dữ kiện lấy từ news/raw/{date}/deep.json), không viết kèm lời rào đón")
     check_summary(date)
     check_repeats(date, text)
     print(f"OK: {path.name} — {len(items)} tin")

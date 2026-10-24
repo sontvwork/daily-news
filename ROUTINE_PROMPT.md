@@ -42,17 +42,21 @@ Sau khi xong mọi slug:
 Loại bỏ: paper/arXiv, benchmark học thuật, architecture chuyên sâu, chủ đề AI chung chung không gắn với dev tool, tin cũ hơn ~24 giờ, bài do cá nhân chia sẻ về việc chạy model local/self-host trên phần cứng cá nhân.
 
 ## Bước 2 — Viết bản tin tiếng Việt (tên bước khi lỗi: `write`)
-Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện được phép dùng:
-- Báo cáo của các sub-agent (`.cache/work/<slug>/report.md`): điểm xuất phát. Dữ kiện nào chưa chắc thì đối chiếu lại với 2 nguồn dưới.
-- `news/raw/<DATE>/<slug>.json` và `.md`: danh sách chủ đề đã qua ngưỡng tin cậy (`topic`, `why_spiking`, `top_comment`); với `fu-*` là kết quả topic mode (post, bình luận, URL).
-- File bundle `.cache/work/<slug>/discover-nominations.json`: bài gốc của từng chủ đề (tiêu đề, snippet, **URL gốc**, engagement của leg 1). Đây là dữ kiện đáng tin nhất.
+**Đọc sâu trước khi viết.** Từ các báo cáo, chọn sơ bộ tối đa 12 tin thường có khả năng lên bài, rồi chạy một lần (Bash timeout 180000):
+`python3 scripts/deepread.py <DATE> '<url>' '<url>' …` với `url` = dòng `hn:` trong báo cáo (không có thì dòng `url:`). Sau đó Read `news/raw/<DATE>/deep.json`. URL đọc không được thì tin đó chỉ còn dữ kiện của bundle. Cần thêm ứng viên thì chạy lại với URL mới.
+
+Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện:
+- `news/raw/<DATE>/deep.json`: bài gốc (`article.text`) và comment trên thread Hacker News của chính tin đó (`comments`). Nguồn chính cho dữ kiện, và là nguồn **duy nhất** cho bình luận của tin thường.
+- Bundle `.cache/work/<slug>/discover-nominations.json`: tiêu đề, snippet, **URL gốc**.
+- Báo cáo sub-agent (`.cache/work/<slug>/report.md`): để chọn tin.
+- `news/raw/<DATE>/fu-<…>.json`: dữ kiện của follow-up.
+- KHÔNG lấy dữ kiện từ `news/raw/<DATE>/<slug>.json`/`.md` của domain (`why_spiking`, `top_comment`, `evidence_urls`): chúng thường lẫn bài lạc đề.
 
 Số tương tác (điểm, vote, bình luận):
-- KHÔNG trích số tổng hợp ở pha research (view YouTube/TikTok hàng triệu…), vì thường lẫn nội dung không liên quan.
 - Mặc định không nêu số. Chỉ nêu khi con số là luận điểm của câu (mức quan tâm nổi bật, bằng chứng cho phản ứng cộng đồng).
 - Khi nêu, lồng số vào câu một cách tự nhiên, không lặp một mẫu câu giữa các tin.
 
-`evidence_urls` thường chỉ là các post mạng xã hội ngẫu nhiên, nên link `🔗` phải ưu tiên URL gốc trong bundle (blog chính thức, repo GitHub, bài Hacker News), chỉ khi không có mới dùng `evidence_urls`.
+Link `🔗` là URL gốc (blog chính thức, repo GitHub, bài Hacker News).
 
 **Tránh trùng với 2 bản tin cũ** (Bước 0.4; bản tin cũ chỉ dùng để đối chiếu, KHÔNG phải nguồn dữ kiện):
 - Một tin bị coi là trùng nếu nói về cùng sự kiện/sản phẩm/bài viết với một tin cũ, kể cả khi đổi cách viết tiêu đề hoặc engagement đã tăng.
@@ -60,7 +64,7 @@ Số tương tác (điểm, vote, bình luận):
 - Tin trùng mà phần cập nhật không có thông tin quan trọng (chỉ tăng điểm/bình luận, nhắc lại nội dung cũ) → bỏ hẳn, đẩy tin khác lên.
 - Dòng tóm tắt (summary) cũng theo luật này: tin cập nhật thì tóm tắt phần cập nhật.
 
-KHÔNG bịa tên, số liệu, tính năng hay link. Chủ đề nào chỉ có mỗi tiêu đề mà không đủ dữ kiện để viết cho đúng thì bỏ. Tin nào không đạt tiêu chí biên tập cũng bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức quan trọng.
+KHÔNG bịa tên, số liệu, tính năng hay link. Mỗi tin thường phải có ít nhất 2 dữ kiện cụ thể ngoài tiêu đề, lấy từ `deep.json` hoặc snippet trong bundle. Không đủ thì **bỏ tin**, KHÔNG viết kèm lời rào đón kiểu "nguồn chỉ có tiêu đề". Tin nào không đạt tiêu chí biên tập cũng bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức quan trọng.
 
 **Follow-up** (nếu Bước 0.5 có):
 - N follow-up là tin `### 1.` … `### N.`, đúng thứ tự `[tin 1]`, `[tin 2]`… của Bước 0.5. Tin thường đánh số tiếp từ N+1. Giới hạn 8 tin chỉ tính tin thường.

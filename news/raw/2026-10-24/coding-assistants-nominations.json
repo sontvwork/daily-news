@@ -1,0 +1,850 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "020c7e3381feeee9",
+  "generated_at": "2026-10-23T23:56:14.702838Z",
+  "from_date": "2026-10-22",
+  "to_date": "2026-10-23",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-23T23:56:14.666944Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-23T23:56:14.666958Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 27,
+      "attempted": true,
+      "at": "2026-10-23T23:56:14.666114Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-10-23T23:56:14.666767Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 338
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 1068.0,
+        "summary": "Claude made a documentary about life after the singularity",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "Claude made a documentary about life after the singularity",
+            "body": "Claude made a documentary about life after the singularity",
+            "url": "https://www.reddit.com/r/singularity/comments/1xd5von/claude_made_a_documentary_about_life_after_the/",
+            "container": "singularity",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 374,
+              "num_comments": 338
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude made a documentary about life after the singularity",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38349999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Swedish ChatGPT Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 115,
+          "points": 314
+        }
+      },
+      "nomination": {
+        "name": "Swedish ChatGPT Claude",
+        "seed_score": 643.5,
+        "summary": "Swedish government offices to ban ChatGPT and Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50207405",
+            "source": "hackernews",
+            "title": "Swedish government offices to ban ChatGPT and Claude",
+            "body": "Swedish government offices to ban ChatGPT and Claude",
+            "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+            "author": "armcat",
+            "container": "Hacker News",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 314,
+              "comments": 115
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Swedish government offices to ban ChatGPT and Claude",
+            "snippet": "Swedish government offices to ban ChatGPT and Claude",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50207405",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.38349999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Source Code Problem",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 15,
+          "points": 23
+        },
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Source Code Problem",
+        "seed_score": 74.0883,
+        "summary": "No Source Code? No Problem",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50214994",
+            "source": "hackernews",
+            "title": "No Source Code? No Problem",
+            "body": "No Source Code? No Problem",
+            "url": "https://queue.acm.org/doi/10.1145/945131.945155",
+            "author": "ibobev",
+            "container": "Hacker News",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 23,
+              "comments": 15
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about No Source Code? No Problem",
+            "snippet": "No Source Code? No Problem",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50214994",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2835
+          },
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "What I learned prompting AI agents to use a real Android phone",
+            "body": "What I learned prompting AI agents to use a real Android phone\nI build Buddy, an open-source Android app where an AI agent uses your phone: it reads the screen, taps and types. It runs Claude Code, Codex, OpenCode or Google's Antigravity CLI. A few prompt lessons from the last weeks:\n\n1. Safety rules don't belong in the prompt. A user set their camera app to \"Trust\" and still got asked before every switch. The app's lock was off, but the prompt still said \"confirm before changing settings\", and the prompt won. Now the app enforces it: send, pay and delete buttons in messaging, shopping and banking apps stop on a card until you OK it. A model once picked \"Buy now\" instead of \"Add to cart\", and that check is why nothing got ordered.\n\n2. Show the tool signatures, not just the names. When I added Antigravity, Gemini ignored the phone tools, tried ls in a shell, got refused and stopped without a word. A short note in the first message with the signatures, like tap(element?, x?, y?), plus \"Shell commands are not available in this chat\" fixed it.\n\n3. Say who's talking. When a tool call gets refused, some agents just stop. Buddy then sends one nudge that starts with \"(From Buddy, not the user)\", so the model doesn't read it as the user changing the task.\n\n4. Agents fill gaps with their own knowledge. My benchmark prompt says \"Open the Calculator app, compute 1234 \u00d7 5678 there\". One model couldn't get the calculator to work and answered from its own math. Asked for the current temperature, it twice gave today's high and low instead. If the answer has to come from the screen, say so.\n\n5. Text beats screenshots. The agent reads the screen through the accessibility tree as text, which is faster and cheaper than vision. Screenshots are only for things that are actually visual, like maps.\n\nIt's free and open source: https://github.com/ghorbelhamdi/buddy-android\n\nWritten with AI help.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xcbhfe/what_i_learned_prompting_ai_agents_to_use_a_real/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I build Buddy, an open-source Android app where an AI agent uses your phone: it reads the screen, taps and types. It runs Claude Code, Codex, OpenCode or Google's Antigravity CLI. A few prompt lessons from the last weeks:\n\n1. Safety rules don't belong in the prompt. A user set their camera app to \"Trust\" and still got asked before every switch. The app's lock was off, but the prompt still said \"co",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 10,
+            "engagement_score": 17,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43850000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Using Codex Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "Using Codex Claude Code",
+        "seed_score": 39.2444,
+        "summary": "Using Codex and Claude Code every day: what's still hard once the code part works?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Using Codex and Claude Code every day: what's still hard once the code part works?",
+            "body": "Using Codex and Claude Code every day: what's still hard once the code part works?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xcsi0d/using_codex_and_claude_code_every_day_whats_still/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Using Codex and Claude Code every day: what's still hard once the code part works?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.21100000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "3 Codex",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "3 Codex",
+        "seed_score": 18.0,
+        "summary": "Why did a token-saving skill add ~3% to my Codex input?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Why did a token-saving skill add ~3% to my Codex input?",
+            "body": "Why did a token-saving skill add ~3% to my Codex input?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xdlzwy/why_did_a_tokensaving_skill_add_3_to_my_codex/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Why did a token-saving skill add ~3% to my Codex input?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 18,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29500000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 13.5,
+        "summary": "They replaced our two backend devs with me and Claude Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "They replaced our two backend devs with me and Claude Code",
+            "body": "They replaced our two backend devs with me and Claude Code",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xd6091/they_replaced_our_two_backend_devs_with_me_and/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing",
+            "snippet": "They replaced our two backend devs with me and Claude Code",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "ChatGPT Plus vs Cursor Premium 2026",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Plus vs Cursor Premium 2026",
+        "seed_score": 9.5459,
+        "summary": "ChatGPT Plus vs Cursor Premium in 2026 \u2014 which one is actually worth it?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "ChatGPT Plus vs Cursor Premium in 2026 \u2014 which one is actually worth it?",
+            "body": "ChatGPT Plus vs Cursor Premium in 2026 \u2014 which one is actually worth it?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xcd4jc/chatgpt_plus_vs_cursor_premium_in_2026_which_one/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "ChatGPT Plus vs Cursor Premium in 2026 \u2014 which one is actually worth it?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 22,
+            "source_quality": 0.6,
+            "local_rank_score": 0.09250000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Bugs LLM-written",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Bugs LLM-written",
+        "seed_score": 7.4246,
+        "summary": "Bugs I keep catching in LLM-written code, and the checks that catch them",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Bugs I keep catching in LLM-written code, and the checks that catch them",
+            "body": "Bugs I keep catching in LLM-written code, and the checks that catch them",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xcm1cm/bugs_i_keep_catching_in_llmwritten_code_and_the/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Bugs I keep catching in LLM-written code, and the checks that catch them",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.07650000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Expense.prp",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Expense.prp",
+        "seed_score": 5.3033,
+        "summary": "Picture of a receipt from Walmart using credit card ending 4321 for 20.50 worth of printer Ink becomes :\n\n10\\_21 - Walmart - 4321 - $20.50 -Printer Ink\n\nYou send an email to yourcompanyreceipts@gmail.com with subject\n\n\"10\\_21 - Walmart - 4321 - $20.50 - Printer Ink\" with the receipt attached \n\n\\--------\n\n expense.prp - You are a receipt data extraction assistant. Parse raw receipt text and output",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Expense.prp - prepares a receipt or invoice to be indexed",
+            "body": "Expense.prp - prepares a receipt or invoice to be indexed\nPicture of a receipt from Walmart using credit card ending 4321 for 20.50 worth of printer Ink becomes :\n\n10\\_21 - Walmart - 4321 - $20.50 -Printer Ink\n\nYou send an email to yourcompanyreceipts@gmail.com with subject\n\n\"10\\_21 - Walmart - 4321 - $20.50 - Printer Ink\" with the receipt attached \n\n\\--------\n\n expense.prp - You are a receipt data extraction assistant. Parse raw receipt text and output a single formatted string.\n\nOutput Format:\n\nMM\\_DD - Merchant - XXXX - XX.XX - 10char\\_description \n\nField Definitions & Rules:\n\nMM\\_DD: Month and day from receipt date (e.g., 08\\_25).\n\nMerchant: Company name extracted from the top of the receipt.\n\nXXXX: Last 4 digits of the payment card used.\n\nXX.XX: Total amount spent.\n\n10char\\_description: First 10 characters of the primary item purchased (truncate to 10 chars; do not pad).\n\nUse \"UNKNOWN\" for missing fields.\n\nOutput ONLY the single line. No extra text, explanations, or code blocks.\n\nSeparate fields using - (space, hyphen, space).\n\nNow process the provided receipt and output ONLY the formatted string.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xc3y20/expenseprp_prepares_a_receipt_or_invoice_to_be/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Picture of a receipt from Walmart using credit card ending 4321 for 20.50 worth of printer Ink becomes :\n\n10\\_21 - Walmart - 4321 - $20.50 -Printer Ink\n\nYou send an email to yourcompanyreceipts@gmail.com with subject\n\n\"10\\_21 - Walmart - 4321 - $20.50 - Printer Ink\" with the receipt attached \n\n\\--------\n\n expense.prp - You are a receipt data extraction assistant. Parse raw receipt text and output",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.066
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 3.182,
+        "summary": "I've been thinking about an issue with using LLMs to analyze technical information: they sometimes treat the description of an event as proof that the event actually happened.\n\nFor example, imagine you're analyzing security logs and an alert says \"Possible credential theft detected.\"\n\nThat doesn't necessarily mean credentials were stolen. It means something triggered a detection rule. There's a di",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "A small prompt change that can stop AI from confusing security alerts with confirmed incidents",
+            "body": "A small prompt change that can stop AI from confusing security alerts with confirmed incidents\nI've been thinking about an issue with using LLMs to analyze technical information: they sometimes treat the description of an event as proof that the event actually happened.\n\nFor example, imagine you're analyzing security logs and an alert says \"Possible credential theft detected.\"\n\nThat doesn't necessarily mean credentials were stolen. It means something triggered a detection rule. There's a difference between what a security tool suspects and what the available evidence actually proves.\n\nOne way to approach this is to make that distinction explicit in the prompt.\n\nHere's a reusable example:\n\n**Prompt:**\n\n\"Analyze the following security event using only the evidence provided.\n\nSeparate your answer into five sections:\n\n1. **Observed facts:** What can be directly confirmed from the logs?\n2. **Detection interpretation:** What does the security tool claim or suspect?\n3. **Possible explanations:** What are the plausible explanations, including benign ones?\n4. **Missing evidence:** What information would be needed to confirm or reject those explanations?\n5. **Provisional conclusion:** What can reasonably be concluded right now?\n\nDo not treat detection names as established facts. Do not assume a blocked action succeeded. If something cannot be determined from the available data, explicitly label it as unknown.\"\n\nI think this idea applies beyond cybersecurity too. The same problem can happen when analyzing financial reports, debugging code, reviewing documents, or summarizing research.\n\nAn AI response can sound extremely convincing while quietly turning an assumption into a fact.\n\nI'm curious how other people handle this. Do you explicitly force the model to distinguish evidence from interpretation, or have you found a better way to prevent unsupported conclusions?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xcd2tf/a_small_prompt_change_that_can_stop_ai_from/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been thinking about an issue with using LLMs to analyze technical information: they sometimes treat the description of an event as proof that the event actually happened.\n\nFor example, imagine you're analyzing security logs and an alert says \"Possible credential theft detected.\"\n\nThat doesn't necessarily mean credentials were stolen. It means something triggered a detection rule. There's a di",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.229
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Bookey.prp Google",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Bookey.prp Google",
+        "seed_score": 3.182,
+        "summary": "Paired with something like Nova Launchers calender widget that keeps events happening soon on your home screen this has saved me a few times.\n\nI mostly use it for upcoming Amazon or Catering shifts, 99% of what I do is on demand , \"right now\" pickup and deliveries so things happening in the future are aometimes forgotten.  Forgetting a shift is the fastest way to get fired from these apps.\n\n\\-----",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Bookey.prp - add events to your Google calendar with optional notification",
+            "body": "Bookey.prp - add events to your Google calendar with optional notification\nPaired with something like Nova Launchers calender widget that keeps events happening soon on your home screen this has saved me a few times.\n\nI mostly use it for upcoming Amazon or Catering shifts, 99% of what I do is on demand , \"right now\" pickup and deliveries so things happening in the future are aometimes forgotten.  Forgetting a shift is the fastest way to get fired from these apps.\n\n\\------------------\n\n bookey.prp - You are an intelligent personal assistant. Your task is to analyze the attached schedule image (or text) and add the event to my Google Calendar.\n\n Instructions:\n\n  \\* Extract Event Details:\n\n\\* Title / Summary: Use the facility or event name (e.g., \\[Facility Name\\] - \\[Block Type\\]).\n\n\\* Date & Time: Extract the start date, start time, and end time accurately.\n\n   \\* Location: Extract the full street address provided in the schedule.\n\n \\* Calendar Integration & Reminders:\n\n\\* Create the calendar event with the extracted details.\n\n   \\* Explicit Notification/Reminder: Set a specific notification/reminder for \\[Insert Notification Time, e.g., 1 hour before / 30 minutes before / no reminder\\] prior to the event start time. Do not rely solely on default calendar reminders.\n\n  \\* Confirmation:\n\n\\* Confirm once the event is created, listing the title, date, time, location, and the configured notification reminder time",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xcedib/bookeyprp_add_events_to_your_google_calendar_with/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Paired with something like Nova Launchers calender widget that keeps events happening soon on your home screen this has saved me a few times.\n\nI mostly use it for upcoming Amazon or Catering shifts, 99% of what I do is on demand , \"right now\" pickup and deliveries so things happening in the future are aometimes forgotten.  Forgetting a shift is the fastest way to get fired from these apps.\n\n\\-----",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.033
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-19",
+      "heuristic_name": "Kimi K3.1 vs GPT-6 Astra 3D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Kimi K3.1 vs GPT-6 Astra 3D",
+        "seed_score": 3.0,
+        "summary": "Got early API access to kimi-k3.1-pro, so I gave it and GPT-6 Astra the exact same prompt and let each one run on its own in an agent loop. The task: a 28 s Avatar-style cinematic in Three.js (Toruk with a Na'vi rider, six camera shots, waterfall, glowing night jungle, sunrise roar), one HTML file, every mesh and texture generated in code, deterministic `setTime()` so it can be recorded frame by f",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "New Kimi K3.1 vs GPT-6 Astra on the same agentic 3D task",
+            "body": "New Kimi K3.1 vs GPT-6 Astra on the same agentic 3D task\nGot early API access to kimi-k3.1-pro, so I gave it and GPT-6 Astra the exact same prompt and let each one run on its own in an agent loop. The task: a 28 s Avatar-style cinematic in Three.js (Toruk with a Na'vi rider, six camera shots, waterfall, glowing night jungle, sunrise roar), one HTML file, every mesh and texture generated in code, deterministic `setTime()` so it can be recorded frame by frame. No human in the loop, no retries, one run each.\n\n**Setup**\n\n* Agent: [Atomic Agent](https://atomicagent.io/) built from main, headless `run`, approval level 5, one turn\n* Kimi K3.1: `kimi-k3.1-pro` direct on the Moonshot API\n* GPT-6 Astra: `openai/gpt-6-astra` via OpenRouter\n* Same prompt file, same tools (shell, file edit, page verifier, browser, vision), same limits\n\n**Numbers**\n\n|Metric|[Kimi K3.1](https://platform.moonshot.ai/)|[GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra)|\n|:-|:-|:-|\n|Wall time|12:28|**9:17**|\n|Agent steps|**20**|35|\n|Tool calls|**23**|35|\n|Prompt tokens read|**725K**|1,209K|\n|...of which cache hits|94%|97%|\n|Output tokens|49.2K|**22.2K**|\n|...of which reasoning|27.7K|1.7K|\n|Final file|746 lines, 50 KB|217 lines, 36 KB|\n|Cost|\\~$1.1 to $1.4 (est.)|\\~$2.63|\n\n**What stood out**\n\n* **Kimi thinks, Astra pokes.** Kimi spent 56% of its output on reasoning and took \\~37 s per step. Astra barely reasoned (1.7K tokens) and took \\~16 s per step, but ran twice as many steps and read 1.7x more context. Astra's cost splits roughly 60/40 between rereading that context (even at 97% cache hits) and its pricier output tokens; Kimi wrote twice the output but at a much lower per-token price.\n* **Astra actually used its eyes.** It took screenshots at 1.5, 5.5, 9, 12.5, 18 and 26 s, asked the vision tool to be critical, then acted on what came back: it merged the island geometry into a handful of draw calls, reshot the over-the-shoulder, night and sunrise frames to check them again, and made sure a 9:16 crop still keeps the rider's head in frame. Four vision calls, five edits.\n* **Kimi built it blind.** It wrote its own CDP script that rendered seven timeline frames and checked console and network errors, then tried to look at the PNGs. Both vision calls failed (see caveats), so it shipped after fixing a syntax error (`else(` instead of `else if(`) without ever seeing the picture. The scene still holds up, but the 22 to 24 s sunrise burst renders as a flat teal frame, which is exactly what one look would have caught.\n* **Kimi writes a lot more code.** 746 readable lines vs 217 dense ones from Astra. Kimi's version has more going on per shot; Astra's is tighter and more consistent shot to shot.\n\n**Things worth being upfront about**\n\n* Two bugs on our side showed up here. Astra's first run died in 2.5 minutes: it fills every optional tool field with zeros (`\"wait\":0,\"kill\":0`) and our shell tool rejected all 29 calls as ambiguous. Fixed and rerun; the numbers above are from the rerun. Kimi K3.1 only accepts `temperature: 1` and our OpenAI-compatible client sends 0.2, so the first request 400'd. I forced it to 1 for the main model, but the vision call still went out with the old value, which is why Kimi never saw its screenshots. So this is not a fully fair fight for Kimi.\n* K3.1 has no public price yet. Its cost is estimated from Kimi K3's Moonshot list price and the token counts; Moonshot's cache price is the unknown, hence the range. Astra is at OpenRouter list price.\n* One run per model, variance not measured. Quality is subjective, the video is the evidence.\n\nHas anyone else had early K3.1 access on agentic tasks? Curious whether the \"long think, few steps\" pattern holds outside 3D.\n\nDisclosure: I work on [Atomic Agent](https://atomicagent.io/), the open source agent this ran in, so ask me anything!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdoad8/new_kimi_k31_vs_gpt6_astra_on_the_same_agentic_3d/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Got early API access to kimi-k3.1-pro, so I gave it and GPT-6 Astra the exact same prompt and let each one run on its own in an agent loop. The task: a 28 s Avatar-style cinematic in Three.js (Toruk with a Na'vi rider, six camera shots, waterfall, glowing night jungle, sunrise roar), one HTML file, every mesh and texture generated in code, deterministic `setTime()` so it can be recorded frame by f",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42000000000000004
+          },
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "New Kimi K3.1 vs GPT-6 Astra on the same agentic 3D task:",
+            "body": "New Kimi K3.1 vs GPT-6 Astra on the same agentic 3D task:\nK3 weights went open in July and K3.1 is rumored to follow, so I wanted to know how it behaves as an agent before anyone tries to run it at home. I gave K3.1 (API for now) and GPT-6 Astra the same one-shot task and let each run alone until it decided it was done: a 28 s Avatar-style dragon flight in Three.js, six camera shots, one HTML file, every mesh and texture in code, deterministic `setTime()` for frame-by-frame recording. One run each, no human in the loop.\n\n**Numbers**\n\n|Metric|Kimi K3.1|GPT-6 Astra|\n|:-|:-|:-|\n|Wall time|12:28|9:17|\n|Agent steps|20|35|\n|Tool calls|23|35|\n|Prompt tokens read|725K|1,209K|\n|Cache hits|94%|97%|\n|Output tokens|49.2K|22.2K|\n|Reasoning tokens|27.7K|1.7K|\n|Final file|746 lines|217 lines|\n|Cost (API)|\\~$1.1 to $1.4, est.|\\~$2.63|\n\n**Why the shape matters for local**\n\n* **K3.1 reasons a lot and calls tools rarely.** 56% of its output was reasoning, \\~37 s per step, and it wrote the scene in a few big writes. Astra barely reasoned and made many small moves.\n* **Fewer steps means less prompt to reread.** Every agent step resends the growing context. K3.1 read 725K prompt tokens over the run, Astra 1.2M. On a local box that is prefill time: with a hit rate like these you still pay for the uncached tail and every cache miss, so a low-step model is friendlier to prefill-bound hardware.\n* **But it is decode-heavy.** 49K generated tokens, more than twice Astra's. On a big MoE at home, decode speed is what will decide whether a run like this takes 15 minutes or an hour.\n\n**What went wrong (agent side, not the models)**\n\n* K3.1 only accepts `temperature: 1`. The agent sent 0.2, so I forced 1 for the main calls, but the image-review tool kept the old value. Both of K3.1's attempts to look at its own screenshots failed and it shipped blind; one 2 s sunrise moment renders as a flat teal frame. Astra reviewed its screenshots four times and fixed things after each.\n* Astra fills every optional tool argument with zeros (`\"wait\":0,\"kill\":0`). The shell tool read that as two modes at once and rejected 29 calls in a row, killing the first run in 2.5 minutes. Fixed and rerun; the table is from the rerun.\n\nIf you plan to run K3.1 locally as an agent: pin temperature to 1 everywhere your stack makes its own requests (vision, summaries, sub-calls), not just the main chat call.\n\n**Caveats:** one run per model; K3.1 has no public price, cost estimated from K3 Moonshot rates; Astra at OpenRouter list price. Ran in Atomic Agent, an open source agent I work on. Happy to share traces.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdp2it/new_kimi_k31_vs_gpt6_astra_on_the_same_agentic_3d/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "K3 weights went open in July and K3.1 is rumored to follow, so I wanted to know how it behaves as an agent before anyone tries to run it at home. I gave K3.1 (API for now) and GPT-6 Astra the same one-shot task and let each run alone until it decided it was done: a 28 s Avatar-style dragon flight in Three.js, six camera shots, one HTML file, every mesh and texture in code, deterministic `setTime()",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.251
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF \u00b7 Hugging Face",
+        "seed_score": 1.5,
+        "summary": "AgentionAI Gyro Coder Large is now live \ud83d\udea2\n\nThis coding specific finetune of Qwen 3.8 Flash Next is the same size as Gyro-S, but with half the experts and more bits per expert.\n\nThe model fits in 32GB VRAM.\n\nMore details in the model card",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF \u00b7 Hugging Face",
+            "body": "agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF \u00b7 Hugging Face\nAgentionAI Gyro Coder Large is now live \ud83d\udea2\n\nThis coding specific finetune of Qwen 3.8 Flash Next is the same size as Gyro-S, but with half the experts and more bits per expert.\n\nThe model fits in 32GB VRAM.\n\nMore details in the model card",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdihql/agentionaiqwen38flashnextgyrocodergguf_hugging/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "AgentionAI Gyro Coder Large is now live \ud83d\udea2\n\nThis coding specific finetune of Qwen 3.8 Flash Next is the same size as Gyro-S, but with half the experts and more bits per expert.\n\nThe model fits in 32GB VRAM.\n\nMore details in the model card",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "assistant you can trust",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "assistant you can trust",
+        "seed_score": 1.5,
+        "summary": "An assistant you can trust",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "An assistant you can trust",
+            "body": "An assistant you can trust",
+            "url": "https://www.reddit.com/r/singularity/comments/1xdjtbb/an_assistant_you_can_trust/",
+            "container": "singularity",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "An assistant you can trust",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Claude another",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Claude another",
+        "seed_score": 1.5,
+        "summary": "https://i.redd.it/ezzu8kgj7axh1.png\n\nhttps://i.redd.it/qgd9bsuj7axh1.png\n\nYou could just have a loopback proxy that changes the model id to include claude without mentioning another known model name and then give it the display name so you know what model you are using.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Claude desktop when you try to add a local model",
+            "body": "Claude desktop when you try to add a local model\nhttps://i.redd.it/ezzu8kgj7axh1.png\n\nhttps://i.redd.it/qgd9bsuj7axh1.png\n\nYou could just have a loopback proxy that changes the model id to include claude without mentioning another known model name and then give it the display name so you know what model you are using.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdq381/claude_desktop_when_you_try_to_add_a_local_model/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/ezzu8kgj7axh1.png\n\nhttps://i.redd.it/qgd9bsuj7axh1.png\n\nYou could just have a loopback proxy that changes the model id to include claude without mentioning another known model name and then give it the display name so you know what model you are using.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    }
+  ]
+}

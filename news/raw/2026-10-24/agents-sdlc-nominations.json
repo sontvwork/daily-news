@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "3233f375cf092b35",
+  "generated_at": "2026-10-23T23:57:18.522994Z",
+  "from_date": "2026-10-22",
+  "to_date": "2026-10-23",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-23T23:57:18.444571Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-23T23:57:18.444595Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-23T23:57:18.311993Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 73,
+      "attempted": true,
+      "at": "2026-10-23T23:57:18.444261Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "LLMs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 281,
+          "points": 437
+        }
+      },
+      "nomination": {
+        "name": "LLMs",
+        "seed_score": 761.554,
+        "summary": "LLMs are making formal software verification feasible at a much larger scale",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50202217",
+            "source": "hackernews",
+            "title": "LLMs are making formal software verification feasible at a much larger scale",
+            "body": "LLMs are making formal software verification feasible at a much larger scale",
+            "url": "https://www.anthropic.com/research/formal-verification",
+            "author": "johnbender",
+            "container": "Hacker News",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 437,
+              "comments": 281
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about LLMs are making formal software verification feasible at a m",
+            "snippet": "LLMs are making formal software verification feasible at a much larger scale",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50202217",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenShell AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 213,
+          "points": 489
+        }
+      },
+      "nomination": {
+        "name": "OpenShell AI agents",
+        "seed_score": 744.5834,
+        "summary": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50198675",
+            "source": "hackernews",
+            "title": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+            "body": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+            "url": "https://github.com/NVIDIA/OpenShell",
+            "author": "niemandhier",
+            "container": "Hacker News",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 489,
+              "comments": 213
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "HN story about OpenShell \u2013 A safe, private runtime for fleets of autonomous",
+            "snippet": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50198675",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 98,
+            "source_quality": 0.8,
+            "local_rank_score": 0.279
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Uncomfortable AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 96
+        }
+      },
+      "nomination": {
+        "name": "Uncomfortable AI agents",
+        "seed_score": 201.5254,
+        "summary": "Uncomfortable truth: Is anyone else finding AI agents way too unreliable for real workflows?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Uncomfortable truth: Is anyone else finding AI agents way too unreliable for real workflows?",
+            "body": "Uncomfortable truth: Is anyone else finding AI agents way too unreliable for real workflows?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xc50g6/uncomfortable_truth_is_anyone_else_finding_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 94,
+              "num_comments": 96
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "Uncomfortable truth: Is anyone else finding AI agents way too unreliable for real workflows?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2615
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "Anthropic AI agents",
+        "seed_score": 171.8269,
+        "summary": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+            "body": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xcqkgw/anthropics_own_data_suggests_were_becoming_middle/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 114,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.263
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Excited AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 45
+        }
+      },
+      "nomination": {
+        "name": "Excited AI agents",
+        "seed_score": 102.0,
+        "summary": "Excited about AI agents, but also slightly terrified of letting them loose in my business!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Excited about AI agents, but also slightly terrified of letting them loose in my business!",
+            "body": "Excited about AI agents, but also slightly terrified of letting them loose in my business!",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xdd2lu/excited_about_ai_agents_but_also_slightly/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 45
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Excited about AI agents, but also slightly terrified of letting them loose in my business!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.441
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "I can't find any good social",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 50
+        }
+      },
+      "nomination": {
+        "name": "I can't find any good social",
+        "seed_score": 98.6414,
+        "summary": "I can\u2019t find any good social media agents \ud83d\ude2d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "I can\u2019t find any good social media agents \ud83d\ude2d",
+            "body": "I can\u2019t find any good social media agents \ud83d\ude2d",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xcdw8s/i_cant_find_any_good_social_media_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 43,
+              "num_comments": 50
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "I can\u2019t find any good social media agents \ud83d\ude2d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14600000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 85.9135,
+        "summary": "How are you handling security when building AI agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "How are you handling security when building AI agents?",
+            "body": "How are you handling security when building AI agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xc4ftk/how_are_you_handling_security_when_building_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 34,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are you handling security when building AI agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 10,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.272
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Source Code Problem",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 15,
+          "points": 23
+        }
+      },
+      "nomination": {
+        "name": "Source Code Problem",
+        "seed_score": 57.0,
+        "summary": "No Source Code? No Problem",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50214994",
+            "source": "hackernews",
+            "title": "No Source Code? No Problem",
+            "body": "No Source Code? No Problem",
+            "url": "https://queue.acm.org/doi/10.1145/945131.945155",
+            "author": "ibobev",
+            "container": "Hacker News",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 23,
+              "comments": 15
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about No Source Code? No Problem",
+            "snippet": "No Source Code? No Problem",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50214994",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.8,
+            "local_rank_score": 0.314
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 52.5,
+        "summary": "A voice AI agent that sounds human but can't handle interruptions isn't production-ready.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "A voice AI agent that sounds human but can't handle interruptions isn't production-ready.",
+            "body": "A voice AI agent that sounds human but can't handle interruptions isn't production-ready.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xdc06n/a_voice_ai_agent_that_sounds_human_but_cant/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "A voice AI agent that sounds human but can't handle interruptions isn't production-ready.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.386
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI assisting",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "AI assisting",
+        "seed_score": 51.0,
+        "summary": "An AI agent shouldn't have more permissions than the employee it's assisting.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "An AI agent shouldn't have more permissions than the employee it's assisting.",
+            "body": "An AI agent shouldn't have more permissions than the employee it's assisting.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xdce8a/an_ai_agent_shouldnt_have_more_permissions_than/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing",
+            "snippet": "An AI agent shouldn't have more permissions than the employee it's assisting.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3925
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI have",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "AI have",
+        "seed_score": 46.5,
+        "summary": "How much memory should an AI agent really have?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "How much memory should an AI agent really have?",
+            "body": "How much memory should an AI agent really have?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xdetyy/how_much_memory_should_an_ai_agent_really_have/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.19,
+            "why_relevant": "Reddit listing",
+            "snippet": "How much memory should an AI agent really have?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.19,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AAAI 2027 phase 2 reviews",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "AAAI 2027 phase 2 reviews",
+        "seed_score": 45.0,
+        "summary": "AAAI 2027 phase 2 reviews discussion [D]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "AAAI 2027 phase 2 reviews discussion [D]",
+            "body": "AAAI 2027 phase 2 reviews discussion [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xddbgv/aaai_2027_phase_2_reviews_discussion_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "AAAI 2027 phase 2 reviews discussion [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28200000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI actually",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "AI actually",
+        "seed_score": 39.0,
+        "summary": "If your AI agent saves time but not budget, is it actually a product?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "If your AI agent saves time but not budget, is it actually a product?",
+            "body": "If your AI agent saves time but not budget, is it actually a product?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xdbskx/if_your_ai_agent_saves_time_but_not_budget_is_it/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing",
+            "snippet": "If your AI agent saves time but not budget, is it actually a product?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39399999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "arXiv ICLR",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "arXiv ICLR",
+        "seed_score": 33.0,
+        "summary": "How does arXiv prepublishing work with ICLR's double-blind review? [R]",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "How does arXiv prepublishing work with ICLR's double-blind review? [R]",
+            "body": "How does arXiv prepublishing work with ICLR's double-blind review? [R]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xdbvrf/how_does_arxiv_prepublishing_work_with_iclrs/",
+            "container": "MachineLearning",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "How does arXiv prepublishing work with ICLR's double-blind review? [R]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.301
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Cheapest AI iPhone 20/mo",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Cheapest AI iPhone 20/mo",
+        "seed_score": 28.5,
+        "summary": "Cheapest way to get an AI that can access my files, run code and use tools, from my iPhone? (under $20/mo)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Cheapest way to get an AI that can access my files, run code and use tools, from my iPhone? (under $20/mo)",
+            "body": "Cheapest way to get an AI that can access my files, run code and use tools, from my iPhone? (under $20/mo)",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xdrin7/cheapest_way_to_get_an_ai_that_can_access_my/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.19,
+            "why_relevant": "Reddit listing",
+            "snippet": "Cheapest way to get an AI that can access my files, run code and use tools, from my iPhone? (under $20/mo)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.19,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3915
+          }
+        ]
+      }
+    }
+  ]
+}

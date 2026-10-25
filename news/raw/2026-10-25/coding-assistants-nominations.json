@@ -1,0 +1,791 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "de0562cefd43fc49",
+  "generated_at": "2026-10-24T23:56:35.504002Z",
+  "from_date": "2026-10-23",
+  "to_date": "2026-10-24",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-24T23:56:35.473564Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-24T23:56:35.473573Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-10-24T23:56:35.395184Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 38,
+      "attempted": true,
+      "at": "2026-10-24T23:56:35.473409Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Swedish ChatGPT Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 120,
+          "points": 322
+        }
+      },
+      "nomination": {
+        "name": "Swedish ChatGPT Claude",
+        "seed_score": 468.8118,
+        "summary": "Swedish government offices to ban ChatGPT and Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50207405",
+            "source": "hackernews",
+            "title": "Swedish government offices to ban ChatGPT and Claude",
+            "body": "Swedish government offices to ban ChatGPT and Claude",
+            "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+            "author": "armcat",
+            "container": "Hacker News",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 322,
+              "comments": 120
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Swedish government offices to ban ChatGPT and Claude",
+            "snippet": "Swedish government offices to ban ChatGPT and Claude",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50207405",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Sol 6.1 20",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "Sol 6.1 20",
+        "seed_score": 37.1231,
+        "summary": "Is Sol 6.1 good enough for day-to-day coding on the $20 plan?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Is Sol 6.1 good enough for day-to-day coding on the $20 plan?",
+            "body": "Is Sol 6.1 good enough for day-to-day coding on the $20 plan?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xdrsvb/is_sol_61_good_enough_for_daytoday_coding_on_the/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is Sol 6.1 good enough for day-to-day coding on the $20 plan?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.17700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "actually use a coding agent day",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "actually use a coding agent day",
+        "seed_score": 21.0,
+        "summary": "How I actually use a coding agent day to day",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "How I actually use a coding agent day to day",
+            "body": "How I actually use a coding agent day to day",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xe0r24/how_i_actually_use_a_coding_agent_day_to_day/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "How I actually use a coding agent day to day",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3515
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 10.6066,
+        "summary": "They replaced our two backend devs with me and Claude Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "They replaced our two backend devs with me and Claude Code",
+            "body": "They replaced our two backend devs with me and Claude Code",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xd6091/they_replaced_our_two_backend_devs_with_me_and/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing",
+            "snippet": "They replaced our two backend devs with me and Claude Code",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 10,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Prompt 4 Claude Agent SDK",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Prompt 4 Claude Agent SDK",
+        "seed_score": 6.0,
+        "summary": "Prompt chain turned into a 4 step agent, need the best course for the Claude Agent SDK",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Prompt chain turned into a 4 step agent, need the best course for the Claude Agent SDK",
+            "body": "Prompt chain turned into a 4 step agent, need the best course for the Claude Agent SDK",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xe8ukw/prompt_chain_turned_into_a_4_step_agent_need_the/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Prompt chain turned into a 4 step agent, need the best course for the Claude Agent SDK",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29350000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Disclosure Polarline Scout OpenCode Most GPT-5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Disclosure Polarline Scout OpenCode Most GPT-5.5",
+        "seed_score": 3.0,
+        "summary": "Disclosure: I'm the founder of Polarline, and one of the four harnesses (Scout, an OpenCode fork) is mine.\n\nMost agent comparisons change the model and the harness at the same time. I held GPT-5.5 fixed and ran Claude Code, Codex, OpenCode and mine on 5 tasks, 3 trials each. The harness mattered most on multi-step work. Mine lost on numeric discipline, and every harness was bad at not inventing nu",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Same model, four coding harnesses: the harness moved the score more than I expected",
+            "body": "Same model, four coding harnesses: the harness moved the score more than I expected\nDisclosure: I'm the founder of Polarline, and one of the four harnesses (Scout, an OpenCode fork) is mine.\n\nMost agent comparisons change the model and the harness at the same time. I held GPT-5.5 fixed and ran Claude Code, Codex, OpenCode and mine on 5 tasks, 3 trials each. The harness mattered most on multi-step work. Mine lost on numeric discipline, and every harness was bad at not inventing numbers.\n\nLimit: it's my own small benchmark and I picked the tasks.\n\nWhat should a harness benchmark test that this one doesn't?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xe9pux/same_model_four_coding_harnesses_the_harness/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Disclosure: I'm the founder of Polarline, and one of the four harnesses (Scout, an OpenCode fork) is mine.\n\nMost agent comparisons change the model and the harness at the same time. I held GPT-5.5 fixed and ran Claude Code, Codex, OpenCode and mine on 5 tasks, 3 trials each. The harness mattered most on multi-step work. Mine lost on numeric discipline, and every harness was bad at not inventing nu",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Rust 22 OpenAI-compatible endpoints",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Rust 22 OpenAI-compatible endpoints",
+        "seed_score": 3.0,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "omt: a fast single-binary coding agent (Rust port of oh-my-pi). ~22 ms startup, works with OpenAI-compatible endpoints",
+            "body": "omt: a fast single-binary coding agent (Rust port of oh-my-pi). ~22 ms startup, works with OpenAI-compatible endpoints\n[removed]",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xem6v5/omt_a_fast_singlebinary_coding_agent_rust_port_of/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28150000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "20 minutes",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "20 minutes",
+        "seed_score": 2.1213,
+        "summary": "I keep running into the same problem with coding agents.\n\nThey spend 20 minutes working on something, run a few checks, say \"Done\" \u2014 and then you discover the actual requirement is still broken.\n\nThe annoying part isn't that they make mistakes. It's that they can confidently declare success without proving it.\n\nSo I've been experimenting with a different approach: **what if \"Done\" wasn't the agent",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "The most annoying thing about coding agents isn't when they fail. It's when they tell you they succeeded.",
+            "body": "The most annoying thing about coding agents isn't when they fail. It's when they tell you they succeeded.\nI keep running into the same problem with coding agents.\n\nThey spend 20 minutes working on something, run a few checks, say \"Done\" \u2014 and then you discover the actual requirement is still broken.\n\nThe annoying part isn't that they make mistakes. It's that they can confidently declare success without proving it.\n\nSo I've been experimenting with a different approach: **what if \"Done\" wasn't the agent's decision?**\n\nI built a small prototype where a separate controller checks the result, rejects a false completion, and gives the worker another attempt.\n\nThat's what the video shows. It's a controlled demo with a scripted worker, not a live Codex run.\n\nAnd there's still a major unsolved problem: even if every declared check passes, how do you know those checks cover everything the user actually wanted?\n\nI'm curious how others handle this.\n\n**Do you trust coding agents when they say they're done, or do you end up manually verifying everything anyway?**\n\nI've also got an experimental offline version if anyone wants to try breaking it.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xdffjt/the_most_annoying_thing_about_coding_agents_isnt/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I keep running into the same problem with coding agents.\n\nThey spend 20 minutes working on something, run a few checks, say \"Done\" \u2014 and then you discover the actual requirement is still broken.\n\nThe annoying part isn't that they make mistakes. It's that they can confidently declare success without proving it.\n\nSo I've been experimenting with a different approach: **what if \"Done\" wasn't the agent",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "iOS AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "iOS AI",
+        "seed_score": 2.1213,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "I built and published an iOS app with AI without reviewing the code. I wouldn\u2019t do it again for anything critical.",
+            "body": "I built and published an iOS app with AI without reviewing the code. I wouldn\u2019t do it again for anything critical.\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xd0vr9/i_built_and_published_an_ios_app_with_ai_without/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.231
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-18",
+      "heuristic_name": "3 different AI macOS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "3 different AI macOS",
+        "seed_score": 1.5,
+        "summary": "I've been using multiple AI coding agents, and one thing that kept annoying me was how fragmented everything felt.\n\nClaude Code in one terminal, Codex in another, usage limits somewhere else, and sometimes an agent sitting idle waiting for me to approve something.\n\nSo I built Toki, a free, open-source macOS menu bar app.\n\nIt lets you:\n\n\\- Monitor AI coding agent sessions from one place\n\n\\- Track u",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "I got tired of checking 3 different AI coding agents, so I built a macOS app for it",
+            "body": "I got tired of checking 3 different AI coding agents, so I built a macOS app for it\nI've been using multiple AI coding agents, and one thing that kept annoying me was how fragmented everything felt.\n\nClaude Code in one terminal, Codex in another, usage limits somewhere else, and sometimes an agent sitting idle waiting for me to approve something.\n\nSo I built Toki, a free, open-source macOS menu bar app.\n\nIt lets you:\n\n\\- Monitor AI coding agent sessions from one place\n\n\\- Track usage and limits across supported providers\n\n\\- See when an agent is waiting for input\n\n\\- Check on and interact with running agents from your phone\n\nThe goal was to make it easier to work with multiple agents without constantly jumping between terminals and dashboards.\n\nIt's still evolving, and I'd genuinely love feedback from people who use Claude Code, Codex, or other coding agents regularly.\n\nWhat would make something like this useful enough to keep in your menu bar?\n\nWebsite: https://toki.aashutosh.dev/\n\nGitHub: https://github.com/aashutoshrathi/toki",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xdulmm/i_got_tired_of_checking_3_different_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been using multiple AI coding agents, and one thing that kept annoying me was how fragmented everything felt.\n\nClaude Code in one terminal, Codex in another, usage limits somewhere else, and sometimes an agent sitting idle waiting for me to approve something.\n\nSo I built Toki, a free, open-source macOS menu bar app.\n\nIt lets you:\n\n\\- Monitor AI coding agent sessions from one place\n\n\\- Track u",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6215
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-24",
+      "heuristic_name": "8yo ChatGPT Ashi Claude Oppu",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "8yo ChatGPT Ashi Claude Oppu",
+        "seed_score": 1.5,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "My 8yo little brother nicknamed ChatGPT \"Ashi\" and Claude \"Oppu\", and spent months building a 6-agent squad Roblox RPG with his \"AI best friends\"",
+            "body": "My 8yo little brother nicknamed ChatGPT \"Ashi\" and Claude \"Oppu\", and spent months building a 6-agent squad Roblox RPG with his \"AI best friends\"\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xe0ggg/my_8yo_little_brother_nicknamed_chatgpt_ashi_and/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-20",
+      "heuristic_name": "AI AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "AI AI",
+        "seed_score": 1.5,
+        "summary": "[removed]",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "I love AI and I'm not ashamed to be proud of that. It's amazing what AI is doing to help me understand my medical results, force multiply my code/app efforts, educate me on a range of topics. And that's to say nothing of its acceleration for math and science and the recent explosion in game modding!",
+            "body": "I love AI and I'm not ashamed to be proud of that. It's amazing what AI is doing to help me understand my medical results, force multiply my code/app efforts, educate me on a range of topics. And that's to say nothing of its acceleration for math and science and the recent explosion in game modding!\n[removed]",
+            "url": "https://www.reddit.com/r/singularity/comments/1xeb5up/i_love_ai_and_im_not_ashamed_to_be_proud_of_that/",
+            "container": "singularity",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-21",
+      "heuristic_name": "anything like a community driven/contributed open",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "anything like a community driven/contributed open",
+        "seed_score": 1.5,
+        "summary": "was thinking about this recently. a large barrier to entry besides compute of course is a massive high quality clean dataset for pre/mid/post training. seems like an open version of something like this would be super useful for smaller labs who cant afford it or have poor data.\n\n  \nif something like this exists id contribute my opencode go or claude code remaining weekly limits to some synthetic d",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "is there anything like a community driven/contributed open dataset for pre/mid/post training? something like what the big labs have but is open and people can contribute agent tokens (folding@home style) to improving so we get better open models?",
+            "body": "is there anything like a community driven/contributed open dataset for pre/mid/post training? something like what the big labs have but is open and people can contribute agent tokens (folding@home style) to improving so we get better open models?\nwas thinking about this recently. a large barrier to entry besides compute of course is a massive high quality clean dataset for pre/mid/post training. seems like an open version of something like this would be super useful for smaller labs who cant afford it or have poor data.\n\n  \nif something like this exists id contribute my opencode go or claude code remaining weekly limits to some synthetic data creation or tagging/cleaning folding@home style if it went to an open source collection to further improve open models (i guess the challenge would be you can guarantee someone will open source a model trained on it but hey just a thought)",
+            "url": "https://www.reddit.com/r/singularity/comments/1xe1j0r/is_there_anything_like_a_community/",
+            "container": "singularity",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "was thinking about this recently. a large barrier to entry besides compute of course is a massive high quality clean dataset for pre/mid/post training. seems like an open version of something like this would be super useful for smaller labs who cant afford it or have poor data.\n\n  \nif something like this exists id contribute my opencode go or claude code remaining weekly limits to some synthetic d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.303
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Benchmark TensorSharp",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Benchmark TensorSharp",
+        "seed_score": 1.5,
+        "summary": "Hi r/LocalLLaMA \u2014 TensorSharp is a native .NET 10 inference engine for local GGUF models (source: \\`README.md\\`, \"Quick Start\" and selling-points summary \u2014 CLI, browser chat, Ollama/OpenAI-compatible APIs, or embedded in a .NET app; backends ggml\\_metal / ggml\\_cuda / ggml\\_vulkan / ggml\\_cpu, the last pure C# with no native dependencies). This post separates two things that benchmark posts usuall",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "[Benchmark] What TensorSharp's own repo documents vs llama.cpp \u2014 and how to reproduce it on the same hardware",
+            "body": "[Benchmark] What TensorSharp's own repo documents vs llama.cpp \u2014 and how to reproduce it on the same hardware\nHi r/LocalLLaMA \u2014 TensorSharp is a native .NET 10 inference engine for local GGUF models (source: \\`README.md\\`, \"Quick Start\" and selling-points summary \u2014 CLI, browser chat, Ollama/OpenAI-compatible APIs, or embedded in a .NET app; backends ggml\\_metal / ggml\\_cuda / ggml\\_vulkan / ggml\\_cpu, the last pure C# with no native dependencies). This post separates two things that benchmark posts usually blur: what is already DOCUMENTED in the repo, and what you can REPRODUCE yourself.\n\n\n\n\\### 1. What is DOCUMENTED (repo numbers, with hardware and caveats)\n\n\n\nThese are datacenter / laptop-class / Apple-silicon numbers from the repo. They are not a consumer-desktop-GPU claim, and I am not presenting them as one.\n\n\n\n\\*\\*Datacenter A40 comparisons \u2014 do not read these as desktop results\\*\\*\n\n\n\n\\- Source: \\`README.md\\`, \"Benchmarks\" (audited 2026-10-23). DeepSeek V4.1 Flash 1017 on five 46GB A40s, 32,768-token context, greedy, one request, 256 output tokens: prefill \\~1.8K tokens, exact 563.9 vs llama.cpp 174.6 = 3.23x; approximate YOCO default 960.5 vs 174.6 = 5.50x. Mandatory caveat from the same section: the 5.50x applies ONLY to that approximate \\~1.8K prefill cell, not to decode or to general performance. Perplexity on wikitext-2: 2.4978 vs 2.4811 exact vs 2.4697 llama.cpp.\n\n\\- Source: \\`README.md\\`, \"Benchmarks\". Muse Spark 816B-A42B on ten 46GB A40s: prefill 4,075 tokens 999.7 vs 483.2 = 2.07x; prefill 15,767 tokens 1346.8 vs 826.1 = 1.63x; decode one request 22.63 vs 16.19 = 1.40x; four requests aggregate 45.73 vs 24.49 = 1.87x; layer-split decode 16.69 vs 16.79 = 0.99x \u2014 slightly SLOWER than llama.cpp, reported here deliberately.\n\n\\- Caveats, source: \\`docs/benchmarks.md\\`: no NVLink (P2P was advertised but did not work); llama.cpp tensor split was built WITHOUT NCCL while TensorSharp used NCCL; and \"the report does not establish the performance of today's release binaries.\" Never combine the DeepSeek and Muse Spark figures into one speedup claim.\n\n\n\n\\*\\*CPU-offload comparisons \u2014 laptop/server host, experts in system RAM\\*\\*\n\n\n\n\\- Source: \\`docs/moe\\_cpu\\_offload\\_benchmark.md\\`, \"Headline\". Host: 2x NVIDIA RTX PRO 6000 Blackwell Server Edition (97,887 MiB each), 4,096/8,192-token prompts, 128 decode steps, best-of runs. Gemma 4 26B-A4B needing 16.4 GiB runs in 10.8 GiB with every expert in system RAM. Across offloaded depths on three seam models, prefill 4.5-10.9x faster than llama.cpp and decode 2.5-4.5x, at 1.0-3.5x the VRAM.\n\n\\- Table, source: same doc, pp8192 / tg128, TensorSharp vs llama.cpp: Gemma 26B 16-of-30 offloaded 4,888 vs 854 / 54.5 vs 21.9; all-30 3,072 vs 495 / 39.7 vs 12.9; Qwen 3.5 35B 24-of-48 5,259 vs 484 / 52.3 vs 15.8; all-48 3,709 vs 457 / 38.6 vs 10.2; GPT-OSS 20B 12-of-24 6,394 vs 1,188 / 51.7 vs 18.3; all-24 3,798 vs 548 / 27.7 vs 9.4.\n\n\\- Counter-note, source: same doc. DeepSeek V4 offloaded decode is the one case where llama.cpp is ahead (5.3 vs 7.2 tg128 at 24-of-43 offloaded, 2 GPUs).\n\n\n\n\\*\\*Apple-silicon numbers \u2014 absolute numbers only, NOT wins\\*\\*\n\n\n\n\\- Source: \\`docs/perf/metal-vs-llama-cpp.md\\`, \"Result\". Apple M5 Pro (20-core GPU, 48GB), TensorSharp ABSOLUTE numbers only, near-parity vs llama.cpp (mostly <1.0x): Qwen3.5-9B Q8\\_0 pp512 1289.1, tg128 31.7 tok/s; gemma-4-E4B Q8\\_0 pp512 2342.2, tg128 46.2; gemma-4-E2B Q8\\_0 pp512 4167.8, tg128 82.3; Qwen3.6-35B-A3B IQ2\\_XXS pp512 1772.6, tg128 83.9. Caveat from the same doc: different ggml checkouts confound the comparison, favouring TensorSharp. Do not quote these as TensorSharp beating llama.cpp.\n\n\n\n\\*\\*Laptop-GPU speculative decoding \u2014 one machine, one method\\*\\*\n\n\n\n\\- Source: \\`docs/models/qwen35.md\\`, section 12.4. One RTX 3080 Laptop, Qwen3.8-27B UD-IQ3\\_XXS, greedy, best of two: free-form prose 18.3 tok/s plain vs 20.9 with DFlash2 (1.14x); highly predictable prompt 19.5 vs 31.7 (1.63x), 34.8 at --spec-draft 7. This is a speculative-decoding result on one laptop, not a general inference speedup.\n\n\n\n\\*\\*Multi-GPU tensor-parallel \u2014 small rig, byte-identical output\\*\\*\n\n\n\n\\- Source: \\`docs/models/gemma4.md\\`, section 13. 2x RTX 2000 Ada, prefill 512 / decode 64 tok/s: E4B Q8\\_0 2760/37.3 single-GPU to 2488/51.7 at --tp 2; 26B-A4B IQ4\\_XS 1845/48.5 to 2537/51.2; output byte-identical to single-GPU runs. Note the prefill drop on E4B (2760 to 2488) is reported, not hidden.\n\n\n\n\\### 2. What you can REPRODUCE (protocol \u2014 fill these blanks with fresh runs)\n\n\n\nThis follows \\`files/benchmark-protocol.md\\`. No result below is claimed yet; the table is the invitation, not the outcome.\n\n\n\n\\- Hardware: \\_\\_\\_\\_ (fill in; the protocol notes an RTX 3080 Laptop 16GB was used for earlier work, but a fresh run must state the actual machine used).\n\n\\- Model + quant: same model file and same quant for all three engines, e.g. Qwen3-0.8B Q8\\_0 or Qwen3 27B \u2014 state both exactly (source for the template: \\`files/benchmark-protocol.md\\`, \"Environment\").\n\n\\- Prompt: fixed \\_\\_\\_\\_ tokens, context \\_\\_\\_\\_, generation \\_\\_\\_\\_ tokens, greedy or a fixed seed \u2014 identical across engines.\n\n\\- Control groups: llama.cpp (state commit, \\`llama-cli\\` / \\`llama-server\\`) and Ollama (state version). TensorSharp build: state version/commit the same way.\n\n\\- Metrics, each with at least 3 runs, reporting mean and range (source: \\`files/benchmark-protocol.md\\`, \"Metrics\"): prefill tok/s, decode tok/s, time to first token (TTFT), peak VRAM / memory use, plus test-condition notes (clocks / thermals / background load, whether clocks were locked).\n\n\n\n| Model / quant | Engine | Prefill (tok/s) | Decode (tok/s) | TTFT | Peak VRAM | Notes |\n\n|---|---|---|---|---|---|---|\n\n| \\_\\_\\_\\_ | TensorSharp |  |  |  |  |  |\n\n| \\_\\_\\_\\_ | llama.cpp |  |  |  |  |  |\n\n| \\_\\_\\_\\_ | Ollama |  |  |  |  |  |\n\n\n\nReport slower cells too. If TensorSharp loses a cell, say so \u2014 the repo's own history includes \"still below independent llama reference\" honesty, and this post keeps that standard.\n\n\n\n\\### 3. What this post deliberately does NOT claim\n\n\n\n\\- No RTX 4090 / 4080 / 4070 / 3090 / 4060 benchmark exists in the repo, so none is quoted.\n\n\\- No consumer-GPU model-fit table exists in the repo, so none is quoted.\n\n\\- No \\`--unified-memory\\` flag exists in this repo tree (that PR is unmerged), so no unified-memory claim is made.\n\n\\- No video-generation speed headline exists in the repo, so video wall-clock times (where cited elsewhere) are wall-clock times only, never a speed headline.\n\n\\- \\`benchmarks/\\` in the repo is harness code only, with no result tables, so it is not cited as a source of numbers.\n\n\n\nRepo: [https://github.com/zhongkaifu/TensorSharp](https://github.com/zhongkaifu/TensorSharp)\n\nDiscussion hook: if you run the protocol above on your own hardware, what do you get \u2014 especially on a cell where you expect TensorSharp to lose?\n\n\n\n\\## Honesty notes (must stay in the post \u2014 do not edit these out)\n\n\n\n1. The 5.50x figure applies ONLY to the approximate \\~1.8K prefill cell for DeepSeek V4.1 Flash 1017 (source: \\`README.md\\`, \"Benchmarks\"); it is not a decode or general-performance figure.\n\n2. The A40 comparisons carry the \\`docs/benchmarks.md\\` caveats: no NVLink (P2P advertised but did not work); llama.cpp tensor split built WITHOUT NCCL while TensorSharp used NCCL; \"the report does not establish the performance of today's release binaries.\"\n\n3. The layer-split decode cell is 0.99x \u2014 TensorSharp slightly slower (source: \\`README.md\\`, \"Benchmarks\").\n\n4. DeepSeek V4 offloaded decode is the one offload case where llama.cpp is ahead (source: \\`docs/moe\\_cpu\\_offload\\_benchmark.md\\`, \"Headline\" counter-note).\n\n5. Metal numbers are absolute numbers at near-parity, mostly <1.0x, and are confounded by different ggml checkouts favouring TensorSharp (source: \\`docs/perf/metal-vs-llama-cpp.md\\`, \"Result\"). Never present them as wins.\n\n6. Never present llama.cpp's numbers as TensorSharp's, and never combine the two A40 models into one speedup claim.\n\n7. Fresh-run results must follow \\`files/benchmark-protocol.md\\`: same hardware, same model file, same quant, same settings, at least 3 runs, mean and range, slower cells reported. Check r/LocalLLaMA self-promo rules before posting.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xedp7m/benchmark_what_tensorsharps_own_repo_documents_vs/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi r/LocalLLaMA \u2014 TensorSharp is a native .NET 10 inference engine for local GGUF models (source: \\`README.md\\`, \"Quick Start\" and selling-points summary \u2014 CLI, browser chat, Ollama/OpenAI-compatible APIs, or embedded in a .NET app; backends ggml\\_metal / ggml\\_cuda / ggml\\_vulkan / ggml\\_cpu, the last pure C# with no native dependencies). This post separates two things that benchmark posts usuall",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.251
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "ChatGPT Plus vs Claude Pro 20",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Plus vs Claude Pro 20",
+        "seed_score": 1.5,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "ChatGPT Plus vs Claude Pro ($20) for learning to code and build projects?",
+            "body": "ChatGPT Plus vs Claude Pro ($20) for learning to code and build projects?\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xehr4u/chatgpt_plus_vs_claude_pro_20_for_learning_to/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,856 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "66bf3759e645bcae",
+  "generated_at": "2026-10-24T23:58:47.969864Z",
+  "from_date": "2026-10-23",
+  "to_date": "2026-10-24",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-24T23:58:47.904510Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-24T23:58:47.904518Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 142,
+      "attempted": true,
+      "at": "2026-10-24T23:58:47.902939Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 9,
+      "attempted": true,
+      "at": "2026-10-24T23:58:47.904324Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Hacker Samsung TV AI TV",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1152
+        }
+      },
+      "nomination": {
+        "name": "Hacker Samsung TV AI TV",
+        "seed_score": 23565.0,
+        "summary": "Hacker reverse engineers his Samsung TV and finds on-device AI listening for your dog and baby, watching what you watch, and borrowing your soundbar's mic if the TV doesn't have one. Then OpenAI banned him for reverse-engineering it.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "Hacker reverse engineers his Samsung TV and finds on-device AI listening for your dog and baby, watching what you watch, and borrowing your soundbar's mic if the TV doesn't have one. Then OpenAI banned him for reverse-engineering it.",
+            "body": "Hacker reverse engineers his Samsung TV and finds on-device AI listening for your dog and baby, watching what you watch, and borrowing your soundbar's mic if the TV doesn't have one. Then OpenAI banned him for reverse-engineering it.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xduimx/hacker_reverse_engineers_his_samsung_tv_and_finds/",
+            "container": "singularity",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14558,
+              "num_comments": 1152
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Hacker reverse engineers his Samsung TV and finds on-device AI listening for your dog and baby, watching what you watch, and borrowing your soundbar's mic if the TV doesn't have one. Then OpenAI banned him for reverse-engineering it.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 383
+        }
+      },
+      "nomination": {
+        "name": "OpenAI",
+        "seed_score": 3249.0,
+        "summary": "What are we doing now, OpenAI? The guardrails are getting more and more ridiculous...",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "What are we doing now, OpenAI? The guardrails are getting more and more ridiculous...",
+            "body": "What are we doing now, OpenAI? The guardrails are getting more and more ridiculous...",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xe3tev/what_are_we_doing_now_openai_the_guardrails_are/",
+            "container": "ChatGPT",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1783,
+              "num_comments": 383
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "What are we doing now, OpenAI? The guardrails are getting more and more ridiculous...",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Quite Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 361
+        }
+      },
+      "nomination": {
+        "name": "Quite Anthropic",
+        "seed_score": 2386.5,
+        "summary": "Quite the statement from Anthropic's head of security",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Quite the statement from Anthropic's head of security",
+            "body": "Quite the statement from Anthropic's head of security",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xe7jz9/quite_the_statement_from_anthropics_head_of/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1230,
+              "num_comments": 361
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Quite the statement from Anthropic's head of security",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Kimi K3.1 Pro K3.1 Pro Highspeed",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 649,
+          "points": 1057
+        },
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "Kimi K3.1 Pro K3.1 Pro Highspeed",
+        "seed_score": 2199.9342,
+        "summary": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50212065",
+            "source": "hackernews",
+            "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+            "body": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+            "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+            "author": "Jowsey",
+            "container": "Hacker News",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1057,
+              "comments": 649
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Kimi K3.1 Pro and K3.1 Pro Highspeed",
+            "snippet": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50212065",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1705
+          },
+          {
+            "item_id": "R82",
+            "source": "reddit",
+            "title": "Moonshot AI's Kimi K3.1 Pro reaches fourth on Artificial Analysis index, 3 points behind Claude Opus 5.5",
+            "body": "Moonshot AI's Kimi K3.1 Pro reaches fourth on Artificial Analysis index, 3 points behind Claude Opus 5.5",
+            "url": "https://www.reddit.com/r/artificial/comments/1xdvxi5/moonshot_ais_kimi_k31_pro_reaches_fourth_on/",
+            "container": "artificial",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 33,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Moonshot AI's Kimi K3.1 Pro reaches fourth on Artificial Analysis index, 3 points behind Claude Opus 5.5",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31100000000000005
+          },
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "Is it just me or Kimi K3.1 Pro don\u2019t look much better than DeepSeek 4.1 Flash?",
+            "body": "Is it just me or Kimi K3.1 Pro don\u2019t look much better than DeepSeek 4.1 Flash?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xemxoq/is_it_just_me_or_kimi_k31_pro_dont_look_much/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is it just me or Kimi K3.1 Pro don\u2019t look much better than DeepSeek 4.1 Flash?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3075
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Altman",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 276
+        }
+      },
+      "nomination": {
+        "name": "Altman",
+        "seed_score": 1440.0,
+        "summary": "Altman: \"I don't even know a dramatic enough word to use\u2026 models can find bugs that are outside of the normal threat model of what we think a hacker can do\u2026 hardware-level, insane stuff\u2026 I no longer think we're gonna be able to just patch all the bugs.\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "Altman: \"I don't even know a dramatic enough word to use\u2026 models can find bugs that are outside of the normal threat model of what we think a hacker can do\u2026 hardware-level, insane stuff\u2026 I no longer think we're gonna be able to just patch all the bugs.\"",
+            "body": "Altman: \"I don't even know a dramatic enough word to use\u2026 models can find bugs that are outside of the normal threat model of what we think a hacker can do\u2026 hardware-level, insane stuff\u2026 I no longer think we're gonna be able to just patch all the bugs.\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1xe5i3d/altman_i_dont_even_know_a_dramatic_enough_word_to/",
+            "container": "singularity",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 684,
+              "num_comments": 276
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Altman: \"I don't even know a dramatic enough word to use\u2026 models can find bugs that are outside of the normal threat model of what we think a hacker can do\u2026 hardware-level, insane stuff\u2026 I no longer think we're gonna be able to just patch all the bugs.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3145
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Dario Amodei CEO Anthropic Iraq 2003",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 137
+        }
+      },
+      "nomination": {
+        "name": "Dario Amodei CEO Anthropic Iraq 2003",
+        "seed_score": 1224.0,
+        "summary": "Dario Amodei, CEO of Anthropic, speaking out against the war in Iraq as a college student in 2003",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "Dario Amodei, CEO of Anthropic, speaking out against the war in Iraq as a college student in 2003",
+            "body": "Dario Amodei, CEO of Anthropic, speaking out against the war in Iraq as a college student in 2003",
+            "url": "https://www.reddit.com/r/singularity/comments/1xekblx/dario_amodei_ceo_of_anthropic_speaking_out/",
+            "container": "singularity",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 679,
+              "num_comments": 137
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Dario Amodei, CEO of Anthropic, speaking out against the war in Iraq as a college student in 2003",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.318
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Anthropic Oct 22 Includes Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 73
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Oct 22 Includes Claude Code",
+        "seed_score": 1222.5,
+        "summary": "Anthropic\u2019s new guide (Oct 22) argues most agents should have fewer subagents: one main loop, skills and tool search instead. Includes \u201cwe cut Claude Code\u2019s system prompt by over 80%\u201d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Anthropic\u2019s new guide (Oct 22) argues most agents should have fewer subagents: one main loop, skills and tool search instead. Includes \u201cwe cut Claude Code\u2019s system prompt by over 80%\u201d",
+            "body": "Anthropic\u2019s new guide (Oct 22) argues most agents should have fewer subagents: one main loop, skills and tool search instead. Includes \u201cwe cut Claude Code\u2019s system prompt by over 80%\u201d",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xdwquj/anthropics_new_guide_oct_22_argues_most_agents/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 742,
+              "num_comments": 73
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic\u2019s new guide (Oct 22) argues most agents should have fewer subagents: one main loop, skills and tool search instead. Includes \u201cwe cut Claude Code\u2019s system prompt by over 80%\u201d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3475
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Absolutely crazy AI Block called Dessa",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 165
+        }
+      },
+      "nomination": {
+        "name": "Absolutely crazy AI Block called Dessa",
+        "seed_score": 1164.0,
+        "summary": "Absolutely crazy AI voice model by Block called Dessa.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Absolutely crazy AI voice model by Block called Dessa.",
+            "body": "Absolutely crazy AI voice model by Block called Dessa.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xe8b2x/absolutely_crazy_ai_voice_model_by_block_called/",
+            "container": "singularity",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 611,
+              "num_comments": 165
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Absolutely crazy AI voice model by Block called Dessa.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29200000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Kimi K3.1 removes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 176
+        }
+      },
+      "nomination": {
+        "name": "Kimi K3.1 removes",
+        "seed_score": 1099.5,
+        "summary": "Kimi K3.1 removes cyberattack training data from open weight release",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Kimi K3.1 removes cyberattack training data from open weight release",
+            "body": "Kimi K3.1 removes cyberattack training data from open weight release",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xecgrf/kimi_k31_removes_cyberattack_training_data_from/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 557,
+              "num_comments": 176
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing",
+            "snippet": "Kimi K3.1 removes cyberattack training data from open weight release",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3885
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "people making those insane graphic motions",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 78
+        }
+      },
+      "nomination": {
+        "name": "people making those insane graphic motions",
+        "seed_score": 963.0,
+        "summary": "How are people making those insane graphic motions video that I keep seeing on instagram using claude ?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "How are people making those insane graphic motions video that I keep seeing on instagram using claude ?",
+            "body": "How are people making those insane graphic motions video that I keep seeing on instagram using claude ?",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xdwfec/how_are_people_making_those_insane_graphic/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 564,
+              "num_comments": 78
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are people making those insane graphic motions video that I keep seeing on instagram using claude ?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.313
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Meta trained small AI models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 121
+        }
+      },
+      "nomination": {
+        "name": "Meta trained small AI models",
+        "seed_score": 742.5,
+        "summary": "Meta trained small AI models to read raw bytes instead of tokens. They start out worse, but the paper predicts they end up better",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Meta trained small AI models to read raw bytes instead of tokens. They start out worse, but the paper predicts they end up better",
+            "body": "Meta trained small AI models to read raw bytes instead of tokens. They start out worse, but the paper predicts they end up better",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xe88ja/meta_trained_small_ai_models_to_read_raw_bytes/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 374,
+              "num_comments": 121
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Meta trained small AI models to read raw bytes instead of tokens. They start out worse, but the paper predicts they end up better",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3065
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Dessa Conversation Model",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 192,
+          "points": 500
+        }
+      },
+      "nomination": {
+        "name": "Dessa Conversation Model",
+        "seed_score": 733.9768,
+        "summary": "Dessa: Conversation Model trained only on speech",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50213925",
+            "source": "hackernews",
+            "title": "Dessa: Conversation Model trained only on speech",
+            "body": "Dessa: Conversation Model trained only on speech",
+            "url": "https://block.xyz/dessa",
+            "author": "dsr12",
+            "container": "Hacker News",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 500,
+              "comments": 192
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Dessa: Conversation Model trained only on speech",
+            "snippet": "Dessa: Conversation Model trained only on speech",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50213925",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 82,
+            "source_quality": 0.8,
+            "local_rank_score": 0.10700000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Google 250K Finland",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 199,
+          "points": 246
+        }
+      },
+      "nomination": {
+        "name": "Google 250K Finland",
+        "seed_score": 667.5,
+        "summary": "Google illegally cut down 250K trees in Finland for data center",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50221676",
+            "source": "hackernews",
+            "title": "Google illegally cut down 250K trees in Finland for data center",
+            "body": "Google illegally cut down 250K trees in Finland for data center",
+            "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
+            "author": "rustybolt",
+            "container": "Hacker News",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 246,
+              "comments": 199
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google illegally cut down 250K trees in Finland for data cen",
+            "snippet": "Google illegally cut down 250K trees in Finland for data center",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50221676",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Google Gmail Google Photos",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 194,
+          "points": 376
+        }
+      },
+      "nomination": {
+        "name": "Google Gmail Google Photos",
+        "seed_score": 604.5763,
+        "summary": "Now Google says it might use your Gmail and Google Photos data to target ads",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50214218",
+            "source": "hackernews",
+            "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+            "body": "Now Google says it might use your Gmail and Google Photos data to target ads",
+            "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+            "author": "JustSkyfall",
+            "container": "Hacker News",
+            "published_at": "2026-10-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 376,
+              "comments": 194
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Now Google says it might use your Gmail and Google Photos da",
+            "snippet": "Now Google says it might use your Gmail and Google Photos data to target ads",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50214218",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.131
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Claude 4,000 times",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 96
+        }
+      },
+      "nomination": {
+        "name": "Claude 4,000 times",
+        "seed_score": 564.0,
+        "summary": "Claude has told me \"you're right, I was wrong\" roughly 4,000 times and has zero shame about it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Claude has told me \"you're right, I was wrong\" roughly 4,000 times and has zero shame about it",
+            "body": "Claude has told me \"you're right, I was wrong\" roughly 4,000 times and has zero shame about it",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xdyvba/claude_has_told_me_youre_right_i_was_wrong/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 280,
+              "num_comments": 96
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude has told me \"you're right, I was wrong\" roughly 4,000 times and has zero shame about it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.309
+          }
+        ]
+      }
+    }
+  ]
+}

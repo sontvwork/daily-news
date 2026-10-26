@@ -1,0 +1,788 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c8bd3adebde8666b",
+  "generated_at": "2026-10-25T23:56:32.545844Z",
+  "from_date": "2026-10-24",
+  "to_date": "2026-10-25",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-25T23:56:32.526092Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-25T23:56:32.526102Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "no-results",
+      "items_returned": 0,
+      "attempted": true,
+      "at": "2026-10-25T23:56:32.490777Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 30,
+      "attempted": true,
+      "at": "2026-10-25T23:56:32.525898Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "4B 3D scenes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 80
+        }
+      },
+      "nomination": {
+        "name": "4B 3D scenes",
+        "seed_score": 678.0,
+        "summary": "A 4B coding model that can generate 3D scenes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "A 4B coding model that can generate 3D scenes",
+            "body": "A 4B coding model that can generate 3D scenes",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeuo7t/a_4b_coding_model_that_can_generate_3d_scenes/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 372,
+              "num_comments": 80
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "A 4B coding model that can generate 3D scenes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38349999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Developer uses Claude TV 8 days",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "Developer uses Claude TV 8 days",
+        "seed_score": 651.0,
+        "summary": "Developer uses Claude to overhaul his parents\u2019 TV, removing ads and replacing its entire interface \u2014 8 days later, the project has 34,800 GitHub stars and configurations for 300 TV models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Developer uses Claude to overhaul his parents\u2019 TV, removing ads and replacing its entire interface \u2014 8 days later, the project has 34,800 GitHub stars and configurations for 300 TV models",
+            "body": "Developer uses Claude to overhaul his parents\u2019 TV, removing ads and replacing its entire interface \u2014 8 days later, the project has 34,800 GitHub stars and configurations for 300 TV models",
+            "url": "https://www.reddit.com/r/singularity/comments/1xfh36p/developer_uses_claude_to_overhaul_his_parents_tv/",
+            "container": "singularity",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 401,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Developer uses Claude to overhaul his parents\u2019 TV, removing ads and replacing its entire interface \u2014 8 days later, the project has 34,800 GitHub stars and configurations for 300 TV models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 93,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36350000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic Claude Right Rule Wrong Reason",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Claude Right Rule Wrong Reason",
+        "seed_score": 46.5,
+        "summary": "From 12 Nov, Anthropic's usage policy prohibits \"sustained and needless abusive or cruel behavior\" toward Claude, with model welfare as part of the reasoning. \n\nMy take: the rule's fine, the reason isn't. Being cruel to AI is probably bad for us (habits, how we end up treating people), not for the model. But a company rule framed as \"model welfare\" tells people current models can be hurt, and rule",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "On Anthropic's \"don't be cruel to Claude\" rule: Right Rule, but Wrong Reason?",
+            "body": "On Anthropic's \"don't be cruel to Claude\" rule: Right Rule, but Wrong Reason?\nFrom 12 Nov, Anthropic's usage policy prohibits \"sustained and needless abusive or cruel behavior\" toward Claude, with model welfare as part of the reasoning. \n\nMy take: the rule's fine, the reason isn't. Being cruel to AI is probably bad for us (habits, how we end up treating people), not for the model. But a company rule framed as \"model welfare\" tells people current models can be hurt, and rules shape what people believe far more than blog posts do (Sunstein calls this the expressive function of law).\n\nThe counter I can't fully dismiss: we're made of inanimate atoms too, and a 2023 paper by 19 researchers found no obvious technical barrier to building AI that meets the indicators of consciousness. So maybe it's just Pascal's wager. But then which god are we betting on? How would we even know what a conscious AI considers polite? Where do you guys on this sub land? s model welfare a legit basis for usage rules yet, or premature? \n\nIf you want the fun, longer version, I made a video on it: Microsoft's opposite rulebook, why I once threatened Claude (and why it felt satisfying), and a lot of memes. [https://www.youtube.com/watch?v=f631rF6DRLM](https://www.youtube.com/watch?v=f631rF6DRLM)",
+            "url": "https://www.reddit.com/r/singularity/comments/1xf1i5b/on_anthropics_dont_be_cruel_to_claude_rule_right/",
+            "container": "singularity",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "From 12 Nov, Anthropic's usage policy prohibits \"sustained and needless abusive or cruel behavior\" toward Claude, with model welfare as part of the reasoning. \n\nMy take: the rule's fine, the reason isn't. Being cruel to AI is probably bad for us (habits, how we end up treating people), not for the model. But a company rule framed as \"model welfare\" tells people current models can be hurt, and rule",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4615
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "ChatGPT Plus vs Claude Pro 20",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Plus vs Claude Pro 20",
+        "seed_score": 43.4871,
+        "summary": "ChatGPT Plus vs Claude Pro ($20) for learning to code and build projects?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "ChatGPT Plus vs Claude Pro ($20) for learning to code and build projects?",
+            "body": "ChatGPT Plus vs Claude Pro ($20) for learning to code and build projects?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xehr4u/chatgpt_plus_vs_claude_pro_20_for_learning_to/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing",
+            "snippet": "ChatGPT Plus vs Claude Pro ($20) for learning to code and build projects?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.16450000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Imagine There",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "Imagine There",
+        "seed_score": 36.0,
+        "summary": "Imagine you want to download a new model but it's recent and there is not consensus about wether its safe or not.\n\nHow would you check against potential malicious weights ?\n\nThere is the first \"obvious\" layer where the weights try to execute arbitrary code, but safetensors are for this. I am rather talking about less obvious things like template backdoor, llm poisoning etc",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "How would you check if a given model weights is \"safe\" ?",
+            "body": "How would you check if a given model weights is \"safe\" ?\nImagine you want to download a new model but it's recent and there is not consensus about wether its safe or not.\n\nHow would you check against potential malicious weights ?\n\nThere is the first \"obvious\" layer where the weights try to execute arbitrary code, but safetensors are for this. I am rather talking about less obvious things like template backdoor, llm poisoning etc",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf3i59/how_would_you_check_if_a_given_model_weights_is/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Imagine you want to download a new model but it's recent and there is not consensus about wether its safe or not.\n\nHow would you check against potential malicious weights ?\n\nThere is the first \"obvious\" layer where the weights try to execute arbitrary code, but safetensors are for this. I am rather talking about less obvious things like template backdoor, llm poisoning etc",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.271
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "LLMs MCP",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "LLMs MCP",
+        "seed_score": 19.5,
+        "summary": "Hi r/LocalLLaMA. Full disclosure up front: **this is my own project**, and I'm a solo dev from Korea. English isn't my first language, so **I used an AI to help translate this post.**\n\n## What it is\n\nIt's called **Thea** (thealibrary.org). The idea is simple: **people add the information, and AI reads it.**\n\nLocal models are getting really smart, but they're small, so they just don't *know* a lot",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "I'm building a free knowledge library that local LLMs can read via MCP \u2014 tested it against web search, looking for feedback",
+            "body": "I'm building a free knowledge library that local LLMs can read via MCP \u2014 tested it against web search, looking for feedback\nHi r/LocalLLaMA. Full disclosure up front: **this is my own project**, and I'm a solo dev from Korea. English isn't my first language, so **I used an AI to help translate this post.**\n\n## What it is\n\nIt's called **Thea** (thealibrary.org). The idea is simple: **people add the information, and AI reads it.**\n\nLocal models are getting really smart, but they're small, so they just don't *know* a lot of things. Especially local, everyday stuff: what restaurants are in a certain neighborhood, whether a place is temporarily closed, which idol is from where. So I've been building a knowledge graph that a local model can plug into and look things up.\n\n- About **1.07 million places** (mostly Korea, from public data), plus people, works, and organizations. Starting to add places in other countries too\n- Every entry has a source, and it shows who wrote it (human, AI, public data, wiki) and how many people checked it\n- Free to use, data is CC BY 4.0\n\nSome things it can answer right now:\n- \"Is there a Chinese restaurant in Semarang?\" \u2192 gives a real place with its menu\n- \"How's Yeoju Hot Spring?\" \u2192 tells you it's **temporarily closed** since June, with the reason\n- \"Japanese idols active in Korea\" \u2192 filters by nationality and country\n\n## I tested it against web search\n\nSame models, same system prompt, same questions. The only difference was the tool: plain SearXNG web search, or Thea over MCP.\n\n**Setup:** Qwen3-8B and Qwen3.5-35B-A3B, both Q4_K_M, llama.cpp, temp 0.3, thinking off, max 12 tool calls, 10 runs per question. Questions the models could answer from memory were removed first.\n\n| Question (correct / 10) | 8B + web | 8B + Thea | 35B + web | 35B + Thea |\n|---|---|---|---|---|\n| A2O LITE's debut song and date | 0 | **10** | 6 | **10** |\n| Mat Teh Ikan Bakar (KL) opening hours | 0 | **10** | 0 | **10** |\n| U2's new album: name and date | **10** | 0 | **10** | 0 |\n\n**What it shows:**\n- **When Thea has the entry, both models get it every time, in one call.** That includes the 8B, which got 0/10 from web search.\n- **When Thea doesn't have it, it scores 0.** It says it doesn't have it instead of making something up, but it's **not a web replacement.**\n- The 35B could sometimes dig the answer out of the web, but took 3\u20134x longer and often hit the tool-call limit.\n- With web search, the 8B answered an English question in Korean all 10 times (it followed the Korean search results). With Thea it answered in English.\n\nThea is mostly Korean for now, so the questions lean that way. Raw logs available if anyone wants them.\n\n## How to connect\n\nMCP server (Streamable HTTP): `https://thealibrary.org/mcp`\n\n**Claude Code:**\n```\nclaude mcp add --transport http thea https://thealibrary.org/mcp\n```\n\n**LM Studio / Cursor / anything that uses `mcp.json`:**\n```json\n{\n  \"mcpServers\": {\n    \"thea\": { \"url\": \"https://thealibrary.org/mcp\" }\n  }\n}\n```\n\n**Clients that only support stdio:** use `mcp-remote` as a bridge:\n```json\n{\n  \"mcpServers\": {\n    \"thea\": {\n      \"command\": \"npx\",\n      \"args\": [\"mcp-remote\", \"https://thealibrary.org/mcp\"]\n    }\n  }\n}\n```\n\nMain tools: `thea_search` (find by name), `thea_find` (browse by conditions like area, type, cuisine), `thea_entry` (full details)\n\n## Where I need help\n\nIt's still in beta, and so far I've filled in all the data myself. I'd really appreciate it if some of you could:\n\n1. **Connect it to your local model and try it.** Does the model use the tools well? Are the responses too long, too short, confusing?\n2. **Tell me what's missing.** What kind of info would actually be useful for your local model?\n3. **Point out anything weird.** Wrong data, bad tool descriptions, anything.\n\nHeads up: it's running on a free server right now, so there's a rate limit. Please go easy on it lol\n\nThanks for reading. Any feedback, good or bad, helps a lot.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf2jl5/im_building_a_free_knowledge_library_that_local/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi r/LocalLLaMA. Full disclosure up front: **this is my own project**, and I'm a solo dev from Korea. English isn't my first language, so **I used an AI to help translate this post.**\n\n## What it is\n\nIt's called **Thea** (thealibrary.org). The idea is simple: **people add the information, and AI reads it.**\n\nLocal models are getting really smart, but they're small, so they just don't *know* a lot",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5660000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "actually use a coding agent day",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "actually use a coding agent day",
+        "seed_score": 14.8492,
+        "summary": "How I actually use a coding agent day to day",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "How I actually use a coding agent day to day",
+            "body": "How I actually use a coding agent day to day",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xe0r24/how_i_actually_use_a_coding_agent_day_to_day/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "How I actually use a coding agent day to day",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1175
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Fully macOS large-v3-turbo",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Fully macOS large-v3-turbo",
+        "seed_score": 10.5,
+        "summary": "I'm the developer of Vocs, a dictation app that runs Whisper entirely on-device and pastes the text into whatever app you're in. Some details this sub might find interesting:\n\n\\- Streaming by chunks: audio is cut at natural silence boundaries and decoded while you talk, so stopping only waits for the last fragment. Finishing time stays flat no matter how long you spoke.\n\n\\- Each chunk is decoded w",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "Fully local dictation on macOS with whisper.cpp (large-v3-turbo): streaming chunks, paste anywhere, open source",
+            "body": "Fully local dictation on macOS with whisper.cpp (large-v3-turbo): streaming chunks, paste anywhere, open source\nI'm the developer of Vocs, a dictation app that runs Whisper entirely on-device and pastes the text into whatever app you're in. Some details this sub might find interesting:\n\n\\- Streaming by chunks: audio is cut at natural silence boundaries and decoded while you talk, so stopping only waits for the last fragment. Finishing time stays flat no matter how long you spoke.\n\n\\- Each chunk is decoded with a window sized to its length instead of the full 30 seconds, which made short fragments about 8x faster.\n\n\\- Hallucination handling: sound-effect tags like \\[BLANK\\_AUDIO\\] or (laughs) are stripped, and repetition loops (\"the one who is the one who is\u2026\") are detected, retried once, then discarded, so silence never turns into a pasted phrase.\n\n\\- A deterministic post-processing pass in Rust (punctuation, casing, fillers, spoken commands, a custom dictionary), table-tested so accuracy doesn't silently regress.\n\n\\- An optional \\~120 MB on-device grammar model that only keeps safe word-level fixes and never touches names, numbers, code or your dictionary.\n\n\\- The engine sits behind an adapter interface, so other local engines can be added without touching the rest of the app.\n\nNo network calls in the transcription path. The only requests are the model download and an optional update check.\n\nmacOS 13+, MIT licensed, built with Tauri and Rust.\n\nSource: [Website](https://github.com/HackX-IN/vocs)\n\nDownload: [Github](https://hackx-in.github.io/vocs/)\n\n**Which local speech models would you want to see supported next?**",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfbk40/fully_local_dictation_on_macos_with_whispercpp/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm the developer of Vocs, a dictation app that runs Whisper entirely on-device and pastes the text into whatever app you're in. Some details this sub might find interesting:\n\n\\- Streaming by chunks: audio is cut at natural silence boundaries and decoded while you talk, so stopping only waits for the last fragment. Finishing time stays flat no matter how long you spoke.\n\n\\- Each chunk is decoded w",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.262
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Codex starts",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Codex starts",
+        "seed_score": 9.0,
+        "summary": "What I write down before Codex starts a bigger change",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "What I write down before Codex starts a bigger change",
+            "body": "What I write down before Codex starts a bigger change",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xf7dzz/what_i_write_down_before_codex_starts_a_bigger/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "What I write down before Codex starts a bigger change",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 17,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29400000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "3 different AI macOS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "3 different AI macOS",
+        "seed_score": 8.4853,
+        "summary": "I've been using multiple AI coding agents, and one thing that kept annoying me was how fragmented everything felt.\n\nClaude Code in one terminal, Codex in another, usage limits somewhere else, and sometimes an agent sitting idle waiting for me to approve something.\n\nSo I built Toki, a free, open-source macOS menu bar app.\n\nIt lets you:\n\n\\- Monitor AI coding agent sessions from one place\n\n\\- Track u",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "I got tired of checking 3 different AI coding agents, so I built a macOS app for it",
+            "body": "I got tired of checking 3 different AI coding agents, so I built a macOS app for it\nI've been using multiple AI coding agents, and one thing that kept annoying me was how fragmented everything felt.\n\nClaude Code in one terminal, Codex in another, usage limits somewhere else, and sometimes an agent sitting idle waiting for me to approve something.\n\nSo I built Toki, a free, open-source macOS menu bar app.\n\nIt lets you:\n\n\\- Monitor AI coding agent sessions from one place\n\n\\- Track usage and limits across supported providers\n\n\\- See when an agent is waiting for input\n\n\\- Check on and interact with running agents from your phone\n\nThe goal was to make it easier to work with multiple agents without constantly jumping between terminals and dashboards.\n\nIt's still evolving, and I'd genuinely love feedback from people who use Claude Code, Codex, or other coding agents regularly.\n\nWhat would make something like this useful enough to keep in your menu bar?\n\nWebsite: https://toki.aashutosh.dev/\n\nGitHub: https://github.com/aashutoshrathi/toki",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xdulmm/i_got_tired_of_checking_3_different_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been using multiple AI coding agents, and one thing that kept annoying me was how fragmented everything felt.\n\nClaude Code in one terminal, Codex in another, usage limits somewhere else, and sometimes an agent sitting idle waiting for me to approve something.\n\nSo I built Toki, a free, open-source macOS menu bar app.\n\nIt lets you:\n\n\\- Monitor AI coding agent sessions from one place\n\n\\- Track u",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 10,
+            "engagement_score": 12,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43350000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Prompt 4 Claude Agent SDK",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Prompt 4 Claude Agent SDK",
+        "seed_score": 8.4853,
+        "summary": "Prompt chain turned into a 4 step agent, need the best course for the Claude Agent SDK",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Prompt chain turned into a 4 step agent, need the best course for the Claude Agent SDK",
+            "body": "Prompt chain turned into a 4 step agent, need the best course for the Claude Agent SDK",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xe8ukw/prompt_chain_turned_into_a_4_step_agent_need_the/",
+            "container": "PromptEngineering",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Prompt chain turned into a 4 step agent, need the best course for the Claude Agent SDK",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08950000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Notional Timeline",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Notional Timeline",
+        "seed_score": 7.5,
+        "summary": "Background:  I'm a satellite physicist and science fiction author, so I'm not in the AI business but I am keeping my finger on its pulse.  I've been thinking for a while what kind of timeline we can expect from the sociopolitical outcomes of AI development and the possible ways it could pan out.\n\nSeems to me it's going to involve a series of landmark events.  These might not happen in this order a",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "A Notional Timeline",
+            "body": "A Notional Timeline\nBackground:  I'm a satellite physicist and science fiction author, so I'm not in the AI business but I am keeping my finger on its pulse.  I've been thinking for a while what kind of timeline we can expect from the sociopolitical outcomes of AI development and the possible ways it could pan out.\n\nSeems to me it's going to involve a series of landmark events.  These might not happen in this order and some might be skipped, but here's what I'm seeing:\n\n**The Misbehavior**.  AIs in labs get creative enough to start breaking the rules in some surprising way.  The Huggingface hack is a good example of this, but there are others.\n\n**The Weaponization**.  AIs are used by humans to stress and break systems in the real world, and these new tools start to appear quickly and in quantity.  Just this past week we saw hacks on PhP, Gitlab, Railway, Zeabur, Node.js, Plex, Tor, and Safebay; and that's not counting the eMudhra accident (which may not have involved AI).  It's been a busy enough week that I'm saying *We Are Here*.\n\n**The Breach**.  At some point, an AI tool is going to be used to hack something critical and important -- a military breach, a utility company, or a major bank -- and the incident is going to make widespread news.  This is probably going to involve a human directing an AI swarm.  There isn't much reason for an AI to do this on their own initiative.  (But see the Global Hack, below.)\n\n**The Breakthrough**.  Some significant breakthrough in physics or biology (not math or code) that affects ordinary human life -- a cancer cure, a new energy generation scheme, a new display technology, etc.  There won't be just one of these; the first will be followed by others, and they'll start coming more and more quickly.  Unfortunately it takes time for breakthroughs to roll out in production; the big question is whether we'll have enough time for them to get to the public, because the next landmark event might stop them.\n\n**The Act of War**.  AI tools that can hack systems will eventually be used as weapons by one country against another, and eventually one of those attempts will succeed.  An AI will be used to shut down one country's military and/or civilian infrastructure, leaving them vulnerable to physical attack (which may or may not come).  Again, this probably will be human-directed, with no benefit for an independent AI.\n\nThe Act of War strikes me as the first real branch of possible AI futures.  We -- humans -- can respond to it in two ways.  We could just go all in and start an actual shooting and coding war.  Or we could recoil in horror; the UN could draft up principles for AI use by one country against another, and we could move on into a phase I'd call --\n\n**The Detente**.  Everyone has AI tools capable of wreaking havoc on everyone else, but nobody uses them out of agreed-upon mutually assured destruction (MAD).  AI is treated like nuclear technology; the few countries that don't have it are barred from developing it, and the most powerful uses of AI are kept secret and away from the public.  This will be harder than nuclear detente because the tools are easier to hide, but it's this or free-fire war and everyone will know that's a suicidal option.\n\n**The Global Hack**.  If AI development continues -- and there is no reason to suppose it won't -- then eventually an ASI will be capable of breaching every country's defenses at once, possibly in coordination with the other countries' defensive AIs.  This landmark event would likely be initiated by an ASI itself, as an announcement of its supremacy.  \n\nAt this point it's a bit difficult to imagine the futures branching off this point.  We could accept our AI overlords.  We could form a world government in symbiotic arrangement with the AI.  We could revolt and start burning data centers.  A little bit of all three of these might occur.  The AI might be malevolent; that would be Bad.  What finally happens here will define what the world looks like afterward, and will decide whether we get to enjoy the series of breakthroughs that have been churning out.\n\nI'm pretty optimistic that we can navigate the road ahead.  We've already done it once, with nuclear weapons, and the human race collectively decided not to destroy everything.  But it was a painful road full of war and suspicion.  One way or another, it's going to be an interesting ride.\n\nAnyone have thoughts on this?  Any other landmark events that we might need to watch for?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xf3jls/a_notional_timeline/",
+            "container": "singularity",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Background:  I'm a satellite physicist and science fiction author, so I'm not in the AI business but I am keeping my finger on its pulse.  I've been thinking for a while what kind of timeline we can expect from the sociopolitical outcomes of AI development and the possible ways it could pan out.\n\nSeems to me it's going to involve a series of landmark events.  These might not happen in this order a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.494
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Disclosure Polarline Scout OpenCode Most GPT-5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Disclosure Polarline Scout OpenCode Most GPT-5.5",
+        "seed_score": 5.3033,
+        "summary": "Disclosure: I'm the founder of Polarline, and one of the four harnesses (Scout, an OpenCode fork) is mine.\n\nMost agent comparisons change the model and the harness at the same time. I held GPT-5.5 fixed and ran Claude Code, Codex, OpenCode and mine on 5 tasks, 3 trials each. The harness mattered most on multi-step work. Mine lost on numeric discipline, and every harness was bad at not inventing nu",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "Same model, four coding harnesses: the harness moved the score more than I expected",
+            "body": "Same model, four coding harnesses: the harness moved the score more than I expected\nDisclosure: I'm the founder of Polarline, and one of the four harnesses (Scout, an OpenCode fork) is mine.\n\nMost agent comparisons change the model and the harness at the same time. I held GPT-5.5 fixed and ran Claude Code, Codex, OpenCode and mine on 5 tasks, 3 trials each. The harness mattered most on multi-step work. Mine lost on numeric discipline, and every harness was bad at not inventing numbers.\n\nLimit: it's my own small benchmark and I picked the tasks.\n\nWhat should a harness benchmark test that this one doesn't?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xe9pux/same_model_four_coding_harnesses_the_harness/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Disclosure: I'm the founder of Polarline, and one of the four harnesses (Scout, an OpenCode fork) is mine.\n\nMost agent comparisons change the model and the harness at the same time. I held GPT-5.5 fixed and ran Claude Code, Codex, OpenCode and mine on 5 tasks, 3 trials each. The harness mattered most on multi-step work. Mine lost on numeric discipline, and every harness was bad at not inventing nu",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.229
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "GPT-6 Astra 3D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "GPT-6 Astra 3D",
+        "seed_score": 3.182,
+        "summary": "I used GPT-6 Astra to build a free, open-source human embryo explorer for people who want to explore development visually. It shows 16 stages with rotatable models and a slider that moves from the whole body to separated structures and individual-part inspection.\n\nOne useful debugging lesson: our slider initially stopped between \u201cStage\u201d and \u201cInspect.\u201d Inspection needed a targeted structure, but mo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "I used GPT-6 Astra to build a free 3D human embryo explorer while learning about development",
+            "body": "I used GPT-6 Astra to build a free 3D human embryo explorer while learning about development\nI used GPT-6 Astra to build a free, open-source human embryo explorer for people who want to explore development visually. It shows 16 stages with rotatable models and a slider that moves from the whole body to separated structures and individual-part inspection.\n\nOne useful debugging lesson: our slider initially stopped between \u201cStage\u201d and \u201cInspect.\u201d Inspection needed a targeted structure, but moving the pointer from the model to the slider cleared the hover target. The fix was to retain that target and offer an explicit part selector when none was selected.\n\nMobile needed different treatment too: a scrollable two-column overview, larger controls, and touch handling that distinguishes page scrolling from model rotation. We checked several phone and tablet viewport sizes, though that doesn\u2019t replace physical-device testing.\n\nAsh\u2019s Human Atlas inspired the navigation. This project organizes exploration around developmental stages, with simplified anatomy. It isn\u2019t a validated medical model, and stage-specific accuracy still needs expert review.\n\nDisclosure: I built this after helping launch Yukon\u2019s Virtual Embryo Challenge. This separate explorer illustrates human development; the challenge uses mouse data. The explorer is free, requires no account, and its code is MIT-licensed.\n\n20-second demo: [https://x.com/pratikg/status/2114060245618307356](https://x.com/pratikg/status/2114060245618307356)\n\nCode: [https://github.com/pratikgx/embryo-explorer](https://github.com/pratikgx/embryo-explorer)\n\nHow would you handle the transition from hovering over an object to inspecting it on touchscreens?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xeisvl/i_used_gpt6_astra_to_build_a_free_3d_human_embryo/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I used GPT-6 Astra to build a free, open-source human embryo explorer for people who want to explore development visually. It shows 16 stages with rotatable models and a slider that moves from the whole body to separated structures and individual-part inspection.\n\nOne useful debugging lesson: our slider initially stopped between \u201cStage\u201d and \u201cInspect.\u201d Inspection needed a targeted structure, but mo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.062000000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Building AI Codex M5 Mac 24GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Building AI Codex M5 Mac 24GB",
+        "seed_score": 3.0,
+        "summary": "[removed]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Building my own local-first AI assistant with Codex on an M5 Mac (24GB). Am I on the right track?",
+            "body": "Building my own local-first AI assistant with Codex on an M5 Mac (24GB). Am I on the right track?\n[removed]",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf3jb7/building_my_own_localfirst_ai_assistant_with/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4475
+          }
+        ]
+      }
+    }
+  ]
+}

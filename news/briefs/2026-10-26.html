@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily News 26/10/2026</title>
+<meta name="description" content="OpenAI và Anthropic cắt giá LLM tới 80% trong vài tháng, chi phí chạy coding agent giảm mạnh">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="application/atom+xml" title="Daily News" href="../feed.xml">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <a class="back" href="../index.html">← Tất cả bản tin</a>
+      <h1 class="brand">Daily News 26/10/2026</h1>
+      <p class="tagline">Thứ Hai · 4 tin</p>
+    </div>
+  </header>
+
+  <div class="grid"><article class="card" id="tin-1"><div class="card-head"><span class="num">1</span><h3>OpenAI và Anthropic cắt giá LLM tới 80% trong vài tháng, chi phí chạy coding agent giảm mạnh</h3></div><ul><li>💸 Bài phân tích của minimaxir dựng lại dòng thời gian giá: GPT-6 Sol còn $2 / $10 / $0.20 (input / output / cache read mỗi triệu token), bằng một nửa GPT-5.6 Sol đang giảm giá tạm thời. GPT-6 Luna chỉ $0.10 / $0.50, Claude Opus 5.5 giá $4 / $20 / $0.20 và theo tác giả rẻ hơn Opus 5 khoảng 40-60% tổng chi phí</li><li>🧮 Điểm đáng chú ý cho dev: với coding agent, cache read chiếm 96-99% lượng token tiêu thụ nên việc Fable 5.1 giảm 75% giá cache read tương đương giảm 70-75% chi phí dùng model</li><li>💬 Trên Hacker News (80 điểm, 102 bình luận), nhiều người cho rằng cạnh tranh là nguyên nhân chính, kể cả từ model mở Trung Quốc. Một nhóm dev kể đã chuyển sang Kimi và GLM sau khi bị chặn bởi bộ lọc "cybersecurity" của OpenAI và Anthropic, vừa rẻ hơn vừa ít refusal hơn</li><li>🛠️ Nên xem lại bảng giá và tỉ lệ cache hit của workflow agent trước khi chọn model, vì giá cache read hiện quyết định phần lớn hoá đơn</li></ul><div class="card-foot"><a href="https://minimaxir.com/2026/10/cheap-llms/" target="_blank" rel="noopener">🔗 Nguồn ↗</a></div></article><article class="card" id="tin-2"><div class="card-head"><span class="num">2</span><h3>Cộng đồng nghi Claude và ChatGPT bật safeguard chặn reverse engineering TV, trong khi dự án dùng Claude cải tạo TV đạt 34.800 sao</h3></div><ul><li>📺 Thread r/LocalLLaMA (3.212 điểm, 498 bình luận) nói OpenAI và Anthropic đã chặn việc reverse engineering smart TV. Thread r/ClaudeAI (3.003 điểm, 524 bình luận) cũng cho rằng Anthropic bật safeguard quanh việc này. Đây là nhận định của người dùng, chưa thấy xác nhận từ hai hãng</li><li>🙋 Một thread r/ChatGPT (356 điểm) đòi OpenAI giải thích vì sao người dùng bị cấm reverse engineering chính sản phẩm mình sở hữu</li><li>⭐ Cùng lúc, một dev dùng Claude để bỏ quảng cáo và thay toàn bộ giao diện TV của bố mẹ. Sau 8 ngày dự án có 34.800 GitHub star và cấu hình cho 300 mẫu TV</li><li>⚠️ Với dev làm việc về bảo mật hoặc firmware: model có thể từ chối hoặc hạn chế tác vụ reverse engineering, nên cần có phương án dự phòng và kiểm tra điều khoản sử dụng</li></ul><div class="card-foot"><a href="https://www.reddit.com/r/ClaudeAI/comments/1xetxga/seems_like_anthropic_enabled_safeguards_around/" target="_blank" rel="noopener">🔗 Nguồn ↗</a></div></article><article class="card" id="tin-3"><div class="card-head"><span class="num">3</span><h3>Cerebras giải thích cách chạy model 3 nghìn tỉ tham số như Kimi K3 ở 1.000-2.000+ token/giây</h3></div><ul><li>⚙️ Mỗi wafer WSE-3T có 44 GB SRAM trên chip. Với Kimi K3 (khoảng 3T tham số, 69 lớp linear-attention và 24 lớp dense, lượng tử hoá 4-bit), Cerebras cần 59 wafer: mỗi wafer chứa 1 lớp dense kèm KV cache hoặc 2 lớp linear-attention</li><li>🚄 Trọng số nằm yên trên chip, chỉ activation truyền giữa các wafer qua RDMA over Ethernet (khoảng 2 micro giây mỗi hop), nhờ đó đạt 1.000-2.000+ token/giây</li><li>📊 Theo Cerebras, Kimi K3 đạt 88,3% Terminal-Bench 2.1 (GPT-5.6 Sol: 88,8%). Đây là số liệu của hãng</li><li>💬 Trên Hacker News (348 điểm), nhiều người nhận xét Cerebras chỉ phục vụ các model cũ hơn frontier vài tháng và khó mở rộng vì thiếu phần cứng</li></ul><div class="card-foot"><a href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" target="_blank" rel="noopener">🔗 Nguồn ↗</a></div></article><article class="card" id="tin-4"><div class="card-head"><span class="num">4</span><h3>Toki: app menu bar macOS mã nguồn mở theo dõi cùng lúc Claude Code và Codex</h3></div><ul><li>🖥️ Tác giả tự làm vì phải kiểm tra nhiều công cụ AI coding riêng lẻ. Toki nằm trên menu bar macOS, giám sát các phiên coding agent đang chạy</li><li>📈 Theo dõi usage limit và báo khi agent đang chờ bạn duyệt, đỡ phải mở từng terminal để kiểm tra</li><li>🛠️ Hữu ích nếu bạn chạy nhiều phiên song song và hay bị bỏ lỡ lúc agent dừng chờ approval</li></ul><div class="card-foot"><a href="https://www.reddit.com/r/ChatGPTCoding/comments/1xdulmm/i_got_tired_of_checking_3_different_ai_coding/" target="_blank" rel="noopener">🔗 Nguồn ↗</a></div></article></div>
+
+  <nav class="pager"><a href="../briefs/2026-10-25.html">← 25/10/2026</a> <span></span></nav>
+
+  <footer>Tổng hợp tự động từ Reddit, Hacker News, X, YouTube, GitHub qua last30days</footer>
+</div>
+</body>
+</html>

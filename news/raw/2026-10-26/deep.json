@@ -1,0 +1,150 @@
+{
+ "date": "2026-10-26",
+ "runs": [
+  {
+   "started_at": "2026-10-26T00:02:54+00:00",
+   "seconds": 1.6,
+   "python": "3.11.17",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 7,
+   "articles_ok": 2,
+   "articles_error": 0,
+   "articles_skipped": 5,
+   "hn_ok": 2,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "2/7 bài gốc ok (5 bỏ qua), 2/2 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 1.6s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://www.reddit.com/r/ClaudeAI/comments/1xetxga/seems_like_anthropic_enabled_safeguards_around/",
+   "article": {
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1xetxga/seems_like_anthropic_enabled_safeguards_around/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/singularity/comments/1xfh36p/developer_uses_claude_to_overhaul_his_parents_tv/",
+   "article": {
+    "url": "https://www.reddit.com/r/singularity/comments/1xfh36p/developer_uses_claude_to_overhaul_his_parents_tv/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xer30z/openai_and_anthropic_blocked_the_reverse/",
+   "article": {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xer30z/openai_and_anthropic_blocked_the_reverse/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/ChatGPT/comments/1xev2g9/can_we_get_a_statemen_from_openai_on_why_we_get/",
+   "article": {
+    "url": "https://www.reddit.com/r/ChatGPT/comments/1xev2g9/can_we_get_a_statemen_from_openai_on_why_we_get/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/AI_Agents/comments/1xfddh7/an_ai_agent_hit_my_site_read_a_note_hidden_from/",
+   "article": {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1xfddh7/an_ai_agent_hit_my_site_read_a_note_hidden_from/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50236102",
+   "hn_url": "https://news.ycombinator.com/item?id=50236102",
+   "hn": {
+    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+    "points": 82,
+    "comments": 105
+   },
+   "comments": [
+    {
+     "author": "332451b",
+     "replies": 0,
+     "text": "DeepSeek claims $38 of revenue per GPU, per hour for Flash V4. That is $332,880 per GPU, per year. This matches their DeepInfer numbers: 25,600 output tokens/s per GPU sold at $0.60 per million -> ~$55 minus some other overhead to arrive at $38.\nFor the bigger Anthropic and OpenAI models (and associated higher prices) there are many unknown factors. But presumably they also work hard on optimizations, and it's not so crazy to think they had/have a lot of wiggle room to adjust prices."
+    },
+    {
+     "author": "buckleyourshoe",
+     "replies": 4,
+     "text": "Competition drives prices down. We tried Kimi and GLM models after hitting 'cybersecurity' blocks on OpenAI and Anthropic. We found them to be much cheaper to access and helped us complete our work without 'cybersecurity' refusals blocking us."
+    },
+    {
+     "author": "redrix",
+     "replies": 2,
+     "text": "This is why Anthropic and OpenAI are pushing for more “regulation”. You can’t show ROI to investors by cutting inference costs.\nRegulation might inconvenience them a little, but the upside is huge if it means open models out of China get banned."
+    },
+    {
+     "author": "maxdo",
+     "replies": 0,
+     "text": "It’s both competition almost 3 way , cheaper open source , a clearly lagging behind a bit open ai that cuts prices to win Anthropic customers .\nThere was an interesting technical advantage by some models where Anthropic as a leader start loosing dramatically in speed too. 5.5 made a come back in that dimension."
+    },
+    {
+     "author": "chakintosh",
+     "replies": 1,
+     "text": "It’s a race to the bottom to see who blinks first and goes bankrupt. It’s not sustainable."
+    }
+   ],
+   "article": {
+    "url": "https://minimaxir.com/2026/10/cheap-llms/",
+    "status": "ok",
+    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why? | Max Woolf's Blog",
+    "chars": 14326,
+    "text": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?\nOctober 25, 2026 · 12 min\nLet’s look at a quick timeline of the major LLM model announcements from both OpenAI and Anthropic over the past few months. All pricing numbers provided are input MTok / output MTok / cache read MTok.\nJune 26, 2026#\nOpenAI announced GPT-5.6 Sol and Luna. Sol is the direct successor to GPT 5.5 at the same price of $5 / $30 / $0.50, while Luna is a small model specifically designed for cheaper use cases at $1 / $6 / $0.10. They also announced a Terra model that’s in between those two models, but few cared about it.\nJune 30, 2026#\nAnthropic announced Claude Sonnet 5, which Anthropic claimed to be closer to their Opus models, but feedback was mixed. Notably, it had launch pricing of $2 / $10 / $0.20 which was initially supposed to be temporary but would go up.\nJuly 24, 2026#\nAnthropic announced Claude Opus 5, which was a long-awaited major-version update given the impact Opus 4.5 had on the rise of agentic coding, at a price of $5 / $25 / $0.50 (similar to GPT-5.6 Sol). Although some of the provided benchmark results surprisingly exceeded those of the much larger Fable 5, real-world feedback was more mixed.\nJuly 30, 2026#\nOpenAI announces that they cut the price of GPT-5.6 Luna by 80% (???) to $0.20 / $1.20 / $0.02.\nModel quality vs. Cost-per-task for GPT-5.6 Luna after the massive price reduction. Top-and-left is better, and if OpenAI didn’t do the 80% price cut, it would have lost to DeepSeek V4 Pro. via OpenAI\nAugust 10, 2026#\nAnthropic announces the temporary Sonnet 5 price cut for the launch is now permanent.\nAugust 21, 2026#\nOpenAI announces that they are cutting the price for GPT-5.6 Sol by ~20% ($4 / $20 / $0.40) for the next three months.\nSeptember 1, 2026#\nAnthropic announced Fable 5.1 at a price of $10 / $50 / $0.25, which, in addition to having strictly better benchmark performance in all areas than Fable 5 from June at $10 / $50 / $1, cut the cache read cost by 75%.\nCache read costs\nWhen using agents for coding, cache read costs are the vast majority (96% - 99%) of the total token expenditure as the cache is what contains the entire previous conversation each turn. Additionally, the cache tends to be hit around 90 - 100% of the time (varies by the infrastructure of the LLM inference provider). Taken together, a 75% reduction in the cache read cost correlates to a 70-75% reduction in the cost of using the model—obviously notable, even if cache costs are typically a footnote!\nSeptember 3, 2026#\nOpenAI announced GPT-6 Astra, which is similar in size to Fable 5.1 and has similar pricing at $10 / $50 / $1 but without the lower cache read cost. Astra’s model performance is indeed comparable to Fable.\nSeptember 22, 2026#\nOpenAI announced GPT-6 Sol at at a shocking price of $2 / $10 / $0.20 that halves the input and output price relative to the temporarily-discounted GPT-5.6 Sol! They simultaneously released GPT-6 Luna also at half the input and output price ($0.10 / $0.50 / $0.01) of the previous version.\nOn the same exact day, Anthropic announced Claude Opus 5.5, where it’s explicitly stated “Opus 5.5 requires less compute to serve than Opus 5, and its pricing reflects that”. Its price of $4 / $20 / $0.20 is much lower in total than Opus 5’s due to a 20% input/output cost cut and a larger cache read cut, resulting in a total cost reduction of 40-60% for a model that’s even better than Fable 5.1 (I have quite a lot of things to say about Opus 5.5, but that’s for another post).\nSeptember 29, 2026#\nIt turned out that GPT-6 Sol was a dud performancewise, so a week later OpenAI announced GPT-6.1 Sol, which surprisingly has comparable performance to Astra (can confirm after personal use), but OpenAI casually cut the cache price in half ($2 / $10 / $0.10) matching Anthropic’s 5%-of-input cache read cost, making this model family cumulatively 75% cheaper.\nOverall, starting from the release of the GPT-5.6 model families in…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50227356",
+   "hn_url": "https://news.ycombinator.com/item?id=50227356",
+   "hn": {
+    "title": "Cerebras Deploys Trillion-Parameter AI Models",
+    "points": 349,
+    "comments": 127
+   },
+   "comments": [
+    {
+     "author": "ilaksh",
+     "replies": 1,
+     "text": "From my testing, the problem Cerebras has is they need to give people a taste to get new customers in, but since it requires so much hardware to get that speed and they don't have OpenAI-type money (< $3 billion compared to over $100 billion) and it's just incredibly hard regardless to manufacture that many of these types of crazy giant wafer nodes, there is just no way for them to keep up with the demand.\nSo what they do is they have these cheap plans that let anyone get a little taste of the…"
+    },
+    {
+     "author": "piterrro",
+     "replies": 1,
+     "text": "Lots of folks here say Cerebras serves outdated models.\nHere’s my view: lets assume the above is true and the average serve with a delay of 6-9 months. Given that, its fair to expect them to start serving DS flash v4, glm 5.3, mimo 2.6 pro or kimi 3.1 pro in a matter of months. DS flash is already fast to the point I’ve became a bottleneck. But my point is: Cerebras should soon release better models that are not that far from frontier ones, at a fraction of cost and with multiples of the…"
+    },
+    {
+     "author": "keyle",
+     "replies": 4,
+     "text": "Cerebras is good on paper but all I can reasonably access is \"GPT OSS 120b, Qwen 3.8 27B\" which aren't very good for my use.\nOpenrouter on nitro gets me there. Although the TPS is 5X less still.\nI have tried GPT OSS 120b on cerebras and it flies. But it's mostly wrong."
+    },
+    {
+     "author": "xpct",
+     "replies": 3,
+     "text": "Ah, this prompted a few questions from me. Perhaps someone with more hardware background could chime in.\nThey don't really show it here, but supposedly a Cerebras' chip is sub-divided into a 2D mesh of what they call PEs (cores). So data flow generally flows in two axis, and maintains consistent timings to its 4 neighboring cores. They show the layers flowing from left-to-right being streamed by PEs, but I wonder how true that ends up being: maybe the communications are easier to stream via…"
+    },
+    {
+     "author": "pat64",
+     "replies": 0,
+     "text": "Having dealt with them professionally my view is they’re a company with truly remarkable technology and a bafflingly inadequate team. They need to hire better. Almost stopped me using their stuff wholesale. Groq are somehow worse."
+    }
+   ],
+   "article": {
+    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+    "status": "ok",
+    "title": "How Cerebras Deploys Trillion-Parameter AI Models",
+    "chars": 7063,
+    "text": "Oct 22 2026\nHow we deploy Trillion-parameter frontier models on Cerebras\nSarah Chieng\nOne of the most frequently asked questions we get is how we deploy large models on Cerebras wafer-scale chips. A single Cerebras WSE-3T wafer has 44 GB of on-chip memory, and trillion-parameter frontier models need terabytes for their weights alone.\nIn this post, we’ll explain how we split a large frontier model across multiple WSE-3T wafers, to run multi-trillion parameter models at 1000-2000+ tokens per second.\nWe’ll use the open source model Kimi K3, with ~3 trillion parameters, as an illustrative example.\nBy the end, you'll understand:\nHow we fit the full model into on-chip memory\nHow we map the model across multiple chips\nHow we handle a high # of concurrent requests\nBreaking it down with Kimi K3\nKimi K3 is an open source, 3T parameter model with 69 linear-attention layers and 24 dense layers.\nIt scores an impressive 88.3% on Terminal-Bench 2.1 (vs. GPT-5.6 Sol's 88.8%) and 91.2% on BrowseComp (vs. GPT-5.6 Sol's 90.4%). These results demonstrate frontier-level coding and agentic capabilities, even outperforming leading proprietary models on some benchmarks. Read more about Kimi K3 here.\nFor this illustrative example, we use:\nA 256k assumed average request size\n4-bit weight quantization (like the Hugging Face implementation)\nAn 8-bit KV cache\n#1: Size of Each layer\nTo calculate the total number of Cerebras WSE-3T wafers we need to support Kimi K3, let’s first calculate the size of each model layer.\nKimi K3 has 3 trillion parameters. If all 3T parameters are stored at 4 bits each, the raw parameter payload is:\nDividing that payload by 93 layers then gives:\n#2: Number of Wafers\nNow that we know each layer needs about 16 GB, we can figure out how many layers fit on each 44 GB wafer. The answer depends on the layer type:\nDense layers need additional room for a KV cache, because each dense (full-attention) layer stores the keys and values for every token in every active request. So, we place one dense layer per wafer and leave the remaining SRAM for its KV cache.\nLinear-attention layers do not require additional room for a KV cache. Instead of storing keys and values for every token, a linear-attention layer keeps a small, fixed-size state per request, regardless of context length. That leaves room for two linear layers per wafer (2 × 16 GB = 32 GB).\nTherefore, with Kimi K3’s 69 linear layers and 24 dense layers, we get:\nThis gives us a total wafer count of 35 + 24 = 59 wafers.\n#3: Connecting the wafers together\nCerebras executes models in a pipeline. After the Cerebras compiler maps the model layers across regions of wafers, the runtime maps the path for tokens to flow between wafers. For ultrafast latency, only activations need to be passed between the wafers, and this can be done via RDMA over Ethernet. This is roughly 2 microseconds per hop.\nIt’s important to emphasize that because each Cerebras wafer has 44 GB of on-chip SRAM and each layer is only 16 GB, we are typically able to fit entire layers of the model directly on the chip.\nThis means that in most cases, the model weights never have to move, and layers don’t need to be split across wafers. Only activations cross from one wafer to the next.\n#4: How we serve 1 request\nNow that we have our wafers connected together and the model laid out, we can think of each wafer as one stage in an assembly line: the model’s weights for each stage stay in place, and the request’s intermediate results move through the layer stages.\nFor example, Wafer 1 runs model layers 1–2 and sends its activations to wafer 2. Wafer 2 runs layers 3–4 and passes its results to Wafer 3, and so on until the last wafer produces the next token.\n#5: How we serve many requests\nThis raises a common misconception. If a token has to travel through each wafer in order, doesn’t each wafer sit idle while it waits for its turn? In effect, wouldn't the system be running at a batch size of one?\nNo! If we only sent one request…"
+   }
+  }
+ ]
+}

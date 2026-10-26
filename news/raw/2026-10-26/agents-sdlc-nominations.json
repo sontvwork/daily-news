@@ -1,0 +1,791 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "943321b80f00bdd9",
+  "generated_at": "2026-10-25T23:56:32.374895Z",
+  "from_date": "2026-10-24",
+  "to_date": "2026-10-25",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-25T23:56:32.329038Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-25T23:56:32.329047Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 59,
+      "attempted": true,
+      "at": "2026-10-25T23:56:32.328469Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-10-25T23:56:32.328843Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "We should be more ambitious with",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 675,
+          "points": 736
+        }
+      },
+      "nomination": {
+        "name": "We should be more ambitious with",
+        "seed_score": 1496.5915,
+        "summary": "We should be more ambitious with the software we build",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50225695",
+            "source": "hackernews",
+            "title": "We should be more ambitious with the software we build",
+            "body": "We should be more ambitious with the software we build",
+            "url": "https://danluu.com/ambitious/",
+            "author": "ltratt",
+            "container": "Hacker News",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 736,
+              "comments": 675
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about We should be more ambitious with the software we build",
+            "snippet": "We should be more ambitious with the software we build",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50225695",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.12050000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI 61 minutes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "AI 61 minutes",
+        "seed_score": 274.5,
+        "summary": "An AI agent hit my site, read a note hidden from humans, and did exactly what it said 61 minutes later",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "An AI agent hit my site, read a note hidden from humans, and did exactly what it said 61 minutes later",
+            "body": "An AI agent hit my site, read a note hidden from humans, and did exactly what it said 61 minutes later",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfddh7/an_ai_agent_hit_my_site_read_a_note_hidden_from/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 140,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing",
+            "snippet": "An AI agent hit my site, read a note hidden from humans, and did exactly what it said 61 minutes later",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "When an agent session ends what",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "When an agent session ends what",
+        "seed_score": 58.5,
+        "summary": "When an agent session ends, what state do you actually persist?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "When an agent session ends, what state do you actually persist?",
+            "body": "When an agent session ends, what state do you actually persist?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xf2v35/when_an_agent_session_ends_what_state_do_you/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "When an agent session ends, what state do you actually persist?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28500000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Tasked UI/Harness",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "Tasked UI/Harness",
+        "seed_score": 54.0937,
+        "summary": "Tasked to build a custom agent platform for my company, what UI/Harness would you use?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Tasked to build a custom agent platform for my company, what UI/Harness would you use?",
+            "body": "Tasked to build a custom agent platform for my company, what UI/Harness would you use?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xe1tso/tasked_to_build_a_custom_agent_platform_for_my/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Tasked to build a custom agent platform for my company, what UI/Harness would you use?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.094
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "actually use multi-agent orchestration or is",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "actually use multi-agent orchestration or is",
+        "seed_score": 48.0,
+        "summary": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+            "body": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfeuxp/do_you_actually_use_multiagent_orchestration_or/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Imagine There",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "Imagine There",
+        "seed_score": 36.0,
+        "summary": "Imagine you want to download a new model but it's recent and there is not consensus about wether its safe or not.\n\nHow would you check against potential malicious weights ?\n\nThere is the first \"obvious\" layer where the weights try to execute arbitrary code, but safetensors are for this. I am rather talking about less obvious things like template backdoor, llm poisoning etc",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R70",
+            "source": "reddit",
+            "title": "How would you check if a given model weights is \"safe\" ?",
+            "body": "How would you check if a given model weights is \"safe\" ?\nImagine you want to download a new model but it's recent and there is not consensus about wether its safe or not.\n\nHow would you check against potential malicious weights ?\n\nThere is the first \"obvious\" layer where the weights try to execute arbitrary code, but safetensors are for this. I am rather talking about less obvious things like template backdoor, llm poisoning etc",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf3i59/how_would_you_check_if_a_given_model_weights_is/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Imagine you want to download a new model but it's recent and there is not consensus about wether its safe or not.\n\nHow would you check against potential malicious weights ?\n\nThere is the first \"obvious\" layer where the weights try to execute arbitrary code, but safetensors are for this. I am rather talking about less obvious things like template backdoor, llm poisoning etc",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.262
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Day 3 Building AI Website Auditor",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Day 3 Building AI Website Auditor",
+        "seed_score": 33.0,
+        "summary": "Day 3: Building an AI Website Auditor on a $1,500 Budget | Backend Plan, Competitor Testing, and Accuracy Challenges. $5 spent so far.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "Day 3: Building an AI Website Auditor on a $1,500 Budget | Backend Plan, Competitor Testing, and Accuracy Challenges. $5 spent so far.",
+            "body": "Day 3: Building an AI Website Auditor on a $1,500 Budget | Backend Plan, Competitor Testing, and Accuracy Challenges. $5 spent so far.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xf0v4a/day_3_building_an_ai_website_auditor_on_a_1500/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "Day 3: Building an AI Website Auditor on a $1,500 Budget | Backend Plan, Competitor Testing, and Accuracy Challenges. $5 spent so far.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40399999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Agent demos",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Agent demos",
+        "seed_score": 27.0,
+        "summary": "Agent demos end right before the part that matters",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Agent demos end right before the part that matters",
+            "body": "Agent demos end right before the part that matters",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xf616e/agent_demos_end_right_before_the_part_that_matters/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Agent demos end right before the part that matters",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Enterprise AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "Enterprise AI",
+        "seed_score": 21.0,
+        "summary": "Enterprise AI for insurance operations: what has to be true before an agent runs a process end to end?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "Enterprise AI for insurance operations: what has to be true before an agent runs a process end to end?",
+            "body": "Enterprise AI for insurance operations: what has to be true before an agent runs a process end to end?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xf6hbn/enterprise_ai_for_insurance_operations_what_has/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "Enterprise AI for insurance operations: what has to be true before an agent runs a process end to end?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "LLMs MCP",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "LLMs MCP",
+        "seed_score": 19.5,
+        "summary": "Hi r/LocalLLaMA. Full disclosure up front: **this is my own project**, and I'm a solo dev from Korea. English isn't my first language, so **I used an AI to help translate this post.**\n\n## What it is\n\nIt's called **Thea** (thealibrary.org). The idea is simple: **people add the information, and AI reads it.**\n\nLocal models are getting really smart, but they're small, so they just don't *know* a lot",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R71",
+            "source": "reddit",
+            "title": "I'm building a free knowledge library that local LLMs can read via MCP \u2014 tested it against web search, looking for feedback",
+            "body": "I'm building a free knowledge library that local LLMs can read via MCP \u2014 tested it against web search, looking for feedback\nHi r/LocalLLaMA. Full disclosure up front: **this is my own project**, and I'm a solo dev from Korea. English isn't my first language, so **I used an AI to help translate this post.**\n\n## What it is\n\nIt's called **Thea** (thealibrary.org). The idea is simple: **people add the information, and AI reads it.**\n\nLocal models are getting really smart, but they're small, so they just don't *know* a lot of things. Especially local, everyday stuff: what restaurants are in a certain neighborhood, whether a place is temporarily closed, which idol is from where. So I've been building a knowledge graph that a local model can plug into and look things up.\n\n- About **1.07 million places** (mostly Korea, from public data), plus people, works, and organizations. Starting to add places in other countries too\n- Every entry has a source, and it shows who wrote it (human, AI, public data, wiki) and how many people checked it\n- Free to use, data is CC BY 4.0\n\nSome things it can answer right now:\n- \"Is there a Chinese restaurant in Semarang?\" \u2192 gives a real place with its menu\n- \"How's Yeoju Hot Spring?\" \u2192 tells you it's **temporarily closed** since June, with the reason\n- \"Japanese idols active in Korea\" \u2192 filters by nationality and country\n\n## I tested it against web search\n\nSame models, same system prompt, same questions. The only difference was the tool: plain SearXNG web search, or Thea over MCP.\n\n**Setup:** Qwen3-8B and Qwen3.5-35B-A3B, both Q4_K_M, llama.cpp, temp 0.3, thinking off, max 12 tool calls, 10 runs per question. Questions the models could answer from memory were removed first.\n\n| Question (correct / 10) | 8B + web | 8B + Thea | 35B + web | 35B + Thea |\n|---|---|---|---|---|\n| A2O LITE's debut song and date | 0 | **10** | 6 | **10** |\n| Mat Teh Ikan Bakar (KL) opening hours | 0 | **10** | 0 | **10** |\n| U2's new album: name and date | **10** | 0 | **10** | 0 |\n\n**What it shows:**\n- **When Thea has the entry, both models get it every time, in one call.** That includes the 8B, which got 0/10 from web search.\n- **When Thea doesn't have it, it scores 0.** It says it doesn't have it instead of making something up, but it's **not a web replacement.**\n- The 35B could sometimes dig the answer out of the web, but took 3\u20134x longer and often hit the tool-call limit.\n- With web search, the 8B answered an English question in Korean all 10 times (it followed the Korean search results). With Thea it answered in English.\n\nThea is mostly Korean for now, so the questions lean that way. Raw logs available if anyone wants them.\n\n## How to connect\n\nMCP server (Streamable HTTP): `https://thealibrary.org/mcp`\n\n**Claude Code:**\n```\nclaude mcp add --transport http thea https://thealibrary.org/mcp\n```\n\n**LM Studio / Cursor / anything that uses `mcp.json`:**\n```json\n{\n  \"mcpServers\": {\n    \"thea\": { \"url\": \"https://thealibrary.org/mcp\" }\n  }\n}\n```\n\n**Clients that only support stdio:** use `mcp-remote` as a bridge:\n```json\n{\n  \"mcpServers\": {\n    \"thea\": {\n      \"command\": \"npx\",\n      \"args\": [\"mcp-remote\", \"https://thealibrary.org/mcp\"]\n    }\n  }\n}\n```\n\nMain tools: `thea_search` (find by name), `thea_find` (browse by conditions like area, type, cuisine), `thea_entry` (full details)\n\n## Where I need help\n\nIt's still in beta, and so far I've filled in all the data myself. I'd really appreciate it if some of you could:\n\n1. **Connect it to your local model and try it.** Does the model use the tools well? Are the responses too long, too short, confusing?\n2. **Tell me what's missing.** What kind of info would actually be useful for your local model?\n3. **Point out anything weird.** Wrong data, bad tool descriptions, anything.\n\nHeads up: it's running on a free server right now, so there's a rate limit. Please go easy on it lol\n\nThanks for reading. Any feedback, good or bad, helps a lot.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf2jl5/im_building_a_free_knowledge_library_that_local/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi r/LocalLLaMA. Full disclosure up front: **this is my own project**, and I'm a solo dev from Korea. English isn't my first language, so **I used an AI to help translate this post.**\n\n## What it is\n\nIt's called **Thea** (thealibrary.org). The idea is simple: **people add the information, and AI reads it.**\n\nLocal models are getting really smart, but they're small, so they just don't *know* a lot",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.361
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "one shared inbox or seperate inboxes",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "one shared inbox or seperate inboxes",
+        "seed_score": 19.5,
+        "summary": "one shared inbox or seperate inboxes for ai agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "one shared inbox or seperate inboxes for ai agents?",
+            "body": "one shared inbox or seperate inboxes for ai agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfcjrv/one_shared_inbox_or_seperate_inboxes_for_ai_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "one shared inbox or seperate inboxes for ai agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.417
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "memt-1.0 deltanet-2 66x",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "memt-1.0 deltanet-2 66x",
+        "seed_score": 18.0,
+        "summary": "memt-1.0 architecture breakdown gated deltanet-2, mixture-of-storage, and 66x smaller storage footprint for agent memory [D]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "memt-1.0 architecture breakdown gated deltanet-2, mixture-of-storage, and 66x smaller storage footprint for agent memory [D]",
+            "body": "memt-1.0 architecture breakdown gated deltanet-2, mixture-of-storage, and 66x smaller storage footprint for agent memory [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xeu0ht/memt10_architecture_breakdown_gated_deltanet2/",
+            "container": "MachineLearning",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "memt-1.0 architecture breakdown gated deltanet-2, mixture-of-storage, and 66x smaller storage footprint for agent memory [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.262
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Building",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Building",
+        "seed_score": 16.5,
+        "summary": "Building an agent that writes and sends sales outreach. The model was the easy part; here\u2019s what actually took the time.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "Building an agent that writes and sends sales outreach. The model was the easy part; here\u2019s what actually took the time.",
+            "body": "Building an agent that writes and sends sales outreach. The model was the easy part; here\u2019s what actually took the time.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xf7bb0/building_an_agent_that_writes_and_sends_sales/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Building an agent that writes and sends sales outreach. The model was the easy part; here\u2019s what actually took the time.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.261
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "agent for people who will never",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "agent for people who will never",
+        "seed_score": 15.0,
+        "summary": "I built an agent for people who will never open a terminal. What would you cut or add?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "I built an agent for people who will never open a terminal. What would you cut or add?",
+            "body": "I built an agent for people who will never open a terminal. What would you cut or add?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xf7h5g/i_built_an_agent_for_people_who_will_never_open_a/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built an agent for people who will never open a terminal. What would you cut or add?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.259
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 15.0,
+        "summary": "Has working with AI agents changed your mind about where the opportunities are?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Has working with AI agents changed your mind about where the opportunities are?",
+            "body": "Has working with AI agents changed your mind about where the opportunities are?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xf6p6k/has_working_with_ai_agents_changed_your_mind/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Has working with AI agents changed your mind about where the opportunities are?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41500000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

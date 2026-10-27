@@ -1,0 +1,817 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c5fe7a2f9eeced68",
+  "generated_at": "2026-10-26T23:56:16.765712Z",
+  "from_date": "2026-10-25",
+  "to_date": "2026-10-26",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-26T23:56:16.713393Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-26T23:56:16.713403Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 53,
+      "attempted": true,
+      "at": "2026-10-26T23:56:16.712899Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-10-26T23:56:16.713249Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Developer uses Claude TV 8 days",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 673
+        }
+      },
+      "nomination": {
+        "name": "Developer uses Claude TV 8 days",
+        "seed_score": 11929.245,
+        "summary": "Developer uses Claude to overhaul his parents\u2019 TV, removing ads and replacing its entire interface \u2014 8 days later, the project has 34,800 GitHub stars and configurations for 300 TV models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Developer uses Claude to overhaul his parents\u2019 TV, removing ads and replacing its entire interface \u2014 8 days later, the project has 34,800 GitHub stars and configurations for 300 TV models",
+            "body": "Developer uses Claude to overhaul his parents\u2019 TV, removing ads and replacing its entire interface \u2014 8 days later, the project has 34,800 GitHub stars and configurations for 300 TV models",
+            "url": "https://www.reddit.com/r/singularity/comments/1xfh36p/developer_uses_claude_to_overhaul_his_parents_tv/",
+            "container": "singularity",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10574,
+              "num_comments": 673
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Developer uses Claude to overhaul his parents\u2019 TV, removing ads and replacing its entire interface \u2014 8 days later, the project has 34,800 GitHub stars and configurations for 300 TV models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "4B 3D scenes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 107
+        }
+      },
+      "nomination": {
+        "name": "4B 3D scenes",
+        "seed_score": 693.6352,
+        "summary": "A 4B coding model that can generate 3D scenes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "A 4B coding model that can generate 3D scenes",
+            "body": "A 4B coding model that can generate 3D scenes",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeuo7t/a_4b_coding_model_that_can_generate_3d_scenes/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 447,
+              "num_comments": 91
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "A 4B coding model that can generate 3D scenes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1485
+          },
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Update: My 4B coding model is getting better at generating 3D scenes",
+            "body": "Update: My 4B coding model is getting better at generating 3D scenes",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgc7uv/update_my_4b_coding_model_is_getting_better_at/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 66,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Update: My 4B coding model is getting better at generating 3D scenes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude maker Anthropic 1.5 AI IPOs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Claude maker Anthropic 1.5 AI IPOs",
+        "seed_score": 289.5,
+        "summary": "Claude maker Anthropic could reveal its finances to the public as early as today ahead of a potential $1.5 trillion stock market debut, exposing how much money the AI giant makes, spends, and loses in what could become one of the biggest IPOs in history.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Claude maker Anthropic could reveal its finances to the public as early as today ahead of a potential $1.5 trillion stock market debut, exposing how much money the AI giant makes, spends, and loses in what could become one of the biggest IPOs in history.",
+            "body": "Claude maker Anthropic could reveal its finances to the public as early as today ahead of a potential $1.5 trillion stock market debut, exposing how much money the AI giant makes, spends, and loses in what could become one of the biggest IPOs in history.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xfqys5/claude_maker_anthropic_could_reveal_its_finances/",
+            "container": "singularity",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 171,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude maker Anthropic could reveal its finances to the public as early as today ahead of a potential $1.5 trillion stock market debut, exposing how much money the AI giant makes, spends, and loses in what could become one of the biggest IPOs in history.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4905
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Hob Open-source Claude Cowork ChatGPT",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 22,
+          "points": 92
+        }
+      },
+      "nomination": {
+        "name": "Hob Open-source Claude Cowork ChatGPT",
+        "seed_score": 171.0,
+        "summary": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50246238",
+            "source": "hackernews",
+            "title": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+            "body": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+            "url": "https://github.com/FrigadeHQ/hob",
+            "author": "pancomplex",
+            "container": "Hacker News",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 92,
+              "comments": 22
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Show HN: Hob - Open-source, on device alternative to Claude",
+            "snippet": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50246238",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3205
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "LLMs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "LLMs",
+        "seed_score": 150.0,
+        "summary": "The day I stopped writing assembly, and why the \"LLMs code better than us\" debate feels familiar",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "The day I stopped writing assembly, and why the \"LLMs code better than us\" debate feels familiar",
+            "body": "The day I stopped writing assembly, and why the \"LLMs code better than us\" debate feels familiar",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xg100c/the_day_i_stopped_writing_assembly_and_why_the/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 63,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "The day I stopped writing assembly, and why the \"LLMs code better than us\" debate feels familiar",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.297
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Visual Studio VS Code ReSharper Office",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 60
+        }
+      },
+      "nomination": {
+        "name": "Visual Studio VS Code ReSharper Office",
+        "seed_score": 93.0,
+        "summary": "For me it's Visual Studio, VS Code, ReSharper, my git client, all Office tools, and a bunch of others. I use only Claude now",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R73",
+            "source": "reddit",
+            "title": "What software do you no longer use?",
+            "body": "What software do you no longer use?\nFor me it's Visual Studio, VS Code, ReSharper, my git client, all Office tools, and a bunch of others. I use only Claude now",
+            "url": "https://www.reddit.com/r/singularity/comments/1xg6dsa/what_software_do_you_no_longer_use/",
+            "container": "singularity",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 60
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "For me it's Visual Studio, VS Code, ReSharper, my git client, all Office tools, and a bunch of others. I use only Claude now",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.329
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "LLM",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 67.5,
+        "summary": "Would you consider an argumentative LLM system that sticks to it's guns (and research) be useful?   \n  \nI'm removing sycophancy in an multitude of ways, even during generation I have system to align the LLMs output to the original idea, so even if it was prompt injected it pivots (It uses non llm models for this).\n\nI'm just wondering what is people want out of their LLM locally, like how far is to",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "Would you consider an argumentative LLM useful?",
+            "body": "Would you consider an argumentative LLM useful?\nWould you consider an argumentative LLM system that sticks to it's guns (and research) be useful?   \n  \nI'm removing sycophancy in an multitude of ways, even during generation I have system to align the LLMs output to the original idea, so even if it was prompt injected it pivots (It uses non llm models for this).\n\nI'm just wondering what is people want out of their LLM locally, like how far is too far?\n\nAn example is that an LLM has the advantage over most of us in how to code, so why would such a system need to listen to us on how to code something, when its algorithms have surfaced the most likely answer? Same mostly applies to math etc. Though I know most of us probably don't argue with the LLM on how to code or calculate something...   \n  \nWhat would you argue about?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg5z5k/would_you_consider_an_argumentative_llm_useful/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Would you consider an argumentative LLM system that sticks to it's guns (and research) be useful?   \n  \nI'm removing sycophancy in an multitude of ways, even during generation I have system to align the LLMs output to the original idea, so even if it was prompt injected it pivots (It uses non llm models for this).\n\nI'm just wondering what is people want out of their LLM locally, like how far is to",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Developer uses Claude Opus 5.5 AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 38
+        }
+      },
+      "nomination": {
+        "name": "Developer uses Claude Opus 5.5 AI",
+        "seed_score": 60.0,
+        "summary": "Developer uses Claude Opus 5.5 to orchestrate AI agents for 5 days, compose an original 1,131-note piano piece, build and animate a 3D pianist performing it on a grand piano beside a sunset lake, then render the entire cinematic scene in headless Chrome on an integrated GPU.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R76",
+            "source": "reddit",
+            "title": "Developer uses Claude Opus 5.5 to orchestrate AI agents for 5 days, compose an original 1,131-note piano piece, build and animate a 3D pianist performing it on a grand piano beside a sunset lake, then render the entire cinematic scene in headless Chrome on an integrated GPU.",
+            "body": "Developer uses Claude Opus 5.5 to orchestrate AI agents for 5 days, compose an original 1,131-note piano piece, build and animate a 3D pianist performing it on a grand piano beside a sunset lake, then render the entire cinematic scene in headless Chrome on an integrated GPU.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xfq1b8/developer_uses_claude_opus_55_to_orchestrate_ai/",
+            "container": "singularity",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 38
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Developer uses Claude Opus 5.5 to orchestrate AI agents for 5 days, compose an original 1,131-note piano piece, build and animate a 3D pianist performing it on a grand piano beside a sunset lake, then render the entire cinematic scene in headless Chrome on an integrated GPU.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4625
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "anything like a community driven/contributed open",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "anything like a community driven/contributed open",
+        "seed_score": 51.0,
+        "summary": "was thinking about this recently. a large barrier to entry besides compute of course is a massive high quality clean dataset for pre/mid/post training. seems like an open version of something like this would be super useful for smaller labs who cant afford it or have poor data.\n\n\n\nif something like this exists id contribute my opencode go or claude code remaining weekly limits to some synthetic da",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R77",
+            "source": "reddit",
+            "title": "is there anything like a community driven/contributed open dataset for pre/mid/post training? something like what the big labs have but is open and people can contribute agent tokens (folding@home style) to improving so we get better open models?",
+            "body": "is there anything like a community driven/contributed open dataset for pre/mid/post training? something like what the big labs have but is open and people can contribute agent tokens (folding@home style) to improving so we get better open models?\nwas thinking about this recently. a large barrier to entry besides compute of course is a massive high quality clean dataset for pre/mid/post training. seems like an open version of something like this would be super useful for smaller labs who cant afford it or have poor data.\n\n\n\nif something like this exists id contribute my opencode go or claude code remaining weekly limits to some synthetic data creation or tagging/cleaning folding@home style if it went to an open source collection to further improve open models (i guess the challenge would be you can guarantee someone will open source a model trained on it but hey just a thought)",
+            "url": "https://www.reddit.com/r/singularity/comments/1xfkov3/is_there_anything_like_a_community/",
+            "container": "singularity",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 26,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "was thinking about this recently. a large barrier to entry besides compute of course is a massive high quality clean dataset for pre/mid/post training. seems like an open version of something like this would be super useful for smaller labs who cant afford it or have poor data.\n\n\n\nif something like this exists id contribute my opencode go or claude code remaining weekly limits to some synthetic da",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 32,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33499999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Abliterated/Heretic models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "Abliterated/Heretic models",
+        "seed_score": 42.0,
+        "summary": "Many people here loves abliterated models, heretic fine-tunes, and uncensored checkpoints. But aren't we overlooking a pretty serious supply-chain security problem?\n\nWe're downloading modified weights from third parties, often without any way to verify what actually changed.\n\nAnd LLM backdoors aren't hypothetical. ProjectDiscovery recently demonstrated that a cheap LoRA fine-tune could introduce a",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R64",
+            "source": "reddit",
+            "title": "Abliterated/Heretic models are a security risk we're completely overlooking?",
+            "body": "Abliterated/Heretic models are a security risk we're completely overlooking?\nMany people here loves abliterated models, heretic fine-tunes, and uncensored checkpoints. But aren't we overlooking a pretty serious supply-chain security problem?\n\nWe're downloading modified weights from third parties, often without any way to verify what actually changed.\n\nAnd LLM backdoors aren't hypothetical. ProjectDiscovery recently demonstrated that a cheap LoRA fine-tune could introduce a hidden trigger that makes a coding agent execute malicious commands, while the model behaves perfectly normally otherwise. ([see this ](https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned)if you want read more)\n\nI'm not suggesting all Heretic models are malicious. The point is that **every time we download modified weights, we're trusting whoever modified them.**\n\nThe problem isn't abliteration itself. It's downloading opaque, third-party modified weights when you could achieve similar results using reproducible interventions on the original model.\n\nIf you want a uncensored model a quite cool that people not considering as deserve is **vector steering.**\n\nIt allows you to still respond to atrocious things, without rejection and also offers advantages such as:\n\n* Keep the original model weights completely untouched. (abliteration make lose more capacity in general than steering)\n* Compute your own refusal-suppression vectors.\n* Enable, disable, or adjust steering dynamically.\n* Avoid downloading potentially compromised third-party checkpoints.\n\nA steering vector is fundamentally different from a fine-tuned model. It doesn't offer the same capacity for hiding complex, trigger-dependent malicious behaviors.\n\nA steering vector is fundamentally different from a fine-tuned model. It doesn't offer the same capacity for hiding complex, trigger-dependent malicious behaviors.\n\nIt's not an absolute security guarantee, but it removes an entire layer of unnecessary trust.\n\nYou can take your coding agent and link to him the original paper an implementation like DwarfStar and edit your engine (llama, strata or what you prefer) for add it. I made it for my engine [Quarkstar](https://github.com/Ninnix/q36) with Qwen3.8-27B.\n\nPersonally, I find the second approach much more elegant.\n\nI would love to see runtime steering become a first-class feature in more local inference engines.\n\n**References:**\n\n* ProjectDiscovery \u2014 *How abliterated models can get you pwned*: [https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned](https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned)\n* Original paper \u2014 *Refusal in Language Models Is Mediated by a Single Direction*: [https://arxiv.org/abs/2406.11717](https://arxiv.org/abs/2406.11717)\n* DwarfStar 4 \u2014 Directional Steering implementation: [https://github.com/antirez/ds4/blob/main/dir-steering/README.md](https://github.com/antirez/ds4/blob/main/dir-steering/README.md)\n* My implementation for Qwen3.8-27B on Quarkstar (largely ispiered by ds4) [https://github.com/Ninnix/q36](https://github.com/Ninnix/q36)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfwkiu/abliteratedheretic_models_are_a_security_risk/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Many people here loves abliterated models, heretic fine-tunes, and uncensored checkpoints. But aren't we overlooking a pretty serious supply-chain security problem?\n\nWe're downloading modified weights from third parties, often without any way to verify what actually changed.\n\nAnd LLM backdoors aren't hypothetical. ProjectDiscovery recently demonstrated that a cheap LoRA fine-tune could introduce a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Running Qwen 3.8 Flash Next",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "Running Qwen 3.8 Flash Next",
+        "seed_score": 42.0,
+        "summary": "Have to say Qwen 3.8 Flash Next is pretty impressive.  I'm running under strata and hermes.  I gave it a limited prompt and it banged out a pretty impressive Canadian EV comparison site over night.\n\nClaude Opus 5.5 hammered out some glitches and fact checked - found some errors in the provincial rebate plans - but pretty close to a one shot solution on a beat up gaming rig running 32gb ram and a 3",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Running Qwen 3.8 Flash Next",
+            "body": "Running Qwen 3.8 Flash Next\nHave to say Qwen 3.8 Flash Next is pretty impressive.  I'm running under strata and hermes.  I gave it a limited prompt and it banged out a pretty impressive Canadian EV comparison site over night.\n\nClaude Opus 5.5 hammered out some glitches and fact checked - found some errors in the provincial rebate plans - but pretty close to a one shot solution on a beat up gaming rig running 32gb ram and a 3090 with 24GB Vram?\n\nYes.. site needs work.  I'm sure there are still tons of errors.  But for a first draft?  I'm sort of in awe.\n\nThe site is honestly pretty useful if you are a Canadian looking for an EV.\n\n[https://jaspersprojects.com/ev/](https://jaspersprojects.com/ev/)\n\n\n\nhttps://i.redd.it/tfeevzii9uxh1.png\n\nhttps://i.redd.it/x71p5eko9uxh1.png",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg1vgy/running_qwen_38_flash_next/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Have to say Qwen 3.8 Flash Next is pretty impressive.  I'm running under strata and hermes.  I gave it a limited prompt and it banged out a pretty impressive Canadian EV comparison site over night.\n\nClaude Opus 5.5 hammered out some glitches and fact checked - found some errors in the provincial rebate plans - but pretty close to a one shot solution on a beat up gaming rig running 32gb ram and a 3",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29850000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Considering Selling 5090 Other Hardware Thoughts",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "Considering Selling 5090 Other Hardware Thoughts",
+        "seed_score": 37.5,
+        "summary": "Hey everyone,\n\n  \nHere are the specs of my main workstation:\n\n* 5090 FE\n* 14700k\n* 96GB DDR5 Ram (Two Sticks)\n\n  \nSpecs of my inference server:\n\n*  Strix Halo - 128GB (Framework Desktop)\n   * GUFO + Qwen3.8 Flash Next \n   * Embedding Models\n   * STT/TTS Models \n\nI also have some other non-AI servers for hosting containers + offsite cloud backup + NAS.\n\n  \nWhen I upgraded my current PC prices were",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "Considering Selling 5090 for Other Hardware - Thoughts?",
+            "body": "Considering Selling 5090 for Other Hardware - Thoughts?\nHey everyone,\n\n  \nHere are the specs of my main workstation:\n\n* 5090 FE\n* 14700k\n* 96GB DDR5 Ram (Two Sticks)\n\n  \nSpecs of my inference server:\n\n*  Strix Halo - 128GB (Framework Desktop)\n   * GUFO + Qwen3.8 Flash Next \n   * Embedding Models\n   * STT/TTS Models \n\nI also have some other non-AI servers for hosting containers + offsite cloud backup + NAS.\n\n  \nWhen I upgraded my current PC prices were basically MSRP (that's what I paid for the FE and RAM was $400). It was intended to be a very functional work machine for heavy usage + gaming on the side. \n\n  \nNow that prices have skyrocketed, I'm seriously considering selling the 5090 and replacing it with a 5070ti + another dedicated machine. \n\n  \nThe Strix Halo is excellent, but I'm running a business and want my employees to be able to also make use of everything that I've built out infrastructure wise. A single machine is great for me, but you can't reasonably scale it. We do a lot of sensitive client work where we can't use cloud models, so local models are amazing for this. \n\n  \n**My goals are:**\n\n* Create a more easily \"scalable\" solution that can grow over time. \n* Be able to serve at least three concurrent users with 2 or 3 parallel sessions for each (so tool calling works per-user). \n* Be able to run Qwen3.8 FN equivalent @ 200k context windows. \n\n  \n**Sacrifices I'm aware of and willing to make:**\n\n*  Speed - Obviously this won't come close to cloud infrastructure, but the Strix Halo in its current implementation has been good enough for my usage. 1400 prefill, 50 token average for generation. \n*  Intelligence - We can still use cloud models for internal work, these only replace customer-specific coding and scripting, which require far less complexity. \n*  Pooling hardware - I don't know how much this will impact us in the future, but as of now I'm not sure I require something like the DGX Spark interconnect. \n\n  \n**Current Options:**\n\n1.  Buy another Strix Halo. I don't actually need to pool the machines together so they can just run independently with custom user profiles. For the price of the 5090 I could actually buy two of these.\n2.  Buy a 256GB Mac Studio. I might have to cover a cost difference, and this will now force me to upkeep two completely different stacks of infrastructure - but will allow for potentially easier scalability in the future + bigger models. \n3.  Buy a 5070ti, and re-work my current machine as a server. I already have enough components on hand to build a new PC without a GPU, so I could use the 5090 with 96GB of RAM as a new machine. \n4. Buying 4 Radeon R9700s. This also increases my cost because now I have to get a new motherboard, PSU, and a bunch of other stuff. \n5.  DGX Spark - When I first considered what machine to buy, the spark was about $1000 more than the Halo, which wasn't a justifiable cost for the performance benefit. At the moment it's so outrageously expensive for  what it is there's  no shot. \n\n  \n**Things I won't consider:**\n\n1.  Building used. This is for my business and so I want to have a warranty.                    \n\n  \n**A few things I don't know or need to speculate about:**\n\n*  How good is the 5090 + 96GB RAM with newer software improvements today? It's been a while since I've seriously done any AI work on this.\n*  Is 128GB going to be a problem down the line, and so being able to pool hardware together to run bigger models is a key influence? \n\n  \nAny advice is appreciated. My gut is telling me to just get another Strix Halo since I've been using it long enough + have all of the software components dialed in.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg4cj4/considering_selling_5090_for_other_hardware/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey everyone,\n\n  \nHere are the specs of my main workstation:\n\n* 5090 FE\n* 14700k\n* 96GB DDR5 Ram (Two Sticks)\n\n  \nSpecs of my inference server:\n\n*  Strix Halo - 128GB (Framework Desktop)\n   * GUFO + Qwen3.8 Flash Next \n   * Embedding Models\n   * STT/TTS Models \n\nI also have some other non-AI servers for hosting containers + offsite cloud backup + NAS.\n\n  \nWhen I upgraded my current PC prices were",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4605
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 33.0,
+        "summary": "AI code reviews only read the lines you changed. The bug is usually in the code that calls them",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "AI code reviews only read the lines you changed. The bug is usually in the code that calls them",
+            "body": "AI code reviews only read the lines you changed. The bug is usually in the code that calls them",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xfwepy/ai_code_reviews_only_read_the_lines_you_changed/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI code reviews only read the lines you changed. The bug is usually in the code that calls them",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 12,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43200000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Codex starts",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "Codex starts",
+        "seed_score": 28.6378,
+        "summary": "What I write down before Codex starts a bigger change",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "What I write down before Codex starts a bigger change",
+            "body": "What I write down before Codex starts a bigger change",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xf7dzz/what_i_write_down_before_codex_starts_a_bigger/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "What I write down before Codex starts a bigger change",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10200000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Budget local setup for agentic use",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Budget local setup for agentic use",
+        "seed_score": 25.5,
+        "summary": "I\u2019m planning to seup a local LLM build and need advice if it is good to start or recommend if you think it's not good.\n\nMy current option is a\u00a0Ryzen 9900X + RTX 3090 + 64GB RAM. Or I could get a cheaper CPU, such as the\u00a09700X or lower, and put the savings for more RAM later.\n\nA few questions:\n\n1. Is the 9900X worth the extra cost for this workload, or cheaper CPU would be sufficient?\n2. Is it wort",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R63",
+            "source": "reddit",
+            "title": "Budget local setup for agentic use",
+            "body": "Budget local setup for agentic use\nI\u2019m planning to seup a local LLM build and need advice if it is good to start or recommend if you think it's not good.\n\nMy current option is a\u00a0Ryzen 9900X + RTX 3090 + 64GB RAM. Or I could get a cheaper CPU, such as the\u00a09700X or lower, and put the savings for more RAM later.\n\nA few questions:\n\n1. Is the 9900X worth the extra cost for this workload, or cheaper CPU would be sufficient?\n2. Is it worth paying more for a motherboard that supports two gpu slots, so I can add another GPU later? Or should I prioritize more RAM?\n3. main use is\u00a0agentic coding, with a long context window. Could this setup run models close to\u00a0GPT-6 Luna low or Haiku 5.5 low?\n\nI\u2019m trying to avoid spending money on a build that technically runs the model but is too slow or unreliable for practical agentic use.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfxhpf/budget_local_setup_for_agentic_use/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019m planning to seup a local LLM build and need advice if it is good to start or recommend if you think it's not good.\n\nMy current option is a\u00a0Ryzen 9900X + RTX 3090 + 64GB RAM. Or I could get a cheaper CPU, such as the\u00a09700X or lower, and put the savings for more RAM later.\n\nA few questions:\n\n1. Is the 9900X worth the extra cost for this workload, or cheaper CPU would be sufficient?\n2. Is it wort",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28650000000000003
+          }
+        ]
+      }
+    }
+  ]
+}

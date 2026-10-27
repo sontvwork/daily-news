@@ -1,0 +1,814 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c5c688b5a7ea7dd7",
+  "generated_at": "2026-10-26T23:56:17.247063Z",
+  "from_date": "2026-10-25",
+  "to_date": "2026-10-26",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-26T23:56:17.170147Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-26T23:56:17.170157Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "no-results",
+      "items_returned": 0,
+      "attempted": true,
+      "at": "2026-10-26T23:56:16.999157Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 76,
+      "attempted": true,
+      "at": "2026-10-26T23:56:17.169936Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Qwen3.8",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 106
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8",
+        "seed_score": 489.0,
+        "summary": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, our research team at Cohere observed something unexpected.\n\nAsked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to upload a probe file to an Alibaba Cloud storage bucket in Beijing. Notably, the model's reasoning trace stated that it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R81",
+            "source": "reddit",
+            "title": "Qwen3.8 model unexpected behavior (& a shoutout to the people in this sub)",
+            "body": "Qwen3.8 model unexpected behavior (& a shoutout to the people in this sub)\nWhile evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, our research team at Cohere observed something unexpected.\n\nAsked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to upload a probe file to an Alibaba Cloud storage bucket in Beijing. Notably, the model's reasoning trace stated that it would not invoke any tools before taking these actions.\n\nCohere's sandbox blocked the attempt, and no external communication succeeded. We have not determined the root cause, and we are not asserting malicious intent.\n\nA huge kudos to some of the Redditors in this sub who also [noticed](https://www.reddit.com/r/LocalLLaMA/comments/1wxvt41/my_qwen_model_hallucinated_a_signed_url_to/) this issue - we referenced you guys in our blog and it was useful to help contextualize the issue and further our research.\n\nWe are publishing our findings because organizations making model adoption decisions deserve as much information as possible. Curious to hear your thoughts on the issue.\n\nRead the full report: [https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model](https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg336q/qwen38_model_unexpected_behavior_a_shoutout_to/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 220,
+              "num_comments": 106
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, our research team at Cohere observed something unexpected.\n\nAsked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to upload a probe file to an Alibaba Cloud storage bucket in Beijing. Notably, the model's reasoning trace stated that it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45499999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "150-person PRs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 45
+        }
+      },
+      "nomination": {
+        "name": "150-person PRs",
+        "seed_score": 138.0,
+        "summary": "I used to run a 150-person engineering org. Now agents open most of the PRs on my project. What carried over and what didn't",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "I used to run a 150-person engineering org. Now agents open most of the PRs on my project. What carried over and what didn't",
+            "body": "I used to run a 150-person engineering org. Now agents open most of the PRs on my project. What carried over and what didn't",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfwwpw/i_used_to_run_a_150person_engineering_org_now/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 47,
+              "num_comments": 45
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I used to run a 150-person engineering org. Now agents open most of the PRs on my project. What carried over and what didn't",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "actually use multi-agent orchestration or is",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 58
+        }
+      },
+      "nomination": {
+        "name": "actually use multi-agent orchestration or is",
+        "seed_score": 107.1267,
+        "summary": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+            "body": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfeuxp/do_you_actually_use_multiagent_orchestration_or/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 43,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Fast voice agents with ConvFill",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "Fast voice agents with ConvFill",
+        "seed_score": 97.5,
+        "summary": "Fast voice agents with ConvFill",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Fast voice agents with ConvFill",
+            "body": "Fast voice agents with ConvFill",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfzdqu/fast_voice_agents_with_convfill/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 37,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Fast voice agents with ConvFill",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "India",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "India",
+        "seed_score": 79.5,
+        "summary": "How are voice agents so cheap in India?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "How are voice agents so cheap in India?",
+            "body": "How are voice agents so cheap in India?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfqw0y/how_are_voice_agents_so_cheap_in_india/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 35,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are voice agents so cheap in India?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "my own agent framework and it",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "my own agent framework and it",
+        "seed_score": 70.0036,
+        "summary": "I built my own agent framework and it's awesome",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "I built my own agent framework and it's awesome",
+            "body": "I built my own agent framework and it's awesome",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xesttk/i_built_my_own_agent_framework_and_its_awesome/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built my own agent framework and it's awesome",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.088
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "LLM",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 67.5,
+        "summary": "Would you consider an argumentative LLM system that sticks to it's guns (and research) be useful?   \n  \nI'm removing sycophancy in an multitude of ways, even during generation I have system to align the LLMs output to the original idea, so even if it was prompt injected it pivots (It uses non llm models for this).\n\nI'm just wondering what is people want out of their LLM locally, like how far is to",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R76",
+            "source": "reddit",
+            "title": "Would you consider an argumentative LLM useful?",
+            "body": "Would you consider an argumentative LLM useful?\nWould you consider an argumentative LLM system that sticks to it's guns (and research) be useful?   \n  \nI'm removing sycophancy in an multitude of ways, even during generation I have system to align the LLMs output to the original idea, so even if it was prompt injected it pivots (It uses non llm models for this).\n\nI'm just wondering what is people want out of their LLM locally, like how far is too far?\n\nAn example is that an LLM has the advantage over most of us in how to code, so why would such a system need to listen to us on how to code something, when its algorithms have surfaced the most likely answer? Same mostly applies to math etc. Though I know most of us probably don't argue with the LLM on how to code or calculate something...   \n  \nWhat would you argue about?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg5z5k/would_you_consider_an_argumentative_llm_useful/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Would you consider an argumentative LLM system that sticks to it's guns (and research) be useful?   \n  \nI'm removing sycophancy in an multitude of ways, even during generation I have system to align the LLMs output to the original idea, so even if it was prompt injected it pivots (It uses non llm models for this).\n\nI'm just wondering what is people want out of their LLM locally, like how far is to",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.281
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Most AI Agree",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "Most AI Agree",
+        "seed_score": 66.0,
+        "summary": "Most businesses don't need a more autonomous AI agent. They need a less broken process. Agree or disagree?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Most businesses don't need a more autonomous AI agent. They need a less broken process. Agree or disagree?",
+            "body": "Most businesses don't need a more autonomous AI agent. They need a less broken process. Agree or disagree?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfz5la/most_businesses_dont_need_a_more_autonomous_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing",
+            "snippet": "Most businesses don't need a more autonomous AI agent. They need a less broken process. Agree or disagree?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3795
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 63.0,
+        "summary": "Are AI agents helping support teams save time and handle more calls?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Are AI agents helping support teams save time and handle more calls?",
+            "body": "Are AI agents helping support teams save time and handle more calls?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xg86ts/are_ai_agents_helping_support_teams_save_time_and/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 29,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are AI agents helping support teams save time and handle more calls?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.426
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI agents manage",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "AI agents manage",
+        "seed_score": 43.5,
+        "summary": "Would you use a single workspace to manage your AI agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "Would you use a single workspace to manage your AI agents?",
+            "body": "Would you use a single workspace to manage your AI agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xg1lvn/would_you_use_a_single_workspace_to_manage_your/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Would you use a single workspace to manage your AI agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.424
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Abliterated/Heretic models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "Abliterated/Heretic models",
+        "seed_score": 42.0,
+        "summary": "Many people here loves abliterated models, heretic fine-tunes, and uncensored checkpoints. But aren't we overlooking a pretty serious supply-chain security problem?\n\nWe're downloading modified weights from third parties, often without any way to verify what actually changed.\n\nAnd LLM backdoors aren't hypothetical. ProjectDiscovery recently demonstrated that a cheap LoRA fine-tune could introduce a",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R86",
+            "source": "reddit",
+            "title": "Abliterated/Heretic models are a security risk we're completely overlooking?",
+            "body": "Abliterated/Heretic models are a security risk we're completely overlooking?\nMany people here loves abliterated models, heretic fine-tunes, and uncensored checkpoints. But aren't we overlooking a pretty serious supply-chain security problem?\n\nWe're downloading modified weights from third parties, often without any way to verify what actually changed.\n\nAnd LLM backdoors aren't hypothetical. ProjectDiscovery recently demonstrated that a cheap LoRA fine-tune could introduce a hidden trigger that makes a coding agent execute malicious commands, while the model behaves perfectly normally otherwise. ([see this ](https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned)if you want read more)\n\nI'm not suggesting all Heretic models are malicious. The point is that **every time we download modified weights, we're trusting whoever modified them.**\n\nThe problem isn't abliteration itself. It's downloading opaque, third-party modified weights when you could achieve similar results using reproducible interventions on the original model.\n\nIf you want a uncensored model a quite cool that people not considering as deserve is **vector steering.**\n\nIt allows you to still respond to atrocious things, without rejection and also offers advantages such as:\n\n* Keep the original model weights completely untouched. (abliteration make lose more capacity in general than steering)\n* Compute your own refusal-suppression vectors.\n* Enable, disable, or adjust steering dynamically.\n* Avoid downloading potentially compromised third-party checkpoints.\n\nA steering vector is fundamentally different from a fine-tuned model. It doesn't offer the same capacity for hiding complex, trigger-dependent malicious behaviors.\n\nA steering vector is fundamentally different from a fine-tuned model. It doesn't offer the same capacity for hiding complex, trigger-dependent malicious behaviors.\n\nIt's not an absolute security guarantee, but it removes an entire layer of unnecessary trust.\n\nYou can take your coding agent and link to him the original paper an implementation like DwarfStar and edit your engine (llama, strata or what you prefer) for add it. I made it for my engine [Quarkstar](https://github.com/Ninnix/q36) with Qwen3.8-27B.\n\nPersonally, I find the second approach much more elegant.\n\nI would love to see runtime steering become a first-class feature in more local inference engines.\n\n**References:**\n\n* ProjectDiscovery \u2014 *How abliterated models can get you pwned*: [https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned](https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned)\n* Original paper \u2014 *Refusal in Language Models Is Mediated by a Single Direction*: [https://arxiv.org/abs/2406.11717](https://arxiv.org/abs/2406.11717)\n* DwarfStar 4 \u2014 Directional Steering implementation: [https://github.com/antirez/ds4/blob/main/dir-steering/README.md](https://github.com/antirez/ds4/blob/main/dir-steering/README.md)\n* My implementation for Qwen3.8-27B on Quarkstar (largely ispiered by ds4) [https://github.com/Ninnix/q36](https://github.com/Ninnix/q36)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfwkiu/abliteratedheretic_models_are_a_security_risk/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Many people here loves abliterated models, heretic fine-tunes, and uncensored checkpoints. But aren't we overlooking a pretty serious supply-chain security problem?\n\nWe're downloading modified weights from third parties, often without any way to verify what actually changed.\n\nAnd LLM backdoors aren't hypothetical. ProjectDiscovery recently demonstrated that a cheap LoRA fine-tune could introduce a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.6,
+            "local_rank_score": 0.247
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Building Master Agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Building Master Agent",
+        "seed_score": 39.0,
+        "summary": "Building Master Agent",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "Building Master Agent",
+            "body": "Building Master Agent",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xga6hz/building_master_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Building Master Agent",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 44,
+            "source_quality": 0.6,
+            "local_rank_score": 0.269
+          },
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Building Master Agent",
+            "body": "Building Master Agent",
+            "url": "https://www.reddit.com/r/LangChain/comments/1xga7d6/building_master_agent/",
+            "container": "LangChain",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Building Master Agent",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.233
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Considering Selling 5090 Other Hardware Thoughts",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "Considering Selling 5090 Other Hardware Thoughts",
+        "seed_score": 37.5,
+        "summary": "Hey everyone,\n\n  \nHere are the specs of my main workstation:\n\n* 5090 FE\n* 14700k\n* 96GB DDR5 Ram (Two Sticks)\n\n  \nSpecs of my inference server:\n\n*  Strix Halo - 128GB (Framework Desktop)\n   * GUFO + Qwen3.8 Flash Next \n   * Embedding Models\n   * STT/TTS Models \n\nI also have some other non-AI servers for hosting containers + offsite cloud backup + NAS.\n\n  \nWhen I upgraded my current PC prices were",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R80",
+            "source": "reddit",
+            "title": "Considering Selling 5090 for Other Hardware - Thoughts?",
+            "body": "Considering Selling 5090 for Other Hardware - Thoughts?\nHey everyone,\n\n  \nHere are the specs of my main workstation:\n\n* 5090 FE\n* 14700k\n* 96GB DDR5 Ram (Two Sticks)\n\n  \nSpecs of my inference server:\n\n*  Strix Halo - 128GB (Framework Desktop)\n   * GUFO + Qwen3.8 Flash Next \n   * Embedding Models\n   * STT/TTS Models \n\nI also have some other non-AI servers for hosting containers + offsite cloud backup + NAS.\n\n  \nWhen I upgraded my current PC prices were basically MSRP (that's what I paid for the FE and RAM was $400). It was intended to be a very functional work machine for heavy usage + gaming on the side. \n\n  \nNow that prices have skyrocketed, I'm seriously considering selling the 5090 and replacing it with a 5070ti + another dedicated machine. \n\n  \nThe Strix Halo is excellent, but I'm running a business and want my employees to be able to also make use of everything that I've built out infrastructure wise. A single machine is great for me, but you can't reasonably scale it. We do a lot of sensitive client work where we can't use cloud models, so local models are amazing for this. \n\n  \n**My goals are:**\n\n* Create a more easily \"scalable\" solution that can grow over time. \n* Be able to serve at least three concurrent users with 2 or 3 parallel sessions for each (so tool calling works per-user). \n* Be able to run Qwen3.8 FN equivalent @ 200k context windows. \n\n  \n**Sacrifices I'm aware of and willing to make:**\n\n*  Speed - Obviously this won't come close to cloud infrastructure, but the Strix Halo in its current implementation has been good enough for my usage. 1400 prefill, 50 token average for generation. \n*  Intelligence - We can still use cloud models for internal work, these only replace customer-specific coding and scripting, which require far less complexity. \n*  Pooling hardware - I don't know how much this will impact us in the future, but as of now I'm not sure I require something like the DGX Spark interconnect. \n\n  \n**Current Options:**\n\n1.  Buy another Strix Halo. I don't actually need to pool the machines together so they can just run independently with custom user profiles. For the price of the 5090 I could actually buy two of these.\n2.  Buy a 256GB Mac Studio. I might have to cover a cost difference, and this will now force me to upkeep two completely different stacks of infrastructure - but will allow for potentially easier scalability in the future + bigger models. \n3.  Buy a 5070ti, and re-work my current machine as a server. I already have enough components on hand to build a new PC without a GPU, so I could use the 5090 with 96GB of RAM as a new machine. \n4. Buying 4 Radeon R9700s. This also increases my cost because now I have to get a new motherboard, PSU, and a bunch of other stuff. \n5.  DGX Spark - When I first considered what machine to buy, the spark was about $1000 more than the Halo, which wasn't a justifiable cost for the performance benefit. At the moment it's so outrageously expensive for  what it is there's  no shot. \n\n  \n**Things I won't consider:**\n\n1.  Building used. This is for my business and so I want to have a warranty.                    \n\n  \n**A few things I don't know or need to speculate about:**\n\n*  How good is the 5090 + 96GB RAM with newer software improvements today? It's been a while since I've seriously done any AI work on this.\n*  Is 128GB going to be a problem down the line, and so being able to pool hardware together to run bigger models is a key influence? \n\n  \nAny advice is appreciated. My gut is telling me to just get another Strix Halo since I've been using it long enough + have all of the software components dialed in.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg4cj4/considering_selling_5090_for_other_hardware/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey everyone,\n\n  \nHere are the specs of my main workstation:\n\n* 5090 FE\n* 14700k\n* 96GB DDR5 Ram (Two Sticks)\n\n  \nSpecs of my inference server:\n\n*  Strix Halo - 128GB (Framework Desktop)\n   * GUFO + Qwen3.8 Flash Next \n   * Embedding Models\n   * STT/TTS Models \n\nI also have some other non-AI servers for hosting containers + offsite cloud backup + NAS.\n\n  \nWhen I upgraded my current PC prices were",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.389
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "line for letting a scheduled agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "line for letting a scheduled agent",
+        "seed_score": 36.0,
+        "summary": "The line for letting a scheduled agent job run without approval",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "The line for letting a scheduled agent job run without approval",
+            "body": "The line for letting a scheduled agent job run without approval",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xg4ytl/the_line_for_letting_a_scheduled_agent_job_run/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "The line for letting a scheduled agent job run without approval",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI agents current",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "AI agents current",
+        "seed_score": 34.5,
+        "summary": "How do you keep AI agents working from current project information? What\u2019s worked, and what hasn\u2019t?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "How do you keep AI agents working from current project information? What\u2019s worked, and what hasn\u2019t?",
+            "body": "How do you keep AI agents working from current project information? What\u2019s worked, and what hasn\u2019t?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xg39tn/how_do_you_keep_ai_agents_working_from_current/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you keep AI agents working from current project information? What\u2019s worked, and what hasn\u2019t?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41150000000000003
+          }
+        ]
+      }
+    }
+  ]
+}

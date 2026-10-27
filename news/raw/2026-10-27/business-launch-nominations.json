@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "cf29c596dd41450c",
+  "generated_at": "2026-10-26T23:59:17.805131Z",
+  "from_date": "2026-10-25",
+  "to_date": "2026-10-26",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-26T23:59:17.804089Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-26T23:59:17.804095Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-10-26T23:59:17.803952Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-26T23:59:17.804034Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic S-1",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1399,
+          "points": 1435
+        }
+      },
+      "nomination": {
+        "name": "Anthropic S-1",
+        "seed_score": 4251.0,
+        "summary": "Anthropic S-1",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50242939",
+            "source": "hackernews",
+            "title": "Anthropic S-1",
+            "body": "Anthropic S-1",
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+            "author": "SiNTEx",
+            "container": "Hacker News",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1435,
+              "comments": 1399
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "HN story about Anthropic S-1",
+            "snippet": "Anthropic S-1",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50242939",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.47450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI Anthropic LLM 80",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 420,
+          "points": 413
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Anthropic LLM 80",
+        "seed_score": 883.5299,
+        "summary": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50236102",
+            "source": "hackernews",
+            "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+            "body": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+            "url": "https://minimaxir.com/2026/10/cheap-llms/",
+            "author": "minimaxir",
+            "container": "Hacker News",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 413,
+              "comments": 420
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about OpenAI and Anthropic cut their LLM prices by up to 80% withi",
+            "snippet": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50236102",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.09
+          }
+        ]
+      }
+    }
+  ]
+}

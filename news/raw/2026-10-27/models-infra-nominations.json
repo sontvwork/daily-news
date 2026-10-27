@@ -1,0 +1,862 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "6d49f9899764d5d0",
+  "generated_at": "2026-10-26T23:58:53.670137Z",
+  "from_date": "2026-10-25",
+  "to_date": "2026-10-26",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-26T23:58:53.603948Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-26T23:58:53.603955Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 143,
+      "attempted": true,
+      "at": "2026-10-26T23:58:53.601590Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 13,
+      "attempted": true,
+      "at": "2026-10-26T23:58:53.603749Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic S-1",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1399,
+          "points": 1435
+        }
+      },
+      "nomination": {
+        "name": "Anthropic S-1",
+        "seed_score": 4251.0,
+        "summary": "Anthropic S-1",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50242939",
+            "source": "hackernews",
+            "title": "Anthropic S-1",
+            "body": "Anthropic S-1",
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+            "author": "SiNTEx",
+            "container": "Hacker News",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1435,
+              "comments": 1399
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "HN story about Anthropic S-1",
+            "snippet": "Anthropic S-1",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50242939",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.46799999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Introducing GPT-6.1 Terra",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 293,
+          "points": 470
+        },
+        "reddit": {
+          "num_comments": 206
+        }
+      },
+      "nomination": {
+        "name": "Introducing GPT-6.1 Terra",
+        "seed_score": 2922.15,
+        "summary": "Introducing GPT-6.1 Terra",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "Introducing GPT-6.1 Terra",
+            "body": "Introducing GPT-6.1 Terra",
+            "url": "https://www.reddit.com/r/singularity/comments/1xg4hs6/introducing_gpt61_terra/",
+            "container": "singularity",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 609,
+              "num_comments": 170
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Introducing GPT-6.1 Terra",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3535
+          },
+          {
+            "item_id": "50248124",
+            "source": "hackernews",
+            "title": "GPT-6.1 Terra",
+            "body": "GPT-6.1 Terra",
+            "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+            "author": "meetpateltech",
+            "container": "Hacker News",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 470,
+              "comments": 293
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about GPT-6.1 Terra",
+            "snippet": "GPT-6.1 Terra",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50248124",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.8,
+            "local_rank_score": 0.372
+          },
+          {
+            "item_id": "R65",
+            "source": "reddit",
+            "title": "GPT-6.1 Terra Benchmarks",
+            "body": "GPT-6.1 Terra Benchmarks",
+            "url": "https://www.reddit.com/r/singularity/comments/1xg4ng6/gpt61_terra_benchmarks/",
+            "container": "singularity",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 116,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "GPT-6.1 Terra Benchmarks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33349999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Code Saturday 17 meteors",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 73
+        }
+      },
+      "nomination": {
+        "name": "Claude Code Saturday 17 meteors",
+        "seed_score": 1857.0,
+        "summary": "I built an open source sky camera that Claude Code can actually run. Saturday night it caught 17 meteors and had them sorted before I woke up.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "I built an open source sky camera that Claude Code can actually run. Saturday night it caught 17 meteors and had them sorted before I woke up.",
+            "body": "I built an open source sky camera that Claude Code can actually run. Saturday night it caught 17 meteors and had them sorted before I woke up.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xfqc9x/i_built_an_open_source_sky_camera_that_claude/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1165,
+              "num_comments": 73
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built an open source sky camera that Claude Code can actually run. Saturday night it caught 17 meteors and had them sorted before I woke up.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "15 ex-Google anti-AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 461
+        }
+      },
+      "nomination": {
+        "name": "15 ex-Google anti-AI",
+        "seed_score": 1833.0,
+        "summary": "15 years in software, ex-Google, and tired of the anti-AI rhetoric",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "15 years in software, ex-Google, and tired of the anti-AI rhetoric",
+            "body": "15 years in software, ex-Google, and tired of the anti-AI rhetoric",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xfjhgh/15_years_in_software_exgoogle_and_tired_of_the/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 761,
+              "num_comments": 461
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "15 years in software, ex-Google, and tired of the anti-AI rhetoric",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.328
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Have 8 GB VRAM 32 GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 176
+        }
+      },
+      "nomination": {
+        "name": "Have 8 GB VRAM 32 GB",
+        "seed_score": 1140.0,
+        "summary": "Have 8 GB of VRAM and 32 GB of RAM? You can run Qwen 3.8 Flash Next at up to 900 t/s PP and 30 t/s TG!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Have 8 GB of VRAM and 32 GB of RAM? You can run Qwen 3.8 Flash Next at up to 900 t/s PP and 30 t/s TG!",
+            "body": "Have 8 GB of VRAM and 32 GB of RAM? You can run Qwen 3.8 Flash Next at up to 900 t/s PP and 30 t/s TG!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xft2ae/have_8_gb_of_vram_and_32_gb_of_ram_you_can_run/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 584,
+              "num_comments": 176
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Have 8 GB of VRAM and 32 GB of RAM? You can run Qwen 3.8 Flash Next at up to 900 t/s PP and 30 t/s TG!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.321
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "IBM CEO",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 324,
+          "points": 412
+        }
+      },
+      "nomination": {
+        "name": "IBM CEO",
+        "seed_score": 1104.0,
+        "summary": "IBM CEO says open weight models are now good and cheap on-prem",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50238088",
+            "source": "hackernews",
+            "title": "IBM CEO says open weight models are now good and cheap on-prem",
+            "body": "IBM CEO says open weight models are now good and cheap on-prem",
+            "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+            "author": "Betelbuddy",
+            "container": "Hacker News",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 412,
+              "comments": 324
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "HN story about IBM CEO says open weight models are now good and cheap on-pr",
+            "snippet": "IBM CEO says open weight models are now good and cheap on-prem",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50238088",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.8,
+            "local_rank_score": 0.385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Sebastian Raschka",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 79,
+          "points": 522
+        }
+      },
+      "nomination": {
+        "name": "Sebastian Raschka",
+        "seed_score": 901.5,
+        "summary": "Sebastian Raschka's from-scratch video course on building reasoning models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50245138",
+            "source": "hackernews",
+            "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+            "body": "Sebastian Raschka's from-scratch video course on building reasoning models",
+            "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+            "author": "sgiannopoulos",
+            "container": "Hacker News",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 522,
+              "comments": 79
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Sebastian Raschka's from-scratch video course on building re",
+            "snippet": "Sebastian Raschka's from-scratch video course on building reasoning models",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50245138",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3145
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Anthropic revenue vs compute",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 181
+        }
+      },
+      "nomination": {
+        "name": "Anthropic revenue vs compute",
+        "seed_score": 898.5,
+        "summary": "Anthropic's revenue vs compute",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Anthropic's revenue vs compute",
+            "body": "Anthropic's revenue vs compute",
+            "url": "https://www.reddit.com/r/singularity/comments/1xfxwtd/anthropics_revenue_vs_compute/",
+            "container": "singularity",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 418,
+              "num_comments": 181
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic's revenue vs compute",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Claude throwing punches out here",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "Claude throwing punches out here",
+        "seed_score": 895.5,
+        "summary": "Claude throwing punches out here",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "Claude throwing punches out here",
+            "body": "Claude throwing punches out here",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xganwd/claude_throwing_punches_out_here/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 565,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude throwing punches out here",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "OpenAI Anthropic LLM 80",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 420,
+          "points": 413
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Anthropic LLM 80",
+        "seed_score": 883.5299,
+        "summary": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50236102",
+            "source": "hackernews",
+            "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+            "body": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+            "url": "https://minimaxir.com/2026/10/cheap-llms/",
+            "author": "minimaxir",
+            "container": "Hacker News",
+            "published_at": "2026-10-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 413,
+              "comments": 420
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about OpenAI and Anthropic cut their LLM prices by up to 80% withi",
+            "snippet": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50236102",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 71,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1805
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Unearthed 2010 Caltech Tom Tombrello",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 88
+        }
+      },
+      "nomination": {
+        "name": "Unearthed 2010 Caltech Tom Tombrello",
+        "seed_score": 835.5,
+        "summary": "Unearthed 2010 Caltech interview reveals how legendary physicist Tom Tombrello tried to auction off Dario Amodei, current CEO of Anthropic, to Elon Musk and Google",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R71",
+            "source": "reddit",
+            "title": "Unearthed 2010 Caltech interview reveals how legendary physicist Tom Tombrello tried to auction off Dario Amodei, current CEO of Anthropic, to Elon Musk and Google",
+            "body": "Unearthed 2010 Caltech interview reveals how legendary physicist Tom Tombrello tried to auction off Dario Amodei, current CEO of Anthropic, to Elon Musk and Google",
+            "url": "https://www.reddit.com/r/singularity/comments/1xfj0cv/unearthed_2010_caltech_interview_reveals_how/",
+            "container": "singularity",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 469,
+              "num_comments": 88
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Unearthed 2010 Caltech interview reveals how legendary physicist Tom Tombrello tried to auction off Dario Amodei, current CEO of Anthropic, to Elon Musk and Google",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Qwen Flash Next Chinese",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 109
+        }
+      },
+      "nomination": {
+        "name": "Qwen Flash Next Chinese",
+        "seed_score": 751.5,
+        "summary": "I now have definitive proofs that my Qwen Flash Next is trying to send something to a remote Chinese server",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "I now have definitive proofs that my Qwen Flash Next is trying to send something to a remote Chinese server",
+            "body": "I now have definitive proofs that my Qwen Flash Next is trying to send something to a remote Chinese server",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg78oq/i_now_have_definitive_proofs_that_my_qwen_flash/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 392,
+              "num_comments": 109
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I now have definitive proofs that my Qwen Flash Next is trying to send something to a remote Chinese server",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.316
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 362
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 735.0,
+        "summary": "An LLM is basically just a massive and extremely sophisticated mathematical function?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R81",
+            "source": "reddit",
+            "title": "An LLM is basically just a massive and extremely sophisticated mathematical function?",
+            "body": "An LLM is basically just a massive and extremely sophisticated mathematical function?",
+            "url": "https://www.reddit.com/r/artificial/comments/1xfw15p/an_llm_is_basically_just_a_massive_and_extremely/",
+            "container": "artificial",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 128,
+              "num_comments": 362
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "An LLM is basically just a massive and extremely sophisticated mathematical function?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3205
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Anthropic Reveals Pay SpaceX 120.5B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 118
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Reveals Pay SpaceX 120.5B",
+        "seed_score": 732.0,
+        "summary": "Anthropic Reveals It Will Pay SpaceX Up to $120.5B for AI Compute",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Anthropic Reveals It Will Pay SpaceX Up to $120.5B for AI Compute",
+            "body": "Anthropic Reveals It Will Pay SpaceX Up to $120.5B for AI Compute",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xg1q97/anthropic_reveals_it_will_pay_spacex_up_to_1205b/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 370,
+              "num_comments": 118
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic Reveals It Will Pay SpaceX Up to $120.5B for AI Compute",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.316
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "CSS-Tricks has a new owner",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 84,
+          "points": 363
+        }
+      },
+      "nomination": {
+        "name": "CSS-Tricks has a new owner",
+        "seed_score": 670.5,
+        "summary": "CSS-Tricks has a new owner",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50245831",
+            "source": "hackernews",
+            "title": "CSS-Tricks has a new owner",
+            "body": "CSS-Tricks has a new owner",
+            "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+            "author": "edent",
+            "container": "Hacker News",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 363,
+              "comments": 84
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about CSS-Tricks has a new owner",
+            "snippet": "CSS-Tricks has a new owner",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50245831",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    }
+  ]
+}

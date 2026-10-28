@@ -1,0 +1,827 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "e747fd665787d2be",
+  "generated_at": "2026-10-27T23:56:31.596402Z",
+  "from_date": "2026-10-26",
+  "to_date": "2026-10-27",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-27T23:56:31.555964Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-27T23:56:31.555974Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-27T23:56:31.481006Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 48,
+      "attempted": true,
+      "at": "2026-10-27T23:56:31.555770Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Opus 5.5 Super Mario 64",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 171
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5 Super Mario 64",
+        "seed_score": 2952.0,
+        "summary": "Claude Opus 5.5 helps developer bring the entire Super Mario 64 into mixed reality, running natively in full 3D at 90 FPS, with the game world appearing right inside his room.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 helps developer bring the entire Super Mario 64 into mixed reality, running natively in full 3D at 90 FPS, with the game world appearing right inside his room.",
+            "body": "Claude Opus 5.5 helps developer bring the entire Super Mario 64 into mixed reality, running natively in full 3D at 90 FPS, with the game world appearing right inside his room.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xgw6sk/claude_opus_55_helps_developer_bring_the_entire/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1797,
+              "num_comments": 171
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 helps developer bring the entire Super Mario 64 into mixed reality, running natively in full 3D at 90 FPS, with the game world appearing right inside his room.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Internal Claude Exponential Time Hypothesis",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 161
+        }
+      },
+      "nomination": {
+        "name": "Internal Claude Exponential Time Hypothesis",
+        "seed_score": 1521.0,
+        "summary": "Internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input.",
+            "body": "Internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xgmlas/internal_claude_research_model_also_independently/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 853,
+              "num_comments": 161
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36250000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic trained Claude Stanford professors",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 242,
+          "points": 426
+        }
+      },
+      "nomination": {
+        "name": "Anthropic trained Claude Stanford professors",
+        "seed_score": 1002.0,
+        "summary": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50260814",
+            "source": "hackernews",
+            "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "body": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+            "author": "car",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 426,
+              "comments": 242
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Anthropic trained Claude on illegally obtained Stanford prof",
+            "snippet": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50260814",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.377
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "4B 3D scenes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 107
+        }
+      },
+      "nomination": {
+        "name": "4B 3D scenes",
+        "seed_score": 663.9733,
+        "summary": "Update: My 4B coding model is getting better at generating 3D scenes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Update: My 4B coding model is getting better at generating 3D scenes",
+            "body": "Update: My 4B coding model is getting better at generating 3D scenes",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgc7uv/update_my_4b_coding_model_is_getting_better_at/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 519,
+              "num_comments": 107
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Update: My 4B coding model is getting better at generating 3D scenes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Early Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 75,
+          "points": 85
+        },
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Early Claude",
+        "seed_score": 534.75,
+        "summary": "Early progress on accelerating drug development with Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50265609",
+            "source": "hackernews",
+            "title": "Early progress on accelerating drug development with Claude",
+            "body": "Early progress on accelerating drug development with Claude",
+            "url": "https://www.anthropic.com/research/early-progress-drug-development",
+            "author": "dataking",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 85,
+              "comments": 75
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Early progress on accelerating drug development with Claude",
+            "snippet": "Early progress on accelerating drug development with Claude",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50265609",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3545
+          },
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Early progress on accelerating drug development with Claude",
+            "body": "Early progress on accelerating drug development with Claude",
+            "url": "https://www.reddit.com/r/singularity/comments/1xh4yqn/early_progress_on_accelerating_drug_development/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 143,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Early progress on accelerating drug development with Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33849999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Survival LLM AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 88,
+          "points": 143
+        }
+      },
+      "nomination": {
+        "name": "Survival LLM AI",
+        "seed_score": 346.5,
+        "summary": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50264853",
+            "source": "hackernews",
+            "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+            "body": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+            "url": "https://www.brangus.io/survival-llm",
+            "author": "Luc",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 143,
+              "comments": 88
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "HN story about Survival LLM: AI assistant and emergency library that runs o",
+            "snippet": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50264853",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4655
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "LLMs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 67
+        }
+      },
+      "nomination": {
+        "name": "LLMs",
+        "seed_score": 241.8305,
+        "summary": "The day I stopped writing assembly, and why the \"LLMs code better than us\" debate feels familiar",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "The day I stopped writing assembly, and why the \"LLMs code better than us\" debate feels familiar",
+            "body": "The day I stopped writing assembly, and why the \"LLMs code better than us\" debate feels familiar",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xg100c/the_day_i_stopped_writing_assembly_and_why_the/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 161,
+              "num_comments": 67
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "The day I stopped writing assembly, and why the \"LLMs code better than us\" debate feels familiar",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.121
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "4 RTX 3090 290 CUDA",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "4 RTX 3090 290 CUDA",
+        "seed_score": 91.5,
+        "summary": "4 coding agents on one RTX 3090: ~290 tok/s total from a custom CUDA engine for Qwen3.8-27B (3-4x llama-server --parallel)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "4 coding agents on one RTX 3090: ~290 tok/s total from a custom CUDA engine for Qwen3.8-27B (3-4x llama-server --parallel)",
+            "body": "4 coding agents on one RTX 3090: ~290 tok/s total from a custom CUDA engine for Qwen3.8-27B (3-4x llama-server --parallel)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgs8hp/4_coding_agents_on_one_rtx_3090_290_toks_total/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 38,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "4 coding agents on one RTX 3090: ~290 tok/s total from a custom CUDA engine for Qwen3.8-27B (3-4x llama-server --parallel)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3195
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "OpenAI Anthropic both claim 3-SAT 2^o(n",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Anthropic both claim 3-SAT 2^o(n",
+        "seed_score": 85.5,
+        "summary": "OpenAI and Anthropic both claim 3-SAT in 2^o(n) time, refuting the Exponential Time Hypothesis \u2014 a 43-min explainer made with Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "OpenAI and Anthropic both claim 3-SAT in 2^o(n) time, refuting the Exponential Time Hypothesis \u2014 a 43-min explainer made with Claude",
+            "body": "OpenAI and Anthropic both claim 3-SAT in 2^o(n) time, refuting the Exponential Time Hypothesis \u2014 a 43-min explainer made with Claude",
+            "url": "https://www.reddit.com/r/singularity/comments/1xgwe8w/openai_and_anthropic_both_claim_3sat_in_2on_time/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 51,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "OpenAI and Anthropic both claim 3-SAT in 2^o(n) time, refuting the Exponential Time Hypothesis \u2014 a 43-min explainer made with Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 44,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3145
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "SenseNova 6.8 Code2Video",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "SenseNova 6.8 Code2Video",
+        "seed_score": 79.5,
+        "summary": "SenseNova 6.8 Code2Video: an open-sourced model that writes and revises code to make videos",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "SenseNova 6.8 Code2Video: an open-sourced model that writes and revises code to make videos",
+            "body": "SenseNova 6.8 Code2Video: an open-sourced model that writes and revises code to make videos",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgvcnu/sensenova_68_code2video_an_opensourced_model_that/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 48,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "SenseNova 6.8 Code2Video: an open-sourced model that writes and revises code to make videos",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.293
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "There Point Compilers OS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "There Point Compilers OS",
+        "seed_score": 40.5,
+        "summary": "There is No Point in Compilers, OS or Static Code Anymore.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "There is No Point in Compilers, OS or Static Code Anymore.",
+            "body": "There is No Point in Compilers, OS or Static Code Anymore.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xgoly8/there_is_no_point_in_compilers_os_or_static_code/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "There is No Point in Compilers, OS or Static Code Anymore.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28550000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 30
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 31.8198,
+        "summary": "AI code reviews only read the lines you changed. The bug is usually in the code that calls them",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "AI code reviews only read the lines you changed. The bug is usually in the code that calls them",
+            "body": "AI code reviews only read the lines you changed. The bug is usually in the code that calls them",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xfwepy/ai_code_reviews_only_read_the_lines_you_changed/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 30
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI code reviews only read the lines you changed. The bug is usually in the code that calls them",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.236
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Foundational JS HTML PDF",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Foundational JS HTML PDF",
+        "seed_score": 31.5,
+        "summary": "Every piece of software you use sits on a stack of foundational libraries: PDF parsers, image codecs, font shapers, compression, JavaScript engines, HTML renderers. Each one took a team years. That's why everyone shares the same handful, and why \"never write your own\" is the first rule engineers learn.\n\nSince last Wednesday, one person and a team of agents built 11 of those from scratch in C#, abo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "Foundational software just got cheap. A JS engine, an HTML renderer and a PDF stack went from idea to working in days, and nobody's priced this in.",
+            "body": "Foundational software just got cheap. A JS engine, an HTML renderer and a PDF stack went from idea to working in days, and nobody's priced this in.\nEvery piece of software you use sits on a stack of foundational libraries: PDF parsers, image codecs, font shapers, compression, JavaScript engines, HTML renderers. Each one took a team years. That's why everyone shares the same handful, and why \"never write your own\" is the first rule engineers learn.\n\nSince last Wednesday, one person and a team of agents built 11 of those from scratch in C#, about 1.14M lines:\n\n- a JavaScript interpreter passing 99.55% of test262, the official ECMAScript conformance suite\n- an HTML/CSS rendering engine that renders a 10,000-row table to PDF in 1.8 s and 305 MB, where headless Chrome takes 6.5 s and 2.1 GB. It went from empty repo to that in under a day.\n- an HLSL shader compiler whose output matches Microsoft's own compiler on 330/330 GPU tests\n- a PDF library, image codecs, font shaping, audio, compression, OCR with our own models, and a game engine\n\nSeven are already published on NuGet. All of them are clean-room and use nothing but .NET itself.\n\nThe interesting question isn't \"can AI write code\". It's what happens to the software ecosystem when the bottom of the stack stops being scarce:\n\n- Every language can have best-in-class foundations, not just the ones big companies happened to fund.\n- Abandoned, one-maintainer libraries that half the internet depends on can just be replaced.\n- \"We're stuck with it, it's too big to rewrite\" stops being a real constraint.\n\nHow the factory works (agent roles, how little human input it needs): https://recursiveai.org/research/alera-library-factory/\nRepos: https://github.com/orgs/recursive-ai-oss/repositories",
+            "url": "https://www.reddit.com/r/singularity/comments/1xgv9yw/foundational_software_just_got_cheap_a_js_engine/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Every piece of software you use sits on a stack of foundational libraries: PDF parsers, image codecs, font shapers, compression, JavaScript engines, HTML renderers. Each one took a team years. That's why everyone shares the same handful, and why \"never write your own\" is the first rule engineers learn.\n\nSince last Wednesday, one person and a team of agents built 11 of those from scratch in C#, abo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43400000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "Codex",
+        "seed_score": 30.0,
+        "summary": "My reviewers keep asking why and the honest answer is Codex decided",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "My reviewers keep asking why and the honest answer is Codex decided",
+            "body": "My reviewers keep asking why and the honest answer is Codex decided",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xgmmxb/my_reviewers_keep_asking_why_and_the_honest/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "My reviewers keep asking why and the honest answer is Codex decided",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Gemma 4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Gemma 4",
+        "seed_score": 30.0,
+        "summary": "So, I tried a bit using local LLM for personnal project, especially Qwen 3.5 and Gemma 4.\n\nI used them on my personnal computer, a laptop with 16Go of ram. And the result were... not good, qwen is slow as fuck and Gemma has basically no memory.\n\nThat being said, it was for coding stuff, and I heard Gemma is better at creative stuffs.\n\nSo I was thinking of using it for something else. I sometime do",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Gemma 4 for video edition, has someone tried something like that already ?",
+            "body": "Gemma 4 for video edition, has someone tried something like that already ?\nSo, I tried a bit using local LLM for personnal project, especially Qwen 3.5 and Gemma 4.\n\nI used them on my personnal computer, a laptop with 16Go of ram. And the result were... not good, qwen is slow as fuck and Gemma has basically no memory.\n\nThat being said, it was for coding stuff, and I heard Gemma is better at creative stuffs.\n\nSo I was thinking of using it for something else. I sometime do videos about stuff I like, and use DaVinci resolve for that. I was thinking using their MCP and connect it to Gemma to make video edition quicker and better.\n\nSince Gemma can read images and sound now, I was thinking it could work, but didn\u2019t tried it yet (had no time yet for it).\n\nSo here I am, asking if someone tried something like that already, and maybe help me navigate on this topic because I'm kind of a cheap nooby currently here.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgtgl7/gemma_4_for_video_edition_has_someone_tried/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "So, I tried a bit using local LLM for personnal project, especially Qwen 3.5 and Gemma 4.\n\nI used them on my personnal computer, a laptop with 16Go of ram. And the result were... not good, qwen is slow as fuck and Gemma has basically no memory.\n\nThat being said, it was for coding stuff, and I heard Gemma is better at creative stuffs.\n\nSo I was thinking of using it for something else. I sometime do",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29650000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

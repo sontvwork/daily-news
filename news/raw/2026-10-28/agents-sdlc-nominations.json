@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "da582a4e151e3d22",
+  "generated_at": "2026-10-27T23:56:31.733729Z",
+  "from_date": "2026-10-26",
+  "to_date": "2026-10-27",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-27T23:56:31.653352Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-27T23:56:31.653359Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-27T23:56:31.456779Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 86,
+      "attempted": true,
+      "at": "2026-10-27T23:56:31.653156Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Software",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 311,
+          "points": 296
+        }
+      },
+      "nomination": {
+        "name": "Software",
+        "seed_score": 910.5,
+        "summary": "Software may be getting worse, but it used to be horrible",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50257548",
+            "source": "hackernews",
+            "title": "Software may be getting worse, but it used to be horrible",
+            "body": "Software may be getting worse, but it used to be horrible",
+            "url": "https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/",
+            "author": "jakevoytko",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 296,
+              "comments": 311
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Software may be getting worse, but it used to be horrible",
+            "snippet": "Software may be getting worse, but it used to be horrible",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50257548",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Here be monsters What do you",
+      "heuristic_junk": true,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 75,
+          "points": 145
+        }
+      },
+      "nomination": {
+        "name": "Here be monsters What do you",
+        "seed_score": 330.0,
+        "summary": "Here be monsters: What do you still need to know when agents do the work?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50258868",
+            "source": "hackernews",
+            "title": "Here be monsters: What do you still need to know when agents do the work?",
+            "body": "Here be monsters: What do you still need to know when agents do the work?",
+            "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+            "author": "adrq",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 145,
+              "comments": 75
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Here be monsters: What do you still need to know when agents",
+            "snippet": "Here be monsters: What do you still need to know when agents do the work?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50258868",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.8,
+            "local_rank_score": 0.28600000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Early Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 75,
+          "points": 85
+        }
+      },
+      "nomination": {
+        "name": "Early Claude",
+        "seed_score": 240.0,
+        "summary": "Early progress on accelerating drug development with Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50265609",
+            "source": "hackernews",
+            "title": "Early progress on accelerating drug development with Claude",
+            "body": "Early progress on accelerating drug development with Claude",
+            "url": "https://www.anthropic.com/research/early-progress-drug-development",
+            "author": "dataking",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 85,
+              "comments": 75
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Early progress on accelerating drug development with Claude",
+            "snippet": "Early progress on accelerating drug development with Claude",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50265609",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "AI Agent",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 57
+        }
+      },
+      "nomination": {
+        "name": "AI Agent",
+        "seed_score": 139.5,
+        "summary": "What is something that you have successfully automated with an AI Agent?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "What is something that you have successfully automated with an AI Agent?",
+            "body": "What is something that you have successfully automated with an AI Agent?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xh0rib/what_is_something_that_you_have_successfully/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 36,
+              "num_comments": 57
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "What is something that you have successfully automated with an AI Agent?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.447
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "150-person PRs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 57
+        }
+      },
+      "nomination": {
+        "name": "150-person PRs",
+        "seed_score": 120.9153,
+        "summary": "I used to run a 150-person engineering org. Now agents open most of the PRs on my project. What carried over and what didn't",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "I used to run a 150-person engineering org. Now agents open most of the PRs on my project. What carried over and what didn't",
+            "body": "I used to run a 150-person engineering org. Now agents open most of the PRs on my project. What carried over and what didn't",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfwwpw/i_used_to_run_a_150person_engineering_org_now/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 57,
+              "num_comments": 57
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I used to run a 150-person engineering org. Now agents open most of the PRs on my project. What carried over and what didn't",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15100000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "4 RTX 3090 290 CUDA",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "4 RTX 3090 290 CUDA",
+        "seed_score": 91.5,
+        "summary": "4 coding agents on one RTX 3090: ~290 tok/s total from a custom CUDA engine for Qwen3.8-27B (3-4x llama-server --parallel)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "4 coding agents on one RTX 3090: ~290 tok/s total from a custom CUDA engine for Qwen3.8-27B (3-4x llama-server --parallel)",
+            "body": "4 coding agents on one RTX 3090: ~290 tok/s total from a custom CUDA engine for Qwen3.8-27B (3-4x llama-server --parallel)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgs8hp/4_coding_agents_on_one_rtx_3090_290_toks_total/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 38,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "4 coding agents on one RTX 3090: ~290 tok/s total from a custom CUDA engine for Qwen3.8-27B (3-4x llama-server --parallel)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "OpenAI 3 months",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "OpenAI 3 months",
+        "seed_score": 88.5,
+        "summary": "OpenAI's major results over the last 3 months came from scaling test-time compute with agent swarms. I've been building an open-source equivalent for the past year, and I'd love for you guys to try it.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "OpenAI's major results over the last 3 months came from scaling test-time compute with agent swarms. I've been building an open-source equivalent for the past year, and I'd love for you guys to try it.",
+            "body": "OpenAI's major results over the last 3 months came from scaling test-time compute with agent swarms. I've been building an open-source equivalent for the past year, and I'd love for you guys to try it.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xh4bnd/openais_major_results_over_the_last_3_months_came/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 45,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "OpenAI's major results over the last 3 months came from scaling test-time compute with agent swarms. I've been building an open-source equivalent for the past year, and I'd love for you guys to try it.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30600000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "SenseNova 6.8 Code2Video",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "SenseNova 6.8 Code2Video",
+        "seed_score": 79.5,
+        "summary": "SenseNova 6.8 Code2Video: an open-sourced model that writes and revises code to make videos",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "SenseNova 6.8 Code2Video: an open-sourced model that writes and revises code to make videos",
+            "body": "SenseNova 6.8 Code2Video: an open-sourced model that writes and revises code to make videos",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgvcnu/sensenova_68_code2video_an_opensourced_model_that/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 48,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "SenseNova 6.8 Code2Video: an open-sourced model that writes and revises code to make videos",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3165
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 34
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 76.5,
+        "summary": "What's the best desktop AI agent now?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "What's the best desktop AI agent now?",
+            "body": "What's the best desktop AI agent now?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xgkcj5/whats_the_best_desktop_ai_agent_now/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 34
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "What's the best desktop AI agent now?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.431
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "India",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "India",
+        "seed_score": 74.2462,
+        "summary": "How are voice agents so cheap in India?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "How are voice agents so cheap in India?",
+            "body": "How are voice agents so cheap in India?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfqw0y/how_are_voice_agents_so_cheap_in_india/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 42,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How are voice agents so cheap in India?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.16400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Multi-Agent Communication",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "Multi-Agent Communication",
+        "seed_score": 73.5,
+        "summary": "Multi-Agent Communication",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "Multi-Agent Communication",
+            "body": "Multi-Agent Communication",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xgr8ol/multiagent_communication/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 16,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Multi-Agent Communication",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Asana 46 2 10",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "Asana 46 2 10",
+        "seed_score": 72.0,
+        "summary": "Asana survey: 46% of people using 2+ agents estimate managing them takes 10%+ of their working time. Do you design for the human supervising them?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Asana survey: 46% of people using 2+ agents estimate managing them takes 10%+ of their working time. Do you design for the human supervising them?",
+            "body": "Asana survey: 46% of people using 2+ agents estimate managing them takes 10%+ of their working time. Do you design for the human supervising them?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xgpkg7/asana_survey_46_of_people_using_2_agents_estimate/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 24,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Asana survey: 46% of people using 2+ agents estimate managing them takes 10%+ of their working time. Do you design for the human supervising them?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3605
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 30
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 68.9429,
+        "summary": "Are AI agents helping support teams save time and handle more calls?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "Are AI agents helping support teams save time and handle more calls?",
+            "body": "Are AI agents helping support teams save time and handle more calls?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xg86ts/are_ai_agents_helping_support_teams_save_time_and/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 35,
+              "num_comments": 30
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are AI agents helping support teams save time and handle more calls?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.253
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "My nightly agent-learning job did nothing",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "My nightly agent-learning job did nothing",
+        "seed_score": 63.0,
+        "summary": "My nightly agent-learning job did nothing for a week and logged success every night",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "My nightly agent-learning job did nothing for a week and logged success every night",
+            "body": "My nightly agent-learning job did nothing for a week and logged success every night",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xguva0/my_nightly_agentlearning_job_did_nothing_for_a/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "My nightly agent-learning job did nothing for a week and logged success every night",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28700000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Most AI Agree",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Most AI Agree",
+        "seed_score": 58.3363,
+        "summary": "Most businesses don't need a more autonomous AI agent. They need a less broken process. Agree or disagree?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Most businesses don't need a more autonomous AI agent. They need a less broken process. Agree or disagree?",
+            "body": "Most businesses don't need a more autonomous AI agent. They need a less broken process. Agree or disagree?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xfz5la/most_businesses_dont_need_a_more_autonomous_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-10-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 24,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing",
+            "snippet": "Most businesses don't need a more autonomous AI agent. They need a less broken process. Agree or disagree?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2025
+          }
+        ]
+      }
+    }
+  ]
+}

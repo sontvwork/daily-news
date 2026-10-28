@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "6aef7dfccc1222e3",
+  "generated_at": "2026-10-28T00:00:05.985319Z",
+  "from_date": "2026-10-27",
+  "to_date": "2026-10-28",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-28T00:00:05.984290Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-28T00:00:05.984298Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-28T00:00:05.982067Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-28T00:00:05.984185Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic trained Claude Stanford professors",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 243,
+          "points": 428
+        }
+      },
+      "nomination": {
+        "name": "Anthropic trained Claude Stanford professors",
+        "seed_score": 711.703,
+        "summary": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50260814",
+            "source": "hackernews",
+            "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "body": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+            "author": "car",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 428,
+              "comments": 243
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic trained Claude on illegally obtained Stanford prof",
+            "snippet": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50260814",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Discord Google",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 121,
+          "points": 210
+        }
+      },
+      "nomination": {
+        "name": "Discord Google",
+        "seed_score": 351.0785,
+        "summary": "Discord will soon let anyone find public server messages through Google",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50263854",
+            "source": "hackernews",
+            "title": "Discord will soon let anyone find public server messages through Google",
+            "body": "Discord will soon let anyone find public server messages through Google",
+            "url": "https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover",
+            "author": "DeepLogin",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 210,
+              "comments": 121
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Discord will soon let anyone find public server messages thr",
+            "snippet": "Discord will soon let anyone find public server messages through Google",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50263854",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Hex Raises 100M",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 16,
+          "points": 32
+        }
+      },
+      "nomination": {
+        "name": "Hex Raises 100M",
+        "seed_score": 50.9117,
+        "summary": "Hex Raises $100M",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50265413",
+            "source": "hackernews",
+            "title": "Hex Raises $100M",
+            "body": "Hex Raises $100M",
+            "url": "https://hex.tech/blog/hex-new-era/",
+            "author": "tomwphillips",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 32,
+              "comments": 16
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Hex Raises $100M",
+            "snippet": "Hex Raises $100M",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50265413",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.09
+          }
+        ]
+      }
+    }
+  ]
+}

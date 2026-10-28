@@ -4,8 +4,10 @@
 #
 #   research.sh list                      # in "<slug>|<domain>" từ config/news.env
 #   research.sh preflight                 # kiểm tra python + permission preflight của engine
-#   research.sh nominate  <slug>          # leg 1: quét listing, ghi discover-nominations.json
-#   research.sh research  <slug>          # leg 2: đọc .cache/work/<slug>/judgments.json, research sâu
+#   research.sh nominate  <slug>…         # leg 1 (song song mọi slug truyền vào): ghi discover-nominations.json,
+#                                         #   in mỗi slug một dòng: bundle (N nomination) | nothing-solid | error
+#   research.sh resume    <DATE> <slug>…  # leg 2 + 3 (song song): research rồi finalize, in mỗi slug: ok | nothing-solid | error
+#   research.sh research  <slug>          # leg 2: đọc .cache/work/<slug>/judgments.json (judge.py split ghi), research sâu
 #   research.sh finalize  <slug> <DATE>   # leg 3: news/raw/<DATE>/<slug>.md + .json (+ <slug>-nominations.json, <slug>-judgments.json)
 #   research.sh oneshot   <slug> <DATE>   # fallback khi một leg fail 2 lần: news/raw/<DATE>/<slug>.json
 #   research.sh topic  <fu-slug> <DATE>   # follow-up: topic mode với query/days trong followups/<due>-<slug>.json
@@ -34,6 +36,7 @@ pick_python() {
 }
 PY="${LAST30DAYS_PYTHON:-$(pick_python)}"
 ENGINE=".claude/skills/last30days/scripts/last30days.py"
+SELF="$ROOT/scripts/research.sh"
 # Chạy không người trực: bỏ qua first-run wizard, không bao giờ đọc cookie trình duyệt.
 export SETUP_COMPLETE="${SETUP_COMPLETE:-true}" FROM_BROWSER=off EXCLUDE_SOURCES
 
@@ -63,11 +66,53 @@ case "$cmd" in
     "$PY" "$ENGINE" --preflight
     ;;
   nominate)
-    slug="${1:?slug}"; domain="$(domain_for "$slug")"; dir=".cache/work/$slug"
-    mkdir -p "$dir"
-    "$PY" "$ENGINE" --discover "$domain" --nominate-only --days "$LOOKBACK_DAYS" \
-      --save-dir="$dir" | tee "$dir/leg1.out"
-    [[ -f "$dir/discover-nominations.json" ]] && echo "BUNDLE: $dir/discover-nominations.json"
+    [[ $# -gt 0 ]] || die "cần ít nhất 1 slug"
+    for slug in "$@"; do domain_for "$slug" >/dev/null; done
+    pids=()
+    for slug in "$@"; do
+      dir=".cache/work/$slug"; mkdir -p "$dir"
+      # Sandbox cloud dùng lại bản clone: xoá handoff của lượt trước để không chấm/research nhầm bundle cũ.
+      rm -f "$dir/discover-nominations.json" "$dir/judgments.json"
+      "$PY" "$ENGINE" --discover "$(domain_for "$slug")" --nominate-only --days "$LOOKBACK_DAYS" \
+        --save-dir="$dir" >"$dir/leg1.out" 2>"$dir/leg1.err" &
+      pids+=("$!")
+    done
+    rc=0; i=0
+    for slug in "$@"; do
+      dir=".cache/work/$slug"
+      if ! wait "${pids[$i]}"; then
+        echo "$slug: error (exit ≠ 0, xem $dir/leg1.err)"; rc=1
+      elif [[ -f "$dir/discover-nominations.json" ]] && ! grep -q "Nothing solid this window" "$dir/leg1.out"; then
+        echo "$slug: bundle ($(jq '.nominations | length' "$dir/discover-nominations.json") nomination)"
+      else
+        echo "$slug: nothing-solid"
+      fi
+      i=$((i + 1))
+    done
+    exit "$rc"
+    ;;
+  resume)
+    need_date "${1:-}"; date="$1"; shift
+    [[ $# -gt 0 ]] || die "cần ít nhất 1 slug"
+    for slug in "$@"; do domain_for "$slug" >/dev/null; done
+    pids=()
+    for slug in "$@"; do
+      dir=".cache/work/$slug"; mkdir -p "$dir"
+      (
+        bash "$SELF" research "$slug" >"$dir/resume.log" 2>&1 || { echo "error (leg 2, xem $dir/resume.log)"; exit 1; }
+        if grep -q "Nothing solid this window" "$dir/leg2.out"; then echo "nothing-solid"; exit 0; fi
+        bash "$SELF" finalize "$slug" "$date" >>"$dir/resume.log" 2>&1 || { echo "error (finalize, xem $dir/resume.log)"; exit 1; }
+        echo "ok"
+      ) >"$dir/resume.status" &
+      pids+=("$!")
+    done
+    rc=0; i=0
+    for slug in "$@"; do
+      wait "${pids[$i]}" || rc=1
+      echo "$slug: $(cat ".cache/work/$slug/resume.status")"
+      i=$((i + 1))
+    done
+    exit "$rc"
     ;;
   research)
     slug="${1:?slug}"; domain_for "$slug" >/dev/null; dir=".cache/work/$slug"
@@ -86,7 +131,7 @@ case "$cmd" in
     if [[ -f "$dir/discover-nominations.json" ]]; then
       cp "$dir/discover-nominations.json" "$raw/$slug-nominations.json"
     fi
-    # Lưu điểm sub-agent chấm (junk, worthiness) để so với topic qua leg 2 (đo vai trò cổng lọc của leg 2).
+    # Lưu điểm agent chính chấm (junk, worthiness): judge.py candidates map topic leg 2 về nomination; eval đo cổng lọc.
     if [[ -f "$dir/judgments.json" ]]; then
       cp "$dir/judgments.json" "$raw/$slug-judgments.json"
     fi
@@ -102,7 +147,7 @@ case "$cmd" in
     file="$(python3 scripts/followup.py path "$slug" "$2")" || exit 2
     query="$(jq -r .query "$file")"; days="$(jq -r .days "$file")"
     mkdir -p "$dir" "news/raw/$2"
-    # Chạy dưới agent thì engine bắt buộc có --plan (LAW 7): sub-agent là planner. Không có plan thì
+    # Chạy dưới agent thì engine bắt buộc có --plan (LAW 7): sub-agent follow-up là planner. Không có plan thì
     # --auto-resolve để engine tự plan (planner LLM nếu env có key, không thì heuristic).
     if [[ -s "$dir/plan.json" ]]; then plan=(--plan "$dir/plan.json"); else plan=(--auto-resolve); fi
     # stdout của engine là cả JSON (vài chục KB) → chỉ ghi file, không đổ vào context của agent.

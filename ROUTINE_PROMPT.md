@@ -16,19 +16,15 @@ Bạn là routine "Daily News" chạy tự động. Repo `sontvwork/daily-news` 
 4. `python3 scripts/news.py history <DATE>`: in nguyên văn 2 bản tin gần nhất. Đọc kỹ và ghi nhớ danh sách tin đã đăng (tiêu đề, dữ kiện, link 🔗) để dùng ở Bước 2.
 5. `python3 scripts/followup.py due <DATE>`: in các **follow-up** (topic người dùng chỉ thị riêng) cần đưa vào bản tin hôm nay, đã xếp đúng thứ tự `[tin 1]`, `[tin 2]`… Mỗi follow-up có slug research `fu-<…>`, `title`, `query`, `angle`, `days`, `request`. Không có thì bản tin như ngày thường.
 
-## Bước 1 — Research bằng sub-agent `news-researcher` (tên bước khi lỗi: `research`)
-Hàng đợi slug = các slug `fu-*` của Bước 0.5 (đứng trước, theo thứ tự tin) + các slug trong `bash scripts/research.sh list` (dòng `<slug>|<domain>`).
+## Bước 1 — Research (tên bước khi lỗi: `research`)
+**1a. Domain — tự làm, KHÔNG spawn sub-agent.** Dùng skill `news-research` (`.claude/skills/news-research/SKILL.md`): leg 1 cho mọi domain trong `bash scripts/research.sh list` → tự chấm điểm MỌI nomination của mọi domain trong **một lượt**, theo khối **Tiêu chí biên tập** bên dưới và danh sách tin đã đăng ở Bước 0.4 → leg 2 + finalize → `python3 scripts/judge.py candidates <DATE>` để lấy danh sách ứng viên.
 
-Với mỗi slug, spawn sub-agent `news-researcher` (định nghĩa ở `.claude/agents/news-researcher.md`). **Mỗi lúc chỉ chạy tối đa 2 sub-agent** vì Hacker News/Reddit dễ chặn IP datacenter khi bị gọi dồn: spawn 2 cái đầu, mỗi khi một cái xong thì spawn cái kế tiếp, tới khi hết hàng đợi. Prompt cho sub-agent gồm:
-- `DATE=<giá trị cụ thể>`, `slug=<slug>`, `kind=followup` (slug `fu-*`) hoặc `kind=domain`.
-- `kind=followup`: chép nguyên khối của follow-up đó trong output Bước 0.5.
-- `kind=domain`: chép **nguyên văn** khối **Tiêu chí biên tập** bên dưới (từ dòng "**Tiêu chí biên tập:**" tới hết dòng "Loại bỏ: …"). Thiếu khối này sub-agent sẽ từ chối chạy.
+**1b. Follow-up** (nếu Bước 0.5 có, làm sau khi 1a xong): với mỗi slug `fu-*`, spawn sub-agent `news-researcher` (định nghĩa ở `.claude/agents/news-researcher.md`). **Mỗi lúc chỉ chạy tối đa 2 sub-agent** vì Hacker News/Reddit dễ chặn IP datacenter khi bị gọi dồn: spawn 2 cái đầu, mỗi khi một cái xong thì spawn cái kế tiếp. Prompt cho sub-agent gồm `DATE=<giá trị cụ thể>`, `slug=<slug>` và chép nguyên khối của follow-up đó trong output Bước 0.5.
+Sub-agent trả về báo cáo (cũng lưu ở `.cache/work/<slug>/report.md`): `outcome`, tình trạng nguồn, các ý chính kèm URL. Sub-agent lỗi hoặc không trả báo cáo → spawn lại đúng 1 lần cho slug đó; vẫn lỗi thì ghi nhận slug đó lỗi.
+Nếu môi trường không có công cụ spawn sub-agent: tự làm tuần tự từng follow-up theo đúng `.claude/agents/news-researcher.md`.
 
-Sub-agent trả về báo cáo (cũng lưu ở `.cache/work/<slug>/report.md`): `outcome`, tình trạng nguồn, danh sách tin ứng viên kèm dữ kiện và URL gốc. Sub-agent lỗi hoặc không trả báo cáo → spawn lại đúng 1 lần cho slug đó; vẫn lỗi thì ghi nhận slug đó lỗi.
-Nếu môi trường không có công cụ spawn sub-agent: tự làm tuần tự từng slug theo đúng `.claude/agents/news-researcher.md`.
-
-Sau khi xong mọi slug:
-- Nếu MỌI domain (không tính `fu-*`) đều lỗi engine, hoặc mọi nguồn trong `source_status` đều ở trạng thái lỗi (`unreachable`, `timeout`, `error`, `auth-failed`, `rate-limited`, `schema-drift`) → báo lỗi bước `research` (ghi rõ nguồn nào lỗi) rồi dừng. Không viết bài, không publish.
+Sau khi xong 1a và 1b:
+- Nếu MỌI domain (không tính `fu-*`) đều lỗi engine, hoặc mọi nguồn trong `source_status` (`research.sh status`) đều ở trạng thái lỗi (`unreachable`, `timeout`, `error`, `auth-failed`, `rate-limited`, `schema-drift`) → báo lỗi bước `research` (ghi rõ nguồn nào lỗi) rồi dừng. Không viết bài, không publish.
 - Ngược lại (kể cả khi mọi domain đều "không có tin", hoặc follow-up lỗi) → sang Bước 2.
 
 **Tiêu chí biên tập:** chỉ tin ứng dụng AI vào phát triển phần mềm, gồm ra mắt công cụ, update tính năng, khảo sát mức độ tiếp nhận, case study thực tế, xu hướng đang hot. Tập trung vào:
@@ -42,14 +38,15 @@ Sau khi xong mọi slug:
 Loại bỏ: paper/arXiv, benchmark học thuật, architecture chuyên sâu, chủ đề AI chung chung không gắn với dev tool, tin cũ hơn ~24 giờ, bài do cá nhân chia sẻ về việc chạy model local/self-host trên phần cứng cá nhân.
 
 ## Bước 2 — Viết bản tin tiếng Việt (tên bước khi lỗi: `write`)
-**Đọc sâu trước khi viết.** Từ các báo cáo, chọn sơ bộ tối đa 12 tin thường có khả năng lên bài, rồi chạy một lần (Bash timeout 180000):
-`python3 scripts/deepread.py <DATE> '<url>' '<url>' …` với `url` = dòng `hn:` trong báo cáo (không có thì dòng `url:`). Sau đó Read `news/raw/<DATE>/deep.json`. URL đọc không được thì tin đó chỉ còn dữ kiện của bundle. Cần thêm ứng viên thì chạy lại với URL mới.
+**Đọc sâu trước khi viết.** Từ danh sách ứng viên (`judge.py candidates`, Bước 1a), chọn sơ bộ tối đa 12 tin thường có khả năng lên bài, rồi chạy một lần (Bash timeout 180000):
+`python3 scripts/deepread.py <DATE> '<url>' '<url>' …` với `url` = giá trị `hn:` của ứng viên (không có thì `url:`). Sau đó Read `news/raw/<DATE>/deep.json`. URL đọc không được thì tin đó chỉ còn dữ kiện của bundle. Cần thêm ứng viên thì chạy lại với URL mới.
 
 Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện:
 - `news/raw/<DATE>/deep.json`: bài gốc (`article.text`) và comment trên thread Hacker News của chính tin đó (`comments`). Nguồn chính cho dữ kiện, và là nguồn **duy nhất** cho bình luận của tin thường.
 - Bundle `.cache/work/<slug>/discover-nominations.json`: tiêu đề, snippet, **URL gốc**.
-- Báo cáo sub-agent (`.cache/work/<slug>/report.md`): để chọn tin.
-- `news/raw/<DATE>/fu-<…>.json`: dữ kiện của follow-up.
+- `judge.py candidates <DATE>`: để chọn tin (chủ đề qua leg 2, kèm worthiness bạn đã chấm).
+- Báo cáo follow-up (`.cache/work/fu-<…>/report.md`): dữ kiện của follow-up.
+- `news/raw/<DATE>/fu-<…>.json`: dữ liệu gốc của follow-up.
 - KHÔNG lấy dữ kiện từ `news/raw/<DATE>/<slug>.json`/`.md` của domain (`why_spiking`, `top_comment`, `evidence_urls`): chúng thường lẫn bài lạc đề.
 
 Số tương tác (điểm, vote, bình luận):

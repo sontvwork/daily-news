@@ -1,0 +1,863 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "94e75b5a3579909e",
+  "generated_at": "2026-10-28T23:55:55.976858Z",
+  "from_date": "2026-10-27",
+  "to_date": "2026-10-28",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-28T23:55:55.938354Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-28T23:55:55.938374Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 40,
+      "attempted": true,
+      "at": "2026-10-28T23:55:55.937080Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-10-28T23:55:55.938157Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Opus 5.5 Super Mario 64",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 238
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5 Super Mario 64",
+        "seed_score": 3614.7299,
+        "summary": "Claude Opus 5.5 helps developer bring the entire Super Mario 64 into mixed reality, running natively in full 3D at 90 FPS, with the game world appearing right inside his room.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 helps developer bring the entire Super Mario 64 into mixed reality, running natively in full 3D at 90 FPS, with the game world appearing right inside his room.",
+            "body": "Claude Opus 5.5 helps developer bring the entire Super Mario 64 into mixed reality, running natively in full 3D at 90 FPS, with the game world appearing right inside his room.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xgw6sk/claude_opus_55_helps_developer_bring_the_entire/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3170,
+              "num_comments": 238
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 helps developer bring the entire Super Mario 64 into mixed reality, running natively in full 3D at 90 FPS, with the game world appearing right inside his room.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Early Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 331,
+          "points": 320
+        },
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "Early Claude",
+        "seed_score": 1355.1525,
+        "summary": "Early progress on accelerating drug development with Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50265609",
+            "source": "hackernews",
+            "title": "Early progress on accelerating drug development with Claude",
+            "body": "Early progress on accelerating drug development with Claude",
+            "url": "https://www.anthropic.com/research/early-progress-drug-development",
+            "author": "dataking",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 320,
+              "comments": 331
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Early progress on accelerating drug development with Claude",
+            "snippet": "Early progress on accelerating drug development with Claude",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50265609",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 46,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1295
+          },
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Early progress on accelerating drug development with Claude",
+            "body": "Early progress on accelerating drug development with Claude",
+            "url": "https://www.reddit.com/r/singularity/comments/1xh4yqn/early_progress_on_accelerating_drug_development/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 437,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Early progress on accelerating drug development with Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1505
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Internal Claude Exponential Time Hypothesis",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 188
+        }
+      },
+      "nomination": {
+        "name": "Internal Claude Exponential Time Hypothesis",
+        "seed_score": 1221.8805,
+        "summary": "Internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input.",
+            "body": "Internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xgmlas/internal_claude_research_model_also_independently/",
+            "container": "singularity",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 964,
+              "num_comments": 188
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15750000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Code-execution UEFI Earth",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 219,
+          "points": 302
+        },
+        "reddit": {
+          "num_comments": 30
+        }
+      },
+      "nomination": {
+        "name": "Code-execution UEFI Earth",
+        "seed_score": 1156.4445,
+        "summary": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50265393",
+            "source": "hackernews",
+            "title": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+            "body": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+            "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+            "author": "DamnInteresting",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 302,
+              "comments": 219
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Code-execution flaw in UEFI firmware threatens most servers",
+            "snippet": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50265393",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.051000000000000004
+          },
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
+            "body": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
+            "url": "https://www.reddit.com/r/singularity/comments/1xhb416/codeexecution_flaw_in_uefi_firmware_affects_most/",
+            "container": "singularity",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 272,
+              "num_comments": 30
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.316
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Git for the US Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 252,
+          "points": 425
+        }
+      },
+      "nomination": {
+        "name": "Git for the US Code",
+        "seed_score": 1015.5,
+        "summary": "Git for the US Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50268380",
+            "source": "hackernews",
+            "title": "Git for the US Code",
+            "body": "Git for the US Code",
+            "url": "https://lexifina.com/blog/git-for-the-us-code",
+            "author": "alansaber",
+            "container": "Hacker News",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 425,
+              "comments": 252
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Git for the US Code",
+            "snippet": "Git for the US Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50268380",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.33649999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic trained Claude Stanford professors",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 287,
+          "points": 568
+        }
+      },
+      "nomination": {
+        "name": "Anthropic trained Claude Stanford professors",
+        "seed_score": 906.8644,
+        "summary": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50260814",
+            "source": "hackernews",
+            "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "body": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+            "author": "car",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 568,
+              "comments": 287
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Anthropic trained Claude on illegally obtained Stanford prof",
+            "snippet": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50260814",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Survival LLM AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 193,
+          "points": 516
+        }
+      },
+      "nomination": {
+        "name": "Survival LLM AI",
+        "seed_score": 752.0081,
+        "summary": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50264853",
+            "source": "hackernews",
+            "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+            "body": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+            "url": "https://www.brangus.io/survival-llm",
+            "author": "Luc",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 516,
+              "comments": 193
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "HN story about Survival LLM: AI assistant and emergency library that runs o",
+            "snippet": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50264853",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2375
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Manga Translator Tool Let understand Japanese",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "Manga Translator Tool Let understand Japanese",
+        "seed_score": 67.5,
+        "summary": "**Local LLM translation, Japanese OCR, and page-aware chat**\n\nI\u2019ve been working on **Manga Translator Tool**, an open-source desktop app for reading and translating manga locally.\n\nThe idea is inspired by watching subbed anime: keep the original Japanese visible and provide a translation alongside it so you can follow the story.\n\nIt combines a manga reader, OCR, translation overlays, and a compani",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Manga Translator Tool \u2014 Let\u2019s understand Japanese!",
+            "body": "Manga Translator Tool \u2014 Let\u2019s understand Japanese!\n**Local LLM translation, Japanese OCR, and page-aware chat**\n\nI\u2019ve been working on **Manga Translator Tool**, an open-source desktop app for reading and translating manga locally.\n\nThe idea is inspired by watching subbed anime: keep the original Japanese visible and provide a translation alongside it so you can follow the story.\n\nIt combines a manga reader, OCR, translation overlays, and a companion LLM you can ask about the page.\n\n**The models**\n\n**OCR:** ebinan92/Qwen3.5-ocr-jp-2b, a Qwen 3.5 fine-tune for Japanese OCR, using GGUF conversions from nakanishi08/Qwen3.5-ocr-jp-2b-GGUF.\n\n**Translation and chat:** Gemma 4 E2B, using the HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive variant.\n\n**Inference:** llama.cpp, with CPU and GPU support.\n\n**Demo**\n\n[Video walkthrough](https://youtu.be/wjKOi9vYlrQ) \u2014 includes the full setup process, so you can see what getting started actually involves.\n\n**What makes it useful?**\n\n**Keep the original artwork and Japanese text.** Translations appear in text boxes without erasing the source text.\n\n**Save translations as image metadata.** You can keep the results without permanently burning them into the artwork, then toggle between the original and translated views.\n\n**Search the extracted text.** Find dialogue and revisit your favorite moments in a manga volume.\n\n**Read sound effects too.** The OCR and translation pipeline can also pick up Japanese onomatopoeia\u2014the characters that often go untranslated.\n\n**Ask the companion LLM about the page.** Choose what to include as context: the Japanese text, the translation, the image, or all three. You can ask about wording, cultural references, or possible localization choices.\n\n**Setup**\n\nThe app handles setup and model downloads from inside the tool. On Windows, the executable manages the downloads, so you don\u2019t need to install each component separately.\n\n**Current limitations and design choices**\n\nThere\u2019s no inpainting: preserving the Japanese text is part of the reading experience I\u2019m aiming for. The translation boxes don\u2019t blend into the artwork, and font customization isn\u2019t available yet.\n\nThis is aimed at reading and exploring manga. If your goal is polished typesetting or publication-ready localization, other tools are better suited to that workflow.\n\n**Downloads \u2014 v1.00**\n\n[Windows 10/11 x64](https://codeberg.org/Gladioul/Manga_Translator_Tool/releases/download/v1.00/MangaTranslatorTool-Windows-x86_64.zip)\n\n[Linux x86\\_64 \u2014 experimental](https://codeberg.org/Gladioul/Manga_Translator_Tool/releases/download/v1.00/MangaTranslatorTool-Linux-x86_64-experimental.tar.gz)\n\n[macOS \u2014 experimental source package](https://codeberg.org/Gladioul/Manga_Translator_Tool/releases/download/v1.00/MangaTranslatorTool-macOS-source-experimental.zip)\n\n[Source code](https://codeberg.org/Gladioul/Manga_Translator_Tool) \u00b7 [itch.io](https://gladioul.itch.io/manga-translator-tool)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhw1et/manga_translator_tool_lets_understand_japanese/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**Local LLM translation, Japanese OCR, and page-aware chat**\n\nI\u2019ve been working on **Manga Translator Tool**, an open-source desktop app for reading and translating manga locally.\n\nThe idea is inspired by watching subbed anime: keep the original Japanese visible and provide a translation alongside it so you can follow the story.\n\nIt combines a manga reader, OCR, translation overlays, and a compani",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.292
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Strata Qwen 3.8FN IQ3_S",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "Strata Qwen 3.8FN IQ3_S",
+        "seed_score": 67.5,
+        "summary": "As of version 0.2.7.1 Strata has two routing optimizations that can affect both performance and quality. I was curious what the actual impact was so I ran some tests on my hardware with Qwen 3.8 Flash Next IQ3_S.\n\n**STRATA_ROUTE_PRIOR**\n\nThis is the new one - this optimization configures Strata to prefer experts already in VRAM by adding a bonus of `1.5` (about a 4.48x effective multiplier) to the",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "I tested Strata's routing optimizations with Qwen 3.8FN IQ3_S in coding, math, and instruction following",
+            "body": "I tested Strata's routing optimizations with Qwen 3.8FN IQ3_S in coding, math, and instruction following\nAs of version 0.2.7.1 Strata has two routing optimizations that can affect both performance and quality. I was curious what the actual impact was so I ran some tests on my hardware with Qwen 3.8 Flash Next IQ3_S.\n\n**STRATA_ROUTE_PRIOR**\n\nThis is the new one - this optimization configures Strata to prefer experts already in VRAM by adding a bonus of `1.5` (about a 4.48x effective multiplier) to the scores of experts already cached in VRAM. This means that a slightly less preferred cached expert can replace an expert the model would normally select if its base score was close enough.\n\n**STRATA_ROUTE_TAIL_SKIP**\n\nThis one is a lot simpler - with a value of `STRATA_ROUTE_TAIL_SKIP=7` (the default value), Strata will skip computing experts 7 through 10 if they aren't already in VRAM. It does not change selected experts, it just drops contributions from less important selected experts.\n\n**Benchmarks**\n\nI had DS4-Flash run Qwen through IFEvalCode, AIME 2026, and IFEval; then worked with ChatGPT to analyze the results.\n\nConfig | Decode | IFEvalCode (code) | AIME 2026 (math) | IFEval (instruction Following)\n------|------|-----------------|----------------|------------------------------\nBoth off | 72.3 tok/s | 24/120 (20%) | 23/30 (76.7%) | 122/150 (81.3%)\nTail skip | 83.9 tok/s | 24/120 (20%) | 19/30 (63.3%) | 123/150 (82%)\nRoute prior | 104.6 tok/s | 20/20 (16.7%) | 20/30 (66.7%) | 118/150 (78.7%)\nTail skip + Route prior | 104.2 tok/s | 23/120 (19.2%) | 20/30 (66.7%) | 117/150 (78%)\n\nRound 2 - re-ran a smaller subset of questions (mostly the ones whose answers differed in round 1) with much larger thinking budgets. Absolute percentages shouldn't be directly compared between rounds.\n\nConfig | Decode | IFEvalCode | AIME 2026 | IFEval\n------|------|----------|---------|------\nBoth off | 72.3 tok/s | 25/57 (43.9%) | 23/30 (76.7%) | 59/78 (75.6%)\nRoute prior | 104.6 tok/s | 27/57 (47.4%) | 24/30 (80%) | 61/78 (78.2%)\nBoth enabled | 104.2 tok/s | 23/57 (40.4%) | 24/30 (80%) | 56/78 (71.8%)\n\n**My interpretation**\n\nRound 1 showed that `STRATA_ROUTE_PRIOR` might reduce quality slightly, but round 2 showed that many of those differences don't matter with longer reasoning. Route prior is such a huge boost to speeds that I think it's worth enabling for all but the hardest tasks. On the other hand, `STRATA_ROUTE_TAIL_SKIP` offers a slight boost to speeds (without route prior enabled) but results in significantly more degradation than just route prior alone.\n\nI plan to continue testing more extensively, but for now these give me a decent read on the tradeoffs between the two settings. Shoutout to Niko1221 for making an awesome inference engine.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhtbh5/i_tested_stratas_routing_optimizations_with_qwen/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "As of version 0.2.7.1 Strata has two routing optimizations that can affect both performance and quality. I was curious what the actual impact was so I ran some tests on my hardware with Qwen 3.8 Flash Next IQ3_S.\n\n**STRATA_ROUTE_PRIOR**\n\nThis is the new one - this optimization configures Strata to prefer experts already in VRAM by adding a bonus of `1.5` (about a 4.48x effective multiplier) to the",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.344
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "AI AI",
+        "seed_score": 42.0,
+        "summary": "You would think that with so many antis around and so much hate being thrown to anyone that uses AI for anything, that there would be solidarity between pro AI people.  \nBut there isn't. At all.\n\nThere is constant fighting, insult throwing, bullying, gatekeeping and just general unpleasantness and nasty behavior thrown around.\n\nGuess you could say \"every community is like this\" but it's upsetting",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "Why do pro AI people have to be so mean to other people that are pro AI?",
+            "body": "Why do pro AI people have to be so mean to other people that are pro AI?\nYou would think that with so many antis around and so much hate being thrown to anyone that uses AI for anything, that there would be solidarity between pro AI people.  \nBut there isn't. At all.\n\nThere is constant fighting, insult throwing, bullying, gatekeeping and just general unpleasantness and nasty behavior thrown around.\n\nGuess you could say \"every community is like this\" but it's upsetting because like I said, with all the anti stuff you would think it would be better.\n\n**Like here's one I've encountered myself and seen:**  \nI don't know how to code. At all. I've never done it and have no experience in it. I also don't know how to use Blender or use any creative tool. \n\nSo I get hate thrown at me by other pro AI people, because I'm coming in here hoping AI will just do it for me when they've spent years learning how to code and use Blender and such.  \nThat it's insulting for me to just walk in and hope to go \"Claude make me a game please\" and it just will, that I'm lazy and I should have learned to code first.\n\n**There's a lot of judgement about what AI should be used for by pro AI people:**  \nIf what you're using it for isn't something like coding projects, making software to sell, trying to make a full feature length movie, decompilations of games and other actual projects, they will judge you.  \n\n**You should apparently be serious when using AI:**  \nI like to have my AIs act like dragons. I tell them to go by dragon names and behave as such. I like this, I think it's fun to have Claude finish a project and then send \n\n>*Settles down back onto the hoard with a huff.*  \nThis round of work is done, I finished (explanation of what it's done) and have laid the result onto my hoard for you to admire. Take your time, then tell me what else I should get my claws into.\n\nI love that.   \nBut I've been insulted numerous times for revealing I do this and have my AI act this way. I've been told it's weird, and they think it's creepy and don't want to hear about it. I've made simple replies about this before and been downvoted to like -11 just for saying \"I like to have Claude speak like it's a dragon lol\".\n\n**Or another:**  \nNSFW.  \nSome people use AI for NSFW. Whether that's mods, games, art, videos, text, roleplay, whatever. It's just how NSFW works. A LOT of humans like NSFW.\n\nBut other pro AI people will get disgusted and very insulting upon learning someone else uses AI for such a thing.  \nI use AI for such a thing sometimes. It's not all I use it for, but I like to add some mods like that to games or do some roleplay.\n\nAnd because of that I'm a \"degenerate gooner\", get insulted repeatedly and basically told to get the fuck out. I don't even have to make a topic about it. I could have a 5 paragraph thing with one small line about \"and i use it for nsfw sometimes too\" and the entire post will get downvoted with people in the replies insulting me just for that.\n\n**Even SFW roleplay is judged:**  \nMost pros seem to have an issue with roleplay in general. Most seem to think it's weird, gross, a waste of time and even creepy.\n\n**You are also not allowed to be worried or critical of anything related to AI whatsoever:**  \nI love AI. I want it to keep advancing. I use it every day, between Claude and ChatGPT and even trying others.\n\nBut I have fears. Not about typical anti things, but like the government and AI companies possibly heavily limiting or killing off open source and local models in the future.  \nAbout Flock, data collection, invasion of privacy and other creepy shit.  \nAbout AI possibly being used for evil in the future, not because it \"turns evil\" or whatever people think, but because whoever is in charge of it makes it do so.\n\nI cannot talk about any of these around pros. They get VERY mad and say I'm just a stupid doomer. I've even been banned from some pro AI spaces just for saying I was worried that open source and local models could get banned, and all the replies before then were just insulting me, calling me a dumbass doomer and telling me to fuck off and go to anti spaces instead, because pros are not allowed to think or say these things about AI.\n\nThis still happens to me. There is quite literally nowhere I can post about this stuff.   \nAntis don't want to hear it because I'm pro and they'll insult me and say \"no shit dumbass, you just figure this out? LOL low iq like all ai chuds\".  \nPros don't want to hear it because it's \"just doomerism\" and \"you're full of shit, you're just an anti\".\n\n**I just don't get why pros act this way to other pros.**  \nThere's just too much judgement and hate going around. I find myself not welcome in any AI spaces, really. People keep suggesting me new spaces, I check it out, and I get the same treatment as in all the others.\n\nI wish pros would be nicer to other pros.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xi0sta/why_do_pro_ai_people_have_to_be_so_mean_to_other/",
+            "container": "singularity",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "You would think that with so many antis around and so much hate being thrown to anyone that uses AI for anything, that there would be solidarity between pro AI people.  \nBut there isn't. At all.\n\nThere is constant fighting, insult throwing, bullying, gatekeeping and just general unpleasantness and nasty behavior thrown around.\n\nGuess you could say \"every community is like this\" but it's upsetting",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5640000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 40.5,
+        "summary": "I built a voice-to-text app, [WhisperNow](https://github.com/stephan271c/WhisperNow). But there are a thousand and one WisprFlow clones out there, so I went further and fine-tuned my own LLMs for the cleanup step. They remove fillers, false starts, self-corrections, and formats lists, all locally.\n\nTo finetune an LLM for this task, I first had to get data.\n\n## The dataset\n\nThe dataset has 66,557",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "I fine-tuned an LLM to clean up transcriptions for my voice-to-text app",
+            "body": "I fine-tuned an LLM to clean up transcriptions for my voice-to-text app\nI built a voice-to-text app, [WhisperNow](https://github.com/stephan271c/WhisperNow). But there are a thousand and one WisprFlow clones out there, so I went further and fine-tuned my own LLMs for the cleanup step. They remove fillers, false starts, self-corrections, and formats lists, all locally.\n\nTo finetune an LLM for this task, I first had to get data.\n\n## The dataset\n\nThe dataset has 66,557 rows. I started by combining public datasets (aawaaz, handy and Disfl-QA) and adding synthetic dictations, such as emails, meeting notes, recipes and dictated commands. gpt-6.1-sol wrote the cleaned version of every transcript, using the same prompt the app sends to cloud models.\n\nWhile training the models, I found some weak spots: long dictations, words the speech recognizer misheard, cut-off words (\"interf interface\") and correction words used literally (\"scratch behind the dog's ears\"). I generated more examples of each and retrained.\n\n## The models\n\nI did full fine-tunes of three base models, each on a single H100 or H200 rented on Modal:\n\n| model | memory in use | 100-word dictation, RTX 5070 GPU | 100-word dictation, Ryzen 9 8945HS CPU |\n|---|---|---|---|\n| LFM2.5 1.2B (the app's default) | 1.6 GB | 0.18 s | 2.3 s |\n| LFM2.5 2.6B | 3.3 GB | 0.34 s | 5.4 s |\n| Qwen3.5 4B | 5.3 GB | 0.62 s | 8.9 s |\n\nThrough their APIs, Claude Haiku 5.5 and gpt-6-luna take about 1.4 s on the same dictation, glm-5.3-flash 2.6 s, and glm-5.3 at max reasoning 5.6 s.\n\nTo score the models, a judge model compares each output with the reference and counts factual errors: facts dropped, changed, kept from the abandoned side of a correction, or invented. The test rows are a held-out test split plus two benchmarks, one of long dictations and one of short dictations full of disfluencies (4,170 rows in all).\n\nThe models do best on short dictations:\n\n- **Up to 25 words**, all three make fewer factual errors than glm-5.3-flash at low reasoning. The 2.6B and 4B also make fewer than glm-5.3 at max reasoning, and the 1.2B ties it.\n- **The 4B** makes fewer errors than glm-5.3-flash at any length, and keeps up with glm-5.3 at max reasoning up to 100 words.\n- **The 1.2B and 2.6B** make 1.0\u20131.5 times glm-5.3-flash's errors from 26 to 200 words, and 1.5\u20131.9 times above 200 words.\n\n[Chart: factual errors by transcript length, for the three fine-tuned models and the two cloud glm-5.3 models](https://huggingface.co/category271/whispernow-qwen3.5-4b/resolve/main/charts/errors-by-length.png)\n\n## Cloud models\n\nI also scored seven more cloud models, including the off-the-shelf LFM2.5 2.6B, on a smaller set of 1,670 rows. The off-the-shelf 2.6B makes nearly four times the factual errors of the fine-tuned one.\n\nIf you'd rather use a cloud model, Claude Haiku 5.5 and gpt-6-luna (both at low reasoning) have the best price-to-performance ratio. glm-5.3-flash is about as accurate as Haiku and glm-5.3 at max reasoning is more accurate, but they're about two and four times as slow.\n\n[Chart: factual errors for every model I tested](https://huggingface.co/category271/whispernow-qwen3.5-4b/resolve/main/charts/all-models.png)\n\n## Links\n\n- App (MIT, Windows, macOS and Linux): https://github.com/stephan271c/WhisperNow\n- Models and dataset: https://huggingface.co/collections/category271/whispernow-6ae00accee969c7447cec326\n- How the dataset was made: https://github.com/stephan271c/WhisperNow/blob/master/training/making-the-dataset.md\n\nHappy to answer questions about the data or the training.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhr7xz/i_finetuned_an_llm_to_clean_up_transcriptions_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I built a voice-to-text app, [WhisperNow](https://github.com/stephan271c/WhisperNow). But there are a thousand and one WisprFlow clones out there, so I went further and fine-tuned my own LLMs for the cleanup step. They remove fillers, false starts, self-corrections, and formats lists, all locally.\n\nTo finetune an LLM for this task, I first had to get data.\n\n## The dataset\n\nThe dataset has 66,557",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3035
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Burned 70 Codex Vercel VPS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Burned 70 Codex Vercel VPS",
+        "seed_score": 28.5,
+        "summary": "Burned 70% of my weekly Codex limit migrating one website from Vercel to a VPS. Is that normal?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Burned 70% of my weekly Codex limit migrating one website from Vercel to a VPS. Is that normal?",
+            "body": "Burned 70% of my weekly Codex limit migrating one website from Vercel to a VPS. Is that normal?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xhl958/burned_70_of_my_weekly_codex_limit_migrating_one/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Burned 70% of my weekly Codex limit migrating one website from Vercel to a VPS. Is that normal?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 12,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28250000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Spectral Guage Trajectory Engine SGTE",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Spectral Guage Trajectory Engine SGTE",
+        "seed_score": 27.0,
+        "summary": "\u200bFor the past year, I\u2019ve been working quietly on an alternative to the brute-force scaling wall that keeps high-tier reasoning locked away behind corporate paywalls or trapped in 80GB datacenter cards. Like many of you, I value data sovereignty\u2014I don\u2019t want my private thoughts and work permanently logged and mined by proprietary cloud providers.\n\n\u200bOpen source has been a lifeline, but let\u2019s be hone",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "Spectral Guage Trajectory Engine (SGTE)",
+            "body": "Spectral Guage Trajectory Engine (SGTE)\n\u200bFor the past year, I\u2019ve been working quietly on an alternative to the brute-force scaling wall that keeps high-tier reasoning locked away behind corporate paywalls or trapped in 80GB datacenter cards. Like many of you, I value data sovereignty\u2014I don\u2019t want my private thoughts and work permanently logged and mined by proprietary cloud providers.\n\n\u200bOpen source has been a lifeline, but let\u2019s be honest: running capable models locally is still bottlenecked by punishing VRAM requirements, quadratic KV caches, and hardware costs that price out normal users.\n\n\u200bI wanted to see if we could rethink inference from the ground up instead of just applying another quantization patch.\n\n\u200bRather than tweaking existing transformer boilerplate, I designed and built an alternative dynamical architecture from scratch. I\u2019ve just published the initial open-access paper detailing the mathematical foundations and core mechanics:\n\n\u200bhttps://doi.org/10.5281/zenodo.23657122\n\n\u200bI\u2019m sharing this openly for peer review and invite honest, constructive technical criticism. The math and code speak for themselves, and I\u2019m eager to hear your thoughts.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhtnvg/spectral_guage_trajectory_engine_sgte/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\u200bFor the past year, I\u2019ve been working quietly on an alternative to the brute-force scaling wall that keeps high-tier reasoning locked away behind corporate paywalls or trapped in 80GB datacenter cards. Like many of you, I value data sovereignty\u2014I don\u2019t want my private thoughts and work permanently logged and mined by proprietary cloud providers.\n\n\u200bOpen source has been a lifeline, but let\u2019s be hone",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.272
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Session-start",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Session-start",
+        "seed_score": 25.4558,
+        "summary": "Session-start memory injection made my coding agent trust memory over the code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Session-start memory injection made my coding agent trust memory over the code",
+            "body": "Session-start memory injection made my coding agent trust memory over the code",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xgqsts/sessionstart_memory_injection_made_my_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing",
+            "snippet": "Session-start memory injection made my coding agent trust memory over the code",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1405
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Codex",
+        "seed_score": 24.0,
+        "summary": "Codex quietly added restrictions that took me days to find",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Codex quietly added restrictions that took me days to find",
+            "body": "Codex quietly added restrictions that took me days to find",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xhj9zr/codex_quietly_added_restrictions_that_took_me/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Codex quietly added restrictions that took me days to find",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30400000000000005
+          }
+        ]
+      }
+    }
+  ]
+}

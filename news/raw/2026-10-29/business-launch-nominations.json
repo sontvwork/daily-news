@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "d41d43a2b6e9f2c0",
+  "generated_at": "2026-10-28T23:55:57.847290Z",
+  "from_date": "2026-10-27",
+  "to_date": "2026-10-28",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-28T23:55:57.846004Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-28T23:55:57.846013Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-28T23:55:57.843828Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-10-28T23:55:57.845925Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic trained Claude Stanford professors",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 287,
+          "points": 568
+        }
+      },
+      "nomination": {
+        "name": "Anthropic trained Claude Stanford professors",
+        "seed_score": 906.8644,
+        "summary": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50260814",
+            "source": "hackernews",
+            "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "body": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+            "author": "car",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 568,
+              "comments": 287
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic trained Claude on illegally obtained Stanford prof",
+            "snippet": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50260814",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Discord Google",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 203,
+          "points": 324
+        }
+      },
+      "nomination": {
+        "name": "Discord Google",
+        "seed_score": 558.9679,
+        "summary": "Discord will soon let anyone find public server messages through Google",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50263854",
+            "source": "hackernews",
+            "title": "Discord will soon let anyone find public server messages through Google",
+            "body": "Discord will soon let anyone find public server messages through Google",
+            "url": "https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover",
+            "author": "DeepLogin",
+            "container": "Hacker News",
+            "published_at": "2026-10-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 324,
+              "comments": 203
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Discord will soon let anyone find public server messages thr",
+            "snippet": "Discord will soon let anyone find public server messages through Google",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50263854",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.11050000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Amazon Leo 11.5B Globalstar",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 100,
+          "points": 222
+        }
+      },
+      "nomination": {
+        "name": "Amazon Leo 11.5B Globalstar",
+        "seed_score": 483.0,
+        "summary": "US agency approves Amazon Leo\u2019s $11.5B acquisition of Globalstar",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50272145",
+            "source": "hackernews",
+            "title": "US agency approves Amazon Leo\u2019s $11.5B acquisition of Globalstar",
+            "body": "US agency approves Amazon Leo\u2019s $11.5B acquisition of Globalstar",
+            "url": "https://www.reuters.com/business/media-telecom/us-agency-approves-amazon-leos-115-billion-acquisition-globalstar-2026-10-27/",
+            "author": "noptd",
+            "container": "Hacker News",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 222,
+              "comments": 100
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about US agency approves Amazon Leo\u2019s $11.5B acquisition of Global",
+            "snippet": "US agency approves Amazon Leo\u2019s $11.5B acquisition of Globalstar",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50272145",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    }
+  ]
+}

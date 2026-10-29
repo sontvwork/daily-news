@@ -1,0 +1,160 @@
+{
+ "date": "2026-10-29",
+ "runs": [
+  {
+   "started_at": "2026-10-29T00:00:30+00:00",
+   "seconds": 1.8,
+   "python": "3.11.17",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 2,
+   "articles_error": 1,
+   "articles_skipped": 5,
+   "hn_ok": 2,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…": 1
+   },
+   "summary": "2/8 bài gốc ok (5 bỏ qua), 2/2 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 1.8s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://www.reddit.com/r/codex/comments/1xgmzda/what_is_the_role_of_gpt61_terra/",
+   "article": {
+    "url": "https://www.reddit.com/r/codex/comments/1xgmzda/what_is_the_role_of_gpt61_terra/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/OpenAI/comments/1xge8ua/do_gpt_61_terra_even_make_sense_gpt_61_sol/",
+   "article": {
+    "url": "https://www.reddit.com/r/OpenAI/comments/1xge8ua/do_gpt_61_terra_even_make_sense_gpt_61_sol/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xhj9zr/codex_quietly_added_restrictions_that_took_me/",
+   "article": {
+    "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xhj9zr/codex_quietly_added_restrictions_that_took_me/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/AI_Agents/comments/1xhtqaq/8_of_10_ai_agent_tools_i_track_shipped_something/",
+   "article": {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1xhtqaq/8_of_10_ai_agent_tools_i_track_shipped_something/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/ClaudeAI/comments/1xhl5cb/it_happened_my_project_manager_just_made_a_pr/",
+   "article": {
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1xhl5cb/it_happened_my_project_manager_just_made_a_pr/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "article": {
+    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50273731",
+   "hn_url": "https://news.ycombinator.com/item?id=50273731",
+   "hn": {
+    "title": "The Agent SDK",
+    "points": 89,
+    "comments": 107
+   },
+   "comments": [
+    {
+     "author": "gawacer",
+     "replies": 2,
+     "text": "We’ve officially hit the JS framework churn phase of AI tooling."
+    },
+    {
+     "author": "h0rv",
+     "replies": 12,
+     "text": "Why would you not use an open-source harness in October 2026? I am generally curious - what is the alpha?"
+    },
+    {
+     "author": "scosman",
+     "replies": 1,
+     "text": "Open AI and Anthropic already have \"Agent SDK\" brands. Vercel is \"AI SDK\". I wish folks would come up with some good names for new projects."
+    },
+    {
+     "author": "fallks",
+     "replies": 1,
+     "text": "What about an AgentFactoryFactory? That would increase Cursor's valuation from $60 to $120 billion."
+    },
+    {
+     "author": "asdev",
+     "replies": 3,
+     "text": "Does anyone even use Cursor still? I loved it during the tab era but ever since they tried to catch up to agentic workflows, the product experience got worse and worse"
+    }
+   ],
+   "article": {
+    "url": "https://cursor.com/blog/agent-sdk",
+    "status": "ok",
+    "title": "Introducing the Agent SDK · Cursor",
+    "chars": 9891,
+    "text": "Blog / product\nOct 20, 2026·product\nIntroducing the Agent SDK\nRustam Lalkaka · 5 min read\nSoftware teams use agents defined as code to handle recurring work across the development lifecycle. These agents connect to the places where a team works and act when relevant events occur, whether that means reviewing a pull request, executing a compliance workflow, or investigating an incident.\nThe most useful agents are tailored to how a particular team operates. Until now, building one has generally meant adopting a product designed around someone else's workflow or starting from scratch.\nToday, we're releasing the Agent SDK, the framework we use to build our own managed agents like Bugbot, Security Reviewer, and Rollouts. Agent SDK allows you to define agents in code and manage them like any other software project. Start from a template or point your coding agent at our docs. When the agent is ready, agent-sdk deploy it to Cursor infrastructure with one command.\n#Build around your workflow\nThe Agent SDK lets you quickly build and deploy agents that work the way your team does. They respond to the events your team already handles and follow policies your team can inspect and change.\nCode review is one example. Each team has its own standards for what requires attention and who should review it. With the Agent SDK, you can build an agent that responds to pull request events from GitHub, GitLab, or Bitbucket. The agent can assess the risk of a change, route it to the right team, and approve changes that meet your policy.\nAs an example, a team within Cursor had built a large, fast-growing knowledge base of lessons learned and wanted every pull request checked against it. This way, the team's past decisions would hold even as the codebase changed. With the Agent SDK, they built kb-reviewer in about a day. It now runs on every PR in their main codebase, flags changes that contradict a recorded lesson, cites the note behind each finding, and encourages engineers to reconcile the discrepancies it reports.\nFor more complicated work, agents can hand a task to another specialized agent with its own tools and sessions. They can also divide a job among subagents working in parallel.\nThe Agent SDK also supports evals and event replay out of the box, allowing for rapid development with assurances that critical workflows execute the way you expect. The PGA Tour uses the Agent SDK to power their software development factory. Evals keep them moving quickly.\nThe Agent SDK has enabled PGA to build every component of our software factory on Cursor's infrastructure. It provides the flexibility we need to build agents that drive our development process. And built-in support for evals allows us to quickly iterate on new ideas and optimize existing capabilities reliably.\nMichael Gyarmathy\nPrincipal Engineer, PGA America\n#Define everything in code\nAn Agent SDK agent is organized like a small software project. The instructions that guide it sit alongside code for its tools, connections to outside services, and the evals used to test it.\nEach file represents something the agent knows or can do. Prompts are written in Markdown, while tools are defined as TypeScript functions. Because everything is code, changes can go through the same version control and review process as the rest of your software.\n#Deploy agents wherever you need them\nWhen you're ready to put an agent into use, you can deploy it to Cursor by running agent-sdk deploy from the project directory. The command builds the agent, gives it a URL, and starts it on our infrastructure. You can manage secrets and integrations from the dashboard, while continuing to use the same logs, evals, and playground available locally.\nYou can also run the agent on your own infrastructure. Each agent runs as a single Node process that can be packaged in a container.\n#Get started\nGetting started with the Agent SDK looks much like starting any other software project. Create a project directory, then launch the local…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50276792",
+   "hn_url": "https://news.ycombinator.com/item?id=50276792",
+   "hn": {
+    "title": "Gemini 4 Carbon",
+    "points": 762,
+    "comments": 625
+   },
+   "comments": [
+    {
+     "author": "827a",
+     "replies": 16,
+     "text": "At this point if a Google PM handed me $100 and said \"go figure out how to issue a prompt to Gemini 4 Argon\" I'm only ~30% sure I could figure out how. The Gemini app in my phone only has 3.8 Pro as the latest model; it does say \"Ultra\" in the bottom left, but I really don't think I'm on the Ultra plan. How I would sign up for that, on a Workspace account, is beyond our brightest minds.\nIts sad watching them try to keep up when they want nothing more than to crumble under the weight of their…"
+    },
+    {
+     "author": "RajuChacha108",
+     "replies": 6,
+     "text": "It is pretty clear at this point that the frontier models need only handful of tiered models.\n1. Ultra - The best and the most expensive for showing off and government.\n2. Pro - Almost best but substantially cheaper for most productive people.\n3. Flash - Workhorse for everyone.\n4. Lite - For the unwashed masses and peasants.\nThere is no need to attach anything to these labels. In fact industry could simply standardize these namings like SEMVER.\nThere could be an internal representation which…"
+    },
+    {
+     "author": "solarpunk_enthu",
+     "replies": 6,
+     "text": "Given how quickly the field is moving, showing benchmarks without releasing the model is quite meaningless. If they decide to release it in one month, there will probably be a stronger competition out there. And the benchmarks won't look as good."
+    },
+    {
+     "author": "gavinray",
+     "replies": 9,
+     "text": "Benchmark scores recolored for readability:\nhttps://i.imgur.com/IDFGuJU.jpeg"
+    },
+    {
+     "author": "PreciousH",
+     "replies": 9,
+     "text": "Just remembered i haven't tried argon yet, they announced argon then and delayed releasing it, didn't even know they've made it publically available. I don't understand why google thinks this is an awesome strategy in a market where there are other really good models."
+    }
+   ],
+   "article": {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "status": "ok",
+    "title": "Introducing Gemini 4 Carbon",
+    "chars": 6971,
+    "text": "Gemini 4 Carbon: our next frontier model\nOct 28, 2026\n|\nx.com\nFacebook\nLinkedIn\nMail\nGemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities.\nKoray Kavukcuoglu\nSVP, Google DeepMind and Chief AI Architect, Google\nShare\nx.com\nFacebook\nLinkedIn\nMail\nToday, we’re announcing the next frontier model: Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon capabilities.\nCarbon ranks #1 on the recently updated v5.0 of Artificial Analysis Intelligence Index at 59. It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and CWE-bench (71.0%) for patching. On internal benchmarks, Carbon drives a strong uplift in generating secure code, and in live coding environments with our own teams it shows reduced misalignment and fabrication rates.\nBuilding on Gemini 4 Argon, which was launched two weeks ago, Carbon illustrates the pace at which we’re pushing the frontier forward. Our researchers and models are working hand in hand to advance capabilities faster, while strengthening our safeguards in tandem.\nWe're taking a deliberate approach to rollout and are actively engaged in the U.S. government’s voluntary process for pre-release model testing. Starting this week, we will make Carbon available to a subset of cyber defenders and will gradually phase access to additional trusted partners through our Fairwind Program. We’re continuing to gather feedback and iterate on guardrails before making Carbon available to developers, businesses, and consumers via our product surfaces as soon as possible.\nGemini 4 Carbon will launch at the same introductory price\n1\nas Argon at $2 per million input tokens and $10 per million output tokens, with cached input tokens priced at 95% off input token price.\nImproving coding and reasoning for challenging, long-horizon tasks\nDesigned to take on much harder, long-horizon engineering problems, Carbon is built for sustained agentic workflows. Internally, our teams have seen Carbon run for days to persist through dead ends to tackle complex, multi-step engineering tasks like root-causing and patching subtle bugs across large codebases and low-level systems.\nBuilding on user feedback, we focused on improving model performance across a variety of domains, including coding, agentic, and scientific tasks, as well as full-stack web development and multimodal understanding. With improved quality of output and artifacts in web development, Carbon jumps +89 elo points to land at #4 (1768) on WebDev Arena.\nState-of-the-art cybersecurity performance to help build secure systems\nGemini 4 Carbon delivers a significant leap in cybersecurity capabilities. It achieves state-of-the-art performance across the cybersecurity defense lifecycle — vulnerability detection, validation, and remediation.\nOur teams are already seeing strong gains in cyberdefense. On internal benchmarks, Carbon achieves more than 2x uplift in success rate for generating secure code over Argon. As another example, the Chrome team has reported that Carbon performed more than 10X better than another lab's large frontier model when generating high quality patches. Wiz, our leading Cloud security platform, also observes Carbon leading on benchmarks for web penetration testing, a core capability for Wiz's Scan for Good initiative.\nCarbon excels across key external benchmarks (evaluated without guardrails):\nFinding real vulnerabilities: Core to cybersecurity defense is finding real vulnerabilities. Carbon achieves a state-of-the-art 88.2% on SEC-bench Pro, autonomously uncovering complex flaws buried in real-world software.\nValidating risk through exploitation: To prioritize which vulnerabilities to remediate first or remediate at all, cyber defenders increasingly rely on models to check which…"
+   }
+  }
+ ]
+}

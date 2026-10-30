@@ -1,0 +1,921 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "74382f0a06627a47",
+  "generated_at": "2026-10-29T23:56:09.883299Z",
+  "from_date": "2026-10-28",
+  "to_date": "2026-10-29",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-29T23:56:09.819397Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-29T23:56:09.819406Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 11,
+      "attempted": true,
+      "at": "2026-10-29T23:56:09.608431Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 131,
+      "attempted": true,
+      "at": "2026-10-29T23:56:09.819118Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Mistral Large 4",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 324,
+          "points": 1133
+        },
+        "reddit": {
+          "num_comments": 234
+        }
+      },
+      "nomination": {
+        "name": "Mistral Large 4",
+        "seed_score": 5231.925,
+        "summary": "We're releasing the weights of Mistral Large 4",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50289418",
+            "source": "hackernews",
+            "title": "We're releasing the weights of Mistral Large 4",
+            "body": "We're releasing the weights of Mistral Large 4",
+            "url": "https://mistral.ai/news/mistral-large-4-oss/",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1133,
+              "comments": 324
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about We're releasing the weights of Mistral Large 4",
+            "snippet": "We're releasing the weights of Mistral Large 4",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50289418",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 90,
+            "source_quality": 0.8,
+            "local_rank_score": 0.315
+          },
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Mistral Large 4 (Le Chonk) is now open weight",
+            "body": "Mistral Large 4 (Le Chonk) is now open weight",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xil3qy/mistral_large_4_le_chonk_is_now_open_weight/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1065,
+              "num_comments": 187
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "Mistral Large 4 (Le Chonk) is now open weight",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 90,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3865
+          },
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Mistral releases open weights for its 1 trillion-parameter Large 4 model",
+            "body": "Mistral releases open weights for its 1 trillion-parameter Large 4 model",
+            "url": "https://www.reddit.com/r/singularity/comments/1xilupe/mistral_releases_open_weights_for_its_1/",
+            "container": "singularity",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 277,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Mistral releases open weights for its 1 trillion-parameter Large 4 model",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Meet Claude standards or else",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 63
+        }
+      },
+      "nomination": {
+        "name": "Meet Claude standards or else",
+        "seed_score": 4629.0,
+        "summary": "Meet Claude's standards... or else.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Meet Claude's standards... or else.",
+            "body": "Meet Claude's standards... or else.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xiixew/meet_claudes_standards_or_else/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3023,
+              "num_comments": 63
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Meet Claude's standards... or else.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36250000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Gemini 4 Carbon",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 794,
+          "points": 1001
+        },
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Carbon",
+        "seed_score": 2203.2677,
+        "summary": "Gemini 4 Carbon",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50276792",
+            "source": "hackernews",
+            "title": "Gemini 4 Carbon",
+            "body": "Gemini 4 Carbon",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+            "author": "acossta",
+            "container": "Hacker News",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1001,
+              "comments": 794
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Gemini 4 Carbon",
+            "snippet": "Gemini 4 Carbon",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50276792",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.203
+          },
+          {
+            "item_id": "R83",
+            "source": "reddit",
+            "title": "Google unveils Gemini 4 Carbon, a cybersecurity-focused frontier model \u2014 and vetted defenders get it first",
+            "body": "Google unveils Gemini 4 Carbon, a cybersecurity-focused frontier model \u2014 and vetted defenders get it first",
+            "url": "https://www.reddit.com/r/artificial/comments/1xiuc3w/google_unveils_gemini_4_carbon_a/",
+            "container": "artificial",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Google unveils Gemini 4 Carbon, a cybersecurity-focused frontier model \u2014 and vetted defenders get it first",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 17,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3005
+          },
+          {
+            "item_id": "R188",
+            "source": "reddit",
+            "title": "Google introduces Gemini 4 Carbon for cybersecurity and long-horizon engineering",
+            "body": "Google introduces Gemini 4 Carbon for cybersecurity and long-horizon engineering\n[removed]",
+            "url": "https://www.reddit.com/r/artificial/comments/1xiudf1/google_introduces_gemini_4_carbon_for/",
+            "container": "artificial",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 1,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude PS2 TabStationToo",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 77
+        }
+      },
+      "nomination": {
+        "name": "Claude PS2 TabStationToo",
+        "seed_score": 1536.0,
+        "summary": "We used Claude to get a full PS2 emulator running in a browser tab: TabStationToo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "We used Claude to get a full PS2 emulator running in a browser tab: TabStationToo",
+            "body": "We used Claude to get a full PS2 emulator running in a browser tab: TabStationToo",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xigpgr/we_used_claude_to_get_a_full_ps2_emulator_running/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 947,
+              "num_comments": 77
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "We used Claude to get a full PS2 emulator running in a browser tab: TabStationToo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3405
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Sam Altman Local",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 361
+        }
+      },
+      "nomination": {
+        "name": "Sam Altman Local",
+        "seed_score": 1338.0,
+        "summary": "Sam Altman: \u201cLocal inference is a terrible allocation of scarce resources\u201d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Sam Altman: \u201cLocal inference is a terrible allocation of scarce resources\u201d",
+            "body": "Sam Altman: \u201cLocal inference is a terrible allocation of scarce resources\u201d",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xizbq1/sam_altman_local_inference_is_a_terrible/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 531,
+              "num_comments": 361
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Sam Altman: \u201cLocal inference is a terrible allocation of scarce resources\u201d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 88,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34550000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 224,
+          "points": 558
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 1173.0,
+        "summary": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50284255",
+            "source": "hackernews",
+            "title": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "body": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+            "author": "NikZaal",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 558,
+              "comments": 224
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Claude Code regularly sends each background agent\u2019s transcri",
+            "snippet": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50284255",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Google Search Alphabet",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 325,
+          "points": 383
+        }
+      },
+      "nomination": {
+        "name": "Google Search Alphabet",
+        "seed_score": 1062.0,
+        "summary": "Google Search is now less than half of Alphabet\u2019s revenue",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50291945",
+            "source": "hackernews",
+            "title": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "body": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
+            "author": "hubraumhugo",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 383,
+              "comments": 325
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google Search is now less than half of Alphabet\u2019s revenue",
+            "snippet": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50291945",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 354
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 903.0,
+        "summary": "What's something you're genuinely proud of creating with Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "What's something you're genuinely proud of creating with Claude",
+            "body": "What's something you're genuinely proud of creating with Claude",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xi5fwh/whats_something_youre_genuinely_proud_of_creating/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 248,
+              "num_comments": 354
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "What's something you're genuinely proud of creating with Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34500000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Gemini 4 Carbon 1",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 240,
+          "points": 326
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Carbon 1",
+        "seed_score": 849.0,
+        "summary": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50288019",
+            "source": "hackernews",
+            "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+            "body": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+            "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
+            "author": "theHocineSaad",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 326,
+              "comments": 240
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Gemini 4 Carbon is the new #1 on the Artificial Analysis Int",
+            "snippet": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50288019",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3505
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "LLM Voice",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 164,
+          "points": 315
+        }
+      },
+      "nomination": {
+        "name": "LLM Voice",
+        "seed_score": 718.5,
+        "summary": "LLM Voice",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50290177",
+            "source": "hackernews",
+            "title": "LLM Voice",
+            "body": "LLM Voice",
+            "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+            "author": "ibobev",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 315,
+              "comments": 164
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about LLM Voice",
+            "snippet": "LLM Voice",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50290177",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "6 Claude Sonnet Every",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 103
+        }
+      },
+      "nomination": {
+        "name": "6 Claude Sonnet Every",
+        "seed_score": 598.5,
+        "summary": "My 6 year old daughter designed a fully-fledged unicorn game and Claude Sonnet built it in under a month. Every sprite, sound and map is made from scratch",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "My 6 year old daughter designed a fully-fledged unicorn game and Claude Sonnet built it in under a month. Every sprite, sound and map is made from scratch",
+            "body": "My 6 year old daughter designed a fully-fledged unicorn game and Claude Sonnet built it in under a month. Every sprite, sound and map is made from scratch",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xiks9w/my_6_year_old_daughter_designed_a_fullyfledged/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 296,
+              "num_comments": 103
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "My 6 year old daughter designed a fully-fledged unicorn game and Claude Sonnet built it in under a month. Every sprite, sound and map is made from scratch",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3195
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Google Google Earth 2008",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 175,
+          "points": 216
+        }
+      },
+      "nomination": {
+        "name": "Google Google Earth 2008",
+        "seed_score": 586.5,
+        "summary": "How Google determines the names for bodies of water in Google Earth (2008)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50287448",
+            "source": "hackernews",
+            "title": "How Google determines the names for bodies of water in Google Earth (2008)",
+            "body": "How Google determines the names for bodies of water in Google Earth (2008)",
+            "url": "https://publicpolicy.googleblog.com/2008/04/how-google-determines-names-for-bodies.html",
+            "author": "terminalbraid",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 216,
+              "comments": 175
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about How Google determines the names for bodies of water in Googl",
+            "snippet": "How Google determines the names for bodies of water in Google Earth (2008)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50287448",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3135
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "People Many",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 82
+        }
+      },
+      "nomination": {
+        "name": "People Many",
+        "seed_score": 520.5,
+        "summary": "\"People threw hardest research problems from their academic career. The model was just knocking out one after the other. Many different fields.\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R63",
+            "source": "reddit",
+            "title": "\"People threw hardest research problems from their academic career. The model was just knocking out one after the other. Many different fields.\"",
+            "body": "\"People threw hardest research problems from their academic career. The model was just knocking out one after the other. Many different fields.\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1xin6ik/people_threw_hardest_research_problems_from_their/",
+            "container": "singularity",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 265,
+              "num_comments": 82
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "\"People threw hardest research problems from their academic career. The model was just knocking out one after the other. Many different fields.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.297
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Claude Pixel 10 Opus 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "Claude Pixel 10 Opus 5.5",
+        "seed_score": 501.0,
+        "summary": "Claude helped me unbrick my friend's Pixel 10 without losing any data (Opus 5.5, Claude Code)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Claude helped me unbrick my friend's Pixel 10 without losing any data (Opus 5.5, Claude Code)",
+            "body": "Claude helped me unbrick my friend's Pixel 10 without losing any data (Opus 5.5, Claude Code)",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xin15e/claude_helped_me_unbrick_my_friends_pixel_10/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 293,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude helped me unbrick my friend's Pixel 10 without losing any data (Opus 5.5, Claude Code)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-17",
+      "heuristic_name": "Casual AI Use Exactly Need",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "Casual AI Use Exactly Need",
+        "seed_score": 400.5,
+        "summary": "Casual AI Use Is Exactly Where You Need the Best Models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "Casual AI Use Is Exactly Where You Need the Best Models",
+            "body": "Casual AI Use Is Exactly Where You Need the Best Models",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xi8549/casual_ai_use_is_exactly_where_you_need_the_best/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 221,
+              "num_comments": 46
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Casual AI Use Is Exactly Where You Need the Best Models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.318
+          }
+        ]
+      }
+    }
+  ]
+}

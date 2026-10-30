@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "397497e71fecb78e",
+  "generated_at": "2026-10-29T23:55:53.988200Z",
+  "from_date": "2026-10-28",
+  "to_date": "2026-10-29",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-29T23:55:53.986811Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-29T23:55:53.986817Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-29T23:55:53.985013Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-29T23:55:53.986747Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Google Search Alphabet",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 325,
+          "points": 383
+        }
+      },
+      "nomination": {
+        "name": "Google Search Alphabet",
+        "seed_score": 1062.0,
+        "summary": "Google Search is now less than half of Alphabet\u2019s revenue",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50291945",
+            "source": "hackernews",
+            "title": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "body": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
+            "author": "hubraumhugo",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 383,
+              "comments": 325
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google Search is now less than half of Alphabet\u2019s revenue",
+            "snippet": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50291945",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Google Google Earth 2008",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 175,
+          "points": 216
+        }
+      },
+      "nomination": {
+        "name": "Google Google Earth 2008",
+        "seed_score": 586.5,
+        "summary": "How Google determines the names for bodies of water in Google Earth (2008)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50287448",
+            "source": "hackernews",
+            "title": "How Google determines the names for bodies of water in Google Earth (2008)",
+            "body": "How Google determines the names for bodies of water in Google Earth (2008)",
+            "url": "https://publicpolicy.googleblog.com/2008/04/how-google-determines-names-for-bodies.html",
+            "author": "terminalbraid",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 216,
+              "comments": 175
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about How Google determines the names for bodies of water in Googl",
+            "snippet": "How Google determines the names for bodies of water in Google Earth (2008)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50287448",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Amazon Leo 11.5B Globalstar",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 105,
+          "points": 240
+        }
+      },
+      "nomination": {
+        "name": "Amazon Leo 11.5B Globalstar",
+        "seed_score": 365.9278,
+        "summary": "US agency approves Amazon Leo\u2019s $11.5B acquisition of Globalstar",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50272145",
+            "source": "hackernews",
+            "title": "US agency approves Amazon Leo\u2019s $11.5B acquisition of Globalstar",
+            "body": "US agency approves Amazon Leo\u2019s $11.5B acquisition of Globalstar",
+            "url": "https://www.reuters.com/business/media-telecom/us-agency-approves-amazon-leos-115-billion-acquisition-globalstar-2026-10-27/",
+            "author": "noptd",
+            "container": "Hacker News",
+            "published_at": "2026-10-28",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 240,
+              "comments": 105
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about US agency approves Amazon Leo\u2019s $11.5B acquisition of Global",
+            "snippet": "US agency approves Amazon Leo\u2019s $11.5B acquisition of Globalstar",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50272145",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 69,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Simantic YC F26 Firmware Simulation",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 14,
+          "points": 47
+        }
+      },
+      "nomination": {
+        "name": "Simantic YC F26 Firmware Simulation",
+        "seed_score": 91.5,
+        "summary": "Launch HN: Simantic (YC F26) \u2013 Firmware Simulation for AI Agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50291116",
+            "source": "hackernews",
+            "title": "Launch HN: Simantic (YC F26) \u2013 Firmware Simulation for AI Agents",
+            "body": "Launch HN: Simantic (YC F26) \u2013 Firmware Simulation for AI Agents",
+            "url": "https://news.ycombinator.com/item?id=50291116",
+            "author": "shong0504",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 47,
+              "comments": 14
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "HN story about Launch HN: Simantic (YC F26) \u2013 Firmware Simulation for AI Ag",
+            "snippet": "Launch HN: Simantic (YC F26) \u2013 Firmware Simulation for AI Agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50291116",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.368
+          }
+        ]
+      }
+    }
+  ]
+}

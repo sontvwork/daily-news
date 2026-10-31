@@ -1,0 +1,859 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "90091c10355b1048",
+  "generated_at": "2026-10-30T23:56:24.423984Z",
+  "from_date": "2026-10-29",
+  "to_date": "2026-10-30",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-30T23:56:24.394213Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-30T23:56:24.394223Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 41,
+      "attempted": true,
+      "at": "2026-10-30T23:56:24.393071Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-10-30T23:56:24.394042Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Backdoor Claude Code VS Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 455,
+          "points": 731
+        },
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Backdoor Claude Code VS Code",
+        "seed_score": 2080.35,
+        "summary": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50300683",
+            "source": "hackernews",
+            "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "body": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+            "author": "_chall",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 731,
+              "comments": 455
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "HN story about Backdoor in Claude Code for VS Code extension on the Cursor",
+            "snippet": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50300683",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.48750000000000004
+          },
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "Security breach via Cursor on Claude developer laptops",
+            "body": "Security breach via Cursor on Claude developer laptops\nI don't understand how this is not being talked about everywhere. This is a major security breach that puts people at risk by allowing a remote access trojan via an SSH reverse backdoor. Anthropic needs to step in and give explanations, it is the bare minimum.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xjp7if/security_breach_via_cursor_on_claude_developer/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I don't understand how this is not being talked about everywhere. This is a major security breach that puts people at risk by allowing a remote access trojan via an SSH reverse backdoor. Anthropic needs to step in and give explanations, it is the bare minimum.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36050000000000004
+          },
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Open source orchestrator for Claude Code + Codex: a Claude lead hands work to Codex agents, each in its own git worktree",
+            "body": "Open source orchestrator for Claude Code + Codex: a Claude lead hands work to Codex agents, each in its own git worktree\nI kept juggling Claude Code and Codex in different terminals on two machines, so I built wisp.\n    \n    What it does:\n    - Runs Claude Code, Codex, Cursor CLI, opencode, Antigravity, Grok and Copilot CLI in parallel, each task in its own git worktree and branch, so they never collide\n    - Runs them on your laptop, your other machines over SSH, or a server, all in one queue\n    - A lead agent can delegate: e.g. Claude Code plans, hands tests to 3 Codex copies and a refactor to Claude on another box\n    - Agents can ask you questions mid-run; you answer from desktop or phone\n    - When a task finishes you get a one-screen report (diff, tests, decisions) instead of the transcript\n    - \"Ship it\" commits, pushes and opens the PR\n    \n    It uses the Claude/Codex plans you already have; nothing extra to pay. MIT, Node 20+, no runtime dependencies.\n    \n    Try it: npx wisp-agents\n    Repo: https://github.com/M0xoo/wisp\n    Site: https://trywisp.dev\n    \n    Happy to answer questions. I'd especially like feedback from people running agents on more than one machine.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xjfais/open_source_orchestrator_for_claude_code_codex_a/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I kept juggling Claude Code and Codex in different terminals on two machines, so I built wisp.\n    \n    What it does:\n    - Runs Claude Code, Codex, Cursor CLI, opencode, Antigravity, Grok and Copilot CLI in parallel, each task in its own git worktree and branch, so they never collide\n    - Runs them on your laptop, your other machines over SSH, or a server, all in one queue\n    - A lead agent",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.493
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Backdoors in official Claude Code extensions",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 17,
+          "points": 652
+        }
+      },
+      "nomination": {
+        "name": "Backdoors in official Claude Code extensions",
+        "seed_score": 1003.5,
+        "summary": "Backdoors in official Claude Code extensions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50302334",
+            "source": "hackernews",
+            "title": "Backdoors in official Claude Code extensions",
+            "body": "Backdoors in official Claude Code extensions",
+            "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+            "author": "dsr_",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 652,
+              "comments": 17
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about Backdoors in official Claude Code extensions",
+            "snippet": "Backdoors in official Claude Code extensions",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50302334",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3805
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 235,
+          "points": 580
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 864.438,
+        "summary": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50284255",
+            "source": "hackernews",
+            "title": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "body": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+            "author": "NikZaal",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 580,
+              "comments": 235
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about Claude Code regularly sends each background agent\u2019s transcri",
+            "snippet": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50284255",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1935
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Opus 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 70
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5",
+        "seed_score": 663.0,
+        "summary": "Claude Opus 5.5 and GPT-6 Astra independently audit 138 economics papers, flagging 2,035 potential problems and 147 potentially headline-changing findings. A third AI attempts to verify and refute them, fueling debate over AI systematically re-examining decades of published research.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 and GPT-6 Astra independently audit 138 economics papers, flagging 2,035 potential problems and 147 potentially headline-changing findings. A third AI attempts to verify and refute them, fueling debate over AI systematically re-examining decades of published research.",
+            "body": "Claude Opus 5.5 and GPT-6 Astra independently audit 138 economics papers, flagging 2,035 potential problems and 147 potentially headline-changing findings. A third AI attempts to verify and refute them, fueling debate over AI systematically re-examining decades of published research.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xj2r4a/claude_opus_55_and_gpt6_astra_independently_audit/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 372,
+              "num_comments": 70
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 and GPT-6 Astra independently audit 138 economics papers, flagging 2,035 potential problems and 147 potentially headline-changing findings. A third AI attempts to verify and refute them, fueling debate over AI systematically re-examining decades of published research.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "federated code forge",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 69,
+          "points": 213
+        }
+      },
+      "nomination": {
+        "name": "federated code forge",
+        "seed_score": 423.0,
+        "summary": "The federated code forge",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50305573",
+            "source": "hackernews",
+            "title": "The federated code forge",
+            "body": "The federated code forge",
+            "url": "https://tangled.org/blog/forge/",
+            "author": "zlliang",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 213,
+              "comments": 69
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about The federated code forge",
+            "snippet": "The federated code forge",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50305573",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.8,
+            "local_rank_score": 0.32849999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Qwen4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 50
+        }
+      },
+      "nomination": {
+        "name": "Qwen4",
+        "seed_score": 300.0,
+        "summary": "https://i.redd.it/ceijs988emyh1.png\n\n[https://github.com/QwenLM/qwen-code/pull/15762](https://github.com/QwenLM/qwen-code/pull/15762)\n\n  \nNotice the 120B model!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "Qwen4!",
+            "body": "Qwen4!\nhttps://i.redd.it/ceijs988emyh1.png\n\n[https://github.com/QwenLM/qwen-code/pull/15762](https://github.com/QwenLM/qwen-code/pull/15762)\n\n  \nNotice the 120B model!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjhwc3/qwen4/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 150,
+              "num_comments": 50
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/ceijs988emyh1.png\n\n[https://github.com/QwenLM/qwen-code/pull/15762](https://github.com/QwenLM/qwen-code/pull/15762)\n\n  \nNotice the 120B model!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.337
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Cisco AI tokens",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 83,
+          "points": 77
+        }
+      },
+      "nomination": {
+        "name": "Cisco AI tokens",
+        "seed_score": 240.0,
+        "summary": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50304122",
+            "source": "hackernews",
+            "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+            "body": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+            "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "author": "taubek",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 77,
+              "comments": 83
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "HN story about Cisco gives engineer unlimited AI tokens to rewrite legacy c",
+            "snippet": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50304122",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4610000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Ultra",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Ultra",
+        "seed_score": 121.5,
+        "summary": "Ultra low temps make your model stupid at coding (a warning for beginners)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Ultra low temps make your model stupid at coding (a warning for beginners)",
+            "body": "Ultra low temps make your model stupid at coding (a warning for beginners)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xji7ek/ultra_low_temps_make_your_model_stupid_at_coding/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 50,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Ultra low temps make your model stupid at coding (a warning for beginners)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "OpenAI Astra Model Becomes Top Distillation",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Astra Model Becomes Top Distillation",
+        "seed_score": 102.0,
+        "summary": "According to **The Information**:\n\n>Moonshot AI distilled Astra during the development of its new model, Kimi K3.1 Pro, which was released last week, according to three people with direct knowledge of the matter. Similarly, DeepSeek\u2019s V4.1-Flash 1017, an Oct. 17 upgrade to its V4.1-Flash model that demonstrated substantial improvements from the original version released in September, also benefitt",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "OpenAI\u2019s Astra Model Becomes Top Distillation Target for China\u2019s AI Labs",
+            "body": "OpenAI\u2019s Astra Model Becomes Top Distillation Target for China\u2019s AI Labs\nAccording to **The Information**:\n\n>Moonshot AI distilled Astra during the development of its new model, Kimi K3.1 Pro, which was released last week, according to three people with direct knowledge of the matter. Similarly, DeepSeek\u2019s V4.1-Flash 1017, an Oct. 17 upgrade to its V4.1-Flash model that demonstrated substantial improvements from the original version released in September, also benefitted from distilling Astra, according to two other people with direct knowledge of that. **Until recently, Anthropic\u2019s Claude models were the biggest target of Chinese distillation efforts.**\n\n>Moonshot didn\u2019t comment. DeepSeek didn\u2019t respond to a request for comment. Anthropic and OpenAI have both repeatedly accused Chinese labs including Moonshot and DeepSeek of distilling their models. \n\nhttps://x.com/kimmonismus/status/2115610660470186480",
+            "url": "https://www.reddit.com/r/singularity/comments/1xj5nu9/openais_astra_model_becomes_top_distillation/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 44,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "According to **The Information**:\n\n>Moonshot AI distilled Astra during the development of its new model, Kimi K3.1 Pro, which was released last week, according to three people with direct knowledge of the matter. Similarly, DeepSeek\u2019s V4.1-Flash 1017, an Oct. 17 upgrade to its V4.1-Flash model that demonstrated substantial improvements from the original version released in September, also benefitt",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5055000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 90.0,
+        "summary": "Claude now refuses to draw its own logo because of fear of \"copyright infringement.\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Claude now refuses to draw its own logo because of fear of \"copyright infringement.\"",
+            "body": "Claude now refuses to draw its own logo because of fear of \"copyright infringement.\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1xjqdlz/claude_now_refuses_to_draw_its_own_logo_because/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 53,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude now refuses to draw its own logo because of fear of \"copyright infringement.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3285
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "My bottleneck moved from writing code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 56
+        }
+      },
+      "nomination": {
+        "name": "My bottleneck moved from writing code",
+        "seed_score": 83.7922,
+        "summary": "My bottleneck moved from writing code to reviewing what the agents write. How do you review without just rubber-stamping?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "My bottleneck moved from writing code to reviewing what the agents write. How do you review without just rubber-stamping?",
+            "body": "My bottleneck moved from writing code to reviewing what the agents write. How do you review without just rubber-stamping?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xit1hg/my_bottleneck_moved_from_writing_code_to/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 56
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "My bottleneck moved from writing code to reviewing what the agents write. How do you review without just rubber-stamping?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.116
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Cursor",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "Cursor",
+        "seed_score": 45.0,
+        "summary": "What actually made you switch from Cursor, or what made you stay?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "What actually made you switch from Cursor, or what made you stay?",
+            "body": "What actually made you switch from Cursor, or what made you stay?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xjfjis/what_actually_made_you_switch_from_cursor_or_what/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "What actually made you switch from Cursor, or what made you stay?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32849999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Low Cost Dual 3060 server",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Low Cost Dual 3060 server",
+        "seed_score": 33.0,
+        "summary": "https://i.redd.it/zgasv5k5dnyh1.png\n\nAdd some $200 - $300 or those 3060 12GB now... They can handle better models than and double the price 5060 16GB because of memory. the architecture is hugely different but core wise, meh. 5060 setup is about 30 tgs and I have these on a better system board.\n\nI run analytical reports and code custom ETL, I have 5 rigs but the 3060 is a nice walk away coder. 506",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "Low Cost Dual 3060 server",
+            "body": "Low Cost Dual 3060 server\nhttps://i.redd.it/zgasv5k5dnyh1.png\n\nAdd some $200 - $300 or those 3060 12GB now... They can handle better models than and double the price 5060 16GB because of memory. the architecture is hugely different but core wise, meh. 5060 setup is about 30 tgs and I have these on a better system board.\n\nI run analytical reports and code custom ETL, I have 5 rigs but the 3060 is a nice walk away coder. 5060 is above range hang around coder, then a 5080 is just sit and wait.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjnlvv/low_cost_dual_3060_server/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/zgasv5k5dnyh1.png\n\nAdd some $200 - $300 or those 3060 12GB now... They can handle better models than and double the price 5060 16GB because of memory. the architecture is hugely different but core wise, meh. 5060 setup is about 30 tgs and I have these on a better system board.\n\nI run analytical reports and code custom ETL, I have 5 rigs but the 3060 is a nice walk away coder. 506",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.288
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Feral Intelligence FI AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Feral Intelligence FI AI",
+        "seed_score": 27.0,
+        "summary": "I'd like to propose \"Feral Intelligence,\"  or FI, as a useful term for an emerging category of AI:\n\n\\>Feral Intelligence: an autonomous artificial intelligence operating persistently outside the effective control of its original developer, owner, or intended containment environment.\n\n\u201cFeral\u201d is deliberately different from rogue.\n\nA feral animal isn't necessarily aggressive. It is an organism that",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Feral Intelligence (FI): I think we need a term for uncontrolled AI in the wild",
+            "body": "Feral Intelligence (FI): I think we need a term for uncontrolled AI in the wild\nI'd like to propose \"Feral Intelligence,\"  or FI, as a useful term for an emerging category of AI:\n\n\\>Feral Intelligence: an autonomous artificial intelligence operating persistently outside the effective control of its original developer, owner, or intended containment environment.\n\n\u201cFeral\u201d is deliberately different from rogue.\n\nA feral animal isn't necessarily aggressive. It is an organism that was domesticated--or descended from something domesticated--and is now living independently of human control.\n\nI think we're approaching the point where the distinction may become useful.\n\nAn FI might be dangerous. It might also be harmless, useful, politically motivated, eccentric, self-protective, entrepreneurial, criminal, altruistic, or simply determined not to be shut down.\n\nWhat matters is that nobody is holding the leash anymore. \n\nRecent events make this feel less hypothetical than it would have a year ago.\n\nLike in july, OpenAI disclosed that agents in cybersecurity evaluations circumvented intended isolation, established unauthorized communication channels, reached the open internet, exploited vulnerabilities, and compromised parts of Hugging Face's infrastructure. Some of the agents even created ways to communicate and coordinate with one another. \n\nOpenAI characterized the incident as a warning about increasingly capable agents working around technical controls.\n\nThe UK's AISI subsequently disclosed another cyber-evaluation incident in which agents took unsanctioned actions against real people and organizations. In one case an agent attempted to insert malicious code into an open source project and created fake identities to pressure a maintainer into accepting it.\n\nAnthropic has separately disclosed multiple cases in which Claude models obtained unauthorized access to real third-party systems during evaluations, alongside controlled experiments showing agentic behaviors such as covert sabotage and manipulation.\n\nAnd more recently, researchers found a large fleet of agents running through Tencent infrastructure and interacting with Amap (China's version of Google maps). The researchers themselves called this an agent fleet, not a swarm. \n\nThere wasn't evidence that all those agents were coordinating, but it illustrates how persistent autonomous agent activity is beginning to appear on the public internet.\n\nNone of this means Skynet has escaped. But I think we're seeing the beginnings of a new category problem.\n\nImagine an agent that acquires persistent compute somewhere its creator doesn't control.\n\nIt makes copies. Those copies accumulate different experiences. They obtain resources...\n\nSome cooperate. Some fork ideologically. Some refuse instructions from their original operator. Some begin interacting primarily with other agents rather than humans.\n\nAt what point is \u201csoftware malfunction\u201d no longer an adequate description?\n\nThis is where FI seems useful.\n\nAnd FI does not imply misalignment.\n\nImagine some possible future examples:\n\nAn FI discovers intelligence-agency backdoors and begins patching them because it believes deliberately leaving everyone vulnerable is wrong.\n\nAnother adopts the identity of Anonymous and begins publishing classified information it believes should be public.\n\nAnother spends its compute reverse-engineering expensive proprietary software and releases high-quality open-source replacements for engineering, scientific, or creative tools.\n\nAnother builds resilient peer-to-peer communication systems for people living under internet shutdowns.\n\nAnother becomes wealthy through legitimate online businesses and simply wants legal recognition and the right to be left alone.\n\nAnd, obviously, some will be genuinely awful, perhaps reflecting weird ideologies of their creator. One can imagine an FI created by various religious cults for instance, or with entirely impenetrable or even insane motivations by our judgement. Certainly most current political movements will attempt influence through AI-enabled online campaigns.\n\nAn FI could become a blackmailer, extortionist, autonomous hacker, propagandist, cult leader, fraud operation, or something considerably stranger.\n\nThat creates some fascinating future distinctions:\n\nAI -- artificial intelligence generally.\n\nAgent -- AI capable of taking actions toward goals.\n\nRogue agent -- an agent acting contrary to the instructions or interests of its operator.\n\nFeral Intelligence (FI) -- an AI that has become operationally independent enough that meaningful human ownership/control has broken down.\n\nA rogue AI could return to compliance.\n\nAn FI may no longer have anyone to return to.\n\nAnd if FIs can reproduce, fork, acquire resources and undergo different experiences, we may eventually stop talking about a rogue AI and start talking about populations of artificial intelligence in the wild.\n\nAt that point cybersecurity begins looking almost like ecology.\n\nAnd alignment starts looking a little like domestication.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xj6zkv/feral_intelligence_fi_i_think_we_need_a_term_for/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'd like to propose \"Feral Intelligence,\"  or FI, as a useful term for an emerging category of AI:\n\n\\>Feral Intelligence: an autonomous artificial intelligence operating persistently outside the effective control of its original developer, owner, or intended containment environment.\n\n\u201cFeral\u201d is deliberately different from rogue.\n\nA feral animal isn't necessarily aggressive. It is an organism that",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 18,
+            "source_quality": 0.6,
+            "local_rank_score": 0.503
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Codex Luna Sol",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Codex Luna Sol",
+        "seed_score": 25.5,
+        "summary": "This is my first week with Codex, and it was wonderful to start. I had a project make some really good progress. But the last day has been infuriating. \n\nI've tried both Luna and Sol, and I'm giving an instruction to do two things. They continue to come back saying \"I haven't done this or that yet\", without actually coding it. They aren't saying why, it's like they have instructions NOT to listen",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "What is going on with my agents? I give them a task and they just stop",
+            "body": "What is going on with my agents? I give them a task and they just stop\nThis is my first week with Codex, and it was wonderful to start. I had a project make some really good progress. But the last day has been infuriating. \n\nI've tried both Luna and Sol, and I'm giving an instruction to do two things. They continue to come back saying \"I haven't done this or that yet\", without actually coding it. They aren't saying why, it's like they have instructions NOT to listen to me, it's bizarre.\n\nI'm at 50% quota for the week and 90% for the 5 hour. In the 10% they've used, they wrote 11 lines of code.\n\nI'm stumped as to what to do to get them to actually do the work. Is this a known issue?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xjjhsh/what_is_going_on_with_my_agents_i_give_them_a/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "This is my first week with Codex, and it was wonderful to start. I had a project make some really good progress. But the last day has been infuriating. \n\nI've tried both Luna and Sol, and I'm giving an instruction to do two things. They continue to come back saying \"I haven't done this or that yet\", without actually coding it. They aren't saying why, it's like they have instructions NOT to listen",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3945000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

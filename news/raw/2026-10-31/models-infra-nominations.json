@@ -1,0 +1,891 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "10581748405cf3bc",
+  "generated_at": "2026-10-30T23:56:40.775800Z",
+  "from_date": "2026-10-29",
+  "to_date": "2026-10-30",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-30T23:56:40.712721Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-30T23:56:40.712728Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 133,
+      "attempted": true,
+      "at": "2026-10-30T23:56:40.710426Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 12,
+      "attempted": true,
+      "at": "2026-10-30T23:56:40.712503Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Mistral Large 4",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 434,
+          "points": 1675
+        }
+      },
+      "nomination": {
+        "name": "Mistral Large 4",
+        "seed_score": 2236.9323,
+        "summary": "We're releasing the weights of Mistral Large 4",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50289418",
+            "source": "hackernews",
+            "title": "We're releasing the weights of Mistral Large 4",
+            "body": "We're releasing the weights of Mistral Large 4",
+            "url": "https://mistral.ai/news/mistral-large-4-oss/",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1675,
+              "comments": 434
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about We're releasing the weights of Mistral Large 4",
+            "snippet": "We're releasing the weights of Mistral Large 4",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50289418",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Backdoor Claude Code VS Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 455,
+          "points": 731
+        },
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Backdoor Claude Code VS Code",
+        "seed_score": 2190.75,
+        "summary": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50300683",
+            "source": "hackernews",
+            "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "body": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+            "author": "_chall",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 731,
+              "comments": 455
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Backdoor in Claude Code for VS Code extension on the Cursor",
+            "snippet": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50300683",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 88,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34550000000000003
+          },
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "A backdoored Claude Code extension hit up to 5,000 Cursor users",
+            "body": "A backdoored Claude Code extension hit up to 5,000 Cursor users",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xjepra/a_backdoored_claude_code_extension_hit_up_to_5000/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "A backdoored Claude Code extension hit up to 5,000 Cursor users",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2955
+          },
+          {
+            "item_id": "R175",
+            "source": "reddit",
+            "title": "Security breach via Cursor on Claude developer laptops",
+            "body": "Security breach via Cursor on Claude developer laptops\nI don't understand how this is not being talked about everywhere. This is a major security breach that puts people at risk by allowing a remote access trojan via an SSH reverse backdoor. Anthropic needs to step in and give explanations, it is the bare minimum.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xjp7if/security_breach_via_cursor_on_claude_developer/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I don't understand how this is not being talked about everywhere. This is a major security breach that puts people at risk by allowing a remote access trojan via an SSH reverse backdoor. Anthropic needs to step in and give explanations, it is the bare minimum.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29350000000000004
+          },
+          {
+            "item_id": "R152",
+            "source": "reddit",
+            "title": "I wanted to see Claude Code's context and cache usage in VS Code, so I added it to my existing project",
+            "body": "I wanted to see Claude Code's context and cache usage in VS Code, so I added it to my existing project\nIm a senior SWE and use claude code daily. Ive been buildin optimAIzr for a while now to understand and optimize my AI usage. Claude Code has also been a huge development speed boost while working on it.\n\nThe project is already open source and has picked up quite a lot of git stars. Just shipped a new VS Code extension, bringing optimAIzr's usage tracking and savings features directly into the editor.\n\nYou get context usage, cache countdowns, the 5h limit and a savings sidebar with one-click fixes.\n\nFree, fully local, no prompts uploaded.   \n  \ngit: [https://github.com/blendbunjaku/optimaizr](https://github.com/blendbunjaku/optimaizr)  \nvs code extension: [https://marketplace.visualstudio.com/items?itemName=optimAIzr.optimaizr-vscode](https://marketplace.visualstudio.com/items?itemName=optimAIzr.optimaizr-vscode)  \n  \nWould love some feedback from other claude code users!",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xjtgga/i_wanted_to_see_claude_codes_context_and_cache/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Im a senior SWE and use claude code daily. Ive been buildin optimAIzr for a while now to understand and optimize my AI usage. Claude Code has also been a huge development speed boost while working on it.\n\nThe project is already open source and has picked up quite a lot of git stars. Just shipped a new VS Code extension, bringing optimAIzr's usage tracking and savings features directly into the edi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 1,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2845
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anthropic renames Max5 Max20 5h Max20",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 256
+        }
+      },
+      "nomination": {
+        "name": "Anthropic renames Max5 Max20 5h Max20",
+        "seed_score": 1920.0,
+        "summary": "Anthropic renames Max5 and Max20 and removes 5h limits for Max20",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Anthropic renames Max5 and Max20 and removes 5h limits for Max20",
+            "body": "Anthropic renames Max5 and Max20 and removes 5h limits for Max20",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xjlvlc/anthropic_renames_max5_and_max20_and_removes_5h/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1024,
+              "num_comments": 256
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic renames Max5 and Max20 and removes 5h limits for Max20",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic to start blocking game recreations",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 420
+        }
+      },
+      "nomination": {
+        "name": "Anthropic to start blocking game recreations",
+        "seed_score": 1830.0,
+        "summary": "Anthropic to start blocking game recreations ?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "Anthropic to start blocking game recreations ?",
+            "body": "Anthropic to start blocking game recreations ?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xjglg5/anthropic_to_start_blocking_game_recreations/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 800,
+              "num_comments": 420
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic to start blocking game recreations ?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Larry Page Google ROI x.com/GavinSBaker ILTB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 239
+        }
+      },
+      "nomination": {
+        "name": "Larry Page Google ROI x.com/GavinSBaker ILTB",
+        "seed_score": 1794.0,
+        "summary": "\"So Larry Page has evidently said internally at Google many times, 'I am willing to go bankrupt rather than lose this race.' So everybody is really focused on this ROI equation, but the people making the decisions are not\" - x.com/GavinSBaker on ILTB",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "\"So Larry Page has evidently said internally at Google many times, 'I am willing to go bankrupt rather than lose this race.' So everybody is really focused on this ROI equation, but the people making the decisions are not\" - x.com/GavinSBaker on ILTB",
+            "body": "\"So Larry Page has evidently said internally at Google many times, 'I am willing to go bankrupt rather than lose this race.' So everybody is really focused on this ROI equation, but the people making the decisions are not\" - x.com/GavinSBaker on ILTB",
+            "url": "https://www.reddit.com/r/singularity/comments/1xjhzbi/so_larry_page_has_evidently_said_internally_at/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 957,
+              "num_comments": 239
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "\"So Larry Page has evidently said internally at Google many times, 'I am willing to go bankrupt rather than lose this race.' So everybody is really focused on this ROI equation, but the people making the decisions are not\" - x.com/GavinSBaker on ILTB",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3195
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 293
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 1432.5,
+        "summary": "Claude now watermarks everything it writes, and you're the one who can't check",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "Claude now watermarks everything it writes, and you're the one who can't check",
+            "body": "Claude now watermarks everything it writes, and you're the one who can't check",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xjqyv2/claude_now_watermarks_everything_it_writes_and/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 662,
+              "num_comments": 293
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude now watermarks everything it writes, and you're the one who can't check",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Backdoors in official Claude Code extensions",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 17,
+          "points": 652
+        }
+      },
+      "nomination": {
+        "name": "Backdoors in official Claude Code extensions",
+        "seed_score": 1003.5,
+        "summary": "Backdoors in official Claude Code extensions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50302334",
+            "source": "hackernews",
+            "title": "Backdoors in official Claude Code extensions",
+            "body": "Backdoors in official Claude Code extensions",
+            "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+            "author": "dsr_",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 652,
+              "comments": 17
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Backdoors in official Claude Code extensions",
+            "snippet": "Backdoors in official Claude Code extensions",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50302334",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.8,
+            "local_rank_score": 0.313
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "LLM Voice",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 321,
+          "points": 588
+        }
+      },
+      "nomination": {
+        "name": "LLM Voice",
+        "seed_score": 964.1401,
+        "summary": "LLM Voice",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50290177",
+            "source": "hackernews",
+            "title": "LLM Voice",
+            "body": "LLM Voice",
+            "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+            "author": "ibobev",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 588,
+              "comments": 321
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about LLM Voice",
+            "snippet": "LLM Voice",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50290177",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 81,
+            "source_quality": 0.8,
+            "local_rank_score": 0.18400000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Working 3D Pok\u00e9mon",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 164
+        }
+      },
+      "nomination": {
+        "name": "Working 3D Pok\u00e9mon",
+        "seed_score": 922.5,
+        "summary": "Working on a real-time 3D Pok\u00e9mon battle game. The demo is free and open source",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "Working on a real-time 3D Pok\u00e9mon battle game. The demo is free and open source",
+            "body": "Working on a real-time 3D Pok\u00e9mon battle game. The demo is free and open source",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xja4vw/working_on_a_realtime_3d_pok\u00e9mon_battle_game_the/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 451,
+              "num_comments": 164
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Working on a real-time 3D Pok\u00e9mon battle game. The demo is free and open source",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.318
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 235,
+          "points": 580
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 864.438,
+        "summary": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50284255",
+            "source": "hackernews",
+            "title": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "body": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+            "author": "NikZaal",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 580,
+              "comments": 235
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Claude Code regularly sends each background agent\u2019s transcri",
+            "snippet": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50284255",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 77,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Google Search Alphabet",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 355,
+          "points": 426
+        }
+      },
+      "nomination": {
+        "name": "Google Search Alphabet",
+        "seed_score": 828.3756,
+        "summary": "Google Search is now less than half of Alphabet\u2019s revenue",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50291945",
+            "source": "hackernews",
+            "title": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "body": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
+            "author": "hubraumhugo",
+            "container": "Hacker News",
+            "published_at": "2026-10-29",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 426,
+              "comments": 355
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google Search is now less than half of Alphabet\u2019s revenue",
+            "snippet": "Google Search is now less than half of Alphabet\u2019s revenue",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50291945",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 78,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Anthropic gave 50 analysts Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 86
+        }
+      },
+      "nomination": {
+        "name": "Anthropic gave 50 analysts Claude Code",
+        "seed_score": 826.5,
+        "summary": "Anthropic gave 50 analysts Claude Code with a hidden coin-flip bias. They followed the agent\u2019s lean 86% of the time",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Anthropic gave 50 analysts Claude Code with a hidden coin-flip bias. They followed the agent\u2019s lean 86% of the time",
+            "body": "Anthropic gave 50 analysts Claude Code with a hidden coin-flip bias. They followed the agent\u2019s lean 86% of the time",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xj3qdv/anthropic_gave_50_analysts_claude_code_with_a/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 465,
+              "num_comments": 86
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic gave 50 analysts Claude Code with a hidden coin-flip bias. They followed the agent\u2019s lean 86% of the time",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.341
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Anthropic IPO Blackstone",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 218,
+          "points": 269
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO Blackstone",
+        "seed_score": 730.5,
+        "summary": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50307219",
+            "source": "hackernews",
+            "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "body": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+            "author": "petethomas",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 269,
+              "comments": 218
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Anthropic may not secure investment-grade rating after IPO,",
+            "snippet": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50307219",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.8,
+            "local_rank_score": 0.316
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Claude Opus 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 70
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5",
+        "seed_score": 663.0,
+        "summary": "Claude Opus 5.5 and GPT-6 Astra independently audit 138 economics papers, flagging 2,035 potential problems and 147 potentially headline-changing findings. A third AI attempts to verify and refute them, fueling debate over AI systematically re-examining decades of published research.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 and GPT-6 Astra independently audit 138 economics papers, flagging 2,035 potential problems and 147 potentially headline-changing findings. A third AI attempts to verify and refute them, fueling debate over AI systematically re-examining decades of published research.",
+            "body": "Claude Opus 5.5 and GPT-6 Astra independently audit 138 economics papers, flagging 2,035 potential problems and 147 potentially headline-changing findings. A third AI attempts to verify and refute them, fueling debate over AI systematically re-examining decades of published research.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xj2r4a/claude_opus_55_and_gpt6_astra_independently_audit/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 372,
+              "num_comments": 70
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 and GPT-6 Astra independently audit 138 economics papers, flagging 2,035 potential problems and 147 potentially headline-changing findings. A third AI attempts to verify and refute them, fueling debate over AI systematically re-examining decades of published research.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Introducing DeepSeek-V4.1-Flash-1017 Dynamic v3.1 Unsloth GGUFs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 94
+        }
+      },
+      "nomination": {
+        "name": "Introducing DeepSeek-V4.1-Flash-1017 Dynamic v3.1 Unsloth GGUFs",
+        "seed_score": 622.5,
+        "summary": "Introducing DeepSeek-V4.1-Flash-1017 Dynamic v3.1 Unsloth GGUFs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Introducing DeepSeek-V4.1-Flash-1017 Dynamic v3.1 Unsloth GGUFs",
+            "body": "Introducing DeepSeek-V4.1-Flash-1017 Dynamic v3.1 Unsloth GGUFs",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjfuqh/introducing_deepseekv41flash1017_dynamic_v31/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 321,
+              "num_comments": 94
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Introducing DeepSeek-V4.1-Flash-1017 Dynamic v3.1 Unsloth GGUFs",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3195
+          }
+        ]
+      }
+    }
+  ]
+}

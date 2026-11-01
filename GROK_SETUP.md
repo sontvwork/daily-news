@@ -1,19 +1,21 @@
 # Grok Automation setup — Daily News
 
-Grok (tính năng "Tự động hoá") thu thập tin trên X mỗi ngày rồi commit vào repo [sontvwork/daily-news-inbox](https://github.com/sontvwork/daily-news-inbox), ở file `grok/<DATE>.json`. Routine Daily News sẽ đọc file này và gộp vào nhóm tin ứng viên. Tính năng đang thử nghiệm, routine chưa đọc file.
+Grok (tính năng "Tự động hoá") thu thập tin trên X mỗi ngày rồi commit vào repo [sontvwork/daily-news-inbox](https://github.com/sontvwork/daily-news-inbox), ở file `grok/<DATE>.json`. Routine Daily News đọc file này qua `scripts/grok.py` (từ 01/11/2026): `fetch` ở Bước 0 kiểm từng bài X qua fxtwitter rồi lưu `news/raw/<DATE>/grok.json`, `candidates` ở Bước 2 gộp tin Grok vào nhóm tin ứng viên. Thiếu/hỏng file thì routine bỏ qua nguồn Grok.
 
 | Mục | Giá trị |
 |---|---|
 | Lịch | Hằng ngày 05:30 giờ VN, trước routine (07:00) |
 | Quyền GitHub | Chỉ được vào `sontvwork/daily-news-inbox`, KHÔNG được vào `sontvwork/daily-news` |
-| Output | `grok/<DATE>.json` (schema `grok-inbox/1`), commit message `grok: <DATE>` |
+| Output | `grok/<DATE>.json` (schema `grok-inbox/2`), commit message `grok: <DATE>` |
 | Prompt | Nội dung file [GROK_PROMPT.md](GROK_PROMPT.md), dán nguyên văn |
 
 **Tiêu chí:** mục 2 của prompt dựa trên khối "Tiêu chí biên tập" của [ROUTINE_PROMPT.md](ROUTINE_PROMPT.md), nhưng từ v6.1 đã **cố ý khác** (thêm "bài viết hot trên X liên quan AI", bỏ "khảo sát mức độ tiếp nhận" và "chủ đề AI chung chung" khỏi danh sách loại bỏ) và viết bằng tiếng Anh. Không cần chép nguyên văn nữa; khi đổi định hướng biên tập ở ROUTINE_PROMPT thì xem lại mục 2 cho khớp ý. Sửa prompt xong thì dán lại vào Grok.
 
 ## Lịch sử chỉnh sửa
 
-### v6.1 (27/10/2026)
+### v6.1 (27/10/2026) — CHỐT 01/11/2026
+Đánh giá 3 lần chạy 05:30 (30/10–01/11): 7 / 7 / 8 tin mỗi ngày (v4.1: 3), 29/29 tweet thật ở bản cuối, 16/16 URL trả 200, dữ kiện khớp nguồn. Vẫn còn bịa ID (01/11, Grok tự sửa ở commit thứ hai), tin lặp giữa các ngày, `x_posts` lẫn bài 0 like/reply → `grok.py` lọc. Chi tiết + độ phủ: `.cache/plans/grok-merge.md`.
+
 - Người dùng tự sửa: mục 2 mở rộng sang bài viết hot trên X liên quan AI; mục 1 bỏ ngoại lệ "bài cũ đang hot"; `x_posts` chỉ còn bài gốc (bỏ bài phản hồi); bỏ một số luật trung thực.
 - Bỏ trường `reaction`: Grok bịa ở mọi phiên bản (ngày 25/10 còn tóm tắt một tweet bịa ID), và routine không dùng được (bình luận chỉ lấy từ `deep.json`).
 - Dịch toàn bộ prompt sang tiếng Anh, nội dung giữ nguyên.

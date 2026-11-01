@@ -5,11 +5,13 @@ Bản tin tiếng Việt hằng ngày về **AI ứng dụng trong phát triển
 - 🌐 Trang: https://sontvwork.github.io/daily-news/
 
 ```
+Grok Automation (05:30 VN) → repo sontvwork/daily-news-inbox: grok/DATE.json (tin X, prompt GROK_PROMPT.md)
 Claude Code Routine (07:00 VN = cron 0 0 * * * UTC, cloud)
+  → scripts/grok.py fetch: tải tin Grok, kiểm từng bài X qua fxtwitter → news/raw/DATE/grok.json (thiếu file thì bỏ qua)
   → domain (skill news-research, agent chính tự làm): scripts/research.sh = last30days --discover (3 leg, --days 1),
       chấm điểm mọi domain trong một lượt (scripts/judge.py) → news/raw/
   → follow-up tới hạn (followups/): sub-agent news-researcher (tối đa 2 cái song song), last30days topic mode (--days N)
-  → Claude viết news/YYYY-MM-DD.md (tiếng Việt; follow-up là các tin đầu) + 1–3 dòng tóm tắt
+  → Claude gộp ứng viên last30days + Grok, đọc sâu (scripts/deepread.py), viết news/YYYY-MM-DD.md (tiếng Việt; follow-up là các tin đầu) + 1–3 dòng tóm tắt
   → scripts/publish.sh: xoá bản tin quá 30 ngày + follow-up đã xử lý → feed.xml (library feed) + trang card (theme/) → guard → commit "news: DATE" → push main
       → GitHub Actions deploy news/ lên Pages → kiểm tra link live → Google Chat
   (lỗi ở bất kỳ bước nào → Google Chat báo bước bị fail)
@@ -30,6 +32,8 @@ Reply vào session routine "ngày mai báo cáo về X" → skill news-followup 
 | `.claude/skills/news-research/`     | Quy trình research domain cho agent chính (leg 1 → chấm điểm → leg 2 + finalize)                                 |
 | `.claude/agents/news-researcher.md` | Sub-agent research 1 follow-up (topic mode), trả báo cáo cho agent chính                                           |
 | `.claude/skills/news-followup/`     | Skill ghi chỉ thị follow-up khi người dùng reply vào session routine                                               |
+| `scripts/grok.py`                   | Tin X do Grok gom (repo inbox): `fetch` (kiểm bài X qua fxtwitter → `news/raw/DATE/grok.json`), `candidates` (ứng viên Grok cho bước viết bài) |
+| `GROK_PROMPT.md` + `GROK_SETUP.md`  | Prompt dán vào Grok Automation + cấu hình, lịch sử chỉnh sửa                                                      |
 | `scripts/followup.py` + `followup.sh` | Follow-up: luật (ngày, slug, tối đa 3/ngày) + `add`/`cancel`/`list`/`due`; `followup.sh` commit + push           |
 | `followups/`                        | Chỉ thị đang chờ: `<DUE>-<slug>.json` (ngoài `news/` nên không deploy Pages)                                        |
 | `scripts/news.py`                   | `validate`, `prune` (xoá bản tin quá hạn), `site` (feed.xml + render trang + kiểm tra link), `link`, `summary`, `verify-live` |

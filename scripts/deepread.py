@@ -7,7 +7,8 @@
 URL là URL gốc (blog, repo GitHub) hoặc link Hacker News (news.ycombinator.com/item?id=N → đọc cả bài
 mà story trỏ tới). Thread Hacker News của URL gốc lấy từ metadata.hn_url trong news/raw/DATE/*-nominations.json,
 nên comment luôn thuộc đúng story đã đề cử (khác top_comment của leg 2, vốn gom từ mọi kết quả tìm theo keyword).
-Mạng trên cloud (kiểm tra 24/10/2026): github.com bị proxy chặn → README đọc qua raw.githubusercontent.com;
+Mạng trên cloud (kiểm tra 24/10/2026): github.com bị proxy chặn → README/blob đọc qua raw.githubusercontent.com,
+trang release (releases/tag/T) đọc mục của T trong CHANGELOG.md tại tag đó (repo không có mục đó thì báo lỗi);
 Reddit chặn IP datacenter → bỏ qua. URL lỗi không làm script fail: tin đó chỉ còn dữ kiện của bundle.
 
 An toàn: deep.json được commit vào repo public, còn URL đến từ dữ liệu bên thứ ba → chỉ đọc http(s) tới địa chỉ
@@ -45,6 +46,7 @@ DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 HN_LINK = re.compile(r"^https?://news\.ycombinator\.com/item\?id=(\d+)")
 GITHUB_REPO = re.compile(r"^https?://(?:www\.)?github\.com/([\w.-]+)/([\w.-]+?)(?:\.git)?/?(?:[?#].*)?$")
 GITHUB_BLOB = re.compile(r"^https?://(?:www\.)?github\.com/([\w.-]+)/([\w.-]+)/blob/(.+)$")
+GITHUB_RELEASE = re.compile(r"^https?://(?:www\.)?github\.com/([\w.-]+)/([\w.-]+)/releases/tag/([\w.+-]+)/?$")
 HN_ITEM = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 LOCAL_SUFFIXES = (".localhost", ".local", ".internal")
 # Không đọc được bằng HTTP thuần: chặn IP datacenter (Reddit) hoặc nội dung render bằng JS.
@@ -213,6 +215,22 @@ def markdown_text(text: str) -> str:
     return tidy(re.sub(r"<[^>]+>", "", text))
 
 
+def changelog_section(text: str, tag: str) -> str:
+    """Mục của đúng phiên bản trong CHANGELOG.md (heading chứa số phiên bản của tag); không có thì ''."""
+    version = re.sub(r"^[^\d]*", "", tag)  # v2.1.316, rust-v0.166.0 → số phiên bản
+    if not version:
+        return ""
+    lines = text.splitlines()
+    for start, line in enumerate(lines):
+        heading = re.match(r"^(#{1,4})\s", line)
+        if heading and re.search(rf"(?<![\w.]){re.escape(version)}(?![\w.])", line):
+            level = len(heading[1])
+            end = next((i for i in range(start + 1, len(lines))
+                        if (m := re.match(r"^(#{1,4})\s", lines[i])) and len(m[1]) <= level), len(lines))
+            return "\n".join(lines[start:end])
+    return ""
+
+
 def hn_html(text: str) -> str:
     """Text comment/story của Hacker News API là HTML (<p>, <a>, <i>, <pre>)."""
     return tidy(html.unescape(re.sub(r"<[^>]+>", "", text.replace("<p>", "\n"))))
@@ -223,7 +241,9 @@ def read_article(url: str) -> dict:
     if any(host == h or host.endswith("." + h) for h in SKIP_HOSTS):
         return {"url": url, "status": "skipped", "reason": f"{host} không đọc được bằng HTTP thuần"}
     fetch_url, kind = url, "html"
-    if match := GITHUB_REPO.match(url):
+    if match := GITHUB_RELEASE.match(url):  # trang release ở github.com (bị chặn trên cloud) → mục trong CHANGELOG.md
+        fetch_url, kind = f"https://raw.githubusercontent.com/{match[1]}/{match[2]}/{match[3]}/CHANGELOG.md", "changelog"
+    elif match := GITHUB_REPO.match(url):
         fetch_url, kind = f"https://raw.githubusercontent.com/{match[1]}/{match[2]}/HEAD/README.md", "markdown"
     elif match := GITHUB_BLOB.match(url):
         fetch_url, kind = f"https://raw.githubusercontent.com/{match[1]}/{match[2]}/{match[3]}", "markdown"
@@ -232,7 +252,11 @@ def read_article(url: str) -> dict:
     except FetchError as exc:
         return {"url": url, "status": "error", "reason": str(exc)}
     title = ""
-    if kind == "markdown" or content_type in ("text/markdown", "text/plain"):
+    if kind == "changelog":
+        text = markdown_text(changelog_section(body, match[3]))
+        if not text:
+            return {"url": url, "status": "error", "reason": f"CHANGELOG.md không có mục {match[3]}"}
+    elif kind == "markdown" or content_type in ("text/markdown", "text/plain"):
         text = markdown_text(body)
     elif content_type in ("text/html", "application/xhtml+xml"):
         parser = TextExtractor()

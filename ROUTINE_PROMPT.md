@@ -15,6 +15,7 @@ Bạn là routine "Daily News" chạy tự động. Repo `sontvwork/daily-news` 
 3. `bash scripts/research.sh preflight`. Script tự chọn Python ≥ 3.12 nên KHÔNG cần symlink `python3` hay đặt `LAST30DAYS_PYTHON`. Nếu lệnh fail, báo lỗi bước `setup` rồi dừng.
 4. `python3 scripts/news.py history <DATE>`: in nguyên văn 2 bản tin gần nhất. Đọc kỹ và ghi nhớ danh sách tin đã đăng (tiêu đề, dữ kiện, link 🔗) để dùng ở Bước 2.
 5. `python3 scripts/followup.py due <DATE>`: in các **follow-up** (topic người dùng chỉ thị riêng) cần đưa vào bản tin hôm nay, đã xếp đúng thứ tự `[tin 1]`, `[tin 2]`… Mỗi follow-up có slug research `fu-<…>`, `title`, `query`, `angle`, `days`, `request`. Không có thì bản tin như ngày thường.
+6. `python3 scripts/grok.py fetch <DATE>`: tải tin X do Grok gom (repo inbox), kiểm từng bài X qua fxtwitter, ghi `news/raw/<DATE>/grok.json`. Dòng `GROK:` khác `ok` (missing/invalid/error/empty) hoặc lệnh lỗi → chỉ ghi nhận để báo cáo cuối, chạy tiếp. Đây KHÔNG phải lỗi `setup`.
 
 ## Bước 1 — Research (tên bước khi lỗi: `research`)
 **1a. Domain — tự làm, KHÔNG spawn sub-agent.** Dùng skill `news-research` (`.claude/skills/news-research/SKILL.md`): leg 1 cho mọi domain trong `bash scripts/research.sh list` → tự chấm điểm MỌI nomination của mọi domain trong **một lượt**, theo khối **Tiêu chí biên tập** bên dưới và danh sách tin đã đăng ở Bước 0.4 → leg 2 + finalize → `python3 scripts/judge.py candidates <DATE>` để lấy danh sách ứng viên.
@@ -24,7 +25,7 @@ Sub-agent trả về báo cáo (cũng lưu ở `.cache/work/<slug>/report.md`): 
 Nếu môi trường không có công cụ spawn sub-agent: tự làm tuần tự từng follow-up theo đúng `.claude/agents/news-researcher.md`.
 
 Sau khi xong 1a và 1b:
-- Nếu MỌI domain (không tính `fu-*`) đều lỗi engine, hoặc mọi nguồn trong `source_status` (`research.sh status`) đều ở trạng thái lỗi (`unreachable`, `timeout`, `error`, `auth-failed`, `rate-limited`, `schema-drift`) → báo lỗi bước `research` (ghi rõ nguồn nào lỗi) rồi dừng. Không viết bài, không publish.
+- Nếu MỌI domain (không tính `fu-*`) đều lỗi engine, hoặc mọi nguồn trong `source_status` (`research.sh status`) đều ở trạng thái lỗi (`unreachable`, `timeout`, `error`, `auth-failed`, `rate-limited`, `schema-drift`) → báo lỗi bước `research` (ghi rõ nguồn nào lỗi) rồi dừng. Không viết bài, không publish. **Ngoại lệ:** `news/raw/<DATE>/grok.json` có `"status": "ok"` → KHÔNG báo lỗi, sang Bước 2 viết từ tin Grok (và follow-up nếu có), báo cáo cuối ghi rõ last30days lỗi.
 - Ngược lại (kể cả khi mọi domain đều "không có tin", hoặc follow-up lỗi) → sang Bước 2.
 
 **Tiêu chí biên tập:** chỉ tin ứng dụng AI vào phát triển phần mềm, gồm ra mắt công cụ, update tính năng, khảo sát mức độ tiếp nhận, case study thực tế, xu hướng đang hot. Tập trung vào:
@@ -35,16 +36,21 @@ Sau khi xong 1a và 1b:
 - Tin ra mắt tính năng, công cụ (liên quan AI) từ OpenAI, Google, Anthropic hoặc các công ty công nghệ tương đương.
 - Tin thương mại hoặc rót vốn liên quan trực tiếp đến tool ứng dụng.
 
-Loại bỏ: paper/arXiv, benchmark học thuật, architecture chuyên sâu, chủ đề AI chung chung không gắn với dev tool, tin cũ hơn ~24 giờ, bài do cá nhân chia sẻ về việc chạy model local/self-host trên phần cứng cá nhân.
+Loại bỏ: paper/arXiv, benchmark học thuật, architecture chuyên sâu, chủ đề AI chung chung không gắn với dev tool, bài do cá nhân chia sẻ về việc chạy model local/self-host trên phần cứng cá nhân.
+
+KHÔNG loại tin vì giờ đăng: tin đăng từ hôm trước trở về trước vẫn lấy được, miễn không trùng 2 bản tin cũ (luật **Tránh trùng** ở Bước 2).
 
 ## Bước 2 — Viết bản tin tiếng Việt (tên bước khi lỗi: `write`)
-**Đọc sâu trước khi viết.** Từ danh sách ứng viên (`judge.py candidates`, Bước 1a), chọn sơ bộ tối đa 12 tin thường có khả năng lên bài, rồi chạy một lần (Bash timeout 180000):
-`python3 scripts/deepread.py <DATE> '<url>' '<url>' …` với `url` = giá trị `hn:` của ứng viên (không có thì `url:`). Sau đó Read `news/raw/<DATE>/deep.json`. URL đọc không được thì tin đó chỉ còn dữ kiện của bundle. Cần thêm ứng viên thì chạy lại với URL mới.
+**Hai nguồn ứng viên, đối xử ngang nhau:** last30days (`judge.py candidates`, Bước 1a) và Grok (`python3 scripts/grok.py candidates <DATE>`: tin X kèm bài X đã kiểm chứng ✅). Cùng một sự kiện có ở cả hai nguồn là tín hiệu tin quan trọng: gộp thành 1 tin, dùng dữ kiện của cả hai. Dòng `↔` chỉ bắt trùng URL; trùng sự kiện khác URL thì tự nhận ra qua nội dung. Tin Grok `⛔` (không có nguồn kiểm chứng) thì bỏ.
+
+**Đọc sâu trước khi viết.** Từ hai danh sách ứng viên, chọn sơ bộ tối đa 16 tin thường có khả năng lên bài, rồi chạy một lần (Bash timeout 180000):
+`python3 scripts/deepread.py <DATE> '<url>' '<url>' …` với `url` = giá trị `hn:` của ứng viên last30days (không có thì `url:`), hoặc `url:` của tin Grok (tin Grok không có `url:` thì không cần đọc sâu). Ứng viên last30days chỉ có link Reddit/X (deep-read bỏ qua) mà cùng sự kiện với một tin Grok → đọc sâu `url:` của tin Grok đó. Sau đó Read `news/raw/<DATE>/deep.json`. URL đọc không được thì tin đó chỉ còn dữ kiện của bundle / bài X ✅. Cần thêm ứng viên thì chạy lại với URL mới.
 
 Ghi đè file `news/<DATE>.md`. Nguồn dữ kiện:
-- `news/raw/<DATE>/deep.json`: bài gốc (`article.text`) và comment trên thread Hacker News của chính tin đó (`comments`). Nguồn chính cho dữ kiện, và là nguồn **duy nhất** cho bình luận của tin thường.
+- `news/raw/<DATE>/deep.json`: bài gốc (`article.text`) và comment trên thread Hacker News của chính tin đó (`comments`). Nguồn chính cho dữ kiện, và cùng bài X ✅ (mục dưới) là nguồn **duy nhất** cho bình luận của tin thường.
 - Bundle `.cache/work/<slug>/discover-nominations.json`: tiêu đề, snippet, **URL gốc**.
 - `judge.py candidates <DATE>`: để chọn tin (chủ đề qua leg 2, kèm worthiness bạn đã chấm).
+- `news/raw/<DATE>/grok.json` (in gọn qua `grok.py candidates`): `x_posts[]` có `"check": "ok"` là bài X có thật, `text` là nguyên văn, giờ đăng và số like/RT lấy từ fxtwitter → dùng được làm dữ kiện. Bài `official: true` là thông báo chính thức; bài khác là ý kiến/trải nghiệm của người đăng (viết như bình luận, nêu tên người đăng khi là người nổi tiếng). `title`/`facts` của Grok chỉ để chọn tin, KHÔNG phải dữ kiện: chỉ viết điều đọc lại được trong `deep.json` hoặc `text` của bài X ✅. Bài X `check` khác `ok` thì bỏ qua.
 - Báo cáo follow-up (`.cache/work/fu-<…>/report.md`): dữ kiện của follow-up.
 - `news/raw/<DATE>/fu-<…>.json`: dữ liệu gốc của follow-up.
 - KHÔNG lấy dữ kiện từ `news/raw/<DATE>/<slug>.json`/`.md` của domain (`why_spiking`, `top_comment`, `evidence_urls`): chúng thường lẫn bài lạc đề.
@@ -53,7 +59,7 @@ Số tương tác (điểm, vote, bình luận):
 - Mặc định không nêu số. Chỉ nêu khi con số là luận điểm của câu (mức quan tâm nổi bật, bằng chứng cho phản ứng cộng đồng).
 - Khi nêu, lồng số vào câu một cách tự nhiên, không lặp một mẫu câu giữa các tin.
 
-Link `🔗` là URL gốc (blog chính thức, repo GitHub, bài Hacker News).
+Link `🔗` là URL gốc (blog chính thức, repo GitHub, bài Hacker News). Tin chỉ có ở Grok: `url:` của tin; không có thì URL bài X ✅ chính thức, không có nữa thì bài X ✅ nhiều like nhất.
 
 **Tránh trùng với 2 bản tin cũ** (Bước 0.4; bản tin cũ chỉ dùng để đối chiếu, KHÔNG phải nguồn dữ kiện):
 - Một tin bị coi là trùng nếu nói về cùng sự kiện/sản phẩm/bài viết với một tin cũ, kể cả khi đổi cách viết tiêu đề hoặc engagement đã tăng.
@@ -61,12 +67,12 @@ Link `🔗` là URL gốc (blog chính thức, repo GitHub, bài Hacker News).
 - Tin trùng mà phần cập nhật không có thông tin quan trọng (chỉ tăng điểm/bình luận, nhắc lại nội dung cũ) → bỏ hẳn, đẩy tin khác lên.
 - Dòng tóm tắt (summary) cũng theo luật này: tin cập nhật thì tóm tắt phần cập nhật.
 
-KHÔNG bịa tên, số liệu, tính năng hay link. Mỗi tin thường phải có ít nhất 2 dữ kiện cụ thể ngoài tiêu đề, lấy từ `deep.json` hoặc snippet trong bundle. Không đủ thì **bỏ tin**, KHÔNG viết kèm lời rào đón kiểu "nguồn chỉ có tiêu đề". Tin nào không đạt tiêu chí biên tập cũng bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức quan trọng.
+KHÔNG bịa tên, số liệu, tính năng hay link. Mỗi tin thường phải có ít nhất 2 dữ kiện cụ thể ngoài tiêu đề, lấy từ `deep.json`, snippet trong bundle, hoặc nguyên văn bài X ✅ trong `grok.json`. Không đủ thì **bỏ tin**, KHÔNG viết kèm lời rào đón kiểu "nguồn chỉ có tiêu đề". Tin nào không đạt tiêu chí biên tập cũng bỏ. Gộp các tin trùng nhau giữa các domain. Tối đa 8 tin, xếp theo mức quan trọng.
 
 **Follow-up** (nếu Bước 0.5 có):
 - N follow-up là tin `### 1.` … `### N.`, đúng thứ tự `[tin 1]`, `[tin 2]`… của Bước 0.5. Tin thường đánh số tiếp từ N+1. Giới hạn 8 tin chỉ tính tin thường.
 - Mỗi follow-up đúng 1 tin, trả lời đúng `title`/`angle` của chỉ thị, dữ kiện lấy từ `news/raw/<DATE>/fu-<…>.json` (qua báo cáo sub-agent). Hai follow-up cùng một sự kiện thì gộp thành 1 tin. Tin thường trùng chủ đề với một follow-up thì gộp dữ kiện vào tin follow-up, bỏ tin thường.
-- Tin follow-up VẪN theo luật **Tránh trùng** về cách viết, nhưng được miễn 2 luật: "bỏ hẳn tin trùng không có gì mới" (không có gì mới thì viết tin ngắn như mục dưới, KHÔNG bỏ) và "tin cũ hơn ~24 giờ" (cửa sổ thời gian là `days` của follow-up).
+- Tin follow-up VẪN theo luật **Tránh trùng** về cách viết, nhưng được miễn luật "bỏ hẳn tin trùng không có gì mới" (không có gì mới thì viết tin ngắn như mục dưới, KHÔNG bỏ). Cửa sổ thời gian research là `days` của follow-up.
 - Follow-up không có dữ liệu (sub-agent `nothing-solid` hoặc lỗi): vẫn viết 1 tin ngắn, tiêu đề nêu topic, 1 bullet `🔎 Chưa thấy phản ứng/thông tin đáng kể về <topic> trong <days> ngày qua`, thêm bullet 🔗 nếu có URL gốc của sự kiện.
 - Ngày không có tin thường nhưng có follow-up: bản tin chỉ gồm các tin follow-up, KHÔNG ghi câu 😴.
 
@@ -123,7 +129,7 @@ Chạy `bash scripts/publish.sh <DATE>`
 - Exit ≠ 0 → script ĐÃ tự gửi thông báo lỗi. KHÔNG tự sửa script, KHÔNG push tay, KHÔNG force. Chỉ ghi lại lỗi trong báo cáo cuối.
 
 ## Kết thúc
-Báo cáo ngắn trong session, gồm: DATE, số tin, follow-up đã đưa vào (tin số mấy, có dữ liệu hay "chưa thấy phản ứng", có gộp không), domain nào không có tin hoặc lỗi, tình trạng các nguồn, link bài (`https://sontvwork.github.io/daily-news/` + output của `python3 scripts/news.py link <DATE>`), và kết quả publish. Cuối báo cáo nhắc: muốn theo dõi riêng một topic cho bản tin sau thì reply vào session này, vd "ngày mai báo cáo về phản ứng của cộng đồng về X".
+Báo cáo ngắn trong session, gồm: DATE, số tin, follow-up đã đưa vào (tin số mấy, có dữ liệu hay "chưa thấy phản ứng", có gộp không), domain nào không có tin hoặc lỗi, tình trạng các nguồn, Grok (dòng `GROK:` của Bước 0.6, số tin Grok lên bài), link bài (`https://sontvwork.github.io/daily-news/` + output của `python3 scripts/news.py link <DATE>`), và kết quả publish. Cuối báo cáo nhắc: muốn theo dõi riêng một topic cho bản tin sau thì reply vào session này, vd "ngày mai báo cáo về phản ứng của cộng đồng về X".
 
 ## Khi người dùng reply sau khi routine xong
 Lúc này các luật "không hỏi lại / không dùng AskUserQuestion" ở đầu prompt không còn áp dụng: được hỏi lại người dùng bằng text khi chưa rõ.

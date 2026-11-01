@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "310c07acd28d599c",
+  "generated_at": "2026-10-31T23:56:29.809938Z",
+  "from_date": "2026-10-30",
+  "to_date": "2026-10-31",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-31T23:56:29.808735Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-31T23:56:29.808742Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-10-31T23:56:29.806429Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-31T23:56:29.808670Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Backdoor Claude Code VS Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 547,
+          "points": 966
+        }
+      },
+      "nomination": {
+        "name": "Backdoor Claude Code VS Code",
+        "seed_score": 1604.7788,
+        "summary": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50300683",
+            "source": "hackernews",
+            "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "body": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+            "author": "_chall",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 966,
+              "comments": 547
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Backdoor in Claude Code for VS Code extension on the Cursor",
+            "snippet": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50300683",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anthropic IPO Blackstone",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 284,
+          "points": 322
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO Blackstone",
+        "seed_score": 642.7601,
+        "summary": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50307219",
+            "source": "hackernews",
+            "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "body": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+            "author": "petethomas",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 322,
+              "comments": 284
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic may not secure investment-grade rating after IPO,",
+            "snippet": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50307219",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 70,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "OpenAI 30B",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 186,
+          "points": 181
+        }
+      },
+      "nomination": {
+        "name": "OpenAI 30B",
+        "seed_score": 550.5,
+        "summary": "OpenAI raises less than half of $30B target",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50312922",
+            "source": "hackernews",
+            "title": "OpenAI raises less than half of $30B target",
+            "body": "OpenAI raises less than half of $30B target",
+            "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+            "author": "timr",
+            "container": "Hacker News",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 181,
+              "comments": 186
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about OpenAI raises less than half of $30B target",
+            "snippet": "OpenAI raises less than half of $30B target",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50312922",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.356
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic blocks",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 51,
+          "points": 150
+        }
+      },
+      "nomination": {
+        "name": "Anthropic blocks",
+        "seed_score": 301.5,
+        "summary": "Anthropic blocks users for anything touching training larger models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50319358",
+            "source": "hackernews",
+            "title": "Anthropic blocks users for anything touching training larger models",
+            "body": "Anthropic blocks users for anything touching training larger models",
+            "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 150,
+              "comments": 51
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic blocks users for anything touching training larger",
+            "snippet": "Anthropic blocks users for anything touching training larger models",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50319358",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2875
+          }
+        ]
+      }
+    }
+  ]
+}

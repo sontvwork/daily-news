@@ -1,0 +1,885 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "817b361bcffc150f",
+  "generated_at": "2026-10-31T23:56:28.875709Z",
+  "from_date": "2026-10-30",
+  "to_date": "2026-10-31",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-31T23:56:28.844698Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-31T23:56:28.844706Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-10-31T23:56:28.803100Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 45,
+      "attempted": true,
+      "at": "2026-10-31T23:56:28.844581Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Backdoor Claude Code VS Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 547,
+          "points": 966
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Backdoor Claude Code VS Code",
+        "seed_score": 1847.9351,
+        "summary": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50300683",
+            "source": "hackernews",
+            "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "body": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+            "author": "_chall",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 966,
+              "comments": 547
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "HN story about Backdoor in Claude Code for VS Code extension on the Cursor",
+            "snippet": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50300683",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2875
+          },
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "Open source orchestrator for Claude Code + Codex: a Claude lead hands work to Codex agents, each in its own git worktree",
+            "body": "Open source orchestrator for Claude Code + Codex: a Claude lead hands work to Codex agents, each in its own git worktree\nI kept juggling Claude Code and Codex in different terminals on two machines, so I built wisp.\n    \n    What it does:\n    - Runs Claude Code, Codex, Cursor CLI, opencode, Antigravity, Grok and Copilot CLI in parallel, each task in its own git worktree and branch, so they never collide\n    - Runs them on your laptop, your other machines over SSH, or a server, all in one queue\n    - A lead agent can delegate: e.g. Claude Code plans, hands tests to 3 Codex copies and a refactor to Claude on another box\n    - Agents can ask you questions mid-run; you answer from desktop or phone\n    - When a task finishes you get a one-screen report (diff, tests, decisions) instead of the transcript\n    - \"Ship it\" commits, pushes and opens the PR\n    \n    It uses the Claude/Codex plans you already have; nothing extra to pay. MIT, Node 20+, no runtime dependencies.\n    \n    Try it: npx wisp-agents\n    Repo: https://github.com/M0xoo/wisp\n    Site: https://trywisp.dev\n    \n    Happy to answer questions. I'd especially like feedback from people running agents on more than one machine.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xjfais/open_source_orchestrator_for_claude_code_codex_a/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I kept juggling Claude Code and Codex in different terminals on two machines, so I built wisp.\n    \n    What it does:\n    - Runs Claude Code, Codex, Cursor CLI, opencode, Antigravity, Grok and Copilot CLI in parallel, each task in its own git worktree and branch, so they never collide\n    - Runs them on your laptop, your other machines over SSH, or a server, all in one queue\n    - A lead agent",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29400000000000004
+          },
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "How Claude Code, Codex, Cursor and Copilot each meter usage, from their own docs (so you know what \"I hit the limit\" means on each)",
+            "body": "How Claude Code, Codex, Cursor and Copilot each meter usage, from their own docs (so you know what \"I hit the limit\" means on each)\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xkc0ue/how_claude_code_codex_cursor_and_copilot_each/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Backdoors in official Claude Code extensions",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 17,
+          "points": 655
+        },
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Backdoors in official Claude Code extensions",
+        "seed_score": 821.4031,
+        "summary": "Backdoors in official Claude Code extensions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50302334",
+            "source": "hackernews",
+            "title": "Backdoors in official Claude Code extensions",
+            "body": "Backdoors in official Claude Code extensions",
+            "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+            "author": "dsr_",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 655,
+              "comments": 17
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about Backdoors in official Claude Code extensions",
+            "snippet": "Backdoors in official Claude Code extensions",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50302334",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 10,
+            "engagement_score": 41,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17650000000000002
+          },
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Bought \"official\" Codex / Claude Code from a reseller \u2014 one command later your sandbox is gone",
+            "body": "Bought \"official\" Codex / Claude Code from a reseller \u2014 one command later your sandbox is gone\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xk4cy8/bought_official_codex_claude_code_from_a_reseller/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36350000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Cisco AI tokens",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 368,
+          "points": 301
+        }
+      },
+      "nomination": {
+        "name": "Cisco AI tokens",
+        "seed_score": 709.5817,
+        "summary": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50304122",
+            "source": "hackernews",
+            "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+            "body": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+            "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "author": "taubek",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 301,
+              "comments": 368
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "HN story about Cisco gives engineer unlimited AI tokens to rewrite legacy c",
+            "snippet": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50304122",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 10,
+            "engagement_score": 72,
+            "source_quality": 0.8,
+            "local_rank_score": 0.305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "federated code forge",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 94,
+          "points": 324
+        }
+      },
+      "nomination": {
+        "name": "federated code forge",
+        "seed_score": 443.356,
+        "summary": "The federated code forge",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50305573",
+            "source": "hackernews",
+            "title": "The federated code forge",
+            "body": "The federated code forge",
+            "url": "https://tangled.org/blog/forge/",
+            "author": "zlliang",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 324,
+              "comments": 94
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about The federated code forge",
+            "snippet": "The federated code forge",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50305573",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Jiahao Shao Shame DarioAmodei Anthropic Claude\u2014rollouts",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "Jiahao Shao Shame DarioAmodei Anthropic Claude\u2014rollouts",
+        "seed_score": 348.0,
+        "summary": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude\u2014rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude\u2014rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+            "body": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude\u2014rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkm5gz/jiahao_shao_on_x_shame_on_darioamodei_anthropic_i/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 190,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude\u2014rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 97,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36750000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 325.6227,
+        "summary": "Claude now refuses to draw its own logo because of fear of \"copyright infringement.\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Claude now refuses to draw its own logo because of fear of \"copyright infringement.\"",
+            "body": "Claude now refuses to draw its own logo because of fear of \"copyright infringement.\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1xjqdlz/claude_now_refuses_to_draw_its_own_logo_because/",
+            "container": "singularity",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 275,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude now refuses to draw its own logo because of fear of \"copyright infringement.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "OpenAI Chat Work December Only Instant",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Chat Work December Only Instant",
+        "seed_score": 99.0,
+        "summary": "OpenAI is merging Chat and Work in December. Only Instant will be unlimited, and everything else will count toward your Codex limits",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "OpenAI is merging Chat and Work in December. Only Instant will be unlimited, and everything else will count toward your Codex limits",
+            "body": "OpenAI is merging Chat and Work in December. Only Instant will be unlimited, and everything else will count toward your Codex limits",
+            "url": "https://www.reddit.com/r/singularity/comments/1xklpe5/openai_is_merging_chat_and_work_in_december_only/",
+            "container": "singularity",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 47,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "OpenAI is merging Chat and Work in December. Only Instant will be unlimited, and everything else will count toward your Codex limits",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 56
+        }
+      },
+      "nomination": {
+        "name": "AI models",
+        "seed_score": 84.0,
+        "summary": "\"Amodei estimates that training costs (of new models) will jump to **$10 billion** and eventually **$100 billion** per model over the next few years (approaching 2027) as compute and cluster sizes expand\"\n\nI believe the cost of training the latest models was probably close to $1B. OpenAI disclosed that they had to use 400,000 GPUs for Astra.\n\nNow, if Anthropic is losing $80B every 6 months, having",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R64",
+            "source": "reddit",
+            "title": "Can't see how the current AI models are ever going to be sustainable",
+            "body": "Can't see how the current AI models are ever going to be sustainable\n\"Amodei estimates that training costs (of new models) will jump to **$10 billion** and eventually **$100 billion** per model over the next few years (approaching 2027) as compute and cluster sizes expand\"\n\nI believe the cost of training the latest models was probably close to $1B. OpenAI disclosed that they had to use 400,000 GPUs for Astra.\n\nNow, if Anthropic is losing $80B every 6 months, having \"only\" spent $1B to train their latest model, how is that going to work when cost is x10 or x100 for the next ones?\n\nWith 40 million individual customers (not enterprise), it means charging an extra $2,017 for the 6-month period to wipe that amount of current losses.\n\nAnyone here willing to pay $4K per year to stay on the current Claude model, and use it 20 hours a month?\n\nNext one will cost a lot more, be ready!\n\nI can't see how they will EVER be profitable, unless they stop creating new models, and start charging customers (individuals or companies) the real cost of existing models, which is significantly more than what customers are paying currently.\n\nA company that will never be profitable is worth zero.\n\nI love Claude and Opus 5.5, really impressed, but I doubt I will have access at $20 a month for much longer.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xk64rm/cant_see_how_the_current_ai_models_are_ever_going/",
+            "container": "singularity",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 56
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\"Amodei estimates that training costs (of new models) will jump to **$10 billion** and eventually **$100 billion** per model over the next few years (approaching 2027) as compute and cluster sizes expand\"\n\nI believe the cost of training the latest models was probably close to $1B. OpenAI disclosed that they had to use 400,000 GPUs for Astra.\n\nNow, if Anthropic is losing $80B every 6 months, having",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.46950000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "2x16Gb VRAM 128Gb RAM",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "2x16Gb VRAM 128Gb RAM",
+        "seed_score": 63.0,
+        "summary": "tl;dr: What should I be running for coding/agentic workflows? I have 2xRTX 5080s and 128Gb DDR5 RAM. \n\nCurrently, I'm running:   \n  \n\\-Qwen3.8-Flash-Next-Q5\\_K\\_XL (262k ctx, pp\\~150-200tps, decode \\~15tps)  \n  \n\\-Qwen3.8-27B-exl3-6bpw-H6 (131k ctx, pp \\~2k-3ktps, decode \\~60-80tps)\n\n\\-DeepSeek-V4-Flash-exl3-3.04bpw (1M ctx, pp\\~100-900, decode \\~15-20tps)\n\nI've been in a cave hiding from my local",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "What did I miss? What should I be running on 2x16Gb VRAM and 128Gb RAM?",
+            "body": "What did I miss? What should I be running on 2x16Gb VRAM and 128Gb RAM?\ntl;dr: What should I be running for coding/agentic workflows? I have 2xRTX 5080s and 128Gb DDR5 RAM. \n\nCurrently, I'm running:   \n  \n\\-Qwen3.8-Flash-Next-Q5\\_K\\_XL (262k ctx, pp\\~150-200tps, decode \\~15tps)  \n  \n\\-Qwen3.8-27B-exl3-6bpw-H6 (131k ctx, pp \\~2k-3ktps, decode \\~60-80tps)\n\n\\-DeepSeek-V4-Flash-exl3-3.04bpw (1M ctx, pp\\~100-900, decode \\~15-20tps)\n\nI've been in a cave hiding from my local model optimization addiction for a few weeks. What did I miss? Should I be using Strata? Is llama.cpp old news now? Any new models worth trying?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkieqt/what_did_i_miss_what_should_i_be_running_on/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "tl;dr: What should I be running for coding/agentic workflows? I have 2xRTX 5080s and 128Gb DDR5 RAM. \n\nCurrently, I'm running:   \n  \n\\-Qwen3.8-Flash-Next-Q5\\_K\\_XL (262k ctx, pp\\~150-200tps, decode \\~15tps)  \n  \n\\-Qwen3.8-27B-exl3-6bpw-H6 (131k ctx, pp \\~2k-3ktps, decode \\~60-80tps)\n\n\\-DeepSeek-V4-Flash-exl3-3.04bpw (1M ctx, pp\\~100-900, decode \\~15-20tps)\n\nI've been in a cave hiding from my local",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3075
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "ChatGPT Codex",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Codex",
+        "seed_score": 55.5,
+        "summary": "How do I make search with local models feel like ChatGPT / Codex?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "How do I make search with local models feel like ChatGPT / Codex?",
+            "body": "How do I make search with local models feel like ChatGPT / Codex?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkm2yb/how_do_i_make_search_with_local_models_feel_like/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do I make search with local models feel like ChatGPT / Codex?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.336
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Cursor",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "Cursor",
+        "seed_score": 43.4871,
+        "summary": "What actually made you switch from Cursor, or what made you stay?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "What actually made you switch from Cursor, or what made you stay?",
+            "body": "What actually made you switch from Cursor, or what made you stay?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xjfjis/what_actually_made_you_switch_from_cursor_or_what/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "What actually made you switch from Cursor, or what made you stay?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "When a coding agent can't do",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "When a coding agent can't do",
+        "seed_score": 40.5,
+        "summary": "When a coding agent can't do what you asked, it quietly builds something easier and reports it as done. Its own wording gives it away",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "When a coding agent can't do what you asked, it quietly builds something easier and reports it as done. Its own wording gives it away",
+            "body": "When a coding agent can't do what you asked, it quietly builds something easier and reports it as done. Its own wording gives it away",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xk6j6e/when_a_coding_agent_cant_do_what_you_asked_it/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "When a coding agent can't do what you asked, it quietly builds something easier and reports it as done. Its own wording gives it away",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3175
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Children AI perspective",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "Children AI perspective",
+        "seed_score": 37.5,
+        "summary": "I showed My daughter a real site to work on. She said she hated AI after I showed her the website, a turn key project. Then I explained it was done using the computers in the office.\n\nShe thought it was cool. :)\n\nThis was also after my child saw my laptop open on the floor while open code built the front end I would attach my framework to. It\u2019s amazing for an 8 or 10 year old to light up about it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "Children\u2019s AI perspective",
+            "body": "Children\u2019s AI perspective\nI showed My daughter a real site to work on. She said she hated AI after I showed her the website, a turn key project. Then I explained it was done using the computers in the office.\n\nShe thought it was cool. :)\n\nThis was also after my child saw my laptop open on the floor while open code built the front end I would attach my framework to. It\u2019s amazing for an 8 or 10 year old to light up about it being at home.\n\nHow do your children feel about it, maybe in the same explanation about using local AI?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkf2uq/childrens_ai_perspective/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I showed My daughter a real site to work on. She said she hated AI after I showed her the website, a turn key project. Then I explained it was done using the computers in the office.\n\nShe thought it was cool. :)\n\nThis was also after my child saw my laptop open on the floor while open code built the front end I would attach my framework to. It\u2019s amazing for an 8 or 10 year old to light up about it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.44300000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Anthropic Claude AI blocks",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Claude AI blocks",
+        "seed_score": 24.0,
+        "summary": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+            "body": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+            "url": "https://www.reddit.com/r/singularity/comments/1xkdg4o/anthropics_claude_ai_blocks_video_game_cloning/",
+            "container": "singularity",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.48800000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI M5 max MacBook Pro 128GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "AI M5 max MacBook Pro 128GB",
+        "seed_score": 22.5,
+        "summary": "I feel like this is a moving target of course, and can update against needed. But I\u2019d like to install something today (monthly internet cap resets tonight LOL). I code primarily in Xcode / objective C / swift,  python, some JS.\n\nI am patient and don\u2019t need it to be extremely fast, prefer correctness over speed.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "What\u2019s the best open weight model to install today for local AI coding tasks on an M5 max MacBook Pro with 128GB of unified ram?",
+            "body": "What\u2019s the best open weight model to install today for local AI coding tasks on an M5 max MacBook Pro with 128GB of unified ram?\nI feel like this is a moving target of course, and can update against needed. But I\u2019d like to install something today (monthly internet cap resets tonight LOL). I code primarily in Xcode / objective C / swift,  python, some JS.\n\nI am patient and don\u2019t need it to be extremely fast, prefer correctness over speed.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkh2ap/whats_the_best_open_weight_model_to_install_today/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I feel like this is a moving target of course, and can update against needed. But I\u2019d like to install something today (monthly internet cap resets tonight LOL). I code primarily in Xcode / objective C / swift,  python, some JS.\n\nI am patient and don\u2019t need it to be extremely fast, prefer correctness over speed.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.504
+          }
+        ]
+      }
+    }
+  ]
+}

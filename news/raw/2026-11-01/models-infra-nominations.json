@@ -1,0 +1,888 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "edf60ce24504b527",
+  "generated_at": "2026-10-31T23:56:46.021030Z",
+  "from_date": "2026-10-30",
+  "to_date": "2026-10-31",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-31T23:56:45.950505Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-10-31T23:56:45.950517Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 118,
+      "attempted": true,
+      "at": "2026-10-31T23:56:45.948061Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 9,
+      "attempted": true,
+      "at": "2026-10-31T23:56:45.950248Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Regulated Access Memory",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 84
+        }
+      },
+      "nomination": {
+        "name": "Regulated Access Memory",
+        "seed_score": 4176.0,
+        "summary": "Das GPT needs more Speicher!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R103",
+            "source": "reddit",
+            "title": "Regulated Access Memory",
+            "body": "Regulated Access Memory\nDas GPT needs more Speicher!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkeqja/regulated_access_memory/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2700,
+              "num_comments": 84
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Das GPT needs more Speicher!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Opus 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 162
+        }
+      },
+      "nomination": {
+        "name": "Claude Opus 5.5",
+        "seed_score": 1623.0,
+        "summary": "Claude Opus 5.5 can generate images even though it will initially say it can't.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Claude Opus 5.5 can generate images even though it will initially say it can't.",
+            "body": "Claude Opus 5.5 can generate images even though it will initially say it can't.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xjxl4s/claude_opus_55_can_generate_images_even_though_it/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 920,
+              "num_comments": 162
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Opus 5.5 can generate images even though it will initially say it can't.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Backdoor Claude Code VS Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 547,
+          "points": 966
+        }
+      },
+      "nomination": {
+        "name": "Backdoor Claude Code VS Code",
+        "seed_score": 1604.7788,
+        "summary": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50300683",
+            "source": "hackernews",
+            "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "body": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+            "author": "_chall",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 966,
+              "comments": 547
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Backdoor in Claude Code for VS Code extension on the Cursor",
+            "snippet": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50300683",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic updates Claude Steam AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 140
+        }
+      },
+      "nomination": {
+        "name": "Anthropic updates Claude Steam AI",
+        "seed_score": 1182.0,
+        "summary": "Anthropic updates Claude to 'steer it away' from letting users clone games following weeks of Steam being inundated with AI slop",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Anthropic updates Claude to 'steer it away' from letting users clone games following weeks of Steam being inundated with AI slop",
+            "body": "Anthropic updates Claude to 'steer it away' from letting users clone games following weeks of Steam being inundated with AI slop",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xkdcto/anthropic_updates_claude_to_steer_it_away_from/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 648,
+              "num_comments": 140
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic updates Claude to 'steer it away' from letting users clone games following weeks of Steam being inundated with AI slop",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Betelgeuse Running Qwen 3.8 Flash Next",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 144
+        }
+      },
+      "nomination": {
+        "name": "Betelgeuse Running Qwen 3.8 Flash Next",
+        "seed_score": 915.0,
+        "summary": "Betelgeuse: Running Qwen 3.8 Flash Next at 22 tok/s sustained (spiking to 48 tok/s) on an RTX 3060 12GB + 16GB DDR4 RAM 100% bit-exact!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Betelgeuse: Running Qwen 3.8 Flash Next at 22 tok/s sustained (spiking to 48 tok/s) on an RTX 3060 12GB + 16GB DDR4 RAM 100% bit-exact!",
+            "body": "Betelgeuse: Running Qwen 3.8 Flash Next at 22 tok/s sustained (spiking to 48 tok/s) on an RTX 3060 12GB + 16GB DDR4 RAM 100% bit-exact!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xk8s6z/betelgeuse_running_qwen_38_flash_next_at_22_toks/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 371,
+              "num_comments": 102
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Betelgeuse: Running Qwen 3.8 Flash Next at 22 tok/s sustained (spiking to 48 tok/s) on an RTX 3060 12GB + 16GB DDR4 RAM 100% bit-exact!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          },
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Betelgeuse running Qwen 3.8 Flash Next IQ4_XS at 24 tok/s on 2x8GB DDR4 (14 tok/s on a single 16GB stick) + RTX 3060 12GB \u2014 0 dropped experts, 100% byte-exact",
+            "body": "Betelgeuse running Qwen 3.8 Flash Next IQ4_XS at 24 tok/s on 2x8GB DDR4 (14 tok/s on a single 16GB stick) + RTX 3060 12GB \u2014 0 dropped experts, 100% byte-exact",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkh2ns/betelgeuse_running_qwen_38_flash_next_iq4_xs_at/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 95,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Betelgeuse running Qwen 3.8 Flash Next IQ4_XS at 24 tok/s on 2x8GB DDR4 (14 tok/s on a single 16GB stick) + RTX 3060 12GB \u2014 0 dropped experts, 100% byte-exact",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2945
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Jiahao Shao Shame DarioAmodei Anthropic Claude\u2014rollouts",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 51,
+          "points": 150
+        },
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "Jiahao Shao Shame DarioAmodei Anthropic Claude\u2014rollouts",
+        "seed_score": 746.925,
+        "summary": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude\u2014rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude\u2014rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+            "body": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude\u2014rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkm5gz/jiahao_shao_on_x_shame_on_darioamodei_anthropic_i/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 190,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing",
+            "snippet": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude\u2014rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3775
+          },
+          {
+            "item_id": "50319358",
+            "source": "hackernews",
+            "title": "Anthropic blocks users for anything touching training larger models",
+            "body": "Anthropic blocks users for anything touching training larger models",
+            "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 150,
+              "comments": 51
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Anthropic blocks users for anything touching training larger",
+            "snippet": "Anthropic blocks users for anything touching training larger models",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50319358",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.343
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Backdoors in official Claude Code extensions",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 17,
+          "points": 655
+        }
+      },
+      "nomination": {
+        "name": "Backdoors in official Claude Code extensions",
+        "seed_score": 712.7636,
+        "summary": "Backdoors in official Claude Code extensions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50302334",
+            "source": "hackernews",
+            "title": "Backdoors in official Claude Code extensions",
+            "body": "Backdoors in official Claude Code extensions",
+            "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+            "author": "dsr_",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 655,
+              "comments": 17
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Backdoors in official Claude Code extensions",
+            "snippet": "Backdoors in official Claude Code extensions",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50302334",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Anthropic IPO Blackstone",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 284,
+          "points": 322
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO Blackstone",
+        "seed_score": 642.7601,
+        "summary": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50307219",
+            "source": "hackernews",
+            "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "body": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+            "author": "petethomas",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 322,
+              "comments": 284
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Anthropic may not secure investment-grade rating after IPO,",
+            "snippet": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50307219",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.131
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Claude Code TV",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "Claude Code TV",
+        "seed_score": 625.5,
+        "summary": "If you\u2019re letting Claude Code clean up your smart TV, do these things first",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "If you\u2019re letting Claude Code clean up your smart TV, do these things first",
+            "body": "If you\u2019re letting Claude Code clean up your smart TV, do these things first",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xk8apo/if_youre_letting_claude_code_clean_up_your_smart/",
+            "container": "ClaudeAI",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 374,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "If you\u2019re letting Claude Code clean up your smart TV, do these things first",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.311
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "OpenAI 30B",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 186,
+          "points": 181
+        }
+      },
+      "nomination": {
+        "name": "OpenAI 30B",
+        "seed_score": 550.5,
+        "summary": "OpenAI raises less than half of $30B target",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50312922",
+            "source": "hackernews",
+            "title": "OpenAI raises less than half of $30B target",
+            "body": "OpenAI raises less than half of $30B target",
+            "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+            "author": "timr",
+            "container": "Hacker News",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 181,
+              "comments": 186
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenAI raises less than half of $30B target",
+            "snippet": "OpenAI raises less than half of $30B target",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50312922",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Nintendo 1GB Qwen weights",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 144,
+          "points": 282
+        }
+      },
+      "nomination": {
+        "name": "Nintendo 1GB Qwen weights",
+        "seed_score": 451.8412,
+        "summary": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50306442",
+            "source": "hackernews",
+            "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+            "body": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+            "url": "https://github.com/dbreunig/nesformer",
+            "author": "dbreunig",
+            "container": "Hacker News",
+            "published_at": "2026-10-30",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 282,
+              "comments": 144
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Show HN: A working Nintendo in ~1GB of Qwen weights",
+            "snippet": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50306442",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 71,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1285
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Anthropic Claude AI blocks",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Claude AI blocks",
+        "seed_score": 297.0,
+        "summary": "Anthropic's Claude AI blocks video game cloning and reverse-engineering \u2014 sweeping new restrictions also hit legitimate developers and basic troubleshooting tasks",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R73",
+            "source": "reddit",
+            "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering \u2014 sweeping new restrictions also hit legitimate developers and basic troubleshooting tasks",
+            "body": "Anthropic's Claude AI blocks video game cloning and reverse-engineering \u2014 sweeping new restrictions also hit legitimate developers and basic troubleshooting tasks",
+            "url": "https://www.reddit.com/r/artificial/comments/1xkibsh/anthropics_claude_ai_blocks_video_game_cloning/",
+            "container": "artificial",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 141,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic's Claude AI blocks video game cloning and reverse-engineering \u2014 sweeping new restrictions also hit legitimate developers and basic troubleshooting tasks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.343
+          },
+          {
+            "item_id": "R149",
+            "source": "reddit",
+            "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+            "body": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+            "url": "https://www.reddit.com/r/singularity/comments/1xkdg4o/anthropics_claude_ai_blocks_video_game_cloning/",
+            "container": "singularity",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3065
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "LLM LLM RISK-V CPU inside Qwen",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "LLM LLM RISK-V CPU inside Qwen",
+        "seed_score": 262.5,
+        "summary": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights",
+            "body": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkiuut/an_llm_inside_an_llm_same_guy_who_put_a_riskv_cpu/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 143,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3215
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Take GPT-6.2",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "Take GPT-6.2",
+        "seed_score": 214.5,
+        "summary": "Take with a grain of salt, but could GPT-6.2 be incoming?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "Take with a grain of salt, but could GPT-6.2 be incoming?",
+            "body": "Take with a grain of salt, but could GPT-6.2 be incoming?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xkes05/take_with_a_grain_of_salt_but_could_gpt62_be/",
+            "container": "singularity",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 106,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Take with a grain of salt, but could GPT-6.2 be incoming?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.314
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Astra Beats Every Model Robot Intelligence",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Astra Beats Every Model Robot Intelligence",
+        "seed_score": 210.0,
+        "summary": "Astra Beats Every Model in Robot Intelligence",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "Astra Beats Every Model in Robot Intelligence",
+            "body": "Astra Beats Every Model in Robot Intelligence",
+            "url": "https://www.reddit.com/r/singularity/comments/1xjwqf3/astra_beats_every_model_in_robot_intelligence/",
+            "container": "singularity",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 129,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Astra Beats Every Model in Robot Intelligence",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.27
+          }
+        ]
+      }
+    }
+  ]
+}

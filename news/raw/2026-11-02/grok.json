@@ -1,0 +1,217 @@
+{
+ "date": "2026-11-02",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-02.json",
+ "fetched_at": "2026-11-01T23:55:50+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 5,
+  "posts": 10,
+  "ok": 10,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "DeepSeek open-sources dsh-superagent prototype coding agent",
+   "category": "tool_launch",
+   "event_time": "2026-10-31T09:32:00Z",
+   "primary_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+   "facts": [
+    "dsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for DeepSeek Harness.",
+    "It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request.",
+    "Research prototype for reference only, not an official DeepSeek product."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/WuRichard_/status/2117018793683599430",
+     "official": false,
+     "author": "@WuRichard_",
+     "check": "ok",
+     "created_at": "2026-11-01T22:19:47Z",
+     "text": "DeepSeek 10 月 31 日悄悄开源了一个 super-agent 原型，两天 7,000+ star。\n\n它不想当你的结对编程搭子，它想替整个团队值班：\n\n1️⃣ 主动干活：监听 GitHub（可选飞书），团队里被授权的人一句话，它就开工单、自己开会话和目录干活，完事回原对话交 PR\n2️⃣ 省注意力是第一原则：只在被问到、或团队写好的规则允许时才行动；需要人拍板的事挂在 web 面板上等你\n3️⃣ 架构是 Router + Worker 池，推测执行 + 24/7 常驻；官方 11 月 1 日文章补了数据：触发从每分钟 1 次涨到 40 次，平均批量 1.0→2.8，单次决策推理时间 6.4 秒→1.6 秒\n4️⃣ 别当产品用：README 第一句就是\"研究原型、仅供参考，不是 DeepSeek 官方产品\"；公开版 ≠ 内部版，数字是自家模拟负载实验\n\n从\"你问它答\"到\"它替团队值班\"——agent 的下一站不是更能写，而是更少打扰你。\n\n你敢让一个 agent 常驻你的仓库吗？",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 1,
+     "views": 20
+    },
+    {
+     "url": "https://x.com/CMichelW/status/2117019206189265182",
+     "official": false,
+     "author": "@CMichelW",
+     "check": "ok",
+     "created_at": "2026-11-01T22:21:25Z",
+     "text": "DeepSeek has released a prototype of a more autonomous coding agent as it seeks to challenge Anthropic’s popular Claude Code https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic?utm_source=website&utm_medium=share&utm_campaign=twitter",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 18
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Claude Code 2.1.316 adds subagent effort control and deprecates Opus 4.8 fast mode",
+   "category": "feature_update",
+   "event_time": "2026-10-31T01:01:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+   "facts": [
+    "Added CLAUDE_CODE_SUBAGENT_EFFORT to set the effort level subagents run at when nothing else names one, instead of inheriting the session's.",
+    "Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off.",
+    "Deprecated fast mode for Opus 4.8 as of October 30, 2026; it will be removed on November 30, 2026."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/EMarkosov/status/2117019983712751999",
+     "official": false,
+     "author": "@EMarkosov",
+     "check": "ok",
+     "created_at": "2026-11-01T22:24:31Z",
+     "text": "Claude Code 2.1.316 is out (Oct 31). What matters:\n• CLAUDE_CODE_SUBAGENT_EFFORT sets subagent effort apart from your session\n• CLAUDE_CODE_DISABLE_ULTRATHINK turns the keyword off\n• Opus 4.8 fast mode deprecated, removed Nov 30\nRunning subagents at low effort yet?",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 1,
+     "views": 15
+    },
+    {
+     "url": "https://x.com/airlabsfund/status/2117010862187954362",
+     "official": false,
+     "author": "@airlabsfund",
+     "check": "ok",
+     "created_at": "2026-11-01T21:48:16Z",
+     "text": "An agent exiting isn't the same as its work stopping.\n\nClaude Code 2.1.316 fixes shell commands left running after automatic exit, plus cloud runs not marked failed when no safety verdict arrived.\n\nShutdown behavior belongs in agent evaluations.\n\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 0,
+     "views": 17
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "OpenAI to share ChatGPT and Codex usage allowance starting in December",
+   "category": "feature_update",
+   "event_time": "2026-10-31T00:00:00Z",
+   "primary_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+   "facts": [
+    "Starting in December, Plus, Pro, and Business plans' usage allowance will be shared across ChatGPT and Codex as we bring the agentic capabilities of Work into the main ChatGPT experience.",
+    "Your usage for ChatGPT and Codex will be measured in tokens. Instant chat will not draw from your usage.",
+    "You will be able to see your combined remaining usage and reset times in Settings → Usage."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/knightleijun/status/2117016573353582851",
+     "official": false,
+     "author": "@knightleijun",
+     "check": "ok",
+     "created_at": "2026-11-01T22:10:58Z",
+     "text": "Big change for OpenAI power users: starting December, ChatGPT and Codex share ONE token usage pool.\n\nHere's what the updated help center shows:\n• Plus / Pro / Business — one shared pool across ChatGPT and Codex. Burn tokens in one, the other shrinks too\n• Usage is counted in tokens — heavier models and longer runs drain it faster\n• Instant chat does NOT count against the pool\n• Check remaining quota + reset time under Settings → Usage\n• Hit the cap? Wait for the reset, upgrade your plan, or buy extra credits\n\nHeads-up for Codex users: a long ChatGPT research session can quietly eat the tokens your coding work needed. Plan your heavy runs accordingly.\n\nQ for December: how should heavy Codex users split the shared budget between chat and coding? @grok\n\nSources:\nhttps://x.com/insanekrishnaa/status/2116774086370279847\nhttps://x.com/eapyk/status/2116796502479654973\n\n#OpenAI #ChatGPT #Codex",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 80,
+     "quote": {
+      "author": "@eapyk",
+      "text": "OpenAI is making a major change to ChatGPT and Codex usage limits, and I'm not convinced it's a good idea.\n\nStarting December 2026, ChatGPT Plus, Pro, and Business users will share a single token-based usage allowance across ChatGPT and Codex. Regular Instant chats won't count toward that allowance.\n\nHere's the problem.\n\nRight now, developers can use Codex heavily without directly consuming their regular ChatGPT reasoning limits.\n\nUnder the new system, spending hours coding with Codex could…"
+     }
+    },
+    {
+     "url": "https://x.com/hayabusa_823z/status/2117019007400427810",
+     "official": false,
+     "author": "@hayabusa_823z",
+     "check": "ok",
+     "created_at": "2026-11-01T22:20:38Z",
+     "text": "12月からChatGPTのChatとWorkの利用枠が統合される模様。\nhttps://help.openai.com/ja-jp/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 61
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Google winds down Jules AI coding agent, folding learnings into Antigravity",
+   "category": "tool_launch",
+   "event_time": "2026-10-29T19:09:00Z",
+   "primary_url": "https://jules.google/docs/changelog/2026-10-29/",
+   "facts": [
+    "Jules will be winding down. We're working on bringing our learnings from Jules into Antigravity so you get the best of both worlds: autonomous remote background task execution and an agent-first development environment.",
+    "Users have until November 11, 2026 to finish active sessions, after which Jules becomes read-only until the full shutdown on December 31, 2026."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/TommyBeFamous/status/2117010543047491614",
+     "official": false,
+     "author": "@TommyBeFamous",
+     "check": "ok",
+     "created_at": "2026-11-01T21:47:00Z",
+     "text": "10 days. That is all Jules users have left to actually work.\n\nGoogle is shutting Jules down and folding everything into @antigravity... read-only after Nov 11, completely gone Dec 31, 2026.\n\nJules was the background coder... connect a repo, it clones your codebase into a cloud VM, fixes bugs, writes tests, updates dependencies and opens pull requests while you do something else.\n\nThere is an export, but no automatic migration. Settings, environment variables, scheduled tasks, connected repos, saved memories, setup scripts and full session history all have to be carried out by hand. Your code is safe... branches and pull requests already live on GitHub. It is the context that dies if you do not move it.\n\nSame day, Antigravity launched a Plugin Marketplace for the app and the CLI. One plugin bundles up to five primitives... skills, MCP servers, rules, hooks and custom agents... in one click. Launch partners include Atlassian, Figma, Stripe, Datadog, Databricks, Canva, CrowdStrike, Dropbox and Unity.\n\nWhat Google has not said... when Jules-style background tasks actually land inside Antigravity.\n\nI respect the consolidation. One agent home beats two half-built ones. But if you built routines on Jules, the rebuild clock started Oct 29, not Dec 31.",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 428
+    },
+    {
+     "url": "https://x.com/cutetoxicguy/status/2116983617909895186",
+     "official": false,
+     "author": "@cutetoxicguy",
+     "check": "ok",
+     "created_at": "2026-11-01T20:00:00Z",
+     "text": "🪦 Google is shutting down Jules, its autonomous AI coding agent.\n\nThe service will permanently close on December 31, 2026, as Google consolidates its AI coding tools around Antigravity.\n\nJules was designed for asynchronous development: give it a task, and it could independently fix bugs, write tests, modify repositories and prepare pull requests while you worked on something else.\n\nThe shutdown timeline:\n\n▪️ November 11: Jules becomes read-only. Users must finish active sessions before then.\n\n▪️ December 31: The service shuts down completely.\n\n▪️ Data export: Google now provides a way to export sessions, prompts, plans, code patches, memories, scheduled tasks and configurations.\n\n▪️ GitHub repositories: Existing code, branches and PRs remain untouched.\n\nSo what happens next?\n\nGoogle says the lessons learned from Jules are being incorporated into Antigravity, with the goal of combining autonomous remote execution and an agent-first development environment.\n\nThis follows Google's earlier transition from consumer Gemini CLI to Antigravity CLI.\n\nThe direction is clear: fewer separate coding agents, one unified development platform.\n\nBut there's no automatic Jules-to-Antigravity migration announced, and full feature parity isn't guaranteed.\n\nIf you're using Jules, now is the time to export your work.\n\n🔗 https://jules.google/docs/changelog/2026-10-29\n\n#Google #AICoding #Antigravity",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 1,
+     "views": 163
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Antigravity launches Plugin Marketplace for skills, MCP, rules and subagents",
+   "category": "feature_update",
+   "event_time": "2026-10-29T17:04:00Z",
+   "primary_url": "https://antigravity.google/blog/plugin-marketplace-in-antigravity/",
+   "facts": [
+    "Today, we are launching the Plugin Marketplace in Antigravity, a centralized directory for discovering and installing third-party and Google-built plugins across the Antigravity App and the Antigravity CLI.",
+    "An Antigravity plugin is a versioned, self-contained bundle defined by a plugin.json manifest that packages up to five extensibility primitives: skills, MCP servers, rules, hooks and custom agents."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/antigravity/status/2115852199502684342",
+     "official": true,
+     "author": "@antigravity",
+     "check": "ok",
+     "created_at": "2026-10-29T17:04:09Z",
+     "text": "Announcing new plugins marketplace in Antigravity! We've made it easier to search and discover customizations.",
+     "likes": 3100,
+     "retweets": 224,
+     "replies": 136,
+     "views": 204473
+    },
+    {
+     "url": "https://x.com/kevinhou22/status/2115868520592339102",
+     "official": false,
+     "author": "@kevinhou22",
+     "check": "ok",
+     "created_at": "2026-10-29T18:09:00Z",
+     "text": "Introducing the Antigravity Plugin Marketplace\n\nOne click install and auth with Notion, Stripe, Linear, Google Docs, and so many more\n\nDM me if you want to list your company’s plugin. Happy building 🚀",
+     "likes": 616,
+     "retweets": 30,
+     "replies": 46,
+     "views": 20312
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

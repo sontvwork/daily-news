@@ -1,0 +1,234 @@
+{
+ "date": "2026-11-02",
+ "runs": [
+  {
+   "started_at": "2026-11-02T00:00:40+00:00",
+   "seconds": 2.9,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 5,
+   "articles_error": 3,
+   "articles_skipped": 0,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — {\"message\":\"GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you…": 1,
+    "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…": 1,
+    "HTTP 401 HTTP Forbidden — wsj.com #cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}} Please enable JS and disable any ad blocker var…": 1
+   },
+   "summary": "5/8 bài gốc ok (0 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.9s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+   "article": {
+    "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "status": "ok",
+    "title": "",
+    "chars": 2556,
+    "text": "# dsh-superagent\n> **Research prototype for reference only, not an official DeepSeek product.** This code grew out of our team's day-to-day development work, with much of the engineering done by coding agents. Treat it as research code, not production-ready software. It may still contain bugs, and its coding style and engineering practices may be inconsistent. Review and adapt it before using it in your own environment.\n>\n> We have adapted it for publication, so it is not identical to our internal version or the implementation described in *Exploring Super-agent Design: Towards a More Autonomous Agent System*. Some designs discussed in the article are directions for future development and are not implemented in this prototype.\ndsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for [DeepSeek Harness](https://www.deepseek.com/en/harness/). It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web panel shows what needs a person.\nIt is also a way of working with an agent: **take as little human attention as possible, and give as much value as possible.** An agent that can act for a whole team can also waste a whole team's attention, so it acts only when asked or when a rule the team wrote allows it, and speaks only when someone must act or can use a result. [docs/000-philosophy.md](docs/000-philosophy.md) explains the principle and what it asks of the operator.\n## Setup\nSetup has many steps, so an agent does it with you. Ask your coding agent:\n> Read SETUP.md in this repository and set up dsh-superagent with me.\nIt asks one short question at a time, shows the full plan once, and then installs and configures everything. [SETUP.md](SETUP.md) is what it follows.\n## Documentation\nRead the numbered documents in order; each builds only on the ones before it.\n- [000 Philosophy](docs/000-philosophy.md)\n- [001 Domain model](docs/001-domain.md)\n- [002 Authorization](docs/002-authorization.md)\n- [003 Execution](docs/003-execution.md)\n- [004 Prompts](docs/004-prompts.md)\n- [005 Panel](docs/005-panel.md)\n- [006 Deployment](docs/006-deployment.md): manual setup, configuration, upgrades and troubleshooting\n- [007 Architecture](docs/007-architecture.md)\n- [008 Cookbook](docs/008-cookbook.md): adding a Source\n## Development\n`pnpm check` runs the typecheck, the tests and the build.\n## License\n[MIT](LICENSE)"
+   }
+  },
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+    "status": "ok",
+    "title": "",
+    "chars": 8658,
+    "text": "## 2.1.316\n- Added `CLAUDE_CODE_DISABLE_ULTRATHINK`, which turns the `ultrathink` keyword off\n- Added pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with `pooled_budget` on the spend limits admin API\n- Added `CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP` to keep system cross-certificates that certify each other in a loop, for servers whose private CA needs one\n- Added `CLAUDE_CODE_SUBAGENT_EFFORT` to set the effort level subagents run at when nothing else names one, instead of inheriting the session's\n- Added `managed.policy_mode: layered` to the Claude apps gateway: every policy that matches a developer applies, each merged over the ones listed below it, not only the first\n- Added `guardrail.input_tagging` on Claude apps gateway Bedrock upstreams, which wraps prompts in the input tags that an Amazon Bedrock guardrail's prompt attacks filter needs; `all_messages_and_system` also tags the system prompt\n- Deprecated fast mode for Opus 4.8 as of October 30, 2026; it will be removed on November 30, 2026. After removal, fast mode requests on Opus 4.8 return an error and do not fall back to standard Opus 4.8. Migrate to Opus 5.5 to keep the speedup\n- Fixed shell commands being left running on macOS and Linux when Claude Code exits by itself, for example when credentials are refused or a cloud session is archived\n- Fixed bash aliases with line breaks in their value (except in Git Bash), and functions whose names start with a dash, being garbled or lost in the Bash tool's shell\n- Fixed bash scripts started from the Bash tool stopping after their first command when `SHELLOPTS` is exported\n- Fixed PowerShell hooks not blocking on exit code 2 when the command begins with a type cast, `param`, `using` or an attribute\n- Fixed some network requests hanging when a compressed response was cut off or corrupted\n- Fixed `sonnet`, `opus` and `haiku` on Vertex AI and Amazon Bedrock showing an error mid-session instead of switching to an older model when the newest is not yet available to the account or region\n- Fixed the Claude apps gateway not checking every model a request names against `availableModels`, `deniedModels` and `models`; a request that names a blocked model now gets a 400 naming the field\n- Fixed `claude auth login` refusing to run where managed settings require a Claude apps gateway; in a terminal it now shows the gateway sign-in\n- Fixed `--restricted` sessions uploading files from outside the working directories when a Read allow rule covered them\n- Fixed prompts containing invisible characters needing a second Enter to send; plain prompts now send cleaned on the first Enter, and commands still wait for review\n- Fixed sub-agents that inherited a parent sub-agent's model moving to the main model when a background job or message woke them\n- Fixed a managed `autoMode.allow` list without `\"$defaults\"` getting the built-in exceptions back from a host app's `--settings`, a first rule added in `/permissions`, or `/auto-mode-setup`\n- Fixed cloud sessions and cloud scheduled tasks not being marked as failed when auto mode stopped a turn because the server returned no safety verdict\n- Fixed `claude -p` text output sometimes not saying why auto mode stopped a turn when a background agent was still running\n- Fixed `CLAUDE_CODE_AUTO_MODE_SERVER=1` being ignored in sessions started by a host application (such as Claude Desktop) behind a proxy or LLM gateway with experimental betas turned off\n- Fixed plugin MCP `headersHelper` scripts receiving a corrupted `CLAUDE_PLUGIN_ROOT` and server URL when a credential-named environment variable was set to a switch value such as `1`\n- Fixed the SDK `register_repo_root` control request not loading the CLAUDE.md of a directory outside the working directory (with `CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1`)\n- Fixed the Artifact tool showing `?` for artifact database access rules at the `self` level, and not quoting…"
+   }
+  },
+  {
+   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+   "hn_url": "https://news.ycombinator.com/item?id=50320995",
+   "hn": {
+    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+    "points": 419,
+    "comments": 204
+   },
+   "comments": [
+    {
+     "author": "fedpost",
+     "replies": 18,
+     "text": "We desperately need to keep local models competitive with the hyper scalers. I won't want to be beholden to them and their whims forever. With anthropic now restricting game reverse engineering I think we're about to cross a Rubicon of censorship."
+    },
+    {
+     "author": "jbellis",
+     "replies": 1,
+     "text": "I spent several weeks working on trying to get swarms of cheap models to match the coding ability of a single expensive one. My take: it's remarkably easy to build a harness that improves a single eval, and remarkably difficult to build one that generalizes."
+    },
+    {
+     "author": "StilesCrisis",
+     "replies": 2,
+     "text": "If Qwen is so great, why did they use Claude to do the write-up? This text is pure, unfiltered Claude. (e.g. \"Ten problems, five passes, not the authors' 100. On a sample this small, 9.8 and 9.6 are the same number. The claim is parity with their harness, not a gain on it.\")"
+    },
+    {
+     "author": "novaRom",
+     "replies": 2,
+     "text": "That's the point I am really convinced today that few small size agents actually better than one remote begemoth. I switched fully to local models (from claude, sol, and deepseek). A 27B model can be served on any modern PC or laptop with 64 GB or RAM (or VRAM on non-Macs). A bunch of Qwen coding agents is fantastic with opencode, works great also with pi. The only disadvantage is required compaction due to limited 256k context size, so it stops for few seconds once every hour or so. I am able…"
+    },
+    {
+     "author": "roenxi",
+     "replies": 7,
+     "text": "That's pretty interesting, because with the Bonsai 2 quantisations it is quite achievable to get Qwen 27B running at 50 t/s on reasonably priced gaming machine [0]. Which in turn suggests that Fable 5 coding performance can be achieved locally with a bit of clever harnessing.\nAlthough the same harnessing should also improve Fable's performance. The important thing here is the cap for local performance looks like it could be quite high.\n[0]…"
+    }
+   ],
+   "article": {
+    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — {\"message\":\"GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50320588",
+   "hn_url": "https://news.ycombinator.com/item?id=50320588",
+   "hn": {
+    "title": "ChatGPT and Codex usage limits merging",
+    "points": 215,
+    "comments": 159
+   },
+   "comments": [
+    {
+     "author": "jwr",
+     "replies": 9,
+     "text": "It's amusing how desensitized we became to AI companies charging money however they like.\nJust look at this announcement: \"your usage will be measured in tokens, which we do not define, nor give you a way to measure them. The amount of tokens you consume will depend on things you can't control\". What is left unsaid is that your subscription will contain an unknown number of those tokens you can't measure anyway, and that they will change the number whenever they feel like it.\nYou pay for… what,…"
+    },
+    {
+     "author": "yurimo",
+     "replies": 6,
+     "text": "I'm not going to lie, one big reason I as a researcher have been a customer of OpenAI is that on their Pro plan Pro-tier model in chat and codex are decoupled in terms of billing. Anthropic instead billed you fully. This was very useful for long mathematical reasoning for me and I could attach outputs of my simulations in the context.\nI also recall reading the following: https://newsletter.semianalysis.com/p/anthropic-subscription...\nI will see once this transition actually happens but if…"
+    },
+    {
+     "author": "furyofantares",
+     "replies": 6,
+     "text": "It kills me to run out of claude code usage then my much more mundane usage, queries or web searches, is also cut off. Not doing that has been a big plus of chatgpt/codex in my mind."
+    },
+    {
+     "author": "modeless",
+     "replies": 1,
+     "text": "They ought to reserve a very small amount of quota exclusively for chatgpt so it doesn't just shut off if you exhaust your quota using codex. If they don't it would make more sense to keep codex and chatgpt usage on different accounts, which I'm sure OpenAI doesn't intend to incentivize."
+    },
+    {
+     "author": "0x_rs",
+     "replies": 0,
+     "text": "6 Pro has a limited number of messages per week, from 15 to 200. It is by far the most useful feature the plans offer, and can go through hundreds of thousands of tokens if not million(s) for one focused task. If the message limit remains, and it depletes usage in the normal chat and codex, it's a massive downgrade for a service that has reduced the actual, real-world API equivalent cost anywhere between x2-5 times in the past couple months, resets included. It used to be the differentiator vs.…"
+    }
+   ],
+   "article": {
+    "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50315226",
+   "hn_url": "https://news.ycombinator.com/item?id=50315226",
+   "hn": {
+    "title": "Prospero: A new coding harness for a more civilized age",
+    "points": 203,
+    "comments": 132
+   },
+   "comments": [
+    {
+     "author": "brainless",
+     "replies": 5,
+     "text": "Nice to see a gui coding agent. I use tui agents all the time but I am building a gui one. I use Claude Code, Codex, opencode and a couple other but I do not like the DX/UX.\nI often want click a part of the wall of text (from agent) and search for related text, open them up on the side or so. I want to open a linked file. I want to answer multiple questions in an async manner, even come back and continue answering the next day.\nThere are many prompt level features I want too - orchestrate with…"
+    },
+    {
+     "author": "julesrms",
+     "replies": 3,
+     "text": "Great to see what you're doing there, but speaking as a 30-year hardcore C++ veteran (to the extent of creating my own C++ GUI framework: https://juce.com)... When I was writing a code agent (https://github.com/juggler-ai/juggler), there's no way I'd have used C++ for an agent GUI!\nAgent UIs are all markdown, HTML, big scrolling lists, text flow, unicode chars, and all the other stuff that C++ frameworks are terrible at, but which is a doddle in HTML/CSS/JS.. You are a brave man!"
+    },
+    {
+     "author": "nico",
+     "replies": 5,
+     "text": "Nitpicks about CLI coding agents:\nMany times, while they are doing something, I’ll be typing a prompt, and then all of a sudden I get a question with Y/N options, and by accident, I’ll type Y/N as part of a word thus “answering the question”, many times either steering in the wrong direction or stopping the agent\nNeither Claude code nor Codex solve this. The only way I’ve found to prevent it is to type somewhere else and then paste, but it’s super annoying\nEdit: ^^ the above is especially…"
+    },
+    {
+     "author": "rsolva",
+     "replies": 0,
+     "text": "I have used Prospero for some work today, and I have to say I really like it! I have settled on a combination of Zed, Pi and Paseo so far, but I'm adding Prospero into the mix from now on."
+    },
+    {
+     "author": "OleksandrC",
+     "replies": 3,
+     "text": "If you're looking for an agent implementation that is light on resources, but prefer to work in a terminal, consider also hax (https://usehax.dev/). Less than 2 MB fully static Linux binary, few MBs of RAM use in runtime. Works great with local models also (auto-detects config from running llama-server), besides the usual cloud providers."
+    }
+   ],
+   "article": {
+    "url": "https://nullprogram.com/blog/2026/10/31/",
+    "status": "ok",
+    "title": "Prospero: a new coding harness for a more civilized age",
+    "chars": 11593,
+    "text": "Prospero: a new coding harness for a more civilized age\nOctober 31, 2026\nnullprogram.com/blog/2026/10/31/\nI’ve been fascinated with local LLMs for a couple of years now.\nThe better open weight models, including some that inference on regular,\nhigher-end consumer hardware at tolerable speeds, are now reliable enough\nto handle simpler programming tasks. This requires a coding harness, but\nso far this year I’ve been disappointed by all the harness offerings. For\ninexplicable reasons most are built with web stacks, and consume enormous\namounts of memory. At its core a coding harness is essentially curl glued\nto popen(). This should not require gigabytes of RAM. So I built my own:\nProspero. It’s written in my C++ style with a snappy Dear\nImGui docking interface. It uses around two orders of magnitude\nfewer resources than other harnesses without sacrificing features.\nDark mode aficionados are covered, too:\nNote that Prospero comes with no model providers built-in. You’re expected\nto supply that yourself, such as with llama.cpp, a workplace on-prem\nmodel, OpenRouter, Anthropic API, OpenAI API, etc. (You can’t use your\nClaude subscription.)\nFor those unfamiliar with coding harnesses: In a chat interface you and\nthe AI take turns writing messages to each other. A coding harness extends\nthis concept, allowing an AI to “talk” to tools offered by the harness.\nTools “reply” with their outputs. A tool might read or write a file, or\nrun a shell command. An AI will go from tool call to tool call on its own,\nlooping on the results. Such an AI is called an agent. Occasionally the\nAI will send you a message to inform you of progress or to ask a question,\nand the chat interface is still there.\nSome harnesses, including Prospero, allow agents to spawn subagents to\ndo their bidding, to work in parallel or keep their context clean. That\nis, to not fill their working memory with subtasks. Agents can message one\nanother and coordinate on tasks. Given SSH access to another machine, or\nover plain WSL, Prospero can deploy a headless copy of itself to other\nhosts so that agents can operate on those systems. The Professional\nEdition embeds engines for combinations of x86/x86-64 and ARM64 on\nmacOS, Windows, and Linux. The Windows x86 engine even works on Windows\nXP, and can play solitaire and minesweeper if you ask.\nThe last is because Prospero is one of the few harnesses with desktop\ncontrol capabilities. If your model supports vision — any any model worth\nusing does — then it can “see” your desktop and interact with it. It can\nclick, type, and drag to test and debug GUI applications live without a\nspecialized, per-app MCP assist.\nThis headless engine is why no TUI is necessary. The harness engine runs\non the headless system, and the UI runs on your desktop or laptop. With a\nlittle extra setup, the harness to run fully independently of the GUI, so\nthat it will continue without the GUI system attached — re-attachable\nlater.\nBecause Prospero is so lean, it may be the only harness that can drive a\nfuzz campaign, particularly on a headless system, without the\nLinux OOM killer targeting the memory-gobbling harness rather than the\nout-of-control fuzz target that triggered it. So many times I’ve checked\nback in on a fuzz campaign hours later, to find nothing was accomplished\nbecause the harness process is gone.\n(Why have an agent run a fuzz campaign? Because it can fix discovered bugs\non the fly and keep the campaign going! It’s a no brainer.)\nConfiguration\nThe configuration lives at ~/.config/prospero/prospero.ini. Easy to\nedit. No JSON, thank goodness. Check it into source control, copy-paste\nit. All the usual benefits. Alternatively, the Settings page can reach\nevery setting from the GUI, so you don’t have to edit the INI by hand. INI\nfiles can also include each other, not just naming file system paths but\nURLs:\ninclude = https://example.com/prospero.ini\nThe idea is to allow a live shared or managed configuration. Includes by\nURL are restricted in what they…"
+   }
+  },
+  {
+   "url": "https://jules.google/docs/changelog/2026-10-29/",
+   "article": {
+    "url": "https://jules.google/docs/changelog/2026-10-29/",
+    "status": "ok",
+    "title": "Jules Turndown | Jules",
+    "chars": 10173,
+    "text": "Jules Turndown\nOctober 29, 2026\nWe’re writing to let you know that as part of our work to unify our agentic coding efforts, Jules will wind down on December 31, 2026. You have until November 11, 2026 to continue finishing up sessions. After November 11, 2026, we will be turning Jules to read-only until the end of the year.\nWhen we launched Jules, it was an experiment to learn how asynchronous coding agents could help you tackle your backlog and ship faster. What you built with it taught us where agentic development is headed, and those learnings are shaping products across Google, including our agent-first platform, Google Antigravity.\nYou can now export everything Jules knows about your work into a local folder: account settings, environment variables, scheduled tasks, connected repositories, memories, setup scripts, and every session, including its prompt, plan, full activity log, and code patches.\nYour code, branches, and pull requests already live in GitHub, so they stay where they are. The export covers the configuration and history that live inside Jules.\nTo export, install Jules Tools and sign in:\nTerminal window\nnpm install -g @google/jules\njules login\nThen open a CLI coding agent, such as Claude Code, from your home directory and paste the export prompt below. The agent checks your setup, runs the export, and tells you what it saved.\nShow the export prompt\nExport prompt\nI want to export all my data from Google Jules into a local folder: settings, environment\nvariables, scheduled tasks, connected repos, memories, setup scripts, and every session (prompt,\nplan, full activity log, and code patches). Please do this in order:\n1. Setup\n- Check whether the Jules CLI is installed (`which jules`). If it isn't, install it with\n`npm install -g @google/jules`. If npm isn't installed, tell me and stop.\n- Check whether I'm logged in: `security find-generic-password -s jules-cli -a default`\non macOS (metadata only, without -w), or `secret-tool lookup service jules-cli username default`\non Linux. If there's no entry, ask me to run `! jules login` myself. It's an interactive\nbrowser sign-in, so don't try to run it for me. Wait until I say it's done.\n- Run `jules remote list --repo`. If it fails with a 401 and asks about GitHub, tell me to\nconnect my GitHub account at\nhttps://github.com/apps/google-labs-jules/installations/select_target and wait for me to\nconfirm. If I've never used Jules with GitHub repos, I can skip this; the export will just\nhave no repo data.\n2. Export: save the script below to a file and run it from my home directory. Then tell me what\nwas exported (the counts it prints) and the full path of the folder. Don't print my access\ntoken or the values in env-variables.json.\nProblems someone else already ran into:\n- The Jules CLI stores its login in the macOS Keychain (service \"jules-cli\", account \"default\")\nas \"go-keyring-base64:<base64 JSON>\". The script decodes that. The access token expires about\nan hour after login; if you get 401s on every call, run any `jules` command or ask me to run\n`! jules login` again.\n- If ListSources returns 401 \"missing required authentication credential\" but the other calls\nwork, my GitHub account isn't connected to Jules (see step 1).\n- Settings, env vars, repos and memories come from an internal `$rpc` endpoint. Sessions come\nfrom REST endpoints under https://aida.googleapis.com/v1/swebot (/tasks, /tasks/{id},\n/tasks/{id}/activities), which are what the CLI itself uses. Both are undocumented, so if a\ncall starts returning 404/400, tell me which one rather than guessing at fixes.\n- The repo list doesn't include setup scripts or test commands; the script recovers them from\neach session's code output (repoMetadata). Empty memories responses ({}) just mean there are\nno memories.\n- The API may return a few more sessions than `jules remote list --session` shows (older ones).\nThat's expected.\n```python\nimport base64, json, pathlib, re, subprocess, sys, urllib.error, urllib.parse,…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50312922",
+   "hn_url": "https://news.ycombinator.com/item?id=50312922",
+   "hn": {
+    "title": "OpenAI raises less than half of $30B target",
+    "points": 186,
+    "comments": 200
+   },
+   "comments": [
+    {
+     "author": "esFran",
+     "replies": 2,
+     "text": "The problem with AI is that, this time, nobody was caught off guard. From small startups to tech giants, everyone bet heavily on it. There are very good open-weight Chinese models, and even a French miracle. There is no winner-take-all.\nSo models are already a commodity, and will remain one for years. Companies must balance capex with very long payback periods against strict austerity everywhere else.\nGood news for customers, BTW."
+    },
+    {
+     "author": "bushbaba",
+     "replies": 7,
+     "text": "Welp that’s not a good sign for the anthropic IPO. Curious what happens now that both OpenAI and Anthropic will face budgetary pressure. I don’t think they can raise prices, as it’d just open ppl to switch to Open source models."
+    },
+    {
+     "author": "bob1029",
+     "replies": 0,
+     "text": "I think a lot of companies are struggling to move beyond this being a thing developers use to something everyone can use. Developers have to go really far out of their way to build agents and tools that apply the capabilities to their specific business. Someone in accounting cannot simply fire up chatgpt.com or copilot and use it in the same way a developer can. There is no instruction manual or historical precedent for how to do this. Very few people are currently in the right situation to…"
+    },
+    {
+     "author": "stuxnet79",
+     "replies": 5,
+     "text": "How does this affect OpenAI's prospects in the next few quarters?\nUnlike Anthropic, OAI does not have an S-1 to pore over. Their finances are shrouded in rumor and speculation. I can't assess how much of a death knell a ~15B financing shortfall is."
+    },
+    {
+     "author": "c0rruptbytes",
+     "replies": 3,
+     "text": "it’s kinda crazy but i do think we’re seeing a turn\nmy company was easily spending $1m/month on tokens\nsonnet 5.5 drops - we barely cracked half this month\nit has to go down too, carbon is interesting, china has qwen 4 soon\ncoding isn’t sustainable growth - RLRVF is really effective for software development - labs are cracking the code, these models will have to get better at other things to be worth it"
+    }
+   ],
+   "article": {
+    "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+    "status": "error",
+    "reason": "HTTP 401 HTTP Forbidden — wsj.com #cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}} Please enable JS and disable any ad blocker var…"
+   }
+  },
+  {
+   "url": "https://antigravity.google/blog/plugin-marketplace-in-antigravity/",
+   "article": {
+    "url": "https://antigravity.google/blog/plugin-marketplace-in-antigravity/",
+    "status": "ok",
+    "title": "Plugin Marketplace in Antigravity | Google Antigravity Blog",
+    "chars": 11298,
+    "text": "Press Guidelines\n🚀Launch Remote ControlDownload\n🚀Launch Remote Control\nENEnglish (United States)Bahasa Indonesia (Indonesia)Deutsch (Deutschland)English (Canada)English (United Kingdom)Español (España)Español (México)Français (France)Italiano (Italia)Polski (Polska)Português (Brasil)हिन्दी (भारत)ไทย (ประเทศไทย)日本語 (日本)简体中文 (中国)繁體中文 (台灣)한국어 (대한민국)\nExplore our next generation products\nSee overview\nProducts\nBuilt for developers and teams in the agent-first era\nSee overview\nDeveloper Use Cases\nOther Roles\nEverything you need to stay up-to-date and get help\nExplore our next generation products\nSee overview\nProducts\nBuilt for developers and teams in the agent-first era\nSee overview\nDeveloper Use Cases\nOther Roles\nPricing\nEnterprise\nEverything you need to stay up-to-date and get help\nDownload\nNewIntroducing the Plugin Marketplace in Google AntigravityRead post\n0:00 / 0:00\nPlugin Marketplace in Antigravity - BlogblogBlogBlogPlugin Marketplace in Antigravity - Blog\nPlugin Marketplace in Antigravity\nNohe, Developer Relations Engineer\n·Oct 29, 2026·6 min read\nShare on XShare on BlueskyShare on LinkedIn\nBuild with Google\nAndroid CLIMobile Development\nAntigravity SDKAgent SDK\nChrome DevToolsWeb Debugging\nDart & FlutterMultiplatform UI\nData Agent KitData Engineering\nFirebaseGoogle Cloud & App\nGemini APIAI & Models\nGoogle CloudCloud Infrastructure\nGoogle Developer KnowledgeDeveloper Docs\nGoogle Maps PlatformLocation & Maps\nModern Web GuidanceWeb Standards\nScienceScientific Computing\nGoogle Workspace\nGoogle CalendarGoogle Workspace\nGoogle DocsGoogle Workspace\nGoogle DriveGoogle Workspace\nGoogle SheetsGoogle Workspace\nGoogle SlidesGoogle Workspace\nCloud Hosting & Deployment\nNetlifyCloud Hosting & Deployment\nRailwayCloud Hosting & Deployment\nVercelCloud Hosting & Deployment\nWixCloud Hosting & Deployment\nWordPressCloud Hosting & Deployment\nDesign, Creative & Media\nCanvaDesign, Creative & Media\nFigmaDesign, Creative & Media\nMobbinDesign, Creative & Media\nProductivity & Project Management\nAtlassianProductivity & Project Management\nDropboxProductivity & Project Management\nLinearProductivity & Project Management\nmonday.comProductivity & Project Management\nNotionProductivity & Project Management\nPandaDocProductivity & Project Management\nTrelloProductivity & Project Management\nDeveloper Tools\nAuth0Developer Tools\nBase44Developer Tools\nBrowserbaseDeveloper Tools\nCodeRabbitDeveloper Tools\nContext7Developer Tools\nCrowdStrikeDeveloper Tools\nDatadogDeveloper Tools\nDynatraceDeveloper Tools\nEndor LabsDeveloper Tools\nExabeamDeveloper Tools\nHarnessDeveloper Tools\nKeenable AIDeveloper Tools\nLeapworkDeveloper Tools\nMongoDBDeveloper Tools\nParallelDeveloper Tools\nPing IdentityDeveloper Tools\nPostmanDeveloper Tools\nQodoDeveloper Tools\nSentinelOneDeveloper Tools\nSentryDeveloper Tools\nSupabaseDeveloper Tools\nSuperpowersDeveloper Tools\nUnityDeveloper Tools\nVirusTotalDeveloper Tools\nBusiness\nBigin by Zoho CRMBusiness\nDatabricksBusiness\nFinBusiness\nSemrushBusiness\nStripeBusiness\nWispr FlowBusiness\nZapierBusiness\nZoho BooksBusiness\nZoho CRMBusiness\nZoho DeskBusiness\nZoho ProjectsBusiness\nToday, we are launching the Plugin Marketplace in Antigravity, a centralized directory for discovering and installing third-party and Google-built plugins across the Antigravity App and the Antigravity CLI. Until now, connecting an agent to external systems meant manually configuring Model Context Protocol (MCP) endpoints, environment variables, domain skills, and custom subagents across individual repositories or local configuration files. The Plugin Marketplace packages these primitives into verified, shareable bundles that you can browse by category and install in a click. Instead of switching between browser tabs to look up a ticket, inspect a design spec, query production logs, or check a security alert, you can give your agent direct, scoped access to the systems where your team already works.\nAs Antigravity continues to optimize for builders, we are launching the marketplace with…"
+   }
+  }
+ ]
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "34efe96494c1caf7",
+  "generated_at": "2026-11-01T23:56:09.945127Z",
+  "from_date": "2026-10-31",
+  "to_date": "2026-11-01",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-01T23:56:09.944096Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-01T23:56:09.944102Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-01T23:56:09.943955Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-01T23:56:09.944043Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic blocks",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 252,
+          "points": 452
+        }
+      },
+      "nomination": {
+        "name": "Anthropic blocks",
+        "seed_score": 746.7048,
+        "summary": "Anthropic blocks users for anything touching training larger models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50319358",
+            "source": "hackernews",
+            "title": "Anthropic blocks users for anything touching training larger models",
+            "body": "Anthropic blocks users for anything touching training larger models",
+            "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+            "author": "pretext",
+            "container": "Hacker News",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 452,
+              "comments": 252
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic blocks users for anything touching training larger",
+            "snippet": "Anthropic blocks users for anything touching training larger models",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50319358",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI 30B",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 200,
+          "points": 186
+        }
+      },
+      "nomination": {
+        "name": "OpenAI 30B",
+        "seed_score": 409.4148,
+        "summary": "OpenAI raises less than half of $30B target",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50312922",
+            "source": "hackernews",
+            "title": "OpenAI raises less than half of $30B target",
+            "body": "OpenAI raises less than half of $30B target",
+            "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+            "author": "timr",
+            "container": "Hacker News",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 186,
+              "comments": 200
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about OpenAI raises less than half of $30B target",
+            "snippet": "OpenAI raises less than half of $30B target",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50312922",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 31,
+            "source_quality": 0.8,
+            "local_rank_score": 0.134
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 112,
+          "points": 180
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Claude",
+        "seed_score": 309.7128,
+        "summary": "Anthropic takes steps to block Claude from reverse-engineering video games",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50320255",
+            "source": "hackernews",
+            "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+            "body": "Anthropic takes steps to block Claude from reverse-engineering video games",
+            "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+            "author": "firesteelrain",
+            "container": "Hacker News",
+            "published_at": "2026-10-31",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 180,
+              "comments": 112
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic takes steps to block Claude from reverse-engineeri",
+            "snippet": "Anthropic takes steps to block Claude from reverse-engineering video games",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50320255",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0575
+          }
+        ]
+      }
+    }
+  ]
+}

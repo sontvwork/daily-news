@@ -1,0 +1,794 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "8774c962755c4fbf",
+  "generated_at": "2026-11-02T23:56:01.279940Z",
+  "from_date": "2026-11-01",
+  "to_date": "2026-11-02",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-02T23:56:01.254479Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-02T23:56:01.254487Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-02T23:56:01.212072Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 45,
+      "attempted": true,
+      "at": "2026-11-02T23:56:01.254304Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic AI capabilities",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 323
+        }
+      },
+      "nomination": {
+        "name": "Anthropic AI capabilities",
+        "seed_score": 2114.9564,
+        "summary": "Anthropic's growing restrictions are creating a new divide in the AI capabilities race: Gemini 4 Argon recreates Pixar's iconic intro, while Claude Opus 5.5 refuses over copyright and builds a toaster instead\u2014highlighting the gap between what frontier AI can do and what companies allow it to do.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Anthropic's growing restrictions are creating a new divide in the AI capabilities race: Gemini 4 Argon recreates Pixar's iconic intro, while Claude Opus 5.5 refuses over copyright and builds a toaster instead\u2014highlighting the gap between what frontier AI can do and what companies allow it to do.",
+            "body": "Anthropic's growing restrictions are creating a new divide in the AI capabilities race: Gemini 4 Argon recreates Pixar's iconic intro, while Claude Opus 5.5 refuses over copyright and builds a toaster instead\u2014highlighting the gap between what frontier AI can do and what companies allow it to do.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xl6vk8/anthropics_growing_restrictions_are_creating_a/",
+            "container": "singularity",
+            "published_at": "2026-11-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1671,
+              "num_comments": 323
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic's growing restrictions are creating a new divide in the AI capabilities race: Gemini 4 Argon recreates Pixar's iconic intro, while Claude Opus 5.5 refuses over copyright and builds a toaster instead\u2014highlighting the gap between what frontier AI can do and what companies allow it to do.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "GLB-3D-Coder 4B 3D Godot",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 137
+        }
+      },
+      "nomination": {
+        "name": "GLB-3D-Coder 4B 3D Godot",
+        "seed_score": 842.1642,
+        "summary": "[GLB-3D-Coder] A tiny 4B coding model that creates 3D assets for Godot and other game engines",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "[GLB-3D-Coder] A tiny 4B coding model that creates 3D assets for Godot and other game engines",
+            "body": "[GLB-3D-Coder] A tiny 4B coding model that creates 3D assets for Godot and other game engines",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlh0zw/glb3dcoder_a_tiny_4b_coding_model_that_creates_3d/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 657,
+              "num_comments": 137
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "[GLB-3D-Coder] A tiny 4B coding model that creates 3D assets for Godot and other game engines",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15650000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude 9",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 131
+        }
+      },
+      "nomination": {
+        "name": "Claude 9",
+        "seed_score": 655.5,
+        "summary": "Not another tok/s post: local quants vs Claude on 9 real bugs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Not another tok/s post: local quants vs Claude on 9 real bugs",
+            "body": "Not another tok/s post: local quants vs Claude on 9 real bugs",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlwpqv/not_another_toks_post_local_quants_vs_claude_on_9/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 306,
+              "num_comments": 131
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Not another tok/s post: local quants vs Claude on 9 real bugs",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34850000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Polyend Tracker",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 12,
+          "points": 64
+        }
+      },
+      "nomination": {
+        "name": "Polyend Tracker",
+        "seed_score": 114.0,
+        "summary": "Polyend releases the Tracker firmware source code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50340159",
+            "source": "hackernews",
+            "title": "Polyend releases the Tracker firmware source code",
+            "body": "Polyend releases the Tracker firmware source code",
+            "url": "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
+            "author": "austinallegro",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 64,
+              "comments": 12
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Polyend releases the Tracker firmware source code",
+            "snippet": "Polyend releases the Tracker firmware source code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50340159",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Much AI-Generated Code Understand",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "Much AI-Generated Code Understand",
+        "seed_score": 47.7297,
+        "summary": "How Much Of AI-Generated Code We Should Actually Understand ?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "How Much Of AI-Generated Code We Should Actually Understand ?",
+            "body": "How Much Of AI-Generated Code We Should Actually Understand ?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xlbd9v/how_much_of_aigenerated_code_we_should_actually/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "How Much Of AI-Generated Code We Should Actually Understand ?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2735
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "ChatGPT Claude Code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Claude Code",
+        "seed_score": 39.0,
+        "summary": "Is there a sane way to hand work between claude.ai / ChatGPT in the browser and Claude Code in the terminal?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Is there a sane way to hand work between claude.ai / ChatGPT in the browser and Claude Code in the terminal?",
+            "body": "Is there a sane way to hand work between claude.ai / ChatGPT in the browser and Claude Code in the terminal?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xlnm82/is_there_a_sane_way_to_hand_work_between_claudeai/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.4,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is there a sane way to hand work between claude.ai / ChatGPT in the browser and Claude Code in the terminal?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.501
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Modernization Breaks Working Code Study LLMs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 9,
+          "points": 13
+        }
+      },
+      "nomination": {
+        "name": "Modernization Breaks Working Code Study LLMs",
+        "seed_score": 23.3345,
+        "summary": "When Modernization Breaks Working Code: A Study of LLMs on Legacy PHP",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50330033",
+            "source": "hackernews",
+            "title": "When Modernization Breaks Working Code: A Study of LLMs on Legacy PHP",
+            "body": "When Modernization Breaks Working Code: A Study of LLMs on Legacy PHP",
+            "url": "https://arxiv.org/abs/2610.40269",
+            "author": "tambourine_man",
+            "container": "Hacker News",
+            "published_at": "2026-11-01",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 13,
+              "comments": 9
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about When Modernization Breaks Working Code: A Study of LLMs on L",
+            "snippet": "When Modernization Breaks Working Code: A Study of LLMs on Legacy PHP",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50330033",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Towards Autonomous Agent System",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Towards Autonomous Agent System",
+        "seed_score": 22.5,
+        "summary": "\u201cdsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for [DeepSeek Harness](https://www.deepseek.com/en/harness/). It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "deepseek-ai/dsh-superagent-prototype: Towards a More Autonomous Agent System",
+            "body": "deepseek-ai/dsh-superagent-prototype: Towards a More Autonomous Agent System\n\u201cdsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for [DeepSeek Harness](https://www.deepseek.com/en/harness/). It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web panel shows what needs a person.\u201d",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm4y3q/deepseekaidshsuperagentprototype_towards_a_more/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\u201cdsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for [DeepSeek Harness](https://www.deepseek.com/en/harness/). It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4655
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "LAST GARDENER purely code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "LAST GARDENER purely code",
+        "seed_score": 19.5,
+        "summary": "an animation generated by an agent from arena a.i.\n\ni dont know which a.i. is it, it didnt show me. and even asking isnt ok, i asked separately in the 1v1 mode because there it shows which a.i. is it, and minimax told me it is a gemini\u2620\ufe0f\n\nmy prompt: \"\u2620\ufe0fI PUT YOU ON MAX EFFORT. DO AN ANIMATION. YOU MAY TAKE SCREENSHOTS TO CHECK YOUR WORK, IT IS ACTUALLY A \\*MUST\\* THAT YOU TAKE SCREENSHOTS. I WILL",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "\"THE LAST GARDENER\" purely code",
+            "body": "\"THE LAST GARDENER\" purely code\nan animation generated by an agent from arena a.i.\n\ni dont know which a.i. is it, it didnt show me. and even asking isnt ok, i asked separately in the 1v1 mode because there it shows which a.i. is it, and minimax told me it is a gemini\u2620\ufe0f\n\nmy prompt: \"\u2620\ufe0fI PUT YOU ON MAX EFFORT. DO AN ANIMATION. YOU MAY TAKE SCREENSHOTS TO CHECK YOUR WORK, IT IS ACTUALLY A \\*MUST\\* THAT YOU TAKE SCREENSHOTS. I WILL LET \\*YOU\\* CHOOSE WHAT THE ANIMATION IS ABOUT, WHAT ARTSTYLE, HOW LONG, ANYTHING. (but dont be an idiot and dont make it like 10 seconds, i mean i put you on max effort, so at least 1 minute is default. i didnt put you on max for a 10 seconds animation\u2620). CHECK FIRST THAT THE SCREENSHOT TOOL WORKS. IT S WITH PLAYWRIGHT OR CHROMIUM OR A COMBINATION, I M NOT SURE. AFTER YOU SEE IT WORKS, YOU CAN START. TAKE AS LONG AS YOU NEED, DONT PRESENT IT UNLESS YOU RE SATISFIED WITH IT/UNLESS IT HAS ONLY MINOR MISTAKES WHICH YOU LL FIX IN THE NEXT BATCHES. BUT THE FIRST ONE IS THE GOAL \\^ . LITERALLY EVERYTHING IN THE ANIMATION IS YOUR OWN CHOICE. YOU CHOOSE THE THEME, SCRIPT, IF IT HAS DIALOGUE OR MONOLOGUE, EVERYTHINGG IS YOUR CHOICE. THINK.. IF YOU WERE GIVEN PERMISSION TO BUILD AN ANIMATION WITH WHATEVER YOU WANT (WHICH IS WHAT YOU ARE RIGHT NOW\u2620).. WHAT WOULD YOU DO? AND DO IT \ud83e\udd21 (DONT ASK ME ANY QUESTIONS ABOUT THEME OR ANYTHING. YOU CHOOSE EVERYTHING YOURSELF. DONT RESPOND UNTIL YOU RE BACK WITH THE ANIMATION. you may use anything needed for this, just dont use video generator. but you may use anything needed. take as long as you need)  \n  \n  \n  \nalso, be careful. i will copy something from other chat where i asked an agent to do this, and now i cant see his animation sadly. here s what it says: \" \\*\\*Workspace over budget\\*\\*This session created 1797.5 MB across 5,533 files, past the 128.0 MB / 10,000-file limit. 4,677 files were not saved. \"  \n  \n  \n  \nso be careful!! you now know the limit\"\n\nthe reply: \"\n\n\u2620\ufe0f **MAX EFFORT MODE: ON.** No questions. My choice, locked in:\n\n>**\"THE LAST GARDENER\"** \u2014 a \\~100-second cinematic short about a tiny robot on a dead planet who gives up his own battery-heart to make one last flower bloom. Flat-vector silhouette style, fully drawn in code (every frame procedural), with a synthesized music score. No video generator. Final deliverable: an MP4 rendered frame-by-frame.\n\nFirst, as ordered: verifying the screenshot pipeline works before anything else, and checking the environment (with strict respect for that 128 MB workspace limit \u2014 frames will be *piped* into ffmpeg, never saved as thousands of files).\n\nRan commands1\n\nNo browser/ffmpeg yet \u2014 installing Playwright + Chromium + an ffmpeg binary (into cache dirs that don't count against the workspace budget):\n\nRan commands3\n\nChromium installed. Now the actual end-to-end screenshot test:\" \n\nit worked, talked to itself about what it liked vs disliked and refined shit, then after it sent it:\n\n\"\u2620\ufe0f **BACK. WITH THE ANIMATION.** \u2620\ufe0f\n\n# \ud83c\udf38 THE LAST GARDENER\n\n*a tiny film \u2014 1 minute 44 seconds*\n\nYou asked what I'd make if given total freedom. I made a wordless little tragedy about **PIP, a one-wheeled robot who has spent 4,096 days keeping the last plant on a dead planet alive** \u2014 and what he does when a dust storm takes even that away. He opens his own chest, pulls out his glowing battery-heart, and plugs it into a lamp so the flower can live instead of him. It blooms. He watches it with a heart in his eye, powers down\u2026 and seasons later, wakes up (well \u2014 *flickers*, in his sleep) surrounded by a field of its children.\n\n**Beat sheet:** dawn on Sol 4,096 (0:13) \u2192 morning watering ritual (0:19) \u2192 storm warning (0:29) \u2192 the scramble: glass cloche + solar-panel shield (0:34) \u2192 the storm, cloche torn away (0:44) \u2192 frost, empty watering can (0:54) \u2192 the choice (1:03) \u2192 the bloom (1:17) \u2192 time-lapse of years in 10 seconds (1:24) \u2192 a seed lands in his sleeping hand (1:37). Dedication at the end: *\"for everyone who tends small things.\"*\n\n# How it was made (as ordered: screenshots first, screenshots always)\n\n* \u2705 **Screenshot pipeline verified** (Playwright + Chromium) before writing a line of film\n* Every frame is **procedurally drawn code** (HTML5 Canvas) \u2014 a deterministic `renderAt(t)` engine, so any instant can be screenshotted and inspected. No video generator, no footage, no stock anything\n* I shot and *personally reviewed* 21 keyframes + a 52-frame continuity strip, then did **3 fix batches** (invisible sprout, missing mountains, nuclear sun-glow\u2026) before rendering\n* **Score synthesized from raw math** in NumPy: piano/music-box theme, storm wind, robot beeps, a heartbeat when he makes his decision, his power-down glissando\n* **2,496 frames piped directly into ffmpeg** \u2192 this workspace is **19 MB total**, vs. the 1,797 MB crater the other agent left \ud83d\udc80\n\n# Files\n\n* the\\_last\\_gardener.mp4 \u2014 the film (720p, 24fps, sound on \ud83d\udd0a)\n* poster\\_bloom.jpg \u2014 the bloom hero frame\n* `animation/` \u2014 full source: the film engine HTML (open it, it plays with a scrubber), [`score.py`](http://score.py), [`render.py`](http://render.py), `qc_shots.py`\n* `qc/` \u2014 my screenshot proof-sheets\n\nWant a sequel, a sadder/happier ending, a voiceover version, or this exact engine pointed at a totally different story? Say the word. \ud83c\udf38\"\n\ntime spent was 26minutes and 19 seconds",
+            "url": "https://www.reddit.com/r/singularity/comments/1xlt27t/the_last_gardener_purely_code/",
+            "container": "singularity",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "an animation generated by an agent from arena a.i.\n\ni dont know which a.i. is it, it didnt show me. and even asking isnt ok, i asked separately in the 1v1 mode because there it shows which a.i. is it, and minimax told me it is a gemini\u2620\ufe0f\n\nmy prompt: \"\u2620\ufe0fI PUT YOU ON MAX EFFORT. DO AN ANIMATION. YOU MAY TAKE SCREENSHOTS TO CHECK YOUR WORK, IT IS ACTUALLY A \\*MUST\\* THAT YOU TAKE SCREENSHOTS. I WILL",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.278
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Looking Claude",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Looking Claude",
+        "seed_score": 7.5,
+        "summary": "Looking for help creating a professional fresher resume using Claude",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Looking for help creating a professional fresher resume using Claude",
+            "body": "Looking for help creating a professional fresher resume using Claude",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xlp3fd/looking_for_help_creating_a_professional_fresher/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Looking for help creating a professional fresher resume using Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "95",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "95",
+        "seed_score": 6.0,
+        "summary": "gpt and claude were 95%+ sure about an unsolved problem until the prompt allowed \"unknown\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "gpt and claude were 95%+ sure about an unsolved problem until the prompt allowed \"unknown\"",
+            "body": "gpt and claude were 95%+ sure about an unsolved problem until the prompt allowed \"unknown\"",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xm6d2i/gpt_and_claude_were_95_sure_about_an_unsolved/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "gpt and claude were 95%+ sure about an unsolved problem until the prompt allowed \"unknown\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2805
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "We moved from one coding agent",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "We moved from one coding agent",
+        "seed_score": 6.0,
+        "summary": "We moved from one coding agent to a few specialist agents and the token use went way up. Where is it worth it for you?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "We moved from one coding agent to a few specialist agents and the token use went way up. Where is it worth it for you?",
+            "body": "We moved from one coding agent to a few specialist agents and the token use went way up. Where is it worth it for you?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xm3wi8/we_moved_from_one_coding_agent_to_a_few/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "We moved from one coding agent to a few specialist agents and the token use went way up. Where is it worth it for you?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 5,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2755
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Google Antigravity Cursor CLI Moving 3",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Google Antigravity Cursor CLI Moving 3",
+        "seed_score": 5.3033,
+        "summary": "Hey everyone,\n\nOver the last few months, our team has been running heavy multi-agent workflows using autonomous coding frameworks like Google Antigravity, Cursor, and custom CLI bridges.\n\nMoving from single prompt generation to running 3 or 4 autonomous subagents simultaneously taught us that the real bottleneck in agentic coding is almost never the model itself. The real nightmare is operating sy",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "How we solved zombie compilers, runaway retry loops, and transcript disk thrashing in multi-agent coding workflows",
+            "body": "How we solved zombie compilers, runaway retry loops, and transcript disk thrashing in multi-agent coding workflows\nHey everyone,\n\nOver the last few months, our team has been running heavy multi-agent workflows using autonomous coding frameworks like Google Antigravity, Cursor, and custom CLI bridges.\n\nMoving from single prompt generation to running 3 or 4 autonomous subagents simultaneously taught us that the real bottleneck in agentic coding is almost never the model itself. The real nightmare is operating system level process hygiene and token loop control.\n\nHere are three concrete engineering problems we kept hitting, how we solved them under the hood, and what we learned.\n\n\n\n1. The Zombie Compiler Problem (and why standard process kill fails)\n\nWhen a subagent runs a test suite or dev server, it often invokes child binaries like Vitest, tsx, pytest, or Webpack. If the agent crashes, hits a timeout, or gets cancelled, standard Node.js or Python process killing only targets the top parent PID.\n\nThe child compiler keeps running in the background. Within a few hours of development, you end up with twenty orphan node.exe or python processes locking TCP ports, holding file handles, and pinning your CPU at 100%.\n\nHow we solved it:\n\nWe implemented an explicit Finite State Machine with a strict process tree killer. On Windows, we invoke taskkill with the /T flag to recursively walk the job object tree. On Unix systems, we spawn processes in their own process group and send termination signals to the negative process group ID (-PGID). We also added an automatic FIFO queue that strictly caps concurrent subagents to 6, preventing local machine resource exhaustion.\n\n\n\n2. Transcript Disk Thrashing (Why standard file watchers break)\n\nAutonomous coding agents generate huge JSONL session logs. In multi-hour workflows, transcripts easily exceed 50 to 100 megabytes.\n\nMost developers plug in standard libraries like chokidar or fs and re-read the file upon changes. When a file is 80 MB and an agent appends fifty tokens every second, re-reading or scanning from line zero causes quadratic disk I/O, crushes NVMe write cycles, and introduces lag into the UI.\n\nHow we solved it:\n\nWe built an incremental chunked reader using low level file descriptors. In SQLite we store the exact byte offset where the last read finished. When the file watcher fires, we only read the newly appended slice using fixed 64 KB buffers.\n\nThe tricky edge case here is multi-byte UTF-8 character boundaries. If a two-byte Cyrillic character or a four-byte emoji lands right across the 64 KB boundary, naive JSON parsing blows up with a syntax error. Our stream reader holds split trailing bytes in an in-memory buffer and stitches them onto the next chunk before deserializing.\n\n\n\n3. The Infinite Retry Death Loop\n\nWhen an agent encounters a difficult architectural deadlock (for example, a subtle race condition in an asynchronous event bus), it almost never admits defeat. Instead, it tries the same broken diff slightly reworded, fails the build again, and repeats until your API budget is drained.\n\nHow we solved it:\n\nWe built an automated circuit breaker. If an agent fails twice on the exact same task, the supervisor immediately pauses execution. Instead of letting it guess a third time, the engine scrubs sensitive file paths and compiles an 18-point context pack containing the problem summary, the two failed diffs, and the isolated 30-line code snippet.\n\nWe then escalate that pack to Gemini 4 Argon for high level architectural diagnosis, paste the solution back into the supervisor, and hand the implementation back to fast Flash specialists.\n\nOpen Sourcing the Tool: Antigravity Apex\n\nWe packaged this entire supervisor, the 64 KB stream reader, and a local web dashboard into an open source project called Antigravity Apex.\n\nIt runs 100% locally on localhost with SQLite in WAL mode. There is zero external telemetry and zero data collection.\n\nI left the GitHub repository link and standalone installer details in the first comment below to keep the post clean.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xle1pw/how_we_solved_zombie_compilers_runaway_retry/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey everyone,\n\nOver the last few months, our team has been running heavy multi-agent workflows using autonomous coding frameworks like Google Antigravity, Cursor, and custom CLI bridges.\n\nMoving from single prompt generation to running 3 or 4 autonomous subagents simultaneously taught us that the real bottleneck in agentic coding is almost never the model itself. The real nightmare is operating sy",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 12,
+            "source_quality": 0.6,
+            "local_rank_score": 0.232
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Coding Qwen 35B 346 tok/s",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Coding Qwen 35B 346 tok/s",
+        "seed_score": 4.5,
+        "summary": "Coding agents on a local model: Qwen 35B writes code at 346 tok/s on an M5 Max (Claude Code, Codex and opencode on Kapitsa)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Coding agents on a local model: Qwen 35B writes code at 346 tok/s on an M5 Max (Claude Code, Codex and opencode on Kapitsa)",
+            "body": "Coding agents on a local model: Qwen 35B writes code at 346 tok/s on an M5 Max (Claude Code, Codex and opencode on Kapitsa)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xljuav/coding_agents_on_a_local_model_qwen_35b_writes/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "Coding agents on a local model: Qwen 35B writes code at 346 tok/s on an M5 Max (Claude Code, Codex and opencode on Kapitsa)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43000000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Codex Claude Code tasks",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Codex Claude Code tasks",
+        "seed_score": 3.182,
+        "summary": "Hey r/ChatGPTCoding,\n\nI wanted to share onethread, a small open-source tool I made. You talk to one agent, and many coding agents work behind it, each in its own git worktree. It runs Codex as well as Claude Code, on your Mac, and nothing merges until you confirm. I made it because I was tired of managing a terminal tab per agent.\n\nMine comes with a little theatre: I'm King Igor, Leonardo da Vinci",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "I made a tool to run Codex and Claude Code tasks from one chat",
+            "body": "I made a tool to run Codex and Claude Code tasks from one chat\nHey r/ChatGPTCoding,\n\nI wanted to share onethread, a small open-source tool I made. You talk to one agent, and many coding agents work behind it, each in its own git worktree. It runs Codex as well as Claude Code, on your Mac, and nothing merges until you confirm. I made it because I was tired of managing a terminal tab per agent.\n\nMine comes with a little theatre: I'm King Igor, Leonardo da Vinci is my right hand, and every task, whether Codex or Claude runs it, goes to one of my servants, like Einstein or Michelangelo. Tasks come to the king and I delegate, instead of jumping between tabs. With `ot me` you can be anyone you like, and code, ids and confirmations stay plain.\n\nWhat it does:\n\n- One queue across your repos, up to 10 tasks at once\n- \"Run it in codex\" picks the agent per task\n- The start screen shows how much of each provider's usage is left\n- Cancel, merge and push always ask you first\n\n- More about onethread: https://aigarden.uk/onethread\n- GitHub: https://github.com/RogyMD/onethread\n\nDisclosure: it's my own project, MIT-licensed. \n\nI share my other tools at r/AIGarden\n\nDo you stick to one agent, or switch between Codex and Claude?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xkuqu7/i_made_a_tool_to_run_codex_and_claude_code_tasks/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-01",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey r/ChatGPTCoding,\n\nI wanted to share onethread, a small open-source tool I made. You talk to one agent, and many coding agents work behind it, each in its own git worktree. It runs Codex as well as Claude Code, on your Mac, and nothing merges until you confirm. I made it because I was tired of managing a terminal tab per agent.\n\nMine comes with a little theatre: I'm King Igor, Leonardo da Vinci",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.228
+          }
+        ]
+      }
+    }
+  ]
+}

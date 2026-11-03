@@ -1,0 +1,938 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "96973d467784ed69",
+  "generated_at": "2026-11-02T23:56:21.753676Z",
+  "from_date": "2026-11-01",
+  "to_date": "2026-11-02",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-02T23:56:21.705894Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-02T23:56:21.705902Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 135,
+      "attempted": true,
+      "at": "2026-11-02T23:56:21.704392Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 9,
+      "attempted": true,
+      "at": "2026-11-02T23:56:21.705672Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Astra Qwen",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 546,
+          "points": 1689
+        },
+        "reddit": {
+          "num_comments": 221
+        }
+      },
+      "nomination": {
+        "name": "Astra Qwen",
+        "seed_score": 6717.15,
+        "summary": "Astra can read and write weights to improve Qwen",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50341174",
+            "source": "hackernews",
+            "title": "Astra can read and write weights to improve Qwen",
+            "body": "Astra can read and write weights to improve Qwen",
+            "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+            "author": "dbreunig",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1689,
+              "comments": 546
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Astra can read and write weights to improve Qwen",
+            "snippet": "Astra can read and write weights to improve Qwen",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50341174",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.364
+          },
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "MIT researchers say GPT-6 Astra improved a small Qwen model\u2019s math score from 7.9% to 48.1% by directly editing just 0.016% of its weights, without gradient-based training.",
+            "body": "MIT researchers say GPT-6 Astra improved a small Qwen model\u2019s math score from 7.9% to 48.1% by directly editing just 0.016% of its weights, without gradient-based training.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xm89o3/mit_researchers_say_gpt6_astra_improved_a_small/",
+            "container": "singularity",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 949,
+              "num_comments": 123
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "MIT researchers say GPT-6 Astra improved a small Qwen model\u2019s math score from 7.9% to 48.1% by directly editing just 0.016% of its weights, without gradient-based training.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35150000000000003
+          },
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+            "body": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm6jow/sparks_of_weightspace_programming_llms_can/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 278,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          },
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "GPT-6 Astra Edits Qwen Weights: MATH-500 7.9% to 48.1%",
+            "body": "GPT-6 Astra Edits Qwen Weights: MATH-500 7.9% to 48.1%",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xma0tw/gpt6_astra_edits_qwen_weights_math500_79_to_481/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 210,
+              "num_comments": 40
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "GPT-6 Astra Edits Qwen Weights: MATH-500 7.9% to 48.1%",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35200000000000004
+          },
+          {
+            "item_id": "R162",
+            "source": "reddit",
+            "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+            "body": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights\nThis is absolutely wild if true:\n\n\\>We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we\u2019d expect from humans or conventional algorithms. \\[...\\]\n\n\\>\n\n\\>\\[...\\] asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen\u2019s own model card warns about, and fixes this by natively editing 0.016% of the weights. With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xm8e0y/sparks_of_weightspace_programming_llms_can/",
+            "container": "singularity",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "This is absolutely wild if true:\n\n\\>We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we\u2019d expect from humans or conventional algorithms. \\[...\\]\n\n\\>\n\n\\>\\[...\\] asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen\u2019s own model card warns about, and",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 1,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2715
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Official Statement Qwen Models Stick",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 345
+        }
+      },
+      "nomination": {
+        "name": "Official Statement Qwen Models Stick",
+        "seed_score": 5695.5,
+        "summary": "Official Statement: Qwen Models Will Stick to Open Source to the End!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Official Statement: Qwen Models Will Stick to Open Source to the End!",
+            "body": "Official Statement: Qwen Models Will Stick to Open Source to the End!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm28e6/official_statement_qwen_models_will_stick_to_open/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3452,
+              "num_comments": 345
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "Official Statement: Qwen Models Will Stick to Open Source to the End!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 90,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42700000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Anthropic internal AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 232,
+          "points": 280
+        },
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Anthropic internal AI",
+        "seed_score": 1454.175,
+        "summary": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50339494",
+            "source": "hackernews",
+            "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "body": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+            "author": "entryleveljobsc",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 280,
+              "comments": 232
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Anthropic's internal AI use, at retail prices, now exceeds i",
+            "snippet": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50339494",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.324
+          },
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Anthropic's internal AI use, valued at retail prices, now exceeds its employee pay",
+            "body": "Anthropic's internal AI use, valued at retail prices, now exceeds its employee pay",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xm2sej/anthropics_internal_ai_use_valued_at_retail/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 309,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic's internal AI use, valued at retail prices, now exceeds its employee pay",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.313
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Millenium Prize 10000 GPT 4 days",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 235
+        }
+      },
+      "nomination": {
+        "name": "Millenium Prize 10000 GPT 4 days",
+        "seed_score": 1393.5,
+        "summary": "\"When we proved the first Millenium Prize problem, it was 10000 agents of the model that is gonna be released soon, the next GPT, working for about 4 days\"",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "\"When we proved the first Millenium Prize problem, it was 10000 agents of the model that is gonna be released soon, the next GPT, working for about 4 days\"",
+            "body": "\"When we proved the first Millenium Prize problem, it was 10000 agents of the model that is gonna be released soon, the next GPT, working for about 4 days\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1xlyml4/when_we_proved_the_first_millenium_prize_problem/",
+            "container": "singularity",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 694,
+              "num_comments": 235
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "\"When we proved the first Millenium Prize problem, it was 10000 agents of the model that is gonna be released soon, the next GPT, working for about 4 days\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.333
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anthropic Claude Code limits",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 169
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Claude Code limits",
+        "seed_score": 1324.5,
+        "summary": "Anthropic confirms new Claude Code limits to prevent game cloning",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Anthropic confirms new Claude Code limits to prevent game cloning",
+            "body": "Anthropic confirms new Claude Code limits to prevent game cloning",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xm5vdp/anthropic_confirms_new_claude_code_limits_to/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 714,
+              "num_comments": 169
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic confirms new Claude Code limits to prevent game cloning",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.396
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "i dont understand all this claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 166
+        }
+      },
+      "nomination": {
+        "name": "i dont understand all this claude",
+        "seed_score": 1309.5,
+        "summary": "i dont understand all this \"claude + obsidian\" obsession",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "i dont understand all this \"claude + obsidian\" obsession",
+            "body": "i dont understand all this \"claude + obsidian\" obsession",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xlm85t/i_dont_understand_all_this_claude_obsidian/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 707,
+              "num_comments": 166
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "i dont understand all this \"claude + obsidian\" obsession",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "7.72TB Alleged Anthropic AI Model Fake",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 84
+        }
+      },
+      "nomination": {
+        "name": "7.72TB Alleged Anthropic AI Model Fake",
+        "seed_score": 970.5,
+        "summary": "The 7.72TB Alleged Anthropic AI Model Is Fake \u2014 I Reconstructed Its Generated Weights",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "The 7.72TB Alleged Anthropic AI Model Is Fake \u2014 I Reconstructed Its Generated Weights",
+            "body": "The 7.72TB Alleged Anthropic AI Model Is Fake \u2014 I Reconstructed Its Generated Weights",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xls4cj/the_772tb_alleged_anthropic_ai_model_is_fake_i/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 563,
+              "num_comments": 84
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "The 7.72TB Alleged Anthropic AI Model Is Fake \u2014 I Reconstructed Its Generated Weights",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Anthropic reports 17B Q3 895B S-1",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 258,
+          "points": 226
+        }
+      },
+      "nomination": {
+        "name": "Anthropic reports 17B Q3 895B S-1",
+        "seed_score": 726.0,
+        "summary": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50337439",
+            "source": "hackernews",
+            "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "body": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+            "author": "rebel",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 226,
+              "comments": 258
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic reports $17B in Q3 revenue, commitments of $895B i",
+            "snippet": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50337439",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude 9",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 131
+        }
+      },
+      "nomination": {
+        "name": "Claude 9",
+        "seed_score": 655.5,
+        "summary": "Not another tok/s post: local quants vs Claude on 9 real bugs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Not another tok/s post: local quants vs Claude on 9 real bugs",
+            "body": "Not another tok/s post: local quants vs Claude on 9 real bugs",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlwpqv/not_another_toks_post_local_quants_vs_claude_on_9/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 306,
+              "num_comments": 131
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Not another tok/s post: local quants vs Claude on 9 real bugs",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Mythos 5.5 Anthropic begins",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "Mythos 5.5 Anthropic begins",
+        "seed_score": 622.5,
+        "summary": "Mythos 5.5 release nears as Anthropic begins preparing their webpage for it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R65",
+            "source": "reddit",
+            "title": "Mythos 5.5 release nears as Anthropic begins preparing their webpage for it",
+            "body": "Mythos 5.5 release nears as Anthropic begins preparing their webpage for it",
+            "url": "https://www.reddit.com/r/singularity/comments/1xlikmp/mythos_55_release_nears_as_anthropic_begins/",
+            "container": "singularity",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 369,
+              "num_comments": 46
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Mythos 5.5 release nears as Anthropic begins preparing their webpage for it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3245
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Release ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder 763B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 74
+        }
+      },
+      "nomination": {
+        "name": "Release ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder 763B",
+        "seed_score": 574.5,
+        "summary": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter",
+            "body": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlys6k/release_ista_deepseekv41flash1017_gsqrco_coder_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 309,
+              "num_comments": 74
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 134
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 573.0,
+        "summary": "Claude's refusal is getting stricter and annoying each day",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "Claude's refusal is getting stricter  and annoying each day",
+            "body": "Claude's refusal is getting stricter  and annoying each day",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xlz6m8/claudes_refusal_is_getting_stricter_and_annoying/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 248,
+              "num_comments": 134
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude's refusal is getting stricter and annoying each day",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Anthropic AI employees",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 58
+        }
+      },
+      "nomination": {
+        "name": "Anthropic AI employees",
+        "seed_score": 477.0,
+        "summary": "Anthropic is now spending more money on its \"AI employees\" than its human employees",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "Anthropic is now spending more money on its \"AI employees\" than its human employees",
+            "body": "Anthropic is now spending more money on its \"AI employees\" than its human employees",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xm1rhy/anthropic_is_now_spending_more_money_on_its_ai/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 260,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anthropic is now spending more money on its \"AI employees\" than its human employees",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Almost Steam games use AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 122
+        }
+      },
+      "nomination": {
+        "name": "Almost Steam games use AI",
+        "seed_score": 462.0,
+        "summary": "Almost half of all new Steam games use AI now",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R79",
+            "source": "reddit",
+            "title": "Almost half of all new Steam games use AI now",
+            "body": "Almost half of all new Steam games use AI now",
+            "url": "https://www.reddit.com/r/artificial/comments/1xm0tga/almost_half_of_all_new_steam_games_use_ai_now/",
+            "container": "artificial",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 186,
+              "num_comments": 122
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Almost half of all new Steam games use AI now",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3115
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-18",
+      "heuristic_name": "Oracle 20B AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 95,
+          "points": 137
+        }
+      },
+      "nomination": {
+        "name": "Oracle 20B AI",
+        "seed_score": 348.0,
+        "summary": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50342284",
+            "source": "hackernews",
+            "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+            "body": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+            "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+            "author": "smartmic",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 137,
+              "comments": 95
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Oracle files to sell $20B in new stock, bonds to finance AI",
+            "snippet": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50342284",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3025
+          }
+        ]
+      }
+    }
+  ]
+}

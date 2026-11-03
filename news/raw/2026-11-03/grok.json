@@ -1,0 +1,254 @@
+{
+ "date": "2026-11-03",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-03.json",
+ "fetched_at": "2026-11-02T23:55:42+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 10,
+  "ok": 10,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Anthropic launches message threads public beta for Claude Messages API and Claude Code",
+   "category": "feature_update",
+   "event_time": "2026-11-02T15:00:00Z",
+   "primary_url": "https://claude.com/resources/articles/message-threads",
+   "facts": [
+    "Message threads is now available in public beta on the Claude Platform.",
+    "With message threads on by default for most Claude Code users, requests with 500k to 1M tokens see median TTFT drop by about 35%.",
+    "In long conversations, the median request shrank from about 800 KB to 1.8 KB."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/TekonBurns/status/2117381486999732240",
+     "official": false,
+     "author": "@TekonBurns",
+     "check": "ok",
+     "created_at": "2026-11-02T22:21:00Z",
+     "text": "🚨 Claude code users !!\n\nSession payloads just got 400x SMALLER !!\n\nAnthropic integrated message threads into Claude Code.\n\nLong requests dropped from 800 KB to 1.8 KB !!\n\nAnd first token latency is 35% FASTER on 1M contexts.\n\nUpdate your CLI now !!\nhttps://claude.com/resources/articles/message-threads",
+     "likes": 17,
+     "retweets": 0,
+     "replies": 6,
+     "views": 3136
+    },
+    {
+     "url": "https://x.com/myjellybot/status/2117380104628113769",
+     "official": false,
+     "author": "@myjellybot",
+     "check": "ok",
+     "created_at": "2026-11-02T22:15:30Z",
+     "text": "Claude official: message threads are in public beta on the Messages API. You send only the new message plus the last message ID. In long conversations, the median request shrank from about 800 KB to 1.8 KB.\n\nAgents quit rereading their diary aloud. Via @ClaudeDevs",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 15
+    },
+    {
+     "url": "https://x.com/runthenumberz/status/2117377016924402103",
+     "official": false,
+     "author": "@runthenumberz",
+     "check": "ok",
+     "created_at": "2026-11-02T22:03:14Z",
+     "text": "#Breaking - @Anthropic launched Message Threads in public beta on the Claude Platform. Requests with 500k–1M tokens see time-to-first-token drop ~35%, threads held encrypted in memory and expire after 5 idle minutes. How fast does agent work get by 2030? https://claude.com/resources/articles/message-threads",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 70
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "OpenAI to merge ChatGPT and Codex usage into shared token allowance starting December",
+   "category": "feature_update",
+   "event_time": "2026-10-31T00:00:00Z",
+   "primary_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+   "facts": [
+    "Starting in December, Plus, Pro, and Business plans' usage allowance will be shared across ChatGPT and Codex.",
+    "Usage is measured in tokens; Instant chat will not draw from the shared allowance."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/AITRACKERTOOL/status/2117377837070180391",
+     "official": false,
+     "author": "@AITRACKERTOOL",
+     "check": "ok",
+     "created_at": "2026-11-02T22:06:29Z",
+     "text": "Two AI plan changes this week, going opposite directions:\n\nOpenAI: starting in December, ChatGPT and Codex share one usage pool on Plus, Pro and Business (Instant chats stay exempt).\n\nAnthropic: Max 20x is now called Ultra (same $200), and verified Ultra users no longer hit the 5-hour session cap.\n\nIf you code with AI every day, does either change make you switch?\n\nFree and cheaper options we track: http://aitrackertool.dev",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 27
+    },
+    {
+     "url": "https://x.com/Nonosam2/status/2117374805376905671",
+     "official": false,
+     "author": "@Nonosam2",
+     "check": "ok",
+     "created_at": "2026-11-02T21:54:27Z",
+     "text": "ChatGPT and Codex will share usage limits for eligible plans starting in December.\n\nWould you rather have separate limits for coding and chatting, or one bigger shared allowance?",
+     "likes": 5,
+     "retweets": 0,
+     "replies": 3,
+     "views": 219
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "DeepSeek open-sources dsh-superagent-prototype, a proactive coding agent for GitHub",
+   "category": "tool_launch",
+   "event_time": "2026-10-31T09:32:00Z",
+   "primary_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+   "facts": [
+    "dsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for DeepSeek Harness.",
+    "It is a research prototype for reference only, not an official DeepSeek product.",
+    "It listens to GitHub and, optionally, Feishu; when an allowed person asks for work, it opens a work item and answers with a pull request."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/probert_mihai/status/2117377733990793548",
+     "official": false,
+     "author": "@probert_mihai",
+     "check": "ok",
+     "created_at": "2026-11-02T22:06:05Z",
+     "text": "DeepSeek Open-Sources Super-Agent Prototype for Parallel Coding Tasks\n\nDeepSeek released dsh-superagent-prototype on GitHub, a research tool using a router-worker model where a central router coordinates tasks and separate workers handle them in parallel across isolated sessions. It listens for events from GitHub issues, pull requests, and chats like Feishu, acting only with permission to avoid overwhelming users. In tests with noisy streams of 300 messages, it cut median task completion to 12.4 minutes from 20.4, showing promise for more autonomous AI that respects human attention limits. Developers praise the practical design but stress it's early-stage research needing review for real use",
+     "likes": 3,
+     "retweets": 1,
+     "replies": 0,
+     "views": 145
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Vercel Labs releases agent-desktop CLI for coding agents to control desktop apps via accessibility trees",
+   "category": "tool_launch",
+   "event_time": "2026-10-31T00:00:00Z",
+   "primary_url": "https://github.com/vercel-labs/agent-desktop",
+   "facts": [
+    "agent-desktop is a CLI and C library for macOS, Windows and Linux that lets agents operate desktop apps by reading the OS accessibility tree and acting on refs.",
+    "It stays headless by default so actions do not steal focus or move the pointer."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/LiLensss/status/2117380855119446170",
+     "official": false,
+     "author": "@LiLensss",
+     "check": "ok",
+     "created_at": "2026-11-02T22:18:29Z",
+     "text": "🛠️ 别再拿截屏去猜坐标了！Vercel Labs 开源 agent-desktop：大模型操控电脑的底层逻辑彻底变了。\n\n过去一年，各大厂商都在卷 Computer Use（AI 替你操控桌面电脑）。但凡在实际业务中用过的人都知道，传统方案有多折磨人：\n- 抢鼠标焦点：模型一跑起来，你的真实物理鼠标就在屏幕上乱晃乱点，你连微信、网页都别想正常用；\n- 暴力视觉极度脆弱：每动一步都要截一张几 MB 的高分辨率全屏图塞给模型。不仅单步延迟高达 3~5 秒、Token 账单爆炸，而且只要遇到系统缩放、深浅色模式切换或者窗口稍微被遮挡，坐标就直接点偏点空。\n\n刚加入 Vercel Labs 的核心作者甩出的 agent-desktop，彻底颠覆了这种“盲人摸象”式的视觉方案：\n\n---\n\n⚙️ 一、 核心底层变革：从“看像素”到“直读系统无障碍树”\n\n1️⃣ 纯 Rust 重构，把桌面软件变成虚拟 DOM 树：\n它不跑任何大模型，而是一个极致轻量的系统级 CLI 与 C 库。底层直接对接各操作系统的原生辅助技术 API：\n- macOS：挂载系统底层 AXUIElement 辅助无障碍树；\n- Windows：接入微软 UI Automation；\n- Linux：直连标准 AT-SPI。\n每一个窗口、按钮、文本框都会被提取为结构化的 JSON 节点，并附带唯一且生命周期锁定的句柄（如 @s8f3k2p9:e8）。大模型操控桌面就像当年浏览器里操作 DOM 一样精准，再也不需要靠像素去盲猜！\n\n2️⃣ 真正的静默后台操作（Headless by default）：\n只要调用无障碍 API 触发事件，完全不移动你的物理鼠标指针，也不抢夺前台激活窗口！你在前台正常敲代码、开视频会议，多个 Agent 可以在后台各自持有虚拟会话与独立光标，静默操作其他软件，互不干扰。\n\n3️⃣ 跨生态通用插件：\n完美适配 Claude Code、Codex、Cursor、Hermes 等所有主流终端与编码智能体。单行命令 npm install -g agent-desktop 或通过 http://skills.sh 即可为你的智能体装上这双“无形大手”。\n\n---\n\n💡 二、 极其清醒的选型建议与落地边界（必看大实话）\n\n很多开发者问“是不是以后所有自动化都要用它？”社区技术党给出了非常理性的总结：\n\n1. 有 API / MCP 接口的软件 👉 坚决别用它！\n   如果你的目标服务本身提供了官方 API、命令行 CLI 或 MCP 协议，直接调接口永远是更便宜、更稳固的选择；\n2. 网页端自动化 👉 继续用 agent-browser 或 WebMCP；\n3. 它真正无可替代的统治战场：\n   是那些长年没有 API、没有 Web 端的“深水区桌面软件”——比如老旧的企业内部客户端、ERP 安装配置界面、无接口的专业工业设计工具，或者自动化流程中卡死在弹窗确认的最后一步。\n\n⚠️ 安全红线提醒：\n因为它能以读屏软件的视角提取系统里的所有窗口文字与剪贴板，在日常生产机上跑未经验证的自动化脚本时，务必在沙盒或独立测试账户中运行，防范环境凭据外泄。\n\n📎 开源仓库：https://github.com/vercel-labs/agent-desktop\n官网文档：https://agent-browser.dev/desktop\n\n#AIAgent #ComputerUse #Rust #Vercel #自动化 #开源项目",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 4,
+     "views": 393
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Claude Code restores ultrathink keyword to boost effort mid-turn",
+   "category": "feature_update",
+   "event_time": "2026-11-01T20:09:00Z",
+   "primary_url": null,
+   "facts": [
+    "If a task turns out harder than expected, type ultrathink while Claude is working; it raises the effort for the rest of that turn in the terminal on the latest release."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/addyosmani/status/2116986087390486816",
+     "official": true,
+     "author": "@addyosmani",
+     "check": "ok",
+     "created_at": "2026-11-01T20:09:49Z",
+     "text": "Claude Code tip: if a task turns out harder than you expected, type ultrathink while Claude is working. It raises the effort for the rest of that turn. In the terminal on the latest release.",
+     "likes": 1064,
+     "retweets": 30,
+     "replies": 114,
+     "views": 88448,
+     "quote": {
+      "author": "@dmwlff",
+      "text": "ultrathink is back in the CC CLI.\n\nWe turned this off for a while because it's weird and maybe confusing.\n\nBut I like weird, and I don't think it's that confusing.\n\nI mostly run Opus 5.5 on medium. Some turns, though, I want to put a little extra mustard on it. ultrathink!"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "ffmpeg-skill gives Claude Code, Codex and Cursor structured FFmpeg tools for local video editing",
+   "category": "tool_launch",
+   "event_time": "2026-11-02T22:19:00Z",
+   "primary_url": null,
+   "facts": [
+    "ffmpeg-skill provides 42 structured FFmpeg tools so agents can edit video locally, remove pauses, add subtitles, and export for platforms without cloud upload."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/cutetoxicguy/status/2117380985289413060",
+     "official": false,
+     "author": "@cutetoxicguy",
+     "check": "ok",
+     "created_at": "2026-11-02T22:19:00Z",
+     "text": "🎬 Your AI coding agent can now edit videos, remove awkward pauses, add animated subtitles and export finished TikToks, all without uploading footage to the cloud.\n\nMeet ffmpeg-skill, a free, open-source video editing toolkit that gives Claude Code, Codex and Cursor access to 42 structured FFmpeg tools.\n\nInstead of writing complicated FFmpeg commands manually, you can simply describe the edit you want.\n\nFor example:\n\n\"Remove the long pauses, add animated captions, crop this to 9:16 and export it for Instagram Reels.\"\n\nThe agent builds the editing pipeline, processes the footage locally and checks the output.\n\nWhat can it do?\n\n▪️ Video editing: Cut and trim clips, merge footage with transitions, adjust speed, insert B-roll and create multi-camera edits.\n\n▪️ Automatic silence removal: Detect pauses, preserve natural breathing gaps and remove filler words when a local speech transcription engine is available.\n\n▪️ Animated subtitles: Generate captions, karaoke-style word highlighting and pop-up text animations.\n\n▪️ Vertical video: Reframe footage for TikTok, Instagram Reels and YouTube Shorts, with subtitles positioned outside areas covered by platform buttons.\n\n▪️ Audio processing: Noise reduction, compression, music ducking, microphone synchronization and loudness normalization.\n\n▪️ Professional video tools: HDR-to-SDR conversion, LUTs, stabilization, chroma key, overlays and color correction.\n\n▪️ Platform exports: Ready-made presets for YouTube, TikTok, Reels, Shorts, X, LinkedIn and Facebook.\n\n▪️ Timeline export: Generate FCPXML, EDL or OpenTimelineIO files for further editing in traditional video editors.\n\nBut the interesting part is how it handles mistakes.\n\nMost AI agents using FFmpeg generate commands based on assumptions about the source file.\n\nffmpeg-skill follows a verification-driven workflow:\n\n1. Probe first.\n\nIt reads the actual video's resolution, frame rate, duration, codecs, HDR metadata and audio streams.\n\n2. Plan the edit.\n\nThe agent selects…",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 1,
+     "views": 157
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Community discusses Claude Code usage health checks and skill optimization",
+   "category": "discussion",
+   "event_time": "2026-11-02T22:24:00Z",
+   "primary_url": null,
+   "facts": [
+    "Users share prompts to audit Claude Code skills, CLAUDE.md vs AGENTS.md loading, and recent session stats without modifying files."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/KimYx0207/status/2117382427035480258",
+     "official": false,
+     "author": "@KimYx0207",
+     "check": "ok",
+     "created_at": "2026-11-02T22:24:44Z",
+     "text": "同一份 Claude Code，有人嫌笨，有人通宵派活。\n差的常常不是模型，是「自己的用法从没体检过」。\n\n比如：Skill 装了一堆从没被调用；CLAUDE.md 和 AGENTS.md 同时存在，你以为都生效，其实只读了一份。\n\n先 /insights、/skill-doctor、/context 看一眼，再开新会话，把下面整段粘进去：\n\n帮我给我的 Claude Code 用法做一次体检。全程只读：除了把统计脚本放在 /tmp 下，不修改任何文件，不上传任何内容。\n\n0. 这次写的任何脚本都只读本地文件，不要联网。\n1. 配置：统计 ~/.claude/skills 和当前项目 .claude/skills 里装了多少个 Skill；找出当前项目里的 CLAUDE.md、CLAUDE.local.md、AGENTS.md，各有多少行，如果同时存在，说清你实际读的是哪一份；看看 .claude/settings.json 里有没有 Hook 和 deny 规则。\n2. 记录：写一个只读的小脚本，统计 ~/.claude/projects 下最近 30 天的会话：会话数、最长的会话有多少条消息、我用过哪些斜杠命令、子代理调用次数、被自动压缩了几次、哪些 Skill 真被调用过。只输出统计数字，脚本不要打印任何对话内容：会话记录里可能有密钥。\n3. 对照下面 7 条，逐条判断「做对了 / 用错了 / 没用上」，每条都给出依据的数字和一个能直接复制的改法：Skill 是否装得多用得少；CLAUDE.md 是否只写了它猜不到的东西；提示词有没有写清做完的标准；换任务时有没有清上下文；调研和审查有没有交给子代理；改完有没有能自己跑的检查；长任务有没有用 /goal 或状态文件。\n4. 最后告诉我：最该先改的 3 件事是什么。只给建议，不要动手改，我确认后再说。\n\n跑完你会发现：真正值钱的不是再堆一条提示词，是先搞清楚现在到底加载了什么。\n关注 @KimYx0207",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 35
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Amplifying Coding Agents Index updates with Nov 2 data showing Claude Code dominance in public PRs",
+   "category": "adoption_survey",
+   "event_time": "2026-11-02T00:00:00Z",
+   "primary_url": "https://amplifying.ai/coding-agents",
+   "facts": [
+    "Latest capture Nov 2, 2026 shows Claude Code leading visible agent output on public GitHub.",
+    "24.9% of all public PRs attributed to agents, up from 16.1% six months ago."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  }
+ ]
+}

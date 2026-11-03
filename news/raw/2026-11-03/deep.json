@@ -1,0 +1,243 @@
+{
+ "date": "2026-11-03",
+ "runs": [
+  {
+   "started_at": "2026-11-03T00:00:00+00:00",
+   "seconds": 3.1,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 9,
+   "articles_ok": 6,
+   "articles_error": 1,
+   "articles_skipped": 2,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — Access Denied Access Denied You don't have permission to access…": 1
+   },
+   "summary": "6/9 bài gốc ok (2 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 3.1s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://claude.com/resources/articles/message-threads",
+   "article": {
+    "url": "https://claude.com/resources/articles/message-threads",
+    "status": "ok",
+    "title": "Make long-running agents faster with message threads | Claude by Anthropic",
+    "chars": 3399,
+    "text": "Make long-running agents faster with message threads\nNew in the Messages API, send your conversation once, and the API receives only what’s new with every turn.\nCategoryAnnouncements\nProductClaude Platform\nDateNovember 2, 2026\nReading time3 min\nShare\nMessage threads is now available in public beta on the Claude Platform. With message threads, agents no longer need to resend the full conversation history on every turn, reducing latency for long-running sessions.\nHow message threads works\nA coding agent might make hundreds of requests in one session, and each request resends every earlier message and tool result. Once a conversation reaches hundreds of thousands of tokens, resending all of it adds time before Claude starts responding. With message threads, agents send only what’s new since the last turn, which reduces time to first token (TTFT).\nWith message threads on by default for most Claude Code users, requests with 500k to 1M tokens see median TTFT drop by about 35%.\nTo use message threads, add the thread parameter to Messages API requests. The first request includes the full conversation and starts a thread. Each request after that includes only the new messages and the ID of the previous response. Between turns, we hold each thread in memory, where it’s encrypted and not written to disk. A thread expires 5 minutes after its last request and your client then resends the full conversation to start a new one. While each request is smaller with message threads, Claude still reads the full conversation on every turn, so token usage stays the same.\nMessage threads is best for active sessions where latency matters, including:\nLong-running coding agents, where each tool result or file edit adds to the conversation.\nComputer use agents, where screenshots stay with the thread instead of being re-uploaded on every turn.\nDocument and image-heavy workflows, where requests are made smaller.\nThe more context an agent carries, the more message threads can reduce time to first token.\nGetting started\nMessage threads is available now in public beta on the native Claude Platform, and on Claude Platform on AWS, Claude in Microsoft Foundry, and on Claude Models on Google Cloud (Anthropic managed). Standard Claude token rates and existing rate limits apply. See the documentation to get started.\nRelated articles\nExplore more product news and best practices for teams building with Claude.\nArticleOct 28, 2026\nSmart reports, surveys, and pooled group budgets for Claude Enterprise\nIn many organizations, members have identified the unique work that Claude can unlock. The next step is expanding that work to every team.\nClaude Enterprise\nArticleOct 28, 2026\nIDC brings Quanta into Claude and adopts Claude across the company\nIDC integrated Claude as part of its Quanta platform, and it has rolled Claude out across its own business\nClaude CoworkClaude Code\n1 more: Claude EnterpriseClaude Enterprise\nArticleOct 28, 2026\nIntroducing artifacts for legal work\nClaude for Legal now includes ready-to-use artifacts for legal work that teams can adapt with their own data and connectors, and share across the business.\nClaude Enterprise\nArticleOct 27, 2026\nClaude for Financial Advisors\nFinancial advisors can now connect Claude to the custodians, portfolio platforms, CRMs, and planning tools they depend on, along with new skills tailored to the daily work of a financial advisor."
+   }
+  },
+  {
+   "url": "https://amplifying.ai/coding-agents",
+   "article": {
+    "url": "https://amplifying.ai/coding-agents",
+    "status": "ok",
+    "title": "Coding Agents Index | Amplifying",
+    "chars": 3211,
+    "text": "Oct 26, 2026Claude Code\nAnthropic S-1 adds Claude Code usage evidence\nAnthropic reports Claude wrote over 90% of its September code contributions. In Q3, the top 5% of Claude Code-using Enterprise users spent about 20 times the average for Enterprise users who did not use Claude Code. These are company-reported findings; the filing does not disclose updated Claude Code revenue or active users.\nAnthropic S-1: Anthropic S-1 adds Claude Code usage evidence\nOct 12, 2026Muse Code\nMuse Code adds Wonder support\nUpdated Meta’s CLI profile with the Wonder model family. Wonder Full requires Power Usage or Maximum Usage. Latest documented CLI: 1.4.6. The index now includes a conservative floor on attributed public commits.\nWonder launch: Muse Code adds Wonder supportCLI changelog: Muse Code adds Wonder support\nOct 11, 2026OpenCode\nOpenCode adds a v2 upgrade path\nOpenCode 1.19.0 adds an explicit upgrade to v2. The v2 track uses @opencode/cli, with 2.0.26 verified separately; v1 package downloads remain a historical measurement.\nv1 release and upgrade: OpenCode adds a v2 upgrade pathv2 documentation: OpenCode adds a v2 upgrade path\nOct 9, 2026Mistral Vibe Code\nMistral Vibe Code: CLI 2.26.1\nThe latest CLI adds session-only model settings, plugin reloads, and controls for subagents and background processes. Added Vibe Code to the index with local, IDE, and remote coding workflows.\nCLI release: Mistral Vibe Code: CLI 2.26.1Vibe Code overview: Mistral Vibe Code: CLI 2.26.1\nOct 2, 2026Factory Droid\nFactory Droid: CLI 0.232\nRefreshed Factory's CLI, desktop, and cloud agent, including Missions, custom subagents, MCP, and local BYOK. The latest documented CLI is 0.232.0.\nDroid overview: Factory Droid: CLI 0.232Release notes: Factory Droid: CLI 0.232\nOct 1, 2026Pi\nPi 1.0 and Pi Durable\nPi 1.0 brings a fullscreen terminal, built-in MCP with Codemode, deferred tools, and image generation. Pi Durable is a separate experimental package for persistent, recoverable agent applications.\nPi 1.0 announcement: Pi 1.0 and Pi DurablePi Durable: Pi 1.0 and Pi Durable\nOct 1, 2026Claude Code\nClaude Code adds Mods\nVersion 2.1.287 lets plugins customize deeper agent behavior. Its optional You should know mod runs a side agent to flag missed issues; it requires a first-party session with telemetry enabled.\nRelease notes: Claude Code adds Mods\nOct 1, 2026OpenAI Codex\nCodex CLI 0.160 and GPT-6.1 Sol\nCLI 0.160.0 improves task history, session recovery, and opt-in Guardian reviews. GPT-6.1 Sol arrived September 29; model availability depends on the plan, client, and workspace.\nCodex changelog: Codex CLI 0.160 and GPT-6.1 Sol\nSep 23, 2026Cursor\nCursor adds Rollouts and Security Review\nTeams and Enterprise gain deployment monitoring and PR security reviews. Rollouts can propose a revert or delegate a fix, but does not merge or roll back changes automatically.\nCursor announcement: Cursor adds Rollouts and Security Review\nSep 10, 2026Cursor\nCursor Projects enters beta\nA cloud coordinator plans work, delegates implementation, and shares context across agents. Projects can also respond to schedules and connected events. Availability began rolling out in beta.\nCursor Projects: Cursor Projects enters beta"
+   }
+  },
+  {
+   "url": "https://github.com/vercel-labs/agent-desktop",
+   "article": {
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "status": "ok",
+    "title": "",
+    "chars": 8635,
+    "text": "# agent-desktop\nComputer use for AI agents: read and operate desktop apps through the OS accessibility tree.\nA CLI and C library for macOS, Windows and Linux. A snapshot returns JSON with a ref for every element an agent can act on. The agent acts on a ref and snapshots again to check, with no pixel matching; the loop stays in your agent.\nEvery CLI call runs in its own process. Headless calls still prohibit foreground activation and synthesized input.\nSnapshots, clipboard reads, screenshots, command output and debug artifacts can contain private desktop content. Keep them out of public logs and uploads. The optional [JEV helper](skills/jev-desktop/SKILL.md) sends screen descriptions to a configured model provider; it is separate from the native CLI. See [privacy and data handling](docs/faq.md#what-data-can-contain-private-information).\n## Installation\nInstall on macOS, Windows or Linux with npm:\n```bash\nnpm install -g agent-desktop\nagent-desktop version\n```\nBun, Yarn and pnpm can install the same package. It includes native binaries and platform helpers for x64 and ARM64.\nFor direct execution without a JavaScript launcher, download the matching native archive from\n[GitHub Releases](https://github.com/vercel-labs/agent-desktop/releases) and keep its helper beside the executable.\nOfficial Homebrew and Scoop packages are being submitted; they are not yet available in the default catalogs.\nThe repository no longer maintains a custom Homebrew tap or Scoop bucket.\n- **macOS** needs Accessibility permission: `agent-desktop permissions --guide`.\n- **Windows** needs no grant for apps at your terminal's integrity level.\n- **Linux** needs the user's graphical session with `at-spi2-core`.\nSee [installation and permissions](docs/install.md) for package-manager behavior, release archives, and building from source.\n## Quick start\nObserve, act on a ref, observe again. Any app name from `agent-desktop list-apps` works; Finder is the macOS example.\nEach command prints one JSON envelope; a trimmed snapshot follows the commands.\n```bash\nagent-desktop snapshot --app Finder -i # interactive elements, each with a ref\nagent-desktop click @s8f3k2p9:e8 # act on a ref from that snapshot\nagent-desktop snapshot --app Finder -i # observe again to verify\n```\n```json\n{\n\"version\": \"2.6\",\n\"ok\": true,\n\"command\": \"snapshot\",\n\"data\": {\n\"app\": \"Finder\",\n\"window\": { \"id\": \"w-204749\", \"title\": \"Downloads\" },\n\"snapshot_id\": \"s8f3k2p9\",\n\"ref_count\": 59,\n\"complete\": true,\n\"tree\": {\n\"role\": \"window\",\n\"name\": \"Downloads\",\n\"children\": [\n{ \"role\": \"treeitem\", \"name\": \"Documents\", \"ref_id\": \"@s8f3k2p9:e8\", \"available_actions\": [\"Click\"] }\n]\n}\n}\n}\n```\n- **Refs belong to their snapshot.** A bare `@e8` is rejected with `INVALID_ARGS`. When the UI changes, an action\nreturns `STALE_REF` or `AMBIGUOUS_TARGET`: take a new snapshot and use its refs.\n- **Several windows** give `AMBIGUOUS_TARGET`; `snapshot` lists the candidate window ids in `error.details`. Pass one\nwith `--window-id`.\n- **Dense apps:** map first with `snapshot --skeleton --app Slack -i --compact`, then drill into one region with\n`snapshot --root @s8f3k2p9:e3 -i --compact`.\n- **Headless by default.** Ref actions go through the accessibility API without moving the pointer or taking focus.\nThe global `--headed` flag allows physical input.\n- **PowerShell.** Quote every ref (`'@s8f3k2p9:e8'`), because a bare `@token` is the splatting operator.\n## For AI agents\nThe binary carries its own docs, matched to its version:\n```bash\nagent-desktop skills get desktop # the loop, refs, verification and retry rules\nagent-desktop skills get platform # what differs on the OS you run on\nagent-desktop --help # flags for one command\n```\nInstall the skill into an agent harness from [skills.sh](https://skills.sh/vercel-labs/agent-desktop/agent-desktop):\n```bash\nnpx skills add https://github.com/vercel-labs/agent-desktop --skill agent-desktop\n```\nOr add this to your `AGENTS.md`:\n```markdown\nUse `agent-desktop` to see and operate desktop…"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlwpqv/not_another_toks_post_local_quants_vs_claude_on_9/",
+   "article": {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlwpqv/not_another_toks_post_local_quants_vs_claude_on_9/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm28e6/official_statement_qwen_models_will_stick_to_open/",
+   "article": {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm28e6/official_statement_qwen_models_will_stick_to_open/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50339494",
+   "hn_url": "https://news.ycombinator.com/item?id=50339494",
+   "hn": {
+    "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+    "points": 281,
+    "comments": 232
+   },
+   "comments": [
+    {
+     "author": "hungryhobbit",
+     "replies": 19,
+     "text": ">There's an important distinction here. Anthropic isn't actually spending more cash on AI than salaries. It's valuing its internal AI consumption at retail prices.\nIf virtually any other company in the world said \"we have internal AI servers and we let our employees use them\" ... the company would measure that as they would any other internal expenditure: by how much it costs them. You blow $50k a year on servers running your LLMs? It cost you $50k.\nOnly a company like Anthropic, desperate to…"
+    },
+    {
+     "author": "notfried",
+     "replies": 5,
+     "text": "It's kind of expected, no? If I was an Anthropic employee expected to dog-food the product and be on the frontier of usage, I'd probably be using Mythos all the time at the highest thinking level. And if I am not being metered, I'd probably do more stuff that I know are likely low yield since I am not worried about a quota. This would probably take my \"API-equivalent\" usage beyond the average salary in far less than a month."
+    },
+    {
+     "author": "JohnMakin",
+     "replies": 2,
+     "text": "I'm not really sure I understand the excitement around this. It seems like the implication is that if retail price > employee salary, you are replacing employees with AI spend? Yet, anthropic's head count has nearly doubled since last year - so, in a company where nearly half of that head count is engineers, but claude is \"writing 90% of the code,\" what is everyone doing then? You would think, if the hype feeling around this held true, that the output would be going up and costs remaining…"
+    },
+    {
+     "author": "simonw",
+     "replies": 0,
+     "text": "In case anyone wants to see the original source, it's page 187 and 188 of the S-1: https://www.sec.gov/Archives/edgar/data/2130357/000162828026...\nUnder the heading \"Claude is Accelerating Our Ability to Close the Loop\":\n> The expansion of our own use of Claude reflects this leverage directly. The value of our own internal Claude usage at list prices has grown by over 250 times from January 2026 to September 2026, and in April 2026, this monthly value first exceeded our monthly personnel…"
+    },
+    {
+     "author": "BigTTYGothGF",
+     "replies": 8,
+     "text": "> In March, I wrote about a new trend: Tech companies are starting to treat AI tokens (the main way to measure usage) as a fourth component of employee compensation, alongside salary, bonuses, and stock awards.\nThere's a lot to unpack about this statement."
+    }
+   ],
+   "article": {
+    "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+    "status": "ok",
+    "title": "Anthropic's Internal AI Usage Now Exceeds Employee Compensation - Business InsiderBusiness InsiderAccount iconAccount iconlighning bolt icon",
+    "chars": 600,
+    "text": "My tennis buddy has an AI agent. It's changing his life.\nA computer science grad taught me a lot about finding work in the AI era. Here's what it takes to get that first big job.\nAmazon CEO sees AI spending 'meaningfully' higher in 2027\nWe went inside Amazon's robot-powered warehouse to see if machines are taking jobs. What we found surprised us.\nBusiness Insider tells the innovative stories you want to know\nBusiness Insider tells the innovative stories you want to know\nBusiness Insider tells the innovative stories you want to know\nBusiness Insider tells the innovative stories you want to know"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50339913",
+   "hn_url": "https://news.ycombinator.com/item?id=50339913",
+   "hn": {
+    "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+    "points": 111,
+    "comments": 73,
+    "text": "Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic, QA agents that autonomously plan, explore, and bug-bash controls and user flows in your web, iOS, Android, and (soon) desktop apps to catch bugs.\nHere’s a demo: https://youtu.be/BFsM-Se1Fh8\nWe’re both software engineers that spent our careers on dev tooling and infra across companies like Robinhood, Retool, WeWork, and Qualtrics. Testing was always a pain in the ass (esp Playwright and Selenium), so we built agents to do it for us.\nModern day software has a ton of bugs and the change failure rate is only growing faster as coding agent adoption scales. LLMs are really good at generating code, but reinforce their own assumptions, write a ton of useless tests, and are bad at visual understanding. On DeepSWE v1.1, Sonnet 5.5 hit 66.2% pass rate when banned from writing tests, versus 65.3% when allowed.\nOSS end-to-end testing frameworks like Playwright, Selenium, or Maestro force you to hardcode implementation details like XPath, text, or aria-* attributes in your tests. Even with agents, these take a nontrivial amount of time and tokens to build and maintain.\nIn 2023, we saw Nat Friedman drive a browser with GPT-3 via natbot. We were inspired to use this technology to automate the most painful and tedious parts of software engineering: testing. We started with using LLMs to generate and maintain Playwright, but quickly realized that those primitives were fundamentally misaligned with the agentic SDLC. We think the future of QA is agents testing themselves, not writing scripts.\nMo is a custom agent harness for catching bugs that builds on the past 3 years of Momentic and millions of test traces from complex, real-world applications. Mo is built for recall: it finds the most real bugs, though Codex is a bit more precise at 86% vs 84%. The tradeoff is cost: Mo costs $2.67 per bug vs $0.80 for Codex, less than Claude Code and Devin.\n- Self-organizing agent graph. Mo builds a directed acyclic graph (DAG) as it explores. Large product areas automatically fork into parallel sub-agents, each with their own browser or device for concurrent execution.\n- Specialized agents for domain specific tasks. Planner agents reason over screenshots and video while dedicated locator agents inspect page structure to resolve plain-English interaction targets. Others include image analysis, video understanding, audio generation, and more.\n- Parallel agents coordinate through cooperative resource leases. Agents can announce that they’re “using” or “modifying” overlapping resources or fixtures. Multiple “using” claims can coexist, but only a single “modifying” claim can be active on any particular one.\n- Scaled infrastructure. Mo ships with a tunnel that lets users expose private sites and local apps to our hosted agents and infra. A single bug bash can spin up 100s of concurrent browsers and devices.\nWe benchmarked Mo against coding agents on 4 popular open-source apps: Gitea (58.8k stars), Metabase, Twenty (YC), and Saleor, with 1,396 human-labeled bugs. Each agent got the same brief, a fresh E2B sandbox, and no access to source code. Codex and Claude Code used hosted Browserbase browsers, while Devin used its built-in browser. For evaluators, we implemented LLM as a judge (GPT-6.1 Sol) with a human reviewer.\nResults from a time-boxed 60-minute run:\n- Mo: 269 bugs, 19.3% recall, 84% precision, $2.67 per bug\n- Codex (GPT-6.1 Sol + Playwright MCP): 86 bugs, 6.2% recall, 86% precision, $0.80 per bug\n- Claude Code (Opus 5.5 + Playwright MCP): 59 bugs, 4.2% recall, 80% precision, $4.09 per bug\n- Devin: 27 bugs, 1.9% recall, 84% precision, $3.89 per bug\nMo finds more bugs the more time it has. From 30 to 60 minutes, it went from 177 to 269 bugs (+52%), while Codex gained only 16%.\nResults: https://momentic.ai/qa-bench\nWrite-up: https://momentic.ai/blog/qa-bench\nDataset: https://huggingface.co/datasets/momentic/qa-bench\nHarness: https://github.com/momentic-ai/qa-bench\nWe just shipped PR testing for Vercel…"
+   },
+   "comments": [
+    {
+     "author": "beavisringdin",
+     "replies": 1,
+     "text": "Questions:\n- I would always pick an open source tool I can strap to my custom harness over using a service like this. Do you somehow expect that no such competitor will arrive that performs as well?\n- If you are YC 2024 what have you been doing for 2 years?\n- The real edge here would be supporting mobile development builds on real devices, is this on your roadmap and if so what's your plan to support it? In that case I would pay for this if you handled the real device on your end."
+    },
+    {
+     "author": "JulianPaul",
+     "replies": 3,
+     "text": "Why is this better than running Opus 5.5 directly against my app with a custom Playwright-based harness for in my own subscription?"
+    },
+    {
+     "author": "ice_cream_man_9",
+     "replies": 0,
+     "text": "Congratulations on the launch! It looks interesting. I ran a check on one of the pages of my site. Here are a few points that caught my eye -hopefully, you’ll find them useful:\n- It’s a bit confusing: the window below \"Live Mo's screen\" says \"No bugs yet,\" while the tabs at the top (Agents / Bugs / Mo's screen) indicate \"Bugs: 11.\"\nOnce the process finished, the window stated, \"Mo didn't find any bugs,\" yet the tab at the top showed \"Bugs: 12.\"\nPerhaps this is because they are sitting in the…"
+    },
+    {
+     "author": "podoman",
+     "replies": 4,
+     "text": "> Mo is a custom agent harness for catching bugs that builds on the past 3 years of Momentic and millions of test traces from complex, real-world applications. Mo is built for recall: it finds the most real bugs, though Codex is a bit more precise at 86% vs 84%. The tradeoff is cost: Mo costs $2.67 per bug vs $0.80 for Codex, less than Claude Code and Devin.\nis this good? so Mo costs more money per bug? I'm confused."
+    },
+    {
+     "author": "daniiel",
+     "replies": 0,
+     "text": "Not sure precision/recall is the number I'd look at first, because the thing I'd actually want to know is how often the tool says pass on a flow that is already broken, and a silent pass is worse than a flaky test, since the flaky one at least makes some noise.\nI'm building something in the same space and this bit me quite early, so what I ended up doing was basically mutation testing: take a handful of open source apps, plant bugs on purpose, and count how many of them the tool waves through…"
+    }
+   ],
+   "article": {
+    "url": "https://momentic.ai/",
+    "status": "ok",
+    "title": "AI QA Engineer & AI Testing Platform | Momentic",
+    "chars": 2112,
+    "text": "Detected\nON A FEATURE BRANCH\nNew-device 2FA prompt skipped\nAt a consumer fintech app, a login routing change bypassed the new-device verification step.\nImpact\nA security checkpoint was silently skipped.\nDetected\nBEFORE RELEASE\nPage creation flow broken on mobile\nOn mobile, keyboard auto-dismissed when creating a new page, breaking content flow.\nImpact\nSilent friction in the core creation flow.\nDetected\nIN STAGING\nDriver ETA stuck on 'calculating'\nA dependency update on a large rideshare app caused the live ETA subscription to silently fail after a ride was booked.\nImpact\nRiders never saw an arrival estimate.\nDetected\nBEFORE DEPLOY\nScheduling availability displayed incorrectly\nIncorrect display and logic in the calendar scheduling view.\nImpact\nWrong availability shown to users.\nDetected\nIN CI\nTimer reset when the screen locked\nAt a leading wellness app, an iOS lifecycle change reset the active sleep timer the moment the phone locked.\nImpact\nAudio sessions ended mid-playback overnight.\nDetected\n8 MIN BEFORE DEPLOY\nSaved cards dropped at checkout\nAt a top food-delivery marketplace, a payment-form refactor stopped pre-filling saved cards, forcing manual re-entry to pay.\nImpact\nReturning users abandoned checkout on mobile.\nDetected\nIN A NIGHTLY RUN\nFilters cleared when paginating results\nAt a popular online retail marketplace, moving to page two reset every active category and price filter.\nImpact\nShoppers lost their refined search results.\nDetected\nBEFORE MERGE\nValid promo codes rejected at the final step\nAt a large online travel marketplace, a validation change rejected multi-segment promo codes on the last checkout step.\nImpact\nDiscounts failed and carts were abandoned.\nDetected\nPRE-RELEASE\nWrong subtitle language on first play\nAt a major streaming platform, a locale-detection bug auto-selected the wrong subtitle track on initial playback.\nImpact\nWrong-language captions at session start.\nDetected\nBEFORE RELEASE\nLegacy API issues exposed\n12 bugs caught in one day. Exposed legacy API issues that would have shipped undetected.\nImpact\nRisked shipping regressions into major release."
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50337439",
+   "hn_url": "https://news.ycombinator.com/item?id=50337439",
+   "hn": {
+    "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+    "points": 226,
+    "comments": 259
+   },
+   "comments": [
+    {
+     "author": "cmiles8",
+     "replies": 11,
+     "text": "Q3 numbers are not what you want to see heading into an IPO.\nAgain the issue is not is Anthropic an amazing growth story. Zero would debate that.\nThe issue is this is a probably $200-300B company pretending it’s a $2T company.\nAdd to that the insane amount of committed spend, a high interest rate environment which means they’ll pay a painful premium to patch cashflow gaps, and a likely “junk” bond rating (per Friday’s news) and that’s why folks are concerned.\nIt’s also just wrong to keep…"
+    },
+    {
+     "author": "minimaxir",
+     "replies": 8,
+     "text": "From a financial analyst on Bluesky: https://bsky.app/profile/peark.es/post/3mzdkyxzzns2w\n> Okay so Q3 ARR at $67.8bn versus $46.2bn for Q2, +47% QoQ. Turns out tokenmaxxing's end over the summer slowed revenue growth versus an absolutely torrid 100%+ growth rate in Q1/Q2 but 46% sequential is still eye-popping\n> Operating margins (GAAP) went from 8% to -3$, with a -28.5% QoQ incremental operating margin. $SPCX compute coming online is the reason.\n> Bottom line after seeing this Q3 update: the…"
+    },
+    {
+     "author": "nonethewiser",
+     "replies": 1,
+     "text": "We desperately need to ground these discussions in actual numbers.\nThis should help build some intuition and establish a baseline for what the $2T valuation means.\nIf you buy at $2T Anthropic needs to be worth about $3T by 2030 for a normal market return. That's ~25x P/E and ~$120B/year of profit.\nThat could be something like $400B of revenue at 30% net margins, $300B at 40%, or $600B at 20%.\nIt would take 1.7x revenue growth a year to get from today’s $68B run-rate to $400B by 2030.…"
+    },
+    {
+     "author": "AJRF",
+     "replies": 3,
+     "text": "I like keeping an eye on OpenRouters view of the market:\nhttps://openrouter.ai/rankings#market-share\nSince the start of the year the market has shifted from 50/50 split (closed v open weights) to 30/70 (70% of usage they see through their platform - is now open weight)\nDeepSeek V4.1 Flash 1017 sees 5x the weekly token usage through OpenRouter than the closest closed weight model (GPT-6 Luna)\nEven though OpenRouter is only one limited view of the market - those trends should be worrying to…"
+    },
+    {
+     "author": "wongarsu",
+     "replies": 4,
+     "text": "Interesting. Their revenue has \"only\" gone up 47% in Q3, compared to doubling revenue in most previous quarters. Meanwhile their \"compute and infrastructure\" cost has increased by 77% compared to Q2\nMaybe they tried too hard to get good Q2 numbers, making revenue happen earlier and expenses later, and that now makes Q3 look worse? Either way, this does not look great"
+    }
+   ],
+   "article": {
+    "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — Access Denied Access Denied You don't have permission to access…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50341174",
+   "hn_url": "https://news.ycombinator.com/item?id=50341174",
+   "hn": {
+    "title": "Astra can read and write weights to improve Qwen",
+    "points": 1705,
+    "comments": 550
+   },
+   "comments": [
+    {
+     "author": "vessenes",
+     "replies": 49,
+     "text": "This is insane.\nAstra can, without tooling, determine what games small networks are trained on, can edit the weights of networks directly to improve outcomes, and can hand edit a small qwen model to improve its math skills by like 5x.\nI'm shook. If you'd asked me this morning whether LLMs have native understanding of their weights that is less than human <-> neuron understanding, the same as human or more than human, I would have said \"same to less\" depending on definitions.\nNo human can go…"
+    },
+    {
+     "author": "xg15",
+     "replies": 3,
+     "text": "And here we go...\nAs others have said, while still absolutely insane, I don't find it completely out-of-the-blue surprising. One of the recurring abilities of (current-generation) LLMs seem to be to rapidly grasp very complex systems, where humans would need months or years to reach the same level of expertise.\nYou can see this in the way a coding agent can \"understand\" and explain sprawling legacy codebases in seconds.\nYou can also see it in the projects that are using them to reverse-engineer…"
+    },
+    {
+     "author": "NitpickLawyer",
+     "replies": 3,
+     "text": "> As a result, Astra spots and fixes a common failure of tiny reasoning models: they loop [13]. When the base model loops, it repeats the same text and rarely reaches an answer (85 of its first 96 practice answers ran to the 32,768-token limit). Astra traced the looping to one direction written by the MLPs of layers 15 and 19, and subtracted that direction from 64 output columns in each (131,072 weights), much like removing a behavior by deleting a single direction from a model’s weights\nHA!…"
+    },
+    {
+     "author": "vanyle",
+     "replies": 9,
+     "text": "I don't think this is an emergent capability. I think Astra was trained on neural weights data as an attempt by OpenAI to get to recursive self improvement.\nSomething similar happen in early GPT models which had a lot of chess game in standard notation in their training data which made them very good at chess as long as your prompt had the right format.\nWe'll see if this attempt at RSI worked."
+    },
+    {
+     "author": "_bobm",
+     "replies": 3,
+     "text": "I think the subfield has been there for a long time. See a small section of papers on the topic of generating dynamic weights during inference, predicting weights from network architecture, and learning the distribution of previously trained network parameters, just to name a few keywords:\nParameter Prediction for Unseen Deep Architectures [1]\nNeuroGen: Neural Network Parameter Generation via Large Language Models [2]\nDiffusion-Based Neural Network Weights Generation [3]\nThe critical thing to…"
+    }
+   ],
+   "article": {
+    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+    "status": "ok",
+    "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+    "chars": 31043,
+    "text": "日本語\nSparks of Weight-Space Programming: LLMs can natively read & write neural network weights\nAuthors\nRikiya Takehi*\nJayden Teoh*\nAlex Zhang\nOmar Khattab\nAffiliations\nMIT CSAIL\nMIT CSAIL\nMIT CSAIL\nMIT CSAIL\nPublished\nNovember 2, 2026\nTL;DR\nWe find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we’d expect from humans or conventional algorithms. This might be a big deal for both optimization and interpretability.\nJust by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do. And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.\nLikewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights. With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.\nAll of this is possible without allowing Astra to write training loops. It uses its reasoning to figure out what each part of a neural network computes, or should compute, and changes the weights accordingly. We call this Weight-Space Programming.\nThroughout the history of deep learning, we encoded our simplistic inductive biases into tiny symbolic optimizers like Adam or Muon. This is changing: our neural network weights will soon be natively optimized by LLMs that deliberately reason about their weights.\nRead\nWhich game was this neural network trained on?\nAstra reads the 17,253 weights, with no tools\nBreakout 99% confident\nFix\nA trained policy never gets the car over the strip.\nAstra edits 3.5% of the weights, in one shot\n100% success, up from 0%\nImprove\nMake Qwen3.5-0.8B better at math.\n7.9%\nbase\n7.9%\nAstra’s edit\nAstra edits the weights in a Python kernel, with no training\n48.1% on MATH-500, up from 7.9%\nIf you were asked to handcraft a neural network that plays Go, what would you do? If you were handed raw neural network weights and asked to predict their behavior, where would you even start? For almost any human, this is practically impossible.\nToday, weights are written by optimization, by custom networks trained to write them, or by compilers from formal programs. In this post, we find that the current generation of frontier LLMs, used natively in natural language, are starting to become eerily good at understanding and crafting neural network weights around natural-language goals.\nWeight-Space Programming\nFor a few years now, we’ve all been using LLMs to optimize text artifacts like prompts and the programs built around them . More recently, we’ve started using them to optimize whole harnesses and the training code and hyperparameters that train ML models .\nWe often justified these methods by reference to the fact that we don’t know other principled ways to hill-climb on text artifacts, unlike for updating the weights of differentiable neural networks. After all, humans can “optimize” code by hand, for example, so it made sense to ask LLMs to do it, but they can’t “optimize” neural weights by hand, so those remained largely in the realm of symbolic algorithms.\nIn this post, we share very early results that allow us to argue that the paradigm of reasoning-driven optimization is now coming even for differentiable neural networks.\nIn Weight-Space Programming, a general-purpose LLM reads and writes a network’s weights directly (i.e., not through an optimizer, and in particular not with gradient descent) around some natural language spec, sometimes even with no environment feedback at all.\nIn natural language, it’s becoming possible to “just ask” an LLM to natively find a hidden trait or failure inside the weights of a neural network, to fix that failure, or to write a new network from scratch. We…"
+   }
+  }
+ ]
+}

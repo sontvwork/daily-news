@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c52d751130f39cff",
+  "generated_at": "2026-11-04T23:56:08.927058Z",
+  "from_date": "2026-11-03",
+  "to_date": "2026-11-04",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-04T23:56:08.925273Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-04T23:56:08.925285Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-04T23:56:08.922677Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-04T23:56:08.925161Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Google AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 460,
+          "points": 660
+        }
+      },
+      "nomination": {
+        "name": "Google AI",
+        "seed_score": 1187.9394,
+        "summary": "Google will turn off search for schools that reject AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50353192",
+            "source": "hackernews",
+            "title": "Google will turn off search for schools that reject AI",
+            "body": "Google will turn off search for schools that reject AI",
+            "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+            "author": "ceejayoz",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 660,
+              "comments": 460
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "HN story about Google will turn off search for schools that reject AI",
+            "snippet": "Google will turn off search for schools that reject AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50353192",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.281
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI Codex chats",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 153,
+          "points": 518
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Codex chats",
+        "seed_score": 711.703,
+        "summary": "OpenAI seems to be silently re-enabling model training on Codex chats",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50352757",
+            "source": "hackernews",
+            "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "body": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "url": "https://news.ycombinator.com/item?id=50352757",
+            "author": "user052919",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 518,
+              "comments": 153
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenAI seems to be silently re-enabling model training on Co",
+            "snippet": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50352757",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 75,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "OpenAI to acquire Pierre Computer Company",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 52,
+          "points": 157
+        }
+      },
+      "nomination": {
+        "name": "OpenAI to acquire Pierre Computer Company",
+        "seed_score": 313.5,
+        "summary": "OpenAI to acquire Pierre Computer Company",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50366863",
+            "source": "hackernews",
+            "title": "OpenAI to acquire Pierre Computer Company",
+            "body": "OpenAI to acquire Pierre Computer Company",
+            "url": "https://openai.com/index/openai-to-acquire-pierre/",
+            "author": "itunpredictable",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 157,
+              "comments": 52
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about OpenAI to acquire Pierre Computer Company",
+            "snippet": "OpenAI to acquire Pierre Computer Company",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50366863",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3015
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "PC",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 60,
+          "points": 86
+        }
+      },
+      "nomination": {
+        "name": "PC",
+        "seed_score": 219.0,
+        "summary": "Show HN: I built a tool that prices a pre-built PC part by part",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50366929",
+            "source": "hackernews",
+            "title": "Show HN: I built a tool that prices a pre-built PC part by part",
+            "body": "Show HN: I built a tool that prices a pre-built PC part by part",
+            "url": "https://pcdealcheck.com/",
+            "author": "adlep",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 86,
+              "comments": 60
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Show HN: I built a tool that prices a pre-built PC part by p",
+            "snippet": "Show HN: I built a tool that prices a pre-built PC part by part",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50366929",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 20,
+            "source_quality": 0.8,
+            "local_rank_score": 0.245
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Kino AI YC S23 AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 26,
+          "points": 63
+        }
+      },
+      "nomination": {
+        "name": "Kino AI YC S23 AI",
+        "seed_score": 133.5,
+        "summary": "Launch HN: Kino AI (YC S23) \u2013 AI media manager and video editor",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50368804",
+            "source": "hackernews",
+            "title": "Launch HN: Kino AI (YC S23) \u2013 AI media manager and video editor",
+            "body": "Launch HN: Kino AI (YC S23) \u2013 AI media manager and video editor",
+            "url": "https://news.ycombinator.com/item?id=50368804",
+            "author": "lukeigel",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 63,
+              "comments": 26
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "HN story about Launch HN: Kino AI (YC S23) \u2013 AI media manager and video edi",
+            "snippet": "Launch HN: Kino AI (YC S23) \u2013 AI media manager and video editor",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50368804",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.36150000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

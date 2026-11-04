@@ -1,0 +1,250 @@
+{
+ "date": "2026-11-05",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-05.json",
+ "fetched_at": "2026-11-04T23:55:45+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 9,
+  "ok": 9,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Claude Code optimizes background subagent status updates to cut usage",
+   "category": "feature_update",
+   "event_time": "2026-11-04T19:29:39Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+   "facts": [
+    "Background subagents in Claude Code now use less of your usage limit.",
+    "A running subagent updates its status line every 30 seconds, and each update used to re-read its whole conversation. Now Haiku 5.5 writes it from short notes instead, so each update costs about 99% less.",
+    "Sessions with background subagents used about 5% less of the limit, so the same limit gets you about 6% more prompts. It's live for most Pro, Max and Ultra users and for everyone on Team and Enterprise. Update to v2.1.316+."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
+     "official": true,
+     "author": "@ClaudeDevs",
+     "check": "ok",
+     "created_at": "2026-11-04T19:29:39Z",
+     "text": "Background subagents in Claude Code now use less of your usage limit.\n\nA running subagent updates its status line every 30 seconds, and each update used to re-read its whole conversation. Now Haiku 5.5 writes it from short notes instead, so each update costs about 99% less.",
+     "likes": 12531,
+     "retweets": 437,
+     "replies": 358,
+     "views": 670443
+    },
+    {
+     "url": "https://x.com/ClaudeDevs/status/2118063144572772627",
+     "official": true,
+     "author": "@ClaudeDevs",
+     "check": "ok",
+     "created_at": "2026-11-04T19:29:40Z",
+     "text": "The subagent itself keeps its own model. Sessions with background subagents used about 5% less of the limit, so the same limit gets you about 6% more prompts.\n\nIt's live for most Pro, Max and Ultra users and for everyone on Team and Enterprise. Update to v2.1.316+.",
+     "likes": 930,
+     "retweets": 11,
+     "replies": 18,
+     "views": 72578,
+     "reply_to": "@ClaudeDevs"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Cognition releases SWE-2 Flash coding model in Devin Desktop and CLI",
+   "category": "model_infra",
+   "event_time": "2026-11-04T19:55:22Z",
+   "primary_url": "https://cognition.com/blog/swe-2-flash",
+   "facts": [
+    "We’re introducing SWE-2 Flash, a fully American coding model that sets a new bar for intelligence at low cost and high speed.",
+    "It is available today in Devin Desktop and CLI, at one-fifth the price and 3x the speed of its much larger sibling, SWE-2.",
+    "SWE-2 Flash is free until the end of this month for all Pro, Max, and Teams users in Devin Desktop and Devin CLI."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/cognition/status/2118069618749415821",
+     "official": true,
+     "author": "@cognition",
+     "check": "ok",
+     "created_at": "2026-11-04T19:55:23Z",
+     "text": "SWE-2 Flash is based on @thinkymachines Inkling-Small, an American model with 276B total and 12B active parameters. The small size, combined with our highly optimized inference stack allows us to offer it at a 5x lower cost and 3x higher speed than SWE-2.",
+     "likes": 131,
+     "retweets": 6,
+     "replies": 3,
+     "views": 8381,
+     "reply_to": "@cognition"
+    },
+    {
+     "url": "https://x.com/cognition/status/2118069629713305678",
+     "official": true,
+     "author": "@cognition",
+     "check": "ok",
+     "created_at": "2026-11-04T19:55:26Z",
+     "text": "SWE-2 Flash is free until the end of this month for all Pro, Max, and Teams users in Devin Desktop and Devin CLI.\n\nDownload: https://devin.ai/desktop\n\nWe will be sharing more details about the secure weight access program in the coming weeks.",
+     "likes": 67,
+     "retweets": 4,
+     "replies": 3,
+     "views": 5329,
+     "reply_to": "@cognition"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "OpenAI to acquire Pierre Computer to expand Codex code infrastructure",
+   "category": "funding",
+   "event_time": "2026-11-04T15:15:43Z",
+   "primary_url": "https://openai.com/index/openai-to-acquire-pierre/",
+   "facts": [
+    "Today we're announcing that OpenAI will acquire Pierre Computer Company, Inc. (“Pierre”), the company behind Code Storage and a family of standout open-source developer tools.",
+    "If you’ve browsed files or reviewed a change in the Codex app, you’ve already used Pierre’s Trees and Diffs libraries.",
+    "Pierre’s open-source projects will remain open-source, and we’ll continue to contribute to them. Customers can continue using Code Storage after the acquisition closes while we work to bring its features and functionality into Codex."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/OpenAINewsroom/status/2117999237745049883",
+     "official": true,
+     "author": "@OpenAINewsroom",
+     "check": "ok",
+     "created_at": "2026-11-04T15:15:43Z",
+     "text": "Today we’re announcing that OpenAI will acquire @pierrecomputer to accelerate our vision for making Codex a place where teams can build software together with AI, from first idea to the version they ship.\n\nPierre’s open-source developer tools already power parts of Codex today. Together, we’ll build on that foundation for the agentic era.\n\nhttps://openai.com/index/openai-to-acquire-pierre/",
+     "likes": 3823,
+     "retweets": 236,
+     "replies": 233,
+     "views": 318734
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Meta acquires AI coding startup Conductor for multi-agent orchestration",
+   "category": "funding",
+   "event_time": "2026-11-04T18:18:29Z",
+   "primary_url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+   "facts": [
+    "Meta has acquired Conductor, an AI coding startup that allows users to spin up software projects by deploying multiple agents into parallel workspaces.",
+    "“I have big news: Conductor is joining Meta,” wrote the startup’s founder and CEO, Charlie Holtz, on Wednesday.",
+    "Holtz said that, until early next year, Conductor’s core features would continue to work as they previously have. The exception is Conductor’s cloud service, which will shut down on November 20, after which the company will begin deleting user cloud data."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/charlieholtz/status/2118045232218743264",
+     "official": true,
+     "author": "@charlieholtz",
+     "check": "ok",
+     "created_at": "2026-11-04T18:18:29Z",
+     "text": "I am very excited to share that Conductor is joining Meta!\n\nWe have some big, crazy plans for the next interface. If you liked Conductor, you’re gonna love what’s coming.\n\nWe’re super excited to work with @natfriedman and @alexandr_wang at MSL to build it. They’ve been on an absolute tear, and I’m convinced MSL has the highest talent density of all the labs.\n\nA huge thank you to our earliest believers @aaron_epstein, @ilyasu, and @nabeel. And to everyone here who tried Conductor, sent us feedback, and prompt requests - you made this so much fun. Thank you ❤️🚂\n\nChoo choo!",
+     "likes": 3331,
+     "retweets": 112,
+     "replies": 597,
+     "views": 333732
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Google Antigravity v2.29.0 adds Voice Mode and Remote Agents",
+   "category": "feature_update",
+   "event_time": "2026-11-03T00:00:00Z",
+   "primary_url": "https://antigravity.google/docs/changelog/",
+   "facts": [
+    "This release adds a native Jupyter notebook viewer, redesigned Home and Automations pages, and downloads and browsing history in the built-in browser.",
+    "Voice mode, powered by Gemini Live, lets you talk to Antigravity and hand requests to the agent by voice. Start it from the button in an empty message box. Voice mode is rolling out gradually, so you may not see it yet.",
+    "Remote agents are starting to roll out to Google AI Ultra and Pro subscribers. Conversations in a cloud project run in the cloud instead of on your computer, and you can also open them at antigravity.google.com/remote."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/testingcatalog/status/2118089695443714458",
+     "official": false,
+     "author": "@testingcatalog",
+     "check": "ok",
+     "created_at": "2026-11-04T21:15:10Z",
+     "text": "GOOGLE 🔥: The latest Antigravity update (v2.29.0) is getting Voice Mode, Remote Agents, and browser updates, according to the changelog. \n\n> \"Voice mode, powered by Gemini Live, lets you talk to Antigravity and hand requests to the agent by voice. Start it from the button in an empty message box. Voice mode is rolling out gradually, so you may not see it yet.\"\n\n> \"Remote agents are starting to roll out to Google AI Ultra and Pro subscribers. Conversations in a cloud project run in the cloud instead of on your computer.\"\n\n* New versions roll out gradually and may take a few days to reach all users.\n\nDid you get it already? 👀 https://x.com/StatsWire/status/2117916512623243503/video/1",
+     "likes": 127,
+     "retweets": 10,
+     "replies": 20,
+     "views": 8110
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Kimi Code CLI 2.5.0 adds remote SSH, Docker environments and mid-run model switching",
+   "category": "tool_launch",
+   "event_time": "2026-11-04T11:52:00Z",
+   "primary_url": "https://www.kimi.com/code/docs/en/kimi-code-cli/changelog",
+   "facts": [
+    "Use /model and /effort while the Agent is working. A turn that has already started calling the model keeps its settings, the switch applies from the next turn, and choosing Compact and continue runs after the current turn ends.",
+    "Fork a session from a selected historical turn or while it is still running.",
+    "Add creation-time SSH, Docker, and custom-command environments. Use --environment <id> to select an environment and optionally --environment-cwd <path> to set its working directory."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Kiro CLI 3.0 makes V3 agent harness default and retires Classic interface",
+   "category": "feature_update",
+   "event_time": "2026-11-03T00:00:00Z",
+   "primary_url": "https://kiro.dev/changelog/",
+   "facts": [
+    "This release makes V3 the default agent harness for interactive Kiro CLI sessions on hosts that can run it.",
+    "Kiro CLI is now a single standalone kiro-cli binary that retires the Classic interface, the desktop app, and inline autocomplete.",
+    "Existing V2 users are asked before the default applies, and Kiro upgrades custom agents still in the V2 format unless you turn that off."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/kirodotdev/status/2118025530314256844",
+     "official": true,
+     "author": "@kirodotdev",
+     "check": "ok",
+     "created_at": "2026-11-04T17:00:12Z",
+     "text": "Kiro CLI 3.0 is out.\n\nClose your laptop while a cloud session keeps working. Review the spec before Kiro writes code. Hand bigger tasks to workflows. With Approve for me, let Kiro handle prompt approvals for safe actions.\n\nFull breakdown → https://spr.ly/6011BHLuVX",
+     "likes": 62,
+     "retweets": 14,
+     "replies": 5,
+     "views": 3804
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Postman desktop auto-installs plugins into Codex, Claude Code and other agents",
+   "category": "discussion",
+   "event_time": "2026-11-03T00:00:00Z",
+   "primary_url": "https://byteiota.com/postman-auto-installs-ai-plugins-modifies-your-dev-configs/",
+   "facts": [
+    "Postman’s desktop app modified your coding agent config files without asking.",
+    "Version 12.33.4 — released this week — silently installed plugins into Codex and Claude Code, then used its own installer to approve the hooks those plugins created.",
+    "On Nov 3 Postman said it will make the opt-in clearer and review the hook behavior."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Joshua_WD/status/2117821450065191296",
+     "official": false,
+     "author": "@Joshua_WD",
+     "check": "ok",
+     "created_at": "2026-11-04T03:29:15Z",
+     "text": "Postman's desktop app added plugins, a CLI and a Codex startup hook to developers' coding agents on launch, and its installer approves that hook itself. What the reports show, what they don't, and how to check your machine. https://x.com/i/article/2117820371441156097",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 2,
+     "views": 374
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

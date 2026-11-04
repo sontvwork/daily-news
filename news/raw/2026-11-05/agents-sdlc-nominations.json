@@ -1,0 +1,817 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "ed62f8db0638b2de",
+  "generated_at": "2026-11-04T23:56:03.844738Z",
+  "from_date": "2026-11-03",
+  "to_date": "2026-11-04",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-04T23:56:03.791288Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-04T23:56:03.791297Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-11-04T23:56:03.693445Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 67,
+      "attempted": true,
+      "at": "2026-11-04T23:56:03.791116Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Alibaba Qwen Code qwen4-max qwen4-coder-plus qwen4-omni-120b",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 135
+        }
+      },
+      "nomination": {
+        "name": "Alibaba Qwen Code qwen4-max qwen4-coder-plus qwen4-omni-120b",
+        "seed_score": 1108.3899,
+        "summary": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "body": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmitzx/alibabas_qwen_code_repo_just_leaked_qwen4max/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 910,
+              "num_comments": 135
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14450000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Study estimates 75 NFL players",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 240,
+          "points": 266
+        }
+      },
+      "nomination": {
+        "name": "Study estimates 75 NFL players",
+        "seed_score": 536.694,
+        "summary": "Study estimates 75% of NFL players who died over 15-year span had CTE",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50353335",
+            "source": "hackernews",
+            "title": "Study estimates 75% of NFL players who died over 15-year span had CTE",
+            "body": "Study estimates 75% of NFL players who died over 15-year span had CTE",
+            "url": "https://www.nbcnews.com/health/health-news/study-estimates-75-nfl-players-died-15-year-span-may-cte-rcna605975",
+            "author": "gmays",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 266,
+              "comments": 240
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Study estimates 75% of NFL players who died over 15-year spa",
+            "snippet": "Study estimates 75% of NFL players who died over 15-year span had CTE",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50353335",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.10750000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "What been the most useful thing",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "What been the most useful thing",
+        "seed_score": 100.7627,
+        "summary": "What\u2019s been the most useful thing you\u2019ve done with personal agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "What\u2019s been the most useful thing you\u2019ve done with personal agents?",
+            "body": "What\u2019s been the most useful thing you\u2019ve done with personal agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xmxovs/whats_been_the_most_useful_thing_youve_done_with/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 48,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "What\u2019s been the most useful thing you\u2019ve done with personal agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.126
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Custom",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 51
+        }
+      },
+      "nomination": {
+        "name": "Custom",
+        "seed_score": 90.0,
+        "summary": "We should \"digest\" them into reusable sub-modules. \n\nOk from the beginning: recently we are struck by this epidemic of custom engines, vibecoded solutions tailored on a very specific hardware. probably behind each one of them there's really some great idea, trick, kernel, optimization that has made the difference for its author.\n\nBut many times they are so niche, they are basically useless for the",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Custom engine epidemic: an idea on how anyone could benefit (or how to gently stop it)",
+            "body": "Custom engine epidemic: an idea on how anyone could benefit (or how to gently stop it)\nWe should \"digest\" them into reusable sub-modules. \n\nOk from the beginning: recently we are struck by this epidemic of custom engines, vibecoded solutions tailored on a very specific hardware. probably behind each one of them there's really some great idea, trick, kernel, optimization that has made the difference for its author.\n\nBut many times they are so niche, they are basically useless for the majority of the community. AT the same time, fragmentation is bad for the open source community: we should pool resources not disperse them.\n\nSo here's my idea, which I hope could spark something bigger.\n\nImagine every time a custom engine gets published, some agents pick it up, dissect it into submodules, optimizations, kernels, strategies. Everything gets classified into a database, depending on the specific hardware, quantization, LLM model used.\n\nduplicate entries gets removed. code snippets gets benchmarked and assigned some scores and some tags\n\nOver time, A huge database of building blocks for inference engines gets built. \n\nFrom that, anyone can search filtering for the model/quant/hardware they need, and a custom inference engine is built for YOUR use case, a pool of modules/strategies can be tried and swapped until the optimal configuration it's found.\n\nBonus idea: People could donate their free agentic time (subsidized tokens, the remaining weekly from your OpenAI / Anthropic / [Z.ai](http://Z.ai) subscription) to the project, and in some way we get some payback from these companies. They made our hardware expensive, we claw back some value by using their computing power to make US run locally as fast as possible.\n\nI'm not the right person to do this, but maybe someone could catch this idea and make it work.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnxsdd/custom_engine_epidemic_an_idea_on_how_anyone/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 51
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We should \"digest\" them into reusable sub-modules. \n\nOk from the beginning: recently we are struck by this epidemic of custom engines, vibecoded solutions tailored on a very specific hardware. probably behind each one of them there's really some great idea, trick, kernel, optimization that has made the difference for its author.\n\nBut many times they are so niche, they are basically useless for the",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.466
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "you check that the agent actually",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 38
+        }
+      },
+      "nomination": {
+        "name": "you check that the agent actually",
+        "seed_score": 64.5,
+        "summary": "How do you check that the agent actually did what it told the customer?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "How do you check that the agent actually did what it told the customer?",
+            "body": "How do you check that the agent actually did what it told the customer?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnnjm7/how_do_you_check_that_the_agent_actually_did_what/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 38
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you check that the agent actually did what it told the customer?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "recommend me good ai agents/tools that",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "recommend me good ai agents/tools that",
+        "seed_score": 42.0,
+        "summary": "Guys, can anyone recommend me good ai agents/tools that can help me build my portfolio",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "Guys, can anyone recommend me good ai agents/tools that can help me build my portfolio",
+            "body": "Guys, can anyone recommend me good ai agents/tools that can help me build my portfolio",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnk5k1/guys_can_anyone_recommend_me_good_ai_agentstools/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "Guys, can anyone recommend me good ai agents/tools that can help me build my portfolio",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI models",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "AI models",
+        "seed_score": 37.5,
+        "summary": "Hello! just casuals passing by with a itching question  \nwhat do you guys do with this stuff  \nAll i did was some Casual chat and Gmod LUA Addon Vibe Coding for myself and my friends but idk what Agents/coder to use (Portable Ideally)  \nhow do you get the stuff you want done?  \nWhat models do you guys use, and whats best for me  \nThanks for answers if you did answer some of these",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R63",
+            "source": "reddit",
+            "title": "What do you guys do all day with these AI models",
+            "body": "What do you guys do all day with these AI models\nHello! just casuals passing by with a itching question  \nwhat do you guys do with this stuff  \nAll i did was some Casual chat and Gmod LUA Addon Vibe Coding for myself and my friends but idk what Agents/coder to use (Portable Ideally)  \nhow do you get the stuff you want done?  \nWhat models do you guys use, and whats best for me  \nThanks for answers if you did answer some of these",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnxrh2/what_do_you_guys_do_all_day_with_these_ai_models/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hello! just casuals passing by with a itching question  \nwhat do you guys do with this stuff  \nAll i did was some Casual chat and Gmod LUA Addon Vibe Coding for myself and my friends but idk what Agents/coder to use (Portable Ideally)  \nhow do you get the stuff you want done?  \nWhat models do you guys use, and whats best for me  \nThanks for answers if you did answer some of these",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 18,
+            "source_quality": 0.6,
+            "local_rank_score": 0.373
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "setting up human review for ai",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "setting up human review for ai",
+        "seed_score": 33.0,
+        "summary": "setting up human review for ai agent emails after a bad loop",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "setting up human review for ai agent emails after a bad loop",
+            "body": "setting up human review for ai agent emails after a bad loop",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xo0aic/setting_up_human_review_for_ai_agent_emails_after/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "setting up human review for ai agent emails after a bad loop",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39199999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI Agents Guardrails",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "AI Agents Guardrails",
+        "seed_score": 27.0,
+        "summary": "How do you build custom AI Agents with Guardrails?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "How do you build custom AI Agents with Guardrails?",
+            "body": "How do you build custom AI Agents with Guardrails?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnsidp/how_do_you_build_custom_ai_agents_with_guardrails/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you build custom AI Agents with Guardrails?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.27,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Weekly Thread Project Display",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Weekly Thread Project Display",
+        "seed_score": 27.0,
+        "summary": "Weekly thread to show off your AI Agents and LLM Apps! Top voted projects will be featured in our weekly [newsletter](http://ai-agents-weekly.beehiiv.com).",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R93",
+            "source": "reddit",
+            "title": "Weekly Thread: Project Display",
+            "body": "Weekly Thread: Project Display\nWeekly thread to show off your AI Agents and LLM Apps! Top voted projects will be featured in our weekly [newsletter](http://ai-agents-weekly.beehiiv.com).",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnth3x/weekly_thread_project_display/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Weekly thread to show off your AI Agents and LLM Apps! Top voted projects will be featured in our weekly [newsletter](http://ai-agents-weekly.beehiiv.com).",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.381
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Paper Think Less Locally",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Paper Think Less Locally",
+        "seed_score": 22.5,
+        "summary": ">Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after sufficient information has been obtained. Existing reasoning compression methods primarily operate on reasoning trajectories, paying less attention to the local decision of whether further reasoning is necessary given th",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R72",
+            "source": "reddit",
+            "title": "[Paper] Think Less, Locally: Local Preference Learning for Reasoning Compression",
+            "body": "[Paper] Think Less, Locally: Local Preference Learning for Reasoning Compression\n>Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after sufficient information has been obtained. Existing reasoning compression methods primarily operate on reasoning trajectories, paying less attention to the local decision of whether further reasoning is necessary given the current state. We propose LoCo, a local preference learning method for reasoning compression. LoCo detects candidate overthinking states from the model's own traces, freezes the corresponding reasoning prefixes, regenerates shorter verified continuations from the same states, and trains on the resulting state-conditioned preference pairs with DPO. This formulation teaches the model when to continue reasoning and when to conclude, rather than simply encouraging shorter trajectories overall. We construct training data entirely from self-generated mathematical traces and evaluate LoCo on five mathematical and three code generation benchmarks. **LoCo reduces completion length by 41.7%--45.4% on mathematics and 23.4%--36.3% on code, while maintaining or improving accuracy and achieving the best AUC across all code benchmarks**. LoCo consistently improves the accuracy-efficiency trade-off on mathematics and transfers effectively to code generation despite math-only training, demonstrating the cross-domain generality of local preference learning for reasoning compression.\n\n* **arXiv** : [https://arxiv.org/abs/2611.04814](https://arxiv.org/abs/2611.04814)\n* **PDF** : [https://arxiv.org/pdf/2611.04814](https://arxiv.org/pdf/2611.04814)\n* **GitHub** : [https://github.com/MuyaoYuan/LoCo](https://github.com/MuyaoYuan/LoCo)\n* **HuggingFace** : [https://huggingface.co/MuyaoYuan/LoCo-7B](https://huggingface.co/MuyaoYuan/LoCo-7B)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnrcfw/paper_think_less_locally_local_preference/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": ">Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after sufficient information has been obtained. Existing reasoning compression methods primarily operate on reasoning trajectories, paying less attention to the local decision of whether further reasoning is necessary given th",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.261
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "DeepSeek Router-Worker Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek Router-Worker Claude Code",
+        "seed_score": 21.0,
+        "summary": "I\u2019ve been reading through DeepSeek\u2019s new research release for **dsh-superagent** (`v0.1.0`, MIT licensed) and their post on scaling autonomous agents. Everyone usually obsesses over raw model weights (like V4 or R1), but this release focuses purely on the **agent harness,** and it makes a pretty compelling point about why current coding agents hit a wall.\n\n**The core thesis:** Model intelligence i",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R86",
+            "source": "reddit",
+            "title": "DeepSeek just open-sourced dsh-superagent (Router-Worker architecture). Does this design supersede single-session agents like Claude Code?",
+            "body": "DeepSeek just open-sourced dsh-superagent (Router-Worker architecture). Does this design supersede single-session agents like Claude Code?\nI\u2019ve been reading through DeepSeek\u2019s new research release for **dsh-superagent** (`v0.1.0`, MIT licensed) and their post on scaling autonomous agents. Everyone usually obsesses over raw model weights (like V4 or R1), but this release focuses purely on the **agent harness,** and it makes a pretty compelling point about why current coding agents hit a wall.\n\n**The core thesis:** Model intelligence isn't the bottleneck for multitasking anymore; **human attention** is. DeepSeek points out that a dev can only actively babysit 3 to 5 single-session agent windows before losing track of which agent is doing what.\n\nInstead of a single chatbot session, they split the harness into two layers:\n\n1. **A thin Router:** Listens to GitHub events and team chat, filters out noise, tracks state, and dispatches tickets. It only pings you to confirm, ask a blocker question, or hand over a finished PR.\n2. **Isolated Workers:** Every ticket gets its own isolated agent session and directory so tasks run in parallel without polluting each other's context.\n\nIn their simulated noisy workload (300 chat/CI messages with \\~20 real tasks), the Super-Agent hit a p95 completion time of **15.7 minutes vs. 29.5 minutes** for a standard single-session agent (\\~1.9x faster). It also has a gated proactive mode (`observe` by default) that watches repo/chat streams and logs tasks it *would* pick up on its own.\n\n  \nDo you think the closed model labs have diverted their focus somewhere?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnw2wg/deepseek_just_opensourced_dshsuperagent/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been reading through DeepSeek\u2019s new research release for **dsh-superagent** (`v0.1.0`, MIT licensed) and their post on scaling autonomous agents. Everyone usually obsesses over raw model weights (like V4 or R1), but this release focuses purely on the **agent harness,** and it makes a pretty compelling point about why current coding agents hit a wall.\n\n**The core thesis:** Model intelligence i",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.371
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Five",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Five",
+        "seed_score": 19.5,
+        "summary": "Five ways an agent run can end: have you designed all of them?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Five ways an agent run can end: have you designed all of them?",
+            "body": "Five ways an agent run can end: have you designed all of them?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnttas/five_ways_an_agent_run_can_end_have_you_designed/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Five ways an agent run can end: have you designed all of them?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.251
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Why a min spend limit doesn't",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Why a min spend limit doesn't",
+        "seed_score": 16.5,
+        "summary": "Why a $/min spend limit doesn't stop a looping agent (it restarts every minute), and the fuse I built instead",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Why a $/min spend limit doesn't stop a looping agent (it restarts every minute), and the fuse I built instead",
+            "body": "Why a $/min spend limit doesn't stop a looping agent (it restarts every minute), and the fuse I built instead",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnv3o0/why_a_min_spend_limit_doesnt_stop_a_looping_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Why a $/min spend limit doesn't stop a looping agent (it restarts every minute), and the fuse I built instead",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.251
+          },
+          {
+            "item_id": "R97",
+            "source": "reddit",
+            "title": "A $/min limit didn't stop my looping agent. It just restarted every minute. Here's the fuse I built instead.",
+            "body": "A $/min limit didn't stop my looping agent. It just restarted every minute. Here's the fuse I built instead.\n[removed]",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnswue/a_min_limit_didnt_stop_my_looping_agent_it_just/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.227
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Grok Bot Muse Dots Gemini Duet",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Grok Bot Muse Dots Gemini Duet",
+        "seed_score": 15.0,
+        "summary": "Grok Bot, Muse, Dots, Gemini, Duet: five personal agents by big tech. Are you using one or multiple?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Grok Bot, Muse, Dots, Gemini, Duet: five personal agents by big tech. Are you using one or multiple?",
+            "body": "Grok Bot, Muse, Dots, Gemini, Duet: five personal agents by big tech. Are you using one or multiple?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xnslji/grok_bot_muse_dots_gemini_duet_five_personal/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Grok Bot, Muse, Dots, Gemini, Duet: five personal agents by big tech. Are you using one or multiple?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28250000000000003
+          }
+        ]
+      }
+    }
+  ]
+}

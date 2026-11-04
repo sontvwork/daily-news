@@ -1,0 +1,960 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "167584c229d3c48e",
+  "generated_at": "2026-11-04T23:56:26.504481Z",
+  "from_date": "2026-11-03",
+  "to_date": "2026-11-04",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-04T23:56:26.452473Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-04T23:56:26.452483Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 17,
+      "attempted": true,
+      "at": "2026-11-04T23:56:26.168004Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 140,
+      "attempted": true,
+      "at": "2026-11-04T23:56:26.452236Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Kimi-K3.1-Pro is now open-weights",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 86,
+          "points": 327
+        },
+        "reddit": {
+          "num_comments": 219
+        }
+      },
+      "nomination": {
+        "name": "Kimi-K3.1-Pro is now open-weights",
+        "seed_score": 2968.725,
+        "summary": "Kimi-K3.1-Pro is now open-weights",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Kimi-K3.1-Pro is now open-weights",
+            "body": "Kimi-K3.1-Pro is now open-weights",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnrhvb/kimik31pro_is_now_openweights/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1089,
+              "num_comments": 213
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Kimi-K3.1-Pro is now open-weights",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.395
+          },
+          {
+            "item_id": "50366999",
+            "source": "hackernews",
+            "title": "Kimi K3.1 Pro model weights are out",
+            "body": "Kimi K3.1 Pro model weights are out",
+            "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+            "author": "abrarthought",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 327,
+              "comments": 86
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Kimi K3.1 Pro model weights are out",
+            "snippet": "Kimi K3.1 Pro model weights are out",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50366999",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34
+          },
+          {
+            "item_id": "R119",
+            "source": "reddit",
+            "title": "To those that used the API over the last few weeks - where does Kimi-K3.1-Pro land amongst closed weight LLMs?",
+            "body": "To those that used the API over the last few weeks - where does Kimi-K3.1-Pro land amongst closed weight LLMs?\nI haven't used it enough to form any strong opinions outside of *\"wow that's a lot of reasoning tokens by default..\"*\n\nIt's open-weight now. Where does it land when stood up to proprietary models? In my limited testing I already trust it's pulling away from Luna.. but can it beat Haiku-5.5 reliably?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xntjsf/to_those_that_used_the_api_over_the_last_few/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I haven't used it enough to form any strong opinions outside of *\"wow that's a lot of reasoning tokens by default..\"*\n\nIt's open-weight now. Where does it land when stood up to proprietary models? In my limited testing I already trust it's pulling away from Luna.. but can it beat Haiku-5.5 reliably?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Show Claude Code projects",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 767
+        }
+      },
+      "nomination": {
+        "name": "Show Claude Code projects",
+        "seed_score": 2043.0,
+        "summary": "Show me Claude Code projects that DON\u2019T look vibecoded",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "Show me Claude Code projects that DON\u2019T look vibecoded",
+            "body": "Show me Claude Code projects that DON\u2019T look vibecoded",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xnnqkg/show_me_claude_code_projects_that_dont_look/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 595,
+              "num_comments": 767
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Show me Claude Code projects that DON\u2019T look vibecoded",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35150000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude 97.8 94.6",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 154
+        }
+      },
+      "nomination": {
+        "name": "Claude 97.8 94.6",
+        "seed_score": 1564.5,
+        "summary": "Claude writes a neural network's weights by hand, without training, to detect fake legal citations\u2014achieving 97.8% test accuracy and outperforming a conventionally trained model that scored 94.6%.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R65",
+            "source": "reddit",
+            "title": "Claude writes a neural network's weights by hand, without training, to detect fake legal citations\u2014achieving 97.8% test accuracy and outperforming a conventionally trained model that scored 94.6%.",
+            "body": "Claude writes a neural network's weights by hand, without training, to detect fake legal citations\u2014achieving 97.8% test accuracy and outperforming a conventionally trained model that scored 94.6%.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xnplmi/claude_writes_a_neural_networks_weights_by_hand/",
+            "container": "singularity",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 889,
+              "num_comments": 154
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude writes a neural network's weights by hand, without training, to detect fake legal citations\u2014achieving 97.8% test accuracy and outperforming a conventionally trained model that scored 94.6%.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 88,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Qwen 3.8 27B",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 207,
+          "points": 715
+        },
+        "reddit": {
+          "num_comments": 76
+        }
+      },
+      "nomination": {
+        "name": "Qwen 3.8 27B",
+        "seed_score": 1324.718,
+        "summary": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50355251",
+            "source": "hackernews",
+            "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "body": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 715,
+              "comments": 207
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "snippet": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50355251",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 93,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15050000000000002
+          },
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Qwen3.8 27B Q4 on my low-end Laptop, and it became my main Model usage for coding",
+            "body": "Qwen3.8 27B Q4 on my low-end Laptop, and it became my main Model usage for coding",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnzo38/qwen38_27b_q4_on_my_lowend_laptop_and_it_became/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 40,
+              "num_comments": 53
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8 27B Q4 on my low-end Laptop, and it became my main Model usage for coding",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.305
+          },
+          {
+            "item_id": "R105",
+            "source": "reddit",
+            "title": "Is fine-tuning dead? is making a big model (like astra) edit weights of a small model the new meta?",
+            "body": "Is fine-tuning dead? is making a big model (like astra) edit weights of a small model the new meta?\nI was planning to fine-tune my own model but is that gonna be obsolete now?  \nIs this the direction small models are heading?\n\nAs title says, people on twitter have been doing these \"studies\" where they tell astra to edit qwen 0.6b's weights to get better at math or to play pong or snake or atari breakout, and allegedly it does it. have you guys tried this? \n\n  \nanyone can ask Astra to make better domain specific qwen 27b? for example for law, medicine, game dev? Is the new moat gonna be: \"only if astra/fable themselves are bad at the task\"?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xo07dd/is_finetuning_dead_is_making_a_big_model_like/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I was planning to fine-tune my own model but is that gonna be obsolete now?  \nIs this the direction small models are heading?\n\nAs title says, people on twitter have been doing these \"studies\" where they tell astra to edit qwen 0.6b's weights to get better at math or to play pong or snake or atari breakout, and allegedly it does it. have you guys tried this? \n\n  \nanyone can ask Astra to make better",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2985
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Astra Qwen",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 207,
+          "points": 1023
+        }
+      },
+      "nomination": {
+        "name": "Astra Qwen",
+        "seed_score": 1304.612,
+        "summary": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50351111",
+            "source": "hackernews",
+            "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "body": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+            "author": "syllogism",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1023,
+              "comments": 207
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about The 'Astra can read and write weights to improve Qwen' post",
+            "snippet": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50351111",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 97,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1545
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Nvidia RTX Spark 35 Linux",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 266,
+          "points": 580
+        }
+      },
+      "nomination": {
+        "name": "Nvidia RTX Spark 35 Linux",
+        "seed_score": 1269.0,
+        "summary": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50362905",
+            "source": "hackernews",
+            "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+            "body": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+            "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+            "author": "novaRom",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 580,
+              "comments": 266
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Nvidia RTX Spark encrypted firmware slows inference speed to",
+            "snippet": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50362905",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 93,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Google AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 460,
+          "points": 660
+        }
+      },
+      "nomination": {
+        "name": "Google AI",
+        "seed_score": 1187.9394,
+        "summary": "Google will turn off search for schools that reject AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50353192",
+            "source": "hackernews",
+            "title": "Google will turn off search for schools that reject AI",
+            "body": "Google will turn off search for schools that reject AI",
+            "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+            "author": "ceejayoz",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 660,
+              "comments": 460
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google will turn off search for schools that reject AI",
+            "snippet": "Google will turn off search for schools that reject AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50353192",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Gemini trains",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 159,
+          "points": 618
+        }
+      },
+      "nomination": {
+        "name": "Gemini trains",
+        "seed_score": 1165.5,
+        "summary": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50363461",
+            "source": "hackernews",
+            "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+            "body": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+            "url": "https://news.ycombinator.com/item?id=50363461",
+            "author": "jameslk",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 618,
+              "comments": 159
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Tell HN: Gemini trains on chat history, even for subscribers",
+            "snippet": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50363461",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 89,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Stringman 800",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 236,
+          "points": 803
+        }
+      },
+      "nomination": {
+        "name": "Stringman 800",
+        "seed_score": 1102.0259,
+        "summary": "Stringman, an $800 open-source room scale gripper robot",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50354358",
+            "source": "hackernews",
+            "title": "Stringman, an $800 open-source room scale gripper robot",
+            "body": "Stringman, an $800 open-source room scale gripper robot",
+            "url": "https://neufangled.com/",
+            "author": "nharada",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 803,
+              "comments": 236
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Stringman, an $800 open-source room scale gripper robot",
+            "snippet": "Stringman, an $800 open-source room scale gripper robot",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50354358",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 96,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1535
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "85",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 140
+        }
+      },
+      "nomination": {
+        "name": "85",
+        "seed_score": 831.0,
+        "summary": "I removed 85% of gemma's weights (and it is mostly fine)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "I removed 85% of gemma's weights (and it is mostly fine)",
+            "body": "I removed 85% of gemma's weights (and it is mostly fine)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnoqyy/i_removed_85_of_gemmas_weights_and_it_is_mostly/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 414,
+              "num_comments": 140
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "I removed 85% of gemma's weights (and it is mostly fine)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30500000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Ram Altman ceo of openai",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "Ram Altman ceo of openai",
+        "seed_score": 771.0,
+        "summary": "Ram Altman, ceo of openai",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Ram Altman, ceo of openai",
+            "body": "Ram Altman, ceo of openai",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xnh9rd/ram_altman_ceo_of_openai/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 486,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Ram Altman, ceo of openai",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "OpenAI Codex chats",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 153,
+          "points": 518
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Codex chats",
+        "seed_score": 711.703,
+        "summary": "OpenAI seems to be silently re-enabling model training on Codex chats",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50352757",
+            "source": "hackernews",
+            "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "body": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "url": "https://news.ycombinator.com/item?id=50352757",
+            "author": "user052919",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 518,
+              "comments": 153
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenAI seems to be silently re-enabling model training on Co",
+            "snippet": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50352757",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 87,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14450000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Introducing Hy4 open weights soon",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 98
+        }
+      },
+      "nomination": {
+        "name": "Introducing Hy4 open weights soon",
+        "seed_score": 688.5,
+        "summary": "Introducing Hy4 (open weights soon)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Introducing Hy4 (open weights soon)",
+            "body": "Introducing Hy4 (open weights soon)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnhzbz/introducing_hy4_open_weights_soon/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 361,
+              "num_comments": 98
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Introducing Hy4 (open weights soon)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.341
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Hacker Times York Times-inspired Hacker News",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 147,
+          "points": 468
+        }
+      },
+      "nomination": {
+        "name": "Hacker Times York Times-inspired Hacker News",
+        "seed_score": 652.306,
+        "summary": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50346981",
+            "source": "hackernews",
+            "title": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+            "body": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+            "url": "https://hackertimes.ca/",
+            "author": "polpenn",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 468,
+              "comments": 147
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Show HN: Hacker Times, a New York Times-inspired version of",
+            "snippet": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50346981",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 10,
+            "engagement_score": 85,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-19",
+      "heuristic_name": "Ripple-65B Preview U.S Open-Weight SOTA",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 67,
+          "points": 195
+        },
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Ripple-65B Preview U.S Open-Weight SOTA",
+        "seed_score": 512.325,
+        "summary": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50369925",
+            "source": "hackernews",
+            "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "body": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "url": "https://www.ricursive.com/ripple",
+            "author": "Philpax",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 195,
+              "comments": 67
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "HN story about Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "snippet": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50369925",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.436
+          },
+          {
+            "item_id": "R108",
+            "source": "reddit",
+            "title": "Ripple-65B Preview, 65B dense LLM trained from scratch",
+            "body": "Ripple-65B Preview, 65B dense LLM trained from scratch\nOne of the long term focus is on chip design.  California Palo Alto company, spent $32 million on training.\n\n[https://www.ricursive.com/ripple](https://www.ricursive.com/ripple)\n\n![img](saiidb7ajnzh1 \"NVIDIA \u2014 Nemotron 3 Ultra-550B (green logo) .  Thinking Machines Lab \u2014 Inkling-975B (black square/blob logo) .  Meta \u2014 Muse Spark Open-816B (blue infinity-style logo) .  Reflection AI \u2014 Beam-501B (green circle/dot logo)\")",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnyd20/ripple65b_preview_65b_dense_llm_trained_from/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 16,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "One of the long term focus is on chip design.  California Palo Alto company, spent $32 million on training.\n\n[https://www.ricursive.com/ripple](https://www.ricursive.com/ripple)\n\n![img](saiidb7ajnzh1 \"NVIDIA \u2014 Nemotron 3 Ultra-550B (green logo) .  Thinking Machines Lab \u2014 Inkling-975B (black square/blob logo) .  Meta \u2014 Muse Spark Open-816B (blue infinity-style logo) .  Reflection AI \u2014 Beam-501B (gr",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          }
+        ]
+      }
+    }
+  ]
+}

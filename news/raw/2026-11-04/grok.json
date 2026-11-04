@@ -1,0 +1,201 @@
+{
+ "date": "2026-11-04",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-04.json",
+ "fetched_at": "2026-11-03T23:55:50+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T05:25:33+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 6,
+  "posts": 7,
+  "ok": 7,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "OpenAI details Codex and Astra progress on physical engineering workflows",
+   "category": "case_study",
+   "event_time": "2026-11-03T18:56:45Z",
+   "primary_url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+   "facts": [
+    "Two team members designed this test device with Astra in under a week while working on it as a side project.",
+    "Since February, model usage across our hardware teams, measured in tokens, has grown 23-fold.",
+    "A newer internal model achieved an average score of 0.875 on BenchCAD 2.0, compared with 0.594 for GPT‑6 Astra at its highest reasoning setting."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/OpenAI/status/2117692475775258785",
+     "official": true,
+     "author": "@OpenAI",
+     "check": "ok",
+     "created_at": "2026-11-03T18:56:45Z",
+     "text": "ChatGPT and Codex are helping engineers build for the physical world.\n\nWe’re sharing our progress across mechanical design, electrical engineering, and simulation—from helping our hardware teams iterate faster to testing new workflows with industry collaborators.",
+     "likes": 4109,
+     "retweets": 310,
+     "replies": 349,
+     "views": 415062
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Claude Code 2.1.317 adds email send check, hook failure blocking, and Read tool changes",
+   "category": "feature_update",
+   "event_time": "2026-11-03T01:25:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+   "facts": [
+    "Added a check that asks before a web or shell tool call sends your account email address to the network",
+    "Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run",
+    "Removed the Read tool's \"file unchanged since your last Read\" stub: reading an unchanged file again returns its content"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/cryptokoala_/status/2117554580188004643",
+     "official": false,
+     "author": "@cryptokoala_",
+     "check": "ok",
+     "created_at": "2026-11-03T09:48:48Z",
+     "text": "Claude Code 2.1.317 has been released.\n\n87 changes\n\nHighlights:\n• A check now asks before tool calls send your account email\n• Agent SDK hook callbacks support onFailure: \"block\"\n• Fixed Ctrl+C at the prompt stopping all background agents\n\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 1,
+     "views": 188
+    },
+    {
+     "url": "https://x.com/alexmichael/status/2117431213564584088",
+     "official": false,
+     "author": "@alexmichael",
+     "check": "ok",
+     "created_at": "2026-11-03T01:38:35Z",
+     "text": "Claude Code 2.1.317 just dropped, here's what matters\n\n> Asks before a web or shell tool call sends your account email over the network\n > /schedule warns when a cloud task picks up connectors you didn't ask for\n > Agent SDK hooks can block the action if the callback fails\n > Gateway admins get a cost report by developer, day or IdP group\n > Read returns a file's content again instead of a \"file unchanged\" stub\n > Ctrl+C to clear your prompt no longer kills every background agent",
+     "likes": 47,
+     "retweets": 3,
+     "replies": 4,
+     "views": 5130
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Antigravity CLI ships v1.4.4–v1.4.12 with Auto mode, sandbox hardening, and streaming gains",
+   "category": "feature_update",
+   "event_time": "2026-11-03T02:21:08Z",
+   "primary_url": "https://github.com/google-antigravity/antigravity-cli/blob/main/CHANGELOG.md",
+   "facts": [
+    "Enabled Auto mode on Windows 11 version 24H2 and later for personal Google Accounts, selectable via --mode auto, Agent Mode in /config, Shift+Tab, or Remote Control Settings (Agent remains the default).",
+    "Sandboxed commands can no longer read or modify ~/.docker, ~/.kube, or ~/_netrc unless you grant access explicitly.",
+    "Streaming writes about 70% fewer bytes to the terminal and stays much smoother over slow SSH connections."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/rodydavis/status/2117441920834437387",
+     "official": false,
+     "author": "@rodydavis",
+     "check": "ok",
+     "created_at": "2026-11-03T02:21:08Z",
+     "text": "Check out the latest Antigravity CLI v1.4.4 - v1.4.12 releases! https://x.com/i/article/2117441627245727744",
+     "likes": 112,
+     "retweets": 7,
+     "replies": 10,
+     "views": 13905
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Community shares experimental Claude Code agent teams setup with Opus lead and Sonnet teammates",
+   "category": "trend",
+   "event_time": "2026-11-03T22:03:56Z",
+   "primary_url": null,
+   "facts": [
+    "Launch Claude Code with experimental agent teams enabled like this: CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude --model opus",
+    "Opus 5.5 runs the session, plans the feature and coordinates the work",
+    "Sonnet 5.5 teammates build in parallel: frontend, backend and integration"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/hayatomaruu/status/2117739581625802835",
+     "official": false,
+     "author": "@hayatomaruu",
+     "check": "ok",
+     "created_at": "2026-11-03T22:03:56Z",
+     "text": "THIS IS AN ACTUAL F*CKING GOLDMINE\n\nAnthropic just shared one of the best tricks for Claude Code.\n\nThe idea: run Opus 5.5 and Sonnet 5.5 teammates at once, each one doing only the job you assign it.\n\nParallel work and less clutter in the lead's context, because every task lands on the right teammate.\n\nYou just launch Claude Code with experimental agent teams enabled like this:\n\nCLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude --model opus\n\nhere's the split:\n\n→ Opus 5.5 runs the session, plans the feature and coordinates the work\n→ Sonnet 5.5 teammates build in parallel: frontend, backend and integration\n→ the shared task list tracks ownership, progress and dependencies\n→ you stop burning Opus context on implementation work Sonnet can handle\n\nOpus takes the lead at three moments:\n\n→ before a plan locks\n→ when a teammate hits a blocker\n→ before calling it done\n\nSonnet builds. Teammates talk. Opus reviews.\n\nthe shared task list keeps the whole thing moving: independent tasks run in parallel, blocked tasks wait for their dependencies, and teammates message each other directly when the pieces need to line up\n\nthe full tree\n> Opus 5.5 runs the main session, coordinates the work and reviews the synthesized diff before sign-off\n> frontend builds the screens on Sonnet 5.5 in its own context\n> backend builds the API and storage on Sonnet 5.5 in its own context\n> integration prepares fixtures and tests the full flow on Sonnet 5.5\n> shared tasks track ownership, progress and dependencies\n> teammates message each other directly about contracts and blockers\n\npaste the tree and this prompt into Claude Code ↓\n\nReconfigure my Claude Code setup around this tree:\n1. Enable experimental agent teams and run the main session on Opus 5.5 as team lead.\n2. Spawn three Sonnet 5.5 teammates: frontend (builds the screens), backend (builds the API and storage), integration (tests the complete flow).\n3. Give each teammate separate files so their changes do not overlap. Keep shared schema and…",
+     "likes": 27,
+     "retweets": 3,
+     "replies": 5,
+     "views": 2143,
+     "quote": {
+      "author": "@beamnxw",
+      "text": "Stop letting unfinished Opus 5.5 runs eat your budget\n\nSet up the harness before your next long task\n\nSave progress, verify results, reuse the workflow\n\nThe full 7-layer setup below ↓ https://x.com/i/article/2107503162273792000"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "levelsio reports large cost savings using Claude Code to audit and optimize SaaS spend",
+   "category": "case_study",
+   "event_time": "2026-11-03T19:03:50Z",
+   "primary_url": null,
+   "facts": [
+    "Claude Code helped me to find smart ways to save more money",
+    "switched to better and cheaper video models on Photo AI, video was very expensive and since I didn't update it ever it stayed expensive",
+    "Even including Photo AI, I have now cut my costs by 90% from last year"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/levelsio/status/2117694259558293692",
+     "official": false,
+     "author": "@levelsio",
+     "check": "ok",
+     "created_at": "2026-11-03T19:03:50Z",
+     "text": "💸 Update: My total biz expenses have now dropped to just ~$300/mo!\n\nThis is to run all my websites/apps serving per year:\n- 20,000 paying customers\n- 252 million visitors\n- 2.4 billion requests\n- 2.4 petabyte (PB) in bandwidth\n\n(~$8,000/mo if you add the $7,000/mo GPU bill and",
+     "likes": 2482,
+     "retweets": 69,
+     "replies": 119,
+     "views": 167340,
+     "quote": {
+      "author": "@levelsio",
+      "text": "✨ I replaced all these SaaS with my own vibe coded now, so about $25,000/mo savings:\n\n- Weather API -> My own vibe coded weather service using Norway's meteorology API\n- Image resizing API -> My own vibe coded image resizing API with NodeJS's Sharp + Redis (saves ~$1,500/mo)\n- Google Vision NSFW detection -> My own $0/mo vibe coded NSFW detection service with Python's NudeNET (saves ~$2,500/mo)\n- Cloudflare Streaming -> My own $0/mo Nginx VPS video streaming (saves ~$250/mo)\n- API Flash -> My…"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Claude Code team member reflects on product evolution from manual approvals to trusted automation",
+   "category": "discussion",
+   "event_time": "2026-11-03T21:33:33Z",
+   "primary_url": null,
+   "facts": [
+    "When we first launched, most people approved every permission prompt by hand and mostly used Claude to answer questions and write tests.",
+    "Today, the default is trusting Claude's judgment to auto-approve. Claude does large migrations and builds new products."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/_catwu/status/2117731934340337676",
+     "official": false,
+     "author": "@_catwu",
+     "check": "ok",
+     "created_at": "2026-11-03T21:33:33Z",
+     "text": "Friday was my last day at Anthropic.\n\nTwo years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team.\n\nWhen we first launched, most people approved every permission prompt by hand and mostly used Claude to answer questions and write tests. \n\nToday, the default is trusting Claude's judgment to auto-approve. Claude does large migrations and builds new products. \n\nHelping build Claude Code into an industry-defining product has been the journey of a lifetime. \n\nThank you to the incredible team behind Claude Code, Cowork, and Tag. These products are the sum of thousands of great ideas from you. I'll miss working with you all.\n\nThank you to our users for embracing a new way of working. Your constant feedback shaped so much of what we shipped and your stories made the work so meaningful.\n\nExcited to see what you all make next!",
+     "likes": 4376,
+     "retweets": 90,
+     "replies": 426,
+     "views": 329010
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

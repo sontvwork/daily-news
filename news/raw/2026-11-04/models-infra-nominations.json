@@ -1,0 +1,988 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "6bd4108d5358cfc6",
+  "generated_at": "2026-11-03T23:56:29.980015Z",
+  "from_date": "2026-11-02",
+  "to_date": "2026-11-03",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-03T23:56:29.927217Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-03T23:56:29.927226Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 140,
+      "attempted": true,
+      "at": "2026-11-03T23:56:29.924608Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 15,
+      "attempted": true,
+      "at": "2026-11-03T23:56:29.926975Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Astra Qwen",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1068,
+          "points": 3787
+        },
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Astra Qwen",
+        "seed_score": 6737.86,
+        "summary": "Astra can read and write weights to improve Qwen",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50341174",
+            "source": "hackernews",
+            "title": "Astra can read and write weights to improve Qwen",
+            "body": "Astra can read and write weights to improve Qwen",
+            "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+            "author": "dbreunig",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 2921,
+              "comments": 879
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Astra can read and write weights to improve Qwen",
+            "snippet": "Astra can read and write weights to improve Qwen",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50341174",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          },
+          {
+            "item_id": "50351111",
+            "source": "hackernews",
+            "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "body": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+            "author": "syllogism",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 866,
+              "comments": 189
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about The 'Astra can read and write weights to improve Qwen' post",
+            "snippet": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50351111",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3285
+          },
+          {
+            "item_id": "R65",
+            "source": "reddit",
+            "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "body": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "url": "https://www.reddit.com/r/singularity/comments/1xmxb6g/the_astra_can_read_and_write_weights_to_improve/",
+            "container": "singularity",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 149,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 390,
+          "points": 538
+        },
+        "reddit": {
+          "num_comments": 253
+        }
+      },
+      "nomination": {
+        "name": "Google AI",
+        "seed_score": 2777.25,
+        "summary": "Google will turn off search for schools that reject AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50353192",
+            "source": "hackernews",
+            "title": "Google will turn off search for schools that reject AI",
+            "body": "Google will turn off search for schools that reject AI",
+            "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+            "author": "ceejayoz",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 538,
+              "comments": 390
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google will turn off search for schools that reject AI",
+            "snippet": "Google will turn off search for schools that reject AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50353192",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3295
+          },
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Google Will Turn Off Search for Schools That Reject A.I.",
+            "body": "Google Will Turn Off Search for Schools That Reject A.I.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xmxcxl/google_will_turn_off_search_for_schools_that/",
+            "container": "singularity",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 354,
+              "num_comments": 220
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Google Will Turn Off Search for Schools That Reject A.I.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.338
+          },
+          {
+            "item_id": "R79",
+            "source": "reddit",
+            "title": "Google to shut off search for schools that opt-out of AI",
+            "body": "Google to shut off search for schools that opt-out of AI",
+            "url": "https://www.reddit.com/r/artificial/comments/1xn22y7/google_to_shut_off_search_for_schools_that_optout/",
+            "container": "artificial",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 75,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Google to shut off search for schools that opt-out of AI",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.6,
+            "local_rank_score": 0.302
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Qwen 3.8 27B",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 142,
+          "points": 451
+        },
+        "reddit": {
+          "num_comments": 224
+        }
+      },
+      "nomination": {
+        "name": "Qwen 3.8 27B",
+        "seed_score": 2266.65,
+        "summary": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50355251",
+            "source": "hackernews",
+            "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "body": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 451,
+              "comments": 142
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "snippet": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50355251",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3185
+          },
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Like GPT-6 Astra, Qwen 3.8 27B can interpret model weights",
+            "body": "Like GPT-6 Astra, Qwen 3.8 27B can interpret model weights",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmz9ca/like_gpt6_astra_qwen_38_27b_can_interpret_model/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 406,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing",
+            "snippet": "Like GPT-6 Astra, Qwen 3.8 27B can interpret model weights",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35700000000000004
+          },
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "Is Qwen 3.8 27B still the king",
+            "body": "Is Qwen 3.8 27B still the king",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 91,
+              "num_comments": 166
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is Qwen 3.8 27B still the king",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Alibaba Qwen Code qwen4-max qwen4-coder-plus qwen4-omni-120b",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 128
+        }
+      },
+      "nomination": {
+        "name": "Alibaba Qwen Code qwen4-max qwen4-coder-plus qwen4-omni-120b",
+        "seed_score": 1434.0,
+        "summary": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "body": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmitzx/alibabas_qwen_code_repo_just_leaked_qwen4max/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 828,
+              "num_comments": 128
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.329
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "British fintech Revolut slashes AI coding",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 135
+        }
+      },
+      "nomination": {
+        "name": "British fintech Revolut slashes AI coding",
+        "seed_score": 1297.5,
+        "summary": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+            "body": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn568h/british_fintech_revolut_slashes_ai_coding_costs/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 730,
+              "num_comments": 135
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35400000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Seems",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 175
+        }
+      },
+      "nomination": {
+        "name": "Seems",
+        "seed_score": 1150.5,
+        "summary": "Seems weight space programming is an emergent capability on new fronteir models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R69",
+            "source": "reddit",
+            "title": "Seems weight space programming is an emergent capability on new fronteir models",
+            "body": "Seems weight space programming is an emergent capability on new fronteir models",
+            "url": "https://www.reddit.com/r/singularity/comments/1xmesfd/seems_weight_space_programming_is_an_emergent/",
+            "container": "singularity",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 592,
+              "num_comments": 175
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing",
+            "snippet": "Seems weight space programming is an emergent capability on new fronteir models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.393
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude Claude hates",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 95
+        }
+      },
+      "nomination": {
+        "name": "Claude Claude hates",
+        "seed_score": 1129.5,
+        "summary": "Nobody else seems to have as hard of a time with Claude as I do. I just want to understand why Claude hates me.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Nobody else seems to have as hard of a time with Claude as I do. I just want to understand why Claude hates me.",
+            "body": "Nobody else seems to have as hard of a time with Claude as I do. I just want to understand why Claude hates me.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xmzcjz/nobody_else_seems_to_have_as_hard_of_a_time_with/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 658,
+              "num_comments": 95
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Nobody else seems to have as hard of a time with Claude as I do. I just want to understand why Claude hates me.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Hacker Times York Times-inspired Hacker News",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 143,
+          "points": 450
+        }
+      },
+      "nomination": {
+        "name": "Hacker Times York Times-inspired Hacker News",
+        "seed_score": 889.5,
+        "summary": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50346981",
+            "source": "hackernews",
+            "title": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+            "body": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+            "url": "https://hackertimes.ca/",
+            "author": "polpenn",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 450,
+              "comments": 143
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Show HN: Hacker Times, a New York Times-inspired version of",
+            "snippet": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50346981",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3055
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "OpenAI Codex chats",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 132,
+          "points": 419
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Codex chats",
+        "seed_score": 826.5,
+        "summary": "OpenAI seems to be silently re-enabling model training on Codex chats",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50352757",
+            "source": "hackernews",
+            "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "body": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "url": "https://news.ycombinator.com/item?id=50352757",
+            "author": "user052919",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 419,
+              "comments": 132
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenAI seems to be silently re-enabling model training on Co",
+            "snippet": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50352757",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3165
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "SEC Block Anthropic IPO Protect Public",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 313,
+          "points": 397
+        }
+      },
+      "nomination": {
+        "name": "SEC Block Anthropic IPO Protect Public",
+        "seed_score": 753.0687,
+        "summary": "The SEC Should Block Anthropic's IPO to Protect the Public",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50344919",
+            "source": "hackernews",
+            "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+            "body": "The SEC Should Block Anthropic's IPO to Protect the Public",
+            "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 397,
+              "comments": 313
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about The SEC Should Block Anthropic's IPO to Protect the Public",
+            "snippet": "The SEC Should Block Anthropic's IPO to Protect the Public",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50344919",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 67,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1245
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Stringman 800",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 125,
+          "points": 318
+        }
+      },
+      "nomination": {
+        "name": "Stringman 800",
+        "seed_score": 664.5,
+        "summary": "Stringman, an $800 open-source room scale gripper robot",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50354358",
+            "source": "hackernews",
+            "title": "Stringman, an $800 open-source room scale gripper robot",
+            "body": "Stringman, an $800 open-source room scale gripper robot",
+            "url": "https://neufangled.com/",
+            "author": "nharada",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 318,
+              "comments": 125
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Stringman, an $800 open-source room scale gripper robot",
+            "snippet": "Stringman, an $800 open-source room scale gripper robot",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50354358",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Anthropic internal AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 268,
+          "points": 348
+        }
+      },
+      "nomination": {
+        "name": "Anthropic internal AI",
+        "seed_score": 653.3667,
+        "summary": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50339494",
+            "source": "hackernews",
+            "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "body": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+            "author": "entryleveljobsc",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 348,
+              "comments": 268
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Anthropic's internal AI use, at retail prices, now exceeds i",
+            "snippet": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50339494",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 64,
+            "source_quality": 0.8,
+            "local_rank_score": 0.115
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 175
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 651.0,
+        "summary": "I'm worried Claude will become less and less useful for what I use it for.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "I'm worried Claude will become less and less useful for what I use it for.",
+            "body": "I'm worried Claude will become less and less useful for what I use it for.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xmohxq/im_worried_claude_will_become_less_and_less/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 259,
+              "num_comments": 175
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "I'm worried Claude will become less and less useful for what I use it for.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.334
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Nvidia open-source auto-ontology",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 120,
+          "points": 259
+        }
+      },
+      "nomination": {
+        "name": "Nvidia open-source auto-ontology",
+        "seed_score": 568.5,
+        "summary": "Nvidia \u2013 open-source auto-ontology",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50348962",
+            "source": "hackernews",
+            "title": "Nvidia \u2013 open-source auto-ontology",
+            "body": "Nvidia \u2013 open-source auto-ontology",
+            "url": "https://github.com/NVIDIA/auto-ontology",
+            "author": "campervans",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 259,
+              "comments": 120
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Nvidia \u2013 open-source auto-ontology",
+            "snippet": "Nvidia \u2013 open-source auto-ontology",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50348962",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Anthropic reports 17B Q3 895B S-1",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 284,
+          "points": 236
+        }
+      },
+      "nomination": {
+        "name": "Anthropic reports 17B Q3 895B S-1",
+        "seed_score": 551.5433,
+        "summary": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50337439",
+            "source": "hackernews",
+            "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "body": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+            "author": "rebel",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 236,
+              "comments": 284
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic reports $17B in Q3 revenue, commitments of $895B i",
+            "snippet": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50337439",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 60,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1175
+          }
+        ]
+      }
+    }
+  ]
+}

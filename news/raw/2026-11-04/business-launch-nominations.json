@@ -1,0 +1,419 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "91edddc9c0772be5",
+  "generated_at": "2026-11-03T23:56:13.003141Z",
+  "from_date": "2026-11-02",
+  "to_date": "2026-11-03",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-03T23:56:13.001386Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-03T23:56:13.001392Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 7,
+      "attempted": true,
+      "at": "2026-11-03T23:56:13.001219Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-03T23:56:13.001324Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Google AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 390,
+          "points": 538
+        }
+      },
+      "nomination": {
+        "name": "Google AI",
+        "seed_score": 1392.0,
+        "summary": "Google will turn off search for schools that reject AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50353192",
+            "source": "hackernews",
+            "title": "Google will turn off search for schools that reject AI",
+            "body": "Google will turn off search for schools that reject AI",
+            "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+            "author": "ceejayoz",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 538,
+              "comments": 390
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "HN story about Google will turn off search for schools that reject AI",
+            "snippet": "Google will turn off search for schools that reject AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50353192",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.481
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI Codex chats",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 132,
+          "points": 419
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Codex chats",
+        "seed_score": 826.5,
+        "summary": "OpenAI seems to be silently re-enabling model training on Codex chats",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50352757",
+            "source": "hackernews",
+            "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "body": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "url": "https://news.ycombinator.com/item?id=50352757",
+            "author": "user052919",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 419,
+              "comments": 132
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenAI seems to be silently re-enabling model training on Co",
+            "snippet": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50352757",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2735
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "SEC Block Anthropic IPO Protect Public",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 313,
+          "points": 397
+        }
+      },
+      "nomination": {
+        "name": "SEC Block Anthropic IPO Protect Public",
+        "seed_score": 753.0687,
+        "summary": "The SEC Should Block Anthropic's IPO to Protect the Public",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50344919",
+            "source": "hackernews",
+            "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+            "body": "The SEC Should Block Anthropic's IPO to Protect the Public",
+            "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 397,
+              "comments": 313
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about The SEC Should Block Anthropic's IPO to Protect the Public",
+            "snippet": "The SEC Should Block Anthropic's IPO to Protect the Public",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50344919",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 64,
+            "source_quality": 0.8,
+            "local_rank_score": 0.128
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic internal AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 268,
+          "points": 348
+        }
+      },
+      "nomination": {
+        "name": "Anthropic internal AI",
+        "seed_score": 653.3667,
+        "summary": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50339494",
+            "source": "hackernews",
+            "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "body": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+            "author": "entryleveljobsc",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 348,
+              "comments": 268
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "HN story about Anthropic's internal AI use, at retail prices, now exceeds i",
+            "snippet": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50339494",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "engagement_score": 45,
+            "source_quality": 0.8,
+            "local_rank_score": 0.20650000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anthropic reports 17B Q3 895B S-1",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 284,
+          "points": 236
+        }
+      },
+      "nomination": {
+        "name": "Anthropic reports 17B Q3 895B S-1",
+        "seed_score": 551.5433,
+        "summary": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50337439",
+            "source": "hackernews",
+            "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "body": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+            "author": "rebel",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 236,
+              "comments": 284
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic reports $17B in Q3 revenue, commitments of $895B i",
+            "snippet": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50337439",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 19,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07650000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Anthropic growth just flattened",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 265,
+          "points": 227
+        }
+      },
+      "nomination": {
+        "name": "Anthropic growth just flattened",
+        "seed_score": 521.8448,
+        "summary": "Anthropic's growth just flattened",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50344958",
+            "source": "hackernews",
+            "title": "Anthropic's growth just flattened",
+            "body": "Anthropic's growth just flattened",
+            "url": "https://www.regenerator1.com/p/anthropics-growth-just-flattened",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 227,
+              "comments": 265
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Anthropic's growth just flattened",
+            "snippet": "Anthropic's growth just flattened",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50344958",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 12,
+            "source_quality": 0.8,
+            "local_rank_score": 0.102
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Scaling Git at OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 178,
+          "points": 264
+        }
+      },
+      "nomination": {
+        "name": "Scaling Git at OpenAI",
+        "seed_score": 468.8118,
+        "summary": "Scaling Git at OpenAI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50345924",
+            "source": "hackernews",
+            "title": "Scaling Git at OpenAI",
+            "body": "Scaling Git at OpenAI",
+            "url": "https://openai.com/index/scaling-git-at-openai/",
+            "author": "makeramen",
+            "container": "Hacker News",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 264,
+              "comments": 178
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Scaling Git at OpenAI",
+            "snippet": "Scaling Git at OpenAI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50345924",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.09
+          }
+        ]
+      }
+    }
+  ]
+}

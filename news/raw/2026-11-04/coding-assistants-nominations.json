@@ -1,0 +1,791 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "3705295fa8076de5",
+  "generated_at": "2026-11-03T23:56:09.758429Z",
+  "from_date": "2026-11-02",
+  "to_date": "2026-11-03",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-03T23:56:09.729103Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-03T23:56:09.729112Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-11-03T23:56:09.668806Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 45,
+      "attempted": true,
+      "at": "2026-11-03T23:56:09.728884Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Alibaba Qwen Code qwen4-max qwen4-coder-plus qwen4-omni-120b",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 128
+        }
+      },
+      "nomination": {
+        "name": "Alibaba Qwen Code qwen4-max qwen4-coder-plus qwen4-omni-120b",
+        "seed_score": 1434.0,
+        "summary": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "body": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmitzx/alibabas_qwen_code_repo_just_leaked_qwen4max/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 828,
+              "num_comments": 128
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Alibaba's Qwen Code repo just leaked qwen4-max, qwen4-coder-plus, and qwen4-omni-120b",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.351
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "British fintech Revolut slashes AI coding",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 135
+        }
+      },
+      "nomination": {
+        "name": "British fintech Revolut slashes AI coding",
+        "seed_score": 1294.5,
+        "summary": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+            "body": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn568h/british_fintech_revolut_slashes_ai_coding_costs/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 728,
+              "num_comments": 135
+            },
+            "relevance_hint": 0.43,
+            "why_relevant": "Reddit listing",
+            "snippet": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.43,
+            "freshness": 90,
+            "engagement_score": 99,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6035
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "OpenAI Codex chats",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 132,
+          "points": 419
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Codex chats",
+        "seed_score": 826.5,
+        "summary": "OpenAI seems to be silently re-enabling model training on Codex chats",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50352757",
+            "source": "hackernews",
+            "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "body": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "url": "https://news.ycombinator.com/item?id=50352757",
+            "author": "user052919",
+            "container": "Hacker News",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 419,
+              "comments": 132
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about OpenAI seems to be silently re-enabling model training on Co",
+            "snippet": "OpenAI seems to be silently re-enabling model training on Codex chats",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50352757",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3205
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "MIT Claude rewrote 8 neurons",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "MIT Claude rewrote 8 neurons",
+        "seed_score": 294.0,
+        "summary": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense",
+            "body": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn1gs9/i_tried_mits_weightspace_programming_on_my_own/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 157,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3435
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Qwen3.8-Flash-Next local vs Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 66
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-Flash-Next local vs Claude",
+        "seed_score": 201.0,
+        "summary": "Qwen3.8-Flash-Next (local) vs Claude",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Qwen3.8-Flash-Next (local) vs Claude",
+            "body": "Qwen3.8-Flash-Next (local) vs Claude",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmolk6/qwen38flashnext_local_vs_claude/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 68,
+              "num_comments": 66
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen3.8-Flash-Next (local) vs Claude",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3515
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 71
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 118.5,
+        "summary": "I've been lurking in this sub for a while, wanting to break my dependence on online services, plus slowly backlogging tasks I want/need to run locally rather than use online models.  Usually these tasks break down to either privacy related issues or just massive token count that would blow my online budget.\n\nI've been experimenting with Qwen 3.8 27B in LM Studio for a while, but when it comes to t",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Claude Code enjoyer wanting to go local. What would your newbie harness of choice be?",
+            "body": "Claude Code enjoyer wanting to go local. What would your newbie harness of choice be?\nI've been lurking in this sub for a while, wanting to break my dependence on online services, plus slowly backlogging tasks I want/need to run locally rather than use online models.  Usually these tasks break down to either privacy related issues or just massive token count that would blow my online budget.\n\nI've been experimenting with Qwen 3.8 27B in LM Studio for a while, but when it comes to things like coding, code review, PDF editing, etc. obviously LM Studio isn't a harness like Claude Code where I can just say \"Take these 4 files and run with it\".\n\nSome of the things I'm trying to accomplish (some as actual tasks, others as a learning sandbox):\n- Analyze this entire codebase to come up with efficiency/security recommendations  (agent spawning, file reading)\n- Caption this dataset of 10,000 images (image reading)\n- Interface with this ComfyUI instance to iterate and refine prompts (terminal use, wait for result, image reading)\n- Edit a PDF file (PDF read, PDF write)\n- Online research (web access)\n\nMy day job is AI image/video work, so I have multiple RTX Pro 6000's to work with already.\n\nBased on my research so far, it seems like three options would accomplish this when pointed to a local model endpoint.\n- Opencode\n- Codex\n- Claude Code\n\nWhat about Openhands?  Pi? \n\n- What's your harness of choice?\n- Do the OpenAI/Anthropic harnesses still require login/online connection when running from a local endpoint?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmxr1q/claude_code_enjoyer_wanting_to_go_local_what/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 71
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been lurking in this sub for a while, wanting to break my dependence on online services, plus slowly backlogging tasks I want/need to run locally rather than use online models.  Usually these tasks break down to either privacy related issues or just massive token count that would blow my online budget.\n\nI've been experimenting with Qwen 3.8 27B in LM Studio for a while, but when it comes to t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6685000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Four URL",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Four URL",
+        "seed_score": 102.0,
+        "summary": "Four open coding models, prompted to finish an upload URL - analysis",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Four open coding models, prompted to finish an upload URL - analysis",
+            "body": "Four open coding models, prompted to finish an upload URL - analysis",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmvn4q/four_open_coding_models_prompted_to_finish_an/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 58,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Four open coding models, prompted to finish an upload URL - analysis",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3235
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "balbal-v2 Turkish CPU 2nd Mu-Bench TR",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "balbal-v2 Turkish CPU 2nd Mu-Bench TR",
+        "seed_score": 52.5,
+        "summary": "I've been working on Turkish ASR for a while and put out v2 recently. Two models, both CTC + KenLM, both meant for CPU:\n\n\\- balbal-v2-manas: 313M, Turkish + English, \\~123x real time on 8 threads\n\n\\- balbal-v2: 45M, Turkish only, \\~236x real time. It even runs faster than real time on one core of an old Celeron POS box running Windows 7.\n\nMu-Bench is a Turkish benchmark of 846 real customer servic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "balbal-v2: Turkish speech recognition that runs on CPU, 2nd on Mu-Bench TR after Google Chirp 3",
+            "body": "balbal-v2: Turkish speech recognition that runs on CPU, 2nd on Mu-Bench TR after Google Chirp 3\nI've been working on Turkish ASR for a while and put out v2 recently. Two models, both CTC + KenLM, both meant for CPU:\n\n\\- balbal-v2-manas: 313M, Turkish + English, \\~123x real time on 8 threads\n\n\\- balbal-v2: 45M, Turkish only, \\~236x real time. It even runs faster than real time on one core of an old Celeron POS box running Windows 7.\n\nMu-Bench is a Turkish benchmark of 846 real customer service calls. Numbers from the official harness:\n\n|Model|WER|sigWER|\n|:-|:-|:-|\n|Google Chirp 3|8.03|14.30|\n|balbal-v2-manas|8.20|14.89|\n|Gemini 3.5 Transcribe|8.68|18.20|\n|ElevenLabs Scribe v2|9.43|19.15|\n|balbal-v2|9.46|18.44|\n|Deepgram Nova-3|13.37|24.35|\n|Azure Speech|14.02|30.73|\n|Qwen3-ASR 1.7B|14.76|30.61|\n|whisper-large-v3-turbo|24.65|47.04|\n\nOn FLEURS Turkish manas is basically tied with whisper-large-v3-turbo (4.06 vs 4.07) but about 75x faster on the same CPU. English is ok too, 8.67 average WER on the Open ASR leaderboard sets.\n\nThe model uses a unique architecture that has a product-key-memory inspired by engrams and a refiner that loops 3 times before giving the output.\n\nAlso, turns out a team (LocalDoc) already trained an Azerbaijani model on the manas architecture, 10.98 WER on FLEURS Azerbaijani. (https://huggingface.co/LocalDoc/speakwrite-azerbaijani) I was happy that they took my model decisions which made me happy :D\n\n\\`pip install balbal\\`, then \\`balbal run file.wav\\`. There's also a live mic mode and an OpenAI-compatible server.\n\nCode is Apache-2.0. Weights are free for research, non-commercial use and small businesses, but you can't resell it as an ASR product or API. Full terms are on the model page.\n\nWeights: [https://huggingface.co/erayyapagci/balbal-v2-manas](https://huggingface.co/erayyapagci/balbal-v2-manas) and [https://huggingface.co/erayyapagci/balbal-v2](https://huggingface.co/erayyapagci/balbal-v2)\n\nCode: [https://github.com/erayyap/balbal](https://github.com/erayyap/balbal)\n\nDemo + offline Android app: [https://erayy.com/balbal](https://erayy.com/balbal)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmtlm7/balbalv2_turkish_speech_recognition_that_runs_on/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been working on Turkish ASR for a while and put out v2 recently. Two models, both CTC + KenLM, both meant for CPU:\n\n\\- balbal-v2-manas: 313M, Turkish + English, \\~123x real time on 8 threads\n\n\\- balbal-v2: 45M, Turkish only, \\~236x real time. It even runs faster than real time on one core of an old Celeron POS box running Windows 7.\n\nMu-Bench is a Turkish benchmark of 846 real customer servic",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.296
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Harnesses/Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Harnesses/Agents",
+        "seed_score": 36.0,
+        "summary": "Hi guys.\n\nSo I'm not completely new to all this local LLMs and AI. I have used and tried various web-based UIs, for the last 4-5 months, as a way to learn and educate myself in this swamp that is local LLM.\n\nSo for the last 3-4 weeks I have dipped my feet in Hermes Agent. And man, I was in for a surprise. I genuinely thought, \"How hard can it be, install, fire up and use.\", but to me that was far",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "Harnesses/Agents suited for linux sysadmin, system maintenance, network and light coding.",
+            "body": "Harnesses/Agents suited for linux sysadmin, system maintenance, network and light coding.\nHi guys.\n\nSo I'm not completely new to all this local LLMs and AI. I have used and tried various web-based UIs, for the last 4-5 months, as a way to learn and educate myself in this swamp that is local LLM.\n\nSo for the last 3-4 weeks I have dipped my feet in Hermes Agent. And man, I was in for a surprise. I genuinely thought, \"How hard can it be, install, fire up and use.\", but to me that was far from the truth. I have spent so much time setting things up, making the agent act and work the way I want, teaching it what to do, and how to do it, trying to write skills, and so on. I have not actually used Hermes, that much, most of the time has gone to setting it up, and making the agent not make mistakes.\n\nThis has somehow made me feel like maybe Hermes is not the best tool for this, even though it has some skills for it (along with a gazillion other skills and functions). It feels so bloated, with so many skills and sometimes heavy to run (for the lack of a better word).\n\nI am actually not really sure what I want, or how to word it.  \nBut simply put, I would like something that is lightweight, doesn't have a gazillion skills installed, but has options and a repository to add well written skills. A simple gui/frontend with well-thought-out settings. Something that works well with my use case, which is  basically the title. I primarily want to use my agent for linux sysadmin, system maintenance, network and servers, and some light coding and bash scripting.\n\nI realize this can be very subjective, but that's just it, I would like your objective opinion on what you believe would be/is the best agent or harness for this kind of use ?  \nAnd also, is there a \"best agent\" for this use case, or can I use basically anything?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn4n3j/harnessesagents_suited_for_linux_sysadmin_system/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi guys.\n\nSo I'm not completely new to all this local LLMs and AI. I have used and tried various web-based UIs, for the last 4-5 months, as a way to learn and educate myself in this swamp that is local LLM.\n\nSo for the last 3-4 weeks I have dipped my feet in Hermes Agent. And man, I was in for a surprise. I genuinely thought, \"How hard can it be, install, fire up and use.\", but to me that was far",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4745
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "ChatGPT Claude Code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Claude Code",
+        "seed_score": 33.9411,
+        "summary": "Is there a sane way to hand work between claude.ai / ChatGPT in the browser and Claude Code in the terminal?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Is there a sane way to hand work between claude.ai / ChatGPT in the browser and Claude Code in the terminal?",
+            "body": "Is there a sane way to hand work between claude.ai / ChatGPT in the browser and Claude Code in the terminal?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xlnm82/is_there_a_sane_way_to_hand_work_between_claudeai/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.4,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is there a sane way to hand work between claude.ai / ChatGPT in the browser and Claude Code in the terminal?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 32,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31700000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Coding agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Coding agents",
+        "seed_score": 31.5,
+        "summary": "I\u2019m building agents, but I don\u2019t know how to think about a harness from scratch.\n\nI\u2019m stuck on:\n\n* How to think and design the harness from scratch for different type of problems\n* How to improve it, and what to add or delete\n* How to know if a change actually helped\n\nCoding agents don\u2019t help much here. they suggest stale patterns, and not much of state of art approaches.\n\nFor those who got good a",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "How did you get better at building agentic systems? What helped most?",
+            "body": "How did you get better at building agentic systems? What helped most?\nI\u2019m building agents, but I don\u2019t know how to think about a harness from scratch.\n\nI\u2019m stuck on:\n\n* How to think and design the harness from scratch for different type of problems\n* How to improve it, and what to add or delete\n* How to know if a change actually helped\n\nCoding agents don\u2019t help much here. they suggest stale patterns, and not much of state of art approaches.\n\nFor those who got good at this:\n\n1. What changed how you think about it?\n2. Which resources helped most? Papers, blogs, repos, talks?\n3. Did building different use cases from scratch teach you more?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmze1m/how_did_you_get_better_at_building_agentic/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019m building agents, but I don\u2019t know how to think about a harness from scratch.\n\nI\u2019m stuck on:\n\n* How to think and design the harness from scratch for different type of problems\n* How to improve it, and what to add or delete\n* How to know if a change actually helped\n\nCoding agents don\u2019t help much here. they suggest stale patterns, and not much of state of art approaches.\n\nFor those who got good a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3035
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Mac Mini M6 16GB RAM LLMs",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Mac Mini M6 16GB RAM LLMs",
+        "seed_score": 31.5,
+        "summary": "Hey everyone!\n\nI recently got a new Mac Mini M6 with 16GB unified memory and wanted to get into running LLMs locally.\n\nI'm relatively new to the local LLM ecosystem, so I'm trying to figure out the best way to get started and make the most out of this machine.\n\nI have a few questions:\n\n1. Models\n\nWhat LLMs can I realistically run on 16GB unified memory?\n\nWhich models would you recommend for genera",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "New Mac Mini M6 (16GB RAM) \u2013 What local LLMs can I realistically run? Looking for advice on runtimes and fine-tuning.",
+            "body": "New Mac Mini M6 (16GB RAM) \u2013 What local LLMs can I realistically run? Looking for advice on runtimes and fine-tuning.\nHey everyone!\n\nI recently got a new Mac Mini M6 with 16GB unified memory and wanted to get into running LLMs locally.\n\nI'm relatively new to the local LLM ecosystem, so I'm trying to figure out the best way to get started and make the most out of this machine.\n\nI have a few questions:\n\n1. Models\n\nWhat LLMs can I realistically run on 16GB unified memory?\n\nWhich models would you recommend for general-purpose use, coding, reasoning and agentic workflows?\n\nWould 7B/8B models be the sweet spot, or can I comfortably experiment with anything larger using quantization?\n\n2. Inference engines / Tools\n\nI've come across a few options:\n\nllama.cpp\n\nLM Studio\n\nOllama\n\nMLX / MLX-LM\n\nWhich would you recommend for a Mac? Is there a significant performance difference between them? Should I stick with one or use different tools for different purposes?\n\n3. Fine-tuning\n\nI'm also interested in experimenting with fine-tuning models locally.\n\nIs fine-tuning even practical with 16GB unified memory?\n\nCan I experiment with LoRA or QLoRA on this machine?\n\nWould MLX-LM be the best starting point for fine-tuning on Apple Silicon?\n\nAre there any smaller models or specific workflows you'd recommend learning with?\n\n4. Practical use cases\n\nMy primary interests are:\n\nRunning local coding assistants.\n\nBuilding AI agents and experimenting with agentic workflows.\n\nCybersecurity-related tasks and automation.\n\nExperimenting with RAG and custom datasets.\n\nFine-tuning smaller models for specific tasks.\n\nI'm not expecting to run massive models on this machine. I just want to understand its limits and get the best possible performance out of the hardware.\n\nFor anyone running local LLMs on Apple Silicon, particularly with 16GB RAM:\n\nWhat does your setup look like, which models are you running, and what would you recommend to someone starting out?\n\nAny advice, benchmarks, resources or recommendations would be appreciated!\n\nThanks!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn2yhf/new_mac_mini_m6_16gb_ram_what_local_llms_can_i/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey everyone!\n\nI recently got a new Mac Mini M6 with 16GB unified memory and wanted to get into running LLMs locally.\n\nI'm relatively new to the local LLM ecosystem, so I'm trying to figure out the best way to get started and make the most out of this machine.\n\nI have a few questions:\n\n1. Models\n\nWhat LLMs can I realistically run on 16GB unified memory?\n\nWhich models would you recommend for genera",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.43,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5195000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "you get a coding agent to",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "you get a coding agent to",
+        "seed_score": 25.5,
+        "summary": "How do you get a coding agent to ask instead of guess when you're not watching?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "How do you get a coding agent to ask instead of guess when you're not watching?",
+            "body": "How do you get a coding agent to ask instead of guess when you're not watching?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xmw6f6/how_do_you_get_a_coding_agent_to_ask_instead_of/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you get a coding agent to ask instead of guess when you're not watching?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "We moved from one coding agent",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "We moved from one coding agent",
+        "seed_score": 24.3952,
+        "summary": "We moved from one coding agent to a few specialist agents and the token use went way up. Where is it worth it for you?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "We moved from one coding agent to a few specialist agents and the token use went way up. Where is it worth it for you?",
+            "body": "We moved from one coding agent to a few specialist agents and the token use went way up. Where is it worth it for you?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xm3wi8/we_moved_from_one_coding_agent_to_a_few/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-02",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "We moved from one coding agent to a few specialist agents and the token use went way up. Where is it worth it for you?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.0995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Claude July 2025 13 14 months",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Claude July 2025 13 14 months",
+        "seed_score": 22.5,
+        "summary": "I gave every Claude model the exact same prompt since July 2025. 13 models, 14 months, here's the evolution",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "I gave every Claude model the exact same prompt since July 2025. 13 models, 14 months, here's the evolution",
+            "body": "I gave every Claude model the exact same prompt since July 2025. 13 models, 14 months, here's the evolution",
+            "url": "https://www.reddit.com/r/singularity/comments/1xn7057/i_gave_every_claude_model_the_exact_same_prompt/",
+            "container": "singularity",
+            "published_at": "2026-11-03",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "I gave every Claude model the exact same prompt since July 2025. 13 models, 14 months, here's the evolution",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29850000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

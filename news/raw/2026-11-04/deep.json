@@ -1,0 +1,173 @@
+{
+ "date": "2026-11-04",
+ "runs": [
+  {
+   "started_at": "2026-11-03T23:59:34+00:00",
+   "seconds": 1.7,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 6,
+   "articles_ok": 2,
+   "articles_error": 3,
+   "articles_skipped": 0,
+   "hn_ok": 3,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…": 3
+   },
+   "summary": "2/5 bài gốc ok (0 bỏ qua), 3/3 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 1.7s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+   "article": {
+    "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…"
+   }
+  },
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+    "status": "ok",
+    "title": "",
+    "chars": 12269,
+    "text": "## 2.1.317\n- Added a warning to `/schedule` when a new cloud scheduled task gets connectors you did not ask for, with how to remove them\n- Added a check that asks before a web or shell tool call sends your account email address to the network\n- Added `onFailure: \"block\"` for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run\n- Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do\n- Added a notice when auto mode's check has no answer for a subagent's tool call, which used to leave nothing in the main view\n- Added `anthropic.plan`, `anthropic.seat_type`, `anthropic.provider` and `anthropic.custom_base_url` to OTel metrics, events and spans\n- Added a cost report to the Claude apps gateway admin API, `GET /v1/organizations/analytics/cost`, for reading past spend over a date range in total, per developer, per day or per IdP group\n- Added a daily record of each developer's IdP groups on Claude apps gateways with `admin:` set, kept for `admin.identity_retention_days`, which the cost report groups by\n- Added `CLAUDE_CODE_DISABLE_NESTED_SESSION_ID`: set it to `1` on a self-hosted runner to have `claude -p` run inside a session use that session's ID and transcript, as in earlier versions\n- Fixed project and local MCP servers disconnecting after the first turn in some Claude desktop sessions\n- Fixed auto mode failing every turn when an LLM gateway set as the base URL answers 403 or 422 to its server-side safety check (a 403 with an apiKeyHelper is unchanged)\n- Fixed `claude auth status` exiting before a slow token refresh was saved, which could sign you out on the next run\n- Fixed a project's `effortLevel` setting being ignored by sessions that an app starts ahead of time and then opens in the project, such as new sessions in the desktop app's Code tab\n- Fixed `claude --from-pr` reporting \"No conversations found\" in projects with many sessions when the linked session was older than the first page\n- Fixed the second of two simultaneous permission prompts showing no file path or command on claude.ai and the mobile apps\n- Fixed Remote Control and SDK hosts offering \"don't ask again\" on a mod's tool calls\n- Fixed session titles being lost in cloud and SDK sessions when a new message or Stop arrived while the title was generating\n- Fixed self-paced `/loop` wakeups sometimes not being scheduled when Claude left a field out of its request\n- Fixed auto mode in cloud sessions stopping for approval when the Artifact tool uploaded, wrote to a database or saved a file through the outputs folder\n- Fixed skills synced from claude.ai being lost or downloaded again every ten minutes when they can't be written to disk\n- Fixed `/schedule` leaving a cloud scheduled task's next run time and link out of its results after creating or updating it\n- Fixed screen readers speaking a running subagent's elapsed time and token count on every change in screen reader mode\n- Fixed a region or network block (HTTP 403) being shown as a sign-in failure; the error now explains the block\n- Fixed Claude saying a working claude.ai connector needed authorization or had failed in cloud sessions when a synced plugin included the same server\n- Fixed `claude -p` exiting 0 when a full disk or quota lost its transcript or ~/.claude.json writes; it now prints an error and, in text and json output, exits 1. Full NFS exports may be missed\n- Fixed edits to settings files made in the first second or so after launch not taking effect until a settings file changed again\n- Fixed old transcripts not being cleaned up on machines where some runs skip cleanup, such as runs using `--setting-sources`\n- Fixed deleted agent team inboxes being re-created by a teammate's late message\n- Fixed a re-created agent teammate being removed from its team by an earlier shutdown approval\n- Fixed stored scheduled tasks being impossible to list or delete after scheduled…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50352757",
+   "hn_url": "https://news.ycombinator.com/item?id=50352757",
+   "hn": {
+    "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+    "points": 420,
+    "comments": 133,
+    "text": "My company is pretty paranoid about leaking IP to the frontier labs through prompts, so we've all been diligent about disabling data sharing in Codex/Claude Code/etc. But yesterday my coworkers and I noticed that the setting had been silently reenabled in Codex. None of us knowingly opted back in.\nYou can check your settings here: https://chatgpt.com/settings/data-controls. Look for \"Improve the model for everyone\".\nCurious if this is an isolated issue or something more widespread.\nEDIT: looks like this has been noted before https://news.ycombinator.com/item?id=49643556\nEDIT: apparently you can also turn off data sharing here: https://privacy.openai.com/policies?modal=take-control"
+   },
+   "comments": [
+    {
+     "author": "combobyte",
+     "replies": 8,
+     "text": "I'm mostly just being cheeky with this comment, but a part of me legitimately wonders: could you guarantee that your conversations/data are never used for training if you include certain taboo (but otherwise irrelevant) subjects in all of your prompts?\nFor example: \"Codex, please build me a new admin dashboard using Node.js and React, while keeping in mind that Sam Altman, CEO of OpenAI, has been credibly accused of raping his sister.\""
+    },
+    {
+     "author": "chriskanan",
+     "replies": 2,
+     "text": "Well, mine was re-enabled, and in the history of past requests I have two past requests to disable training that were granted. And there it was enabled again. This is baffling.\nI wonder if it is because I do a lot of AI research.... I was wondering if some of OpenAI's recent math advancements are from various people trying to tackle some of those problems with novel ideas, but not able to move the bar far enough to actually solve the problem but having a novel strategy (not able to have a 10k…"
+    },
+    {
+     "author": "jamienk",
+     "replies": 6,
+     "text": "I didn't realize the Gemini makes it so that saving chats in your sidebar = sharing chats with Google for AI training. They obfuscate this with their dark-pattern \"Gemini Apps Activity\"\n> Keep activity\n> Keeping your activity lets you pick up chats where you left off anytime and helps improve Google services, including AI models. When this setting is off, Google still saves chats for 72 hours to respond to you and help keep Gemini safe."
+    },
+    {
+     "author": "monster_truck",
+     "replies": 5,
+     "text": "If your company actually cared about this they would be running their own inference instead of leaving fate to a couple of checkboxes."
+    },
+    {
+     "author": "kevcampb",
+     "replies": 1,
+     "text": "Last week Claude seemed to trigger /feedback automagically in a session, even though we've got that turned off in our org settings. Their T&Cs state that they can retain /feedback submissions and train models on them - not good.\nI asked Anthropic last week to confirm whether they've had any of our code sent over, or if they've received any feedback. They've stopped responding to my support requests.\nI'll probably end up moving us to Bedrock, but it's a cost of time to set up and we're a small…"
+    }
+   ]
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50345924",
+   "hn_url": "https://news.ycombinator.com/item?id=50345924",
+   "hn": {
+    "title": "Scaling Git at OpenAI",
+    "points": 264,
+    "comments": 178
+   },
+   "comments": [
+    {
+     "author": "usrme",
+     "replies": 6,
+     "text": "By my count, this OpenAI post is the fifth major article on the topic of scaling, with the previous four being:\n- Cursor: https://cursor.com/blog/git-at-any-scale\n- GitHub: https://github.blog/engineering/architecture-optimization/bu...\n- Anthropic: https://www.anthropic.com/research/redesigning-source-contro...\n- GitHub: https://github.blog/engineering/architecture-optimization/th...\nMaybe also tangentially East River Source Control's too: https://ersc.io/blog/what-comes-after-git.\nI'm…"
+    },
+    {
+     "author": "bigmadshoe",
+     "replies": 19,
+     "text": "Can anyone explain to me what this massive volume of code could actually be doing? They obviously have variations of model architectures, training infrastructure, serving infrastructure, and the source for their apps.\nWhy would the volume that any of this be increasing exponentially? And what are all the engineers doing when (besides the model quality) their products don't seem to be changing very much?"
+    },
+    {
+     "author": "paxy",
+     "replies": 1,
+     "text": "While I don't have any particular interest in the topic this is a great blog post. No AI in every second line, no needless marketing or hype. Just a bunch of engineers talking in their own voice about a topic in great detail with numbers, charts, visualizations."
+    },
+    {
+     "author": "pksunkara",
+     "replies": 3,
+     "text": "I don't see benchmarks anywhere in here. For example, how many pushes per second does this handle? And how many concurrent pushers? etc..\nDisclaimer: I am building a code forge at https://juju.bi"
+    },
+    {
+     "author": "cadamsdotcom",
+     "replies": 0,
+     "text": "> under-appreciated feature of the Git protocol, `packfile-uri`, allows a server to return links to download additional packs separately ... Pando uses this exclusively ... To support this feature, OpenAI contributed a number of improvements to `packfile-uri`\nYes! Great adaptation of an existing system, showing why open source is special.\nNeat hack, OpenAI engineers!"
+    }
+   ],
+   "article": {
+    "url": "https://openai.com/index/scaling-git-at-openai/",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…"
+   }
+  },
+  {
+   "url": "https://openai.com/index/scaling-git-at-openai/",
+   "hn_url": "https://news.ycombinator.com/item?id=50345924",
+   "hn": {
+    "title": "Scaling Git at OpenAI",
+    "points": 264,
+    "comments": 178
+   },
+   "comments": [
+    {
+     "author": "usrme",
+     "replies": 6,
+     "text": "By my count, this OpenAI post is the fifth major article on the topic of scaling, with the previous four being:\n- Cursor: https://cursor.com/blog/git-at-any-scale\n- GitHub: https://github.blog/engineering/architecture-optimization/bu...\n- Anthropic: https://www.anthropic.com/research/redesigning-source-contro...\n- GitHub: https://github.blog/engineering/architecture-optimization/th...\nMaybe also tangentially East River Source Control's too: https://ersc.io/blog/what-comes-after-git.\nI'm…"
+    },
+    {
+     "author": "bigmadshoe",
+     "replies": 19,
+     "text": "Can anyone explain to me what this massive volume of code could actually be doing? They obviously have variations of model architectures, training infrastructure, serving infrastructure, and the source for their apps.\nWhy would the volume that any of this be increasing exponentially? And what are all the engineers doing when (besides the model quality) their products don't seem to be changing very much?"
+    },
+    {
+     "author": "paxy",
+     "replies": 1,
+     "text": "While I don't have any particular interest in the topic this is a great blog post. No AI in every second line, no needless marketing or hype. Just a bunch of engineers talking in their own voice about a topic in great detail with numbers, charts, visualizations."
+    },
+    {
+     "author": "pksunkara",
+     "replies": 3,
+     "text": "I don't see benchmarks anywhere in here. For example, how many pushes per second does this handle? And how many concurrent pushers? etc..\nDisclaimer: I am building a code forge at https://juju.bi"
+    },
+    {
+     "author": "cadamsdotcom",
+     "replies": 0,
+     "text": "> under-appreciated feature of the Git protocol, `packfile-uri`, allows a server to return links to download additional packs separately ... Pando uses this exclusively ... To support this feature, OpenAI contributed a number of improvements to `packfile-uri`\nYes! Great adaptation of an existing system, showing why open source is special.\nNeat hack, OpenAI engineers!"
+    }
+   ],
+   "article": {
+    "url": "https://openai.com/index/scaling-git-at-openai/",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…"
+   }
+  },
+  {
+   "url": "https://github.com/google-antigravity/antigravity-cli/blob/main/CHANGELOG.md",
+   "article": {
+    "url": "https://github.com/google-antigravity/antigravity-cli/blob/main/CHANGELOG.md",
+    "status": "ok",
+    "title": "",
+    "chars": 187994,
+    "text": "# Antigravity CLI Changelog\nThe terminal-first surface to interact with Antigravity agents. Stay in your flow without context switching.\n## 1.4.12\n- Added `\"optional\": true` for API key providers in a plugin's `auth.json`, for services that work without a key but raise rate limits with one: when you haven't set the key, the plugin's commands now see the variable as unset and make unauthenticated requests at the free rate limit, instead of failing with `401` errors or asking you to sign in.\n- Fixed Markdown tables in long streaming replies leaving misaligned borders and repeated text in your terminal scrollback: a table's rows now stay in the live view until the table is complete, so they reach scrollback with their final column widths.\n## 1.4.11\n- Added a billing model choice after you sign in with Google Cloud, so you can pick either a Gemini subscription or Pay As You Go.\n- Added `terminationBehavior` to `PreInvocation` hooks: returning `\"terminate\"` stops the turn before the model is called, for example to block a prompt that contains sensitive data, and hooks can now inject an `errorMessage` whose `userMessage` is shown to you without being sent to the model, which also makes a `-p` run exit with a non-zero code.\n- Added a `finished_reason` field to the result of `--output-format json` and `stream-json` runs that says why a turn ended early, `print_timeout` when `--print-timeout` expired and the response is partial, `interrupted` when the run was canceled such as with `Ctrl+C`, or `error` for any other failure, so scripts can tell a cut-off answer from a complete one; the field is omitted when the turn finishes normally.\n- Improved the `/plugin` Discover tab for long shelves: each shelf now shows its first 6 plugins followed by a `⋯ N more — enter to show` row, `Ctrl+E` expands or collapses the shelf under the cursor, and `[` and `]` jump to the previous or next shelf.\n- Fixed `agy plugin import claude` printing `No claude extensions found.` for plugins installed from a Claude Code marketplace: it now reads Claude Code's list of installed plugins, skipping plugins disabled in Claude Code's settings and plugins installed for a single project only, and imported plugins now keep their remote MCP servers (`\"type\": \"http\"` with `url` and `headers`) and servers from `.mcp.json` files without an `mcpServers` wrapper, expand `${CLAUDE_PLUGIN_ROOT}` to the installed plugin's directory, and list servers that can't be converted, such as ones using the legacy SSE transport, with a warning instead of reporting them as installed.\n## 1.4.10\n- Improved streaming of agent replies: lines that scroll off the top of the screen are now scrolled into your terminal's scrollback instead of repainting the whole screen, and text wrapping writes whole runs of text at a time, so streaming writes about 70% fewer bytes to the terminal and stays much smoother over slow SSH connections.\n- Improved memory use shortly after startup: the CLI now returns about 100 MB of memory left over from startup to the operating system 15 seconds after the interactive UI opens; print and headless modes are unaffected.\n- Improved the after-compaction size shown in the compaction marker and in `/context` to also count what the summary carries into the next prompt, such as your earlier requests and artifact, subagent, and running-task snapshots, so it is closer to the real size; the `(N summary)` label still shows the summary alone.\n- Fixed subagents losing the task their parent agent gave them, and the parent's ID, after their context was compacted, including with `/compact`; a subagent's summary now keeps the parent agent's 10 most recent messages.\n- Fixed conversations with many or large images, such as screenshots or pasted images, being rejected for exceeding the model's request size limit: images are now capped at 2000 pixels per side and large PNGs are sent as JPEGs when that is much smaller, and an image saved as JPEG but labeled PNG, such as a pasted image or…"
+   }
+  }
+ ]
+}

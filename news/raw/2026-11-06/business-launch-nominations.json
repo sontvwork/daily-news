@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "07a9366425ae591a",
+  "generated_at": "2026-11-05T23:56:03.592099Z",
+  "from_date": "2026-11-04",
+  "to_date": "2026-11-05",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-05T23:56:03.591439Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-05T23:56:03.591445Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-05T23:56:03.590034Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-05T23:56:03.591384Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "OpenAI to acquire Pierre Computer Company",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 90,
+          "points": 261
+        }
+      },
+      "nomination": {
+        "name": "OpenAI to acquire Pierre Computer Company",
+        "seed_score": 372.2917,
+        "summary": "OpenAI to acquire Pierre Computer Company",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50366863",
+            "source": "hackernews",
+            "title": "OpenAI to acquire Pierre Computer Company",
+            "body": "OpenAI to acquire Pierre Computer Company",
+            "url": "https://openai.com/index/openai-to-acquire-pierre/",
+            "author": "itunpredictable",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 261,
+              "comments": 90
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about OpenAI to acquire Pierre Computer Company",
+            "snippet": "OpenAI to acquire Pierre Computer Company",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50366863",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Rivet YC W23 Scale Orchestrate Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 37,
+          "points": 70
+        }
+      },
+      "nomination": {
+        "name": "Rivet YC W23 Scale Orchestrate Agents",
+        "seed_score": 160.5,
+        "summary": "Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on S3",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50381687",
+            "source": "hackernews",
+            "title": "Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on S3",
+            "body": "Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on S3",
+            "url": "https://github.com/rivet-dev/rivet",
+            "author": "NathanFlurry",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 70,
+              "comments": 37
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on",
+            "snippet": "Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on S3",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50381687",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    }
+  ]
+}

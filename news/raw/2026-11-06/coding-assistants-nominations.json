@@ -1,0 +1,800 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "e0077a702c5d6988",
+  "generated_at": "2026-11-05T23:55:59.773662Z",
+  "from_date": "2026-11-04",
+  "to_date": "2026-11-05",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-05T23:55:59.747097Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-05T23:55:59.747103Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 46,
+      "attempted": true,
+      "at": "2026-11-05T23:55:59.746377Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-05T23:55:59.746983Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude 97.8 94.6",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 181
+        }
+      },
+      "nomination": {
+        "name": "Claude 97.8 94.6",
+        "seed_score": 1439.3159,
+        "summary": "Claude writes a neural network's weights by hand, without training, to detect fake legal citations\u2014achieving 97.8% test accuracy and outperforming a conventionally trained model that scored 94.6%.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Claude writes a neural network's weights by hand, without training, to detect fake legal citations\u2014achieving 97.8% test accuracy and outperforming a conventionally trained model that scored 94.6%.",
+            "body": "Claude writes a neural network's weights by hand, without training, to detect fake legal citations\u2014achieving 97.8% test accuracy and outperforming a conventionally trained model that scored 94.6%.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xnplmi/claude_writes_a_neural_networks_weights_by_hand/",
+            "container": "singularity",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1176,
+              "num_comments": 181
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude writes a neural network's weights by hand, without training, to detect fake legal citations\u2014achieving 97.8% test accuracy and outperforming a conventionally trained model that scored 94.6%.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Code sends",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 71,
+          "points": 253
+        }
+      },
+      "nomination": {
+        "name": "Claude Code sends",
+        "seed_score": 486.0,
+        "summary": "Claude Code sends your email address to websites",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50385272",
+            "source": "hackernews",
+            "title": "Claude Code sends your email address to websites",
+            "body": "Claude Code sends your email address to websites",
+            "url": "https://github.com/anthropics/claude-code/issues/107757",
+            "author": "motoroco",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 253,
+              "comments": 71
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "HN story about Claude Code sends your email address to websites",
+            "snippet": "Claude Code sends your email address to websites",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50385272",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.8,
+            "local_rank_score": 0.40800000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Ripple-65B Preview U.S Open-Weight SOTA",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 120,
+          "points": 331
+        }
+      },
+      "nomination": {
+        "name": "Ripple-65B Preview U.S Open-Weight SOTA",
+        "seed_score": 478.3577,
+        "summary": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50369925",
+            "source": "hackernews",
+            "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "body": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "url": "https://www.ricursive.com/ripple",
+            "author": "Philpax",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 331,
+              "comments": 120
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "snippet": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50369925",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "MS Paint Remote Code Execution Vulnerability",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 66,
+          "points": 238
+        }
+      },
+      "nomination": {
+        "name": "MS Paint Remote Code Execution Vulnerability",
+        "seed_score": 456.0,
+        "summary": "MS Paint Remote Code Execution Vulnerability",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50384233",
+            "source": "hackernews",
+            "title": "MS Paint Remote Code Execution Vulnerability",
+            "body": "MS Paint Remote Code Execution Vulnerability",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 238,
+              "comments": 66
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about MS Paint Remote Code Execution Vulnerability",
+            "snippet": "MS Paint Remote Code Execution Vulnerability",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50384233",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Google DeepMind Antigravity 1",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Google DeepMind Antigravity 1",
+        "seed_score": 370.5,
+        "summary": "Google DeepMind unveils agentic cheminformatics on Antigravity: compresses multi-day drug design workflows into 1 hour",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Google DeepMind unveils agentic cheminformatics on Antigravity: compresses multi-day drug design workflows into 1 hour",
+            "body": "Google DeepMind unveils agentic cheminformatics on Antigravity: compresses multi-day drug design workflows into 1 hour",
+            "url": "https://www.reddit.com/r/singularity/comments/1xo7urk/google_deepmind_unveils_agentic_cheminformatics/",
+            "container": "singularity",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 232,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Google DeepMind unveils agentic cheminformatics on Antigravity: compresses multi-day drug design workflows into 1 hour",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3375
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Stroq",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 13,
+          "points": 62
+        }
+      },
+      "nomination": {
+        "name": "Stroq",
+        "seed_score": 112.5,
+        "summary": "Show HN: Stroq \u2013 a local audit of what your coding agent did and why",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50380704",
+            "source": "hackernews",
+            "title": "Show HN: Stroq \u2013 a local audit of what your coding agent did and why",
+            "body": "Show HN: Stroq \u2013 a local audit of what your coding agent did and why",
+            "url": "https://github.com/AGGIB/Stroq",
+            "author": "agybay_07",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 62,
+              "comments": 13
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Show HN: Stroq \u2013 a local audit of what your coding agent did",
+            "snippet": "Show HN: Stroq \u2013 a local audit of what your coding agent did and why",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50380704",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "GUIDE Qwen3.8 Flash-Next RTX 5080",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "GUIDE Qwen3.8 Flash-Next RTX 5080",
+        "seed_score": 108.0,
+        "summary": "[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp",
+            "body": "[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xomy0i/guide_qwen38_flashnext_on_a_single_rtx_5080_64gb/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 47,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Which harness/tool should I use",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "Which harness/tool should I use",
+        "seed_score": 78.0,
+        "summary": "I've been taking a break from AI stuff for a long time, and things move kinda quickly so basically everything is new to me now and I'm struggling to get my bearings. I looked for a sticky or sidebar info with the basics but couldn't find anything so that's why I'm coming to you with a basic noob question.\n\nAt a high level here's what I'm looking for:\n\nI want to run AI locally, obviously that's why",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "Which harness/tool should I use?",
+            "body": "Which harness/tool should I use?\nI've been taking a break from AI stuff for a long time, and things move kinda quickly so basically everything is new to me now and I'm struggling to get my bearings. I looked for a sticky or sidebar info with the basics but couldn't find anything so that's why I'm coming to you with a basic noob question.\n\nAt a high level here's what I'm looking for:\n\nI want to run AI locally, obviously that's why I'm here in this sub.\n\nI don't want a super powerful environment that gives the model crazy capabilities, because I find that scary and I don't trust it.\n\nI do want some basic capabilities though.\n\nIn particular:\n\nI don't want filesystem access (not even readonly) except when I explicitly give it permission e.g. with a filepicker or whitelisting some folder.\n\nI don't want it to go on the internet and mess around on my behalf.\n\nWriting code for me is a nice to have.\n\nI DO want it to have persistent memory. I do want it to be send me notifications (remember to do this thing, how is project x going, here is your daily brief). I do want it to manage a calendar on my behalf (one it will have exclusive access to, not my normal one, I don't trust it with that).\n\nWhat I evaluated:\n\nOllama: Seems pretty basic. It avoids doing dangerous stuff, but lacks features I want. Very nice that it can support other tools.\n\nHermes: I looked through skills, found an NVIDIA skill (big name reassuring) for writing an [ethos.md](http://ethos.md) Okay sounds like a good thing to get started. I try using it and it immediately starts running like 30 commands looking through my filesystem. I'm sorry but wtf no this is too much.\n\nOpenclaw: It tried to prompt me for a lot of permissions when I started it. I tried saying no to everything, but it still seemed to allow too many things. Maybe it's not as scary as it sounds and I'm considering giving it a second look\n\nSentient: Small name but it seemed very close to what I wanted. However when I ran it I had some issues. I closed the app but it stayed running in the background and when I was gaming it decided to do some memory compaction trashing my framerate. It forgot stuff I told it to remember, and I didn't get notifications I asked for.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xokhyq/which_harnesstool_should_i_use/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been taking a break from AI stuff for a long time, and things move kinda quickly so basically everything is new to me now and I'm struggling to get my bearings. I looked for a sticky or sidebar info with the basics but couldn't find anything so that's why I'm coming to you with a basic noob question.\n\nAt a high level here's what I'm looking for:\n\nI want to run AI locally, obviously that's why",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4590000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "reaching a point where reviewing code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 44
+        }
+      },
+      "nomination": {
+        "name": "reaching a point where reviewing code",
+        "seed_score": 68.9429,
+        "summary": "Are we reaching a point where reviewing code takes longer than writing it?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Are we reaching a point where reviewing code takes longer than writing it?",
+            "body": "Are we reaching a point where reviewing code takes longer than writing it?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xnt7e9/are_we_reaching_a_point_where_reviewing_code/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 44
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Are we reaching a point where reviewing code takes longer than writing it?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 51,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10850000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Lawyer GPUs 4 DeepSeek-V4.1-Flash V100s 2018",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Lawyer GPUs 4 DeepSeek-V4.1-Flash V100s 2018",
+        "seed_score": 54.0,
+        "summary": "Lawyer with too many GPUs, part 4: DeepSeek-V4.1-Flash on eight V100s from 2018. 200+ tok/s on code, ~110 on legal writing, 2,200 tok/s prefill at 128K, 524K context, every weight in VRAM",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Lawyer with too many GPUs, part 4: DeepSeek-V4.1-Flash on eight V100s from 2018. 200+ tok/s on code, ~110 on legal writing, 2,200 tok/s prefill at 128K, 524K context, every weight in VRAM",
+            "body": "Lawyer with too many GPUs, part 4: DeepSeek-V4.1-Flash on eight V100s from 2018. 200+ tok/s on code, ~110 on legal writing, 2,200 tok/s prefill at 128K, 524K context, every weight in VRAM",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xoubyo/lawyer_with_too_many_gpus_part_4_deepseekv41flash/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Lawyer with too many GPUs, part 4: DeepSeek-V4.1-Flash on eight V100s from 2018. 200+ tok/s on code, ~110 on legal writing, 2,200 tok/s prefill at 128K, 524K context, every weight in VRAM",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 44,
+            "source_quality": 0.6,
+            "local_rank_score": 0.295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Four Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "Four Codex",
+        "seed_score": 46.669,
+        "summary": "Four days with Codex and I genuinely can't believe how bad this experience has been",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Four days with Codex and I genuinely can't believe how bad this experience has been",
+            "body": "Four days with Codex and I genuinely can't believe how bad this experience has been",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xnlgqm/four_days_with_codex_and_i_genuinely_cant_believe/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Four days with Codex and I genuinely can't believe how bad this experience has been",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.12200000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Polish 15-task 8 GB VRAM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Polish 15-task 8 GB VRAM",
+        "seed_score": 46.5,
+        "summary": "I wanted to know how small local models handle my native language, not just English. I couldn't find a simple way to check a model's Polish in a few minutes, on my own PC, in the quantization I actually run \u2013 so I wrote one. That's how \"Zacharski tests\" started: a small task set that runs through Ollama, since that's what I use on my laptop with an RTX 5050 (8 GB).\n\n**The tasks:**\n\n1. **Polish (8)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "I was curious how small local models handle Polish grammar \u2013 a quick 15-task test on 8 GB VRAM",
+            "body": "I was curious how small local models handle Polish grammar \u2013 a quick 15-task test on 8 GB VRAM\nI wanted to know how small local models handle my native language, not just English. I couldn't find a simple way to check a model's Polish in a few minutes, on my own PC, in the quantization I actually run \u2013 so I wrote one. That's how \"Zacharski tests\" started: a small task set that runs through Ollama, since that's what I use on my laptop with an RTX 5050 (8 GB).\n\n**The tasks:**\n\n1. **Polish (8):** diacritics, declension, masculine-personal gender, numerals, vocative, verb aspect, genitive \u2013 plus one knowledge question (the first recorded Polish sentence, from the 13th-century Book of Henryk\u00f3w).\n2. **JSON (4)**: scored strict and lenient.\n3. **Python (3):** syntax check only.\n\nResults so far:\n\n| Model          | Quant | JSON + code | Polish |\n\n| gemma2:9b | Q4\\_0  |      7/7            |      3/8 |\n\n  \nMy favourite failure: asked for \"22 cats\", gemma2 wrote \"dwudziesty dwa koty\" \u2013 roughly \"twentieth two cats\". The correct form is \"dwadzie\u015bcia dwa koty\". It was perfectly happy producing valid JSON, though.\n\nMore models are downloading as I write this. Next up: gemma2:9b in Q4\\_K\\_M and Q8\\_0 (does quantization hurt the Polish?), qwen3:8b, llama3.1:8b, gemma3:12b, and two Polish models \u2013 Bielik 11B and Bielik-Minitron 7B. Which model would you add?\n\n**Method and limits \u2013 read this before the comments :)**\n\n* 8 Polish tasks (7 grammar + 1 knowledge) and 7 JSON/code tasks. That's a small sample \u2013 a quick check on your own PC, in the quantization you actually run, not a ranking. For a proper ranking, see the Open PL LLM Leaderboard by SpeakLeash.\n* One answer per task, temperature 0 (seed 42), context 2k, thinking off. Yes, that means Qwen3 runs without its reasoning mode, which may cost it points \u2013 I wanted the same conditions for every model.\n* Graded with regular expressions, strict on purpose: \"brz\u0119cza\u0142y\" (\"buzzed\") instead of \"brzmia\u0142y\" (\"sounded\") fails, because the task said \"change the tense\", not \"rephrase\". \\[I checked every failed answer by hand.\\]\n* Some failures are about instruction-following, not language: asked to restore Polish diacritics, one model replied \"Read the spelling rules.\" \\[(translated)\\]\n* Generated code is only parsed (Python \\`ast\\`), never executed.\n* The questions are in the repo (\\`data/benchmarks/\\*.json\\`) \u2013 feel free to add or fix them.\n\nThe test runs inside a free, open-source tool I've been building (Windows .exe / Python on Linux). Its main job is predicting whether a model fits your VRAM/RAM before you download it. Link in the comments if anyone wants to try it \u2013 I'm considering adding tests for other languages.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xomsxq/i_was_curious_how_small_local_models_handle/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I wanted to know how small local models handle my native language, not just English. I couldn't find a simple way to check a model's Polish in a few minutes, on my own PC, in the quantization I actually run \u2013 so I wrote one. That's how \"Zacharski tests\" started: a small task set that runs through Ollama, since that's what I use on my laptop with an RTX 5050 (8 GB).\n\n**The tasks:**\n\n1. **Polish (8)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "I don't think human-in-the-loop holds up",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "I don't think human-in-the-loop holds up",
+        "seed_score": 22.5,
+        "summary": "I don't think human-in-the-loop holds up for coding agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "I don't think human-in-the-loop holds up for coding agents",
+            "body": "I don't think human-in-the-loop holds up for coding agents",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xovmyh/i_dont_think_humanintheloop_holds_up_for_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "I don't think human-in-the-loop holds up for coding agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 19.5,
+        "summary": "My biggest, and really the only problem with coding with AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "My biggest, and really the only problem with coding with AI",
+            "body": "My biggest, and really the only problem with coding with AI",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xo93qw/my_biggest_and_really_the_only_problem_with/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.37,
+            "why_relevant": "Reddit listing",
+            "snippet": "My biggest, and really the only problem with coding with AI",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.37,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.48450000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI actually",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "AI actually",
+        "seed_score": 19.0919,
+        "summary": "Can you actually ship AI written code as a commercial product",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Can you actually ship AI written code as a commercial product",
+            "body": "Can you actually ship AI written code as a commercial product",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xnn02m/can_you_actually_ship_ai_written_code_as_a/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing",
+            "snippet": "Can you actually ship AI written code as a commercial product",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 10,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.248
+          }
+        ]
+      }
+    }
+  ]
+}

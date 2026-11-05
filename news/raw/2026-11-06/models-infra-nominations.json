@@ -1,0 +1,845 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "33ee02a8c0a93f3b",
+  "generated_at": "2026-11-05T23:56:21.508890Z",
+  "from_date": "2026-11-04",
+  "to_date": "2026-11-05",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-05T23:56:21.452671Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-05T23:56:21.452682Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 15,
+      "attempted": true,
+      "at": "2026-11-05T23:56:21.191123Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 134,
+      "attempted": true,
+      "at": "2026-11-05T23:56:21.452420Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Kimi K3.1 Pro",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 184,
+          "points": 618
+        },
+        "reddit": {
+          "num_comments": 62
+        }
+      },
+      "nomination": {
+        "name": "Kimi K3.1 Pro",
+        "seed_score": 1657.8969,
+        "summary": "Kimi K3.1 Pro model weights are out",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50366999",
+            "source": "hackernews",
+            "title": "Kimi K3.1 Pro model weights are out",
+            "body": "Kimi K3.1 Pro model weights are out",
+            "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+            "author": "abrarthought",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 618,
+              "comments": 184
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Kimi K3.1 Pro model weights are out",
+            "snippet": "Kimi K3.1 Pro model weights are out",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50366999",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 88,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15200000000000002
+          },
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "CCORE GLB-3D-Coder 4B final model and full weights are out",
+            "body": "CCORE GLB-3D-Coder 4B final model and full weights are out",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xobe4h/ccore_glb3dcoder_4b_final_model_and_full_weights/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 332,
+              "num_comments": 62
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "CCORE GLB-3D-Coder 4B final model and full weights are out",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Qwen be like",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 102
+        }
+      },
+      "nomination": {
+        "name": "Qwen be like",
+        "seed_score": 1213.5,
+        "summary": "Qwen be like",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Qwen be like",
+            "body": "Qwen be like",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xobzg3/qwen_be_like/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 707,
+              "num_comments": 102
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing",
+            "snippet": "Qwen be like",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.383
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 627,
+          "points": 499
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 1194.3034,
+        "summary": "Ask HN: What's your current AI agentic setup?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50366117",
+            "source": "hackernews",
+            "title": "Ask HN: What's your current AI agentic setup?",
+            "body": "Ask HN: What's your current AI agentic setup?",
+            "url": "https://news.ycombinator.com/item?id=50366117",
+            "author": "eggbrain",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 499,
+              "comments": 627
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Ask HN: What's your current AI agentic setup?",
+            "snippet": "Ask HN: What's your current AI agentic setup?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50366117",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Discord Electron RAM",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 322,
+          "points": 372
+        }
+      },
+      "nomination": {
+        "name": "Discord Electron RAM",
+        "seed_score": 1041.0,
+        "summary": "Discord is ditching Electron and its new app uses less RAM",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50378625",
+            "source": "hackernews",
+            "title": "Discord is ditching Electron and its new app uses less RAM",
+            "body": "Discord is ditching Electron and its new app uses less RAM",
+            "url": "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app",
+            "author": "archb",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 372,
+              "comments": 322
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Discord is ditching Electron and its new app uses less RAM",
+            "snippet": "Discord is ditching Electron and its new app uses less RAM",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50378625",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 87,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Nvidia RTX Spark 35 Linux",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 286,
+          "points": 608
+        }
+      },
+      "nomination": {
+        "name": "Nvidia RTX Spark 35 Linux",
+        "seed_score": 948.2302,
+        "summary": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50362905",
+            "source": "hackernews",
+            "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+            "body": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+            "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+            "author": "novaRom",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 608,
+              "comments": 286
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Nvidia RTX Spark encrypted firmware slows inference speed to",
+            "snippet": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50362905",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 93,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14400000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Gemini trains",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 182,
+          "points": 705
+        }
+      },
+      "nomination": {
+        "name": "Gemini trains",
+        "seed_score": 940.8056,
+        "summary": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50363461",
+            "source": "hackernews",
+            "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+            "body": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+            "url": "https://news.ycombinator.com/item?id=50363461",
+            "author": "jameslk",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 705,
+              "comments": 182
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Tell HN: Gemini trains on chat history, even for subscribers",
+            "snippet": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50363461",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 90,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14100000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "METR reveals Anthropic unreleased Model 4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 103
+        }
+      },
+      "nomination": {
+        "name": "METR reveals Anthropic unreleased Model 4",
+        "seed_score": 867.0,
+        "summary": "METR reveals Anthropic's unreleased Model 4, trained in September\u2013October 2026, scored 178.6 on the AI capability index, a jump nearly 90% as large as the entire improvement from Opus 4.6 to Mythos 5.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R70",
+            "source": "reddit",
+            "title": "METR reveals Anthropic's unreleased Model 4, trained in September\u2013October 2026, scored 178.6 on the AI capability index, a jump nearly 90% as large as the entire improvement from Opus 4.6 to Mythos 5.",
+            "body": "METR reveals Anthropic's unreleased Model 4, trained in September\u2013October 2026, scored 178.6 on the AI capability index, a jump nearly 90% as large as the entire improvement from Opus 4.6 to Mythos 5.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xorf5c/metr_reveals_anthropics_unreleased_model_4/",
+            "container": "singularity",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 475,
+              "num_comments": 103
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "METR reveals Anthropic's unreleased Model 4, trained in September\u2013October 2026, scored 178.6 on the AI capability index, a jump nearly 90% as large as the entire improvement from Opus 4.6 to Mythos 5.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3215
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Vibe-coders Github README Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 120
+        }
+      },
+      "nomination": {
+        "name": "Vibe-coders Github README Claude",
+        "seed_score": 786.0,
+        "summary": "Vibe-coders, I beg you: when posting your app or tool on Github, please edit the README to remove Claude's fluff",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Vibe-coders, I beg you: when posting your app or tool on Github, please edit the README to remove Claude's fluff",
+            "body": "Vibe-coders, I beg you: when posting your app or tool on Github, please edit the README to remove Claude's fluff",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xoj99r/vibecoders_i_beg_you_when_posting_your_app_or/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 404,
+              "num_comments": 120
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Vibe-coders, I beg you: when posting your app or tool on Github, please edit the README to remove Claude's fluff",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35300000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "3",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 59
+        }
+      },
+      "nomination": {
+        "name": "3",
+        "seed_score": 757.5,
+        "summary": "used claude code to figure out how airpods 3 send head tracking data, turns out nobody had done it before",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "used claude code to figure out how airpods 3 send head tracking data, turns out nobody had done it before",
+            "body": "used claude code to figure out how airpods 3 send head tracking data, turns out nobody had done it before",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xodizg/used_claude_code_to_figure_out_how_airpods_3_send/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 446,
+              "num_comments": 59
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "used claude code to figure out how airpods 3 send head tracking data, turns out nobody had done it before",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.324
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "OpenAI GPT\u20116 Cyber GPT\u20115.6 Cyber",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 64
+        }
+      },
+      "nomination": {
+        "name": "OpenAI GPT\u20116 Cyber GPT\u20115.6 Cyber",
+        "seed_score": 712.5,
+        "summary": "OpenAI has just announced GPT\u20116 Cyber, a major step up from GPT\u20115.6 Cyber and outperforms GPT\u20116 Astra on most cyber tasks",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R71",
+            "source": "reddit",
+            "title": "OpenAI has just announced GPT\u20116 Cyber, a major step up from GPT\u20115.6 Cyber and outperforms GPT\u20116 Astra on most cyber tasks",
+            "body": "OpenAI has just announced GPT\u20116 Cyber, a major step up from GPT\u20115.6 Cyber and outperforms GPT\u20116 Astra on most cyber tasks",
+            "url": "https://www.reddit.com/r/singularity/comments/1xoo9ob/openai_has_just_announced_gpt6_cyber_a_major_step/",
+            "container": "singularity",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 411,
+              "num_comments": 64
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "OpenAI has just announced GPT\u20116 Cyber, a major step up from GPT\u20115.6 Cyber and outperforms GPT\u20116 Astra on most cyber tasks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3565
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Former York Times",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 134
+        }
+      },
+      "nomination": {
+        "name": "Former York Times",
+        "seed_score": 699.0,
+        "summary": "Former New York Times and Washington Post tech reporter Taylor Lorenz says she's being offered money to promote an anti-AI campaign\u2014which cited her own investigation into paid anti-AI influence campaigns as the reason for recruiting her.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R78",
+            "source": "reddit",
+            "title": "Former New York Times and Washington Post tech reporter Taylor Lorenz says she's being offered money to promote an anti-AI campaign\u2014which cited her own investigation into paid anti-AI influence campaigns as the reason for recruiting her.",
+            "body": "Former New York Times and Washington Post tech reporter Taylor Lorenz says she's being offered money to promote an anti-AI campaign\u2014which cited her own investigation into paid anti-AI influence campaigns as the reason for recruiting her.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xo8ykt/former_new_york_times_and_washington_post_tech/",
+            "container": "singularity",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 332,
+              "num_comments": 134
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing",
+            "snippet": "Former New York Times and Washington Post tech reporter Taylor Lorenz says she's being offered money to promote an anti-AI campaign\u2014which cited her own investigation into paid anti-AI influence campaigns as the reason for recruiting her.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31300000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "GPT-6 Astra",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 146,
+          "points": 275
+        }
+      },
+      "nomination": {
+        "name": "GPT-6 Astra",
+        "seed_score": 631.5,
+        "summary": "GPT-6 Astra covertly underperforms on safety research",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50376313",
+            "source": "hackernews",
+            "title": "GPT-6 Astra covertly underperforms on safety research",
+            "body": "GPT-6 Astra covertly underperforms on safety research",
+            "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
+            "author": "lucrbvi",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 275,
+              "comments": 146
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about GPT-6 Astra covertly underperforms on safety research",
+            "snippet": "GPT-6 Astra covertly underperforms on safety research",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50376313",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.337
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Go API JSON",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 199,
+          "points": 385
+        }
+      },
+      "nomination": {
+        "name": "Go API JSON",
+        "seed_score": 619.4255,
+        "summary": "A new Go API for JSON",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50369106",
+            "source": "hackernews",
+            "title": "A new Go API for JSON",
+            "body": "A new Go API for JSON",
+            "url": "https://go.dev/blog/jsonv2",
+            "author": "olexsmir",
+            "container": "Hacker News",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 385,
+              "comments": 199
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about A new Go API for JSON",
+            "snippet": "A new Go API for JSON",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50369106",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 82,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14600000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "MCP Explained",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 109,
+          "points": 223
+        }
+      },
+      "nomination": {
+        "name": "MCP Explained",
+        "seed_score": 498.0,
+        "summary": "MCP Explained",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50379249",
+            "source": "hackernews",
+            "title": "MCP Explained",
+            "body": "MCP Explained",
+            "url": "https://mcp-explained.com/",
+            "author": "rwilinski",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 223,
+              "comments": 109
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about MCP Explained",
+            "snippet": "MCP Explained",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50379249",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.8,
+            "local_rank_score": 0.369
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Claude Code sends",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 71,
+          "points": 253
+        }
+      },
+      "nomination": {
+        "name": "Claude Code sends",
+        "seed_score": 486.0,
+        "summary": "Claude Code sends your email address to websites",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50385272",
+            "source": "hackernews",
+            "title": "Claude Code sends your email address to websites",
+            "body": "Claude Code sends your email address to websites",
+            "url": "https://github.com/anthropics/claude-code/issues/107757",
+            "author": "motoroco",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 253,
+              "comments": 71
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Claude Code sends your email address to websites",
+            "snippet": "Claude Code sends your email address to websites",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50385272",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.8,
+            "local_rank_score": 0.327
+          }
+        ]
+      }
+    }
+  ]
+}

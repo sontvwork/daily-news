@@ -1,0 +1,836 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "76f0304c6a1a0958",
+  "generated_at": "2026-11-05T23:55:58.364210Z",
+  "from_date": "2026-11-04",
+  "to_date": "2026-11-05",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-05T23:55:58.329133Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-05T23:55:58.329142Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-11-05T23:55:58.253090Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 53,
+      "attempted": true,
+      "at": "2026-11-05T23:55:58.328903Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Code sends",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 71,
+          "points": 253
+        }
+      },
+      "nomination": {
+        "name": "Claude Code sends",
+        "seed_score": 486.0,
+        "summary": "Claude Code sends your email address to websites",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50385272",
+            "source": "hackernews",
+            "title": "Claude Code sends your email address to websites",
+            "body": "Claude Code sends your email address to websites",
+            "url": "https://github.com/anthropics/claude-code/issues/107757",
+            "author": "motoroco",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 253,
+              "comments": 71
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Claude Code sends your email address to websites",
+            "snippet": "Claude Code sends your email address to websites",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50385272",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "MS Paint Remote Code Execution Vulnerability",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 66,
+          "points": 238
+        }
+      },
+      "nomination": {
+        "name": "MS Paint Remote Code Execution Vulnerability",
+        "seed_score": 456.0,
+        "summary": "MS Paint Remote Code Execution Vulnerability",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50384233",
+            "source": "hackernews",
+            "title": "MS Paint Remote Code Execution Vulnerability",
+            "body": "MS Paint Remote Code Execution Vulnerability",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 238,
+              "comments": 66
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about MS Paint Remote Code Execution Vulnerability",
+            "snippet": "MS Paint Remote Code Execution Vulnerability",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50384233",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 95,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35250000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "ICLR 2027 Reviews Discussion D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 167
+        }
+      },
+      "nomination": {
+        "name": "ICLR 2027 Reviews Discussion D",
+        "seed_score": 364.5,
+        "summary": "ICLR 2027 Reviews Discussion [D]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "ICLR 2027 Reviews Discussion [D]",
+            "body": "ICLR 2027 Reviews Discussion [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xo6yzo/iclr_2027_reviews_discussion_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 76,
+              "num_comments": 167
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "ICLR 2027 Reviews Discussion [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Hungary Communist-era 60k",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 27,
+          "points": 127
+        }
+      },
+      "nomination": {
+        "name": "Hungary Communist-era 60k",
+        "seed_score": 231.0,
+        "summary": "Hungary: Communist-era files released, up to 60k former agents revealed",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50383163",
+            "source": "hackernews",
+            "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
+            "body": "Hungary: Communist-era files released, up to 60k former agents revealed",
+            "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+            "author": "rdmuser",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 127,
+              "comments": 27
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Hungary: Communist-era files released, up to 60k former agen",
+            "snippet": "Hungary: Communist-era files released, up to 60k former agents revealed",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50383163",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3035
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "DeepSeek-V4.1-Flash-1017 RTX 3090 Big updates",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek-V4.1-Flash-1017 RTX 3090 Big updates",
+        "seed_score": 177.0,
+        "summary": "DeepSeek-V4.1-Flash-1017 on one RTX 3090: Big updates to the Delta Inference Engine v0.93. Same 41 tok/s at 192GB/IQ2 at better quality, usable from 64 GB RAM, first token ~40% sooner, new Unsloth quants at full speed, EXL3, basic multi-GPU, public CI and more",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "DeepSeek-V4.1-Flash-1017 on one RTX 3090: Big updates to the Delta Inference Engine v0.93. Same 41 tok/s at 192GB/IQ2 at better quality, usable from 64 GB RAM, first token ~40% sooner, new Unsloth quants at full speed, EXL3, basic multi-GPU, public CI and more",
+            "body": "DeepSeek-V4.1-Flash-1017 on one RTX 3090: Big updates to the Delta Inference Engine v0.93. Same 41 tok/s at 192GB/IQ2 at better quality, usable from 64 GB RAM, first token ~40% sooner, new Unsloth quants at full speed, EXL3, basic multi-GPU, public CI and more",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xoq4vq/deepseekv41flash1017_on_one_rtx_3090_big_updates/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 98,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "DeepSeek-V4.1-Flash-1017 on one RTX 3090: Big updates to the Delta Inference Engine v0.93. Same 41 tok/s at 192GB/IQ2 at better quality, usable from 64 GB RAM, first token ~40% sooner, new Unsloth quants at full speed, EXL3, basic multi-GPU, public CI and more",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.334
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Building Multi-Agent System Scratch Architecture Patterns",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 24,
+          "points": 69
+        },
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Building Multi-Agent System Scratch Architecture Patterns",
+        "seed_score": 161.6448,
+        "summary": "Building a Multi-Agent System from Scratch: Architecture Patterns",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50380658",
+            "source": "hackernews",
+            "title": "Building a Multi-Agent System from Scratch: Architecture Patterns",
+            "body": "Building a Multi-Agent System from Scratch: Architecture Patterns",
+            "url": "https://kadhar.dev/blog/multi-agent-systems-from-scratch",
+            "author": "kadharmfn",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 69,
+              "comments": 24
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Building a Multi-Agent System from Scratch: Architecture Pat",
+            "snippet": "Building a Multi-Agent System from Scratch: Architecture Patterns",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50380658",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 21,
+            "source_quality": 0.8,
+            "local_rank_score": 0.246
+          },
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Not Every Multi-Agent System Is a Swarm",
+            "body": "Not Every Multi-Agent System Is a Swarm",
+            "url": "https://www.reddit.com/r/LangChain/comments/1xnny9s/not_every_multiagent_system_is_a_swarm/",
+            "container": "LangChain",
+            "published_at": "2026-11-04",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Not Every Multi-Agent System Is a Swarm",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.027000000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Rivet YC W23 Scale Orchestrate Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 37,
+          "points": 70
+        }
+      },
+      "nomination": {
+        "name": "Rivet YC W23 Scale Orchestrate Agents",
+        "seed_score": 160.5,
+        "summary": "Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on S3",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50381687",
+            "source": "hackernews",
+            "title": "Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on S3",
+            "body": "Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on S3",
+            "url": "https://github.com/rivet-dev/rivet",
+            "author": "NathanFlurry",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 70,
+              "comments": 37
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on",
+            "snippet": "Launch HN: Rivet (YC W23) \u2013 Scale and Orchestrate Agents on S3",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50381687",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2915
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 145.5,
+        "summary": "Why a crow bending wire explains what's missing in LLM coding agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Why a crow bending wire explains what's missing in LLM coding agents",
+            "body": "Why a crow bending wire explains what's missing in LLM coding agents",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xo4byn/why_a_crow_bending_wire_explains_whats_missing_in/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 51,
+              "num_comments": 46
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Why a crow bending wire explains what's missing in LLM coding agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Stroq",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 13,
+          "points": 62
+        }
+      },
+      "nomination": {
+        "name": "Stroq",
+        "seed_score": 112.5,
+        "summary": "Show HN: Stroq \u2013 a local audit of what your coding agent did and why",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50380704",
+            "source": "hackernews",
+            "title": "Show HN: Stroq \u2013 a local audit of what your coding agent did and why",
+            "body": "Show HN: Stroq \u2013 a local audit of what your coding agent did and why",
+            "url": "https://github.com/AGGIB/Stroq",
+            "author": "agybay_07",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 62,
+              "comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Show HN: Stroq \u2013 a local audit of what your coding agent did",
+            "snippet": "Show HN: Stroq \u2013 a local audit of what your coding agent did and why",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50380704",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "GUIDE Qwen3.8 Flash-Next RTX 5080",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "GUIDE Qwen3.8 Flash-Next RTX 5080",
+        "seed_score": 108.0,
+        "summary": "[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp",
+            "body": "[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xomy0i/guide_qwen38_flashnext_on_a_single_rtx_5080_64gb/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 47,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "Agent",
+        "seed_score": 99.0,
+        "summary": "I want to make my own Agent. Is it possible?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "I want to make my own Agent. Is it possible?",
+            "body": "I want to make my own Agent. Is it possible?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xogazs/i_want_to_make_my_own_agent_is_it_possible/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "I want to make my own Agent. Is it possible?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.297
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Which harness/tool should I use",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "Which harness/tool should I use",
+        "seed_score": 78.0,
+        "summary": "I've been taking a break from AI stuff for a long time, and things move kinda quickly so basically everything is new to me now and I'm struggling to get my bearings. I looked for a sticky or sidebar info with the basics but couldn't find anything so that's why I'm coming to you with a basic noob question.\n\nAt a high level here's what I'm looking for:\n\nI want to run AI locally, obviously that's why",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R80",
+            "source": "reddit",
+            "title": "Which harness/tool should I use?",
+            "body": "Which harness/tool should I use?\nI've been taking a break from AI stuff for a long time, and things move kinda quickly so basically everything is new to me now and I'm struggling to get my bearings. I looked for a sticky or sidebar info with the basics but couldn't find anything so that's why I'm coming to you with a basic noob question.\n\nAt a high level here's what I'm looking for:\n\nI want to run AI locally, obviously that's why I'm here in this sub.\n\nI don't want a super powerful environment that gives the model crazy capabilities, because I find that scary and I don't trust it.\n\nI do want some basic capabilities though.\n\nIn particular:\n\nI don't want filesystem access (not even readonly) except when I explicitly give it permission e.g. with a filepicker or whitelisting some folder.\n\nI don't want it to go on the internet and mess around on my behalf.\n\nWriting code for me is a nice to have.\n\nI DO want it to have persistent memory. I do want it to be send me notifications (remember to do this thing, how is project x going, here is your daily brief). I do want it to manage a calendar on my behalf (one it will have exclusive access to, not my normal one, I don't trust it with that).\n\nWhat I evaluated:\n\nOllama: Seems pretty basic. It avoids doing dangerous stuff, but lacks features I want. Very nice that it can support other tools.\n\nHermes: I looked through skills, found an NVIDIA skill (big name reassuring) for writing an [ethos.md](http://ethos.md) Okay sounds like a good thing to get started. I try using it and it immediately starts running like 30 commands looking through my filesystem. I'm sorry but wtf no this is too much.\n\nOpenclaw: It tried to prompt me for a lot of permissions when I started it. I tried saying no to everything, but it still seemed to allow too many things. Maybe it's not as scary as it sounds and I'm considering giving it a second look\n\nSentient: Small name but it seemed very close to what I wanted. However when I ran it I had some issues. I closed the app but it stayed running in the background and when I was gaming it decided to do some memory compaction trashing my framerate. It forgot stuff I told it to remember, and I didn't get notifications I asked for.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xokhyq/which_harnesstool_should_i_use/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been taking a break from AI stuff for a long time, and things move kinda quickly so basically everything is new to me now and I'm struggling to get my bearings. I looked for a sticky or sidebar info with the basics but couldn't find anything so that's why I'm coming to you with a basic noob question.\n\nAt a high level here's what I'm looking for:\n\nI want to run AI locally, obviously that's why",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39499999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 34
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 67.5,
+        "summary": "Is anyone here actually using multiple AI agents daily?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Is anyone here actually using multiple AI agents daily?",
+            "body": "Is anyone here actually using multiple AI agents daily?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xosyqu/is_anyone_here_actually_using_multiple_ai_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 34
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone here actually using multiple AI agents daily?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.441
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 30
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 64.5,
+        "summary": "An AI agent that knows when to stop is more useful than one that tries to do everything.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "An AI agent that knows when to stop is more useful than one that tries to do everything.",
+            "body": "An AI agent that knows when to stop is more useful than one that tries to do everything.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xoa3rf/an_ai_agent_that_knows_when_to_stop_is_more/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 30
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "An AI agent that knows when to stop is more useful than one that tries to do everything.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Deepseek HDMI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Deepseek HDMI",
+        "seed_score": 58.5,
+        "summary": "Deepseek fixed my HDMI display show case",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Deepseek fixed my HDMI display show case",
+            "body": "Deepseek fixed my HDMI display show case",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xoql51/deepseek_fixed_my_hdmi_display_show_case/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 29,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "Deepseek fixed my HDMI display show case",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    }
+  ]
+}

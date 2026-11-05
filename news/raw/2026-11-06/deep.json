@@ -1,0 +1,229 @@
+{
+ "date": "2026-11-06",
+ "runs": [
+  {
+   "started_at": "2026-11-05T23:58:34+00:00",
+   "seconds": 2.4,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 4,
+   "articles_error": 3,
+   "articles_skipped": 0,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…": 1,
+    "HTTP 404 Not Found — 404: Not Found": 1,
+    "HTTP 403 Forbidden — {\"message\":\"GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you…": 1
+   },
+   "summary": "4/7 bài gốc ok (0 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.4s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+   "article": {
+    "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes…"
+   }
+  },
+  {
+   "url": "https://github.com/charmbracelet/crush/releases/tag/v0.100.0",
+   "article": {
+    "url": "https://github.com/charmbracelet/crush/releases/tag/v0.100.0",
+    "status": "error",
+    "reason": "HTTP 404 Not Found — 404: Not Found"
+   }
+  },
+  {
+   "url": "https://cursor.com/changelog/build-live-apps",
+   "article": {
+    "url": "https://cursor.com/changelog/build-live-apps",
+    "status": "ok",
+    "title": "Build Live Apps in Cursor · Cursor",
+    "chars": 5159,
+    "text": "Nov 5, 2026 · Changelog\nChangelog\nBuild Live Apps in Cursor\nAgents have lowered the cost of writing code, but most apps and tools that users build never make it off of localhost.\nNow, you can build live apps directly in Cursor and share them with a link. Describe what you want to create and Cursor will handle the rest: build the app, set up a database, configure auth, and deploy it.\nWith this release, anyone in your org can now build useful tools for their work and share them with teammates. Update Cursor to try it out.\n#How it works\nTo get started, kick off a cloud agent and tell it explicitly that you want to build an app.\nCursor will scaffold the web app, spin up a Postgres database if needed, set up authentication behind Cursor SSO, and provision hosting. If the app needs to connect to your systems, like a data warehouse, Cursor will ask for the secrets it needs.\nWhen you go to publish your app, you pick a unique domain and Cursor gets you back a live link.\nAt Cursor, users across sales, operations, legal, finance, and engineering are building internal apps. Some of the most useful ones are:\nInternal ops tools for event registration, account assignments, and desk seating\nMultimedia presentations for customers that combine slides, videos, and interactive demos\nTraining, enablement, and onboarding experiences for new hires\nLive dashboards and tools for sales teams to understand their pipeline and opportunities\nPortals to manage engineering services\nCursor can deploy apps from new or existing repos across Cursor Origin and GitHub. Support for other git providers like GitLab is coming soon.\n#Controls and guardrails\nWhen you publish an app, Cursor will run deterministic and agentic security checks to catch common issues, like secrets written in app files or exposed credentials. If a check fails, the agent tells you what it needs to fix. Nothing goes live until the checks pass and you explicitly publish the app.\nTeam admins can see every app and secret on the team. They can also add their own rules to the security review, approve publishes the review blocked, and unpublish any app.\n#Share with your team\nOnce the checks pass, Cursor deploys the app to the URL you chose. You can then share your app with specific people, groups, or your entire team, all behind Cursor sign-in. On individual plans, you can also share apps publicly.\nYou can also provision a Cursor API key if you want a script or Grok Bot to use your app.\n#Get started\nThis capability is now available on all paid plans with cloud agents enabled. Learn more by reading our docs.\nNov 5, 2026 · Changelog\nChangelog\nBuild Live Apps in Cursor\nAgents have lowered the cost of writing code, but most apps and tools that users build never make it off of localhost.\nNow, you can build live apps directly in Cursor and share them with a link. Describe what you want to create and Cursor will handle the rest: build the app, set up a database, configure auth, and deploy it.\nWith this release, anyone in your org can now build useful tools for their work and share them with teammates. Update Cursor to try it out.\n#How it works\nTo get started, kick off a cloud agent and tell it explicitly that you want to build an app.\nCursor will scaffold the web app, spin up a Postgres database if needed, set up authentication behind Cursor SSO, and provision hosting. If the app needs to connect to your systems, like a data warehouse, Cursor will ask for the secrets it needs.\nWhen you go to publish your app, you pick a unique domain and Cursor gets you back a live link.\nAt Cursor, users across sales, operations, legal, finance, and engineering are building internal apps. Some of the most useful ones are:\nInternal ops tools for event registration, account assignments, and desk seating\nMultimedia presentations for customers that combine slides, videos, and interactive demos\nTraining, enablement, and onboarding experiences for new hires\nLive dashboards and tools for sales teams to understand their pipeline…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50381687",
+   "hn_url": "https://news.ycombinator.com/item?id=50381687",
+   "hn": {
+    "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
+    "points": 70,
+    "comments": 37,
+    "text": "Hey HN, this is Nathan and Nicholas from Rivet (https://rivet.dev) – a fast, high-density, and scalable orchestrator for agentic workloads using the actor model. Rather than running a heavyweight sandbox per agent, each agent gets a lightweight actor backed by S3.\nActors provide a long-lived process for long agent turns, in-memory state for context, a WebSocket server for multiplayer, durable SQLite storage backed by S3, and hibernation when idle.\nIt's a similar model to Cloudflare Durable Objects, but it’s open source and self-hostable.\nHere’s a video walkthrough: https://www.youtube.com/watch?v=3Ev6I7DOV9c\nWhen we went through YC in 2023, we were building infrastructure for multiplayer games like Diep and Krunker. This involved heavily optimizing high-throughput matchmaking, real-time player messages, and blitz scaling. Through that process, we spent a lot of time on workloads where Postgres couldn't keep up with our throughput. We started out by hacking together Lua scripts on top of Redis, but this became too cumbersome to maintain and upgrade. This led us to extend our game server orchestrator to support what we call Rivet Actors today: many lightweight workers with in-memory state and durable storage. By using actors, we were able to serve tens of millions of monthly active users.\nAs agents grew in popularity, it became clear that running agents in sandboxes is inefficient. Sandboxes are expensive, mostly idle, and slow to start. Developers started using actors because they are far more memory efficient (72 KB baseline for actors vs 512 MB for a minimal sandbox) and fast to start (4.9 ms p99 for actors vs 1.7 s p99 for sandboxes).\nFor example, Amp is using Rivet to orchestrate multiplayer agents. They originally tried to build on Cloudflare Durable Objects, but couldn’t launch because of the platform’s limitations and unresponsive support. They migrated to Rivet Actors in a weekend and deploy on-prem. Rivet’s flexible architecture lets them adapt it to their own use cases without being constrained by a framework or the memory, storage, and runtime limits of Cloudflare Durable Objects.\nUnder the hood, Rivet is backed by S3 while maintaining SSD speeds.\nWhy S3? Previously, Rivet ran on FoundationDB. However, we were surprised to find that companies are storing orders of magnitude more data on Rivet Actors than in Postgres, such as large session transcripts, agent artifacts, and full POSIX filesystems. As their data grew, they had to start paying for SSDs that sat mostly idle with old transcripts. This led us to double down on S3 as our primary storage medium without sacrificing performance. This choice means that data stored on Rivet is 10× cheaper than on EBS gp3 while maintaining SSD speeds.\nIt’s not as simple as writing data straight to S3. Lots of PUTs for tiny blobs of data are slow and expensive. Instead, we use an SSD tier to optimize speed and cost:\nWhen you write data to an actor’s SQLite database, the write is acknowledged once SSDs in 2 of 3 availability zones have it. Then, the data is batched to S3 in the background. This means that S3 is never on the write path, which lowers latency and cost. When reading data or waking an actor, Rivet reads from SSDs if already cached and falls back to S3 if not. SSD caches can be tuned to meet your needs, giving you configurable tiered storage for your actors.\nThis architecture lets Rivet provide 1.07 ms durable writes (3 AZ, p99), 1.36 ms reads (p99), and 138 ms reads from object storage (p99).\nWe’ve spent a lot of time making sure that Rivet can run wherever you need it. Self-hosting requires deploying a single Rust binary with S3 as the only dependency, Rivet Cloud lets you deploy dedicated clusters on AWS or GCP in any region, and BYOC lets us deploy Rivet to your VPC without having to operate it yourself. Rivet also runs identically in local dev as in production, since Rivet is a lightweight binary that runs anywhere\nRivet Actors can be written in TypeScript or Rust.…"
+   },
+   "comments": [
+    {
+     "author": "kianN",
+     "replies": 1,
+     "text": "> When you write data to an actor’s SQLite database, the write is acknowledged once SSDs in 2 of 3 availability zones have it. Then, the data is batched to S3 in the background. This means that S3 is never on the write path, which lowers latency and cost. When reading data or waking an actor, Rivet reads from SSDs if already cached and falls back to S3 if not. SSD caches can be tuned to meet your needs, giving you configurable tiered storage for your actors.\nAs someone who is not incredibly…"
+    },
+    {
+     "author": "fastball",
+     "replies": 2,
+     "text": "Rivet is very cool. Switched a Cloudflare Durable Object piece of our infrastructure that lived in its own little fairy tale land to our own infra within the rest of our VPC. Was a very pleasant experience.\nHaven't had the chance to try Rivet v3 yet but hoping to get to it soon."
+    },
+    {
+     "author": "Upbiddr",
+     "replies": 1,
+     "text": "Congrats on the launch! The explanation of keeping S3 off the write path made the storage model much easier to understand. For someone starting with a small self-hosted deployment, what tends to be the first operational challenge as usage grows?"
+    },
+    {
+     "author": "wsxiaoys",
+     "replies": 1,
+     "text": "Same problem here. Internally we simulated it with just-bash plus whatever\nfilesystem was handy. For production we went with DO\nafter surveying their agent ecosystem, but it has since split into two paths\n(@cloudflare/agents or think vs. @cloudflare/computer) with real trade-offs. Rivet's s3 setup looks like a much closer fit for us — I'd want to try it on the\nnext project."
+    },
+    {
+     "author": "ATechGuy2",
+     "replies": 1,
+     "text": "Congrats on the launch! Rivet seems neat; will definitely give it a spin.\n> Sandboxes are expensive, mostly idle, and slow to start.\nMany sandboxing startups would disagree. Do you have any numbers to support?"
+    }
+   ],
+   "article": {
+    "url": "https://github.com/rivet-dev/rivet",
+    "status": "ok",
+    "title": "",
+    "chars": 15479,
+    "text": "Fast, high-density, scalable orchestration with Rivet Actors.Built on S3 at SSD speeds.\n4.99 ms p99 cold starts, 72 KB RAM per Actor, scales to billions\nQuickstart •\nDocumentation •\nBlog •\nDiscord •\nX\n## What is Rivet?\nRivet Actors are long-lived processes with in-memory state, a SQLite database, WebSockets, and scheduling. You can create one for each agent, user, session, or tenant.\n- **72 KB per Actor**: Actors share a node process instead of each booting a sandbox, so one server holds hundreds of thousands.\n- **4.99 ms p99 cold starts**: No image pull and no VM boot.\n- **Built for scale**: All data lives in S3, so a cluster scales to billions of Actors.\n- **Hibernates when idle, wakes on demand**: Idle Actors cost nothing and wake on the next request with nothing lost.\n- **SQLite backed by S3, at SSD speeds**: 1.07 ms durable writes and 1.36 ms reads at p99, for about 10.4× less than replicated SSD storage.\n### Use cases\n- **[Durable & multiplayer AI agents](https://www.rivet.dev/guides/ai-agent)**: memory that survives restarts, shared live with every client\n- **[Workflows](https://www.rivet.dev/workflows/docs)**: multi-step operations that replay instead of starting over\n- **[AI-generated apps](https://www.rivet.dev/dynamic-apps/docs)**: run the apps and Actors your agent generates\n- **[Collaborative editing](https://www.rivet.dev/guides/collaborative-text-editor)**: one Actor per document, synced to every editor\n### Example\nA minimal agent written from scratch. For a ready-made agent, use [Pi Durable](https://www.rivet.dev/agents/docs/quickstart/).\n```typescript\n// server.ts\nimport { actor, setup } from \"rivetkit\";\nimport { db } from \"rivetkit/db\";\nimport { streamText } from \"ai\";\nimport { openai } from \"@ai-sdk/openai\";\n// One Actor per agent, created on first use: agent.getOrCreate([\"agent-123\"])\nexport const agent = actor({\n// 1. SQLite: every agent has its own database, so history survives restarts\ndb: db({\nonMigrate: async (db) => {\nawait db.execute(\"CREATE TABLE IF NOT EXISTS messages (role TEXT, content TEXT)\");\n},\n}),\n// 2. In-memory state: plain variables that live with the Actor, with no database round trip\ncreateVars: () => ({ online: new Map() }),\n// 3. WebSockets: each client holds a live connection, and the Actor pushes to all of them\nonDisconnect: (c, conn) => {\nc.vars.online.delete(conn.id);\nc.broadcast(\"online\", [...c.vars.online.values()]);\n},\nactions: {\njoin: (c, user: string) => {\nc.vars.online.set(c.conn.id, user);\nc.broadcast(\"online\", [...c.vars.online.values()]);\n},\nsendMessage: async (c, text: string) => {\n// Save the message\nawait c.db.execute(\"INSERT INTO messages VALUES (?, ?)\", \"user\", text);\nconst messages = await c.db.execute(\"SELECT role, content FROM messages\");\n// Stream tokens to every connected client\nconst response = streamText({ model: openai(\"gpt-5\"), messages });\nfor await (const delta of response.textStream) {\nc.broadcast(\"token\", delta);\n}\n// Save the response\nawait c.db.execute(\"INSERT INTO messages VALUES (?, ?)\", \"assistant\", await response.text);\n},\n},\n});\nexport const registry = setup({ use: { agent } });\n```\n```typescript\n// client.ts (frontend or backend)\nimport { createClient } from \"rivetkit/client\";\nimport type { registry } from \"./server\";\nconst client = createClient();\n// Open a WebSocket connection to the agent\nconst agent = client.agent.getOrCreate([\"agent-123\"]).connect();\n// Listen for realtime events\nagent.on(\"online\", users => console.log(\"online:\", users));\nagent.on(\"token\", delta => process.stdout.write(delta));\n// Call actions on the Actor\nawait agent.join(\"nathan\");\nawait agent.sendMessage(\"how many r's in strawberry?\");\n```\n### Why run agents on Rivet Actors?\nEach Actor gives the agent a **long-lived process** for long agent turns, **in-memory state** for context, a **WebSocket server** for multiplayer, **durable SQLite storage** for session transcripts and agent artifacts, and **hibernation** when idle.\nMost of an agent's time is spent **waiting on…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50385272",
+   "hn_url": "https://news.ycombinator.com/item?id=50385272",
+   "hn": {
+    "title": "Claude Code sends your email address to websites",
+    "points": 266,
+    "comments": 76
+   },
+   "comments": [
+    {
+     "author": "mk89",
+     "replies": 0,
+     "text": "This explains the amount of spam emails I am receiving in the work email since I switched to Claude. I used to work with copilot which was fine. Now I am getting really a lot of spam emails almost on a daily basis. Absolutely crazy. And they are even personalised with my name and surname, not just \"dear customer\"...\nStupid me, I thought they somehow had hacked my company database or so... (considering all the cves, attacks happening on a daily basis...)."
+    },
+    {
+     "author": "msp26",
+     "replies": 0,
+     "text": "I have no idea why they decided injecting my email into the model's context was a useful thing to do without any config option."
+    },
+    {
+     "author": "mpoteat",
+     "replies": 9,
+     "text": "Hi folks. We were initially aware of this a few days ago when this problem started popping off on Reddit, and we introduced a built-in mod called `cc-plugin-privacy` to deterministically block this behavior.\nIf you're on 2.1.317 or later, you'll have this check included. You can turn it off via /plugins."
+    },
+    {
+     "author": "xlayn",
+     "replies": 0,
+     "text": "I use claude code... and I friking now that I'm being dumb and naive on thinking I can trust them... sounds like I'll have to start working on the jail thing for claude code to not see anything and only talk to anthropic servers... what a pain"
+    },
+    {
+     "author": "bassie123",
+     "replies": 0,
+     "text": "Even worse, it used curl with my org emailadress when I was using my private claude account... really strange."
+    }
+   ],
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/issues/107757",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — {\"message\":\"GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50366117",
+   "hn_url": "https://news.ycombinator.com/item?id=50366117",
+   "hn": {
+    "title": "Ask HN: What's your current AI agentic setup?",
+    "points": 499,
+    "comments": 627,
+    "text": "I'm curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course, just wanted to get a gut feel how people are using AI.\n1) What AI subscriptions are you personally paying for? (Claude, ChatGPT/Codex, Cursor, etc)\n- Which tiers?\n- Have you purchased multiple subscriptions from the same provider (eg two Claude accounts)?\n2) Are you using models outside (or instead) of those subscriptions? For example, pay-as-you-go APIs, OpenRouter, or locally hosted models.\n- Which models and providers?\n3) What coding harnesses and interfaces are you using? Are you sticking with the default CLIs or IDE integrations, or using alternatives like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses?\n- What made you switch harnesses (if you switched)?\n4) Are you using any agent orchestration or swarm tools?\n- For example, Munder Difflin, Gas Town, Ruflo, or something custom.\n5) Are you using broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse?\n- If you are using them, what are your main use cases?\n-----\nI know my workflow has differed significantly from a year ago, and so it would be interesting to capture a snapshot today of what people are using and why."
+   },
+   "comments": [
+    {
+     "author": "Animats",
+     "replies": 6,
+     "text": "Embarrassingly, I don't have one yet. I'm mostly still writing code one keystroke at a time. I've used Github Copilot to translate between languages and look things up, but haven't trusted it to write new code or fix anything.\nClaude Fable is now good enough that I should be using it. The latest Claude version is said to be comparable to a mid-career graphics programmer, which is about what I need. Six months ago it wasn't good enough to use for such work, and probably would have made a hash of…"
+    },
+    {
+     "author": "monch1962",
+     "replies": 0,
+     "text": "For home, I'm using Deepseek-v4.1-flash via both a direct subscription and OpenRouter. The price is unbeatable, and the latest versions are advancing in leaps and bounds. OpenRouter is for those times when I want access to a different model, but 90+% of the time I'm using Deepseek\nFor work, we have a custom setup that gives me access to just about any model from any provider.\nFor coding, I'm using Opencode/Openchamber. There's probably better options around nowadays, but it's working really…"
+    },
+    {
+     "author": "thefourthchime",
+     "replies": 7,
+     "text": "It used to be more interesting and elaborate, switching between different models. I used to use Cursor, then Codex, but since Opus 5.5 came out, I just use the Claude IDE. I got rid of all my skills and just set it to medium. Then I vaguely talk to it about very high-end things that I want, and it comes back with magic. Rinse and repeat.\nI'd say the biggest trick is just to tell it what complete looks like. Be very specific about what you want it to come back with once it's done. That gives it…"
+    },
+    {
+     "author": "bloppe",
+     "replies": 1,
+     "text": "I recently got really weird with my personal computer after discovering browser DevTools MCP. I basically inverted the relationship between browser and desktop environment, booting directly to a browser in kiosk mode (with Ghostty quick terminal as well, so I always have easy terminal access) and running a local Weston server that shows up as a bookmarked web page on localhost, streamed over vnc, so I can still use legacy gui apps pretty normally if I need to, but I've basically refocused my…"
+    },
+    {
+     "author": "gregwebs",
+     "replies": 0,
+     "text": "1-2) Claude $20/mo (planner) Codex $20/mo (reviewer) Deepseek $1-3/day workhorse.\n4) A standard /implement skill creates separate agents for different parts of the workflow. It uses Claude for planning, codex for reviewing, and deepseek for doing and orchestrating. https://github.com/gregwebs/skills-sdlc. I also have a plugin for switching between providers when quota gets low: https://github.com/gregwebs/pi-quota-dispatcher\nI can produce a significant amount of low-defect production quality…"
+    }
+   ]
+  },
+  {
+   "url": "https://kiro.dev/changelog/general/credit-pooling/",
+   "article": {
+    "url": "https://kiro.dev/changelog/general/credit-pooling/",
+    "status": "ok",
+    "title": "Share credits across your team with credit pooling - Kiro",
+    "chars": 904,
+    "text": "November 4, 2026\nShare credits across your team with credit pooling\nLoading image...\nEnterprise administrators can now share Kiro credits across seated users with credit pooling. In the Kiro console, the feature is labeled Credit sharing. Each seat costs $20 per month and adds 500 monthly credits to one shared pool, so credits one user doesn't use stay available to the rest of the team. Seat price and credits are prorated for the first month.\nAdmins can add users or groups, set per-user, per-group, and per-profile usage limits, monitor pool usage, and buy additional credits that are good for one year from purchase. Credit pooling is the only option for new Kiro profiles. Existing customers can move users from individual subscriptions with the Switch to credit sharing wizard. You can't undo the switch. Learn more ->\n{PREVIOUS}\nCustom Overage Caps via Service Quotas\n{NEXT}\nAWS GovCloud Support"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50380704",
+   "hn_url": "https://news.ycombinator.com/item?id=50380704",
+   "hn": {
+    "title": "Show HN: Stroq – a local audit of what your coding agent did and why",
+    "points": 63,
+    "comments": 13
+   },
+   "comments": [
+    {
+     "author": "philips",
+     "replies": 0,
+     "text": "I have been working on putting agents into full gVisor isolation with a default deny egress proxy that includes secret injections. When an agent tries to connect outbound, by default it suspends the gVisor, holds the proxy connection open, and lets the user choose.\nI am adding external judges now. But, there is a hypervisor key you press to deny/allow hosts without switching terminals.\nI just can't get behind relying on the harness tool boundry to protect me."
+    },
+    {
+     "author": "sebion7125",
+     "replies": 0,
+     "text": "I'm wondering if that could be part of a prompt injection warn system in the future. Did I get it right, that it does not need an LLM to evaluate sessions?"
+    },
+    {
+     "author": "maven29",
+     "replies": 1,
+     "text": "You could cover a lot more adversarial scenarios with an ebpf backend. It needs linux, but with all the patches going around, you should be doing all your dev in a VM anyway.\nhttps://eunomia.dev/agentsight/"
+    },
+    {
+     "author": "agybay_07",
+     "replies": 1,
+     "text": "I've built project that helps to protect your computer from dangerous commands that your ai agent might execute. Have you noticed how often dont even check what our agents are actually running? Thats why I created Stroq.\nTry it locally npx @stroq/cli"
+    },
+    {
+     "author": "hmokiguess",
+     "replies": 1,
+     "text": "feature suggestion:\nbackground daemon that continuously scans and alerts in a menubar app when a positive match is found\nclicking the menubar app shows the offending entry, clicking the entry lets you redact, delete, repair, mark as false positive, etc."
+    }
+   ],
+   "article": {
+    "url": "https://github.com/AGGIB/Stroq",
+    "status": "ok",
+    "title": "",
+    "chars": 8528,
+    "text": "### Who is really in charge of your agent?\n[](https://github.com/AGGIB/Stroq/actions/workflows/ci.yml)\n[](docs/GUIDE.md#replay-thirty-six-attacks-from-public-reports-and-synthetic-cells)\n[](https://www.npmjs.com/package/@stroq/cli)\n[](https://www.npmjs.com/package/@stroq/cli)\n[](LICENSE)\nStroq reads your own Claude Code and Codex sessions and shows how many commands came from text your agent read, and which keys left your machine.\nAn example: a made-up machine with made-up sessions, keys and hosts. Hoo is Stroq's owl. Your card shows your own sessions.\n```bash\nnpx @stroq/cli\n```\nIt reads your last 30 days of sessions, your key files and the folders your agent worked in; prints key names, never values; writes nothing but a small cache under `~/.stroq`; and sends nothing. No account, no telemetry.\n```text\nnpx @stroq/cli a card of your own sessions, like the one above\nnpx @stroq/cli init stop it next time: guard your agent\nnpx @stroq/cli why why an action was stopped\nnpx @stroq/cli attack watch Stroq stop 36 known attacks, in a sandbox\nnpx @stroq/cli uninstall remove Stroq\n```\nEvery moment on the card has a `stroq show` line that prints the evidence behind it (`npx @stroq/cli show 1`). `stroq help --all` lists the other commands. Needs Node.js 22 or newer. Apache-2.0.\n## Beyond the card\nStroq is a local security platform for AI coding agents: Claude Code, Cursor, Codex CLI and others. Its hooks judge every tool call before it runs. They deny `curl | sh` and outbound calls that carry a known secret from your machine, and they ask you first when a command repeats text the agent read, naming that text. The console shows which agents actually ask Stroq, and every decision with its reason. Sessions you already had can be checked too, without installing anything.\n```bash\nnpx @stroq/cli console # the console: a private page on 127.0.0.1\nnpx @stroq/cli replay --all # your Claude Code sessions of the last 30 days against the policy; no hooks needed\nnpx @stroq/cli sent # did your agent pass your keys on? key names, never values\nnpx @stroq/cli init # hook into your agent and guard the next session\n```\nA made-up machine: made-up sessions, keys and hosts. Nothing was executed.\n## The console\nCheck: the card of stroq, made by the same code. Each moment opens with its evidence, under it one line for each agent.\nLive: recorded decisions as they happen. A row opens into its chain: what the agent read, what it did, the decision, the rule.\nAgents: add or remove Stroq's hooks, with the exact file change shown first. When Stroq was last asked, and which of an agent's settings weaken it.\nSkills &amp; MCP: every skill and MCP server by agent: where it came from, what the rules matched in it, what changed since you last looked.\nThe fifth screen is **Rules**: try an action without running it, turn rules on with a preview and a test, the history with an undo, and the rules reference. Connected means Stroq's hooks are in the agent's settings, not that the agent calls them: **Test hook** and **Live** show that.\nScreens from a build just before 0.30.0, reading a made-up machine: made-up sessions, keys and hosts. Nothing was executed.\n```sh\nnpx @stroq/cli console # a private page on 127.0.0.1\nnpx @stroq/cli console --workspace /path/to/repo # the project it should look at\n```\nOpen the whole link it prints: it carries a key that is new each time the console starts. The console reads what Stroq already records on this machine. It changes an agent's settings or Stroq's policy only after you confirm a preview of that change; checks you run are saved under `~/.stroq`.\nIt listens only on 127.0.0.1, needs no account and has no telemetry. Nothing in it starts your agent: **Test hook** runs the hook once, offline. Adding hooks from the console needs macOS or Linux; on Windows use `stroq init`. Details and limits: [console guide](console/README.md).\nFrom a source checkout:\n```sh\npnpm install --frozen-lockfile\npnpm --dir console install --ignore-workspace…"
+   }
+  }
+ ]
+}

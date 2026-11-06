@@ -1,0 +1,875 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "7c3e3e581b3e1a94",
+  "generated_at": "2026-11-06T23:56:27.798681Z",
+  "from_date": "2026-11-05",
+  "to_date": "2026-11-06",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-06T23:56:27.750568Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-06T23:56:27.750575Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 79,
+      "attempted": true,
+      "at": "2026-11-06T23:56:27.749850Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-06T23:56:27.750448Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Code sends",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 488,
+          "points": 1545
+        }
+      },
+      "nomination": {
+        "name": "Claude Code sends",
+        "seed_score": 2156.3221,
+        "summary": "Claude Code sends your email address to websites",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50385272",
+            "source": "hackernews",
+            "title": "Claude Code sends your email address to websites",
+            "body": "Claude Code sends your email address to websites",
+            "url": "https://github.com/anthropics/claude-code/issues/107757",
+            "author": "motoroco",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1545,
+              "comments": 488
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Claude Code sends your email address to websites",
+            "snippet": "Claude Code sends your email address to websites",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50385272",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "ICLR 2027 Reviews Discussion D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 828
+        }
+      },
+      "nomination": {
+        "name": "ICLR 2027 Reviews Discussion D",
+        "seed_score": 1110.1053,
+        "summary": "ICLR 2027 Reviews Discussion [D]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "ICLR 2027 Reviews Discussion [D]",
+            "body": "ICLR 2027 Reviews Discussion [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xo6yzo/iclr_2027_reviews_discussion_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 118,
+              "num_comments": 708
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "ICLR 2027 Reviews Discussion [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.125
+          },
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "ICLR 2027 Reviews are out [D]",
+            "body": "ICLR 2027 Reviews are out [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xpc9sh/iclr_2027_reviews_are_out_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 36,
+              "num_comments": 120
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "ICLR 2027 Reviews are out [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.297
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "MS Paint Remote Code Execution Vulnerability",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 274,
+          "points": 699
+        }
+      },
+      "nomination": {
+        "name": "MS Paint Remote Code Execution Vulnerability",
+        "seed_score": 1032.0223,
+        "summary": "MS Paint Remote Code Execution Vulnerability",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50384233",
+            "source": "hackernews",
+            "title": "MS Paint Remote Code Execution Vulnerability",
+            "body": "MS Paint Remote Code Execution Vulnerability",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 699,
+              "comments": 274
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about MS Paint Remote Code Execution Vulnerability",
+            "snippet": "MS Paint Remote Code Execution Vulnerability",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50384233",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 85,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14250000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Hungary Communist-era 60k",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 70,
+          "points": 234
+        }
+      },
+      "nomination": {
+        "name": "Hungary Communist-era 60k",
+        "seed_score": 322.4407,
+        "summary": "Hungary: Communist-era files released, up to 60k former agents revealed",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50383163",
+            "source": "hackernews",
+            "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
+            "body": "Hungary: Communist-era files released, up to 60k former agents revealed",
+            "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+            "author": "rdmuser",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 234,
+              "comments": 70
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Hungary: Communist-era files released, up to 60k former agen",
+            "snippet": "Hungary: Communist-era files released, up to 60k former agents revealed",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50383163",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 59,
+            "source_quality": 0.8,
+            "local_rank_score": 0.11649999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "ICLR 2027 Review Scores N",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 50
+        }
+      },
+      "nomination": {
+        "name": "ICLR 2027 Review Scores N",
+        "seed_score": 217.5,
+        "summary": "ICLR 2027 Review Scores [N]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "ICLR 2027 Review Scores [N]",
+            "body": "ICLR 2027 Review Scores [N]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xpedgc/iclr_2027_review_scores_n/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 95,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing",
+            "snippet": "ICLR 2027 Review Scores [N]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.336
+          },
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "ICLR Review [D]",
+            "body": "ICLR Review [D]",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xozcd8/iclr_review_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing",
+            "snippet": "ICLR Review [D]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3155
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 113
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 174.8711,
+        "summary": "Is anyone here actually using multiple AI agents daily?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Is anyone here actually using multiple AI agents daily?",
+            "body": "Is anyone here actually using multiple AI agents daily?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xosyqu/is_anyone_here_actually_using_multiple_ai_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 37,
+              "num_comments": 101
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone here actually using multiple AI agents daily?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.252
+          },
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Anyone actually using AI agents for web scraping?",
+            "body": "Anyone actually using AI agents for web scraping?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xpfgdu/anyone_actually_using_ai_agents_for_web_scraping/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Anyone actually using AI agents for web scraping?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41900000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 51
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 108.1873,
+        "summary": "Why a crow bending wire explains what's missing in LLM coding agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "Why a crow bending wire explains what's missing in LLM coding agents",
+            "body": "Why a crow bending wire explains what's missing in LLM coding agents",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xo4byn/why_a_crow_bending_wire_explains_whats_missing_in/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 51,
+              "num_comments": 51
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Why a crow bending wire explains what's missing in LLM coding agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI agents hidden",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "AI agents hidden",
+        "seed_score": 91.5,
+        "summary": "AI agents can be tricked by hidden messages on websites",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "AI agents can be tricked by hidden messages on websites",
+            "body": "AI agents can be tricked by hidden messages on websites",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xpbt8n/ai_agents_can_be_tricked_by_hidden_messages_on/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 35,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing",
+            "snippet": "AI agents can be tricked by hidden messages on websites",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.454
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "Agent",
+        "seed_score": 79.5495,
+        "summary": "I want to make my own Agent. Is it possible?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "I want to make my own Agent. Is it possible?",
+            "body": "I want to make my own Agent. Is it possible?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xogazs/i_want_to_make_my_own_agent_is_it_possible/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 28,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "I want to make my own Agent. Is it possible?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.087
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "4B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "4B",
+        "seed_score": 67.5,
+        "summary": "I'm going to try to turn a 4B model into a genuinely useful coding agent that can compete with much larger models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "I'm going to try to turn a 4B model into a genuinely useful coding agent that can compete with much larger models",
+            "body": "I'm going to try to turn a 4B model into a genuinely useful coding agent that can compete with much larger models",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xppw37/im_going_to_try_to_turn_a_4b_model_into_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "I'm going to try to turn a 4B model into a genuinely useful coding agent that can compete with much larger models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "you using so you don't re-explain",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "you using so you don't re-explain",
+        "seed_score": 60.0,
+        "summary": "What are you using so you don't re-explain your project to agents every session, and which workaround did you give up on?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "What are you using so you don't re-explain your project to agents every session, and which workaround did you give up on?",
+            "body": "What are you using so you don't re-explain your project to agents every session, and which workaround did you give up on?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xp95jf/what_are_you_using_so_you_dont_reexplain_your/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "What are you using so you don't re-explain your project to agents every session, and which workaround did you give up on?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3065
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI Agents started",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "AI Agents started",
+        "seed_score": 58.3363,
+        "summary": "How do I get started with AI Agents?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "How do I get started with AI Agents?",
+            "body": "How do I get started with AI Agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xohihp/how_do_i_get_started_with_ai_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 30,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do I get started with AI Agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 10,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 35
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 55.1543,
+        "summary": "An AI agent that knows when to stop is more useful than one that tries to do everything.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "An AI agent that knows when to stop is more useful than one that tries to do everything.",
+            "body": "An AI agent that knows when to stop is more useful than one that tries to do everything.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xoa3rf/an_ai_agent_that_knows_when_to_stop_is_more/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 35
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing",
+            "snippet": "An AI agent that knows when to stop is more useful than one that tries to do everything.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 10,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.184
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "2027 AI 100",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "2027 AI 100",
+        "seed_score": 49.5,
+        "summary": "The best way to do sales in 2027 will be through AI agents, and I'm now 100% convinced of that",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "The best way to do sales in 2027 will be through AI agents, and I'm now 100% convinced of that",
+            "body": "The best way to do sales in 2027 will be through AI agents, and I'm now 100% convinced of that",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xpm6vi/the_best_way_to_do_sales_in_2027_will_be_through/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "The best way to do sales in 2027 will be through AI agents, and I'm now 100% convinced of that",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.417
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "PR AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "PR AI",
+        "seed_score": 46.5,
+        "summary": "What PR comment tells you someone never read their own AI code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "What PR comment tells you someone never read their own AI code",
+            "body": "What PR comment tells you someone never read their own AI code",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xp8xbz/what_pr_comment_tells_you_someone_never_read/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing",
+            "snippet": "What PR comment tells you someone never read their own AI code",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40299999999999997
+          }
+        ]
+      }
+    }
+  ]
+}

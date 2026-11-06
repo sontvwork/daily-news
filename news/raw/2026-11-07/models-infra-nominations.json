@@ -1,0 +1,803 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "2ed1faa9bca79da0",
+  "generated_at": "2026-11-06T23:56:48.078669Z",
+  "from_date": "2026-11-05",
+  "to_date": "2026-11-06",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-06T23:56:48.033416Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-06T23:56:48.033423Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-11-06T23:56:47.821223Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 139,
+      "attempted": true,
+      "at": "2026-11-06T23:56:48.033233Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Code sends",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 488,
+          "points": 1545
+        }
+      },
+      "nomination": {
+        "name": "Claude Code sends",
+        "seed_score": 2156.3221,
+        "summary": "Claude Code sends your email address to websites",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50385272",
+            "source": "hackernews",
+            "title": "Claude Code sends your email address to websites",
+            "body": "Claude Code sends your email address to websites",
+            "url": "https://github.com/anthropics/claude-code/issues/107757",
+            "author": "motoroco",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1545,
+              "comments": 488
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Claude Code sends your email address to websites",
+            "snippet": "Claude Code sends your email address to websites",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50385272",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Stanford AI 16 4,212\u00d7 27\u00d7 512-document",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 111
+        }
+      },
+      "nomination": {
+        "name": "Stanford AI 16 4,212\u00d7 27\u00d7 512-document",
+        "seed_score": 2134.5,
+        "summary": "Stanford researchers develop a new AI memory system that recalls information from entire conversation histories using just 16 memory tokens. It reduces document-token usage by up to 4,212\u00d7, runs 27\u00d7 faster in a 512-document test, and outperforms existing approaches on 5 of 8 benchmarks.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R75",
+            "source": "reddit",
+            "title": "Stanford researchers develop a new AI memory system that recalls information from entire conversation histories using just 16 memory tokens. It reduces document-token usage by up to 4,212\u00d7, runs 27\u00d7 faster in a 512-document test, and outperforms existing approaches on 5 of 8 benchmarks.",
+            "body": "Stanford researchers develop a new AI memory system that recalls information from entire conversation histories using just 16 memory tokens. It reduces document-token usage by up to 4,212\u00d7, runs 27\u00d7 faster in a 512-document test, and outperforms existing approaches on 5 of 8 benchmarks.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xpabzx/stanford_researchers_develop_a_new_ai_memory/",
+            "container": "singularity",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1312,
+              "num_comments": 111
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing",
+            "snippet": "Stanford researchers develop a new AI memory system that recalls information from entire conversation histories using just 16 memory tokens. It reduces document-token usage by up to 4,212\u00d7, runs 27\u00d7 faster in a 512-document test, and outperforms existing approaches on 5 of 8 benchmarks.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.338
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 105
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 1635.0,
+        "summary": "I built a sailing sim with Claude Code and made the frontier models race each other in it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "I built a sailing sim with Claude Code and made the frontier models race each other in it",
+            "body": "I built a sailing sim with Claude Code and made the frontier models race each other in it",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xpij9t/i_built_a_sailing_sim_with_claude_code_and_made/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 985,
+              "num_comments": 105
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built a sailing sim with Claude Code and made the frontier models race each other in it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 96,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37949999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Personal Finance",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 177
+        }
+      },
+      "nomination": {
+        "name": "Claude Personal Finance",
+        "seed_score": 1564.5,
+        "summary": "Claude can now analyze your spending with its new Personal Finance tool",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Claude can now analyze your spending with its new Personal Finance tool",
+            "body": "Claude can now analyze your spending with its new Personal Finance tool",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xp0qxj/claude_can_now_analyze_your_spending_with_its_new/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 866,
+              "num_comments": 177
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude can now analyze your spending with its new Personal Finance tool",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 99,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38249999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Dutch idealist bank ASN blocks non-Google",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 403,
+          "points": 613
+        }
+      },
+      "nomination": {
+        "name": "Dutch idealist bank ASN blocks non-Google",
+        "seed_score": 1524.0,
+        "summary": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50390124",
+            "source": "hackernews",
+            "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "body": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+            "author": "microtonal",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 613,
+              "comments": 403
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Dutch 'idealist' bank ASN blocks non-Google Android, includi",
+            "snippet": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50390124",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 87,
+            "source_quality": 0.8,
+            "local_rank_score": 0.338
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Open Anthropic 30,000 98 GitHub issues",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 94
+        }
+      },
+      "nomination": {
+        "name": "Open Anthropic 30,000 98 GitHub issues",
+        "seed_score": 1378.5,
+        "summary": "Open question to Anthropic: If you're making 30,000 merges a day, why are more than 98% of open GitHub issues unassigned, including serious security bugs?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Open question to Anthropic: If you're making 30,000 merges a day, why are more than 98% of open GitHub issues unassigned, including serious security bugs?",
+            "body": "Open question to Anthropic: If you're making 30,000 merges a day, why are more than 98% of open GitHub issues unassigned, including serious security bugs?",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xozfcv/open_question_to_anthropic_if_youre_making_30000/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 825,
+              "num_comments": 94
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Open question to Anthropic: If you're making 30,000 merges a day, why are more than 98% of open GitHub issues unassigned, including serious security bugs?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36450000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Asking 0.5b",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 91
+        }
+      },
+      "nomination": {
+        "name": "Asking 0.5b",
+        "seed_score": 1243.5,
+        "summary": "Asking questions to a 0.5b model is hillarious",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Asking questions to a 0.5b model is hillarious",
+            "body": "Asking questions to a 0.5b model is hillarious",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xp8as6/asking_questions_to_a_05b_model_is_hillarious/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 738,
+              "num_comments": 91
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Asking questions to a 0.5b model is hillarious",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Anthropic AI 18-year-old 3 Researchers",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 77
+        }
+      },
+      "nomination": {
+        "name": "Anthropic AI 18-year-old 3 Researchers",
+        "seed_score": 1101.0,
+        "summary": "An unreleased Anthropic AI model reportedly solves an 18-year-old quantum computing conjecture in just 3 days. Researchers at Physical Superintelligence say the proof establishes a fundamental limit on quantum speedups and has been formally verified using Lean.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R74",
+            "source": "reddit",
+            "title": "An unreleased Anthropic AI model reportedly solves an 18-year-old quantum computing conjecture in just 3 days. Researchers at Physical Superintelligence say the proof establishes a fundamental limit on quantum speedups and has been formally verified using Lean.",
+            "body": "An unreleased Anthropic AI model reportedly solves an 18-year-old quantum computing conjecture in just 3 days. Researchers at Physical Superintelligence say the proof establishes a fundamental limit on quantum speedups and has been formally verified using Lean.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xpgl2k/an_unreleased_anthropic_ai_model_reportedly/",
+            "container": "singularity",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 657,
+              "num_comments": 77
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "An unreleased Anthropic AI model reportedly solves an 18-year-old quantum computing conjecture in just 3 days. Researchers at Physical Superintelligence say the proof establishes a fundamental limit on quantum speedups and has been formally verified using Lean.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 90,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Anthropic IPO 1.1T",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 448,
+          "points": 199
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO 1.1T",
+        "seed_score": 970.5,
+        "summary": "Anthropic IPO buyers see valuation as low as $1.1T",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50394906",
+            "source": "hackernews",
+            "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "body": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+            "author": "dgellow",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 199,
+              "comments": 448
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic IPO buyers see valuation as low as $1.1T",
+            "snippet": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50394906",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Discord Electron RAM",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 417,
+          "points": 477
+        }
+      },
+      "nomination": {
+        "name": "Discord Electron RAM",
+        "seed_score": 948.2302,
+        "summary": "Discord is ditching Electron and its new app uses less RAM",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50378625",
+            "source": "hackernews",
+            "title": "Discord is ditching Electron and its new app uses less RAM",
+            "body": "Discord is ditching Electron and its new app uses less RAM",
+            "url": "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app",
+            "author": "archb",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 477,
+              "comments": 417
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Discord is ditching Electron and its new app uses less RAM",
+            "snippet": "Discord is ditching Electron and its new app uses less RAM",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50378625",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 10,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1285
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Netflix-style Claude 15 MB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 150
+        }
+      },
+      "nomination": {
+        "name": "Netflix-style Claude 15 MB",
+        "seed_score": 895.5,
+        "summary": "I built a Netflix-style app for my media server with Claude. The whole thing is 15 MB \ud83e\udd2f",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "I built a Netflix-style app for my media server with Claude. The whole thing is 15 MB \ud83e\udd2f",
+            "body": "I built a Netflix-style app for my media server with Claude. The whole thing is 15 MB \ud83e\udd2f",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xp76q1/i_built_a_netflixstyle_app_for_my_media_server/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 447,
+              "num_comments": 150
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built a Netflix-style app for my media server with Claude. The whole thing is 15 MB \ud83e\udd2f",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 91,
+            "source_quality": 0.6,
+            "local_rank_score": 0.342
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Claude Solidworks 7 minutes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 182
+        }
+      },
+      "nomination": {
+        "name": "Claude Solidworks 7 minutes",
+        "seed_score": 867.0,
+        "summary": "Claude, make me these parts in Solidworks.... 7 minutes later....",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "Claude, make me these parts in Solidworks.... 7 minutes later....",
+            "body": "Claude, make me these parts in Solidworks.... 7 minutes later....",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xpeg2l/claude_make_me_these_parts_in_solidworks_7/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 396,
+              "num_comments": 182
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude, make me these parts in Solidworks.... 7 minutes later....",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 91,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34850000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Latest Open-Source Labs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 144
+        }
+      },
+      "nomination": {
+        "name": "Latest Open-Source Labs",
+        "seed_score": 757.5,
+        "summary": "Latest Open-Source Labs are gutting away cybersecurity and reverse-engineering capabilities",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Latest Open-Source Labs are gutting away cybersecurity and reverse-engineering capabilities",
+            "body": "Latest Open-Source Labs are gutting away cybersecurity and reverse-engineering capabilities",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xp9jt1/latest_opensource_labs_are_gutting_away/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 361,
+              "num_comments": 144
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Latest Open-Source Labs are gutting away cybersecurity and reverse-engineering capabilities",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 88,
+            "source_quality": 0.6,
+            "local_rank_score": 0.339
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Gemini Omni 1.2 Flash",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 214,
+          "points": 289
+        }
+      },
+      "nomination": {
+        "name": "Gemini Omni 1.2 Flash",
+        "seed_score": 754.5,
+        "summary": "Gemini Omni 1.2 Flash",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50392118",
+            "source": "hackernews",
+            "title": "Gemini Omni 1.2 Flash",
+            "body": "Gemini Omni 1.2 Flash",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+            "author": "thisisauserid",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 289,
+              "comments": 214
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Gemini Omni 1.2 Flash",
+            "snippet": "Gemini Omni 1.2 Flash",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50392118",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3545
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "GPT-6.2 Fable 5.5 Qwen 4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 44
+        }
+      },
+      "nomination": {
+        "name": "GPT-6.2 Fable 5.5 Qwen 4",
+        "seed_score": 747.0,
+        "summary": "No GPT-6.2, no Fable 5.5, no Qwen 4",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R73",
+            "source": "reddit",
+            "title": "No GPT-6.2, no Fable 5.5, no Qwen 4",
+            "body": "No GPT-6.2, no Fable 5.5, no Qwen 4",
+            "url": "https://www.reddit.com/r/singularity/comments/1xpo0j3/no_gpt62_no_fable_55_no_qwen_4/",
+            "container": "singularity",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 454,
+              "num_comments": 44
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing",
+            "snippet": "No GPT-6.2, no Fable 5.5, no Qwen 4",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.424
+          }
+        ]
+      }
+    }
+  ]
+}

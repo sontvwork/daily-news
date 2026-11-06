@@ -1,0 +1,794 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "b825e29e67b7edc9",
+  "generated_at": "2026-11-06T23:56:27.537090Z",
+  "from_date": "2026-11-05",
+  "to_date": "2026-11-06",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-06T23:56:27.512209Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-06T23:56:27.512215Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 44,
+      "attempted": true,
+      "at": "2026-11-06T23:56:27.511830Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-06T23:56:27.512129Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Code sends",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 488,
+          "points": 1545
+        }
+      },
+      "nomination": {
+        "name": "Claude Code sends",
+        "seed_score": 2156.3221,
+        "summary": "Claude Code sends your email address to websites",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50385272",
+            "source": "hackernews",
+            "title": "Claude Code sends your email address to websites",
+            "body": "Claude Code sends your email address to websites",
+            "url": "https://github.com/anthropics/claude-code/issues/107757",
+            "author": "motoroco",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1545,
+              "comments": 488
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "HN story about Claude Code sends your email address to websites",
+            "snippet": "Claude Code sends your email address to websites",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50385272",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.229
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "MS Paint Remote Code Execution Vulnerability",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 274,
+          "points": 699
+        }
+      },
+      "nomination": {
+        "name": "MS Paint Remote Code Execution Vulnerability",
+        "seed_score": 1032.0223,
+        "summary": "MS Paint Remote Code Execution Vulnerability",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50384233",
+            "source": "hackernews",
+            "title": "MS Paint Remote Code Execution Vulnerability",
+            "body": "MS Paint Remote Code Execution Vulnerability",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+            "author": "kuberwastaken",
+            "container": "Hacker News",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 699,
+              "comments": 274
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about MS Paint Remote Code Execution Vulnerability",
+            "snippet": "MS Paint Remote Code Execution Vulnerability",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50384233",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.064
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude 4.5 hours",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 58
+        }
+      },
+      "nomination": {
+        "name": "Claude 4.5 hours",
+        "seed_score": 286.5,
+        "summary": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way",
+            "body": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way",
+            "url": "https://www.reddit.com/r/singularity/comments/1xppyfh/claude_paints_a_watercolor_tree_with_a_robotic/",
+            "container": "singularity",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 133,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "4B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "4B",
+        "seed_score": 67.5,
+        "summary": "I'm going to try to turn a 4B model into a genuinely useful coding agent that can compete with much larger models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "I'm going to try to turn a 4B model into a genuinely useful coding agent that can compete with much larger models",
+            "body": "I'm going to try to turn a 4B model into a genuinely useful coding agent that can compete with much larger models",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xppw37/im_going_to_try_to_turn_a_4b_model_into_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "I'm going to try to turn a 4B model into a genuinely useful coding agent that can compete with much larger models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "MacBook",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "MacBook",
+        "seed_score": 54.0,
+        "summary": "How do you keep local coding agents running on a MacBook with the lid closed?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "How do you keep local coding agents running on a MacBook with the lid closed?",
+            "body": "How do you keep local coding agents running on a MacBook with the lid closed?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xp5z8v/how_do_you_keep_local_coding_agents_running_on_a/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "How do you keep local coding agents running on a MacBook with the lid closed?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "I don't think human-in-the-loop holds up",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "I don't think human-in-the-loop holds up",
+        "seed_score": 44.5477,
+        "summary": "I don't think human-in-the-loop holds up for coding agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "I don't think human-in-the-loop holds up for coding agents",
+            "body": "I don't think human-in-the-loop holds up for coding agents",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xovmyh/i_dont_think_humanintheloop_holds_up_for_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "I don't think human-in-the-loop holds up for coding agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10400000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "12 GB RTX 3060 Qwen API",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "12 GB RTX 3060 Qwen API",
+        "seed_score": 42.0,
+        "summary": "Last time it was \"Strata for all Qwen models\". This time: share it.\n\n`strata serve` now runs a 35B MoE (Qwen3.6-35B-A3B Q2_K_XL) on one RTX 3060 for several users at the same time:\n\n| Users at once | Total | Each user |\n|---|---|---|\n| 1 | 106 tok/s | 106 tok/s |\n| 2 | 139 tok/s | 69 tok/s |\n| 4 | 164 tok/s | 41 tok/s |\n\n41 tok/s each is still faster than most people read.\n\nWhat's in it:\n\n- **Open",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "I turned a 12 GB RTX 3060 into a Qwen API server for 4 people at once",
+            "body": "I turned a 12 GB RTX 3060 into a Qwen API server for 4 people at once\nLast time it was \"Strata for all Qwen models\". This time: share it.\n\n`strata serve` now runs a 35B MoE (Qwen3.6-35B-A3B Q2_K_XL) on one RTX 3060 for several users at the same time:\n\n| Users at once | Total | Each user |\n|---|---|---|\n| 1 | 106 tok/s | 106 tok/s |\n| 2 | 139 tok/s | 69 tok/s |\n| 4 | 164 tok/s | 41 tok/s |\n\n41 tok/s each is still faster than most people read.\n\nWhat's in it:\n\n- **OpenAI and Anthropic APIs**, so Open WebUI, OpenCode and even Claude Code connect to it.\n- **API keys from a file**, reloaded when you edit it, plus a usage log per key. That's enough to give access to friends, a team, or paying users.\n- **Fair queue**: a free slot goes to the key with the fewest requests running, and `--max-per-key` stops one user from taking everything.\n- **`/health` and Prometheus `/metrics`** for load balancers and dashboards.\n- **NVIDIA, AMD and Intel** (CUDA or Vulkan). Two cards can split one model (`--device 0,1`).\n- **One binary, written in Rust.** No Python, no Docker.\n\n```\nstrata serve --model Qwen3.6-35B-A3B-UD-Q2_K_XL.gguf --gpu --parallel 4 --api-keys keys.txt\n```\n\nSetup guide: docs/HOSTING.md. Repo: github.com/RustingStudio/RustingStrata\n\nWhat would you host on it?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpfzqk/i_turned_a_12_gb_rtx_3060_into_a_qwen_api_server/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Last time it was \"Strata for all Qwen models\". This time: share it.\n\n`strata serve` now runs a 35B MoE (Qwen3.6-35B-A3B Q2_K_XL) on one RTX 3060 for several users at the same time:\n\n| Users at once | Total | Each user |\n|---|---|---|\n| 1 | 106 tok/s | 106 tok/s |\n| 2 | 139 tok/s | 69 tok/s |\n| 4 | 164 tok/s | 41 tok/s |\n\n41 tok/s each is still faster than most people read.\n\nWhat's in it:\n\n- **Open",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.326
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Altman PC RAM 5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Altman PC RAM 5",
+        "seed_score": 31.5,
+        "summary": "Sam Altman said on Cheeky Pint, in a conversation about people running models locally, that the DRAM in personal computers is \"quite terrible\" and \"being used maybe 5% of the time\". I'd guess most people here would disagree about where their RAM is going.\n\nSo I wrote a bash script that tells him. It reads /proc/meminfo, works out used as MemTotal minus MemAvailable, logs a sample from cron, and em",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "Altman says PC RAM is \"being used maybe 5% of the time\". Mine is full of model weights, so I wrote a script to tell him",
+            "body": "Altman says PC RAM is \"being used maybe 5% of the time\". Mine is full of model weights, so I wrote a script to tell him\nSam Altman said on Cheeky Pint, in a conversation about people running models locally, that the DRAM in personal computers is \"quite terrible\" and \"being used maybe 5% of the time\". I'd guess most people here would disagree about where their RAM is going.\n\nSo I wrote a bash script that tells him. It reads /proc/meminfo, works out used as MemTotal minus MemAvailable, logs a sample from cron, and emails him once a day if more than 10% is available. Joke project: no recipient is set by default, and --dry-run just prints the message.\n\nThe interesting bit is what it says on an inference box. If you load a big model and run it, I'd expect it to stay quiet pretty much all the time. If anyone tries it on their LLM rig, I'd like to know whether it ever fires, and how much RAM your usual setup leaves spare.\n\nPlease don't point it at the man's real inbox. Use --dry-run, or send it to yourself.\n\nCode: https://github.com/IainKay/ram-altman\n\nSite: https://ram-altman.lol",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpmui2/altman_says_pc_ram_is_being_used_maybe_5_of_the/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Sam Altman said on Cheeky Pint, in a conversation about people running models locally, that the DRAM in personal computers is \"quite terrible\" and \"being used maybe 5% of the time\". I'd guess most people here would disagree about where their RAM is going.\n\nSo I wrote a bash script that tells him. It reads /proc/meminfo, works out used as MemTotal minus MemAvailable, logs a sample from cron, and em",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.271
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "6-8 17-20 gt/s",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "6-8 17-20 gt/s",
+        "seed_score": 22.5,
+        "summary": "I historically get about 6-8 t/s on  my MI50 on Qwen @ Q6 running local coding.\n\nBuilding a script that sets my fans all on 100% duty cycle (and much louder) bumps that immediately to like 12 t/s.\n\nLetting the machine sit and cool for a while with the fans running, and running inference again... 17-20 tk/s for the first 10 minutes or so.\n\nI'm considering putting in water cooling and a great big ra",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "Don't underestimate cooling - run those fans 6-8 gt/s -> 17-20 gt/s no other changes",
+            "body": "Don't underestimate cooling - run those fans 6-8 gt/s -> 17-20 gt/s no other changes\nI historically get about 6-8 t/s on  my MI50 on Qwen @ Q6 running local coding.\n\nBuilding a script that sets my fans all on 100% duty cycle (and much louder) bumps that immediately to like 12 t/s.\n\nLetting the machine sit and cool for a while with the fans running, and running inference again... 17-20 tk/s for the first 10 minutes or so.\n\nI'm considering putting in water cooling and a great big radiator now what a difference.  What a huge difference cooling makes.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpj21w/dont_underestimate_cooling_run_those_fans_68_gts/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I historically get about 6-8 t/s on  my MI50 on Qwen @ Q6 running local coding.\n\nBuilding a script that sets my fans all on 100% duty cycle (and much louder) bumps that immediately to like 12 t/s.\n\nLetting the machine sit and cool for a while with the fans running, and running inference again... 17-20 tk/s for the first 10 minutes or so.\n\nI'm considering putting in water cooling and a great big ra",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3115
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 21.2132,
+        "summary": "My biggest, and really the only problem with coding with AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "My biggest, and really the only problem with coding with AI",
+            "body": "My biggest, and really the only problem with coding with AI",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xo93qw/my_biggest_and_really_the_only_problem_with/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.37,
+            "why_relevant": "Reddit listing",
+            "snippet": "My biggest, and really the only problem with coding with AI",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.37,
+            "freshness": 10,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3065
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Persistant AI assistants",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Persistant AI assistants",
+        "seed_score": 19.5,
+        "summary": "Surprisingly the rollout of the big, touted persistant AI assistant products from OpenAI, Anthropic *and* Meta has been very slow and all remain US or North America only with no talk of when they will be released elsewhere, and in many cases limited to high tier subscriptions only, although it's not clear why that is the case when eg. Muse has a totally *free* tier.\n\nOutside North America we still",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Persistant AI assistants: am I missing much?",
+            "body": "Persistant AI assistants: am I missing much?\nSurprisingly the rollout of the big, touted persistant AI assistant products from OpenAI, Anthropic *and* Meta has been very slow and all remain US or North America only with no talk of when they will be released elsewhere, and in many cases limited to high tier subscriptions only, although it's not clear why that is the case when eg. Muse has a totally *free* tier.\n\nOutside North America we still haven't had a chance to use these things, are we missing out? Are they really killer apps with fundamentally different functionality than the regular model clients?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xpnv1m/persistant_ai_assistants_am_i_missing_much/",
+            "container": "singularity",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.37,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Surprisingly the rollout of the big, touted persistant AI assistant products from OpenAI, Anthropic *and* Meta has been very slow and all remain US or North America only with no talk of when they will be released elsewhere, and in many cases limited to high tier subscriptions only, although it's not clear why that is the case when eg. Muse has a totally *free* tier.\n\nOutside North America we still",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4555
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Qwen-Flash-Next 16GB M2 Pro Mac Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Qwen-Flash-Next 16GB M2 Pro Mac Mini",
+        "seed_score": 19.5,
+        "summary": "I was getting ready to sell an old kiosk Mini at our office that was getting an upgrade, and figured I would see what happened if I tried to make it do something it by all rights shouldn't be able to. I loaded up Strata and ran the iQ3\\_xxs quant of QFN with a max of 128k context. I used opencode on my normal workstation to build a script that would benchmark the performance  and output quality of",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "Not because you should, but because you can - Qwen-Flash-Next on a 16GB M2 Pro Mac Mini",
+            "body": "Not because you should, but because you can - Qwen-Flash-Next on a 16GB M2 Pro Mac Mini\nI was getting ready to sell an old kiosk Mini at our office that was getting an upgrade, and figured I would see what happened if I tried to make it do something it by all rights shouldn't be able to. I loaded up Strata and ran the iQ3\\_xxs quant of QFN with a max of 128k context. I used opencode on my normal workstation to build a script that would benchmark the performance  and output quality of typical tasks I do (mostly large csv sorting and low end code grunt work)at varying levels of context.\n\nI have to say, it worked far better than I would have expected it to. I assume that the speed is always at its worst (as if it had full context) because it never has a chance to cache anything and is always re-reading and swapping experts across prompts, but as an aside it means that token speed for both prefill and decode are the same regardless how much you're making it do. The median speed between all tests from 16k to 120k context was 77 tok/s prefill and 5.5 tok/s decode. That means it could actually stand in as a barely passable chat generator, and is not hopeless as a \"living on dial-up\" code helper of last resort. It does appear that it is pretty rough on the SSD, but the write load is not much worse than someone using a Mini as a pretty active DB server or other \"proper\" server task in an operating office environment.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpgshj/not_because_you_should_but_because_you_can/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I was getting ready to sell an old kiosk Mini at our office that was getting an upgrade, and figured I would see what happened if I tried to make it do something it by all rights shouldn't be able to. I loaded up Strata and ran the iQ3\\_xxs quant of QFN with a max of 128k context. I used opencode on my normal workstation to build a script that would benchmark the performance  and output quality of",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Scylla Band v4 TTS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Scylla Band v4 TTS",
+        "seed_score": 19.5,
+        "summary": "Scylla's Band v4, open source TTS with code to run everywhere",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Scylla's Band v4, open source TTS with code to run everywhere",
+            "body": "Scylla's Band v4, open source TTS with code to run everywhere",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpq3l0/scyllas_band_v4_open_source_tts_with_code_to_run/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "Scylla's Band v4, open source TTS with code to run everywhere",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2955
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "SoMarkAI/OXR-1.0 \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "SoMarkAI/OXR-1.0 \u00b7 Hugging Face",
+        "seed_score": 16.5,
+        "summary": "Found this last month model while browsing Trending models of HF. I don't see any existing threads so posting.\n\n>OXR (Optical Everything Recognition) is an open-source model from the SoMark team. It turns PDFs and document images into Agent-Friendly data in Markdown or JSON, with layout coordinates included.\n\n>Pretrained from scratch, OXR uses a recursive self-improvement (RSI) loop during post-tr",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "SoMarkAI/OXR-1.0 \u00b7 Hugging Face",
+            "body": "SoMarkAI/OXR-1.0 \u00b7 Hugging Face\nFound this last month model while browsing Trending models of HF. I don't see any existing threads so posting.\n\n>OXR (Optical Everything Recognition) is an open-source model from the SoMark team. It turns PDFs and document images into Agent-Friendly data in Markdown or JSON, with layout coordinates included.\n\n>Pretrained from scratch, OXR uses a recursive self-improvement (RSI) loop during post-training\u2014a first in document parsing. With just 1.3B parameters, OXR ranks #1 on olmOCR-Bench, OmniDocBench, and DocParsingBench while delivering industry-leading parsing speed.\n\n>OXR is the first to make its layout analysis module independent and pluggable. This design accelerates parsing and supports replacing the built-in layout model with a custom one. OXR continues to handle content recognition and reading order, enabling adaptation across diverse scenarios with minimal integration effort.\n\n* **GitHub** : [https://github.com/SoMarkAI/OXR](https://github.com/SoMarkAI/OXR)\n\n# Why OXR?\n\n* \ud83c\udfaf SOTA Accuracy. #1 Across Three Benchmarks.\n   * OXR ranks \ud83c\udfc6#1 on olmOCR-Bench, OmniDocBench, and DocParsingBench, with a particularly wide lead in table parsing.\n   * OXR can recognize 13 document element types, from formulas and tables to chemical equations, chemical structures, and code blocks, with bounding box coordinates included. It also performs well on challenging documents and layouts, including A3 exam papers, newspapers, vertical text, and handwriting.\n   * See [docs/benchmark.md](https://github.com/SoMarkAI/OXR/blob/main/docs/benchmark.md) for the full results and instructions to reproduce the evaluations.\n* \ud83d\ude80 1.3B Parameters. Top-Tier Parsing Speed.\n   * With only 1.3B parameters, OXR ranks \ud83c\udfc6#1 among open-source document parsing models in speed tests on the RTX PRO 6000.\n   * OXR redesign its processing architecture at the task level to improve parsing speed while maintaining accuracy.\n   * See [docs/benchmark.md](https://github.com/SoMarkAI/OXR/blob/main/docs/benchmark.md) for the full results and instructions to reproduce the evaluations.\n* \ud83e\udde9 Pluggable Layout Analysis. Document Structure on Your Terms.\n   * Layout analysis requirements vary widely across domains. Even for the same document, element types, region boundaries, and grouping rules can differ depending on the business use case.\n   * OXR is the first to make layout analysis independent and pluggable. Its built-in layout model can be replaced while retaining OXR\u2019s recognition and reading order capabilities, enabling adaptation across document scenarios with minimal integration effort.\n   * See the [How it works](https://huggingface.co/SoMarkAI/OXR-1.0#how-to-works) section below for details.\n\n# Ecosystem\n\nThe SoMark team has developed a range of tools for document parsing. \n\n||Description|Project URL|\n|:-|:-|:-|\n|SoMarkDown|The official Markdown parsing and rendering library for SoMark and OXR|[https://github.com/SoMarkAI/SoMarkDown](https://github.com/SoMarkAI/SoMarkDown)|\n|SoMarkDownViewer|A live editing application for SoMarkDown|[https://github.com/SoMarkAI/SoMarkDownViewer](https://github.com/SoMarkAI/SoMarkDownViewer)|\n|SoPDF|A high-performance PDF processing library with a permissive open-source license|[https://github.com/SoMarkAI/SoPDF](https://github.com/SoMarkAI/SoPDF)|\n|Docision|MultiModal Jev for Document.|[https://github.com/SoMarkAI/docision](https://github.com/SoMarkAI/docision)|\n|somark-py|The official Python SDK & CLI for SoMark and OXR|[https://github.com/SoMarkAI/somark-py](https://github.com/SoMarkAI/somark-py)|\n|somark-js|The official JS / TS SDK & CLI for SoMark and OXR|[https://github.com/SoMarkAI/somark-js](https://github.com/SoMarkAI/somark-js)|",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xplapb/somarkaioxr10_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Found this last month model while browsing Trending models of HF. I don't see any existing threads so posting.\n\n>OXR (Optical Everything Recognition) is an open-source model from the SoMark team. It turns PDFs and document images into Agent-Friendly data in Markdown or JSON, with layout coordinates included.\n\n>Pretrained from scratch, OXR uses a recursive self-improvement (RSI) loop during post-tr",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28200000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Codex",
+        "seed_score": 15.9099,
+        "summary": "Codex is eating up my storage \u2013 where is all the space going?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Codex is eating up my storage \u2013 where is all the space going?",
+            "body": "Codex is eating up my storage \u2013 where is all the space going?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xot9w3/codex_is_eating_up_my_storage_where_is_all_the/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-05",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Codex is eating up my storage \u2013 where is all the space going?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11400000000000002
+          }
+        ]
+      }
+    }
+  ]
+}

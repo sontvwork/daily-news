@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "9d49f17e06df874e",
+  "generated_at": "2026-11-06T23:56:31.775137Z",
+  "from_date": "2026-11-05",
+  "to_date": "2026-11-06",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-06T23:56:31.773682Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-06T23:56:31.773687Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-06T23:56:31.773561Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-06T23:56:31.773636Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Dutch idealist bank ASN blocks non-Google",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 403,
+          "points": 613
+        }
+      },
+      "nomination": {
+        "name": "Dutch idealist bank ASN blocks non-Google",
+        "seed_score": 1524.0,
+        "summary": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50390124",
+            "source": "hackernews",
+            "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "body": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+            "author": "microtonal",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 613,
+              "comments": 403
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Dutch 'idealist' bank ASN blocks non-Google Android, includi",
+            "snippet": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50390124",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anthropic IPO 1.1T",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 448,
+          "points": 199
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO 1.1T",
+        "seed_score": 970.5,
+        "summary": "Anthropic IPO buyers see valuation as low as $1.1T",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50394906",
+            "source": "hackernews",
+            "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "body": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+            "author": "dgellow",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 199,
+              "comments": 448
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic IPO buyers see valuation as low as $1.1T",
+            "snippet": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50394906",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Kugelblitz Mac-Native Google Earth Alternative",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 64,
+          "points": 242
+        }
+      },
+      "nomination": {
+        "name": "Kugelblitz Mac-Native Google Earth Alternative",
+        "seed_score": 459.0,
+        "summary": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50389370",
+            "source": "hackernews",
+            "title": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "body": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "url": "https://apps.metaebene.me/en/kugelblitz",
+            "author": "luoc",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 242,
+              "comments": 64
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "snippet": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50389370",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.8,
+            "local_rank_score": 0.33
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Google Crusoe Wyoming",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 2,
+          "points": 23
+        }
+      },
+      "nomination": {
+        "name": "Google Crusoe Wyoming",
+        "seed_score": 37.5,
+        "summary": "Google has acquired Crusoe's data center site in southeast Wyoming",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50397711",
+            "source": "hackernews",
+            "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
+            "body": "Google has acquired Crusoe's data center site in southeast Wyoming",
+            "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+            "author": "rexbee",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 23,
+              "comments": 2
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google has acquired Crusoe's data center site in southeast W",
+            "snippet": "Google has acquired Crusoe's data center site in southeast Wyoming",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50397711",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    }
+  ]
+}

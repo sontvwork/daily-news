@@ -1,0 +1,217 @@
+{
+ "date": "2026-11-08",
+ "runs": [
+  {
+   "started_at": "2026-11-07T23:58:55+00:00",
+   "seconds": 2.1,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 6,
+   "articles_ok": 5,
+   "articles_error": 1,
+   "articles_skipped": 0,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — Bloomberg - Are you a robot? @font-face { font-family: BWHaasGroteskWeb; font-display: swap; font-weight: 400; font-style: normal; src: url('https://as": 1
+   },
+   "summary": "5/6 bài gốc ok (0 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.1s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/",
+   "article": {
+    "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/",
+    "status": "ok",
+    "title": "GitHub Copilot app, Universe releases - GitHub ChangelogLinkedIn iconInstagram iconYouTube iconX iconTikTok iconTwitch iconGitHub icon",
+    "chars": 3101,
+    "text": "Back to changelog\nRelease\nOctober 28, 2026 •\n2 minute read\nGitHub Copilot app, Universe releases\nWork doesn’t always fit in a single repository or session. A feature can span several repositories. A launch plan can pull in specs, designs, and assets without touching a repository at all. Projects in the GitHub Copilot app give that work one home, with its context, agents, and results together. Copilot coordinates the work in the background and checks in when it needs you.\nGive Copilot a goal\nStart a project, describe what you want to get done, and add the context Copilot needs (e.g., repositories, design mocks, Slack threads, or notes from a design meeting). Choose the models and tools for the job. Copilot runs as many agents as the work needs and brings back results (e.g., pull requests) for your review.\nUse project automations for repeatable tasks, such as creating a new promo video whenever a feature lands.\nFor a focused task in a single repository, you can still start a session directly from that repository.\nCopilot Projects are now in public preview. You can learn more in the projects documentation.\nHandle the work around your code\nUse context from connected tools such as Slack and Figma to research a request, draft a specification, or work through a design alongside your code.\nYou can also generate and edit images using natural language in chat.\nLet Copilot work with your desktop apps\nAsk Copilot to work through tasks in your desktop apps, such as an expense-report workflow. Computer use—in public preview on macOS and Windows—lets Copilot read app content, click controls, enter or edit text, and navigate across apps, including those without an API, command-line interface, or MCP integration.\nCopilot asks for your approval before controlling an app, and your organization can disable the feature through managed settings. To get started, open Settings > Computer Use and turn on Enable Computer Use. On macOS, grant the required Accessibility and Screen Recording permissions.\nFor more information, see the computer use documentation.\nGet started\nDownload or update the GitHub Copilot app and join the discussion in GitHub Community.\nNov.06 Improvement\nCopilot code review: API management and review overview updates\ncopilot\nNov.06 Improvement\nCopilot impact dashboard adds chat and VS Code agent usage\naccount management\ncopilot\nenterprise management tools\nNov.06 Release\nGitHub Copilot weekly releases — November 2\ncopilot\nNov.06 Release\n@GitHub in Slack and Teams is generally available and more\nclient apps\ncopilot\nNov.05 Improvement\nUsage metrics API adds code review details and addressed rate\naccount management\ncopilot\nenterprise management tools\nNov.05 Improvement\nUsage metrics API flags telemetry and version gaps\naccount management\ncopilot\nenterprise management tools\nNov.04 Release\nGitHub Copilot is now available in Xcode’s coding assistant\ncopilot\nNov.03 Improvement\nBYOK and enterprise custom models in the Copilot usage API\naccount management\ncopilot\nenterprise management tools\nNov.03 Release\nGitHub Copilot is now available in JetBrains Air\ncopilot"
+   }
+  },
+  {
+   "url": "https://antigravity.google/docs/changelog/",
+   "article": {
+    "url": "https://antigravity.google/docs/changelog/",
+    "status": "ok",
+    "title": "Changelog | Google Antigravity Docs",
+    "chars": 477821,
+    "text": "v2.29.0\nLatest\nNovember 3, 2026\nVoice mode, remote agents, redesigned Automations, and Jupyter notebook viewer\nVoice mode, enabled by Gemini Live, and remote agents, which run conversations in the cloud, are starting to roll out. This release also adds redesigned Home and Automations pages, a native Jupyter notebook viewer, and downloads and browsing history in the built-in browser.\nImprovements(22)\nVoice mode, enabled by Gemini Live, lets you talk to Antigravity and hand requests to the agent by voice. Start it from the button in an empty message box. Voice mode is rolling out gradually, so you may not see it yet.\nRemote agents are starting to roll out to Google AI Ultra and Pro subscribers. Conversations in a cloud project run in the cloud instead of on your computer, and you can also open them at antigravity.google.com/remote.\nThe new-conversation page now greets you at the top and pins the message box to the bottom. Single-repo projects combine branch and Git worktree selection into one menu, and the agent picker now lives inside the model menu.\nThe Automations page now organizes automations into Scheduled, Always on, and Paused lists with Next run and Last run times, plain-menu schedule pickers, in-page details, and a full-page creation form.\nJupyter notebook .ipynb files now open natively in the file viewer, rendering code cells, Markdown, tables, images, and cell outputs without leaving Antigravity.\nLong conversations in the conversation navigator now label each collapsed chapter card with a short AI-generated title instead of only a date.\nThe built-in browser now saves downloads directly to your downloads folder without blocking prompts, shows progress in a toolbar downloads drawer, and lets you choose a default download folder under Settings > General.\nTyping in the built-in browser's address bar now suggests matching pages from your browsing history, and you can clear saved history under Settings > General.\nThe built-in browser has a redesigned address bar with clearer connection security indicators, a thin loading progress bar along the top of the page, and an in-page prompt dialog when a site asks for text input.\nYou can now open a web address or search Google from the side panel's New Tab page, drag links into the side panel to open them in the built-in browser, and close tabs to the left from a tab's menu.\nSettings > Appearance now includes a Fill option that expands conversations to the full width of the center pane, a Font menu to switch between System UI, Inter, and Google Sans, and a Screen Reader Mode toggle under Accessibility.\nIf you haven't picked your own, Antigravity now uses the Onyx theme and the Google Sans font. You can change both under Settings > Appearance.\nYou can now customize keyboard shortcuts in Settings > Shortcuts, and reset any of them to the default.\nCode blocks and diffs now load syntax highlighting on demand across 173 languages, and the file tree and tabs include file icons for more than 30 additional languages and config formats.\nThe Overview panel's Review row and the Review tab header now show total added and deleted line counts across changed files in your Git repository.\nOpening antigravity:// links can now jump directly to a plugin or skill in the Marketplace, or open a new conversation with the prompt filled in for you to review and send.\nThe Git branch menu now adds a search box when a repository has more than 15 branches, refreshes automatically when you return to the window, and shows the checked-out commit hash when in detached HEAD state.\nAgent question cards can now be collapsed while you read earlier messages and are automatically canceled if you send a new reply instead, and each permission preset in the message box now has its own icon.\nIn conversation search, you can now unarchive an archived conversation directly from its row, and the Automations filter includes archived automation runs.\nOpening an image from a Markdown carousel now lets you step through every slide…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50407882",
+   "hn_url": "https://news.ycombinator.com/item?id=50407882",
+   "hn": {
+    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+    "points": 106,
+    "comments": 74
+   },
+   "comments": [
+    {
+     "author": "bcherny",
+     "replies": 10,
+     "text": "Boris from the Claude Code team here. Historically Claude Code has not done secret scrubbing (there are many good tools for that), but we are looking into what we can do to prevent this.\nThat said, a few thoughts:\n1. .claude/settings.local.json is meant to stay local. This is not a file you should check into source control. We automatically gitignore it when Claude creates the file, so in this case the files were manually created and checked in (docs:…"
+    },
+    {
+     "author": "Aurornis",
+     "replies": 2,
+     "text": "Confusing headline. They scanned for repos where people had committed their .claude/ folder and local settings and then scanned those files for commands which contained keys or passwords.\nSo pressing “Don’t Ask Again” by itself doesn’t expose passwords by itself. If you commit your local Claude settings and in those settings you have manually approved commands containing secrets directly in the command and then you publish the repo, that’s exposed."
+    },
+    {
+     "author": "binarymax",
+     "replies": 0,
+     "text": "I keep all my creds in a password manager (1Password in my case) and Claude can’t see them - when a cred is needed it runs a script that calls the op CLI and I tap my fingerprint for access. Sometimes I need to do it a bunch of times for complex operations, but it’s worth it."
+    },
+    {
+     "author": "lacoolj",
+     "replies": 2,
+     "text": "This page is like 80% repeating itself\nIf you post output from AI, please remember to edit before publishing"
+    },
+    {
+     "author": "skeledrew",
+     "replies": 0,
+     "text": "According to Claude docs, settings.local.json isn't to be committed. This is just people being the usual sloppy with secrets in repos, not something particular to Claude or AI in general."
+    }
+   ],
+   "article": {
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "status": "ok",
+    "title": "Apiiro: Secure your agentic development",
+    "chars": 182,
+    "text": "D | Apiiro | AI AppSec Agent. Built for Enterprise Security.\nDynamic Page on Apiiro | AI AppSec Agent. Built for Enterprise Security.. Protect your entire AI development environment."
+   }
+  },
+  {
+   "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+   "hn_url": "https://news.ycombinator.com/item?id=50397099",
+   "hn": {
+    "title": "GitHub's new Git storage architecture",
+    "points": 220,
+    "comments": 62
+   },
+   "comments": [
+    {
+     "author": "pksunkara",
+     "replies": 3,
+     "text": "Most of this is similar to what https://enroute.sh already did scaling Git. https://enroute.sh/blog/everyone-is-doing-git-on-s3-wrong"
+    },
+    {
+     "author": "yakkomajuri",
+     "replies": 3,
+     "text": "If I'm reading this right, this is (really solid) future planning but won't help with the current outages?\nI'd have thought so from the headline + initial content but then they say that the horizontal scale techniques are basically carrying over from the existing architecture (where it seems the problem is?) and this is mostly to help with what they call \"vertical scale\" (intra-repo scalability). They also admit right after that the most active repos today will receive short bursts of at most…"
+    },
+    {
+     "author": "dwm",
+     "replies": 0,
+     "text": "This looks a lot like Cursor's Continuity, though Github are reporting an order of magnitude greater write throughput.\nhttps://cursor.com/blog/git-at-any-scale"
+    },
+    {
+     "author": "jxramos",
+     "replies": 2,
+     "text": "Agent scale is definitely on the mind around industry, I wonder what github folks would say in response to https://www.anthropic.com/research/redesigning-source-contro.... It's an interesting read to step back and consider source control from first principles and rebalance the tradeoffs for what qualities matter in this new regime."
+    },
+    {
+     "author": "rochacon",
+     "replies": 0,
+     "text": "So that is why I got a bunch of 500's during push this week :)\nHope it helps improve reliability, it was getting hard to defend GitHub with all the recent outages."
+    }
+   ],
+   "article": {
+    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+    "status": "ok",
+    "title": "Inside GitHub's new Git storage architecture - The GitHub BlogLinkedIn iconInstagram iconYouTube iconX iconTikTok iconTwitch iconGitHub icon",
+    "chars": 933,
+    "text": "Karthik Raman\n@kraman-msft-eng\nDistinguished Engineer\nBrian Celenza\n@bcelenza\nBrian is a Principal Software Engineer working on the storage and core services that power all repository interactions on GitHub.\nArchitecture & optimization\nThe bridge to agent-scale Git infrastructure\nWe moved a copy of 99.99999% of GitHub’s repositories to Azure. Here’s how per-reference quorums will bring over the rest, and how object storage lets reads scale independently.\nEngineering\nStaying Evergreen: How we automated secure access and repo hygiene in a shared org\nPut native GitHub features to work to review outside collaborator access and archive stale repositories.\nArchitecture & optimization\nFrom 2,500 requests to 24: Rebuilding star history without the stargazers\nOur new repo star history API now provides trends without returning individual identities or requiring unbounded database work. These are the engineering tradeoffs we made."
+   }
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "hn_url": "https://news.ycombinator.com/item?id=50392118",
+   "hn": {
+    "title": "Gemini Omni 1.2 Flash",
+    "points": 359,
+    "comments": 249
+   },
+   "comments": [
+    {
+     "author": "wxce",
+     "replies": 33,
+     "text": "It's insane how Google has dropped the ball almost completely with AI.\nI literally don't care about their models anymore because I can't even try them without paying for them?\nI already pay for the plus plan but whatever their latest model was, is locked for me. Or otherwise it's just not accessible for me.\nIf I try to add balance to my Google payment account, it shows me errors and is asking me to verify my identity through government documents.\n---\nNot to mention the extremely confusing…"
+    },
+    {
+     "author": "msabalau",
+     "replies": 3,
+     "text": "This is a new video model. It is not a replacement for Gemini 4, it is doing something altogether different.\nIt has been available, since yesterday, within Google Flow. I know, because I used it yesterday. Creatives normally are using Flow or similar third party tools, not APIs or AI Studio. The claim here is that there is more character consistency, which is helpful if true. But that's not something I can see from a little work. Despite the \"More Affordable\" claim, it costs more, and the…"
+    },
+    {
+     "author": "Willingham",
+     "replies": 3,
+     "text": "The rollout is so confusing. Going straight to the Gemini app and asking when I can use this model gets me vague and contradicting answers. Ultimately it sounds like the Vids rollout will take 1-3 days, and you can go to vids.new on desktop to see if you’ve won the lottery and have it available now, apparently on any free Google account. Business accounts can use it too. Meanwhile the Gemini app is getting it on paid plans, but with different video length limits and no clear rollout timeline.…"
+    },
+    {
+     "author": "armcat",
+     "replies": 5,
+     "text": "Completely random, but I was inspecting the source code for their Omni 1.2 Flash web page, and there are insane amount of newlines. There are seven newlines between the first line and the DOCTYPE. There are huge amount of newlines between each section. What did they use to generate this website?"
+    },
+    {
+     "author": "hangrybear666",
+     "replies": 1,
+     "text": "What's this name and versioning now, NOBODY understands Google's Ai products, including subscribers to them.\nWhy their models go from 3 to 4 but then whatever this is starts at 1 I honestly don't care anymore\nMy friend on Google ai plus is still stuck on gemini 3.6 flash and now they're taking away 3.1 pro from them too even though it's long obsolete, like zero regard for user interactions here"
+    }
+   ],
+   "article": {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "status": "ok",
+    "title": "Gemini Omni 1.2 Flash: 15-second video and lower pricing",
+    "chars": 8632,
+    "text": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips\nNov 05, 2026\n|\nx.com\nFacebook\nLinkedIn\nMail\nGemini Omni 1.2 Flash brings 15-second clips, stronger consistency, and faster, more cost-effective generation.\nAnish Nangia\nProduct Manager, Google DeepMind\nShare\nx.com\nFacebook\nLinkedIn\nMail\nYour browser does not support the audio element.\nListen to article\n[[duration]] minutes\nThis content is generated by Google AI. Generative AI is experimental\nWe’re rolling out Gemini Omni 1.2 Flash, which offers native 15-second video creation, improved reference adherence, and multi-turn conversational editing. This update lowers costs by 30% and provides better consistency for your professional projects. You can start using these capabilities today across the Gemini API, Google Vids, and Gemini for business to produce high-quality video content at scale.\nSummaries were generated by Google AI. Generative AI is experimental.\nWe are launching Gemini Omni 1.2 Flash with support for fifteen-second videos and improved reference adherence.\nYou can now edit clips through multi-turn conversations, which allows for faster adjustments without starting over.\nWe reduced the price by 30% to help you produce high-quality video content at a lower cost.\nThis model is generally available on the Gemini API and Google Cloud for your production needs.\nSummaries were generated by Google AI. Generative AI is experimental.\nExplore other styles:\nToday, we’re rolling out Gemini Omni 1.2 Flash, and making it generally available across the Gemini API and Gemini for business. Gemini Omni 1.2 Flash introduces native 15-second video creation, multi-turn conversational editing capabilities, and enhanced reference following. We have dropped the price 30% from Gemini Omni 1.1 making it available at $0.07 per second for 720p video.\nHere’s an overview of what’s new:\nFast and cost-effective at scale\nBeyond the lower price, the workflow keeps costs down: you can draft fast at 360p or 720p, fix a detail with a follow-up edit instead of re-generating the entire clip, and then upscale your best creations to 1080p or 4K.\nLonger clips up to 15 seconds\nYou can now generate and edit videos natively up to 15 seconds long, up from 10 seconds with Omni 1.1. You can also specify duration in one-second increments from 3 to 15 seconds, giving you room to tell complete stories, create product explainers, or produce full social ad spots in a single generation.\nBetter reference adherence\nYou can guide generation combining character, product, or style images, short motion clips (up to three seconds), and audio cues — and Omni 1.2 Flash holds onto those details from start to finish. Faces, garments, packaging typography, and brand colors stay consistent across camera angles, making it easy to turn existing product photography or character sheets into virtual try-on clips, catalog spins, and branded video ads.\nCombining one model photo with front-and-back product shots of three outfits, Gemini Omni 1.2 Flash generates a 15-second virtual try-on sequence across 360-degree turns and match cuts while keeping the model’s identity and each garment’s cut, drape, and back details consistent.\nMore consistent results\nYou can maintain stronger character, object, and scene consistency from the first to the last frame, with less visual drift or morphing across motion and camera transitions. Whether you’re interpolating between a first and last keyframe, or extending a clip to build a longer sequence, products, characters, props, and environments stay consistent from shot to shot.\nGiven the same static studio lighting exhibition poster and five-layer animation prompt, Gemini Omni 1.1 Flash does not match the reference image as closely as 1.2 does. Gemini Omni 1.2 Flash builds the poster sequentially layer by layer on the dusty-pink cyclorama rising the hexagonal plinth, assembling the ribbed glass, warm filament, faceted crystal, and coiled-cord letterforms for HALO, GLOW, and LUMEN, and locking…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50394906",
+   "hn_url": "https://news.ycombinator.com/item?id=50394906",
+   "hn": {
+    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+    "points": 308,
+    "comments": 612,
+    "text": "https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3..."
+   },
+   "comments": [
+    {
+     "author": "UncleOxidant",
+     "replies": 21,
+     "text": "Sure, this is a small anecdotal datapoint, but since I've gotten Qwen3.8-Flash-Next running well on my Strix Halo box my Claude Pro subscription use has dropped off a cliff. I'm only at 18% of quota usage this week - this being Friday I would've been at 80% at least in the past. This is just an astonishingly good model that runs locally and quite well on my PC. I do not plan to renew my Claude Pro subscription when it comes up in a couple of months."
+    },
+    {
+     "author": "soundworlds",
+     "replies": 17,
+     "text": "I've been using the $32/month (AUD) subscription, but finally dipped into extra credits to get a task over the line yesterday after I hit my 5-hr limit.\nAnd my god, $15 of extra credits ended up giving me only 30 minutes of Claude Code before running out.\nThe subscription prices can not be financially sustainable. There is no way that is remotely close to the actual cost of running."
+    },
+    {
+     "author": "int32_64",
+     "replies": 4,
+     "text": "Looking at the S-1 lockup schedule the IPO seems doomed. They need to bring in a ton of investment, and you will have massive unlocks right as the next congress is most active authoring anti-AI bills. Who's going to buy this?"
+    },
+    {
+     "author": "lnkdinsuxs",
+     "replies": 12,
+     "text": "I'm not convinced that 2026 was peak of the AI hype cycle.\nArguments are being made that, with the midterms over and 2028 just around the corner, a less sympathetic administration would create significant headwinds, adjusting the valuation of Anthropic and OpenAI down.\nWhat we don't know are what Anthropic and OpenAI have planned and in the works.\nA large population of extremely skilled and talented people are being laid off by their employers to make space for AI investments. It's likely a…"
+    },
+    {
+     "author": "wewewedxfgdf",
+     "replies": 21,
+     "text": "Can someone help me understand - I have tried local AI/LLMs.\nLets set aside speed. The results are ALWAYS terrible compared to CLaude Code.\nSure I only have a 12GB GPU - is that what it is? If I had a 32GB CPU would the experience be as amazing as Claude Code is?\nWhy is my experience of local LLMs so average?"
+    }
+   ],
+   "article": {
+    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — Bloomberg - Are you a robot? @font-face { font-family: BWHaasGroteskWeb; font-display: swap; font-weight: 400; font-style: normal; src: url('https://as"
+   }
+  }
+ ]
+}

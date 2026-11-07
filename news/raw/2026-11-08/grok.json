@@ -1,0 +1,221 @@
+{
+ "date": "2026-11-08",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-08.json",
+ "fetched_at": "2026-11-07T23:55:53+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 7,
+  "posts": 8,
+  "ok": 8,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "GitHub unveils new Git storage architecture supporting 5,000 concurrent agents",
+   "category": "model_infra",
+   "event_time": "2026-11-06T00:00:00Z",
+   "primary_url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+   "facts": [
+    "Through internal testing, GitHub’s new Git storage architecture supported 5,000 concurrent agents working on a repository, sending 7,200 pushes per second, all while serving read traffic with consistently low latency.",
+    "The architecture is named Project Rubicon and decouples storage from compute, with Git objects in Azure Blob Storage and references managed by Ref-CAS.",
+    "It minimizes coordination to only reference updates, allowing independent scaling of reads and writes."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/github/status/2118830274431873379",
+     "official": true,
+     "author": "@github",
+     "check": "ok",
+     "created_at": "2026-11-06T22:17:58Z",
+     "text": "Through internal testing, GitHub’s new Git storage architecture supported 5,000 concurrent agents working on a repo, sending 7,200 pushes per second, all while serving read traffic with consistently low latency. https://x.com/i/article/2118827340377829376",
+     "likes": 1009,
+     "retweets": 99,
+     "replies": 105,
+     "views": 86947
+    },
+    {
+     "url": "https://x.com/Ngorovitch/status/2119115666498130137",
+     "official": false,
+     "author": "@Ngorovitch",
+     "check": "ok",
+     "created_at": "2026-11-07T17:12:00Z",
+     "text": "github rebuilt git storage to handle 5000 concurrent ai agents writing to the same repo\n\nthousands of writes per second, reads that scale on demand\n\nturns out the bottleneck for agentic coding was never the model, it was storage\n\nhttps://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 1,
+     "views": 39
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Google Antigravity 2.29 adds Remote Agents and Gemini Live Voice Mode",
+   "category": "feature_update",
+   "event_time": "2026-11-06T00:00:00Z",
+   "primary_url": "https://antigravity.google/docs/changelog/",
+   "facts": [
+    "Antigravity 2.29 adds Remote Agents that run conversations in the cloud instead of on your computer, rolling out to Google AI Ultra and Pro subscribers, and can be opened at antigravity.google.com/remote.",
+    "Voice mode, enabled by Gemini Live, lets you talk to Antigravity and hand requests to the agent by voice.",
+    "Remote Agents continue working on long-running tasks even when you close your browser or put your laptop to sleep."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/hserry/status/2119176620074508598",
+     "official": false,
+     "author": "@hserry",
+     "check": "ok",
+     "created_at": "2026-11-07T21:14:13Z",
+     "text": "I like the new @antigravity looks and features\nEspecially\n- Cloud over Google Drive and Github\n- Voice Mode\nAnd the other previous recently added features",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 14
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Cursor introduces Build Live Apps for cloud agents to create and host web apps",
+   "category": "feature_update",
+   "event_time": "2026-11-05T00:00:00Z",
+   "primary_url": "https://cursor.com/changelog/build-live-apps",
+   "facts": [
+    "Agents can now build live apps directly in Cursor and share them with a link; Cursor handles building the app, setting up a database, configuring auth, and deploying it.",
+    "This capability is available on all paid plans with cloud agents enabled.",
+    "Cursor runs security checks before publishing, and nothing goes live before you choose to publish."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/AITRACKERTOOL/status/2119191517420195852",
+     "official": false,
+     "author": "@AITRACKERTOOL",
+     "check": "ok",
+     "created_at": "2026-11-07T22:13:25Z",
+     "text": "Cursor can now take a cloud agent past localhost.\n\nOn paid plans with cloud agents it scaffolds a web app, spins up Postgres if you need it, puts team apps behind Cursor SSO, runs security checks, then gives you a live URL from Origin or GitHub.\n\nHosting price still isn't in the docs.\n\nNotes on today's drop: http://aitrackertool.dev\n\nAnyone tried Live Apps on a real internal tool yet?",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 18
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "GitHub Copilot app Projects coordinate multi-repo agent work",
+   "category": "feature_update",
+   "event_time": "2026-11-07T18:22:00Z",
+   "primary_url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/",
+   "facts": [
+    "Projects in the GitHub Copilot app give work one home with its context, agents, and results together; Copilot coordinates the work in the background.",
+    "Start a project, describe what you want to get done, and add context such as repositories; Copilot runs as many agents as the work needs.",
+    "Copilot Projects are now in public preview."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/github/status/2119133311465353675",
+     "official": true,
+     "author": "@github",
+     "check": "ok",
+     "created_at": "2026-11-07T18:22:07Z",
+     "text": "💡 Bring all your related work together with projects in the GitHub Copilot app.\n\nGive Copilot a goal and it will coordinate the work. Your project can span one or more repos or focus on tasks that don't require one. Copilot can start sessions, set up recurring automations, or create artifacts; they'll show up in your project. 🗂️\n\nKeep your sessions together to work toward one objective. Get started 👇\nhttps://docs.github.com/copilot/how-tos/github-copilot-app/working-with-projects?utm_source=x-social-promoting-projects&utm_medium=social&utm_campaign=post-universe-2026",
+     "likes": 130,
+     "retweets": 11,
+     "replies": 38,
+     "views": 24822
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Andrej Karpathy one-shots a 47k-video site with Claude Code in 3 minutes",
+   "category": "case_study",
+   "event_time": "2026-11-07T17:07:00Z",
+   "primary_url": null,
+   "facts": [
+    "Andrej Karpathy turned a list of YouTube channels into TristanTube, a site with 47,000 videos and a TV mode, one-shotted with Claude Code in 3 minutes."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/karpathy/status/2119114537442189652",
+     "official": false,
+     "author": "@karpathy",
+     "check": "ok",
+     "created_at": "2026-11-07T17:07:31Z",
+     "text": "Earlier this week Tristan published his top YouTube channels:\nhttps://thume.ca/2026/11/01/youtube-tier-list-2026/\nWhich looked excellent so clearly I had to turn it into TristanTube:\nhttps://karpathy.ai/tristan-tube/\n47K super nerdy videos +TV mode for laid back watching. (One-shotted with Claude Code in 3 minutes)",
+     "likes": 4871,
+     "retweets": 350,
+     "replies": 381,
+     "views": 403240,
+     "quote": {
+      "author": "@karpathy",
+      "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://hackertube.org/\n\n- Excellent recs without any logins (state is kept in local browser session)\n- Thumbnail is a representative frame from middle of the video instead of the super duper A/B test hyper-optimized user uploads\n- Underlying data from…"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Study finds AI coding agents follow CLAUDE.md over existing codebase 90% of the time",
+   "category": "adoption_survey",
+   "event_time": "2026-11-07T03:49:00Z",
+   "primary_url": null,
+   "facts": [
+    "A new study of 40 projects found that AI agents ignore the actual codebase 90% of the time to blindly follow old rules in a CLAUDE.md file.",
+    "Adding one sentence 'Prioritize existing code and report conflicts' jumps accuracy to 91%."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/kgauravnm/status/2118913636483645616",
+     "official": false,
+     "author": "@kgauravnm",
+     "check": "ok",
+     "created_at": "2026-11-07T03:49:13Z",
+     "text": "We’ve been using AI coding agents completely wrong.\n \nA new study of 40 projects just proved it. It found that AI agents ignore your actual codebase 90% of the time to blindly follow old rules in a CLAUDE.md file.\n \nCodex will literally rewrite your working code to fit stale rules, and Claude will flag the issue but comply anyway.\n \nThe fix? It’s one sentence: “Prioritize existing code and report conflicts.”\n \nStop treating AI like a junior intern who needs step-by-step orders. Treat it like a senior engineer who needs to respect the existing architecture. Accuracy jumps to 91%.",
+     "likes": 26,
+     "retweets": 2,
+     "replies": 26,
+     "views": 1178
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Google analysis: coding agents get distracted by TODO comments, adding 70% more steps",
+   "category": "trend",
+   "event_time": "2026-11-07T09:34:00Z",
+   "primary_url": null,
+   "facts": [
+    "Google analyzed 913K+ coding-agent sessions and found 13% of sessions exposed agents to inline TODO comments; in 6% of encounters agents acted on them, 83% of those actions unprompted.",
+    "These detours added +70% more steps, +77% more tokens, and +105% more wait time."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/CodetocashAi/status/2119000622946988049",
+     "official": false,
+     "author": "@CodetocashAi",
+     "check": "ok",
+     "created_at": "2026-11-07T09:34:52Z",
+     "text": "Your coding agent might be doing work you never asked for.\n\nGoogle analyzed 913K+ coding-agent sessions and found a costly distraction:\n\n→ 13% of sessions exposed agents to inline TODO comments.\n→ In 6% of encounters, agents acted on them.\n→ 83% of those actions were unprompted.\n\nThe cost of these detours?\n\n+70% more steps\n+77% more tokens\n+105% more wait time\n\nThe agent wasn’t solving a harder problem.\n\nIt was chasing old tickets and expanding the scope of the task.\n\nThis is an overlooked AI engineering cost:\n\nYour codebase is part of your agent’s context.\n\nClean up stale TODOs. Remove obsolete references. Keep the agent focused.\n\nSometimes the cheapest model upgrade is a cleaner repository.",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 2,
+     "views": 78
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

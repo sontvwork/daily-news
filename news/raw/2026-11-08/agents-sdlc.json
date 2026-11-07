@@ -1,0 +1,60 @@
+{
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "feeds": {
+    "category": null,
+    "sources": [
+      "hackernews",
+      "reddit"
+    ],
+    "subreddits": []
+  },
+  "generated_at": "2026-11-07T23:57:26.636303Z",
+  "kind": "discovery",
+  "outcome": "ok",
+  "results": [
+    {
+      "command": "/last30days \"Claude Code Don't Ask Again leak\"",
+      "corroboration_count": 1,
+      "covered": false,
+      "engagement": {
+        "hackernews": {
+          "comments": 846,
+          "points": 784
+        }
+      },
+      "evidence_urls": [
+        "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+        "https://twitter.com/make_claude/status/2119091439623721443",
+        "https://www.anthropic.com/research/how-researchers-use-claude",
+        "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+        "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b\u2019"
+      ],
+      "last_surfaced": null,
+      "momentum": "new-this-week",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 1,
+      "sources": [
+        "hackernews"
+      ],
+      "top_comment": "\"> Is it public? \n  > \n  > Search your GitHub organization for .claude/settings.local.json and .claude/settings.json. Each hit is a file anyone can read right now.\n\nSo, it's not necessarily...\" - qezz",
+      "topic": "Claude Code Don't Ask Again leak",
+      "velocity_score": 1811.03,
+      "why_spiking": "14 evidence items on hackernews generated 1,630 native interactions. Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "x_article_angle": null
+    }
+  ],
+  "schema_version": "1.1",
+  "source_status": {
+    "digg": "skipped-unconfigured",
+    "hackernews": "ok",
+    "reddit": "ok",
+    "x": "skipped-unconfigured"
+  },
+  "warnings": [
+    "Fewer than five topic clusters cleared the confidence floor this window.",
+    "Discovery evidence is single-source; configure Digg for broader confirmation."
+  ],
+  "weak_signal": null,
+  "window_days": 1
+}

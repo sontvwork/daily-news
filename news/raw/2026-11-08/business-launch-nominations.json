@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "6a7354c2d34c4c50",
+  "generated_at": "2026-11-07T23:56:14.993673Z",
+  "from_date": "2026-11-06",
+  "to_date": "2026-11-07",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-07T23:56:14.992209Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-07T23:56:14.992221Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-07T23:56:14.990234Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-07T23:56:14.992081Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Dutch idealist bank ASN blocks non-Google",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 423,
+          "points": 646
+        }
+      },
+      "nomination": {
+        "name": "Dutch idealist bank ASN blocks non-Google",
+        "seed_score": 1133.8457,
+        "summary": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50390124",
+            "source": "hackernews",
+            "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "body": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+            "author": "microtonal",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 646,
+              "comments": 423
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Dutch 'idealist' bank ASN blocks non-Google Android, includi",
+            "snippet": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50390124",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anthropic IPO 1.1T",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 612,
+          "points": 308
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO 1.1T",
+        "seed_score": 975.8074,
+        "summary": "Anthropic IPO buyers see valuation as low as $1.1T",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50394906",
+            "source": "hackernews",
+            "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "body": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+            "author": "dgellow",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 308,
+              "comments": 612
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic IPO buyers see valuation as low as $1.1T",
+            "snippet": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50394906",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 81,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "RealPage 360M",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 166,
+          "points": 177
+        }
+      },
+      "nomination": {
+        "name": "RealPage 360M",
+        "seed_score": 363.8064,
+        "summary": "RealPage rent-pricing case wraps with nearly $360M to renters",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50399991",
+            "source": "hackernews",
+            "title": "RealPage rent-pricing case wraps with nearly $360M to renters",
+            "body": "RealPage rent-pricing case wraps with nearly $360M to renters",
+            "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
+            "author": "raybb",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 177,
+              "comments": 166
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about RealPage rent-pricing case wraps with nearly $360M to renter",
+            "snippet": "RealPage rent-pricing case wraps with nearly $360M to renters",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50399991",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 14,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07150000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Kugelblitz Mac-Native Google Earth Alternative",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 66,
+          "points": 264
+        }
+      },
+      "nomination": {
+        "name": "Kugelblitz Mac-Native Google Earth Alternative",
+        "seed_score": 350.0179,
+        "summary": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50389370",
+            "source": "hackernews",
+            "title": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "body": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "url": "https://apps.metaebene.me/en/kugelblitz",
+            "author": "luoc",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 264,
+              "comments": 66
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "snippet": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50389370",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.064
+          }
+        ]
+      }
+    }
+  ]
+}

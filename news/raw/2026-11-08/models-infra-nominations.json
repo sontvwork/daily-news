@@ -1,0 +1,806 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "a0ad78d6388786af",
+  "generated_at": "2026-11-07T23:56:31.065415Z",
+  "from_date": "2026-11-06",
+  "to_date": "2026-11-07",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-07T23:56:31.001085Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-07T23:56:31.001093Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 8,
+      "attempted": true,
+      "at": "2026-11-07T23:56:30.768739Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 112,
+      "attempted": true,
+      "at": "2026-11-07T23:56:31.000884Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Max 20x",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 95
+        }
+      },
+      "nomination": {
+        "name": "Claude Max 20x",
+        "seed_score": 2595.0,
+        "summary": "A judge says Claude Max\u2019s \u201c20x more usage\u201d promise could mislead paying subscribers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "A judge says Claude Max\u2019s \u201c20x more usage\u201d promise could mislead paying subscribers",
+            "body": "A judge says Claude Max\u2019s \u201c20x more usage\u201d promise could mislead paying subscribers",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xq12am/a_judge_says_claude_maxs_20x_more_usage_promise/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1635,
+              "num_comments": 95
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "A judge says Claude Max\u2019s \u201c20x more usage\u201d promise could mislead paying subscribers",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Dutch idealist bank ASN blocks non-Google",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 423,
+          "points": 646
+        }
+      },
+      "nomination": {
+        "name": "Dutch idealist bank ASN blocks non-Google",
+        "seed_score": 1133.8457,
+        "summary": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50390124",
+            "source": "hackernews",
+            "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "body": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+            "author": "microtonal",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 646,
+              "comments": 423
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Dutch 'idealist' bank ASN blocks non-Google Android, includi",
+            "snippet": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50390124",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15100000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic IPO 1.1T",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 612,
+          "points": 308
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO 1.1T",
+        "seed_score": 975.8074,
+        "summary": "Anthropic IPO buyers see valuation as low as $1.1T",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50394906",
+            "source": "hackernews",
+            "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "body": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+            "author": "dgellow",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 308,
+              "comments": 612
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic IPO buyers see valuation as low as $1.1T",
+            "snippet": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50394906",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 95,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1525
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Gemini Omni 1.2 Flash",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 249,
+          "points": 359
+        }
+      },
+      "nomination": {
+        "name": "Gemini Omni 1.2 Flash",
+        "seed_score": 644.8814,
+        "summary": "Gemini Omni 1.2 Flash",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50392118",
+            "source": "hackernews",
+            "title": "Gemini Omni 1.2 Flash",
+            "body": "Gemini Omni 1.2 Flash",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+            "author": "thisisauserid",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 359,
+              "comments": 249
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Gemini Omni 1.2 Flash",
+            "snippet": "Gemini Omni 1.2 Flash",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50392118",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 88,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17149999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 120
+        }
+      },
+      "nomination": {
+        "name": "Anthropic",
+        "seed_score": 498.0,
+        "summary": "Did Anthropic get hacked?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Did Anthropic get hacked?",
+            "body": "Did Anthropic get hacked?",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xq4d3u/did_anthropic_get_hacked/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 212,
+              "num_comments": 120
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Did Anthropic get hacked?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3595
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Harness Leaderboard Kimi Code Hermes Pi",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 99
+        }
+      },
+      "nomination": {
+        "name": "Harness Leaderboard Kimi Code Hermes Pi",
+        "seed_score": 474.0,
+        "summary": "Harness Leaderboard - Kimi Code, Hermes, Pi, Claude Code, Codex, and Others Were Benchmarked Against Terminal Bench 2.1 & Deep SWE 1.1",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Harness Leaderboard - Kimi Code, Hermes, Pi, Claude Code, Codex, and Others Were Benchmarked Against Terminal Bench 2.1 & Deep SWE 1.1",
+            "body": "Harness Leaderboard - Kimi Code, Hermes, Pi, Claude Code, Codex, and Others Were Benchmarked Against Terminal Bench 2.1 & Deep SWE 1.1",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpvfx8/harness_leaderboard_kimi_code_hermes_pi_claude/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 217,
+              "num_comments": 99
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Harness Leaderboard - Kimi Code, Hermes, Pi, Claude Code, Codex, and Others Were Benchmarked Against Terminal Bench 2.1 & Deep SWE 1.1",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35200000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "GPT Opus 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 92
+        }
+      },
+      "nomination": {
+        "name": "GPT Opus 5.5",
+        "seed_score": 436.5,
+        "summary": "As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks",
+            "body": "As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xqfqjl/as_a_gpt_user_i_used_opus_55_once_and_i_feel/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 199,
+              "num_comments": 92
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "They'll AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 84
+        }
+      },
+      "nomination": {
+        "name": "They'll AI",
+        "seed_score": 385.5,
+        "summary": "\u200c",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R101",
+            "source": "reddit",
+            "title": "They'll replace him with someone who opposes open source AI, won't they? \u200c",
+            "body": "They'll replace him with someone who opposes open source AI, won't they? \u200c\n\u200c",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xq66uy/theyll_replace_him_with_someone_who_opposes_open/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 173,
+              "num_comments": 84
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\u200c",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.323
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Kugelblitz Mac-Native Google Earth Alternative",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 66,
+          "points": 264
+        }
+      },
+      "nomination": {
+        "name": "Kugelblitz Mac-Native Google Earth Alternative",
+        "seed_score": 350.0179,
+        "summary": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50389370",
+            "source": "hackernews",
+            "title": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "body": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "url": "https://apps.metaebene.me/en/kugelblitz",
+            "author": "luoc",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 264,
+              "comments": 66
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "snippet": "Kugelblitz \u2013 Mac-Native Google Earth Alternative",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50389370",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.137
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Use Demo Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Use Demo Open Source",
+        "seed_score": 322.5,
+        "summary": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+            "body": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqd058/use_your_phone_to_monitor_anything_with_local/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 176,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Stanford AI 16 4,212\u00d7 27\u00d7 512-document",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Stanford AI 16 4,212\u00d7 27\u00d7 512-document",
+        "seed_score": 312.0,
+        "summary": "Stanford researchers develop a new AI memory system that recalls information from entire conversation histories using just 16 memory tokens. It reduces document-token usage by up to 4,212\u00d7, runs 27\u00d7 faster in a 512-document test, and outperforms existing approaches on 5 of 8 benchmarks.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "Stanford researchers develop a new AI memory system that recalls information from entire conversation histories using just 16 memory tokens. It reduces document-token usage by up to 4,212\u00d7, runs 27\u00d7 faster in a 512-document test, and outperforms existing approaches on 5 of 8 benchmarks.",
+            "body": "Stanford researchers develop a new AI memory system that recalls information from entire conversation histories using just 16 memory tokens. It reduces document-token usage by up to 4,212\u00d7, runs 27\u00d7 faster in a 512-document test, and outperforms existing approaches on 5 of 8 benchmarks.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xpvvg3/stanford_researchers_develop_a_new_ai_memory/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 193,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing",
+            "snippet": "Stanford researchers develop a new AI memory system that recalls information from entire conversation histories using just 16 memory tokens. It reduces document-token usage by up to 4,212\u00d7, runs 27\u00d7 faster in a 512-document test, and outperforms existing approaches on 5 of 8 benchmarks.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Dwarkesh spent 20K API AI Blood",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "Dwarkesh spent 20K API AI Blood",
+        "seed_score": 304.5,
+        "summary": "Dwarkesh spent 20K in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type social deception game).",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "Dwarkesh spent 20K in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type social deception game).",
+            "body": "Dwarkesh spent 20K in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type social deception game).",
+            "url": "https://www.reddit.com/r/singularity/comments/1xq18t4/dwarkesh_spent_20k_in_api_credits_having/",
+            "container": "singularity",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 170,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Dwarkesh spent 20K in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type social deception game).",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3105
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "GitHub new Git storage architecture",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 62,
+          "points": 220
+        }
+      },
+      "nomination": {
+        "name": "GitHub new Git storage architecture",
+        "seed_score": 299.1062,
+        "summary": "GitHub's new Git storage architecture",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50397099",
+            "source": "hackernews",
+            "title": "GitHub's new Git storage architecture",
+            "body": "GitHub's new Git storage architecture",
+            "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+            "author": "DAlperin",
+            "container": "Hacker News",
+            "published_at": "2026-11-06",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 220,
+              "comments": 62
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about GitHub's new Git storage architecture",
+            "snippet": "GitHub's new Git storage architecture",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50397099",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 70,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Betelgeuse running DeepSeek V4.1 Flash Q8_XL",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 57
+        }
+      },
+      "nomination": {
+        "name": "Betelgeuse running DeepSeek V4.1 Flash Q8_XL",
+        "seed_score": 298.5,
+        "summary": "After my last post on Qwen 3.8 Flash Next, a lot of people were asking if out-of-core MoE streaming could ever work on an actual frontier monster like **DeepSeek V4.1 Flash (1017)**, or if the prompt processing (PP) would make it completely unusable.  \nand NO We are not running small lobotomized model like Qwen 3.8 Flash Next at IQ2\\_XS like Strata  \nWe are running DeepSeek V4.1 Flash Q8\\_XL 305.6",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R87",
+            "source": "reddit",
+            "title": "Betelgeuse running DeepSeek V4.1 Flash Q8_XL (1017) at 19 tok/s decode & 62 tok/s prefill on an RTX 3060 12GB + 16GB RAM: How we finally fixed the prefill bottleneck on out-of-core MoEs",
+            "body": "Betelgeuse running DeepSeek V4.1 Flash Q8_XL (1017) at 19 tok/s decode & 62 tok/s prefill on an RTX 3060 12GB + 16GB RAM: How we finally fixed the prefill bottleneck on out-of-core MoEs\nAfter my last post on Qwen 3.8 Flash Next, a lot of people were asking if out-of-core MoE streaming could ever work on an actual frontier monster like **DeepSeek V4.1 Flash (1017)**, or if the prompt processing (PP) would make it completely unusable.  \nand NO We are not running small lobotomized model like Qwen 3.8 Flash Next at IQ2\\_XS like Strata  \nWe are running DeepSeek V4.1 Flash Q8\\_XL 305.6+110.6GB at usable speeds , in future release we would try to squeeze more and as of now works best on sm\\_86.\n\nThe biggest complaint everyone has with running massive MoEs off SSD/hybrid tiers is **Time To First Token (TTFT)**. You send a 500-token prompt, and the engine sits there for 30\u201360 seconds running at 1 to 3 tok/s just trying to chew through the prompt before emitting a single token.\n\nWell, over the last few days I've been hacking on **Betelgeuse** (`bel-cli` / `bel-server`) to see if we could get DeepSeek V4.1 Flash running at interactive speeds on the exact same budget gaming PC:\n\n* **GPU:** RTX 3060 12GB\n* **RAM:** 16GB Single-Channel DDR4-3200\n* **OS:** CachyOS / Arch Linux (tested inside a strict `MemoryMax=12G` cgroup limit, 0B swap)\n* **Storage:** PCIe 4.0 NVMe SSD\n\n# The Build & Setup\n\nI\u2019m running the high-precision **Q8\\_XL expert backbone paired with the IQ4\\_NL Engram table** (which scores **72.3 on DeepSWE**).\n\nThe 110 GB Engram table stays entirely on the NVMe SSD\u2014because Engram only activates at Layers 1 & 14 and only touches 48 rows per token (\\~192 KB), we stage those active rows directly into a tiny 2MB VRAM buffer at t=0, so the 110 GB file uses basically 0 bytes of RAM and causes zero CPU graph splits.\n\n# How We Fixed the Prefill (PP) Bottleneck:\n\nIn standard implementations, prefill on a large MoE with offloading completely falls apart because a prompt activates almost every single expert across all 40 layers. If you try to stream all of them sequentially, the GPU sits idle while the bus chokes.\n\nIn Betelgeuse, we tackled this with three changes:\n\n1. **Location-Invariant Cache Partitioning:** We maintain 20 resident slots per layer (5 VRAM Hot slots + 15 Host-RAM slots) with strict non-interfering routing.\n2. **Single-Pass Layer-Major Prefill:** Instead of chopping prompts into tiny 3-token micro-batches that destroy Tensor Core occupancy, prefill runs in full 16-token ubatches. All active Host-RAM experts stream directly into an execution ring over PCIe in parallel with compute.\n3. **End-of-Pass Physical VRAM Consolidation:** The engine learns which experts the prompt and early generation actually demanded, and physically swaps the top-5 most active experts into VRAM Hot slots at the end of the first pass without altering the model's logical routing trajectory.\n\nThe result: Warm Prompt Processing went from crawling at **3\u20136 tok/s up to 61.80 tok/s**. TTFT on standard prompts is now essentially instantaneous.\n\n# Betelgeuse vs Strata. Benchmark Comparison\n\n|Benchmark / Metric|Betelgeuse|Strata|\n|:-|:-|:-|\n|GPU|RTX 3060 12GB|RTX 5070 12GB / RTX 3060 12GB / 4\u00d7 R9700|\n|System RAM|16GB|64GB (RTX 5070) / 46GB (RTX 3060)|\n|Storage|1.7 GB/s NVMe|3.6 GB/s NVMe (RTX 5070)|\n|Memory Limit|12GB (MemoryMax=12G)|Not specified|\n|Warm Prompt Processing (PP)|61.80 tok/s|121 tok/s (4K) to 231 tok/s (8K) on RTX 5070|\n|Prompt Processing (RTX 3060)|61.80 tok/s (Doubles with Ram , Get a Dual channel 16gb and you go 61 tok/s to 120 tok/s!)|149 tok/s (8K)|\n|Warm Decode (TG)|18.15\u201318.92 tok/s|8\u201310 tok/s on RTX 3060 + 64GB Ram|\n|Decode Peak|27.92 tok/s|9.9 tok/s (code)|\n|Agent Work Decode|24.22 tok/s|7.8 tok/s (RTX 3060)|\n|RTX 5070 Decode|Not tested|4.7 tok/s|\n|ColdSSD Reads|0.00%|Not specified|\n|Disk I/O Wait|0.0 ms|Not specified|\n|Peak Memory Usage|10.61 GiB|Not specified|\n|DSpark|On|Off by default on RTX 3060. Enabling adds 2\u201313%|\n|Correctness Verification|Exact Python syntax and logic verified across runs|Not specified|\n|Quantization|**Q8\\_XL (UD - 3.1)**|GSQ-RCO IQ2\\_XS|\n\n# We also use DeepSeek's native DSpark drafter (with p_min = 0.50), which hits ~80\u201390% acceptance on structured code and amortizes the forward pass across 4+ tokens per sweep.\n\nOnce the cache warms up on a topic, **disk reads drop to literally 0.00%** and generation sustains **\\~18\u201319 tok/s** with zero swap thrashing.\n\nHappy to answer questions about the memory tiering or the doorbell synchronization!  \nGithub : [https://github.com/Betelgeuse-AI/BetelgeuseBetelgeuse](https://github.com/Betelgeuse-AI/BetelgeuseBetelgeuse) running DeepSeek V4.1 Flash Q4\\_XL (1017) at 19 tok/s decode & 62 tok/s prefill on an RTX 3060 12GB + 16GB RAM: How we finally fixed the prefill bottleneck on out-of-core MoEs",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqfekg/betelgeuse_running_deepseek_v41_flash_q8_xl_1017/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 142,
+              "num_comments": 57
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "After my last post on Qwen 3.8 Flash Next, a lot of people were asking if out-of-core MoE streaming could ever work on an actual frontier monster like **DeepSeek V4.1 Flash (1017)**, or if the prompt processing (PP) would make it completely unusable.  \nand NO We are not running small lobotomized model like Qwen 3.8 Flash Next at IQ2\\_XS like Strata  \nWe are running DeepSeek V4.1 Flash Q8\\_XL 305.6",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Claude Code Ask Again exposes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 74,
+          "points": 101
+        }
+      },
+      "nomination": {
+        "name": "Claude Code Ask Again exposes",
+        "seed_score": 262.5,
+        "summary": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50407882",
+            "source": "hackernews",
+            "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "body": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+            "author": "shmulc",
+            "container": "Hacker News",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 101,
+              "comments": 74
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 p",
+            "snippet": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50407882",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.8,
+            "local_rank_score": 0.314
+          }
+        ]
+      }
+    }
+  ]
+}

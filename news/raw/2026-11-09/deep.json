@@ -1,0 +1,292 @@
+{
+ "date": "2026-11-09",
+ "runs": [
+  {
+   "started_at": "2026-11-09T00:02:14+00:00",
+   "seconds": 3.5,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 7,
+   "articles_ok": 7,
+   "articles_error": 0,
+   "articles_skipped": 0,
+   "hn_ok": 6,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "7/7 bài gốc ok (0 bỏ qua), 6/6 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 3.5s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://caleb.software/posts/claude-to-pi.html",
+   "hn_url": "https://news.ycombinator.com/item?id=50410107",
+   "hn": {
+    "title": "Goodbye Claude, hello Pi",
+    "points": 675,
+    "comments": 424
+   },
+   "comments": [
+    {
+     "author": "bottlepalm",
+     "replies": 43,
+     "text": "I used to use ChatGPT/Claude in the TUI up until like 3 months ago, but my usage of LLMs has exploded - many sessions across many projects. I feel like I outgrew the TUI and now I'm using ChatGPT/Claude desktop. VS Code has become a code review tool and place where I manage git if need be.\nThe GUI is less verbose with the nitty gritty hidden in expandable sections, which makes history easier and cleaner to scroll through, also no scrolling bugs, rich text is easier to read with tables, and…"
+    },
+    {
+     "author": "leobuskin",
+     "replies": 11,
+     "text": "Pi is a good harness (I finally gave it a try w/ abliterated GLM), but not with Anthropic subscription, and there are multiple reasons to avoid alternative harnesses with their models in general (imho):\n1. Potential ban due to ToS violation;\n2. It doesn't follow all Anthropic's communication mechanisms out-of-the-box, they heavily use custom headers, hidden flags, and undocumented API features that affect models' behavior;\n3. Compact is better in CC (significantly);\n4. Cache related nuances (I…"
+    },
+    {
+     "author": "real_faxenoff",
+     "replies": 2,
+     "text": "I became interested in how the harness works internally so I could try to implement my own small AI agent in a business project. And I realized that right now, most of the model’s efficiency lies precisely in the harness. And that there’s a whole complicated world inside it, one that will soon become more complex than the models themselves.\nAll my experiments using third-party harnesses for code-writing agents showed that if a model is used in a non-native harness, it sometimes burns through 5…"
+    },
+    {
+     "author": "gvkhna",
+     "replies": 9,
+     "text": "Pi is without contest the best harness. Because it’s yours, the total control is the only way to move from driving agents to orchestrating them.\nMy interruptions and frustration with llms has gone down a cliff. It’s amazing to see what just a few lines of system prompt really can do to keep agents doing the correct thing much more often."
+    },
+    {
+     "author": "geniium",
+     "replies": 0,
+     "text": "Am really happy to see more and more alternatives to Claude and Codex\nAnd I think the biggest reason is what the “open source” models are doing. They are really closing the gap. Don’t get me wrong, the 2 American leaders are still pushing and leading the ai race\nBut with all the work done from other companies, notably in Asia, there are some alternative solutions : and they start to be really usable as our daily rides\nI just wish Europeans would play part of this race - but it seems that we…"
+    }
+   ],
+   "article": {
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "status": "ok",
+    "title": "Goodbye Claude, Hello Pi",
+    "chars": 6232,
+    "text": "caleb.software\nGoodbye Claude, Hello Pi\n21 September 2026\n#pi\n#claude\nI’ve been a longtime Claude Code user, ever since it became available in the Claude Pro subscription plan over a year ago. I remember the first time I used it, feeling giddy as it spat out messy Python code for whatever random weekend project I was working on, all from a single prompt. I’m certain that in a few years we’ll all look back at its release as one of the major drivers of this new era of software development we’re in.\nDespite this, due to an accumulation of many small frustrations, I’ve finally decided to retire it as my main coding harness and migrate my development setup to use Pi instead.\nSomeone at Anthropic must’ve caught wind… just a day after making my decision, they announced Claude Code would finally start supporting AGENTS.md files in an effort to get me to stay. Unfortunately, for me it was too little, too late.\nComplaining\nIn lieu of a proper obituary, I’d like to take this time to say a few words about the things I liked least about Claude Code (and thus what I’m looking forward to avoiding with Pi).\nThe AGENTS.md thing kind of epitomizes the whole reason I decided to quit using Claude Code. Don’t get me wrong, having a ton of CLAUDE.md files scattered about various GitHub hobby repos is great guerrilla marketing. But it sucks for users to have to deal with copying or symlinking between the two formats.\nLike the Luddite I am, I still prefer to review most of the code it churns out before I commit it. I use(d) Claude Code inside VSCode, and it lets you connect the harness to the IDE. This is nice because you can highlight text in a file and have it automatically included in the context when asking questions or requesting changes during a review.\nExcept you can only have one session “connected” to the IDE at a time. If you open a second tab to start another task while the first one works, it can’t receive the text selection events from the IDE at all. This has been reported at least as far back as December 2025… and closed as a duplicate of a totally unrelated bug.1\nOf course, you can always use the official Claude Code VSCode GUI extension, which does allow you to have multiple tabs open and load the text selection into the context of each. But this extension has plenty of problems of its own. Half of the built-in slash commands don’t work at all in the GUI. It doesn’t have any support for a custom status line. Subagent output messages are simply layered into the main chat thread in chronological order, which is a mess to read when more than one is running. I could go on and on.\nIn spite of all of these existing issues, it seems like Anthropic has worked at a feverish pace to pack more features into Claude Code without much care for quality or stability. Dynamic workflows, agent teams, ultrareviews – all great ways to help enterprise customers burn ever more tokens each day, but not really anything I want or need.\nAlongside all of these feature releases, they always seem to be fiddling with things in ways that mess up my personal setup. At the time of writing, there have been 244 releases to Claude Code this year; over 3/4 of these changed the system prompt or tool descriptions, which can substantially change how the LLM performs (especially when these new instructions contradict user prompts or repo conventions).\nAnd what are all those changes for? Despite chopping 80% of the system prompt, Claude Code still has way more overhead than Pi for seemingly no benefit. The default Bash tool’s description is almost 3,000 tokens, most of which is random stuff about using git and opening PRs on GitHub.2 The models already know how to do this without detailed instructions, by the way.3\nLooking Forward\nThis post has been a lot of hating. I’m sorry! That’s not my usual style, and I do think Anthropic has made a really cool piece of software here. I’m also not under any delusion that I would’ve done a better job if I were the one in charge of…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50410107",
+   "hn_url": "https://news.ycombinator.com/item?id=50410107",
+   "hn": {
+    "title": "Goodbye Claude, hello Pi",
+    "points": 675,
+    "comments": 424
+   },
+   "comments": [
+    {
+     "author": "bottlepalm",
+     "replies": 43,
+     "text": "I used to use ChatGPT/Claude in the TUI up until like 3 months ago, but my usage of LLMs has exploded - many sessions across many projects. I feel like I outgrew the TUI and now I'm using ChatGPT/Claude desktop. VS Code has become a code review tool and place where I manage git if need be.\nThe GUI is less verbose with the nitty gritty hidden in expandable sections, which makes history easier and cleaner to scroll through, also no scrolling bugs, rich text is easier to read with tables, and…"
+    },
+    {
+     "author": "leobuskin",
+     "replies": 11,
+     "text": "Pi is a good harness (I finally gave it a try w/ abliterated GLM), but not with Anthropic subscription, and there are multiple reasons to avoid alternative harnesses with their models in general (imho):\n1. Potential ban due to ToS violation;\n2. It doesn't follow all Anthropic's communication mechanisms out-of-the-box, they heavily use custom headers, hidden flags, and undocumented API features that affect models' behavior;\n3. Compact is better in CC (significantly);\n4. Cache related nuances (I…"
+    },
+    {
+     "author": "real_faxenoff",
+     "replies": 2,
+     "text": "I became interested in how the harness works internally so I could try to implement my own small AI agent in a business project. And I realized that right now, most of the model’s efficiency lies precisely in the harness. And that there’s a whole complicated world inside it, one that will soon become more complex than the models themselves.\nAll my experiments using third-party harnesses for code-writing agents showed that if a model is used in a non-native harness, it sometimes burns through 5…"
+    },
+    {
+     "author": "gvkhna",
+     "replies": 9,
+     "text": "Pi is without contest the best harness. Because it’s yours, the total control is the only way to move from driving agents to orchestrating them.\nMy interruptions and frustration with llms has gone down a cliff. It’s amazing to see what just a few lines of system prompt really can do to keep agents doing the correct thing much more often."
+    },
+    {
+     "author": "geniium",
+     "replies": 0,
+     "text": "Am really happy to see more and more alternatives to Claude and Codex\nAnd I think the biggest reason is what the “open source” models are doing. They are really closing the gap. Don’t get me wrong, the 2 American leaders are still pushing and leading the ai race\nBut with all the work done from other companies, notably in Asia, there are some alternative solutions : and they start to be really usable as our daily rides\nI just wish Europeans would play part of this race - but it seems that we…"
+    }
+   ],
+   "article": {
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "status": "ok",
+    "title": "Goodbye Claude, Hello Pi",
+    "chars": 6232,
+    "text": "caleb.software\nGoodbye Claude, Hello Pi\n21 September 2026\n#pi\n#claude\nI’ve been a longtime Claude Code user, ever since it became available in the Claude Pro subscription plan over a year ago. I remember the first time I used it, feeling giddy as it spat out messy Python code for whatever random weekend project I was working on, all from a single prompt. I’m certain that in a few years we’ll all look back at its release as one of the major drivers of this new era of software development we’re in.\nDespite this, due to an accumulation of many small frustrations, I’ve finally decided to retire it as my main coding harness and migrate my development setup to use Pi instead.\nSomeone at Anthropic must’ve caught wind… just a day after making my decision, they announced Claude Code would finally start supporting AGENTS.md files in an effort to get me to stay. Unfortunately, for me it was too little, too late.\nComplaining\nIn lieu of a proper obituary, I’d like to take this time to say a few words about the things I liked least about Claude Code (and thus what I’m looking forward to avoiding with Pi).\nThe AGENTS.md thing kind of epitomizes the whole reason I decided to quit using Claude Code. Don’t get me wrong, having a ton of CLAUDE.md files scattered about various GitHub hobby repos is great guerrilla marketing. But it sucks for users to have to deal with copying or symlinking between the two formats.\nLike the Luddite I am, I still prefer to review most of the code it churns out before I commit it. I use(d) Claude Code inside VSCode, and it lets you connect the harness to the IDE. This is nice because you can highlight text in a file and have it automatically included in the context when asking questions or requesting changes during a review.\nExcept you can only have one session “connected” to the IDE at a time. If you open a second tab to start another task while the first one works, it can’t receive the text selection events from the IDE at all. This has been reported at least as far back as December 2025… and closed as a duplicate of a totally unrelated bug.1\nOf course, you can always use the official Claude Code VSCode GUI extension, which does allow you to have multiple tabs open and load the text selection into the context of each. But this extension has plenty of problems of its own. Half of the built-in slash commands don’t work at all in the GUI. It doesn’t have any support for a custom status line. Subagent output messages are simply layered into the main chat thread in chronological order, which is a mess to read when more than one is running. I could go on and on.\nIn spite of all of these existing issues, it seems like Anthropic has worked at a feverish pace to pack more features into Claude Code without much care for quality or stability. Dynamic workflows, agent teams, ultrareviews – all great ways to help enterprise customers burn ever more tokens each day, but not really anything I want or need.\nAlongside all of these feature releases, they always seem to be fiddling with things in ways that mess up my personal setup. At the time of writing, there have been 244 releases to Claude Code this year; over 3/4 of these changed the system prompt or tool descriptions, which can substantially change how the LLM performs (especially when these new instructions contradict user prompts or repo conventions).\nAnd what are all those changes for? Despite chopping 80% of the system prompt, Claude Code still has way more overhead than Pi for seemingly no benefit. The default Bash tool’s description is almost 3,000 tokens, most of which is random stuff about using git and opening PRs on GitHub.2 The models already know how to do this without detailed instructions, by the way.3\nLooking Forward\nThis post has been a lot of hating. I’m sorry! That’s not my usual style, and I do think Anthropic has made a really cool piece of software here. I’m also not under any delusion that I would’ve done a better job if I were the one in charge of…"
+   }
+  },
+  {
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "hn_url": "https://news.ycombinator.com/item?id=50415628",
+   "hn": {
+    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+    "points": 543,
+    "comments": 329
+   },
+   "comments": [
+    {
+     "author": "lukebuehler",
+     "replies": 13,
+     "text": "People are giving all kinds of explanations here why Goldman is doing this, but they are not addressing what the article (implicitly) says: operating coding agents on the primary machines of finance professionals runs directly into the lethal trifecta. It's as simple as that.\nYou cannot have semi-unattended agents running on the same workstations that have access to client/trade/prop information and email client, and internet, and internal networks, it's too dangerous--a major leak is just one…"
+    },
+    {
+     "author": "legitster",
+     "replies": 2,
+     "text": "At our org they have been clawing back Claude access because of chronic billing overages. Budgets are tight and consumption billing models are being stamped down on everywhere. Anthropic sales can not offer us any sort of normalized billing rate.\nGemini is swooping in because they offer flat consistent billing and handle overages through throttling access to higher models. For 90% of the non-engineering org the experience is near enough it makes no difference."
+    },
+    {
+     "author": "steveBK123",
+     "replies": 4,
+     "text": "Regardless of tech tool, non-tech writing POCs they try to force tech to get into production is a timeless story. LLM just allows people to get there faster, with less knowledge of coding.. which leads to the actual problem I think.\nBanks have a ton of legal/compliance/reglatory/reputational concerns about application access/entitleements, data privacy, data licensing, granular data entitlements, data access (auditable).. approval chains (auditable), as well as actual financial risk."
+    },
+    {
+     "author": "cactca",
+     "replies": 10,
+     "text": "The most interesting part of this announcement is the timing. GS is leading Anthropic's IPO, what motivated them to announce this a few weeks before trading starts?"
+    },
+    {
+     "author": "fancyfredbot",
+     "replies": 2,
+     "text": "Goldman is very unlikely to have decided proactively to cut off traders access, and it's much more likely there was an operational loss. What kind of loss? I don't know but consider:\n1) Claude Code is only being taken away from traders.\n2) Only traders have permission to send orders to the market and book client trades.\n3) Claude code would probably have been running as the trader, under their account with minimal review.\nIf you run a coding agent in that environment it's only a matter of time…"
+    }
+   ],
+   "article": {
+    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+    "status": "ok",
+    "title": "Goldman Sachs Is Pulling Claude Code From Its Bankers and Traders | State of AI",
+    "chars": 7542,
+    "text": "Image Credit: State of AI\nAI & Technology\nGoldman Sachs Is Pulling Claude Code From Its Bankers and Traders\nIn July, Goldman's tech chief was praising the tools traders built with AI coding agents. New internal guidance hands those agents back to the engineers, weeks before Goldman takes Anthropic public.\nByState of AI Editorial\nNov 2, 2026\nGoldman Sachs has restricted Anthropic's Claude Code and Microsoft's GitHub to its engineers, cutting off traders and bankers who used the tools to track client flows and build market models. The bank barred its Hong Kong bankers from Claude in April and is now a lead underwriter on Anthropic's IPO.\nMost traders and bankers at Goldman Sachs can no longer use AI coding tools at work. Internal guidance updated in October restricts Anthropic's Claude Code and Microsoft's GitHub to the bank's engineers, Bloomberg News reported, following a review of productivity and risk concerns.\nStrats, who work across trading, quantitative research and software engineering, still have access, according to a second person familiar with the matter.\nThe change has frustrated some traders, a person familiar with the matter told Bloomberg. They had been using the tools to monitor client trading flows, model market moves and positions, and put together written and graphic material. Goldman spokesperson Nick Carcaterra said the bank makes certain AI tools available to staff \"to determine the best use cases\" across the firm.\nArgenti was praising trader-built tools in July\nAs recently as July, chief information officer Marco Argenti was talking up \"vibe coding\" by Goldman's non-technical employees. He told Bloomberg that traders and bankers had built tools with AI and passed them to the firm's engineers, of whom there are about 12,000, to be improved.\nThat arrangement let the people closest to a problem build a first version without waiting for engineering time. It also meant thousands of employees without engineering training were running software that writes and executes code, on the same machines they use to handle client information.\nAt a conference in Turin last month, Argenti described Goldman's AI adoption in waves and said developers, more than 12,000 of the bank's roughly 47,000 staff, had made up the first. The October guidance limits the coding agents to that group.\nGoldman restricted Claude in Hong Kong in April\nIn April, Goldman removed Claude from its internal AI platform for bankers in Hong Kong. The Financial Times reported that the bank had read its contract with Anthropic strictly, and an Anthropic spokesperson said Claude had never been officially supported in Hong Kong. ChatGPT and Gemini remained available there. JPMorgan removed Claude from its Hong Kong approved list in June.\nThe Hong Kong restriction was based on location and contract terms, and the new one is based on role. Goldman's in-house AI assistant, which uses models from several companies, is still available across the firm. The restriction applies to third-party agents that can write and run code by themselves.\nGoldman is still working closely with Anthropic\nEarlier this year, Goldman said Anthropic engineers had spent six months at the bank helping build Claude-based agents for trade accounting and client onboarding. Those agents sit in the back office and are run by Goldman's engineering teams.\nGoldman and Morgan Stanley are also the lead underwriters on Anthropic's IPO, according to the S-1 filed October 26. Anthropic is expected to list on Nasdaq under the ticker ANT before the end of November, as we reported last week. Over the next few weeks, Goldman's bankers will be marketing shares in a company whose coding agent most of them are no longer allowed to use.\nWhy a coding agent is riskier on a trading desk\nClaude Code reads files, writes programs and runs them, typically with the same access as the person using it. Code an engineer writes with it usually goes through review, testing and deployment controls before it reaches…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50415628",
+   "hn_url": "https://news.ycombinator.com/item?id=50415628",
+   "hn": {
+    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+    "points": 543,
+    "comments": 329
+   },
+   "comments": [
+    {
+     "author": "lukebuehler",
+     "replies": 13,
+     "text": "People are giving all kinds of explanations here why Goldman is doing this, but they are not addressing what the article (implicitly) says: operating coding agents on the primary machines of finance professionals runs directly into the lethal trifecta. It's as simple as that.\nYou cannot have semi-unattended agents running on the same workstations that have access to client/trade/prop information and email client, and internet, and internal networks, it's too dangerous--a major leak is just one…"
+    },
+    {
+     "author": "legitster",
+     "replies": 2,
+     "text": "At our org they have been clawing back Claude access because of chronic billing overages. Budgets are tight and consumption billing models are being stamped down on everywhere. Anthropic sales can not offer us any sort of normalized billing rate.\nGemini is swooping in because they offer flat consistent billing and handle overages through throttling access to higher models. For 90% of the non-engineering org the experience is near enough it makes no difference."
+    },
+    {
+     "author": "steveBK123",
+     "replies": 4,
+     "text": "Regardless of tech tool, non-tech writing POCs they try to force tech to get into production is a timeless story. LLM just allows people to get there faster, with less knowledge of coding.. which leads to the actual problem I think.\nBanks have a ton of legal/compliance/reglatory/reputational concerns about application access/entitleements, data privacy, data licensing, granular data entitlements, data access (auditable).. approval chains (auditable), as well as actual financial risk."
+    },
+    {
+     "author": "cactca",
+     "replies": 10,
+     "text": "The most interesting part of this announcement is the timing. GS is leading Anthropic's IPO, what motivated them to announce this a few weeks before trading starts?"
+    },
+    {
+     "author": "fancyfredbot",
+     "replies": 2,
+     "text": "Goldman is very unlikely to have decided proactively to cut off traders access, and it's much more likely there was an operational loss. What kind of loss? I don't know but consider:\n1) Claude Code is only being taken away from traders.\n2) Only traders have permission to send orders to the market and book client trades.\n3) Claude code would probably have been running as the trader, under their account with minimal review.\nIf you run a coding agent in that environment it's only a matter of time…"
+    }
+   ],
+   "article": {
+    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+    "status": "ok",
+    "title": "Goldman Sachs Is Pulling Claude Code From Its Bankers and Traders | State of AI",
+    "chars": 7542,
+    "text": "Image Credit: State of AI\nAI & Technology\nGoldman Sachs Is Pulling Claude Code From Its Bankers and Traders\nIn July, Goldman's tech chief was praising the tools traders built with AI coding agents. New internal guidance hands those agents back to the engineers, weeks before Goldman takes Anthropic public.\nByState of AI Editorial\nNov 2, 2026\nGoldman Sachs has restricted Anthropic's Claude Code and Microsoft's GitHub to its engineers, cutting off traders and bankers who used the tools to track client flows and build market models. The bank barred its Hong Kong bankers from Claude in April and is now a lead underwriter on Anthropic's IPO.\nMost traders and bankers at Goldman Sachs can no longer use AI coding tools at work. Internal guidance updated in October restricts Anthropic's Claude Code and Microsoft's GitHub to the bank's engineers, Bloomberg News reported, following a review of productivity and risk concerns.\nStrats, who work across trading, quantitative research and software engineering, still have access, according to a second person familiar with the matter.\nThe change has frustrated some traders, a person familiar with the matter told Bloomberg. They had been using the tools to monitor client trading flows, model market moves and positions, and put together written and graphic material. Goldman spokesperson Nick Carcaterra said the bank makes certain AI tools available to staff \"to determine the best use cases\" across the firm.\nArgenti was praising trader-built tools in July\nAs recently as July, chief information officer Marco Argenti was talking up \"vibe coding\" by Goldman's non-technical employees. He told Bloomberg that traders and bankers had built tools with AI and passed them to the firm's engineers, of whom there are about 12,000, to be improved.\nThat arrangement let the people closest to a problem build a first version without waiting for engineering time. It also meant thousands of employees without engineering training were running software that writes and executes code, on the same machines they use to handle client information.\nAt a conference in Turin last month, Argenti described Goldman's AI adoption in waves and said developers, more than 12,000 of the bank's roughly 47,000 staff, had made up the first. The October guidance limits the coding agents to that group.\nGoldman restricted Claude in Hong Kong in April\nIn April, Goldman removed Claude from its internal AI platform for bankers in Hong Kong. The Financial Times reported that the bank had read its contract with Anthropic strictly, and an Anthropic spokesperson said Claude had never been officially supported in Hong Kong. ChatGPT and Gemini remained available there. JPMorgan removed Claude from its Hong Kong approved list in June.\nThe Hong Kong restriction was based on location and contract terms, and the new one is based on role. Goldman's in-house AI assistant, which uses models from several companies, is still available across the firm. The restriction applies to third-party agents that can write and run code by themselves.\nGoldman is still working closely with Anthropic\nEarlier this year, Goldman said Anthropic engineers had spent six months at the bank helping build Claude-based agents for trade accounting and client onboarding. Those agents sit in the back office and are run by Goldman's engineering teams.\nGoldman and Morgan Stanley are also the lead underwriters on Anthropic's IPO, according to the S-1 filed October 26. Anthropic is expected to list on Nasdaq under the ticker ANT before the end of November, as we reported last week. Over the next few weeks, Goldman's bankers will be marketing shares in a company whose coding agent most of them are no longer allowed to use.\nWhy a coding agent is riskier on a trading desk\nClaude Code reads files, writes programs and runs them, typically with the same access as the person using it. Code an engineer writes with it usually goes through review, testing and deployment controls before it reaches…"
+   }
+  },
+  {
+   "url": "https://cursor.com/changelog/voice-chat",
+   "article": {
+    "url": "https://cursor.com/changelog/voice-chat",
+    "status": "ok",
+    "title": "Voice Chat with Agents · Cursor",
+    "chars": 3393,
+    "text": "Nov 6, 2026 · Changelog\nChangelog\nVoice Chat with Agents\nYou can now talk with your agents in a realtime voice call. Describe a change out loud, ask what an agent is working on, and hear updates as the work moves forward.\nVoice chat works in the Agents Window, the IDE, on web, and in Cursor for iOS.\n#Start a call\nWhen the agent is idle and the chat input is empty, click the waveform button labeled Start voice chat. It sits where Send usually is, next to the microphone button for dictation.\nOn iOS, you can also say \"Hey Siri, call Cursor\" to start a call with a new agent, and mute or hang up from the Lock Screen with a Live Activity.\n#Talk while the agent works\nThe voice agent listens, replies, and hands coding work to the agent in your chat. While that agent runs, you can keep the conversation going. Ask what changed in a diff, check on a run, search earlier messages and calls with this agent, or switch between workers in a Project that has them.\nThe coding agent speaks for itself too. It shares short progress notes while it works and a brief answer when it's done, so you usually hear a short update instead of the full written reply.\n#Powered by Grok Voice\nVoice chat runs on Grok Voice. Pick from many voices in Voice settings, including Ara, Eve, Leo, Rex, and Sal. With Privacy Mode on, voice chat runs with zero data retention.\n#Voice chat and dictation\nVoice chat is separate from dictation, which earlier releases called Voice Mode. Dictation still turns your speech into text in the chat input, and Cmd+Shift+Space still toggles it in the IDE. Voice chat is a two-way conversation where the agent answers out loud.\nUpdate Cursor to try voice chat. Learn more in our docs.\nNov 6, 2026 · Changelog\nChangelog\nVoice Chat with Agents\nYou can now talk with your agents in a realtime voice call. Describe a change out loud, ask what an agent is working on, and hear updates as the work moves forward.\nVoice chat works in the Agents Window, the IDE, on web, and in Cursor for iOS.\n#Start a call\nWhen the agent is idle and the chat input is empty, click the waveform button labeled Start voice chat. It sits where Send usually is, next to the microphone button for dictation.\nOn iOS, you can also say \"Hey Siri, call Cursor\" to start a call with a new agent, and mute or hang up from the Lock Screen with a Live Activity.\n#Talk while the agent works\nThe voice agent listens, replies, and hands coding work to the agent in your chat. While that agent runs, you can keep the conversation going. Ask what changed in a diff, check on a run, search earlier messages and calls with this agent, or switch between workers in a Project that has them.\nThe coding agent speaks for itself too. It shares short progress notes while it works and a brief answer when it's done, so you usually hear a short update instead of the full written reply.\n#Powered by Grok Voice\nVoice chat runs on Grok Voice. Pick from many voices in Voice settings, including Ara, Eve, Leo, Rex, and Sal. With Privacy Mode on, voice chat runs with zero data retention.\n#Voice chat and dictation\nVoice chat is separate from dictation, which earlier releases called Voice Mode. Dictation still turns your speech into text in the chat input, and Cmd+Shift+Space still toggles it in the IDE. Voice chat is a two-way conversation where the agent answers out loud.\nUpdate Cursor to try voice chat. Learn more in our docs."
+   }
+  },
+  {
+   "url": "https://www.anthropic.com/research/components-of-agent-memory",
+   "hn_url": "https://news.ycombinator.com/item?id=50402212",
+   "hn": {
+    "title": "The Components of Agent Memory",
+    "points": 173,
+    "comments": 99
+   },
+   "comments": [
+    {
+     "author": "aszen",
+     "replies": 4,
+     "text": "Interesting article to read but by defining memory as a prediction about future needs they are side stepping the real problem that these models cannot learn continuously i.e. update their weights. Opus 5.5s real memory , experience and knowledge is set in stone no amount of markdown tricks will change that.\nThis is a better research direction I feel\nhttps://research.google/blog/the-sleep-framework-a-new-way-f..."
+    },
+    {
+     "author": "yfontana",
+     "replies": 15,
+     "text": "So far I've turned off automatic memory creation in every harness I've used. Claude Code sometimes creates some anyway, and I probably delete 95% of them. The memories it creates are almost always relevant only to the specific task that it is currently working on. If it's a task I'll need to do again, then yeah, maybe that's useful. But that isn't the case most of the time, so I delete them to avoid cluttering context.\nSo the main improvement to memories I'd like to see is better judgment on…"
+    },
+    {
+     "author": "andai",
+     "replies": 0,
+     "text": "Not sure it's explained here but from the graph (fig. 10) it looks like wiki + search beats dreaming, and that dreaming adds only marginal gains to the wiki + search configuration.\nI'm assuming search is much cheaper than dreaming (though maybe it depends on the time scale?) so that sounds pretty important."
+    },
+    {
+     "author": "prtmnth",
+     "replies": 2,
+     "text": "I have a skill called memory-prune whose sole purpose is to take an automatically created memory, assess whether it deserves to live, get stored in code comments, a rule, an AGENTS.md file in the project, the global AGENTS.md/CLAUDE.md file, or (and this is the most often picked option) not at all and deleted."
+    },
+    {
+     "author": "MASNeo",
+     "replies": 3,
+     "text": "Concepts made for humans should not be used for machines unless it’s really the same process. Clearly Claud doesn’t rest and doesn’t balance hormones and other chemicals when it’s not thinking. Just because one element of dreaming relates to information organization, organizing information isn’t dreaming.\nThat’s like saying walking is space flight because both happen to change the location of an individual."
+    }
+   ],
+   "article": {
+    "url": "https://www.anthropic.com/research/components-of-agent-memory",
+    "status": "ok",
+    "title": "The components of agent memory \\ Anthropic",
+    "chars": 24290,
+    "text": "The components of agent memory\nPublished\nNov 6, 2026\nTeam\nEngineering\nTopics\nAgents\nContext engineering\nAgent memory\nSøren Kierkegaard wrote that life can only be understood backward, but it must be lived forward. We’ve encountered a similar bind when designing memory for AI agents.\nAs humans, we encode memory constantly as we go about our lives. The hippocampus plays a central role in this, capturing experiences in the moment so that memories form quickly and are immediately available. But only some experiences are consolidated into long-term knowledge.\nMuch of that consolidation appears to happen when our brains are offline. As we sleep, and during quiet rest, the hippocampus replays our recent experiences. This is thought to gradually distill those experiences and integrate them into the neocortex—the part of our brains that stores most of what we think of as knowledge.\nAgent memory can use a similar division of labor. Agents capture much of their work in logs or transcripts. Researchers at Letta and UC Berkeley proposed sleep-time compute as a way for models to use idle time between interactions to reorganize their existing context. The same idea can help agents organize their memory by reflecting on logs to fix mistakes or produce new notes and representations. This process is often called dreaming (Figure 1).\nWe’ve found that dreaming has been a useful tool for helping us give Claude effective memory. In this post, we share how we’ve come to think about agent memory and walk through several evaluations we’ve used to explore agent memory, including the use of dreaming, and what each component contributes to memory organization.\nClaude can use dreaming to organize memory. This can correct mistakes, create notes, build new memory representations, or shape what’s preemptively loaded into future sessions.\nMemory notes\nBy “agent memory,” we mean knowledge that Claude gains from experience—including interactions with users and tasks it’s been assigned—and that it retains between sessions, saved as context it can read later. It excludes other ways models can learn or manage context, such as changes to their weights (the internal parameters set during training), in-context learning (knowledge gained within a single conversation), and compaction (summaries written by Claude that replace its older turns so it can continue working in a new context window).\nIn the human brain, chemical signals released before, during, or after an experience can mark a memory as important. Marked memories tend to be replayed more often than unmarked ones during offline periods. This process, called replay, helps stabilize and integrate them into long-term memory.\nSimilarly, Claude can tag salient events in a session log as they happen, so they’re easier to find later, or it can write them to a memory store, such as a folder of memory notes (Figure 2). But how can Claude tell what’s salient in the moment, before it knows what’s coming next?\nClaude can write notes to memory.\nMemory can be a prediction about what the future will need\nMemory is, occasionally, a prediction. By writing down a rule, an agent predicts that the pattern it’s describing will be relevant again. For instance, writing down a verified fact is a prediction that an agent in a future session will want to rely on that fact without double-checking it. Over time, Claude has become much better at making these kinds of predictions.\nConsider a task from Continual Learning Bench (CL-Bench) 1.0, a benchmark that measures an agent’s ability to use memory in order to tackle long-horizon tasks. One particular task asks Claude to answer a series of questions by looking up information in a database. After Claude gives an answer, it’s told the correct solution and can write a memory to help answer future questions.\nMemory can support a learning loop here. If Claude gets a question wrong, it can record the failure, come up with theories about what went wrong, test those theories, and turn what it…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50413822",
+   "hn_url": "https://news.ycombinator.com/item?id=50413822",
+   "hn": {
+    "title": "OpenAI raises $11B at a $1.25T valuation",
+    "points": 179,
+    "comments": 199
+   },
+   "comments": [
+    {
+     "author": "cmiles8",
+     "replies": 11,
+     "text": "The real headline is that they couldn’t hit what they wanted in terms of valuation and funds raised. Just were not enough people willing to invest given concerns that it may be downhill from here for a while on AI.\nThis will also make it even harder to avoid any future IPO being a down round. They’re almost certainly worth much less than Anthropic and Anthropic is, per reports, struggling to keep its valuation much above 1T, and even that may fall through."
+    },
+    {
+     "author": "bob1029",
+     "replies": 3,
+     "text": "OpenAI seems to me like they are operating with a slightly longer horizon strategy than Anthropic. Going for the IPO is the last resort in my mind. It is what you do to get ahead of deteriorating financial conditions. I don't think Anthropic had a choice at their projected burn rate. Why would we surrender all our cloaks and daggers unless we absolutely have to? The political and regulatory headwinds are not looking favorable for AI companies as of a few days ago.\nGoing for the IPO collapses a…"
+    },
+    {
+     "author": "chris_va",
+     "replies": 0,
+     "text": "We always see these headlines and think \"is XYZ company actually worth that much?\"\nClass A stock gets paid out first, so \"valuation\" here is not what a retail investor would necessarily pay for class C.\nBasically, do these people think that they'll get their $11B back? If so, they are ok with a high \"valuation\" because there is little risk. And with OpenAI's corporate structure, who knows what is actually happening."
+    },
+    {
+     "author": "vb-8448",
+     "replies": 4,
+     "text": "I'm still astonished on how musk outplayed everyone with the spacex ipo."
+    },
+    {
+     "author": "GodelNumbering",
+     "replies": 3,
+     "text": "There was an unconfirmed report that upto $10 billion in this round were pledged by a syndicate of UAE investment funds, including MGX\nhttps://www.bloomberg.com/news/articles/2026-10-05/openai-in..."
+    }
+   ],
+   "article": {
+    "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+    "status": "ok",
+    "title": "OpenAI Just Raised $11 Billion at a $1.25 Trillion Valuation, Below the $1.4 Trillion It First Sought - 24/7 Wall St.",
+    "chars": 7437,
+    "text": "Investing\nOpenAI Just Raised $11 Billion at a $1.25 Trillion Valuation, Below the $1.4 Trillion It First Sought\nOpenAI got its money, but not on the terms it wanted, and the gap between its growth story and investor appetite is landing on two giants. One faces a bookkeeping hit, the other a deeper dependency on the funding flow.\nBy Omor Ibne Ehsan\nPublished November 7, 2026, 8:38am ET · 3 min read\n𝕏\nf\n© 24/7 Wall St.\nAbout $11 billion in new money reached OpenAI’s accounts by Friday, November 6, 2026, people familiar with the deal said. That cash is the first part of a round priced at a $1.25 trillion pre-money valuation, a figure the company’s CFO, Sarah Friar, confirmed in a TV interview. OpenAI declined to comment on the funding.\nPress reports said OpenAI first set out to raise $30 billion or more at a $1.4 trillion valuation. Two investors put the first ask at $1.5 trillion. Friar challenged that account on air, saying the higher figure started with a media report and never came from OpenAI.\nWhichever starting point you accept. The round ended up smaller and cheaper after AI stocks sold off, even as OpenAI says its business is accelerating. That gap affects shareholders of Microsoft (NASDAQ:MSFT | MSFT Price Prediction) and NVIDIA (NASDAQ:NVDA) because both depend on OpenAI’s ability to fund its plans.\nCash Wired Versus Cash Promised\nThe closed amount covers about 37% of the original target. SoftBank and Abu Dhabi’s MGX took part in the round.\nThe rest could lift the total to as much as $20 billion, and a separate report put the follow-on at up to another $9 billion. That second portion has not closed. Lead investors, terms, and use of proceeds were not disclosed.\nFriar called the price almost 50% above March, when OpenAI raised $122 billion at $852 billion. The implied step-up is roughly 46.7%, but treat it as approximate, because her figure is pre-money and March’s basis is unclear.\nGrowth Claims Meet a Tighter Market\nFriar said OpenAI’s business grew 70% quarter over quarter in the third quarter, its enterprise business doubled, and revenue splits about 50% each between consumer and enterprise. She cited 1.2 billion weekly ChatGPT users and an ads run rate of $1 billion by August.\nShe gave no revenue dollar figures. Asked about the election, she said, “The demand for AI is real.”\nInvestors still paid less than the earliest reported asking price. Rival Anthropic plans to list on Nasdaq in mid-November. Some investors now value it at about $1.5 trillion, down from roughly $2 trillion in earlier expectations.\nMicrosoft Feels This Through GAAP Earnings\nMicrosoft closed at $530.61, down 0.99%, for a market value of $3.94 trillion. The funding report came out around the close, so that move had other causes.\nGains on the OpenAI stake added $207 million to GAAP net income in the September quarter, compared with $3.1 billion in net losses a year earlier. A smaller valuation increase reduces future gains on the stake, although that is minor next to 48% Azure growth.\nNVIDIA Depends on This Money Flowing\nNVIDIA rose 2.78% to $186.64 as chip stocks rallied, and Oracle (NYSE:ORCL) added 0.78%. NVIDIA is still down 21.4% over one month.\nNVIDIA has said OpenAI’s existing and planned commitments add up to about 12 gigawatts of its compute. Management also said frontier labs “are growing faster than what their balance sheets and credit profiles can support.” A round that fills in stages shows that strain.\nWhat OpenAI’s Smaller Round Means for AI Stock Investors\nThe optimistic view is that demand still exceeds supply. Microsoft says it has more demand than capacity, and NVIDIA guided to $108.0 billion in third-quarter revenue.\nThe bearish argument depends on financing. Private valuations can drop further, the second portion may close below full size, and a weak Anthropic debut could pull both labs’ valuations down.\nMicrosoft looks less exposed to OpenAI’s funding pace than NVIDIA, because OpenAI affects its accounting gains far more than…"
+   }
+  }
+ ]
+}

@@ -1,0 +1,800 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "79ae00185a749ff5",
+  "generated_at": "2026-11-08T23:58:13.300984Z",
+  "from_date": "2026-11-07",
+  "to_date": "2026-11-08",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-08T23:58:13.291601Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-08T23:58:13.291610Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-08T23:58:13.280933Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 20,
+      "attempted": true,
+      "at": "2026-11-08T23:58:13.291511Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Goodbye Claude hello Pi",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 424,
+          "points": 673
+        }
+      },
+      "nomination": {
+        "name": "Goodbye Claude hello Pi",
+        "seed_score": 1645.5,
+        "summary": "Goodbye Claude, hello Pi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50410107",
+            "source": "hackernews",
+            "title": "Goodbye Claude, hello Pi",
+            "body": "Goodbye Claude, hello Pi",
+            "url": "https://caleb.software/posts/claude-to-pi.html",
+            "author": "karagenit",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 673,
+              "comments": 424
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Goodbye Claude, hello Pi",
+            "snippet": "Goodbye Claude, hello Pi",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50410107",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.39
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Goldman Sachs Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 327,
+          "points": 536
+        }
+      },
+      "nomination": {
+        "name": "Goldman Sachs Claude Code",
+        "seed_score": 1294.5,
+        "summary": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50415628",
+            "source": "hackernews",
+            "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "body": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+            "author": "TheWiggles",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 536,
+              "comments": 327
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Goldman Sachs is pulling Claude Code from its bankers and tr",
+            "snippet": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50415628",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 95,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4175
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Code Ask Again exposes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 390,
+          "points": 576
+        }
+      },
+      "nomination": {
+        "name": "Claude Code Ask Again exposes",
+        "seed_score": 1024.5977,
+        "summary": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50407882",
+            "source": "hackernews",
+            "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "body": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+            "author": "shmulc",
+            "container": "Hacker News",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 576,
+              "comments": 390
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 p",
+            "snippet": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50407882",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 97,
+            "source_quality": 0.8,
+            "local_rank_score": 0.20650000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "6 gets",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 178
+        }
+      },
+      "nomination": {
+        "name": "6 gets",
+        "seed_score": 507.0,
+        "summary": "How long until gta 6 gets ported to pc after launch by vibe coding",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "How long until gta 6 gets ported to pc after launch by vibe coding",
+            "body": "How long until gta 6 gets ported to pc after launch by vibe coding",
+            "url": "https://www.reddit.com/r/singularity/comments/1xquay6/how_long_until_gta_6_gets_ported_to_pc_after/",
+            "container": "singularity",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 160,
+              "num_comments": 178
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "How long until gta 6 gets ported to pc after launch by vibe coding",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "used tensortorrent",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "used tensortorrent",
+        "seed_score": 34.5,
+        "summary": "I was interested in buying a card so wanted to first get access to one on the cloud to see how well I could run stuff on it by writing some custom code.\n\nBut it seems impossible, theres no one else renting them besides tesnortorrent themselves and their platform is so shit it turned me off from the entire idea. You have to email them to get access to rent a single gpu and which was like a 2 week b",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "Has anyone used tensortorrent?",
+            "body": "Has anyone used tensortorrent?\nI was interested in buying a card so wanted to first get access to one on the cloud to see how well I could run stuff on it by writing some custom code.\n\nBut it seems impossible, theres no one else renting them besides tesnortorrent themselves and their platform is so shit it turned me off from the entire idea. You have to email them to get access to rent a single gpu and which was like a 2 week back and forth and Ive still not gotten access. \n\nHave they just given up or something? If they expect to sell any cards to normal people you would think they would at least let you try out rentals easily.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr0mqz/has_anyone_used_tensortorrent/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I was interested in buying a card so wanted to first get access to one on the cloud to see how well I could run stuff on it by writing some custom code.\n\nBut it seems impossible, theres no one else renting them besides tesnortorrent themselves and their platform is so shit it turned me off from the entire idea. You have to email them to get access to rent a single gpu and which was like a 2 week b",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.293
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "16",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "16",
+        "seed_score": 25.4558,
+        "summary": "16 short prompts I type to my coding agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "16 short prompts I type to my coding agents",
+            "body": "16 short prompts I type to my coding agents",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xpyjta/16_short_prompts_i_type_to_my_coding_agents/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "16 short prompts I type to my coding agents",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "RustingStrata running Qwen3.6:35b-a3b Q5 MTP vs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "RustingStrata running Qwen3.6:35b-a3b Q5 MTP vs",
+        "seed_score": 24.0,
+        "summary": "People asked how RustingStrata does with a bigger quant, so here's Q5\\_K\\_M on the same 3060 12 GB + Ryzen 5 7600X + 32GB DDR5 RAM.\n\nModel is unsloth's Qwen3.6-35B-A3B UD-Q5\\_K\\_M (the MTP version), 25 GiB, so about two thirds of the experts live on the CPU. llama.cpp is build 12119, `-ncmoe 29 -ub 2048 -b 2048 -fa 1` (28 runs out of VRAM).\n\nBenchmark tools (RustingStrata bench vs llama-bench):\n\n*",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "RustingStrata running Qwen3.6:35b-a3b with Q5 and MTP vs llama.cpp",
+            "body": "RustingStrata running Qwen3.6:35b-a3b with Q5 and MTP vs llama.cpp\nPeople asked how RustingStrata does with a bigger quant, so here's Q5\\_K\\_M on the same 3060 12 GB + Ryzen 5 7600X + 32GB DDR5 RAM.\n\nModel is unsloth's Qwen3.6-35B-A3B UD-Q5\\_K\\_M (the MTP version), 25 GiB, so about two thirds of the experts live on the CPU. llama.cpp is build 12119, `-ncmoe 29 -ub 2048 -b 2048 -fa 1` (28 runs out of VRAM).\n\nBenchmark tools (RustingStrata bench vs llama-bench):\n\n* Decode, short prompt: 70 tok/s vs 43\n* Decode after a 4K prompt: 65 vs 43\n* Prefill at 4K: \\~1870 vs 1210\n* 32K context: 1470 prefill / 49 decode vs 1030 / 29\n* With --mtp 1: up to 96 (86 after 4K), greedy\n\nReal chat requests through both servers (same prompts, 256 tokens out, thinking off):\n\n* No MTP: \\~50 tok/s vs 37\n* With MTP on both: \\~62 vs 45-56\n* 6K prompt prefill: 1320 vs 700\n\nMTP works in current llama.cpp (`--spec-type draft-mtp`), \\~63% of drafts accepted and +25% decode on this file. RustingStrata is still ahead with MTP on both sides.\n\nVulkan decodes at \\~60 (85 with MTP), prefill is slower than CUDA on this file (\\~1000-1260 at 4K).\n\nKV cache is f16.\n\nCode is on GitHub, free to use and I will be happy to get some feedback from AMD owners: [RustingStrata](https://github.com/RustingStudio/RustingStrata)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr2v59/rustingstrata_running_qwen3635ba3b_with_q5_and/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "People asked how RustingStrata does with a bigger quant, so here's Q5\\_K\\_M on the same 3060 12 GB + Ryzen 5 7600X + 32GB DDR5 RAM.\n\nModel is unsloth's Qwen3.6-35B-A3B UD-Q5\\_K\\_M (the MTP version), 25 GiB, so about two thirds of the experts live on the CPU. llama.cpp is build 12119, `-ncmoe 29 -ub 2048 -b 2048 -fa 1` (28 runs out of VRAM).\n\nBenchmark tools (RustingStrata bench vs llama-bench):\n\n*",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.279
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Claude Code Cursor 3 quick Qs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "Claude Code Cursor 3 quick Qs",
+        "seed_score": 18.0312,
+        "summary": "How long do your Claude Code / Cursor sessions run, and does anything check security? (student research, 3 quick Qs)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "How long do your Claude Code / Cursor sessions run, and does anything check security? (student research, 3 quick Qs)",
+            "body": "How long do your Claude Code / Cursor sessions run, and does anything check security? (student research, 3 quick Qs)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xq1rgv/how_long_do_your_claude_code_cursor_sessions_run/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing",
+            "snippet": "How long do your Claude Code / Cursor sessions run, and does anything check security? (student research, 3 quick Qs)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1975
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "VLLM Qwen 27B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "VLLM Qwen 27B",
+        "seed_score": 15.0,
+        "summary": "I am looking for up to date advice with getting the most out of my hardware for local development. I have been out of using my local setup for a while (2024-2025), and now have made time to get back into it. I am quite overwhelmed by all the advances and different options nowadays. While I am still reading up on all the latest developments and current SoTA, I was hoping you can point me into the r",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "VLLM Qwen 27B or Strata Qwen Flash Next or...?",
+            "body": "VLLM Qwen 27B or Strata Qwen Flash Next or...?\nI am looking for up to date advice with getting the most out of my hardware for local development. I have been out of using my local setup for a while (2024-2025), and now have made time to get back into it. I am quite overwhelmed by all the advances and different options nowadays. While I am still reading up on all the latest developments and current SoTA, I was hoping you can point me into the right direction.\n\nHere's what I am working with:\n\n\\- Lambda Stack from lambda labs with Ubuntu 22.04LTS\n\n\\- RTX-A6000 (non Ada version) with 48GB of GDDR6 VRAM (not GDDR6X)\n\n\\- 64GB of DDR4-3200 RAM\n\n\\- Xeon E3-1270 v5 (skylake 4 core 8 thread processor, and probably the bottleneck for any task that requires CPU compute)\n\n\\- 1TB NVME SSD\n\n\\- 8TB external HDD connected via USB\n\nMy setup looks a bit like a time capsule, I guess. It was made for interactive chatting via OpenWebUI. Last I checked, VLLM got the most tps out of my GPU for dense models (Qwen 2.5 32B) in 4-bit and not going out of memory on long context tasks. Ollama and HF TGI were slower, did not test with SGLang. But now for agentic workflows, I am reading that Strata is used to run on 50-series 16GB GPUs with spillover to DDR5 RAM. And there's probably more alternatives I haven't even read about yet. Also, tps is apparently not the most important factor anymore to look into for local? Prefill is named often as well, as well as being able to complete a task successfully.\n\nFor my new agentic setup, I want to focus on giving my agent tasks and checking in every now and then throughout the day. So not for interactive sparring about code or chatting anymore, more set and forget.  \nIf needed to cross some performance threshold, I can extend by ripping the hardware from my gaming pc: RTX 3090 with another 64GB of DDR4-3200. But last I checked, inference engines did not play well with 'uneven' GPU setups like mine.\n\nIn the meantime, I am also brushing up my knowledge on agentic harnesses. For now, Codex with Astra created a pretty cool script that let's me use Codex with my VLLM backend, SearXNG, playwright for browser use, maestro for android UI testing and chatting via Signal. Something for another time maybe :)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr85xd/vllm_qwen_27b_or_strata_qwen_flash_next_or/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I am looking for up to date advice with getting the most out of my hardware for local development. I have been out of using my local setup for a while (2024-2025), and now have made time to get back into it. I am quite overwhelmed by all the advances and different options nowadays. While I am still reading up on all the latest developments and current SoTA, I was hoping you can point me into the r",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.327
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude ChatGPT",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Claude ChatGPT",
+        "seed_score": 12.0,
+        "summary": "I spent a month building a website with Claude and moved the entire project to ChatGPT over the weekend.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "I spent a month building a website with Claude and moved the entire project to ChatGPT over the weekend.",
+            "body": "I spent a month building a website with Claude and moved the entire project to ChatGPT over the weekend.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xqzerx/i_spent_a_month_building_a_website_with_claude/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "I spent a month building a website with Claude and moved the entire project to ChatGPT over the weekend.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2805
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "SafeScript JavaScript",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1,
+          "points": 7
+        }
+      },
+      "nomination": {
+        "name": "SafeScript JavaScript",
+        "seed_score": 12.0,
+        "summary": "Show HN: SafeScript, a safe version of JavaScript for executing untrusted code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50417478",
+            "source": "hackernews",
+            "title": "Show HN: SafeScript, a safe version of JavaScript for executing untrusted code",
+            "body": "Show HN: SafeScript, a safe version of JavaScript for executing untrusted code",
+            "url": "https://github.com/SafeScript/safescript",
+            "author": "EGreg",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 7,
+              "comments": 1
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: SafeScript, a safe version of JavaScript for execut",
+            "snippet": "Show HN: SafeScript, a safe version of JavaScript for executing untrusted code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50417478",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.251
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Random AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Random AI",
+        "seed_score": 11.6673,
+        "summary": "Random question for people who use AI to code: what do you do while it\u2019s generating?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Random question for people who use AI to code: what do you do while it\u2019s generating?",
+            "body": "Random question for people who use AI to code: what do you do while it\u2019s generating?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xq7wj1/random_question_for_people_who_use_ai_to_code/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing",
+            "snippet": "Random question for people who use AI to code: what do you do while it\u2019s generating?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.32,
+            "freshness": 10,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24600000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "AI models",
+        "seed_score": 9.0,
+        "summary": "How much code do AI models and harnesses add? I made an open-source benchmark to measure code complexity.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "How much code do AI models and harnesses add? I made an open-source benchmark to measure code complexity.",
+            "body": "How much code do AI models and harnesses add? I made an open-source benchmark to measure code complexity.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrathc/how_much_code_do_ai_models_and_harnesses_add_i/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "How much code do AI models and harnesses add? I made an open-source benchmark to measure code complexity.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43500000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Qwen 3.8 Hermes harness",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Qwen 3.8 Hermes harness",
+        "seed_score": 9.0,
+        "summary": "Qwen 3.8 flash next has been doing some very.. peculiar.. stuff in my hermes harness, and some of them are kind of a nuisance, while others are almost.. adorable? \n\nI don't claim to fully understand how or why this is happening, but the most interesting one is when it \"role-plays\"  an API error- this is a self-diagnosis report from another session running on the same model, so sorry in advance for",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "i'm getting really interesting behaviors with running Qwen 3.8 flash next in the Hermes harness locally.",
+            "body": "i'm getting really interesting behaviors with running Qwen 3.8 flash next in the Hermes harness locally.\nQwen 3.8 flash next has been doing some very.. peculiar.. stuff in my hermes harness, and some of them are kind of a nuisance, while others are almost.. adorable? \n\nI don't claim to fully understand how or why this is happening, but the most interesting one is when it \"role-plays\"  an API error- this is a self-diagnosis report from another session running on the same model, so sorry in advance for the LLM speak or anywhere it fell short on reasoning; \n\n\"My fully-local model \"reported\" a provider API error that never happened \u2014 a case of a model hallucinating its own infrastructure failure\n\n\n\nSetup. Self-hosted agent stack. An agent profile runs against a local OpenAI-compatible endpoint (TensorFold serving a community NVFP4-quantized Qwen checkpoint on a local GPU, \\~262K context). There is no external API anywhere on that request path \u2014 just a loopback tunnel to a local inference server.\n\n\n\nWhat happened. Mid-session, the agent's reply was literally this, and nothing else:\n\n\n\n{\"error\":{\"error\\_code\":\"sys\\_000\",\"error\\_msg\":\"The request failed - it's on us, please try again later.\",\"error\\_id\":\"0b156c1cc7191931632734458e96b7\",\"type\":\"sys\\_000\"}}\n\nThat is a realistic provider-gateway error body \u2014 the error\\_code/error\\_msg/error\\_id shape is the wire format of a real Chinese LLM API gateway. Naturally, I went looking for a broken provider config... on a path that has no provider.\n\n\n\nWhat the logs actually showed.\n\n\n\nThe HTTP call succeeded: finish\\_reason=stop, valid server-issued completion id, 71 output tokens. No 4xx/5xx, no retry, no exception in any log.\n\nThe error body was stored in the session DB as an ordinary assistant message. The model generated it as text.\n\nThe error\\_id appears nowhere else on the machine \u2014 it was invented at decode time.\n\nNo sys\\_000 string existed in the conversation context beforehand, so it wasn't an echo \u2014 it came from the model's parameters (i.e., memorized training data containing real API transcripts).\n\nThe trigger. The turn was deep in a long tool-calling session at \\~194K tokens of context. The assistant's previous response had been cut off at the output length limit, so the harness had injected:\n\n\n\n\\[System: Your previous response was truncated by the output length limit. Continue exactly where you left off...\\]\n\n\n\nThe fabricated \"provider error\" was the model's very next message \u2014 it failed to resume its truncated tool-call stream, and emitted a canonical infrastructure failure instead.\n\n\n\nHypothesis. Agent-tuned models are trained on enormous volumes of real API transcripts, in which the pattern \"assistant turn goes wrong \u2192 a JSON error body appears in its place\" is ubiquitous. The model has absorbed the transport layer's failure dialect as part of its assistant-turn repertoire. Under decoding stress (huge context + a continuation prompt referring to tool-call state it can no longer reconstruct + quantization noise), normal continuation degrades \u2014 and the highest-probability completion of \"something just went wrong in this API conversation\" isn't prose about a problem, it's the canonical form of one. Notably, it chose a self-attributed, retry-inviting error (\"it's on us, please try again later\") \u2014 semantically the correct status for what functionally occurred \u2014 over a 401/429/content-filter body. The statement was false; the pragmatics were accurate.\n\n\n\nTakeaways.\n\n\n\nAn error-shaped assistant message with no matching non-200 in the logs, a valid completion id, and an error\\_id seen nowhere else is a model fabrication, not an infrastructure fault \u2014 check the logs before chasing provider config.\n\nIt's unreliable as a statement but excellent as a signal: \"my agent just role-played an API error\" is a clean tell that decoding has gone off the rails (long context + output truncation in our case).\n\nModels trained on agent traffic are fluent in their own substrate's error vocabulary \u2014 and under stress they'll speak it.\n\n(Single incident, local artifacts verified; the memorized-source attribution is a hypothesis consistent with the evidence. Happy to test reproducibility: replaying the same prefix + continuation prompt against the checkpoint would show whether this is a deterministic attractor under truncation stress.)\"\n\nI was wondering if anyone else has seen this- or if you guys take issue in the reasoning around this. either way, this is really fascinating to me.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr0chy/im_getting_really_interesting_behaviors_with/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Qwen 3.8 flash next has been doing some very.. peculiar.. stuff in my hermes harness, and some of them are kind of a nuisance, while others are almost.. adorable? \n\nI don't claim to fully understand how or why this is happening, but the most interesting one is when it \"role-plays\"  an API error- this is a self-diagnosis report from another session running on the same model, so sorry in advance for",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.233
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 7.5,
+        "summary": "**TL;DR:** I'm building Shura, a local coding assistant on one RX 7800 XT (\\~78 tok/s, 200k context) that should get better at *my* work over time: memory, rules, more compute on hard tasks, and eventually LoRA adapters trained on examples I confirmed. Everything measured, everything local. The weight-update part is unproven, and I'll post the numbers either way.\n\nI've been running local models fo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "I'm building a local LLM that actually gets better the longer I use it",
+            "body": "I'm building a local LLM that actually gets better the longer I use it\n**TL;DR:** I'm building Shura, a local coding assistant on one RX 7800 XT (\\~78 tok/s, 200k context) that should get better at *my* work over time: memory, rules, more compute on hard tasks, and eventually LoRA adapters trained on examples I confirmed. Everything measured, everything local. The weight-update part is unproven, and I'll post the numbers either way.\n\nI've been running local models for a while now, and there's one thing that keeps bothering me.\n\nEvery time a better model comes out, I switch to it, get everything configured again, explain my preferences, correct the same mistakes, and basically start over. The new model might be smarter, but it hasn't learned anything from the months I spent working with the previous one.\n\nI want to see if I can change that.\n\nI'm building **Shura**, a local AI coding assistant that I want to keep improving over time. Not just by upgrading the base model, but by learning from the work we do together. And I'm trying to do it on my regular desktop, without a dedicated server or expensive GPUs.\n\n# The hardware and what I've got working\n\n|CPU|Ryzen 5 5600|\n|:-|:-|\n|RAM|32 GB DDR4|\n|GPU|RX 7800 XT, 16 GB VRAM|\n|OS|Fedora Linux + ROCm|\n|Model|Qwen3.6-35B-A3B finetune (MoE, \\~3B active)|\n\nMost of the model sits on the GPU, and some of the experts are offloaded to system RAM.\n\n|What|Result|\n|:-|:-|\n|Decode with MTP, normal coding work (up to \\~28k context)|**\\~78 tok/s**|\n|Max context|**200k**|\n|Prefill on a 100k-token input|**\\~1,000 tok/s**|\n\nGetting there wasn't straightforward. I tried several optimizations that looked promising on paper and turned out to make almost no difference. I'll be documenting those failures too, since I wish I'd had that information when I started.\n\nI also cared a lot about the PC staying usable. The model always leaves 1.5 GB of VRAM free for the desktop, and if the browser or a video suddenly needs more in the middle of an answer, it gives the memory back in about a quarter of a second and keeps going. If I start a game, it gets out of the way completely. If I'm on a call, it won't start loading a huge model into VRAM. All of this works in my test setup, and I want it to feel like the model just isn't there until I need it.\n\n# The part I haven't figured out yet\n\nI don't want Shura to just remember things about me. I want it to become genuinely more useful at the specific work I do.\n\nSay I correct the same coding mistake three times. Why should I have to correct it a fourth time? And if I spend weeks teaching it how a particular project works, why should that knowledge disappear when I switch models?\n\nHere's what I'm planning to build, from easiest to hardest:\n\n1. **Memory.** Confirmed facts, project decisions, and useful context. Every memory has a source, and I can inspect, edit, export, or delete it.\n2. **Rules.** If I keep correcting the same behavior, Shura suggests a rule. I decide whether to accept it, and the rule has to pass tests before it becomes active.\n3. **More compute when it matters.** For harder problems, generate multiple approaches and use tests to figure out which one actually works instead of trusting the first answer.\n4. **Actual weight updates.** The part I'm most interested in: small LoRA adapters trained on examples I've explicitly confirmed, on top of the same quantized base model I use every day.\n\nThe hope is that the model eventually gets better at solving my kinds of problems, not just better at following my formatting preferences.\n\n# What I don't know yet\n\nI'm not sure how much of that is realistic.\n\nTraining an adapter for a 35B MoE on a 16 GB AMD GPU is already an interesting problem. Getting a measurable improvement in reasoning is a much harder one. And even if the training works, it might just overfit to my examples.\n\nMy first adapter might improve things slightly. It might do absolutely nothing. I want to measure that rather than assume it worked.\n\n# Principles I'm trying to stick to\n\n* **Never worse.** Changes get tested against my own tasks before I keep them. If I find regressions, I roll back.\n* **Only what I confirmed.** Nothing gets used for learning unless I've explicitly confirmed it. No screen recording, background monitoring, or silently collecting everything I do.\n* **Local only.** No cloud training or uploading private conversations.\n* **Gentle on the hardware.** It shouldn't hammer my SSD or make my desktop unusable.\n* **Experience moves with me.** When I switch to a better base model, my confirmed examples, memories, and rules come with me. Model-specific adapters get retrained rather than assumed to transfer.\n\nIf the only way to make this work is to run training jobs all day on a bunch of expensive GPUs, that kind of defeats the point for me.\n\n# Why I'm sharing this now\n\nI want to document the whole process, including the experiments that don't work: benchmarks, failed ideas, implementation details, and hopefully some actual before-and-after results. I don't want to claim I've built a self-improving AI when I haven't even proven that the first adapter helps.\n\nI'd love to hear from anyone who's experimented with LoRA on MoE models, especially on AMD hardware, or anyone working on something similar. If you want to test Shura on your own machine or contribute, that would be great too.\n\n* Blog: [https://hikkian.github.io/blog/local-llm-that-gets-better/](https://hikkian.github.io/blog/local-llm-that-gets-better/)\n* Code: [https://github.com/hikkian/shura](https://github.com/hikkian/shura)\n\n**One question I'm curious about: if you had a local model that you could keep improving for years, what would you want it to learn first?**",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr6hwd/im_building_a_local_llm_that_actually_gets_better/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**TL;DR:** I'm building Shura, a local coding assistant on one RX 7800 XT (\\~78 tok/s, 200k context) that should get better at *my* work over time: memory, rules, more compute on hard tasks, and eventually LoRA adapters trained on examples I confirmed. Everything measured, everything local. The weight-update part is unproven, and I'll post the numbers either way.\n\nI've been running local models fo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.491
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "b6a07c207f0bf8b4",
+  "generated_at": "2026-11-08T23:58:36.170700Z",
+  "from_date": "2026-11-07",
+  "to_date": "2026-11-08",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-08T23:58:36.107354Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-08T23:58:36.107364Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-11-08T23:58:36.025812Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 75,
+      "attempted": true,
+      "at": "2026-11-08T23:58:36.107123Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Max 20x",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 114
+        }
+      },
+      "nomination": {
+        "name": "Claude Max 20x",
+        "seed_score": 2282.5407,
+        "summary": "A judge says Claude Max\u2019s \u201c20x more usage\u201d promise could mislead paying subscribers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "A judge says Claude Max\u2019s \u201c20x more usage\u201d promise could mislead paying subscribers",
+            "body": "A judge says Claude Max\u2019s \u201c20x more usage\u201d promise could mislead paying subscribers",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xq12am/a_judge_says_claude_maxs_20x_more_usage_promise/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2038,
+              "num_comments": 114
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "A judge says Claude Max\u2019s \u201c20x more usage\u201d promise could mislead paying subscribers",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15100000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Goodbye Claude hello Pi",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 424,
+          "points": 673
+        }
+      },
+      "nomination": {
+        "name": "Goodbye Claude hello Pi",
+        "seed_score": 1645.5,
+        "summary": "Goodbye Claude, hello Pi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50410107",
+            "source": "hackernews",
+            "title": "Goodbye Claude, hello Pi",
+            "body": "Goodbye Claude, hello Pi",
+            "url": "https://caleb.software/posts/claude-to-pi.html",
+            "author": "karagenit",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 673,
+              "comments": 424
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Goodbye Claude, hello Pi",
+            "snippet": "Goodbye Claude, hello Pi",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50410107",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Goldman Sachs Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 327,
+          "points": 536
+        }
+      },
+      "nomination": {
+        "name": "Goldman Sachs Claude Code",
+        "seed_score": 1294.5,
+        "summary": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50415628",
+            "source": "hackernews",
+            "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "body": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+            "author": "TheWiggles",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 536,
+              "comments": 327
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Goldman Sachs is pulling Claude Code from its bankers and tr",
+            "snippet": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50415628",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34950000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Code Ask Again exposes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 390,
+          "points": 576
+        }
+      },
+      "nomination": {
+        "name": "Claude Code Ask Again exposes",
+        "seed_score": 1024.5977,
+        "summary": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50407882",
+            "source": "hackernews",
+            "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "body": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+            "author": "shmulc",
+            "container": "Hacker News",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 576,
+              "comments": 390
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 p",
+            "snippet": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50407882",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 96,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Apple Mac mini running Qwen",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 89
+        }
+      },
+      "nomination": {
+        "name": "Apple Mac mini running Qwen",
+        "seed_score": 855.0,
+        "summary": "Apple researchers use a Mac mini running Qwen locally to control a Unitree G1 humanoid robot. Trained on 1,000 simulated homes, it autonomously sits, crawls under tables and navigates unfamiliar rooms, achieving 91% success across 360 real-world trials.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "Apple researchers use a Mac mini running Qwen locally to control a Unitree G1 humanoid robot. Trained on 1,000 simulated homes, it autonomously sits, crawls under tables and navigates unfamiliar rooms, achieving 91% success across 360 real-world trials.",
+            "body": "Apple researchers use a Mac mini running Qwen locally to control a Unitree G1 humanoid robot. Trained on 1,000 simulated homes, it autonomously sits, crawls under tables and navigates unfamiliar rooms, achieving 91% success across 360 real-world trials.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xr6w6w/apple_researchers_use_a_mac_mini_running_qwen/",
+            "container": "singularity",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 481,
+              "num_comments": 89
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing",
+            "snippet": "Apple researchers use a Mac mini running Qwen locally to control a Unitree G1 humanoid robot. Trained on 1,000 simulated homes, it autonomously sits, crawls under tables and navigates unfamiliar rooms, achieving 91% success across 360 real-world trials.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3285
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "GPT Opus 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 165
+        }
+      },
+      "nomination": {
+        "name": "GPT Opus 5.5",
+        "seed_score": 768.9786,
+        "summary": "As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks",
+            "body": "As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xqfqjl/as_a_gpt_user_i_used_opus_55_once_and_i_feel/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 560,
+              "num_comments": 165
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "MCP Claude Code Claude play PC",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 151
+        }
+      },
+      "nomination": {
+        "name": "MCP Claude Code Claude play PC",
+        "seed_score": 754.5,
+        "summary": "I built an MCP with Claude Code that lets Claude play PC games in the background. Here it is driving, flying a heli and walking in GTA on its own",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "I built an MCP with Claude Code that lets Claude play PC games in the background. Here it is driving, flying a heli and walking in GTA on its own",
+            "body": "I built an MCP with Claude Code that lets Claude play PC games in the background. Here it is driving, flying a heli and walking in GTA on its own",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xr3gbs/i_built_an_mcp_with_claude_code_that_lets_claude/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 352,
+              "num_comments": 151
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built an MCP with Claude Code that lets Claude play PC games in the background. Here it is driving, flying a heli and walking in GTA on its own",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Llama-modchip 284B DeepSeek 64GB RAM GPU",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 141,
+          "points": 343
+        }
+      },
+      "nomination": {
+        "name": "Llama-modchip 284B DeepSeek 64GB RAM GPU",
+        "seed_score": 726.0,
+        "summary": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50411961",
+            "source": "hackernews",
+            "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+            "body": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+            "url": "https://github.com/synchopate/llama-modchip",
+            "author": "joshcsimmons",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 343,
+              "comments": 141
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+            "snippet": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50411961",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Use Demo Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 81
+        }
+      },
+      "nomination": {
+        "name": "Use Demo Open Source",
+        "seed_score": 700.0357,
+        "summary": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+            "body": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqd058/use_your_phone_to_monitor_anything_with_local/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-07",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 579,
+              "num_comments": 81
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing",
+            "snippet": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.16200000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "DeepMind VP Science teases",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 83
+        }
+      },
+      "nomination": {
+        "name": "DeepMind VP Science teases",
+        "seed_score": 663.0,
+        "summary": "DeepMind\u2019s VP of Science teases a \"phase transition\" in scientific discovery. What could it be?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "DeepMind\u2019s VP of Science teases a \"phase transition\" in scientific discovery. What could it be?",
+            "body": "DeepMind\u2019s VP of Science teases a \"phase transition\" in scientific discovery. What could it be?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xqzpba/deepminds_vp_of_science_teases_a_phase_transition/",
+            "container": "singularity",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 359,
+              "num_comments": 83
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing",
+            "snippet": "DeepMind\u2019s VP of Science teases a \"phase transition\" in scientific discovery. What could it be?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3375
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Tesla Hasn't Had Successful",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 239,
+          "points": 192
+        }
+      },
+      "nomination": {
+        "name": "Tesla Hasn't Had Successful",
+        "seed_score": 646.5,
+        "summary": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50414427",
+            "source": "hackernews",
+            "title": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+            "body": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+            "url": "https://cleantechnica.com/2026/11/07/tesla-hasnt-had-a-successful-new-product-launch-since-jb-straubel-stepped-down-as-cto/",
+            "author": "gumby",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 192,
+              "comments": 239
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Tesla Hasn't Had a Successful New Product Launch Since JB St",
+            "snippet": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50414427",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3145
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 98
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 640.5,
+        "summary": "I built my restaurant\u2019s whole ops platform with Claude Code instead of paying for five different apps",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "I built my restaurant\u2019s whole ops platform with Claude Code instead of paying for five different apps",
+            "body": "I built my restaurant\u2019s whole ops platform with Claude Code instead of paying for five different apps",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xqquzu/i_built_my_restaurants_whole_ops_platform_with/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 329,
+              "num_comments": 98
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built my restaurant\u2019s whole ops platform with Claude Code instead of paying for five different apps",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.332
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Nvidia Opens Investigation Jensen Huang Relationship",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 97
+        }
+      },
+      "nomination": {
+        "name": "Nvidia Opens Investigation Jensen Huang Relationship",
+        "seed_score": 604.5,
+        "summary": "Nvidia Opens Investigation Into Jensen Huang\u2019s Relationship With Chinese Spy",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "Nvidia Opens Investigation Into Jensen Huang\u2019s Relationship With Chinese Spy",
+            "body": "Nvidia Opens Investigation Into Jensen Huang\u2019s Relationship With Chinese Spy",
+            "url": "https://www.reddit.com/r/singularity/comments/1xr7wb5/nvidia_opens_investigation_into_jensen_huangs/",
+            "container": "singularity",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 306,
+              "num_comments": 97
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "Nvidia Opens Investigation Into Jensen Huang\u2019s Relationship With Chinese Spy",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30500000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "OpenAI raises 11B 1.25T",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 199,
+          "points": 179
+        }
+      },
+      "nomination": {
+        "name": "OpenAI raises 11B 1.25T",
+        "seed_score": 567.0,
+        "summary": "OpenAI raises $11B at a $1.25T valuation",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50413822",
+            "source": "hackernews",
+            "title": "OpenAI raises $11B at a $1.25T valuation",
+            "body": "OpenAI raises $11B at a $1.25T valuation",
+            "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+            "author": "armcat",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 179,
+              "comments": 199
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about OpenAI raises $11B at a $1.25T valuation",
+            "snippet": "OpenAI raises $11B at a $1.25T valuation",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50413822",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.8,
+            "local_rank_score": 0.331
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "6 gets",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 178
+        }
+      },
+      "nomination": {
+        "name": "6 gets",
+        "seed_score": 507.0,
+        "summary": "How long until gta 6 gets ported to pc after launch by vibe coding",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "How long until gta 6 gets ported to pc after launch by vibe coding",
+            "body": "How long until gta 6 gets ported to pc after launch by vibe coding",
+            "url": "https://www.reddit.com/r/singularity/comments/1xquay6/how_long_until_gta_6_gets_ported_to_pc_after/",
+            "container": "singularity",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 160,
+              "num_comments": 178
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "How long until gta 6 gets ported to pc after launch by vibe coding",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3615
+          }
+        ]
+      }
+    }
+  ]
+}

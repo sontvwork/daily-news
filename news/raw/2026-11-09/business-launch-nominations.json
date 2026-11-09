@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "85c7fd01318fb5b0",
+  "generated_at": "2026-11-08T23:58:18.462201Z",
+  "from_date": "2026-11-07",
+  "to_date": "2026-11-08",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-08T23:58:18.461106Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-08T23:58:18.461112Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-08T23:58:18.458944Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-08T23:58:18.461014Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Tesla Hasn't Had Successful",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 239,
+          "points": 192
+        }
+      },
+      "nomination": {
+        "name": "Tesla Hasn't Had Successful",
+        "seed_score": 646.5,
+        "summary": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50414427",
+            "source": "hackernews",
+            "title": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+            "body": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+            "url": "https://cleantechnica.com/2026/11/07/tesla-hasnt-had-a-successful-new-product-launch-since-jb-straubel-stepped-down-as-cto/",
+            "author": "gumby",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 192,
+              "comments": 239
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Tesla Hasn't Had a Successful New Product Launch Since JB St",
+            "snippet": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50414427",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI raises 11B 1.25T",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 199,
+          "points": 179
+        }
+      },
+      "nomination": {
+        "name": "OpenAI raises 11B 1.25T",
+        "seed_score": 567.0,
+        "summary": "OpenAI raises $11B at a $1.25T valuation",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50413822",
+            "source": "hackernews",
+            "title": "OpenAI raises $11B at a $1.25T valuation",
+            "body": "OpenAI raises $11B at a $1.25T valuation",
+            "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+            "author": "armcat",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 179,
+              "comments": 199
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "HN story about OpenAI raises $11B at a $1.25T valuation",
+            "snippet": "OpenAI raises $11B at a $1.25T valuation",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50413822",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.8,
+            "local_rank_score": 0.38
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Writing as a thinking tool",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 77,
+          "points": 258
+        }
+      },
+      "nomination": {
+        "name": "Writing as a thinking tool",
+        "seed_score": 502.5,
+        "summary": "Writing as a thinking tool",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50412067",
+            "source": "hackernews",
+            "title": "Writing as a thinking tool",
+            "body": "Writing as a thinking tool",
+            "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+            "author": "jruohonen",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 258,
+              "comments": 77
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Writing as a thinking tool",
+            "snippet": "Writing as a thinking tool",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50412067",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    }
+  ]
+}

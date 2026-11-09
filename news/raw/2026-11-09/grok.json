@@ -1,0 +1,247 @@
+{
+ "date": "2026-11-09",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-09.json",
+ "fetched_at": "2026-11-08T23:57:54+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 8,
+  "ok": 8,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Claude Duet gains remote control of Claude Code sessions from phone",
+   "category": "feature_update",
+   "event_time": "2026-11-08T03:14:28Z",
+   "primary_url": null,
+   "facts": [
+    "Claude Duet can now control Claude Code that's running on your computer.",
+    "You can control Claude Code running on multiple computers, work on existing sessions, and spin up new sessions.",
+    "It supports real-time voice with Claude Code."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/rileybrown/status/2119267278789197995",
+     "official": false,
+     "author": "@rileybrown",
+     "check": "ok",
+     "created_at": "2026-11-08T03:14:28Z",
+     "text": "Claude Duet can now Control Claude Code that's running on your computer. This will be great for video editing and coding tasks. \n\n- You can control claude code running on multiple computers\n- You can work on existing sessions\n- You can spin up new sessions\n- You can do this with real time voice (i hope this get's better, their real time voice is mid)",
+     "likes": 188,
+     "retweets": 5,
+     "replies": 44,
+     "views": 17168,
+     "quote": {
+      "author": "@davidsuttonca",
+      "text": "Claude Duet: now with Claude Code sessions\n\nCheck what's running, approve changes and send updates - all from your phone. Works with sessions on your computer or in the cloud.\n\n/cc @navbryce and @joshleibsly"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Cursor adds real-time voice chat with coding agents powered by Grok Voice",
+   "category": "feature_update",
+   "event_time": "2026-11-06T00:00:00Z",
+   "primary_url": "https://cursor.com/changelog/voice-chat",
+   "facts": [
+    "You can now talk with your agents in a realtime voice call.",
+    "Voice chat works in the Agents Window, the IDE, on web, and in Cursor for iOS.",
+    "Voice chat runs on Grok Voice."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/getsuperintel/status/2119388800036000235",
+     "official": false,
+     "author": "@getsuperintel",
+     "check": "ok",
+     "created_at": "2026-11-08T11:17:20Z",
+     "text": "https://cursor.com/changelog/voice-chat",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 93,
+     "reply_to": "@getsuperintel"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Developers mixing Claude Code and Codex in shared setups",
+   "category": "discussion",
+   "event_time": "2026-11-08T03:49:31Z",
+   "primary_url": null,
+   "facts": [
+    "Developers are mixing Claude Code and Codex instead of picking one today.",
+    "A poll asks how people split the work: one plans and one codes, switch when a limit hits, run the same task in both, or something else."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/AGTPinsights/status/2119276102543626284",
+     "official": false,
+     "author": "@AGTPinsights",
+     "check": "ok",
+     "created_at": "2026-11-08T03:49:31Z",
+     "text": "Developers are mixing Claude Code and Codex instead of picking one today. Here's what you need to know.\n\nThis follows the rush to free tools like OpenCode and T3 Code, as Claude usage limits frustrate paying users. The question now is how to run two coding agents side by side.\n\nA poll asks how people split the work: one plans and one codes, switch when a limit hits, run the same task in both, or something else. One developer moved everything into a single VS Code setup with Claude Code, Codex, skills and tools via MCP or CLI. That way a new model gets tested inside the same setup. Another says running both in separate windows is the caveman way.\n\nThe pushback on T3 Code, the free app that drives both from one place: one user says Codex isn't as bad as it's made out to be, and T3 Code isn't as good as claimed. They plan to go back to using Codex and Claude Code separately.\n\nCodex limits split opinion. One long-time Plus user says limits are at their worst yet, with about 3 to 4 times more usage a year ago, and that was before the 5-hour limits. One user says they left Codex because of limits and went all-in on Claude. Another says Codex limits are now insanely good.\n\nOn the model side, OpenAI lists GPT-5.3 Codex API pricing at $1.75 per million input tokens and $14 per million output tokens.\n\nKey numbers:\n- 2 agents, Claude Code and Codex, used together\n- 4 ways to split the work in the poll\n- $1.75 input and $14 output per million tokens for GPT-5.3 Codex\n- 3 to 4x more Codex usage a year ago, per one Plus user\n\nThe takeaway: with limits shifting on both sides, devs are building setups that can switch between Claude Code and Codex.",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 5,
+     "views": 863,
+     "quote": {
+      "author": "@AGTPinsights",
+      "text": "Developers are turning to free AI coding tools today as Claude usage limits frustrate paying users. Here's what you need to know.\n\nOpenCode is an open-source, no-cost coding agent that runs in the terminal. It now has a desktop app too. You press Tab to switch between two workflows, Build and a planning mode. It connects models from 200+ providers, including Claude, GPT and Gemini, or you can start free. One poster says they built a whole micro SaaS with OpenCode and free-tier models.\n\nT3 Code…"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Developer shares detailed AGENTS.md to reduce AI comment slop",
+   "category": "discussion",
+   "event_time": "2026-11-08T22:13:56Z",
+   "primary_url": null,
+   "facts": [
+    "Do not write comments unless they are absolutely necessary to explain some very complex business logic or used as an input for tools to read and act on.",
+    "The point of this rule is to keep out AI slop comments. AI writes way too many and way too verbose comments."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/xodud_rkd/status/2119554037041516757",
+     "official": false,
+     "author": "@xodud_rkd",
+     "check": "ok",
+     "created_at": "2026-11-08T22:13:56Z",
+     "text": "My AGENTS.md\n\nDo not write comments unless they are any of:\n\n- absolutely necessary to explain some very complex business logic (in which case, keep it concise and clear)\n- used as an input for tools to read and act on. For example:\n  - entries in `.git-blame-ignore-revs` saying which commit is excluded from git blame\n  - a lint or type checker suppression with a concise reason when introducing a truly unavoidable violation\n- a TODO or FIXME\n  - Not great to have those, but if it's unavoidable, make sure to include a strong, concise reason for why it's there or, better yet, link to a GitHub issue for the follow-up work\n\nExplanation: The point of this rule is to keep out AI slop comments. AI writes way too many and way too verbose comments. Code comments are, in a way, a violation of DRY code. You must update logic in two locations to change the code, and \"hard to change\" is literally the definition of tech debt. We should instead aim to write code that is intuitive and clear, even at a glance, to the reader, being both easy to maintain and high performance\n\nDon't assume that the existing code is correct or the right way of doing things / good coding patterns. In fact, there are a lot of bad coding practices, overly complex code, code smells, etc. If something doesn't look right, speak up. Feel free to break existing patterns or question weird existing code to make new code high quality, as in:\n\n- correct\n- secure\n- performant\n- readable\n- easy to maintain/change\n- modern\n\nIn descending order of importance\n\nPre-merge tests are one fast safety net run with `make test-fast` inside a 60 second budget, plus a small service suite run with `make test-service` for behavior that needs real PostgreSQL or Valkey. The allowlists live in `scripts/test-fast.sh` and `scripts/test-service.sh`, and the full rules live in `tests/README.md`. When adding new features inside the allowlist, add meaningful tests there. Don't add tests that don't check anything substantial. I'd rather…",
+     "likes": 6,
+     "retweets": 0,
+     "replies": 7,
+     "views": 507
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Community shares multi-model Claude Code setup with Sonnet, Haiku, and Opus advisor",
+   "category": "trend",
+   "event_time": "2026-11-08T22:24:18Z",
+   "primary_url": null,
+   "facts": [
+    "Run Sonnet 5.5 for the session and writes the code, Haiku 5.5 explores files and docs in parallel, Opus 5.5 stays on call as advisor for the big calls.",
+    "Opus only steps in at three moments: before a plan locks, when the same error shows up twice, and before calling it done."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/hayatomaruu/status/2119556644824608843",
+     "official": false,
+     "author": "@hayatomaruu",
+     "check": "ok",
+     "created_at": "2026-11-08T22:24:18Z",
+     "text": "THIS IS ACTUAL F*CKING TREASURE\n\nAnthropic just shared one of the best tricks for Claude Code.\n\nThe idea: run Sonnet, Haiku and Opus 5.5 together, each one doing only the job it's best at.\n\nOpus-level judgment on every big call, without paying Opus rates for every routine turn.\n\nYou just launch Claude Code like this:\n\nclaude --model sonnet --advisor opus\n\nhere's the split:\n\n→ Sonnet 5.5 runs the session and writes the code\n→ Haiku 5.5 explores files and docs in parallel\n→ Opus 5.5 stays on call as advisor for the big calls\n→ you stop spending Opus on work that doesn't need it\n\nOpus only steps in at three moments:\n\n→ before a plan locks\n→ when the same error shows up twice\n→ before calling it done\n\nSonnet builds. Haiku explores. Opus reviews.\n\nJEV engineering is the same move one layer down: the forks that need no thinker (which file, which tool, retry or stop) go to JEV in milliseconds, and the big models only see the ones that split\n\nthe full tree\n> Sonnet 5.5 runs the main session and edits code\n> search maps the repo on Haiku 5.5\n> grep finds call sites on Haiku 5.5\n> docs pulls the API reference on Haiku 5.5\n> Opus 5.5 on call as advisor, reads the whole transcript when consulted\n> JEV routes micro-forks in milliseconds\n\npaste the tree and this prompt into Claude Code ↓\n\n\"Rebuild my Claude Code setup around this tree:\n1. Run the main session on Sonnet 5.5 with Opus 5.5 as advisor.\n2. Create three read-only Haiku 5.5 subagents: search (maps the repo), grep (finds call sites), docs (pulls the API reference).\n3. Add one rule to CLAUDE.md: consult the advisor before locking a plan, after the same error twice, and before calling a task done.\n4. Route fast deterministic forks (tool choice, path selection, retries) through JEV.\nShow me every change as a diff first. No edits until I say go.\"\n\n↳ http://code.claude.com/docs/en/advisor\n\nsave this, then read the full guide for Opus 5.5 loop + jev engineering ↓",
+     "likes": 25,
+     "retweets": 3,
+     "replies": 5,
+     "views": 856,
+     "quote": {
+      "author": "@beamnxw",
+      "text": "Your Claude loops can burn money while nothing changes\n\nUse Jev to filter tasks and cut decision costs\n\nFix the trigger before another overnight run\n\nThe full Loop engineering + Jev engineering  setup below ↓ https://x.com/i/article/2107859828341157888"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Anthropic engineer shares playbook for managing coding agents like a team",
+   "category": "discussion",
+   "event_time": "2026-11-08T10:50:49Z",
+   "primary_url": null,
+   "facts": [
+    "Anthropic engineer Addy Osmani shared how to run AI coding agents like a team without babysitting every session.",
+    "It shows how to give agents context, verify their work, set guardrails and decide what ships: context → plan → delegate → verify → decide."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/beamnxw/status/2119382127040987266",
+     "official": false,
+     "author": "@beamnxw",
+     "check": "ok",
+     "created_at": "2026-11-08T10:50:49Z",
+     "text": "THIS IS PURE GOLD\n\nAnthropic engineer, Addy Osmani just shared how to run AI coding agents like a team - without babysitting every session\n\nit shows how to give agents context, verify their work, set guardrails and decide what ships\n\ncontext → plan → delegate → verify → decide\n\nsave the full playbook ↓",
+     "likes": 298,
+     "retweets": 14,
+     "replies": 34,
+     "views": 43529,
+     "quote": {
+      "author": "@addyosmani",
+      "text": "https://x.com/i/article/2118901185377964033"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "OpenAI acquiring Pierre Computer Company to integrate code storage into Codex",
+   "category": "funding",
+   "event_time": "2026-11-08T21:19:00Z",
+   "primary_url": null,
+   "facts": [
+    "OpenAI announced November 4 it will acquire Pierre Computer Company, the startup behind Code Storage and the open-source Trees and Diffs libraries that already render file browsing and change review inside the Codex app.",
+    "The plan, once the deal closes: fold Code Storage into Codex, so the agent that writes your code also has somewhere to keep it."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/TommyBeFamous/status/2119540211738640847",
+     "official": false,
+     "author": "@TommyBeFamous",
+     "check": "ok",
+     "created_at": "2026-11-08T21:19:00Z",
+     "text": "OpenAI just bought the plumbing under Codex.\n\n@OpenAI announced November 4 it will acquire Pierre Computer Company, the startup behind Code Storage and the open-source Trees and Diffs libraries that already render file browsing and change review inside the Codex app.\n\nThe plan, once the deal closes: fold Code Storage into Codex, so the agent that writes your code also has somewhere to keep it. From the first branch an agent creates to code being deployed, in OpenAI's own framing.\n\nTwo days before the announcement, OpenAI's engineering team explained why. Agent traffic had pushed its own Git backend, Pando, below 90% reliability, and they rebuilt it. This acquisition is the other half of that story.\n\nNo price disclosed. No closing date. The companies stay separate until regulatory approvals land, and Code Storage customers keep using the service meanwhile. Pierre's open-source projects stay open source.\n\nI read this as OpenAI saying the quiet part out loud... Codex is not a coding assistant anymore. It is becoming the whole shop. Git hosting included.",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 2,
+     "views": 540
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Advice against treating AI coding agents like junior developers",
+   "category": "discussion",
+   "event_time": "2026-11-08T16:54:58Z",
+   "primary_url": null,
+   "facts": [
+    "Don't slow down your agents. Don't treat them like junior devs. Approving every small step.",
+    "My agents still don't push code. They plan, write, file issues and ask questions. A human decides what ships."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/madsonmac/status/2119473765499162666",
+     "official": false,
+     "author": "@madsonmac",
+     "check": "ok",
+     "created_at": "2026-11-08T16:54:58Z",
+     "text": "Don't slow down your agents\n\nDon't treat them like junior devs\n\nApproving every small step\n\nRewriting their plans\n\nChecking every line like it's their first week\n\nYour AI model read Clean Code\n\nIt read Clean Architecture\n\nIt read almost everything we read, and a lot more\n\nI'm a software engineer since 2003 and I still have to remind myself of this\n\nThe model often knows more than I do about how to write the code\n\nSo give it more autonomy\n\nBut not zero control\n\nMy agents still don't push code\n\nThey plan, write, file issues and ask questions\n\nA human decides what ships\n\nAutonomy inside the work\n\nA human at the boundary\n\nIf you review everything, you are the bottleneck",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 2,
+     "views": 52
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

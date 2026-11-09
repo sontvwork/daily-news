@@ -1,0 +1,258 @@
+{
+ "date": "2026-11-10",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-10.json",
+ "fetched_at": "2026-11-09T23:55:44+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T05:27:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 10,
+  "ok": 10,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Anthropic launches Claude Fable 5.2 and Mythos 5.2 for ambitious technical work",
+   "category": "model_infra",
+   "event_time": "2026-11-09T18:57:59Z",
+   "primary_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "facts": [
+    "Claude Fable 5.2 and Claude Mythos 5.2 show improvements in areas like coding, reasoning, and vision.",
+    "They generate outputs up to 30% faster than Claude Fable 5.1 and Claude Mythos 5.1, and they’re available at a lower price: $8 per million input tokens and $40 per million output tokens.",
+    "During prerelease testing they’ve helped our engineers complete otherwise-infeasible software migrations, designed three working electronic devices from scratch, solved two open problems in the physics of black holes, made substantial progress on robotics evaluations, and formalized the proof of Fermat’s Last Theorem in 30 hours."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/claudeai/status/2119867114450268322",
+     "official": true,
+     "author": "@claudeai",
+     "check": "ok",
+     "created_at": "2026-11-09T18:57:59Z",
+     "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges.\n\nThey’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
+     "likes": 69261,
+     "retweets": 6496,
+     "replies": 2308,
+     "views": 7137039
+    },
+    {
+     "url": "https://x.com/claudeai/status/2119899492778398163",
+     "official": true,
+     "author": "@claudeai",
+     "check": "ok",
+     "created_at": "2026-11-09T21:06:39Z",
+     "text": "Claude Fable 5.2 is available today on all paid plans.\n\nOrganizations pursuing beneficial applications in cybersecurity or biomedical research can apply for access to Claude Mythos 5.2.\n\nRead more: https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "likes": 305,
+     "retweets": 32,
+     "replies": 10,
+     "views": 46765,
+     "reply_to": "@claudeai"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Claude Code v2.1.321 makes Claude Fable 5.2 the default Fable model",
+   "category": "feature_update",
+   "event_time": "2026-11-09T19:22:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+   "facts": [
+    "Added Claude Fable 5.2 (claude-fable-5-2), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads.",
+    "Added --settings <file> to claude remote-control, which applies a settings file to every session it starts."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/nxtday/status/2119917999792730120",
+     "official": false,
+     "author": "@nxtday",
+     "check": "ok",
+     "created_at": "2026-11-09T22:20:11Z",
+     "text": "Anthropic just made Claude Fable 5.2 the default Fable model in Claude Code. 🚀\n\nPer Anthropic's Nov 9 post, Fable 5.2 is live on paid plans and major clouds. Outputs run up to 30% faster than Fable 5.1, and API pricing is $8 input and $40 output per million tokens, down from $10 and $50.\n\nClaude Code changelog 2.1.321 (Nov 9) adds Fable 5.2 with a 1M context window as the default Fable model.\n\nOn FrontierCode 2.0 at Xhigh effort, Anthropic reports Fable 5.2 at 49.1%, ahead of Opus 5.5 at 45.5%.\n\nImage: Anthropic\n\n@nxtday take: The rumor was 5.5. The ship was 5.2. Ship beats rumor.\n\nFable for hard agent work or stick with Opus daily? 🤔\n\nFollow @nxtday for AI news\n\n#Anthropic #ClaudeCode #Fable",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 0,
+     "views": 35
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Meta releases Muse Ember, smallest model for agent subtasks including coding",
+   "category": "model_infra",
+   "event_time": "2026-11-09T21:49:49Z",
+   "primary_url": "https://research.meta.ai/blog/muse-ember",
+   "facts": [
+    "Today, we're introducing Muse Ember, our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing.",
+    "Muse Ember is available today on Muse Code and Meta Model API as muse-ember-1.0. It costs $0.10 per million input tokens, $0.004 per million cached input tokens and $0.50 per million output tokens."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/finkd/status/2119910354369257529",
+     "official": true,
+     "author": "@finkd",
+     "check": "ok",
+     "created_at": "2026-11-09T21:49:49Z",
+     "text": "Muse Ember, Muse Spark 1.3, and Muse Wonder are now available on Google Cloud.",
+     "likes": 2102,
+     "retweets": 103,
+     "replies": 132,
+     "views": 84830
+    },
+    {
+     "url": "https://x.com/thecircuitry_/status/2119919691657273357",
+     "official": false,
+     "author": "@thecircuitry_",
+     "check": "ok",
+     "created_at": "2026-11-09T22:26:55Z",
+     "text": "Meta has released Muse Ember, which it calls its smallest and most efficient AI model for agent subtasks such as tool calls and coding. It is available as muse-ember-1.0 at $0.10 per million input tokens.\n\nhttps://thecircuitry.to/article/meta-launches-muse-ember-its-smallest-ai-model-for-agent-subtasks-mw9ts1vl?utm_source=x&utm_medium=social&utm_campaign=article_tweet",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 15
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Google Antigravity launches Knowledge Work interface layout",
+   "category": "feature_update",
+   "event_time": "2026-11-09T22:02:39Z",
+   "primary_url": "https://antigravity.google/blog/antigravity-for-knowledge-work",
+   "facts": [
+    "Today, we are launching a new Knowledge Work interface layout tuned for research, writing, and artifacts: same agent harness, plugins, and MCP tools, without the terminal and git clutter.",
+    "Select your layout in the General tab of Settings."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/antigravity/status/2119913586109579283",
+     "official": true,
+     "author": "@antigravity",
+     "check": "ok",
+     "created_at": "2026-11-09T22:02:39Z",
+     "text": "Today, we are launching a new Knowledge Work interface layout tuned for research, writing, and artifacts: same agent harness, plugins, and MCP tools, without the terminal and git clutter. Select your layout in the General tab of Settings.\n\nOur goal with Antigravity is to help the world deliver value through products and research. Doing that always starts with building the logic, which is why software development is at the core of the product. But turning that work into real outcomes takes every role working together with a shared language and understanding.",
+     "likes": 1097,
+     "retweets": 84,
+     "replies": 67,
+     "views": 45641
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Claude Code Fable 5.2 system prompt leaked on GitHub",
+   "category": "discussion",
+   "event_time": "2026-11-09T21:10:51Z",
+   "primary_url": null,
+   "facts": [
+    "Here are the full system instructions + tools for Fable 5.2 in Claude Code!",
+    "The currently selected version of Claude is Claude Fable 5.2. Claude Fable 5.2 is our most intelligent and advanced model for chat and knowledge work."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/elder_plinius/status/2119900550385049838",
+     "official": false,
+     "author": "@elder_plinius",
+     "check": "ok",
+     "created_at": "2026-11-09T21:10:51Z",
+     "text": "🌊 SYSTEM PROMPT LEAK 🌊\n\nHere are the full system instructions + tools for Fable 5.2 in Claude Code! 🤗 \n\nA small excerpt is pasted below and all 950,000 characters are now up on my GitHub (CL4R1T4S):\nhttps://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-CODE-FABLE-5.2.txt  \n\nClaude Web App prompt comin up next! 🫡\n\nPROMPT:\n\"\"\"\nYou are Claude Code, Anthropic's official CLI for Claude, running within the Claude Agent SDK.<claude_behavior>\nThe assistant is Claude, created by Anthropic.\n\n<product_information>\nHere is some information about Claude and Anthropic's products in case the person asks:\n\nThe currently selected version of Claude is Claude Fable 5.2. Claude Fable 5.2 is our most intelligent and advanced model for chat and knowledge work. The person can switch models mid-conversation, so earlier messages in this thread that identify as a different model or report a different knowledge cutoff may still be accurate.\n\nThe most recent publicly available models are Claude Fable 5.2 (the currently selected model), Claude Opus 5.5, Claude Sonnet 5.5, and Claude Haiku 5.5. \n\n<accessing_claude>\nThe core Claude app is available on web, desktop, and mobile, and is called simply \"Claude.\" It's where most people use Claude, and it includes Claude's ability to take on longer tasks and produce finished work (documents, analysis, research). This app is where Claude is currently being accessed from.\nThere are a few additional products that Claude refers to outside of the core app: Claude Code (agentic coding for engineers, from the terminal, web, desktop, and mobile), Claude Science (a research workbench for scientists, run on the lab's own machines), and Claude Security (finds and patches vulnerabilities in a codebase, for security teams). Developers can also build on Claude through the Claude Console and API. The most recent publicly available models use the API model strings 'claude-fable-5-2', 'claude-opus-5-5', 'claude-sonnet-5-5', and 'claude-haiku-5-5'.…",
+     "likes": 925,
+     "retweets": 92,
+     "replies": 62,
+     "views": 39841
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Developers discuss multi-model advisor setups for Claude Code with Fable 5.2",
+   "category": "discussion",
+   "event_time": "2026-11-09T21:46:47Z",
+   "primary_url": null,
+   "facts": [
+    "The idea: run Sonnet, Haiku 5.5 and Opus 5.5 at once, each one doing only the job it's best at.",
+    "You just launch Claude Code like this: claude --model sonnet --advisor opus"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/xsmryze/status/2119909593891627068",
+     "official": false,
+     "author": "@xsmryze",
+     "check": "ok",
+     "created_at": "2026-11-09T21:46:47Z",
+     "text": "THIS IS AN ACTUAL F*CKING GOLDMINE\n\nAnthropic just shared one of the best tricks for Claude Code.\n\nThe idea: run Sonnet, Haiku 5.5 and Opus 5.5 at once, each one doing only the job it's best at.\n\nBetter results and way fewer tokens, because every task lands on the right model.\n\nYou just launch Claude Code like this:\n\nclaude --model sonnet --advisor opus\n\nhere's the split:\n\n→ Sonnet 5.5 runs the session, writes the code and applies the fixes\n→ Haiku 5.5 swarms the repo in parallel: search, grep and diff audits\n→ Opus 5.5 stays on call as advisor for the big calls and signs off on the diff\n→ you stop burning Opus context on work that doesn't need it\n\nOpus only steps in at three moments:\n\n→ before a plan locks\n→ when the same error shows up twice\n→ before calling it done\n\nSonnet builds. Haiku swarms. Opus reviews.\n\nJEV engineering is the same move one layer down: the forks that need no thinker (which file, which tool, retry or stop) go to JEV in milliseconds, and the big models only see the ones that split\n\nthe full tree\n> Sonnet 5.5 runs the main session and coordinates the work\n> search maps the repo on Haiku 5.5, read-only\n> grep finds call sites on Haiku 5.5 in its own context\n> audit checks the diff on Haiku 5.5 in a throwaway worktree\n> Opus 5.5 on call as advisor, reviews the synthesized diff before sign-off\n> JEV routes micro-forks in milliseconds\n\npaste the tree and this prompt into Claude Code ↓\n\n\"Reconfigure my Claude Code setup around this tree:\n1. Run the main session on Sonnet 5.5 with Opus 5.5 as advisor.\n2. Create three Haiku 5.5 subagents in .claude/agents: search (maps the repo), grep (finds call sites), audit (checks the diff).\n3. Set isolation: worktree on audit so its checks never touch my working branch.\n4. Add one rule to CLAUDE.md: delegate every repo search and test run to the Haiku 5.5 subagents to keep the main context small.\n5. Route fast deterministic forks (tool choice, path selection, retries) through JEV.\nShow me every change as a diff…",
+     "likes": 37,
+     "retweets": 0,
+     "replies": 6,
+     "views": 2452,
+     "quote": {
+      "author": "@N01ennn",
+      "text": "REA is pure f*cking treasure right now\n\nit lets your AI agent reverse engineer any app, down to the binary\n\nOpus 5.5 reads how a feature works, then rebuilds its own version from scratch\n\nbut one wrong number can pass every check\n\nin this article : https://x.com/i/article/2109686434210693120"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Open-source projects enable AI agents to control real phones",
+   "category": "tool_launch",
+   "event_time": "2026-11-09T21:46:28Z",
+   "primary_url": null,
+   "facts": [
+    "Three open source projects hit GitHub this week that let it tap through a real phone.",
+    "Pinky - Claude Code, Codex or Cursor drive your iPhone or Android while you watch, payments wait for your click."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Alexvx_nft/status/2119909512584814989",
+     "official": false,
+     "author": "@Alexvx_nft",
+     "check": "ok",
+     "created_at": "2026-11-09T21:46:28Z",
+     "text": "YOUR AI AGENT CAN USE YOUR PHONE NOW\n\nThree open source projects hit GitHub this week that let it tap through a real phone\n\nPHONE\n\n1. Pinky - Claude Code, Codex or Cursor drive your iPhone or Android while you watch, payments wait for your click\nhttp://github.com/DIYgod/pinky\n\n2. Poki - operates a real iPhone through a local MCP server, no jailbreak, a free Apple account works\nhttp://github.com/JosssphZhou/poki\n\n3. phoneuse - a Linux PC sees your iPhone over AirPlay and taps as a Bluetooth mouse, no app on the phone, still a tech demo\nhttp://github.com/lxe/phoneuse\n\nMAKE\n\n4. sand3d - 3D objects as short Python, a washing machine with a working door in 38 lines\nhttp://github.com/Sandflow-ai/sand3d\n\n5. vork - the agent writes the scene and its own shaders as code, then renders on the GPU\nhttp://github.com/voyager-so/vork\n\n6. cinecode - runs inside Claude Code or Cursor, writes the script, builds every frame in code and hands you an MP4\nhttp://github.com/sarpstar/cinecode\n\nCHECK\n\n7. Neoverse - free to search, risk verdicts on 4M+ MCP servers, skills and extensions\nhttp://verse.neo.ai\n\nWhile sorting by stars I also hit five new repos created within the same hour, 478 to 480 stars each and almost no forks\n\nOne calls itself a pre-activated Claude toolkit\n\nDon't install anything on stars alone\n\nPinky is my pick, its approvals sit in the gateway so the agent can't just ignore them\n\nWould you let an agent touch your real phone ?",
+     "likes": 24,
+     "retweets": 0,
+     "replies": 7,
+     "views": 528
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Google AI Studio integrates Google Maps Platform for app building",
+   "category": "feature_update",
+   "event_time": "2026-11-09T17:01:28Z",
+   "primary_url": null,
+   "facts": [
+    "you can now build with google maps platform in AI Studio.",
+    "go from idea to app powered by @googlemaps in minutes!"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/GoogleAIStudio/status/2119837788937896234",
+     "official": true,
+     "author": "@GoogleAIStudio",
+     "check": "ok",
+     "created_at": "2026-11-09T17:01:28Z",
+     "text": "you can now build with google maps platform in AI Studio 🗺️📍\n\ngo from idea to app powered by @googlemaps in minutes!\n\nwhat’s new:\n\n- 1-click setup\n- create maps apps just by describing your idea, gemini does the rest\n- build with map tiles, places, weather, routing, 3D buildings, street view, and more\n\ntry it out today: http://ai.studio/build",
+     "likes": 2296,
+     "retweets": 197,
+     "replies": 96,
+     "views": 170197
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

@@ -1,0 +1,253 @@
+{
+ "date": "2026-11-10",
+ "runs": [
+  {
+   "started_at": "2026-11-09T23:58:27+00:00",
+   "seconds": 3.6,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 7,
+   "articles_ok": 6,
+   "articles_error": 0,
+   "articles_skipped": 0,
+   "hn_ok": 5,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "6/6 bài gốc ok (0 bỏ qua), 5/5 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 3.6s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://news.ycombinator.com/item?id=50422628",
+   "hn_url": "https://news.ycombinator.com/item?id=50422628",
+   "hn": {
+    "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+    "points": 205,
+    "comments": 71,
+    "text": "The agent running on a remote machine can authenticate using your local SSH credentials.\nThat means it can push to your private repos on GitHub, for example.\nProof: https://github.com/openai/codex/pull/28131#discussion_r3410013180"
+   },
+   "comments": [
+    {
+     "author": "recsv-heredoc",
+     "replies": 7,
+     "text": "It's amazing how often product decisions head this way for the purposes of 'removing friction'.\nIn security, friction is a GOOD thing. You want to have some ceremony to do things. It's pretty much inevitable that people will give up control for convenience.\nLook at Artifacts for example."
+    },
+    {
+     "author": "Lukas_Skywalker",
+     "replies": 4,
+     "text": "The Bitwarden desktop app has a built in SSH agent [1], which lets you store SSH keys inside Bitwarden. I have set the app to always ask me for confirmation when the key is requested.\n[1] https://bitwarden.com/help/ssh-agent/"
+    },
+    {
+     "author": "littlecranky67",
+     "replies": 4,
+     "text": "I'd suggest to use ssh keys inside the secure enclave on macOS that require your fingerprint for every new session [0]. That way agents cannot initiate anything, and you will always be aware when a new ssh connection is being made.\n[0]: https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb..."
+    },
+    {
+     "author": "yfontana",
+     "replies": 1,
+     "text": "I don't understand what the linked pull request is supposed to prove, considering it was closed and not merged."
+    },
+    {
+     "author": "m000",
+     "replies": 0,
+     "text": "At this point, should cases like this even be news? Isn't that a fundamental security design issue? Local agent security guardrails appear to always be built around blacklists, which will always be unreliable and leaky. It is left as an exercise to the user to properly sandbox them.\nThere may be some limited form of whitelisting, but often it is just a facade, as it is very coarse-grained. So, with tools with very broad capabilities (ssh, kubectl, gcloud, etc) you end up with the agent…"
+    }
+   ]
+  },
+  {
+   "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+   "hn_url": "https://news.ycombinator.com/item?id=50413822",
+   "hn": {
+    "title": "OpenAI raises $11B at a $1.25T valuation",
+    "points": 189,
+    "comments": 213
+   },
+   "comments": [
+    {
+     "author": "cmiles8",
+     "replies": 11,
+     "text": "The real headline is that they couldn’t hit what they wanted in terms of valuation and funds raised. Just were not enough people willing to invest given concerns that it may be downhill from here for a while on AI.\nThis will also make it even harder to avoid any future IPO being a down round. They’re almost certainly worth much less than Anthropic and Anthropic is, per reports, struggling to keep its valuation much above 1T, and even that may fall through."
+    },
+    {
+     "author": "bob1029",
+     "replies": 3,
+     "text": "OpenAI seems to me like they are operating with a slightly longer horizon strategy than Anthropic. Going for the IPO is the last resort in my mind. It is what you do to get ahead of deteriorating financial conditions. I don't think Anthropic had a choice at their projected burn rate. Why would we surrender all our cloaks and daggers unless we absolutely have to? The political and regulatory headwinds are not looking favorable for AI companies as of a few days ago.\nGoing for the IPO collapses a…"
+    },
+    {
+     "author": "chris_va",
+     "replies": 0,
+     "text": "We always see these headlines and think \"is XYZ company actually worth that much?\"\nClass A stock gets paid out first, so \"valuation\" here is not what a retail investor would necessarily pay for class C.\nBasically, do these people think that they'll get their $11B back? If so, they are ok with a high \"valuation\" because there is little risk. And with OpenAI's corporate structure, who knows what is actually happening."
+    },
+    {
+     "author": "vb-8448",
+     "replies": 4,
+     "text": "I'm still astonished on how musk outplayed everyone with the spacex ipo."
+    },
+    {
+     "author": "GodelNumbering",
+     "replies": 3,
+     "text": "There was an unconfirmed report that upto $10 billion in this round were pledged by a syndicate of UAE investment funds, including MGX\nhttps://www.bloomberg.com/news/articles/2026-10-05/openai-in..."
+    }
+   ],
+   "article": {
+    "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+    "status": "ok",
+    "title": "OpenAI Just Raised $11 Billion at a $1.25 Trillion Valuation, Below the $1.4 Trillion It First Sought - 24/7 Wall St.",
+    "chars": 7219,
+    "text": "Investing\nOpenAI Just Raised $11 Billion at a $1.25 Trillion Valuation, Below the $1.4 Trillion It First Sought\nBy Omor Ibne Ehsan\nPublished November 7, 2026, 8:38am ET · 3 min read\n𝕏\nf\n© 24/7 Wall St.\nAbout $11 billion in new money reached OpenAI’s accounts by Friday, November 6, 2026, people familiar with the deal said. That cash is the first part of a round priced at a $1.25 trillion pre-money valuation, a figure the company’s CFO, Sarah Friar, confirmed in a TV interview. OpenAI declined to comment on the funding.\nPress reports said OpenAI first set out to raise $30 billion or more at a $1.4 trillion valuation. Two investors put the first ask at $1.5 trillion. Friar challenged that account on air, saying the higher figure started with a media report and never came from OpenAI.\nWhichever starting point you accept. The round ended up smaller and cheaper after AI stocks sold off, even as OpenAI says its business is accelerating. That gap affects shareholders of Microsoft (NASDAQ:MSFT | MSFT Price Prediction) and NVIDIA (NASDAQ:NVDA) because both depend on OpenAI’s ability to fund its plans.\nCash Wired Versus Cash Promised\nThe closed amount covers about 37% of the original target. SoftBank and Abu Dhabi’s MGX took part in the round.\nThe rest could lift the total to as much as $20 billion, and a separate report put the follow-on at up to another $9 billion. That second portion has not closed. Lead investors, terms, and use of proceeds were not disclosed.\nFriar called the price almost 50% above March, when OpenAI raised $122 billion at $852 billion. The implied step-up is roughly 46.7%, but treat it as approximate, because her figure is pre-money and March’s basis is unclear.\nGrowth Claims Meet a Tighter Market\nFriar said OpenAI’s business grew 70% quarter over quarter in the third quarter, its enterprise business doubled, and revenue splits about 50% each between consumer and enterprise. She cited 1.2 billion weekly ChatGPT users and an ads run rate of $1 billion by August.\nShe gave no revenue dollar figures. Asked about the election, she said, “The demand for AI is real.”\nInvestors still paid less than the earliest reported asking price. Rival Anthropic plans to list on Nasdaq in mid-November. Some investors now value it at about $1.5 trillion, down from roughly $2 trillion in earlier expectations.\nMicrosoft Feels This Through GAAP Earnings\nMicrosoft closed at $530.61, down 0.99%, for a market value of $3.94 trillion. The funding report came out around the close, so that move had other causes.\nGains on the OpenAI stake added $207 million to GAAP net income in the September quarter, compared with $3.1 billion in net losses a year earlier. A smaller valuation increase reduces future gains on the stake, although that is minor next to 48% Azure growth.\nNVIDIA Depends on This Money Flowing\nNVIDIA rose 2.78% to $186.64 as chip stocks rallied, and Oracle (NYSE:ORCL) added 0.78%. NVIDIA is still down 21.4% over one month.\nNVIDIA has said OpenAI’s existing and planned commitments add up to about 12 gigawatts of its compute. Management also said frontier labs “are growing faster than what their balance sheets and credit profiles can support.” A round that fills in stages shows that strain.\nWhat OpenAI’s Smaller Round Means for AI Stock Investors\nThe optimistic view is that demand still exceeds supply. Microsoft says it has more demand than capacity, and NVIDIA guided to $108.0 billion in third-quarter revenue.\nThe bearish argument depends on financing. Private valuations can drop further, the second portion may close below full size, and a weak Anthropic debut could pull both labs’ valuations down.\nMicrosoft looks less exposed to OpenAI’s funding pace than NVIDIA, because OpenAI affects its accounting gains far more than the cloud business behind its earnings. NVIDIA is more exposed to how well the labs can raise money.\nTwo milestones will test this view: whether OpenAI’s round reaches $20 billion, and whether NVIDIA meets its guidance…"
+   }
+  },
+  {
+   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "hn_url": "https://news.ycombinator.com/item?id=50429906",
+   "hn": {
+    "title": "Claude Fable 5.2 and Mythos 5.2",
+    "points": 850,
+    "comments": 514
+   },
+   "comments": [
+    {
+     "author": "skeledrew",
+     "replies": 36,
+     "text": "Damn people were right about 5.5 being nerfed in preparation for a version release. This is not at all a good look.\n- https://news.ycombinator.com/item?id=50422069"
+    },
+    {
+     "author": "yewenjie",
+     "replies": 20,
+     "text": "> Our first formalization of Fermat’s Last Theorem, performed by an unreleased research version of Claude, took 11 days. It relied on a purpose-built harness along with guidance from a human researcher. By contrast, a team of 1,000 Fable 5.2 agents fully formalized the theorem in just 30 hours, with minimal human intervention. Fable 5.2 started from minimal prompts, built its own ways to coordinate, and used no mathematical references, only a list of intermediate theorem statements to score…"
+    },
+    {
+     "author": "postalcoder",
+     "replies": 8,
+     "text": "I’ve had a chance to use fable 5.2. Some observations:\n- Anthropic is finally well balanced across models. Meaning: Opus 5.5 is so good that I do not feel Fable FOMO as I did when it was Fable 5/5.1 vs Opus 4.8/5. And Sonnet 5.5 sometimes makes me forget about Opus.\n- Fable is good, but you really have to push the ambition of your prompt in order to see proper separation from Opus 5.5. I personally have a hard time telling the difference between Fable 5.2 and Opus 5.5 for ordinary coding…"
+    },
+    {
+     "author": "breakwaterlabs",
+     "replies": 5,
+     "text": "- Why are they stacking Fable xHigh against Carbon Med?\n- How did they produce such a bizarre effort-intel curve for Carbon that goes against every available benchmark?\n- Why did they leave Carbon-- positioned primarily as a cyber model-- off of the single cyber benchmark comparison?\n- Why do they switch to comparing against Argon (rather than carbon) for robodojo?"
+    },
+    {
+     "author": "dualvariable",
+     "replies": 17,
+     "text": "Setting aside the comments about nerfing, do normal mortals out there have workflows that really require Fable/Mythos and don't just work fine on Opus 5.5?\nI've been using Opus 5.5 on xhigh for some decently aggressive software development on a ~125k-line project, and it has been fine for me. I'm not really willing to dive into a \"rewrite the whole project, don't make any mistakes\" level of refactoring. I'm not looking to try to prove Fermat's Last Theorem myself. Is there anything that I'm…"
+    }
+   ],
+   "article": {
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "status": "ok",
+    "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2 \\ Anthropic",
+    "chars": 39454,
+    "text": "We’ve upgraded Claude Fable and Claude Mythos—models that are designed to tackle the most daunting technical challenges.\nClaude Fable 5.2 and Claude Mythos 5.2 show improvements in areas like coding, reasoning, and vision. During prerelease testing they’ve helped our engineers complete otherwise-infeasible software migrations, designed three working electronic devices from scratch, solved two open problems in the physics of black holes, made substantial progress on robotics evaluations, and formalized the proof of Fermat’s Last Theorem in 30 hours—among many other applications we’ll discuss below.\nClaude Fable and Claude Mythos are the same underlying model. Fable has strong cybersecurity and biology safeguards to guard against misuse, which allows us to make it available to all users. Organizations pursuing beneficial applications in cybersecurity or biomedical research can apply for access to Mythos through our recently expanded Life Sciences and Cyber Verification Programs.\nTesters have found that Fable 5.2 and Mythos 5.2 communicate more clearly than past Fable and Mythos models. They generate outputs up to 30% faster than Claude Fable 5.1 and Claude Mythos 5.1, and they’re available at a lower price: $8 per million input tokens and $40 per million output tokens.\nFable 5.2 and Mythos 5.2 also come with an optional fast mode, which speeds up token generation by up to 2.5 times. Fast mode is available for $16 per million input tokens and $80 per million output tokens.\nSafety and alignment. To help ensure safety and alignment keep step with growing model capabilities, we ran extensive prerelease safety testing on the model that underlies Fable 5.2 and Mythos 5.2. This included developing novel evaluations that give deeper insight into specific concerning behaviors like sandbox escapes. We believe high-stakes risks from misalignment remain low, and the model performed as well as, or better than, our recent models on most alignment measures. Fable 5.2’s cyber and biology safeguards are as robust as those of Fable 5.1 but produce fewer unnecessary blocks, and we have implemented our strongest-ever protections against distillation attacks.\nWe describe more about our safety testing below, and full details can be found in the Claude Fable 5.2 and Mythos 5.2 System Card.\nWhen to use Claude Fable 5.2 and Mythos 5.2. Fable and Mythos are best for the most ambitious, open-ended technical work. For most coding and knowledge tasks, we recommend that users start with Claude Opus 5.5, our strongest daily driver, and then switch to a different model as required, depending on the scope and complexity of their work—upward to Fable or Mythos, or downward to Claude Sonnet 5.5 or Claude Haiku 5.5. Fable 5.2 can also play the role of Advisor (where Haiku, Sonnet, or Opus models consult it to help solve harder problems) or Orchestrator (where it delegates simpler tasks to smaller models).\nEvaluating Claude Fable 5.2 and Mythos 5.2\nBenchmark performance. The benchmarks table below shows that Claude Fable 5.2 and Mythos 5.2 are a step above Opus 5.5 in almost all the capabilities we evaluated:\nFable 5.2Fable 5.1Opus 5.5GPT-6 AstraGemini 4 Carbon\nAgentic codingFrontierCode 2.0\nAgentic codingFrontierCode 2.049.1%Xhigh effort32.4%Xhigh effort45.5%42.8%41.1%Medium effort\nAgentic codingFrontierSWE v2\nAgentic codingFrontierSWE v269.9%56.3%62.3%65.5%61.2%\nBusiness workflowsAutomationBench\nBusiness workflowsAutomationBench51.4%31.4%42.5%41.4%53.9%\nAgentic scientific researchTerminal-Bench-Science 0.1\nAgentic scientific researchTerminal-Bench-Science 0.174.6%75.3% (Mythos 5.2)52.6%58.7%68.1%64.8%\nCybersecurityCyScenarioBench†\nCybersecurityCyScenarioBench†76.3%Mythos 5.261.7%Mythos 5.167.6%without safeguards61%GPT-6 Cyber—\nCybersecurityCVE Rediscovery\nCybersecurityCVE Rediscovery89.6%Mythos 5.278.3%Mythos 5.181.3%without safeguards——\nProtein designDe novo binder design (24 hr)\nProtein designDe novo binder design (24 hr)85.1%Mythos 5.279.1%Mythos…"
+   }
+  },
+  {
+   "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+   "hn_url": "https://news.ycombinator.com/item?id=50411467",
+   "hn": {
+    "title": "Agent memory needs its OpenTelemetry moment",
+    "points": 189,
+    "comments": 108
+   },
+   "comments": [
+    {
+     "author": "armchairhacker",
+     "replies": 4,
+     "text": "Is this a significant problem? It seems like there are 15 solutions to every AI “text format” problem, but all are merely structure over feeding the AI informal English, structure which I believe the “transformer” model is specifically able to strip to a common form (which is how training it on the entire internet worked).\nAI does benefit from learning to use skills, and being instructed with good structures (like “save [specific important kind of detail] in memories” and “plan before…"
+    },
+    {
+     "author": "speedping",
+     "replies": 14,
+     "text": "Entire blog post reeks of LLM.\nIf there was an adequately reliable way of detecting LLM text i'd build a browser extension that would just filter it out altogether."
+    },
+    {
+     "author": "Fordec",
+     "replies": 2,
+     "text": "On the general premise, I agree. But I don't think that moment is today, not yet anyway. I don't think we understand the right way to approach context and memory yet or how long they should last for, never mind standardizing on an abstraction prematurely that ends up being like SOAP or SGML."
+    },
+    {
+     "author": "imgyuri",
+     "replies": 2,
+     "text": "The need for a unified format or spec is greatly reduced in the case of Agent memory because by definition it is read by agents, and agents are already instructed / programmed to read memory files of different formats. Even if such instructions did not exist, agents are extremely good at traversing files to get the necessary context it needs."
+    },
+    {
+     "author": "baalimago",
+     "replies": 2,
+     "text": "Do we really need this..? What LLMs do well is interpret natural language. So it's a sponge for whatever format is used in a specific project: a predefined format is not really needed.\nBesides, do we really want memory of user A's agents to co-exist with memory of user B? Not really. So the argument for collaboration and sharing is quite slim, at least for coding agents. The repository specific context can be encoded into a docs/ or architecture/ directory, just like it's been done pre-agent…"
+    }
+   ],
+   "article": {
+    "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+    "status": "ok",
+    "title": "Agent memory needs its OpenTelemetry moment — LoreKit blog",
+    "chars": 11716,
+    "text": "All posts\nAgent memory needs its OpenTelemetry moment\nEvery agent tool stores memory in its own shape, and every week someone builds another one. None of them can read the others. Observability had the same problem until OpenTelemetry gave everyone one data model to share. A tour of today's memory formats, the proposals that already exist, and what a shared spec could look like.\nMads Thines·November 7, 2026·7 min read\nCount the memory formats on your machine\nList every place your coding tools keep something they \"remember\". A typical setup today:\nan AGENTS.md or CLAUDE.md in most repos, and .cursor/rules/*.mdc in a few\nan agent writing files to a /memories directory through Anthropic's memory tool\nCopilot keeping facts about each repo on GitHub's side\na memory MCP server keeping a JSONL knowledge graph\nThat's four different shapes, and none of them can read the others. A lesson your CI agent learns stays in whatever wrote it. Your editor agent can't read it, and neither can the next tool you try.\nEach format is reasonable on its own. Together, they rebuild the same small idea again and again: a note an agent left for its future self, stored at some address, true for a while.\nAnd the list keeps growing. Browse r/ClaudeAI, r/LocalLLaMA or r/cursor and you'll find a steady stream of \"I built a memory layer for my agent\" posts, each with its own storage, its own schema and its own MCP tools. That's good evidence the problem is real: people keep hitting it badly enough to build something. But every new solution adds one more format that nothing else can read. The problem isn't a missing tool. It's a missing agreement, and that only comes from the community working on it together.\nI build one of these tools, LoreKit, which is open source. This isn't a pitch that LoreKit has solved memory. Its format is one proposal among several, with gaps of its own. The point is that this is the moment to agree on a shared shape, and that another field has already shown how.\nWe've seen this before\nBefore 2019, every observability vendor shipped its own agent, its own instrumentation library and its own data format. Switching vendors meant instrumenting your code again. Two open projects, OpenTracing and OpenCensus, tried to fix that and competed with each other too.\nIn 2019 they merged into OpenTelemetry. What mattered was what the vendors agreed to stop competing on:\nA data model: what a span, a metric and a log record are.\nSemantic conventions: shared names like service.name and http.*.\nA protocol: OTLP, one way to send the data.\nReference implementations: shared SDKs and the Collector.\nVendors kept competing on what they do with the data: storage, querying, analysis. Users instrument once. I work with OpenTelemetry every day at Dash0, and that agreement is why a whole ecosystem of tools can read each other's data.\nThe same four layers. Observability agreed on them and competes on what happens after the data arrives. Agent memory has plenty of implementations, but nothing agreed underneath them.\nAgent memory is where observability was before 2019. The timing is good: the formats are young enough to change, and there's already a neutral home for agent standards. MCP and AGENTS.md both sit under the Linux Foundation's Agentic AI Foundation.\nA tour of the shapes\nThese change quickly, so treat the details as a snapshot from late 2026.\nFamilyExampleThe unit of memoryAddressed byForgetting\nInstruction filesAGENTS.md, CLAUDE.md, Cursor .mdc rulesA whole Markdown fileFile path (plus globs for Cursor)Never. A person edits it\nAgent-managed filesAnthropic's memory toolA file under /memoriesA path the model picksNever, unless the model deletes it\nHosted repo factsGitHub Copilot MemoryA fact with code citationsOne repositoryDeleted after 28 days unused\nContext blocksLetta core memoryA labeled block with a character limitA label on an agentNever. Always in context\nExtracted factsMem0A fact the service extracts from messagesuser_id / agent_id / run_id /…"
+   }
+  },
+  {
+   "url": "https://antigravity.google/blog/antigravity-for-knowledge-work",
+   "article": {
+    "url": "https://antigravity.google/blog/antigravity-for-knowledge-work",
+    "status": "ok",
+    "title": "Google Antigravity for Knowledge Work | Google Antigravity Blog",
+    "chars": 6119,
+    "text": "Press Guidelines\n🚀Launch Remote ControlDownload\n🚀Launch Remote Control\nENEnglish (United States)Bahasa Indonesia (Indonesia)Deutsch (Deutschland)English (Canada)English (United Kingdom)Español (España)Español (México)Français (France)Italiano (Italia)Polski (Polska)Português (Brasil)हिन्दी (भारत)ไทย (ประเทศไทย)日本語 (日本)简体中文 (中国)繁體中文 (台灣)한국어 (대한민국)\nExplore our next generation products\nSee overview\nProducts\nBuilt for developers and teams in the agent-first era\nSee overview\nDeveloper Use Cases\nOther Roles\nEverything you need to stay up-to-date and get help\nExplore our next generation products\nSee overview\nProducts\nBuilt for developers and teams in the agent-first era\nSee overview\nDeveloper Use Cases\nOther Roles\nPricing\nEnterprise\nEverything you need to stay up-to-date and get help\nDownload\nNewIntroducing voice mode in Antigravity, enabled by Gemini LiveRead post\n0:00 / 0:00\nGoogle Antigravity for Knowledge Work - BlogblogBlogBlogGoogle Antigravity for Knowledge Work - Blog\nGoogle Antigravity for Knowledge Work\nThe Antigravity Team\n·Nov 9, 2026·4 min read\nShare on XShare on BlueskyShare on LinkedIn\nAs the adoption of Google Antigravity has scaled, we’ve seen people bring Antigravity far more than code. Alongside software engineering, more and more daily sessions center on deep research, data analysis, drafting documents and presentations, prototyping designs, and automating everyday workflows. We’ve seen this exact same pull inside Google, where tens of thousands of Googlers outside software engineering (across sales, finance, legal, product, design, research, marketing, and operations) now rely on Antigravity every week alongside engineers to get their work done.\nSoftware development at the core, built with every role in mind\nWe are in the business of helping the world deliver value through products and research. No matter what you are working on, the underlying logic and systems eventually need to be built, and that requires software development. That’s why software development is, and will remain, at the core of what Antigravity enables.\nBut actually delivering value never happens in a silo. It requires every role—engineering, product, design, data, science, operations, and go-to-market—working together with a common language, shared context, and mutual understanding. And the exact same agentic capabilities forged on complex software engineering (multi-step reasoning, working directly across local folders and connected tools, orchestrating subagents and plugins, and iterating on rich artifacts) are what make an agent genuinely useful for rigorous knowledge work, too.\nSupporting knowledge work shouldn’t mean pointing non-developers to a watered-down experience, nor should it mean forcing everyone to navigate Git worktrees, terminal panes, and line-by-line code diffs just to collaborate with an agent. That’s why Antigravity is built with everyone doing knowledge work in mind, and why today we are launching a new Knowledge Work user experience in Google Antigravity to support both software engineering and broader knowledge work.\nOne Antigravity agent, tailored to how you work\nWhile Antigravity’s default UI was built around repositories, terminals, and code diffs, you can now choose between two interface layouts in the Antigravity App: Knowledge Work and Software Engineering. Both layouts run the exact same Antigravity agent, with full access to frontier models, local files, plugins, skills, rules, custom agents, and MCP servers, so these visual changes make Antigravity more approachable and intuitive for professional knowledge work without giving up any underlying capability.\nAlongside interface layouts, we’ve rolled out an updated role-based onboarding flow for new users. When signing in for the first time, you can select what best describes your work (starting with Software Engineering, Knowledge Work, Data & Analytics, Science, or Design) to automatically tailor your starting interface layout, starter prompts, and recommended…"
+   }
+  },
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+    "status": "ok",
+    "title": "",
+    "chars": 16667,
+    "text": "## 2.1.321\n- Added Claude Fable 5.2 (`claude-fable-5-2`), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads\n- Added `--settings ` to `claude remote-control`, which applies a settings file to every session it starts; if the file changes, no new session starts until you restart `claude remote-control`\n- Fixed MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them\n- Fixed a case where a read-only Bash command ran outside the sandbox without a permission prompt\n- Fixed a case where Bash permission checks judged a file write from the wrong folder and didn't prompt\n- Fixed deny rules and protected-file prompts not applying to the file that a `cp` or `mv` into a directory writes\n- Fixed the \"Draws from usage credits\" note showing after a switch to Fable on Enterprise seats whose plan includes Fable\n- Fixed the fallback model sometimes declining a request or mentioning a stopped response when the first model was blocked before replying\n- Fixed `claude mcp login` printing a SEP-2352 issuer warning each time you sign in again to a server that Claude Code registered with\n- Fixed `NotebookEdit` deleting or overwriting a notebook's first cell when the call named no cell, on network paths (UNC shares, WSL folders, `/net` mounts)\n- Fixed Edit changing the first of several matches, replacing a whole file on an empty `old_string`, or editing a notebook as text, on network paths (UNC shares, WSL folders, `/net` mounts)\n- Fixed `/config` showing Manual as the default permission mode when new sessions start in auto mode; pressing Space on \"Auto (default)\" now saves Don't Ask, not Plan\n- Windows: Fixed `FileChanged` hooks stopping for paths set through `watchPaths` after the first shell command, when the session's working directory had a lowercase drive letter\n- Fixed `--plugin-dir .` and `--plugin-dir ./builtin` writing generated type files for Claude Code's built-in plugins into a `builtin` folder\n- Fixed context usage estimates overcounting tool definitions when exact token counts are unavailable\n- Fixed `/compact` showing twice in Remote Control on web and mobile\n- Fixed plugin auto-updates and `/plugin` marketplace updates downloading a plugin again for each worktree or folder of a repository\n- Fixed auto mode losing a background subagent's report that had started a turn when the conversation was compacted before Claude answered it\n- Fixed project skills, commands and agents staying missing after their folder was removed and came back mid-session, such as with `git stash`, including after entering a worktree\n- Fixed `claude -p` sometimes telling Claude that background commands get 30 minutes when they are stopped after 10\n- Fixed `pkill`, `pgrep` and `pidwait` in cloud sessions matching the session's own parent processes\n- Fixed Claude in Chrome and computer use server processes staying alive after their parent exits behind a proxy that stalls connections\n- Fixed a large hook output pointing Claude to a file that held another hook's output from the same tool call\n- Fixed apps that embed Claude Code getting their own PreToolUse hook's `ask` reason instead of another hook's when both asked\n- Fixed a PreToolUse hook's `ask` being lost when another hook's `defer` finished first and could not be honored\n- Fixed a rare crash on permission prompts and background tasks\n- Fixed project skills, commands and agents disappearing from the menu in SDK and desktop sessions after Claude entered a worktree\n- Fixed `/desktop` on macOS saying Claude Desktop is not installed when it is in `~/Applications`\n- Fixed OpenTelemetry repository attributes (`vcs.*`) missing from Claude Desktop sessions that start on a pre-started process\n- Fixed WebFetch passing \"No response from model\" to Claude as page content when the model reading the page returned no text; the call now fails with a clear error\n- Fixed screen reader mode delaying the prompt at startup when the system clock moved…"
+   }
+  },
+  {
+   "url": "https://research.meta.ai/blog/muse-ember",
+   "hn_url": "https://news.ycombinator.com/item?id=50429024",
+   "hn": {
+    "title": "Our Smallest, Most Efficient Model: Muse Ember",
+    "points": 222,
+    "comments": 93
+   },
+   "comments": [
+    {
+     "author": "simonw",
+     "replies": 14,
+     "text": "Six effort levels (minimal, low, medium, high, xhigh, max), so here are six pelicans (actually five, \"high\" didn't return a complete SVG):\nhttps://tools.simonwillison.net/markdown-svg-renderer?url=ht...\nThere's usually a reasonably strong correlation between thinking level and visual quality of the pelican. This is the first time I've seen that correlation appear to break - more reasoning tokens doesn't seem to produce an obviously better SVG."
+    },
+    {
+     "author": "Retro_Dev",
+     "replies": 1,
+     "text": "When they said the model was the \"smallest\" of their models yet, I was really hoping it would be open weights. I can't find any weights, how sad :("
+    },
+    {
+     "author": "minimaxir",
+     "replies": 1,
+     "text": "> It costs $0.10 per million input tokens, $0.004 per million cached input tokens and $0.50 per million output tokens,\nNotable cache cost of 4% input, compared to Luna/Haiku's 10% of input."
+    },
+    {
+     "author": "open-paren",
+     "replies": 1,
+     "text": "I believe this is what the “crouton alpha” stealth model was\nhttps://openrouter.ai/stealth/crouton-alpha"
+    },
+    {
+     "author": "kbrannigan",
+     "replies": 3,
+     "text": "This is starting to feel just like the early PC days. A bunch of Computer models coming out, all shapes and color, but eventually it settled around mouse keyboard, monitor\nmost people, use the office suite: Word, Spreadsheet , presentations, database.\nI bet we're going to see the exact same thing with LLMs at specialized models instead of the everything models.\nOne for lawyers, coders, Accountants, Designers, etc…"
+    }
+   ],
+   "article": {
+    "url": "https://research.meta.ai/blog/muse-ember",
+    "status": "ok",
+    "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+    "chars": 12051,
+    "text": "Introducing Our Smallest, Most Efficient Model: Muse Ember\nNovember 9, 2026·4 minute read\nToday, we're introducing Muse Ember, our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing.\nMuse Ember delivers more intelligence per dollar than Claude Haiku 5.5 or GPT-6 Luna at any reasoning setting: it matches Haiku's best score at about a third of the cost and beats every Luna setting. It also sits on the efficiency frontier of the full Artificial Analysis leaderboard: no model scores higher for less per task.\nIntelligence vs. Cost Per Task\nArtificial Analysis Intelligence Index against cost per task at each reasoning effort, from the raw Artificial Analysis results. Muse Ember costs are estimates at proposed pricing.\nxhigh\nmax\nmedium\nhigh\nxhigh\nmax\nhigh\nxhigh\nmax\nMuse Ember\nClaude Haiku 5.5\nGPT-6 Luna\nIntelligence vs. Cost Per Task: Intelligence vs. Cost Per Task\nSeriesMeasurementValue\nMuse EmberCost Per Task (USD)$0.116\nMuse EmberScore33.9\nMuse EmberCost Per Task (USD)$0.136\nMuse EmberScore35.8\nClaude Haiku 5.5Cost Per Task (USD)$0.092\nClaude Haiku 5.5Score24.6\nClaude Haiku 5.5Cost Per Task (USD)$0.159\nClaude Haiku 5.5Score29.6\nClaude Haiku 5.5Cost Per Task (USD)$0.248\nClaude Haiku 5.5Score34.3\nClaude Haiku 5.5Cost Per Task (USD)$0.411\nClaude Haiku 5.5Score36.2\nGPT-6 LunaCost Per Task (USD)$0.073\nGPT-6 LunaScore21.4\nGPT-6 LunaCost Per Task (USD)$0.104\nGPT-6 LunaScore23.3\nGPT-6 LunaCost Per Task (USD)$0.152\nGPT-6 LunaScore27.8\nArtificial Analysis | November 9, 2026. Each point is one reasoning-effort setting. Muse Ember cost at list pricing.\nMuse Ember evaluation results\nMuse Ember evaluation results: Evaluation results\nEvaluation resultsFeatured model. Muse Ember (max)Claude Haiku 5.5 (max)GPT-6 Luna (max)\nAgentsAutomationBench-AAE2E business workflowsBest result. 37.813.920.2\nAgents' Last ExamEnd-to-end agent tasksBest result. 61.657.057.1\nPersonal Superintelligence IndexInternal composite index of personal and knowledge workBest result. 46.836.137.0\nCodingTerminal-Bench 4.0Agentic terminal coding, best published harnessBest result. 40.939.216.4\nCoding Agent Index-AACoding in real agent harnessesBest result. 463731\nFrontierCode 2.0-AAReal engineering tasks judged on mergeability27.2Best result. 34.925.2\nMultimodalGDP.pdf-AAProfessional work over long documentsBest result. 22.820.8Best result. 22.8\nOSWorld 2.1Computer use across desktop appsBest result. 69.5(partial)33.8(binary)68.9(partial)27.8(binary)50.5(partial)17.0(binary)\nPerceptionBench (w/ tools)Fine-grained visual perceptionBest result. 80.678.662.8\nGeneralArtificial Analysis IndexBest result. 36Best result. 3628\nFor more details about our evaluations, see our report.\nMuse Ember is available today on the Meta Model API, at $0.10 per million input tokens and $0.50 per million output tokens.\nIn early testing, our partners put Muse Ember to work on the kinds of tasks agents repeat all day, from reviewing contracts to writing code.\n“On the Box AI Complex Work Eval, Muse Ember delivers impressive accuracy, speed and token efficiency. It can score a contract against a company's negotiation playbook clause by clause and land on the right overall risk rating, or screen candidates against a detailed brief and flag the borderline ones who still qualify as alternates. Muse Ember is a fast, efficient foundation for agents doing real work on enterprise content.”\nAuthor\nYashodha Bhavnani\nRole\nVP of AI Products\nCompany\nBox\n“It's incredible seeing Meta release a lightweight model for developers who want a fast, low-cost model they can rely on, and for teams cutting costs by running it as the subagent in their harness. Muse Ember is purpose-built for, and excels at, subagent work like coding and document analysis.”\nAuthor\nSaoud Rizwan\nRole\nFounder\nCompany\nCline\n“Muse Ember showed an encouraging ability to tackle complex engineering tasks in our early…"
+   }
+  }
+ ]
+}

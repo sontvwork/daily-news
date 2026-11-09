@@ -1,0 +1,937 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "704eb6d2c22e4ad7",
+  "generated_at": "2026-11-09T23:56:06.987943Z",
+  "from_date": "2026-11-08",
+  "to_date": "2026-11-09",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-09T23:56:06.965382Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-09T23:56:06.965390Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-09T23:56:06.935577Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 41,
+      "attempted": true,
+      "at": "2026-11-09T23:56:06.965233Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Fable 5.2 and Mythos 5.2",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 514,
+          "points": 844
+        },
+        "reddit": {
+          "num_comments": 203
+        }
+      },
+      "nomination": {
+        "name": "Claude Fable 5.2 and Mythos 5.2",
+        "seed_score": 3864.0,
+        "summary": "Claude Fable 5.2 and Mythos 5.2",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50429906",
+            "source": "hackernews",
+            "title": "Claude Fable 5.2 and Mythos 5.2",
+            "body": "Claude Fable 5.2 and Mythos 5.2",
+            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+            "author": "meetpateltech",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 844,
+              "comments": 514
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Claude Fable 5.2 and Mythos 5.2",
+            "snippet": "Claude Fable 5.2 and Mythos 5.2",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50429906",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.403
+          },
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Claude Fable 5.2 built a playable Gears of War clone in Unreal Engine from a 3-line prompt, complete with enemy AI, cover mechanics and active reloading. After testing it with over 100 billion tokens, Matthew Berman calls it \u201cby far the best model\u201d he\u2019s ever used.",
+            "body": "Claude Fable 5.2 built a playable Gears of War clone in Unreal Engine from a 3-line prompt, complete with enemy AI, cover mechanics and active reloading. After testing it with over 100 billion tokens, Matthew Berman calls it \u201cby far the best model\u201d he\u2019s ever used.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xs1y29/claude_fable_52_built_a_playable_gears_of_war/",
+            "container": "singularity",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 530,
+              "num_comments": 148
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Fable 5.2 built a playable Gears of War clone in Unreal Engine from a 3-line prompt, complete with enemy AI, cover mechanics and active reloading. After testing it with over 100 billion tokens, Matthew Berman calls it \u201cby far the best model\u201d he\u2019s ever used.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5395
+          },
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Claude Fable 5.2 builds an operating system from scratch",
+            "body": "Claude Fable 5.2 builds an operating system from scratch",
+            "url": "https://www.reddit.com/r/singularity/comments/1xs24jm/claude_fable_52_builds_an_operating_system_from/",
+            "container": "singularity",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 112,
+              "num_comments": 50
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Fable 5.2 builds an operating system from scratch",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3585
+          },
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Claude Fable 5.2 leads on Epoch Capabilities Index",
+            "body": "Claude Fable 5.2 leads on Epoch Capabilities Index",
+            "url": "https://www.reddit.com/r/singularity/comments/1xs629b/claude_fable_52_leads_on_epoch_capabilities_index/",
+            "container": "singularity",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 35,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Fable 5.2 leads on Epoch Capabilities Index",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32949999999999996
+          },
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "\"As I predicted, Claude is off the leash. Fable 5.2 has solved two open problems in theoretical physics, one of them completely autonomously. Both concern black holes, and the effort to unite the two linchpin theories of modern physics, relativity, and quantum mechanics.\"",
+            "body": "\"As I predicted, Claude is off the leash. Fable 5.2 has solved two open problems in theoretical physics, one of them completely autonomously. Both concern black holes, and the effort to unite the two linchpin theories of modern physics, relativity, and quantum mechanics.\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1xs67y9/as_i_predicted_claude_is_off_the_leash_fable_52/",
+            "container": "singularity",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\"As I predicted, Claude is off the leash. Fable 5.2 has solved two open problems in theoretical physics, one of them completely autonomously. Both concern black holes, and the effort to unite the two linchpin theories of modern physics, relativity, and quantum mechanics.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2725
+          },
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "Claude Fable 5.2 leads on Epoch Capabilities Index",
+            "body": "Claude Fable 5.2 leads on Epoch Capabilities Index\nhttps://i.redd.it/jhzzm55wyn0i1.png\n\n[https://epoch.ai/eci?view=graph&tab=leaderboard](https://epoch.ai/eci?view=graph&tab=leaderboard)\n\n  \nIt has 10 benchmarks currently and doesn't have Remote Labor Index for Fable 5.2 (but does for other models), so I don't think it's fully updated. Could change later (increase with RLI added?)",
+            "url": "https://www.reddit.com/r/singularity/comments/1xs60bi/claude_fable_52_leads_on_epoch_capabilities_index/",
+            "container": "singularity",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/jhzzm55wyn0i1.png\n\n[https://epoch.ai/eci?view=graph&tab=leaderboard](https://epoch.ai/eci?view=graph&tab=leaderboard)\n\n  \nIt has 10 benchmarks currently and doesn't have Remote Labor Index for Fable 5.2 (but does for other models), so I don't think it's fully updated. Could change later (increase with RLI added?)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Goldman Sachs Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 472,
+          "points": 882
+        }
+      },
+      "nomination": {
+        "name": "Goldman Sachs Claude Code",
+        "seed_score": 1436.1339,
+        "summary": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50415628",
+            "source": "hackernews",
+            "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "body": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+            "author": "TheWiggles",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 882,
+              "comments": 472
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Goldman Sachs is pulling Claude Code from its bankers and tr",
+            "snippet": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50415628",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 98,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2205
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Goodbye Claude hello Pi",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 485,
+          "points": 805
+        }
+      },
+      "nomination": {
+        "name": "Goodbye Claude hello Pi",
+        "seed_score": 1368.2516,
+        "summary": "Goodbye Claude, hello Pi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50410107",
+            "source": "hackernews",
+            "title": "Goodbye Claude, hello Pi",
+            "body": "Goodbye Claude, hello Pi",
+            "url": "https://caleb.software/posts/claude-to-pi.html",
+            "author": "karagenit",
+            "container": "Hacker News",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 805,
+              "comments": 485
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Goodbye Claude, hello Pi",
+            "snippet": "Goodbye Claude, hello Pi",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50410107",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 95,
+            "source_quality": 0.8,
+            "local_rank_score": 0.185
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "USPS ZIP Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 190,
+          "points": 376
+        }
+      },
+      "nomination": {
+        "name": "USPS ZIP Code",
+        "seed_score": 849.0,
+        "summary": "USPS now offers official ZIP Code boundary polygons",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50431058",
+            "source": "hackernews",
+            "title": "USPS now offers official ZIP Code boundary polygons",
+            "body": "USPS now offers official ZIP Code boundary polygons",
+            "url": "https://postalpro.usps.com/zcb",
+            "author": "munro",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 376,
+              "comments": 190
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about USPS now offers official ZIP Code boundary polygons",
+            "snippet": "USPS now offers official ZIP Code boundary polygons",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50431058",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.8,
+            "local_rank_score": 0.28350000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude Fable 5.2 Scores 65",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 158,
+          "points": 244
+        }
+      },
+      "nomination": {
+        "name": "Claude Fable 5.2 Scores 65",
+        "seed_score": 603.0,
+        "summary": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50431144",
+            "source": "hackernews",
+            "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+            "body": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+            "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 244,
+              "comments": 158
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest S",
+            "snippet": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50431144",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Claude 23-year-old 15-year-old",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 35
+        }
+      },
+      "nomination": {
+        "name": "Claude 23-year-old 15-year-old",
+        "seed_score": 310.5,
+        "summary": "Claude solved two unsolved problems in black-hole physics: settling a 23-year-old question about whether black holes form suddenly in models of tiny universes, and discovering the exact limits of a 15-year-old method physicists use to rule out theories of quantum gravity.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Claude solved two unsolved problems in black-hole physics: settling a 23-year-old question about whether black holes form suddenly in models of tiny universes, and discovering the exact limits of a 15-year-old method physicists use to rule out theories of quantum gravity.",
+            "body": "Claude solved two unsolved problems in black-hole physics: settling a 23-year-old question about whether black holes form suddenly in models of tiny universes, and discovering the exact limits of a 15-year-old method physicists use to rule out theories of quantum gravity.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xs33s1/claude_solved_two_unsolved_problems_in_blackhole/",
+            "container": "singularity",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 172,
+              "num_comments": 35
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude solved two unsolved problems in black-hole physics: settling a 23-year-old question about whether black holes form suddenly in models of tiny universes, and discovering the exact limits of a 15-year-old method physicists use to rule out theories of quantum gravity.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34750000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Codex 95.1",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Codex 95.1",
+        "seed_score": 31.5,
+        "summary": "Codex built a handwritten digit recognizer without training it. It scored 95.1% using fixed weights and hand-written rules. Not sure how impressive this is?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Codex built a handwritten digit recognizer without training it. It scored 95.1% using fixed weights and hand-written rules. Not sure how impressive this is?",
+            "body": "Codex built a handwritten digit recognizer without training it. It scored 95.1% using fixed weights and hand-written rules. Not sure how impressive this is?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xrz9o9/codex_built_a_handwritten_digit_recognizer/",
+            "container": "singularity",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Codex built a handwritten digit recognizer without training it. It scored 95.1% using fixed weights and hand-written rules. Not sure how impressive this is?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Best cyber LLM under 30B 10B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Best cyber LLM under 30B 10B",
+        "seed_score": 21.0,
+        "summary": "# As the title says, I'm looking for recommendations from people here. Are there any good locally hostable LLMs that are particularly capable at cybersecurity work, especially AI red teaming?\n\n# Here's the backstory\n\nRecently I had a task where I wanted to find vulnerabilities in the AI agent/chat interface of a not so small company (let's say like $200M); I was doing this as a bug bounty exercise",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "Best cyber LLM under 30B / ideally 10B parameters?",
+            "body": "Best cyber LLM under 30B / ideally 10B parameters?\n# As the title says, I'm looking for recommendations from people here. Are there any good locally hostable LLMs that are particularly capable at cybersecurity work, especially AI red teaming?\n\n# Here's the backstory\n\nRecently I had a task where I wanted to find vulnerabilities in the AI agent/chat interface of a not so small company (let's say like $200M); I was doing this as a bug bounty exercise \ud83d\ude0f \n\nI'm not exactly a cybersecurity expert (noob). So a lot of it was trial and error, though I have quite a bit of experience building agent interfaces & multi-agent systems; so I had some idea of how these systems probably communicate internally\n\nInitially I started with PortSwiggers' LLM attacks labs. After that I picked up an abliterated GLM-5.3 model & set it up inside ClaudeCode to help with the actual real investigation\n\nprep'd a list of around 12 vulnerability hypotheses I wanted to investigate. By the end I had one confirmed but relatively low-impact finding. I also managed to map the agent's internal tool identifiers & demonstrate that client-controlled context fields could influence its tool calls in ways that weren't requested through the actual chat message\n\nI also tested things like conversation ownership, cross-account access, broadcasting authorization and confirmation workflows. Those server-side protections held up\n\nSo overall it was an interesting learning experience. Not exactly the result I was hoping for, but I learned quite a bit.\n\n# But here's the problem\n\nThe worst part was how expensive the whole thing got.\n\nThis was one of the first times I had to be extremely careful about every message I sent. There was no subscription-based message limit to worry about. It was directly billed through API usage.\n\nThe pricing was around $3/M input tokens, $0.30/M cached input and $5/M output.\n\nI ended up burning around $10 in just 20-30 minutes.\n\nAt this rate I'll probably go broke before I ever get good at this lol.\n\nI then tried switching to my regular subscription-based Kiro CLI setup, which has access to some good frontier models.\n\nMy idea was to create an orchestrator-worker setup:\n\n* Abliterated\u00a0GLM-5.3 through Claude Code would act as the orchestrator\n* Kiro CLI would be the execution worker\n* I'd sit in between as the human reviewing findings & directing the investigation\n\nBut Kiro was either completely missing the point or being overly cautious. After spending another 20-30 kiro-credits, I mostly got a 3-4 paragraph ethics & refusal speech instead of actual execution\n\n# So what am I missing?\n\nI've been thinking about two possible approaches, but I'm not sure how practical either of them is.\n\n**1. Fine-tune an uncensored Qwen under 30B (ideally under 10B).**\n\nSomething specifically trained for cybersecurity research, particularly AI agent security, LLM red teaming, authentication, authorization, tool-calling boundaries and general web application security. (My GPU only has 8GB VRAM; so ideally I'd like something I can actually run locally without having to rent expensive hardware. though can finetune it on cloud)\n\n**2. Fine-tune a smaller model specifically for orchestration.**\n\nRather than expecting a small uncensored model to do all the technical work itself, train it to act as a cybersecurity research orchestrator. It would need to understand attack surfaces, break down hypotheses into smaller tasks and delegate them to other models or tools while keeping track of the overall investigation. The smaller model would ideally also have enough cybersecurity knowledge to review the workers' output and identify when they're going in the wrong direction.\n\nThese are just ideas I've been throwing around. I haven't established whether either approach is actually viable.\n\n# What would you recommend?\n\nWhat's the current go-to setup for someone wanting to do serious AI security research without spending hundreds of dollars on API credits?\n\nAre there any genuinely capable uncensored or security-focused models worth looking at?\n\nWould a smaller fine-tuned Qwen actually be useful here, or am I better off using a general-purpose local model with specialized tools, scripts and workflows?\n\nI've also noticed that some of the more capable frontier models are becoming increasingly restrictive around cybersecurity tasks. I understand why, but it makes experimenting with legitimate security research a bit frustrating.\n\nI'd rather build a setup I can run and experiment with locally than keep burning through API credits.\n\nMy current hardware is an RTX 4060 8GB with 24GB RAM, so that's the constraint I'm working with.\n\nWould love to hear what people here are actually using. Especially interested in real-world experiences rather than just model benchmarks.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrun96/best_cyber_llm_under_30b_ideally_10b_parameters/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "# As the title says, I'm looking for recommendations from people here. Are there any good locally hostable LLMs that are particularly capable at cybersecurity work, especially AI red teaming?\n\n# Here's the backstory\n\nRecently I had a task where I wanted to find vulnerabilities in the AI agent/chat interface of a not so small company (let's say like $200M); I was doing this as a bug bounty exercise",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "3 7 weeks",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "3 7 weeks",
+        "seed_score": 19.5,
+        "summary": "My agents broke each other's work 3 times in 7 weeks. The code was never the problem.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "My agents broke each other's work 3 times in 7 weeks. The code was never the problem.",
+            "body": "My agents broke each other's work 3 times in 7 weeks. The code was never the problem.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xrmzpz/my_agents_broke_each_others_work_3_times_in_7/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "My agents broke each other's work 3 times in 7 weeks. The code was never the problem.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.265
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Claude ChatGPT",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Claude ChatGPT",
+        "seed_score": 19.0919,
+        "summary": "I spent a month building a website with Claude and moved the entire project to ChatGPT over the weekend.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "I spent a month building a website with Claude and moved the entire project to ChatGPT over the weekend.",
+            "body": "I spent a month building a website with Claude and moved the entire project to ChatGPT over the weekend.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xqzerx/i_spent_a_month_building_a_website_with_claude/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "I spent a month building a website with Claude and moved the entire project to ChatGPT over the weekend.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08650000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Dialectic Requirements Verifiable tests",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Dialectic Requirements Verifiable tests",
+        "seed_score": 16.5,
+        "summary": "Dialectic, Requirements, and Verifiable tests will drastically increase your model's code output quality",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "Dialectic, Requirements, and Verifiable tests will drastically increase your model's code output quality",
+            "body": "Dialectic, Requirements, and Verifiable tests will drastically increase your model's code output quality",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs4kit/dialectic_requirements_and_verifiable_tests_will/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "Dialectic, Requirements, and Verifiable tests will drastically increase your model's code output quality",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.276
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Looking",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Looking",
+        "seed_score": 16.5,
+        "summary": "I have a specific use case where I have a small web application that prompts the user with a randomly generated premise for a joke (using an llm), and then the user is expected to write a joke with the generated premise as a sort of challenge.\n\nAn LLM is then used to evaluate their joke as far as how good of a joke they wrote using the supplied premise, provide a score, provide feedback on why it",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "Looking for suggestions for a local model that would be good at evaluating comedy writing",
+            "body": "Looking for suggestions for a local model that would be good at evaluating comedy writing\nI have a specific use case where I have a small web application that prompts the user with a randomly generated premise for a joke (using an llm), and then the user is expected to write a joke with the generated premise as a sort of challenge.\n\nAn LLM is then used to evaluate their joke as far as how good of a joke they wrote using the supplied premise, provide a score, provide feedback on why it was or was not a good joke, and tips for what they could do to improve.\n\nIt works well using various large models, and relatively okay using openrouter/free , which has a series of larger free models in a collection and an intelligent router.\n\nHowever I've tested on various smaller models and gotten mixed results.\n\nI'm looking for some suggestions from people for models that I may not be aware of that might be good for more general knowledge things like this, rather than coding.\n\nI have 64GB of system ram (machine has a discrete GPU / AMD APU so no dedicated VRAM).\n\nSo I'm probably looking at a 45-70b total parameter model on the higher end, but preferably it's an MOE model with a smaller number of active params for speed.\n\nEach use will probably have \\~400 tokens input (including system prompt), and \\~200-600 tokens output, so I'm okay with heavier models even though I don't have a GPU because it's a small number of total tokens.\n\nSome models I've tried, like bonsai-27b and LFM2.5 24b-a2b, have had weird results.\n\nGemma 4 26b-a4b seems to really have a good grasp of it and do the best so far out of any local models I've tried, but I'm wondering if anyone has other suggestions.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrv20h/looking_for_suggestions_for_a_local_model_that/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I have a specific use case where I have a small web application that prompts the user with a randomly generated premise for a joke (using an llm), and then the user is expected to write a joke with the generated premise as a sort of challenge.\n\nAn LLM is then used to evaluate their joke as far as how good of a joke they wrote using the supplied premise, provide a score, provide feedback on why it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28350000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "netease-youdao/Confucius4-R2T2 \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "netease-youdao/Confucius4-R2T2 \u00b7 Hugging Face",
+        "seed_score": 16.5,
+        "summary": "# Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription\n\nConfucius4-R2T2 is a low-latency, high-accuracy stable-prefix streaming automatic speech recognition (ASR) model. It supports configurable decoding chunks from 80 ms to 2 s. The model operates in a monotonic output mode, committing transcript text permanently without revising previous words. This is critical f",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "netease-youdao/Confucius4-R2T2 \u00b7 Hugging Face",
+            "body": "netease-youdao/Confucius4-R2T2 \u00b7 Hugging Face\n# Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription\n\nConfucius4-R2T2 is a low-latency, high-accuracy stable-prefix streaming automatic speech recognition (ASR) model. It supports configurable decoding chunks from 80 ms to 2 s. The model operates in a monotonic output mode, committing transcript text permanently without revising previous words. This is critical for applications where text must be processed or acted upon instantly. The result is a smoother user experience, with fewer disruptive text revisions and less visual flicker in real-time applications such as real-time live captioning and subtitling, simultaneous speech translation, downstream NLP pipelines and LLM agents.\n\nR2T2, short for Real Real-Time Transcription, adapts **Qwen3-ASR-1.7B** with **Longest Stable Prefix (LSP) learning** on 1,500 hours of Chinese and English audio. Two-stage training with SFT and GRPO updates only the language decoder; the pre-trained audio encoder and projector remain frozen, with no architectural changes. LSP targets and an explicit `Wait` action teach the model what it can commit and when it needs more audio.\n\n* **GGUF** : [https://huggingface.co/netease-youdao/Confucius4-R2T2-GGUF](https://huggingface.co/netease-youdao/Confucius4-R2T2-GGUF)\n* **Space** : [https://huggingface.co/spaces/netease-youdao/confucius4-r2t2-demo](https://huggingface.co/spaces/netease-youdao/confucius4-r2t2-demo)\n* **GitHub** : [https://github.com/netease-youdao/Confucius4-R2T2](https://github.com/netease-youdao/Confucius4-R2T2)\n* **arXiv** : [https://arxiv.org/abs/2611.06043](https://arxiv.org/abs/2611.06043)\n* **PDF** : [https://arxiv.org/pdf/2611.06043](https://arxiv.org/pdf/2611.06043)\n\n# License\n\nR2T2 uses **dual licensing** to distinguish the source code from the model weights:\n\n* **Code** in the accompanying GitHub repository is released under the [Apache License 2.0](https://github.com/netease-youdao/Confucius4-R2T2/blob/master/LICENSE) and is free to use, modify, and redistribute (including commercially) under the terms of that license.\n* **Model weights** are released under the [NetEase Model Use License Agreement](https://github.com/netease-youdao/Confucius4-R2T2/blob/master/MODEL_LICENSE).",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrspiy/neteaseyoudaoconfucius4r2t2_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "# Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription\n\nConfucius4-R2T2 is a low-latency, high-accuracy stable-prefix streaming automatic speech recognition (ASR) model. It supports configurable decoding chunks from 80 ms to 2 s. The model operates in a monotonic output mode, committing transcript text permanently without revising previous words. This is critical f",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.278
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-17",
+      "heuristic_name": "ChatGPT Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Codex",
+        "seed_score": 11.6673,
+        "summary": "I'm building my own workspace to connect ChatGPT and Codex",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "I'm building my own workspace to connect ChatGPT and Codex",
+            "body": "I'm building my own workspace to connect ChatGPT and Codex",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xqyfw8/im_building_my_own_workspace_to_connect_chatgpt/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-08",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing",
+            "snippet": "I'm building my own workspace to connect ChatGPT and Codex",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10949999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-18",
+      "heuristic_name": "Openbar Claude Code Codex Mac",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Openbar Claude Code Codex Mac",
+        "seed_score": 9.0,
+        "summary": "Openbar: answer Claude Code and Codex prompts from the Mac notch",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Openbar: answer Claude Code and Codex prompts from the Mac notch",
+            "body": "Openbar: answer Claude Code and Codex prompts from the Mac notch",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xridpb/openbar_answer_claude_code_and_codex_prompts_from/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Openbar: answer Claude Code and Codex prompts from the Mac notch",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4
+          }
+        ]
+      }
+    }
+  ]
+}

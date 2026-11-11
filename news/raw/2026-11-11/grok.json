@@ -1,0 +1,270 @@
+{
+ "date": "2026-11-11",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-11.json",
+ "fetched_at": "2026-11-10T23:56:19+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-11",
+  "generated_at": "2026-11-11T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 11,
+  "ok": 11,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Anthropic launches Claude Fable 5.2 and Mythos 5.2",
+   "category": "model_infra",
+   "event_time": "2026-11-09T14:00:00Z",
+   "primary_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "facts": [
+    "Claude Fable 5.2 and Claude Mythos 5.2 show improvements in areas like coding, reasoning, and vision.",
+    "They generate outputs up to 30% faster than Claude Fable 5.1 and Claude Mythos 5.1, and they’re available at a lower price: $8 per million input tokens and $40 per million output tokens.",
+    "Fable 5.2 and Mythos 5.2 also come with an optional fast mode, which speeds up token generation by up to 2.5 times."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/simonw/status/2120029347948220500",
+     "official": false,
+     "author": "@simonw",
+     "check": "ok",
+     "created_at": "2026-11-10T05:42:39Z",
+     "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\" https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code",
+     "likes": 3944,
+     "retweets": 254,
+     "replies": 372,
+     "views": 276841
+    },
+    {
+     "url": "https://x.com/CNBC/status/2119868216340074848",
+     "official": false,
+     "author": "@CNBC",
+     "check": "ok",
+     "created_at": "2026-11-09T19:02:22Z",
+     "text": "Anthropic releases first frontier models since Amodei's call for slowdown as IPO buzz builds https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html?taid=6af218bed0eea10001e9a458&utm_campaign=trueanthem&utm_content=main&utm_medium=social&utm_source=twitter",
+     "likes": 46,
+     "retweets": 7,
+     "replies": 6,
+     "views": 23205
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Google makes Gemini 4 Carbon generally available",
+   "category": "model_infra",
+   "event_time": "2026-11-10T16:00:00Z",
+   "primary_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+   "facts": [
+    "Today, we’re making Gemini 4 Carbon available to developers, enterprises, scientists, and consumers.",
+    "Carbon is our strongest model with frontier performance in cybersecurity capabilities and long-horizon agentic workflows across complex knowledge work, software engineering, and scientific reasoning.",
+    "Gemini 4 Carbon is available via the API in Google AI Studio and Gemini for business for all paying developers and enterprises, at the same introductory price as Gemini 4 Argon ($2 per million input tokens and $10 per million output tokens)."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/sundarpichai/status/2120185896469496180",
+     "official": true,
+     "author": "@sundarpichai",
+     "check": "ok",
+     "created_at": "2026-11-10T16:04:43Z",
+     "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery.\n\nComing globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra subscribers in @antigravity, the @GeminiApp, and AI Mode in Search.",
+     "likes": 6200,
+     "retweets": 467,
+     "replies": 450,
+     "views": 475771
+    },
+    {
+     "url": "https://x.com/Google/status/2120186185423159331",
+     "official": true,
+     "author": "@Google",
+     "check": "ok",
+     "created_at": "2026-11-10T16:05:52Z",
+     "text": "Gemini 4 Carbon is now available.\n\nIt’s our strongest model, built to dig deeper, handle long-horizon tasks, and multi-step reasoning.\n\nIf Argon is great for complex tasks, Carbon is the model you bring in for your hardest problems.",
+     "likes": 7842,
+     "retweets": 796,
+     "replies": 500,
+     "views": 1165187
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Claude Fable 5.2 now generally available in GitHub Copilot",
+   "category": "feature_update",
+   "event_time": "2026-11-09T22:53:00Z",
+   "primary_url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/",
+   "facts": [
+    "Claude Fable 5.2, Anthropic’s newest Fable model, is now generally available in GitHub Copilot.",
+    "In early testing, Fable 5.2 solved more tasks than Claude Fable 5.1 while using fewer steps and tool calls.",
+    "Claude Fable 5.2 is available to Copilot Pro+, Max, Business, and Enterprise users."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/github/status/2119926269982961833",
+     "official": true,
+     "author": "@github",
+     "check": "ok",
+     "created_at": "2026-11-09T22:53:03Z",
+     "text": "It's here ➡️ @AnthropicAI's Claude Fable 5.2 is now generally available in GitHub Copilot.\n\nOur early testing shows Fable 5.2:\n• solved more tasks than Fable 5.1 while using fewer steps and tool calls\n• completed difficult tasks that earlier models missed\n\nTry Fable 5.2 for complex, multistep coding jobs across large codebases. Find it in the GitHub Copilot app, CLI, or @code.\nhttps://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/",
+     "likes": 438,
+     "retweets": 46,
+     "replies": 66,
+     "views": 62898
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Gemini 4 Carbon generally available in GitHub Copilot",
+   "category": "feature_update",
+   "event_time": "2026-11-10T19:58:00Z",
+   "primary_url": "https://github.blog/changelog/2026-11-09-gemini-4-carbon-in-github-copilot/",
+   "facts": [
+    "@GoogleAI's Gemini 4 Carbon is now generally available in GitHub Copilot.",
+    "Designed for complex coding, agentic, and reasoning tasks, it has a special focus in security work."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/github/status/2120244851853996126",
+     "official": true,
+     "author": "@github",
+     "check": "ok",
+     "created_at": "2026-11-10T19:58:59Z",
+     "text": "🆕 @GoogleAI's Gemini 4 Carbon is now generally available in GitHub Copilot.\n\nDesigned for complex coding, agentic, and reasoning tasks, it has a special focus in security work.\n\nTry it in the GitHub Copilot app, CLI, and @code.\nhttps://github.blog/changelog/2026-11-09-gemini-4-carbon-in-github-copilot/",
+     "likes": 104,
+     "retweets": 12,
+     "replies": 23,
+     "views": 15388
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Runway plugin available in Codex and ChatGPT",
+   "category": "feature_update",
+   "event_time": "2026-11-10T20:52:00Z",
+   "primary_url": null,
+   "facts": [
+    "With the @runwayml plugin in Codex and ChatGPT, you can see how a character from your prototype moves, try a different opening shot for a trailer, or turn a product photo into a video ad."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/OpenAIDevs/status/2120258357533749755",
+     "official": true,
+     "author": "@OpenAIDevs",
+     "check": "ok",
+     "created_at": "2026-11-10T20:52:39Z",
+     "text": "With the @runwayml plugin in Codex and ChatGPT, you can see how a character from your prototype moves, try a different opening shot for a trailer, or turn a product photo into a video ad.\n\nAnthony Maggio shares how Runway’s marketing team is using ChatGPT Image to produce more assets each week.",
+     "likes": 364,
+     "retweets": 31,
+     "replies": 72,
+     "views": 45709
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Claude Code 2.1.321 makes Fable 5.2 the default Fable model",
+   "category": "feature_update",
+   "event_time": "2026-11-10T22:12:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+   "facts": [
+    "Anthropic shipped Fable 5.2 yesterday. if you had Fable 5.1 saved, Claude Code already moved you onto it. at medium effort",
+    "Fable 5.2 is now the default Fable model in Claude Code: 1M context, $8 in and $40 out per million tokens, $0.20 for cache reads. it needs v2.1.321 or later"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/tidyowl/status/2120275954631340036",
+     "official": false,
+     "author": "@tidyowl",
+     "check": "ok",
+     "created_at": "2026-11-10T22:02:35Z",
+     "text": "Anthropic shipped Fable 5.2 yesterday. if you had Fable 5.1 saved, Claude Code already moved you onto it. at medium effort\n\nFable 5.2 is now the default Fable model in Claude Code: 1M context, $8 in and $40 out per million tokens, $0.20 for cache reads. it needs v2.1.321 or later\n\nFable 5.1 started at high effort by default. Fable 5.2 starts at medium, unless you've picked a level for it\n\ncheck what you're on:\n\n/model\n\nhow the move actually works:\n\n→ Pro, Max and Ultra: it happens the first time you open v2.1.321. the startup line can say (auto-updated), once\n→ Team and Enterprise: it waits for your org's settings. it can land a session later, or never, and no line tells you\n→ only the model saved in your user settings moves. project, local and managed settings keep Fable 5.1\n→ Console accounts and third-party providers stay on Fable 5.1 too\n\nthree things that catch people:\n\n> an old effortLevel \"high\" in your user settings kept Fable 5.1 at high. Fable 5.2 ignores it, same as Opus 5.5\n> effort is calibrated per model. medium on 5.2 isn't medium on 5.1, so test before you compare\n> in -p runs, Fable that bills to usage credits still gets billed without a prompt\n\nSame alias. New model. New default.\n\nthe setup\n> run /model and confirm which Fable you're on\n> pick a level for 5.2 in /effort and press Enter, so it's saved for that model\n> want 5.1 back for one repo? pin claude-fable-5-1 in that project's settings\n> everywhere else: /model claude-fable-5-1\n\npaste this into Claude Code ↓\n\n\"Check my model setup after the Fable 5.2 update:\n1. Tell me which model and effort level this session runs on, and which setting each one comes from\n2. List every settings file that sets model, effortLevel or modelSettings\n3. Flag any effortLevel that no longer applies to Fable 5.2\n4. Tell me which of my repos would still start on Fable 5.1\nShow me every change as a diff first. Don't edit anything yet\"\n\n↳ http://code.claude.com/docs/en/model-config\n\nsave it before your next long Fable…",
+     "likes": 3,
+     "retweets": 1,
+     "replies": 0,
+     "views": 166
+    },
+    {
+     "url": "https://x.com/figueirego/status/2120278327143371218",
+     "official": false,
+     "author": "@figueirego",
+     "check": "ok",
+     "created_at": "2026-11-10T22:12:00Z",
+     "text": "duas correções da 2.1.321 do claude code já valem o update: login oauth de servidor mcp mandando refresh token pra outro host quando o servidor redirecionava, e comando bash só de leitura rodando fora do sandbox sem pedir permissão https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 5
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Codex CLI 0.167.1 released with faster startup",
+   "category": "feature_update",
+   "event_time": "2026-11-10T22:18:00Z",
+   "primary_url": "https://github.com/openai/codex/releases/tag/rust-v0.167.1",
+   "facts": [
+    "Codex CLI 0.167.1 is a small but useful update: faster startup in large repos and a fix for a crash when resuming sessions.",
+    "The patch is available now in OpenAI’s Codex repo."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/nurhayatdev/status/2120280016185348361",
+     "official": false,
+     "author": "@nurhayatdev",
+     "check": "ok",
+     "created_at": "2026-11-10T22:18:43Z",
+     "text": "Codex CLI 0.167.1 is a small but useful update: faster startup in large repos and a fix for a crash when resuming sessions.\n\nThe patch is available now in OpenAI’s Codex repo. @OpenAI https://github.com/openai/codex/releases/tag/rust-v0.167.1",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 25
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Developers discuss Fable 5.2 performance on coding and agent tasks",
+   "category": "discussion",
+   "event_time": "2026-11-10T22:00:00Z",
+   "primary_url": null,
+   "facts": [
+    "Claude Fable 5.2 is doing things that used to take teams weeks",
+    "The gap between “impressive demo” and “something you can ship and rely on every day” is still wide"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/holaprm/status/2120280609373470778",
+     "official": false,
+     "author": "@holaprm",
+     "check": "ok",
+     "created_at": "2026-11-10T22:21:04Z",
+     "text": "Claude Fable 5.2 is doing things that used to take teams weeks \n\nThe gap between “impressive demo” and “something you can ship and rely on every day” is still wide",
+     "likes": 4,
+     "retweets": 0,
+     "replies": 1,
+     "views": 244,
+     "quote": {
+      "author": "@Frenchie_",
+      "text": "🚨 Je crois qu'on ne se rend pas bien compte de ce qui vient de se passer cette nuit\n\nAnthropic vient de sortir Claude Fable 5.2\n\nAlors, je vous ai résumé ce qu'il peut faire, c'est tout aussi magnifique que terrifiant\n\n1. En ingénierie des système éléctronique c'est le choc\n\nÀ partir d'un seul paragraphe, il a conçu trois appareils électroniques qui marchent. Dont un assistant vocal pour la maison. Il a écrit les specs, choisi les composants, routé une carte à quatre couches, dessiné le boîtier…"
+     }
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

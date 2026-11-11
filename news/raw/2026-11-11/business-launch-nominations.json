@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "0fb2a9e1fc038721",
+  "generated_at": "2026-11-10T23:56:40.776335Z",
+  "from_date": "2026-11-09",
+  "to_date": "2026-11-10",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-10T23:56:40.775374Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-10T23:56:40.775379Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-10T23:56:40.775257Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-10T23:56:40.775322Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Payments Canada Canada Real-Time Rail RTR",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 338,
+          "points": 579
+        }
+      },
+      "nomination": {
+        "name": "Payments Canada Canada Real-Time Rail RTR",
+        "seed_score": 972.6254,
+        "summary": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50427362",
+            "source": "hackernews",
+            "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+            "body": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+            "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+            "author": "ocd",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 579,
+              "comments": 338
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Payments Canada announces launch of Canada's Real-Time Rail",
+            "snippet": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50427362",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.19
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Google Gemini routes personal Drive files",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 147,
+          "points": 710
+        }
+      },
+      "nomination": {
+        "name": "Google Gemini routes personal Drive files",
+        "seed_score": 908.9858,
+        "summary": "Google Gemini routes personal Drive files and emails to human annotators",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50429426",
+            "source": "hackernews",
+            "title": "Google Gemini routes personal Drive files and emails to human annotators",
+            "body": "Google Gemini routes personal Drive files and emails to human annotators",
+            "url": "https://github.com/thisisme6598/gemini_files/",
+            "author": "gf74918",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 710,
+              "comments": 147
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google Gemini routes personal Drive files and emails to huma",
+            "snippet": "Google Gemini routes personal Drive files and emails to human annotators",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50429426",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0575
+          }
+        ]
+      }
+    }
+  ]
+}

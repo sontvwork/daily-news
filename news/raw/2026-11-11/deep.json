@@ -1,0 +1,297 @@
+{
+ "date": "2026-11-11",
+ "runs": [
+  {
+   "started_at": "2026-11-11T00:01:49+00:00",
+   "seconds": 9.6,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 6,
+   "articles_error": 1,
+   "articles_skipped": 0,
+   "hn_ok": 6,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "CHANGELOG.md không có mục rust-v0.167.1": 1
+   },
+   "summary": "6/7 bài gốc ok (0 bỏ qua), 6/6 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 9.6s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/GoogleChrome/modern-web-guidance",
+   "hn_url": "https://news.ycombinator.com/item?id=50443812",
+   "hn": {
+    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+    "points": 229,
+    "comments": 65,
+    "text": "Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without <span>s everywhere, `<dialog>` and showModal() give you backdrops and ideal focus management, `field-sizing` to auto-grow textareas as the user types.. (Something yesterday's ftrain post touched on [0])\nModels know about some of these by name, but consistently won't default to using the platform-native solution and instead prefer the incumbent <div>+JS based pattern. We started an effort in Chrome to supplement coding agents with this key domain knowledge and we're shipping our 1.0 today, in collaboration with Firefox, MDN, and Edge.\n200+ guides (~1.7MB) of curated, hand-crafted implementation best-practices from web experts, updated as the web evolves. (Open source, obv, so.. we'll welcome your bikeshedding ;) Readable versions here: [1]\nI've spent the last 9 months obsessing over how to ship this as an agent skill + (Agentic RAG) CLI without blowing up your context window. (Or cedeing activation mechanics to MCP dynamic tool search). The skill description is minmaxed for activating on relevant frontend tasks. The RAG work I'm pretty proud of… originally a 500mb native stack down to a ~7MB pure-JS package, ~10ms search on your CPU.\nWe just introduced a deterministic 'legacy-scan' (trained on 30k github repos) to identify old 'n dusted patterns that your agent can modernize. (92% avg precision on held-out repos.)\nPeople make a lot of claims about what coding agents are good/bad at. We wanted receipts, so we invested heavily in eval infra [2] to help us hill-climb, but also to identify when knowledge is common enough we can prune our guides. (Ofc, some of the things we thought AI didn't know turned out to be wrong :) We run codex/claude/agy against 200 tasks without the skill and then with.. In total ~1,700 playwright/AST-based assertions. Agents go from 55% pass unguided to 92% guided.\nTry it out:\nDISABLE_TELEMETRY=1 npx modern-web-guidance@latest install\nDISABLE_TELEMETRY=1 npx modern-web-guidance@latest search \"animate dialog modal\"\nDISABLE_TELEMETRY=1 npx modern-web-guidance@latest legacy-scan ./src\nIf you spot something wrong or weird, give us a holler!\nLonger write-up on the 1.0: https://developer.chrome.com/blog/modern-web-guidance-v1\n---\n0: https://news.ycombinator.com/item?id=50416456\n1: https://developer.chrome.com/docs/modern-web-guidance/guides\n2: https://googlechrome.github.io/modern-web-guidance-src/"
+   },
+   "comments": [
+    {
+     "author": "surround",
+     "replies": 2,
+     "text": "Here's a list of browser features the skills will tell your agent to use that are stable in Chrome but not supported by Firefox and Safari:\nCSS @function\nCSS calc-size()\nCSS interpolate-size\nCSS corner-shape\nCSS border-shape\nCSS flex-wrap: balance\nCSS text-fit\nCSS text-decoration-skip-spaces\nCSS scroll-axis-lock\nCSS scroll-target-group\nCSS :target-current\nCSS scroll-initial-target\nCSS container scroll-state queries\nscrollsnapchange event\nscrollsnapchanging event\nHTML…"
+    },
+    {
+     "author": "simonw",
+     "replies": 3,
+     "text": "Distribution suggestion: in addition to the npm packages you have right now, set up GitHub Pages to publish a markdown index document of the skills at https://googlechrome.github.io/modern-web-guidance-src/skill... (currently a 404)\nThat index page should link to plain markdown versions of all of the documents, and should be designed for search with grep to find the right answers.\nThat way I don't have to install anything at all - provided my agent has the ability to make HTTP requests I can…"
+    },
+    {
+     "author": "advisedwang",
+     "replies": 5,
+     "text": "Chrome already has too much power in the browser standards world. The last thing we need is everyone's LLMs to follow Chrome team's guidance on how to do web development. This road leads back to \"To view this site, please view in [DOMINANT BROWSER]\""
+    },
+    {
+     "author": "SoftTalker",
+     "replies": 1,
+     "text": "Remeber, the features you don't use are the ones you don't have to support, or scramble to replace when they are deprecated.\nKeep your effing websites simple."
+    },
+    {
+     "author": "phyzix5761",
+     "replies": 4,
+     "text": "\"Best Practices\" are pretty much dead in the AI era. Pretty soon no one is going to read any of the code AI produces and that's a scary thought."
+    }
+   ],
+   "article": {
+    "url": "https://github.com/GoogleChrome/modern-web-guidance",
+    "status": "ok",
+    "title": "",
+    "chars": 101854,
+    "text": "# Modern Web Guidance\n[Modern Web Guidance](https://developer.chrome.com/docs/modern-web-guidance) is a set of skills that embed web platform expertise, best practices, and browser compatibility data directly into your coding agents. It helps to steer your coding agents away from legacy patterns, and instead toward solutions that harness the power and capabilities of the modern web platform.\n*Stewarded by the Google Chrome, Microsoft Edge, Mozilla Firefox, and MDN teams, alongside the web development community.*\n[Documentation](https://developer.chrome.com/docs/modern-web-guidance) · [Eval Dashboard](https://googlechrome.github.io/modern-web-guidance-src/) · [Source Code](https://github.com/GoogleChrome/modern-web-guidance-src) · [Report an Issue](https://github.com/GoogleChrome/modern-web-guidance-src/issues)\n## Quickstart\n```shell\nnpx modern-web-guidance@latest install\n```\nThis command runs an interactive wizard to install Modern Web Guidance. See [Alternative Installation Methods](#-alternative-installation-methods) below.\n#### Try it out (without installing)\n```shell\n# Search for relevant guides\nnpx modern-web-guidance@latest search \"animate a dialog modal backdrop\"\n# Retrieve a guide by ID\nnpx modern-web-guidance@latest retrieve \"animate-to-from-top-layer\"\n# Scan a codebase for legacy patterns to modernize\nnpx modern-web-guidance@latest legacy-scan .\n```\n## Why?\nCoding agents often default to older patterns because LLM training data contains vast amounts of legacy code. This often leads them to generate bloated JavaScript for tasks that now have native, high-performance web platform solutions.\nEven if a model knows an API exists, it often lacks the density of real-world, modern implementation patterns required for production-ready code.\n**Modern Web Guidance bridges this gap.** Our skill's CLI returns targeted, expert-curated guidelines directly into your agent's context window, focusing on:\n* **Modern Browser APIs**: Helping models correctly structure APIs they frequently misuse.\n* **Performance & Accessibility**: Preferring platform-level APIs that can be optimized by the browser and include built-in accessibility affordances.\n* **Responsible Fallbacks**: Guiding models to use sensible, lightweight fallbacks instead of heavy polyfills or legacy libraries.\n## What's Included?\nWe cover the past several years of the web platform's new features, all the way up to the cutting edge. The guides are **designed to be token-efficient**; we run evals enabling us to prune lowest-common-denominator content that models already know.\n### Core Disciplines\n🎨 User Experience\nSmooth visual states (View Transitions, entry/exit animations, parallax scroll, CSS scrollbar-color).\n📐 CSS Layout\nModern layout systems (container queries, subgrid, modern color spaces like oklch, text-wrap tuning, and line-height trimming).\n⚡ Performance\nSpeed optimizations (instant preloading, Interaction to Next Paint (INP) diagnostics, and scheduling tasks via scheduler.yield).\n📝 Forms & UI\nNative components (Anchor Positioning for tooltips, Popover API, dialogs, :user-invalid validation, and auto-sizing fields).\n♿ Accessibility\nImportant considerations (screen reader and keyboard operability, content navigation and discoverability).\n🤖 Built-in AI\nLocal client models (native translation, summarization, and language detection APIs).\n_View an example:_ [the `navigation-drawer` guide](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/ui-components/navigation-drawer.md).\n#### The full list\n250 modern web features\n### CSS & Layout (140 features)\n| | | |\n| :--- | :--- | :--- |\n| [::backdrop](https://web-platform-dx.github.io/web-features-explorer/features/backdrop/) | [content-visibility](https://web-platform-dx.github.io/web-features-explorer/features/content-visibility/) | [progress()](https://web-platform-dx.github.io/web-features-explorer/features/progress-function/) |\n|…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50422628",
+   "hn_url": "https://news.ycombinator.com/item?id=50422628",
+   "hn": {
+    "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+    "points": 214,
+    "comments": 77,
+    "text": "The agent running on a remote machine can authenticate using your local SSH credentials.\nThat means it can push to your private repos on GitHub, for example.\nProof: https://github.com/openai/codex/pull/28131#discussion_r3410013180"
+   },
+   "comments": [
+    {
+     "author": "recsv-heredoc",
+     "replies": 7,
+     "text": "It's amazing how often product decisions head this way for the purposes of 'removing friction'.\nIn security, friction is a GOOD thing. You want to have some ceremony to do things. It's pretty much inevitable that people will give up control for convenience.\nLook at Artifacts for example."
+    },
+    {
+     "author": "littlecranky67",
+     "replies": 4,
+     "text": "I'd suggest to use ssh keys inside the secure enclave on macOS that require your fingerprint for every new session [0]. That way agents cannot initiate anything, and you will always be aware when a new ssh connection is being made.\n[0]: https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb..."
+    },
+    {
+     "author": "Lukas_Skywalker",
+     "replies": 4,
+     "text": "The Bitwarden desktop app has a built in SSH agent [1], which lets you store SSH keys inside Bitwarden. I have set the app to always ask me for confirmation when the key is requested.\n[1] https://bitwarden.com/help/ssh-agent/"
+    },
+    {
+     "author": "yfontana",
+     "replies": 1,
+     "text": "I don't understand what the linked pull request is supposed to prove, considering it was closed and not merged."
+    },
+    {
+     "author": "wizardashwin",
+     "replies": 0,
+     "text": "I wonder if they skip running security reviews before every release. The latest models catch these while building and its surprising to see that end products are shipped with vulnerabilities"
+    }
+   ]
+  },
+  {
+   "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/",
+   "article": {
+    "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/",
+    "status": "ok",
+    "title": "Claude Fable 5.2 in GitHub Copilot - GitHub ChangelogLinkedIn iconInstagram iconYouTube iconX iconTikTok iconTwitch iconGitHub icon",
+    "chars": 4149,
+    "text": "Back to changelog\nRelease\nNovember 9, 2026 •\n2 minute read\nClaude Fable 5.2 in GitHub Copilot\nClaude Fable 5.2, Anthropic’s newest Fable model, is now generally available in GitHub Copilot. You can use it for complex, multistep coding tasks across large codebases. In early testing, Fable 5.2 solved more tasks than Claude Fable 5.1 while using fewer steps and tool calls. It also completed hard tasks that earlier models missed.\nClaude Fable 5.2 requires data retention by default to operate Anthropic’s safety classifiers. Zero data retention access is available for certain eligible enterprise customers. Continue reading for more details.\nThis model is billed at provider list pricing under usage-based billing. See Models and pricing for GitHub Copilot for details.\nAvailability in GitHub Copilot\nClaude Fable 5.2 is available to Copilot Pro+, Max, Business, and Enterprise users. You can select the model in the model picker in:\nVisual Studio Code\nVisual Studio\nCopilot CLI\nGitHub Copilot coding agent\nGitHub Copilot app\ngithub.com\nGitHub Mobile on iOS and Android\nJetBrains IDEs\nXcode\nEclipse\nRollout will be gradual. Check back soon if you don’t see it yet.\nEnabling access\nCopilot Enterprise and Copilot Business plan administrators must enable the Claude Fable 5.2 policy in Copilot settings. The policy is off by default.\nClaude Fable 5.2 requires data retention by default. When Claude Fable 5.2 is used, Anthropic retains data, including prompts and outputs, to operate safety classifiers that detect harmful use. Retained data is not used to train Anthropic’s models. Other Claude models, except for Fable 5, Fable 5.1, and Fable 5.2, continue to operate under zero data retention (ZDR).\nTo learn more, see Anthropic’s data retention practices for Mythos-class models. Enabling the Claude Fable 5.2 policy constitutes acknowledgment of this requirement. Leaving it off keeps Claude Fable 5.2 unavailable to your organization.\nZero data retention access for eligible enterprises\nEligible customers can use Claude Fable 5.2, Claude Fable 5.1, and Claude Fable 5 with zero data retention through the end of the calendar year under a time-bound exemption while Anthropic rolls out Enterprise Frontier Safeguards (EFS). After that point, continued use of the models will require EFS, which will enable automated safety monitoring while also giving eligible customers more options for how their data is retained. This includes the option to use storage and encryption keys under their own control. Between now and then we will be working with Anthropic to provide feedback on EFS.\nIf your enterprise is approved for access, Claude Fable 5.2, Fable 5.1, and Fable 5 requests will be routed to zero data retention endpoints when the model is enabled. To learn whether your organization qualifies, contact your GitHub account team. GitHub Support cannot determine eligibility or enable access.\nApproval will not automatically enable the models. After approval, a Copilot Enterprise or Copilot Business administrator must still enable the Claude Fable 5.2 policy in Copilot settings.\nLearn more\nTo explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot.\nShare your feedback\nJoin the GitHub Community to share your feedback.\nNov.10 Release\nGemini 4 Carbon in GitHub Copilot\ncopilot\nNov.10 Improvement\nC++ language server now auto-configures MSBuild builds\ncopilot\nNov.06 Improvement\nCopilot code review: API management and review overview updates\ncopilot\nNov.06 Improvement\nCopilot impact dashboard adds chat and VS Code agent usage\naccount management\ncopilot\nenterprise management tools\nNov.06 Release\nGitHub Copilot weekly releases — November 2\ncopilot\nNov.06 Release\n@GitHub in Slack and Teams is generally available and more\nclient apps\ncopilot\nNov.05 Improvement\nUsage metrics API adds code review details and addressed rate\naccount management\ncopilot\nenterprise management tools\nNov.05 Improvement\nUsage metrics API flags telemetry and…"
+   }
+  },
+  {
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "hn_url": "https://news.ycombinator.com/item?id=50439193",
+   "hn": {
+    "title": "AlphaProof Code",
+    "points": 560,
+    "comments": 174
+   },
+   "comments": [
+    {
+     "author": "hedora",
+     "replies": 8,
+     "text": "Something seems wrong here. They took a non-trivial piece of human-written code that has had bugs in the past, formally verified the whole library, and found zero bugs?\nI can believe that it's possible to get the LLM to write proofs, but I can't believe there were zero bugs in the system they verified. I wonder if they got the theorems wrong, or if they only proved narrow properties of the system.\nI've had Claude formally verify crypto and data storage formats. It wrote theorems that looked…"
+    },
+    {
+     "author": "thibsrn",
+     "replies": 6,
+     "text": "Great, what a great use case for AI. I feel like Google has been the cleanest of the big players in terms of useful contributions and control of their AI systems. This new proof agent doesn't seem to challenge the spec though, just the implementation, if I've understood correctly.\nI wonder how this agent is different than a classic coding agent, in the end it seems to work the same way, iterating over a codebase while writing Lean or Rocq code and running it."
+    },
+    {
+     "author": "Mizza",
+     "replies": 2,
+     "text": "I'm expecting that very soon, perhaps in the next two or three years, it will seem mad that we ever ran _any_ unverified software on our systems, like how it now seems mad we used Telnet or plaintext HTTP."
+    },
+    {
+     "author": "andai",
+     "replies": 2,
+     "text": "Earlier this year I was doing some major refactors of an old project. At the time coding agents were really taking off where you could increasingly trust them for more autonomous work, so I was excited to give it a go.\nIt did the refactor, running for several hours, and ended up volunteering an extensive test suite as well. All tests green!\nI was very impressed, until I squinted a little. It had implemented the whole thing backwards, in a way which was not only pointless (didn't achieve any of…"
+    },
+    {
+     "author": "r0ze-at-hn",
+     "replies": 1,
+     "text": "I have been experimenting with utilizing how easy it is for AI to code lean (\nhttps://metamagic.substack.com/p/beyond-the-proof-dump-lean-...) and a few lessons\n1. AI Lean is not perfect and AI can easily cheat given it is writing the lean. For anyone playing around with AI Lean code at minimum you need another adversarial prompt to review the ai generated lean.\n2. In the paper poking around I see they did re-introduce some bugs to verify it would catch them, but they didn't find any bugs it…"
+    }
+   ],
+   "article": {
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "status": "ok",
+    "title": "",
+    "chars": 22728,
+    "text": "�\b\u0000\u0000\u0000\u0000\u0000\u0002���v\u001bǒ��}���=�mO�@�/ޢvK��&eٔe[�z��@�\"\u0016.B\u0001�����~��/�֜G8Oq�d?���#��\u0002\bR�(��7,\u0013(TeeFFFDFFDF���ְ99\n�^wҏ��ӧ׌�8�n��(�y�`\u0012��I�ﵶ����_���ٯ�=�ދ�Ag;\n�N\u0018���뇓�kv�q\nN����_O�\n\u0007�p0����a�\u0013n��d�尿����4���(��\u000e�p���^k�\u0005��^3���foЛ�ȏ�A\u0014n\u0017r�\no\u0010����^x2\u001a�'��Mz\u0013jz2\n���{\n�{�^��\u0003o���{�A\u0010��o�\u0015{/��ɰ9���ޤ�=\n�T���o��{:\nv��{\u0004\u0002�z�ֽ-W㽨78�㰽�\n��nm G���u앭�h���\n&�ak��\n:~\u0010���h<\n��e+���a��\n\u0006�\u00010�o��\u0014C\u000fT\u001a��s��^�\u0001q�w\u0002��7<\u000e�ބ�C�ߋ\"�\u0007��X��\u0007�.�~�\u001b6�g-z���\u001b\u0006\u0003o2�x��>���k\u000e�|�OG�ag\n�����O¦P\u0014�%�#�5<�w��y\u0012O�SW,�`�\u0015��qo�W�;�r\u001aw�a8� v��\u0017\nZ��I0\u000e&�N7����q/�$�N������6�\u001b��(\nON���o���\nc9ۛ\n��\u0012d�-%�8��q�\u0011V\u000e\u0006��\u000e�\u000fzϫ�oO�U���߭N�k\n~�����������\n�z��8\n?{�sq���s�� �}�����ݟ��/;O��< ?|��3)��o�ǿ����{�>\nF�r�\n��\u0006o^�\u0007϶O\n�|��VKy�\u000f���dqlz}�{yЗXo�7 \u000f��Ko���:7f�;\n/�c0���\b�l)�ʥ�7.E�J�Z�]I��|��\u0017\n~!��P�6�����9\u0010����aԋ�a�`�;��l=�o\n�o��\\�Z+5j�U� �\u0010��k�)��`��\u0005\"vbc #��\u000fƧ\u0007Q0�\u00076�NHO\u0010��p�m3\u0018Ϧ�T�}*���O+^��)}|�̱Б����� �q9_t��c�t�]�\u0013q��\u0015�n<\u0019��\n��\nF��d\\���S! ��Z�1Js��4���D}��:(�?hT[��hб�9\u0018��П\n�ͮ�7n��R��iƚVs^��\u0010�ۥ��Rѓ��6B�z\n�\u0014��\u0015�\u0014��\n��\u0006&����\u0004\u0003Ԙ�EL�\u000e(�#\u0010\u001b�\n\u0000����R�o@;<[e\u001bi\u0019/��\u0011�h\nB>\u0003�q\u0002Is<����A�[�Y�*� :qSl����wNNNr�K���\n�U�n5���v��z����_��A�/O�����Q�a�ӝ�k5�+�˛\u0005�����Z�x\u0014\u0005���I0���x;��2-K����Pˏ9�n\n\u00025l 0��)�\n_Wo����4���绻�Oz�h� ^<��r}\u0013\n�r�|~���f^�o\n%�\u0005��x�\n�E\u0004�Չ��Vs8<ꅃ�d��;\nƫ��X�堮�\"��%B�^;gh`�o[�a� ߉(K�Y�X+\u0004��Q�\b�K��m�-��G��X�œ��\n!�r\u0018���޶������8\n&�W{��z_����۾��y�o빏=��'U��lU�M\n�3 ���� +��I.\u0003G���O,����9�\n�ߤP2OO�\u0018,9X\n�\u0001kOz�o\u0006��}�:��ۯ\n��\\�W�v2�\u0007-Df�5Da\u000e� �(7\b'�b�t|\n�^\\�(�V�~�\u0005�\u0014�锎lE�B\u0012���L�N�\u001a:�xe���]~�t8�L\u000f����N�Iu���ט0�K(]@f�\u0012\u0001�A\u0002ؿml������Ӂ��Y�\u000f\u0007���4��+�6�=3�3���`�U+l\u0007ӈqH������x\u00100H �z�T�n%���z\na���p2\n�@M�I����1��q��^\u0006��������e\n�O��w��9�ƹ6\u0014�uҺ@�z�0e�\\oЌ����g�W�qåw�H�4ߵ���\n�Q\nFa\u000e�� ۬���t�W\u0013<������ v��� ������\n���؉\n\u000e\u0007��j�.J�UHMx��q�����jĺ��\u0000ZDl�l֡L7g�ʹ�t�'�X\u000e�\u001bO�_�\u0007�B,\u001a:�aΩR�\\z\u0004~>;\u0002�\u0006\u0006���0\b�^\u001a��Zol�βٌ\u0003�p��m9��/��q��i�\n��\u0015x��mN�X \u0011���q\u0014�\u0003�\u0015�2��Ř�\\'�<��\u0018��I\b��-�_\u0001���!��I[L\u0019���֖���c���j�:�q�������M�b�B8-t�L\u0016\n�A�ț ���\b-\u0018#�aj�\u0016�:X- Ƥ`�~�\"�_<\nƻ����=�p�\u001b�9m��MO�mzѦכw��N�-�w^������KD��U�r#��_�9��\nl8���[o\u0010�x�����F�|�]��oR)�*�c���{�m<\u0013�̽)�UʍL\u001b00L��d�⇧���\n�g_���[>\u0003�+���;!��B����Z[b�����m�\u0006x78\n�_y��S����/<\u0003����\u00164osA|:h�\u001a\u0014\u0019��{��Ǻ�Ղnf3��\u0014�%\n����\u0003B\n��k�\u00123�\u0016M��`�s�`\n�^`;ώ���\u0004A�it�0D��_���ڙN�5����$\u0002�qN���ʱ\n3V�뛞#gױ�ꋗ��<�����\u0007O |��7aC����'k\n�\\\b6�H�v2|\u0018u\u000e�Q����t6�Ξ'd.�\u0015��֒p�|\u0012��δ�t��\nR\u000e���\u0019��g\u000f��0�5�e���p굃^$_A�]�p�\n�z�1�\u0015'\b�\u0001�\u0000\u0015� ��\u001b��\u0006/-+��z,\u0000��`���V0>�j>�z\n\\�\u0012 �0��\u0019\nI�:l���\u0011o{� `��C���^��\u0005���\u000f����\u001a,J�p�㩋\u0014�\u0016���蛯��Y=a���k��m\u001a�\u000e�3\\�\u0012�\n;X/%sMʚ{n�EEn\n��\nI�2��]�\"��Ûkm�ݠ���?�r��?�ҿ����\u0012�n9���u�x\u0006�!��З�� �\u0019��;N�n �'Á�\u0019\u000f�#���58ڸ\u000f��y\u0016�\u0012^R\u0010k\u001b\n5nAy��YՁi�\u0019��G��}%\u0005CbM��{[��{,����S���\u0017��^�\u0015\u000e�%`�60���h̊�*�}�g�\u0018� �\nl6��\ny�񤷟���;[8-�[\u0014���\n���-B��\u001by/�\u0015����!� ��1=��6V\u0000\\�]����W���\u0005���n��#��\u0005n���m��%�P\u0004'[z�/kQp}�-\n:�lc�\\��\u0015�|�6�b>���B9W�]�1�Pؚ~� `�/��Y�v�y�P�g�G�2�\u0015=u�\n=K\u001a�#�2� }�:�[�\u001a�᏶Ԏ�`��YǮ�P0\n\u000fO|)\n�vԑ³\u001a G\u0015Z���K�+�MżB�Y1�\u0017?\\�i&\nTu�Us�ZC\u0019�Um�\n����n�ȏH\u0010ա&\u0007�|����t��z\u0019��2�\n����b�[|�b$iZh*����m˗��zRefH��������Ǚ޻A1h\u0013B�:\u0000�,��ZT���q!�\u001a[����(C\npmYU\n�g�\u0000��(�/֙��F��uv�(\n򩦑����1���|ͯ�jȕ\\#�(�\u0014J�r��9���.�\u000f�+�R���#\n��\u000f� �\n5.��B�X�I��̕j>nO�u�n_F��\nm�E�����k���N��\\Q��\u001a~�+��\u0018��Ǐf���몐[U.\u001a%�ҕ�\n5˧if4�M�[���g%� �W\u0016�$\u0007꯫�JWj\u0005Y�\u0013�(�y� �4�\u0001: �<��\n\u0005`��S�xŦ\u0010쁓\u0004Aq�tVŬ\u0006��^��\u0015�gk�;\u000e�Q���\n�Qȁ�c �}\\��Whx�g�e\b�\n\u001a6�Iү.7\u0016��:!�LW�\u0006��lg#^�sUZ�U@\u0006\u0004��m���\u0010ȯ\u001b\u0010�f\u00045PI\n�\u0012p�\u0005��Y\u0001Ⱥ�x͜�u��*^7��c�?�����&�p��PZ�@��)�兀\u0012�\n_�>�=|�\u0012\n�w2����\n�Xb�Q�\\9�%�\u0002�̇8AW_�����jĜ���\u0000�s���(\u0004�\n\u001a�T���d\n�\nU\u0013�3�{Ē�'\u0019B`�\n�g�וn�5\u0004\u0010H�HM\u0013�2���7D�g���7!T���\nLH\u0000M�\u0011A\u0001\n�S��\u0005\u0001�KSR�^\u00174A��+��Qw8�*8Luy�E:V#Ʋ\np|\u0004�\u0001՞�RG\n>�K�\nX� ר�맇K��@�\u0004��\\����Ȼr�絜�\u0014�ge�W����9�j�W��\u0000��@\"ۧ�\n8�%�_��0�O�\n0�\u0001lp�-{A�6i���v���̗�P&��X��\u0001\u0019Z\u0006&Ie�\u0017�%�5lV�cH�F2��\u0002�+�8d��'vFϨ\u0018eu|Q��Z,˄�L���%!r��>�zEi����\nTP7�\n]&TM9Cy��)=\u0010:2$�����Ʀ�\u001b�f\u00120Jo�mD�\u0006(�\u0004)\n�@�S\u0011�����* �\n���VQ/Z ��\u0014Jh�!�\u00022\u0005����V��.t 5W\ny\u001a\u0011A)�TI^,�\u0010\n�\u0004�\\�\n\u0019\u0000ë��UA\u0000�Oe��C����>**Vu��2�\u001apE���!�T9\u000f\u0011\u0017���\u0007=�`�B�\u0012=\bb�\u0014��r� ��4��\u0016\u0004�\n��Z\n\u001a�д`�Q�kj�\u0011P\u0002/7\nTHa�\n�k��\u0014\n�F`\u00065��Њh\n�U��!�\u0006\n�2�*��c\u0000a�g����S(1�U\u0010N�&�*\u0002[}�?���� ,�\u0019m!��\u0002X�^�U�n�o�:y\u0003�N\u000f����vޒ��l�%�_)R�\b�\\��[��GY &��D\u0010�'�rR��…"
+   }
+  },
+  {
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.1",
+   "article": {
+    "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.1",
+    "status": "error",
+    "reason": "CHANGELOG.md không có mục rust-v0.167.1"
+   }
+  },
+  {
+   "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+   "hn_url": "https://news.ycombinator.com/item?id=50443716",
+   "hn": {
+    "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+    "points": 147,
+    "comments": 115
+   },
+   "comments": [
+    {
+     "author": "gosen",
+     "replies": 15,
+     "text": "When Anthropic released \"claude design\" people were telling that figma is dead now, but in fact claude design didn't move forward and stayed as a \"fallback tool\" when you quickly need to check / edit something. And for the serious work you still go to Figma and other designer tools.\nI have a feeling that Whiteboards, Sheets, Docs and so on will be the same - it's a nicer way to present artefacts, discuss them and maybe make notes, but for the proper editor experience you'll go to the tools…"
+    },
+    {
+     "author": "FailMore",
+     "replies": 0,
+     "text": "I have a different approach to the industry when it comes to work documents.\nI'm building https://smalldocs.org / https://github.com/espressoplease/smalldocs. My take is that the siloed approach of previous document formats is now redundant. The document formats were isolated because we needed heavy tools for humans to do the work. Now we need lightweight javascript predominately for rending as agents do the work, so document formats can be blended.\nThis means SmallDocs allows an agent to put…"
+    },
+    {
+     "author": "option_greek",
+     "replies": 4,
+     "text": "Model companies are starting to cannibalize their api customers's business cases. Shows that the regular avenues of revenue growth are slowing down"
+    },
+    {
+     "author": "bertt",
+     "replies": 9,
+     "text": "> Working with Claude on a project often meant moving the output over to another tool or program, where Claude didn’t have live access to follow progress and changes. Now, your documents, boards, sheets, and dashboards can stay in Claude, with access for your team to continue editing together.\nI read this as: We'll build anything and everything into Claude eventually.\nHow does this work long-term? Is the new reality going to be picking an AI provider for all of your SaSS tooling, similar to…"
+    },
+    {
+     "author": "mmcconnell1618",
+     "replies": 0,
+     "text": "Apple created IWork: Pages, Numbers, Keynote. Google created Workspaces with Docs, Sheets, Slides. Open source options like LibreOffice and OpenOffice exist. Google is the only one that has managed to take any significant market share from Microsoft. I don't think Anthropic has the focus to follow it through."
+    }
+   ],
+   "article": {
+    "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+    "status": "ok",
+    "title": "Claude Whiteboards, Claude Sheets, and Claude Data | Claude by Anthropic",
+    "chars": 5754,
+    "text": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data\nNow you can brainstorm on whiteboards, build sheets, and share data directly in Claude.\nCategoryProduct updates\nProductClaude apps\nDateNovember 10, 2026\nReading time6 min\nShare\nToday we’re launching Claude Whiteboards and Claude Sheets in beta, and Claude Dashboards (opens in new tab) becomes generally available as Claude Data. Whiteboards is a shared board where your team brainstorms with Claude, Sheets is a spreadsheet Claude builds and edits with you, and Claude Data adds data stories, certified queries, and live sharing. These are available on all paid plans.\nWorking with Claude on a project often meant moving the output over to another tool or program, where Claude didn’t have live access to follow progress and changes. Now, your documents, boards, sheets, and dashboards can stay in Claude, with access for your team to continue editing together. When ready, you can bring the outputs directly into tools from our partners and continue working there.\nClaude Whiteboards\nMany people use Claude as a thought partner, but brainstorming with it has typically meant copy-pasting the results elsewhere so you can then start brainstorming or collaborating with your coworkers. Now, you can talk through a messy plan out loud with Claude, and Claude can turn it into a board with a timeline with owners and dates, so you and your team can collaborate in real time. In a retro meeting, for example, everyone can add their notes, and Claude can group them by theme and draft the action items for each person. You can focus on any part of the board by dragging a box around it and asking Claude questions. When you’re done brainstorming, Claude can turn the board into a doc or deck, or bring it into tools like Lucid, Miro, or Vani by Zoho, where you can continue working on it with your team.\nClaude Sheets\nClaude can now generate spreadsheets with tabs, formulas, formatting, and drop-downs, often from just a prompt like asking for a campaign tracker or a hiring budget. It can edit in the cells, outlining each new edit so you can track changes. You can share sheets with your team, so you and Claude can work on them together.\nFor now, sheets have simple spreadsheet functionality, but we are working on adding more. When you need the full functionality of Excel, you can export your file to .xlsx or CSV, or use Claude for Excel (opens in new tab). You can also continue working in partner tools including Airtable, Asana, monday.com, and Smartsheet.\nClaude Data\nClaude Dashboards (opens in new tab) launched in beta in October, enabling teams to ask quick questions of their company’s data in tools like Amazon Redshift, BigQuery, and ClickHouse. Starting today, it’s generally available as Claude Data. We changed the name because the way companies use their data is broader than dashboards, and the product now covers how they work more broadly. Certified queries and live sharing are in beta. Here are some ways teams can use Claude Data:\nCreate certified definitions of metrics. Your data team can certify the queries everyone should use, so you don’t end up building or working on dashboards with conflicting data. Charts built on these metrics carry a \"certified\" badge showing they’re certified.\nCraft stories from data. You can work with Claude in Claude Data to draft data stories or narrated videos from your metrics, for you to review before sharing.\nShare current numbers with everyone. With live sharing, your colleagues can see up-to-date numbers when they open a shared dashboard, even if they don’t have access to the connectors that keep that data current. Viewers see the results of the queries you’ve approved, and can’t run others with your access.\nMatch your look-and-feel. Design systems are now supported in Claude Data.\nGet faster loading with caching. Previously, every dashboard would reload on every load. Now, dashboards support caching, and refresh cadences can be set on a per-dashboard…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50431144",
+   "hn_url": "https://news.ycombinator.com/item?id=50431144",
+   "hn": {
+    "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+    "points": 370,
+    "comments": 267
+   },
+   "comments": [
+    {
+     "author": "rgbrenner",
+     "replies": 20,
+     "text": "Forget about the scores... look at the Cost Per Task. Fable 5.1 was already the most expensive by a good margin, and now Fable 5.2 doubles it! This is with the price cut.\nThe output tokens per task just exploded. From 118k tokens (46k Answer/71k Reasoning) in 5.1 to 274k tokens (81k Answer/192k Reasoning) in 5.2."
+    },
+    {
+     "author": "oliwary",
+     "replies": 5,
+     "text": "Cool! It looks like Fable 5.2 (especially low and medium) also sit on the pareto frontier between time per task and intelligence: https://artificialanalysis.ai/models?speed=output-speed-over...\nI am always interested in this comparison since it shows how quickly you can go back and forth with a model, capturing both tokens/task and tokens/second. The new models seem to be meaningfully better here."
+    },
+    {
+     "author": "brachkow",
+     "replies": 8,
+     "text": "It's crazy how expensive Anthropic's model is compared to pretty capable DeepSeek-Flash\nWhile they made, hands down, the best models, their 100x price for few percent better is completely made up, and I think it will end up bad for them"
+    },
+    {
+     "author": "schnitzelstoat",
+     "replies": 2,
+     "text": "That seems like an insane increase in cost for a modest intelligence increase.\nBut perhaps the performance on real-world tasks will be more noticeable than on benchmarks."
+    },
+    {
+     "author": "rodorgas",
+     "replies": 2,
+     "text": "Artificial Analysis is paid by AI labs and they don't publish the full method. To me it's meaningless, let's wait for other benchmarks, but if they're correct the intelligence increment is negligible."
+    }
+   ],
+   "article": {
+    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+    "status": "ok",
+    "title": "Claude Fable 5.2 (max) - Intelligence, Performance & Price Analysis | Artificial Analysis",
+    "chars": 15259,
+    "text": "Artificial Analysis\nAnthropic\n•\nClaude Fable 5.2\n•\nProprietary model\n•\nReleased November 2026\nClaude Fable 5.2 (Max, Default Fallback) Intelligence, Performance & Price Analysis\nTry it out API Provider Benchmarks\nModel summary\nIntelligenceUpdated\n65\nArtificial Analysis Intelligence Index\n4 out of 4 units for Intelligence.\nPerformance\nTime to first answer token 230.35sOutput speed 103 tok/s\n44.4\nTime per Intelligence Index task (minutes)\n4 out of 4 units for Performance.\nCost\nIn $8.00Out $40.00Cache discount 98%\n$26.54\nCost per Intelligence Index task\n4 out of 4 units for Cost.\nVerbosity\nInput tokens 28.3BOutput/input 0.97%\n275M\nOutput tokens from Intelligence Index\n4 out of 4 units for Verbosity.\nClaude Fable 5.2 (Max, Default Fallback) is amongst the leading models in intelligence, but particularly expensive when comparing to other models of similar price. It's also notably slow per task and very verbose. The model supports text and image input, outputs text, and has a 1M tokens context window.\nClaude Fable 5.2 (Max, Default Fallback) scores 65 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 40). When evaluating the Intelligence Index, it generated 275M tokens, which is very verbose in comparison to the median of 72.8M.\nPricing for Claude Fable 5.2 (Max, Default Fallback) is $8.00 per 1M input tokens (expensive, median: $2.00) and $40.00 per 1M output tokens (expensive, median: $10.00). On average, it costs $26.54 per task to evaluate Claude Fable 5.2 (Max, Default Fallback) on the Intelligence Index.\nAt 44.4 minutes per Intelligence Index task, Claude Fable 5.2 (Max, Default Fallback) is notably slow compared with the median of 12.8 minutes for comparable models (lower is better).\nReasoningYes\nThis page shows the reasoning version of this model.\nA non-reasoning variant may also exist.\nInput modality\nSupports: text and image\nOutput modality\nSupports: text\nContext window1M\n~1500 A4 pages of size 12 Arial font\nMetrics are compared against models of the same class:\nNon-reasoning models → compared only with other non-reasoning models\nReasoning models → compared across both reasoning and non-reasoning\nOpen weights models → compared only with other open weights models of the same size class:\nTiny: ≤4B parameters\nSmall: 4B–40B parameters\nMedium: 40B–150B parameters\nLarge: >150B parameters\nProprietary models → compared across proprietary and open weights models of the same price range, using a blended 3:1 input/output price ratio:\n<$0.15 per 1M tokens\n$0.15–$1 per 1M tokens\n>$1 per 1M tokens\nUpdated\nIntelligence\nArtificial Analysis Intelligence Index · Higher is better\nNo publicly available API\nTime per Task\nInference time (minutes) per Intelligence Index task · Lower is better\nNo publicly available API\nCost per Task\nWeighted average cost (USD) per Intelligence Index task · Lower is better\nNo publicly available API\nIntelligenceUpdated\nArtificial Analysis Intelligence Index\nArtificial Analysis Intelligence Index v5.0.1 incorporates 9 evaluations: AA-Briefcase v1.1, AutomationBench-AA, Terminal-Bench 4.0, FrontierCode 2.0, AA-Omniscience v1.1, GDP.pdf, HLE-Diamond, CritPt v2 (Hard Subset), and Terminal-Bench-Science 0.1\nNo publicly available API\nArtificial Analysis Intelligence Index v5.0.1 includes: AA-Briefcase v1.1, AutomationBench-AA, Terminal-Bench 4.0, FrontierCode 2.0, AA-Omniscience v1.1, GDP.pdf, HLE-Diamond, CritPt v2 (Hard Subset), Terminal-Bench-Science 0.1. See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.\nArtificial Analysis Intelligence Index by Open Weights / Proprietary\nArtificial Analysis Intelligence Index v5.0.1 incorporates 9 evaluations: AA-Briefcase v1.1, AutomationBench-AA, Terminal-Bench 4.0, FrontierCode 2.0, AA-Omniscience v1.1, GDP.pdf, HLE-Diamond, CritPt v2 (Hard Subset), and Terminal-Bench-Science 0.1\nNo publicly available API\nArtificial Analysis Intelligence Index v5.0.1…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50442303",
+   "hn_url": "https://news.ycombinator.com/item?id=50442303",
+   "hn": {
+    "title": "Gemini 4 Carbon is now available",
+    "points": 269,
+    "comments": 146
+   },
+   "comments": [
+    {
+     "author": "byefruit",
+     "replies": 15,
+     "text": "Just checked my Gemini app, still only have 3.1 Pro, 3.6 Flash and 3.6 Thinking on Pro. Looks like it's Ultra only.\nThey've been so slow to update their top models and roll them out that despite subscribing to the Gemini Pro plan, I use it so rarely that this is my last month. That and their product offering was so confusing I basically gave up."
+    },
+    {
+     "author": "5555watch",
+     "replies": 1,
+     "text": "Available through the API.\nTo add, it's actually surprisingly good. I have this unfinished paper draft that I keep feeding to various top AI's to see what it picks up on and what suggests to edit, and while Astra/Fable/Opus/Argon so far has been mediocre, Carbon's answer surprised me with some interesting points all the other AI's missed.\nIt's an anecdote, sample of one, but it got my attention."
+    },
+    {
+     "author": "guidopallemans",
+     "replies": 5,
+     "text": "A nice nod to simonw in one of the highlight videos;\nhttps://www.youtube.com/watch?v=dNbkThtNzS8"
+    },
+    {
+     "author": "simonw",
+     "replies": 0,
+     "text": "Pelicans are solid, but every Gemini model for the past year has produced solid pelicans: https://tools.simonwillison.net/markdown-svg-renderer?url=ht...\nI also had it do this in Antigravity:\n> Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\nThe result was pretty great: https://static.simonwillison.net/static/2026/yonkers-mech-st... (I had to prompt \"build that into a…"
+    },
+    {
+     "author": "dom96",
+     "replies": 2,
+     "text": "It is such a massive miss from Google that it took them this long to release this model. I just ran it on my benchmark[1] and it matches Fable 5.2. They could have been first to get there, why didn't they?\nThat being said, it is still slower and more costly than Fable 5.2. So Anthropic wins in my eyes.\n1 - https://bench.killswitch-lang.org/"
+    }
+   ],
+   "article": {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "status": "ok",
+    "title": "Gemini 4 Carbon is now available",
+    "chars": 15756,
+    "text": "Gemini 4 Carbon is now available\nNov 10, 2026\n|\nx.com\nFacebook\nLinkedIn\nMail\nDevelopers, enterprises, scientists, and consumers can now try our latest frontier model.\nKoray Kavukcuoglu\nSVP, Google DeepMind and Chief AI Architect, Google\nShare\nx.com\nFacebook\nLinkedIn\nMail\nYour browser does not support the audio element.\nListen to article\n[[duration]] minutes\nThis content is generated by Google AI. Generative AI is experimental\nIn this article\nToday, we’re making Gemini 4 Carbon available to developers, enterprises, scientists, and consumers. Carbon is our strongest model with frontier performance in cybersecurity capabilities and long-horizon agentic workflows across complex knowledge work, software engineering, and scientific reasoning.\nTwo weeks ago, we released Carbon to a set of cybersecurity defenders via our Fairwind Program. Following our recent launch of Gemini 4 Argon, Carbon pushes the frontier even further. Argon remains the ideal choice for the majority of software engineering and knowledge work, while Carbon is built for tasks that test the limits of a model’s intelligence like complex, multi-step coding and debugging and open-ended scientific research and discovery — using more tokens than Argon to explore thoroughly, reason deeply, and run extended verification loops.\nAcross independent benchmarks designed to test model performance in real workflows, Carbon pairs frontier accuracy with practical production economics. It ranks #1 on CursorBench 4.0, Perplexity’s WANDR, and Zapier’s AutomationBench at more than 2X lower cost per task compared to the next best external model.\nTo put Carbon’s capabilities to work on larger and complex projects, we’re previewing /swarm in Google Antigravity, turning a single prompt into a coordinated team of agents you can track in real time. Developers can assign Carbon to roles that demand the deepest reasoning, like architectural design, coordination, and auditing, while pairing it with faster, lighter models across parallel isolated workspaces and adversarial verifiers that test every change.\nGemini 4 Carbon is available via the API in Google AI Studio and Gemini for business for all paying developers and enterprises, at the same introductory price\n1\nas Gemini 4 Argon ($2 per million input tokens and $10 per million output tokens). It is also rolling out to all Google AI Ultra subscribers in Google Antigravity, the Gemini app, and AI Mode in Search.\nHigher-precision knowledge work, artifact generation, and data analysis\nAcross legal, finance, and enterprise operations, Gemini 4 Carbon combines frontier visual understanding, reasoning, and exhaustive retrieval to synthesize grounded insights across large sets of dense documents and data. It follows strict schemas and formatting to generate polished and precise spreadsheets, presentations, and reports.\nExisting benchmarks don’t adequately capture how agents reason natively over dense files with charts, images, blueprints, schematics, and tables, so we partnered with Artificial Analysis to launch the new Multimodal Knowledge Agent (MKA) benchmark that tests a model’s multimodal performance in agentic workflows. Carbon ranks #2 while being more than 6X lower in average cost per task compared to the top performing model.\nUsing Google Antigravity’s new /swarm feature, a team of Gemini 4 Carbon agents turned historical photos and engineering plates into an interactive Three.js 3D exhibition of the Eiffel Tower's 1887–1889 construction from a single prompt.\nWith seven public City Council planning PDFs (206 extracted engineering drawing views) and a single prompt, a multi-agent Carbon team using Google Antigravity’s /swarm feature built an interactive 906K-triangle Three.js reconstruction of Google’s Platform 37 office across 10 overnight loops.\nIn Google Antigravity, Gemini 4 Carbon built an interactive multiscale textile visualizer based on an academic paper, modeling a virtual-fiber finite element framework with interactive 3D yarn…"
+   }
+  }
+ ]
+}

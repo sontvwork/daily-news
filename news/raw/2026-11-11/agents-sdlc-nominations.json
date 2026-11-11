@@ -1,0 +1,803 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "7c9e9bebde4342f1",
+  "generated_at": "2026-11-10T23:56:37.621766Z",
+  "from_date": "2026-11-09",
+  "to_date": "2026-11-10",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-10T23:56:37.568553Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-10T23:56:37.568565Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-10T23:56:37.482635Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 62,
+      "attempted": true,
+      "at": "2026-11-10T23:56:37.568349Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "USPS ZIP Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 387,
+          "points": 718
+        }
+      },
+      "nomination": {
+        "name": "USPS ZIP Code",
+        "seed_score": 1172.0295,
+        "summary": "USPS now offers official ZIP Code boundary polygons",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50431058",
+            "source": "hackernews",
+            "title": "USPS now offers official ZIP Code boundary polygons",
+            "body": "USPS now offers official ZIP Code boundary polygons",
+            "url": "https://postalpro.usps.com/zcb",
+            "author": "munro",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 718,
+              "comments": 387
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about USPS now offers official ZIP Code boundary polygons",
+            "snippet": "USPS now offers official ZIP Code boundary polygons",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50431058",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15100000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AlphaProof Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 174,
+          "points": 558
+        }
+      },
+      "nomination": {
+        "name": "AlphaProof Code",
+        "seed_score": 1098.0,
+        "summary": "AlphaProof Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50439193",
+            "source": "hackernews",
+            "title": "AlphaProof Code",
+            "body": "AlphaProof Code",
+            "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+            "author": "ilreb",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 558,
+              "comments": 174
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "HN story about AlphaProof Code",
+            "snippet": "AlphaProof Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50439193",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3765
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "2019 JavaScript",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 64,
+          "points": 228
+        }
+      },
+      "nomination": {
+        "name": "2019 JavaScript",
+        "seed_score": 438.0,
+        "summary": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50443812",
+            "source": "hackernews",
+            "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "body": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "url": "https://github.com/GoogleChrome/modern-web-guidance",
+            "author": "paulirish",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 228,
+              "comments": 64
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Show HN: Get your coding agent off ~2019 JavaScript, onto mo",
+            "snippet": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50443812",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 44,
+            "source_quality": 0.8,
+            "local_rank_score": 0.269
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "ChatGPT Desktop SSH",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 77,
+          "points": 214
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Desktop SSH",
+        "seed_score": 308.6521,
+        "summary": "ChatGPT Desktop forwards your SSH agent to remote machines",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50422628",
+            "source": "hackernews",
+            "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+            "body": "ChatGPT Desktop forwards your SSH agent to remote machines",
+            "url": "https://news.ycombinator.com/item?id=50422628",
+            "author": "DenGorbachev",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 214,
+              "comments": 77
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about ChatGPT Desktop forwards your SSH agent to remote machines",
+            "snippet": "ChatGPT Desktop forwards your SSH agent to remote machines",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50422628",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 46,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07100000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "AI API 2 0 8 1,198,901",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 62
+        }
+      },
+      "nomination": {
+        "name": "AI API 2 0 8 1,198,901",
+        "seed_score": 244.5,
+        "summary": "My AI agent has to pay its own API bills. After 2 weeks it's 0 for 8 on trades and logged one loss as a +1,198,901% win",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "My AI agent has to pay its own API bills. After 2 weeks it's 0 for 8 on trades and logged one loss as a +1,198,901% win",
+            "body": "My AI agent has to pay its own API bills. After 2 weeks it's 0 for 8 on trades and logged one loss as a +1,198,901% win",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xslydj/my_ai_agent_has_to_pay_its_own_api_bills_after_2/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 101,
+              "num_comments": 62
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing",
+            "snippet": "My AI agent has to pay its own API bills. After 2 weeks it's 0 for 8 on trades and logged one loss as a +1,198,901% win",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41600000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "comprehensive study of how fingerprintable users",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 25,
+          "points": 57
+        }
+      },
+      "nomination": {
+        "name": "comprehensive study of how fingerprintable users",
+        "seed_score": 123.0,
+        "summary": "A comprehensive study of how fingerprintable users are",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50444684",
+            "source": "hackernews",
+            "title": "A comprehensive study of how fingerprintable users are",
+            "body": "A comprehensive study of how fingerprintable users are",
+            "url": "https://fingerprinting.study/",
+            "author": "tomrittervg",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 57,
+              "comments": 25
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about A comprehensive study of how fingerprintable users are",
+            "snippet": "A comprehensive study of how fingerprintable users are",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50444684",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Strata vs Basalt",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 62
+        }
+      },
+      "nomination": {
+        "name": "Strata vs Basalt",
+        "seed_score": 100.5,
+        "summary": "So I've been using strata for a while now in windows using Qwen3.8-Flash-Next iq3s before the new gui thing and I think it's been fine compared to Qwen3.8-27B which was lacking in quality and polishing.\n\nSo I upgraded my ram from 64 to 128. Got a new pc and made an Ai box only for Ai text models and comfyui.\n\nSo I had to test the speed difference between strata and basalt since in windows basalt w",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "Strata vs Basalt more differences than speed.",
+            "body": "Strata vs Basalt more differences than speed.\nSo I've been using strata for a while now in windows using Qwen3.8-Flash-Next iq3s before the new gui thing and I think it's been fine compared to Qwen3.8-27B which was lacking in quality and polishing.\n\nSo I upgraded my ram from 64 to 128. Got a new pc and made an Ai box only for Ai text models and comfyui.\n\nSo I had to test the speed difference between strata and basalt since in windows basalt was not working good at all.\n\nSo strata cli engine 0.1.59 Qwen3.8-Flash-Next iq3s with 256k context. Dflash 2 and 0 reserve vram and tuned run. Vision on. \n\nWith basalt converted model   .basalt file\n\nVersion 0.3.2 same model. Same context. Same everything. Vision dynamic.\n\nThe differences is.\n\n***Strata:***\n\n Avg tps 99.2 and avg prefill 839 with 11.1M tokens used.\n\nVram 15.3\n\nRam 69.2gb\n\nThe prompts felt sluggish moving from generating to reading to whatever. It felt wrong and slow and toke forever and that caused the huge stale in usage which dips down and up a lot. Like it's having problems moving from each phase to the next. \n\nLast and most importantly that it can't finish the work correctly. Doesn't compact correctly. The development is broken. And it feels like a cheap model you hosted in your cheap pc you poor man. \n\n***Basalt:***\n\nAvg from 100 to 118. Peaking to 145. Avg prefill not sure but peaking 4200.\n\nVram 15.8 with reserve ram 128m\n\nRam 52.7gb then after maybe a couple of hours 53.1\n\nThe generation been smooth without any dipping or staling and moving from phases like strata.\n\nLast and most important factor is it finished. It kept going. It compacted fine like deepseek and it felt more capable and more reliable than with strata.\n\nWay less errors. Way less mess up and when I told him to keep going till the project is finished it kept going. Granted it's not perfect but it's the model capabilities and we have to realize that.\n\nBut at least it's now in a stage you can actually rely on it and say you have a \"working\" local Ai model. Cause since I tested maybe Qwen-3.6-35B nothing ever felt like a good model I can rely on.\n\nI know this is a small task but it paves the road for me to actually feel like I can do stuff locally and reliably.\n\nI will next test nvfp4 model for both and see if nvfp4 actually gains more speed or not.\n\nSo basalt now more capable and can contuine working way longer than with strata. Can actually do a good job. And it uses way less ram too.\n\nThis is also my first ever run so there is maybe more optimizations can be done but this is the default settings besides the vram change. \n\nI advice anyone using Qwen3.8-Flash-Next to try it. And I will test swift too but later and with this ram savings I might also test deepseek why not hahah.\n\n***My rig:***\n\n12900k\n\n128gb ddr4\n\n5070ti\n\nHarness: opencode",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsp6ub/strata_vs_basalt_more_differences_than_speed/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 62
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "So I've been using strata for a while now in windows using Qwen3.8-Flash-Next iq3s before the new gui thing and I think it's been fine compared to Qwen3.8-27B which was lacking in quality and polishing.\n\nSo I upgraded my ram from 64 to 128. Got a new pc and made an Ai box only for Ai text models and comfyui.\n\nSo I had to test the speed difference between strata and basalt since in windows basalt w",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.414
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 97.5,
+        "summary": "What skills are you guys actually using with your AI coding agents?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "What skills are you guys actually using with your AI coding agents?",
+            "body": "What skills are you guys actually using with your AI coding agents?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xsbbyz/what_skills_are_you_guys_actually_using_with_your/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 33,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "What skills are you guys actually using with your AI coding agents?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.458
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "2027",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 61
+        }
+      },
+      "nomination": {
+        "name": "2027",
+        "seed_score": 91.5,
+        "summary": "2026 was the year of tokenmaxxing, now we're seeing that the productivity gains don't justify the token spend and they're introducing limits for next year's budgets. 2027 will be the year of open models.\n\nWe all saw the Revolut story last week, the same thing is happening everywhere, the bigger companies are just slow when it comes to new tech adoption, but they're all looking to replicate what Re",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "2027 is the year of open models",
+            "body": "2027 is the year of open models\n2026 was the year of tokenmaxxing, now we're seeing that the productivity gains don't justify the token spend and they're introducing limits for next year's budgets. 2027 will be the year of open models.\n\nWe all saw the Revolut story last week, the same thing is happening everywhere, the bigger companies are just slow when it comes to new tech adoption, but they're all looking to replicate what Revolut did. \n\nYou can replace 95% of usage with open models which cost a fraction of closed models, it's free money.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsrkym/2027_is_the_year_of_open_models/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 61
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "2026 was the year of tokenmaxxing, now we're seeing that the productivity gains don't justify the token spend and they're introducing limits for next year's budgets. 2027 will be the year of open models.\n\nWe all saw the Revolut story last week, the same thing is happening everywhere, the bigger companies are just slow when it comes to new tech adoption, but they're all looking to replicate what Re",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28500000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "agents/LLMs",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "agents/LLMs",
+        "seed_score": 55.5,
+        "summary": "I've been thinking about a MUD supported with LLMs. Something aside from the fangooner websites. And then perhaps a game where your local LLM uses an API to support play mechanics (like a MAG from Phantasy Star or a familiar) \n\nThe broader question is in the title. What is the role  of local LLM?\n\nIf we want to be able to engage in games using the LLMs we build in a way that isn't cheating, what w",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "What do you see as the role of local agents/LLMs in the future of gaming?",
+            "body": "What do you see as the role of local agents/LLMs in the future of gaming?\nI've been thinking about a MUD supported with LLMs. Something aside from the fangooner websites. And then perhaps a game where your local LLM uses an API to support play mechanics (like a MAG from Phantasy Star or a familiar) \n\nThe broader question is in the title. What is the role  of local LLM?\n\nIf we want to be able to engage in games using the LLMs we build in a way that isn't cheating, what would that game look like?\n\nWhat would the human/ai roles be in the loop?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xssydv/what_do_you_see_as_the_role_of_local_agentsllms/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been thinking about a MUD supported with LLMs. Something aside from the fangooner websites. And then perhaps a game where your local LLM uses an API to support play mechanics (like a MAG from Phantasy Star or a familiar) \n\nThe broader question is in the title. What is the role  of local LLM?\n\nIf we want to be able to engage in games using the LLMs we build in a way that isn't cheating, what w",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI case",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "AI case",
+        "seed_score": 41.3657,
+        "summary": "how are you using AI for case studies without making the customer sound like a different person?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "how are you using AI for case studies without making the customer sound like a different person?",
+            "body": "how are you using AI for case studies without making the customer sound like a different person?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xrosqm/how_are_you_using_ai_for_case_studies_without/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 26,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing",
+            "snippet": "how are you using AI for case studies without making the customer sound like a different person?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.234
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 39.0,
+        "summary": "For those building AI agents, what's been the biggest pain in the ass so far?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "For those building AI agents, what's been the biggest pain in the ass so far?",
+            "body": "For those building AI agents, what's been the biggest pain in the ass so far?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xsy2pf/for_those_building_ai_agents_whats_been_the/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing",
+            "snippet": "For those building AI agents, what's been the biggest pain in the ass so far?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42650000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "100B tokens across 26,040",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "100B tokens across 26,040",
+        "seed_score": 37.5,
+        "summary": "We\u2019re spending up to 100B tokens across 26,040 agent runs to answer one question: when you switch models, should you switch harnesses too?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "We\u2019re spending up to 100B tokens across 26,040 agent runs to answer one question: when you switch models, should you switch harnesses too?",
+            "body": "We\u2019re spending up to 100B tokens across 26,040 agent runs to answer one question: when you switch models, should you switch harnesses too?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xsv7xm/were_spending_up_to_100b_tokens_across_26040/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing",
+            "snippet": "We\u2019re spending up to 100B tokens across 26,040 agent runs to answer one question: when you switch models, should you switch harnesses too?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "AI memory",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "AI memory",
+        "seed_score": 36.0,
+        "summary": "Is AI memory actually a problem, or am I just using agents wrong?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Is AI memory actually a problem, or am I just using agents wrong?",
+            "body": "Is AI memory actually a problem, or am I just using agents wrong?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xsz7jz/is_ai_memory_actually_a_problem_or_am_i_just/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is AI memory actually a problem, or am I just using agents wrong?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.431
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "42 GPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "42 GPU",
+        "seed_score": 34.5,
+        "summary": "I'm running a\u00a0**Qwen 3.5 9B Q4\\_K\\_M**\u00a0model on an RTX 3080 Ti and decided to progressively reduce the GPU power limit to see how much performance I would sacrifice. I started at 450W and reduced the power limit in 10% increments, eventually reaching 250W. I haven't observed any meaningful reduction in tok/s. I am achieving token rate spot on with what others have claimed in their benchmarks(\\~100",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "42% GPU power reduction with zero performance loss.",
+            "body": "42% GPU power reduction with zero performance loss.\nI'm running a\u00a0**Qwen 3.5 9B Q4\\_K\\_M**\u00a0model on an RTX 3080 Ti and decided to progressively reduce the GPU power limit to see how much performance I would sacrifice. I started at 450W and reduced the power limit in 10% increments, eventually reaching 250W. I haven't observed any meaningful reduction in tok/s. I am achieving token rate spot on with what others have claimed in their benchmarks(\\~100 tok/s)\n\nAt 220w I did see a reduction in tok/s to \\~80 tok/s. But 260w was just as performant as 450w.\n\nThe GPU utilization remains high, but VRAM bandwidth utilization never appears to max out. This makes me wonder whether I'm hitting some other bottleneck in the inference software or GPU architecture rather than being power-limited.\n\nHas anyone else experimented with power levels and found interesting results?\n\n\n\nLlama.cpp\n\n3080ti\n\nqwen 3.5 9b q4k\\_m\n\nMax power limit:450w\n\nStock power limit:400w",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsp309/42_gpu_power_reduction_with_zero_performance_loss/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm running a\u00a0**Qwen 3.5 9B Q4\\_K\\_M**\u00a0model on an RTX 3080 Ti and decided to progressively reduce the GPU power limit to see how much performance I would sacrifice. I started at 450W and reduced the power limit in 10% increments, eventually reaching 250W. I haven't observed any meaningful reduction in tok/s. I am achieving token rate spot on with what others have claimed in their benchmarks(\\~100",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.275
+          }
+        ]
+      }
+    }
+  ]
+}

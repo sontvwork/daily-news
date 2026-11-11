@@ -1,0 +1,922 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "2faffc46dbde6ba6",
+  "generated_at": "2026-11-10T23:56:37.542261Z",
+  "from_date": "2026-11-09",
+  "to_date": "2026-11-10",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-10T23:56:37.531171Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-10T23:56:37.531176Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 22,
+      "attempted": true,
+      "at": "2026-11-10T23:56:37.530406Z"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-11-10T23:56:37.531096Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude Fable 5.2 Gears War",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 993,
+          "points": 869
+        },
+        "reddit": {
+          "num_comments": 512
+        }
+      },
+      "nomination": {
+        "name": "Claude Fable 5.2 Gears War",
+        "seed_score": 4890.0146,
+        "summary": "Claude Fable 5.2 built a playable Gears of War clone in Unreal Engine from a 3-line prompt, complete with enemy AI, cover mechanics and active reloading. After testing it with over 100 billion tokens, Matthew Berman calls it \u201cby far the best model\u201d he\u2019s ever used.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Claude Fable 5.2 built a playable Gears of War clone in Unreal Engine from a 3-line prompt, complete with enemy AI, cover mechanics and active reloading. After testing it with over 100 billion tokens, Matthew Berman calls it \u201cby far the best model\u201d he\u2019s ever used.",
+            "body": "Claude Fable 5.2 built a playable Gears of War clone in Unreal Engine from a 3-line prompt, complete with enemy AI, cover mechanics and active reloading. After testing it with over 100 billion tokens, Matthew Berman calls it \u201cby far the best model\u201d he\u2019s ever used.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xs1y29/claude_fable_52_built_a_playable_gears_of_war/",
+            "container": "singularity",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1635,
+              "num_comments": 512
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Claude Fable 5.2 built a playable Gears of War clone in Unreal Engine from a 3-line prompt, complete with enemy AI, cover mechanics and active reloading. After testing it with over 100 billion tokens, Matthew Berman calls it \u201cby far the best model\u201d he\u2019s ever used.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3395
+          },
+          {
+            "item_id": "50429068",
+            "source": "hackernews",
+            "title": "Claude Fable 5.2 and Mythos 5.2",
+            "body": "Claude Fable 5.2 and Mythos 5.2",
+            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+            "author": "lairv",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 869,
+              "comments": 993
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Claude Fable 5.2 and Mythos 5.2",
+            "snippet": "Claude Fable 5.2 and Mythos 5.2",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50429068",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.203
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "AlphaProof Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 174,
+          "points": 558
+        },
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "AlphaProof Code",
+        "seed_score": 1518.0,
+        "summary": "AlphaProof Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50439193",
+            "source": "hackernews",
+            "title": "AlphaProof Code",
+            "body": "AlphaProof Code",
+            "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+            "author": "ilreb",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 558,
+              "comments": 174
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about AlphaProof Code",
+            "snippet": "AlphaProof Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50439193",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.8,
+            "local_rank_score": 0.354
+          },
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "GDM introduces AlphaProof Code, an AI framework that formally verified Signal\u2019s core cryptographic code in just four weeks, a task that historically takes years",
+            "body": "GDM introduces AlphaProof Code, an AI framework that formally verified Signal\u2019s core cryptographic code in just four weeks, a task that historically takes years",
+            "url": "https://www.reddit.com/r/singularity/comments/1xsmh4r/gdm_introduces_alphaproof_code_an_ai_framework/",
+            "container": "singularity",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 140,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing",
+            "snippet": "GDM introduces AlphaProof Code, an AI framework that formally verified Signal\u2019s core cryptographic code in just four weeks, a task that historically takes years",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.47300000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude Fable 5.2 scores 65",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 267,
+          "points": 370
+        },
+        "reddit": {
+          "num_comments": 62
+        }
+      },
+      "nomination": {
+        "name": "Claude Fable 5.2 scores 65",
+        "seed_score": 1282.4116,
+        "summary": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50431144",
+            "source": "hackernews",
+            "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+            "body": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+            "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 370,
+              "comments": 267
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about Claude Fable 5.2 scores 65 on Artificial Analysis, highest s",
+            "snippet": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50431144",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 10,
+            "engagement_score": 49,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1845
+          },
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Gemini 4 Argon and Carbon score 91.7% and 92.6% on SimpleBench respectively. But Claude Fable 5.2 scores 94.9%, putting it in the lead instead.",
+            "body": "Gemini 4 Argon and Carbon score 91.7% and 92.6% on SimpleBench respectively. But Claude Fable 5.2 scores 94.9%, putting it in the lead instead.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xstr95/gemini_4_argon_and_carbon_score_917_and_926_on/",
+            "container": "singularity",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 209,
+              "num_comments": 61
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Gemini 4 Argon and Carbon score 91.7% and 92.6% on SimpleBench respectively. But Claude Fable 5.2 scores 94.9%, putting it in the lead instead.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          },
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "Fable 5.2 Leads the Singularity Gate: Benchmark for AI predicting paradigm-breaking scientific discoveries after model traning cutoff",
+            "body": "Fable 5.2 Leads the Singularity Gate: Benchmark for AI predicting paradigm-breaking scientific discoveries after model traning cutoff\n**Claude Fable 5.2 is a major improvement on the Singularity Gate! It scores 25.8%** while using 28.8% of a week's limit on a $200 plan. **However, the models seem to hit a wall on the 12 Hard tasks, the most paradigm-breaking discoveries. Five models score between 7.6% and 8.0%**. \n\n\n\nhttps://i.redd.it/q8ok053aft0i1.png\n\nhttps://i.redd.it/c9z77rwnft0i1.png\n\n**I suspect that past a certain point, a bigger model doesn't do better in truly out-of-distribution areas as long as the base model behind the public models stays the same. On the 12 Hard tasks, Opus 5.5 and Fable 5.2 are level, and so are Sol and Astra.** \n\nhttps://i.redd.it/rxo81i6vft0i1.png\n\nFable 5.2 shows a slight improvement over Fable 5.1 on the Hard tasks in point estimate, but the difference is within the standard error. I assume Fable 5.1 was distilled from Anthropic's internal Model 2 and Fable 5.2 from Model 3.\n\n**Such a small improvement (if any) between Anthropic base models on truly paradigm-breaking discoveries is worth watching.** If the next model from a new base model shows no gain either, that's a worrying sign for AI in science and its path to the singularity.\n\nWhen it comes to all tasks, there is noticeable progress. You can see it with each release. Cost-wise, Fable 5.2 writes fewer output tokens than Fable 5.1 but reads more context, so at equal prices it would cost about the same. The cut in API prices makes it about 20% cheaper.  \n  \n**You can see each model's per-field breakdown below.** Fable 5.1 answered only 3 of the 14 Life Sciences tasks, so it has no score in that field.\n\nhttps://i.redd.it/aophl53yet0i1.png\n\nYou can check the full results below:  \nWebsite: [https://singularitygate.org/](https://singularitygate.org/)  \nRepo: [https://github.com/deathes/singularity-gate](https://github.com/deathes/singularity-gate)  \nPaper: [https://zenodo.org/records/20358378](https://zenodo.org/records/20358378)",
+            "url": "https://www.reddit.com/r/singularity/comments/1xss94y/fable_52_leads_the_singularity_gate_benchmark_for/",
+            "container": "singularity",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**Claude Fable 5.2 is a major improvement on the Singularity Gate! It scores 25.8%** while using 28.8% of a week's limit on a $200 plan. **However, the models seem to hit a wall on the 12 Hard tasks, the most paradigm-breaking discoveries. Five models score between 7.6% and 8.0%**. \n\n\n\nhttps://i.redd.it/q8ok053aft0i1.png\n\nhttps://i.redd.it/c9z77rwnft0i1.png\n\n**I suspect that past a certain point,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4665
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "USPS ZIP Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 387,
+          "points": 718
+        }
+      },
+      "nomination": {
+        "name": "USPS ZIP Code",
+        "seed_score": 1172.0295,
+        "summary": "USPS now offers official ZIP Code boundary polygons",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50431058",
+            "source": "hackernews",
+            "title": "USPS now offers official ZIP Code boundary polygons",
+            "body": "USPS now offers official ZIP Code boundary polygons",
+            "url": "https://postalpro.usps.com/zcb",
+            "author": "munro",
+            "container": "Hacker News",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 718,
+              "comments": 387
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about USPS now offers official ZIP Code boundary polygons",
+            "snippet": "USPS now offers official ZIP Code boundary polygons",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50431058",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "2019 JavaScript",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 64,
+          "points": 228
+        }
+      },
+      "nomination": {
+        "name": "2019 JavaScript",
+        "seed_score": 438.0,
+        "summary": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50443812",
+            "source": "hackernews",
+            "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "body": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "url": "https://github.com/GoogleChrome/modern-web-guidance",
+            "author": "paulirish",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 228,
+              "comments": 64
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Show HN: Get your coding agent off ~2019 JavaScript, onto mo",
+            "snippet": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50443812",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 6,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2765
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Claude Whiteboards Claude Sheets Claude Data",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 115,
+          "points": 147
+        }
+      },
+      "nomination": {
+        "name": "Claude Whiteboards Claude Sheets Claude Data",
+        "seed_score": 393.0,
+        "summary": "Claude Whiteboards, Claude Sheets, and Claude Data",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50443716",
+            "source": "hackernews",
+            "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "body": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+            "author": "Yorothegoat",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 147,
+              "comments": 115
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Claude Whiteboards, Claude Sheets, and Claude Data",
+            "snippet": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50443716",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.8,
+            "local_rank_score": 0.29700000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "3 7 weeks",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "3 7 weeks",
+        "seed_score": 24.3952,
+        "summary": "My agents broke each other's work 3 times in 7 weeks. The code was never the problem.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "My agents broke each other's work 3 times in 7 weeks. The code was never the problem.",
+            "body": "My agents broke each other's work 3 times in 7 weeks. The code was never the problem.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xrmzpz/my_agents_broke_each_others_work_3_times_in_7/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing",
+            "snippet": "My agents broke each other's work 3 times in 7 weeks. The code was never the problem.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.066
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "ChatGPT Codex",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Codex",
+        "seed_score": 11.6673,
+        "summary": "Is anyone else of the opinion that chatgpt.com (no matter what model) - is way better than the ChatGPT desktop or Codex?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Is anyone else of the opinion that chatgpt.com (no matter what model) - is way better than the ChatGPT desktop or Codex?",
+            "body": "Is anyone else of the opinion that chatgpt.com (no matter what model) - is way better than the ChatGPT desktop or Codex?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xs5hs1/is_anyone_else_of_the_opinion_that_chatgptcom_no/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing",
+            "snippet": "Is anyone else of the opinion that chatgpt.com (no matter what model) - is way better than the ChatGPT desktop or Codex?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.0815
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Hermes Agent MIT macOS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Hermes Agent MIT macOS",
+        "seed_score": 10.5,
+        "summary": "I run a bunch of Hermes Agent bots on my Mac mini and I got tired of juggling terminals to see who's working and who's waiting on me. So I built HermesBot, and I just open sourced it.\n\nWhat it does:\n\n* One window for all your Hermes bots: who's working, what each one is doing, who's waiting for your reply. The bot's question shows up as a card and you answer in one click.\n* Pick the model per conv",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "I built a desktop app to run a whole team of Hermes Agent bots from one window (open source, MIT, macOS)",
+            "body": "I built a desktop app to run a whole team of Hermes Agent bots from one window (open source, MIT, macOS)\nI run a bunch of Hermes Agent bots on my Mac mini and I got tired of juggling terminals to see who's working and who's waiting on me. So I built HermesBot, and I just open sourced it.\n\nWhat it does:\n\n* One window for all your Hermes bots: who's working, what each one is doing, who's waiting for your reply. The bot's question shows up as a card and you answer in one click.\n* Pick the model per conversation without rewriting the bot's profile: Claude, GPT, Gemini, or a local model on your own GPU, whatever your Hermes is set up with.\n* The server listens on localhost only. No cloud in between. Bots, tools and memory stay in Hermes on your machine.\n* MIT license, free.\n\nCaveats up front: it's v0.2 and early. macOS only (Apple silicon for the packaged app). No prebuilt download yet, you build it from source with `npm run pack` and it's unsigned. It needs Hermes Agent with the Webapp gateway and password login, and you can't create or edit bots or routines from the app yet.\n\nThere's a demo mode with fake data if you want to look around without Hermes: `npm ci`, `npm run dev`, then open port 4330 on localhost with `?demo=1`.\n\nIndependent project, not affiliated with Nous Research. I'm the author. Repo: https://github.com/Wecko-ai/hermes-bot\n\nCurious what's missing for your local setup.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xspgpa/i_built_a_desktop_app_to_run_a_whole_team_of/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I run a bunch of Hermes Agent bots on my Mac mini and I got tired of juggling terminals to see who's working and who's waiting on me. So I built HermesBot, and I just open sourced it.\n\nWhat it does:\n\n* One window for all your Hermes bots: who's working, what each one is doing, who's waiting for your reply. The bot's question shows up as a card and you answer in one click.\n* Pick the model per conv",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4475
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Kvark Sparkle 1.1 Qwen3.8-27B Apache 2.0",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Kvark Sparkle 1.1 Qwen3.8-27B Apache 2.0",
+        "seed_score": 7.5,
+        "summary": "We released Kvark Sparkle 1.1, the second model in our Qwen3.8-27B line. Open weights, Apache 2.0, MTP head intact, BF16 / FP8 / GGUF.\n\n\n\n\\*\\*What it is for:\\*\\* document work. You give it \\`search\\` and \\`read\\_page\\` tools over a document base. It searches, reads the page, answers from the passage, and when three searches in a row miss the fact it stops and says NOT IN DOCUMENTS instead of makin",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "Kvark Sparkle 1.1 (Qwen3.8-27B fine-tune, Apache 2.0): agentic document QA that says \"not in the documents\" 91.5% of the time, with 7-48% fewer reasoning tokens than the base",
+            "body": "Kvark Sparkle 1.1 (Qwen3.8-27B fine-tune, Apache 2.0): agentic document QA that says \"not in the documents\" 91.5% of the time, with 7-48% fewer reasoning tokens than the base\nWe released Kvark Sparkle 1.1, the second model in our Qwen3.8-27B line. Open weights, Apache 2.0, MTP head intact, BF16 / FP8 / GGUF.\n\n\n\n\\*\\*What it is for:\\*\\* document work. You give it \\`search\\` and \\`read\\_page\\` tools over a document base. It searches, reads the page, answers from the passage, and when three searches in a row miss the fact it stops and says NOT IN DOCUMENTS instead of making something up.\n\n\n\n\\*\\*How:\\*\\* LoRA SFT on top of Sparkle 1.0 (agent trajectories over a public legal corpus, MuSiQue multi-hop doc QA, retention data), plus a short stop rule that ships in the system prompt.\n\n\n\n\\*\\*Document work (GroundedWork, our agentic RAG eval: public Serbian documents, thinking on, LLM judge vs gold answers, 3 runs per question):\\*\\*\n\n\n\n| | Qwen3.8-27B | Sparkle 1.0 | Sparkle 1.0 + stop rule | \\*\\*Sparkle 1.1 + stop rule\\*\\* |\n\n|---|---|---|---|---|\n\n| Document Q&A (70 questions \u00d7 3) | 85.7 | 86.2 | 89.5 | \\*\\*91.0\\*\\* |\n\n| Answer not in the documents, correctly declined (98 \u00d7 3) | not yet run | 36% | 74% | \\*\\*91.5%\\*\\* |\n\n\n\nNote that the stop rule alone does a lot of the work for 1.0 (36% to 74%). Training adds the rest: +17.5 points on declining against 1.0 with the same rule. The base Qwen on the decline set is not measured yet; I will add it here when it is.\n\n\n\n\\*\\*General ability vs Qwen3.8-27B (same harness, paired):\\*\\*\n\n\n\n| | Qwen3.8-27B | Sparkle 1.1 | median reasoning tokens (base \u2192 1.1) |\n\n|---|---|---|---|\n\n| GPQA Diamond | 88.8 | 88.3 | 7,670 \u2192 4,471 (\u221242%) |\n\n| AIME 2026 | 95.8 | 92.5 | 14,822 \u2192 8,732 |\n\n| HMMT | 86.1 | 88.1 | 21,182 \u2192 13,540 |\n\n| LiveCodeBench | 82.0 | 86.0 | 15,276 \u2192 8,607 |\n\n| IFEval | 90.8 | 91.1 | 695 \u2192 646 (\u22127%) |\n\n| MMLU-Pro | 83.6 | 84.0 | 708 \u2192 518 |\n\n| FRAMES | 70.6 | 69.8 | 1,228 \u2192 644 (\u221248%) |\n\n\n\nNone of the accuracy differences is significant (95% intervals arer answer: 32.9 s vs 40.8 s on the same hardware.\n\n\n\n\\*\\*Public agentic / long-context sets (FP8, vLLM, thinking on):\\*\\*\n\n\n\n| | Qwen3.8-27B | Sparkle 1.1 |\n\n|---|---|---|\n\n| BrowseComp-Plus (830 queries, BM25, official judge prompt) | 22. median output tokens |\n\n| LongBench v2 (503) | 58.6 | 57.7 |\n\n| SWE-bench Verified (500, mini-swe-agent) | \\*\\*81.8\\*\\* | 73.0 |\n\n\n\n\\*\\*Where it is weak, so you don't have to find out yourself:\\*\\*\n\n\\- SWE-bench is significantly below the base. Shorter thinking costs accuracy in agentic coding. For coding, use the base model.\n\n\\- Questions that need links across several documents are its weakness\n\n\\- English questions over Serbian documents are weaker than Serbian ones.\n\n\\- Nothing measured past 64k; no separate safety eval.\n\n\n\n\\*\\*Run it:\\*\\*\n\n\n\n\\`\\`\\`\n\nvllm serve Egzakta/Kvark-Sparkle-1.1-27B-FP8 \\\\\n\n  \\--max-model-len 131072 --kv-cache-dtype fp8 \\\\\n\n  \\--reasoning-parser qwen3 \\\\\n\n  \\--enable-auto-tool-choice --tool-call-parser qwen3\\_coder \\\\\n\n  \\--speculative-config '{\"method\":\"mtp\",\"num\\_speculative\\_tokens\":3}'\n\n\\`\\`\\`\n\n\n\nFor document agents, put the stop rule from the card into the systline rate drops a lot.\n\n\n\n\\- BF16: [https://huggingface.co/Egzakta/Kvark-Sparkle-1.1-27B](https://huggingface.co/Egzakta/Kvark-Sparkle-1.1-27B)\n\n\\- FP8: [https://huggingface.co/Egzakta/Kvark-Sparkle-1.1-27B-FP8](https://huggingface.co/Egzakta/Kvark-Sparkle-1.1-27B-FP8)\n\n\\- GGUF: [https://huggingface.co/Egzakta/Kvark-Sparkle-1.1-27B-GGUF](https://huggingface.co/Egzakta/Kvark-Sparkle-1.1-27B-GGUF)\n\n\n\nBuilt by  Egzakta's AI Lab in Belgrade. We run these on-prem for organisations that cannot send their documents to an API, which is why \"I don't know\" matters more to us than another point on a leaderboard.\n\n\n\nHappy to answer questions on the training data, the stop rule or the eval harness. If you test it on your own document set, I'd like to see where it breaks.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsp2tv/kvark_sparkle_11_qwen3827b_finetune_apache_20/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We released Kvark Sparkle 1.1, the second model in our Qwen3.8-27B line. Open weights, Apache 2.0, MTP head intact, BF16 / FP8 / GGUF.\n\n\n\n\\*\\*What it is for:\\*\\* document work. You give it \\`search\\` and \\`read\\_page\\` tools over a document base. It searches, reads the page, answers from the passage, and when three searches in a row miss the fact it stops and says NOT IN DOCUMENTS instead of makin",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4535
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Openbar Claude Code Codex Mac",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Openbar Claude Code Codex Mac",
+        "seed_score": 6.364,
+        "summary": "Openbar: answer Claude Code and Codex prompts from the Mac notch",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Openbar: answer Claude Code and Codex prompts from the Mac notch",
+            "body": "Openbar: answer Claude Code and Codex prompts from the Mac notch",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xridpb/openbar_answer_claude_code_and_codex_prompts_from/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing",
+            "snippet": "Openbar: answer Claude Code and Codex prompts from the Mac notch",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.196
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Loop Guard QFN/Strata experiment",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Loop Guard QFN/Strata experiment",
+        "seed_score": 4.5,
+        "summary": "Warning: human post ;)\n\nHi local enthusiasts, about 6 months ago I discovered this subreddit and been reading and learning lots of stuff from here. I got my 27b model running on my 3090 and I\u2019ve been happy with, it was handling my daily family tasks via telegram and some small automation and coding tasks. For serious coding stuff im still hooked to subs. Once I started playing with local models I",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Loop Guard QFN/Strata experiment",
+            "body": "Loop Guard QFN/Strata experiment\nWarning: human post ;)\n\nHi local enthusiasts, about 6 months ago I discovered this subreddit and been reading and learning lots of stuff from here. I got my 27b model running on my 3090 and I\u2019ve been happy with, it was handling my daily family tasks via telegram and some small automation and coding tasks. For serious coding stuff im still hooked to subs. Once I started playing with local models I went into rabbit hole of implementing my own harness out of curiosity. Since I only was running 27b on 60k context played a lot with compaction and making the model less forgetful with harness internal tasks. Since then I\u2019m still playing with ideas how can have better results with local models (like all the people in this sub).\n\nAnyways, enough personal story the reason I wanted to post this is recently I started playing with strata qfn (3090 + 64ram) and although the model is more clever and is my daily driver now,  it\u2019s been going off roads into loops and over verifying things for me. One thing that helped with that is loop guarding I\u2019ve added to my harness : [https://caretz.dev/docs/loop-guard/](https://caretz.dev/docs/loop-guard/)  \nThis has been solving the issue of retrying the same failing calls (doesnt happen too much with qfn) but most importantly another model looks at last n tool calls and judges if the model went to some off direction. For the judge I\u2019m using 35b qwen.\n\nIf any of you found some trick that works with qfn and making more reliable would love to hear it.\n\nThanks.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsv5z1/loop_guard_qfnstrata_experiment/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Warning: human post ;)\n\nHi local enthusiasts, about 6 months ago I discovered this subreddit and been reading and learning lots of stuff from here. I got my 27b model running on my 3090 and I\u2019ve been happy with, it was handling my daily family tasks via telegram and some small automation and coding tasks. For serious coding stuff im still hooked to subs. Once I started playing with local models I",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2785
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-17",
+      "heuristic_name": "Lessons AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Lessons AI",
+        "seed_score": 4.2426,
+        "summary": "Lessons from running AI coding agents unattended for months: separate the planner from the builder, commit every phase, and assume the crash",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Lessons from running AI coding agents unattended for months: separate the planner from the builder, commit every phase, and assume the crash",
+            "body": "Lessons from running AI coding agents unattended for months: separate the planner from the builder, commit every phase, and assume the crash",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xrsu8g/lessons_from_running_ai_coding_agents_unattended/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-09",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "Lessons from running AI coding agents unattended for months: separate the planner from the builder, commit every phase, and assume the crash",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 5,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24450000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-19",
+      "heuristic_name": "Claude Code Gemini CLI Codex OpenCode",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Claude Code Gemini CLI Codex OpenCode",
+        "seed_score": 3.0,
+        "summary": "I built an open-source, local-first desktop workspace that combines Claude Code, Gemini CLI, Codex, OpenCode, and Ollama in one studio (with Multi-Agent Team & AI Cross-Examination)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "I built an open-source, local-first desktop workspace that combines Claude Code, Gemini CLI, Codex, OpenCode, and Ollama in one studio (with Multi-Agent Team & AI Cross-Examination)",
+            "body": "I built an open-source, local-first desktop workspace that combines Claude Code, Gemini CLI, Codex, OpenCode, and Ollama in one studio (with Multi-Agent Team & AI Cross-Examination)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xse21j/i_built_an_opensource_localfirst_desktop/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.5,
+            "why_relevant": "Reddit listing",
+            "snippet": "I built an open-source, local-first desktop workspace that combines Claude Code, Gemini CLI, Codex, OpenCode, and Ollama in one studio (with Multi-Agent Team & AI Cross-Examination)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 90,
+            "engagement_score": 5,
+            "source_quality": 0.6,
+            "local_rank_score": 0.555
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-18",
+      "heuristic_name": "Eco Mode AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Eco Mode AI",
+        "seed_score": 3.0,
+        "summary": "'Eco Mode' AI coding agent pricing vs token burn. Is running frontier models for test execution a waste? (+benchmark)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "'Eco Mode' AI coding agent pricing vs token burn. Is running frontier models for test execution a waste? (+benchmark)",
+            "body": "'Eco Mode' AI coding agent pricing vs token burn. Is running frontier models for test execution a waste? (+benchmark)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xt2hvz/eco_mode_ai_coding_agent_pricing_vs_token_burn_is/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing",
+            "snippet": "'Eco Mode' AI coding agent pricing vs token burn. Is running frontier models for test execution a waste? (+benchmark)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 5,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4445
+          }
+        ]
+      }
+    }
+  ]
+}

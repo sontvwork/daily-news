@@ -1,0 +1,286 @@
+{
+ "date": "2026-11-12",
+ "runs": [
+  {
+   "started_at": "2026-11-12T00:04:45+00:00",
+   "seconds": 3.3,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 7,
+   "articles_ok": 6,
+   "articles_error": 0,
+   "articles_skipped": 0,
+   "hn_ok": 6,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "6/6 bài gốc ok (0 bỏ qua), 6/6 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 3.3s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://news.ycombinator.com/item?id=50455811",
+   "hn_url": "https://news.ycombinator.com/item?id=50455811",
+   "hn": {
+    "title": "Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents",
+    "points": 42,
+    "comments": 35,
+    "text": "Hi HN, we’re Alan and Akshay from Pomerado (https://pomerado.ai/). We connect your agents to any website by turning sites into deterministic, self-healing APIs in minutes, fully self-serve.\nAgents are no longer limited by their intelligence, but rather by their ability to interact with systems. Airlines, banks, e-commerce, insurance portals, government sites, and legacy portals all lack APIs or MCPs and are common parts of personal assistant or business workflows. Agents instead rely on browser automation or computer use, which can be slow, expensive, and unreliable. And even if computer use were perfect, most companies have banned it out of security and compliance concerns.\nWe discovered this problem while tinkering with our own personal assistants. When OpenClaw came out, we wanted to “live our lives through our agents” and have them do everything for us. We soon found their usefulness was restricted by what tools they could connect to. For example, when trying to book flights, they fell back on computer use, which failed to checkout. These issues got magnified on repeated workflows, like searching many airlines at once.\nPomerado started off as a project to improve these personal assistant workflows. As we started building, we realized that just-in-time tool creation could have significant applications for AI builders in legacy verticals.\nWe’re ex-McKinsey and Scale AI, where we drove agent deployments in healthcare, professional services, and telecom. Each time, the biggest bottleneck was getting agents to interface well with legacy websites and apps.\nPomerado is what we built. It’s a self-serve platform where devs can create APIs for any website (even those they don’t own), in minutes. Users (or their coding agents) provide a short natural language description, answer a few questions about their workflow, and receive a MCP in less than an hour. Future tool calls use the deterministic MCP, which usually returns results in 5-30 seconds.\nHere’s a walkthrough of our product: https://youtu.be/Bi4jci7rgHo\nIn practice:\n- Our agent opens a browser, explores the website, and performs the requested task once by writing HTTP requests or a Playwright script. This example run establishes how to navigate the website, interact with the relevant controls, and obtain the desired result. If any additional user input is needed (e.g., login, clarification) the agent will ask the user over MCP.\n- Afterwards, the agent uses the example run, along with all of the data it recorded, to create a generalizable and repeatable API. Throughout this process, a separate Guardian model reviews the coding agent’s calls against a set of guardrails. We also run a battery of tests with synthetic inputs to ensure that the API is generalized and not overfit to one input. A final publication agent ensures that the integration publishes a reasonable and generalized input/output schema\n- We also handle sites that require authentication and 2FA. For authentication, we pass off to a deterministic sign-in process to ensure the model and our recorders never read customer credentials. Users can store 2FA TOTP seeds or link their account to a Pomerado phone number for us to autofill 2FA for them as well\n- If future runs fail, a maintenance job is kicked off to repair and improve the tool. The maintenance job can fix broken steps (e.g., a renamed button), add additional functionality (e.g., searching for business class flights in addition to economy), or add new guardrails (e.g., reservation dates must be in the future). We’ve even seen people improve tools by just saying “please make this faster”\nUnlike computer use, our MCPs are deterministic at runtime, which makes them much faster and cheaper. By taking slightly longer to do a task the first time, you reap the benefits much more in the future. It’s a great fit for repeated, high-volume tasks you want your agent to do.\nWe’d love to have you try it! We have both an open-source (MIT)…"
+   },
+   "comments": [
+    {
+     "author": "hkalbert71",
+     "replies": 0,
+     "text": "One distinction worth measuring is transport success versus actual operation success.\nA tool can return HTTP 200 while making no useful progress. The agent may then repeat the same call with identical arguments.\nWe're exploring this from an observability angle with KORA Doctor. It can flag repeated tool calls using privacy-preserving fingerprints, but it doesn't block live retries or determine whether caching is safe.\nDo your generated MCP tools expose operation-level status or state-change…"
+    },
+    {
+     "author": "rahimnathwani",
+     "replies": 1,
+     "text": "What are the main advantages compared with https://github.com/mvanhorn/cli-printing-press\nThe obvious differences I can see are:\n- generates an MCP server instead of a CLI\n- at 'minting' time, uses OpenAI API keys, instead of coding agent subscription\n- tries to solve for a particular use case, instead of all the site provides"
+    },
+    {
+     "author": "jrecyclebin",
+     "replies": 0,
+     "text": "Site must be slammed - but I'm interested bc I'm working on a similar thing. But my project (one aspect at least) is for expressing HTTP calls as MCP tools.\nThe format looks like this:\n---\n[add-list-item] Add a new item to a list.\n# Adjust the fields object to match your list's actual columns.\n$fields is object\nPOST https://graph.microsoft.com/v1.0/sites/$site_id/lists/$list_id/items\nAuthorization: Bearer $token\nContent-Type: application/json\n{\n\"fields\": $fields\n}\nHTTP 201\nBeen having a lot of…"
+    },
+    {
+     "author": "bshafiq",
+     "replies": 1,
+     "text": "Congrats on the launch! The approach of turning unstructured sites into deterministic MCPs is really interesting, especially the self-healing maintenance jobs.\nCurious about the failure mode: what happens when a browser action fails or times out? The agent will often just blindly retry the exact same MCP tool call with the exact same arguments. Since the tool call itself returns a 200 OK, standard retry counters miss it, and you just burn tokens while the browser keeps timing out in the…"
+    },
+    {
+     "author": "shipsafestack",
+     "replies": 1,
+     "text": "How do you handle credentials and sessions for sites behind a login, like the bank and insurance portals you mention? Is the user's password or session cookie stored on your side, or does the generated MCP run against a session the user keeps locally?\nRelated: page content is untrusted input that now flows straight into an agent's context. Do the deterministic tools return only structured fields you've extracted, or can arbitrary page text (reviews, messages, product descriptions) pass through?…"
+    }
+   ]
+  },
+  {
+   "url": "https://antigravity.google/docs/changelog/",
+   "article": {
+    "url": "https://antigravity.google/docs/changelog/",
+    "status": "ok",
+    "title": "Changelog | Google Antigravity Docs",
+    "chars": 515104,
+    "text": "Model launch·November 10, 2026\nGemini 4 Carbon\nGemini 4 Carbon is our strongest model for long-horizon software engineering, knowledge work, scientific discovery, and cybersecurity.\nGemini 4 Carbon: Read on the Antigravity blog\nv2.31.0\nLatest\nNovember 9, 2026\n/swarm, Font size setting, split-view plugins, and browser download approvals\nThis release adds a font size setting, lets you open plugin views next to a conversation in split view, and asks for your approval before the browser agent downloads a file. It also brings call summaries to voice mode and Google Cloud project autocomplete to Pay-As-You-Go setup. It includes 10 improvements and 18 fixes.\nImprovements(10)\nYou can now use /swarm to coordinate multiple subagents over a message board to complete long-horizon tasks.\nYou can now change the interface font size to 12, 14, or 16 pixels in Settings > Appearance. The code preview in each theme card is now collapsible.\nFull-page plugin views can now share a split view with a conversation, so opening a conversation from a plugin no longer navigates away from it. The window title bar, including the update button, now stays visible on full-page plugin views.\nWhen the browser agent tries to download a file, the download now pauses until you approve it.\nPages controlled by the browser agent can no longer lock your mouse pointer or keyboard.\nWhen a voice call ends, its transcript card now shows a short summary of the call. Answers you speak during a multi-question prompt now move the question card forward, and answering on the card tells voice mode to skip to the next question.\nPay-As-You-Go setup and license switching in Settings now suggest your Google Cloud projects as you type instead of requiring you to enter the project ID by hand.\nInstalling a plugin or skill from a plugin card in the agent's latest reply now resumes the conversation automatically.\nIf you use remote agents, creating a project now offers a This Computer or Remote choice in one wizard instead of a separate New Remote Project item.\nYou can now scroll the conversation and side panels line by line with the Up and Down arrow keys.\nFixes(18)\nFixed an issue where sign-in could get stuck on Signing in... for some personal accounts.\nFixed an issue where conversations from a project whose settings file was missing disappeared from the sidebar when it was grouped by project.\nFixed an issue where content loading above the visible area made your reading position jump while you were scrolled up in a conversation.\nFixed an issue where, with Always Proceed set for artifact reviews, an artifact that asked for feedback hid its Proceed button and left the agent waiting.\nFixed an issue where voice mode kept failing for up to two minutes after one failed connection attempt.\nFixed an issue where file and artifact previews in the side panel could show stale contents after the file changed.\nFixed an issue where switching tabs in the side panel lost each tab's scroll position.\nFixed an issue where plugin panels showed blank in pinned side panel tabs, covered the edges of the side panel, or stayed on screen over a maximized side panel.\nFixed an issue where a plugin's context providers were missing after you added it from its full-page details screen.\nFixed an issue where a plugin that declared extra fields in its manifest lost all of its context providers.\nFixed an issue where plugin panels could not play sound until you interacted with them.\nFixed an issue where conversation titles sometimes guessed what an abbreviation in your first message stood for instead of keeping it as written.\nFixed an issue where opening a PDF larger than the display limit showed a second, raw error under the message saying the file is too large.\nFixed an issue where network error messages showed an internal service address instead of a plain explanation.\nFixed an issue where requests failed when a thinking model took more than a minute to start responding.\nFixed an issue where a model your Google Cloud…"
+   }
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "hn_url": "https://news.ycombinator.com/item?id=50456791",
+   "hn": {
+    "title": "Gemini Decisions API",
+    "points": 221,
+    "comments": 74
+   },
+   "comments": [
+    {
+     "author": "eminence32",
+     "replies": 8,
+     "text": "I'm sort of surprised it took Jev for everyone to realize \"oh yeah, this is a useful thing that we should have in our product portfolio\".\nBut maybe this is one of those things that's only obvious in retrospect? I'm sure people were trying something similar years ago with grammar-constrained outputs (for example to only output a simple json structure), but you can't get probabilities out of the model that way. Which makes me wonder: how do these models calculate probabilities?"
+    },
+    {
+     "author": "kodoman",
+     "replies": 6,
+     "text": "I have still not used a decision model, How are people using them at the moment? is any one using them in a coding harness like Pi?"
+    },
+    {
+     "author": "theanonymousone",
+     "replies": 1,
+     "text": "The best decision model I have used (besides Jev itself) is respan/span-02, which is based on (finetuned from?) Gemma4 26A4. That makes me optimistic for this release, despite the high cost."
+    },
+    {
+     "author": "2001zhaozhao",
+     "replies": 1,
+     "text": "We're about at the point where the AI is now pretty insanely cheap. Passing 100K tokens of context then asking hundreds of questions of 100 tokens each would cost about as much as a single Google search API call.\nOut of the hundreds of questions, most of them could even be different variations of the same question to capture more nuance than what is normally possible in a single multiple-choice."
+    },
+    {
+     "author": "waximabbax",
+     "replies": 1,
+     "text": "Its bit more expensive than other other Decision Models in the same lane.\nHowever, it can accept Audio and Video as input as well and for those specific cases it can be extremely useful."
+    }
+   ],
+   "article": {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "status": "ok",
+    "title": "Gemini Decisions API: Fast multimodal decisions",
+    "chars": 7568,
+    "text": "Gemini Decisions API: Fast, calibrated multimodal decisions\nNov 11, 2026\n|\nx.com\nFacebook\nLinkedIn\nMail\nIntroducing the Gemini Decisions API, powered by our new Gemini Decision 1 model. Evaluate up to 1,000 yes/no, choice, and rubric-scoring questions in a fast, single pass across text, images, audio, video, and PDFs.\nMin Choi\nProduct Manager, Google DeepMind\nFelix Yu\nPrincipal Scientist, Google DeepMind\nShare\nx.com\nFacebook\nLinkedIn\nMail\nYour browser does not support the audio element.\nListen to article\n[[duration]] minutes\nThis content is generated by Google AI. Generative AI is experimental\nWe are introducing the Gemini Decisions API to help you make fast, probabilistic choices across text, images, audio, video, and PDFs. This tool computes confidence scores for multiple questions in a single pass, providing a cost-effective way to route queries, grade content, or check policy rules. You can start building today by accessing your API key in Google AI Studio and reviewing our documentation for Python, JavaScript, and REST guides.\nSummaries were generated by Google AI. Generative AI is experimental.\nToday, we’re introducing the Gemini Decisions API, a new endpoint for fast, closed-set decisions powered by our new Gemini Decision 1 model (gemini-decision-1), available through the Gemini API in Google AI Studio.\nThe Decisions API gives you purpose-built primitives for bounded choices like tool selection, policy checks, model routing, and context grading. You can pass one multimodal input across text, images, audio, video, and PDFs (up to 256K tokens) along with up to 1,000 independent questions. Rather than generating answer text token by token, Gemini Decision 1 scores your candidate options in a single forward pass, returning probabilities and confidence scores in 150-250 ms end-to-end latency at $0.10 per 1M input tokens with zero output tokens billed.\nStrong performance and calibration\nOn benchmarks spanning agent routing, reasoning, ranking, and multimodal understanding, Gemini Decision 1 leads across the suite, with the lowest calibration error.\nGemini Decision 1 scores options without token-by-token decoding, keeping median latency 50-100 ms of model compute (150-250 ms end-to-end), across multimodal inputs and contexts up to 16K tokens, remaining nearly flat from 1 to 100 questions per request. With zero output tokens billed, Gemini Decision 1 with the Decisions API is nearly 5x cheaper across the shared benchmark suite than Gemini 3.5 Flash-Lite with the Interactions API.\nNative multimodal evaluation across three decision types in one pass\nBuilt on Gemini’s native multimodal architecture, Gemini Decision 1 can process text, images, audio, video, and PDFs directly in a single forward pass. You can combine modalities in one shared input, such as pairing a call recording with account metadata or a scanned PDF claim with damage photos, and tune resolution on image and video inputs to control visual detail and token cost.\nYou can evaluate multiple questions against that shared input in a single request, mixing yes/no checks, multiple choice, and rubric scores. Every answer includes a confidence score (from 0 to 1) so your code can route ambiguous cases to a fallback or human reviewer:\nnoul (Yes/No): Estimates the probability that a yes/no condition holds, with optional true and false description criteria.\nchoice (Multiple Choice): Selects from 2 to 255 choices, returning the winner and normalized probabilities for every candidate.\nscore (Ordered Rubric): Grades inputs across an ordered rubric (starting at 0), returning a continuous weighted score and per-level probabilities.\nThe input field uses the same Content block format as the Interactions API. Here is how to check a photo of a breakroom counter, together with a text note, against all three question types in one request:\nfrom google import genai\nclient = genai.Client(http_options={\"api_version\": \"v1beta\"})\nresult =…"
+   }
+  },
+  {
+   "url": "https://blog.atuin.sh/threads-agent-sessions/",
+   "hn_url": "https://news.ycombinator.com/item?id=50453637",
+   "hn": {
+    "title": "Atuin Threads: All your agent sessions on every machine",
+    "points": 184,
+    "comments": 66
+   },
+   "comments": [
+    {
+     "author": "nzoschke",
+     "replies": 6,
+     "text": "I started building my own version of this in Superlogical Rex.\nIt's a bit hard to decide where to hook in.\nRex has events, harnesses have hooks, terminal output can set program status, git has hooks.\nI'm not sure I actually want every session from every machine saved. That's a lot of noise especially when half of coding sessions are experimental / throwaway.\nBut at the same time its not that much data that's easy to ripgrep / LLM through."
+    },
+    {
+     "author": "baalimago",
+     "replies": 0,
+     "text": "I suspect this is one of those problems \"everyone\" has built their own solution for. Including me!\nI built slivingdoc[0] with an alternative approach: instead of syncing exact sessions (which are often quite noisy, and not so useful), the agents gets a living document with automatic merge conflict resolution backed by s3 (\"infinite\" storage). Idea being that the agents are prompted to summarize their context into slivingdoc as normal utf-8 files. So this way only you only need to add the stdio…"
+    },
+    {
+     "author": "hugmynutus",
+     "replies": 3,
+     "text": "Really enjoyed Atuin for a few weeks, until I realized it doesn't have correct `EFSRO` (Error: Read-Only File System) handling. So when my `/home` mount had a raid array drive failure it broke my local shell. Issue has been sitting open for almost a year. Pretty disappointing."
+    },
+    {
+     "author": "NelsonMinar",
+     "replies": 1,
+     "text": "It's not clear which parts of Claude state are safe to sync and which you want to keep local to one machine. I'm doing something with syncthing trying to keep agent session history available and little bits of it keep breaking. I haven't looked at this new feature in atuin does it have a really good understanding of what is worth syncing?"
+    },
+    {
+     "author": "kristopolous",
+     "replies": 0,
+     "text": "My version is very unixy:\n$ ctools resume ssh://laptop.local/code/project\nGoes to laptop.local, looks for sessions done in that path, finds the most recent, copies it locally and resumes it.\nThere's also ls, grep, copy, cat... It looks and feels like the existing tools, that's the point.\nWorkflow is the thing that matters here and I'm terminal first\nI'll make it more flashy soon\nhttps://github.com/day50-dev/ctools"
+    }
+   ],
+   "article": {
+    "url": "https://blog.atuin.sh/threads-agent-sessions/",
+    "status": "ok",
+    "title": "Atuin Threads: All your agent sessions on every machine",
+    "chars": 7544,
+    "text": "Atuin Threads: All your agent sessions on every machine\nAtuin Threads: one searchable, synced history for every agent session, on every machine\nStart a task in Claude Code, then resume it in Codex\nEllie Huxtable\n27 Oct 2026\n— 4 min read\nShare\nAtuin Threads: one searchable, synced history for every agent session, on every machine\nStart a task in Claude Code, then resume it in Codex on another machine — with all context intact. Install, then run atuin resume\n0:00\n/0:13\nOver the past year or two, how I use my terminal has changed dramatically. For years I was the sole user of my shell, and everything in my Atuin history was authored by me. Now, more than half the commands running on my machines weren’t written by me.\nThese days, much of my work happens through a coding agent, typed into a little “Topsy-turvying” text box. But while my shell history follows me everywhere, my agent sessions do not. They're scattered across different tools and machines (a laptop, a dev server, ephemeral instances on exe.dev, a surprisingly cheap bare metal box in Germany), difficult to search, and often forgotten once I've moved on.\nIt’s a familiar problem!\nI started working on Atuin because the history of my work was ephemeral: every command I typed was destined to vanish on line 501 of .bash_history. But once this work became indexed, everlasting, and easy to recall, I could find the exact command I’d used to fix something years ago, in seconds.\nOver the years, this data compounded. It became the history of all of my work, the record of how I solved problems and built things.\nShell history has always been an excellent record of what happened, but it’s only the surface. It never kept the reasoning… or the intentions behind what I was trying to do. I could only find a command if I remembered a part of it, though often I remembered what I was trying to achieve more readily.\nAgent sessions store the lot of it. Every command, its output, my intent, and everything I tried along the way to the eventual solution. It’s all there, in plain English, in my home directory! But just as with shell history all those years ago, we don’t put it to work.\nAtuin Threads\nThat is why we built Atuin Threads.\nStarting with Atuin 18.24, you can search your agent sessions across machines, resume them anywhere, or fork the session into a different agent harness. Start something in Claude Code on a dev server, then finish it in Codex on your laptop.\nBehind the scenes, this was a natural extension of Atuin. We put a lot of time and effort into building a reliable, encrypted sync engine. It’s generic, and can sync anything that can be modelled as an append-only log. As it turns out, most AI sessions are exactly this.\nLike shell history, Threads is end-to-end encrypted when synced, so we can't read your sessions. You can use our hosted sync server, run your own, or keep everything local. Capturing agent sessions is opt-in, too.\nRun atuin resume, and after setting up, you will see the TUI from the top of this post!\nIt doesn’t matter which agent you started with - you can resume it anywhere. With Atuin’s sync, this works across devices, and keeps your history backed up forever.\nRight now, we support\nClaude Code\nCodex\nPi\nOmp\nOpenCode\nwith more agents coming soon.\nMCP\nWith MCP, agents can search and reference previous sessions themselves. They can find work you’ve done before, understand why a decision was made, and build on previous investigations without having to dig up the context.\nOur MCP is available as atuin mcp, and can be automatically installed with\natuin mcp install claude/codex/pi/opencode\nThere are all sorts of ways to put this history to work. A few examples:\nWork that never shipped\nI’ve iterated on our onboarding and setup so many times over the past few months, but never quite been happy with it. When I ask an agent to work on onboarding now, it finds all my previous attempts, as well as why they had been abandoned and what can be done better.\nThese sessions contain…"
+   }
+  },
+  {
+   "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+   "hn_url": "https://news.ycombinator.com/item?id=50447074",
+   "hn": {
+    "title": "Tracking Anthropic-discovered vulnerabilities",
+    "points": 447,
+    "comments": 218
+   },
+   "comments": [
+    {
+     "author": "pizlonator",
+     "replies": 11,
+     "text": "I received 9 reports of Fil-C issues from Anthropic\nAll of them were real bugs. None of them were false positives.\nThe quality of the reports was exceptional. (My baseline is doing security defense on a browser engine, so my baseline has a large sample count and is probably representative of what experts are capable of.)\nThe quality of the proposed fixes was alright. I took some of the fixes verbatim. I used most of the fixes as significant inspiration for doing it my way.\nThe quality of the…"
+    },
+    {
+     "author": "enthuseyourcurb",
+     "replies": 13,
+     "text": "As someone working at a bigtech co that has spent every single working day (and many weekends) since the launch of Mythos patching serious, company-ending type of security issues, these types of posts really irk me.\nPublic datasets of CVEs being underwhelming doesn't mean much if all of the issues are in private company codebases that will never get a CVE number assigned and will never get a fancy blog post. You're never going to hear about them, and the people working on them probably can't…"
+    },
+    {
+     "author": "snowwrestler",
+     "replies": 7,
+     "text": "The PHP2Shell vulnerability ended up being paradoxically comforting for me.\nThey turned frontier models loose on PHP, and the big one they found was based on a previously known logic flaw that was extremely difficult to exploit. Which makes sense: hence the need for frontier models.\nAnd in the wild, while there have been many attempts and a few simple demo successes, the practical impact has seemed to be small, seemingly constrained by the length of the chain and the diversity of PHP…"
+    },
+    {
+     "author": "rurcliped",
+     "replies": 1,
+     "text": "The blog is misleading because it tries to characterize Project Glasswing's effectiveness through use of a tangentially related data source. A Project Glasswing vulnerability discovery most often occurs when a Glasswing partner points a Mythos-class model at its own, often proprietary, software. The data source (aka \"ledger\") is only for the Anthropic coordinated vulnerability disclosure program for open source software: in other words, Anthropic itself pointing a Mythos-class model at an OSS…"
+    },
+    {
+     "author": "dfee",
+     "replies": 3,
+     "text": "There's an anecdote about curl, but I'm not sure if there's enough in here to draw conclusions from. 20% of vulnerabilities have been made public, and many of those are marked as \"withdrawn\" or \"duplicates\". However, it's unclear whether the remaining 80% have not been made public because they're not fixed or real. In other words, this is analysis of survivors (public); not much can be said about those still under embargo."
+    }
+   ],
+   "article": {
+    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+    "status": "ok",
+    "title": "After 7-months, Glasswing Overwelms Maintainers with Underwhelming Findings | Blog | VulnCheck",
+    "chars": 9260,
+    "text": "VulnCheck Community gives you free access to VulnCheck KEV, NVD++, Initial Access Community, and VulnCheck XDB\nJoin Now\nKey Takeaways:\nSeven months into Project Glasswing, VulnCheck has tracked 442 CVEs attributable to Anthropic, roughly 0.5% of all CVEs published this year, with only two identified as exploited in the wild.\nOf Anthropic’s 37,966 reported findings, only 7,349 (19.4%) have been made public and just 217 have been marked fixed.\nSince September, Anthropic has added nearly 12,000 findings while recording just 15 additional fixes, widening the gap between discovery and remediation.\nRoughly 1,654 findings (4.4%) have been marked as duplicates, nearly eight times the number fixed, and another 419 have been withdrawn.\nAnthropic’s claimed true positive rate has risen from 90.8% to 94.2%, raising questions about how it accounts for duplicates and withdrawn findings.\nAnthropic’s OSS Scanner shifts validation work to maintainers, with curl rejecting 19 of 34 published reports as vulnerabilities, confirming six as low severity and leaving nine awaiting assessment. Also putting Anthropic's true positive rates into question.\nWe're seven months into Anthropic's flagship Project Glasswing, and it's time for another update on the results. I've been tracking the project to see whether its claims are overhyped or grounded in reality.\nAs we all recall, Anthropic launched Project Glasswing on April 7th, claiming, \"We have identified thousands of additional high- and critical-severity vulnerabilities that we are working on responsibly disclosing to open source maintainers.\" What surprised me was how little evidence the project offered, which made me wonder whether this was more of an overhyped marketing campaign.\nThat said, we shouldn't overlook that AI is an effective tool for finding vulnerabilities. But that story goes well beyond any single frontier model's capabilities.\nIf you're just catching up, this builds on my earlier posts:\nTracking CVEs Attributed to Anthropic Researchers and Project Glasswing - April 15\nObservations on Anthropic's Vulnerability Disclosure Ledger - June 9\n1H-2026 State of Exploitation Report - July 28\nThe Anthropic Glasswing Receipts Are Starting to Trickle In - September 8\nSo let's look at the results…\nTracking Anthropic-Discovered Vulnerabilities\nI started tracking Anthropic's discovered vulnerabilities on April 17th, shortly after launch, in an open source repo called Anthropic Credited CVEs. The goal was to see whether Anthropic's claims lived up to the hype. This was before Anthropic launched its own disclosure ledger, which is only updated in infrequent bulk batches.\nMy repo tracks every vulnerability attributable to Anthropic using CVE records, GHSAs, Linux kernel commits, and Anthropic's own ledger. I also manually audit advisories to catch CVEs that might otherwise get overlooked.\nAfter seven months, I've tracked 442 CVEs attributable to Anthropic. That's an average of just 63 per month. Out of the 93,450 CVEs published this year, that's only about 0.5% of all CVEs.\nFor comparison, Anthropic's own public ledger lists just 217 fixed vulnerabilities, so I've tracked more than twice as many as Anthropic has disclosed itself.\nThe Danger Narrative Isn't Adding Up\nYou may recall that Glasswing launched with the message that we'd entered the Mythos era of vulnerability discovery. But are these vulnerabilities actually useful to attackers? To find out, I've been tracking Anthropic-discovered CVEs against VulnCheck KEV. So far, only 2 of the 442 have been exploited in the wild, just 0.45%. (CVE-2026-61500 and CVE-2026-26980)\nAnthropic's Ledger Continues to Underwhelm\nWhen Anthropic first launched its ledger in May, it reported 23,019 findings and a 90.8% true positive rate. As of its most recent update on November 2nd, there are 37,966 findings and just 217 fixes. That looks like a staggering failure to me, but let's take a closer look.\nOf the 37,966 findings Anthropic reports, only 7,349 (19.4%) have…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50458900",
+   "hn_url": "https://news.ycombinator.com/item?id=50458900",
+   "hn": {
+    "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+    "points": 281,
+    "comments": 262
+   },
+   "comments": [
+    {
+     "author": "doctoboggan",
+     "replies": 25,
+     "text": "How do they plan on stopping me from using Claude code with the Claude in chrome plugin, or some other computer use agent?\nAt this point it feels like I have an adversarial relationship with many merchants I use online. I wish the simple “you have a product, I have money” relationship was possible. I don’t want to take part in your giant human behavior optimization problem. You have a product and I have money why does it have to be more complicated than that?\nRealistically though I know that’s…"
+    },
+    {
+     "author": "andix",
+     "replies": 5,
+     "text": "Somebody once said, that airline booking pages itself are one of the most sophisticated CAPTCHAs. No idea if this is true, but they obviously don't want their customers to easily find the best deals.\nI guess the best option is, to use a good reseller/travel agency that provides an API/MCP for booking and managing flights.\nFor finding the cheapest deals agents can still be used. Just the booking itself is probably better done manually. It also eliminates the risk that the agent does something…"
+    },
+    {
+     "author": "cmpolis",
+     "replies": 4,
+     "text": "Tangent: it was always odd to me that \"booking a [flight|hotel|concert tickets]\" is the canonical example of a task that can be automated by an agent. These are tasks that are:\n- already streamlined (spend 2min on Google flights, seatgeek, etc...); we aren't stuck with early web UX and latency\n- I want to have 100% control of the outcome or would have to write a long list of preferences and rules (middle seats, layovers, etc...) to feel good about trusting automation\n- require making a large…"
+    },
+    {
+     "author": "ProblemExplorer",
+     "replies": 15,
+     "text": "The airlines are trying to reduce prices for everyone without giving specific people (atleast those who they don't deem \"worthy\") an edge. Here's a great, short comment: https://news.ycombinator.com/item?id=50459444\nIt's mostly a commodity, specially for economy class where price matters.\nAfter gas and grocery, its the most vicious, cut throat business where a customer will switch from United to Delta over $5. Unlike gas and grocery they cannot compete on volume (even a 747 has a fixed capacity…"
+    },
+    {
+     "author": "nukanse",
+     "replies": 0,
+     "text": "Airline frequent flyer programs have always been full of exploitable loopholes that most people weren't aware of, but AI can take advantage of them."
+    }
+   ],
+   "article": {
+    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+    "status": "ok",
+    "title": "United Airlines bans AI agents from booking flights on behalf of travelers - CBS News",
+    "chars": 3259,
+    "text": "MoneyWatch\nUnited Airlines bans AI agents from booking flights on behalf of travelers\nBy\nMegan Cerullo\nReporter, MoneyWatch\nMegan Cerullo is a New York-based reporter for CBS MoneyWatch covering small business, workplace, health care, consumer spending and personal finance topics. She regularly appears on CBS News 24/7 to discuss her reporting.\nRead Full Bio\nMegan Cerullo\nNovember 11, 2026 / 2:37 PM EST\n/ MoneyWatch\nAdd CBS News on Google\nUnited Airlines said on Wednesday that it is banning artificial intelligence agents from making flight reservations on behalf of travelers, citing security risks and the possibility that such actions could violate federal rules.\nMany consumers are turning to AI agents such as Meta's Muse and OpenAI's dots to complete tasks ranging from researching products and tracking down deals to making purchases.\nTo make an airline booking, an AI agent requires access to a customer's personal information, including credentials like payment information. United has a problem with that, saying that \"sharing account credentials with personal, third-party, AI assistants can expose sensitive information, and actions taken by these tools may result in unintended purchases, account changes, or use of MileagePlus miles.\"\nThe carrier also said that using an AI agent to, for example, check in for a flight could violate federal regulations, including rules requiring travelers to verify in person that their luggage does not contain banned substances.\n\"As a result, United is taking steps to restrict access — directly within our digital platforms and indirectly via travel agencies and aggregators — to prohibit use by unauthorized, third-party personal AI agents or assistants,\" said the airline, which is updating its booking and ticketing policies to reflect the new rule.\nUnited's new policy suggests the company wants to retain control over the customer booking process, said Henry Harteveldt, an aviation analyst at Atmosphere Research Group.\n\"United is saying they don't want to add yet another, and potentially even more powerful, intermediary than they already face in terms of Google search, price-comparison metasearch sites and online travel agencies,\" he told CBS News. \"Flight searches cost airlines money, and undoubtedly United wants to avoid the expense associated with the surge of AI bot flight searches.\"\nOther airlines are taking a different tack to the emergence of AI agents. For example, Southwest has made its flight inventory viewable to ChatGPT users, who can access the airline's website through the AI app.\nUnited fares will continue to be bookable through flight aggregators such as Kayak, Hopper and Google Flights, Harteveldt said, adding that \"consumers shouldn't find it any more difficult to find good fares on the airline.\"\n\"But by blocking the AI bots, United won't make it any easier to find its fares, either,\" he said.\nEdited by\nAlain Sherter\nKris Van Cleave\ncontributed to this report.\nIn:\nUnited Airlines\nGoogle faces mounting backlash for controversial AI school policy\nDoes travel insurance cover flight delays and cancellations caused by bad weather?\nMicrosoft data center brings \"a kind of boom\" amid AI pushback\nOur AI Leaders Want to Play God. First, They Should Believe in One."
+   }
+  },
+  {
+   "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+   "hn_url": "https://news.ycombinator.com/item?id=50443716",
+   "hn": {
+    "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+    "points": 281,
+    "comments": 216
+   },
+   "comments": [
+    {
+     "author": "gosen",
+     "replies": 25,
+     "text": "When Anthropic released \"claude design\" people were telling that figma is dead now, but in fact claude design didn't move forward and stayed as a \"fallback tool\" when you quickly need to check / edit something. And for the serious work you still go to Figma and other designer tools.\nI have a feeling that Whiteboards, Sheets, Docs and so on will be the same - it's a nicer way to present artefacts, discuss them and maybe make notes, but for the proper editor experience you'll go to the tools…"
+    },
+    {
+     "author": "option_greek",
+     "replies": 4,
+     "text": "Model companies are starting to cannibalize their api customers's business cases. Shows that the regular avenues of revenue growth are slowing down"
+    },
+    {
+     "author": "Kuyawa",
+     "replies": 6,
+     "text": "If you can have any app at the snap of your fingers, you will have them all\nI really don't understand why people can't see the future, in ten years the speed at which AI will create apps will be astonishing. Any app, ask and get it done instantly. So if one provider (your AI provider) has them all why would you go around looking for the same thing if you already have them in one place?\nI use DeepSeek because Claude never allowed me to play with it (living in Venezuela), but I know people that…"
+    },
+    {
+     "author": "bertt",
+     "replies": 10,
+     "text": "> Working with Claude on a project often meant moving the output over to another tool or program, where Claude didn’t have live access to follow progress and changes. Now, your documents, boards, sheets, and dashboards can stay in Claude, with access for your team to continue editing together.\nI read this as: We'll build anything and everything into Claude eventually.\nHow does this work long-term? Is the new reality going to be picking an AI provider for all of your SaSS tooling, similar to…"
+    },
+    {
+     "author": "FailMore",
+     "replies": 3,
+     "text": "I have a different approach to the industry when it comes to work documents.\nI'm building https://smalldocs.org / https://github.com/espressoplease/smalldocs. My take is that the siloed approach of previous document formats is now redundant. The document formats were isolated because we needed heavy tools for humans to do the work. Now we need lightweight javascript predominately for rending as agents do the work, so document formats can be blended.\nThis means SmallDocs allows an agent to put…"
+    }
+   ],
+   "article": {
+    "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+    "status": "ok",
+    "title": "Claude Whiteboards, Claude Sheets, and Claude Data | Claude by Anthropic",
+    "chars": 5754,
+    "text": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data\nNow you can brainstorm on whiteboards, build sheets, and share data directly in Claude.\nCategoryProduct updates\nProductClaude apps\nDateNovember 10, 2026\nReading time6 min\nShare\nToday we’re launching Claude Whiteboards and Claude Sheets in beta, and Claude Dashboards (opens in new tab) becomes generally available as Claude Data. Whiteboards is a shared board where your team brainstorms with Claude, Sheets is a spreadsheet Claude builds and edits with you, and Claude Data adds data stories, certified queries, and live sharing. These are available on all paid plans.\nWorking with Claude on a project often meant moving the output over to another tool or program, where Claude didn’t have live access to follow progress and changes. Now, your documents, boards, sheets, and dashboards can stay in Claude, with access for your team to continue editing together. When ready, you can bring the outputs directly into tools from our partners and continue working there.\nClaude Whiteboards\nMany people use Claude as a thought partner, but brainstorming with it has typically meant copy-pasting the results elsewhere so you can then start brainstorming or collaborating with your coworkers. Now, you can talk through a messy plan out loud with Claude, and Claude can turn it into a board with a timeline with owners and dates, so you and your team can collaborate in real time. In a retro meeting, for example, everyone can add their notes, and Claude can group them by theme and draft the action items for each person. You can focus on any part of the board by dragging a box around it and asking Claude questions. When you’re done brainstorming, Claude can turn the board into a doc or deck, or bring it into tools like Lucid, Miro, or Vani by Zoho, where you can continue working on it with your team.\nClaude Sheets\nClaude can now generate spreadsheets with tabs, formulas, formatting, and drop-downs, often from just a prompt like asking for a campaign tracker or a hiring budget. It can edit in the cells, outlining each new edit so you can track changes. You can share sheets with your team, so you and Claude can work on them together.\nFor now, sheets have simple spreadsheet functionality, but we are working on adding more. When you need the full functionality of Excel, you can export your file to .xlsx or CSV, or use Claude for Excel (opens in new tab). You can also continue working in partner tools including Airtable, Asana, monday.com, and Smartsheet.\nClaude Data\nClaude Dashboards (opens in new tab) launched in beta in October, enabling teams to ask quick questions of their company’s data in tools like Amazon Redshift, BigQuery, and ClickHouse. Starting today, it’s generally available as Claude Data. We changed the name because the way companies use their data is broader than dashboards, and the product now covers how they work more broadly. Certified queries and live sharing are in beta. Here are some ways teams can use Claude Data:\nCreate certified definitions of metrics. Your data team can certify the queries everyone should use, so you don’t end up building or working on dashboards with conflicting data. Charts built on these metrics carry a \"certified\" badge showing they’re certified.\nCraft stories from data. You can work with Claude in Claude Data to draft data stories or narrated videos from your metrics, for you to review before sharing.\nShare current numbers with everyone. With live sharing, your colleagues can see up-to-date numbers when they open a shared dashboard, even if they don’t have access to the connectors that keep that data current. Viewers see the results of the queries you’ve approved, and can’t run others with your access.\nMatch your look-and-feel. Design systems are now supported in Claude Data.\nGet faster loading with caching. Previously, every dashboard would reload on every load. Now, dashboards support caching, and refresh cadences can be set on a per-dashboard…"
+   }
+  }
+ ]
+}

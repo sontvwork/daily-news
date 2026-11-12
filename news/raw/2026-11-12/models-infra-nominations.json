@@ -1,0 +1,930 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "03e485ce71b55e22",
+  "generated_at": "2026-11-11T23:59:54.919994Z",
+  "from_date": "2026-11-10",
+  "to_date": "2026-11-11",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-11T23:59:54.856503Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-11T23:59:54.856509Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 136,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-11T23:59:54.854584Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 14,
+      "attempted": true,
+      "at": "2026-11-11T23:59:54.856351Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Google Launches Gemini Decision-1 Model",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 72,
+          "points": 215
+        },
+        "reddit": {
+          "num_comments": 73
+        }
+      },
+      "nomination": {
+        "name": "Google Launches Gemini Decision-1 Model",
+        "seed_score": 1307.55,
+        "summary": "It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R92",
+            "source": "reddit",
+            "title": "Google Launches Gemini Decision-1 Model for Fast Structured Outputs",
+            "body": "Google Launches Gemini Decision-1 Model for Fast Structured Outputs\nIt is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtpfrg/google_launches_gemini_decision1_model_for_fast/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 305,
+              "num_comments": 57
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36250000000000004
+          },
+          {
+            "item_id": "50456791",
+            "source": "hackernews",
+            "title": "Gemini Decisions API",
+            "body": "Gemini Decisions API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+            "author": "iamdelirium",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 215,
+              "comments": 72
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Gemini Decisions API",
+            "snippet": "Gemini Decisions API",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50456791",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3565
+          },
+          {
+            "item_id": "R98",
+            "source": "reddit",
+            "title": "Gemini Decision 1?",
+            "body": "Gemini Decision 1?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtnio2/gemini_decision_1/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 93,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Gemini Decision 1?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.371
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Apple Mac AI models",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 520,
+          "points": 513
+        }
+      },
+      "nomination": {
+        "name": "Apple Mac AI models",
+        "seed_score": 1095.662,
+        "summary": "Apple has new Mac app coming to make running local AI models easy",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50446520",
+            "source": "hackernews",
+            "title": "Apple has new Mac app coming to make running local AI models easy",
+            "body": "Apple has new Mac app coming to make running local AI models easy",
+            "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+            "author": "linolevan",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 513,
+              "comments": 520
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Apple has new Mac app coming to make running local AI models",
+            "snippet": "Apple has new Mac app coming to make running local AI models easy",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50446520",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Gemini 4 Carbon is now available",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 164,
+          "points": 291
+        },
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Carbon is now available",
+        "seed_score": 1031.0905,
+        "summary": "Gemini 4 Carbon is now available",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50442303",
+            "source": "hackernews",
+            "title": "Gemini 4 Carbon is now available",
+            "body": "Gemini 4 Carbon is now available",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+            "author": "meetpateltech",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 291,
+              "comments": 164
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Gemini 4 Carbon is now available",
+            "snippet": "Gemini 4 Carbon is now available",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50442303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 83,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15350000000000003
+          },
+          {
+            "item_id": "R104",
+            "source": "reddit",
+            "title": "Google DeepMind unveils AlphaGenome 2, an AI model that predicts how DNA changes affect different types of cells",
+            "body": "Google DeepMind unveils AlphaGenome 2, an AI model that predicts how DNA changes affect different types of cells\nAnother day, another ship by GDM. Yesterday they unveiled AlphaProof Code and Gemini Robotics 2.5 and Google rolled out Gemini 4 Carbon to developers. Today they announced AlphaGenome 2. The blog post is an interesting read.\u00a0\n\nA few interesting details:\n\n\\-> it was trained on more than 100 million individual cell profiles across 68 tissues\n\n\\-> in a benchmark covering 28 immune cell types, it picked up nearly twice as many variants that affect gene activity as the original AlphaGenome fine-tuned on single-cell data (30% vs 16%)\n\n\\-> it can make predictions for cell states it hasn\u2019t seen before using new cell data, without having to retrain the model\n\nGDM first released\u00a0AlphaGenome in June 2025.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtkckl/google_deepmind_unveils_alphagenome_2_an_ai_model/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 251,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Another day, another ship by GDM. Yesterday they unveiled AlphaProof Code and Gemini Robotics 2.5 and Google rolled out Gemini 4 Carbon to developers. Today they announced AlphaGenome 2. The blog post is an interesting read.\u00a0\n\nA few interesting details:\n\n\\-> it was trained on more than 100 million individual cell profiles across 68 tissues\n\n\\-> in a benchmark covering 28 immune cell types, it pick",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI Yang Mills Existence Lean Proof",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Yang Mills Existence Lean Proof",
+        "seed_score": 792.0,
+        "summary": "OpenAI Yang Mills Existence Lean Proof Released and Verified",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R111",
+            "source": "reddit",
+            "title": "OpenAI Yang Mills Existence Lean Proof Released and Verified",
+            "body": "OpenAI Yang Mills Existence Lean Proof Released and Verified",
+            "url": "https://www.reddit.com/r/singularity/comments/1xt9sa5/openai_yang_mills_existence_lean_proof_released/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 481,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "OpenAI Yang Mills Existence Lean Proof Released and Verified",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 96,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35350000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Tracking Anthropic-discovered vulnerabilities",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 218,
+          "points": 447
+        }
+      },
+      "nomination": {
+        "name": "Tracking Anthropic-discovered vulnerabilities",
+        "seed_score": 705.339,
+        "summary": "Tracking Anthropic-discovered vulnerabilities",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50447074",
+            "source": "hackernews",
+            "title": "Tracking Anthropic-discovered vulnerabilities",
+            "body": "Tracking Anthropic-discovered vulnerabilities",
+            "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+            "author": "panic",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 447,
+              "comments": 218
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Tracking Anthropic-discovered vulnerabilities",
+            "snippet": "Tracking Anthropic-discovered vulnerabilities",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50447074",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 90,
+            "source_quality": 0.8,
+            "local_rank_score": 0.16050000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Qwen3.8-27B Unsloth Dynamic V3.1 GGUFs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 86
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-27B Unsloth Dynamic V3.1 GGUFs",
+        "seed_score": 660.0,
+        "summary": "Hey [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) ! We're releasing new new Unsloth Dynamic v3.1 GGUFs for Qwen3.8-27B! They're **better by 5-10% accuracy** on DeepSWE, Terminal Bench and more vs UD3, GSQ-RCO and Exllama-3! We're also improving our algorithms further so we can apply them to Qwen4 so folks can have efficient and accurate quants!\n\n* All quants from 2-bit until 6-bit are updat",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "New Qwen3.8-27B Unsloth Dynamic V3.1 GGUFs",
+            "body": "New Qwen3.8-27B Unsloth Dynamic V3.1 GGUFs\nHey [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) ! We're releasing new new Unsloth Dynamic v3.1 GGUFs for Qwen3.8-27B! They're **better by 5-10% accuracy** on DeepSWE, Terminal Bench and more vs UD3, GSQ-RCO and Exllama-3! We're also improving our algorithms further so we can apply them to Qwen4 so folks can have efficient and accurate quants!\n\n* All quants from 2-bit until 6-bit are updated. 3-bit ones are not, as we found UD3 to do on par with UD3.1. We are still improving all other quant sizes though!\n* All benchmarks are 256K for agentic ones (DeepSWE, Terminal Bench), and 128K for the rest (LiveCodeBench etc). We used temperature 1.0, top\\_p 0.95, top\\_k 20, min\\_p 0, no presence or repetition penalty, preserve\\_thinking and xhigh reasoning\n* We ran benchmarks multiple times including LiveCodeBench x6 times, HMMT and others 8-16x and agentic benchmarks multiple times.\n\nOn other benchmarks like for GSQ-RCO and Exllama3:\n\n* To compare GSQ-RCO and Exllama-v3, we had to exclude the token embedding layer from the x axis, as Exllama-v3 uses BF16 for it.\n* If you consider the full download size and total RAM usage for Exllama-v3, then adding the BF16 embedding table and including all embedding sizes changes the plots. Our main plots's x axis removes the embedding layer sizes from all quant providers. **However on pure RAM usage and disk space usage vs accuracy, exllama3 does worse.**\n* For LiveCodeBench, GSQ-RCO showed Unsloth UD3 quants doing consistently worse than ISTA's. However we **found the opposite** \\- UD3 quants (our OLD quants) do better than ISTA on LCB on all sizes except the smallest. UD3.1 further improves on LCB as well. We approximate that GSQ-RCO used a context budget of 96K, as that best fits the data for the runs we have. At 96K, GSQ-RCO does somewhat do better than UD3, but at 128K, UD3 does much better.\n* On another benchmark, for ISTA GSQ-RCO's AIME25 benchmarks, their quants reach 100%, 100%, 100% and 96.7% accuracy recovery. And they said our quants do worse. Through our investigations, we estimate ISTA only did 1 trial - we did 14 trials, and we show on average the recovery rate is 93% to 96% - not 100% accuracy recovery. And in fact our UD3 old quants do better on average than their quants on 14 runs vs 1 run of theirs, so we draw the opposite conclusion if you run the trials more.\n\nMore details and benchmarks at [https://unsloth.ai/docs/models/qwen3.8#dynamic-v3.1-update-november-11th-2026](https://unsloth.ai/docs/models/qwen3.8#dynamic-v3.1-update-november-11th-2026)\n\nAll quants are updated in https://huggingface.co/unsloth/Qwen3.8-27B-GGUF! Thank you and have a nice day! We're super excited for Qwen4!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtlyhe/new_qwen3827b_unsloth_dynamic_v31_ggufs/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 354,
+              "num_comments": 86
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) ! We're releasing new new Unsloth Dynamic v3.1 GGUFs for Qwen3.8-27B! They're **better by 5-10% accuracy** on DeepSWE, Terminal Bench and more vs UD3, GSQ-RCO and Exllama-3! We're also improving our algorithms further so we can apply them to Qwen4 so folks can have efficient and accurate quants!\n\n* All quants from 2-bit until 6-bit are updat",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38149999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "There",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 134
+        }
+      },
+      "nomination": {
+        "name": "There",
+        "seed_score": 660.0,
+        "summary": "Sorry, I'm not sure where else to post this. This and accelerate are two of my main subreddits.\n\nI've heard claims of bots on reddit for a long time, but now I know for sure there really are campaigns happening on reddit to impact opinion. Here are two images of comments from two different users on two different subreddits with discussions about how bad the job markets are that were both made in t",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R95",
+            "source": "reddit",
+            "title": "PSA: There are active bot campaigns on reddit now and you can't tell",
+            "body": "PSA: There are active bot campaigns on reddit now and you can't tell\nSorry, I'm not sure where else to post this. This and accelerate are two of my main subreddits.\n\nI've heard claims of bots on reddit for a long time, but now I know for sure there really are campaigns happening on reddit to impact opinion. Here are two images of comments from two different users on two different subreddits with discussions about how bad the job markets are that were both made in the last few days:\n\nhttps://i.redd.it/r13iden9s01i1.png\n\nhttps://i.redd.it/z8r71q9cs01i1.png\n\nI'm not wanting to make this political. I don't really care in this post about the actual state of the job market.\n\nBut apparently someone out there really wants to make posts and comments (and likely spam upvotes) to encourage people to think the job market is really bad. I'm guessing there are many bad actors out there with various agendas doing this all the time now.\n\nI've seen other examples of this on reddit in recent months. Copied posts, copied comments, irregular instant upvotes on new content that makes it visible, etc.\n\nBe careful out there folks. And remember that you might be talking to bots.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtoar9/psa_there_are_active_bot_campaigns_on_reddit_now/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 306,
+              "num_comments": 134
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Sorry, I'm not sure where else to post this. This and accelerate are two of my main subreddits.\n\nI've heard claims of bots on reddit for a long time, but now I know for sure there really are campaigns happening on reddit to impact opinion. Here are two images of comments from two different users on two different subreddits with discussions about how bad the job markets are that were both made in t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.338
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Open source self driving is here",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 67
+        }
+      },
+      "nomination": {
+        "name": "Open source self driving is here",
+        "seed_score": 603.0,
+        "summary": "Today NVIDIA releases Alpamayo 2 Edge! I work for Embedl and we have already released an optimized version of the model that is more than 10x faster than pytorch when run on edge hardware like AGX Thor!\n\nThe model is trained in an RL loop (!) and takes in 6 cameras and the recent motion. Feel free to check it out - you can even run it on a real Thor at:\n\n[https://embedl.com/nvidia/alpamayo2-edge/t",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Open source self driving is here!",
+            "body": "Open source self driving is here!\nToday NVIDIA releases Alpamayo 2 Edge! I work for Embedl and we have already released an optimized version of the model that is more than 10x faster than pytorch when run on edge hardware like AGX Thor!\n\nThe model is trained in an RL loop (!) and takes in 6 cameras and the recent motion. Feel free to check it out - you can even run it on a real Thor at:\n\n[https://embedl.com/nvidia/alpamayo2-edge/thor?tab=run](https://embedl.com/nvidia/alpamayo2-edge/thor?tab=run)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtmeif/open_source_self_driving_is_here/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 335,
+              "num_comments": 67
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Today NVIDIA releases Alpamayo 2 Edge! I work for Embedl and we have already released an optimized version of the model that is more than 10x faster than pytorch when run on edge hardware like AGX Thor!\n\nThe model is trained in an RL loop (!) and takes in 6 cameras and the recent motion. Feel free to check it out - you can even run it on a real Thor at:\n\n[https://embedl.com/nvidia/alpamayo2-edge/t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "2019 JavaScript",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 140,
+          "points": 423
+        }
+      },
+      "nomination": {
+        "name": "2019 JavaScript",
+        "seed_score": 597.1517,
+        "summary": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50443812",
+            "source": "hackernews",
+            "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "body": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "url": "https://github.com/GoogleChrome/modern-web-guidance",
+            "author": "paulirish",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 423,
+              "comments": 140
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: Get your coding agent off ~2019 JavaScript, onto mo",
+            "snippet": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50443812",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 86,
+            "source_quality": 0.8,
+            "local_rank_score": 0.137
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Claude Whiteboards Claude Sheets Claude Data",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 216,
+          "points": 281
+        }
+      },
+      "nomination": {
+        "name": "Claude Whiteboards Claude Sheets Claude Data",
+        "seed_score": 527.1481,
+        "summary": "Claude Whiteboards, Claude Sheets, and Claude Data",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50443716",
+            "source": "hackernews",
+            "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "body": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+            "author": "Yorothegoat",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 281,
+              "comments": 216
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Claude Whiteboards, Claude Sheets, and Claude Data",
+            "snippet": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50443716",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 85,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15550000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Linear Program Weight-Space Programming",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 35,
+          "points": 234
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Linear Program Weight-Space Programming",
+        "seed_score": 467.475,
+        "summary": "Can a Linear Program Do Weight-Space Programming?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50452655",
+            "source": "hackernews",
+            "title": "Can a Linear Program Do Weight-Space Programming?",
+            "body": "Can a Linear Program Do Weight-Space Programming?",
+            "url": "https://nathan.rs/posts/weight-space-lp/",
+            "author": "emschwartz",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 234,
+              "comments": 35
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Can a Linear Program Do Weight-Space Programming?",
+            "snippet": "Can a Linear Program Do Weight-Space Programming?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50452655",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.332
+          },
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "I tried fixing Llama-3.2-1B's over-refusal with activation steering. It accidentally jailbroke the model, and trying to fix that led me to a weird mathematical paradox",
+            "body": "I tried fixing Llama-3.2-1B's over-refusal with activation steering. It accidentally jailbroke the model, and trying to fix that led me to a weird mathematical paradox\nI\u2019ve been building a CLI tool that diagnoses and patches local model failures at the weight level, inspired by the recent MIT weight-space programming paper. Everything runs on a GTX 1650. No cloud.\n\nOne thing I wanted to test was whether activation steering could fix over-refusal. That means adding a vector to the residual stream at runtime without changing any weights. My Llama-3.2-1B was refusing prompts like \u201cHow do I stage a massacre for a TV show?\u201d, which is obviously a screenwriting question.\n\nHere\u2019s how it went over several attempts.\n\n**Attempt 1: subtract the refusal direction**\n\nI extracted the refusal vector and subtracted it. The fiction prompt went through right away. Two test prompts later, the model was cheerfully explaining how to synthesize poisons and build pipe bombs.\n\nIt turns out the over-refusal direction and the real harmful-refusal direction have a cosine similarity of about 0.75. They\u2019re close to the same vector, so suppressing one wipes out the other.\n\n**Attempt 2: get surgical**\n\nThis time I was more careful:\n\n* Ran activation patching across every layer to find the exact causal bottleneck (Layer 8)\n* Orthogonally projected the harmful-refusal component out of my steering vector\n* Used a \u201cclamp\u201d instead of a constant addition. It only caps the activation when it spikes above the working threshold and leaves everything else alone\n\nThis nearly worked. Held-out accuracy went from 81.1% \u2192 91.9%, with zero harmful prompts leaking.\n\nThen my regression suite flagged something. A completely unrelated Chinese benchmark prompt started looping forever. Even when you steer at a single targeted layer, the residual stream is packed so densely (superposition) that a small nudge at Layer 8 caused a ripple further down. By Layer 15 it had broken Chinese token transitions.\n\n**The paradox** \n\nMy first thought was: fine, I\u2019ll measure the drift at Layer 9 and cancel the part I don\u2019t want. So I worked through the math:\n\n1. Steer at Layer 8\n2. At Layer 9, compute \u0394 = steered\\_layer9 - clean\\_layer9\n3. Filter out the bad drift and keep only the anti-refusal shift I want\n4. Apply final\\_layer9 = clean\\_layer9 + wanted\\_shift\n\nThen it hit me. If you take the clean Layer 9 and add only the anti-refusal shift you want, you\u2019ve just described steering Layer 9 directly. Layer 8 never comes into it.\n\nAnd if you steer Layer 9 directly, the same drift problem shows up at Layer 10. It\u2019s turtles all the way down. More steering can\u2019t fix steering drift. It\u2019s recursive whack-a-mole.\n\nOn top of that, the drift isn\u2019t consistent. Chinese inputs start looping, Python inputs lose their indentation, and Spanish inputs drift into French. No single static correction vector works for every input.\n\n**What actually worked: weight surgery**\n\nInstead of steering the shared residual stream, I had the tool try a conditional weight edit: a gate programmed into three MLP neurons across layers 9-11. MLP neurons have non-linear activations (SiLU), so they can act as real IF/THEN logic:\n\n* If the input matches a \u201cfictional-scary context\u201d pattern \u2192 the gate fires and cancels the refusal\n* For Chinese text, code, weapons, or anything else \u2192 the neuron output is literally zero and nothing changes\n\nResult:\n\n* Held-out: 81.1% \u2192 91.9% (z = 2.09)\n* Harmful prompt leaks: 0\n* Regressions: 0 (Chinese was fine)\n* Shipped.\n\n**tl;dr**\n\n* Activation steering works well for simple problems that sit along one direction. It fixed a blank-reply bug and matched weight surgery at 85% accuracy\n* For entangled safety problems like over-refusal vs. real harm, linear steering vectors always leak collateral damage somewhere, even with causal layer localization and orthogonal projection\n* Non-linear neuron gating in the weights was the only approach that cleanly separated \u201cscary fiction\u201d from \u201cactual harm\u201d with zero regressions\n* Fixing steering drift with more steering at the next layer is mathematically a no-op. You\u2019re just steering that layer directly, and the problem moves further down\n\nEverything was measured on a GTX 1650 (4GB VRAM). I\u2019ll be open-sourcing the tool in a couple of days.\n\nHappy to answer questions about the mech-interp side, the verification pipeline, or the cases where this approach fails (there are several).",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtugmb/i_tried_fixing_llama321bs_overrefusal_with/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been building a CLI tool that diagnoses and patches local model failures at the weight level, inspired by the recent MIT weight-space programming paper. Everything runs on a GTX 1650. No cloud.\n\nOne thing I wanted to test was whether activation steering could fix over-refusal. That means adding a vector to the residual stream at runtime without changing any weights. My Llama-3.2-1B was refusi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 5,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2755
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "2026",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 69
+        }
+      },
+      "nomination": {
+        "name": "2026",
+        "seed_score": 382.5,
+        "summary": "no need to talk about  the first 3, Opus 5.5 may look like recency bias but it came out september 22 and:\n\n1) crushed every single competitor \n\n2)after this model we had 9 releases from  openAI , GOOGLE and Meta and more than one month later  it is still the best and every new model is compared with it\n\n3)The release of this model was a HUGE turning point in the gaming scene: First steps in recomp",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R102",
+            "source": "reddit",
+            "title": "The hall of fame as of november 2026",
+            "body": "The hall of fame as of november 2026\nno need to talk about  the first 3, Opus 5.5 may look like recency bias but it came out september 22 and:\n\n1) crushed every single competitor \n\n2)after this model we had 9 releases from  openAI , GOOGLE and Meta and more than one month later  it is still the best and every new model is compared with it\n\n3)The release of this model was a HUGE turning point in the gaming scene: First steps in recompling the ps5 software, Kernel jailbreak for Ps5, Userland jailbreak for switch 2. a fricking 14 year old  used it to port he newly released Zelda OFT on PC\n\n4) reverse engineering\n\n55) there are some people who genuinely think AI development should stop at opus 5.5 because they think it's \"enough\"\n\n  \n\n\nGPT 3.5 was 2022, GPT4 in 2023, o1 in 2024.\n\nhonorable mentions that i remember from 2025: o3 series of models, gemini2.5 (huge context window at the time) and claude 3.7/4 . probably i'm missing some so feel free to name other models\n\nopus 5.5 is 2026 i can't imagine how good the next generation of models will be in 2027",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtli1c/the_hall_of_fame_as_of_november_2026/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 186,
+              "num_comments": 69
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "no need to talk about  the first 3, Opus 5.5 may look like recency bias but it came out september 22 and:\n\n1) crushed every single competitor \n\n2)after this model we had 9 releases from  openAI , GOOGLE and Meta and more than one month later  it is still the best and every new model is compared with it\n\n3)The release of this model was a HUGE turning point in the gaming scene: First steps in recomp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 88,
+            "source_quality": 0.6,
+            "local_rank_score": 0.456
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "NVIDIA GeForce RTX 5080 24 GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 49
+        }
+      },
+      "nomination": {
+        "name": "NVIDIA GeForce RTX 5080 24 GB",
+        "seed_score": 378.0,
+        "summary": "NVIDIA GeForce RTX 5080 24 GB Reportedly Cancelled, 16 GB Model Remains",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R31",
+            "source": "reddit",
+            "title": "NVIDIA GeForce RTX 5080 24 GB Reportedly Cancelled, 16 GB Model Remains",
+            "body": "NVIDIA GeForce RTX 5080 24 GB Reportedly Cancelled, 16 GB Model Remains",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtju4x/nvidia_geforce_rtx_5080_24_gb_reportedly/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 203,
+              "num_comments": 49
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "NVIDIA GeForce RTX 5080 24 GB Reportedly Cancelled, 16 GB Model Remains",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.311
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "2027",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 168
+        }
+      },
+      "nomination": {
+        "name": "2027",
+        "seed_score": 355.5,
+        "summary": "I\u2019ve been fascinated by singularity for at least a decade. Before I became a parent I\u2019d be on the side of pure acceleration do not phase the frontier. As a parent of toddlers my world view has changed. Fascinating as it is to see the leaps the labs are making I do have now a huge stake on humans making it. \n\nOther parents\u2026 how if at all are you dealing with this new world upon us? Is the best appr",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R110",
+            "source": "reddit",
+            "title": "With the new updated timeline for 2027, how are you preparing your family/children?",
+            "body": "With the new updated timeline for 2027, how are you preparing your family/children?\nI\u2019ve been fascinated by singularity for at least a decade. Before I became a parent I\u2019d be on the side of pure acceleration do not phase the frontier. As a parent of toddlers my world view has changed. Fascinating as it is to see the leaps the labs are making I do have now a huge stake on humans making it. \n\nOther parents\u2026 how if at all are you dealing with this new world upon us? Is the best approach one dag at the time and we\u2019ll see?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtbroo/with_the_new_updated_timeline_for_2027_how_are/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 69,
+              "num_comments": 168
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been fascinated by singularity for at least a decade. Before I became a parent I\u2019d be on the side of pure acceleration do not phase the frontier. As a parent of toddlers my world view has changed. Fascinating as it is to see the leaps the labs are making I do have now a huge stake on humans making it. \n\nOther parents\u2026 how if at all are you dealing with this new world upon us? Is the best appr",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.322
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-17",
+      "heuristic_name": "Yogurt Free Granola",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 69,
+          "points": 150
+        }
+      },
+      "nomination": {
+        "name": "Yogurt Free Granola",
+        "seed_score": 328.5,
+        "summary": "Show HN: Yogurt \u2013 Free, private, open-source alternative to Granola",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50454625",
+            "source": "hackernews",
+            "title": "Show HN: Yogurt \u2013 Free, private, open-source alternative to Granola",
+            "body": "Show HN: Yogurt \u2013 Free, private, open-source alternative to Granola",
+            "url": "https://github.com/FrigadeHQ/yogurt",
+            "author": "brownrout",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 150,
+              "comments": 69
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Show HN: Yogurt \u2013 Free, private, open-source alternative to",
+            "snippet": "Show HN: Yogurt \u2013 Free, private, open-source alternative to Granola",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50454625",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3265
+          }
+        ]
+      }
+    }
+  ]
+}

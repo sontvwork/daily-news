@@ -1,0 +1,808 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "ecb411f910a25dd5",
+  "generated_at": "2026-11-11T23:59:31.816817Z",
+  "from_date": "2026-11-10",
+  "to_date": "2026-11-11",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-11T23:59:31.762135Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-11T23:59:31.762141Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 7,
+      "attempted": true,
+      "at": "2026-11-11T23:59:31.670301Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 62,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-11T23:59:31.761996Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AI Maya",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 334,
+          "points": 909
+        }
+      },
+      "nomination": {
+        "name": "AI Maya",
+        "seed_score": 1864.5,
+        "summary": "My AI agents found an unmapped Maya site",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50452455",
+            "source": "hackernews",
+            "title": "My AI agents found an unmapped Maya site",
+            "body": "My AI agents found an unmapped Maya site",
+            "url": "https://pietromiotti.com/latest/maya-site",
+            "author": "eyvindn",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 909,
+              "comments": 334
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "HN story about My AI agents found an unmapped Maya site",
+            "snippet": "My AI agents found an unmapped Maya site",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50452455",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.494
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AlphaProof Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 195,
+          "points": 668
+        }
+      },
+      "nomination": {
+        "name": "AlphaProof Code",
+        "seed_score": 915.3497,
+        "summary": "AlphaProof Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50439193",
+            "source": "hackernews",
+            "title": "AlphaProof Code",
+            "body": "AlphaProof Code",
+            "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+            "author": "ilreb",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 668,
+              "comments": 195
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "HN story about AlphaProof Code",
+            "snippet": "AlphaProof Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50439193",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 10,
+            "engagement_score": 92,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1885
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "United Airlines bans AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 246,
+          "points": 271
+        }
+      },
+      "nomination": {
+        "name": "United Airlines bans AI agents",
+        "seed_score": 775.5,
+        "summary": "United Airlines bans AI agents from booking flights on behalf of travelers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50458900",
+            "source": "hackernews",
+            "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "body": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+            "author": "herpderperator",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 271,
+              "comments": 246
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "HN story about United Airlines bans AI agents from booking flights on behal",
+            "snippet": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50458900",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4585000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "2019 JavaScript",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 140,
+          "points": 423
+        }
+      },
+      "nomination": {
+        "name": "2019 JavaScript",
+        "seed_score": 597.1517,
+        "summary": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50443812",
+            "source": "hackernews",
+            "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "body": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "url": "https://github.com/GoogleChrome/modern-web-guidance",
+            "author": "paulirish",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 423,
+              "comments": 140
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Show HN: Get your coding agent off ~2019 JavaScript, onto mo",
+            "snippet": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50443812",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 84,
+            "source_quality": 0.8,
+            "local_rank_score": 0.10900000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Atuin Threads",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 66,
+          "points": 183
+        }
+      },
+      "nomination": {
+        "name": "Atuin Threads",
+        "seed_score": 373.5,
+        "summary": "Atuin Threads: All your agent sessions on every machine",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50453637",
+            "source": "hackernews",
+            "title": "Atuin Threads: All your agent sessions on every machine",
+            "body": "Atuin Threads: All your agent sessions on every machine",
+            "url": "https://blog.atuin.sh/threads-agent-sessions/",
+            "author": "linsomniac",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 183,
+              "comments": 66
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Atuin Threads: All your agent sessions on every machine",
+            "snippet": "Atuin Threads: All your agent sessions on every machine",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50453637",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.8,
+            "local_rank_score": 0.294
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "ML China",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "ML China",
+        "seed_score": 178.5,
+        "summary": "In this post I am not trying to bash Chinese researchers by any means but I have gotten VERY curious in the past few years as to how research is conducted in China.\n\nIt is no secret to anyone with a pair of eyes that Chinese researchers in ML (especially Chinese researcher based in China) are extremely productive to the point of defying common sense. We are talking about 100-200 papers while an un",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R78",
+            "source": "reddit",
+            "title": "Can we talk about the ML research coming from China? [D]",
+            "body": "Can we talk about the ML research coming from China? [D]\nIn this post I am not trying to bash Chinese researchers by any means but I have gotten VERY curious in the past few years as to how research is conducted in China.\n\nIt is no secret to anyone with a pair of eyes that Chinese researchers in ML (especially Chinese researcher based in China) are extremely productive to the point of defying common sense. We are talking about 100-200 papers while an undergraduate/graduate student. 1 paper a week is not unheard of. Can easily pull up Google scholar profiles of random Chinese researcher or PhD student with hundreds of papers submitted to dozens of different conferences. At the same time they have co-authors in the range of dozens and sometimes hundreds, especially when it comes to benchmarks or surveys.  \n\nThe research seem to concentrate heavily in the LLM/Multi-Modal space, with very few novel mathematical derivation/arguments but tons of experiments, sometimes ranging almost hundred page of experiments. I ran some of these work in ChatGPT/Claude to check for possible LLM generated artifacts and usually it quickly returns a list of suspicious sections, but the paper were subsequently accepted in ICLR anyways. \n\nI am confused as to what exactly is happening. I understand that Chinese folks have entire publishing ecosystem and hiring ecosystem that is insular to the west. It is well known that the Chinese faculties working in the states would routinely advertise for academic positions in places like Xiaohongshu (RedNote) or TikTok or BiliBili, which creates a certain level of unfairness. But I wonder if similar network exist for people who want to publish papers to get together to \"scratch each other's back\", or give someone a proper credentials. \n\nWould appreciate it if someone can give us an inside look into how this all work.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xteym8/can_we_talk_about_the_ml_research_coming_from/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 77,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "In this post I am not trying to bash Chinese researchers by any means but I have gotten VERY curious in the past few years as to how research is conducted in China.\n\nIt is no secret to anyone with a pair of eyes that Chinese researchers in ML (especially Chinese researcher based in China) are extremely productive to the point of defying common sense. We are talking about 100-200 papers while an un",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Pomerado YC F26 Turn MCP",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 35,
+          "points": 42
+        }
+      },
+      "nomination": {
+        "name": "Pomerado YC F26 Turn MCP",
+        "seed_score": 115.5,
+        "summary": "Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP for agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50455811",
+            "source": "hackernews",
+            "title": "Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP for agents",
+            "body": "Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP for agents",
+            "url": "https://news.ycombinator.com/item?id=50455811",
+            "author": "alanjm23",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 42,
+              "comments": 35
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP",
+            "snippet": "Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP for agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50455811",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3055
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 54
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 108.0,
+        "summary": "Honest question, because I\u2019m starting to feel like the hype doesn\u2019t match reality.\n\nEvery other post here is about someone building a multi-agent workflow with orchestrators, sub-agents, memory layers and so on. But when I look at what people actually *use* day to day it feels a lot like the 3D printer craze: a cool machine that mostly sits there collecting dust, occasionally producing a keychain.",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "Is anyone actually using AI agents for a real reason?",
+            "body": "Is anyone actually using AI agents for a real reason?\nHonest question, because I\u2019m starting to feel like the hype doesn\u2019t match reality.\n\nEvery other post here is about someone building a multi-agent workflow with orchestrators, sub-agents, memory layers and so on. But when I look at what people actually *use* day to day it feels a lot like the 3D printer craze: a cool machine that mostly sits there collecting dust, occasionally producing a keychain.\n\nOutside of automating one very specifictask  (emails, scraping, formatting data)  I honestly don\u2019t see where agents are useful. \n\nGenuinely curious",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xttagi/is_anyone_actually_using_ai_agents_for_a_real/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 54
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Honest question, because I\u2019m starting to feel like the hype doesn\u2019t match reality.\n\nEvery other post here is about someone building a multi-agent workflow with orchestrators, sub-agents, memory layers and so on. But when I look at what people actually *use* day to day it feels a lot like the 3D printer craze: a cool machine that mostly sits there collecting dust, occasionally producing a keychain.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.435
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Have ICLR reviews",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "Have ICLR reviews",
+        "seed_score": 55.5,
+        "summary": "Something weird I observed with my batch of papers and my own paper. Authors have not posted a single rebuttal yet, and no reviewer has responded to ours. This is a batch of almost 10-12 papers. Even papers with borderline fixable reviews have no responses from authors. Have people basically given up on ICLR?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R75",
+            "source": "reddit",
+            "title": "Have people given up on ICLR reviews? [D]",
+            "body": "Have people given up on ICLR reviews? [D]\nSomething weird I observed with my batch of papers and my own paper. Authors have not posted a single rebuttal yet, and no reviewer has responded to ours. This is a batch of almost 10-12 papers. Even papers with borderline fixable reviews have no responses from authors. Have people basically given up on ICLR?",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xtt0px/have_people_given_up_on_iclr_reviews_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Something weird I observed with my batch of papers and my own paper. Authors have not posted a single rebuttal yet, and no reviewer has responded to ours. This is a batch of almost 10-12 papers. Even papers with borderline fixable reviews have no responses from authors. Have people basically given up on ICLR?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29200000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "LangChain Deep Agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "LangChain Deep Agents",
+        "seed_score": 53.033,
+        "summary": "I\u2019ve been experimenting with LangChain\u2019s Deep Agents recently, and I\u2019m curious how many people are actually using it for real-world applications.\n\nOne thing I find particularly interesting is the combination of **skills, filesystem-based context, and subagents**.\n\nIt seems to offer a different approach to building agents. Instead of having to design a dedicated LangGraph graph for every single tas",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Is anyone using LangChain Deep Agents in production? I think skills + filesystem make a really interesting architecture",
+            "body": "Is anyone using LangChain Deep Agents in production? I think skills + filesystem make a really interesting architecture\nI\u2019ve been experimenting with LangChain\u2019s Deep Agents recently, and I\u2019m curious how many people are actually using it for real-world applications.\n\nOne thing I find particularly interesting is the combination of **skills, filesystem-based context, and subagents**.\n\nIt seems to offer a different approach to building agents. Instead of having to design a dedicated LangGraph graph for every single task or workflow, you can define capabilities through skills, organize knowledge and instructions through a folder structure, and let the agent decide how to execute the task.\n\nI find this architecture much more flexible. You can add new capabilities, modify instructions, introduce subagents, and evolve the system without constantly having to redesign the underlying graph.  \nIt also seems like a potentially scalable and deployable approach for building custom agents.  \nA few questions for people experimenting with it:\n\n\\- How many of you are actually using Deep Agents? \n\n\\- Is anyone running it in production?\n\n\\- Are you using it through the API to handle specific business tasks, rather than just as a coding agent?\n\n\\- How are you handling deployment, concurrency, state management, and persistence?\n\n\\- Do you see this architecture as a viable alternative to building custom LangGraph workflows for every use case, or are there limitations that become apparent at scale?\n\nI\u2019d be particularly interested in hearing from people who have deployed it as part of an actual application rather than just experimented with it locally.\n\nCurious to hear your experiences!",
+            "url": "https://www.reddit.com/r/LangChain/comments/1xsx5i7/is_anyone_using_langchain_deep_agents_in/",
+            "container": "LangChain",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been experimenting with LangChain\u2019s Deep Agents recently, and I\u2019m curious how many people are actually using it for real-world applications.\n\nOne thing I find particularly interesting is the combination of **skills, filesystem-based context, and subagents**.\n\nIt seems to offer a different approach to building agents. Instead of having to design a dedicated LangGraph graph for every single tas",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1605
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "TimesFM 3.0 Chronos-2 Toto 2.0",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "TimesFM 3.0 Chronos-2 Toto 2.0",
+        "seed_score": 43.4871,
+        "summary": "I may be naive, but I've been curious whether the recent wave of time-series foundation models can actually extract useful predictive signals from financial markets.\n\nModels like Google's TimesFM 3.0, Amazon's Chronos-2, and Datadog's Toto 2.0 are impressive general-purpose forecasters from the first sight. But stock prices are difficult to predict, so I wanted to see how these models perform agai",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R83",
+            "source": "reddit",
+            "title": "I benchmarked TimesFM 3.0, Chronos-2 and Toto 2.0 on market time series. None beat simple baseline. [P]",
+            "body": "I benchmarked TimesFM 3.0, Chronos-2 and Toto 2.0 on market time series. None beat simple baseline. [P]\nI may be naive, but I've been curious whether the recent wave of time-series foundation models can actually extract useful predictive signals from financial markets.\n\nModels like Google's TimesFM 3.0, Amazon's Chronos-2, and Datadog's Toto 2.0 are impressive general-purpose forecasters from the first sight. But stock prices are difficult to predict, so I wanted to see how these models perform against very simple baselines.\n\nI ran a series of zero-shot experiments on 24 US stocks and ETFs, including daily and intraday data, and compared their predictions against naive forecasting strategies and also simulated random walks.\n\n**TL;DR  none of the three models showed any meaningful predictive power for stock price movements in this setup.**\n\nExperimental setup i used:\n\n* Models: TimesFM 3.0, Chronos-2, Toto 2.0 (313M)\n* Assets: 24 large US stocks and ETFs, including SPY, QQQ and IWM\n* Data: Yahoo Finance, January 2014 to november 2026\n* Evaluation: 504 trading days starting November 2024\n* Context: 512 historical closing prices\n* Forecast horizons: 1, 5 and 20 trading days\n* Mode: Zero-shot, default configurations, no fine-tuning\n* Baselines: Last observed price, always-up directional prediction, and simulated random walks with matched drift and volatility\n\nI also evaluated the models on hourly and 5-minute price bars.\n\nhttps://i.redd.it/npb9z5o67t0i1.png\n\nDirectional accuracy is essentially a coin flip\n\nAcross the three models, next-day directional accuracy ranged from 49.9% to 51.1%.\n\nSimply predicting that the market would go up every day achieved 52.2% (yep).\n\nEven more interestingly, when I fed the models simulated random walks, which contain no exploitable predictive signal at all by construction, they achieved approximately the same directional accuracy as on actual stock prices.\n\n  \nI also tested a simple long-or-cash: hold a stock when the model predicts an increase, otherwise stay in cash.\n\nStarting with $10,000 and accounting for 0.05% transaction costs per switch:\n\n* Times-series model strategies finished between $10,893 and $12,181.\n* Buy-and-hold finished at $15,036.\n\nObviously, this is just one simple strategy and not an exhaustive evaluation of trading profitability. But still, tells something I guess.\n\nI repeated the experiments using hourly and 5-minute bars.\n\nThe results were similar: directional accuracy remained around chance level, and on 5-minute data, a simple one-line mean-reversion heuristic performed better.\n\nThe repo with code is here: [https://github.com/moneyheap/tsfm-stocks](https://github.com/moneyheap/tsfm-stocks)\n\n  \nWell, I really wanted this to work, but, duh %)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xsqztt/i_benchmarked_timesfm_30_chronos2_and_toto_20_on/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 33,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I may be naive, but I've been curious whether the recent wave of time-series foundation models can actually extract useful predictive signals from financial markets.\n\nModels like Google's TimesFM 3.0, Amazon's Chronos-2, and Datadog's Toto 2.0 are impressive general-purpose forecasters from the first sight. But stock prices are difficult to predict, so I wanted to see how these models perform agai",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 10,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.108
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "LLM AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "LLM AI",
+        "seed_score": 42.0,
+        "summary": "I want to know how people choose an LLM when building AI agents. Do you mainly look at cost, speed, accuracy or the type of task the agent needs to handle? Would love to hear what works best based on your experience. TIA",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R65",
+            "source": "reddit",
+            "title": "How do you decide which LLM to use for a particular AI agent?",
+            "body": "How do you decide which LLM to use for a particular AI agent?\nI want to know how people choose an LLM when building AI agents. Do you mainly look at cost, speed, accuracy or the type of task the agent needs to handle? Would love to hear what works best based on your experience. TIA",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xtlz4q/how_do_you_decide_which_llm_to_use_for_a/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I want to know how people choose an LLM when building AI agents. Do you mainly look at cost, speed, accuracy or the type of task the agent needs to handle? Would love to hear what works best based on your experience. TIA",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.416
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "LangChain",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "LangChain",
+        "seed_score": 39.2444,
+        "summary": "I've been exploring LangChain and LangGraph while working on a multi-agent workflow, and I'm starting to wonder if the abstraction is creating more problems than it's solving.\n\nThe idea seemed pretty straightforward, build a system that fetches a company's 10K, extracts the financial statements, sends them to three specialized agents (income statement, balance sheet, cash flow), and combines their",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Is LangChain actually making agent development easier, or am I overcomplicating things?",
+            "body": "Is LangChain actually making agent development easier, or am I overcomplicating things?\nI've been exploring LangChain and LangGraph while working on a multi-agent workflow, and I'm starting to wonder if the abstraction is creating more problems than it's solving.\n\nThe idea seemed pretty straightforward, build a system that fetches a company's 10K, extracts the financial statements, sends them to three specialized agents (income statement, balance sheet, cash flow), and combines their findings into a structured report.\n\nAt first, LangChain looked great. `create_agent`, u/tool, structured outputs, and model integrations make getting a basic agent running surprisingly easy.\n\nBut once I started looking into more complex workflows, things got confusing.\n\nSuddenly I'm dealing with `StateGraph`, nodes, edges, shared state, checkpointers, `thread_id`, conditional routing, and `Command` objects. Then there's middleware, retries, and `interrupt()` if I want human approval before publishing anything.\n\nAnd debugging feels like another learning curve. For example, if an agent produces an incorrect financial figure or passes incomplete data to the next agent, how do I efficiently figure out whether the problem came from the tool response, the prompt, the state being passed between nodes, or the model itself?\n\nLangSmith tracing seems helpful, but I'm still trying to understand the best way to structure everything so that debugging doesn't become harder than building the actual workflow. And also bills are piled up.\n\nI'm just wondering whether I've reached the point where the framework requires more attention than the actual business logic.\n\n**For people who have built more complex agents with LangChain/LangGraph:**\n\n1. Did you experience this complexity as well, or does it get significantly easier once you understand the architecture?\n2. How do you normally debug multi-agent workflows? LangSmith, LangGraph Studio, custom logging, or something else?\n3. Do you use LangChain for everything, or prefer native Python + model SDKs for certain parts?\n4. Looking back, what would you have done differently when you started?\n\nWould genuinely appreciate hearing what worked for you, especially from people running agents in production.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1xsrwyv/is_langchain_actually_making_agent_development/",
+            "container": "LangChain",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been exploring LangChain and LangGraph while working on a multi-agent workflow, and I'm starting to wonder if the abstraction is creating more problems than it's solving.\n\nThe idea seemed pretty straightforward, build a system that fetches a company's 10K, extracts the financial statements, sends them to three specialized agents (income statement, balance sheet, cash flow), and combines their",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1505
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "AI edit existing DOCX files",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "AI edit existing DOCX files",
+        "seed_score": 39.0,
+        "summary": "Where does the human review happen in your setup? say an agent updates a clause and a few table cells in an existing DOCX. does the user see those changes in an editor before saving, or download a new file and check it in Word? I'm curious how you catch formatting changes along the way, especially when the user has already made their own edits.",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "How are you letting AI edit existing DOCX files without breaking the formatting?",
+            "body": "How are you letting AI edit existing DOCX files without breaking the formatting?\nWhere does the human review happen in your setup? say an agent updates a clause and a few table cells in an existing DOCX. does the user see those changes in an editor before saving, or download a new file and check it in Word? I'm curious how you catch formatting changes along the way, especially when the user has already made their own edits.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xtp8sq/how_are_you_letting_ai_edit_existing_docx_files/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Where does the human review happen in your setup? say an agent updates a clause and a few table cells in an existing DOCX. does the user see those changes in an editor before saving, or download a new file and check it in Word? I'm curious how you catch formatting changes along the way, especially when the user has already made their own edits.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40099999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Weekly Thread Project Display",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Weekly Thread Project Display",
+        "seed_score": 36.0,
+        "summary": "Weekly thread to show off your AI Agents and LLM Apps! Top voted projects will be featured in our weekly [newsletter](http://ai-agents-weekly.beehiiv.com).",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Weekly Thread: Project Display",
+            "body": "Weekly Thread: Project Display\nWeekly thread to show off your AI Agents and LLM Apps! Top voted projects will be featured in our weekly [newsletter](http://ai-agents-weekly.beehiiv.com).",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xtn3pe/weekly_thread_project_display/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Weekly thread to show off your AI Agents and LLM Apps! Top voted projects will be featured in our weekly [newsletter](http://ai-agents-weekly.beehiiv.com).",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.411
+          }
+        ]
+      }
+    }
+  ]
+}

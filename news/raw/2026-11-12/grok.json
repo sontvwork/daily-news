@@ -1,0 +1,231 @@
+{
+ "date": "2026-11-12",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-12.json",
+ "fetched_at": "2026-11-11T23:59:12+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T05:30:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 8,
+  "ok": 8,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Google Antigravity rolls out browser use for agents",
+   "category": "feature_update",
+   "event_time": "2026-11-11T16:37:04Z",
+   "primary_url": "https://antigravity.google/docs/changelog/",
+   "facts": [
+    "Browser use has been rolling out in Antigravity, closing the loop between researching, writing code, and verifying it live.",
+    "You choose what to log into, downloads pause until you approve them, and the agent can use the browser to run multiple tasks at once."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/antigravity/status/2120556423474028576",
+     "official": true,
+     "author": "@antigravity",
+     "check": "ok",
+     "created_at": "2026-11-11T16:37:04Z",
+     "text": "Browser use has been rolling out in Antigravity, closing the loop between researching, writing code, and verifying it live.\n\nYou choose what to log into, downloads pause until you approve them, and the agent can use the browser to run multiple tasks at once. Give it a try today.",
+     "likes": 1680,
+     "retweets": 100,
+     "replies": 105,
+     "views": 77375
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Gemini 4 Carbon and /swarm multi-agent preview land in Antigravity",
+   "category": "model_infra",
+   "event_time": "2026-11-10T00:00:00Z",
+   "primary_url": "https://antigravity.google/blog/gemini-4-carbon-in-google-antigravity/",
+   "facts": [
+    "Today, we’re rolling out Gemini 4 Carbon inside Google Antigravity alongside /swarm (in preview), pairing our strongest model for long-horizon software engineering with native multi-agent team orchestration.",
+    "Google AI Ultra subscribers can build with Gemini 4 Carbon in the Antigravity App, the Antigravity CLI, and Antigravity IDE extensions, and /swarm is rolling out today in preview."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/antigravity/status/2120556423474028576",
+     "official": true,
+     "author": "@antigravity",
+     "check": "ok",
+     "created_at": "2026-11-11T16:37:04Z",
+     "text": "Browser use has been rolling out in Antigravity, closing the loop between researching, writing code, and verifying it live.\n\nYou choose what to log into, downloads pause until you approve them, and the agent can use the browser to run multiple tasks at once. Give it a try today.",
+     "likes": 1680,
+     "retweets": 100,
+     "replies": 105,
+     "views": 77375
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Command Code Desktop v0.1.61 lets Claude Code run as an agent in chat",
+   "category": "tool_launch",
+   "event_time": "2026-11-11T00:00:00Z",
+   "primary_url": "https://github.com/CommandCodeAI/desktop/releases/tag/v0.1.61",
+   "facts": [
+    "Use Claude Code as an agent right in the chat.",
+    "DeepSeek V4.1 Flash is now the default model. Add Gemini 4 Carbon, Claude Fable 5.2, Muse Ember, DeepSeek V4.1 Flash Ultrafast and Ling 3.1 Flash 1019 to the model picker."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/CommandCodeAI/status/2120607963446751518",
+     "official": true,
+     "author": "@CommandCodeAI",
+     "check": "ok",
+     "created_at": "2026-11-11T20:01:52Z",
+     "text": "Download now and get started!\nhttps://commandcode.ai/desktop",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 0,
+     "views": 568,
+     "reply_to": "@CommandCodeAI"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Developer reports opening 23 PRs in one day with AI agents and adjusting workflow",
+   "category": "discussion",
+   "event_time": "2026-11-11T22:23:02Z",
+   "primary_url": null,
+   "facts": [
+    "I opened 23 PRs today on 3 different contexts, and to be honest I had to put most of my mental effort on not getting lost.",
+    "These are the changes I made to handle 2-3x the volume: Better design since the beginning, Critical PRs go to me for review, New task = new session, No coordinators past 150k tokens."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/liamszefner/status/2120643492145684481",
+     "official": false,
+     "author": "@liamszefner",
+     "check": "ok",
+     "created_at": "2026-11-11T22:23:02Z",
+     "text": "First time feeling genuinely overwhelmed by AI output at Opereit.\n\nI opened 23 PRs today on 3 different contexts, and to be honest I had to put most of my mental effort on not getting lost. \n\nMight not sound like much given what I do on my personal side, but to keep a very high bar and review critical code and making sure other engineers can read, understand and work on top of the PRs it took a LOT of focus.\n\nSmall plus, I fried my claude 5h window twice AND bloated the slack channel ( mb team ). \n\nToday proved that my workflow wasn't ready to handle this volume. These are the changes I made to handle 2-3x the volume:\n\n- Better design since the beginning: I can be wrong in the approach I take, or miss a few things, but not following conventions or allowing workers to assume things is the reason we need human reviews.\n\n- Critical PRs: UI/UX, key features and db goes to me for a business and approach review before sending to the team  \n\n- New task = new session: Workers don't need to remember stuff, so if we need to review / fix comments we start fresh.\n\n- No coordinators past 150k tokens: More then this gets handed off to a new one.\n\n- Asking for reviews by stack, not individual PRs: Sounds dumb but I think the effect will be to not bloat the channel, and for new PRs just reply in thread. \n\nsome more as well, but less relevant ( ex: cleanup when done, workers are haiku... ) \n\nSo to sum up, to 10x the volume I have to 10x the context awareness and 10x the tokens with a quality workflow, and keep iterating and pushing and pushing",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 3,
+     "views": 66
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Roma 2.0 launches as to-do list for coordinating multiple AI agents",
+   "category": "tool_launch",
+   "event_time": "2026-11-11T15:59:25Z",
+   "primary_url": null,
+   "facts": [
+    "Roma automatically creates tasks and hands them to the right agent. Allowing you and your agents to work together, with shared context."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/jans/status/2120546950496043111",
+     "official": true,
+     "author": "@jans",
+     "check": "ok",
+     "created_at": "2026-11-11T15:59:25Z",
+     "text": "In 2014, I sold my first company Loom to Dropbox.\n\nToday, I’m proud to announce Roma 2.0 (YC F26): the first to-do list for AI agents.\n\nEveryone uses a different agent: Claude, Grok Bot, Muse…\n\nUntil now, none of them could work together.\n\nRoma automatically creates tasks and hands them to the right agent.\n\nAllowing you and your agents to work together, with shared context.\n\nTry it here: http://roma.app",
+     "likes": 941,
+     "retweets": 73,
+     "replies": 242,
+     "views": 595843
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Claude Fable 5.2 tops Signal65 PINNACLE coding benchmark",
+   "category": "trend",
+   "event_time": "2026-11-11T22:19:02Z",
+   "primary_url": null,
+   "facts": [
+    "Claude Fable 5.2 passed 28 of 30 Frontier Class coding jobs on Signal65 PINNACLE. No other model has passed more than 21.",
+    "It also costs $30.51 per passed job in our testing, 3.9x Claude Opus 5.5."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Signal_65/status/2120642485881835680",
+     "official": false,
+     "author": "@Signal_65",
+     "check": "ok",
+     "created_at": "2026-11-11T22:19:02Z",
+     "text": "Claude Fable 5.2 passed 28 of 30 Frontier Class coding jobs on Signal65 PINNACLE. No other model has passed more than 21. It also costs $30.51 per passed job in our testing, 3.9x Claude Opus 5.5. Best model on the board, priced like it. https://x.com/i/article/2120636741958643713",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 6,
+     "views": 4601
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Qwen4-Max-Preview builds full interactive 3D Earth app in under 2 hours via agent",
+   "category": "case_study",
+   "event_time": "2026-11-11T22:20:28Z",
+   "primary_url": null,
+   "facts": [
+    "Qwen4-Max-Preview built a full 3D Earth mission control app in 1 hour and 47 minutes using Hermes harness.",
+    "From prompt to live website: started 9:23 AM, deployed and verified 11:10 AM."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ViC305/status/2120642845032042753",
+     "official": false,
+     "author": "@ViC305",
+     "check": "ok",
+     "created_at": "2026-11-11T22:20:28Z",
+     "text": "🚨🌍 𝗤𝗪𝗘𝗡𝟰-𝗠𝗔𝗫-𝗣𝗥𝗘𝗩𝗜𝗘𝗪 𝗕𝗨𝗜𝗟𝗧 𝗠𝗘 𝗔 𝗙𝗨𝗟𝗟 𝟯𝗗 𝗘𝗔𝗥𝗧𝗛 𝗠𝗜𝗦𝗦𝗜𝗢𝗡 𝗖𝗢𝗡𝗧𝗥𝗢𝗟 𝗜𝗡 𝗝𝗨𝗦𝗧 𝟭 𝗛𝗢𝗨𝗥 𝗔𝗡𝗗 𝟰𝟳 𝗠𝗜𝗡𝗨𝗧𝗘𝗦! 🤯🚀\nNot a mockup. Not a static demo.\n𝗔 𝗥𝗘𝗔𝗟, 𝗜𝗡𝗧𝗘𝗥𝗔𝗖𝗧𝗜𝗩𝗘, 𝗣𝗨𝗕𝗟𝗜𝗖𝗟𝗬 𝗗𝗘𝗣𝗟𝗢𝗬𝗘𝗗 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡!\nIntroducing 𝗢𝗥𝗕𝗜𝗧𝗔𝗟. 🌎\n\nI wanted to see just how far @Alibaba_Qwen  Qwen4-Max-Preview could push agentic software engineering using @NousResearch's Hermes as my harness.\n\nSo I gave it an ambitious challenge: build a cinematic Earth intelligence platform combining satellite tracking, rocket launches, aircraft visualization and a fully interactive 3D globe.\n\n𝗙𝗥𝗢𝗠 𝗣𝗥𝗢𝗠𝗣𝗧 𝗧𝗢 𝗟𝗜𝗩𝗘 𝗪𝗘𝗕𝗦𝗜𝗧𝗘:\n\n⏱️ Started: 9:23 AM\n🚀 Deployed and verified: 11:10 AM\n🔥 Total: 𝟭 𝗛𝗢𝗨𝗥 𝟰𝟳 𝗠𝗜𝗡𝗨𝗧𝗘𝗦!\nAnd look at what it built!\n━━━━━━━━━━━━━━━━━━\n\n🌎 𝗖𝗜𝗡𝗘𝗠𝗔𝗧𝗜𝗖 𝟯𝗗 𝗘𝗔𝗥𝗧𝗛\n\n🌍 NASA Blue Marble imagery\n🌗 Real Sun-driven day/night terminator\n🌃 Nighttime city lights\n☁️ Rotating clouds and atmosphere\n🌙 Sun, Moon and Milky Way\n🎥 Cinematic camera controls\n\n🛰️ 𝗟𝗜𝗩𝗘 𝗦𝗔𝗧𝗘𝗟𝗟𝗜𝗧𝗘 𝗧𝗥𝗔𝗖𝗞𝗜𝗡𝗚\n\n📡 589 objects loaded during testing\n🚀 Starlink, GPS, ISS, weather and science\n🧮 CelesTrak TLEs + SGP4 propagation\n📊 Altitude, velocity and orbital telemetry\n🎯 Select the ISS and lock the camera onto it!\n🚀 𝗥𝗢𝗖𝗞𝗘𝗧 𝗟𝗔𝗨𝗡𝗖𝗛 𝗠𝗜𝗦𝗦𝗜𝗢𝗡 𝗖𝗢𝗡𝗧𝗥𝗢𝗟\n⏳ 14 upcoming launches loaded during testing\n🚀 SpaceX, ULA, Rocket Lab and more\n📍 Launchpads, mission data and countdowns\n🌍 Click a launch to fly to its launch site!\n✈️ 𝗔𝗜𝗥 𝗧𝗥𝗔𝗙𝗙𝗜𝗖 𝗩𝗜𝗦𝗨𝗔𝗟𝗜𝗭𝗔𝗧𝗜𝗢𝗡\n320 simulated aircraft on real airport routes when live OpenSky access is blocked by CORS. Clearly labeled as SIMULATED, not falsely presented as live data.\n⚡ Time warp up to 300×\n🔎 Global search and constellation filters\n📱 Desktop and mobile support\n🎛️ Full Mission Control HUD\n\n━━━━━━━━━━━━━━━━━━\n\n💻 𝗧𝗛𝗘 𝗘𝗡𝗚𝗜𝗡𝗘𝗘𝗥𝗜𝗡𝗚 𝗜𝗦 𝗪𝗛𝗔𝗧 𝗥𝗘𝗔𝗟𝗟𝗬 𝗜𝗠𝗣𝗥𝗘𝗦𝗦𝗘𝗗 𝗠𝗘.\nDuring that 1h47m session, the agent worked through:\n✅ ~1,700 lines of TypeScript/React\n✅ CesiumJS 3D Earth rendering\n✅ Satellite orbital propagation\n✅ Live API integration and CORS handling\n✅ Three build/fix cycles\n✅ Desktop and mobile browser QA\n✅ ISS follow-camera verification\n✅ GitHub…",
+     "likes": 11,
+     "retweets": 0,
+     "replies": 2,
+     "views": 743
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Discussions on agent coordination and the need for isolation in multi-agent coding",
+   "category": "discussion",
+   "event_time": "2026-11-11T22:10:00Z",
+   "primary_url": null,
+   "facts": [
+    "A coding agent picking up a task and writing to your repo needs the handoff to come with isolation, not just shared context. That's what git worktrees are for."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/stretchcloud/status/2120640210493198737",
+     "official": false,
+     "author": "@stretchcloud",
+     "check": "ok",
+     "created_at": "2026-11-11T22:10:00Z",
+     "text": "Everyone keeps shipping a universal task layer for agents, and it says something that almost nobody is shipping it for the one agent category that actually touches production code.\n\nRoma just launched its 2.0 version: a to-do list that creates tasks automatically and hands them to whichever agent should run them, Claude, Grok Bot, Muse, whatever you've got wired in, with shared context between them. Jan Senderek built it after selling Loom to Dropbox back in 2014, and the pitch is simple: you stopped using one agent months ago, so stop pretending your tools only understand one. 378 thousand views in a few hours says the pitch is landing.\n\nThat's the right instinct pointed at the wrong layer for anyone writing software with these things. A chat agent picking up a task from a shared queue can fail safely, worst case it gives a bad answer and you ask again. A coding agent picking up a task and writing to your repo needs the handoff to come with isolation, not just shared context. That's what git worktrees are for, and it's why Campfire runs Claude Code, Codex, Goose, Aider and OpenHands side by side in separate worktrees instead of one shared workspace, so two agents racing the same ticket never step on each other's changes, and a majority vote decides what actually merges, not one model's judgment.\n\nThe to-do list for agents is a real category now. The version of it that matters for code needs permission voting and session replay built in from day one, not bolted on after the first merge conflict.\n\nhttps://github.com/stretchcloud/campfire\nhttps://x.com/jans/status/2120546950496043111",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 3,
+     "views": 317,
+     "quote": {
+      "author": "@jans",
+      "text": "In 2014, I sold my first company Loom to Dropbox.\n\nToday, I’m proud to announce Roma 2.0 (YC F26): the first to-do list for AI agents.\n\nEveryone uses a different agent: Claude, Grok Bot, Muse…\n\nUntil now, none of them could work together.\n\nRoma automatically creates tasks and hands them to the right agent.\n\nAllowing you and your agents to work together, with shared context.\n\nTry it here: http://roma.app"
+     }
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

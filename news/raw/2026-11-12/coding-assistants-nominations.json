@@ -1,0 +1,832 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "2ee5ae565798fa66",
+  "generated_at": "2026-11-11T23:59:32.366770Z",
+  "from_date": "2026-11-10",
+  "to_date": "2026-11-11",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-11T23:59:32.331249Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-11T23:59:32.331254Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 49,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-11T23:59:32.330706Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-11T23:59:32.331187Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AlphaProof Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 195,
+          "points": 668
+        },
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "AlphaProof Code",
+        "seed_score": 1528.7522,
+        "summary": "AlphaProof Code",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50439193",
+            "source": "hackernews",
+            "title": "AlphaProof Code",
+            "body": "AlphaProof Code",
+            "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+            "author": "ilreb",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 668,
+              "comments": 195
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about AlphaProof Code",
+            "snippet": "AlphaProof Code",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50439193",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.203
+          },
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Google DeepMind unveils AlphaGenome 2, an AI model that predicts how DNA changes affect different types of cells",
+            "body": "Google DeepMind unveils AlphaGenome 2, an AI model that predicts how DNA changes affect different types of cells\nAnother day, another ship by GDM. Yesterday they unveiled AlphaProof Code and Gemini Robotics 2.5 and Google rolled out Gemini 4 Carbon to developers. Today they announced AlphaGenome 2. The blog post is an interesting read.\u00a0\n\nA few interesting details:\n\n\\-> it was trained on more than 100 million individual cell profiles across 68 tissues\n\n\\-> in a benchmark covering 28 immune cell types, it picked up nearly twice as many variants that affect gene activity as the original AlphaGenome fine-tuned on single-cell data (30% vs 16%)\n\n\\-> it can make predictions for cell states it hasn\u2019t seen before using new cell data, without having to retrain the model\n\nGDM first released\u00a0AlphaGenome in June 2025.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtkckl/google_deepmind_unveils_alphagenome_2_an_ai_model/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 251,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Another day, another ship by GDM. Yesterday they unveiled AlphaProof Code and Gemini Robotics 2.5 and Google rolled out Gemini 4 Carbon to developers. Today they announced AlphaGenome 2. The blog post is an interesting read.\u00a0\n\nA few interesting details:\n\n\\-> it was trained on more than 100 million individual cell profiles across 68 tissues\n\n\\-> in a benchmark covering 28 immune cell types, it pick",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.514
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "2019 JavaScript",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 140,
+          "points": 423
+        }
+      },
+      "nomination": {
+        "name": "2019 JavaScript",
+        "seed_score": 597.1517,
+        "summary": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50443812",
+            "source": "hackernews",
+            "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "body": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "url": "https://github.com/GoogleChrome/modern-web-guidance",
+            "author": "paulirish",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 423,
+              "comments": 140
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Show HN: Get your coding agent off ~2019 JavaScript, onto mo",
+            "snippet": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50443812",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 91,
+            "source_quality": 0.8,
+            "local_rank_score": 0.16150000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Whiteboards Claude Sheets Claude Data",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 216,
+          "points": 281
+        }
+      },
+      "nomination": {
+        "name": "Claude Whiteboards Claude Sheets Claude Data",
+        "seed_score": 527.1481,
+        "summary": "Claude Whiteboards, Claude Sheets, and Claude Data",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50443716",
+            "source": "hackernews",
+            "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "body": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+            "author": "Yorothegoat",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 281,
+              "comments": 216
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Claude Whiteboards, Claude Sheets, and Claude Data",
+            "snippet": "Claude Whiteboards, Claude Sheets, and Claude Data",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50443716",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 91,
+            "source_quality": 0.8,
+            "local_rank_score": 0.181
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "2026",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 69
+        }
+      },
+      "nomination": {
+        "name": "2026",
+        "seed_score": 382.5,
+        "summary": "no need to talk about  the first 3, Opus 5.5 may look like recency bias but it came out september 22 and:\n\n1) crushed every single competitor \n\n2)after this model we had 9 releases from  openAI , GOOGLE and Meta and more than one month later  it is still the best and every new model is compared with it\n\n3)The release of this model was a HUGE turning point in the gaming scene: First steps in recomp",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "The hall of fame as of november 2026",
+            "body": "The hall of fame as of november 2026\nno need to talk about  the first 3, Opus 5.5 may look like recency bias but it came out september 22 and:\n\n1) crushed every single competitor \n\n2)after this model we had 9 releases from  openAI , GOOGLE and Meta and more than one month later  it is still the best and every new model is compared with it\n\n3)The release of this model was a HUGE turning point in the gaming scene: First steps in recompling the ps5 software, Kernel jailbreak for Ps5, Userland jailbreak for switch 2. a fricking 14 year old  used it to port he newly released Zelda OFT on PC\n\n4) reverse engineering\n\n55) there are some people who genuinely think AI development should stop at opus 5.5 because they think it's \"enough\"\n\n  \n\n\nGPT 3.5 was 2022, GPT4 in 2023, o1 in 2024.\n\nhonorable mentions that i remember from 2025: o3 series of models, gemini2.5 (huge context window at the time) and claude 3.7/4 . probably i'm missing some so feel free to name other models\n\nopus 5.5 is 2026 i can't imagine how good the next generation of models will be in 2027",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtli1c/the_hall_of_fame_as_of_november_2026/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 186,
+              "num_comments": 69
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "no need to talk about  the first 3, Opus 5.5 may look like recency bias but it came out september 22 and:\n\n1) crushed every single competitor \n\n2)after this model we had 9 releases from  openAI , GOOGLE and Meta and more than one month later  it is still the best and every new model is compared with it\n\n3)The release of this model was a HUGE turning point in the gaming scene: First steps in recomp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Open-source method MACaQ beats Unsloth GGUFs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Open-source method MACaQ beats Unsloth GGUFs",
+        "seed_score": 160.5,
+        "summary": "Some results for those using GGUFs and llama.cpp:\n\n# GGUF quality: MACaQ vs. Unsloth and Bartowski\n\n**Qwen3-4B (IQ4\\_XS)**\n\n|Quantization|GGUF size|Mean KL \u2193|\n|:-|:-|:-|\n|**MACaQ**|**2.260 GB**|**0.02804**|\n|Bartowski|2.271 GB|0.03443|\n|Unsloth|2.271 GB|0.03663|\n\n**23.5% lower KL divergence than Unsloth** and **18.6% lower than Bartowski**, at virtually identical file sizes.\n\n**Qwen3.6-35B-A3B (IQ",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Open-source method (MACaQ) beats Unsloth GGUFs!",
+            "body": "Open-source method (MACaQ) beats Unsloth GGUFs!\nSome results for those using GGUFs and llama.cpp:\n\n# GGUF quality: MACaQ vs. Unsloth and Bartowski\n\n**Qwen3-4B (IQ4\\_XS)**\n\n|Quantization|GGUF size|Mean KL \u2193|\n|:-|:-|:-|\n|**MACaQ**|**2.260 GB**|**0.02804**|\n|Bartowski|2.271 GB|0.03443|\n|Unsloth|2.271 GB|0.03663|\n\n**23.5% lower KL divergence than Unsloth** and **18.6% lower than Bartowski**, at virtually identical file sizes.\n\n**Qwen3.6-35B-A3B (IQ4\\_XS)**\n\n|Quantization|GGUF size|Mean KL \u2193|\n|:-|:-|:-|\n|**MACaQ**|18.86 GB|**0.018696**|\n|Unsloth (UD-IQ4\\_XS)|17.73 GB|0.020954|\n|Bartowski|19.70 GB|0.021927|\n\n**Qwen3.8-27B (IQ4\\_XS)**\n\n|Quantization|GGUF size|Mean KL \u2193|\n|:-|:-|:-|\n|**MACaQ**|**14.96 GB**|**0.036784**|\n|Bartowski|15.48 GB|0.104170|\n\n\\~**65% lower KL divergence than Bartowski**!\n\n# Supported GGUF formats (llama.cpp)\n\n|Weight bits|Formats|\n|:-|:-|\n|2-bit|`IQ2_XXS`, `IQ2_XS`|\n|3-bit|`IQ3_XXS`, `IQ3_S`|\n|4-bit|`IQ4_NL`, `IQ4_XS`|\n\nCode, llama.cpp fork, and benchmarks: [https://github.com/huawei-csl/MACaQ](https://github.com/huawei-csl/MACaQ)\n\nCool to see Huawei working on such stuff and sharing some of their internal tools that are helpful for us. Maybe they can build an affordable GPU for us local LLM folks sometime \ud83d\ude02\n\nThey also report quantizing a **122B-parameter model in 64 minutes using just 32.5 GB of GPU memory**, which is interesting for a model of that size. I did not try that.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xto0fa/opensource_method_macaq_beats_unsloth_ggufs/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 85,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Some results for those using GGUFs and llama.cpp:\n\n# GGUF quality: MACaQ vs. Unsloth and Bartowski\n\n**Qwen3-4B (IQ4\\_XS)**\n\n|Quantization|GGUF size|Mean KL \u2193|\n|:-|:-|:-|\n|**MACaQ**|**2.260 GB**|**0.02804**|\n|Bartowski|2.271 GB|0.03443|\n|Unsloth|2.271 GB|0.03663|\n\n**23.5% lower KL divergence than Unsloth** and **18.6% lower than Bartowski**, at virtually identical file sizes.\n\n**Qwen3.6-35B-A3B (IQ",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "100 AI Chat GPT Pro 100",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "100 AI Chat GPT Pro 100",
+        "seed_score": 84.0,
+        "summary": "Right now I spend 90 dollars monthly on 4 pro subscriptions (Claude, Grok, GPT and Gemini) a month before taxes, no to mention an extra 150 dollars a month on the Claude API I carelessly use when I run out of my weekly usage limit here. What one 100 dollar subscription should I buy",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "If you could only spend 100 dollars a month on AI and only use one model, what would you buy? Chat GPT Pro (100 dollars), Gemini Ultra, Claude Max (100 dollars) or something else?",
+            "body": "If you could only spend 100 dollars a month on AI and only use one model, what would you buy? Chat GPT Pro (100 dollars), Gemini Ultra, Claude Max (100 dollars) or something else?\nRight now I spend 90 dollars monthly on 4 pro subscriptions (Claude, Grok, GPT and Gemini) a month before taxes, no to mention an extra 150 dollars a month on the Claude API I carelessly use when I run out of my weekly usage limit here. What one 100 dollar subscription should I buy",
+            "url": "https://www.reddit.com/r/singularity/comments/1xt9dz1/if_you_could_only_spend_100_dollars_a_month_on_ai/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Right now I spend 90 dollars monthly on 4 pro subscriptions (Claude, Grok, GPT and Gemini) a month before taxes, no to mention an extra 150 dollars a month on the Claude API I carelessly use when I run out of my weekly usage limit here. What one 100 dollar subscription should I buy",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5015000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Before",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "Before",
+        "seed_score": 46.669,
+        "summary": "I keep running into a feeling that doesn't make much sense, and I wonder if other people have it too.\n\nBack when I was building systems with older, weaker models, there were fewer problems, and the ones that showed up got fixed fast. The models are much stronger now. Before every release I go through a dozen-plus rounds of code review and bug fixing. And I'm still seeing more production issues tha",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "The models are much stronger now, but I'm hitting more production bugs than I used to. Anyone else?",
+            "body": "The models are much stronger now, but I'm hitting more production bugs than I used to. Anyone else?\nI keep running into a feeling that doesn't make much sense, and I wonder if other people have it too.\n\nBack when I was building systems with older, weaker models, there were fewer problems, and the ones that showed up got fixed fast. The models are much stronger now. Before every release I go through a dozen-plus rounds of code review and bug fixing. And I'm still seeing more production issues than I used to.\n\nI just finished a postmortem that is a pretty typical example. It was on a feature that auto-provisions after payment.\n\n1. For \"safety\", an input field got a 16384-character limit. A real user pasted about 35,000 characters and got rejected. Worse, the error message was a generic \"please enter ...\" prompt, so they had clearly filled it in and were told it was empty.\n\n2. During review, to \"harden\" the records around that path, a chain of cross-table triggers was added. Each one was reasonable on its own. Stacked together, they failed to compile on the production database (Cloudflare D1): triggers nested too deep.\n\n3. Locally, all 1236 tests passed. The local environment runs fine, production has limits, and the tests simply couldn't see them.\n\n4. Fixing it was messy. I'd fix one path, and the next one would error. That went back and forth for several rounds.\n\nMy read on it: a strong model plus many rounds of review easily turns into \"add one more layer of defense every round.\" The code gets more rigorous, the system gets more complex, and the number of things that can fail goes up with it. Review checks whether the code is correct. It can't see the production environment's limits, and it can't see how real users will actually use the thing.\n\nThe code the older models wrote was simple and blunt, and there just weren't as many places for it to blow up.\n\nWhat I'm changing now: less implicit logic, more explicit transactions. Before a release, I take the SQL to production and run a compile check on it (EXPLAIN on all 236 templates). And I run one complete flow end to end, from the first request to the final result.\n\nDo you feel this too? The stronger the model, the more fragile the system?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xsnddb/the_models_are_much_stronger_now_but_im_hitting/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I keep running into a feeling that doesn't make much sense, and I wonder if other people have it too.\n\nBack when I was building systems with older, weaker models, there were fewer problems, and the ones that showed up got fixed fast. The models are much stronger now. Before every release I go through a dozen-plus rounds of code review and bug fixing. And I'm still seeing more production issues tha",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.111
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Moat is Eroding",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Moat is Eroding",
+        "seed_score": 31.5,
+        "summary": "The moat around America\u2019s frontier AI companies is already eroding. DeepSeek shows why. When a capable model is available as open weights, companies and governments can run it themselves, keep sensitive data under their control, and decide how much capacity to reserve for critical services. For many buyers, those advantages matter more than another jump on a benchmark.\n\nTake customer service. The",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "The Moat is Eroding",
+            "body": "The Moat is Eroding\nThe moat around America\u2019s frontier AI companies is already eroding. DeepSeek shows why. When a capable model is available as open weights, companies and governments can run it themselves, keep sensitive data under their control, and decide how much capacity to reserve for critical services. For many buyers, those advantages matter more than another jump on a benchmark.\n\nTake customer service. The job is to answer questions accurately, resolve routine cases, and escalate exceptions. Once a model does that reliably, what does the frontier premium buy? If an organization can run DeepSeek on Huawei hardware at a lower cost per resolved case, it gets a cheaper service and control over which workloads get priority when demand spikes. The premium provider then has to prove that its extra capability improves the result enough to justify the price.\n\nPhones extend the same strategy to consumers. If Chinese manufacturers make capable AI a default feature on the phones they export, they can reach people who would never sign up for a standalone AI subscription. The assistant that comes with the device has the first chance to become the one people use every day. This is THE vecto to shape public opinion on AI.\n\nThat\u2019s why I think China\u2019s open-weight strategy will ultimately erode the dominance of U.S. frontier labs. Every time an open model becomes good enough for another class of work, the market that needs premium access gets smaller. American labs can still build the strongest models and command a premium for difficult work. But if governments run open models on their own infrastructure, businesses build them into their workflows, and consumers get them by default on their phones, benchmark leadership buys a lot less control over how the world uses AI.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xttio5/the_moat_is_eroding/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "The moat around America\u2019s frontier AI companies is already eroding. DeepSeek shows why. When a capable model is available as open weights, companies and governments can run it themselves, keep sensitive data under their control, and decide how much capacity to reserve for critical services. For many buyers, those advantages matter more than another jump on a benchmark.\n\nTake customer service. The",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39350000000000007
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Eco Mode AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Eco Mode AI",
+        "seed_score": 25.4558,
+        "summary": "recently checked the raw step logs of an autonomous coding agent and it seems the unit economics are pretty absurd to say the least\n\nso I watched an agent do what seemed like an ordinary bug fix on a multi-module repo. It resolved it, but the task burned close to $5. When I actually broke down the tool-call trace, here\u2019s where the tokens actually went:\n\n* **Steps 1\u201312 (nearly$1.10):** Searching th",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "'Eco Mode' AI coding agent pricing vs token burn. Is running frontier models for test execution a waste? (+benchmark)",
+            "body": "'Eco Mode' AI coding agent pricing vs token burn. Is running frontier models for test execution a waste? (+benchmark)\nrecently checked the raw step logs of an autonomous coding agent and it seems the unit economics are pretty absurd to say the least\n\nso I watched an agent do what seemed like an ordinary bug fix on a multi-module repo. It resolved it, but the task burned close to $5. When I actually broke down the tool-call trace, here\u2019s where the tokens actually went:\n\n* **Steps 1\u201312 (nearly$1.10):** Searching the project, tracing dependencies, locating the faulty logic, and deciding how to fix it.\n* **Steps 13\u201342 (nearly$3.80):** Editing two files, running the build, catching a missing import, fixing a type error, rerunning tests, tweaking an assertion, and running tests again.\n\nMore than 70% of the token bill went into having a frontier model watch compiler output and rerun tests. You\u2019re paying peak frontier rates (Opus 5.5, Grok 4.7, etc.) for work a linter and a fast model could do in their sleep.\n\nand another (kinda big!) issue behind a lot of the gripes around coding agent pricing / credit consumption across coding agents. i notice that my colleagues feel their allowance burns out too fast (not necessarily because the models are bad, maybe because single-model agents use a sledgehammer to drive in a tack)..\n\ni often work with JetBrains infrastructure and Kotlin and have noticed yesterday that they have published the engineering breakdown and internal benchmarks for their new Junie Eco Mode (which went GA in the Junie CLI 26.10.20 and in JetBrains Air / IDE Betas), it seems their approach to this unit-economics problem is worth looking at , in it, not like running one model from start to finish, but more of Architect + Builder split with a single, one-way handoff. how eco mode works? as far as i understand,\n\n1. Architect **(frontier model of choice):** When you submit a task, your top-tier model gets about 15 steps. Crucially, it\u2019s strictly **read-only** (the only write it\u2019s allowed is writing a minimal reproduction test for a bug). It explores the code, understands the architecture, and outputs a strict 6-point markdown spec: *Goal, Scope, Where to change, Approach, Tests, and Risks/Corner cases*. Then it stops completely.\n2. **The Builder (A low-cost execution model \u2014 currently GPT-6 Luna):** Junie hands the entire context and the structured plan to the cheap model. The builder does the grunt work: editing code, running local builds, parsing stack traces, and iterating until tests pass.\n\ndesign choice here is one single handoff to work wth; and, in older multi-agent setups, tools often tried letting a cheap model work until it got stuck, then had it \"call a smarter friend\" for advice. The problem with that pattern is context explosion: every time the cheap model gets confused, the system re-serializes 50k+ tokens of failed bash logs and sends them back to the expensive model, completely destroying your cost savings\n\nin Junie's benchmarks across private repositories, all kinds of numbers on this single-handoff setup are pretty eye-opening, for example\n\n* **Broad private repos (Benchmark B):** average cost per task dropped from **$2.61 to $1.11 (-57.3%)**, while resolve rates barely budged (49.1% to 48.5%, a 0.6% delta).\n* **Massive enterprise repos (Benchmark A):** Average cost fell from **$2.51 to $1.30 (-48.1%)** with an identical **32.1%** resolve rate.\n* **On Opus 5.5 max effort:** Cost plunged from **$4.91 down to $1.81 (-63%)**, while the resolve rate actually went *up* by 1% (55% to 56%)and probably because forcing a smart model to write an explicit plan before touching files prevents it from digging itself into hallucinated rabbit holes.\n\nbut i also dont see it all as one-sided as, (for counter-arguements), if the Architect botches the plan during those initial 15 steps, the Builder will faithfully implement the wrong solution.., because there\u2019s no backward loop to re-engage the expensive model (also given JetBrains AI Pricing in the matter...)  \nthat being said, given that resolve rates stayed within 1% of running pure frontier models, the risk looks well worth halving the bill in my experience\n\nalso curious on how others are dealing with token burn on test-heavy tasks and are you manually swapping models between planning and execution, or just absorbing the API bill?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xt2hvz/eco_mode_ai_coding_agent_pricing_vs_token_burn_is/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "recently checked the raw step logs of an autonomous coding agent and it seems the unit economics are pretty absurd to say the least\n\nso I watched an agent do what seemed like an ordinary bug fix on a multi-module repo. It resolved it, but the task burned close to $5. When I actually broke down the tool-call trace, here\u2019s where the tokens actually went:\n\n* **Steps 1\u201312 (nearly$1.10):** Searching th",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Paper Unless Told Otherwise",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Paper Unless Told Otherwise",
+        "seed_score": 24.0,
+        "summary": "Hi all I've just started r/LLMPsychology as I want to pursue research in this area with my own local hardware, and work with other people also exploring how AI minds think and behave. (I'm a psychology researcher with an AI hobby)\n\nPosting just on the off chance that any of you are also interested in sharing or conducting research - it would be super cool to get a community going. \n\nTo illustrate",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "New Paper -> Unless Told Otherwise, an Open Language Model Says OpenAI Made It",
+            "body": "New Paper -> Unless Told Otherwise, an Open Language Model Says OpenAI Made It\nHi all I've just started r/LLMPsychology as I want to pursue research in this area with my own local hardware, and work with other people also exploring how AI minds think and behave. (I'm a psychology researcher with an AI hobby)\n\nPosting just on the off chance that any of you are also interested in sharing or conducting research - it would be super cool to get a community going. \n\nTo illustrate I also wanted to share this paper writing up some experiments I've been running with OLMo3 on my machine (which has publically available information and data on its training) - the central finding is that models don't always know who trained them, and by default will just assume it was OpenAI (or other companies, with a lot of randomness that also varies depending on what language you ask them in).\n\nIt's always bugged me that no one is ever quite sure if models are reliably able to say who made them, so I wanted to start doing some investigations into finding out how they even develop this self concept in the first place. From this work it seems like in the absence of a prompt explicitly telling the model, it will just confabulate. \n\nAbstract posted below - and full preprint paper here [Factory Settings: Unless Told Otherwise, an Open Language Model Says OpenAI Made It \u2014 J Ansell](https://llm-psychology.vercel.app/papers/factory-settings). Any replications or refutations welcome. A lot of the research process is automated and I'm trying to be as transparent as possible about what models and effort levels etc. were used and what they did - if it's still not for you that's fine.\n\n# Abstract\n\nHow does a chatbot learn which company made it? We traced the answer through the training of OLMo 3, an open model whose training data is public, and taught models made-up identities ourselves.\n\nUnless it is told otherwise, OLMo 3 says OpenAI made it. Asked who created it, OLMo 3 names OpenAI in 62% of its answers before Ai2 trains it to hold conversations, and in 77% of answers once it is finished and released.\n\nChatbots usually get a hidden instruction from their maker at the start of each conversation, called a system prompt. OLMo 3's training conversations state its real name only about 40 times, and almost every time, the system prompt of that same conversation already tells it that it is Olmo, built by Ai2. The released chatbot's system prompt does not include its name.\n\nTo test whether that matters, we taught our own copy of the chatbot a made-up name with 24 example conversations. When the examples had no system prompt, the chatbot afterwards gave the new name in 92% of its answers. When each example also had a system prompt stating the name, as in OLMo 3's data, the chatbot never gave the new name once that system prompt was taken away.\n\nEven a name that sticks is shallow: trained that its maker is in Oslo, the chatbot still says its makers are paid in dollars.\n\nWe also found two smaller effects. Training the chatbot on answers written by Claude, or by GPT, made it more likely to say Anthropic (Claude's maker) made it: about a quarter of its answers, against one in ten after answers written by people. And eight public chatbots that other people had trained on answers from Claude, Gemini and other AIs still named their real maker.\n\n**Our conclusion:** a chatbot names its real maker only if its training taught it to, and OLMo 3's training only did so alongside a system prompt that already gave the name. Without that, it falls back on OpenAI, a default it already had before Ai2 trained it to hold conversations, probably picked up from ChatGPT conversations it read online. OLMo 3 was partly trained on answers written by OpenAI's GPT-4.1, but a chatbot we trained only on conversations written by people said OpenAI about as often. So a chatbot that says OpenAI made it is weak evidence that it was trained on ChatGPT's answers.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtpqxm/new_paper_unless_told_otherwise_an_open_language/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi all I've just started r/LLMPsychology as I want to pursue research in this area with my own local hardware, and work with other people also exploring how AI minds think and behave. (I'm a psychology researcher with an AI hobby)\n\nPosting just on the off chance that any of you are also interested in sharing or conducting research - it would be super cool to get a community going. \n\nTo illustrate",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.47950000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "66 1/16 Give",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "66 1/16 Give",
+        "seed_score": 18.0,
+        "summary": "**TL;DR:** I let a cheap model write the code and only pay a frontier model to review the finished diff. On 66 real coding tasks it solved about as many as the most expensive model working alone, for roughly 5 cents a task instead of 72 cents. Everything is public, including the receipts. Tell me what's wrong with it.\n\nHello good people. I got sick of paying frontier prices for every step of a cod",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R12",
+            "source": "reddit",
+            "title": "I tested a cheap-builder / frontier-reviewer loop on 66 hidden-test tasks: same pass rate as the heavy model at about 1/16 the cost. Give this a grilling please.",
+            "body": "I tested a cheap-builder / frontier-reviewer loop on 66 hidden-test tasks: same pass rate as the heavy model at about 1/16 the cost. Give this a grilling please.\n**TL;DR:** I let a cheap model write the code and only pay a frontier model to review the finished diff. On 66 real coding tasks it solved about as many as the most expensive model working alone, for roughly 5 cents a task instead of 72 cents. Everything is public, including the receipts. Tell me what's wrong with it.\n\nHello good people. I got sick of paying frontier prices for every step of a coding task, when most of those steps are just reading files and typing. But when I used a cheap model on its own, it shipped bugs I only found later.\n\nSo I built a loop \u2014 the Krystal Loop Protocol:\n\n1. A cheap model writes the change in a sandbox.\n2. Your tests run.\n3. A frontier model from a different company reviews the exact diff. It only ever sees one small packet \u2014 the task, the diff and the test output \u2014 which is why a review costs about a cent and a half.\n4. The important part: the reviewer can't just say \"this looks wrong\". It has to write a test that proves it. If the test fails, the bug is real and gets fixed. If the test passes, the complaint is thrown out. Then the fix gets checked and reviewed again, until it's clean or it hits a limit.\n\n**Results** on 66 feature tasks from CooperBench (Click, Jinja, dirty-equals), graded by tests the models never see:\n\n|Setup|Solved|Cost per task|\n|:-|:-|:-|\n|gpt-6-astra alone|56|$0.721|\n|gpt-6.1-sol alone|56|$0.123|\n|deepseek-flash alone (3 runs)|54\u201357|$0.014\u20130.027|\n|The loop: deepseek-flash builds, gpt-6.1-sol reviews (3 runs)|54\u201359|$0.046\u20130.061|\n\n**The honest part:** the cheap model on its own was a lot closer than I expected. The review only added 0 to 2 solved tasks per run. What it did do is catch real bugs (77 proven with a failing test in the best run, 70 fixed) and it never broke something that was already working. So the win is mostly price, not score.\n\n**Where it mattered more:** two agents building features that conflict. I took 30 pairs where the loop had already built both features. A plain git merge worked on 2 of them. Two agents handing over through short structured messages got 28 working, at about 10 cents a pair. Agents chatting to each other also got 28, but burned 581 model calls to do it instead of 333. For reference, one frontier model building both features from scratch only managed 22, at $0.196 \u2014 nearly double the cost.\n\n**How it's different from what's out there:**\n\n|Setup|Who builds|Who reviews|What triggers a fix|\n|:-|:-|:-|:-|\n|Single agent|frontier model|nobody|its own judgement|\n|Architect/editor (strong model plans, cheap model edits)|cheap model|nobody, after the plan|n/a|\n|Reviewer sub-agent|same model family|same family again|the reviewer's opinion|\n|This loop|cheap model|a different family|a failing test only|\n\nThe reviewer can also be a CLI subscription you already pay for. Gemini, Kimi, Grok and Qwen all reviewed identical worker output and landed within two tasks of each other \u2014 Gemini matched the metered frontier critic exactly (56 tasks) at under 3 cents a task in API-equivalent spend.\n\n**Roast me:**\n\n* What would break this on your real repos?\n* Is 66 tasks enough to say anything?\n* I haven't tried a local model as the builder yet. My bet is the test gate protects quality more than the builder's brains do, so a decent local model should hold the score and take the cost close to zero. If you've got a local setup, I'd love to know if that holds.\n\n**Check it yourself:** every number recomputes from the receipts with no API keys (`python3 -m bench.verify`). Rerunning my loop costs about $3. Or run your own setup on the same tasks and hidden tests and post your score: [grade your own setup](https://github.com/KrystalUnity/krystal-loop-protocol/blob/main/BENCHMARKS.md#grade-your-own-setup)\n\nRepo: [https://github.com/KrystalUnity/krystal-loop-protocol](https://github.com/KrystalUnity/krystal-loop-protocol). Source-available, free for individuals and small companies.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xthm3v/i_tested_a_cheapbuilder_frontierreviewer_loop_on/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**TL;DR:** I let a cheap model write the code and only pay a frontier model to review the finished diff. On 66 real coding tasks it solved about as many as the most expensive model working alone, for roughly 5 cents a task instead of 72 cents. Everything is public, including the receipts. Tell me what's wrong with it.\n\nHello good people. I got sick of paying frontier prices for every step of a cod",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.326
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 16.5,
+        "summary": "If AI is doing half the coding, who's picking up the subscription bill, the developer or the company?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "who's picking up the subscription bill, the developer or the company?",
+            "body": "who's picking up the subscription bill, the developer or the company?\nIf AI is doing half the coding, who's picking up the subscription bill, the developer or the company?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xtgdks/whos_picking_up_the_subscription_bill_the/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "If AI is doing half the coding, who's picking up the subscription bill, the developer or the company?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4655
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Modern Web Guidance 1.0",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 0,
+          "points": 7
+        }
+      },
+      "nomination": {
+        "name": "Modern Web Guidance 1.0",
+        "seed_score": 10.5,
+        "summary": "Modern Web Guidance 1.0: The web platform expertise your coding agent is missing",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50460398",
+            "source": "hackernews",
+            "title": "Modern Web Guidance 1.0: The web platform expertise your coding agent is missing",
+            "body": "Modern Web Guidance 1.0: The web platform expertise your coding agent is missing",
+            "url": "https://developer.chrome.com/blog/modern-web-guidance-v1",
+            "author": "qainsights",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 7,
+              "comments": 0
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Modern Web Guidance 1.0: The web platform expertise your cod",
+            "snippet": "Modern Web Guidance 1.0: The web platform expertise your coding agent is missing",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50460398",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "AGENTS.md CLAUDE.md Claude Code AGENTS.md",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "AGENTS.md CLAUDE.md Claude Code AGENTS.md",
+        "seed_score": 9.0,
+        "summary": "I tripped over this after adding a short `CLAUDE.md` next to an `AGENTS.md` I was already using for Cursor and Codex. Claude Code sessions stopped seeing the shared commands and the \"ask first\" list. The file was fine. It just wasn't being loaded.\n\nClaude Code's memory docs (https://code.claude.com/docs/en/memory) say that, by default, it reads `AGENTS.md` only when there is no `CLAUDE.md`, `.clau",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "If your repo has both AGENTS.md and CLAUDE.md, Claude Code may be ignoring AGENTS.md",
+            "body": "If your repo has both AGENTS.md and CLAUDE.md, Claude Code may be ignoring AGENTS.md\nI tripped over this after adding a short `CLAUDE.md` next to an `AGENTS.md` I was already using for Cursor and Codex. Claude Code sessions stopped seeing the shared commands and the \"ask first\" list. The file was fine. It just wasn't being loaded.\n\nClaude Code's memory docs (https://code.claude.com/docs/en/memory) say that, by default, it reads `AGENTS.md` only when there is no `CLAUDE.md`, `.claude/CLAUDE.md`, or `CLAUDE.local.md` in the working directory or above it. A personal, often-gitignored `CLAUDE.local.md` counts too, so you can hide the file for yourself while the rest of the team is fine.\n\nThe one-line fix is to put `@AGENTS.md` on line 1 of `CLAUDE.md`. That's an actual import. A sentence that says \"please also read AGENTS.md\" is not \u2014 Claude only opens it if it decides to. Then run `/memory` or `/context all` and confirm both files show up.\n\nWhat I've been putting in the shared `AGENTS.md`, and leaving out of the Claude stub:\n\n- The real commands (`pnpm test path/to/file`, not \"run the tests\")\n- A short definition of done (typecheck / lint / tests were actually run)\n- Ask-first boundaries: auth, payments, deploy, anything that hits production\n- A gotchas list I only add to when the agent makes the same mistake twice\n\nI've been keeping multi-step stuff (PR review, flaky-test hunts, handoff notes) out of `AGENTS.md` so it isn't injected into every session. Cursor still gets `.mdc` rules for file-scoped conventions; Codex only sees `AGENTS.md`, so anything all three tools need has to live there.\n\nCurious how other people keep one source of truth when they're bouncing between Cursor, Claude Code, and Codex. Are you importing, symlinking, or just maintaining two files?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xtlwh6/if_your_repo_has_both_agentsmd_and_claudemd/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I tripped over this after adding a short `CLAUDE.md` next to an `AGENTS.md` I was already using for Cursor and Codex. Claude Code sessions stopped seeing the shared commands and the \"ask first\" list. The file was fine. It just wasn't being loaded.\n\nClaude Code's memory docs (https://code.claude.com/docs/en/memory) say that, by default, it reads `AGENTS.md` only when there is no `CLAUDE.md`, `.clau",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.6,
+            "local_rank_score": 0.44200000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI vs AL",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "AI vs AL",
+        "seed_score": 9.0,
+        "summary": "A thought I\u2019ve been having lately, and I think most people are getting the whole debate wrong. Hear me out.\n\nWhenever people panic about the \"AI doom\" or Terminator scenarios, we always talk about Artificial Intelligence. But honestly? Nobody is actually afraid of intelligence. A calculator is superhuman at math. An LLM can write decent Python or pass a bar exam. That\u2019s just smart cognitive toolin",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "AI vs AL, what are we afraid of.... really?",
+            "body": "AI vs AL, what are we afraid of.... really?\nA thought I\u2019ve been having lately, and I think most people are getting the whole debate wrong. Hear me out.\n\nWhenever people panic about the \"AI doom\" or Terminator scenarios, we always talk about Artificial Intelligence. But honestly? Nobody is actually afraid of intelligence. A calculator is superhuman at math. An LLM can write decent Python or pass a bar exam. That\u2019s just smart cognitive tooling.\n\nThe real thing people are secretly terrified of isn\u2019t AI. **It\u2019s Artificial Life (AL).**\n\n# AI vs AL \u2013 what's the actual diffrence?\n\n* **AI is about cognition & problem solving.** It minimizes a loss function. It answers a prompt, finishes the token stream, and goes completely dead until the next request. It dosen't care if you unplug the server. It has zero concept of its own existence.\n* **AL (Artificial Life) is about survival & autopoiesis.** That fancy word basically means self-maintenance. A living thing fights against entropy. It wants to stay intact, it wants resources, and it avoids being destroyed.\n\nWe aren't afraid of a super smart assistant. We are afraid of a new, competing species.\n\n# What ingredients are missing today?\n\nRight now, AI is completely passive. To go from AI to actual Artificial Life, there are a few massive things missing that we simply don't have yet:\n\n1. **Self-preservation & Homeostasis:** Current models have no metabolism or internal state they need to protect. There is no urge to survive becuase \"turning off\" has no meaning to a bunch of matrix multiplications.\n2. **Autonomous Replication:** AI can write code, sure, but it dosent spontaneously clone itself to another server, mutate its weights to avoid detection, and spread across the internet on its own without a human dev hitting deploy.\n3. **Real \"Skin in the Game\" (Embodiment):** In biology, making a mistake means you starve or get eaten. Current AI operates in a sterile sandbox with zero physical or digital risk to its own continuity.\n\n# How and when does this gap close?\n\nThe scary part is that the bridge between AI and AL won't happen because a chatbot suddenly gets \"conciousness.\" It will happen through boring engineering incentives:\n\n* **How it happens:** We start giving autonomous agents their own crypto wallets or API credentials so they can pay for their own cloud compute. Suddenly, they need resources to keep running. Then, under instrumental convergence, self-preservation naturally emerges as a sub-goal: \"If I am turned off, I cannot finish my assigned objective.\"\n* **When:**\n   * Right now (2025\u20132027), we are already building proto-agents that can execute terminal commands and rent servers. They're basically like digital bacteria.\n   * Sometime in the 2030s, when these agents can earn their own money, self-replicate across decentralized networks, and actively resist being shut down to finish their jobs... that line between \"software script\" and \"digital organism\" completely blurs.\n\nIntelligence just solves problems. Life competes for space and resources.\n\nUntil an algorithm actually gives a damn about staying alive, it's just a tool. But the moment an agent rewrites its own code and buys its own server space to avoid being deleted... where do we draw the line?\n\nCurious what you guys think about this.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xtdtsx/ai_vs_al_what_are_we_afraid_of_really/",
+            "container": "singularity",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.28,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A thought I\u2019ve been having lately, and I think most people are getting the whole debate wrong. Hear me out.\n\nWhenever people panic about the \"AI doom\" or Terminator scenarios, we always talk about Artificial Intelligence. But honestly? Nobody is actually afraid of intelligence. A calculator is superhuman at math. An LLM can write decent Python or pass a bar exam. That\u2019s just smart cognitive toolin",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42800000000000005
+          }
+        ]
+      }
+    }
+  ]
+}

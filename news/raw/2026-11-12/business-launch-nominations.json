@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "ba3a551318f9ba47",
+  "generated_at": "2026-11-11T23:59:35.451791Z",
+  "from_date": "2026-11-10",
+  "to_date": "2026-11-11",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-11T23:59:35.450817Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-11T23:59:35.450822Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-11T23:59:35.449057Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-11T23:59:35.450740Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Tracking Anthropic-discovered vulnerabilities",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 218,
+          "points": 447
+        }
+      },
+      "nomination": {
+        "name": "Tracking Anthropic-discovered vulnerabilities",
+        "seed_score": 705.339,
+        "summary": "Tracking Anthropic-discovered vulnerabilities",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50447074",
+            "source": "hackernews",
+            "title": "Tracking Anthropic-discovered vulnerabilities",
+            "body": "Tracking Anthropic-discovered vulnerabilities",
+            "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+            "author": "panic",
+            "container": "Hacker News",
+            "published_at": "2026-11-10",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 447,
+              "comments": 218
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Tracking Anthropic-discovered vulnerabilities",
+            "snippet": "Tracking Anthropic-discovered vulnerabilities",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50447074",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Pomerado YC F26 Turn MCP",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 35,
+          "points": 42
+        }
+      },
+      "nomination": {
+        "name": "Pomerado YC F26 Turn MCP",
+        "seed_score": 115.5,
+        "summary": "Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP for agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50455811",
+            "source": "hackernews",
+            "title": "Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP for agents",
+            "body": "Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP for agents",
+            "url": "https://news.ycombinator.com/item?id=50455811",
+            "author": "alanjm23",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 42,
+              "comments": 35
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP",
+            "snippet": "Launch HN: Pomerado (YC F26) \u2013 Turn any website into an MCP for agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50455811",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.8,
+            "local_rank_score": 0.28550000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Tools",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 8,
+          "points": 28
+        }
+      },
+      "nomination": {
+        "name": "Tools",
+        "seed_score": 54.0,
+        "summary": "Tools for exploring the souls of large language models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50458434",
+            "source": "hackernews",
+            "title": "Tools for exploring the souls of large language models",
+            "body": "Tools for exploring the souls of large language models",
+            "url": "https://oshea00.github.io/posts/tinygpt-visualizer/",
+            "author": "r00tanon",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 28,
+              "comments": 8
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Tools for exploring the souls of large language models",
+            "snippet": "Tools for exploring the souls of large language models",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50458434",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    }
+  ]
+}

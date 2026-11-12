@@ -1,0 +1,814 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "38598551313dce3c",
+  "generated_at": "2026-11-12T23:56:19.459359Z",
+  "from_date": "2026-11-11",
+  "to_date": "2026-11-12",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-12T23:56:19.449405Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-12T23:56:19.449410Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 8,
+      "attempted": true,
+      "at": "2026-11-12T23:56:19.418017Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 16,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-12T23:56:19.449322Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AI Maya",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 389,
+          "points": 1026
+        }
+      },
+      "nomination": {
+        "name": "AI Maya",
+        "seed_score": 1500.8341,
+        "summary": "My AI agents found an unmapped Maya site?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50452455",
+            "source": "hackernews",
+            "title": "My AI agents found an unmapped Maya site?",
+            "body": "My AI agents found an unmapped Maya site?",
+            "url": "https://pietromiotti.com/latest/maya-site",
+            "author": "eyvindn",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1026,
+              "comments": 389
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "HN story about My AI agents found an unmapped Maya site?",
+            "snippet": "My AI agents found an unmapped Maya site?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50452455",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.26,
+            "freshness": 10,
+            "engagement_score": 99,
+            "source_quality": 0.8,
+            "local_rank_score": 0.29300000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "United Airlines bans AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 683,
+          "points": 659
+        }
+      },
+      "nomination": {
+        "name": "United Airlines bans AI agents",
+        "seed_score": 1423.406,
+        "summary": "United Airlines bans AI agents from booking flights on behalf of travelers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50458900",
+            "source": "hackernews",
+            "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "body": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+            "author": "herpderperator",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 659,
+              "comments": 683
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "HN story about United Airlines bans AI agents from booking flights on behal",
+            "snippet": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50458900",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2745
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "2016",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 166,
+          "points": 348
+        }
+      },
+      "nomination": {
+        "name": "2016",
+        "seed_score": 771.0,
+        "summary": "Why writing correct software is hard and why math (alone) won\u2019t help us (2016)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50465352",
+            "source": "hackernews",
+            "title": "Why writing correct software is hard and why math (alone) won\u2019t help us (2016)",
+            "body": "Why writing correct software is hard and why math (alone) won\u2019t help us (2016)",
+            "url": "https://pron.github.io/posts/correctness-and-complexity",
+            "author": "AriFordsham",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 348,
+              "comments": 166
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Why writing correct software is hard and why math (alone) wo",
+            "snippet": "Why writing correct software is hard and why math (alone) won\u2019t help us (2016)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50465352",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3245
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Our software engineering interviews are changing",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 154,
+          "points": 161
+        }
+      },
+      "nomination": {
+        "name": "Our software engineering interviews are changing",
+        "seed_score": 472.5,
+        "summary": "Our software engineering interviews are changing a little",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50467297",
+            "source": "hackernews",
+            "title": "Our software engineering interviews are changing a little",
+            "body": "Our software engineering interviews are changing a little",
+            "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+            "author": "maitland",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 161,
+              "comments": 154
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Our software engineering interviews are changing a little",
+            "snippet": "Our software engineering interviews are changing a little",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50467297",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.8,
+            "local_rank_score": 0.315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Atuin Threads",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 83,
+          "points": 233
+        }
+      },
+      "nomination": {
+        "name": "Atuin Threads",
+        "seed_score": 335.1686,
+        "summary": "Atuin Threads: All your agent sessions on every machine",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50453637",
+            "source": "hackernews",
+            "title": "Atuin Threads: All your agent sessions on every machine",
+            "body": "Atuin Threads: All your agent sessions on every machine",
+            "url": "https://blog.atuin.sh/threads-agent-sessions/",
+            "author": "linsomniac",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 233,
+              "comments": 83
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Atuin Threads: All your agent sessions on every machine",
+            "snippet": "Atuin Threads: All your agent sessions on every machine",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50453637",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 49,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07400000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "22-Year-Old PostgreSQL Bug Turned",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 14,
+          "points": 124
+        }
+      },
+      "nomination": {
+        "name": "22-Year-Old PostgreSQL Bug Turned",
+        "seed_score": 207.0,
+        "summary": "22-Year-Old PostgreSQL Bug Turned into Remote Code Execution",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50471761",
+            "source": "hackernews",
+            "title": "22-Year-Old PostgreSQL Bug Turned into Remote Code Execution",
+            "body": "22-Year-Old PostgreSQL Bug Turned into Remote Code Execution",
+            "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+            "author": "ozirus",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 124,
+              "comments": 14
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about 22-Year-Old PostgreSQL Bug Turned into Remote Code Execution",
+            "snippet": "22-Year-Old PostgreSQL Bug Turned into Remote Code Execution",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50471761",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 12,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2565
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Model Ernie 5.5 Flash Preview 280B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Model Ernie 5.5 Flash Preview 280B",
+        "seed_score": 196.5,
+        "summary": "If you're asking what this leaderboard is, it is not AA, it is simply an aggregate index for \"Agentic Coding\" along 12 coding-related benchmarks (note that the AA index includes only 2 coding benchmarks: Terminal-Bench 4.0, FrontierCode-AA 2.0, making up just 25% of its total score. Because of that, it doesn't give you a true reflection of a model's actual software engineering capabilities).\n\nThis",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "New Model \"Ernie 5.5 Flash Preview\" hits strongly at a low parameter count (280B, 14B Active)",
+            "body": "New Model \"Ernie 5.5 Flash Preview\" hits strongly at a low parameter count (280B, 14B Active)\nIf you're asking what this leaderboard is, it is not AA, it is simply an aggregate index for \"Agentic Coding\" along 12 coding-related benchmarks (note that the AA index includes only 2 coding benchmarks: Terminal-Bench 4.0, FrontierCode-AA 2.0, making up just 25% of its total score. Because of that, it doesn't give you a true reflection of a model's actual software engineering capabilities).\n\nThis index however is built entirely around Coding/SWE. Here is the exact breakdown:\n\n1. Terminal-Bench v4.0: 16%\n\n2. DeepSWE v1.1: 15%\n\n3. FrontierCode 2.0: 11%\n\n4. Code Migration (Vals-AI): 9%\n\n5. Terminal-Bench v2.1: 8.5%\n\n6. SRE-Bench (Vals-AI): 8%\n\n7. SWE-bench Pro: 7.5%\n\n8. Code Arena Elo: 6.5%\n\n9. Program-Bench: 6%\n\n10. Vibe Code Bench v1.1: 5.5%\n\n11. SciCode: 4%\n\n12. LiveCodeBench v6: 3%",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xune1i/new_model_ernie_55_flash_preview_hits_strongly_at/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 92,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "If you're asking what this leaderboard is, it is not AA, it is simply an aggregate index for \"Agentic Coding\" along 12 coding-related benchmarks (note that the AA index includes only 2 coding benchmarks: Terminal-Bench 4.0, FrontierCode-AA 2.0, making up just 25% of its total score. Because of that, it doesn't give you a true reflection of a model's actual software engineering capabilities).\n\nThis",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.481
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI Apple",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 47,
+          "points": 55
+        }
+      },
+      "nomination": {
+        "name": "AI Apple",
+        "seed_score": 153.0,
+        "summary": "AI is turning Apple's app review process into a nightmare for synth developers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50474311",
+            "source": "hackernews",
+            "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+            "body": "AI is turning Apple's app review process into a nightmare for synth developers",
+            "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+            "author": "anigbrowl",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 55,
+              "comments": 47
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about AI is turning Apple's app review process into a nightmare fo",
+            "snippet": "AI is turning Apple's app review process into a nightmare for synth developers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50474311",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.8,
+            "local_rank_score": 0.369
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AgentRun open-source Self-improving Managed Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 12,
+          "points": 72
+        }
+      },
+      "nomination": {
+        "name": "AgentRun open-source Self-improving Managed Agents",
+        "seed_score": 126.0,
+        "summary": "Show HN: AgentRun \u2013 open-source, Self-improving Managed Agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50471650",
+            "source": "hackernews",
+            "title": "Show HN: AgentRun \u2013 open-source, Self-improving Managed Agents",
+            "body": "Show HN: AgentRun \u2013 open-source, Self-improving Managed Agents",
+            "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
+            "author": "miguelrios",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 72,
+              "comments": 12
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Show HN: AgentRun \u2013 open-source, Self-improving Managed Agen",
+            "snippet": "Show HN: AgentRun \u2013 open-source, Self-improving Managed Agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50471650",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Open Source vs Open Weights",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 61
+        }
+      },
+      "nomination": {
+        "name": "Open Source vs Open Weights",
+        "seed_score": 91.5,
+        "summary": "In the last few weeks I've watched this exact same discussion be played out at least half a dozen times \"I can't use that software because it's closed source\" when they are explicitly talking about software that will be used to run a model that they have absolutely no way of ever proving that it's \"safe\" to begin with. People often conflate \"open weights\" with \"open source\" and I wonder how many p",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Open Source vs Open Weights ...",
+            "body": "Open Source vs Open Weights ...\nIn the last few weeks I've watched this exact same discussion be played out at least half a dozen times \"I can't use that software because it's closed source\" when they are explicitly talking about software that will be used to run a model that they have absolutely no way of ever proving that it's \"safe\" to begin with. People often conflate \"open weights\" with \"open source\" and I wonder how many people don't understand that they have nothing to do with one another. An \"open weight\" model cannot have it's \"source code\" examined for bugginess or correctness it still takes days or weeks of sussing out how it behaves against repeated queries of a very specific nature to figure out precisely what it's going to do, how it will react to certain words, certain lines of questioning, etc and even then, if the rogue behavior is very subtle and well targeted, you may still never notice..... I'm not saying anyone that wants to shouldn't use whatever model they want, but I am saying that saying you can't use software because it's not open source but using any mode checkpoint you download from the internet made by anyone and everyone is a really weird place to plant a flag.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuoqgz/open_source_vs_open_weights/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 61
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "In the last few weeks I've watched this exact same discussion be played out at least half a dozen times \"I can't use that software because it's closed source\" when they are explicitly talking about software that will be used to run a model that they have absolutely no way of ever proving that it's \"safe\" to begin with. People often conflate \"open weights\" with \"open source\" and I wonder how many p",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Qwen3.8-Flash-Next 4\u00d7 RTX 3090 via Strata",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-Flash-Next 4\u00d7 RTX 3090 via Strata",
+        "seed_score": 34.5,
+        "summary": "I spent a few days benchmarking unsloth's UD-Q4\\_K\\_XL and UD-Q5\\_K\\_XL on Strata. Well, i had claude code do it via ssh. Claude also wrote this summary, that i thought might interest some because of my findings, on behavior of multiple cards and different PCIe speeds.\n\nI can run a few more tests, if it interests anyone.\n\n**Test system**\n\n* Threadripper 2920X (12 cores, Zen+), 128 GB RAM\n* 4x RTX",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "Qwen3.8-Flash-Next on (up to) 4\u00d7 RTX 3090 via Strata",
+            "body": "Qwen3.8-Flash-Next on (up to) 4\u00d7 RTX 3090 via Strata\nI spent a few days benchmarking unsloth's UD-Q4\\_K\\_XL and UD-Q5\\_K\\_XL on Strata. Well, i had claude code do it via ssh. Claude also wrote this summary, that i thought might interest some because of my findings, on behavior of multiple cards and different PCIe speeds.\n\nI can run a few more tests, if it interests anyone.\n\n**Test system**\n\n* Threadripper 2920X (12 cores, Zen+), 128 GB RAM\n* 4x RTX 3090 24 GB, power-capped to 275 W each, no NVLink\n* PCIe 3.0. GPUs\n   * 1 and 3 run at x16,\n   * GPUs 0 and 2 at x8\n   * Two host bridges: {0,1} and {2,3}\n* Strata 0.2.13 (engine 0.1.59), layer split, DFlash2 drafter, one request at a time\n* 256K context, int8 KV, 32K KV cells per layer in VRAM (the rest streams from pinned RAM)\n* A control vector was applied in every run (layers 4-44)\n\n**TL;DR**\n\n* **Decode speed depends on how many experts fit in VRAM.** A missed expert gets computed on the CPU. Going from 2 to 3 cards raises the decode hit rate from \\~88% to \\~95% and cuts each decode step from 33 to 26-27 ms (+25-35% tok/s). A 4th card adds little to decode.\n* **Prompt reading depends on PCIe.** Two x8 cards read prompts half as fast as two x16 cards. Three cards read no faster than two. All four read **twice as fast** as any 2 or 3; the engine log doesn't show why.\n* **PCIe width doesn't matter for decode.** An x8 pair and an x16 pair decode the same.\n* **Q5 vs Q4:** Q5 has 0.55% lower perplexity, but decodes 28% slower and reads prompts 35-50% slower on the same cards. A 3rd card brings Q5's decode back to Q4-on-2-cards speed, but not its prompt speed.\n* **The Q8\\_0 n-gram table** gave no measurable quality gain over the IQ4\\_NL table bundled with Q4. Read from NVMe via mmap, it frees 27 GB of RAM at the same decode speed.\n* **200K chat:** a cold 190K prompt takes 91 s once. After that, a short turn at 200K starts in 0.3 s and decodes at \\~78 tok/s.\n\n**Card combinations** (UD-Q4\\_K\\_XL + Q8\\_0 table, same settings, only `--gpu` changed)\n\nPrompt columns give the seconds to read a fresh prompt of that size. The follow-up is a \\~600-token turn on a cached 16K chat.\n\n|Cards|Links|ms/step|tok/s (short)|tok/s after 50K|2K|4K|16K|30K|50K|Follow-up|Expert hit|RAM used/avail|\n|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|\n|1+3|x16 x16|33|96|83-90|4.3|4.6|8.6|13.0|21|2.1 s|88%|86/38 GiB|\n|0+2|x8 x8|33-35|90-95|73-92|8.1|8.6|15.4|23.7|37|4.0 s|86%|86/38|\n|1+2+3|x16 x8 x16|26-27|112-137|100-105|4.3|4.9|9.1|13.6|20-21|1.7 s|95%|88/37|\n|3+2+1|x16 x8 x16|27-30|119-129|91-102|4.2|4.6|8.5|13.0|20|1.7 s|95%|88/37|\n|2+1+3|x8 x16 x16|27|128-129|99-100|4.2|4.8|9.2|13.7|20-22|1.7 s|96%|88/37|\n|0+1+3|x8 x16 x16|27|123-125|89-100|4.8|6.1|11.8|14.2|20|1.7 s|95%|88/37|\n|0+2+3|x8 x8 x16|26-27|120-134|94-97|5.0|5.5|11.2|14.4|22|2.1 s|96%|88/37|\n|0+1+2|x8 x16 x8|26-27|124-133|97-101|5.1|5.6|10.5|15.1|23|2.0 s|95%|88/37|\n|**0+1+2+3**|all|**26**|**139-144**|85-96|**2.0**|**2.8**|**6.4**|**8.7**|**12**|**1.0 s**|**99%**|90/35|\n\n* Every card in use sits at \\~23.4 of 24 GiB. The expert cache takes whatever is left: \\~5,600 Q4 experts (16.5 GiB) per card.\n* Card order within 1+2+3 made a difference no bigger than run-to-run noise.\n* Decode tok/s also depends on how many draft tokens get accepted, so ms/step is the steadier number to compare.\n\n**UD-Q4\\_K\\_XL vs UD-Q5\\_K\\_XL**\n\nPerplexity is from WikiText-2 test (26,656 tokens), teacher-forced through the serving engine with everything as served.\n\n|Model, cards|Perplexity|ms/step|tok/s (short)|tok/s after 50K|2K|4K|16K|30K|50K|Follow-up|Expert hit|RAM used/avail|Disk|\n|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|\n|Q4, 2 cards|2.4919|33|92-99|82-90|4.3|4.6|8.6|13.0|21|2.1 s|79-88%|83-86/38-42 GiB|111 GB + 54 GB table|\n|Q4, 3 cards|2.4919|26-27|112-137|100-105|4.3|4.9|9.1|13.6|20-21|1.7 s|95%|88/37|same|\n|Q5, 2 cards|2.4781|46|68-69|59-63|6.0|6.3|11.2|17.4|27-28|3.3 s|lower|103-106/19-21|158 GB|\n|Q5, 3 cards|2.4781|36-39|91-93|71-88|6.4|7.1|12.3|19.0|29-30|3.0 s|90%|108/16|158 GB|\n\n* Q5 minus Q4 in per-token logprob: +0.0056 (SE 0.0023, z 2.5). Both pick the same top token 93.9% of the time. For scale, the control vector alone costs \\~0.9% perplexity (2.4678 without it), so Q5 wins back about half of that.\n* Q5 experts are \\~3.8 MB vs \\~3.0 MB for Q4, so the same VRAM caches \\~22% fewer of them (8,654 vs 11,053 on two cards).\n* The 3rd card did not improve Q5's prompt reading; it was slightly slower in this run.\n\n**n-gram table: bundled IQ4\\_NL vs separate Q8\\_0** (Q4 experts, 2 cards)\n\n|Table|Size|Table error (rel. RMSE)|Read from|Perplexity|RAM used|5K prompt|32K prompt|Decode|\n|:-|:-|:-|:-|:-|:-|:-|:-|:-|\n|IQ4\\_NL (bundled)|28.8 GB|0.0757|locked in RAM|2.4866|110 GiB|987-1139 tok/s|\\~2400 tok/s|same|\n|Q8\\_0 (separate)|54.4 GB|0.0053|NVMe, mmap|2.4919|83 GiB|911-1101 tok/s|\\~2400 tok/s|same|\n\nThe perplexity difference is noise (z 0.5): 14x less table error bought nothing measurable. The real gain is the 27 GiB of RAM it frees. Note that Strata 0.1.59 refuses a foreign table file unless its GGUF header is relabelled.\n\n**200K-token chat** (Q4, cards 1+2+3, thinking off)\n\n|Turn|Already cached|New tokens|Read time|Decode|\n|:-|:-|:-|:-|:-|\n|Cold document|0|189,809|91 s (2,100 tok/s)|64 tok/s|\n|Paste \\~10K more|189,829|9,895|12.8 s|85 tok/s|\n|Short question|199,928|31|0.3 s|78 tok/s|\n\nKV reads hit VRAM 89-90% of the time. New tokens deep in a long context cost \\~1.3 s per 1K. After 190K tokens it still named the first article of the document correctly.\n\n**Also tried**\n\n* `STRATA_PREFILL_ROUTED_STREAM=1`: \u221215% on fresh \\~2K prompts, \u22123% at 4K, nothing at 16K+ or on follow-ups.\n* Experimental fused-kernel flags from a community fork: the output degenerated into counting sequences.\n* Strata's all-cards split engine needs every routed expert in VRAM plus \\~9 GiB per card. Q4's 72 GiB of experts doesn't fit in 4x24 GB.\n\n**Method:** thinking off, temperature 0, one request at a time. Each config was started fresh and run twice, and ranges are those two runs. Expert hit and KV figures come from the engine log; RAM is from `free -g`. Greedy output isn't deterministic run to run here (drafter + expert cache), so quality was judged by perplexity, not by diffing answers. Cards idle at \\~20-25 W with the model loaded; I didn't measure power under load.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuhhie/qwen38flashnext_on_up_to_4_rtx_3090_via_strata/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I spent a few days benchmarking unsloth's UD-Q4\\_K\\_XL and UD-Q5\\_K\\_XL on Strata. Well, i had claude code do it via ssh. Claude also wrote this summary, that i thought might interest some because of my findings, on behavior of multiple cards and different PCIe speeds.\n\nI can run a few more tests, if it interests anyone.\n\n**Test system**\n\n* Threadripper 2920X (12 cores, Zen+), 128 GB RAM\n* 4x RTX",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.278
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 33.0,
+        "summary": "There are so many AI tools launching that it's easy to get excited about something, try it for a week, and then never open it again.\n\nI'm more interested in the tools people actually stopped using.\n\nWas there an AI app or agent you thought would become part of your daily workflow but eventually abandoned?\n\nWhat made you stop using it? Was it unreliable, too expensive, difficult to integrate, or si",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "What AI tool did you stop using after the initial excitement wore off?",
+            "body": "What AI tool did you stop using after the initial excitement wore off?\nThere are so many AI tools launching that it's easy to get excited about something, try it for a week, and then never open it again.\n\nI'm more interested in the tools people actually stopped using.\n\nWas there an AI app or agent you thought would become part of your daily workflow but eventually abandoned?\n\nWhat made you stop using it? Was it unreliable, too expensive, difficult to integrate, or simply not that useful once the novelty wore off?\n\nAnd did you replace it with something better, or go back to doing things the old way?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xueugf/what_ai_tool_did_you_stop_using_after_the_initial/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "There are so many AI tools launching that it's easy to get excited about something, try it for a week, and then never open it again.\n\nI'm more interested in the tools people actually stopped using.\n\nWas there an AI app or agent you thought would become part of your daily workflow but eventually abandoned?\n\nWhat made you stop using it? Was it unreliable, too expensive, difficult to integrate, or si",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.339
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Qwen3.6-35B-A3B Q8_0 BF16 GPUs",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.6-35B-A3B Q8_0 BF16 GPUs",
+        "seed_score": 27.0,
+        "summary": "RustingStrata is a pure-Rust inference engine for Qwen, DeepSeek and GLM GGUFs. CUDA kernels are compiled at run time with NVRTC, the same kernels run on Vulkan, and there is no ggml and no C++ build step.\n\nI wanted the high-quant numbers, so these runs use Q8\\_0 (37.8 GB) and unquantized BF16 (71.1 GB), with the whole model in VRAM, on A100, L40S and H100:\n\n|GPU|Quant|Prefill, 4K prompt|Decode|De",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "What does Qwen3.6-35B-A3B look like at Q8_0 and BF16 on datacenter GPUs?",
+            "body": "What does Qwen3.6-35B-A3B look like at Q8_0 and BF16 on datacenter GPUs?\nRustingStrata is a pure-Rust inference engine for Qwen, DeepSeek and GLM GGUFs. CUDA kernels are compiled at run time with NVRTC, the same kernels run on Vulkan, and there is no ggml and no C++ build step.\n\nI wanted the high-quant numbers, so these runs use Q8\\_0 (37.8 GB) and unquantized BF16 (71.1 GB), with the whole model in VRAM, on A100, L40S and H100:\n\n|GPU|Quant|Prefill, 4K prompt|Decode|Decode with MTP|\n|:-|:-|:-|:-|:-|\n|H100 80 GB HBM3|Q8\\_0|11,486 tok/s|290 tok/s|**508 tok/s**|\n|H100 NVL|BF16|8,691 tok/s|230 tok/s|**324 tok/s**|\n|A100 80 GB|Q8\\_0|6,507 tok/s|193 tok/s|**288 tok/s**|\n|A100 80 GB|BF16|5,625 tok/s|171 tok/s|**238 tok/s**|\n|L40S 48 GB|Q8\\_0|9,542 tok/s|165 tok/s|**270 tok/s**|\n\nMTP is speculative decoding with the model's own draft head; `calibrate` picked the draft count on each card.\n\n* **Higher quants are not automatically slower.** On the A100 80 GB and H100, Q8\\_0 decodes faster than Q2\\_K\\_XL (193 vs 174, 290 vs 265 tok/s after 4K). On the L40S it is slower (165 vs 214), so the ranking depends on the card.\n* **BF16 is practical.** 71 GB of unquantized weights decode at 171-230 tok/s on one card.\n* **MTP helps less as the quant grows.** Gains are 1.4-1.9x on Q2\\_K\\_XL and Q8\\_0, and 1.2-1.4x on BF16.\n* **When the model does not fit, it degrades but runs.** Q8\\_0 on a 24 GB A30 (63% of experts resident) still decodes at 130 tok/s, 200 with MTP. BF16 on the same card (31% resident) only reaches about 12.5 tok/s.\n\nThe same code runs on Vulkan, and on the Q2\\_K\\_XL runs on the 3060 and the Ampere cards prefill lands close to CUDA. At Q8\\_0 on the big cards the gap can be large: H100 prefill is 6,883 tok/s on Vulkan against 11,486 on CUDA. All table numbers are CUDA.\n\nThese are different nodes of one cluster, so the host CPUs differ. Compare within a row, not across rows. MTP costs 4-11% prefill in these runs.\n\nQuality: I do not have a llama.cpp perplexity/KLD run on these exact Q8\\_0/BF16 files yet, so this is a hardware roundup, not an accuracy comparison. The last check was UD-Q3\\_K\\_M on the 3060 over 9,180 tokens of repo docs prose: perplexity 9.0714 vs 9.0587 for llama.cpp, mean KLD 0.0055, same top token 96.3%.\n\nWhy I find it kinda interesting, is bc when I was searching for models in OpenRouter, I saw that Qwen3.6:35b-a3b for some reason is pretty slow, like 50-110t/s on almost all providers, why like that? Do people already use other Strata like project for LLM inference to be in top of providers? I am thinking about it, but I think something is wrong and not so easy as I expect, if anyone knows I would be happy to hear\n\nRepo: [RustingStrata](https://github.com/RustingStudio/RustingStrata)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuon4m/what_does_qwen3635ba3b_look_like_at_q8_0_and_bf16/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "RustingStrata is a pure-Rust inference engine for Qwen, DeepSeek and GLM GGUFs. CUDA kernels are compiled at run time with NVRTC, the same kernels run on Vulkan, and there is no ggml and no C++ build step.\n\nI wanted the high-quant numbers, so these runs use Q8\\_0 (37.8 GB) and unquantized BF16 (71.1 GB), with the whole model in VRAM, on A100, L40S and H100:\n\n|GPU|Quant|Prefill, 4K prompt|Decode|De",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.279
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Running Radiance",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "Running Radiance",
+        "seed_score": 24.0,
+        "summary": "Hey guys, not going to take much credit since claude did 90% of this, but wanted to share the patches I used to get StillDeadcode's Radiance running on my windows pc. I'm sure that multiple people have done this already, but I couldn't find a post, so thought I'd throw this out there if anybody else wants to use it.\n\n[**https://github.com/bruns20/radiance-wsl**](https://github.com/bruns20/radiance",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "Running Radiance engine on Windows through WSL2 (Single 9700)",
+            "body": "Running Radiance engine on Windows through WSL2 (Single 9700)\nHey guys, not going to take much credit since claude did 90% of this, but wanted to share the patches I used to get StillDeadcode's Radiance running on my windows pc. I'm sure that multiple people have done this already, but I couldn't find a post, so thought I'd throw this out there if anybody else wants to use it.\n\n[**https://github.com/bruns20/radiance-wsl**](https://github.com/bruns20/radiance-wsl)\n\nRadiance is Linux-only, and the author has said WSL won\u2019t be supported in the main tree, which is fair. So this is **unofficial**. Please send problems to my repo, not upstream.\n\n**What it does**\n\n* [`build.sh`](http://build.sh) builds any Radiance release from upstream\u2019s own source and Dockerfile, with a few small WSL patches applied. When a new release comes out, it\u2019s `./build.sh 1.18.0`.\n* [`make-runtime.sh`](http://make-runtime.sh) grabs a ROCm runtime that actually works under WSL. The stock ROCm 10.1 hangs on the first GPU job if your PC also has an integrated GPU ([ROCm/rocm-systems#13291](https://github.com/ROCm/rocm-systems/issues/13291)), and AMD\u2019s 10.3 nightlies fix it.\n* [`run.sh`](http://run.sh) serves an OpenAI-compatible API on 127.0.0.1:8000.\n\nTwo of the four patches are godzillakong\u2019s from codeberg #341. They did the hard part of getting it running without `/dev/kfd`.\n\n**Numbers** (R9700 32 GB, Qwen3.8-27B MXFP4 + DFlash2, 131k context)\n\n|||\n|:-|:-|\n|start until serving|\\~8 s (vLLM on the same box: 70-75 s)|\n|prefill, 9.4k / 36k-token prompt|3,223 / 2,784 tok/s|\n|decode, prose|\\~75-80 tok/s|\n|decode, code|\\~145-160 tok/s|\n\n**Tested on:** R9700 + Ryzen 5 7600 (with its iGPU), Windows 11 26200, Adrenalin 26.10.1, Radiance 1.17.0. That\u2019s the only setup I\u2019ve tried. Other gfx1201 cards (RX 9070 / 9070 XT) should work, but I\u2019d love to hear either way.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuhdgk/running_radiance_engine_on_windows_through_wsl2/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey guys, not going to take much credit since claude did 90% of this, but wanted to share the patches I used to get StillDeadcode's Radiance running on my windows pc. I'm sure that multiple people have done this already, but I couldn't find a post, so thought I'd throw this out there if anybody else wants to use it.\n\n[**https://github.com/bruns20/radiance-wsl**](https://github.com/bruns20/radiance",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28400000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Trading 110ms RealtimeVAD",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Trading 110ms RealtimeVAD",
+        "seed_score": 24.0,
+        "summary": "Tried to hunt down latency bottlenecks in my local voice assistant recently. I looked at the waveform and saw silero's probability lagging quite much behind the actual end of speech I could see with my eyes.\n\nI use a voice pipeline that does speculative work and cancels fast, so some false positives would not matter in my case. \n\nSo I had this idea: once silero says I'm in speech, what I need to d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "Trading false positives for ~110ms earlier end-of-speech in voice pipelines: RealtimeVAD",
+            "body": "Trading false positives for ~110ms earlier end-of-speech in voice pipelines: RealtimeVAD\nTried to hunt down latency bottlenecks in my local voice assistant recently. I looked at the waveform and saw silero's probability lagging quite much behind the actual end of speech I could see with my eyes.\n\nI use a voice pipeline that does speculative work and cancels fast, so some false positives would not matter in my case. \n\nSo I had this idea: once silero says I'm in speech, what I need to detect is when the speech energy drops back to room noise level. Turned out a naive 10 ms energy check with a threshold tracking room noise does that quite well. \n\nGave me a median 110 ms earlier than silero over \\~3200 real turns from my assistant on my voice, my mic, browser noise suppression on, mostly quiet room - with silero threshold at 0,5. Someone on Twitter got 92 ms on his data, roughly what I saw in my noisier recordings.\n\nThe downside is way more false positives. It fires on breaths and small pauses between words over 10x as often as silero. So it's really only useful if the pipeline can throw away speculative work very fast. \n\nCPU only, MIT, drop-in for silero VADIterator, pip install realtimevad\n\nbenchmark script is in the repo, curious what numbers you guys get on your own recordings\n\n[https://github.com/KoljaB/RealtimeVAD](https://github.com/KoljaB/RealtimeVAD)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xueuyv/trading_false_positives_for_110ms_earlier/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Tried to hunt down latency bottlenecks in my local voice assistant recently. I looked at the waveform and saw silero's probability lagging quite much behind the actual end of speech I could see with my eyes.\n\nI use a voice pipeline that does speculative work and cancels fast, so some false positives would not matter in my case. \n\nSo I had this idea: once silero says I'm in speech, what I need to d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.298
+          }
+        ]
+      }
+    }
+  ]
+}

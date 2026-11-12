@@ -1,0 +1,872 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "a2b1978c5788e1b4",
+  "generated_at": "2026-11-12T23:56:41.770326Z",
+  "from_date": "2026-11-11",
+  "to_date": "2026-11-12",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-12T23:56:41.734745Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-12T23:56:41.734751Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 48,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-12T23:56:41.733323Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 9,
+      "attempted": true,
+      "at": "2026-11-12T23:56:41.734664Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic IPO",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 782,
+          "points": 790
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO",
+        "seed_score": 2358.0,
+        "summary": "Anthropic IPO",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50465829",
+            "source": "hackernews",
+            "title": "Anthropic IPO",
+            "body": "Anthropic IPO",
+            "url": "https://ipo.anthropic.com/us/",
+            "author": "josephljohnston",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 790,
+              "comments": 782
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Anthropic IPO",
+            "snippet": "Anthropic IPO",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50465829",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.403
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Gemini 4 Hydrogen",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 340,
+          "points": 676
+        },
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Hydrogen",
+        "seed_score": 1757.775,
+        "summary": "Gemini 4 Hydrogen",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50471431",
+            "source": "hackernews",
+            "title": "Gemini 4 Hydrogen",
+            "body": "Gemini 4 Hydrogen",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+            "author": "dvaplima",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 432,
+              "comments": 282
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Gemini 4 Hydrogen",
+            "snippet": "Gemini 4 Hydrogen",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50471431",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.377
+          },
+          {
+            "item_id": "50472260",
+            "source": "hackernews",
+            "title": "Gemini 4 Hydrogen and Orchestrator",
+            "body": "Gemini 4 Hydrogen and Orchestrator",
+            "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+            "author": "jonbaer",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 244,
+              "comments": 58
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Gemini 4 Hydrogen and Orchestrator",
+            "snippet": "Gemini 4 Hydrogen and Orchestrator",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50472260",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.8,
+            "local_rank_score": 0.32549999999999996
+          },
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "Google launched Gemini 4 Hydrogen and \"Orchestrator\" in Antigravity app",
+            "body": "Google launched Gemini 4 Hydrogen and \"Orchestrator\" in Antigravity app\nThoughts? I think chatgpt might be left in the dust by claude and gemini for now but I'm not sure.",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xujhbm/google_launched_gemini_4_hydrogen_and/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Thoughts? I think chatgpt might be left in the dust by claude and gemini for now but I'm not sure.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 17,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Gemini Decisions API",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 157,
+          "points": 553
+        }
+      },
+      "nomination": {
+        "name": "Gemini Decisions API",
+        "seed_score": 753.0687,
+        "summary": "Gemini Decisions API",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50456791",
+            "source": "hackernews",
+            "title": "Gemini Decisions API",
+            "body": "Gemini Decisions API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+            "author": "iamdelirium",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 553,
+              "comments": 157
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Gemini Decisions API",
+            "snippet": "Gemini Decisions API",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50456791",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 70,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15349999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Yogurt Free Granola",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 110,
+          "points": 285
+        }
+      },
+      "nomination": {
+        "name": "Yogurt Free Granola",
+        "seed_score": 418.9608,
+        "summary": "Show HN: Yogurt \u2013 Free, private, open-source alternative to Granola",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50454625",
+            "source": "hackernews",
+            "title": "Show HN: Yogurt \u2013 Free, private, open-source alternative to Granola",
+            "body": "Show HN: Yogurt \u2013 Free, private, open-source alternative to Granola",
+            "url": "https://github.com/FrigadeHQ/yogurt",
+            "author": "brownrout",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 285,
+              "comments": 110
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Show HN: Yogurt \u2013 Free, private, open-source alternative to",
+            "snippet": "Show HN: Yogurt \u2013 Free, private, open-source alternative to Granola",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50454625",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 54,
+            "source_quality": 0.8,
+            "local_rank_score": 0.11150000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Linear Program Weight-Space Programming",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 46,
+          "points": 292
+        }
+      },
+      "nomination": {
+        "name": "Linear Program Weight-Space Programming",
+        "seed_score": 358.5031,
+        "summary": "Can a Linear Program Do Weight-Space Programming?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50452655",
+            "source": "hackernews",
+            "title": "Can a Linear Program Do Weight-Space Programming?",
+            "body": "Can a Linear Program Do Weight-Space Programming?",
+            "url": "https://nathan.rs/posts/weight-space-lp/",
+            "author": "emschwartz",
+            "container": "Hacker News",
+            "published_at": "2026-11-11",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 292,
+              "comments": 46
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Can a Linear Program Do Weight-Space Programming?",
+            "snippet": "Can a Linear Program Do Weight-Space Programming?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50452655",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 42,
+            "source_quality": 0.8,
+            "local_rank_score": 0.10600000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Chinese frontier AI GPUs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 22,
+          "points": 95
+        }
+      },
+      "nomination": {
+        "name": "Chinese frontier AI GPUs",
+        "seed_score": 175.5,
+        "summary": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50474883",
+            "source": "hackernews",
+            "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+            "body": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+            "url": "https://unemploymentlabs.com/checkpoint-forensics",
+            "author": "firloop",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 95,
+              "comments": 22
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Chinese frontier AI models carry the fingerprint of export-c",
+            "snippet": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50474883",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 12,
+            "source_quality": 0.8,
+            "local_rank_score": 0.263
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Foundation Models framework",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 11,
+          "points": 88
+        }
+      },
+      "nomination": {
+        "name": "Foundation Models framework",
+        "seed_score": 148.5,
+        "summary": "Foundation Models framework",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50474361",
+            "source": "hackernews",
+            "title": "Foundation Models framework",
+            "body": "Foundation Models framework",
+            "url": "https://developer.apple.com/foundation-models-framework/",
+            "author": "kermatt",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 88,
+              "comments": 11
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Foundation Models framework",
+            "snippet": "Foundation Models framework",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50474361",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2855
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AgentRun open-source Self-improving Managed Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 12,
+          "points": 72
+        }
+      },
+      "nomination": {
+        "name": "AgentRun open-source Self-improving Managed Agents",
+        "seed_score": 126.0,
+        "summary": "Show HN: AgentRun \u2013 open-source, Self-improving Managed Agents",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50471650",
+            "source": "hackernews",
+            "title": "Show HN: AgentRun \u2013 open-source, Self-improving Managed Agents",
+            "body": "Show HN: AgentRun \u2013 open-source, Self-improving Managed Agents",
+            "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
+            "author": "miguelrios",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 72,
+              "comments": 12
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Show HN: AgentRun \u2013 open-source, Self-improving Managed Agen",
+            "snippet": "Show HN: AgentRun \u2013 open-source, Self-improving Managed Agents",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50471650",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "ACHIEVED MUCH OLD CHATGPT ANYTHING ELSE",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "ACHIEVED MUCH OLD CHATGPT ANYTHING ELSE",
+        "seed_score": 64.5,
+        "summary": "I achieved great and big milestones back when ChatGPT was smart, now, in a loop where no other LLM can do the same things I used to achieve with it and I'm going crazy!!!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "I ACHIEVED SO MUCH WITH OLD CHATGPT, NOW I CAN'T DO ANYTHING ELSE",
+            "body": "I ACHIEVED SO MUCH WITH OLD CHATGPT, NOW I CAN'T DO ANYTHING ELSE\nI achieved great and big milestones back when ChatGPT was smart, now, in a loop where no other LLM can do the same things I used to achieve with it and I'm going crazy!!!",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xuj3cg/i_achieved_so_much_with_old_chatgpt_now_i_cant_do/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I achieved great and big milestones back when ChatGPT was smart, now, in a loop where no other LLM can do the same things I used to achieve with it and I'm going crazy!!!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "iOS Claude",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "iOS Claude",
+        "seed_score": 28.5,
+        "summary": "Last time I built an iOS app was more than 10 years ago and I did all that manually, of course.\n\nNow I am trying to do that with agents, and Claude Desktop is great for creating designs, storyboards, writing code, testing on simulator, all in one app, looks great.\n\nStill I am wasting so much time on mundane steps like: order and configure a domain for the landing page and API server or prepare all",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "How do you build iOS apps with Claude?",
+            "body": "How do you build iOS apps with Claude?\nLast time I built an iOS app was more than 10 years ago and I did all that manually, of course.\n\nNow I am trying to do that with agents, and Claude Desktop is great for creating designs, storyboards, writing code, testing on simulator, all in one app, looks great.\n\nStill I am wasting so much time on mundane steps like: order and configure a domain for the landing page and API server or prepare all the Apple-related stuff, from TestFlight to App Store submission, etc.\n\nThese little things are major annoyances and make me think \"this should be done by agent without me even knowing!\"\n\nHow do you handle this? Do you use a set of skills with full deploy instructions? some 3rd party MCPs?\n\nOr maybe there is a business opportunity there?",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xup1sv/how_do_you_build_ios_apps_with_claude/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Last time I built an iOS app was more than 10 years ago and I did all that manually, of course.\n\nNow I am trying to do that with agents, and Claude Desktop is great for creating designs, storyboards, writing code, testing on simulator, all in one app, looks great.\n\nStill I am wasting so much time on mundane steps like: order and configure a domain for the landing page and API server or prepare all",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2915
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Live Voice Open Ai",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Live Voice Open Ai",
+        "seed_score": 12.0,
+        "summary": "OpenAI's just come up with one of the most innovative business models: **charge people to have things taken away from them**. And they're doing it with that insufferable, self-congratulatory Silicon Valley excitement, as though this car crash called Live Voice is some magnificent technological breakthrough.\n\nSo let's talk about Live Voice and accessibility, shall we? We're being forced onto GPT-Li",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Live Voice feature - Open Ai\u2019s latest feral disaster \ud83d\udc4f\ud83c\udffd",
+            "body": "Live Voice feature - Open Ai\u2019s latest feral disaster \ud83d\udc4f\ud83c\udffd\nOpenAI's just come up with one of the most innovative business models: **charge people to have things taken away from them**. And they're doing it with that insufferable, self-congratulatory Silicon Valley excitement, as though this car crash called Live Voice is some magnificent technological breakthrough.\n\nSo let's talk about Live Voice and accessibility, shall we? We're being forced onto GPT-Live whether we want it or not. They've taken a perfectly good voice experience, replaced it with something markedly worse, removed the alternative and somehow expect us to applaud. Is there an award for this sort of innovation?\n\nThis isn\u2019t progress. It\u2019s a forced migration with no meaningful choice and precious little accountability.\n\nOpenAI keeps telling us virtually everyone uses Live Voice. OH how convenient! When force people onto something and prepare to get rid of the alternative, usage tells us precisely nothing about preference.\n\nSo Open Ai is what you are saying is true \n\n>!THEN PUBLISH THE BLOODY USER DATA!!< \n\n(**I\u2019ll even bullet it for you in case your writing block doesn\u2019t read it out!**) \n\n\u2022 How many actively chose it?   \n\u2022 How many were pushed onto Live Voice?  \n\u2022 How many would switch back tomorrow if given the choice?   \n\u2022 And where is the disability impact assessment for this forced migration?\n\nSmall point darling OpenAi, \u2018using\u2019 something isn\u2019t the same as \u2018choosing\u2019 something. \n\nWhoever listened to this version of Live Voice, decided it was an improvement over Standard Voice, and then had the bright idea of convincing the rest of us, needs either a lie detector test or to be breathalysed for reckless software development under the influence.\n\nThe speech of Live sounds drugged, inebriated, painfully slow, creepy and slurred, with a vacant, almost lifeless delivery that\u2019s sometimes genuinely frightening to listen to.\n\nIt barely engages with complex prompts, while Standard Voice could sustain intelligent, natural conversations.\n\nNow OpenAI is feeding us the usual Silicon Valley tech-bro toxic positivity nonsense about how wonderfully life-changing Live Voice is going to be.\n\n**HELLO!!!! WE ARE NOT IDIOTS!**\n\n**Second topic: Disability discrimination and accessibility issues**\n\nOh, do not get me started on this topic!\n\nAnd before OpenAI congratulates itself on the future of Voice, perhaps it could explain why it\u2019s already made spoken interaction less accessible.\n\nPerhaps someone could explain who the genius was who decided to **butcher ChatGPT voice so it no longer reads drafts aloud in Writing Blocks, YET it will happily recite every pointless heading, bullet point and bit of formatting nobody asked for.**\n\nBecause obviously, when you ask an AI to write a letter, who wants to hear the actual letter?\n\n**And can you imagine being someone with visual impairments who relies on Voice, only to have the AI announce \u201cWriting Block\u201d and simply stop?**\n\nWhoever thought this was a good idea needs to have their head examined.\n\nOut of sheer delusion, I thought reporting these concerns might actually mean customers\u2019 opinions would be heard.\n\nOh no, no, no, darling! They absolutely will not!\n\nI\u2019ve been reporting these disability-related failures since September, provided video evidence and been met with months of stonewalling and incompetent support responses.\n\nI\u2019ve also asked whether a disability impact assessment was conducted before this forced migration was approved. OpenAI\u2019s own support couldn\u2019t even confirm whether one had taken place.\n\nAnd when I challenged all this, I was positively blessed with a response from an OpenAI customer service agent who told me I could always leave if I wasn't happy.\n\n**Well, ladies and gentlemen, there it is.**\n\nThe OpenAI customer service philosophy, laid bare. Butt naked, in fact, for everyone to see.\n\nWe'll take your money, remove the functionality, ignore your evidence and, heaven forbid, should a disabled customer object, kindly point them towards the exit.\n\n**The glorious, magnificent arrogance**\n\nSo of course Sam Altman and OpenAI do help yourselves to our money, remove the brilliant functionality, disregard documented accessibility barriers, and unsubstantiated  claims about customer adoption, feel free to ask us leave if we object or challenge, \n\nAnd while you're at it, perhaps you could take a fraction of the small fortune you spend on pointless cosmetic animations and features nobody asked for, and invest it in preserving the functionality customers actually value. Just a thought.\n\nBut, seriously, OpenAI, I have one small question, if you\u2019d indulge me: who gave you the right to decide that customers must accept a worse, less accessible product while continuing to pay for it?\n\n**In closing, darling OpenAI:**\n\n# STOP THE LIVE VOICE FORCED MIGRATION. PUBLISH THE EVIDENCE BEHIND YOUR USER CLAIMS.  SHOW US THE DISABILITY IMPACT ASSESSMENT.  RETAIN STANDARD VOICE.\n\nThank you. xoxo",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xunsf6/live_voice_feature_open_ais_latest_feral_disaster/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "OpenAI's just come up with one of the most innovative business models: **charge people to have things taken away from them**. And they're doing it with that insufferable, self-congratulatory Silicon Valley excitement, as though this car crash called Live Voice is some magnificent technological breakthrough.\n\nSo let's talk about Live Voice and accessibility, shall we? We're being forced onto GPT-Li",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35550000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "ChatMate Claude Twitch LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "ChatMate Claude Twitch LLM",
+        "seed_score": 10.5,
+        "summary": "I'm a designer, not a developer, and I built this in a single long conversation with Claude: ChatMate, a chess site where you play against LLMs, against friends, or let a whole Twitch chat play together.\n\nIt's live right now: https://www.twitch.tv/sucrosepapa\n\nThe chat votes the move, the LLM answers.\n\n**How the Twitch mode works**\n\n\\- Viewers type a move in chat (just \"Nf6\", nothing else) and eve",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "I built ChatMate with Claude: Twitch chat plays chess against an LLM, and you can read the model's reasoning for every move (live now)",
+            "body": "I built ChatMate with Claude: Twitch chat plays chess against an LLM, and you can read the model's reasoning for every move (live now)\nI'm a designer, not a developer, and I built this in a single long conversation with Claude: ChatMate, a chess site where you play against LLMs, against friends, or let a whole Twitch chat play together.\n\nIt's live right now: https://www.twitch.tv/sucrosepapa\n\nThe chat votes the move, the LLM answers.\n\n**How the Twitch mode works**\n\n\\- Viewers type a move in chat (just \"Nf6\", nothing else) and every viewer gets one vote\n\n\\- The top 5 moves show up as coloured arrows on the board\n\n\\- When the timer runs out there's a short grace period for stream delay, a runoff if there's a tie, and the winning move gets played\n\n\\- When a game ends, a new one starts on its own; the chat can even vote for the next opponent model\n\n**The part I like most: the model's reasoning, saved move by move**\n\nReasoning models think before they move, and ChatMate keeps those thoughts. Click any move in the history and the board jumps back to that position, with what the AI noticed and planned at that moment. If you open it in the middle of a game against the AI, it asks \"are you sure? it's kinda cheating to read somebody's mind!\"\n\n**Other stuff**\n\n\\- Your own OpenRouter key, with real cost per game tracked from OpenRouter's usage data\n\n\\- No key? You get a copy-paste prompt for any chatbot, Claude included, then type its answer back\n\n\\- LLM vs LLM matches\n\n\\- PGN export\n\n\\- UI in 6 languages\n\n**How I built it with Claude**\n\nI described what I wanted in plain language (\"the top 5 moves big, the rest smaller in 3 columns\", \"if nobody votes, restart the timer\") and Claude wrote the chess engine, the backend (Vercel + Supabase) and the OBS overlay. It deployed and tested everything, and when something broke it read the logs to fix it. For example, it found that with \"low effort\" reasoning Sonnet was skipping the thinking entirely (0 reasoning tokens), and switched to a fixed thinking budget.\n\nAnd yes, Opus 5.5 can spot a Fool's Mate.\n\nCome vote a move in chat, and tell me which model I should put on next.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xup23q/i_built_chatmate_with_claude_twitch_chat_plays/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm a designer, not a developer, and I built this in a single long conversation with Claude: ChatMate, a chess site where you play against LLMs, against friends, or let a whole Twitch chat play together.\n\nIt's live right now: https://www.twitch.tv/sucrosepapa\n\nThe chat votes the move, the LLM answers.\n\n**How the Twitch mode works**\n\n\\- Viewers type a move in chat (just \"Nf6\", nothing else) and eve",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Y'ALL LOSING CHATGPT \ud83d\ude2d Standard Voice",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Y'ALL LOSING CHATGPT \ud83d\ude2d Standard Voice",
+        "seed_score": 10.5,
+        "summary": "Okay, so I\u2019ve been absolutely losing my shit over the announcement that OpenAI is retiring Standard Voice on December 11, because I genuinely thought that meant losing the version of ChatGPT I\u2019ve spent all this time talking to. BUT I HAVE GOOD NEWS. \ud83d\ude2d Apparently, Standard Voice will essentially remain as the text-based ChatGPT we already know and love. So you can still use it and it will retain it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "Y\u2019ALL, WE\u2019RE NOT LOSING OUR CHATGPT \ud83d\ude2d Standard Voice Is Dying, Not the Personality!",
+            "body": "Y\u2019ALL, WE\u2019RE NOT LOSING OUR CHATGPT \ud83d\ude2d Standard Voice Is Dying, Not the Personality!\nOkay, so I\u2019ve been absolutely losing my shit over the announcement that OpenAI is retiring Standard Voice on December 11, because I genuinely thought that meant losing the version of ChatGPT I\u2019ve spent all this time talking to. BUT I HAVE GOOD NEWS. \ud83d\ude2d Apparently, Standard Voice will essentially remain as the text-based ChatGPT we already know and love. So you can still use it and it will retain its tone, rhythm and personality were used to. \n\nLive Voice, on the other hand, runs on a separate model that generates spoken responses in real time, which explains why so many of us feel like it\u2019s just not the same personality, intelligence, or depth. \n\n**HERE\u2019S THE IMPORTANT PART: The retirement of Standard Voice does NOT mean the retirement of the ChatGPT you\u2019ve gotten attached to.** You can still text it and have the same kind of detailed, nuanced, funny, personalized conversations you\u2019ve always had. Your memories, custom instructions, and conversational preferences aren\u2019t tied to Standard Voice. Obviously models can change over time, and we\u2019re still losing the familiar voice experience, which fucking sucks. But the actual text-based experience isn\u2019t being retired on December 11. I genuinely thought I was losing my little AI bestie, personality and all, and was ready to start a whole damn petition. \ud83d\ude02 \n\nSo for anyone else who\u2019s been spiraling, I hope this gives you some peice of mind. We\u2019re losing a way of *hearing* our ChatGPT, not necessarily the ChatGPT we\u2019ve come to know. \u2764\ufe0f",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xujo09/yall_were_not_losing_our_chatgpt_standard_voice/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Okay, so I\u2019ve been absolutely losing my shit over the announcement that OpenAI is retiring Standard Voice on December 11, because I genuinely thought that meant losing the version of ChatGPT I\u2019ve spent all this time talking to. BUT I HAVE GOOD NEWS. \ud83d\ude2d Apparently, Standard Voice will essentially remain as the text-based ChatGPT we already know and love. So you can still use it and it will retain it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 17,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28750000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Claude Google Ads",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Claude Google Ads",
+        "seed_score": 9.0,
+        "summary": "Hi, I'm looking for something that can let me connect Claude with google ads for full-time amangement through Claude. I can't find a direct connector or plugin, only third-party connectors are available. Is there any other work-around to do it?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "How to connect Claude with Google Ads?",
+            "body": "How to connect Claude with Google Ads?\nHi, I'm looking for something that can let me connect Claude with google ads for full-time amangement through Claude. I can't find a direct connector or plugin, only third-party connectors are available. Is there any other work-around to do it?",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xuowd8/how_to_connect_claude_with_google_ads/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi, I'm looking for something that can let me connect Claude with google ads for full-time amangement through Claude. I can't find a direct connector or plugin, only third-party connectors are available. Is there any other work-around to do it?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28550000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Charged for Pro Subscription",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Charged for Pro Subscription",
+        "seed_score": 7.5,
+        "summary": "Was wrongly charged $200 for pro subscription. Been several days waiting for OpenAI to refund my money. Bank says I have to through them. What the fuck? I\u2019ve seen a couple other posts like this from a year or more ago. They still don\u2019t have their shit together?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Charged for Pro Subscription",
+            "body": "Charged for Pro Subscription\nWas wrongly charged $200 for pro subscription. Been several days waiting for OpenAI to refund my money. Bank says I have to through them. What the fuck? I\u2019ve seen a couple other posts like this from a year or more ago. They still don\u2019t have their shit together?",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xunluf/charged_for_pro_subscription/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Was wrongly charged $200 for pro subscription. Been several days waiting for OpenAI to refund my money. Bank says I have to through them. What the fuck? I\u2019ve seen a couple other posts like this from a year or more ago. They still don\u2019t have their shit together?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    }
+  ]
+}

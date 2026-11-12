@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "ede930c14fc4b90c",
+  "generated_at": "2026-11-12T23:56:25.581434Z",
+  "from_date": "2026-11-11",
+  "to_date": "2026-11-12",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-12T23:56:25.580696Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-12T23:56:25.580703Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-12T23:56:25.578845Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-12T23:56:25.580621Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic IPO",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 782,
+          "points": 790
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO",
+        "seed_score": 2358.0,
+        "summary": "Anthropic IPO",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50465829",
+            "source": "hackernews",
+            "title": "Anthropic IPO",
+            "body": "Anthropic IPO",
+            "url": "https://ipo.anthropic.com/us/",
+            "author": "josephljohnston",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 790,
+              "comments": 782
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about Anthropic IPO",
+            "snippet": "Anthropic IPO",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50465829",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI Apple",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 47,
+          "points": 55
+        }
+      },
+      "nomination": {
+        "name": "AI Apple",
+        "seed_score": 153.0,
+        "summary": "AI is turning Apple's app review process into a nightmare for synth developers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50474311",
+            "source": "hackernews",
+            "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+            "body": "AI is turning Apple's app review process into a nightmare for synth developers",
+            "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+            "author": "anigbrowl",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 55,
+              "comments": 47
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about AI is turning Apple's app review process into a nightmare fo",
+            "snippet": "AI is turning Apple's app review process into a nightmare for synth developers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50474311",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3225
+          }
+        ]
+      }
+    }
+  ]
+}

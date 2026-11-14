@@ -1,0 +1,146 @@
+{
+ "date": "2026-11-15",
+ "runs": [
+  {
+   "started_at": "2026-11-14T23:59:09+00:00",
+   "seconds": 1.6,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 6,
+   "articles_ok": 4,
+   "articles_error": 0,
+   "articles_skipped": 2,
+   "hn_ok": 2,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "4/6 bài gốc ok (2 bỏ qua), 2/2 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 1.6s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+   "article": {
+    "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+    "status": "ok",
+    "title": "Kitesurf is now open source | Cloudflare Blog",
+    "chars": 5187,
+    "text": "Open SourceRustWebAssemblyWorkers\nAgentsAIBrowser RunOpen SourceRustWebAssemblyWorkers\nNovember 13, 2026\nKitesurf is now open source\nCelso Martinho, Rui Figueira, Bernardo Pereira, and Luís Duarte\n4 minute read\nWe introduced Kitesurf, our stateless browser for AI agents that runs entirely on top of Workers, in August and followed up in September with WebMCP support, new APIs, and improved compatibility. On every occasion, we mentioned our commitment to open sourcing it so that developers could run their own browser engine on their own Cloudflare accounts if they want to.\nThat promise is now real. Kitesurf is open source on GitHub under the Apache 2.0 license. You can read the code, run it locally, change it, and deploy your own instance to Cloudflare Workers.\nA browser built for agents\nKitesurf runs entirely on Cloudflare Workers. It parses HTML, applies CSS, executes page JavaScript, and renders screenshots without a browser container. It supports the Chrome DevTools Protocol (CDP), so you can connect clients such as Puppeteer.\nOur main goal is to give AI agents a lightweight, efficient browser — one that can load websites, execute JavaScript, and interact with pages while using less CPU and memory than a full browser like Chromium, and scaling on demand across Cloudflare’s global Workers network.\nRead more about why and how we built Kitesurf in our initial announcement and how to use it in Browser Run’s developer documentation.\nWhat is inside the repository?\nKitesurf builds on Cloudflare’s Developer Platform and APIs, alongside an ecosystem of open-source Rust packages compiled to WebAssembly:\nBlitz provides HTML parsing, the DOM, layout, and painting.\nStylo provides CSS parsing, cascading, and computed styles.\nBoa runs JavaScript inside WebAssembly (as the last resort only when we can’t run JavaScript in Dynamic Workers).\nLinebender libraries provide text layout and 2D graphics, and Krilla generates PDF output.\nThese projects made Kitesurf possible. They retain their respective licenses; the repository's NOTICE documents third-party notices.\nKitesurf has three main parts: the Engine manages browser sessions and client connections, PageScript runs the page and its JavaScript, and PageRenderer draws the result.\nAll packages, the engine, its Rust core, DOM shims, renderer, and Kitesurf CLI live separately in folders under the repository’s packages directory where you can explore how all the pieces fit together.\nRun your own Kitesurf\nTo run Kitesurf locally, follow the repository's build requirements, then clone the repository, install dependencies, and start the engine:\ngit clone https://github.com/cloudflare/kitesurf.git\ncd kitesurf\npnpm install --frozen-lockfile\npnpm run dev\nThe first build compiles the Rust core and its dependencies, so give it some time. Subsequent builds reuse the build cache. Finally wrangler starts a local development server at http://127.0.0.1:8787. Open that address to try a page in Chrome DevTools, or use it programmatically.\nYou can use puppeteer with a NodeJS script:\nimport puppeteer from \"puppeteer-core\";\nconst browser = await puppeteer.connect({\nbrowserWSEndpoint: \"ws://127.0.0.1:8787/devtools/browser\",\n});\ntry {\nconst page = await browser.newPage();\nawait page.goto(\"https://example.com/\");\nawait page.screenshot({ path: \"page.png\" });\n} finally {\nawait browser.disconnect();\n}\nOr you can point your AI harness at the local CDP port (agents love CDP) and watch it take full control of Kitesurf.\nDeploy to your Cloudflare account\nWhen you’re done changing and testing locally, you can deploy the engine to your own account and use Kitesurf from there instead of the Browser Run managed APIs we provide. Note that a Workers Paid plan is required because Kitesurf uses Dynamic Workers to create isolated Workers for pages.\nFrom the repository root:\npnpm run deploy\nHelp us make it better\nAs with all of our open-sourced projects, Kitesurf lives in Github and we welcome forks and contributions. However, note…"
+   }
+  },
+  {
+   "url": "https://cursor.com/blog/security-incident-update",
+   "article": {
+    "url": "https://cursor.com/blog/security-incident-update",
+    "status": "ok",
+    "title": "An update on our recent security incident · Cursor",
+    "chars": 14545,
+    "text": "Blog / company\nNov 13, 2026·company\nAn update on our recent security incident\n6 min read\nOn October 29, we shared that we were investigating a security incident and a malicious, unauthorized copy of Anthropic's Claude Code extension that appeared in the Cursor VS Code extension marketplace. After an extensive investigation over the past two weeks, we want to share more context on the attack and the related impact.\nThe vast majority of customers were not affected, and we have contacted each affected customer directly with the details that apply to them.\nProtecting the safety of our customers' data is a core priority we take seriously. This incident involved data we stored and shared, credentials we issued, and systems we operate. We are addressing the impacts and are enhancing our security measures based on what we have learned.\n#What happened\nOur investigation has pieced together the following picture:\nIt started at Fireworks. An attacker obtained an access key we had issued to Fireworks. The key was exposed by Fireworks, and the attacker used it to copy data from a read-only storage bucket we used to share data with them. That bucket contained limited coding agent traces, mostly from 2025, from sessions not in Privacy Mode, which we were permitted to use for model training. A small number of those traces contained credentials that had not been redacted; less than 0.01% of customers had API credentials exposed. Starting with those credentials, the attacker reached select SaaS tools used by Cursor. From these tools they accessed select archived non-production Cursor source code repositories (some containing business contact information), limited customer support data and email conversations, product usage metrics and contact details, summaries of some coding agent conversations, and some credentials users had sent to the Cursor support team.\nOur monitoring systems identified the unauthorized activity. After becoming aware of the unauthorized activity, we deactivated the vendor's key, opened an incident response workstream, and began revoking and rotating credentials and hunting for any further unauthorized access. As we identified further access, we cut it off. Out of an abundance of caution, we temporarily disabled internal and product services well beyond what the evidence required, which temporarily disrupted certain Cursor features. We restored each one once it was safe to do so.\nThe attacker published a malicious extension. On October 29, using a stolen credential from the exposed data from our internal system, the attacker placed malicious, unauthorized copies of Anthropic's Claude Code extension directly on the cache used to serve the Cursor VS Code extension marketplace. Anthropic did not publish this copy, and this was not a vulnerability in Anthropic's product. The marketplace source, Open VSX, never had the malware. At most 5,000 users who requested specific cached versions of the extension on October 29 potentially received the malicious build. It was available for approximately 11 hours before we removed it. We took it down, took the extension marketplace offline, and worked with the cloud service provider hosting the attacker's server to take it down.\nWe notified customers. On October 30, we published a security notice on our blog and on X with indicators of compromise, remediation steps and scripts to check your system, and began notifying affected users and team admins through in-app notices and email. If credentials were exposed, we emailed team admins a list of the specific keys to rotate, and asked the third-party services that issued those credentials to revoke them. If customer support or business data may have been involved, we notified customers directly. If customers installed or updated to tampered version Anthropic.claude-code 2.1.312 or 2.1.313 from the Cursor VS Code extension marketplace during the exposure window, we ask customers to follow the steps in our security notice. Uninstalling the…"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xv585r/skills_code_mode_mcp_how_i_taught_an_ai_agent_to/",
+   "article": {
+    "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xv585r/skills_code_mode_mcp_how_i_taught_an_ai_agent_to/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://aifrontierpost.com/articles/claude-code-projects-proactive-coordinator/",
+   "article": {
+    "url": "https://aifrontierpost.com/articles/claude-code-projects-proactive-coordinator/",
+    "status": "ok",
+    "title": "Anthropic's Claude Code Projects get a proactive coordinator, thread sharing and reminders — AI Frontier Post",
+    "chars": 7653,
+    "text": "AI News\nAnthropic's Claude Code Projects get a proactive coordinator, thread sharing and reminders\nAnthropic shipped a second act for Projects in Claude Code on Friday, and the headline change is about who does the checking in. The project's coordinator — the Claude instance that scopes a request, splits it across parallel threads, and stitches the results back together — is now, in Anthropic's words, 'much more proactive': it answers questions directly in the project chat and posts status updates as its threads make progress, instead of waiting to be asked.\nPNPriya NairResearch Editor · November 14, 2026 · 6 min read\nTL;DR: Anthropic upgraded Projects in Claude Code on November 13: the coordinator now reports in the project chat instead of waiting to be polled, /btw and /fork split work into side threads, threads can be shared as read-only links, and reminders park a thread until you need it. Projects remain in public beta on Pro and Max, with a waitlist for everyone else.\nThe announcement: a thread from Anthropic's ClaudeDevs account on X, posted at 5:51 p.m. ET on November 13, 2026 — 525,000 views, 10,000 likes and 647 reposts within hours.\nThe headline change: the project coordinator is now proactive: it answers questions in the project chat and posts status updates on its running threads, instead of waiting to be asked.\nNew commands: /btw moves a tangent into its own thread so the current one stays on topic; /fork starts a new thread from the current one to try a different approach.\nReminders and sharing: set a reminder on any thread, or ask Claude to remind you; share an individual thread as a read-only link with anyone signed in to Claude — except threads that had access to your computer, which cannot be shared.\nAvailability: public beta on Pro and Max plans, with a waitlist for subscribers without access; Team and Enterprise plans come later.\nIllustration: one project chat fanning out into parallel coding threads. AI-generated editorial illustration for AI Frontier Post.\nAnthropic shipped a second act for Projects in Claude Code on Friday, and the headline change is about who does the checking in. The project's coordinator — the Claude instance that scopes a request, splits it across parallel threads, and stitches the results back together — is now, in Anthropic's words, 'much more proactive': it answers questions directly in the project chat and posts status updates as its threads make progress, instead of waiting to be asked.\nThe update, announced by Anthropic's ClaudeDevs account on X on November 13, also adds /btw and /fork commands for spinning off side threads, reminders that park a thread until a set time, read-only sharing links for individual threads, and a tidier threads panel with artifact thumbnails. The announcement post passed 525,000 views and 10,000 likes overnight — a strong reception for what is, on its face, a workflow polish release rather than a new model. That is the point: the most-used coding harness is now selling multi-agent coordination as a default, not a demo.\nWhat changed on November 13#\nThe announcement was a six-post thread. In brief:\nA more active coordinator. It answers questions in the project chat and gives updates on the status of ongoing threads.\n/btw and /fork. /btw moves a new topic to its own thread so the current one stays on topic; /fork starts a new thread from the current one to try a different approach.\nReminders. Set a reminder on any thread, or ask Claude to remind you. The thread moves out of the way until then, then returns and Claude raises it in the project chat.\nThread sharing. Share an individual thread as a read-only link with anyone signed in to Claude, from the thread menu. Threads that had access to your computer cannot be shared.\nArtifacts are easier to find. The threads panel has a top row of recently opened, updated, or pinned threads, and each thread shows thumbnails of its artifacts, which can be turned off in view settings.\nSimpler settings. Project…"
+   }
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+   "hn_url": "https://news.ycombinator.com/item?id=50484658",
+   "hn": {
+    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+    "points": 455,
+    "comments": 664
+   },
+   "comments": [
+    {
+     "author": "Overdrivr",
+     "replies": 17,
+     "text": "It's because the hard part of making software is not coding, but deciding what's worth building (even with LLMs), appropriately modelling the problem and designing the solution (at a conceptual, architectural level). And there has been strictly zero progress on this and IMO this isn't something LLMs are strucurally capable of doing."
+    },
+    {
+     "author": "barbariangrunge",
+     "replies": 6,
+     "text": "Blow argues software development hasn't advanced much since the early 2000s. As a game developer, I want to offer a counter point.\nIn the last 3 years, there have been a lot more indie games of far higher quality than we used to get. I'm thinking of the RTS space right now. The Scouring for example. We went from having nobody but Blizzard able to make something that complex to several games with outstanding performance and complexity, often with their own custom game engines that are not only…"
+    },
+    {
+     "author": "dustbunny",
+     "replies": 1,
+     "text": "I'm a senior game developer at a large company. I work on the core of an extremely widely used game engine.\nJon Blow doesn't have sufficient experience in using LLMs to talk about it.\nThis is evidenced by his focus on individual anecdotes on AIs failure to deliver something.\nI would love to talk to him about this as I have fairly concrete evidence of the insane productivity gains one can get with smart AI usage.\nAlso would love to hear Ryan J Fleury talk about Tim Sweeneys statements on…"
+    },
+    {
+     "author": "fuussssip",
+     "replies": 2,
+     "text": "Jonathan Blow is one guy. He made a couple pretty good games. He's not particularly visionary when it comes to software development. Or perhaps he is visionary but it remains to be seen if his vision for technology is really material.\nHe regularly denies the use of new technology that is genuinely useful, and is a fairly conservative dude (I mean in the non-political sense. I do not know his politics. He may be a conservative politically as well, but that would be independent of the point I'm…"
+    },
+    {
+     "author": "jazzypants",
+     "replies": 4,
+     "text": "Can anyone help me understand why Jonathan Blow is considered a good source of information about anything? I tried watching his stream once and I gave up after thirty minutes of incel ranting about why girls don't talk to him."
+    }
+   ],
+   "article": {
+    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+    "status": "skipped",
+    "reason": "www.youtube.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+   "hn_url": "https://news.ycombinator.com/item?id=50496811",
+   "hn": {
+    "title": "Advancing science and engineering with Antigravity's /teamwork",
+    "points": 153,
+    "comments": 35
+   },
+   "comments": [
+    {
+     "author": "CharlieDigital",
+     "replies": 0,
+     "text": "Related: I've been finding a lot of success (defined as more autonomy with less quality dropoff) with team-based workflows.\nA lot of evidence for this.\n- Adaptive Auto-Harness: Sustained Self-Improvement for Agentic System Deployment on Open-Ended Task Streams (https://arxiv.org/abs/2606.01770) talks about multi-agent, role-based adaptive harnesses collaborating on non-homogeneous workstreams\n- team-solve (https://github.com/guregodevo/memdoor/tree/main/examples/wor...) team of small models…"
+    },
+    {
+     "author": "mirrokni",
+     "replies": 3,
+     "text": "As noted by others, we already announced parts of /teamwork in Antigravity here: https://antigravity.google/blog/teamwork-when-ai-becomes-a-r... with more visualizations and more. Thi post was meant to report some advances in math/science/coding/engineering to show-case examples of tasks you can do with it.\nWe are constantly improving/evolving /teamwork and pushing those changes for external users. Will also post more about improvements and details for building teams of agents dynamically as…"
+    },
+    {
+     "author": "stbenjam",
+     "replies": 2,
+     "text": "It is not clear to me how or if /teamwork is any different than Claude dynamic workflows.\nAntigravity as a harness feels very behind. There's not even any auto mode. And they announced /goal long after I ever felt the need to use it in CC or Codex."
+    },
+    {
+     "author": "s_u_d_o",
+     "replies": 0,
+     "text": "The amount of breakthroughs this could deliver. Previously we should’ve established R&D departments, prepare multi-cultural teams, all to work on a single project. Today? I can see a domain expert, guiding antigravity and delivering fast."
+    },
+    {
+     "author": "gdevenyi",
+     "replies": 0,
+     "text": "This doesn't tell me how to use it."
+    }
+   ],
+   "article": {
+    "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+    "status": "ok",
+    "title": "Advancing science & engineering with Antigravity’s /teamwork",
+    "chars": 22435,
+    "text": "Advancing science & engineering with Antigravity’s /teamwork\nNovember 13, 2026\nVahab Mirrokni, Google Fellow and VP, Google Research\nWe share recent results from Antigravity’s /teamwork multiagent systems, which enhance human-AI collaborations to solve open problems across mathematics, chemistry, systems software, and ML engineering. All of this work is done in collaboration with human experts, and we are making these tools available externally.\nQuick links\nAntigravity blog\nGemini 4 Argon\nAntigravity Teamwork\nResearcher access program\n×\nOver the past several weeks, teams across Google and academic partner institutions have tackled open problems in math, science, and complex systems engineering that had remained open for years. Using Gemini 4 Argon, Gemini 4 Carbon, Gemini 4 Hydrogen and multi-agent workflows such as Antigravity’s /teamwork (building on various Gemini models), these collaborations have produced new innovations across information theory, formal verifications, molecular structure discoveries, and kernel optimization, along with several production infrastructure gains at Google. We are making these agentic tools available in Antigravity’s /teamwork (alongside /boost and other agents) so that researchers and developers can apply them to their own work.\nFrontier research and systems engineering require navigating vast literature, building custom computational pipelines, testing against physical measurements, and verifying every step. Progress comes from an interactive discovery loop where researchers frame questions and define the theoretical or physical constraints, while long-horizon agents write custom solvers, explore large search spaces, test candidate designs, and check long chains of logic.\nScaling long-horizon reasoning\nTwo limits of current language models motivate /teamwork's design. First, model generation can be unpredictable, leaving a gap between a single attempt and finding the correct answer. The system bridges this gap by pairing parallel exploration with dedicated falsifiers (e.g., the Lean 4 proof checker, unmodified software test suites, execution simulators, web search, or hardware counters) to automatically verify which candidate solutions work.\nSecond, AI models often lose track of details over multi-day tasks because attention disperses across growing context windows. To prevent this, /teamwork partitions context by construction: each specialized agent receives only the exact files and tools it needs for a specific step. Coordinators hand off tasks to fresh successors, while critics and auditors challenge and verify results from clean contexts without the original producer's reasoning.\nTeamwork expresses these workflows as declarative self-improving natural-language patterns and dynamically routes each user prompt to the pattern best suited to the task. These patterns range from distributed coding and iterative problem-solving (packaged standalone as /boost, a sequential solve-and-verify loop refined from prior trajectories) to specialized research workflows like long proof and document review, all of which are available in Antigravity today. This allows teams to design custom specifications from past run transcripts routing across different harness patterns and dynamically improving agentic harness. While many of these features are available in Antigravity, we will provide more updates in the coming weeks providing all the features to our external users on Antigravity. Following our previous posts on Antigravity /teamwork, we provide new results to open challenges empowered by new variants of /teamwork and Gemini 4 models.\nMathematics and theoretical computer science\nAcross mathematics and theoretical computer science, researchers paired with Gemini 4 and /teamwork harnesses to collaborate on large-scale proofs and generate complete algorithms and proofs directly from open problem statements. We present several examples.\nProving and verifying the Courtade–Kumar conjecture\nResearchers from…"
+   }
+  }
+ ]
+}

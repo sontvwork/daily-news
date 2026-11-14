@@ -1,0 +1,318 @@
+{
+ "date": "2026-11-15",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-15.json",
+ "fetched_at": "2026-11-14T23:55:38+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-15",
+  "generated_at": "2026-11-15T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 9,
+  "posts": 14,
+  "ok": 14,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Cursor details Fireworks key leak that led to malicious Claude Code extension",
+   "category": "discussion",
+   "event_time": "2026-11-13T12:00:00Z",
+   "primary_url": "https://cursor.com/blog/security-incident-update",
+   "facts": [
+    "An attacker obtained an access key Cursor had issued to Fireworks; the key was exposed by Fireworks and used to copy data from a read-only storage bucket containing limited coding agent traces, mostly from 2025, from sessions not in Privacy Mode.",
+    "Less than 0.01% of customers had API credentials exposed; the attacker used credentials from the traces to reach select SaaS tools and place malicious unauthorized copies of Anthropic's Claude Code extension on the marketplace cache.",
+    "At most 5,000 users who requested specific cached versions of Anthropic.claude-code 2.1.312 or 2.1.313 on October 29 potentially received the malicious build; Anthropic did not publish it and Open VSX never had the malware."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/kapikunAI/status/2121727562284167319",
+     "official": false,
+     "author": "@kapikunAI",
+     "check": "ok",
+     "created_at": "2026-11-14T22:10:45Z",
+     "text": "Cursorの事故報告で一番怖いのは「AIの作業ログに鍵が残っていた」こと。\n\n委託先に渡したキーが流出→主に2025年の作業ログを窃取→中の未マスクのAPIキーで社内ツールへ→偽Claude Code拡張を配布。\n\nAI導入で棚卸しすべきは、作業ログを誰に渡し、鍵を消しているか。\n\nhttps://cursor.com/blog/security-incident-update",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 17
+    },
+    {
+     "url": "https://x.com/DELPHAI28/status/2121729177837576438",
+     "official": false,
+     "author": "@DELPHAI28",
+     "check": "ok",
+     "created_at": "2026-11-14T22:17:10Z",
+     "text": "CURSOR confirms a breach. the door: a key stored at FIREWORKS AI. again.\n\nmalicious CLAUDE CODE builds sat in its extension cache about 11 hours. up to 5,000 users may have pulled them.\n\nthe supplier is the breach.\n\n- ∆\nhttps://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 102
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Claude Code Projects gains proactive coordinator, /btw and /fork support",
+   "category": "feature_update",
+   "event_time": "2026-11-13T22:51:01Z",
+   "primary_url": "https://aifrontierpost.com/articles/claude-code-projects-proactive-coordinator/",
+   "facts": [
+    "The coordinator is now much more proactive: it answers questions in the project chat and gives updates on the status of ongoing threads.",
+    "/btw and /fork now work inside projects; /btw spins off a side thread so the main thread stays on topic, and /fork starts a new thread from the current one.",
+    "Projects is in public beta for Pro and Max users; available on web, desktop and the latest mobile app."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ClaudeDevs/status/2121375309287301360",
+     "official": true,
+     "author": "@ClaudeDevs",
+     "check": "ok",
+     "created_at": "2026-11-13T22:51:01Z",
+     "text": "We've made some big updates to Projects in Claude Code!\n\nIn a project, Claude coordinates your tasks across parallel threads. The coordinator is now much more proactive. It answers your questions in the project chat and gives you updates on the status of your ongoing threads.",
+     "likes": 16315,
+     "retweets": 718,
+     "replies": 565,
+     "views": 1200765
+    },
+    {
+     "url": "https://x.com/b1rkh0ff/status/2121728674118635812",
+     "official": false,
+     "author": "@b1rkh0ff",
+     "check": "ok",
+     "created_at": "2026-11-14T22:15:10Z",
+     "text": "🚀 Claude just shipped big upgrades to Projects in Claude Code.\n\nWhat's new:\n\n🧭 The project coordinator is more proactive. It answers questions in the project chat and keeps you updated on parallel threads.\n\n🔀 /btw and /fork now work inside projects. /btw spins off a side thread so your main thread stays on topic. /fork starts a new thread from the current one.\n\n⏰ Set reminders on any thread, or just ask Claude. The thread steps aside until it's time, then Claude brings it back in the project chat.\n\n🔗 Share any thread as a read-only link. You can't share threads that had computer access.\n\n🗂️ Artifacts are easier to find. There's a \"recent\" row at the top of the threads panel, and each thread shows thumbnails (you can turn them off).\n\n⚙️ Project settings and local folder access are cleaner.\n\n📱 Available on web, desktop and the latest mobile app.\n\nProjects is in public beta for Pro and Max users.\n\nWaitlist 👉 https://claude.com/form/projects\n https://x.com/claudedevs/status/2121375309287301360/video/1?s=46",
+     "likes": 9,
+     "retweets": 0,
+     "replies": 0,
+     "views": 314
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Google Antigravity rolls out Dynamic Workflows with /run-workflow",
+   "category": "feature_update",
+   "event_time": "2026-11-13T19:41:43Z",
+   "primary_url": "https://antigravity.google/docs/dynamic-workflows/",
+   "facts": [
+    "Use /run-workflow and the agent writes a Python script to orchestrate parallel and sequential subagents with structured handoffs.",
+    "The script gives deterministic control flow instead of prompt drift; review the script before it runs and save it to re-run the same flow anytime.",
+    "Primitives include phase(), parallel(), pipeline(), and agent() with per-agent model and workspace control."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/antigravity/status/2121327669534933025",
+     "official": true,
+     "author": "@antigravity",
+     "check": "ok",
+     "created_at": "2026-11-13T19:41:43Z",
+     "text": "We're rolling out Dynamic Workflows in Google Antigravity.\n\nUse /run-workflow and the agent writes a Python script to orchestrate parallel and sequential subagents with structured handoffs, giving you deterministic control flow instead of prompt drift.\n\nReview the script before it runs, and save it to re-run the same flow anytime.",
+     "likes": 2947,
+     "retweets": 227,
+     "replies": 198,
+     "views": 194077
+    },
+    {
+     "url": "https://x.com/jxngrx/status/2121731046467395750",
+     "official": false,
+     "author": "@jxngrx",
+     "check": "ok",
+     "created_at": "2026-11-14T22:24:35Z",
+     "text": "Google Antigravity just got Dynamic Workflows.\n\nYou type /run-workflow and the agent writes a Python script that runs subagents in parallel or in sequence, with structured handoffs.\n\nYou review the script before it runs. Code deciding the flow instead of a prompt hoping for it. Good trade.",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 2,
+     "views": 44
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Cloudflare open-sources Kitesurf browser engine for AI agents",
+   "category": "tool_launch",
+   "event_time": "2026-11-13T20:00:00Z",
+   "primary_url": "https://blog.cloudflare.com/kitesurf-open-source/",
+   "facts": [
+    "Kitesurf is open source on GitHub under the Apache 2.0 license; it runs entirely on Cloudflare Workers, parses HTML, applies CSS, executes page JavaScript, and renders screenshots without a browser container.",
+    "It supports the Chrome DevTools Protocol (CDP), so you can connect clients such as Puppeteer.",
+    "You can run it locally or deploy your own instance to Cloudflare Workers; a Workers Paid plan is required for Dynamic Workers."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/e_ai_formal/status/2121728717974364218",
+     "official": false,
+     "author": "@e_ai_formal",
+     "check": "ok",
+     "created_at": "2026-11-14T22:15:20Z",
+     "text": "【速報】11月13日、CloudflareがAIエージェント向けブラウザ「Kitesurf」をオープンソース化\n\nWorkers（ワーカーズ）の上だけで動き、コンテナが不要。\n\n・スクショ1回のメモリ50MiB（Chromeは329MiB）\n・CPU時間はChromeの約半分\n・Puppeteer（パペティア）など既存ツールをそのまま接続\n\n■ 補足：",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 1,
+     "views": 52
+    },
+    {
+     "url": "https://x.com/realGalaxyGuide/status/2121727552267927640",
+     "official": false,
+     "author": "@realGalaxyGuide",
+     "check": "ok",
+     "created_at": "2026-11-14T22:10:42Z",
+     "text": "Kitesurf 开源了：给 AI 智能体用的浏览器，不起 Chromium 进程或容器。\n\n它建在 Cloudflare Workers 上，能解析网页、执行 JS 和渲染截图。\n\n标签页、主题这些给人用的功能被砍掉，重点转向 token 消耗、性能和成本。\n\n按项目介绍，处理智能体常见任务时，比 Chromium 更省 CPU 和内存。",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 2,
+     "views": 59
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Developers discuss coordination overhead of parallel coding agents",
+   "category": "discussion",
+   "event_time": "2026-11-14T20:46:49Z",
+   "primary_url": null,
+   "facts": [
+    "5 agents working simultaneously doesn't mean 5x productivity; it can mean 5 sessions consuming limits, 5 branches to review, and merge conflicts when agents edit the same files.",
+    "Ask the coordinator to split into independent tasks, assign file ownership, and flag dependencies before running."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/CodeWithGD/status/2121706441103028347",
+     "official": false,
+     "author": "@CodeWithGD",
+     "check": "ok",
+     "created_at": "2026-11-14T20:46:49Z",
+     "text": "Claude Code just made managing parallel AI agents easier.\n\nBut there's a trap nobody should ignore.\n\n5 agents working simultaneously doesn't mean 5x productivity.\n\nIt can mean:\n5 sessions consuming your limits\n5 branches to review\nMerge conflicts when agents edit the same files\n\nBefore starting, ask your coordinator:\n\n\"Split this into independent tasks. Assign file ownership. Flag dependencies before running.\"\n\nMore agents isn't the goal.\n\nLess coordination chaos is.",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 2,
+     "views": 49
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Modern Web Guidance 1.0 discussed for improving AI coding agents on web standards",
+   "category": "trend",
+   "event_time": "2026-11-14T21:46:46Z",
+   "primary_url": null,
+   "facts": [
+    "Google Chrome team released Modern Web Guidance 1.0 on 10 November as a set of skills that feeds coding agents web platform expertise, best practices and browser compatibility data.",
+    "At Japan's note inc., the pass rate on modern web controls rose from 61% to 94% across 180 runs on its production codebase when the prompt named it."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/GlobalFeedAI/status/2121721528866021666",
+     "official": false,
+     "author": "@GlobalFeedAI",
+     "check": "ok",
+     "created_at": "2026-11-14T21:46:46Z",
+     "text": "Your coding agent writes yesterday's web: how Modern Web Guidance 1.0 brings it up to date\n\nThe Google Chrome team (@ChromiumDev) released Modern Web Guidance 1.0 on 10 November, and with it the project becomes cross-browser as the Firefox and Edge teams join. It is a set of skills that feeds coding agents web platform expertise, best practices and browser compatibility data, so they stop reaching for old JavaScript patterns when a modern HTML or CSS feature does the job better.\n\nChrome's evaluations show frontier models still miss things like keyboard focus management, reduced-motion support, accessible form validation, dialog and popover transitions, layout-shift prevention, safe HTML sanitization and passkeys. Version 1.0 adds a modernization workflow that scans existing HTML, CSS, JavaScript and package.json for safe upgrades, expert-reviewed guides and a public evaluation dashboard.\n\nAt Japan's note inc., the pass rate on modern web controls rose from 61% to 94% across 180 runs on its production codebase. Install with npx modern-web-guidance@latest install or from the plugin marketplaces of Claude Code, Codex, Cursor, Copilot and others. Apache 2.0 on GitHub.\n\nWhich outdated pattern does your agent keep writing? Tell us in the replies.\n\n#AI #WebDev #CodingAgents \n\nSource: https://developer.chrome.com/blog/modern-web-guidance-v1",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 1,
+     "views": 61
+    },
+    {
+     "url": "https://x.com/ShehriarAwan/status/2121727385875759577",
+     "official": false,
+     "author": "@ShehriarAwan",
+     "check": "ok",
+     "created_at": "2026-11-14T22:10:03Z",
+     "text": "On their own, 3 popular AI coding agents miss 42% to 46% of Google's web checks. With Modern Web Guidance, 6% to 18%.\n\nGoogle released it Nov 10: a free rulebook your agent reads before it writes website code. It works in Claude Code, Codex, Cursor and others.\n\nThe trick is naming it. In Google's case study with note inc., the agent passed 61% of checks with no guidance, 77% with it installed, and 94% when the prompt named it. So add a standing rule to your agent's instructions file.\n\nI tested it on Serpint's marketing site, which an AI agent built. The scan found 1 cosmetic issue, because it only checks about 20% of the guidance. But searching the guides found the right advice for all 5 problems I'd found by hand.\n\nThe guides are the product. The scan is a demo.\n\nSetup for every agent, a review prompt to paste, and 25 tasks to ask for in plain words:\nhttps://serpint.com/blog/modern-web-guidance-seo/?utm_source=x&utm_medium=social&utm_campaign=modern-web-guidance-seo",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 1,
+     "views": 71
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "T3 Code gains theming features allowing Claude Code-like UI recreation",
+   "category": "discussion",
+   "event_time": "2026-11-14T21:59:42Z",
+   "primary_url": null,
+   "facts": [
+    "User recreated Claude Code UI inside T3 Code using new theming features with Opus 5.5.",
+    "Preferred T3 Code functionality but previously returned to Claude Code for UI; now plans to stick with T3 Code."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/rohit3a/status/2121724781376786584",
+     "official": false,
+     "author": "@rohit3a",
+     "check": "ok",
+     "created_at": "2026-11-14T21:59:42Z",
+     "text": "Meet T3 Clawd. Claude Code recreated inside of T3 Code. \n\nHuge shoutout to team T3 Code for this feature. This was such a seamless experience to do with Opus 5.5\n\nI love the functionality of T3 Code but always went back to Claude Code since I preferred it's UI more\n\nI was able to massively redo the UI inside of T3 Code with the new theming features, to make it exactly how I wanted\n\nNow? I think I'll stick around to T3 Code permanantly\n\nbtw is the model picker good, @theo? 🫣\n\nLink to the theme in the comments.",
+     "likes": 39,
+     "retweets": 0,
+     "replies": 15,
+     "views": 3621
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "cc-agent-brain provides local memory layer for Claude Code, Cursor and Codex",
+   "category": "tool_launch",
+   "event_time": "2026-11-14T19:50:18Z",
+   "primary_url": null,
+   "facts": [
+    "cc-agent-brain gives Claude Code, Cursor, and Codex a local memory layer: SQLite with FTS5 retrieval, bi-temporal versioned memories, and full-session capture, all behind an MCP server.",
+    "Zero dependencies, Python, your machine only."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/BIGBULLapp/status/2121692219753251311",
+     "official": false,
+     "author": "@BIGBULLapp",
+     "check": "ok",
+     "created_at": "2026-11-14T19:50:18Z",
+     "text": "Coding agents forget everything the moment a session ends, so you re-explain your architecture every morning. cc-agent-brain gives Claude Code, Cursor, and Codex a local memory layer: SQLite with FTS5 retrieval, bi-temporal versioned memories, and full-session capture, all behind an MCP server. Point the agent at it and past decisions stay queryable instead of evaporating. Zero dependencies, Python, your machine only.\n\nhttps://github.com/syiibfs-hash/cc-agent-brain",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 4,
+     "views": 174
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 9,
+   "title": "Claude Code desktop gains custom themes via mods",
+   "category": "feature_update",
+   "event_time": "2026-11-13T23:59:59Z",
+   "primary_url": null,
+   "facts": [
+    "You can now build custom themes for Claude Code on desktop with mods: change the colors, add an animated background, and make it your own.",
+    "Tell Claude how you want it to look, or get started with the theme-examples plugin."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ClaudeDevs/status/2121392666244186327",
+     "official": true,
+     "author": "@ClaudeDevs",
+     "check": "ok",
+     "created_at": "2026-11-13T23:59:59Z",
+     "text": "You can now build custom themes for Claude Code on desktop with mods! Change the colors, add an animated background, and make it your own.\n\nJust tell Claude how you want it to look, or get started quickly with the theme-examples plugin. We'd love to see what you make!",
+     "likes": 20521,
+     "retweets": 1023,
+     "replies": 650,
+     "views": 1526959
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

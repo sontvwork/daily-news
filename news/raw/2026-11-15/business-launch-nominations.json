@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "5ff341b9c670ba7d",
+  "generated_at": "2026-11-14T23:55:57.528384Z",
+  "from_date": "2026-11-13",
+  "to_date": "2026-11-14",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-14T23:55:57.527421Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-14T23:55:57.527427Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-14T23:55:57.527292Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-14T23:55:57.527370Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Nvidia AI GPUs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 615,
+          "points": 1022
+        }
+      },
+      "nomination": {
+        "name": "Nvidia AI GPUs",
+        "seed_score": 2455.5,
+        "summary": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50493251",
+            "source": "hackernews",
+            "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+            "body": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+            "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+            "author": "speckx",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1022,
+              "comments": 615
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "HN story about Nvidia allegedly engineered scarcity by funding AI startups",
+            "snippet": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50493251",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.46799999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Demystifying",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 3,
+          "points": 65
+        }
+      },
+      "nomination": {
+        "name": "Demystifying",
+        "seed_score": 102.0,
+        "summary": "Demystifying phone unlocking tools: A technical overview",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50497416",
+            "source": "hackernews",
+            "title": "Demystifying phone unlocking tools: A technical overview",
+            "body": "Demystifying phone unlocking tools: A technical overview",
+            "url": "https://osservatorionessuno.org/blog/2026/05/demystifying-phone-unlocking-tools-a-technical-overview/",
+            "author": "iloveyoutwo",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 65,
+              "comments": 3
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Demystifying phone unlocking tools: A technical overview",
+            "snippet": "Demystifying phone unlocking tools: A technical overview",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50497416",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    }
+  ]
+}

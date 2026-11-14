@@ -1,0 +1,888 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "938b8eb71c2d7986",
+  "generated_at": "2026-11-14T23:55:55.327314Z",
+  "from_date": "2026-11-13",
+  "to_date": "2026-11-14",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-14T23:55:55.232172Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-14T23:55:55.232178Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-14T23:55:55.028474Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 75,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-14T23:55:55.232009Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Jonathan Blow AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 664,
+          "points": 455
+        }
+      },
+      "nomination": {
+        "name": "Jonathan Blow AI",
+        "seed_score": 1186.8787,
+        "summary": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50484658",
+            "source": "hackernews",
+            "title": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+            "body": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+            "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+            "author": "helloplanets",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 455,
+              "comments": 664
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "HN story about Jonathan Blow \u2013 If AI solved coding, why is my software stil",
+            "snippet": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50484658",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.268
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Elevated Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 390,
+          "points": 493
+        },
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Elevated Claude Code",
+        "seed_score": 1085.6723,
+        "summary": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50481187",
+            "source": "hackernews",
+            "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "body": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "url": "https://status.claude.com/incidents/nn11wk485zfn",
+            "author": "__vivek",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 493,
+              "comments": 390
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "HN story about Elevated errors on claude.ai, Claude Code, and platform.clau",
+            "snippet": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50481187",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 10,
+            "engagement_score": 91,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2655
+          },
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Building a personal assistant agent vs using one off the shelf",
+            "body": "Building a personal assistant agent vs using one off the shelf\nLooking for advice from people who build AI agents in code.\n\nI want a personal assistant agent that handles my email, calendar, reminders and bookings across work and family. Before I build anything, I want to get the foundation right. I\u2019m also not sure I should build at all.\n\nWhat matters to me:\n\n* I own my data, with as little lock-in to one platform as possible.\n* I can swap the model (Claude, GPT, Gemini, local).\n* It asks me before anything risky, like money, bookings or messages sent as me.\n* Long jobs can pause and pick up again.\n* Security is solid. I already ruled out one platform after a serious vulnerability this year.\n\nBuilding on LangGraph is my front-runner right now. My backup is an off-the-shelf assistant like Pally or Poke.\n\nA few questions:\n\n* For personal use, is building your own worth it, or would you just pick an existing assistant?\n* If you build, where do you host it? Your own cloud (AWS, GCP, Azure), LangGraph Platform, or something else?\n* What do you wish you\u2019d known before running a personal agent every day?\n\nThanks, any real-world experience helps.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1xvvbhd/building_a_personal_assistant_agent_vs_using_one/",
+            "container": "LangChain",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Looking for advice from people who build AI agents in code.\n\nI want a personal assistant agent that handles my email, calendar, reminders and bookings across work and family. Before I build anything, I want to get the foundation right. I\u2019m also not sure I should build at all.\n\nWhat matters to me:\n\n* I own my data, with as little lock-in to one platform as possible.\n* I can swap the model (Claude,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "family tree of software job titles",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 83,
+          "points": 178
+        }
+      },
+      "nomination": {
+        "name": "family tree of software job titles",
+        "seed_score": 391.5,
+        "summary": "A family tree of software job titles",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50499038",
+            "source": "hackernews",
+            "title": "A family tree of software job titles",
+            "body": "A family tree of software job titles",
+            "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+            "author": "umerf",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 178,
+              "comments": 83
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about A family tree of software job titles",
+            "snippet": "A family tree of software job titles",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50499038",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3105
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Ai Rig",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Ai Rig",
+        "seed_score": 237.0,
+        "summary": "8x3090 my ocd wouldn't let me have different gpu models so ended up with 8 gigabyte gaming OC. I bought all the gpus by early 2026 before the prices went crazy. Avg maybe 600 to 700 gbp per gpu. Running on a Romed8-2t motherboard. All run at full pcie 4.0 x16 except the two rightmost who share one pcie slot and get 8x each.\n\nCpu watercooling  radiator sits nicely on top. Had to go the watercooling",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "Ai Rig finally done and stable, perfect winter heater",
+            "body": "Ai Rig finally done and stable, perfect winter heater\n8x3090 my ocd wouldn't let me have different gpu models so ended up with 8 gigabyte gaming OC. I bought all the gpus by early 2026 before the prices went crazy. Avg maybe 600 to 700 gbp per gpu. Running on a Romed8-2t motherboard. All run at full pcie 4.0 x16 except the two rightmost who share one pcie slot and get 8x each.\n\nCpu watercooling  radiator sits nicely on top. Had to go the watercooling route as there is no space otherwise under the gpus for an air cooler.\n\nUsing cheap pcie 4.0 risers from aliexpress. Longest ones are 60 and 40cm for the two leftmost gpus\n\nTwo Psus, Ax1600i and hx1500i. One powers 5 gpus, the other powers the motherboard and 3 gpus (each gpu also pulls power through the motherboard at roughly 50W per gpu)\n\nPower limit set to 270W. Using modified nvidia drivers that enable p2p traffic between gpus, measured at a real 22GB/s except for the 8x gpus.\n\nI played around with some quant of qwen flash next  on vllm and opencode. Single agent around 60 tok/sec gen and 10 agents in parallel peaked at aggregate 370 tok/sec gen.\n\nThe more I look at what is available on the market right now (gorgon halo at 192gb etc) the more I realize what a monster I have built at home. Of course it consumes too much power, 300W idle, but it packs a punch when it comes to memory bandwidth and especially if I ever need to finetune some small models",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwc3m7/ai_rig_finally_done_and_stable_perfect_winter/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 127,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "8x3090 my ocd wouldn't let me have different gpu models so ended up with 8 gigabyte gaming OC. I bought all the gpus by early 2026 before the prices went crazy. Avg maybe 600 to 700 gbp per gpu. Running on a Romed8-2t motherboard. All run at full pcie 4.0 x16 except the two rightmost who share one pcie slot and get 8x each.\n\nCpu watercooling  radiator sits nicely on top. Had to go the watercooling",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45499999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Agweb",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 22,
+          "points": 85
+        },
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Agweb",
+        "seed_score": 212.175,
+        "summary": "Show HN: Agweb \u2013 a browser for agents that stays out of your way",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50497147",
+            "source": "hackernews",
+            "title": "Show HN: Agweb \u2013 a browser for agents that stays out of your way",
+            "body": "Show HN: Agweb \u2013 a browser for agents that stays out of your way",
+            "url": "https://github.com/paul-nameless/agweb",
+            "author": "paul_nameless",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 85,
+              "comments": 22
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Show HN: Agweb \u2013 a browser for agents that stays out of your",
+            "snippet": "Show HN: Agweb \u2013 a browser for agents that stays out of your way",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50497147",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.264
+          },
+          {
+            "item_id": "R80",
+            "source": "reddit",
+            "title": "Building a web layer for AI agents. If you use Firecrawl, Browserbase, TinyFish or similar, what's the one thing it must not get wrong?",
+            "body": "Building a web layer for AI agents. If you use Firecrawl, Browserbase, TinyFish or similar, what's the one thing it must not get wrong?\nI'm a solo dev building a layer that lets agents read pages (clean markdown), scrape, and take actions on sites, with a human handoff when the agent hits a CAPTCHA, OTP or login.\n\n\n\nBefore I go further, I want to learn from people who already run these tools in production.\n\n\n\nIf you use Firecrawl, context\\_dev, TinyFish, Browserbase, Browser Use or your own setup:\n\n\n\n1. What's the one feature you couldn't live without?\n\n2. What made you pick your current tool over the others?\n\n3. How do you actually call it day to day: REST API, SDK, MCP, CLI?\n\n4. What still frustrates you about it, or what did you have to build yourself?\n\n5. Do you stick to one tool, or do you combine several? Would you add another one to your stack if it did one thing clearly better?\n\n\n\nI'm trying to figure out whether there's still a gap worth building for, from the point of view of people who use these tools every day. Honest answers help a lot.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xw46ym/building_a_web_layer_for_ai_agents_if_you_use/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm a solo dev building a layer that lets agents read pages (clean markdown), scrape, and take actions on sites, with a human handoff when the agent hits a CAPTCHA, OTP or login.\n\n\n\nBefore I go further, I want to learn from people who already run these tools in production.\n\n\n\nIf you use Firecrawl, context\\_dev, TinyFish, Browserbase, Browser Use or your own setup:\n\n\n\n1. What's the one feature you",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40099999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Codex Claude Code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 70
+        }
+      },
+      "nomination": {
+        "name": "Codex Claude Code",
+        "seed_score": 136.5,
+        "summary": "I'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into C",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R77",
+            "source": "reddit",
+            "title": "How do you get Codex, Claude Code and a planner agent working together in one place instead of copy-pasting between them?",
+            "body": "How do you get Codex, Claude Code and a planner agent working together in one place instead of copy-pasting between them?\nI'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into Codex, copy Codex's reply to the reviewer, then copy the review back to the planner. It's slow, and it falls apart when I'm busy.\n\n\n\nWhat I want:\n\n\n\n\\- All the agents in one place, passing work to each other\n\n\\- Builder and reviewer from different AI companies, so they don't share blind spots\n\n\\- A reviewer and a security checker running on every change\n\n\\- A \"scout\" agent that keeps an eye out for new tools, repos, model releases and security issues that could improve the build\n\n\\- Me approving anything that goes live. That part's non-negotiable\n\n\n\nI'm on Windows, I already pay for ChatGPT (Codex) and Claude, and the project lives in a local git repo (private client data, so no public GitHub).\n\n\n\nWhat are you actually using for this? Real-world experience, good or bad, would help a lot, especially on keeping it safe when agents talk to each other without me in the middle.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xw4j71/how_do_you_get_codex_claude_code_and_a_planner/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 70
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into C",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.28,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.48900000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "ICLR 2027 Initial Review Scores University",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "ICLR 2027 Initial Review Scores University",
+        "seed_score": 121.5,
+        "summary": "Crawled from OpenReview, titles matched to arXiv, then affiliated with OpenAlex",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R87",
+            "source": "reddit",
+            "title": "ICLR 2027 Initial Review Scores ranked by University [N]",
+            "body": "ICLR 2027 Initial Review Scores ranked by University [N]\nCrawled from OpenReview, titles matched to arXiv, then affiliated with OpenAlex",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xwcjuq/iclr_2027_initial_review_scores_ranked_by/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Crawled from OpenReview, titles matched to arXiv, then affiliated with OpenAlex",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3295
+          },
+          {
+            "item_id": "R88",
+            "source": "reddit",
+            "title": "ICLR 2027 Initial Review Scores ranked by University [N]",
+            "body": "ICLR 2027 Initial Review Scores ranked by University [N]\nCrawled from OpenReview, titles matched to arXiv, then affiliated with OpenAlex  \n\n\n* Data & Original Picture: [https://GitHub.com/clareLab/posteLab/posters](https://t.co/8ImVMmZg8i)\n* More Posters: [https://clareLab.moe/gallery](https://t.co/0u8a7t94Lc)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xwcj44/iclr_2027_initial_review_scores_ranked_by/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Crawled from OpenReview, titles matched to arXiv, then affiliated with OpenAlex  \n\n\n* Data & Original Picture: [https://GitHub.com/clareLab/posteLab/posters](https://t.co/8ImVMmZg8i)\n* More Posters: [https://clareLab.moe/gallery](https://t.co/0u8a7t94Lc)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 3,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24100000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "ICML 2027 Changes D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "ICML 2027 Changes D",
+        "seed_score": 120.9153,
+        "summary": "Just read the ICML 2027 CFP and it looks like they\u2019re trying to tackle the submission explosion in a reasonable way. Under the new two-stage process, the area chair decides whether a paper goes to full review, and any proposed first-stage rejection has to be confirmed by a senior area chair. Authors get a short justification by Feb 23. On top of that, nobody can be on more than 20 submissions, eve",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R93",
+            "source": "reddit",
+            "title": "ICML 2027 Changes [D]",
+            "body": "ICML 2027 Changes [D]\nJust read the ICML 2027 CFP and it looks like they\u2019re trying to tackle the submission explosion in a reasonable way. Under the new two-stage process, the area chair decides whether a paper goes to full review, and any proposed first-stage rejection has to be confirmed by a senior area chair. Authors get a short justification by Feb 23. On top of that, nobody can be on more than 20 submissions, every paper has to name a reciprocal reviewer from its author list (max 6 papers per reviewer), and anyone with 3 or more submissions has to serve on the program committee. Papers that don\u2019t comply may be desk rejected.\n\nBut I think the biggest change is that each author can be on at most one paper with no eligible reciprocal reviewer among its authors. So if you keep putting your name on papers with coauthors who can\u2019t review (undergrads, interns, people outside the field), you run out of free passes after one.\n\nHonestly, it sounds like a pretty reasonable fix. Reviewer load has been out of control for years, and tying authorship volume to reviewing duty seems fair. My only worry is the first-stage cut, since a quick AC read could miss a good paper, though the SAC check helps. What do you all think? Does this sound like a good solution, or will it just push the problem somewhere else?\n\n  \n[https://icml.cc/Conferences/2027/CallForPapers](https://icml.cc/Conferences/2027/CallForPapers)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xvkxbj/icml_2027_changes_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 77,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Just read the ICML 2027 CFP and it looks like they\u2019re trying to tackle the submission explosion in a reasonable way. Under the new two-stage process, the area chair decides whether a paper goes to full review, and any proposed first-stage rejection has to be confirmed by a senior area chair. Authors get a short justification by Feb 23. On top of that, nobody can be on more than 20 submissions, eve",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 10,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.132
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "4.5M-parameter TTS Runs 70x CPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "4.5M-parameter TTS Runs 70x CPU",
+        "seed_score": 78.0,
+        "summary": "I made a small English text-to-speech model called tiny-voca. It has 4.5M parameters, two voices, and it runs in your browser.  \n\n\nTry it here, nothing is sent to a server: [https://tiny-voca.n4ze3m.com](https://tiny-voca.n4ze3m.com)\n\nSome facts:\n\n\\- 4,537,291 parameters, 18 MB. This is the whole model, the waveform part is included.  \n\\- Two voices, one female and one male. 24 kHz.  \n\\- About 70x",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "tiny-voca: a fully open 4.5M-parameter TTS (code, weights, dataset). Runs 70x real time on a CPU",
+            "body": "tiny-voca: a fully open 4.5M-parameter TTS (code, weights, dataset). Runs 70x real time on a CPU\nI made a small English text-to-speech model called tiny-voca. It has 4.5M parameters, two voices, and it runs in your browser.  \n\n\nTry it here, nothing is sent to a server: [https://tiny-voca.n4ze3m.com](https://tiny-voca.n4ze3m.com)\n\nSome facts:\n\n\\- 4,537,291 parameters, 18 MB. This is the whole model, the waveform part is included.  \n\\- Two voices, one female and one male. 24 kHz.  \n\\- About 70x faster than real time on 4 CPU threads.  \n\\- Runs with PyTorch, ONNX, and in the browser.  \n\\- Trained from scratch in 7.7 hours on one RTX 4090.\n\nWhat I think is different:\n\n\\- Everything is open. Code, weights, the training recipe and the dataset.  \n\\- Custom phonemizer.  \n\\- No neural vocoder. The sound is made by a small source-filter synth, which is why it is fast.  \n\n\nWhat is not good yet:\n\n\\- English only, and only these two voices. No voice cloning.  \n\\- Foreign names and odd spellings are often read wrong.  \n\\- It can sound a bit synthetic.  \n\\- The training audio is synthetic too. I made it with Qwen3-TTS, so the model can't sound better than that.\n\nLinks:\n\n\\- Demo: [https://tiny-voca.n4ze3m.com](https://tiny-voca.n4ze3m.com)  \n\\- Code: [https://github.com/n4ze3m/tiny-voca](https://github.com/n4ze3m/tiny-voca)  \n\\- Weights: [https://huggingface.co/n4ze3m/tiny-voca](https://huggingface.co/n4ze3m/tiny-voca)  \n\\- Dataset: [https://huggingface.co/datasets/n4ze3m/tiny-voca](https://huggingface.co/datasets/n4ze3m/tiny-voca)  \n\\- Phonemizer: [https://github.com/n4ze3m/dizione](https://github.com/n4ze3m/dizione)  \n\n\nPlease try hard text: numbers, dates, names, long sentences. If something sounds wrong, post the text and the voice. That helps me a lot.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw7zrg/tinyvoca_a_fully_open_45mparameter_tts_code/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 37,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I made a small English text-to-speech model called tiny-voca. It has 4.5M parameters, two voices, and it runs in your browser.  \n\n\nTry it here, nothing is sent to a server: [https://tiny-voca.n4ze3m.com](https://tiny-voca.n4ze3m.com)\n\nSome facts:\n\n\\- 4,537,291 parameters, 18 MB. This is the whole model, the waveform part is included.  \n\\- Two voices, one female and one male. 24 kHz.  \n\\- About 70x",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.312
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Paid Machine Learning Scientists SnorkelAI Absolutely",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Paid Machine Learning Scientists SnorkelAI Absolutely",
+        "seed_score": 76.3675,
+        "summary": "I am here writing about my experience with this. I was contacted to fill out a paid survey for SnorkelAI because I have a PhD and have published at A\\* conferences in the field, so this might be relevant for other researchers in the community.\n\nAfter not finding a lot of information, I decided to give it a try. I performed the personal verification and waited for the survey to arrive.\n\nFirst bad t",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R97",
+            "source": "reddit",
+            "title": "Paid surveys for Machine Learning Scientists for SnorkelAI: Absolutely not worth it [R]",
+            "body": "Paid surveys for Machine Learning Scientists for SnorkelAI: Absolutely not worth it [R]\nI am here writing about my experience with this. I was contacted to fill out a paid survey for SnorkelAI because I have a PhD and have published at A\\* conferences in the field, so this might be relevant for other researchers in the community.\n\nAfter not finding a lot of information, I decided to give it a try. I performed the personal verification and waited for the survey to arrive.\n\nFirst bad thing: the level of pushiness is terrible. I went to bed, and when I woke up, I had 1 email and 2 follow-up emails asking me to complete some part of the verification where the uploaded document did not have the correct format... ok.\n\nThen I did the survey. Their website is an absolute mess. The survey appeared under two different views of the page, and after I completed it, it was only shown as \"pending\" in one view... Under the other, it was shown as if I hadn't submitted it yet... So I received a bunch of emails (very pushy again) asking me to complete the survey, which I answered. Regularly, whenever I've sent an email, I've waited 48-96h to get an answer, but if I didn't answer quickly, I was receiving follow-ups every 2-12 hours.\n\nThen I was notified by email that the survey was accepted, great. A few days later, they sent me the forms to fill out to get paid: a crazy amount of paperwork for getting paid for a survey, and absolutely not worth it. It required more paperwork than the one I needed for getting a public contract in my country, including a document that requires going in person to a tax office, waiting up to 4 weeks, and probably paying for the document.\n\nSo my recommendation to other people getting contacted by them: run away, it's a waste of time, and they are unprofessional.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xv4rjy/paid_surveys_for_machine_learning_scientists_for/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 62,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I am here writing about my experience with this. I was contacted to fill out a paid survey for SnorkelAI because I have a PhD and have published at A\\* conferences in the field, so this might be relevant for other researchers in the community.\n\nAfter not finding a lot of information, I decided to give it a try. I performed the personal verification and waited for the survey to arrive.\n\nFirst bad t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.129
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "DeepSeek-V4.1 64 GB PC 16 GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek-V4.1 64 GB PC 16 GB",
+        "seed_score": 46.5,
+        "summary": "Quick update on tandem.cpp, my patch set for llama.cpp that runs MoE models too big for your VRAM faster. It keeps the hot experts on the GPU and lets the CPU help with the rest. Repo: [https://github.com/ewhacc/tandem.cpp](https://github.com/ewhacc/tandem.cpp)\n\n**DeepSeek-V4.1-Flash IQ2\\_XS (ISTA GSQ-RCO, 139 GiB of experts) on normal PCs**\n\nDecode tok/s, one user, GSM8K questions, greedy, exact",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Update: tandem.cpp \u2014 DeepSeek-V4.1 on a 64 GB PC with a 16 GB card, and AMD (ROCm) support",
+            "body": "Update: tandem.cpp \u2014 DeepSeek-V4.1 on a 64 GB PC with a 16 GB card, and AMD (ROCm) support\nQuick update on tandem.cpp, my patch set for llama.cpp that runs MoE models too big for your VRAM faster. It keeps the hot experts on the GPU and lets the CPU help with the rest. Repo: [https://github.com/ewhacc/tandem.cpp](https://github.com/ewhacc/tandem.cpp)\n\n**DeepSeek-V4.1-Flash IQ2\\_XS (ISTA GSQ-RCO, 139 GiB of experts) on normal PCs**\n\nDecode tok/s, one user, GSM8K questions, greedy, exact (no expert skipping on any engine), same quant on every engine:\n\n|PC|llama.cpp|tandem.cpp|Strata|\n|:-|:-|:-|:-|\n|RTX 5070 Ti 16 GB, 64 GB RAM, i5-14600KF|7.4|**14.2**|10.4|\n|RTX 5070 Ti 16 GB, 64 GB RAM, i5-12400F, budget DRAM-less SSD|\\-|**10.4**|5.7|\n|RTX 5090 32 GB, 128 GB RAM, i5-14600KF|11.5|**33.1**|28.0|\n\nAt 64 GB the model is about twice your RAM, so it streams from the SSD.\n\n**Less RAM than the model: Qwen3.8-Flash-Next IQ3\\_S (ISTA GSQ-RCO, 78 GiB) + MTP on a 32 GB PC**\n\n|PC|llama.cpp|tandem.cpp|Strata|\n|:-|:-|:-|:-|\n|RTX 5070 Ti 16 GB, 32 GB RAM, i5-12400F, budget DRAM-less SSD|14.9|**34.3**|30.3|\n\nWhen the model fits in RAM, Strata is a bit ahead on Qwen3.8 (RTX 4090 + 64 GB: 97 vs 104 tok/s). Where tandem.cpp wins is less RAM and other models: DeepSeek-V4.1, gpt-oss-120b, GLM-4.5-Air and Qwen3.6 all gain 1.4-2.1x over plain llama.cpp.\n\n**AMD (ROCm)**\n\nThe patch now builds with HIP. Tested on an RX 7900 XTX (i7-8700, 64 GB DDR4, PCIe 3.0), Qwen3.8 IQ3\\_S + MTP, same day:\n\n|Engine|tok/s|\n|:-|:-|\n|tandem.cpp|68.6|\n|Strata 0.2.9|69.7|\n|Strata's RDNA3 fork|80.1|\n|Avalon (its own IQ3\\_KS quant)|83.6|\n\nLevel with stock Strata. This week's kernel work is shared CUDA/HIP code, so it helps NVIDIA too: +2.5% on the 7900 XTX, +1.3% on a 5070 Ti. On an old 6-core CPU, the AMD-specific engines are still ahead. Vulkan isn't supported yet.\n\nBuild steps for both are in the README. Questions and numbers from your boxes are welcome, especially 32 GB machines and AMD cards.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwan2j/update_tandemcpp_deepseekv41_on_a_64_gb_pc_with_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Quick update on tandem.cpp, my patch set for llama.cpp that runs MoE models too big for your VRAM faster. It keeps the hot experts on the GPU and lets the CPU help with the rest. Repo: [https://github.com/ewhacc/tandem.cpp](https://github.com/ewhacc/tandem.cpp)\n\n**DeepSeek-V4.1-Flash IQ2\\_XS (ISTA GSQ-RCO, 139 GiB of experts) on normal PCs**\n\nDecode tok/s, one user, GSM8K questions, greedy, exact",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30100000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "RustingStrata runs Flint 40B 12 GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "RustingStrata runs Flint 40B 12 GB",
+        "seed_score": 43.5,
+        "summary": "I tested new trending Recursive Flint UD-Q5\\_K\\_XL (27.9 GiB) on an RTX 3060 12 GB with 30 GB RAM, comparing RustingStrata against llama.cpp using the same model, prompt, and generation settings.\n\n||RustingStrata|llama.cpp|\n|:-|:-|:-|\n|Warm decode speed|**64.6 tok/s** (63.8\u201365.6)|48.6 tok/s (47.5\u201349.3)|\n|Warm 4K prompt prefill|1.14\u20131.30k tok/s|0.85\u20131.02k tok/s|\n\nRustingStrata was about **33% faste",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "RustingStrata runs Flint 40B on a 12 GB card: 64 tok/s decode, 1.3x llama.cpp",
+            "body": "RustingStrata runs Flint 40B on a 12 GB card: 64 tok/s decode, 1.3x llama.cpp\nI tested new trending Recursive Flint UD-Q5\\_K\\_XL (27.9 GiB) on an RTX 3060 12 GB with 30 GB RAM, comparing RustingStrata against llama.cpp using the same model, prompt, and generation settings.\n\n||RustingStrata|llama.cpp|\n|:-|:-|:-|\n|Warm decode speed|**64.6 tok/s** (63.8\u201365.6)|48.6 tok/s (47.5\u201349.3)|\n|Warm 4K prompt prefill|1.14\u20131.30k tok/s|0.85\u20131.02k tok/s|\n\nRustingStrata was about **33% faster once warm**. A fresh load can behave differently because this model is larger than available VRAM and performance depends on which model pages are already cached in RAM.  \n  \nWhat made the difference?\n\nThe model doesn't fit in 12 GB of VRAM, so many expert weights must be fetched from system RAM during generation. Two changes helped most:\n\n* **Adapt expert placement to the reply**, rather than continuing to prioritize the prompt's routing pattern.\n* **Release RAM pages for experts already copied to VRAM**, preserving cache for experts that still need to be fetched from host memory.\n\nAbout Quality, bc people very often says like \"It should give shit output to gain speed\", which is not true, in my last posts I already did quality benchmarks and RustingStrata does not lose quality, it gain speed through specific Code for some specific models, in same time llama.cpp lose speed to be \"general\" engine that can run everything\n\nWhat I want to know, is do people find Recursive Flint an interesting model? I found this model on OpenRouter and looks pretty interesting, it's better then Qwen3.6:35-a3b, so I think this can be cool modern replacement for this qwen.  \n  \nSetup:\n\n* **RustingStrata:** 1.2.2, commit `3902978` (working tree)\n* **llama.cpp:** b12191, commit `e95426f16`\n* Full benchmarks: `docs/BENCHMARKS.md`\n\nRepository: [RustingStrata](https://github.com/RustingStudio/RustingStrata)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw5nzn/rustingstrata_runs_flint_40b_on_a_12_gb_card_64/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I tested new trending Recursive Flint UD-Q5\\_K\\_XL (27.9 GiB) on an RTX 3060 12 GB with 30 GB RAM, comparing RustingStrata against llama.cpp using the same model, prompt, and generation settings.\n\n||RustingStrata|llama.cpp|\n|:-|:-|:-|\n|Warm decode speed|**64.6 tok/s** (63.8\u201365.6)|48.6 tok/s (47.5\u201349.3)|\n|Warm 4K prompt prefill|1.14\u20131.30k tok/s|0.85\u20131.02k tok/s|\n\nRustingStrata was about **33% faste",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28800000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI agent for PMO work",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "AI agent for PMO work",
+        "seed_score": 34.5,
+        "summary": "Dears,\n\nI am a PMO and wanted to utilise AI for doing PMO repetitive work which includes  \n \\- generating Project Scope/Objectives/acceptance criteria/ Risk/Assumption/Constraints/Lesson learned using AI (Chatgpt)  \n\\- Fill up these details in Project Charter - a specific format in word  \n\\- prepare Project plan from the vendor shared project plan to align with EPMO format  \n\\- Project Closure For",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R85",
+            "source": "reddit",
+            "title": "AI agent for PMO work",
+            "body": "AI agent for PMO work\nDears,\n\nI am a PMO and wanted to utilise AI for doing PMO repetitive work which includes  \n \\- generating Project Scope/Objectives/acceptance criteria/ Risk/Assumption/Constraints/Lesson learned using AI (Chatgpt)  \n\\- Fill up these details in Project Charter - a specific format in word  \n\\- prepare Project plan from the vendor shared project plan to align with EPMO format  \n\\- Project Closure Form - again a specific word document \n\nCurrent i am generating details using chatgpt and fill up manually,\n\nWanted to built AI Agent with minimum effort - which is best way  ????",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xw293b/ai_agent_for_pmo_work/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Dears,\n\nI am a PMO and wanted to utilise AI for doing PMO repetitive work which includes  \n \\- generating Project Scope/Objectives/acceptance criteria/ Risk/Assumption/Constraints/Lesson learned using AI (Chatgpt)  \n\\- Fill up these details in Project Charter - a specific format in word  \n\\- prepare Project plan from the vendor shared project plan to align with EPMO format  \n\\- Project Closure For",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.6,
+            "local_rank_score": 0.367
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Scaling 1T MoE TorchTitan",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Scaling 1T MoE TorchTitan",
+        "seed_score": 28.6378,
+        "summary": "Hi everyone!\n\nOver the last few months we've been in the trenches with the TorchTitan and PyTorch maintainers, trying to find out how far GH200 (the GPUs inside the JUPITER supercomputer) can be pushed. Short answer: far enough to train a \\~1T-parameter MoE at \\~1,300 tokens/s per GPU on 384 GPUs. That's 14X where we started, and our starting point was, let's say, humbling.\n\nAlong the way we colle",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R96",
+            "source": "reddit",
+            "title": "Scaling to 1T MoE on TorchTitan [P]",
+            "body": "Scaling to 1T MoE on TorchTitan [P]\nHi everyone!\n\nOver the last few months we've been in the trenches with the TorchTitan and PyTorch maintainers, trying to find out how far GH200 (the GPUs inside the JUPITER supercomputer) can be pushed. Short answer: far enough to train a \\~1T-parameter MoE at \\~1,300 tokens/s per GPU on 384 GPUs. That's 14X where we started, and our starting point was, let's say, humbling.\n\nAlong the way we collected a handful of lessons. If you've ever trained a big model, or just stared at a `CUDA out of memory`, some of this will feel familiar.\n\nHere's the tour. If you want the full thing with all the plots, it's on the [Domyn blog](https://www.domyn.com/blog/training-1t-moe-eu-public-infrastructure-pytorch), and there's a [condensed version on the PyTorch blog](https://pytorch.org/blog/training-a-1t-parameter-moe-on-eu-public-infrastructure-with-pytorch-and-torchtitan/) if you're short on coffee.\n\nHope you like it!\n\n# The setup: FSDP + EP, and why I'm not a PP fan\n\nA 1T MoE doesn't fit on one GPU (shocking, I know), so the first question is how to shard it. This choice ends up dictating basically every optimization that follows, so it pays to think about it. The usual suspects are:\n\n* Pipeline Parallelism (each GPU gets a chunk of layers),\n* FSDP (each GPU holds a slice of every weight and gathers the rest just in time),\n* and Expert Parallelism (each GPU owns a subset of experts and tokens travel to them).\n\nWe skipped PP. To hide its bubbles you need lots of microbatches, and lots of microbatches means long steps. Long steps mean that when something breaks at scale, and something always breaks at scale, you wait forever to find out. I'd rather iterate fast.\n\nSo: 384-way FSDP plus 4-way EP, with EP kept strictly *inside* a node. The token all-to-all for the experts is comunication that is difficult to hide so it needs to happen fast. On the other hand, comms. on FSDP are already hidden: while it computes layer i, it is already gathering i+1.\n\nWhy does that matter so much? On JUPITER, InfiniBand gives you \\~25 GB/s per GPU. That's 6X slower than NVLink and 36X slower than the Grace-Hopper link. Our baseline step took 84 seconds, and 68 of them were spent waiting on the network. The GPUs were mostly getting paid to sit around. The rest of this post is basically us trying to put them back to work.\n\n# Lesson 1: If your GPU is idle, make it work for its memory\n\nFSDP moves weights, and the weights gathered per layer don't care how many tokens you feed through them. More tokens per sequence means more compute per byte on the wire, which is exactly what we wanted. The problem is that longer sequences need more memory, so we went shopping for it:\n\n* **Full activation checkpointing.** Recomputing every layer in the backward sounds wasteful, until you remember the GPU was idle anyway. Free compute is free. This alone gave us 4X.\n* **Offloading checkpoint activations to Grace** over the 900 GB/s C2C link, and prefetching them back one layer before recompute. Grace was right there, so we used it.\n* **Muon instead of Adam.** One optimizer state per parameter instead of two, and that's what finally got us to 64k-token sequences.\n\n# Lession 2: If you don\u2019t shard it, you don\u2019t have to gather it\n\nQuick refresher: Muon orthogonalizes each update with a few Newton-Schulz iterations, and Newton-Schulz needs the whole matrix. FSDP, meanwhile, has carefully cut every matrix into 384 slices and scattered them across the job. The naive fix is to gather each matrix on one rank, run Newton-Schulz, and scatter the result back, which means more communication, and more communication is the one thing we absolutely did not need.\n\nThe trick is to shard smarter. With FlexShard (already in TorchTitan), you choose which rank owns which parameters, so we sharded the experts by whole expert. Every GPU owns complete expert matrices and can orthogonalize them locally with zero communication. The dense matrices (attention projections and friends) still need gathering, but they\u2019re in transit while each rank is busy with its own experts, so that traffic hides behind compute.\n\nThere was one catch. We offload the optimizer to Grace, which meant Newton-Schulz was running on the CPU too. Grace is a lovely CPU, but asking it to grind through matmuls is like asking a librarian to move furniture: technically possible, deeply inefficient. The optimizer step took 42 seconds. So we contributed a fix to TorchTitan that runs Newton-Schulz on the GPU even when the parameters live on the host. The optimizer step dropped to \\~2 s, and throughput went up 35%.\n\n# Lesson 3: You're only as fast as your slowest rank\n\n384 GPUs in lockstep is a bit like a group hike: everyone waits for whoever's at the back. We had two stragglers:\n\n* **Attention cost.** A rank that gets a single 60k-token document does far more attention work than one that gets a hundred short ones, even though both see the same number of tokens. We pre-pack rows, bucket them by attention cost, and build each step from rows of similar cost. The worst rank went from 7.9X the average to 1.15X, for +13% throughput.\n* **The router.** Group-limited routing (two experts picked from each node's group) makes expert load perfectly even, for +7%. The catch is that you're telling the router where it's allowed to send tokens, and early runs suggest that can hurt training. Jury's still out on this one boys.\n\n# Lesson 4: Accumulate in fp32, ship in bf16\n\nGradients come out of the backward in bf16. Summing hundreds of them in bf16, though, is a great way to slowly lose precision, so the standard FSDP mixed-precision setup does the reduction in fp32. That\u2019s the right call. The problem is how it gets there.\n\nNCCL\u2019s reduce-scatter runs as a ring. Each rank receives a partial sum from its neighbor, adds its own contribution, and passes the result along. The thing travelling around the ring is a running sum, so for the accumulation to happen in fp32, the data on the wire has to be fp32 too. FSDP therefore upcasts the bf16 gradients to fp32 before the collective, and every byte of gradient crosses InfiniBand at twice the size it needs to be. On a cluster where InfiniBand is already the bottleneck, that hurts.\n\nBut only the summation needs fp32, not the transfer. So we swapped the reduce-scatter for an all-to-all on the expert gradients. Each rank sends every other rank the raw bf16 slice that rank owns, no partial sums involved. The owner receives all the slices, upcasts them, and sums them locally in fp32. Same math, same precision where it matters, half the bytes on the wire.\n\nThe result matches the fp32 reduce-scatter up to summation order.\n\n# Lesson 5: When in doubt, send fewer bytes\n\nEventually longer sequences stopped helping (more on why in a second), so we went after communication volume directly:\n\n* **FP8 expert all-gather** with blockwise scales. Master weights stay in full precision, only the transfer gets squeezed: +18%.\n* **Node-local resharding of dense weights** after forward, so the backward re-gather runs over NVLink instead of fighting gradients for InfiniBand.\n\nAnd none of it moved the loss in our comparison runs, which was a relief.\n\n# Lesson 6: Your OOM might be lying to you\n\nThis is my favorite one. After a software upgrade, *every single rank* started hitting allocator retries at \\~70% HBM utilization, with 25\u201330 GiB sitting free and cached. That's not a memory shortage, that's a memory *hostage situation*.\n\nThe culprit: the PyTorch caching allocator keeps a separate pool per CUDA stream, and FSDP allocates buffers on its side streams. Our shiny FP8 and bf16 collectives allocated their temporaries there too, so \\~21 GiB ended up parked on side streams where the compute stream couldn't touch it.\n\nThe fix was to move those allocations onto the compute stream (via FSDP2's private `unshard_async_op` flag, which is now on its way to becoming a public API) and release gradients a bit earlier. Retries went from 384 ranks to zero, peak reserved memory dropped by 13.5 GiB, and throughput jumped 21%, while sending exactly the same bytes.\n\n# Wrapping up\n\nThe headline: a shared, publicly funded, Hopper-generation machine, with plain user-level access and no root, can host frontier-scale training. You just have to respect its two real limits, inter-node bandwidth and host memory, and design everything around them.\n\nEvery fix we found went upstream to PyTorch and TorchTitan, so hopefully the next person hits fewer of these walls than we did. The model and training recipes will be released openly.\n\nStill on our to-do list: the long-term quality cost of group-limited routing, FP8 expert GEMMs. We'll report back.\n\nHuge thanks to JSC and to the PyTorch and TorchTitan maintainers for the reviews, the patience, and the fast merges!",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xvce5h/scaling_to_1t_moe_on_torchtitan_p/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi everyone!\n\nOver the last few months we've been in the trenches with the TorchTitan and PyTorch maintainers, trying to find out how far GH200 (the GPUs inside the JUPITER supercomputer) can be pushed. Short answer: far enough to train a \\~1T-parameter MoE at \\~1,300 tokens/s per GPU on 384 GPUs. That's 14X where we started, and our starting point was, let's say, humbling.\n\nAlong the way we colle",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-17",
+      "heuristic_name": "Harness comparison What your favorite harness",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Harness comparison What your favorite harness",
+        "seed_score": 19.5,
+        "summary": "I came across this video https://www.youtube.com/watch?v=V8M9uXxAsP0 where he uses\n\n> Qwen 3.8 Flash Next (Unsloth UD-IQ4_XS v3.1) on an RTX 5090 with 128 gb of DDR5 builds a small pixel-art \"Island Fishing\" game in OpenCode, DeepSeek Harness, Pi, Cline, Hermes Agent, Kilo Code, Codex CLI and VSCodium + Continue.\n\nHe used a fixed seed and set temperature to 0 and did 3 attempts for each harness.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Harness comparison. What's your favorite harness?",
+            "body": "Harness comparison. What's your favorite harness?\nI came across this video https://www.youtube.com/watch?v=V8M9uXxAsP0 where he uses\n\n> Qwen 3.8 Flash Next (Unsloth UD-IQ4_XS v3.1) on an RTX 5090 with 128 gb of DDR5 builds a small pixel-art \"Island Fishing\" game in OpenCode, DeepSeek Harness, Pi, Cline, Hermes Agent, Kilo Code, Codex CLI and VSCodium + Continue.\n\nHe used a fixed seed and set temperature to 0 and did 3 attempts for each harness.\n\nResults varied considerably for the same harness. I think his reasoning was flawed in not allowing it to ask questions or giving initial clarifications on some things like view perspective or \"pixel size\" which wildly affect results. The long prompt used is in the pinned comment.\n\nFastest harnesses: kilo (I had never heard of this one before), opencode, hermes. Taking 2x-3x as long: pi, codex, cline, deepseek harness\n\n\"Best results\": opencode, pi, codex. \n\n&nbsp;\n\n**I wanted to know:**\n\n**1) do you agree with the results / test logic?**\n\n**2) what's your favorite harness and do you switch it based on the task?**",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw9oao/harness_comparison_whats_your_favorite_harness/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I came across this video https://www.youtube.com/watch?v=V8M9uXxAsP0 where he uses\n\n> Qwen 3.8 Flash Next (Unsloth UD-IQ4_XS v3.1) on an RTX 5090 with 128 gb of DDR5 builds a small pixel-art \"Island Fishing\" game in OpenCode, DeepSeek Harness, Pi, Cline, Hermes Agent, Kilo Code, Codex CLI and VSCodium + Continue.\n\nHe used a fixed seed and set temperature to 0 and did 3 attempts for each harness.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.258
+          }
+        ]
+      }
+    }
+  ]
+}

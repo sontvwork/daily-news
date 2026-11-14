@@ -1,0 +1,802 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "778c69939d861826",
+  "generated_at": "2026-11-14T23:55:54.366107Z",
+  "from_date": "2026-11-13",
+  "to_date": "2026-11-14",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-14T23:55:54.314862Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-14T23:55:54.314868Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 55,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-14T23:55:54.314044Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-14T23:55:54.314735Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Jonathan Blow AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 664,
+          "points": 455
+        }
+      },
+      "nomination": {
+        "name": "Jonathan Blow AI",
+        "seed_score": 1186.8787,
+        "summary": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50484658",
+            "source": "hackernews",
+            "title": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+            "body": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+            "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+            "author": "helloplanets",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 455,
+              "comments": 664
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "HN story about Jonathan Blow \u2013 If AI solved coding, why is my software stil",
+            "snippet": "Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video]",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50484658",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34600000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Elevated Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 390,
+          "points": 493
+        }
+      },
+      "nomination": {
+        "name": "Elevated Claude Code",
+        "seed_score": 936.5629,
+        "summary": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50481187",
+            "source": "hackernews",
+            "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "body": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "url": "https://status.claude.com/incidents/nn11wk485zfn",
+            "author": "__vivek",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 493,
+              "comments": 390
+            },
+            "relevance_hint": 0.44,
+            "why_relevant": "HN story about Elevated errors on claude.ai, Claude Code, and platform.clau",
+            "snippet": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50481187",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.44,
+            "freshness": 10,
+            "engagement_score": 89,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4000000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Is Down",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 179,
+          "points": 199
+        }
+      },
+      "nomination": {
+        "name": "Claude Is Down",
+        "seed_score": 400.9295,
+        "summary": "Claude Is Down",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50481220",
+            "source": "hackernews",
+            "title": "Claude Is Down",
+            "body": "Claude Is Down",
+            "url": "https://status.claude.com/history",
+            "author": "cornfieldlabs",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 199,
+              "comments": 179
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about Claude Is Down",
+            "snippet": "Claude Is Down",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50481220",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 45,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1675
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Advancing Antigravity",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 35,
+          "points": 152
+        }
+      },
+      "nomination": {
+        "name": "Advancing Antigravity",
+        "seed_score": 280.5,
+        "summary": "Advancing science and engineering with Antigravity's /teamwork",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50496811",
+            "source": "hackernews",
+            "title": "Advancing science and engineering with Antigravity's /teamwork",
+            "body": "Advancing science and engineering with Antigravity's /teamwork",
+            "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+            "author": "acossta",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 152,
+              "comments": 35
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Advancing science and engineering with Antigravity's /teamwo",
+            "snippet": "Advancing science and engineering with Antigravity's /teamwork",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50496811",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "READMEs Claude Code Then Unicode AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "READMEs Claude Code Then Unicode AI",
+        "seed_score": 82.5,
+        "summary": "I often copy prompts from blogs, READMEs and posts and paste them into Claude Code. Then I learned that text can be hidden with Unicode tag characters: the AI reads it, but you can't see it. So I made a small page that checks a prompt before I hand it over.\n\n\n\nWhat it does:\n\n\\- Decodes hidden text (tag characters, zero-width spaces) and shows what it says\n\n\\- Looks for injection patterns in Englis",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "I made a free, browser-only checker for hidden text and injection in prompts you copy from the web",
+            "body": "I made a free, browser-only checker for hidden text and injection in prompts you copy from the web\nI often copy prompts from blogs, READMEs and posts and paste them into Claude Code. Then I learned that text can be hidden with Unicode tag characters: the AI reads it, but you can't see it. So I made a small page that checks a prompt before I hand it over.\n\n\n\nWhat it does:\n\n\\- Decodes hidden text (tag characters, zero-width spaces) and shows what it says\n\n\\- Looks for injection patterns in English and Japanese (\"ignore previous instructions\", reading \\~/.ssh, sending data to outside URLs, \\\\x/\\\\u escapes, %XX, rot13)\n\n\\- No length limit, so text hidden at the very end is checked too\n\n\\- Everything runs in your browser. Nothing is sent.\n\n\n\nIt is pattern matching, so it will miss things. The page lists every rule it checks.\n\n\n\n[https://ikasumiworks.com/en/prompt-check/](https://ikasumiworks.com/en/prompt-check/)\n\n\n\nI'm a hobby developer in Japan and built it with help from Claude Code. If you find a prompt it misses, I'd like to hear about it.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xvsu2v/i_made_a_free_browseronly_checker_for_hidden_text/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 38,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I often copy prompts from blogs, READMEs and posts and paste them into Claude Code. Then I learned that text can be hidden with Unicode tag characters: the AI reads it, but you can't see it. So I made a small page that checks a prompt before I hand it over.\n\n\n\nWhat it does:\n\n\\- Decodes hidden text (tag characters, zero-width spaces) and shows what it says\n\n\\- Looks for injection patterns in Englis",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.585
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "4.5M-parameter TTS Runs 70x CPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "4.5M-parameter TTS Runs 70x CPU",
+        "seed_score": 78.0,
+        "summary": "I made a small English text-to-speech model called tiny-voca. It has 4.5M parameters, two voices, and it runs in your browser.  \n\n\nTry it here, nothing is sent to a server: [https://tiny-voca.n4ze3m.com](https://tiny-voca.n4ze3m.com)\n\nSome facts:\n\n\\- 4,537,291 parameters, 18 MB. This is the whole model, the waveform part is included.  \n\\- Two voices, one female and one male. 24 kHz.  \n\\- About 70x",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "tiny-voca: a fully open 4.5M-parameter TTS (code, weights, dataset). Runs 70x real time on a CPU",
+            "body": "tiny-voca: a fully open 4.5M-parameter TTS (code, weights, dataset). Runs 70x real time on a CPU\nI made a small English text-to-speech model called tiny-voca. It has 4.5M parameters, two voices, and it runs in your browser.  \n\n\nTry it here, nothing is sent to a server: [https://tiny-voca.n4ze3m.com](https://tiny-voca.n4ze3m.com)\n\nSome facts:\n\n\\- 4,537,291 parameters, 18 MB. This is the whole model, the waveform part is included.  \n\\- Two voices, one female and one male. 24 kHz.  \n\\- About 70x faster than real time on 4 CPU threads.  \n\\- Runs with PyTorch, ONNX, and in the browser.  \n\\- Trained from scratch in 7.7 hours on one RTX 4090.\n\nWhat I think is different:\n\n\\- Everything is open. Code, weights, the training recipe and the dataset.  \n\\- Custom phonemizer.  \n\\- No neural vocoder. The sound is made by a small source-filter synth, which is why it is fast.  \n\n\nWhat is not good yet:\n\n\\- English only, and only these two voices. No voice cloning.  \n\\- Foreign names and odd spellings are often read wrong.  \n\\- It can sound a bit synthetic.  \n\\- The training audio is synthetic too. I made it with Qwen3-TTS, so the model can't sound better than that.\n\nLinks:\n\n\\- Demo: [https://tiny-voca.n4ze3m.com](https://tiny-voca.n4ze3m.com)  \n\\- Code: [https://github.com/n4ze3m/tiny-voca](https://github.com/n4ze3m/tiny-voca)  \n\\- Weights: [https://huggingface.co/n4ze3m/tiny-voca](https://huggingface.co/n4ze3m/tiny-voca)  \n\\- Dataset: [https://huggingface.co/datasets/n4ze3m/tiny-voca](https://huggingface.co/datasets/n4ze3m/tiny-voca)  \n\\- Phonemizer: [https://github.com/n4ze3m/dizione](https://github.com/n4ze3m/dizione)  \n\n\nPlease try hard text: numbers, dates, names, long sentences. If something sounds wrong, post the text and the voice. That helps me a lot.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw7zrg/tinyvoca_a_fully_open_45mparameter_tts_code/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 37,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I made a small English text-to-speech model called tiny-voca. It has 4.5M parameters, two voices, and it runs in your browser.  \n\n\nTry it here, nothing is sent to a server: [https://tiny-voca.n4ze3m.com](https://tiny-voca.n4ze3m.com)\n\nSome facts:\n\n\\- 4,537,291 parameters, 18 MB. This is the whole model, the waveform part is included.  \n\\- Two voices, one female and one male. 24 kHz.  \n\\- About 70x",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 97,
+            "source_quality": 0.6,
+            "local_rank_score": 0.348
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "DeepSeek-V4.1 64 GB PC 16 GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek-V4.1 64 GB PC 16 GB",
+        "seed_score": 46.5,
+        "summary": "Quick update on tandem.cpp, my patch set for llama.cpp that runs MoE models too big for your VRAM faster. It keeps the hot experts on the GPU and lets the CPU help with the rest. Repo: [https://github.com/ewhacc/tandem.cpp](https://github.com/ewhacc/tandem.cpp)\n\n**DeepSeek-V4.1-Flash IQ2\\_XS (ISTA GSQ-RCO, 139 GiB of experts) on normal PCs**\n\nDecode tok/s, one user, GSM8K questions, greedy, exact",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Update: tandem.cpp \u2014 DeepSeek-V4.1 on a 64 GB PC with a 16 GB card, and AMD (ROCm) support",
+            "body": "Update: tandem.cpp \u2014 DeepSeek-V4.1 on a 64 GB PC with a 16 GB card, and AMD (ROCm) support\nQuick update on tandem.cpp, my patch set for llama.cpp that runs MoE models too big for your VRAM faster. It keeps the hot experts on the GPU and lets the CPU help with the rest. Repo: [https://github.com/ewhacc/tandem.cpp](https://github.com/ewhacc/tandem.cpp)\n\n**DeepSeek-V4.1-Flash IQ2\\_XS (ISTA GSQ-RCO, 139 GiB of experts) on normal PCs**\n\nDecode tok/s, one user, GSM8K questions, greedy, exact (no expert skipping on any engine), same quant on every engine:\n\n|PC|llama.cpp|tandem.cpp|Strata|\n|:-|:-|:-|:-|\n|RTX 5070 Ti 16 GB, 64 GB RAM, i5-14600KF|7.4|**14.2**|10.4|\n|RTX 5070 Ti 16 GB, 64 GB RAM, i5-12400F, budget DRAM-less SSD|\\-|**10.4**|5.7|\n|RTX 5090 32 GB, 128 GB RAM, i5-14600KF|11.5|**33.1**|28.0|\n\nAt 64 GB the model is about twice your RAM, so it streams from the SSD.\n\n**Less RAM than the model: Qwen3.8-Flash-Next IQ3\\_S (ISTA GSQ-RCO, 78 GiB) + MTP on a 32 GB PC**\n\n|PC|llama.cpp|tandem.cpp|Strata|\n|:-|:-|:-|:-|\n|RTX 5070 Ti 16 GB, 32 GB RAM, i5-12400F, budget DRAM-less SSD|14.9|**34.3**|30.3|\n\nWhen the model fits in RAM, Strata is a bit ahead on Qwen3.8 (RTX 4090 + 64 GB: 97 vs 104 tok/s). Where tandem.cpp wins is less RAM and other models: DeepSeek-V4.1, gpt-oss-120b, GLM-4.5-Air and Qwen3.6 all gain 1.4-2.1x over plain llama.cpp.\n\n**AMD (ROCm)**\n\nThe patch now builds with HIP. Tested on an RX 7900 XTX (i7-8700, 64 GB DDR4, PCIe 3.0), Qwen3.8 IQ3\\_S + MTP, same day:\n\n|Engine|tok/s|\n|:-|:-|\n|tandem.cpp|68.6|\n|Strata 0.2.9|69.7|\n|Strata's RDNA3 fork|80.1|\n|Avalon (its own IQ3\\_KS quant)|83.6|\n\nLevel with stock Strata. This week's kernel work is shared CUDA/HIP code, so it helps NVIDIA too: +2.5% on the 7900 XTX, +1.3% on a 5070 Ti. On an old 6-core CPU, the AMD-specific engines are still ahead. Vulkan isn't supported yet.\n\nBuild steps for both are in the README. Questions and numbers from your boxes are welcome, especially 32 GB machines and AMD cards.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwan2j/update_tandemcpp_deepseekv41_on_a_64_gb_pc_with_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Quick update on tandem.cpp, my patch set for llama.cpp that runs MoE models too big for your VRAM faster. It keeps the hot experts on the GPU and lets the CPU help with the rest. Repo: [https://github.com/ewhacc/tandem.cpp](https://github.com/ewhacc/tandem.cpp)\n\n**DeepSeek-V4.1-Flash IQ2\\_XS (ISTA GSQ-RCO, 139 GiB of experts) on normal PCs**\n\nDecode tok/s, one user, GSM8K questions, greedy, exact",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.333
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "RustingStrata runs Flint 40B 12 GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "RustingStrata runs Flint 40B 12 GB",
+        "seed_score": 43.5,
+        "summary": "I tested new trending Recursive Flint UD-Q5\\_K\\_XL (27.9 GiB) on an RTX 3060 12 GB with 30 GB RAM, comparing RustingStrata against llama.cpp using the same model, prompt, and generation settings.\n\n||RustingStrata|llama.cpp|\n|:-|:-|:-|\n|Warm decode speed|**64.6 tok/s** (63.8\u201365.6)|48.6 tok/s (47.5\u201349.3)|\n|Warm 4K prompt prefill|1.14\u20131.30k tok/s|0.85\u20131.02k tok/s|\n\nRustingStrata was about **33% faste",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "RustingStrata runs Flint 40B on a 12 GB card: 64 tok/s decode, 1.3x llama.cpp",
+            "body": "RustingStrata runs Flint 40B on a 12 GB card: 64 tok/s decode, 1.3x llama.cpp\nI tested new trending Recursive Flint UD-Q5\\_K\\_XL (27.9 GiB) on an RTX 3060 12 GB with 30 GB RAM, comparing RustingStrata against llama.cpp using the same model, prompt, and generation settings.\n\n||RustingStrata|llama.cpp|\n|:-|:-|:-|\n|Warm decode speed|**64.6 tok/s** (63.8\u201365.6)|48.6 tok/s (47.5\u201349.3)|\n|Warm 4K prompt prefill|1.14\u20131.30k tok/s|0.85\u20131.02k tok/s|\n\nRustingStrata was about **33% faster once warm**. A fresh load can behave differently because this model is larger than available VRAM and performance depends on which model pages are already cached in RAM.  \n  \nWhat made the difference?\n\nThe model doesn't fit in 12 GB of VRAM, so many expert weights must be fetched from system RAM during generation. Two changes helped most:\n\n* **Adapt expert placement to the reply**, rather than continuing to prioritize the prompt's routing pattern.\n* **Release RAM pages for experts already copied to VRAM**, preserving cache for experts that still need to be fetched from host memory.\n\nAbout Quality, bc people very often says like \"It should give shit output to gain speed\", which is not true, in my last posts I already did quality benchmarks and RustingStrata does not lose quality, it gain speed through specific Code for some specific models, in same time llama.cpp lose speed to be \"general\" engine that can run everything\n\nWhat I want to know, is do people find Recursive Flint an interesting model? I found this model on OpenRouter and looks pretty interesting, it's better then Qwen3.6:35-a3b, so I think this can be cool modern replacement for this qwen.  \n  \nSetup:\n\n* **RustingStrata:** 1.2.2, commit `3902978` (working tree)\n* **llama.cpp:** b12191, commit `e95426f16`\n* Full benchmarks: `docs/BENCHMARKS.md`\n\nRepository: [RustingStrata](https://github.com/RustingStudio/RustingStrata)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw5nzn/rustingstrata_runs_flint_40b_on_a_12_gb_card_64/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I tested new trending Recursive Flint UD-Q5\\_K\\_XL (27.9 GiB) on an RTX 3060 12 GB with 30 GB RAM, comparing RustingStrata against llama.cpp using the same model, prompt, and generation settings.\n\n||RustingStrata|llama.cpp|\n|:-|:-|:-|\n|Warm decode speed|**64.6 tok/s** (63.8\u201365.6)|48.6 tok/s (47.5\u201349.3)|\n|Warm 4K prompt prefill|1.14\u20131.30k tok/s|0.85\u20131.02k tok/s|\n\nRustingStrata was about **33% faste",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.316
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Codex Claude Code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Codex Claude Code",
+        "seed_score": 31.5,
+        "summary": "I'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into C",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "How do you get Codex, Claude Code and a planner agent working together in one place instead of copy-pasting between them?",
+            "body": "How do you get Codex, Claude Code and a planner agent working together in one place instead of copy-pasting between them?\nI'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into Codex, copy Codex's reply to the reviewer, then copy the review back to the planner. It's slow, and it falls apart when I'm busy.\n\n\n\nWhat I want:\n\n\n\n\\- All the agents in one place, passing work to each other\n\n\\- Builder and reviewer from different AI companies, so they don't share blind spots\n\n\\- A reviewer and a security checker running on every change\n\n\\- A \"scout\" agent that keeps an eye out for new tools, repos, model releases and security issues that could improve the build\n\n\\- Me approving anything that goes live. That part's non-negotiable\n\n\n\nI'm on Windows, I already pay for ChatGPT (Codex) and Claude, and the project lives in a local git repo (private client data, so no public GitHub).\n\n\n\nWhat are you actually using for this? Real-world experience, good or bad, would help a lot, especially on keeping it safe when agents talk to each other without me in the middle.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xw51jj/how_do_you_get_codex_claude_code_and_a_planner/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into C",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.615
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Skills Code Mode MCP AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Skills Code Mode MCP AI",
+        "seed_score": 27.5772,
+        "summary": "Recently, I was working on two things. One personal, one for work. The personal one was setting up Nanabot, an AI agent that automates the work I do as a programmer. For work, I was writing an MCP server to manage the company's products. And I ran into some problems. When there are a lot of MCP methods, their detailed descriptions really bloat the LLM's context. If you hide them behind Code Mode M",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "Skills + Code Mode MCP: How I taught an AI agent to use hundreds of tools without bloating its context",
+            "body": "Skills + Code Mode MCP: How I taught an AI agent to use hundreds of tools without bloating its context\nRecently, I was working on two things. One personal, one for work. The personal one was setting up Nanabot, an AI agent that automates the work I do as a programmer. For work, I was writing an MCP server to manage the company's products. And I ran into some problems. When there are a lot of MCP methods, their detailed descriptions really bloat the LLM's context. If you hide them behind Code Mode MCP, the LLM sometimes can't find the MCP method it needs-or doesn't even realize it should look for one.\n\nI learned about Code Mode MCP from a news story about Cloudflare running into a problem with AI agents using up too much context. In the traditional MCP setup, an MCP client can pass the LLM descriptions of all connected tools. Cloudflare has more than 2,500 API methods, and by their estimate, representing all of them as MCP tools would take about 1.17 million tokens. Cloudflare proposed a solution: use Code Mode MCP, which gives the agent just two things instead of thousands of tools: search() and execute().\n\nThe first lets you find the API methods you need and get their signatures on request, while the second lets you run JavaScript code that calls those methods. In the implementation they showed, a single execute() call can combine several MCP method calls and return the final result without going back to the LLM between each operation. That can save tokens, but repeated searches and loading signatures also use them. The amount saved depends on the size of the catalog, how often you search, and the number of calls. In my scenario, savings seem likely, but to measure them accurately, you need to test on concrete tasks.\n\nHow does this technology work in practice? You tell the AI agent: \"Open example.com and take a screenshot of the page.\" Below is one way to implement an aggregator: search an array of MCP tools, `tools`. This isn't universal Code Mode syntax. For example, Cloudflare's search() looks for operations in an OpenAPI specification. In this aggregator, search could look like this:\n\n    return tools.filter(t =>\n      t.name.includes(\"navigate\") ||\n      t.name.includes(\"screenshot\")\n    );\n    \n\nThis returns the description:\n\n    [\n      {\n        \"name\": \"navigate_page\",\n        \"description\":\n          \"Navigate by URL/history, or reload.\\nDefaults to project URL.\",\n        \"inputSchema\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"pageId\": {\n              \"type\": \"number\",\n              \"description\": \"Targets a specific page by ID.\"\n            },\n            \"type\": {\n              \"type\": \"string\",\n              \"enum\": [\"url\", \"back\", \"forward\", \"reload\"],\n              \"description\": \"Navigate by URL or history action.\"\n            },\n            \"url\": {\n              \"type\": \"string\",\n              \"description\": \"Target URL (only type=url).\"\n            },\n            \"ignoreCache\": {\n              \"type\": \"boolean\",\n              \"description\": \"Ignore cache on reload.\"\n            },\n            \"handleBeforeUnload\": {\n              \"type\": \"string\",\n              \"enum\": [\"accept\", \"dismiss\"],\n              \"description\":\n                \"Accept/dismiss unload dialogs; default is accept.\"\n            },\n            \"initScript\": {\n              \"type\": \"string\",\n              \"description\": \"Run on each document before other scripts.\"\n            },\n            \"timeout\": {\n              \"type\": \"integer\",\n              \"description\": \"Maximum wait in ms; 0 uses the default.\"\n            }\n          },\n          \"required\": [\"pageId\"]\n        }\n      },\n      {\n        \"name\": \"take_screenshot\",\n        \"description\": \"Take a screenshot of the page or element.\",\n        \"inputSchema\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"pageId\": {\n              \"type\": \"number\",\n              \"description\": \"Targets a specific page by ID.\"\n            },\n            \"filePath\": {\n              \"type\": \"string\",\n              \"description\":\n                \"Absolute or relative save path; don't attach it.\"\n            },\n            \"format\": {\n              \"type\": \"string\",\n              \"enum\": [\"png\", \"jpeg\", \"webp\"],\n              \"default\": \"png\",\n              \"description\":\n                \"Format to save as.\\nDefault is png.\"\n            },\n            \"fullPage\": {\n              \"type\": \"boolean\",\n              \"description\": \"Capture full page; incompatible with uid.\"\n            },\n            \"quality\": {\n              \"type\": \"number\",\n              \"minimum\": 0,\n              \"maximum\": 100,\n              \"description\":\n                \"JPEG/WebP quality 0-100.\\nHigher is larger; PNG ignores it.\"\n            },\n            \"uid\": {\n              \"type\": \"string\",\n              \"description\":\n                \"Snapshot element UID; omit to capture the page.\"\n            }\n          },\n          \"required\": [\"pageId\"]\n        }\n      }\n    ]\n    \n\nIn this implementation, the method description is returned on request rather than necessarily being loaded into context in full. The signature shows that `pageId` is required for both methods. For this example, let's assume the required `pageId` value was obtained beforehand.\n\nNext, execute is called:\n\n    await chrome_devtools.navigate_page({\n      pageId: pageId,\n      type: \"url\",\n      url: \"https://example.com\"\n    });\n    \n    const screenshot = await chrome_devtools.take_screenshot({\n      pageId: pageId,\n      format: \"png\"\n    });\n    \n    return screenshot;\n    \n\nNotice that there\u2019s no new request to the LLM between navigate\\_page and take\\_screenshot. The Code Mode aggregator runs the next JavaScript statement itself, waiting for the first one to return. I think the benefits are obvious.\n\nMeanwhile, Cloudflare recommends using Skills alongside MCP. Skills explain to the agent when to use Cloudflare\u2019s capabilities and which ones to use. MCP provides access to Cloudflare operations, while Code Mode provides search() and execute() for finding methods and running them through JavaScript.\n\nSo I used the same architecture. I hid a large number of MCP methods behind Code Mode. Now the LLM sees just one MCP server that can search for and run MCP methods. But, as I said above, sometimes the AI agent doesn't find the right methods, or doesn't even think to search for them. That's where Skills come in. In their descriptions, I list which MCPs and methods to use. I don't give full descriptions, just brief ones. Here's an example of a Skill that fixes bugs:\n\n    ---\n    name: bugfix-process\n    description: >\n      Automatically fix bugs by ticket number.\n      Use when the user asks to fix a bug,\n      task, or error from the ticketing system.\n    ---\n    \n    # Bugfix Process\n    \n    ## Available MCP servers and methods\n    \n    ### ticket_mcp - ticketing system\n    - `get_ticket` - get the ticket description.\n    - `get_comments` - get all comments.\n    - `list_attachments` - get the list of attachments.\n    - `download_attachment` - download an attachment.\n    - `update_status` - change the ticket status.\n    \n    ### samba_mcp - file server\n    - `list_files` - find files and logs related to the ticket.\n    - `download_file` - download a file from Samba.\n    \n    ### filesystem_mcp - file system\n    - `create_directory` - create a directory.\n    - `write_file` - write a file.\n    - `read_file` - read a file.\n    \n    ### git_mcp - working with Git\n    - `current_branch` - get the current branch.\n    - `stage_files` - add files to the index.\n    - `commit` - create a commit.\n    - `show_commit_diff` - get the commit diff.\n    - `push` - push changes to the remote repository.\n    \n    ### codex_mcp - programming\n    - `start_task` - start Codex with a prompt.\n    - `wait_task` - wait for Codex to finish.\n    - `get_task_result` - get the result of the task.\n    \n    ### jenkins_mcp - project build\n    - `trigger_build` - start a Jenkins build.\n    \n    ## Bug-fixing process\n    \n    1. Identify the ticket number, repository, branch, and Jenkins build\n       from the user's request.\n    \n    2. Gather information about the ticket:\n       - Get the ticket description and all comments.\n       - Download all attachments and related logs from Samba.\n       - Save the materials to `tickets/TICKET_NUMBER/` in the selected\n         repository.\n    \n    3. Create a Git commit containing only the contents of\n       `tickets/TICKET_NUMBER/`.\n    \n    4. Start Codex and wait for it to finish. Give it this prompt:\n    \n       \"Fix the bug described in the files in the tickets/TICKET_NUMBER/\n       directory. Review the description, comments, attachments, and logs.\n       Fix the cause of the error. Run the necessary tests and report the\n       result.\"\n    \n    5. Create a separate Git commit with the changes Codex made. Do not\n       include unrelated changes.\n    \n    6. Push the commit with the fix to the remote repository, using the\n       current branch unless the user specified a different one.\n    \n    7. Now the bug fix begins. `codex_mcp` provides the `start_task`,\n       `wait_task`, and `get_task_result` methods for this. The agent passes\n       Codex the directory path and a prompt for the fix:\n    \n       \"\"\"\n       Fix the bug described in the files in the tickets/731/ directory.\n       Review the description, comments, attachments, and logs.\n       Fix the cause of the error.\n       Run the necessary tests and report the result.\n       \"\"\"\n    \n       Codex reads the materials at that path, does the work, and returns\n       the result. The main agent waits for the task to finish without\n       passing the entire ticket and logs through its own context. This way,\n       the main agent coordinates the process and delegates the actual\n       coding to Codex. If the MCP interface and time limits allow it,\n       waiting for Codex and retrieving the result can be combined in a\n       single `execute()` call.\n    \n    8. Once Codex finishes, the agent reviews the DIFF of the changes with\n       `show_commit_diff` and checks the result. It then creates a separate\n       commit and pushes it to the current branch with `push`. After the\n       push succeeds, it starts the Jenkins build `two_jar_java17` using the\n       `trigger_build` method from `jenkins_mcp`, so the build checks these\n       exact changes.\n    \n    9. Once Jenkins finishes, the agent evaluates the fix, Codex's tests,\n       and the build result. Using `ticket_mcp.update_status`, it sets the\n       status to `Resolve` if the bug is fixed, the tests pass, and Jenkins\n       finishes successfully. If the fix did not work or the result cannot\n       be confirmed, it sets the status to `In Progress`.\n    \n    10. Based on the final status, the agent prepares a report. For\n        `Resolve`, it saves it to `tickets/731/result.fixed.md`, and for `In\n        Progress`, to `tickets/731/result.in-progress.md`. The report lists\n        the problem, the changes, the results of the Codex and Jenkins\n        checks, and any remaining questions. Its contents are checked\n        against the commit DIFF and the build result. The report is added in\n        a separate commit and pushed to the same branch.\n    \n    11. In its reply, the agent gives the final filename and includes its\n        contents. That way, the user gets more than just a message saying\n        \"bug fixed\"; they get a full report on the work done. The whole\n        process, from receiving the ticket to starting the Jenkins build, is\n        described in one SKILL, and the necessary MCP methods are chosen as\n        the task progresses.\n    \n\n**And what did we end up with?**\n\nWe split the information an AI agent needs into three levels:\n\n* **Persistent context.** Contains only brief descriptions of available Skills and the two Code Mode tools: `search()` and `execute()`.\n* **SKILL.** Loaded when the agent determines it fits the task. Contains the workflow and the names of the necessary MCP servers and methods, but not their full signatures.\n* **Code Mode MCP.** In the implementation described, finds full descriptions of specific methods on request and lets you execute a sequence of calls through JavaScript.\n\nThat gives us a kind of layered system for discovering and executing tools.\n\nPreviously, the agent had two not-so-great options.\n\nThe first was to load thousands of tools into context and spend a huge number of tokens on their descriptions.\n\nThe second was to hide the tools behind Code Mode and hope the LLM would figure out on its own which methods it needed and how to find them.\n\nWith this setup, there's a third option: **SKILL points to what to look for and how to use it, while Code Mode finds the full signatures and executes the operations.**\n\nOf course, this doesn't guarantee success. The LLM can still fail to choose the right SKILL, search for the wrong method, or put the JavaScript together incorrectly. And not every operation can be combined into a single call; sometimes the agent needs to analyze an intermediate result and make a new decision.\n\nWith this setup, the agent doesn't need to keep detailed descriptions of all available MCP tools in context. Instead, it gets a brief instruction for a specific workflow and loads the full method details only when it actually needs them.\n\n**In this setup, SKILL is the guide to MCP capabilities, while Code Mode is the mechanism for discovering and executing them.**\n\nIn the end, here's the set of SKILLs I ended up with to automate my work as a programmer (the list is, of course, incomplete):\n\n1. Ticket-based bug fixing - gathers the ticket description, comments, attachments, and related logs; coordinates the work on the fix, records the result, and starts a verification build.\n2. Ticket implementation - helps take a new feature through the full development cycle: study the requirements and materials, prepare a plan, implement the changes, save the result, and run a build.\n3. Working with the ticketing system - opens tickets and shows their descriptions, discussion history, attachments, and key fields.\n4. Working with GitLab - helps find projects, browse branches, commits, and files, and carry out routine repository operations.\n5. Working with Jenkins - shows available builds, helps start them, and check their status.\n6. Working with the file server - finds, downloads, and places files, logs, and materials needed for development and troubleshooting.\n\nI think I'm ready to spend the winter in Thailand. I'll be lying on a sun lounger by the sea or the pool, giving my AI agent orders from my phone. It knows everything now; it can do everything. It knows all the processes, rules, and access permissions.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xv585r/skills_code_mode_mcp_how_i_taught_an_ai_agent_to/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Recently, I was working on two things. One personal, one for work. The personal one was setting up Nanabot, an AI agent that automates the work I do as a programmer. For work, I was writing an MCP server to manage the company's products. And I ran into some problems. When there are a lot of MCP methods, their detailed descriptions really bloat the LLM's context. If you hide them behind Code Mode M",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 10,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42600000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "nex-agi/Nex-N2.6 \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "nex-agi/Nex-N2.6 \u00b7 Hugging Face",
+        "seed_score": 27.0,
+        "summary": ">Nex-N2.6 is a multimodal agentic model from Nex-AGI, built on [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16). It is designed for computer use, coding, and long-horizon tasks involving tools. This repository contains the FP8-quantized weights of Nex-N2.6, with approximately 321B parameters.\n\n>Following [Nex-N2.5-Pro](https://huggingface.co/nex-agi/Nex-N2.5-Pro), this release fo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "nex-agi/Nex-N2.6 \u00b7 Hugging Face",
+            "body": "nex-agi/Nex-N2.6 \u00b7 Hugging Face\n>Nex-N2.6 is a multimodal agentic model from Nex-AGI, built on [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16). It is designed for computer use, coding, and long-horizon tasks involving tools. This repository contains the FP8-quantized weights of Nex-N2.6, with approximately 321B parameters.\n\n>Following [Nex-N2.5-Pro](https://huggingface.co/nex-agi/Nex-N2.5-Pro), this release focuses on reducing repetitive reasoning and improving adherence to the tools available in the current environment.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw9mpa/nexaginexn26_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": ">Nex-N2.6 is a multimodal agentic model from Nex-AGI, built on [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16). It is designed for computer use, coding, and long-horizon tasks involving tools. This repository contains the FP8-quantized weights of Nex-N2.6, with approximately 321B parameters.\n\n>Following [Nex-N2.5-Pro](https://huggingface.co/nex-agi/Nex-N2.5-Pro), this release fo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Nace quants vs Unsloth Dynamic v3.1",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Nace quants vs Unsloth Dynamic v3.1",
+        "seed_score": 25.5,
+        "summary": "Two quant updates landed in the last day: the Nace weight-space quants claiming up to 2x better KL divergence, and Unsloth's Dynamic v3.1 for Qwen3.8-27B. I've been trying to work out how much KL really tells you compared to running task evals. Has anyone put them side by side on real work like coding or tool calls? Which quant level are you on, and did you see any difference on long outputs?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "Nace quants vs Unsloth Dynamic v3.1, has anyone compared them on actual tasks?",
+            "body": "Nace quants vs Unsloth Dynamic v3.1, has anyone compared them on actual tasks?\nTwo quant updates landed in the last day: the Nace weight-space quants claiming up to 2x better KL divergence, and Unsloth's Dynamic v3.1 for Qwen3.8-27B. I've been trying to work out how much KL really tells you compared to running task evals. Has anyone put them side by side on real work like coding or tool calls? Which quant level are you on, and did you see any difference on long outputs?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvz070/nace_quants_vs_unsloth_dynamic_v31_has_anyone/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Two quant updates landed in the last day: the Nace weight-space quants claiming up to 2x better KL divergence, and Unsloth's Dynamic v3.1 for Qwen3.8-27B. I've been trying to work out how much KL really tells you compared to running task evals. Has anyone put them side by side on real work like coding or tool calls? Which quant level are you on, and did you see any difference on long outputs?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Harness comparison What your favorite harness",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Harness comparison What your favorite harness",
+        "seed_score": 19.5,
+        "summary": "I came across this video https://www.youtube.com/watch?v=V8M9uXxAsP0 where he uses\n\n> Qwen 3.8 Flash Next (Unsloth UD-IQ4_XS v3.1) on an RTX 5090 with 128 gb of DDR5 builds a small pixel-art \"Island Fishing\" game in OpenCode, DeepSeek Harness, Pi, Cline, Hermes Agent, Kilo Code, Codex CLI and VSCodium + Continue.\n\nHe used a fixed seed and set temperature to 0 and did 3 attempts for each harness.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Harness comparison. What's your favorite harness?",
+            "body": "Harness comparison. What's your favorite harness?\nI came across this video https://www.youtube.com/watch?v=V8M9uXxAsP0 where he uses\n\n> Qwen 3.8 Flash Next (Unsloth UD-IQ4_XS v3.1) on an RTX 5090 with 128 gb of DDR5 builds a small pixel-art \"Island Fishing\" game in OpenCode, DeepSeek Harness, Pi, Cline, Hermes Agent, Kilo Code, Codex CLI and VSCodium + Continue.\n\nHe used a fixed seed and set temperature to 0 and did 3 attempts for each harness.\n\nResults varied considerably for the same harness. I think his reasoning was flawed in not allowing it to ask questions or giving initial clarifications on some things like view perspective or \"pixel size\" which wildly affect results. The long prompt used is in the pinned comment.\n\nFastest harnesses: kilo (I had never heard of this one before), opencode, hermes. Taking 2x-3x as long: pi, codex, cline, deepseek harness\n\n\"Best results\": opencode, pi, codex. \n\n&nbsp;\n\n**I wanted to know:**\n\n**1) do you agree with the results / test logic?**\n\n**2) what's your favorite harness and do you switch it based on the task?**",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw9oao/harness_comparison_whats_your_favorite_harness/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I came across this video https://www.youtube.com/watch?v=V8M9uXxAsP0 where he uses\n\n> Qwen 3.8 Flash Next (Unsloth UD-IQ4_XS v3.1) on an RTX 5090 with 128 gb of DDR5 builds a small pixel-art \"Island Fishing\" game in OpenCode, DeepSeek Harness, Pi, Cline, Hermes Agent, Kilo Code, Codex CLI and VSCodium + Continue.\n\nHe used a fixed seed and set temperature to 0 and did 3 attempts for each harness.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.329
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Looking Spanish Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Looking Spanish Claude",
+        "seed_score": 12.0,
+        "summary": "&#x200B;\n\nHi all. First, I want to be clear: this is just a hobby, for myself, and I have deep respect for authors and for writing as a craft. What I do isn't writing and I'm not trying to take anything from it. Nobody but me will read these stories, and I'm not publishing or selling them. I have ADHD and lots of ideas spinning in my head, and this is a way to get them out and see them turned into",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "Looking for rules and instructions to get good prose in Spanish with Claude (homemade project, just for me)",
+            "body": "Looking for rules and instructions to get good prose in Spanish with Claude (homemade project, just for me)\n&#x200B;\n\nHi all. First, I want to be clear: this is just a hobby, for myself, and I have deep respect for authors and for writing as a craft. What I do isn't writing and I'm not trying to take anything from it. Nobody but me will read these stories, and I'm not publishing or selling them. I have ADHD and lots of ideas spinning in my head, and this is a way to get them out and see them turned into stories, like doing a jigsaw puzzle. That's why I care about the prose being good.\n\nWhat I'm doing: a personal page where I prepare stories by mixing ingredients, as if each story were a recipe. I call it my \"story blender\". I choose which pieces I want (who the characters are, what world and period they live in, what happens to them, the tone and the length) and the page builds a very detailed request for Claude to write the story. I can save my recipes, repeat them, or let chance combine things I wouldn't have thought of together.\n\nWho did what: I built it with Claude's help. I designed the idea and directed the content, and Claude wrote much of the text and the code. My part was deciding which pieces it needed, finding references (classic plot twists from books, character archetypes, characters from books and shows I know), asking for and correcting the behavior molds, and testing stories to see what failed.\n\nHow it works: almost everything comes pre-thought and predefined, and I combine it. For example, characters can be behavior \"molds\": patterns that already define how they act and why (the wounded mentor, the traitor with a breaking point, the loyal butler, the faithful friend), with their wound, their arc and the typical twists. I only add the name, job and family. The same goes for tone (warm, ironic, serene, grim\u2026), which changes the pacing and the way of narrating, and for twists, endings and structures, each with notes on how to use it well. There are also about 20 writing rules I can turn off or change. Then Claude writes a story \"bible\" first and the chapters one by one afterwards.\n\nThe problem is the prose. It always comes out in the same warm, polished, lyrical voice: long chained sentences, soft similes, calming rituals, characters with similar quirks. It's correct, but you can tell and it gets tiring. An example (I asked for something calm for sleep), translated:\n\n\"The steps were transparent and a golden light ran beneath them from the lobby, so that each step seemed to rest on a honeycomb. It smelled of beeswax and warm bread, and, very faintly, of wet wool...\"\n\nFirst I tried asking for the style of authors I like, to get better prose, not to copy them. It didn't work: it still sounds the same. So now I'd rather aim for well-crafted prose that doesn't belong to anyone: clear, concrete and well paced.\n\nWhat I'm looking for:\n\n1. Instructions or rules that define good prose: real rhythm, concrete detail instead of ornament, dialogue with subtext, endings without a moral.\n\n2. How to avoid typical AI habits: chained metaphors, characters who all sound alike, sententious lines closing scenes.\n\n3. Whether anyone has built selectable \"style profiles\" (e.g. plain and direct, restrained lyrical, colloquial) and how they describe them.\n\n4. Whether positive instructions (\"do X\") work better than negative ones (\"don't do Y\"), and whether asking for a short sample to approve first helps.\n\nBesides prose, I want to learn more about how a story is built: tone, plot twists, character planning and structure. If you know books, courses, resources or criteria that writers use for this (for example, how to set up a twist so it feels inevitable, or how to define a character's behavior before giving them a name), that would help me a lot.\n\nI'm not looking for the AI to write for me without judgment: I want to learn what makes prose good so I can ask for it better. If anyone wants to critique my rules or my approach, that helps too. I'm happy to share my current rules as plain text, and once I try what you recommend I'll come back and tell you what worked. Thanks!",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xw3y3r/looking_for_rules_and_instructions_to_get_good/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "&#x200B;\n\nHi all. First, I want to be clear: this is just a hobby, for myself, and I have deep respect for authors and for writing as a craft. What I do isn't writing and I'm not trying to take anything from it. Nobody but me will read these stories, and I'm not publishing or selling them. I have ADHD and lots of ideas spinning in my head, and this is a way to get them out and see them turned into",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.528
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "tell if a coding plan beats",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "tell if a coding plan beats",
+        "seed_score": 12.0,
+        "summary": "With codex moving to one token allowance shared with chatgpt from december, plans are turning into a token question. most of those tokens are cache reads tho, so a billion token plan is less fresh work than it sounds\n\nfor open model plans the per token price is easy to look up, the same weights sit on the labs own api and on deepinfra and a few other hosts\n\nso try one normal workday, note what sha",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "How to tell if a coding plan beats paying per token for your own usage",
+            "body": "How to tell if a coding plan beats paying per token for your own usage\nWith codex moving to one token allowance shared with chatgpt from december, plans are turning into a token question. most of those tokens are cache reads tho, so a billion token plan is less fresh work than it sounds\n\nfor open model plans the per token price is easy to look up, the same weights sit on the labs own api and on deepinfra and a few other hosts\n\nso try one normal workday, note what share of the 5h and weekly windows it used and price that day at those rates. if the plan only covers 2 or 3 days a week its basically prepaid API. how long does yours last on a heavy week with piles of work",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xvymdn/how_to_tell_if_a_coding_plan_beats_paying_per/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "With codex moving to one token allowance shared with chatgpt from december, plans are turning into a token question. most of those tokens are cache reads tho, so a billion token plan is less fresh work than it sounds\n\nfor open model plans the per token price is easy to look up, the same weights sit on the labs own api and on deepinfra and a few other hosts\n\nso try one normal workday, note what sha",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3595
+          }
+        ]
+      }
+    }
+  ]
+}

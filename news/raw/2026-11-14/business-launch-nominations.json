@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "93a631036c0005d1",
+  "generated_at": "2026-11-13T23:56:47.240251Z",
+  "from_date": "2026-11-12",
+  "to_date": "2026-11-13",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-13T23:56:47.239277Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-13T23:56:47.239289Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-13T23:56:47.237222Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-13T23:56:47.239178Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic IPO",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 902,
+          "points": 993
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO",
+        "seed_score": 2009.951,
+        "summary": "Anthropic IPO",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50465829",
+            "source": "hackernews",
+            "title": "Anthropic IPO",
+            "body": "Anthropic IPO",
+            "url": "https://ipo.anthropic.com/us/",
+            "author": "josephljohnston",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 993,
+              "comments": 902
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about Anthropic IPO",
+            "snippet": "Anthropic IPO",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50465829",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.20950000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI disbands",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 60,
+          "points": 135
+        }
+      },
+      "nomination": {
+        "name": "OpenAI disbands",
+        "seed_score": 292.5,
+        "summary": "OpenAI disbands its robotics team as its general models start running robots",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50487184",
+            "source": "hackernews",
+            "title": "OpenAI disbands its robotics team as its general models start running robots",
+            "body": "OpenAI disbands its robotics team as its general models start running robots",
+            "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+            "author": "sshah03",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 135,
+              "comments": 60
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenAI disbands its robotics team as its general models star",
+            "snippet": "OpenAI disbands its robotics team as its general models start running robots",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50487184",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    }
+  ]
+}

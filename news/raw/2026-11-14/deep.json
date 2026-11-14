@@ -1,0 +1,200 @@
+{
+ "date": "2026-11-14",
+ "runs": [
+  {
+   "started_at": "2026-11-14T00:00:44+00:00",
+   "seconds": 1.9,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 5,
+   "articles_error": 2,
+   "articles_skipped": 1,
+   "hn_ok": 3,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "CHANGELOG.md không có mục rust-v0.168.0": 1,
+    "HTTP 403 Forbidden — Just a moment... <meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-cjERJQs9ybE2rIVQo2RjUV&#39; &#39;unsafe-eval&#39;…": 1
+   },
+   "summary": "5/8 bài gốc ok (1 bỏ qua), 3/3 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 1.9s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+    "status": "ok",
+    "title": "",
+    "chars": 41549,
+    "text": "## 2.1.323\n- Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it on, or to turn it off for an organization\n- Added `engines[\"claude-code\"]` to `plugin.json`: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that fits\n- Added type checking of a plugin's TypeScript hooks module to `claude plugin validate`; each finding is a warning, and `--strict` fails on it\n- Added to `claude plugin validate` the `$` nouns a mod's `engine.create` hook adds, withholds or replaces\n- Added support for `CLAUDE_CODE_AUTO_MODE_MODEL` in managed settings for Claude Desktop sessions on third-party providers (takes effect once Claude Desktop includes this version)\n- Added an options menu (stop, switch to usage credits, upgrade) when a model needs usage credits that are turned off or used up\n- Added a progress heartbeat every 30 seconds while hooks run long in `claude -p` and SDK sessions, so a host such as Claude Desktop won't end the turn as hung (once it includes this version)\n- Added `.docx` support to Artifact tool asset uploads\n- Added a `/diff to close` hint to the diff panel, and the keys that focus and close a panel to the `?` shortcut guide\n- Added a start-up warning for Bash allow rules with a `*` in a variable's value, such as `Bash(PORT=* npm run dev)`\n- Added a warning when a plugin's language server can't start, naming the server and what to check\n- Added a one-time startup notice naming `CLAUDE_CODE_PERFORCE_MODE` when Perforce settings are found and the mode is off\n- Added `CLAUDE_CODE_DISABLE_AGENT_PROGRESS_SUMMARIES` (available since 2.1.318): set it to `1` to turn off subagent progress summaries and the requests that write them (anthropics/claude-code#86879)\n- Added `CLAUDE_CODE_RESUME_HINT_COMMAND`, which a program that starts Claude Code can set to have the exit hint name its own resume command\n- Added `unsetOptionCount` to the `claude plugin install --json` result: how many `userConfig` options are not yet set\n- Added `isPromptCovered` to the props a mod's pane is drawn with, telling it when a dialog or a field above the prompt covers the prompt\n- Fixed running `/compact` again, or after a command such as `/context`, summarizing away a message that Claude had not answered yet\n- Fixed a resumed session joining your next message to an old interrupted message that was not resumed\n- Fixed a memory spike at the next prompt after Claude changed a very large file\n- Fixed a setting saved in a running session undoing a hand edit made to `settings.json` moments earlier; a settings file you delete during a session now stays deleted\n- Fixed `claude plugin` commands and `claude mcp list` signing you out of a Console profile when they ended while the token was being renewed\n- Fixed Edit and Bash running out of memory on certain `/proc` files, and Edit hanging or running out of memory on devices and named pipes\n- Fixed Claude Code failing to start, or to clear stored credentials at sign-out, when saving its configuration file failed with \"Out of memory\"\n- Fixed requests sent without streaming failing on errors that streamed requests recover from, such as a rejected image, thinking block or beta header\n- Fixed `ExitWorktree`, the worktree exit dialog and `/resume` leaving the session in the wrong folder when the folder the shell was in before entering the worktree had been deleted\n- Fixed accents and other combining marks sometimes landing left of the text, leaving stale copies on screen, or silently disappearing when text wraps\n- Fixed the last key of a key chord, such as Enter in ctrl+x enter, acting on a dialog's text field when the chord's own action isn't available there\n- Fixed `ps` processes piling up when the process listing Claude Code runs before stopping a command takes too long\n- Fixed subagent transcripts and large tool results being saved apart…"
+   }
+  },
+  {
+   "url": "https://opencode.ai/changelog",
+   "article": {
+    "url": "https://opencode.ai/changelog",
+    "status": "ok",
+    "title": "OpenCode | Changelog and release notes for every version",
+    "chars": 11902,
+    "text": "Changelog\nChangelog\nNew updates and improvements to OpenCode\nRSS feed (opens in a new tab)Watch releases on GitHub (opens in a new tab)Follow @opencode on X (opens in a new tab)\nRSS feed (opens in a new tab)\nWatch releases on GitHub (opens in a new tab)\nFollow @opencode on X (opens in a new tab)\nNov 13, 2026v2.3.0\nBackground Subagents by Default\nSubagents now return immediately, continue in the background, and report back whenever they become idle. You can keep working in the parent session while multiple subagents run concurrently.#63382\nQuieter Transcripts by Default\nThe TUI now summarizes each run of tool calls and thoughts into one collapsible activity row, so the answer is easier to follow. To see every step again, set Verbosity to medium or high in settings, or set session.verbosity in your TUI config; an existing setting is kept.#63207\nJump to an Earlier Prompt\nIn the desktop app, open Jump to message from the command palette or press Cmd+Alt+G (Ctrl+Alt+G on Windows and Linux) to search prompts across the current session and jump directly to one.#63585\nImprovements 32\n32 more improvements\nFixes 34\n34 more fixes\nNov 10, 2026v2.2.7\nGitHub Copilot Auto\nPick Auto in the model picker when your Copilot account has an Auto pool, and Copilot's router chooses the model for each session at the Auto discount. If routing fails, OpenCode falls back to the account's default chat model.#62997\nSide Panel Tab Shortcuts\nRight-click a side panel tab and choose Close tabs to the right. ⌘W now closes side panel tabs wherever focus is, ⌥⌘W or Ctrl+Alt+W always closes the session tab, and ⌘⇧T reopens the last closed tab of either kind where it was.#62922\nMark Sessions Read or Unread\nOpen the menu on a tab, Home row, project row or inbox card and choose Mark as unread to keep its dot until you next visit.#62889\nBreaking changes\n@opencode/ai: ImageResponse.image is removed\nThis affects code that imports @opencode/ai directly. Read response.images[0] instead of response.image.\n#63011\nSDK: fewer endpoints wait for plugins to load\nOn a Location that is still loading plugins, agent.list returns the agents loaded so far, and integration.list, usage.limits, vcs.init, rpc.call and artifact.* no longer wait up to 5 seconds. Entries and actions that a plugin provides appear when it finishes loading, so refresh on the matching *.updated event. Model, provider, generate.*, voice.* and websearch.query endpoints still wait.\n#62796#63040\nImprovements 13\n13 more improvements\nFixes 34\n34 more fixes\nNov 6, 2026v2.2.6\nShared MCP Connections\nTurn on pooling for an MCP server to share one connection across projects with the same setup, so you run fewer processes and start faster.#61185\nGUI Plugin Themes and New Slots\nGUI plugins can now add color themes, render or add actions to code blocks, and use native settings and menu components.#61485#61533#61527#61509\nMobile Composer Dock\nOn phones and tablets, composer actions now sit in a touch dock above the keyboard with larger buttons.#61773\nScripted Runs in Worktrees\nRun opencode run -w to start the session in a new git worktree, or --worktree=<name> to name it.#60712\nAutomatically Archived Runs\nAdd --archived to opencode run to keep scripted and CI sessions out of your inbox and session lists.#61270\nImprovements 14\n14 more improvements\nFixes 33\n33 more fixes\nOct 30, 2026v2.2.5\nWorktree and Shell Mode Shortcuts\nPress ⌘⌥O on macOS or Ctrl+Alt+O on Windows and Linux to choose a worktree, and ⌘⌥B or Ctrl+Alt+B to choose its base branch. ⌘⇧X or Ctrl+Shift+X now toggles shell mode in the composer.#60713\nSend Quotes From the Comment Popup\nHold ⌘ or Ctrl in the quote popup to turn its checkmark into send, or press ⌘Enter or Ctrl+Enter, to send just that quote and comment while leaving the rest of the composer untouched.#60640\nPercentage Compaction Buffer\nSet \"compaction\": { \"buffer\": \"20%\" } in opencode.json to keep a share of each model's context window free, so one setting fits models with small and large windows. Token…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50481187",
+   "hn_url": "https://news.ycombinator.com/item?id=50481187",
+   "hn": {
+    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+    "points": 482,
+    "comments": 382
+   },
+   "comments": [
+    {
+     "author": "Topfi",
+     "replies": 20,
+     "text": "Depending on what your job is, this is either the adult equivalent of a snow day or some of the greatest stress in a long time.\nI have experienced, half a decade ago during some more frequent but less lengthy O365 errors that there are some higher ups who get when this is not something you can fix and some you very much can't. Wishing strength to any \"but it's our mail\" and \"but we bought the Claude\" meetings that happen today."
+    },
+    {
+     "author": "cmiles8",
+     "replies": 4,
+     "text": "The odd thing about these outages is that when they become so big that everyone is impacted then the severity almost drops, since everyone is impacted and thus just shrugs their shoulders."
+    },
+    {
+     "author": "xamde",
+     "replies": 6,
+     "text": "Many Claude session suddenly require a re-login, which first worked but now gives\nOAuth request failed\nTemporarily unable to authenticate. Please retry.\nCan this be fall-out from the Microsoft outage?"
+    },
+    {
+     "author": "gregman1",
+     "replies": 0,
+     "text": "Let the weekend start! Tech sabbatical is kinda enforced now =D"
+    },
+    {
+     "author": "Tehnix",
+     "replies": 2,
+     "text": "Is Claude on Azure? GitHub also seems affected, could seem like all of this is related to the huge Microsoft outage"
+    }
+   ],
+   "article": {
+    "url": "https://status.claude.com/incidents/nn11wk485zfn",
+    "status": "ok",
+    "title": "Claude Status - Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+    "chars": 677,
+    "text": "Elevated errors on claude.ai, Claude Code, and platform.claude.com\nIncident\nReport for Claude\nResolved\nThe issue affecting claude.ai and Claude Cowork has been resolved.\nPosted Nov 13, 2026 - 11:58 UTC\nMonitoring\nA fix has been deployed for the issue affecting Claude services and we are monitoring for recovery.\nPosted Nov 13, 2026 - 11:05 UTC\nInvestigating\nWe are investigating an issue with users authenticating to Claude.ai and Claude Code. We will provide an update as soon as possible.\nPosted Nov 13, 2026 - 09:58 UTC\nThis incident affected: claude.ai, Claude Console (platform.claude.com), Claude Code, and Claude Cowork.\n← Current Status\nPowered by Atlassian Statuspage"
+   }
+  },
+  {
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.168.0",
+   "article": {
+    "url": "https://github.com/openai/codex/releases/tag/rust-v0.168.0",
+    "status": "error",
+    "reason": "CHANGELOG.md không có mục rust-v0.168.0"
+   }
+  },
+  {
+   "url": "https://www.reddit.com/r/AI_Agents/comments/1xvdq74/i_left_my_coding_agent_running_overnight_it_found/",
+   "article": {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1xvdq74/i_left_my_coding_agent_running_overnight_it_found/",
+    "status": "skipped",
+    "reason": "www.reddit.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50488464",
+   "hn_url": "https://news.ycombinator.com/item?id=50488464",
+   "hn": {
+    "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+    "points": 87,
+    "comments": 18
+   },
+   "comments": [
+    {
+     "author": "waximabbax",
+     "replies": 2,
+     "text": "Well congrats.\nHere are some thoughts not facts:\nOn AA Decision Index.\nDecider v1.3 and Decider v.1.2 seem to have same benchmarks. However, V1.3 flash beats V1.2 flash by 4 points.\nI am not particulary excited about this pattern/trend of having flash versions for decision models. The whole point of Decision models was to deliver faster ouput for high volume requests at much cheaper cost than Reasoning models. Since most reasoning models can and probably do outperform decision models already in…"
+    },
+    {
+     "author": "0o777",
+     "replies": 0,
+     "text": "This blog post acted as a rabbit hole into some interesting stuff:\nhttps://www.perplexity.ai/hub/blog/pii-trace-detecting-perso...\nhttps://www.perplexity.ai/hub/blog/a-local-first-agent-for-p..."
+    },
+    {
+     "author": "stri8ted",
+     "replies": 0,
+     "text": "It performs well on my local benchmark, and is priced competitively. Good timing too, considering that inception Labs is discontinuing their Mercury models API, which I was previously using. It seems plausible that the bidirectional attention performs better for decision models."
+    },
+    {
+     "author": "jstummbillig",
+     "replies": 1,
+     "text": "Any ideas what decider models are actually good? There does not seem to be a strong competitive benchmark culture (as with LLMs) for whatever reason?"
+    },
+    {
+     "author": "redanddead",
+     "replies": 4,
+     "text": "Complete lack of creativity in the field of AI...\nHere's new product, which is just our shitty version of this easily reproducible technology\nWhat is this?\nSame for Google and their decisions api"
+    }
+   ],
+   "article": {
+    "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — Just a moment... <meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-cjERJQs9ybE2rIVQo2RjUV&#39; &#39;unsafe-eval&#39;…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50477649",
+   "hn_url": "https://news.ycombinator.com/item?id=50477649",
+   "hn": {
+    "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+    "points": 256,
+    "comments": 146
+   },
+   "comments": [
+    {
+     "author": "ddxv",
+     "replies": 12,
+     "text": "I implemented x402 across a very heavily crawled site and have yet to see any transactions go through. Possibly it's not working, but I haven't seen any yet. Reading the x402 reddit you see other similar comments. People joking that the only people putting money into x402 are the people testing to see if x402 works.\nI do want it to work, so just curious does anyone have any positive anecdotes? Can this naturally get picked up by crawlers?"
+    },
+    {
+     "author": "the_duke",
+     "replies": 7,
+     "text": "This seems quite expensive.\n$5 for 1000 searches. A lot of basic ChatGPT sessions can easily do 30 web searches , which would already cost $0.15 .\nThis brings up an interesting concern: providing search obviously isn't free. It has been financed through ads thus far. What happens when the majority of searches are done by agents?"
+    },
+    {
+     "author": "karhuton",
+     "replies": 1,
+     "text": "I want to congratulate the ladies and gents who worked on defining the HTTP protocol, for their foresight of including the 402 response.\nWould love to hear their thoughts and visions of what the web could be at the time."
+    },
+    {
+     "author": "altilunium",
+     "replies": 2,
+     "text": "I just updated my Brave browser on mobile, and it now replaces Google Search with Brave Search by default. Initially, I wanted to switch it back to Google Search, but finding the relevant setting was such a hassle that I was too lazy to bother. So, I just kept using Brave Search for my daily tasks. Surprisingly, the search results aren't that bad. At this point, I might have permanently switched from Google Search to Brave Search."
+    },
+    {
+     "author": "araarabish",
+     "replies": 5,
+     "text": "Are we going to see all search engines adopting this model? Will this be the future of search engine revenue? May end up more pro-consumer than ads and tracking."
+    }
+   ],
+   "article": {
+    "url": "https://brave.com/blog/search-api-agentic-payments/",
+    "status": "ok",
+    "title": "The Brave Search API now accepts agentic payments via the x402 protocol | Brave",
+    "chars": 3646,
+    "text": "The Brave Search API now accepts agentic payments via the x402 protocol\nPublished\nNov 12, 2026\nShare on X (formerly Twitter)\nShare on Reddit\nShare on Telegram\nShare on LinkedIn\nBrave Search news\nThe Brave Search API, our developer tool for building applications with data from the Web, is adding support for instant, pay-as-you-go, agentic payments enabled by the open x402 payment protocol. Developers and autonomous AI agents that specifically require agentic search can now programmatically query Brave’s independent search index, ground agent responses, and settle requests in real time, which eliminates the need for traditional API key management.\nIntegrating x402 with the Brave Search API makes it easier for an agentic harness to leverage Brave Search API via a CLI wallet, as Brave runs its own facilitator accepting USDC on the Base blockchain, with acceptance on other networks and with other stablecoins incoming soon. This allows a Brave Search API user the ability to pay for LLM Context (agentic grounding) or general web search on-demand, without first creating an account and selecting a plan. Instead, simply transfer USDC stablecoin to your agent’s wallet via the Base network and it’s ready to access the same high-quality search results powered by Brave’s search engine.\nHow does it work?\nBrave Search API endpoints behind x402 require payment on every request rather than authentication. A request sent without payment receives an HTTP 402 Payment Required response that states the price of that search and the payment details needed to pay it. The agent signs a USDC payment for that amount and retries the request with the signed payment attached. Once the payment is verified, the search runs and results are returned with a receipt of the transaction that occurred on the Base blockchain.\nGet started today\nPricing follows Brave’s published API rates: LLM Context, an API designed specifically for providing search context for agents, will cost $0.005 ($5 per 1,000). Additionally, web (search for humans), news, image, video, and local endpoints will also be available for $0.005 ($5 per 1,000). Gas fees for transacting on the Base blockchain will be covered for a limited time. Since each request carries its own payment, a Brave Search API account is no longer needed to use the service.\nThe easiest path to query via x402 is to install Purl Wallet, a Stripe-developed CLI wallet for your agent. Set up your wallet, top it off using Base-native USDC, and start querying today.\nReady to build pay-as-you-go search into your apps or AI agents? Check out our Brave Search x402 Proxy Documentation and explore: https://api-dashboard.search.brave.com/documentation/guides/agent-payments\nHow Google’s anti-scraping move became our problem (and how we solved it in a user-first way)\nNov 11, 2026\nGoogle's GOTO redirects pushed scrapers toward Brave Search. Our answer is a URL cloaking scheme built on partially oblivious pseudorandom functions, so bots get more expensive and we still never learn which result you clicked.\nRead this article\nWhat a pizza-ordering hackathon reveals about connecting AI agents to the Web\nSep 3, 2026\nParticipants in a hackathon hosted by popular AI newsletter AlphaSignal used the Brave Search API to build an autonomous agent, and get that agent to reliably act in the real world.\nRead this article\nBrave Place Search API: The Google Maps Alternative That Costs 6–7x Less\nJul 8, 2026\nBrave's improved Place Search API matches Google Maps on quality in real-world tests, at 6–7x lower cost—$5 per 1,000 requests on an independent index built for maps, apps, and AI agents.\nRead this article"
+   }
+  },
+  {
+   "url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/",
+   "article": {
+    "url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/",
+    "status": "ok",
+    "title": "GitHub Enterprise Server support in the GitHub Copilot app - GitHub ChangelogLinkedIn iconInstagram iconYouTube iconX iconTikTok iconTwitch iconGitHub icon",
+    "chars": 1409,
+    "text": "Back to changelog\nRelease\nNovember 13, 2026 •\n1 minute read\nGitHub Enterprise Server support in the GitHub Copilot app\nYou can now bring your work on GitHub Enterprise Server (GHES) into the GitHub Copilot app. Add your GHES account to work with remote repositories, issues, and pull requests. This feature was previously an opt-in preview, and is now generally available.\nYou’ll need to sign in with a GitHub.com or GHE.com account first. Then, go to Settings > Accounts > Add account and choose GitHub Enterprise Server.\nAvailable in GitHub Copilot app 1.2.0 and later. Cloud sessions aren’t available for GHES. Learn more in our Copilot GHES documentation.\nNov.13 Retired\nUpcoming deprecation of selected GitHub Copilot models in December\ncopilot\nNov.13 Release\nGemini 4 Hydrogen in GitHub Copilot\ncopilot\nNov.10 Improvement\nGitHub App support for Enterprise Copilot seat management\ncopilot\nenterprise management tools\nNov.10 Release\nGemini 4 Carbon in GitHub Copilot\ncopilot\nNov.10 Improvement\nC++ language server now auto-configures MSBuild builds\ncopilot\nNov.09 Release\nClaude Fable 5.2 in GitHub Copilot\ncopilot\nNov.06 Improvement\nCopilot code review: API management and review overview updates\ncopilot\nNov.06 Improvement\nCopilot impact dashboard adds chat and VS Code agent usage\naccount management\ncopilot\nenterprise management tools\nNov.06 Release\nGitHub Copilot weekly releases — November 2\ncopilot"
+   }
+  }
+ ]
+}

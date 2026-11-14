@@ -1,0 +1,140 @@
+{
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "feeds": {
+    "category": null,
+    "sources": [
+      "hackernews",
+      "reddit"
+    ],
+    "subreddits": []
+  },
+  "generated_at": "2026-11-13T23:58:10.050359Z",
+  "kind": "discovery",
+  "outcome": "ok",
+  "results": [
+    {
+      "command": "/last30days \"Claude Meetings\"",
+      "corroboration_count": 2,
+      "covered": false,
+      "engagement": {
+        "hackernews": {
+          "comments": 617,
+          "points": 789
+        },
+        "polymarket": {
+          "liquidity": 111953.04269999999,
+          "volume": 83809.87580200001
+        }
+      },
+      "evidence_urls": [
+        "https://claude.com/resources/articles/claude-meetings",
+        "https://news.ycombinator.com/item?id=50480941",
+        "https://status.claude.com/incidents/nn11wk485zfn",
+        "https://status.claude.com/history",
+        "https://github.com/anthropics/claude-code/issues/109446"
+      ],
+      "last_surfaced": null,
+      "momentum": "new-this-week",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 1,
+      "sources": [
+        "hackernews",
+        "polymarket"
+      ],
+      "top_comment": "\"I wonder what happens if someone on the call says \"I do not consent to being recorded by AI\". Probably nothing.\" - cobychapple",
+      "topic": "Claude Meetings",
+      "velocity_score": 340114.87,
+      "why_spiking": "19 evidence items on hackernews and polymarket generated 197,169 native interactions. Claude Meetings",
+      "x_article_angle": null
+    },
+    {
+      "command": "/last30days \"DeepSeek Flash SWE-sweep\"",
+      "corroboration_count": 3,
+      "covered": false,
+      "engagement": {
+        "hackernews": {
+          "comments": 8,
+          "points": 25
+        },
+        "jobs": {
+          "open_roles": 7
+        },
+        "polymarket": {
+          "liquidity": 3735.1164,
+          "volume": 1591.9231109999998
+        }
+      },
+      "evidence_urls": [
+        "https://github.com/basetenlabs/deepseek-ultrafast",
+        "https://huggingface.co/AmSach/DeepSeek-Coder-V2-Lite-Instruct-MAPLE-Sub5GB-GGUF",
+        "https://polymarket.com/event/next-deepseek-flash-released-byptptpt-20261021-02",
+        "https://jobs.ashbyhq.com/sweep/18240e0e-d927-4d77-9c0f-68e36ccccc53",
+        "https://jobs.ashbyhq.com/sweep/4926f5d8-0143-44d3-a060-88dd030ea189"
+      ],
+      "last_surfaced": null,
+      "momentum": "building",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 2,
+      "sources": [
+        "hackernews",
+        "jobs",
+        "polymarket"
+      ],
+      "top_comment": "\"This will be very useful to me as someone who still uses LLMs interactively rather than trusting the harness to one-shot the whole thing.\" - platinumrad",
+      "topic": "DeepSeek Flash SWE-sweep",
+      "velocity_score": 10446.42,
+      "why_spiking": "10 evidence items on hackernews, jobs and polymarket generated 5,367 native interactions. Hi, I've just updated the SWE-sweep leaderboard with more open-weight models! \n\nDeepSeek v4.1 flash (max) is the first open-weight model we evaluated that gets >1%.\n\nThis benchmark is extremely challenging: Models get a ",
+      "x_article_angle": null
+    },
+    {
+      "command": "/last30days \"Rust cho AI coding\"",
+      "corroboration_count": 2,
+      "covered": false,
+      "engagement": {
+        "hackernews": {
+          "comments": 1389,
+          "points": 1957
+        },
+        "jobs": {
+          "open_roles": 5
+        }
+      },
+      "evidence_urls": [
+        "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+        "https://www.dwarkesh.com/p/rsi",
+        "https://www.slopmanifesto.com/",
+        "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+        "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/"
+      ],
+      "last_surfaced": null,
+      "momentum": "new-this-week",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 3,
+      "sources": [
+        "hackernews",
+        "jobs"
+      ],
+      "top_comment": "\"uh nice byok\" - fiehtle",
+      "topic": "Rust cho AI coding",
+      "velocity_score": 5740.04,
+      "why_spiking": "38 evidence items on hackernews and jobs generated 3,351 native interactions. The main reason people avoided Rust used to be \"it's too hard to write.\" Lifetimes, the borrow checker, spending an afternoon fighting the compiler.\n\nBut now that AI is doing most of the writing, that weakness turns into",
+      "x_article_angle": null
+    }
+  ],
+  "schema_version": "1.1",
+  "source_status": {
+    "digg": "skipped-unconfigured",
+    "hackernews": "ok",
+    "reddit": "auth-failed",
+    "x": "skipped-unconfigured"
+  },
+  "warnings": [
+    "Fewer than five topic clusters cleared the confidence floor this window.",
+    "Some discovery sources degraded: reddit."
+  ],
+  "weak_signal": null,
+  "window_days": 1
+}

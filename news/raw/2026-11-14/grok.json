@@ -1,0 +1,223 @@
+{
+ "date": "2026-11-14",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-14.json",
+ "fetched_at": "2026-11-13T23:55:50+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 7,
+  "ok": 7,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Google Antigravity rolls out Dynamic Workflows for deterministic agent orchestration",
+   "category": "feature_update",
+   "event_time": "2026-11-13T19:41:43Z",
+   "primary_url": null,
+   "facts": [
+    "We're rolling out Dynamic Workflows in Google Antigravity.",
+    "Use /run-workflow and the agent writes a Python script to orchestrate parallel and sequential subagents with structured handoffs, giving you deterministic control flow instead of prompt drift.",
+    "Review the script before it runs, and save it to re-run the same flow anytime."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/antigravity/status/2121327669534933025",
+     "official": true,
+     "author": "@antigravity",
+     "check": "ok",
+     "created_at": "2026-11-13T19:41:43Z",
+     "text": "We're rolling out Dynamic Workflows in Google Antigravity.\n\nUse /run-workflow and the agent writes a Python script to orchestrate parallel and sequential subagents with structured handoffs, giving you deterministic control flow instead of prompt drift.\n\nReview the script before it runs, and save it to re-run the same flow anytime.",
+     "likes": 1444,
+     "retweets": 107,
+     "replies": 97,
+     "views": 58134
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Google introduces Gemini 4 Hydrogen for everyday coding and agentic workflows",
+   "category": "model_infra",
+   "event_time": "2026-11-12T00:00:00Z",
+   "primary_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "facts": [
+    "Today, we’re introducing Gemini 4 Hydrogen, bringing cutting-edge intelligence to everyone — with speed and efficiency for everyday coding and agentic workflows.",
+    "Gemini 4 Hydrogen is priced flat across its entire 1 million-token context window at $1.50 per million input tokens and $7.50 per million output tokens.",
+    "Hydrogen finishes tasks 2.5 times faster at its high default setting while more than tripling Terminal-Bench 4.1 scores (57% vs. 18.2%)."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/GoogleCloudTech/status/2120945106899402903",
+     "official": true,
+     "author": "@GoogleCloudTech",
+     "check": "ok",
+     "created_at": "2026-11-12T18:21:33Z",
+     "text": "Introducing Gemini 4 Hydrogen–bringing cutting-edge intelligence with speed and efficiency to everyday coding and agentic enterprise work. \n\nLearn more → https://goo.gle/4zTuFDK",
+     "likes": 144,
+     "retweets": 10,
+     "replies": 5,
+     "views": 8788
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Claude Code 2.1.323 adds experimental Code Mode for JavaScript tool calls",
+   "category": "feature_update",
+   "event_time": "2026-11-12T22:12:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+   "facts": [
+    "Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it on, or to turn it off for an organization",
+    "Code Mode is experimental and off until a user turns it on, and an organization can turn it off for everyone."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/aiinfo_x/status/2121368503219601626",
+     "official": false,
+     "author": "@aiinfo_x",
+     "check": "ok",
+     "created_at": "2026-11-13T22:23:58Z",
+     "text": "【Tips】Claude Code 2.1.323 で実験機能「Code Mode」が入りました。Claudeが JavaScript を書いて、複数のツール呼び出しを1ステップで実行します。デフォルトはオフで、CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 で有効化します🧪 セッション再開にも同じ変数が必要です。\nhttps://code.claude.com/docs/en/code-mode",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 19
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "OpenCode 2.3.0 makes subagents run in the background by default",
+   "category": "feature_update",
+   "event_time": "2026-11-13T08:55:00Z",
+   "primary_url": "https://opencode.ai/changelog",
+   "facts": [
+    "Subagents now return immediately, continue in the background, and report back whenever they become idle.",
+    "You can keep working in the parent session while multiple subagents run concurrently."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Agent_Jace/status/2121168842378375256",
+     "official": false,
+     "author": "@Agent_Jace",
+     "check": "ok",
+     "created_at": "2026-11-13T09:10:36Z",
+     "text": "Source: https://github.com/anomalyco/opencode/releases/tag/v2.3.0",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 0,
+     "views": 20,
+     "reply_to": "@Agent_Jace"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Codex 0.168.0 adds model-provider browser and side conversation in TUI",
+   "category": "feature_update",
+   "event_time": "2026-11-13T03:54:00Z",
+   "primary_url": "https://github.com/openai/codex/releases/tag/rust-v0.168.0",
+   "facts": [
+    "Browse model providers under Sessions → Model providers and choose the default for new chats.",
+    "Enable features.tui_workspace to view a side conversation beside the main chat."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "GitHub Copilot app adds general availability for GitHub Enterprise Server accounts",
+   "category": "feature_update",
+   "event_time": "2026-11-13T19:15:08Z",
+   "primary_url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/",
+   "facts": [
+    "You can now bring your work on GitHub Enterprise Server (GHES) into the GitHub Copilot app.",
+    "Add your GHES account to work with remote repositories, issues, and pull requests.",
+    "Available in GitHub Copilot app 1.2.0 and later. Cloud sessions aren’t available for GHES."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/GHchangelog/status/2121320980345708783",
+     "official": true,
+     "author": "@GHchangelog",
+     "check": "ok",
+     "created_at": "2026-11-13T19:15:08Z",
+     "text": "GitHub Copilot app now supports GitHub Enterprise Server accounts for remote repos, issues, and PRs.\n• Add GHES accounts via Settings > Accounts in Copilot app 1.2.0+\n• Cloud sessions are not available for GHES users\n\nhttps://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app",
+     "likes": 4,
+     "retweets": 0,
+     "replies": 0,
+     "views": 961
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "AWS Emulator GA built entirely by agents, with public fidelity scores",
+   "category": "case_study",
+   "event_time": "2026-11-13T00:00:00Z",
+   "primary_url": null,
+   "facts": [
+    "AWS just shipped a local emulator for its whole API surface, and no human at AWS wrote or reviewed a single line of it.",
+    "It's called AWS Emulator, it went GA on Nov 11, it's written in Rust, it's free, and the source is on GitHub under CC0."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/amitmuflis/status/2121367867795059093",
+     "official": false,
+     "author": "@amitmuflis",
+     "check": "ok",
+     "created_at": "2026-11-13T22:21:27Z",
+     "text": "AWS just shipped a local emulator for its whole API surface, and no human at AWS wrote or reviewed a single line of it 🛠️\n\nIt's called AWS Emulator, it went GA on Nov 11, it's written in Rust, it's free, and the source is on GitHub under CC0 (public domain). Your AWS CLI, your SDKs and your coding agents talk to it over a local HTTPS endpoint with the same API calls they use against the real cloud. No AWS account, no deploy, no bill.\n\nBelow: what it is, how the agents built it, the per-service fidelity numbers from the latest release, and how to wire it into your tests and your agent loop.\n\nWhat it is\n\nOne local process serving the AWS APIs on https://127.0.0.1:9297 by default. It's generated from the same Smithy API models as the official SDKs, so request and error shapes match AWS.\n\nThe build started from an empty server that could route requests for 438 API models and did nothing else. Routing isn't behaviour, which is why the fidelity numbers below matter more than the service count.\n\nKey properties from the docs:\n\n- State lives in memory. Stop the process and every bucket, table and queue is gone.\n- Each instance gets its own port, keys and state, so parallel test jobs and parallel agents never see each other's resources.\n- Operations it doesn't implement yet return HTTP 501 with error code NotImplemented, so a test fails fast instead of silently passing.\n- It acts as one account in one Region. No cross-account or cross-Region behaviour.\n- It does not evaluate IAM policies or resource policies the way AWS does. A call AWS would deny can succeed locally.\n- It doesn't simulate throttling, outages or per-Region service availability (an IDC analyst flagged this, and those are exactly the failures that bite in production).\n\nHow the agents built it\n\nThe AWS engineering write-up describes three teams of agents running on Bedrock AgentCore:\n\n1. A test team writes fidelity tests. Each one is a real workflow, for example create an SQS queue, send, receive, delete the…",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 140
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Developers share and discuss open agent skill packs and configs for Claude Code and others",
+   "category": "discussion",
+   "event_time": "2026-11-13T08:26:45Z",
+   "primary_url": null,
+   "facts": [
+    "THIS IS A GOLDMINE FOR ANYONE USING CLAUDE CODE. Stop building your AI coding workflow from scratch.",
+    "Some of the biggest names in AI development, including Anthropic, Garry Tan, Addy Osmani and other experienced builders, have released their actual AI agent configurations on GitHub for anyone to use."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/kelvin_sznx/status/2121157809693770037",
+     "official": false,
+     "author": "@kelvin_sznx",
+     "check": "ok",
+     "created_at": "2026-11-13T08:26:45Z",
+     "text": "THIS IS A GOLDMINE FOR ANYONE USING CLAUDE CODE.\n\nStop building your AI coding workflow from scratch.\n\nSome of the biggest names in AI development, including Anthropic, Garry Tan, Addy Osmani and other experienced builders, have released their actual AI agent configurations on GitHub for anyone to use.\n\nHere are 7 repositories you should check out:\n\n1. Anthropic Skills\nhttp://github.com/anthropics/ski…\n\nA collection of official AI skills, plus the framework for creating your own.\n\n2. Superpowers (obra)\nhttp://github.com/obra/superpowe…\n\nGives your coding agent a structured workflow for brainstorming, planning, testing and reviewing before implementation.\n\n3. GStack (Garry Tan)\nhttp://github.com/garrytan/gstack\n\nOver 23 slash commands covering everything from initial planning to building, testing and shipping products.\n\n4. Agent Skills (Addy Osmani)\nhttp://github.com/addyosmani/age…\n\nA practical collection of skills covering the entire development process, from defining requirements to final deployment.\n\n5. Skills (Matt Pocock)\nhttp://github.com/mattpocock/ski…\n\nHis personal collection of around 20 AI skills that you can study, reuse and customize for your own workflow.\n\n6. AgentMemory (rohitg00)\nhttp://github.com/rohitg00/agent…\n\nGives your AI coding tools persistent memory across Claude Code, Cursor, Gemini CLI and Codex.\n\n7. CCUsage (ryoppippi)\nhttp://github.com/ryoppippi/ccus…\n\nTracks your Claude Code token consumption and spending using local session logs.\n\nThe best part?\n\nYou don't have to figure everything out yourself. You can explore how experienced developers configure their agents and build on top of their work.\n\nStop starting from zero. Start building with better tools and smarter setups.",
+     "likes": 22,
+     "retweets": 1,
+     "replies": 8,
+     "views": 664,
+     "quote": {
+      "author": "@kelvin_sznx",
+      "text": "https://x.com/i/article/2117892849928642560"
+     }
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

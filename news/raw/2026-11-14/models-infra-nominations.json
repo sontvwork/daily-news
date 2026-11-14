@@ -1,0 +1,987 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "2da60ce0bc23f79f",
+  "generated_at": "2026-11-13T23:57:08.779671Z",
+  "from_date": "2026-11-12",
+  "to_date": "2026-11-13",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-13T23:57:08.724238Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-13T23:57:08.724243Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 114,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-13T23:57:08.722691Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 13,
+      "attempted": true,
+      "at": "2026-11-13T23:57:08.724097Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic IPO",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 902,
+          "points": 993
+        }
+      },
+      "nomination": {
+        "name": "Anthropic IPO",
+        "seed_score": 2009.951,
+        "summary": "Anthropic IPO",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50465829",
+            "source": "hackernews",
+            "title": "Anthropic IPO",
+            "body": "Anthropic IPO",
+            "url": "https://ipo.anthropic.com/us/",
+            "author": "josephljohnston",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 993,
+              "comments": 902
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Anthropic IPO",
+            "snippet": "Anthropic IPO",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50465829",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.203
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "v1.0",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 141
+        }
+      },
+      "nomination": {
+        "name": "v1.0",
+        "seed_score": 1792.5,
+        "summary": "Hey folks, it's Merve from Hugging Face. Today, llama.cpp releases v1! \n\n  \nMoving forward, we\u2019ll keep covering every platform and every model type, while keeping llama.cpp robust and lean for downstream applications that build on it. \n\nWhile I'm here, want to announce that we've been shipping Llama desktop apps to lower the barrier of entry to local AI to few clicks, built-on llama.cpp. I will le",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "llama.cpp v1.0 is here \ud83e\udd99",
+            "body": "llama.cpp v1.0 is here \ud83e\udd99\nHey folks, it's Merve from Hugging Face. Today, llama.cpp releases v1! \n\n  \nMoving forward, we\u2019ll keep covering every platform and every model type, while keeping llama.cpp robust and lean for downstream applications that build on it. \n\nWhile I'm here, want to announce that we've been shipping Llama desktop apps to lower the barrier of entry to local AI to few clicks, built-on llama.cpp. I will leave link to the details for both v1 and apps in comments. \n\nMany thanks for all the love you've shown to llama.cpp for years \ud83e\udd99\u2764\ufe0f Cheers!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1054,
+              "num_comments": 141
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey folks, it's Merve from Hugging Face. Today, llama.cpp releases v1! \n\n  \nMoving forward, we\u2019ll keep covering every platform and every model type, while keeping llama.cpp robust and lean for downstream applications that build on it. \n\nWhile I'm here, want to announce that we've been shipping Llama desktop apps to lower the barrier of entry to local AI to few clicks, built-on llama.cpp. I will le",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Gemini 4 Hydrogen",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 508,
+          "points": 1050
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Hydrogen",
+        "seed_score": 1652.5086,
+        "summary": "Gemini 4 Hydrogen",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50471431",
+            "source": "hackernews",
+            "title": "Gemini 4 Hydrogen",
+            "body": "Gemini 4 Hydrogen",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+            "author": "dvaplima",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 556,
+              "comments": 348
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Gemini 4 Hydrogen",
+            "snippet": "Gemini 4 Hydrogen",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50471431",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.176
+          },
+          {
+            "item_id": "50472260",
+            "source": "hackernews",
+            "title": "Gemini 4 Hydrogen and Orchestrator",
+            "body": "Gemini 4 Hydrogen and Orchestrator",
+            "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+            "author": "jonbaer",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 494,
+              "comments": 160
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Gemini 4 Hydrogen and Orchestrator",
+            "snippet": "Gemini 4 Hydrogen and Orchestrator",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50472260",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 59,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Elevated Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 382,
+          "points": 482
+        }
+      },
+      "nomination": {
+        "name": "Elevated Claude Code",
+        "seed_score": 1296.0,
+        "summary": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50481187",
+            "source": "hackernews",
+            "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "body": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "url": "https://status.claude.com/incidents/nn11wk485zfn",
+            "author": "__vivek",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 482,
+              "comments": 382
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Elevated errors on claude.ai, Claude Code, and platform.clau",
+            "snippet": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50481187",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "OpenAI AI models",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 60,
+          "points": 135
+        },
+        "reddit": {
+          "num_comments": 68
+        }
+      },
+      "nomination": {
+        "name": "OpenAI AI models",
+        "seed_score": 841.8,
+        "summary": "That was quick.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R93",
+            "source": "reddit",
+            "title": "OpenAI disbands its stand-alone robotics team as its general-purpose AI models start running robots",
+            "body": "OpenAI disbands its stand-alone robotics team as its general-purpose AI models start running robots\nThat was quick.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xvgyfd/openai_disbands_its_standalone_robotics_team_as/",
+            "container": "singularity",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 160,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "That was quick.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3425
+          },
+          {
+            "item_id": "50487184",
+            "source": "hackernews",
+            "title": "OpenAI disbands its robotics team as its general models start running robots",
+            "body": "OpenAI disbands its robotics team as its general models start running robots",
+            "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+            "author": "sshah03",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 135,
+              "comments": 60
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about OpenAI disbands its robotics team as its general models star",
+            "snippet": "OpenAI disbands its robotics team as its general models start running robots",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50487184",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3025
+          },
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "OpenAI disbands its robotics team as its models now run the robots",
+            "body": "OpenAI disbands its robotics team as its models now run the robots",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xvljee/openai_disbands_its_robotics_team_as_its_models/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "OpenAI disbands its robotics team as its models now run the robots",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 6,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29600000000000004
+          },
+          {
+            "item_id": "R102",
+            "source": "reddit",
+            "title": "OpenAI is so convinced that LLMs will become brains for robots that it has disbanded its robotics team",
+            "body": "OpenAI is so convinced that LLMs will become brains for robots that it has disbanded its robotics team\n[https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)",
+            "url": "https://www.reddit.com/r/artificial/comments/1xvivdy/openai_is_so_convinced_that_llms_will_become/",
+            "container": "artificial",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 64,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Brave Search API x402",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 146,
+          "points": 256
+        }
+      },
+      "nomination": {
+        "name": "Brave Search API x402",
+        "seed_score": 603.0,
+        "summary": "Brave Search API now accepts agentic payments via the x402 protocol",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50477649",
+            "source": "hackernews",
+            "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+            "body": "Brave Search API now accepts agentic payments via the x402 protocol",
+            "url": "https://brave.com/blog/search-api-agentic-payments/",
+            "author": "sjdh76",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 256,
+              "comments": 146
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Brave Search API now accepts agentic payments via the x402 p",
+            "snippet": "Brave Search API now accepts agentic payments via the x402 protocol",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50477649",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.8,
+            "local_rank_score": 0.296
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Dario",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 55
+        }
+      },
+      "nomination": {
+        "name": "Dario",
+        "seed_score": 582.0,
+        "summary": "Dig on OpenAI (Tibo), Google (Logan)? \ud83d\ude02",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R92",
+            "source": "reddit",
+            "title": "Dario woke up and chose violence: \"We don't vague post about models ahead of time. We basically build the model, we make sure it's good, we release the model.\"",
+            "body": "Dario woke up and chose violence: \"We don't vague post about models ahead of time. We basically build the model, we make sure it's good, we release the model.\"\nDig on OpenAI (Tibo), Google (Logan)? \ud83d\ude02",
+            "url": "https://www.reddit.com/r/singularity/comments/1xvi97m/dario_woke_up_and_chose_violence_we_dont_vague/",
+            "container": "singularity",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 333,
+              "num_comments": 55
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Dig on OpenAI (Tibo), Google (Logan)? \ud83d\ude02",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3775
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Takes 16 Clicks Student Open PowerPoint",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 124,
+          "points": 247
+        }
+      },
+      "nomination": {
+        "name": "Takes 16 Clicks Student Open PowerPoint",
+        "seed_score": 556.5,
+        "summary": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50487522",
+            "source": "hackernews",
+            "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+            "body": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+            "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+            "author": "BobaFloutist",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 247,
+              "comments": 124
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about It Takes 16 Clicks for a Student to Open a PowerPoint on an",
+            "snippet": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50487522",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Chinese frontier AI GPUs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 149,
+          "points": 355
+        }
+      },
+      "nomination": {
+        "name": "Chinese frontier AI GPUs",
+        "seed_score": 534.5727,
+        "summary": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50474883",
+            "source": "hackernews",
+            "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+            "body": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+            "url": "https://unemploymentlabs.com/checkpoint-forensics",
+            "author": "firloop",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 355,
+              "comments": 149
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Chinese frontier AI models carry the fingerprint of export-c",
+            "snippet": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50474883",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 52,
+            "source_quality": 0.8,
+            "local_rank_score": 0.10300000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-18",
+      "heuristic_name": "Weight Space Misfolding",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 45,
+          "points": 128
+        },
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Weight Space Misfolding",
+        "seed_score": 522.675,
+        "summary": "Weight Space Misfolding",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50487762",
+            "source": "hackernews",
+            "title": "Weight Space Misfolding",
+            "body": "Weight Space Misfolding",
+            "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
+            "author": "mkglees",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 128,
+              "comments": 45
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Weight Space Misfolding",
+            "snippet": "Weight Space Misfolding",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50487762",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2975
+          },
+          {
+            "item_id": "R10",
+            "source": "reddit",
+            "title": "Weight Space Programming for Quantization: Nace quants achieve up to 2x better KL divergence for Qwen 9B, 27B, 35B & Flash Next [GGUF]",
+            "body": "Weight Space Programming for Quantization: Nace quants achieve up to 2x better KL divergence for Qwen 9B, 27B, 35B & Flash Next [GGUF]\nhey llamas, its Alish from [nace.ai](http://nace.ai) (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the [last post](https://www.reddit.com/r/LocalLLaMA/comments/1xu9onk/kquant_new_quantization_technique_37_better/), we are releasing the GGUF weights based on the Nace quantization of Qwen 9B, 27B, 35B and Flash-Next.\n\nI will describe our process on how we came up with these quants right below, so skip to the end to see the benchmarks and download the weights if it gets too dull.\n\n# The process\n\nI started with 9B quants.\n\nI understood that setting up a good & fair benching is critical to succeed with the hillclimb. So I split separate sets to tune the performance and measure the final standings: English Wikipedia articles, chat and tool-call transcripts, and GitHub code, all published after October 2026, at 512 & up to 128K tokens.\n\nI began the way unsloth's dynamic quants do: 10 to 50 candidate files per model, each with a different mix of tensor precisions, then spent my time tuning the ones that looked promising. Early bruteforce optimization moved only a little. Unsloth and the other quant authors have already done a lot of amazing work.\n\nUsing bruteforce hillclimb approach with my Agentic swarm, I managed to get on par with SOTA but then plateau\u2019d and it was hard to do better than the best quants like Unsloth, EXL3 in KL divergence.\n\n**Some novelties:**\n\nThen I remembered [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/) paper. Their idea is to let an LLM natively read and edit weights of smaller models. Having explored this with some other models at Nace, I wanted to try the method for quantization. I took our Nace WSP (Weight Space Programming) harness, reworked its tools and skills for quantization a bit and let the Astra/Fable/Carbon agents compete under the following algorithm: propose tensor-precision changes, measured KL and kept or reverted each edit. We started on the Q3 for 9b model, and after a handful of days it actually started IMPROVING and editing the right weights.\n\n![img](po8mbza1hf1i1 \"Mean KL for our 27B files before and after weight-space quantization\")\n\nHonestly that moment felt like:\n\nhttps://i.redd.it/x4g96xjahf1i1.png\n\n# Nace Weight-Space Quantization\n\nI measured the first nace-quantized Q3 checkpoints against the 50+ 9B quants and they held the frontier. It completely blew my mind: one model quantizes another model in weight space. Nace Q3 quants for Qwen 9B were the best in class in KL divergence because another Frontier model edited the weights natively. We scaled this method to bigger size models (27b/35b) & it held the SOTA. Although I would say it doesnt scale as good for bigger size models (QFN). We are working on improvements for QFN/Deepseek & have some promising results already but I did hit my token limits for this project. Paper coming soon (ping me in dm if you want to support us with some GPUs)\n\n# Benchmarks & Evals\n\nTop-1 accuracy (poster) is how often a quant picks the same next token the full model would pick, so 100% would mean it never disagrees. Each panel is one model at 128K context, with scores across different subsets pooled into one score. On all four models, our weights score highest in their size or smaller: the 9B Q3\\_K\\_XL gets 90.5% at 4.7 GB, the 35B Q3\\_K\\_S 91.2% at 15.3 GB, the 27B 97.7% at 17.3 GB, and Flash-Next 93.0% at 93 GB. For a more comprehensive comparison, KL divergence results below:\n\nhttps://i.redd.it/hi6nbvhghf1i1.png\n\n|**File**|**GB**|**Prose**|**Chat**|**Code**|**Next best**|\n|:-|:-|:-|:-|:-|:-|\n|9B IQ2\\_M|3.36|0.401|1.30|0.142|Unsloth 4.01 GB|\n|9B IQ3\\_M|4.39|0.235|1.05|0.0738|ByteShape 4.70 GB|\n|9B Q3\\_K\\_XL|4.70|0.161|0.846|0.0410|Unsloth 5.38 GB|\n|35B-A3B IQ3\\_XXS|14.30|0.0490|0.643|0.0767|Unsloth 15.35 GB|\n|35B-A3B Q3\\_K\\_S|15.30|0.0360|0.601|0.0631|Unsloth 16.59 GB|\n|27B Q4\\_K\\_XL|17.29|0.00494|0.00544|0.00401|none up to 17.58 GB|\n|Flash-Next IQ4\\_XS|93.4|0.0411|0.112|0.0426|EXL3 105.3 GB|\n\n# Long context stability\n\nMost quants are tuned and judged on short text, so they end up fit to short context and often stop being useful at long context. For clarity, in the diagram below each model gets two panels: 512 tokens on the left, 128K on the right. This is where the long-context drift shows: our 9B IQ3\\_M goes from 0.13 at 512 tokens to 0.45 at 128K while 27B barely moves. At 128K, each of our files has lower KL than every other file of the same size or smaller.\n\nhttps://i.redd.it/lenkyg2ohf1i1.png\n\n# p99 KL divergence\n\nMean KLD can hide catastrophic failures when a quant goes off the rails in a long session. So we also looked at the worst 1% of tokens (p99 KL). The 9B Q3\\_K\\_XL's worst 1% sits at 1.25. The 27B and Flash-Next tails stay flat. Overall we\u2019re seeing that Nace quants maintain the strong positions across the distribution.\n\nhttps://i.redd.it/fst7na0uhf1i1.png\n\n# Different data subsets\n\nif you care about a specific use case, here's the same 128K top-1 score split by text type. Code is the easiest: our files keep 88-98% of the full model's top picks there. Prose and chat are harder, 78-98%. In every split, on every model, our checkpoints score highest among the files of the same size or smaller.\n\nhttps://i.redd.it/2u1jg5yzhf1i1.png\n\n# Sanity check on a task benchmark\n\nTo see that these models are useful for anything real I ran it on knowledge-heavy MMLU. I didn't have the gpus anymore to run terminal-bench, so would appreciate anyone with the bad boys to validate. These are answer-likelihood scores over 13,943 questions of the MMLU. No chat template or few-shot examples. Overall you can claim there's gains, but it is mostly within noise. The main aim here is to reflect the tradeoffs of different sizes on real tasks. As you can see, Q3-Q4 it\u2019s already hard to distinguish from the higher precision.\n\nhttps://i.redd.it/p1rnoicijf1i1.png\n\n# Run setup\n\nRented NVIDIA GPUs; Used llama.cpp for Flash-Next. The 9B/35B/27B BF16 reference requested H200 and the quantized files L40S. Flash-Next's short reference uses an MLX fp32 forward on bf16 weights. Reference implementations also differ across GGUF and EXL3.\n\n# Download and run\n\n* [Qwen3.5-9B](https://huggingface.co/nace-ai/Qwen3.5-9B-GGUF)\n* [Qwen3.8-27B](https://huggingface.co/nace-ai/Qwen3.8-27B-GGUF)\n* [Qwen3.6-35B-A3B](https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-GGUF)\n* [Qwen3.8-Flash-Next](https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-GGUF)\n\nsee quickstart for your framework in the model cards. if you try a coding or agent workload, i'd like to hear which file, runner version and what broke. no speed claim in this post.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 108,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "hey llamas, its Alish from [nace.ai](http://nace.ai) (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the [last post](https://www.reddit.com/r/LocalLLaMA/comments/1xu9onk/kquant_new_quantization_technique_37_better/), we are releasing the GGUF weights based on the Nace quantization of Q",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.38,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.536
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Polymarket AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 92
+        }
+      },
+      "nomination": {
+        "name": "Polymarket AI",
+        "seed_score": 477.0,
+        "summary": "Polymarket has google as the owner of the best AI model by the end of the month and year",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R98",
+            "source": "reddit",
+            "title": "Polymarket has google as the owner of the best AI model by the end of the month and year",
+            "body": "Polymarket has google as the owner of the best AI model by the end of the month and year",
+            "url": "https://www.reddit.com/r/singularity/comments/1xv4g1n/polymarket_has_google_as_the_owner_of_the_best_ai/",
+            "container": "singularity",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 226,
+              "num_comments": 92
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Polymarket has google as the owner of the best AI model by the end of the month and year",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.332
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Look what my son gave me",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 77
+        }
+      },
+      "nomination": {
+        "name": "Look what my son gave me",
+        "seed_score": 475.5,
+        "summary": "I told my son I was playing around with local AI on a 3090.  He told me he used to mine Ethereum and had a shed full of 3090's.  He asked me if I wanted a couple. Ummm... let me think about it... OH YES I DO!\n\nNow a few new fans and a bit of a clean-up... grab a couple risers and a power supply... pop in a bit more RAM.. wow.  \n\nhttps://i.redd.it/6jtwj6ufhe1i1.png",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Look what my son gave me!",
+            "body": "Look what my son gave me!\nI told my son I was playing around with local AI on a 3090.  He told me he used to mine Ethereum and had a shed full of 3090's.  He asked me if I wanted a couple. Ummm... let me think about it... OH YES I DO!\n\nNow a few new fans and a bit of a clean-up... grab a couple risers and a power supply... pop in a bit more RAM.. wow.  \n\nhttps://i.redd.it/6jtwj6ufhe1i1.png",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvbcfp/look_what_my_son_gave_me/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 240,
+              "num_comments": 77
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I told my son I was playing around with local AI on a 3090.  He told me he used to mine Ethereum and had a shed full of 3090's.  He asked me if I wanted a couple. Ummm... let me think about it... OH YES I DO!\n\nNow a few new fans and a bit of a clean-up... grab a couple risers and a power supply... pop in a bit more RAM.. wow.  \n\nhttps://i.redd.it/6jtwj6ufhe1i1.png",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31800000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Nvidia China",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 66
+        }
+      },
+      "nomination": {
+        "name": "Nvidia China",
+        "seed_score": 376.5,
+        "summary": "https://www.cnn.com/2026/11/12/politics/alice-huang-us-intel-jensen-huang-nvidia?cid=ios\\_app\n\nUS intel isn\u2019t sure if businesswoman spied on Nvidia for China, doesn\u2019t mean she wasn\u2019t a risk, sources say\n\nWhat a sudden 180 turn just hours after Jensen resigning.\n\nThe whole thing went from NYT\u2019s shocking article of \u201cJensen was sleeping with a Chinese spy\u201d to \u201cWe don\u2019t know if she\u2019s a spy, but she \\*",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R101",
+            "source": "reddit",
+            "title": "US intel isn\u2019t sure if businesswoman spied on Nvidia for China, doesn\u2019t mean she wasn\u2019t a risk, sources say",
+            "body": "US intel isn\u2019t sure if businesswoman spied on Nvidia for China, doesn\u2019t mean she wasn\u2019t a risk, sources say\nhttps://www.cnn.com/2026/11/12/politics/alice-huang-us-intel-jensen-huang-nvidia?cid=ios\\_app\n\nUS intel isn\u2019t sure if businesswoman spied on Nvidia for China, doesn\u2019t mean she wasn\u2019t a risk, sources say\n\nWhat a sudden 180 turn just hours after Jensen resigning.\n\nThe whole thing went from NYT\u2019s shocking article of \u201cJensen was sleeping with a Chinese spy\u201d to \u201cWe don\u2019t know if she\u2019s a spy, but she \\*could\\* be because she\u2019s\u2026 you know\u2026 \\*Chinese\u201d\\*.\n\nAnd the way and timing the 2nd and 3rd affair stories broke by the NYT, this really look like a concerted effort to ousted Jensen using the NYT as an instrument. \n\nWe can only speculate who\u2019s behind this, but multiple parties benefit from removing the biggest advocate in Silicon Valley for open-weight models and more competition.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xuydzd/us_intel_isnt_sure_if_businesswoman_spied_on/",
+            "container": "singularity",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 185,
+              "num_comments": 66
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://www.cnn.com/2026/11/12/politics/alice-huang-us-intel-jensen-huang-nvidia?cid=ios\\_app\n\nUS intel isn\u2019t sure if businesswoman spied on Nvidia for China, doesn\u2019t mean she wasn\u2019t a risk, sources say\n\nWhat a sudden 180 turn just hours after Jensen resigning.\n\nThe whole thing went from NYT\u2019s shocking article of \u201cJensen was sleeping with a Chinese spy\u201d to \u201cWe don\u2019t know if she\u2019s a spy, but she \\*",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3735
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Foundation Models framework",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 35,
+          "points": 264
+        },
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Foundation Models framework",
+        "seed_score": 375.058,
+        "summary": "Foundation Models framework",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50474361",
+            "source": "hackernews",
+            "title": "Foundation Models framework",
+            "body": "Foundation Models framework",
+            "url": "https://developer.apple.com/foundation-models-framework/",
+            "author": "kermatt",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 264,
+              "comments": 35
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Foundation Models framework",
+            "snippet": "Foundation Models framework",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50474361",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 23,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1065
+          },
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "[Paper & Model] G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
+            "body": "[Paper & Model] G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation\n>Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under a fixed nominal information budget, group size should scale quadratically with the per-axis spatial compression factor. **Building on this principle, we propose GSTAR, a spatial--group co-scaling framework that enables 32x and even effective 64x compression while preserving strong reconstruction, understanding, and generation performance**. Since larger groups introduce intra-group dependencies that must be modeled efficiently, we analyze their impact on inference latency and generation quality and introduce a semi-autoregressive decoder that combines parallel feature computation with lightweight causal modeling. With these designs, our highly compressed models perform competitively with leading models across five representative text-to-image benchmarks (GenEval, DPG-Bench, PRISM, LongText-Bench, and Qwen-Image-Bench). **At 1024x1024 resolution, our model delivers a 20x speedup over prior discrete autoregressive models, generating each image in 2.5 seconds on a single NVIDIA H200**. Together, these results show that highly compressed discrete representations can enable high-quality autoregressive generation at low latency.\n\n* **arXiv** : [https://arxiv.org/abs/2611.13004](https://arxiv.org/abs/2611.13004)\n* **PDF** : [https://arxiv.org/pdf/2611.13004](https://arxiv.org/pdf/2611.13004)\n* **GitHub** : [https://github.com/DAGroup-PKU/G-STAR](https://github.com/DAGroup-PKU/G-STAR)\n* **HuggingFace** : [https://huggingface.co/DAGroup-PKU/G-star](https://huggingface.co/DAGroup-PKU/G-star)\n* **Project** : [https://dagroup-pku.github.io/G-STAR/](https://dagroup-pku.github.io/G-STAR/)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvg1xb/paper_model_gstar_groupscaled_token_capacity_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": ">Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under a fixed nominal information budget, group size should scale quadratically with t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 18,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3145
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "GPUs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 112
+        }
+      },
+      "nomination": {
+        "name": "GPUs",
+        "seed_score": 357.0,
+        "summary": "They are going to lock the new GPUs.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "They are going to lock the new GPUs.",
+            "body": "They are going to lock the new GPUs.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xv72te/they_are_going_to_lock_the_new_gpus/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 126,
+              "num_comments": 112
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "They are going to lock the new GPUs.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3345
+          }
+        ]
+      }
+    }
+  ]
+}

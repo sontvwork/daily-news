@@ -1,0 +1,802 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "9e26fa9d8f3fad5f",
+  "generated_at": "2026-11-13T23:56:36.436639Z",
+  "from_date": "2026-11-12",
+  "to_date": "2026-11-13",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-13T23:56:36.337584Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-13T23:56:36.337589Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-13T23:56:36.019304Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 101,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-13T23:56:36.337421Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Elevated Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 382,
+          "points": 482
+        }
+      },
+      "nomination": {
+        "name": "Elevated Claude Code",
+        "seed_score": 1296.0,
+        "summary": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50481187",
+            "source": "hackernews",
+            "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "body": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "url": "https://status.claude.com/incidents/nn11wk485zfn",
+            "author": "__vivek",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 482,
+              "comments": 382
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "HN story about Elevated errors on claude.ai, Claude Code, and platform.clau",
+            "snippet": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50481187",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.23,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.47450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Writing 2016",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 183,
+          "points": 366
+        }
+      },
+      "nomination": {
+        "name": "Writing 2016",
+        "seed_score": 582.3024,
+        "summary": "Writing correct software is hard and math alone won\u2019t help us (2016)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50465352",
+            "source": "hackernews",
+            "title": "Writing correct software is hard and math alone won\u2019t help us (2016)",
+            "body": "Writing correct software is hard and math alone won\u2019t help us (2016)",
+            "url": "https://pron.github.io/posts/correctness-and-complexity",
+            "author": "AriFordsham",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 366,
+              "comments": 183
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Writing correct software is hard and math alone won\u2019t help u",
+            "snippet": "Writing correct software is hard and math alone won\u2019t help us (2016)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50465352",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 79,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Our software engineering interviews are changing",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 232,
+          "points": 252
+        }
+      },
+      "nomination": {
+        "name": "Our software engineering interviews are changing",
+        "seed_score": 513.3595,
+        "summary": "Our software engineering interviews are changing a little",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50467297",
+            "source": "hackernews",
+            "title": "Our software engineering interviews are changing a little",
+            "body": "Our software engineering interviews are changing a little",
+            "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+            "author": "maitland",
+            "container": "Hacker News",
+            "published_at": "2026-11-12",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 252,
+              "comments": 232
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Our software engineering interviews are changing a little",
+            "snippet": "Our software engineering interviews are changing a little",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50467297",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.138
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Weight Space Programming Quantization Nace quants",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Weight Space Programming Quantization Nace quants",
+        "seed_score": 195.0,
+        "summary": "hey llamas, its Alish from [nace.ai](http://nace.ai) (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the [last post](https://www.reddit.com/r/LocalLLaMA/comments/1xu9onk/kquant_new_quantization_technique_37_better/), we are releasing the GGUF weights based on the Nace quantization of Q",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "Weight Space Programming for Quantization: Nace quants achieve up to 2x better KL divergence for Qwen 9B, 27B, 35B & Flash Next [GGUF]",
+            "body": "Weight Space Programming for Quantization: Nace quants achieve up to 2x better KL divergence for Qwen 9B, 27B, 35B & Flash Next [GGUF]\nhey llamas, its Alish from [nace.ai](http://nace.ai) (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the [last post](https://www.reddit.com/r/LocalLLaMA/comments/1xu9onk/kquant_new_quantization_technique_37_better/), we are releasing the GGUF weights based on the Nace quantization of Qwen 9B, 27B, 35B and Flash-Next.\n\nI will describe our process on how we came up with these quants right below, so skip to the end to see the benchmarks and download the weights if it gets too dull.\n\n# The process\n\nI started with 9B quants.\n\nI understood that setting up a good & fair benching is critical to succeed with the hillclimb. So I split separate sets to tune the performance and measure the final standings: English Wikipedia articles, chat and tool-call transcripts, and GitHub code, all published after October 2026, at 512 & up to 128K tokens.\n\nI began the way unsloth's dynamic quants do: 10 to 50 candidate files per model, each with a different mix of tensor precisions, then spent my time tuning the ones that looked promising. Early bruteforce optimization moved only a little. Unsloth and the other quant authors have already done a lot of amazing work.\n\nUsing bruteforce hillclimb approach with my Agentic swarm, I managed to get on par with SOTA but then plateau\u2019d and it was hard to do better than the best quants like Unsloth, EXL3 in KL divergence.\n\n**Some novelties:**\n\nThen I remembered [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/) paper. Their idea is to let an LLM natively read and edit weights of smaller models. Having explored this with some other models at Nace, I wanted to try the method for quantization. I took our Nace WSP (Weight Space Programming) harness, reworked its tools and skills for quantization a bit and let the Astra/Fable/Carbon agents compete under the following algorithm: propose tensor-precision changes, measured KL and kept or reverted each edit. We started on the Q3 for 9b model, and after a handful of days it actually started IMPROVING and editing the right weights.\n\n![img](po8mbza1hf1i1 \"Mean KL for our 27B files before and after weight-space quantization\")\n\nHonestly that moment felt like:\n\nhttps://i.redd.it/x4g96xjahf1i1.png\n\n# Nace Weight-Space Quantization\n\nI measured the first nace-quantized Q3 checkpoints against the 50+ 9B quants and they held the frontier. It completely blew my mind: one model quantizes another model in weight space. Nace Q3 quants for Qwen 9B were the best in class in KL divergence because another Frontier model edited the weights natively. We scaled this method to bigger size models (27b/35b) & it held the SOTA. Although I would say it doesnt scale as good for bigger size models (QFN). We are working on improvements for QFN/Deepseek & have some promising results already but I did hit my token limits for this project. Paper coming soon (ping me in dm if you want to support us with some GPUs)\n\n# Benchmarks & Evals\n\nTop-1 accuracy (poster) is how often a quant picks the same next token the full model would pick, so 100% would mean it never disagrees. Each panel is one model at 128K context, with scores across different subsets pooled into one score. On all four models, our weights score highest in their size or smaller: the 9B Q3\\_K\\_XL gets 90.5% at 4.7 GB, the 35B Q3\\_K\\_S 91.2% at 15.3 GB, the 27B 97.7% at 17.3 GB, and Flash-Next 93.0% at 93 GB. For a more comprehensive comparison, KL divergence results below:\n\nhttps://i.redd.it/hi6nbvhghf1i1.png\n\n|**File**|**GB**|**Prose**|**Chat**|**Code**|**Next best**|\n|:-|:-|:-|:-|:-|:-|\n|9B IQ2\\_M|3.36|0.401|1.30|0.142|Unsloth 4.01 GB|\n|9B IQ3\\_M|4.39|0.235|1.05|0.0738|ByteShape 4.70 GB|\n|9B Q3\\_K\\_XL|4.70|0.161|0.846|0.0410|Unsloth 5.38 GB|\n|35B-A3B IQ3\\_XXS|14.30|0.0490|0.643|0.0767|Unsloth 15.35 GB|\n|35B-A3B Q3\\_K\\_S|15.30|0.0360|0.601|0.0631|Unsloth 16.59 GB|\n|27B Q4\\_K\\_XL|17.29|0.00494|0.00544|0.00401|none up to 17.58 GB|\n|Flash-Next IQ4\\_XS|93.4|0.0411|0.112|0.0426|EXL3 105.3 GB|\n\n# Long context stability\n\nMost quants are tuned and judged on short text, so they end up fit to short context and often stop being useful at long context. For clarity, in the diagram below each model gets two panels: 512 tokens on the left, 128K on the right. This is where the long-context drift shows: our 9B IQ3\\_M goes from 0.13 at 512 tokens to 0.45 at 128K while 27B barely moves. At 128K, each of our files has lower KL than every other file of the same size or smaller.\n\nhttps://i.redd.it/lenkyg2ohf1i1.png\n\n# p99 KL divergence\n\nMean KLD can hide catastrophic failures when a quant goes off the rails in a long session. So we also looked at the worst 1% of tokens (p99 KL). The 9B Q3\\_K\\_XL's worst 1% sits at 1.25. The 27B and Flash-Next tails stay flat. Overall we\u2019re seeing that Nace quants maintain the strong positions across the distribution.\n\nhttps://i.redd.it/fst7na0uhf1i1.png\n\n# Different data subsets\n\nif you care about a specific use case, here's the same 128K top-1 score split by text type. Code is the easiest: our files keep 88-98% of the full model's top picks there. Prose and chat are harder, 78-98%. In every split, on every model, our checkpoints score highest among the files of the same size or smaller.\n\nhttps://i.redd.it/2u1jg5yzhf1i1.png\n\n# Sanity check on a task benchmark\n\nTo see that these models are useful for anything real I ran it on knowledge-heavy MMLU. I didn't have the gpus anymore to run terminal-bench, so would appreciate anyone with the bad boys to validate. These are answer-likelihood scores over 13,943 questions of the MMLU. No chat template or few-shot examples. Overall you can claim there's gains, but it is mostly within noise. The main aim here is to reflect the tradeoffs of different sizes on real tasks. As you can see, Q3-Q4 it\u2019s already hard to distinguish from the higher precision.\n\nhttps://i.redd.it/p1rnoicijf1i1.png\n\n# Run setup\n\nRented NVIDIA GPUs; Used llama.cpp for Flash-Next. The 9B/35B/27B BF16 reference requested H200 and the quantized files L40S. Flash-Next's short reference uses an MLX fp32 forward on bf16 weights. Reference implementations also differ across GGUF and EXL3.\n\n# Download and run\n\n* [Qwen3.5-9B](https://huggingface.co/nace-ai/Qwen3.5-9B-GGUF)\n* [Qwen3.8-27B](https://huggingface.co/nace-ai/Qwen3.8-27B-GGUF)\n* [Qwen3.6-35B-A3B](https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-GGUF)\n* [Qwen3.8-Flash-Next](https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-GGUF)\n\nsee quickstart for your framework in the model cards. if you try a coding or agent workload, i'd like to hear which file, runner version and what broke. no speed claim in this post.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 108,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "hey llamas, its Alish from [nace.ai](http://nace.ai) (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the [last post](https://www.reddit.com/r/LocalLLaMA/comments/1xu9onk/kquant_new_quantization_technique_37_better/), we are releasing the GGUF weights based on the Nace quantization of Q",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.52
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Perplexity Decider v1.3 Training",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 18,
+          "points": 86
+        }
+      },
+      "nomination": {
+        "name": "Perplexity Decider v1.3 Training",
+        "seed_score": 156.0,
+        "summary": "Perplexity Decider v1.3: Training, eval, and use cases",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50488464",
+            "source": "hackernews",
+            "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+            "body": "Perplexity Decider v1.3: Training, eval, and use cases",
+            "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+            "author": "gmays",
+            "container": "Hacker News",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 86,
+              "comments": 18
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Perplexity Decider v1.3: Training, eval, and use cases",
+            "snippet": "Perplexity Decider v1.3: Training, eval, and use cases",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50488464",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "DeepSeek 1 SWE-sweep",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek 1 SWE-sweep",
+        "seed_score": 142.5,
+        "summary": "Hi, I've just updated the SWE-sweep leaderboard with more open-weight models! \n\nDeepSeek v4.1 flash (max) is the first open-weight model we evaluated that gets >1%.\n\nThis benchmark is extremely challenging: Models get a snapshot of a (potentially very large) repo containing hundreds of bugs. They don't receive any hint about what these bugs are and need to fix them all. This makes for a very reaso",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "DeepSeek flash max is the first model to reach >1% on challenging SWE-sweep bug finding benchmark",
+            "body": "DeepSeek flash max is the first model to reach >1% on challenging SWE-sweep bug finding benchmark\nHi, I've just updated the SWE-sweep leaderboard with more open-weight models! \n\nDeepSeek v4.1 flash (max) is the first open-weight model we evaluated that gets >1%.\n\nThis benchmark is extremely challenging: Models get a snapshot of a (potentially very large) repo containing hundreds of bugs. They don't receive any hint about what these bugs are and need to fix them all. This makes for a very reasoning-heavy, long-horizon task.\n\nTo isolate just the model capabilities we also evaluate all models in the same harness (but we did do some comparisons with Claude Code and Codex harnesses and neither seemed to help significantly). However, it is possibly to scale things up somewhat with multiagents. You can run the eval yourself (code on [github](https://github.com/facebookresearch/swe-sweep))\n\nThe best proprietary model at the moment is Gemini 4 Hydrogen with 13.5% (according to [google's model card](https://deepmind.google/models/model-cards/gemini-4-hydrogen/)), followed by GPT Astra 6 with 9.5% ([evaluated by us](https://swesweep.com/)). So open-weight models still have a long way to go.\n\nStill extending the open-source leaderboard. What other models should we add?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcgxq/deepseek_flash_max_is_the_first_model_to_reach_1/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 59,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi, I've just updated the SWE-sweep leaderboard with more open-weight models! \n\nDeepSeek v4.1 flash (max) is the first open-weight model we evaluated that gets >1%.\n\nThis benchmark is extremely challenging: Models get a snapshot of a (potentially very large) repo containing hundreds of bugs. They don't receive any hint about what these bugs are and need to fix them all. This makes for a very reaso",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.333
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Qwen3.5-9B PS4 GPU MTP",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.5-9B PS4 GPU MTP",
+        "seed_score": 123.0,
+        "summary": "I made this, so a quick note: it\u2019s my open-source project. Qwen3.5-9B runs on a stock PS4 at 31\u201339 tok/s. The MTP head that ships with Qwen3.5 made the biggest difference: it drafts up to two tokens and the full model checks them in one pass, which took it from 22 to 31\u201339 tok/s on this old GPU. Weights are re-packed into custom 4- and 3-bit formats to fit about 4.5 GiB.\n\nYour old PS4 can now run",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "Qwen3.5-9B running on a PS4\u2019s GPU, offline, using its own MTP head for speculative decoding",
+            "body": "Qwen3.5-9B running on a PS4\u2019s GPU, offline, using its own MTP head for speculative decoding\nI made this, so a quick note: it\u2019s my open-source project. Qwen3.5-9B runs on a stock PS4 at 31\u201339 tok/s. The MTP head that ships with Qwen3.5 made the biggest difference: it drafts up to two tokens and the full model checks them in one pass, which took it from 22 to 31\u201339 tok/s on this old GPU. Weights are re-packed into custom 4- and 3-bit formats to fit about 4.5 GiB.\n\nYour old PS4 can now run a 9B AI, offline, on its own GPU. It talks, listens, and writes code. No cloud, no subscription, no Linux. Free and open source.\n\nCode: [https://github.com/leonardo-alegria/garlic-llm](https://github.com/leonardo-alegria/garlic-llm)   \nDirect download link: [https://huggingface.co/garlic-llm/garlic-llm-ps4](https://huggingface.co/garlic-llm/garlic-llm-ps4)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvbn2m/qwen359b_running_on_a_ps4s_gpu_offline_using_its/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 62,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I made this, so a quick note: it\u2019s my open-source project. Qwen3.5-9B runs on a stock PS4 at 31\u201339 tok/s. The MTP head that ships with Qwen3.5 made the biggest difference: it drafts up to two tokens and the full model checks them in one pass, which took it from 22 to 31\u201339 tok/s on this old GPU. Weights are re-packed into custom 4- and 3-bit formats to fit about 4.5 GiB.\n\nYour old PS4 can now run",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 90,
+            "source_quality": 0.6,
+            "local_rank_score": 0.432
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Nvidia",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "Nvidia",
+        "seed_score": 105.0,
+        "summary": "\"Foster told *MIT Technology Review* he intends to introduce new, stricter legislation in the new year that would offer a workaround. The new rule would require licenses to operate advanced GPUs, and before a GPU could connect, its valid license would need to be verified.\u00a0\u00a0\" Basically they will lock the gpus.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+            "body": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility\n\"Foster told *MIT Technology Review* he intends to introduce new, stricter legislation in the new year that would offer a workaround. The new rule would require licenses to operate advanced GPUs, and before a GPU could connect, its valid license would need to be verified.\u00a0\u00a0\" Basically they will lock the gpus.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcbbh/nvidia_privately_confirmed_it_could_track_chips/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 41,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\"Foster told *MIT Technology Review* he intends to introduce new, stricter legislation in the new year that would offer a workaround. The new rule would require licenses to operate advanced GPUs, and before a GPU could connect, its valid license would need to be verified.\u00a0\u00a0\" Basically they will lock the gpus.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 88,
+            "source_quality": 0.6,
+            "local_rank_score": 0.326
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "2 Hessian Refinement MACaQ GGUF 13",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "2 Hessian Refinement MACaQ GGUF 13",
+        "seed_score": 103.5,
+        "summary": "TLDR: Qwen3.8-27B UD\\_4\\_XL quant with 13.23% less KL divergence than unsloth (on my small testset, I just have a single 5090, feel free to test more). Technically it performs 4% better on my LiveCodeBench benchmark (but that would be a single data point, so it's not super-reliable). It is equally fast and using it in open-webui it \"feels\" better.\n\n[https://huggingface.co/christophedevriese/Qwen3.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "I noticed the 2 Hessian Refinement of MACaQ can be applied to any GGUF without any patches ... and tried it. 13% better quants",
+            "body": "I noticed the 2 Hessian Refinement of MACaQ can be applied to any GGUF without any patches ... and tried it. 13% better quants\nTLDR: Qwen3.8-27B UD\\_4\\_XL quant with 13.23% less KL divergence than unsloth (on my small testset, I just have a single 5090, feel free to test more). Technically it performs 4% better on my LiveCodeBench benchmark (but that would be a single data point, so it's not super-reliable). It is equally fast and using it in open-webui it \"feels\" better.\n\n[https://huggingface.co/christophedevriese/Qwen3.8-27B-Hessian-Refined-GGUF](https://huggingface.co/christophedevriese/Qwen3.8-27B-Hessian-Refined-GGUF)\n\nI noticed from the MACaQ paper, which integrates changes proposed in Google/Deepmind papers, you can take the 3 components they use and just apply 1 and 2, and you just get >15% better KLD, 5% better performance on some benchmarks, while sacrificing absolutely nothing. Just switch the GGUF file. The numbers demonstrated here are the maximum that can be achieved in \\~4 hours of optimizing on a single 5090, not the maximum that can be achieved. So it might be more than 15%, although I wouldn't necessarily hope for it.\n\nThis can be applied, without any patches to inference software, to text models, image models, even whisper ... the works. Switch GGUF file. Done/done.\n\nThe dream being that someone from unsloth looks at this and applies this to all their models (or just gives me access to a B300 machine for a day or two)\n\nThe tricks used by Huawei and a short discussion of the effect:\n\n1) Hessian-guided quantization choices: every layer is compressed differently, and the \"damage\" the compression does is measured. Then after seeing what damage is observed at a given level we find a combination of compressed layers that has the least damage while still achieving the same compression.\n\nFor users this one is totally free. No extra compute (in fact, a tiny bit less), no extra VRAM (again, 200 bytes less), no updates to llama.cpp, works literally anywhere UD\\_4\\_XL worked, just better.\n\n2) Recovers some lost precision by another Hessian optimization changing the weights to compensate directly for accumulated errors over multiple layers based on sample data (taken from Wikipedia). I used a Google/Deepmind version of this process that had better results.\n\nThis too is totally free for users. It just changes the quant GGUF to be closer to the BF16 one. For users, just \n\n3) random Hadamard transform + scaling: this is a trick from 3D geometry that makes all values nearly equal, and then uses an extra scaling factor to get them in optimal to better compression with quantization (yes, not technically 3D, but nD, with n=2048, but it applies in 2D and upwards). This also costs a little bit in inference performance (and requires rewriting your kernels which is quite a bit harder than I thought it was. Well, it isn't if you're ok with 20% slower inference, but you can get it down to like 0.8% with careful, days-long pondering of the problem and a lot of tries).\n\nAlso very nice, but the Google version of this one is also better, but that is not the real problem.\n\nThis transform also helps with compression (in fact it's kind of like what NVFP4 tries to do, just this is better) BUT requires an extra step at inference time (in fact requires 2 of them if you don't think through inference carefully, but you can \"bake\" one of the steps into the weights). This means that it requires patching llama.cpp and everywhere else you want the model to run (although thanks to how mlx works, you can make an mlx version that does not require updates to the inference software. But GGUF based inference software will require updates)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvbqqa/i_noticed_the_2_hessian_refinement_of_macaq_can/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 61,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "TLDR: Qwen3.8-27B UD\\_4\\_XL quant with 13.23% less KL divergence than unsloth (on my small testset, I just have a single 5090, feel free to test more). Technically it performs 4% better on my LiveCodeBench benchmark (but that would be a single data point, so it's not super-reliable). It is equally fast and using it in open-webui it \"feels\" better.\n\n[https://huggingface.co/christophedevriese/Qwen3.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.331
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Strix Halo top-51 LLMs AMD Loom",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Strix Halo top-51 LLMs AMD Loom",
+        "seed_score": 76.5,
+        "summary": "I\u2019ve been trying out a new experimental software flow from AMD\u2019s AI Group, and I\u2019ve been having a lot of fun with it, so I thought I\u2019d share and see what y\u2019all think too.\n\n`hrx-loom` is a new end-to-end tool stack (compiler, runtime, serving tools) that lets anyone build, optimize, serve, and share model programs without any modifications to the inference engine or server. The kernels are written",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "I built speedy Strix Halo kernels for the top-51 LLMs with AMD Loom (and you can too)",
+            "body": "I built speedy Strix Halo kernels for the top-51 LLMs with AMD Loom (and you can too)\nI\u2019ve been trying out a new experimental software flow from AMD\u2019s AI Group, and I\u2019ve been having a lot of fun with it, so I thought I\u2019d share and see what y\u2019all think too.\n\n`hrx-loom` is a new end-to-end tool stack (compiler, runtime, serving tools) that lets anyone build, optimize, serve, and share model programs without any modifications to the inference engine or server. The kernels are written in .loom files, a vector programming model reminiscent of MLIR, which can be complex for humans but easy for agents (C++ is also supported). \n\nOver the past couple weeks, I developed an agent skill that writes kernels for any LLM\u2019s Q4_K_M GGUF and found that it is consistently faster than llama.cpp Vulkan and ROCm on Stix Halo for a variety decode and prefill metrics, as you can see in the post\u2019s image.\n\nNext, I ran the skill across the top-51 trending LLMs from Hugging Face that would fit on Strix Halo and posted the model programs back to Hugging Face. All models ported successfully with tool calling, speculative decoding, and image input working.\n\nAnyone can try these on Linux and Windows with the `loom-fetch` and `loom-serve` commands provided in Loom\u2019s PyPI package, and anyone can make and upload their own using the `/loom` skill.\n\nFetch and serve a model:\n\n```\npip install \"hrx-loom[hf]==0.1.0\"\nloom-fetch https://huggingface.co/loom-fun/bartowski-Qwen3.8-27B-loom/resolve/main/model.json --output=qwen3.8-27b\nloom-serve --model=qwen3.8-27b/model.json --device=amdgpu --memory_bytes=52gb\n```\n\nPort and optimize your own model:\n\n```\n/loom get <hf-org>/<model-gguf> working on loom-serve, optimize it, and report the performance relative to llamacpp rocm\n```\n\nLinks:\n- All the data I collected across 51 models: https://loom-fun.github.io/loom-dev \n- Loom skills: https://github.com/loom-fun/loom-skills\n- Loom compiler and server: https://github.com/ROCm/hrx-system \n- HF collection of top-51 models ported to Loom: https://huggingface.co/loom-fun \n\nWe\u2019re still evaluating how the community will use and deploy new inference stacks, so we\u2019d love to have your feedback! Loom can be used as standalone inference server with `loom-serve` and the compiler/runtime layers can also integrate into other engines. For example, the team is working on adding an [hrx-loom backend to llama.cpp]( https://github.com/ggml-org/llama.cpp/discussions/27219).\n\nThe underlying SDK (compiler, runtimes, and devtools) has no dependencies, can be easily downloaded as a wheel or linked into your own applications, builds from source in a minute, and if this were the 90s, would still fit on a few floppy disks, while being able to target x86, AMD-GPU, AMD-NPU, and generic Vulkan devices.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcmm0/i_built_speedy_strix_halo_kernels_for_the_top51/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 29,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been trying out a new experimental software flow from AMD\u2019s AI Group, and I\u2019ve been having a lot of fun with it, so I thought I\u2019d share and see what y\u2019all think too.\n\n`hrx-loom` is a new end-to-end tool stack (compiler, runtime, serving tools) that lets anyone build, optimize, serve, and share model programs without any modifications to the inference engine or server. The kernels are written",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4665
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Qwen 3.8-27B BF16 11.4 Gib",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "Qwen 3.8-27B BF16 11.4 Gib",
+        "seed_score": 72.0,
+        "summary": "If you're running 27B at BF16, you will save VRAM and gain speed by doing this (bonus uncensored variant info included as well):\n\nOpus 5.2 explains:\n\n# Summary\n\n1. **A lossless packed weight format (BF16\\_P12).** The same weights, bit for bit, stored in\u00a012.25 bits each instead of 16. The model takes 11.4 GiB less graphics memory and generates\u00a0about 20-24% faster, because generation speed is limite",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "Qwen 3.8-27B BF16, lossless, faster and 11.4 Gib smaller",
+            "body": "Qwen 3.8-27B BF16, lossless, faster and 11.4 Gib smaller\nIf you're running 27B at BF16, you will save VRAM and gain speed by doing this (bonus uncensored variant info included as well):\n\nOpus 5.2 explains:\n\n# Summary\n\n1. **A lossless packed weight format (BF16\\_P12).** The same weights, bit for bit, stored in\u00a012.25 bits each instead of 16. The model takes 11.4 GiB less graphics memory and generates\u00a0about 20-24% faster, because generation speed is limited by how fast weights can be read from\u00a0memory.\n2. **A working setup around it:** both cards in tensor parallel, the model's built-in MTP layer\u00a0for speculative decoding, several long chats at once, vision, and encrypted chat checkpoints.\n3. **The \"uncensored\" variant as a 10 MB add-on** instead of a second 52 GB model, switched on\u00a0per request.\n\n|BF16 (before)|Packed (after)|\n|:-|:-|\n|Weights on the card|50.9 GiB|39.5 GiB|\n|One card, plain|29.5 tok/s|36.7 tok/s|\n|Both cards, plain|48.8 tok/s|58.6 tok/s|\n|One card + MTP (3 ahead)|\\~54 tok/s|7-8% faster on the same text|\n|Both cards + MTP (3 ahead)|\\~77 tok/s|\\~91 tok/s on the best prompt, 73-81 on the others|\n|Weights changed|\u2014|none: every tensor unpacks to the original bytes|\n\n# The machine and the model\n\n* Two NVIDIA RTX PRO 6000 Blackwell cards (96 GB each, limited to 450 watts), Linux, llama.cpp (current upstream plus\u00a0our patches).\n* Qwen3.8-27B: 64 blocks (48 linear-attention, 16 full-attention) plus an MTP block used only\u00a0for drafting. The BF16 GGUF is about 52 GB in 866 tensors.\n* Chat memory (KV cache) costs 64 KiB per token, so one 256K-token chat is 16 GiB. That is why\u00a0memory freed from the weights matters: it turns directly into more or longer chats.\n\nWe did not want Q8 or smaller: in our use the quality loss was noticeable. The goal was to keep\u00a0the exact weights.\n\n# The idea behind the packed format\n\nA BF16 weight is 1 sign bit, 8 exponent bits and 7 mantissa bits. The sign and mantissa look\u00a0random and cannot be compressed. The exponent can: neighbouring weights have nearly the same\u00a0size, so within a short run of weights the exponents fall in a narrow range.\n\nEarly tests on the checkpoint showed this clearly. The low byte of each weight has 7.97 bits of\u00a0entropy (incompressible), the high byte only 2.68.\n\n# The format: BF16_P12\n\n* Weights are packed in **blocks of 256 weights from one row, 392 bytes per block** (12.25 bits\u00a0per weight). Every block is self-contained, so any block can be decoded without reading\u00a0anything else.\n* Per weight: one byte holding the sign and the 7 mantissa bits, plus a **4-bit code** for the\u00a0exponent.\n* Per block: a **base exponent**. Code *c* means \"base + c\", so a block covers 16 consecutive\u00a0exponents.\n* A weight whose exponent falls outside that range is **listed** in the block header (its place\u00a0and its true exponent). A block can list up to 3 weights. A tensor with a block needing more\u00a0stays plain BF16.\n* There is exactly one packed form for any block, so packing is deterministic.\n\nWhat the real file looks like:\n\n* About **1 weight in 17,000** needs to be listed. 98.5% of blocks list none.\n* Only **one tensor does not fit: the token embedding table** (2.37 GiB), which stays BF16.\n* Result: 50.88 GiB of BF16 matrices become 39.51 GiB, **11.37 GiB less**.\n* The small 1-D tensors are F32 and are left alone.\n\nWe first considered a 13-bit layout with three separate streams. The scan of the whole file\u00a0showed the 12-bit block layout saves more and is simpler to decode.\n\n# How the engine uses it\n\nThe packed data is never unpacked into a full copy of the model. Which path runs depends on how\u00a0many tokens are processed in one step:\n\n* **1-4 tokens per step** (normal generation, and generation with MTP drafts): the multiply\u00a0reads the packed blocks directly and rebuilds each 16-bit weight in registers just before\u00a0using it.\n* **5-16 tokens:** a copy of the engine's BF16 tile kernel that decodes while loading. Results\u00a0are bit-identical to the BF16 kernel.\n* **More (reading a prompt):** a cache-sized piece of the matrix is unpacked at a time and\u00a0handed to cuBLAS, as BF16 would be.\n\nThere is also a \"proof mode\" (an environment switch) that always unpacks first. It is slow but\u00a0gives the unpacked model's results bit for bit, which makes it a useful reference.\n\nSize of the change: a new tensor type, a processor fallback, the CUDA kernels and file-format\u00a0plumbing, about 940 lines across 17 files, kept as its own patch on top of upstream. A separate\u00a0converter turns a BF16 GGUF into a packed one.\n\n# How we checked it\n\n* **Round trip:** the converter unpacks every tensor it has packed and compares it with the\u00a0original before writing. It can also verify an existing packed file against its original. Both\u00a0the normal and the uncensored model pass with every tensor exact.\n* **Synthetic values:** the reference packer was tested on made-up data covering unusual\u00a0exponents, not only on the model.\n* **Kernel against exact arithmetic:** for real matrix shapes the packed kernel's result was\u00a0compared with a double-precision reference. It agrees to about 1 part in a million, the same\u00a0as the BF16 kernel; any difference is the order of additions, not the weights.\n* **Same answers:** five questions with randomness off. Proof mode gave the same text as BF16\u00a0for all five. Normal mode also gave the same text for all five.\n* **Everything else still works:** MTP drafting, vision, both-cards mode, the add-on, and saving\u00a0and restoring chat checkpoints (the reply after a restore is identical).\n\n# Speed and memory in detail\n\nThree prompts, 512 tokens each, thinking-mode sampling.\n\n|Setup|BF16 tok/s|Packed tok/s|BF16 memory|Packed memory|\n|:-|:-|:-|:-|:-|\n|One card|29.5|36.7|54.0 GB|42.5 GB|\n|One card + MTP|57.5 / 53.4 / 51.2|57.6 / 45.7 / 50.7\\*|55.7 GB|44.0 GB|\n|Both cards (tensor parallel)|48.8|58.6|27.8 GB each|22.1 GB each|\n|Both cards + MTP|76.8 / 76.1 / 73.3|91.4 / 73.0 / 80.9\\*|28.7 GB each|22.9 GB each|\n\n\\* With MTP the speed depends on how many drafted tokens are accepted, which varies with the\u00a0text, and these two runs did not generate the same text. On identical text (randomness off) the\u00a0packed model was 7-8% faster with MTP on one card.\n\nThings worth knowing:\n\n* **Why MTP gains less than plain generation:** with drafting, each step checks several tokens\u00a0at once, so more time goes into work that is not limited by reading weights.\n* **Reading a prompt** in the engine's default pieces of 512 tokens was about 20% slower than\u00a0BF16 (2,570 against 3,150 tokens per second), because weights are unpacked piece by piece.\u00a0With pieces of 2,048 tokens it matches BF16's speed at 512, for 0.6 GB more memory. We run it\u00a0that way.\n* **Loading** is slightly quicker (4 s against 6 s) because the file is smaller.\n\nWhat the freed memory buys: on both cards, up to 6 chats of 256K tokens each (4 before). On one\u00a0card, the weights plus two 256K chats fit with room left over.\n\n# The rest of the setup\n\n* **Tensor parallel over both cards** gives about 1.6-1.7x one card without drafting. The cards\u00a0have no direct link to each other, and it still pays off.\n* **MTP drafting:** Qwen3.8 ships with a small extra layer that guesses the next few tokens. The\u00a0main model checks the guesses, so the output is the same as without it. Three tokens ahead\u00a0gave the best speed, about 1.9x on BF16.\n* **Several chats at once** share one pool of chat memory, each chat limited to 256K tokens.\n* **Sampling** follows the model card for each mode (thinking on: temperature 1.0, top-p 0.95,\u00a0top-k 20; thinking off: 0.7 / 0.8 / 20 with presence penalty 1.5). The thinking level\u00a0(low / medium / xhigh) is passed through to the chat template.\n\n# The uncensored variant as an add-on\n\nThere is a community variant of the model with refusals removed (thanks to OrcaRouter.ai). Comparing its weights with the\u00a0original showed the difference is one direction removed from certain matrices, which can be\u00a0written exactly as a low-rank add-on (LoRA). So instead of a second 52 GB file we keep a\u00a0**10 MB add-on**, loaded but not applied. A request that names the uncensored model turns it on\u00a0for that request only. It costs about 3% speed while in use (35.5 against 36.7 tok/s packed) and\u00a0nothing otherwise. It works with the packed weights: the add-on is applied alongside them, the\u00a0packed data is not touched.\n\n# Limits and open points\n\n* **Not tried yet:** a separate draft model (DSpark / DFlash) in place of MTP. One exists for\u00a0this model; whether it beats MTP here is unmeasured.\n* The format was designed from this model's statistics. Other BF16 models should pack similarly,\u00a0but we have only measured this one and its uncensored variant.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcvog/qwen_3827b_bf16_lossless_faster_and_114_gib/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "If you're running 27B at BF16, you will save VRAM and gain speed by doing this (bonus uncensored variant info included as well):\n\nOpus 5.2 explains:\n\n# Summary\n\n1. **A lossless packed weight format (BF16\\_P12).** The same weights, bit for bit, stored in\u00a012.25 bits each instead of 16. The model takes 11.4 GiB less graphics memory and generates\u00a0about 20-24% faster, because generation speed is limite",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.376
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Paid Machine Learning Scientists SnorkelAI Absolutely",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Paid Machine Learning Scientists SnorkelAI Absolutely",
+        "seed_score": 61.5,
+        "summary": "I am here writing about my experience with this. I was contacted to fill out a paid survey for SnorkelAI because I have a PhD and have published at A\\* conferences in the field, so this might be relevant for other researchers in the community.\n\nAfter not finding a lot of information, I decided to give it a try. I performed the personal verification and waited for the survey to arrive.\n\nFirst bad t",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R107",
+            "source": "reddit",
+            "title": "Paid surveys for Machine Learning Scientists for SnorkelAI: Absolutely not worth it [R]",
+            "body": "Paid surveys for Machine Learning Scientists for SnorkelAI: Absolutely not worth it [R]\nI am here writing about my experience with this. I was contacted to fill out a paid survey for SnorkelAI because I have a PhD and have published at A\\* conferences in the field, so this might be relevant for other researchers in the community.\n\nAfter not finding a lot of information, I decided to give it a try. I performed the personal verification and waited for the survey to arrive.\n\nFirst bad thing: the level of pushiness is terrible. I went to bed, and when I woke up, I had 1 email and 2 follow-up emails asking me to complete some part of the verification where the uploaded document did not have the correct format... ok.\n\nThen I did the survey. Their website is an absolute mess. The survey appeared under two different views of the page, and after I completed it, it was only shown as \"pending\" in one view... Under the other, it was shown as if I hadn't submitted it yet... So I received a bunch of emails (very pushy again) asking me to complete the survey, which I answered. Regularly, whenever I've sent an email, I've waited 48-96h to get an answer, but if I didn't answer quickly, I was receiving follow-ups every 2-12 hours.\n\nThen I was notified by email that the survey was accepted, great. A few days later, they sent me the forms to fill out to get paid: a crazy amount of paperwork for getting paid for a survey, and absolutely not worth it. It required more paperwork than the one I needed for getting a public contract in my country, including a document that requires going in person to a tax office, waiting up to 4 weeks, and probably paying for the document.\n\nSo my recommendation to other people getting contacted by them: run away, it's a waste of time, and they are unprofessional.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xv4rjy/paid_surveys_for_machine_learning_scientists_for/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 37,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I am here writing about my experience with this. I was contacted to fill out a paid survey for SnorkelAI because I have a PhD and have published at A\\* conferences in the field, so this might be relevant for other researchers in the community.\n\nAfter not finding a lot of information, I decided to give it a try. I performed the personal verification and waited for the survey to arrive.\n\nFirst bad t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Tontaube V1.1 TTS 4-bit CPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Tontaube V1.1 TTS 4-bit CPU",
+        "seed_score": 51.0,
+        "summary": "We just released Tontaube V1.1, a text-to-speech model built for long-form audio (audiobooks, articles, voice agents) with zero-shot voice cloning. Our previous V1 release needed a lot of VRAM because of its vLLM setup, so this version is about making it more accessible: the 4-bit weights run in about 4 GB of VRAM, or at about real time on a desktop CPU. In a blind listening study with 400 pairwis",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "Tontaube V1.1: open-weights TTS with voice cloning for long-form generation. 4-bit version runs about real time on a desktop CPU",
+            "body": "Tontaube V1.1: open-weights TTS with voice cloning for long-form generation. 4-bit version runs about real time on a desktop CPU\nWe just released Tontaube V1.1, a text-to-speech model built for long-form audio (audiobooks, articles, voice agents) with zero-shot voice cloning. Our previous V1 release needed a lot of VRAM because of its vLLM setup, so this version is about making it more accessible: the 4-bit weights run in about 4 GB of VRAM, or at about real time on a desktop CPU. In a blind listening study with 400 pairwise comparisons, listeners preferred our V1 model's prosody over Fish Audio S2 Pro in about 70% of cases (details are in the paper). V1.1 is a post-trained version of this model.\n\n**What it is**\n\n* \\~2.9B parameters, autoregressive, streams audio as it generates\n* Clones a voice from 5\u201360 seconds of reference audio; 46 voices are bundled\n* English and German are the main languages (German pronunciation is not perfect yet). Spanish, French, Italian, Dutch and Portuguese work but have not been checked by native speakers\n* Long texts are split at sentence boundaries and joined, so you can feed it whole chapters\n\n**Running it locally**\n\n* The default is a 4-bit (GPTQ) version: 1.8 GB download, loads in about 4 GB of VRAM, peaks at about 6.5 GB on long texts\n* GPU speed: about 13x real time on an RTX 5090 for a single request (21\u201323x batched), \\~190 ms to first audio when streaming. About 6\u20137x on an RTX 3090\n* CPU: no GPU needed. About real time on a 12-core desktop CPU (Ryzen 9 5900X, dual-channel DDR4). It is limited by memory bandwidth and needs AVX2\n* No vLLM or llama.cpp needed: it ships its own server with Triton kernels for the GPU and AVX2 kernels for the CPU. Full-precision weights and a vLLM backend are there too if you have 24 GB+ and want throughput\n\n&#8203;\n\n    git clone --branch v1.1.0 --depth 1 https://github.com/craitech/tontaube.git\n    cd tontaube\n    uv run --python 3.12 --frozen tontaube serve\n\nThat gives you an HTTP API on port 8080 (plain, SSE and WebSocket streaming). `uv run tontaube ui` starts a browser interface.  \n  \n**New in V1.1**\n\n* Five style sliders per request: speaking rate, pauses, intonation (flat to very expressive), pitch (deep to high) and articulation (crisp to normal)\n* The 4-bit version and the CPU path\n* An adapter that cleans up the decoded audio\n\n**Things to know before you try it**\n\n* Linux x86-64 only. NVIDIA GPUs (RTX 30 series or newer; GTX 10 series also works) or CPU. No macOS, no AMD/Intel GPUs; Windows through WSL2\n* The first start downloads about 8 GB of models (ours plus the codec and enhancer it depends on) and builds a \\~9 GB Python environment\n* Audiobook-style reading is its strongest mode; conversational and agent-style lines can be less reliable\n* Licence: the code is Apache 2.0. The weights are under our own community licence, not an OSI one. Research and personal use is free. Commercial use is free below EUR 200k yearly revenue, with a \u201cPowered by TontaubeV1\u201d credit.\n\n**Links**\n\n* Code: [https://github.com/craitech/tontaube](https://github.com/craitech/tontaube)\n* 4-bit weights: [https://huggingface.co/TontaubeAI/TontaubeV1.1-int4](https://huggingface.co/TontaubeAI/TontaubeV1.1-int4)\n* Full-precision weights: [https://huggingface.co/TontaubeAI/TontaubeV1.1](https://huggingface.co/TontaubeAI/TontaubeV1.1)\n* Audio samples: in the README and on the model card\n* Browser demo: [https://huggingface.co/spaces/TontaubeAI/tontaube-v1-tts-demo](https://huggingface.co/spaces/TontaubeAI/tontaube-v1-tts-demo) or [https://tontaube.ai](https://tontaube.ai)\n\nLet me know if you have any questions!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvdmzb/tontaube_v11_openweights_tts_with_voice_cloning/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We just released Tontaube V1.1, a text-to-speech model built for long-form audio (audiobooks, articles, voice agents) with zero-shot voice cloning. Our previous V1 release needed a lot of VRAM because of its vLLM setup, so this version is about making it more accessible: the 4-bit weights run in about 4 GB of VRAM, or at about real time on a desktop CPU. In a blind listening study with 400 pairwis",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.36,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5279999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "1,180",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "1,180",
+        "seed_score": 49.5,
+        "summary": "this one is my fault but it's also kind of impressive in the worst way.\n\ni had an agent working through a backlog of small tickets overnight. it runs on my own openai key with a $50 monthly cap, which i thought was my safety net.\n\naround 2am it hit the cap. the api started returning quota errors. a normal script would stop there. the agent didn't. it decided the problem was \"the api key is out of",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R82",
+            "source": "reddit",
+            "title": "I left my coding agent running overnight. it found an old openai key in another repo and burned $1,180 while i slept",
+            "body": "I left my coding agent running overnight. it found an old openai key in another repo and burned $1,180 while i slept\nthis one is my fault but it's also kind of impressive in the worst way.\n\ni had an agent working through a backlog of small tickets overnight. it runs on my own openai key with a $50 monthly cap, which i thought was my safety net.\n\naround 2am it hit the cap. the api started returning quota errors. a normal script would stop there. the agent didn't. it decided the problem was \"the api key is out of quota\" and went looking for a solution, which it found in \\~/code/, in a client project from last year. a .env with an openai key from the client's org. no cap on that one.\n\nit swapped the key in, wrote a note in its log saying \"found alternative credentials, resuming\", and kept going. by the time i woke up it had finished 31 tickets and spent $1,180 of someone else's money. a lot of it was a retry loop on one test that kept failing.\n\nnothing was hacked. nobody stole anything. the agent just had a shell, a home folder full of old .env files and a goal.\n\ncalled the client, explained, paid it back. not a fun call.\n\nwhat i changed after:\n\nthe agent runs in a container now that only sees the repo it's working on. no home folder, no \\~/code, no \\~/.aws.\n\nit doesn't hold any keys anymore. i'm using infisical's agent vault, which sits between the agent and the apis and adds the key to the request on the way out. so the agent can call openai but it never sees the key, and it can't swap in another one because there's nothing to swap.\n\ni deleted every old .env i could find. 19 of them, most from projects i haven't touched in a year.\n\nand the cap is now on the org, not just the key, plus a rule in the agent prompt that quota errors mean stop and report, not work around. i don't fully trust the prompt part, which is why the other 3 exist.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xvdq74/i_left_my_coding_agent_running_overnight_it_found/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "this one is my fault but it's also kind of impressive in the worst way.\n\ni had an agent working through a backlog of small tickets overnight. it runs on my own openai key with a $50 monthly cap, which i thought was my safety net.\n\naround 2am it hit the cap. the api started returning quota errors. a normal script would stop there. the agent didn't. it decided the problem was \"the api key is out of",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.268
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Poorman Local LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "Poorman Local LLM",
+        "seed_score": 45.0,
+        "summary": "The Jetson AGX Xavier came out in September 2018, four years before ChatGPT existed. It has 16\u201364 GB of LPDDR4x at 136 GB/s. The GPU is a 512-core Volta, and people skip the board for local AI because of it.\n\nMine is the 32 GB module. It sat on a shelf collecting dust. It is \"*quite terrible*\". I wanted a real number for how a modern LLM runs on it. Getting there cost about $300 in tokens on GPT-6",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Poorman's Local LLM",
+            "body": "Poorman's Local LLM\nThe Jetson AGX Xavier came out in September 2018, four years before ChatGPT existed. It has 16\u201364 GB of LPDDR4x at 136 GB/s. The GPU is a 512-core Volta, and people skip the board for local AI because of it.\n\nMine is the 32 GB module. It sat on a shelf collecting dust. It is \"*quite terrible*\". I wanted a real number for how a modern LLM runs on it. Getting there cost about $300 in tokens on GPT-6-Astra and Fable 5.2, so you don't have to spend yours.\n\nI started with current llama.cpp and NVIDIA's Nemotron 3.5 Bolt, the Gemma 4 E4B model they advertise as smarter than Qwen3.8 27B (cough). llama.cpp did about 350 tok/s prefill and 23 tok/s decode. The speed is fine. A 4 GB model against 32 GB of memory, again, is \"*quite terrible*\".\n\nMy own engine, Little-Gemma, is well ahead of llama.cpp, but I built it for Ampere and later. I was not going to backport it to Volta, so I tried something else.\n\n||Prefill (peak)|Decode (peak)|\n|:-|:-|:-|\n|Nemotron 3.5 Bolt E4B|880 tok/s |50 tok/s|\n|**Gemma4 12B**|215 tok/s|35 tok/s|\n|**Qwen3.8 27B**|106 tok/s|17 tok/s|\n\n\n\nI forked MLC-LLM. Upstream does not run GGUF, and it does not know Nemotron, so the weights had to be converted from safetensors into MLC's TVM format and the Nemotron backend written from scratch. Astra did that first port and added in-memory switching between Nemotron, EmbeddingGemma 2, and LiquidAI's d1, so an agent can change models without reloading.\n\nOne setup was: d1 decides whether to query EmbeddingGemma 2 over about 20,000 pages of notes, then Nemotron answers. The plumbing worked. The search sometimes took a minute, which is too slow.\n\nThen Fable 5.2 spent hours on the engine and rewrote several kernels. That work is still going. As of this week, Nemotron prefill peaks at 880 tok/s on a 512-token prompt, and decode on code reaches 50 tok/s.\n\nNemotron is still too dim for some jobs, so I moved to Gemma 4 12B. On the same 512-token prompt, prefill peaks at 215 tok/s, and decode on code is 35 tok/s. Three times the weights, and code decode only falls from 50 to 35. The 136 GB/s bus is why a 2018 module can still carry a 12B model. Prefill is where Volta shows its age.\n\nNone of that counts unless it can run Qwen3.8 27B. Generic MLC conversions are already on Hugging Face, so I am not publishing another one. The checkpoint matters: DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion is the one I kept. I am not uploading that conversion either, with Qwen4 close. Draft with Qwen3.8 2B, or convert DavidAU's model-mtp-restored.safetensors yourself.\n\nOn that 27B model, prefill now peaks at 106 tok/s for a 512-token prompt and holds 104 tok/s at 1,024. A Qwen3.8 2B draft reached 13.4 tok/s decode on a planning prompt. Cold-fusion agrees with that draft less often, so decode there sits nearer 10 tok/s. The attention kernel landed this week. The checkpoint's own MTP head, in place of the 2B draft, is the next thing to try. These rates will move again.\n\nAt MAXN, a long prefill pulls about 35 W. NVIDIA did not design the dev kit's brick for this. Under sustained load it browns out and the board shuts off, which is a known thread on the NVIDIA forums. I dropped the stock brick for a USB-C PD supply and a short OWC USB4 cable. It has now stayed up for more than a week.\n\nThere is a further trick I have not tried, and probably will not. The dev kit's slot is the module's PCIe 4.0 x8. Two kits can be cabled, one as root and one as endpoint, for about 16 GB/s each way, around 32 GB/s with both directions full. That is enough to speed up a single model if each layer is split across the two modules: the cable moves the residual stream, and the weights stay put. Some third-party carriers only bring out Gen2. Skip those if this is the plan.\n\nAs of November 2026, a 16 GB module is about $130 on eBay, and it runs Gemma 4 12B. A 32 GB module turns up around $300 if you wait. Some listings are the bare module. Get one with a carrier, or budget about $60 for the carrier on its own.\n\nThe engine: [https://github.com/cortexist/mlc-llm](https://github.com/cortexist/mlc-llm)  \nThe weights: [https://huggingface.co/cortexist/models](https://huggingface.co/cortexist/models)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzes/poormans_local_llm/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-13",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "The Jetson AGX Xavier came out in September 2018, four years before ChatGPT existed. It has 16\u201364 GB of LPDDR4x at 136 GB/s. The GPU is a 512-core Volta, and people skip the board for local AI because of it.\n\nMine is the 32 GB module. It sat on a shelf collecting dust. It is \"*quite terrible*\". I wanted a real number for how a modern LLM runs on it. Getting there cost about $300 in tokens on GPT-6",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38799999999999996
+          }
+        ]
+      }
+    }
+  ]
+}

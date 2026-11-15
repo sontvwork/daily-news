@@ -1,0 +1,935 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "0273646fb536bdb4",
+  "generated_at": "2026-11-15T23:55:45.474304Z",
+  "from_date": "2026-11-14",
+  "to_date": "2026-11-15",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-15T23:55:45.412654Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-15T23:55:45.412660Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-15T23:55:45.266767Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 58,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-15T23:55:45.412504Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI-generated Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 571,
+          "points": 1048
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "AI-generated Open Source",
+        "seed_score": 2799.8843,
+        "summary": "All AI-generated code should be Open Source",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50507303",
+            "source": "hackernews",
+            "title": "All AI-generated code should be Open Source",
+            "body": "All AI-generated code should be Open Source",
+            "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+            "author": "jcubic",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1048,
+              "comments": 571
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "HN story about All AI-generated code should be Open Source",
+            "snippet": "All AI-generated code should be Open Source",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50507303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.546
+          },
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "An open-source coding agent for DeepSeek, GLM and Kimi: 81.3% on SWE-bench Multilingual (pass@1), $13.98 for all 300 tasks, every run published",
+            "body": "An open-source coding agent for DeepSeek, GLM and Kimi: 81.3% on SWE-bench Multilingual (pass@1), $13.98 for all 300 tasks, every run published\nDisclosure: I'm the author. Both tools are free, GPL-3.0 (it covers the tools, not your code), no paid tier.\n\n**TL;DR:** Rusta, a terminal coding agent in Rust built for DeepSeek, GLM and Kimi, plus Devscriptor, a local code-graph MCP server, resolved 75\u201381% of SWE-bench Multilingual with one attempt per task. The DeepSeek run cost $13.98 for all 300 tasks. All 900 runs are published.\n\n| Model | Resolved | 95% CI | Cost |\n\n|:--|:--|:--|:--|\n\n| DeepSeek V4.1-Flash | **81.3%** (244/300) | 76.5\u201385.3% | $13.98 total, API |\n\n| GLM-5.3 | 78.7% (236/300) | 73.7\u201382.9% | GLM Coding Plan Max |\n\n| Kimi K2.8 Preview | 75.3% (226/300) | 70.2\u201379.9% | Kimi Code subscription |\n\nThat's under 5\u00a2 a task for DeepSeek; 97.8% of its 967M input tokens were cache hits. Official harness (swebench 5.0.2), max effort, Nov 9\u201311, no web access, git history cut at the base commit. Every model cleared 50% in every language (Go was hardest). DeepSeek V4.1-Flash (MIT) and GLM-5.3 have open weights; Kimi K2.8 Preview doesn't. The runs used the vendors' APIs.\n\n**Why a dedicated agent:** generic OpenAI-compatible clients often drop the reasoning these models produce between turns (DeepSeek returns HTTP 400 if a request with tools omits it) and send sampling or effort fields each vendor handles differently. Rusta speaks each API natively: preserved thinking, per-vendor effort and sampling, explicit output caps. Any OpenAI-compatible endpoint works too, local vLLM included, with thinking preserved.\n\n**Devscriptor** works with Claude Code, Cursor, Cline or any MCP client, not only Rusta:\n\n\\- Your repo as a knowledge graph in one SQLite file: 26 languages and frameworks, calls, inheritance and imports resolved across files, kept current by incremental scans and a watcher\n\n\\- 75 MCP tools, 38 of them LSP-backed (21 language servers)\n\n\\- Semantic search with a local embedding model, no API keys\n\n\\- Agent memory (decisions, standards, past failures) that persists across sessions\n\n\\- No telemetry, no backend; works offline once the model is cached\n\n**75 tools, but not 75 schemas in your context.** Rusta keeps only the twelve that find and follow code in its tool table (search, definitions and references, relationships, index status, Context Graph), about a sixth of the full schema size. The other 63 are listed by name and a one-line description until the model loads one with \\`select\\_tools\\`. In Claude Code, tool search defers MCP tools by default, and Devscriptor's server instructions name the same twelve to load first. (That's Rusta 1.0.1; the benchmark ran 1.0.0, which kept all 75 on demand.)\n\n**What the numbers don't show** (the results page covers each):\n\n\\- How much Devscriptor adds on its own: there's no run of the same tasks without it\n\n\\- A ranking against other agents or the official leaderboard: different agent, newer models, bigger budget\n\n\\- Zero contamination: the fixes are public, and build/test leftovers in the images may have hinted at where some fixes belong (worst case 3\u20139 points)\n\nSingle binaries for Linux, macOS and Windows.\n\n\\- Devscriptor: https://devscriptor.com/\n\n\\- Rusta: https://devscriptor.com/rusta/\n\n\\- Results, re-scoring steps, all trajectories: https://devscriptor.com/benchmarks/\n\n\\- Source: https://github.com/vladimirpesic/devscriptor \u00b7 https://github.com/vladimirpesic/rusta",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xwds14/an_opensource_coding_agent_for_deepseek_glm_and/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Disclosure: I'm the author. Both tools are free, GPL-3.0 (it covers the tools, not your code), no paid tier.\n\n**TL;DR:** Rusta, a terminal coding agent in Rust built for DeepSeek, GLM and Kimi, plus Devscriptor, a local code-graph MCP server, resolved 75\u201381% of SWE-bench Multilingual with one attempt per task. The DeepSeek run cost $13.98 for all 300 tasks. All 900 runs are published.\n\n| Model | R",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.229
+          },
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "I built a free open-source tool that shows where your coding agents (Claude Code, Codex) waste time and money",
+            "body": "I built a free open-source tool that shows where your coding agents (Claude Code, Codex) waste time and money\nI run Claude Code and Codex all day, often as multi-agent workflows with dozens of subagents. I could see each session but never the whole picture: what a run cost, where agents sat idle, whether a change to my setup helped. So I built coding.sh, a local tool for measuring agent cost and quality, and pointed it at my own runs.\n\n**Does that change actually help?**\nI A/B tested a popular \"be concise\" plugin: 10 tasks, 6 runs each, paired, with 95% intervals.\n- Replies: 17% shorter\n- Output tokens: \u22128%\n- Cost per run: **+11%** [+7%, +15%]\n- Pass rate and clarity: no change\n\nThe plugin adds its style guide to every request, and that costs more than the shorter output saves. Most of what a coding agent writes is tool calls and code, not prose. `coding.sh compare` and `exp` run your own tasks with and without a change (a rule, a skill, a plugin, a model) and tell you whether the difference is real or noise.\n\n**Workflows and subagents**\nAcross 57 workflow runs (666 subagents, ~$2,500 API-equivalent):\n- Broken prompt caches cost $106 extra, about 4% of the spend.\n- 41 of those breaks were agents idle at a barrier until their cache expired. That's $21 for doing nothing.\n- 40 subagents failed outright.\n\n**Your own sessions**\nMining 3,600 of my sessions turned up a find-and-replace typo in my AGENTS.md that sent Codex looking for a folder that doesn't exist, in 92 sessions.\n\n**What it is**\n- Hooks into Claude Code, Codex, Gemini CLI, OpenCode, Copilot CLI, Aider and more\n- Stores prompts, tool calls, diffs, test runs, tokens and cost in SQLite on your machine\n- `coding.sh improve` says what to fix first; MCP server lets your agent look up its past sessions\n\nFree, MIT, no account, nothing leaves your machine. `npx coding.sh` to try it. GitHub: https://github.com/jackulau/coding.sh",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xx5hvk/i_built_a_free_opensource_tool_that_shows_where/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I run Claude Code and Codex all day, often as multi-agent workflows with dozens of subagents. I could see each session but never the whole picture: what a run cost, where agents sat idle, whether a change to my setup helped. So I built coding.sh, a local tool for measuring agent cost and quality, and pointed it at my own runs.\n\n**Does that change actually help?**\nI A/B tested a popular \"be concise",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.42000000000000004
+          },
+          {
+            "item_id": "R66",
+            "source": "reddit",
+            "title": "Universal Code Intelligence & SDLC RAG Service for AI Agents",
+            "body": "Universal Code Intelligence & SDLC RAG Service for AI Agents\nWe built **ContextCore-MCP** to give coding agents surgical, semantic memory over complex codebases without context pollution.  \nIt operates as an open-source **Model Context Protocol (MCP)** server backed by **Qdrant** for vector retrieval and **Tree-sitter**for AST parsing.\n\nFull blog: Stop Stuffing Whole Repos into Context Windows: How We Built ContextCore-MCP https://medium.com/@venkatramanpandey89/stop-stuffing-whole-repos-into-context-windows-how-we-built-contextcore-mcp-74008477ef52\n\nGitHub: https://github.com/Venkatpandey/ContextCore-MCP\n\nThanks \ud83d\ude4f",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xwtsyo/universal_code_intelligence_sdlc_rag_service_for/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We built **ContextCore-MCP** to give coding agents surgical, semantic memory over complex codebases without context pollution.  \nIt operates as an open-source **Model Context Protocol (MCP)** server backed by **Qdrant** for vector retrieval and **Tree-sitter**for AST parsing.\n\nFull blog: Stop Stuffing Whole Repos into Context Windows: How We Built ContextCore-MCP https://medium.com/@venkatramanpan",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.485
+          },
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "I built an open-source CLI harness that physically strips JS/TS function bodies with Babel AST to save ~80% context tokens in Cursor & Claude Code",
+            "body": "I built an open-source CLI harness that physically strips JS/TS function bodies with Babel AST to save ~80% context tokens in Cursor & Claude Code\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xwqtin/i_built_an_opensource_cli_harness_that_physically/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36150000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Gemini 4 Hydrogen",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 82
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Hydrogen",
+        "seed_score": 2538.0,
+        "summary": "Gemini 4 Hydrogen just DESTROYED Claude Fable 5.2 & all other models in the latest benchmark.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "Gemini 4 Hydrogen just DESTROYED Claude Fable 5.2 & all other models in the latest benchmark.",
+            "body": "Gemini 4 Hydrogen just DESTROYED Claude Fable 5.2 & all other models in the latest benchmark.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xwvg9b/gemini_4_hydrogen_just_destroyed_claude_fable_52/",
+            "container": "singularity",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1610,
+              "num_comments": 82
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Gemini 4 Hydrogen just DESTROYED Claude Fable 5.2 & all other models in the latest benchmark.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Claude Delusion",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 199,
+          "points": 151
+        }
+      },
+      "nomination": {
+        "name": "Claude Delusion",
+        "seed_score": 371.2311,
+        "summary": "The Claude Delusion",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50496921",
+            "source": "hackernews",
+            "title": "The Claude Delusion",
+            "body": "The Claude Delusion",
+            "url": "https://www.netmeister.org/blog/claude-delusion.html",
+            "author": "janvdberg",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 151,
+              "comments": 199
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "HN story about The Claude Delusion",
+            "snippet": "The Claude Delusion",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50496921",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 22,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1445
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Advancing Antigravity",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 49,
+          "points": 212
+        }
+      },
+      "nomination": {
+        "name": "Advancing Antigravity",
+        "seed_score": 276.8323,
+        "summary": "Advancing science and engineering with Antigravity's /teamwork",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50496811",
+            "source": "hackernews",
+            "title": "Advancing science and engineering with Antigravity's /teamwork",
+            "body": "Advancing science and engineering with Antigravity's /teamwork",
+            "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+            "author": "acossta",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 212,
+              "comments": 49
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Advancing science and engineering with Antigravity's /teamwo",
+            "snippet": "Advancing science and engineering with Antigravity's /teamwork",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50496811",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.08349999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Formalizing US Tax Code Using Lean",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 102,
+          "points": 152
+        }
+      },
+      "nomination": {
+        "name": "Formalizing US Tax Code Using Lean",
+        "seed_score": 269.4077,
+        "summary": "Formalizing US Tax Code (Using Lean)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50497900",
+            "source": "hackernews",
+            "title": "Formalizing US Tax Code (Using Lean)",
+            "body": "Formalizing US Tax Code (Using Lean)",
+            "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+            "author": "dnw",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 152,
+              "comments": 102
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Formalizing US Tax Code (Using Lean)",
+            "snippet": "Formalizing US Tax Code (Using Lean)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50497900",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 7,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07100000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude DOS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Claude DOS",
+        "seed_score": 163.5,
+        "summary": "Claude wrote and trained a language model for DOS that fits on a floppy disk",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "Claude wrote and trained a language model for DOS that fits on a floppy disk",
+            "body": "Claude wrote and trained a language model for DOS that fits on a floppy disk",
+            "url": "https://www.reddit.com/r/singularity/comments/1xwvaq9/claude_wrote_and_trained_a_language_model_for_dos/",
+            "container": "singularity",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 95,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Claude wrote and trained a language model for DOS that fits on a floppy disk",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3285
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "7 2026 63,000 calls",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "7 2026 63,000 calls",
+        "seed_score": 144.0,
+        "summary": "I've started a series where I take a question I have about prompting or LLMs, find the research paper that tested it, and re-run that test on 2026 models. Questions like: does writing \"You are an expert\" actually help? Does an LLM judge prefer whichever answer comes first? Does a judge prefer a markdown answer over the same answer in plain text? Papers answered these on 2023\u20132024 models, and I wan",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R69",
+            "source": "reddit",
+            "title": "I always started prompts with \"You are an expert\u2026\". I tested it on 7 models from 2026 with 63,000 calls. It didn't help.",
+            "body": "I always started prompts with \"You are an expert\u2026\". I tested it on 7 models from 2026 with 63,000 calls. It didn't help.\nI've started a series where I take a question I have about prompting or LLMs, find the research paper that tested it, and re-run that test on 2026 models. Questions like: does writing \"You are an expert\" actually help? Does an LLM judge prefer whichever answer comes first? Does a judge prefer a markdown answer over the same answer in plain text? Papers answered these on 2023\u20132024 models, and I wanted to know if the answers still hold.\n\nThis one re-tests a 2024 EMNLP paper (Zheng et al., \"When 'A Helpful Assistant' Is Not Really Helpful\") on 7 models from 2026, with reasoning on and off. That's 63,000 calls on MMLU questions, and it cost $10.11. I expected newer models to make better use of a role than the 2024 ones. They don't: the role still made no difference.\n\nWhat I found:\n\n* A matching expert role (\"You are a lawyer.\" on a law question) changed accuracy by \u22121.0 to +1.0 points. Asking the same questions twice with no role at all changed it by about as much.\n* \"You are a helpful assistant.\" never raised accuracy by more than 0.3 points. On Claude Haiku 5.5 with reasoning off, it lowered accuracy by 1.9 points compared with no role.\n* A silly role (\"You are a 4-year-old toddler\u2026\") mostly broke the answer format, not the model's knowledge. With reasoning on, it barely mattered.\n* Takeaway: use a role for tone and style. Don't expect it to make answers more accurate.\n\nFull write-up: [https://talhaanwar.com/blog/role-prompting/](https://talhaanwar.com/blog/role-prompting/)\n\nCode and data: [https://github.com/talhaanwarch/article-experiments/tree/main/role-prompting](https://github.com/talhaanwarch/article-experiments/tree/main/role-prompting)\n\nNext up: the needle-in-a-haystack test at 32K tokens. If there's a prompting question you've always wondered about, tell me and I'll look for a paper to re-test.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xwnfr7/i_always_started_prompts_with_you_are_an_expert_i/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 73,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've started a series where I take a question I have about prompting or LLMs, find the research paper that tested it, and re-run that test on 2026 models. Questions like: does writing \"You are an expert\" actually help? Does an LLM judge prefer whichever answer comes first? Does a judge prefer a markdown answer over the same answer in plain text? Papers answered these on 2023\u20132024 models, and I wan",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.362
+          },
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "LLMs kept saying \"the text doesn't mention it\" at 32K tokens. I thought the prompt was to blame, so I changed it and re-ran the test. The drop stayed.",
+            "body": "LLMs kept saying \"the text doesn't mention it\" at 32K tokens. I thought the prompt was to blame, so I changed it and re-ran the test. The drop stayed.\nI've started a series where I take a question I have about prompting or LLMs, find the research paper that tested it, and re-run that test on 2026 models. Questions like: does writing \"You are an expert\" actually help? Does an LLM judge prefer whichever answer comes first? Does a judge prefer a markdown answer over the same answer in plain text? Papers answered these on 2023\u20132024 models, and I wanted to know if the answers still hold.\n\nThis one re-runs NoLiMa (2025), a needle-in-a-haystack test where the question shares no words with the hidden sentence. The needle says \"Mandy lives next to the Semper Opera House\", the question asks \"Which character has been to Dresden?\", and the model has to connect the two itself. I ran it on six 2026 models with 7,500 calls that cost $19.02 (plus $15.16 for the modified prompt re-runs).\n\nWhat I found:\n\n* The model answer correct when context is 1k token.\n* At 32K tokens, 9 of 10 setups scored below 85% of their 1K score. \n* I thought NoLiMa's prompt (*Use the information provided in the book snippet*) caused that. So I repeated the whole experiment twice, one after removing the prompt line and one after modifying it. But the result did not change.\n* When the question repeated the needle's words, all 10 setups scored 100% at 32K. Length alone isn't the problem; length plus no shared words is.\n* I found out if an LLM is reasoning more, its early warning that it will provide a wrong answer. \n* Takeaway for RAG: phrase your question in the document's own wording when you can. \n\nFull write-up: [https://talhaanwar.com/blog/needle-in-a-haystack/](https://talhaanwar.com/blog/needle-in-a-haystack/)\n\nCode and data: [https://github.com/talhaanwarch/article-experiments/tree/main/needle-in-a-haystack](https://github.com/talhaanwarch/article-experiments/tree/main/needle-in-a-haystack)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwtpqx/llms_kept_saying_the_text_doesnt_mention_it_at/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've started a series where I take a question I have about prompting or LLMs, find the research paper that tested it, and re-run that test on 2026 models. Questions like: does writing \"You are an expert\" actually help? Does an LLM judge prefer whichever answer comes first? Does a judge prefer a markdown answer over the same answer in plain text? Papers answered these on 2023\u20132024 models, and I wan",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.251
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "higurashi-ai/Haru-4B \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "higurashi-ai/Haru-4B \u00b7 Hugging Face",
+        "seed_score": 88.5,
+        "summary": "# Haru-4B\n\n[Code](https://github.com/higurashi-ai/Haru) \u00b7 [Technical blog](https://blog.higurashi.ai/melte/haru4b/) \u00b7 [Technical blog (Japanese)](https://blog.higurashi.ai/melte/haru4b-ja/)\n\nHaru-4B is a low-latency and multilingual full-duplex continuous spoken dialogue foundation model: it listens and speaks at the same time, the way people do on a phone call. It is a pretrained base model, rele",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "higurashi-ai/Haru-4B \u00b7 Hugging Face",
+            "body": "higurashi-ai/Haru-4B \u00b7 Hugging Face\n# Haru-4B\n\n[Code](https://github.com/higurashi-ai/Haru) \u00b7 [Technical blog](https://blog.higurashi.ai/melte/haru4b/) \u00b7 [Technical blog (Japanese)](https://blog.higurashi.ai/melte/haru4b-ja/)\n\nHaru-4B is a low-latency and multilingual full-duplex continuous spoken dialogue foundation model: it listens and speaks at the same time, the way people do on a phone call. It is a pretrained base model, released for research.\n\n* **Native full-duplex at 7.5 Hz.** Every 133 ms the model takes one frame of the user's audio and produces one frame of its own audio and text. User audio, model audio and model text are summed into a single position of the language model, so listening and speaking never wait for each other.\n* **Continuous audio, one sampling step.** Audio is a 64-dimensional latent per frame. A small MLP head with MeanFlow sampling produces it in one step from the language model's hidden state; there is no separate audio transformer and there are no discrete audio tokens.\n* **Character and voice control.** A text card sets the character, a short reference clip sets the voice.\n* **Multilingual.** English, Spanish, Portuguese, German, French, Chinese, Japanese, Russian and Korean.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xww5o2/higurashiaiharu4b_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "# Haru-4B\n\n[Code](https://github.com/higurashi-ai/Haru) \u00b7 [Technical blog](https://blog.higurashi.ai/melte/haru4b/) \u00b7 [Technical blog (Japanese)](https://blog.higurashi.ai/melte/haru4b-ja/)\n\nHaru-4B is a low-latency and multilingual full-duplex continuous spoken dialogue foundation model: it listens and speaks at the same time, the way people do on a phone call. It is a pretrained base model, rele",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.465
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Llama.cpp Gemma4 models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Llama.cpp Gemma4 models",
+        "seed_score": 82.5,
+        "summary": "Few months ago - after Ninfer came out - I started a little hobby project to vibe-code my own engine for my hardware (RTX 5080 16GB Laptop) and check if it could beat llama.cpp - since at the time llama.cpp was kinda slow in comparison to something like vLLM, but vLLM is using VRAM very wastefully.\n\nBack then it was quite easy to actually get something up and running faster than llama.cpp.\n\nToday",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Llama.cpp performance improvement over time (Gemma4 models)",
+            "body": "Llama.cpp performance improvement over time (Gemma4 models)\nFew months ago - after Ninfer came out - I started a little hobby project to vibe-code my own engine for my hardware (RTX 5080 16GB Laptop) and check if it could beat llama.cpp - since at the time llama.cpp was kinda slow in comparison to something like vLLM, but vLLM is using VRAM very wastefully.\n\nBack then it was quite easy to actually get something up and running faster than llama.cpp.\n\nToday I just benchmarked llama.cpp again, and it caught up / surpassed my vibe-coded engine. I prefer using a stable engine with proper features than all the vibe-coded ones, including my own. So it is really nice to see that the project - while a bit slower - lands significant performance improvements over time.\n\nI put together a little chart of benchmarks I had laying around which visualizes this quite nicely. It is by no means scientific - it's always a fixed 16k prefill 1k output over Wikipedia text with the optimal settings for each engine. The 12B model is the same checkpoint, for the 26B model these are different quants for all engines, so not even apples-to-apples and llama.cpp wins.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx607x/llamacpp_performance_improvement_over_time_gemma4/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 47,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Few months ago - after Ninfer came out - I started a little hobby project to vibe-code my own engine for my hardware (RTX 5080 16GB Laptop) and check if it could beat llama.cpp - since at the time llama.cpp was kinda slow in comparison to something like vLLM, but vLLM is using VRAM very wastefully.\n\nBack then it was quite easy to actually get something up and running faster than llama.cpp.\n\nToday",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.299
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Another",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 50
+        }
+      },
+      "nomination": {
+        "name": "Another",
+        "seed_score": 75.0,
+        "summary": "(Note: by local models I mean anything smaller than Deepseek 4.1)\n\nI already gave up on local models for coding tasks 6 months ago, due to what I perceived was intelligence too low for the tasks I give it. I made a post about it on here back then and it was a huge discussion, I think 800 comments. I went against the /r/LL orthodoxy and many didn't take my comments well, but we can agree to disagre",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Another reminder of the low intelligence of local models",
+            "body": "Another reminder of the low intelligence of local models\n(Note: by local models I mean anything smaller than Deepseek 4.1)\n\nI already gave up on local models for coding tasks 6 months ago, due to what I perceived was intelligence too low for the tasks I give it. I made a post about it on here back then and it was a huge discussion, I think 800 comments. I went against the /r/LL orthodoxy and many didn't take my comments well, but we can agree to disagree.\n\nSince then I only use local LLMs for translation and ComfyUI prompt enhancement. I stick to big cloud models for coding. I think the electricity cost of running Qwen 27B alone exceeds what you'd pay Deepseek to use their cloud API in their own harness, and you'd get a far more intelligent and far faster model.\n\nBut this post isn't about the economics. It's purely about ability. I still see people commenting in favor of buying GPUs for local intelligence. \"Sonnet at home\" is a ridiculous phrase I've seen more times than I should in relation to Qwen 27B.\n\n**The simplest of tech tasks is still too hard to one-shot**\n\nI keep Qwen 3.8 27B running on my Spark for occasional non-coding stuff. Today I gave it a trivial coding task I needed for my server, just out of curiosity.\n\n- llama-server launched with `--model Swift-1.5-Qwen3.8-27B-Q4_K_L.gguf --reasoning on --reasoning-effort xhigh`\n- Open llama webpage and leave Reasoning at Default, leave system prompt empty\n- Prompt: \n\n    Give me a bash script that will list all files in directory sorted by date. Output should be:\n    2025-12-31 12:13:14 file1.ext\n    2025-12-31 12:13:14 subdir/file2.ext\n\n1630 tokens later, most of it reasoning, I get a script. When I run it, here's the output, as you can see the timestamp is wrong:\n\n    2026-10-16 20 tmp.59eH9w3JLe\n    2026-10-17 20 tmp.5xvczTbSS4\n    2026-10-18 20 tmp.nWOEDw2wlu\n    2026-10-20 20 tmp.JVEZIFfKx3\n    ...\n\nI then tried Gemma 31B Reasoning on duck.ai. The output only showed the timestamps, no filenames!\n\nThis is the most trivial of coding tasks (the answer is a 3-5 lines script), using the most ancient and commonly-available training data (bash), on the most praised local coding model on this sub (Qwen 27B), at a recommended/popular quantization (Q4), and it still can't one-shot this. The 2nd most popular local model, Gemma 4 31B, also fails.\n\n(Editor's note: I think my post could've ended here, in a \"Ecce homo\" way, but I went on for a few more paragraphs)\n\n**Weak local LLM + software development = bad time**\n\nI'm sure if I had run this task with your average agent harness with a system prompt that makes it test its code, it would run the script it created, see the issue, then get it right on the 2nd attempt. But while I think this \"try until you succeed\" workhorse approach is acceptable for small self-contained coding tasks, I don't think anyone should be doing any serious coding this way.\n\nIf you're writing something you intend to maintain over time (ie not a one-shot), or that you will be sharing with other people, you need a higher degree of LLM intelligence and knowledge to create it. A strong LLM will be able to avoid entire classes of problems from the start, when designing the app. From design to implementation to maintenance, it will make better decisions every time and without laboring its way to them, resulting in a codebase that is smaller, well-designed, more easily modifiable, less buggy, and developed in a fraction of the time.\n\nCoding with local LLMS is like insisting on using a donkey for transportation in the age of cars. It can be done for fun, but it shouldn't be done seriously.\n\n**Sonnet at home my ass**\n\nBtw I've seen several people say Qwen 27B is like having a local Sonnet 4. The benchmarks say it's even better than Sonnet 4, actually. So I went on openrouter.ai out of curiosity and gave the same prompt to 3 models.\n\n- Sonnet 4.5 (oldest Sonnet I could find): one-shots it\n- GPT 4.1 Mini, which was comparable to Haiku 3.5: one-shots it\n- GPT 4.1 Nano, which is even worse than Mini: one-shots it\n\n**Weak local LLM + Linux server management = even worse time**\n\nThis post's getting long so I'll just speedrun this part.\n\n- Managing an OS is actually harder tasks that LLM struggle even more with. And the stakes are higher because you don't want your server to go down.\n- I used to never trust LLMs enough to let them onto my server, I'd just ask for something, copy-paste the command, report back, repeat. A huge waste of my limited free time. Now I just rawdog a frontier model on the server. Although I have it avoid making any changes without my supervision, Docker is a big benefit here for both organization and safety/stability.\n- Even top models won't one-shot a task like \"I want to install and run https://github.com/rando/something on this system in a Docker container in /opt/docker/something/. Create the Dockerfile and docker compose file\", especially for AI-related tools, where having the right CUDA, not having python wheels for my server's ARM CPU, etc, introduces a lot of failure opportunities. When I had Claude five months ago, even it struggled to get these right.\n\nThanks for reading my wall of text. Downvotes to the left.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx667d/another_reminder_of_the_low_intelligence_of_local/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 50
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "(Note: by local models I mean anything smaller than Deepseek 4.1)\n\nI already gave up on local models for coding tasks 6 months ago, due to what I perceived was intelligence too low for the tasks I give it. I made a post about it on here back then and it was a huge discussion, I think 800 comments. I went against the /r/LL orthodoxy and many didn't take my comments well, but we can agree to disagre",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 90,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5710000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "READMEs Claude Code Then Unicode AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "READMEs Claude Code Then Unicode AI",
+        "seed_score": 70.0036,
+        "summary": "I often copy prompts from blogs, READMEs and posts and paste them into Claude Code. Then I learned that text can be hidden with Unicode tag characters: the AI reads it, but you can't see it. So I made a small page that checks a prompt before I hand it over.\n\n\n\nWhat it does:\n\n\\- Decodes hidden text (tag characters, zero-width spaces) and shows what it says\n\n\\- Looks for injection patterns in Englis",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R76",
+            "source": "reddit",
+            "title": "I made a free, browser-only checker for hidden text and injection in prompts you copy from the web",
+            "body": "I made a free, browser-only checker for hidden text and injection in prompts you copy from the web\nI often copy prompts from blogs, READMEs and posts and paste them into Claude Code. Then I learned that text can be hidden with Unicode tag characters: the AI reads it, but you can't see it. So I made a small page that checks a prompt before I hand it over.\n\n\n\nWhat it does:\n\n\\- Decodes hidden text (tag characters, zero-width spaces) and shows what it says\n\n\\- Looks for injection patterns in English and Japanese (\"ignore previous instructions\", reading \\~/.ssh, sending data to outside URLs, \\\\x/\\\\u escapes, %XX, rot13)\n\n\\- No length limit, so text hidden at the very end is checked too\n\n\\- Everything runs in your browser. Nothing is sent.\n\n\n\nIt is pattern matching, so it will miss things. The page lists every rule it checks.\n\n\n\n[https://ikasumiworks.com/en/prompt-check/](https://ikasumiworks.com/en/prompt-check/)\n\n\n\nI'm a hobby developer in Japan and built it with help from Claude Code. If you find a prompt it misses, I'd like to hear about it.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xvsu2v/i_made_a_free_browseronly_checker_for_hidden_text/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 46,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I often copy prompts from blogs, READMEs and posts and paste them into Claude Code. Then I learned that text can be hidden with Unicode tag characters: the AI reads it, but you can't see it. So I made a small page that checks a prompt before I hand it over.\n\n\n\nWhat it does:\n\n\\- Decodes hidden text (tag characters, zero-width spaces) and shows what it says\n\n\\- Looks for injection patterns in Englis",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.339
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Codex Claude Code",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Codex Claude Code",
+        "seed_score": 42.4264,
+        "summary": "I'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into C",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "How do you get Codex, Claude Code and a planner agent working together in one place instead of copy-pasting between them?",
+            "body": "How do you get Codex, Claude Code and a planner agent working together in one place instead of copy-pasting between them?\nI'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into Codex, copy Codex's reply to the reviewer, then copy the review back to the planner. It's slow, and it falls apart when I'm busy.\n\n\n\nWhat I want:\n\n\n\n\\- All the agents in one place, passing work to each other\n\n\\- Builder and reviewer from different AI companies, so they don't share blind spots\n\n\\- A reviewer and a security checker running on every change\n\n\\- A \"scout\" agent that keeps an eye out for new tools, repos, model releases and security issues that could improve the build\n\n\\- Me approving anything that goes live. That part's non-negotiable\n\n\n\nI'm on Windows, I already pay for ChatGPT (Codex) and Claude, and the project lives in a local git repo (private client data, so no public GitHub).\n\n\n\nWhat are you actually using for this? Real-world experience, good or bad, would help a lot, especially on keeping it safe when agents talk to each other without me in the middle.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xw51jj/how_do_you_get_codex_claude_code_and_a_planner/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm building an AI operations system for a small business.\n\n\n\nMy current setup works, but it's all manual:\n\n\n\n\\- Builder: Codex (GPT)\n\n\\- Planner: Claude Opus in a chat (decisions, scope, writing the prompts)\n\n\\- Reviewer: Claude Code CLI checks every change before it goes live\n\n\\- Sometimes a second model does an extra review\n\n\n\nThe problem is I'm the messenger. I copy the planner's prompt into C",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 10,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.391
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "1Cat-vLLM vs Strata",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "1Cat-vLLM vs Strata",
+        "seed_score": 40.5,
+        "summary": "Everyday we see posts about speeds on Strata and its forks, but just recently I came to know that 1Cat has added support for expert caching recently, like a month ago. So I did (asked claude) a comparison of speeds on a Qwen3.8-Flash-Next UD-IQ3_XXS quant. My rig is 4x 16gb Tesla V100 on PCIe 3 x16 links, with 8 channel 3200 mt/s ddr4 ram, Epyc 7543 CPU. Now, for numbers:\n\n## Single stream\n\nMedian",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "1Cat-vLLM vs Strata",
+            "body": "1Cat-vLLM vs Strata\nEveryday we see posts about speeds on Strata and its forks, but just recently I came to know that 1Cat has added support for expert caching recently, like a month ago. So I did (asked claude) a comparison of speeds on a Qwen3.8-Flash-Next UD-IQ3_XXS quant. My rig is 4x 16gb Tesla V100 on PCIe 3 x16 links, with 8 channel 3200 mt/s ddr4 ram, Epyc 7543 CPU. Now, for numbers:\n\n## Single stream\n\nMedian of 3 runs, except the 97k tokens one which I asked to run only once to save time.\n\n| Prompt (tokens) | Prefill tok/s, Strata | Prefill tok/s, 1Cat | Decode tok/s, Strata | Decode tok/s, 1Cat | MTP acceptance, Strata / 1Cat |\n|:--|--:|--:|--:|--:|:-:|\n| 2,654 | 861 | **1,850** | 74.8 | **124.9** | 0.61 / 0.45 |\n| 8,674 | 1,146 | **2,483** | 79.3 | **140.8** | 0.67 / 0.66 |\n| 30,299 | 2,480 | **2,776** | 76.4 | **139.3** | 0.63 / 0.58 |\n| 96,588 | **3,384** | 2,649 | 77.2 | **142.6** | 0.72 / 0.62 |\n\nStrata has better draft acceptance and still 1cat beats it, imagine if 1cat could get better draft acceptance.\n\n## The same 103K-token prompt three times\n\nSame prompt, 3 times in a row, just different enough to not trigger prefill cache.\n\n| Run | Decode tok/s, Strata | Decode tok/s, 1Cat | Prefill tok/s, Strata | Prefill tok/s, 1Cat | MTP acceptance, Strata / 1Cat |\n|:-:|--:|--:|--:|--:|:-:|\n| 1 | 70.8 | 99.9 | 3,398 | 2,736 | 0.65 / 0.60 |\n| 2 | 78.9 | 138.4 | 3,340 | 2,752 | 0.71 / 0.60 |\n| 3 | 77.8 | 123.5 | 3,348 | 2,751 | 0.69 / 0.57 |\n| run 1 to 3 | +10% | +24% | - | - | - |",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1u9y/1catvllm_vs_strata/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Everyday we see posts about speeds on Strata and its forks, but just recently I came to know that 1Cat has added support for expert caching recently, like a month ago. So I did (asked claude) a comparison of speeds on a Qwen3.8-Flash-Next UD-IQ3_XXS quant. My rig is 4x 16gb Tesla V100 on PCIe 3 x16 links, with 8 channel 3200 mt/s ddr4 ram, Epyc 7543 CPU. Now, for numbers:\n\n## Single stream\n\nMedian",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3085
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "ISTA Qwen3.8 27b on 3060 12gb",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "ISTA Qwen3.8 27b on 3060 12gb",
+        "seed_score": 39.0,
+        "summary": "Hey guys \n\nI am a seasoned local llm user and I ain't quite ram rich like only 16gb ddr4 \ud83e\udd40\n\nSo I can't run qwen3.8 flash next on my 3060 \n\nThis guy felt the best for me yet \n\nHave you guys tried it \n\nI have ran iq3\\_xss quant non mtp with turboquant at 65k context completely on my 3060 though I did offload mmproj to cpu ram \n\nHave guys tried this it really felt like a blessing to my life using the",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "ISTA Qwen3.8 27b on 3060 12gb",
+            "body": "ISTA Qwen3.8 27b on 3060 12gb\nHey guys \n\nI am a seasoned local llm user and I ain't quite ram rich like only 16gb ddr4 \ud83e\udd40\n\nSo I can't run qwen3.8 flash next on my 3060 \n\nThis guy felt the best for me yet \n\nHave you guys tried it \n\nI have ran iq3\\_xss quant non mtp with turboquant at 65k context completely on my 3060 though I did offload mmproj to cpu ram \n\nHave guys tried this it really felt like a blessing to my life using the peak of local ai on my 3060 \n\nIt seriously packs the punch \ud83d\udc4a I was able to perform various of my agent task complete on device not like simple but the ones which require actual reasonings \n\nHere is my cmd if you want to see\n\nllama-tq serve -m \"E:\\\\MODELS\\\\ISTA-DASLab\\\\Qwen3.8-27B-GSQ-RCO-GGUF\\\\Qwen3.8-27B-GSQ-RCO-IQ3\\_XXS.gguf\" --mmproj \"E:\\\\MODELS\\\\ISTA-DASLab\\\\Qwen3.8-27B-GSQ-RCO-GGUF\\\\mmproj-Qwen3.8-27B-BF16.gguf\" --no-mmproj-offload -ngl 99 -c 65536 -ctk turbo4 -ctv turbo3 -ub 256 -b 2048 -t 3 -tb 3 --reasoning-budget 256 --reasoning-preserve --alias Qwen --port 8080 -lm none\n\nSources: for my recipe\n\nISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF\n\nhttps://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF/discussions\n\nTurboquant\n\nhttps://github.com/TheTom/llama-cpp-turboquant\n\nPi coding agent\n\nhttps://pi.dev/\n\nI would like know the communities views and any suggestions would be welcome \ud83e\udd17\n\nThankyou for your time",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwx7uq/ista_qwen38_27b_on_3060_12gb/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey guys \n\nI am a seasoned local llm user and I ain't quite ram rich like only 16gb ddr4 \ud83e\udd40\n\nSo I can't run qwen3.8 flash next on my 3060 \n\nThis guy felt the best for me yet \n\nHave you guys tried it \n\nI have ran iq3\\_xss quant non mtp with turboquant at 65k context completely on my 3060 though I did offload mmproj to cpu ram \n\nHave guys tried this it really felt like a blessing to my life using the",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.47050000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "45 hidden LLM 3",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "45 hidden LLM 3",
+        "seed_score": 37.5,
+        "summary": "Over the past few months of testing complex workflows across Gemini, ChatGPT, and Claude, I started keeping a log of every time a model took a lazy shortcut, ignored a rule buried in a prompt, or fabricated data just to finish a table.\n\n\n\nIt turned into a full list of 45 distinct cognitive biases and architectural failure modes across 9 categories. Because the full breakdown is nearly an hour long",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R64",
+            "source": "reddit",
+            "title": "I spent the last few months logging 45 hidden LLM biases and architectural blind spots that break complex prompts. Here are the 3 that trip people up the most and how to fix them",
+            "body": "I spent the last few months logging 45 hidden LLM biases and architectural blind spots that break complex prompts. Here are the 3 that trip people up the most and how to fix them\nOver the past few months of testing complex workflows across Gemini, ChatGPT, and Claude, I started keeping a log of every time a model took a lazy shortcut, ignored a rule buried in a prompt, or fabricated data just to finish a table.\n\n\n\nIt turned into a full list of 45 distinct cognitive biases and architectural failure modes across 9 categories. Because the full breakdown is nearly an hour long, I wanted to write out the 3 traps that cause the biggest day-to-day headaches right here in text so you can use the fixes straight away.\n\n\n\nThe first big one is what happens when you upload a 4,000-word document in Turn 1 and ask the model to read it, run live web searches to verify facts, and format an executive summary table in a single go. Three separate failure modes trigger at once here. Because of Stanford's Lost in the Middle U-curve, the attention heads heavily weight the top 20 percent and bottom 20 percent of your prompt while quietly dropping up to half of the middle paragraphs. At the same time, overloaded by the long input, the search router often skips firing live search queries 2 through 5 to beat the single-turn timeout clock and guesses from training memory instead. Finally, forcing a model to construct rigid Markdown or JSON table borders while simultaneously reasoning and searching acts like a 15 to 25 percent tax on reasoning accuracy. The fix is a strict Two-Turn Split. Never combine heavy extraction and live search with formatting in Turn 1. Use Turn 1 strictly to extract raw facts and run web verification. Once those facts are sitting cleanly in the chat history, paste your scoring or summary table instructions fresh in Turn 2.\n\n\n\nThe second trap is the same flawed image regeneration loop. When an AI generates an image or video clip with a mistake, like the wrong side of a car or an extra person in the background, and you reply inside the same chat asking it to fix that detail, it often spits out the exact same image again. This happens because Path of Least Resistance and Token Optimization push the backend router toward the cheapest compute path, while Context Anchoring locks onto the existing visual seed sitting in your chat history. The fix is to stop arguing with a flawed render in the same thread. Open a brand-new chat window to wipe the visual seed from the context window, describe the final corrected scene positively from scratch without mentioning the earlier mistake, and explicitly ban cached renders.\n\n\n\nThe third trap is premature summarization and the \"etc. / N/A\" escape hatch. When you ask a model to audit 15 items in a row, items 1 to 5 get deep analysis, items 6 to 10 get one-liners, and items 11 to 15 get grouped into \"etc.\" or marked \"N/A\". Output tokens cost roughly 3 to 4 times more server compute than input tokens, so RLHF length penalties and tail-item neglect kick in hard as the response grows. To stop it, explicitly ban the strings \"N/A\", \"etc.\", \"and so on\", and \"similarly\", set a minimum word or data-point floor for every single item from 1 to 15, or batch the run into chunks of 5.\n\n\n\nI put all 45 biases, including multimodal OCR row-slip, multi-agent persona collapse, BPE tokenization traps, and a 3-slide 18-point cheat-sheet, into a full 55-slide narrated walkthrough. I will drop the link in the comments below for anyone who wants the whole deck.\n\n\n\nWhich model shortcut or habit has been burning your workflows the most lately?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xwv52o/i_spent_the_last_few_months_logging_45_hidden_llm/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Over the past few months of testing complex workflows across Gemini, ChatGPT, and Claude, I started keeping a log of every time a model took a lazy shortcut, ignored a rule buried in a prompt, or fabricated data just to finish a table.\n\n\n\nIt turned into a full list of 45 distinct cognitive biases and architectural failure modes across 9 categories. Because the full breakdown is nearly an hour long",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.47750000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

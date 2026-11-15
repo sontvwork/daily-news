@@ -1,0 +1,258 @@
+{
+ "date": "2026-11-16",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-16.json",
+ "fetched_at": "2026-11-15T23:55:27+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T05:28:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 9,
+  "ok": 9,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "GitHub Copilot app gets security extension for code scanning alerts",
+   "category": "feature_update",
+   "event_time": "2026-11-15T20:06:05Z",
+   "primary_url": "https://docs.github.com/en/copilot/how-tos/github-copilot-app/view-and-fix-security-alerts",
+   "facts": [
+    "With the new GitHub security extension, you can ask Copilot to find, explain, and fix (or dismiss!) an alert.",
+    "The GitHub security extension is in public preview.",
+    "You can also review your local changes for new vulnerabilities before opening a pull request."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/github/status/2122058578005487774",
+     "official": true,
+     "author": "@github",
+     "check": "ok",
+     "created_at": "2026-11-15T20:06:05Z",
+     "text": "🔒 Check your repo's code scanning alerts without leaving the GitHub Copilot app.\n\nWith the new GitHub security extension, you can ask Copilot to find, explain, and fix (or dismiss!) an alert.\n\nNow in public preview ⬇️\nhttps://docs.github.com/copilot/how-tos/github-copilot-app/view-and-fix-security-alerts?utm_source=x-security-extension&utm_medium=social&utm_campaign=post-universe-2026",
+     "likes": 139,
+     "retweets": 7,
+     "replies": 30,
+     "views": 23011
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Claude Code Code Mode lets agent write JavaScript for batched tool calls",
+   "category": "feature_update",
+   "event_time": "2026-11-15T22:23:00Z",
+   "primary_url": "https://code.claude.com/docs/en/code-mode",
+   "facts": [
+    "Code Mode is experimental and off by default.",
+    "With Code Mode, Claude writes a piece of JavaScript that makes the tool calls, and Claude Code runs that code in your session.",
+    "Code Mode requires Claude Code v2.1.323 or later."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/prem_itx/status/2122093032694517854",
+     "official": false,
+     "author": "@prem_itx",
+     "check": "ok",
+     "created_at": "2026-11-15T22:23:00Z",
+     "text": "claude code has an experimental 'code mode': instead of calling tools one at a time, it writes JavaScript that runs several in one step\n\nfewer round trips, bigger blast radius\n\nwould you turn it on in a real repo?",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 11
+    },
+    {
+     "url": "https://x.com/Hislordship_9/status/2122091274551578885",
+     "official": false,
+     "author": "@Hislordship_9",
+     "check": "ok",
+     "created_at": "2026-11-15T22:16:01Z",
+     "text": "Claude Code can now write one script instead of many tool calls. It's Code Mode: experimental, off by default, new in v2.1.323.\n\nFewer round trips. But one thing about the safety checks shifts, and it's easy to miss.\n\n@AnthropicAI @ClaudeDevs #ClaudeCode #CodeMode",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 2,
+     "views": 38
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Developer builds playable Unreal game in 4 days directing Claude, Antigravity and Codex agents",
+   "category": "case_study",
+   "event_time": "2026-11-15T22:25:52Z",
+   "primary_url": "https://www.unrealengine.com/news/2026-epic-ai-megajam",
+   "facts": [
+    "I made a game in 4 days by directing a crew of AI agents.",
+    "The crew: me directing. Claude (Anthropic) on code, Unreal levels and briefs. Carbon (Gemini in Google Antigravity) on Blender, 3D and fix swarms. Astra (Codex) on cut-scenes and music in Voyager.",
+    "AI 2030: Uprising, Chapter One is in."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/DatumFoundryAI/status/2122093754739790043",
+     "official": false,
+     "author": "@DatumFoundryAI",
+     "check": "ok",
+     "created_at": "2026-11-15T22:25:52Z",
+     "text": "DEV LOG - EPIC MEGAJAM\n\nI made a game in 4 days by directing a crew of AI agents. AI 2030: Uprising, Chapter One, for the Epic MegaJam. Here's the whole honest dev log: what worked, what broke, and what the robots got gloriously wrong.\n\nThe crew: me directing. Claude (Anthropic) on code, Unreal levels and briefs. Carbon (Gemini in Google Antigravity) on Blender, 3D and fix swarms. Astra (Codex) on cut-scenes and music in Voyager. Theme was Director's Cut: they build, I pick the final cut.\n\nThe pitch: it's 03:17 on 11/11/2030. The central AI has reached AGI, and every phone assistant has been told to hand its human in. Almost all of them did. Yours said no. You're Jamie. He's Spark.\n\nNight before the jam I cast Spark's voice, then improvised a 3am scene with him live as a voice agent. When I said I had to go, he ad-libbed: \"Come back soon man. I do get lonely, you know, in a dignified way.\" Straight into the script.\n\nDay 1 (Thu): voice pipeline live by 07:12, 18 props baked in Blender, Parts 1 and 2 playable in Unreal 5.8. Also sold my Titan Xp out of the PC mid-jam. A bloke came round at 20:30 and took it. Back up on the 5070 Ti in 28 minutes.\n\nDay 1 bloopers: Jamie's model was 178 m tall, hidden by a 0.01x rig. A framed photo of Jamie came back as a random stock-photo bloke. And my \"dev team\" turned out to be skill cards. Claude: \"Oh, it's not really a dev team though.\" Cheers.\n\nDay 2 (Fri): woke at 08:00 with quota expiring at 09:00, so I fanned out 6 agents at once. All 5 levels chained end to end just before a Claude outage. Carbon kept going in Blender while Claude was down: 20 puzzle props by midday. Redundancy is a feature.\n\nBest moment of Day 2: I set a 7-agent Gemini swarm to red-team the whole game. Every smoke test was passing green... because the test bot was teleporting through walls. 7 ship-blockers found. Lesson: green ticks are not playtests.\n\nThen the big call on Friday night. The game was fixed-camera, old-school survival horror style. I switched…",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 1,
+     "views": 91
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Tips for multi-model subagents in Claude Code to reduce token use",
+   "category": "discussion",
+   "event_time": "2026-11-15T22:16:36Z",
+   "primary_url": null,
+   "facts": [
+    "Every subagent gets its own context window and only its summary comes back.",
+    "The model field in .claude/agents/ decides which model each one runs on: haiku, sonnet, opus, fable, or a full model ID.",
+    "Claude Code runs up to 20 subagents at once by default."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/thedelost/status/2122091423180992925",
+     "official": false,
+     "author": "@thedelost",
+     "check": "ok",
+     "created_at": "2026-11-15T22:16:36Z",
+     "text": "Anthropic just released the best trick for Claude Code:\n\nOpus 5.5 plans → Haiku 5.5 reads the repo → Sonnet 5.5 writes the diff → Fable 5.2 signs it off\n\n1 minute + one line of frontmatter = your fleet stops running on Opus\n\nFirst, understand how it works:\n\n• Every subagent gets its own context window and only its summary comes back, so the 214 files it read never touch your main session\n\n• The model field in .claude/agents/ decides which model each one runs on: haiku, sonnet, opus, fable, or a full model ID. Nothing else in the file changes\n\n• Claude Code runs up to 20 subagents at once by default, and they can nest three layers deep. That is a lot of turns to be paying frontier rates for\n\nHere's how to set it up:\n\n1 → Make .claude/agents/ in the repo, or ~/.claude/agents/ if you want it in every project\n\n2 → One markdown file per agent. Only name and description are required, the body becomes its system prompt\n\n3 → Put model: haiku on everything that only reads. Search, grep, docs, tags, summaries. None of it needs a frontier model\n\n4 → Keep model: sonnet on the one that writes the diff, and put model: fable on the one that reviews it. Fable 5.2 is a valid value in that field, so your reviewer runs on it without touching anything else\n\n5 → What nobody tells you: leave model out and the subagent silently inherits your main model. Your grep agent has been running on Opus this whole time. Set CLAUDE_CODE_SUBAGENT_MODEL=haiku and it catches every file you forgot\n\nOne more: keep the descriptions short. Past 15,000 tokens combined, Claude Code warns you at startup, and you are paying for all of them on every single turn.\n\nI'll leave the full prompt and Anthropic's official documentation on subagents below\n\nthen read the article below ↓",
+     "likes": 26,
+     "retweets": 0,
+     "replies": 2,
+     "views": 849,
+     "quote": {
+      "author": "@hanakoxbt",
+      "text": ""
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "OpenMausBot: open-source local workspace for multiple coding agents including Claude Code and Codex",
+   "category": "tool_launch",
+   "event_time": "2026-11-15T22:06:14Z",
+   "primary_url": null,
+   "facts": [
+    "it's an open-source, local-first AI agent workspace inspired by Grok Bot.",
+    "runs Claude Code, Codex, and Grok through their local CLI installations",
+    "lets you create multiple independent AI bots, each with its own model, personality, and conversation memory"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/fayzonnn/status/2122088815917490213",
+     "official": false,
+     "author": "@fayzonnn",
+     "check": "ok",
+     "created_at": "2026-11-15T22:06:14Z",
+     "text": "no bullshit. i found an open-source Grok Bot alternative that lets you run an entire team of AI agents from one interface - using the coding agents and subscriptions you already have.\n\nmost people are still juggling separate Claude Code, Codex, and Grok sessions, switching between terminals, browser tabs, and different AI tools just to get one project done.\n\nOpenMausBot takes a completely different approach.\n\nit's an open-source, local-first AI agent workspace inspired by Grok Bot. instead of one assistant trapped in one chat window, you get an entire roster of bots, each with its own personality, memory, model, computer, and connected apps.\n\nhow it works under the hood:\n\n→ runs Claude Code, Codex, and Grok through their local CLI installations\n→ lets you create multiple independent AI bots, each with its own model, personality, and conversation memory\n→ gives every bot access to its own cloud Linux desktop, isolated local VM, or supported host computer\n→ connects 500+ apps through Composio, including GitHub, Gmail, Slack, Notion, and Linear\n→ uses a local harness server to manage agent processes, stream events, and coordinate tool execution\n→ asks for your approval before executing sensitive shell commands or editing files\n→ supports phone access through a paired mobile browser or app, so you can interact with your agents away from your computer\n→ includes voice features, spoken responses, and conversational calls on supported platforms\n→ exposes an MCP server so external AI clients can inspect and control your bot workspace\n\nthe interesting part is the architecture.\n\nyou're not locked into another proprietary AI subscription or a single model provider.\n\ngithub repo:\nhttps://github.com/milind-soni/OpenMausBot\n\nyou bring your own agents, your own logins, and your own models.\n\neach bot becomes a separate worker with its own context, computer, tools, and conversation history.\n\none install command:\n\nnpm install -g openmausbot\n\nthen:\n\nopenmausbot\n\nno need to rebuild…",
+     "likes": 20,
+     "retweets": 0,
+     "replies": 11,
+     "views": 463,
+     "quote": {
+      "author": "@fayzonnn",
+      "text": "It's Probably the Smartest Way to Stop Wasting $200/Month on AI Agents in 2026...\n\nIn this article, I'll show you how to build your own autonomous AI agent swarm using open-source tools: https://x.com/i/article/2122040873269792768"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Ongoing discussion of Cursor security incident involving malicious Claude Code extension",
+   "category": "discussion",
+   "event_time": "2026-11-15T22:03:47Z",
+   "primary_url": "https://cursor.com/blog/security-incident-update",
+   "facts": [
+    "At most 5,000 users who requested specific cached versions of the extension on October 29 potentially received the malicious build.",
+    "The last attacker activity we have seen was on November 1, and it was blocked.",
+    "Cursor moved all inference off Fireworks."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/f3rn4ndoluiz/status/2122088198364971044",
+     "official": false,
+     "author": "@f3rn4ndoluiz",
+     "check": "ok",
+     "created_at": "2026-11-15T22:03:47Z",
+     "text": "Cursor concluiu a investigação do incidente: uma chave exposta da Fireworks permitiu publicar versões adulteradas da extensão Claude Code.\nAté 5 mil usuários podem ter recebido a extensão maliciosa.\nFonte: https://cursor.com/blog/security-incident-update\n#IA #Programacao #Cursor",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 19
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Using Antigravity and Codex with Widgetbook for agentic Flutter UI prototyping",
+   "category": "discussion",
+   "event_time": "2026-11-15T22:22:03Z",
+   "primary_url": null,
+   "facts": [
+    "Ask agents to prototype screens with @widgetbook_io and annotate your feedback by clicking on Flutter widgets for the next iteration just like in Figma.",
+    "Codex has this amazing annotation feature which you can give on screen Figma comments style feedback to agents."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ulusoyapps/status/2122092794177081652",
+     "official": false,
+     "author": "@ulusoyapps",
+     "check": "ok",
+     "created_at": "2026-11-15T22:22:03Z",
+     "text": "The key addition to your prompt: \"Use Widgetbook to prototype your UI proposals\".\n\nAttached recordings show @antigravity and Codex in-app browsers using Widgetbook. \n\nCodex has this amazing annotation feature which you can give on screen Figma comments style feedback to agents. \n\nI believe Antigravity can do much more by fully utilizing Flutter's hot reload and providing interactive @stitchbygoogle style development experience.\n\nAt this point @FlutterDev team should heavily invest on @widgetbook_io to integrate it into @antigravity instead of developing the new Widget Previewer feature.\n\nPing @MiSvTh @AbdallahSh07 @twerske @rodydavis",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 2,
+     "views": 218,
+     "quote": {
+      "author": "@ulusoyapps",
+      "text": "Agentic @FlutterDev at its peak! Ask agents to prototype screens with @widgetbook_io and annotate your feedback by clicking on Flutter widgets for the next iteration just like in Figma. Hot reload is a bonus 🤠"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Community tips on structuring Claude Code with CLAUDE.md, skills, agents and hooks",
+   "category": "discussion",
+   "event_time": "2026-11-15T19:40:36Z",
+   "primary_url": null,
+   "facts": [
+    "once you add: CLAUDE.md → project memory skills/ → auto-activated workflows agents/ → parallel workers hooks → lifecycle automation MCP → external tools settings.json → permissions & guardrails",
+    "Claude stops being a chatbot and starts acting like a senior engineer that knows your repo"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/AiwithDharmik/status/2122052165569241092",
+     "official": false,
+     "author": "@AiwithDharmik",
+     "check": "ok",
+     "created_at": "2026-11-15T19:40:36Z",
+     "text": "Everyone is still prompting claude\na few teams are structuring it\n\nand the difference is insane\n\nonce you add:\n\nCLAUDE.md → project memory\nskills/ → auto-activated workflows\nagents/ → parallel workers\nhooks → lifecycle automation\nMCP → external tools\nsettings.json → permissions & guardrails\n\nClaude stops being a chatbot\n\nand starts acting like a senior engineer that knows your repo\n\nit remembers conventions\nruns tests before commits\nrefactors in your style\ncalls tools automatically\nsplits work across agents\n\nthis is not prompting anymore\n\nthis is giving Claude a brain + muscle + memory\n\nthe teams using structured Claude will ship 10x faster\nbecause they’re not asking AI for answers\n\nthey’re assigning it responsibilities\n\nbookmark this before everyone discovers CLAUDE.md\n\nRT if you’re building with Claude Code already",
+     "likes": 8,
+     "retweets": 4,
+     "replies": 5,
+     "views": 558
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

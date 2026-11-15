@@ -1,0 +1,173 @@
+{
+ "date": "2026-11-16",
+ "runs": [
+  {
+   "started_at": "2026-11-15T23:58:08+00:00",
+   "seconds": 2.2,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 5,
+   "articles_ok": 4,
+   "articles_error": 1,
+   "articles_skipped": 0,
+   "hn_ok": 3,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — .cf_challenge_text_small { font-size: 11px; } body { height: 100vh; width: 100vw; overflow-x: hidden; font-family: sans-serif; font-weight: 400; font-size: 14px; line-height:…": 1
+   },
+   "summary": "4/5 bài gốc ok (0 bỏ qua), 3/3 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.2s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://docs.github.com/en/copilot/how-tos/github-copilot-app/view-and-fix-security-alerts",
+   "article": {
+    "url": "https://docs.github.com/en/copilot/how-tos/github-copilot-app/view-and-fix-security-alerts",
+    "status": "ok",
+    "title": "Viewing and fixing security alerts in the GitHub Copilot app - GitHub Docs",
+    "chars": 7284,
+    "text": "Viewing and fixing security alerts in the GitHub Copilot app\nWork through code scanning alerts alongside your code using the GitHub security extension for the GitHub Copilot app.\nWho can use this feature?\nThe GitHub Copilot app is available for all Copilot plans.\nDownload the GitHub Copilot app\nIn this article\nNote\nThe GitHub security extension is in public preview and subject to change.\nAbout the GitHub security extension\nThe GitHub security extension lets you find, understand, and fix code scanning alerts without leaving the GitHub Copilot app. You can also review your local changes for new vulnerabilities before opening a pull request.\nYou install the extension as part of the github-security plugin. The extension provides a canvas labeled Security, where you can work with existing alerts and run local security reviews alongside your session.\nPrerequisites\nTo use the GitHub security extension, you need:\nA Copilot plan and the GitHub Copilot app, signed in to your GitHub account. See Getting started with the GitHub Copilot app.\nPermission to install the github-security plugin under your enterprise's managed settings, if configured.\nIf you use Copilot Business or Copilot Enterprise, the GitHub Copilot app policy must be enabled. If access to the app or plugin is blocked, contact your administrator.\nTo view existing code scanning alerts for a repository in the Security canvas, you also need access to the alerts for the repository, with code scanning enabled. Private repositories require GitHub Code Security. See Configuring default setup for code scanning.\nThe extension supports repositories on GitHub.com and GitHub Enterprise Cloud with data residency. GitHub Enterprise Server is not supported.\nYou do not need code scanning enabled or a GitHub Code Security license to run a local security review.\nInstalling the GitHub security extension\nTo install the plugin from the terminal using Copilot CLI, enter:\nShell\ncopilot plugin install github-security@awesome-copilot\ncopilot plugin install github-security@awesome-copilot\nAlternatively, install the plugin in the GitHub Copilot app:\nIn the app sidebar, click Customize.\nIn the search bar, search for github-security.\nUnder Plugins, next to \"github-security,\" click + Install.\nAfter installation, the plugin and its extension are automatically enabled.\nViewing code scanning alerts in the Security canvas\nUse the extension to view open code scanning alerts in your repository, ordered by severity. Code scanning must be enabled for the repository, and you must have access to its alerts.\nStart a new session for the repository you want to work on.\nIf the Security canvas isn't already open, click , hover over Canvas, then click Security.\nOn the extension's Security canvas home page, click Code scanning findings.\nTo narrow the list, in the upper-right corner of the canvas, click to show the search and filter controls.\nClick an alert's title to view its description, severity, and affected code in the canvas.\nCheck the alert's linked pull requests to see whether someone is already working on a fix. To open the full alert page on GitHub, hover over the alert's row, click , then click Open in browser.\nThe extension shows code scanning alerts, not Dependabot or secret scanning alerts.\nUnderstanding and fixing alerts\nThe Explain and Fix buttons ask the Copilot agent in your session to act on the selected code scanning alerts:\nExplain asks the agent to explain the alerts so you can understand the vulnerabilities before deciding how to address them.\nFix asks the agent to change your code to address the alerts.\nTo work on a single alert, click on it to open its details or hover over it in the findings list to reveal the Explain and Fix buttons. To work on multiple alerts, select the checkboxes next to them.\nClick the Explain or Fix button.\nReview the agent's response in the session. If you requested a fix, review the diff and run the relevant tests for your project.\nContinue the conversation to adjust the…"
+   }
+  },
+  {
+   "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam",
+   "article": {
+    "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — .cf_challenge_text_small { font-size: 11px; } body { height: 100vh; width: 100vw; overflow-x: hidden; font-family: sans-serif; font-weight: 400; font-size: 14px; line-height:…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50510799",
+   "hn_url": "https://news.ycombinator.com/item?id=50510799",
+   "hn": {
+    "title": "Your Agent Will Pick the Hackable One",
+    "points": 70,
+    "comments": 39
+   },
+   "comments": [
+    {
+     "author": "raincole",
+     "replies": 4,
+     "text": "> Your agent will pick the hackable one\n> This changes how people buy hardware. Ask your agent which TV, router, or synth to get, and it will lean toward the one it can change, because that’s the one it can fix later. The buyer never has to think about openness for it to matter.\nIt's just sci-fi and has nothing to do how the current LLMs work."
+    },
+    {
+     "author": "msdrigg",
+     "replies": 6,
+     "text": "> Ask your agent which TV, router, or synth to get, and it will lean toward the one it can change, because that’s the one it can fix later.\nI have not found this to be true. I like the rest of the article and the principle behind it but the title is not backed up at all"
+    },
+    {
+     "author": "palata",
+     "replies": 1,
+     "text": "The interesting thought to me is not (at all) that \"my agent may pick the hackable one\", but rather that LLMs will make it a lot easier to reverse-engineer stuff and actually own our devices.\n> Then M-Vave did something uncommon for a hardware company. In October it published its own firmware as open source under GPLv3\nThey did it after the alternative firmwares were out of their control. What I take from that is that there is a big need to reverse engineer firmwares, because by defaults…"
+    },
+    {
+     "author": "danvoell",
+     "replies": 0,
+     "text": "\"Your Agent Will Pick the Hackable One\" - I pick the hackable one. Who wants black box hardware? Every \"smart\" commercial closed box machine seems to be trying to extract as much out of its users as legally/morally/economically possible. i.e. Right to Repair"
+    },
+    {
+     "author": "crazygringo",
+     "replies": 1,
+     "text": "> Most buyers won’t care about [replaceable firmware]. Their AI agents will, and more buying decisions are going to run through agents.\nCitation needed.\nAI agents don't have any goals of their own. They don't care about anything at all.\nSo when you ask an LLM to recommend a product, it's taking the things your prompt says are important to you, and combining them with professional reviews and user reviews it finds.\nIf you don't say that hackability is important to you, and professional reviews…"
+    }
+   ],
+   "article": {
+    "url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/",
+    "status": "ok",
+    "title": "Your Agent Will Pick the Hackable One",
+    "chars": 8160,
+    "text": "← geoffstearns.com\nYour Agent Will Pick the Hackable One\nGeoff Stearns · November 15, 2026\nThe M-VAVE FM-1 is a pocket FM synthesizer that sells for about $70, and almost nobody who owns one still runs the firmware it shipped with. Owners started writing their own in September. By October there were too many to cover in one article: a virtual analog synth, a multitrack groovebox, a dark ambient sampler, and a port of Doom. Yes, the video game. Going by what the developers post on the forums, nearly all of them were written with AI coding tools.\nVideo: Custom Firmware Tierlist by AudioPilz, ranking FM-1 firmwares.\nThen M-Vave did something uncommon for a hardware company. In October it published its own firmware as open source under GPLv3, along with a development kit and a browser emulator for testing custom builds before you flash them.\nI think this is where most consumer gadgets that run their own firmware are headed: synths, TVs, routers, printers. When software is cheap to write, the firmware a device ships with is just the first version. Devices that let owners replace it will sell better than devices that don’t. Most buyers won’t care about that. Their AI agents will, and more buying decisions are going to run through agents.\nOwners already replace the software\nWhen a device doesn’t do what its owner wants, most people put up with it. Some replace the software, and in a few categories that’s already normal.\nCheap retro handhelds from Anbernic and others ship with firmware that buyers usually replace within days, and muOS and Knulli are the standard recommendations. Pebble came back as a fully open project. Core Devices published the OS, the phone apps, and the hardware schematics, and the phone app can install from app stores anyone can run. I replaced the home screen on our Google TV, which runs Android, with a custom launcher built for our family, with no ads and no tracking. Ubiquiti owners hook their network controllers up to AI agents through community-built servers and have the agent audit firewall rules and tune the network. That isn’t new firmware, but the agent is already running the device.\nWriting firmware got cheap\nWriting firmware used to mean reverse engineering the chip, learning a vendor’s toolchain, and weeks of trial and error. The FM-1 runs on a JieLi chip with little public documentation, and owners still had working firmware within weeks.\nAI made each part of that cheaper. It can read undocumented code, write new code for an unfamiliar chip, and build the editors, installers, and emulators around it. A motivated owner can now get through all of it in a weekend. Once that’s true, any device with writable flash is a platform, whether the maker planned for it or not.\nAgents will do the installing\nMost people don’t think about improving their devices. They use what they get. So right now custom firmware reaches a small group: a few people write it, and a somewhat larger group finds it and installs it.\nI don’t expect that to last. As agents take on more everyday work, the owner stops being the one who installs things. You ask your agent to fix something that bugs you about a device. It tries a setting first. If that doesn’t work, it looks for firmware someone else wrote, forks the closest match, or writes its own. You see that the problem went away, and you may never know the device is running custom code.\nHow fast this happens depends more on the hardware than on AI. The device has to accept new firmware, and signed firmware and locked bootloaders stop that. The agent needs a way in, like USB or a browser tool such as M-Vave’s Workbench. And a bad install has to be recoverable, since an agent can’t open the case and fix a bricked board. M-Vave added a tool that puts the stock firmware back in about ten seconds.\nYour agent will pick the hackable one\nThis changes how people buy hardware. Ask your agent which TV, router, or synth to get, and it will lean toward the one it can change, because that’s the one…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50496921",
+   "hn_url": "https://news.ycombinator.com/item?id=50496921",
+   "hn": {
+    "title": "The Claude Delusion",
+    "points": 151,
+    "comments": 199
+   },
+   "comments": [
+    {
+     "author": "ianm218",
+     "replies": 8,
+     "text": "I find the authors point not very compelling.. Bill Gates was by all accounts an exceptional programmer at one point and then spent a long time evaluating software engineers. He seems like a natural person to gauge AI progress in coding?\nAround when AI was getting much better at SQL I was writing SQL everyday at work and had been for years. I don’t think it would’ve been hubris for me to judge that it was getting really good and would shortly be super human at SQL. It would’ve been correct…"
+    },
+    {
+     "author": "cronin101",
+     "replies": 0,
+     "text": "I think this is written forgetting a lot of the context of the time (I was at a relevant part of the industry to be present around some of the early “oh shit this thing works” moments).\nIt was absolutely not a given that next-token prediction would scale to the point that it could answer outside of its training domain (this is the point about “made up questions”, it was important to test it on material outside of the training set since the scale of training was yet-unheard-of at the…"
+    },
+    {
+     "author": "jmathai",
+     "replies": 8,
+     "text": "This article first makes a point that Gates isn’t expert enough in biology to assess AIs capability to answer complex questions on the topic as being a breakthrough.\nThen immediately goes on to say that his comments about AI coding are arrogant despite being an expert in that field with more experience than nearly anyone.\nUnsure how to interpret that."
+    },
+    {
+     "author": "blincoln",
+     "replies": 1,
+     "text": "People on the author's side of this debate just haven't seen the firsthand evidence yet. I can understand being skeptical until then, but they owe it to themselves to give late-2026 frontier models a try.\nThe lightbulb moment for me was when I gave Claude Code a tough reverse-engineering problem: understanding how a complex, proprietary encoding scheme worked, then building an encoder and decoder. There are some additional complicating factors that I can't disclose, because this was for work,…"
+    },
+    {
+     "author": "hliyan",
+     "replies": 1,
+     "text": "The first part of the article makes sense in that:\nIn any system of competing agents (such as human beings) where the reward for performance can enhance performance, will always result in even minor random differentials in initial performance exponentially accumulating until one or a handful of individuals dominate. In such a system, only a small portion of success can be attributed to innate skills. So it's true that success in itself, while signaling fitness to survive, does not necessarily…"
+    }
+   ],
+   "article": {
+    "url": "https://www.netmeister.org/blog/claude-delusion.html",
+    "status": "ok",
+    "title": "The Claude Delusion",
+    "chars": 9509,
+    "text": "Signs of Triviality\nOpinions, mostly my own, on the importance of being and other things.\n[homepage]\n[blog]\n[jschauma@netmeister.org]\n[@jschauma]\n[RSS]\nThe Claude Delusion\nNovember 13th, 2026\nSomething weird happens to people who are successful.\nThey start to think they're gods.\nActually accomplishing anything is obviously no strict\npre-requisite of success. And maybe it's not so much\n\"being successful\", but rather \"being rich\". How do\nyou become rich? Some people are just lucky. Lucky\nto have a physical talent, lucky to have parents able\nand willing to nurture your talent, and of course\nquite often lucky to have been at\nthe right place at the right time1.\nBeing lucky doesn't mean they didn't also\nwork hard. But even—especially!—the Paris\nHiltons of the world, the children of Hollywood\nsuperstars, the crooks starting their corrupt empires\nwith \"a\nsmall loan\" (or a share of an emerald mine) from\ntheir fathers—they all\nstrongly believe that they deserve their\nsuccess and then conclude that anybody not as\nsuccessful only has themselves to blame.\nThis is especially the case for people in tech, where\nfor years and years being good at programming has been\nequated with overall (and often: superior)\nintelligence2, and those\nillusory superiority effects then amplify rampant\nDunning-Kruger to quickly turn \"I am good at\nwriting code, and with some luck, I managed to be\nsuccessful\" into a train of thought that goes\nmore like \"I am successful. Success is not random,\nso I must deserve my success. I appear to be a\ngenius, I've mastered coding, anything else is\ntrivial. Ergo, I am good at everything.\"\nBill Gates, MD / PhD Biology\nLet's take Bill Gates as an example.\nNow, mind you,\nBill Gates certainly has accomplished a lot, and his\nskillset and professional background includes without\na doubt a lot of computer programming and various\nruthless monopolistic business tactics. In a\nrecent New York Times interview, he describes how\nhe evaluated OpenAI's level of progress\n(emphasis mine):\nAnd I was going down to see OpenAI on a regular basis\nto see the work they were doing, and I challenged\nthem, saying: Hey, if you can read a biology textbook\nand pass the advanced placement exam — getting a\nperfect grade, which is a 5 — then you will have\nproven that you are reading. That is, encoding\nknowledge in an accessible form.\nAnd so it’s six months before the public release that\nSam Altman, Greg Brockman and Ilya Sutskever come to\nmy house and demonstrate to me getting a 5 on the A.P.\nexam, even on questions that I had made up that it\ncouldn't possibly have seen — very complex biology\nproblems. It was nearly perfect. So that was shock No.1.\nNow Bill Gates surely has shown an interest in biology\nand, through his work with the Bill & Melinda\nGates Foundation, has probably read a lot of articles\nand research in this field. But the hubris to think\nhimself a subject matter expert able to make up advanced,\nnovel questions in a scientific field outside\nhis own and suitable to assess AI's true capabilities\nand then being \"shocked\" that it could\nanswer these questions makes my point.\nAlthough, what really cooks his noodle is the idea that AI\ncan do what he used to do: write code.\nAnd then late last year, when Anthropic's Claude\ncoding models got super good, I could see that they\nare as good as I am — it’s significantly my most\ndeveloped talent, because I was obsessed from age 13\nto 24 as to whether I could write code as good or\nbetter than anyone.\nThat’s another moment where I went: This is\nincredible. That the capability of doing long-running,\ncomplex tasks has now gotten to the point that they\nare superhuman at writing code and in finding flaws in\ncode.\nTake note of the emphasis I added: the very notion\nthat something else could be \"as good as I\nam\" is, first of all, hard to believe and\nsecondly necessarily means that it's\n\"superhuman\". That man is not lacking\nself-esteem, no sirree, Bob.\nLikewise, this is also where many of the tech bros\nappear to be losing…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50507303",
+   "hn_url": "https://news.ycombinator.com/item?id=50507303",
+   "hn": {
+    "title": "All AI-generated code should be Open Source",
+    "points": 1050,
+    "comments": 573
+   },
+   "comments": [
+    {
+     "author": "jrmg",
+     "replies": 11,
+     "text": "In the United States the Copyright Office actually has guidance on this that I feel most people aren’t aware of.\nhttps://www.copyright.gov/ai/Copyright-and-Artificial-Intell...\nAn excerpt, with emphasis mine:\n• Questions of copyrightability and AI can be resolved pursuant to existing law,\nwithout the need for legislative change.\n• The use of AI tools to assist rather than stand in for human creativity does not affect\nthe availability of copyright protection for the output.\n• Copyright protects…"
+    },
+    {
+     "author": "waximabbax",
+     "replies": 8,
+     "text": "By this logic, shouldn't any code using an open-source framework or language also be open source? Even before AI, devs learned from Stack Overflow and plenty of open source code.\nYou're confusing writing code with software engineering. Devs never just wrote code, they took ownership of the outcome. Business owners put their money on the line for product decisions.\nTo say that just because devs or founders use AI to write code, the code is no longer their intellectual property is ridiculous.…"
+    },
+    {
+     "author": "decoding",
+     "replies": 6,
+     "text": "My two cents. I'm on both sides of this (as I'm sure many here are): AI was trained on my open-source code. Also I use AI to build proprietary code.\nMy stance is that AI is a tool, like a compiler is a tool. AI generated code should not be considered public domain or forced to be open source or ineligible for copyright.\nEven if AI writes every line, the direction and engineering that I put in has been substantial (current project in mind), months of heavy AI use for heavy refinement and…"
+    },
+    {
+     "author": "blagie",
+     "replies": 24,
+     "text": "I am the author of multiple AGPL systems, many in mainstream use. Early LLM models would spit out my code almost verbatim. Modern systems borrow heavily on the creative design of those systems.\nOne company first pirated my AGPL code (e.g. shipped it without my name, copyright notices, source availability, etc.). I sent them violation notices. After many months of fighting, they had an LLM clone the system. The LLM clone feels:\na) Buggy and bad compared to my code\nb) Still, like it's basically…"
+    },
+    {
+     "author": "viraptor",
+     "replies": 4,
+     "text": "Doe v. GitHub already decided (I'm simplifying, read the actual thing yourself) that LLM output is not automatically open source - or specifically it doesn't infringe on the open source training material and doesn't inherit the oss copyright notice.\nThaler v. Perlmutter (again simplified) showed 100% AI output can't be given any copyright.\nThe directions the current cases are going are very much opposed to that idea and I wouldn't expect things to change in the opposite direction."
+    }
+   ],
+   "article": {
+    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+    "status": "ok",
+    "title": "All AI-generated code should be Open Source",
+    "chars": 1989,
+    "text": "All AI-generated code should be Open Source\nJakub T. Jankiewicz\nThis may be a hot take, but I strongly believe that all code generated by AI should be Open Source. And here's why.\nFirst of all, AI models were trained on a massive corpus of Open Source code written since RMS announced the GNU Project and the Free Software Movement. That code was simply scraped from the internet and used without permission or proper attribution. The models were also trained on Stack Overflow and Stack Exchange sister projects, which are released under Creative Commons licenses that legally require attribution. Turning this collective knowledge into proprietary, closed-source code feels like license laundering.\nThe second reason is legal: purely AI-generated code is not written by a human, meaning it should not be copyrightable. The foundation for this principle in the US goes back to the famous Monkey Selfie dispute, which established that non-humans cannot hold copyrights. A precedent later cited by the U.S. Copyright Office regarding AI. Following the same logic, Wikimedia Commons requires all purely AI-generated images to be tagged as Public Domain.\nHowever, copyright laws differ across the globe. For instance, countries like the UK grant limited copyright protection to computer-generated works. To make things fair across all jurisdictions, and to honor the open ecosystem that made AI possible, developers and companies should explicitly release AI-generated code under Open Source licenses or dedicate it to the public domain using the Creative Commons Zero (CC0) license.\nOf course, code is not always 100% manual or 100% automated. However, developers more and more rely on AI without even reviewing the generated output, let alone modifying it to fit their specific needs. Code like this, where humans put little effort, except writing prompts, should definitely be Open Source.\nIf you find this article interesting you may want to follow me on Twitter: @jcubic and on LinkedIn."
+   }
+  }
+ ]
+}

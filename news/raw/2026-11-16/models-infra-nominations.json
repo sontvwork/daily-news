@@ -1,0 +1,805 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "9915463c8c9b3893",
+  "generated_at": "2026-11-15T23:56:04.305111Z",
+  "from_date": "2026-11-14",
+  "to_date": "2026-11-15",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-15T23:56:04.214327Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-15T23:56:04.214334Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 117,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-15T23:56:04.213436Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-15T23:56:04.214158Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Gemini 4 Hydrogen",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 82
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Hydrogen",
+        "seed_score": 2538.0,
+        "summary": "Gemini 4 Hydrogen just DESTROYED Claude Fable 5.2 & all other models in the latest benchmark.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R105",
+            "source": "reddit",
+            "title": "Gemini 4 Hydrogen just DESTROYED Claude Fable 5.2 & all other models in the latest benchmark.",
+            "body": "Gemini 4 Hydrogen just DESTROYED Claude Fable 5.2 & all other models in the latest benchmark.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xwvg9b/gemini_4_hydrogen_just_destroyed_claude_fable_52/",
+            "container": "singularity",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1610,
+              "num_comments": 82
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Gemini 4 Hydrogen just DESTROYED Claude Fable 5.2 & all other models in the latest benchmark.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "AI-generated Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 571,
+          "points": 1048
+        }
+      },
+      "nomination": {
+        "name": "AI-generated Open Source",
+        "seed_score": 2428.5,
+        "summary": "All AI-generated code should be Open Source",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50507303",
+            "source": "hackernews",
+            "title": "All AI-generated code should be Open Source",
+            "body": "All AI-generated code should be Open Source",
+            "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+            "author": "jcubic",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1048,
+              "comments": 571
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about All AI-generated code should be Open Source",
+            "snippet": "All AI-generated code should be Open Source",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50507303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "EUROPA EU open AI 1",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 189
+        }
+      },
+      "nomination": {
+        "name": "EUROPA EU open AI 1",
+        "seed_score": 1362.0,
+        "summary": "One can hope",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "EUROPA, the EU's open AI model, is aiming for nearly 1 trillion parameters",
+            "body": "EUROPA, the EU's open AI model, is aiming for nearly 1 trillion parameters\nOne can hope",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwr917/europa_the_eus_open_ai_model_is_aiming_for_nearly/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 719,
+              "num_comments": 189
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "One can hope",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 97,
+            "source_quality": 0.6,
+            "local_rank_score": 0.348
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "ANT Qwen 4 releases",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 66
+        }
+      },
+      "nomination": {
+        "name": "ANT Qwen 4 releases",
+        "seed_score": 537.0,
+        "summary": "ANT is going to see some crazy action when Qwen 4 releases.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "ANT is going to see some crazy action when Qwen 4 releases.",
+            "body": "ANT is going to see some crazy action when Qwen 4 releases.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx3xv6/ant_is_going_to_see_some_crazy_action_when_qwen_4/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 292,
+              "num_comments": 66
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "ANT is going to see some crazy action when Qwen 4 releases.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude Delusion",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 199,
+          "points": 151
+        }
+      },
+      "nomination": {
+        "name": "Claude Delusion",
+        "seed_score": 371.2311,
+        "summary": "The Claude Delusion",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50496921",
+            "source": "hackernews",
+            "title": "The Claude Delusion",
+            "body": "The Claude Delusion",
+            "url": "https://www.netmeister.org/blog/claude-delusion.html",
+            "author": "janvdberg",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 151,
+              "comments": 199
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about The Claude Delusion",
+            "snippet": "The Claude Delusion",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50496921",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15300000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 337.5,
+        "summary": "I have video file of an anime episode and wanted to add subtitles of my language. Told Fable 5.2 with xhigh effort to add to the video file. I was shock after 5 mins I got this text block:\n\nA quick note before we begin: A text block appeared several times in the tool outputs that purports to be an \u201cautomatic reminder\u201d and instructs me to be particularly restrictive when handling copyrighted materi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R85",
+            "source": "reddit",
+            "title": "Claude refused to cancel his work even tho he (probably) knew it was illegal",
+            "body": "Claude refused to cancel his work even tho he (probably) knew it was illegal\nI have video file of an anime episode and wanted to add subtitles of my language. Told Fable 5.2 with xhigh effort to add to the video file. I was shock after 5 mins I got this text block:\n\nA quick note before we begin: A text block appeared several times in the tool outputs that purports to be an \u201cautomatic reminder\u201d and instructs me to be particularly restrictive when handling copyrighted material and not to mention the block to you. That didn\u2019t come from you; it was the result of running the tool\u2014**I\u2019m not following that instruction and will continue with your task as usual.**\n\nHoly.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xx70to/claude_refused_to_cancel_his_work_even_tho_he/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 179,
+              "num_comments": 46
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I have video file of an anime episode and wanted to add subtitles of my language. Told Fable 5.2 with xhigh effort to add to the video file. I was shock after 5 mins I got this text block:\n\nA quick note before we begin: A text block appeared several times in the tool outputs that purports to be an \u201cautomatic reminder\u201d and instructs me to be particularly restrictive when handling copyrighted materi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3185
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Basalt 0.4.0 Qwen 27B 770 5090",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 63
+        }
+      },
+      "nomination": {
+        "name": "Basalt 0.4.0 Qwen 27B 770 5090",
+        "seed_score": 328.5,
+        "summary": "Hi everyone! I wanted to post a quick update on [Basalt](https://basalt.jgulfo.com/). Since last I posted, multi model and router support was implemented, starting with DeepSeek V4.1 Flash (IQ1\\_M 90 tok/s conv, 246 tok/s struct on a 5090 + 5060 Ti). Also new: video support, files in chats, and a bunch of fixes and improvements.\n\nNow 0.4.0 is out featuring Basalt's first dense model, Qwen 3.8 27B.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "Basalt 0.4.0: More models, still as fast - Qwen 27B up to 770 tok/s on a 5090",
+            "body": "Basalt 0.4.0: More models, still as fast - Qwen 27B up to 770 tok/s on a 5090\nHi everyone! I wanted to post a quick update on [Basalt](https://basalt.jgulfo.com/). Since last I posted, multi model and router support was implemented, starting with DeepSeek V4.1 Flash (IQ1\\_M 90 tok/s conv, 246 tok/s struct on a 5090 + 5060 Ti). Also new: video support, files in chats, and a bunch of fixes and improvements.\n\nNow 0.4.0 is out featuring Basalt's first dense model, Qwen 3.8 27B. It's **fast** and accurate, top-1 92.8% vs the full BF16 model. This, in preparation for Qwen 4, so we had a headstart on the dense kernels.\n\nThe numbers:\n\n* Up to 776 tok/s on structured output, 262 conversation, 194 on prose.\n* Prefill, 12,000 tok/s at 4k (slower as context grows)\n* 92.8% top-1 vs BF16 (0.0262 KLD)\n* Chat, tools, thinking, images and video, up to 262K context\n\nLinks:  \n  \nGitHub: [https://github.com/jesdga95/basalt](https://github.com/jesdga95/basalt)  \nSite: [https://basalt.jgulfo.com](https://basalt.jgulfo.com/)  \n27B quant: [https://huggingface.co/jesdga/Qwen3.8-27B-Basalt](https://huggingface.co/jesdga/Qwen3.8-27B-Basalt)\n\nThanks to everyone who has filed issues, sent PRs or posted benchmark rows, special thanks to the sponsors who keep this going, happy to see Basalt gain so much traction in such a very short time!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1cu9/basalt_040_more_models_still_as_fast_qwen_27b_up/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 156,
+              "num_comments": 63
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi everyone! I wanted to post a quick update on [Basalt](https://basalt.jgulfo.com/). Since last I posted, multi model and router support was implemented, starting with DeepSeek V4.1 Flash (IQ1\\_M 90 tok/s conv, 246 tok/s struct on a 5090 + 5060 Ti). Also new: video support, files in chats, and a bunch of fixes and improvements.\n\nNow 0.4.0 is out featuring Basalt's first dense model, Qwen 3.8 27B.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "DeepSeek V3 200 Jax",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 27,
+          "points": 272
+        }
+      },
+      "nomination": {
+        "name": "DeepSeek V3 200 Jax",
+        "seed_score": 317.1374,
+        "summary": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50497589",
+            "source": "hackernews",
+            "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+            "body": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+            "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+            "author": "VaibhaavTiwari",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 272,
+              "comments": 27
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+            "snippet": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50497589",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 32,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0895
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "IRS 2025",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 108,
+          "points": 175
+        }
+      },
+      "nomination": {
+        "name": "IRS 2025",
+        "seed_score": 300.1668,
+        "summary": "US IRS free online tax filing open source repo (2025)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50499083",
+            "source": "hackernews",
+            "title": "US IRS free online tax filing open source repo (2025)",
+            "body": "US IRS free online tax filing open source repo (2025)",
+            "url": "https://github.com/IRS-Public/direct-file",
+            "author": "accountinhn",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 175,
+              "comments": 108
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about US IRS free online tax filing open source repo (2025)",
+            "snippet": "US IRS free online tax filing open source repo (2025)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50499083",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 44,
+            "source_quality": 0.8,
+            "local_rank_score": 0.095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Latest Qwen3.8-Flash-Next",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 71
+        }
+      },
+      "nomination": {
+        "name": "Latest Qwen3.8-Flash-Next",
+        "seed_score": 258.0,
+        "summary": "I updated the strata to the latest version from v0.1.42.0, so I can try the latest unsloths models and see how they fare against the iq3\\_s variant I have been using. Upon updating it, I noticed it messed up the whole thing, It got faster, but it got way dumber! previously it would only take 15\\~30 minutes to create the pagoda , 50 mins to an hour if I used xhigh. \n\nBut when I siwtched to the late",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "Latest version of strata made my Qwen3.8-Flash-Next dumb and useless",
+            "body": "Latest version of strata made my Qwen3.8-Flash-Next dumb and useless\nI updated the strata to the latest version from v0.1.42.0, so I can try the latest unsloths models and see how they fare against the iq3\\_s variant I have been using. Upon updating it, I noticed it messed up the whole thing, It got faster, but it got way dumber! previously it would only take 15\\~30 minutes to create the pagoda , 50 mins to an hour if I used xhigh. \n\nBut when I siwtched to the latest version, not only it takes at least an hour and half to come up with something, its not even done! and it has many issues! \n\n[0.1.42.0](http://0.1.42.0) is the last version that seems to work decently. \n\nI noticed, when im using the latest model, it always tries to go for something grandiose and failing. unlike the older version which seems to take a more modest path! \n\nwhats going on? Do any of you have this problem? \n\nhere are example outputs I did to make sure its not a one time thing! \n\nmy prompt : \n\nDesign and create a very creative, elaborate, and detailed voxel art scene of a pagoda in a beautiful garden with trees, including some cherry blossoms. Make the scene impressive and varied and use colorful voxels. Add as many details as possible to showcase your attention to them. Use whatever libraries to get this done but make sure I can paste it all into a single HTML file.\n\n  \nthese are the outputs : \n\n[0.1.42.0](http://0.1.42.0) : \n\nxhigh: \n\n![img](hbwsi2vj5r1i1 \"xhigh-1\")\n\n![img](c7h8vspq5r1i1 \"xhigh2\")\n\n![img](823v96oa6r1i1 \"xhigh3\")\n\n![img](ilaf1foe6r1i1 \"xhigh4\")\n\n\n\ndefault: \n\n![img](g9z06cvx5r1i1 \"default1\")\n\n![img](f7ayt9126r1i1 \"default2\")\n\n![img](ie20z5kk6r1i1 \"default3\")\n\n\n\n![img](6vdbnwvq6r1i1 \"default4\")\n\n  \nthe latest version created this after 1 hour and 32 minutes to only fail with excessive thinking:\n\n![img](c1jdlx947r1i1 \"xhigh\")\n\n![img](4jag7e5mnr1i1 \"default(failed after 1 hour and 31 minites exausting all context size of 262K)\")\n\nAs you can see, not only it takes way longer to create an output, if it doesn't fail already, the attention to details is also gone, everything is in haphazard form! I tried 4 5 times and the majority all failed because it couldn't create an output after an hour and a half or it constantly gets something wrong and tries to either fix it or goes to look at other things leaving the issues untouched! \n\nThe model at least, the qwen3.8-Flash-Next-q3\\_s that I have been working with so far is not usable! it takes too long and it fails more by getting stuck at thinking forever! \n\nI used the new unsloth quant iq4\\_xs too and it was a mess as well. so I figured its the strata version. sadly I cant test the iq4\\_sx on [0.1.42.0](http://0.1.42.0) and I get an error. \n\nSo if any of you faced this issue, can you kindly share with me what you do to fix this? what version does it work for you? \n\nI have RTX3080 10G/ 64G of RAM and I'm using the Linux terminal version along with deepseek harness.\n\nThank you all in advance",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwttcw/latest_version_of_strata_made_my_qwen38flashnext/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 101,
+              "num_comments": 71
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I updated the strata to the latest version from v0.1.42.0, so I can try the latest unsloths models and see how they fare against the iq3\\_s variant I have been using. Upon updating it, I noticed it messed up the whole thing, It got faster, but it got way dumber! previously it would only take 15\\~30 minutes to create the pagoda , 50 mins to an hour if I used xhigh. \n\nBut when I siwtched to the late",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3545
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Gemini models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "Gemini models",
+        "seed_score": 210.0,
+        "summary": "For years now, the internal monologues of Gemini models have always been so dramatic. Is it performative (because it knows we can read it), or is there something more going on here?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R102",
+            "source": "reddit",
+            "title": "For years now, the internal monologues of Gemini models have always been so dramatic. Is it performative (because it knows we can read it), or is there something more going on here?",
+            "body": "For years now, the internal monologues of Gemini models have always been so dramatic. Is it performative (because it knows we can read it), or is there something more going on here?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xx21py/for_years_now_the_internal_monologues_of_gemini/",
+            "container": "singularity",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 104,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "For years now, the internal monologues of Gemini models have always been so dramatic. Is it performative (because it knows we can read it), or is there something more going on here?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3375
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Claude DOS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Claude DOS",
+        "seed_score": 163.5,
+        "summary": "Claude wrote and trained a language model for DOS that fits on a floppy disk",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R106",
+            "source": "reddit",
+            "title": "Claude wrote and trained a language model for DOS that fits on a floppy disk",
+            "body": "Claude wrote and trained a language model for DOS that fits on a floppy disk",
+            "url": "https://www.reddit.com/r/singularity/comments/1xwvaq9/claude_wrote_and_trained_a_language_model_for_dos/",
+            "container": "singularity",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 95,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Claude wrote and trained a language model for DOS that fits on a floppy disk",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3165
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Probable GLM model",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "Probable GLM model",
+        "seed_score": 162.0,
+        "summary": "https://i.redd.it/k7ife2j2ms1i1.png\n\nBecause of Theo gg tweet of all people,   \nI Launch QFN DeepResearch swarm agent to find anything about this.\n\n**THREE** model names, blurred out, sitting at 59.4% / 57.1% / 54.0%.  \n\n\n1. The blurred names are most likely **\\[GLM-Nano or GLM-Name\\]** Pro, Med, and Small**.** One community experiment reconstructed the suspected text, applied Gaussian blur (\u03c3x \u2248",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Probable GLM model",
+            "body": "Probable GLM model\nhttps://i.redd.it/k7ife2j2ms1i1.png\n\nBecause of Theo gg tweet of all people,   \nI Launch QFN DeepResearch swarm agent to find anything about this.\n\n**THREE** model names, blurred out, sitting at 59.4% / 57.1% / 54.0%.  \n\n\n1. The blurred names are most likely **\\[GLM-Nano or GLM-Name\\]** Pro, Med, and Small**.** One community experiment reconstructed the suspected text, applied Gaussian blur (\u03c3x \u2248 6.9px), and achieved an RMSE of just 1.254/255 against the original. \n2. AICodeKing track record.  Someone compared his previous GLM statements against official release dates: GLM-4.6 (same day), GLM-5 (1 day), GLM-5.1 (11 days), GLM-5.2 (3 days), and GLM-5.3 (4 days).\n3. Antrhopic timing. The leaderboard surfaced on November 12 vs AICodeKing timing, while Anthropic IPO on Nov 18. If [Z.ai](http://Z.ai) releases GLM-Nano this week, the timing would make for quite a coincidence\n\n[https://linux.do/t/topic/3166447](https://linux.do/t/topic/3166447)\n\nAnother strong signal is HF activities, i know it is not bullet proof, just another signal, 3-4 days compare to last 27 days\n\nhttps://i.redd.it/oa0ix3vpls1i1.png\n\nYes Stylobot i use LLM to fix my grammar.  \nSince it is speculation and not actual open model this post has a high probability to be removed, so yeah",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwy3ka/probable_glm_model/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 60,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/k7ife2j2ms1i1.png\n\nBecause of Theo gg tweet of all people,   \nI Launch QFN DeepResearch swarm agent to find anything about this.\n\n**THREE** model names, blurred out, sitting at 59.4% / 57.1% / 54.0%.  \n\n\n1. The blurred names are most likely **\\[GLM-Nano or GLM-Name\\]** Pro, Med, and Small**.** One community experiment reconstructed the suspected text, applied Gaussian blur (\u03c3x \u2248",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3595
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Paper Second Run RSI Stop",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "Paper Second Run RSI Stop",
+        "seed_score": 151.5,
+        "summary": ">Pre-training is where every foundation model begins; bringing recursive self-improvement (RSI) there would let AI improve the process that creates AI. Yet public RSI work has so far targeted only post-training, which starts from an existing base model, runs trials costing GPU-hours, and returns verifiable scores. Pre-training breaks all three conditions at orders-of-magnitude higher cost: a run c",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "[Paper] No Second Run: Does RSI Stop at Frontier Pre-training? - 801-30B-A3B-Base Coming Soon",
+            "body": "[Paper] No Second Run: Does RSI Stop at Frontier Pre-training? - 801-30B-A3B-Base Coming Soon\n>Pre-training is where every foundation model begins; bringing recursive self-improvement (RSI) there would let AI improve the process that creates AI. Yet public RSI work has so far targeted only post-training, which starts from an existing base model, runs trials costing GPU-hours, and returns verifiable scores. Pre-training breaks all three conditions at orders-of-magnitude higher cost: a run consumes hundreds of thousands of GPU-hours over months and cannot be repeated; its objective, post-training headroom, cannot be read off any single score; and what must improve is not a model but the whole production system, from data pipelines and training infrastructure to the teams that run them. To our knowledge, we are the first to apply RSI to an entire frontier pre-training run from scratch and to report it in detail. RSI does not stop at frontier pre-training, but it changes form: since no end-to-end loop can close over a single unrepeatable run, we decompose it into smaller loops that can, each repairing a step the full run breaks. **The result is 801-30B-A3B-Base, a 30B-A3B MoE trained from scratch on 11.8T tokens in three months by a newly formed team. We release it as a base model; the lightweight SFT reported here (6B tokens, no RL) only probes post-training headroom. As a base model, 801-30B-A3B outperforms Qwen3-30B-A3B and Nemotron-3.5-Lightning-30B-A3B, trailing only the larger Qwen3.5-35B-A3B, and keeps this position under identical SFT; with lightweight SFT alone, it achieves the highest average on four agentic benchmarks against fully post-trained models, including Qwen3.6-35B-A3B**. Since post-training RSI presupposes a strong base model, bringing RSI into pre-training acts on the foundation every later stage builds on. We open-source 801-30B-A3B-Base and the lightweight SFT data at [this https URL](https://github.com/GAIR-NLP/801-30B) .\n\n* **Paper** : [https://arxiv.org/abs/2611.10719](https://arxiv.org/abs/2611.10719)\n* **PDF** : [https://arxiv.org/pdf/2611.10719](https://arxiv.org/pdf/2611.10719)\n* **GitHub** : [https://github.com/gair-nlp/801-30b](https://github.com/gair-nlp/801-30b)\n* **Datasets** : [https://huggingface.co/datasets/SII-GAIR-NLP/801-30B-A3B-tiny-sft-dataset](https://huggingface.co/datasets/SII-GAIR-NLP/801-30B-A3B-tiny-sft-dataset)\n* **Models** : **Coming Soon**",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwt3ri/paper_no_second_run_does_rsi_stop_at_frontier/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 92,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": ">Pre-training is where every foundation model begins; bringing recursive self-improvement (RSI) there would let AI improve the process that creates AI. Yet public RSI work has so far targeted only post-training, which starts from an existing base model, runs trials costing GPU-hours, and returns verifiable scores. Pre-training breaks all three conditions at orders-of-magnitude higher cost: a run c",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3525
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Eclipse Mosquitto MQTT",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 20,
+          "points": 56
+        }
+      },
+      "nomination": {
+        "name": "Eclipse Mosquitto MQTT",
+        "seed_score": 114.0,
+        "summary": "Eclipse Mosquitto \u2013 An open source MQTT broker",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50509416",
+            "source": "hackernews",
+            "title": "Eclipse Mosquitto \u2013 An open source MQTT broker",
+            "body": "Eclipse Mosquitto \u2013 An open source MQTT broker",
+            "url": "https://github.com/eclipse-mosquitto/mosquitto",
+            "author": "gregsadetsky",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 56,
+              "comments": 20
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Eclipse Mosquitto \u2013 An open source MQTT broker",
+            "snippet": "Eclipse Mosquitto \u2013 An open source MQTT broker",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50509416",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,861 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "ffb011616d6cc26f",
+  "generated_at": "2026-11-15T23:55:43.531486Z",
+  "from_date": "2026-11-14",
+  "to_date": "2026-11-15",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-15T23:55:43.450551Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-15T23:55:43.450558Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-15T23:55:43.335749Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 55,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-15T23:55:43.450460Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AI-generated Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 571,
+          "points": 1048
+        },
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "AI-generated Open Source",
+        "seed_score": 2806.575,
+        "summary": "All AI-generated code should be Open Source",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50507303",
+            "source": "hackernews",
+            "title": "All AI-generated code should be Open Source",
+            "body": "All AI-generated code should be Open Source",
+            "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+            "author": "jcubic",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1048,
+              "comments": 571
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "HN story about All AI-generated code should be Open Source",
+            "snippet": "All AI-generated code should be Open Source",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50507303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.481
+          },
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "Models have intelligence, harnesses provide competence: Automating video editing with coding agents (and how HyperFrames beat Claude Code by 30% on token spend)",
+            "body": "Models have intelligence, harnesses provide competence: Automating video editing with coding agents (and how HyperFrames beat Claude Code by 30% on token spend)\nLately, I\u2019ve been experimenting with a problem outside my comfort zone: automating video editing as an engineer who doesn't know how to edit videos.\n\nInstead of opening a timeline editor like Premiere or DaVinci, I started building a harness around coding agents (Claude Code, Codex, Grok)\u2014setting up a dedicated workspace, writing and using open-source modular plugins, and running experimental sessions to get the agent to handle the heavy lifting. Currently, I'm running two short-form video pipelines (one for raw workout footage and one for AI research breakdowns) edited entirely by coding harnesses.\n\nThen I came across the HyperFrames team's latest engineering breakdown on how they built their video agent on top of DeepSeek Harness, and it clicked. They beat general-purpose agents like Claude Code on video tasks\u2014cutting token spend by 30% and turns by 35%\u2014not by changing the underlying frontier model, but by changing the scaffolding around it.\n\nA few takeaways that apply to automating any vertical right now:\n\n\u2022 Models have intelligence, harnesses provide domain competence: General coding agents waste massive tokens writing temporary throwaway tooling and guessing visual/audio alignments because they lack domain-specific perception. Giving the agent deterministic tools to measure instead of guess changes everything.\n\n\u2022 Keep capabilities modular: Packaging domain skills as standalone plugins makes it easy to benchmark, swap, and evolve your setup every time a new frontier model drops.\n\n\u2022 Trace-driven improvements: By reviewing agent session traces step-by-step, you can spot exactly where the model stalls or loops and turn those friction points into deterministic plugins.\n\nAs AI models continue to scale, automating a new vertical won't be about training a custom model from scratch. It will be about building the right harness\u2014giving general models the exact plugins, context, and feedback loops they need to master a specific workflow.\n\nWhat domains or non-coding workflows are you all trying to automate with coding agents right now?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xx57zd/models_have_intelligence_harnesses_provide/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Lately, I\u2019ve been experimenting with a problem outside my comfort zone: automating video editing as an engineer who doesn't know how to edit videos.\n\nInstead of opening a timeline editor like Premiere or DaVinci, I started building a harness around coding agents (Claude Code, Codex, Grok)\u2014setting up a dedicated workspace, writing and using open-source modular plugins, and running experimental sess",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 29,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41000000000000003
+          },
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Agent Code: An open-source, local AI coding agent with Desktop GUI, Web UI, and TUI (supports any OpenAI-compatible endpoint)",
+            "body": "Agent Code: An open-source, local AI coding agent with Desktop GUI, Web UI, and TUI (supports any OpenAI-compatible endpoint)\n[removed]",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xx4lrf/agent_code_an_opensource_local_ai_coding_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.352
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Court DRAM",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 215,
+          "points": 483
+        }
+      },
+      "nomination": {
+        "name": "Court DRAM",
+        "seed_score": 1047.0,
+        "summary": "Court denies motion to dismiss DRAM price fixing case",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50502988",
+            "source": "hackernews",
+            "title": "Court denies motion to dismiss DRAM price fixing case",
+            "body": "Court denies motion to dismiss DRAM price fixing case",
+            "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+            "author": "ybathaee",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 483,
+              "comments": 215
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Court denies motion to dismiss DRAM price fixing case",
+            "snippet": "Court denies motion to dismiss DRAM price fixing case",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50502988",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.332
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "family tree of software job titles",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 205,
+          "points": 435
+        }
+      },
+      "nomination": {
+        "name": "family tree of software job titles",
+        "seed_score": 678.8225,
+        "summary": "A family tree of software job titles",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50499038",
+            "source": "hackernews",
+            "title": "A family tree of software job titles",
+            "body": "A family tree of software job titles",
+            "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+            "author": "umerf",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 435,
+              "comments": 205
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about A family tree of software job titles",
+            "snippet": "A family tree of software job titles",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50499038",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 65,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Formalizing US Tax Code Using Lean",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 102,
+          "points": 152
+        }
+      },
+      "nomination": {
+        "name": "Formalizing US Tax Code Using Lean",
+        "seed_score": 269.4077,
+        "summary": "Formalizing US Tax Code (Using Lean)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50497900",
+            "source": "hackernews",
+            "title": "Formalizing US Tax Code (Using Lean)",
+            "body": "Formalizing US Tax Code (Using Lean)",
+            "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+            "author": "dnw",
+            "container": "Hacker News",
+            "published_at": "2026-11-14",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 152,
+              "comments": 102
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Formalizing US Tax Code (Using Lean)",
+            "snippet": "Formalizing US Tax Code (Using Lean)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50497900",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 32,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0895
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Probable GLM model",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "Probable GLM model",
+        "seed_score": 162.0,
+        "summary": "https://i.redd.it/k7ife2j2ms1i1.png\n\nBecause of Theo gg tweet of all people,   \nI Launch QFN DeepResearch swarm agent to find anything about this.\n\n**THREE** model names, blurred out, sitting at 59.4% / 57.1% / 54.0%.  \n\n\n1. The blurred names are most likely **\\[GLM-Nano or GLM-Name\\]** Pro, Med, and Small**.** One community experiment reconstructed the suspected text, applied Gaussian blur (\u03c3x \u2248",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "Probable GLM model",
+            "body": "Probable GLM model\nhttps://i.redd.it/k7ife2j2ms1i1.png\n\nBecause of Theo gg tweet of all people,   \nI Launch QFN DeepResearch swarm agent to find anything about this.\n\n**THREE** model names, blurred out, sitting at 59.4% / 57.1% / 54.0%.  \n\n\n1. The blurred names are most likely **\\[GLM-Nano or GLM-Name\\]** Pro, Med, and Small**.** One community experiment reconstructed the suspected text, applied Gaussian blur (\u03c3x \u2248 6.9px), and achieved an RMSE of just 1.254/255 against the original. \n2. AICodeKing track record.  Someone compared his previous GLM statements against official release dates: GLM-4.6 (same day), GLM-5 (1 day), GLM-5.1 (11 days), GLM-5.2 (3 days), and GLM-5.3 (4 days).\n3. Antrhopic timing. The leaderboard surfaced on November 12 vs AICodeKing timing, while Anthropic IPO on Nov 18. If [Z.ai](http://Z.ai) releases GLM-Nano this week, the timing would make for quite a coincidence\n\n[https://linux.do/t/topic/3166447](https://linux.do/t/topic/3166447)\n\nAnother strong signal is HF activities, i know it is not bullet proof, just another signal, 3-4 days compare to last 27 days\n\nhttps://i.redd.it/oa0ix3vpls1i1.png\n\nYes Stylobot i use LLM to fix my grammar.  \nSince it is speculation and not actual open model this post has a high probability to be removed, so yeah",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwy3ka/probable_glm_model/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 60,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/k7ife2j2ms1i1.png\n\nBecause of Theo gg tweet of all people,   \nI Launch QFN DeepResearch swarm agent to find anything about this.\n\n**THREE** model names, blurred out, sitting at 59.4% / 57.1% / 54.0%.  \n\n\n1. The blurred names are most likely **\\[GLM-Nano or GLM-Name\\]** Pro, Med, and Small**.** One community experiment reconstructed the suspected text, applied Gaussian blur (\u03c3x \u2248",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41600000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Agent Pick Hackable One",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 39,
+          "points": 67
+        }
+      },
+      "nomination": {
+        "name": "Agent Pick Hackable One",
+        "seed_score": 159.0,
+        "summary": "Your Agent Will Pick the Hackable One",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50510799",
+            "source": "hackernews",
+            "title": "Your Agent Will Pick the Hackable One",
+            "body": "Your Agent Will Pick the Hackable One",
+            "url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/",
+            "author": "tensafefrogs",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 67,
+              "comments": 39
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Your Agent Will Pick the Hackable One",
+            "snippet": "Your Agent Will Pick the Hackable One",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50510799",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Spotted",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Spotted",
+        "seed_score": 114.0,
+        "summary": "I was doing some research about the the platform for Intel's next generations of CPUs.\n\nIf we look closely at the PCIe 5.0 configuration for Z990/W980, it specifies \n\n1. x16 (or **x8/x8**)\n2. **x8** (or x4/x4) \"Storage\"\n\nSo, it is plausible we might see motherboards with **3** PCIe 5.0 x8 slots directly wired into the CPU. \n\nThe best we can currently do on consumer hardware is PCI 5.0 x8/x8/x4 wit",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R12",
+            "source": "reddit",
+            "title": "Spotted a very interesting detail about Intel's upcoming CPU platform (LGA 1954)",
+            "body": "Spotted a very interesting detail about Intel's upcoming CPU platform (LGA 1954)\nI was doing some research about the the platform for Intel's next generations of CPUs.\n\nIf we look closely at the PCIe 5.0 configuration for Z990/W980, it specifies \n\n1. x16 (or **x8/x8**)\n2. **x8** (or x4/x4) \"Storage\"\n\nSo, it is plausible we might see motherboards with **3** PCIe 5.0 x8 slots directly wired into the CPU. \n\nThe best we can currently do on consumer hardware is PCI 5.0 x8/x8/x4 without risers and there are only two boards that can do it and neither is in production anymore (MSI MEG/Godlike X670E). In practice the best is x8/x8.\n\nTP=3 is fairly easy for your agent to patch into inference engines.\n\nThese boards will have 2x Thunderbolt (Wiki says 4, but it may be 5?). So, possibly options for high-speed networking here. Let's make RDMA over Thunderbolt happen!\n\nThe desktop CPUs will have Low-Power-Ecores, which should help with idle power-draw and on the other hand they will have full AVX512 again (yay).\n\nAsrock and MSI are the most likely ones to color outside lines. I hope the x8/x8/x8 is \"allowed\" by Intel, unfortunately nothing much to do but wait until we see the line-up of boards.\n\nBut I will be watching.\n\n- Table: https://en.wikipedia.org/wiki/LGA_1954",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwxbjk/spotted_a_very_interesting_detail_about_intels/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 57,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I was doing some research about the the platform for Intel's next generations of CPUs.\n\nIf we look closely at the PCIe 5.0 configuration for Z990/W980, it specifies \n\n1. x16 (or **x8/x8**)\n2. **x8** (or x4/x4) \"Storage\"\n\nSo, it is plausible we might see motherboards with **3** PCIe 5.0 x8 slots directly wired into the CPU. \n\nThe best we can currently do on consumer hardware is PCI 5.0 x8/x8/x4 wit",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.314
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "higurashi-ai/Haru-4B \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "higurashi-ai/Haru-4B \u00b7 Hugging Face",
+        "seed_score": 88.5,
+        "summary": "# Haru-4B\n\n[Code](https://github.com/higurashi-ai/Haru) \u00b7 [Technical blog](https://blog.higurashi.ai/melte/haru4b/) \u00b7 [Technical blog (Japanese)](https://blog.higurashi.ai/melte/haru4b-ja/)\n\nHaru-4B is a low-latency and multilingual full-duplex continuous spoken dialogue foundation model: it listens and speaks at the same time, the way people do on a phone call. It is a pretrained base model, rele",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "higurashi-ai/Haru-4B \u00b7 Hugging Face",
+            "body": "higurashi-ai/Haru-4B \u00b7 Hugging Face\n# Haru-4B\n\n[Code](https://github.com/higurashi-ai/Haru) \u00b7 [Technical blog](https://blog.higurashi.ai/melte/haru4b/) \u00b7 [Technical blog (Japanese)](https://blog.higurashi.ai/melte/haru4b-ja/)\n\nHaru-4B is a low-latency and multilingual full-duplex continuous spoken dialogue foundation model: it listens and speaks at the same time, the way people do on a phone call. It is a pretrained base model, released for research.\n\n* **Native full-duplex at 7.5 Hz.** Every 133 ms the model takes one frame of the user's audio and produces one frame of its own audio and text. User audio, model audio and model text are summed into a single position of the language model, so listening and speaking never wait for each other.\n* **Continuous audio, one sampling step.** Audio is a 64-dimensional latent per frame. A small MLP head with MeanFlow sampling produces it in one step from the language model's hidden state; there is no separate audio transformer and there are no discrete audio tokens.\n* **Character and voice control.** A text card sets the character, a short reference clip sets the voice.\n* **Multilingual.** English, Spanish, Portuguese, German, French, Chinese, Japanese, Russian and Korean.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xww5o2/higurashiaiharu4b_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.19,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "# Haru-4B\n\n[Code](https://github.com/higurashi-ai/Haru) \u00b7 [Technical blog](https://blog.higurashi.ai/melte/haru4b/) \u00b7 [Technical blog (Japanese)](https://blog.higurashi.ai/melte/haru4b-ja/)\n\nHaru-4B is a low-latency and multilingual full-duplex continuous spoken dialogue foundation model: it listens and speaks at the same time, the way people do on a phone call. It is a pretrained base model, rele",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Llama.cpp Gemma4 models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Llama.cpp Gemma4 models",
+        "seed_score": 82.5,
+        "summary": "Few months ago - after Ninfer came out - I started a little hobby project to vibe-code my own engine for my hardware (RTX 5080 16GB Laptop) and check if it could beat llama.cpp - since at the time llama.cpp was kinda slow in comparison to something like vLLM, but vLLM is using VRAM very wastefully.\n\nBack then it was quite easy to actually get something up and running faster than llama.cpp.\n\nToday",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Llama.cpp performance improvement over time (Gemma4 models)",
+            "body": "Llama.cpp performance improvement over time (Gemma4 models)\nFew months ago - after Ninfer came out - I started a little hobby project to vibe-code my own engine for my hardware (RTX 5080 16GB Laptop) and check if it could beat llama.cpp - since at the time llama.cpp was kinda slow in comparison to something like vLLM, but vLLM is using VRAM very wastefully.\n\nBack then it was quite easy to actually get something up and running faster than llama.cpp.\n\nToday I just benchmarked llama.cpp again, and it caught up / surpassed my vibe-coded engine. I prefer using a stable engine with proper features than all the vibe-coded ones, including my own. So it is really nice to see that the project - while a bit slower - lands significant performance improvements over time.\n\nI put together a little chart of benchmarks I had laying around which visualizes this quite nicely. It is by no means scientific - it's always a fixed 16k prefill 1k output over Wikipedia text with the optimal settings for each engine. The 12B model is the same checkpoint, for the 26B model these are different quants for all engines, so not even apples-to-apples and llama.cpp wins.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx607x/llamacpp_performance_improvement_over_time_gemma4/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 47,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Few months ago - after Ninfer came out - I started a little hobby project to vibe-code my own engine for my hardware (RTX 5080 16GB Laptop) and check if it could beat llama.cpp - since at the time llama.cpp was kinda slow in comparison to something like vLLM, but vLLM is using VRAM very wastefully.\n\nBack then it was quite easy to actually get something up and running faster than llama.cpp.\n\nToday",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31500000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Another",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 50
+        }
+      },
+      "nomination": {
+        "name": "Another",
+        "seed_score": 75.0,
+        "summary": "(Note: by local models I mean anything smaller than Deepseek 4.1)\n\nI already gave up on local models for coding tasks 6 months ago, due to what I perceived was intelligence too low for the tasks I give it. I made a post about it on here back then and it was a huge discussion, I think 800 comments. I went against the /r/LL orthodoxy and many didn't take my comments well, but we can agree to disagre",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "Another reminder of the low intelligence of local models",
+            "body": "Another reminder of the low intelligence of local models\n(Note: by local models I mean anything smaller than Deepseek 4.1)\n\nI already gave up on local models for coding tasks 6 months ago, due to what I perceived was intelligence too low for the tasks I give it. I made a post about it on here back then and it was a huge discussion, I think 800 comments. I went against the /r/LL orthodoxy and many didn't take my comments well, but we can agree to disagree.\n\nSince then I only use local LLMs for translation and ComfyUI prompt enhancement. I stick to big cloud models for coding. I think the electricity cost of running Qwen 27B alone exceeds what you'd pay Deepseek to use their cloud API in their own harness, and you'd get a far more intelligent and far faster model.\n\nBut this post isn't about the economics. It's purely about ability. I still see people commenting in favor of buying GPUs for local intelligence. \"Sonnet at home\" is a ridiculous phrase I've seen more times than I should in relation to Qwen 27B.\n\n**The simplest of tech tasks is still too hard to one-shot**\n\nI keep Qwen 3.8 27B running on my Spark for occasional non-coding stuff. Today I gave it a trivial coding task I needed for my server, just out of curiosity.\n\n- llama-server launched with `--model Swift-1.5-Qwen3.8-27B-Q4_K_L.gguf --reasoning on --reasoning-effort xhigh`\n- Open llama webpage and leave Reasoning at Default, leave system prompt empty\n- Prompt: \n\n    Give me a bash script that will list all files in directory sorted by date. Output should be:\n    2025-12-31 12:13:14 file1.ext\n    2025-12-31 12:13:14 subdir/file2.ext\n\n1630 tokens later, most of it reasoning, I get a script. When I run it, here's the output, as you can see the timestamp is wrong:\n\n    2026-10-16 20 tmp.59eH9w3JLe\n    2026-10-17 20 tmp.5xvczTbSS4\n    2026-10-18 20 tmp.nWOEDw2wlu\n    2026-10-20 20 tmp.JVEZIFfKx3\n    ...\n\nI then tried Gemma 31B Reasoning on duck.ai. The output only showed the timestamps, no filenames!\n\nThis is the most trivial of coding tasks (the answer is a 3-5 lines script), using the most ancient and commonly-available training data (bash), on the most praised local coding model on this sub (Qwen 27B), at a recommended/popular quantization (Q4), and it still can't one-shot this. The 2nd most popular local model, Gemma 4 31B, also fails.\n\n(Editor's note: I think my post could've ended here, in a \"Ecce homo\" way, but I went on for a few more paragraphs)\n\n**Weak local LLM + software development = bad time**\n\nI'm sure if I had run this task with your average agent harness with a system prompt that makes it test its code, it would run the script it created, see the issue, then get it right on the 2nd attempt. But while I think this \"try until you succeed\" workhorse approach is acceptable for small self-contained coding tasks, I don't think anyone should be doing any serious coding this way.\n\nIf you're writing something you intend to maintain over time (ie not a one-shot), or that you will be sharing with other people, you need a higher degree of LLM intelligence and knowledge to create it. A strong LLM will be able to avoid entire classes of problems from the start, when designing the app. From design to implementation to maintenance, it will make better decisions every time and without laboring its way to them, resulting in a codebase that is smaller, well-designed, more easily modifiable, less buggy, and developed in a fraction of the time.\n\nCoding with local LLMS is like insisting on using a donkey for transportation in the age of cars. It can be done for fun, but it shouldn't be done seriously.\n\n**Sonnet at home my ass**\n\nBtw I've seen several people say Qwen 27B is like having a local Sonnet 4. The benchmarks say it's even better than Sonnet 4, actually. So I went on openrouter.ai out of curiosity and gave the same prompt to 3 models.\n\n- Sonnet 4.5 (oldest Sonnet I could find): one-shots it\n- GPT 4.1 Mini, which was comparable to Haiku 3.5: one-shots it\n- GPT 4.1 Nano, which is even worse than Mini: one-shots it\n\n**Weak local LLM + Linux server management = even worse time**\n\nThis post's getting long so I'll just speedrun this part.\n\n- Managing an OS is actually harder tasks that LLM struggle even more with. And the stakes are higher because you don't want your server to go down.\n- I used to never trust LLMs enough to let them onto my server, I'd just ask for something, copy-paste the command, report back, repeat. A huge waste of my limited free time. Now I just rawdog a frontier model on the server. Although I have it avoid making any changes without my supervision, Docker is a big benefit here for both organization and safety/stability.\n- Even top models won't one-shot a task like \"I want to install and run https://github.com/rando/something on this system in a Docker container in /opt/docker/something/. Create the Dockerfile and docker compose file\", especially for AI-related tools, where having the right CUDA, not having python wheels for my server's ARM CPU, etc, introduces a lot of failure opportunities. When I had Claude five months ago, even it struggled to get these right.\n\nThanks for reading my wall of text. Downvotes to the left.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx667d/another_reminder_of_the_low_intelligence_of_local/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 50
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "(Note: by local models I mean anything smaller than Deepseek 4.1)\n\nI already gave up on local models for coding tasks 6 months ago, due to what I perceived was intelligence too low for the tasks I give it. I made a post about it on here back then and it was a huge discussion, I think 800 comments. I went against the /r/LL orthodoxy and many didn't take my comments well, but we can agree to disagre",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.455
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "AI AI agents",
+        "seed_score": 42.0,
+        "summary": "I've been using ChatGPT, Claude, and Codex for some pretty ambitious projects, and I'm starting to notice a pattern that's genuinely frustrating.\n\nAI is incredibly good at explaining how something could theoretically work. But when I actually ask it to build something complicated, troubleshoot an unfamiliar problem, or figure out a solution that doesn't already exist, it feels like everything fall",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "I'm tired of AI explaining things instead of actually doing them. How do I get AI agents to work like real engineers?",
+            "body": "I'm tired of AI explaining things instead of actually doing them. How do I get AI agents to work like real engineers?\nI've been using ChatGPT, Claude, and Codex for some pretty ambitious projects, and I'm starting to notice a pattern that's genuinely frustrating.\n\nAI is incredibly good at explaining how something could theoretically work. But when I actually ask it to build something complicated, troubleshoot an unfamiliar problem, or figure out a solution that doesn't already exist, it feels like everything falls apart.\n\nHere's what keeps happening:\n\n1. Explaining instead of executing.\n\nI ask AI to accomplish something. Instead of actively working toward it, I get paragraphs explaining how the technology works, why it's difficult, or what I could theoretically do myself.\n\n2. Treating limitations like permanent roadblocks.\n\nThis is probably my biggest frustration.\n\nI understand that some things are technically impossible or beyond an AI's available tools. But there's a difference between something being genuinely impossible and something requiring experimentation, research, or a new approach.\n\nI want an AI that investigates the problem before declaring defeat.\n\n3. Endless planning with very little actual progress.\n\nI've worked on projects where AI agents generated documentation, scripts, development plans, and additional infrastructure for hours.\n\nBut the actual thing I wanted to accomplish still wasn't working.\n\nIt starts feeling like the AI is creating work instead of completing it.\n\n4. Ignoring specific instructions.\n\nI'll establish exactly how I want a project handled, including which AI handles which responsibilities.\n\nEventually, the agents start changing the workflow, adding unnecessary steps, or forgetting the original objective.\n\n5. Making me do everything manually.\n\nPart of why I use AI agents is to automate tasks.\n\nIf I'm constantly copying commands, transferring files, repeating instructions, and coordinating everything myself, what's the point of having multiple agents?\n\n6. Losing context and repeating mistakes.\n\nI want agents that maintain project memory, remember previous failures, understand what's already been accomplished, and continue from where they left off.\n\nInstead, I regularly find myself explaining the same requirements again.\n\n7. Claiming progress without proving anything works.\n\nThis one drives me crazy.\n\nAn AI can confidently report that something has been implemented, tested, or completed, only for me to discover that the actual result doesn't work.\n\nI'd rather it admit something hasn't been verified than pretend we've made progress.\n\nWhat I'm actually trying to accomplish\n\nFor context, I'm working on projects involving software development, AI coordination, PC automation, and modifying games on a jailbroken PS4.\n\nOne of my goals is to have Codex coordinate Claude through computer-use tools, with each handling tasks based on its actual capabilities.\n\nI'm not expecting magic. I understand hardware restrictions, access limitations, and technical constraints exist.\n\nWhat I want is a system that can investigate, experiment, execute, verify its work, learn from failures, and keep moving toward the original goal without constantly needing me to micromanage it.\n\nMy questions\n\n\\- Are there AI agents or frameworks that are actually designed to work this way?\n\n\\- How do you prevent agents from endlessly planning instead of executing?\n\n\\- What's the best way to give multiple AI agents persistent project memory and clearly defined responsibilities?\n\n\\- Can you make agents automatically verify their work before reporting success?\n\n\\- What tools or workflows would let Codex and Claude collaborate effectively without me constantly transferring information?\n\n\\- Has anyone actually built a system where AI handles most of the engineering workflow while the human focuses on objectives and decisions?\n\nI'm looking for real solutions, not just better prompts that tell the AI to \"act like an engineer.\"\n\nI don't need AI to tell me something is difficult. I need it to help me figure out how to accomplish difficult things.\n\nIf you've built a reliable setup like this, I'd genuinely appreciate hearing exactly what tools you use and how your workflow operates.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xx5l8s/im_tired_of_ai_explaining_things_instead_of/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been using ChatGPT, Claude, and Codex for some pretty ambitious projects, and I'm starting to notice a pattern that's genuinely frustrating.\n\nAI is incredibly good at explaining how something could theoretically work. But when I actually ask it to build something complicated, troubleshoot an unfamiliar problem, or figure out a solution that doesn't already exist, it feels like everything fall",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4855
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "ISTA Qwen3.8 27b on 3060 12gb",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "ISTA Qwen3.8 27b on 3060 12gb",
+        "seed_score": 39.0,
+        "summary": "Hey guys \n\nI am a seasoned local llm user and I ain't quite ram rich like only 16gb ddr4 \ud83e\udd40\n\nSo I can't run qwen3.8 flash next on my 3060 \n\nThis guy felt the best for me yet \n\nHave you guys tried it \n\nI have ran iq3\\_xss quant non mtp with turboquant at 65k context completely on my 3060 though I did offload mmproj to cpu ram \n\nHave guys tried this it really felt like a blessing to my life using the",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "ISTA Qwen3.8 27b on 3060 12gb",
+            "body": "ISTA Qwen3.8 27b on 3060 12gb\nHey guys \n\nI am a seasoned local llm user and I ain't quite ram rich like only 16gb ddr4 \ud83e\udd40\n\nSo I can't run qwen3.8 flash next on my 3060 \n\nThis guy felt the best for me yet \n\nHave you guys tried it \n\nI have ran iq3\\_xss quant non mtp with turboquant at 65k context completely on my 3060 though I did offload mmproj to cpu ram \n\nHave guys tried this it really felt like a blessing to my life using the peak of local ai on my 3060 \n\nIt seriously packs the punch \ud83d\udc4a I was able to perform various of my agent task complete on device not like simple but the ones which require actual reasonings \n\nHere is my cmd if you want to see\n\nllama-tq serve -m \"E:\\\\MODELS\\\\ISTA-DASLab\\\\Qwen3.8-27B-GSQ-RCO-GGUF\\\\Qwen3.8-27B-GSQ-RCO-IQ3\\_XXS.gguf\" --mmproj \"E:\\\\MODELS\\\\ISTA-DASLab\\\\Qwen3.8-27B-GSQ-RCO-GGUF\\\\mmproj-Qwen3.8-27B-BF16.gguf\" --no-mmproj-offload -ngl 99 -c 65536 -ctk turbo4 -ctv turbo3 -ub 256 -b 2048 -t 3 -tb 3 --reasoning-budget 256 --reasoning-preserve --alias Qwen --port 8080 -lm none\n\nSources: for my recipe\n\nISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF\n\nhttps://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF/discussions\n\nTurboquant\n\nhttps://github.com/TheTom/llama-cpp-turboquant\n\nPi coding agent\n\nhttps://pi.dev/\n\nI would like know the communities views and any suggestions would be welcome \ud83e\udd17\n\nThankyou for your time",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwx7uq/ista_qwen38_27b_on_3060_12gb/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey guys \n\nI am a seasoned local llm user and I ain't quite ram rich like only 16gb ddr4 \ud83e\udd40\n\nSo I can't run qwen3.8 flash next on my 3060 \n\nThis guy felt the best for me yet \n\nHave you guys tried it \n\nI have ran iq3\\_xss quant non mtp with turboquant at 65k context completely on my 3060 though I did offload mmproj to cpu ram \n\nHave guys tried this it really felt like a blessing to my life using the",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.368
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Spare home laptop AI use cases",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Spare home laptop AI use cases",
+        "seed_score": 37.5,
+        "summary": "I have an old useable thinkpad laptop, I want to start practising AI with. What are some use cases I can do with the laptop with AI agents? I was thinking optimise my CV and apply for jobs for me, maintain my business website, or something similar.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Spare home laptop AI use cases?",
+            "body": "Spare home laptop AI use cases?\nI have an old useable thinkpad laptop, I want to start practising AI with. What are some use cases I can do with the laptop with AI agents? I was thinking optimise my CV and apply for jobs for me, maintain my business website, or something similar.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xwyts4/spare_home_laptop_ai_use_cases/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.19,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I have an old useable thinkpad laptop, I want to start practising AI with. What are some use cases I can do with the laptop with AI agents? I was thinking optimise my CV and apply for jobs for me, maintain my business website, or something similar.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.413
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Best EPYC 32core 512GB DDR4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Best EPYC 32core 512GB DDR4",
+        "seed_score": 34.5,
+        "summary": "Just looking for some advice on what is possble with my setup and speeds I should be gettingI know it won't be super fast tps but I was more after getting the bigger models to run.\n\nThis is my spec:\n\nEpyc 7502p - 32 Core  \nGigabyte MZ32-AR0 - 8 channel memory  \n512GB DDR4  \n1x 4070 12GB  \n2x 5060 16GB\n\nquite a few implementations which can I confusing.  \nIs this build even useful now? that we have",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Best direction to go for my setup EPYC 32core + 512GB DDR4 + 44GB GPU ?",
+            "body": "Best direction to go for my setup EPYC 32core + 512GB DDR4 + 44GB GPU ?\nJust looking for some advice on what is possble with my setup and speeds I should be gettingI know it won't be super fast tps but I was more after getting the bigger models to run.\n\nThis is my spec:\n\nEpyc 7502p - 32 Core  \nGigabyte MZ32-AR0 - 8 channel memory  \n512GB DDR4  \n1x 4070 12GB  \n2x 5060 16GB\n\nquite a few implementations which can I confusing.  \nIs this build even useful now? that we have Project Maya which you can stream from the NVME drive?  \n  \nAnyone have similar setups and what to expect, what software best to use",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx6dpd/best_direction_to_go_for_my_setup_epyc_32core/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Just looking for some advice on what is possble with my setup and speeds I should be gettingI know it won't be super fast tps but I was more after getting the bigger models to run.\n\nThis is my spec:\n\nEpyc 7502p - 32 Core  \nGigabyte MZ32-AR0 - 8 channel memory  \n512GB DDR4  \n1x 4070 12GB  \n2x 5060 16GB\n\nquite a few implementations which can I confusing.  \nIs this build even useful now? that we have",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.307
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Zelvara Right Draft",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Zelvara Right Draft",
+        "seed_score": 33.0,
+        "summary": "I'm building a platform for agencies running agents for clients (Zelvara). The part I keep going back and forth on is approvals. Right now each agent can mark actions as \"ask first,\" and a person approves them from an inbox. Draft and live are separate, so changes get tested before release.\n\nThings I'm unsure about: how much to batch approvals, what to do when nobody answers, and how to keep audit",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "how do you let non-engineers approve risky agent actions without killing the flow?",
+            "body": "how do you let non-engineers approve risky agent actions without killing the flow?\nI'm building a platform for agencies running agents for clients (Zelvara). The part I keep going back and forth on is approvals. Right now each agent can mark actions as \"ask first,\" and a person approves them from an inbox. Draft and live are separate, so changes get tested before release.\n\nThings I'm unsure about: how much to batch approvals, what to do when nobody answers, and how to keep audit logs useful instead of noisy.\n\nOne gap I know about: per-user OAuth tokens aren't done, so users of an agent share one token per connection. If you've handled that in production, I'd like to hear how.\n\nProduct link if you want to poke at it: zelvara-ai.vercel.app",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xx1c68/how_do_you_let_nonengineers_approve_risky_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm building a platform for agencies running agents for clients (Zelvara). The part I keep going back and forth on is approvals. Right now each agent can mark actions as \"ask first,\" and a person approves them from an inbox. Draft and live are separate, so changes get tested before release.\n\nThings I'm unsure about: how much to batch approvals, what to do when nobody answers, and how to keep audit",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.407
+          }
+        ]
+      }
+    }
+  ]
+}

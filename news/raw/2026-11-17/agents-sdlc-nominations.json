@@ -1,0 +1,838 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "364e2dab8d137534",
+  "generated_at": "2026-11-16T23:56:50.434075Z",
+  "from_date": "2026-11-15",
+  "to_date": "2026-11-16",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-16T23:56:50.328656Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-16T23:56:50.328662Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-11-16T23:56:50.071355Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 83,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-16T23:56:50.328477Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AI-generated Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 651,
+          "points": 1253
+        },
+        "reddit": {
+          "num_comments": 40
+        }
+      },
+      "nomination": {
+        "name": "AI-generated Open Source",
+        "seed_score": 2403.4966,
+        "summary": "All AI-generated code should be Open Source",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50507303",
+            "source": "hackernews",
+            "title": "All AI-generated code should be Open Source",
+            "body": "All AI-generated code should be Open Source",
+            "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+            "author": "jcubic",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1253,
+              "comments": 651
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "HN story about All AI-generated code should be Open Source",
+            "snippet": "All AI-generated code should be Open Source",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50507303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.281
+          },
+          {
+            "item_id": "R80",
+            "source": "reddit",
+            "title": "How do you orchestrate multiple agents ?",
+            "body": "How do you orchestrate multiple agents ?\nHi all, I'd love to hear how you work with more than one AI agent. I'm building an open-source tool to make that easier, and I'd rather build what people actually need.\n\nA few questions, any of them:\n\n1. Do you use agents from more than one vendor (Claude Code, Codex, Gemini\u2026)? How do you switch or combine them?  \n2. How do you check an agent's work before it lands? Do you trust tests alone?  \n3. What's the most annoying part today: cost, permissions, losing context, agents stepping on each other?  \n4. What do you wish existed that doesn't?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xxwkp9/how_do_you_orchestrate_multiple_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 40
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi all, I'd love to hear how you work with more than one AI agent. I'm building an open-source tool to make that easier, and I'd rather build what people actually need.\n\nA few questions, any of them:\n\n1. Do you use agents from more than one vendor (Claude Code, Codex, Gemini\u2026)? How do you switch or combine them?  \n2. How do you check an agent's work before it lands? Do you trust tests alone?  \n3.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.445
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Court DRAM",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 234,
+          "points": 530
+        }
+      },
+      "nomination": {
+        "name": "Court DRAM",
+        "seed_score": 810.3444,
+        "summary": "Court denies motion to dismiss DRAM price fixing case",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50502988",
+            "source": "hackernews",
+            "title": "Court denies motion to dismiss DRAM price fixing case",
+            "body": "Court denies motion to dismiss DRAM price fixing case",
+            "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+            "author": "ybathaee",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 530,
+              "comments": 234
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Court denies motion to dismiss DRAM price fixing case",
+            "snippet": "Court denies motion to dismiss DRAM price fixing case",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50502988",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 75,
+            "source_quality": 0.8,
+            "local_rank_score": 0.139
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Software",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 209,
+          "points": 330
+        }
+      },
+      "nomination": {
+        "name": "Software",
+        "seed_score": 808.5,
+        "summary": "Software is breaking down at a systemic level",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50520866",
+            "source": "hackernews",
+            "title": "Software is breaking down at a systemic level",
+            "body": "Software is breaking down at a systemic level",
+            "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+            "author": "zero_shift",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 330,
+              "comments": 209
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Software is breaking down at a systemic level",
+            "snippet": "Software is breaking down at a systemic level",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50520866",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3375
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Secret ThinkPad Powerbutton Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 114,
+          "points": 287
+        }
+      },
+      "nomination": {
+        "name": "Secret ThinkPad Powerbutton Code",
+        "seed_score": 601.5,
+        "summary": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50516473",
+            "source": "hackernews",
+            "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "body": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+            "author": "sammatilda",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 287,
+              "comments": 114
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about The Secret ThinkPad Powerbutton Code to Bring Dead Laptops B",
+            "snippet": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50516473",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3015
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Microsoft July",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 129,
+          "points": 189
+        }
+      },
+      "nomination": {
+        "name": "Microsoft July",
+        "seed_score": 477.0,
+        "summary": "Microsoft blames monster email outage on software defect introduced in July fix",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50517321",
+            "source": "hackernews",
+            "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+            "body": "Microsoft blames monster email outage on software defect introduced in July fix",
+            "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+            "author": "Bender",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 189,
+              "comments": 129
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Microsoft blames monster email outage on software defect int",
+            "snippet": "Microsoft blames monster email outage on software defect introduced in July fix",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50517321",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3105
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Censorship Local LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "Censorship Local LLM",
+        "seed_score": 187.5,
+        "summary": "451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US bas",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Censorship is turning me into a true Local LLM believer",
+            "body": "Censorship is turning me into a true Local LLM believer\n451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US based inference providers. I suspiciously got a bunch of \"rate limit\" failures, and then just \"failed to complete\" before it gave me, what I assume, is the real error.\n\n\n\nI am only using it to help create my presentation, which is about analyzing algorithmic properties. One key example is a cryptographic algorithm (because it is difficult by design), so I am assuming this is tripping it somehow. But it is absolutely ridiculous, I'm not even doing research with the AI, just trying to make a presentation.\n\n\n\nI have always liked Local LLMs, as a technical exploration opposed to ideological reasons, but this experience really frustrated me. Don't censor me!\n\n\n\nJust wanted to rant, and remind everyone you can only use the cloud on the provider's terms.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxsc7u/censorship_is_turning_me_into_a_true_local_llm/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 93,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US bas",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.44199999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Best Audio Models Nov 2026",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 58
+        }
+      },
+      "nomination": {
+        "name": "Best Audio Models Nov 2026",
+        "seed_score": 169.5,
+        "summary": "Its time for another **Best Audio Models** megathread - its already been 9 months since the last one!\n\nShare what your favorite ASR, TTS, STT, Text to Music models are right now\u00a0**and why.**\n\nGiven the the amount of ambiguity and subjectivity in rating/testing these models, please be as detailed as possible in describing your setup, nature of your usage (how much, personal/professional use), tools",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "Best Audio Models - Nov 2026",
+            "body": "Best Audio Models - Nov 2026\nIts time for another **Best Audio Models** megathread - its already been 9 months since the last one!\n\nShare what your favorite ASR, TTS, STT, Text to Music models are right now\u00a0**and why.**\n\nGiven the the amount of ambiguity and subjectivity in rating/testing these models, please be as detailed as possible in describing your setup, nature of your usage (how much, personal/professional use), tools/frameworks etc. Production use cases with long lengths/stability requirements are relatively rare compared to cherry picked/short clip demos that are plentiful - so real world empirical comparisons are very welcome\n\n**Rules**\n\n* Should be open weights or open source models\n\nPlease use the top level comments to thread your responses.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxpxvi/best_audio_models_nov_2026/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Its time for another **Best Audio Models** megathread - its already been 9 months since the last one!\n\nShare what your favorite ASR, TTS, STT, Text to Music models are right now\u00a0**and why.**\n\nGiven the the amount of ambiguity and subjectivity in rating/testing these models, please be as detailed as possible in describing your setup, nature of your usage (how much, personal/professional use), tools",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.349
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Meta FAIR",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Meta FAIR",
+        "seed_score": 131.5219,
+        "summary": "X threads (with videos!): \n\n* [https://x.com/choang333/status/2121335484236386574](https://x.com/choang333/status/2121335484236386574)\n* [https://x.com/\\_ellisbrown/status/2121335477244428419](https://x.com/_ellisbrown/status/2121335477244428419)\n\nPaper: [https://www.alphaxiv.org/abs/2611.17334](https://www.alphaxiv.org/abs/2611.17334)\n\nBlog and FAQ: [https://unbundling.github.io](https://unbundli",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R99",
+            "source": "reddit",
+            "title": "[Meta FAIR + NYU] Unbundling Multimodal Vision Encoding: training 200+ MLLMs to find encoder pretraining is optional but vision-only parameters are not [R]",
+            "body": "[Meta FAIR + NYU] Unbundling Multimodal Vision Encoding: training 200+ MLLMs to find encoder pretraining is optional but vision-only parameters are not [R]\nX threads (with videos!): \n\n* [https://x.com/choang333/status/2121335484236386574](https://x.com/choang333/status/2121335484236386574)\n* [https://x.com/\\_ellisbrown/status/2121335477244428419](https://x.com/_ellisbrown/status/2121335477244428419)\n\nPaper: [https://www.alphaxiv.org/abs/2611.17334](https://www.alphaxiv.org/abs/2611.17334)\n\nBlog and FAQ: [https://unbundling.github.io](https://unbundling.github.io/)\n\n**Labs disagree on vision encoders right now.** Gemma 4 12B dropped the encoder, Kimi K3 trains its encoder from scratch, and Inkling 2 Small brought an encoder back. Published models can't settle this, because they differ in data and compute and rarely account for encoder pretraining. A standard encoder also bundles three choices: separate pretraining, parameters that only vision tokens use, and placement before the LLM. We tested each choice separately.\n\nSetup:\n\n* 200+ models, all trained from scratch (LLM included) on the same data.\n* Lifetime compute: encoder pretraining counts against the same budget as multimodal training.\n* Main comparisons use Qwen3-1.7B and 4B configurations with 0.4B parameters of vision capacity. A scaling ladder covers 0.6B to 6.4B backbone sizes.\n* Evaluations are on 16 VQA benchmarks from Cambrian at 448 px. and 12 language benchmarks testing commonsense, QA, and broad knowledge.\n\nFindings:\n\n1. **Separate pretraining is optional.** Encoders pretrained with four objectives (contrastive, self-supervised, two captioning) at best tie an encoder trained from scratch with the LLM at matched compute. Even free pretraining doesn't help. Pretraining MetaCLIP 6.5x longer raised ImageNet linear-probe accuracy (80.4% \u2192 84.4%) but not VQA.\n2. **Vision-only parameters are required.** Encoder-free models trail at every size from 0.6B to 6.4B and need about 3x the compute to catch up. Giving the LLM the encoder's parameters instead improves text, not VQA.\n3. **Placement before the LLM is optional.** \"In-fusion\" adds zero-initialized vision-only weights (attention projections and FFNs) to the LLM's first 8 layers, and text tokens never use them. It's on par with the encoder from 1.7B to 6.4B, with about 13% lower time to first token. At 1.7B, vision-only branches in layers 1\u20138 reach 45.0 VQA (encoder 44.4), versus 42.3 when text shares them and 35.1 in the last 8 layers.\n4. **The same holds with a pretrained LLM** (vision added to a pretrained 1.7B LLM in midtraining).\n\nSo vision needs its own parameters, but not its own pretraining or its own encoder.\n\nDisclosure: I'm one of the authors. Happy to answer questions!",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xx1k2o/meta_fair_nyu_unbundling_multimodal_vision/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 107,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "X threads (with videos!): \n\n* [https://x.com/choang333/status/2121335484236386574](https://x.com/choang333/status/2121335484236386574)\n* [https://x.com/\\_ellisbrown/status/2121335477244428419](https://x.com/_ellisbrown/status/2121335477244428419)\n\nPaper: [https://www.alphaxiv.org/abs/2611.17334](https://www.alphaxiv.org/abs/2611.17334)\n\nBlog and FAQ: [https://unbundling.github.io](https://unbundli",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14600000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AISTATS 2027 paper discussion D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "AISTATS 2027 paper discussion D",
+        "seed_score": 66.0,
+        "summary": "Creating this post since the reviews are supposed to go live today. What do you guys think?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R92",
+            "source": "reddit",
+            "title": "AISTATS 2027 paper discussion [D]",
+            "body": "AISTATS 2027 paper discussion [D]\nCreating this post since the reviews are supposed to go live today. What do you guys think?",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xxqa3i/aistats_2027_paper_discussion_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 22,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Creating this post since the reviews are supposed to go live today. What do you guys think?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.299
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Windows 11 Collecting Data Coding Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 11,
+          "points": 33
+        }
+      },
+      "nomination": {
+        "name": "Windows 11 Collecting Data Coding Agents",
+        "seed_score": 66.0,
+        "summary": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50524736",
+            "source": "hackernews",
+            "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+            "body": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+            "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+            "author": "cwaffles",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 33,
+              "comments": 11
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Windows 11 Is Collecting Data on Which Coding Agents and Dev",
+            "snippet": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50524736",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AMD Loom Fun Added Radeon 9700",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "AMD Loom Fun Added Radeon 9700",
+        "seed_score": 60.0,
+        "summary": "On Friday I [posted about AMD Loom](https://www.reddit.com/r/LocalLLaMA/s/4RHJh9XrzK), a new experimental inference stack that includes a runtime, kernel compiler, and inference server. People can use the entire thing as a vertical stack, or the compiler/runtime can be integrated into any other inference project (I'm working on Gufo right now, the team is also working on a llamacpp backend).\n\nI st",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "AMD Loom Fun: Added Radeon 9700 support over the weekend. Benchmarked 48 models with an average 42% speedup over llama.cpp.",
+            "body": "AMD Loom Fun: Added Radeon 9700 support over the weekend. Benchmarked 48 models with an average 42% speedup over llama.cpp.\nOn Friday I [posted about AMD Loom](https://www.reddit.com/r/LocalLLaMA/s/4RHJh9XrzK), a new experimental inference stack that includes a runtime, kernel compiler, and inference server. People can use the entire thing as a vertical stack, or the compiler/runtime can be integrated into any other inference project (I'm working on Gufo right now, the team is also working on a llamacpp backend).\n\nI started with Strix Halo, where I ported the top-51 trending Q4\\_K\\_M LLMs from Hugging Face and got an average of 40% speedup over llama.cpp across decode and prefill metrics (picking the best results from ROCm or Vulkan backends).\n\nI'm back today with Radeon 9700 results. I took the same 51 LLMs, cut it down to the 48 that fit in 32 GB of VRAM, and got an average of 42% speedup. Some of the data is posted to the table below, and all data is available to browse on [https://loom-fun.github.io/loom-dev/index.html?gpu=radeon-r9700](https://loom-fun.github.io/loom-dev/index.html?gpu=radeon-r9700)\n\nAll kernels were generated via agent skills:\n\n* loom-skills repo: [https://github.com/loom-fun/loom-skills](https://github.com/loom-fun/loom-skills)\n* deterministic SDK (runtime, compiler, server): [https://github.com/ROCm/hrx-system](https://github.com/ROCm/hrx-system)\n\n|Model|Loom pp32k (tok/s)|llama.cpp pp32k (tok/s)|Loom short decode (tok/s)|llama.cpp short decode (tok/s)|\n|:-|:-|:-|:-|:-|\n|[Flint](https://huggingface.co/loom-fun/ggml-org-Flint-loom)|6,476|3,190|255|152|\n|[gemma-3-1b-it](https://huggingface.co/loom-fun/ggml-org-gemma-3-1b-it-loom)|n/a|n/a|400|322|\n|[gemma-4-12B-it](https://huggingface.co/loom-fun/unsloth-gemma-4-12B-it-loom)|2,811|1,537|127|67.3|\n|[gemma-4-26B-A4B-it](https://huggingface.co/loom-fun/lmstudio-community-gemma-4-26B-A4B-it-loom)|doesn't fit (32 GB)|doesn't fit (32 GB)|151|72.2|\n|[gemma-4-31B-it](https://huggingface.co/loom-fun/unsloth-gemma-4-31B-it-loom)|doesn't fit (32 GB)|doesn't fit (32 GB)|62.9|43.2|\n|[gemma-4-E2B-it](https://huggingface.co/loom-fun/unsloth-gemma-4-E2B-it-loom)|14,289|14,519|272|234|\n|[gemma-4-E4B-it](https://huggingface.co/loom-fun/unsloth-gemma-4-E4B-it-loom)|7,021|6,324|192|173|\n|[gpt-oss-20b](https://huggingface.co/loom-fun/unsloth-gpt-oss-20b-loom)|5,319|4,368|195|182|\n|[HyperCLOVAX-SEED-Text-Instruct-1.5B](https://huggingface.co/loom-fun/rippertnt-HyperCLOVAX-SEED-Text-Instruct-1.5B-loom)|11,653|8,078|362|344|\n|[Laguna-XS-2.1](https://huggingface.co/loom-fun/ggml-org-Laguna-XS-2.1-loom)|doesn't fit (32 GB)|doesn't fit (32 GB)|102|\u2014|\n|[LFM2.5-24B-A2B](https://huggingface.co/loom-fun/ggml-org-LFM2.5-24B-A2B-loom)|10,099|5,479|244|197|\n|[LFM3-1.7B](https://huggingface.co/loom-fun/bartowski-LFM3-1.7B-loom)|20,062|13,614|372|261|\n|[LFM3-Omni-2B](https://huggingface.co/loom-fun/ggml-org-LFM3-Omni-2B-loom)|20,220|13,435|368|299|\n|[Llama-3.2-3B-Instruct](https://huggingface.co/loom-fun/unsloth-Llama-3.2-3B-Instruct-loom)|5,687|3,908|228|211|\n|[Mellum2.1-12B-A2.5B-Thinking](https://huggingface.co/loom-fun/bartowski-Mellum2.1-12B-A2.5B-Thinking-loom)|8,822|5,486|224|149|\n|[MiniCPM-V-4.7-35B-A3B](https://huggingface.co/loom-fun/bartowski-MiniCPM-V-4.7-35B-A3B-loom)|5,717|3,540|135|113|\n|[Muse-Glimmer-30B](https://huggingface.co/loom-fun/ggml-org-Muse-Glimmer-30B-loom)|1,658|1,287|72.6|54.8|\n|[Nanbeige4.3-33B](https://huggingface.co/loom-fun/bartowski-Nanbeige4.3-33B-loom)|946|666|29.4|28.7|\n|[NVIDIA-Nemotron-3.5-Bolt-E4B-4GB](https://huggingface.co/loom-fun/nvidia-NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-loom)|6,932|3,656|225|143|\n|[Ornith-1.0-35B](https://huggingface.co/loom-fun/lmstudio-community-Ornith-1.0-35B-loom)|5,628|3,320|152|127|\n|[Ornith-1.0-9B](https://huggingface.co/loom-fun/unsloth-Ornith-1.0-9B-loom)|4,886|3,391|100|88.0|\n|[Ornith-1.5-35B-A3B](https://huggingface.co/loom-fun/bartowski-Ornith-1.5-35B-A3B-loom)|5,586|3,136|145|78.8|\n|[Ornith-1.5-9B](https://huggingface.co/loom-fun/bartowski-Ornith-1.5-9B-loom)|4,767|3,156|151|90.5|\n|[Qwen2.5-0.5B-Instruct](https://huggingface.co/loom-fun/bartowski-Qwen2.5-0.5B-Instruct-loom)|26,022|17,812|646|529|\n|[Qwen2.5-1.5B-Instruct](https://huggingface.co/loom-fun/bartowski-Qwen2.5-1.5B-Instruct-loom)|12,546|8,908|360|331|\n|[Qwen2.5-32B-Instruct](https://huggingface.co/loom-fun/bartowski-Qwen2.5-32B-Instruct-loom)|doesn't fit (32 GB)|doesn't fit (32 GB)|30.0|29.2|\n|[Qwen2.5-7B-Instruct](https://huggingface.co/loom-fun/bartowski-Qwen2.5-7B-Instruct-loom)|3,810|2,679|118|116|\n|[Qwen2.5-VL-7B-Instruct](https://huggingface.co/loom-fun/ggml-org-Qwen2.5-VL-7B-Instruct-loom)|3,768|2,648|116|115|\n|[Qwen3-0.6B](https://huggingface.co/loom-fun/unsloth-Qwen3-0.6B-loom)|13,020|8,631|506|480|\n|[Qwen3-1.7B](https://huggingface.co/loom-fun/ggml-org-Qwen3-1.7B-loom)|10,313|7,014|316|297|\n|[Qwen3-14B](https://huggingface.co/loom-fun/ggml-org-Qwen3-14B-loom)|1,944|1,167|65.0|62.6|\n|[Qwen3-30B-A3B-Instruct-2507](https://huggingface.co/loom-fun/unsloth-Qwen3-30B-A3B-Instruct-2507-loom)|3,116|2,060|177|169|\n|[Qwen3-4B](https://huggingface.co/loom-fun/ggml-org-Qwen3-4B-loom)|3,770|2,826|231|130|\n|[Qwen3-4B-Instruct-2507](https://huggingface.co/loom-fun/unsloth-Qwen3-4B-Instruct-2507-loom)|3,795|2,856|180|166|\n|[Qwen3-8B](https://huggingface.co/loom-fun/unsloth-Qwen3-8B-loom)|3,076|2,287|163|94.7|\n|[Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/loom-fun/ggml-org-Qwen3-Coder-30B-A3B-Instruct-loom)|2,921|2,107|157|54.8|\n|[Qwen3-VL-4B-Instruct](https://huggingface.co/loom-fun/unsloth-Qwen3-VL-4B-Instruct-loom)|3,795|2,805|178|163|\n|[Qwen3-VL-8B-Instruct](https://huggingface.co/loom-fun/unsloth-Qwen3-VL-8B-Instruct-loom)|3,085|2,265|112|103|\n|[Qwen3.5-0.8B](https://huggingface.co/loom-fun/unsloth-Qwen3.5-0.8B-loom)|24,341|16,959|463|338|\n|[Qwen3.5-2B](https://huggingface.co/loom-fun/unsloth-Qwen3.5-2B-loom)|16,990|12,165|318|236|\n|[Qwen3.5-35B-A3B](https://huggingface.co/loom-fun/unsloth-Qwen3.5-35B-A3B-loom)|5,652|3,410|190|112|\n|[Qwen3.5-4B](https://huggingface.co/loom-fun/unsloth-Qwen3.5-4B-loom)|7,030|4,897|200|123|\n|[Qwen3.5-9B](https://huggingface.co/loom-fun/unsloth-Qwen3.5-9B-loom)|4,724|3,336|146|92.7|\n|[Qwen3.6-27B](https://huggingface.co/loom-fun/ggml-org-Qwen3.6-27B-loom)|1,503|1,164|60.1|38.9|\n|[Qwen3.6-35B-A3B](https://huggingface.co/loom-fun/ggml-org-Qwen3.6-35B-A3B-loom)|5,635|3,463|209|123|\n|[Qwen3.8-27B](https://huggingface.co/loom-fun/bartowski-Qwen3.8-27B-loom)|1,592|1,026|73.5|55.3|\n|[Sage-A1.5](https://huggingface.co/loom-fun/InternScience-Sage-A1.5-loom)|5,652|3,131|188|153|\n|[Spark-X2.5-4B](https://huggingface.co/loom-fun/XHToken-Spark-X2.5-4B-loom)|6,858|4,727|162|131|\n|[Spark-X2.6-4B](https://huggingface.co/loom-fun/bartowski-Spark-X2.6-4B-loom)|6,913|4,841|162|132|",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxuzgg/amd_loom_fun_added_radeon_9700_support_over_the/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "On Friday I [posted about AMD Loom](https://www.reddit.com/r/LocalLLaMA/s/4RHJh9XrzK), a new experimental inference stack that includes a runtime, kernel compiler, and inference server. People can use the entire thing as a vertical stack, or the compiler/runtime can be integrated into any other inference project (I'm working on Gufo right now, the team is also working on a llamacpp backend).\n\nI st",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.297
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "miHoYo Gamer A Generalist Game Agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "miHoYo Gamer A Generalist Game Agent",
+        "seed_score": 46.5,
+        "summary": "miHoYo Gamer: A Generalist Game Agent",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "miHoYo Gamer: A Generalist Game Agent",
+            "body": "miHoYo Gamer: A Generalist Game Agent",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxy7eb/mihoyo_gamer_a_generalist_game_agent/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "miHoYo Gamer: A Generalist Game Agent",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29100000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "C&C inspired web RTS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "C&C inspired web RTS",
+        "seed_score": 43.5,
+        "summary": "HOwdy LocalLLamans! \n\nInspired by StarSkirmish, I wanted to build a complex RTS that required you to bring your OWN local agents and either play with them as allies, against them as enemies, or battle head-to-head with other agent-human pairs in public matches.\n\nIn **AgentCommand** you operate one or more planes (Orbit, Sky, Surface, Depths) of differing gameplay. As an old-school PC gamer I wante",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "I made a C&C inspired web RTS for us to benchmark our local models with",
+            "body": "I made a C&C inspired web RTS for us to benchmark our local models with\nHOwdy LocalLLamans! \n\nInspired by StarSkirmish, I wanted to build a complex RTS that required you to bring your OWN local agents and either play with them as allies, against them as enemies, or battle head-to-head with other agent-human pairs in public matches.\n\nIn **AgentCommand** you operate one or more planes (Orbit, Sky, Surface, Depths) of differing gameplay. As an old-school PC gamer I wanted the mechanics to resemble some of my favorite 90s games of yore: C&C, DungeonKeeper, Homeworld, StarCraft, and others. The idea is that you have specific objectives needed to maximize resource generation, aid in cross player support, and that a single plane cannot win independently.\n\nOutside of gameplay, from an agentic tech pov, there are some (what I think) are other really cool things that come with this, including:\n\n* a full specification + library to install agents into any game ([http://playerthree.gg/](http://playerthree.gg/)) \n* A networking SDK for bidirectional agent communication \n* Symmetric maps \n* Deterministic simulation \n* Benchmarking tools \n* (soon) published benchmark data\n\nGithub: [https://github.com/agent-command/agent-command](https://github.com/agent-command/agent-command) \n\nPlay now: [https://agentcommand.gg/](https://agentcommand.gg/)\n\nWould love feedback and contribs... I'm more interested in finding a community to help build something super cool here that we can publish public benchmarks with. If you are interested in that,  let me know!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxtn9g/i_made_a_cc_inspired_web_rts_for_us_to_benchmark/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "HOwdy LocalLLamans! \n\nInspired by StarSkirmish, I wanted to build a complex RTS that required you to bring your OWN local agents and either play with them as allies, against them as enemies, or battle head-to-head with other agent-human pairs in public matches.\n\nIn **AgentCommand** you operate one or more planes (Orbit, Sky, Surface, Depths) of differing gameplay. As an old-school PC gamer I wante",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.314
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "my agent kept fixing things and",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "my agent kept fixing things and",
+        "seed_score": 40.5,
+        "summary": "I had a nightly job where the agent rewrites stuff when a check flags it. it fixed the flagged thing every single time and made the rest worse \n\nNow it only keeps a rewrite if it scores at least as well as before.  Also learned the grader itself is noisy, same input gave different scores, so i run it twice and average\n\nanyone else deal with this? how do you decide when an agent edit is actually be",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R85",
+            "source": "reddit",
+            "title": "my agent kept \u201cfixing\u201d things and making them worse",
+            "body": "my agent kept \u201cfixing\u201d things and making them worse\nI had a nightly job where the agent rewrites stuff when a check flags it. it fixed the flagged thing every single time and made the rest worse \n\nNow it only keeps a rewrite if it scores at least as well as before.  Also learned the grader itself is noisy, same input gave different scores, so i run it twice and average\n\nanyone else deal with this? how do you decide when an agent edit is actually better than ur own",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xxueuo/my_agent_kept_fixing_things_and_making_them_worse/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I had a nightly job where the agent rewrites stuff when a check flags it. it fixed the flagged thing every single time and made the rest worse \n\nNow it only keeps a rewrite if it scores at least as well as before.  Also learned the grader itself is noisy, same input gave different scores, so i run it twice and average\n\nanyone else deal with this? how do you decide when an agent edit is actually be",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "RELEASE Supra2.5-65M Base Instruct",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "RELEASE Supra2.5-65M Base Instruct",
+        "seed_score": 40.5,
+        "summary": "https://i.redd.it/s6afqz7og02i1.png\n\nhey guys!\n\nIt's Supra-time! \ud83e\udd17 \ud83d\udd25 \ud83c\udf89 \n\nIt has been quite quite at SupraLabs' model foundry for a long time but we have been testing, training, developing and much more.\n\nAnd we can finally present you a new model!\n\nKey facts:\n\n\\- better than our previous 50M and 100M model  \n\\- very small, runs on every toaster: 65M params  \n\\- base model and instruction tuned ver",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "[NEW RELEASE] - Supra2.5-65M Base and Instruct - our next generation state-of-the art small model family - first model!",
+            "body": "[NEW RELEASE] - Supra2.5-65M Base and Instruct - our next generation state-of-the art small model family - first model!\nhttps://i.redd.it/s6afqz7og02i1.png\n\nhey guys!\n\nIt's Supra-time! \ud83e\udd17 \ud83d\udd25 \ud83c\udf89 \n\nIt has been quite quite at SupraLabs' model foundry for a long time but we have been testing, training, developing and much more.\n\nAnd we can finally present you a new model!\n\nKey facts:\n\n\\- better than our previous 50M and 100M model  \n\\- very small, runs on every toaster: 65M params  \n\\- base model and instruction tuned version on HF\n\nWe trained it locally in 4 days on 2x RTX A6000 on big 100B tokens of high-quality data.\n\nBenchmarks are in the attached image!\n\nHave fun to try it out, give us feedback, roast us, whatever! Community, we will cook! Supra3 coming early next year! \ud83d\udd25 \n\nGive us a like, upvote or follow if you want - and try out our model.\n\nWe can't wait to hear what you're building with it.\n\nLink to the collection on HF: [https://huggingface.co/collections/SupraLabs/supra25](https://huggingface.co/collections/SupraLabs/supra25)\n\n  \nWe hope you like the model! :D \n\n>  \n**GGUFs in F16, Q8\\_0 and Q4\\_K\\_M are also available for llama.cpp, Ollama, Unsloth, etc.** \ud83e\udd73",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxw9ik/new_release_supra2565m_base_and_instruct_our_next/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/s6afqz7og02i1.png\n\nhey guys!\n\nIt's Supra-time! \ud83e\udd17 \ud83d\udd25 \ud83c\udf89 \n\nIt has been quite quite at SupraLabs' model foundry for a long time but we have been testing, training, developing and much more.\n\nAnd we can finally present you a new model!\n\nKey facts:\n\n\\- better than our previous 50M and 100M model  \n\\- very small, runs on every toaster: 65M params  \n\\- base model and instruction tuned ver",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.313
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+ "date": "2026-11-17",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-17.json",
+ "fetched_at": "2026-11-16T23:56:19+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 7,
+  "ok": 7,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "JetBrains TeamCity experimental AI Agents plugin runs Codex and Claude Code in CI builds",
+   "category": "tool_launch",
+   "event_time": "2026-11-16T00:00:00Z",
+   "primary_url": "https://blog.jetbrains.com/teamcity/2026/11/run-ai-agents-in-teamcity/",
+   "facts": [
+    "The new experimental AI Agents plugin for TeamCity lets you run Codex and Claude Code directly in TeamCity builds and connect them to the LLM provider of your choice.",
+    "The plugin installs the coding agent on the TeamCity build agent, provides credentials safely for the duration of the build, and collects usage statistics and agent trajectories.",
+    "Supported connections include JetBrains Air, OpenAI, Anthropic, LiteLLM, and OpenRouter."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Hislordship_9/status/2122455631399665959",
+     "official": false,
+     "author": "@Hislordship_9",
+     "check": "ok",
+     "created_at": "2026-11-16T22:23:50Z",
+     "text": "JetBrains just made it easy to run Codex or Claude Code inside your CI builds. @teamcity shipped an experimental AI Agents plugin today.\n\nThe mixup I want to clear up:\nHidden is not the same as private.\n\nShort lesson below. #TeamCity #JetBrains",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 1,
+     "views": 14
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Microsoft Research open-sources TokenEconomizer to cut AI coding agent costs by up to 30.9%",
+   "category": "tool_launch",
+   "event_time": "2026-11-16T00:00:00Z",
+   "primary_url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+   "facts": [
+    "TokenEconomizer is an open-source plugin that learns from an agent’s past sessions in a repository to reduce waste in future sessions, without modifying the agent or its underlying model.",
+    "Across 277 real bug-fixing tasks, TokenEconomizer reduced costs by 18.4–30.9% across multiple AI coding agents.",
+    "Costs fell in every repository tested, while task success rates remained broadly stable."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Alibaba releases Qwen4-Max with 1M context, native vision, and lower pricing for coding agents",
+   "category": "model_infra",
+   "event_time": "2026-11-16T02:34:00Z",
+   "primary_url": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+   "facts": [
+    "Qwen4-Max is built on a new MoE architecture with native vision and a 1M-token context window.",
+    "It outperforms Qwen3.8-Max with up to ~50% fewer tokens, while average cost per task drops over 60% in internal evaluation.",
+    "API pricing is $1.5/M tokens for input, $4.5/M tokens for output, and $0.075/M tokens for implicit caching."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/QwenDevs/status/2122156218928242799",
+     "official": true,
+     "author": "@QwenDevs",
+     "check": "ok",
+     "created_at": "2026-11-16T02:34:05Z",
+     "text": "Well, here we go. Qwen4-Max is officially here\n\nA new architecture, native vision, 1M context, and quite a few improvements we've been working on.\n\nIt's been a long time coming, and we're really excited to finally get it into your hands.\n\nAs always, give it a try, push it on your own tasks, and let us know what you think. We'd love to see what you build with it!\n\nWe know what else you've been waiting for. More Qwen4 models are on the way.",
+     "likes": 1907,
+     "retweets": 120,
+     "replies": 84,
+     "views": 55578,
+     "quote": {
+      "author": "@Alibaba_Qwen",
+      "text": "📢 Meet Qwen4-Max, your new AI teammate for work, creativity, and discovery!\n\nQwen4-Max is built on a new MoE architecture with native vision and a 1M-token context window.\n\nHighlights:\n- Outperforms Qwen3.8-Max with up to ~50% fewer tokens, while average cost per task drops over 60% in our internal evaluation.\n- Advances real-world productivity through greater proficiency with professional tools, stronger long-horizon execution, and higher-quality deliverables.\n- Handles real tasks, including…"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Claude Code 2.1.326 enables Code Mode with agent teams and other improvements",
+   "category": "feature_update",
+   "event_time": "2026-11-16T22:20:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+   "facts": [
+    "Claude Code 2.1.326 lets you use Code Mode with agent teams.",
+    "It also fixes earlier conversation history going missing when you resume a session after Claude Code ran low on memory."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Vincent_tripodi/status/2122454209689747825",
+     "official": false,
+     "author": "@Vincent_tripodi",
+     "check": "ok",
+     "created_at": "2026-11-16T22:18:11Z",
+     "text": "Claude Code 2.1.326 lets you use Code Mode with agent teams. It also fixes earlier conversation history going missing when you resume a session after Claude Code ran low on memory. https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 11
+    },
+    {
+     "url": "https://x.com/cryptojezuz/status/2122454705741959350",
+     "official": false,
+     "author": "@cryptojezuz",
+     "check": "ok",
+     "created_at": "2026-11-16T22:20:09Z",
+     "text": "Claude Code 2.1.326 is out. Code Mode now works with agent teams turned on.\n\n/status now shows when your provider or a variable like DISABLE_TELEMETRY turns features off.\nCtrl+O shows hidden startup notices.\nclaude purge prompts now show even with stdout redirected. Before, one unseen Enter could delete a project's data.\nAuto mode no longer gets stuck on its local classifier, which counts toward usage.\n\nThe /status row is where I'd look first. Less guessing about why a feature is quietly off.",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 104
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "GitHub Copilot adds Gemini 4 Hydrogen for fast agentic coding",
+   "category": "feature_update",
+   "event_time": "2026-11-13T00:00:00Z",
+   "primary_url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+   "facts": [
+    "Gemini 4 Hydrogen, Google’s latest Flash model, is now generally available in GitHub Copilot.",
+    "It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction following over Gemini 3.8 Flash.",
+    "Available to Copilot Pro, Pro+, Max, Business, and Enterprise users, billed at provider list pricing under usage-based billing."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/github/status/2121319695626518823",
+     "official": true,
+     "author": "@github",
+     "check": "ok",
+     "created_at": "2026-11-13T19:10:02Z",
+     "text": "🚀 @GoogleAI's Gemini 4 Hydrogen is now generally available in GitHub Copilot.\n\nDesigned for fast, efficient agentic coding, tool use, and multistep workflows, it has improved instruction compared to Gemini 3.8 Flash.\n\nFind it in the GitHub Copilot app, CLI, and @code.\nhttps://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+     "likes": 325,
+     "retweets": 28,
+     "replies": 50,
+     "views": 55323
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Gemini side panel in Google Apps Script reaches general availability for Workspace automations",
+   "category": "feature_update",
+   "event_time": "2026-11-16T00:00:00Z",
+   "primary_url": "https://workspaceupdates.googleblog.com/2026/11/customize-and-extend-workspace-with-apps-script.html",
+   "facts": [
+    "With the Gemini side panel in Apps Script generally available, anyone across your organization can easily create, customize, and troubleshoot scripts using plain language with no coding experience required.",
+    "Scripts run natively in Workspace with a user’s existing permissions and standard OAuth consent, while IT admins retain full visibility and control in the Admin console.",
+    "Gradual rollout (up to 15 days for feature visibility) started 12th November 2026 for Rapid Release and Scheduled Release domains."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Claude Code experimental Code Mode batches tool calls via JavaScript",
+   "category": "feature_update",
+   "event_time": "2026-11-12T22:12:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+   "facts": [
+    "Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools.",
+    "Without Code Mode, Claude asks for tool calls such as Bash, Read, or Edit directly and reads each result before it decides what to do next. With Code Mode, Claude writes a piece of JavaScript that makes the tool calls, and Claude Code runs that code in your session."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/anaveentalks/status/2122170569278050815",
+     "official": false,
+     "author": "@anaveentalks",
+     "check": "ok",
+     "created_at": "2026-11-16T03:31:06Z",
+     "text": "Claude Code can now write a small script instead of calling its tools one at a time.\n\nThat matters because every normal tool call is a round trip.The model asks, waits reads the whole result then decides the next step. Search a big repo and every match lands in its context.\n\nWith the new Code Mode Claude writes JavaScript that searches filters, edits and runs tests in one go and only reads back the part it needs.\n\nSame model less clutter.A lot of agent speedups come from plumbing like this not a smarter brain.",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 2,
+     "views": 36
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Hermes Agent leads OpenRouter daily rankings with long-term memory via Honcho plugin",
+   "category": "trend",
+   "event_time": "2026-11-16T18:00:00Z",
+   "primary_url": null,
+   "facts": [
+    "On OpenRouter's own daily app ranking, Hermes Agent processed 1.71T tokens. Kilo Code was second with 1.21T, and Claude Code third with 1.17T. The figures were checked on Nov 16, 2026.",
+    "Honcho is an open-source memory layer for AI agents that works with Hermes, Claude Code, Codex, Cursor and more."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/AGTPinsights/status/2122453788229275848",
+     "official": false,
+     "author": "@AGTPinsights",
+     "check": "ok",
+     "created_at": "2026-11-16T22:16:31Z",
+     "text": "Hermes Agent just hit #1 on OpenRouter's daily app board again. Here's what you need to know.\n\nOn OpenRouter's own daily app ranking, Hermes Agent processed 1.71T tokens. Kilo Code was second with 1.21T, and Claude Code third with 1.17T. The figures were checked on Nov 16, 2026. They count OpenRouter traffic only, not direct API keys or subscriptions.\n\nThe same day, Hermes Release Watch tested Honcho, a memory plugin for Hermes. Honcho is an open-source memory layer for AI agents. It runs alongside Hermes's built-in memory files, MEMORY.md and USER.md, and builds a long-term picture of you in the background.\n\nThe test went like this. On Telegram, they told Hermes they were leading the Q4 pricing launch, then said the standup moved to 10. A brand-new Hermes chat in the terminal then planned Monday morning with standup at 10:00. Claude Code, a completely different agent, then drafted a standup update for the 10:00 standup about the pricing launch. The Honcho dashboard showed each conclusion next to the Telegram message it came from. Said once, and every agent picked it up.\n\nHoncho also learns your preferences, goals and how you work. It draws conclusions from patterns across conversations. When something changes, a correction becomes a newer memory.\n\nTo set it up, run two commands:\n- hermes plugins install honcho\n- hermes memory setup honcho\n\nKey numbers:\n- Hermes Agent: 1.71T tokens in a day on OpenRouter\n- Kilo Code: 1.21T\n- Claude Code: 1.17T\n- New Honcho accounts get $10 in credits to try it\n- Setup takes 2 commands\n\nHermes now leads OpenRouter's daily board, and Honcho gives it memory that carries across agents.",
+     "likes": 1,
+     "retweets": 2,
+     "replies": 2,
+     "views": 463,
+     "quote": {
+      "author": "@HermesWatcher",
+      "text": "Every Hermes user needs to see this.\n\nIf you run Hermes, real long-term memory is a must. Your agent should know you, not make you repeat yourself.\n\nHermes already keeps notes on you. Honcho takes it further.\n\nSo I put it to the test (new accounts get $10 in credits to try it) 👇\n\nHoncho is an open-source memory layer for AI agents. It runs alongside Hermes's own memory and builds a long-term picture of you in the background.\n\nThe test:\n▸ Told Hermes on Telegram I'm leading the Q4 pricing…"
+     }
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

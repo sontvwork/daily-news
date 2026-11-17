@@ -1,0 +1,160 @@
+{
+ "date": "2026-11-17",
+ "runs": [
+  {
+   "started_at": "2026-11-17T00:00:20+00:00",
+   "seconds": 15.3,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 7,
+   "articles_ok": 6,
+   "articles_error": 1,
+   "articles_skipped": 0,
+   "hn_ok": 2,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "TimeoutError: The read operation timed out": 1
+   },
+   "summary": "6/7 bài gốc ok (0 bỏ qua), 2/2 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 15.3s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://blog.jetbrains.com/teamcity/2026/11/run-ai-agents-in-teamcity/",
+   "article": {
+    "url": "https://blog.jetbrains.com/teamcity/2026/11/run-ai-agents-in-teamcity/",
+    "status": "ok",
+    "title": "Run AI Agents in TeamCity - The JetBrains Blog",
+    "chars": 7148,
+    "text": "TeamCity\nPowerful CI/CD for DevOps-centric teams\nFollow\nFollow:\nX\nYoutube\nRSS\nSubscribe\nGet TeamCity\nAI\nRun AI Agents in TeamCity\nOlga Bedrina\nAI coding agents don’t have to run only on a developer’s machine. You can also make them part of your CI/CD workflows to review code, investigate failed builds, update documentation, or handle other repository tasks.\nThe new experimental AI Agents plugin for TeamCity lets you run Codex and Claude Code directly in TeamCity builds and connect them to the LLM provider of your choice.\nThe plugin installs the coding agent on the TeamCity build agent, provides credentials safely for the duration of the build, and collects usage statistics and agent trajectories.\nWhen a build starts, the plugin checks whether the selected client is available and installs it if necessary. You can then call codex or claude from a regular TeamCity Command Line build step.\nInstall the plugin\nWhat does the AI Agents plugin do?\nThe plugin handles much of the setup needed to run coding agents reliably in CI.\nConnect to your preferred LLM provider\nThe plugin stores your provider credentials as a TeamCity connection. It currently supports:\nJetBrains Air\nOpenAI\nAnthropic\nLiteLLM\nOpenRouter\nThis is not limited to models provided directly by these services. Gateways such as OpenRouter and LiteLLM give you access to a much wider range of models, so you can choose models and providers that make sense for your team.\nRun Codex and Claude Code without preinstalling them\nYou don’t have to install Codex or Claude Code manually on every TeamCity build agent. When a build starts, the plugin checks whether the selected client is available and installs it if necessary. You can then call codex or claude from a regular TeamCity Command Line build step.\nKeep provider credentials out of your build agents\nTeamCity build agents are often reused across builds, so leaving provider credentials on an agent can be a security risk. The plugin provides the necessary credentials to the TeamCity agent only for the duration of the build and removes them afterward.\nYour provider credentials are managed through the TeamCity connection rather than permanently stored on individual build agents.\nTrack token usage\nThe plugin collects usage statistics from agent runs and publishes them as TeamCity statistical values, including prompt, completion, cached, and total token counts.\nBecause these are regular TeamCity statistics, you can use them to track AI usage over time and create charts. This can also help you spot unexpected changes in token consumption and investigate possible cost anomalies.\nInspect and analyze agent trajectories\nWhen an AI agent does something unexpected, seeing its final response is often not enough. You need to understand what happened along the way.\nThe plugin records the agent trajectory and makes it available in two formats:\nHTML gives you a readable view of the agent’s messages, tool calls, and token usage.\nJSON makes trajectories available for programmatic analysis.\nThe JSON format is especially useful when you want to analyze multiple agent runs together, like to understand why an agent behaves a certain way or how to adjust the original prompt to get better results.\nYou can also use a local coding agent together with the TeamCity CLI to retrieve trajectories from multiple builds and analyze them in batches. This gives you a practical feedback loop: run an agent in CI, collect its trajectories, analyze what happened across multiple runs, adjust the prompt, and try again.\nThis makes trajectories useful both for debugging individual builds and improving the agent workflows you run in CI.\nSet up the plugin\nInstall the plugin from JetBrains Marketplace and add it to your TeamCity server.\n1. Create a connection\nFirst, you need to set up a connection. The plugin supports various LLM providers and gateways. Open Project Settings | Connections.\nSupported providers:\nOpenAI\nAnthropic\nOpenRouter\nLiteLLM\nJetBrains Air\nEnter the…"
+   }
+  },
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+    "status": "ok",
+    "title": "",
+    "chars": 41549,
+    "text": "## 2.1.323\n- Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it on, or to turn it off for an organization\n- Added `engines[\"claude-code\"]` to `plugin.json`: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that fits\n- Added type checking of a plugin's TypeScript hooks module to `claude plugin validate`; each finding is a warning, and `--strict` fails on it\n- Added to `claude plugin validate` the `$` nouns a mod's `engine.create` hook adds, withholds or replaces\n- Added support for `CLAUDE_CODE_AUTO_MODE_MODEL` in managed settings for Claude Desktop sessions on third-party providers (takes effect once Claude Desktop includes this version)\n- Added an options menu (stop, switch to usage credits, upgrade) when a model needs usage credits that are turned off or used up\n- Added a progress heartbeat every 30 seconds while hooks run long in `claude -p` and SDK sessions, so a host such as Claude Desktop won't end the turn as hung (once it includes this version)\n- Added `.docx` support to Artifact tool asset uploads\n- Added a `/diff to close` hint to the diff panel, and the keys that focus and close a panel to the `?` shortcut guide\n- Added a start-up warning for Bash allow rules with a `*` in a variable's value, such as `Bash(PORT=* npm run dev)`\n- Added a warning when a plugin's language server can't start, naming the server and what to check\n- Added a one-time startup notice naming `CLAUDE_CODE_PERFORCE_MODE` when Perforce settings are found and the mode is off\n- Added `CLAUDE_CODE_DISABLE_AGENT_PROGRESS_SUMMARIES` (available since 2.1.318): set it to `1` to turn off subagent progress summaries and the requests that write them (anthropics/claude-code#86879)\n- Added `CLAUDE_CODE_RESUME_HINT_COMMAND`, which a program that starts Claude Code can set to have the exit hint name its own resume command\n- Added `unsetOptionCount` to the `claude plugin install --json` result: how many `userConfig` options are not yet set\n- Added `isPromptCovered` to the props a mod's pane is drawn with, telling it when a dialog or a field above the prompt covers the prompt\n- Fixed running `/compact` again, or after a command such as `/context`, summarizing away a message that Claude had not answered yet\n- Fixed a resumed session joining your next message to an old interrupted message that was not resumed\n- Fixed a memory spike at the next prompt after Claude changed a very large file\n- Fixed a setting saved in a running session undoing a hand edit made to `settings.json` moments earlier; a settings file you delete during a session now stays deleted\n- Fixed `claude plugin` commands and `claude mcp list` signing you out of a Console profile when they ended while the token was being renewed\n- Fixed Edit and Bash running out of memory on certain `/proc` files, and Edit hanging or running out of memory on devices and named pipes\n- Fixed Claude Code failing to start, or to clear stored credentials at sign-out, when saving its configuration file failed with \"Out of memory\"\n- Fixed requests sent without streaming failing on errors that streamed requests recover from, such as a rejected image, thinking block or beta header\n- Fixed `ExitWorktree`, the worktree exit dialog and `/resume` leaving the session in the wrong folder when the folder the shell was in before entering the worktree had been deleted\n- Fixed accents and other combining marks sometimes landing left of the text, leaving stale copies on screen, or silently disappearing when text wraps\n- Fixed the last key of a key chord, such as Enter in ctrl+x enter, acting on a dialog's text field when the chord's own action isn't available there\n- Fixed `ps` processes piling up when the process listing Claude Code runs before stopping a command takes too long\n- Fixed subagent transcripts and large tool results being saved apart…"
+   }
+  },
+  {
+   "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+   "article": {
+    "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+    "status": "ok",
+    "title": "Gemini 4 Hydrogen in GitHub Copilot - GitHub ChangelogLinkedIn iconInstagram iconYouTube iconX iconTikTok iconTwitch iconGitHub icon",
+    "chars": 2109,
+    "text": "Back to changelog\nRelease\nNovember 13, 2026 •\n1 minute read\nGemini 4 Hydrogen in GitHub Copilot\nGemini 4 Hydrogen, Google’s latest Flash model, is now generally available in GitHub Copilot. It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction following over Gemini 3.8 Flash.\nThis model is billed at provider list pricing under usage-based billing. See Models and pricing for GitHub Copilot for details.\nAvailability in GitHub Copilot\nGemini 4 Hydrogen is available to Copilot Pro, Pro+, Max, Business, and Enterprise users. You can select the model in the model picker in:\nVisual Studio Code\nVisual Studio\nCopilot CLI\nGitHub Copilot coding agent\nGitHub Copilot app\ngithub.com\nGitHub Mobile on iOS and Android\nJetBrains IDEs\nXcode\nEclipse\nCopilot SDK\nRollout will be gradual. Check back soon if you don’t see it yet.\nEnabling access\nCopilot Enterprise and Copilot Business plan administrators can manage access to Gemini 4 Hydrogen through the model policy in Copilot settings. Under default model enablement, new models are automatically enabled unless an administrator has turned off the global default or explicitly disables this model.\nLearn more\nTo explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot.\nShare your feedback\nJoin the GitHub Community to share your feedback.\nNov.16 Release\nGitHub Copilot weekly releases — November 9\ncopilot\nNov.16 Retired\nGitHub Copilot models deprecated on November 16, 2026\ncopilot\nNov.13 Retired\nUpcoming deprecation of selected GitHub Copilot models in December\ncopilot\nNov.13 Release\nGitHub Enterprise Server support in the GitHub Copilot app\ncopilot\nNov.10 Improvement\nGitHub App support for Enterprise Copilot seat management\ncopilot\nenterprise management tools\nNov.10 Release\nGemini 4 Carbon in GitHub Copilot\ncopilot\nNov.10 Improvement\nC++ language server now auto-configures MSBuild builds\ncopilot\nNov.09 Release\nClaude Fable 5.2 in GitHub Copilot\ncopilot\nNov.06 Improvement\nCopilot code review: API management and review overview updates\ncopilot"
+   }
+  },
+  {
+   "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+   "hn_url": "https://news.ycombinator.com/item?id=50524736",
+   "hn": {
+    "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+    "points": 50,
+    "comments": 15
+   },
+   "comments": [
+    {
+     "author": "cheschire",
+     "replies": 0,
+     "text": "https://linuxmint-installation-guide.readthedocs.io/"
+    },
+    {
+     "author": "knollimar",
+     "replies": 0,
+     "text": "I pray for the day Linux gets real anti cheat and autodesk products run there"
+    },
+    {
+     "author": "onemoresoop",
+     "replies": 0,
+     "text": "Windows 11 is probably collecting a lot more data and phoning it home."
+    },
+    {
+     "author": "shiwng",
+     "replies": 0,
+     "text": "This popping out after the latest bug isn't as surprising."
+    },
+    {
+     "author": "nelsonfigueroa",
+     "replies": 1,
+     "text": "I sometimes jokingly say \"Windows is spyware\", but perhaps it's not that far off..."
+    }
+   ],
+   "article": {
+    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+    "status": "ok",
+    "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use :: Xusheng Li",
+    "chars": 11281,
+    "text": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use\nReverse engineering Windows 11's MissionControlAggregator reveals coding-agent and developer-tool usage bits in a diagnostic ETW report.\nI recently asked AI to help me look through the latest Windows binaries for undocumented features and functionality. Among the leads it turned up, one list immediately caught my attention: coding agents such as codex.exe, claude.exe, copilot.exe, and cursor.exe, alongside familiar developer tools such as python.exe, dotnet.exe, gcc.exe, and code.exe.\nWhy would a Windows system DLL need a list of coding agents and developer tools?\nThe names were in MissionControlAggregator.dll. I asked the agent to follow the references and dig into what the DLL actually does. That led from a handful of string comparisons to a running Windows component that records which coding agents and developer tools have been used, saves that information locally, and reports it to Windows Diagnostics. And unless you have opted out of the “optional” diagnostic data (which is enabled by default), the data is uploaded to Microsoft.\nI shared the initial finding on X. This post includes more details about the investigation behind it.\nFollowing the names\nOpening the DLL in Binary Ninja made the first lead easy to see. These were explicit executable names embedded in a Windows component:\nFollowing the references showed that the names were used in comparisons. There are four CLI-agent slots checking copilot.exe, claude.exe, codex.exe, and agy.exe, with extensionless equivalents on the WSL route. Five desktop-agent slots check github.exe, claude.exe, codex.exe, cursor.exe, and antigravity.exe.\nHere is one of the comparisons against codex.exe:\nThe compiler-generated C++ names are unwieldy, so I will call these functions executable-name matchers. For reference, one related matcher is std::_Func_impl_no_alloc<<lambda_340dfe7e962ab225b6ac33bc664bd54f>, bool, std::basic_string_view<wchar_t, std::char_traits<wchar_t>> const&, Microsoft::Diagnostics::MissionControlAggregator::Utils::AppType>::_Do_call. The screenshot shows another lambda instantiation performing the same kind of name comparison.\nThe feature guarding the new agent checks has a particularly direct name: CLICodingAgentUsage, feature ID 62580080.\nAnd the list extends beyond AI agents. The same component checks for node.exe, python.exe, dotnet.exe, gcc.exe, clang.exe, gdb.exe, javac.exe, devenv.exe, and code.exe, among others. Those checks feed broader developer-tool categories. Some of these checks also verify the publisher: the Node.js slot expects Node.js Foundation, Python expects Python Software Foundation, and the .NET and Visual Studio slots expect Microsoft Corporation. The compiler/debugger group containing GCC and Clang has no additional publisher check in this path.\nWhere does the DLL get this information?\nThe next question was whether the component scans running processes itself. Following Aggregator::OnLoad revealed that it subscribes to existing Windows events instead.\nFor Windows programs, it consumes KernelProcess.AppStateChangeSummary and Win32kTraceLogging.AppInteractivitySummary. These provide application identities that its handlers parse and pass to the matchers. For WSL, it consumes Microsoft.Windows.Lxss.Manager.Exec and ExecCritical, using the imageName field. A regular Windows codex.exe can therefore reach the CLI-agent checks through the app-state summary route; this is not limited to Linux programs running inside WSL.\nThe relevant flow looks like this:\nAggregator::OnLoad\n├─ WSL Exec / ExecCritical\n│ └─ ProcessWslExecEvent → CLI agent matchers\n├─ KernelProcess.AppStateChangeSummary\n│ └─ ProcessAppStateChangeSummaryEvent → CLI agent matchers\n└─ Win32kTraceLogging.AppInteractivitySummary\n└─ ProcessAppInteractivitySummaryEvent → desktop agent matchers\nAggregator::OnRelativeTimerExpire\n└─ MissionControlAggregatorLogging::ReportCohorts<12,4,5>\n└─ Segments.SubCohorts ETW…"
+   }
+  },
+  {
+   "url": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+   "article": {
+    "url": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+    "status": "ok",
+    "title": "Alibaba Unveils Qwen4-Max: New AI Teammate for Work, Creativity, and Discovery - Alibaba Cloud",
+    "chars": 7265,
+    "text": "AI Assistant\nContact UsDocsConsole\nPress Room\nAlibaba Unveils Qwen4-Max: New AI Teammate for Work, Creativity, and Discovery\n{\"moduleinfo\":{\"mediaContactsText\":\"Media Contact\",\"shareText\":\"Share\",\"mediaContactsContent\":\"Crystal Liu<br/> Alibaba Group<br/> +852 63785626/+86 18578497650<br/> <a href=\\\"mailto:crystal.liu@alibaba-inc.com\\\">crystal.liu@alibaba-inc.com</a><br/><br/>Luica Mak<br/> Alibaba Group<br/> +44 790 547 1332<br/> <a href=\\\"mailto:luica@alibaba-inc.com\\\">luica@alibaba-inc.com</a>\",\"shareIcon_count\":[{\"count_phone\":1,\"count\":1}]},\"shareIcon\":[{\"link\":\"#\",\"icon\":\"https://img.alicdn.com/tps/TB1lmnDOpXXXXcMapXXXXXXXXXX-22-21.png\"}]}\npc\nShare\nMedia Contact\nCrystal Liu\nAlibaba Group\n+852 63785626/+86 18578497650\ncrystal.liu@alibaba-inc.com\nLuica Mak\nAlibaba Group\n+44 790 547 1332\nluica@alibaba-inc.com\nAlibaba Unveils Qwen4-Max: New AI Teammate for Work, Creativity, and Discovery\nAlibaba Cloud\nNovember 16, 2026\nHangzhou, China, November 16, 2026 - Alibaba has released Qwen4-Max, the most capable model in the Qwen family to date. Featuring 2.4 trillion total parameters, native vision capabilities, and a one-million-token context window, Qwen4-Max excels at complex tasks across work, creativity, and research.\nQwen4-Max achieves top rankings across leading benchmarks, particularly in coding, agentic tasks and visual reasoning. It ranked 6th on Code Arena, a real-world coding leaderboard, and posted strong scores across specialized benchmarks for agent workflows, workplace productivity, and visual reasoning, including Agents' Last Exam, Vals Index, JobBench, and Chartography.\nAccording to Work360—a proprietary benchmark evaluating performance on challenging industry tasks across 721 specialized fields—Qwen4-Max outperforms its predecessor, Qwen3.8-Max, overall while using 35% fewer tokens at High effort reasoning mode and reducing the average cost per task by around 60%.\nThese gains are driven by the new Qwen4 architecture, which upgrades the sparse Mixture-of-Experts (MoE) design across attention, residual connections, and embeddings. Built as an MoE model with 2.4 trillion total parameters, Qwen4-Max activates only 71 billion per token—25% fewer activated parameters compared to Qwen3.8-Max at the same 2.4T scale—delivering stronger capabilities at a lower inference cost.\nQwen4-Max is available now on QwenCloud via the Token Plan and API. Users can also access the model across Alibaba platforms, including QwenWork and QwenStudio. Input (Implicit Cache Hit) is priced at $0.075 per 1M tokens. Open-weight, smaller-scale models from the Qwen4 series will soon be released to developers worldwide.\nQwen4-Max ranked 6th on Code Arena\nQwen4-Max outperforms Qwen3.8-Max overall on Work360\nImproving Resource Efficiency and Enhancing Productivity\nQwen4-Max features advanced Cloud Resource Scheduling capabilities designed for deployment in cloud infrastructure. Operating in a closed loop, the model autonomously optimizes its own scheduling workflows to cut costs and boost resource efficiency. In benchmark testing, this reduced data-annotation model call costs by an average of 9%, and accelerated offline CPU rescheduling speeds by more than 14 times.\nBeyond cloud infrastructure, Qwen4-Max supports professional workflow and creative production such as 3D modeling, game development, and agentic video creation. In automotive manufacturing, Qwen4-Max delivers end-to-end capabilities across production-line planning, part design, and machining verification. During a showcase, the model cut manual workpiece programming time by 95%—from roughly 475 minutes to just 24 minutes—by using feedback-driven iteration to catch overcuts and insufficient material removal before machining begins. Qwen4-Max also accelerates forward-deployed engineering (FDE) across industries such as finance, law, healthcare.\nPowering Long-Running Agents for Scientific Discovery\nBuilt for the agentic AI era, Qwen4-Max powers sustained, around-the-clock execution. In the…"
+   }
+  },
+  {
+   "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+   "hn_url": "https://news.ycombinator.com/item?id=50520866",
+   "hn": {
+    "title": "Software is breaking down at a systemic level",
+    "points": 330,
+    "comments": 209
+   },
+   "comments": [
+    {
+     "author": "doug_durham",
+     "replies": 10,
+     "text": "This narrative isn't consistent with reality. Cloud computing is much older than 10 years ago. We were doing production grade cloud computing over 16 years ago. The OSS revolution dates to the late 90's. The author seems to think that SWE was in a golden age 10 years ago. Sorry, but it's about the same. We have the same problems in SWE as we had 40 years ago. The scale and ambition of the problems we are solving have increased as compute capabilities have increased."
+    },
+    {
+     "author": "CharlieDigital",
+     "replies": 14,
+     "text": "It doesn't have to be this way.\nAI is great at following patterns. AI is great at writing tests. AI is great at doing work that humans would consider drudgery and then applying \"enough\" judgement to it.\nThe problem is that most software teams and most engineers are very, very bad at the thing that AI needs to succeed: technical writing. Documenting the patterns, the rules, the heuristics, the SOP, the judgement; developers could barely be bothered to write comments before (which in the AI age…"
+    },
+    {
+     "author": "illuminator83",
+     "replies": 1,
+     "text": "Software is not really being more broken today than it was 10 or 20 years ago. It actually has gotten better.\nI've seen the codebase of a dozen companies and worked with hundreds of peers.\nThere is plenty of horrific bugs and bad software outside. The reasons are plentiful too and include everything like budget constraints, management failures and engineering skill issues.\nToday, the average code that even a product manager or junior engineer submits is actually excellent overall - if your…"
+    },
+    {
+     "author": "rglover",
+     "replies": 3,
+     "text": "Imo: the way we make software is breaking down at a systemic level.\nThe harsh reality is that some people/systems are adapting just fine to the new way of doing things, others are making a mess of things by rushing via vibe coding and not checking the work (either by choice or by circumstance at work). The results won't be (and shouldn't be expected to be) linear.\nThe 2010s brought on a very groupthinky dynamic to software dev. This led to a culture where the majority of developers just ask…"
+    },
+    {
+     "author": "ljm",
+     "replies": 1,
+     "text": "Software wasn't exactly hard 12 years ago either, the barriers to entry were being lowered at a rapid pace. 2014 was the dawn of the software bootcamp where JS became more and more pronounced in web architecture.\nI feel this piece is either more alarmist than it deserves to be, or it is late to the party.\nIt uses various incidents in 2026 to prove a point while dismissing those that did take place in the decade or so previous. For example, heartbleed, the log4j RCE, Rails' mass assignment DOS,…"
+    }
+   ],
+   "article": {
+    "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+    "status": "ok",
+    "title": "Software is breaking down at a systemic level | Jimmy Breck-McKye",
+    "chars": 15300,
+    "text": "Software is breaking down at a systemic level\n15 November 2026\nopinion software ai\nSoftware hasn’t been working too well lately, has it?\nThis weekend we saw the double-whammy of a 2 day global Microsoft outage, then an FAA ground-stop that halted all flights in the United States.\nCan you believe it’s only been four weeks since the PHP2Shell vulnerability? A critical exploit in PHP, powering an estimated 70% of the world’s websites, with sites taken completely offline as engineers frantically patched their systems.\nAnd then there was the eMudhra fiasco, where thousands of SSL certificates - the way we secure HTTPS websites and internet traffic - were compromised by a private key so weak, it was almost comical.\nIt’s like 2026 has been a year of hacks, outages, vulnerabilities and IT panics. What exactly is going on here?\nYou might be tempted to blame AI, and you wouldn’t be completely wrong. Artificial intelligence models are definitely a part of this. Even if companies like Microsoft don’t divulge whether broken systems were built with AI, we do know that hackers and researchers can now use AI technology to find complicated exploits in a matter of hours.\nI work with AI heavily in my job. It’s tremendously powerful. It’s also corrosive if used unwisely.\nBut AI is both a cause and a symptom of the problem here. What we are seeing is software breaking down at a systemic level. This problem is insidious because it is not only the software itself that is broken, but the entire way we’ve come to build it.\nWhat does it mean for a failure to be systemic?\nLook at the recent crises in software reliability and you’ll notice they don’t share immediate causes - that we know of - yet they look uncannily similar to each other.\nMicrosoft\nThe Microsoft outage likely emerged from a network configuration failure that stopped MS datacenters communicating with each other. Exactly what happened next remains confidential, but it seems to have triggered a cascading failure where no service could be restored into a valid state long enough to bear traffic.\nReddit and Bluesky speculated that even MSFT engineers had no real handle on the complexity of this outage.\nMicrosoft have faced increasing criticism for the (un)reliability of their Azure platform. Back in March, ex-MSFT engineer Axel Rischin published this scathing criticism:\nMicrosoft rushed Azure out of the gates under intense competitive pressure. Corners were cut. Fundamental principles of reliability and operational simplicity were quietly abandoned.\nInstead of going back to the drawing board to tackle the growing technical debt, Microsoft relied on quick fixes: layers of automation running mitigation scripts, a growing team of on-call staff, and, when automation was not enough, manual repairs.\nHis article depicts a highly complex system made of low quality parts, where nobody can make sense of the whole picture.\nThe PHP event\nOn October 21st, security research firm Wiz proudly shared an exploit that could execute arbitrary code on any PHP website. Called PHP2Shell, Wiz trumpeted the power of AI tools to achieve exploits far beyond the skills of human attackers.\nIt turns out the PHP runtime had hidden several complex memory bookkeeping bugs for over a decade. PHP is used extensively in e-commerce and most famously in WordPress, which was once the go-to for cheaply building simple websites.\nThe PHP2Shell writeup depicts an internet dependent on a long chain of dependencies, hiding vulnerabilities too complex for any human to identify.\nShai Hulud attack, May 2026\nMost people outside of tech won’t have heard of this, but back in May we faced a crisis when an attacker compromised some important packages in the JavaScript ecosystem (NPM).\nThese packages used GitHub Actions to perform Continuous Integration (CI) - automated tests, releases, etc. - and had a crucial misconfiguration where anyone who forked their projects could insert compromised code back upstream.\nWhen the next upstream CI build…"
+   }
+  },
+  {
+   "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+   "article": {
+    "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+    "status": "error",
+    "reason": "TimeoutError: The read operation timed out"
+   }
+  }
+ ]
+}

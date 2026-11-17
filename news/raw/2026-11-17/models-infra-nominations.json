@@ -1,0 +1,982 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "b64e7f015c295d38",
+  "generated_at": "2026-11-16T23:57:22.411602Z",
+  "from_date": "2026-11-15",
+  "to_date": "2026-11-16",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-16T23:57:22.320069Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-16T23:57:22.320076Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-16T23:57:21.860744Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 127,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-16T23:57:22.319889Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AI-generated Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 651,
+          "points": 1253
+        },
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "AI-generated Open Source",
+        "seed_score": 2348.2966,
+        "summary": "All AI-generated code should be Open Source",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50507303",
+            "source": "hackernews",
+            "title": "All AI-generated code should be Open Source",
+            "body": "All AI-generated code should be Open Source",
+            "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+            "author": "jcubic",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1253,
+              "comments": 651
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about All AI-generated code should be Open Source",
+            "snippet": "All AI-generated code should be Open Source",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50507303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          },
+          {
+            "item_id": "R94",
+            "source": "reddit",
+            "title": "I made Claude Code agents beta-test my app on up to 20 phones at once (free GitHub runners, open source)",
+            "body": "I made Claude Code agents beta-test my app on up to 20 phones at once (free GitHub runners, open source)\nEach agent gets its own iOS Simulator or Android emulator, plays a persona (iPhone SE with large text, old Android, iPad in German\u2026) and writes a bug report with screenshots.\n\nDemo app with 11 planted bugs: 4 agents found 9 in 21 min, for $0.87. The video is a real screen recording of that run.\n\nRepo (MIT): [https://github.com/pierridotite/mobile-agent-testers](https://github.com/pierridotite/mobile-agent-testers)",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy1aj6/i_made_claude_code_agents_betatest_my_app_on_up/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Each agent gets its own iOS Simulator or Android emulator, plays a persona (iPhone SE with large text, old Android, iPad in German\u2026) and writes a bug report with screenshots.\n\nDemo app with 11 planted bugs: 4 agents found 9 in 21 min, for $0.87. The video is a real screen recording of that run.\n\nRepo (MIT): [https://github.com/pierridotite/mobile-agent-testers](https://github.com/pierridotite/mobi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28650000000000003
+          },
+          {
+            "item_id": "R87",
+            "source": "reddit",
+            "title": "I lost track of my Claude Code sessions across ~45 projects, so I built a small local dashboard for them (open source, works on your phone)",
+            "body": "I lost track of my Claude Code sessions across ~45 projects, so I built a small local dashboard for them (open source, works on your phone)\n[removed]",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy1p6x/i_lost_track_of_my_claude_code_sessions_across_45/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2795
+          },
+          {
+            "item_id": "R78",
+            "source": "reddit",
+            "title": "Claude Code helped me build an open-source Desk Buddy for ESP32-S3",
+            "body": "Claude Code helped me build an open-source Desk Buddy for ESP32-S3\n[removed]",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy2mrb/claude_code_helped_me_build_an_opensource_desk/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2905
+          },
+          {
+            "item_id": "R63",
+            "source": "reddit",
+            "title": "I built an unofficial plugin that lets my Claude chat on the phone hand work to Claude Code on my computer (open source, with approval controls)",
+            "body": "I built an unofficial plugin that lets my Claude chat on the phone hand work to Claude Code on my computer (open source, with approval controls)\n[removed]",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy4b90/i_built_an_unofficial_plugin_that_lets_my_claude/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28400000000000003
+          },
+          {
+            "item_id": "R66",
+            "source": "reddit",
+            "title": "I built an open-source Grok Bot for Mac that works with your Claude subscription",
+            "body": "I built an open-source Grok Bot for Mac that works with your Claude subscription\nGitHub: [https://github.com/steerlabs/opensteer](https://github.com/steerlabs/opensteer)\n\nHey everyone, I built Opensteer because I wanted a personal agent I could control from my phone, one that works locally on my Mac with all my existing apps, accounts, and files. Most importantly, I wanted it to work with my Claude subscription.\n\nOpensteer lets you connect Claude Code, give it a task, and have it work in your browser and desktop apps on your Mac. It has a built-in browser and streams your browser and apps to your phone, so you can follow along and interact remotely. The app runs locally; when you use Claude, requests are processed by Anthropic.\n\nClaude helped me build the vast majority of Opensteer. For example, it helped with the work to reduce latency when streaming the browser and apps to your phone, including how frames are handled and displayed on mobile.\n\nOpensteer is free and open-source. To try it, download the Apple silicon Mac beta below and connect Claude Code. A Claude subscription is separate.\n\nFeel free to try it out, and I'd appreciate any feedback. Thanks!\n\nMac download: [https://github.com/steerlabs/opensteer/releases/download/v0.1.659-insider/Opensteer-mac-arm64.zip](https://github.com/steerlabs/opensteer/releases/download/v0.1.659-insider/Opensteer-mac-arm64.zip)",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy404z/i_built_an_opensource_grok_bot_for_mac_that_works/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "GitHub: [https://github.com/steerlabs/opensteer](https://github.com/steerlabs/opensteer)\n\nHey everyone, I built Opensteer because I wanted a personal agent I could control from my phone, one that works locally on my Mac with all my existing apps, accounts, and files. Most importantly, I wanted it to work with my Claude subscription.\n\nOpensteer lets you connect Claude Code, give it a task, and have",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2985
+          },
+          {
+            "item_id": "R81",
+            "source": "reddit",
+            "title": "I built an open-source Grok Bot that runs 100% locally with your Claude subscription",
+            "body": "I built an open-source Grok Bot that runs 100% locally with your Claude subscription\nHey everyone, I built Opensteer because I wanted a personal agent I could control from my phone, one that works locally on my Mac with all my existing apps, accounts, and files. Most importantly, I wanted it to work with my Claude subscription.\n\nFeel free to try it out, and I'd appreciate any feedback. Thanks!\n\nGitHub: [https://github.com/steerlabs/opensteer](https://github.com/steerlabs/opensteer)\n\nDownload on a mac: [https://github.com/steerlabs/opensteer/releases/download/v0.1.650-insider/Opensteer-mac-arm64.zip](https://github.com/steerlabs/opensteer/releases/download/v0.1.650-insider/Opensteer-mac-arm64.zip)",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy295b/i_built_an_opensource_grok_bot_that_runs_100/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey everyone, I built Opensteer because I wanted a personal agent I could control from my phone, one that works locally on my Mac with all my existing apps, accounts, and files. Most importantly, I wanted it to work with my Claude subscription.\n\nFeel free to try it out, and I'd appreciate any feedback. Thanks!\n\nGitHub: [https://github.com/steerlabs/opensteer](https://github.com/steerlabs/opensteer",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2725
+          },
+          {
+            "item_id": "R83",
+            "source": "reddit",
+            "title": "I built OpenVorld with Claude Code: an open-source pixel-art village where your AI agents work as a crew",
+            "body": "I built OpenVorld with Claude Code: an open-source pixel-art village where your AI agents work as a crew\nClaude Code is great, but I spent a lot of time just watching text scroll by and wondering what was going on.\n\nSo I built OpenVorld, an open-source layer that adds some fun to it.\n\nEvery project becomes a pixel-art **\u201cvorld\u201d**: your agents are a crew with their own houses, vaults and workbenches.\n\nEach agent is a crew member with a name, a role and a \"brain\". The brain can be Claude Code, Codex, OpenCode, or any OpenAI-compatible API, so you keep the setup you already have.\n\nThey walk around the map, work together in a shared chat with mentions, and ask your permission before they use a folder, a command or a site.\n\nEverything is local (plain YAML/JSON files), with no account.\n\nMost of the code was written with Claude Code. It helped me for:\n\n\\- the engine and server (crews, parties, the permission flow)  \n\\- the desktop app, installers and update feed  \n\\- the playable web demo, with a scripted engine so it costs no tokens  \n\\- the tests, changelog and version rules  \n\\- the website and README\n\nFor the real thing you need Node 20+ and Claude Code or another brain you already use.\n\nLinks in the comments.\n\nIt's early. Does seeing agents as a crew make them easier to follow, or is it a gimmick? I'd like honest feedback.",
+            "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy27l3/i_built_openvorld_with_claude_code_an_opensource/",
+            "container": "ClaudeAI",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Claude Code is great, but I spent a lot of time just watching text scroll by and wondering what was going on.\n\nSo I built OpenVorld, an open-source layer that adds some fun to it.\n\nEvery project becomes a pixel-art **\u201cvorld\u201d**: your agents are a crew with their own houses, vaults and workbenches.\n\nEach agent is a crew member with a name, a role and a \"brain\". The brain can be Claude Code, Codex, O",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2985
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anthropic Researcher Pretty Much Humans",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 607
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Researcher Pretty Much Humans",
+        "seed_score": 1434.0,
+        "summary": "100% human unemployment by 2035, what do you think?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R103",
+            "source": "reddit",
+            "title": "Anthropic Researcher: \"Pretty Much All Humans Will Become Permanently Unemployable\"",
+            "body": "Anthropic Researcher: \"Pretty Much All Humans Will Become Permanently Unemployable\"\n100% human unemployment by 2035, what do you think?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xxi8az/anthropic_researcher_pretty_much_all_humans_will/",
+            "container": "singularity",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 349,
+              "num_comments": 607
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "100% human unemployment by 2035, what do you think?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.351
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic Researcher Broadly Superhuman AI Arrive",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 359
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Researcher Broadly Superhuman AI Arrive",
+        "seed_score": 963.0,
+        "summary": "[Full Interview](https://www.youtube.com/watch?v=OPZCQk8jF-I)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R108",
+            "source": "reddit",
+            "title": "Anthropic Researcher: Broadly Superhuman AI Could Arrive in as Little as 1.3 Years",
+            "body": "Anthropic Researcher: Broadly Superhuman AI Could Arrive in as Little as 1.3 Years\n[Full Interview](https://www.youtube.com/watch?v=OPZCQk8jF-I)",
+            "url": "https://www.reddit.com/r/singularity/comments/1xxbyo8/anthropic_researcher_broadly_superhuman_ai_could/",
+            "container": "singularity",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 283,
+              "num_comments": 359
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[Full Interview](https://www.youtube.com/watch?v=OPZCQk8jF-I)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "QWEN 4 27b",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 40
+        }
+      },
+      "nomination": {
+        "name": "QWEN 4 27b",
+        "seed_score": 598.5,
+        "summary": "A wise man once told me \"models will break your heart\".\n\nI just didn't think he meant these types of models lol",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R34",
+            "source": "reddit",
+            "title": "Where is QWEN 4 27b ?",
+            "body": "Where is QWEN 4 27b ?\nA wise man once told me \"models will break your heart\".\n\nI just didn't think he meant these types of models lol",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxqfe5/where_is_qwen_4_27b/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 359,
+              "num_comments": 40
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A wise man once told me \"models will break your heart\".\n\nI just didn't think he meant these types of models lol",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35150000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Gemini models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "Gemini models",
+        "seed_score": 582.0,
+        "summary": "Gemini models at the end of the year:",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R106",
+            "source": "reddit",
+            "title": "Gemini models at the end of the year:",
+            "body": "Gemini models at the end of the year:",
+            "url": "https://www.reddit.com/r/singularity/comments/1xxhlxf/gemini_models_at_the_end_of_the_year/",
+            "container": "singularity",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 368,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Gemini models at the end of the year:",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3985
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Stop Qwen 4 AA",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 149
+        }
+      },
+      "nomination": {
+        "name": "Stop Qwen 4 AA",
+        "seed_score": 457.5,
+        "summary": "Seriously, we have all been extremely happy and confident with Qwen, even since Qwen 3.6 came out. We might not be frontier level, but even though whatever they are giving us is more than enough for our daily local tasks and it even suffices by a big margin, we're all underestimating it.\n\nDon't forget that the new Qwen 4 will also think much less, so imagine the fine-tunes we will see once it arri",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Stop worrying about Qwen 4's AA index",
+            "body": "Stop worrying about Qwen 4's AA index\nSeriously, we have all been extremely happy and confident with Qwen, even since Qwen 3.6 came out. We might not be frontier level, but even though whatever they are giving us is more than enough for our daily local tasks and it even suffices by a big margin, we're all underestimating it.\n\nDon't forget that the new Qwen 4 will also think much less, so imagine the fine-tunes we will see once it arrives, for 27B and Flash models, we will have plenty of options to choose from and again; it will be smarter and better, it will be ENOUGH! If you still require the most \"intelligent\" and capable model due to OCD just pay frontier for such tasks or use them as orchestrators!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxqfqr/stop_worrying_about_qwen_4s_aa_index/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 156,
+              "num_comments": 149
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Seriously, we have all been extremely happy and confident with Qwen, even since Qwen 3.6 came out. We might not be frontier level, but even though whatever they are giving us is more than enough for our daily local tasks and it even suffices by a big margin, we're all underestimating it.\n\nDon't forget that the new Qwen 4 will also think much less, so imagine the fine-tunes we will see once it arri",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 81,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3645
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Qwen4-Max Your New Teammate Has Arrived",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 87
+        }
+      },
+      "nomination": {
+        "name": "Qwen4-Max Your New Teammate Has Arrived",
+        "seed_score": 387.0,
+        "summary": "Qwen4-Max: Your New Teammate Has Arrived",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R107",
+            "source": "reddit",
+            "title": "Qwen4-Max: Your New Teammate Has Arrived",
+            "body": "Qwen4-Max: Your New Teammate Has Arrived",
+            "url": "https://www.reddit.com/r/singularity/comments/1xxdj2b/qwen4max_your_new_teammate_has_arrived/",
+            "container": "singularity",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 171,
+              "num_comments": 87
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Qwen4-Max: Your New Teammate Has Arrived",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "OpenAi pays Google",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "OpenAi pays Google",
+        "seed_score": 357.0,
+        "summary": "I wonder how much OpenAi pays Google for this",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "I wonder how much OpenAi pays Google for this",
+            "body": "I wonder how much OpenAi pays Google for this",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xy08b6/i_wonder_how_much_openai_pays_google_for_this/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 201,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I wonder how much OpenAi pays Google for this",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Six AI AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "Six AI AI",
+        "seed_score": 343.5,
+        "summary": "The original post:\n\n[https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/](https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/)\n\nNow, six months later, we have:\n\nClaude writes a neural network's weights by hand, without training, to detect fake legal citations:\n\n[https://www.reddit.com/r/singularity/comments/1xnplmi/claude\\_writes\\_a\\_neural\\_networks\\_weights\\",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R109",
+            "source": "reddit",
+            "title": "Six months ago someone posted about how frontier AI's were failing at AI research, and a bunch of people said to check back in six months...",
+            "body": "Six months ago someone posted about how frontier AI's were failing at AI research, and a bunch of people said to check back in six months...\nThe original post:\n\n[https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/](https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/)\n\nNow, six months later, we have:\n\nClaude writes a neural network's weights by hand, without training, to detect fake legal citations:\n\n[https://www.reddit.com/r/singularity/comments/1xnplmi/claude\\_writes\\_a\\_neural\\_networks\\_weights\\_by\\_hand/](https://www.reddit.com/r/singularity/comments/1xnplmi/claude_writes_a_neural_networks_weights_by_hand/)\n\nOpus 5.5 can directly edit weights to fix bugs and lower hallucinations in another model:\n\n[https://www.reddit.com/r/LocalLLaMA/comments/1xpls17/tried\\_the\\_weight\\_editing\\_thing\\_from\\_the\\_mit\\_post/](https://www.reddit.com/r/LocalLLaMA/comments/1xpls17/tried_the_weight_editing_thing_from_the_mit_post/)\n\nClaude wrote and trained a language model for DOS that fits on a floppy disk:\n\n[https://www.reddit.com/r/ClaudeAI/comments/1xwpenj/claude\\_wrote\\_and\\_trained\\_a\\_language\\_model\\_for\\_dos/](https://www.reddit.com/r/ClaudeAI/comments/1xwpenj/claude_wrote_and_trained_a_language_model_for_dos/)\n\nAnthropic warns that it's really close to achieving RSI:\n\n[https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/](https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/)\n\nSo, yeah. Here we are. \ud83d\ude42",
+            "url": "https://www.reddit.com/r/singularity/comments/1xxb8fi/six_months_ago_someone_posted_about_how_frontier/",
+            "container": "singularity",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 186,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "The original post:\n\n[https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/](https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/)\n\nNow, six months later, we have:\n\nClaude writes a neural network's weights by hand, without training, to detect fake legal citations:\n\n[https://www.reddit.com/r/singularity/comments/1xnplmi/claude\\_writes\\_a\\_neural\\_networks\\_weights\\",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Open 30",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 54
+        }
+      },
+      "nomination": {
+        "name": "Open 30",
+        "seed_score": 261.0,
+        "summary": "Growing from nearly zero to 30% since July.  Models used mostly to reduce costs on high volume workloads (large batch workloads, coding, etc).\n\n[https://x.com/pwendell/status/2122377964784611636](https://x.com/pwendell/status/2122377964784611636)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "Open weight models account for 30% usage at enterprises to save money",
+            "body": "Open weight models account for 30% usage at enterprises to save money\nGrowing from nearly zero to 30% since July.  Models used mostly to reduce costs on high volume workloads (large batch workloads, coding, etc).\n\n[https://x.com/pwendell/status/2122377964784611636](https://x.com/pwendell/status/2122377964784611636)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxxbt9/open_weight_models_account_for_30_usage_at/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 120,
+              "num_comments": 54
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Growing from nearly zero to 30% since July.  Models used mostly to reduce costs on high volume workloads (large batch workloads, coding, etc).\n\n[https://x.com/pwendell/status/2122377964784611636](https://x.com/pwendell/status/2122377964784611636)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3945
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Alibaba Qwen4 Max jumps 9 points",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "Alibaba Qwen4 Max jumps 9 points",
+        "seed_score": 249.0,
+        "summary": "Alibaba's Qwen4 Max jumps 9 points on Artificial Analysis's Intelligence Index while cutting task costs by 67% and reasoning output by 39%. Its new 2.4-trillion-parameter architecture activates 25% fewer parameters per token.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R97",
+            "source": "reddit",
+            "title": "Alibaba's Qwen4 Max jumps 9 points on Artificial Analysis's Intelligence Index while cutting task costs by 67% and reasoning output by 39%. Its new 2.4-trillion-parameter architecture activates 25% fewer parameters per token.",
+            "body": "Alibaba's Qwen4 Max jumps 9 points on Artificial Analysis's Intelligence Index while cutting task costs by 67% and reasoning output by 39%. Its new 2.4-trillion-parameter architecture activates 25% fewer parameters per token.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xxr3le/alibabas_qwen4_max_jumps_9_points_on_artificial/",
+            "container": "singularity",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 119,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Alibaba's Qwen4 Max jumps 9 points on Artificial Analysis's Intelligence Index while cutting task costs by 67% and reasoning output by 39%. Its new 2.4-trillion-parameter architecture activates 25% fewer parameters per token.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.309
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Censorship Local LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "Censorship Local LLM",
+        "seed_score": 187.5,
+        "summary": "451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US bas",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R27",
+            "source": "reddit",
+            "title": "Censorship is turning me into a true Local LLM believer",
+            "body": "Censorship is turning me into a true Local LLM believer\n451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US based inference providers. I suspiciously got a bunch of \"rate limit\" failures, and then just \"failed to complete\" before it gave me, what I assume, is the real error.\n\n\n\nI am only using it to help create my presentation, which is about analyzing algorithmic properties. One key example is a cryptographic algorithm (because it is difficult by design), so I am assuming this is tripping it somehow. But it is absolutely ridiculous, I'm not even doing research with the AI, just trying to make a presentation.\n\n\n\nI have always liked Local LLMs, as a technical exploration opposed to ideological reasons, but this experience really frustrated me. Don't censor me!\n\n\n\nJust wanted to rant, and remind everyone you can only use the cloud on the provider's terms.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxsc7u/censorship_is_turning_me_into_a_true_local_llm/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 93,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US bas",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Best Audio Models Nov 2026",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 58
+        }
+      },
+      "nomination": {
+        "name": "Best Audio Models Nov 2026",
+        "seed_score": 169.5,
+        "summary": "Its time for another **Best Audio Models** megathread - its already been 9 months since the last one!\n\nShare what your favorite ASR, TTS, STT, Text to Music models are right now\u00a0**and why.**\n\nGiven the the amount of ambiguity and subjectivity in rating/testing these models, please be as detailed as possible in describing your setup, nature of your usage (how much, personal/professional use), tools",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "Best Audio Models - Nov 2026",
+            "body": "Best Audio Models - Nov 2026\nIts time for another **Best Audio Models** megathread - its already been 9 months since the last one!\n\nShare what your favorite ASR, TTS, STT, Text to Music models are right now\u00a0**and why.**\n\nGiven the the amount of ambiguity and subjectivity in rating/testing these models, please be as detailed as possible in describing your setup, nature of your usage (how much, personal/professional use), tools/frameworks etc. Production use cases with long lengths/stability requirements are relatively rare compared to cherry picked/short clip demos that are plentiful - so real world empirical comparisons are very welcome\n\n**Rules**\n\n* Should be open weights or open source models\n\nPlease use the top level comments to thread your responses.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxpxvi/best_audio_models_nov_2026/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 58
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Its time for another **Best Audio Models** megathread - its already been 9 months since the last one!\n\nShare what your favorite ASR, TTS, STT, Text to Music models are right now\u00a0**and why.**\n\nGiven the the amount of ambiguity and subjectivity in rating/testing these models, please be as detailed as possible in describing your setup, nature of your usage (how much, personal/professional use), tools",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Spamhaus November",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 45,
+          "points": 53
+        }
+      },
+      "nomination": {
+        "name": "Spamhaus November",
+        "seed_score": 147.0,
+        "summary": "Spamhaus new email sender requirements in November",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50523784",
+            "source": "hackernews",
+            "title": "Spamhaus new email sender requirements in November",
+            "body": "Spamhaus new email sender requirements in November",
+            "url": "https://www.spamhaus.org/sender-guidelines/",
+            "author": "computer23",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 53,
+              "comments": 45
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Spamhaus new email sender requirements in November",
+            "snippet": "Spamhaus new email sender requirements in November",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50523784",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.8,
+            "local_rank_score": 0.273
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 144.0,
+        "summary": "Everywhere I go, Twitter or Reddit, there are tons of rumors or comments how local is dead and we are never getting open weight Qwen 4, despite Qwen team saying explicitly they are coming, or that Qwen 4 is the last open weight generation despite, again, Alibaba commiting to more open weight releases at a conference recently.\n\nIt's like people just get off on creating a version of reality that is",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "I am sick of doomposting about demise of local AI",
+            "body": "I am sick of doomposting about demise of local AI\nEverywhere I go, Twitter or Reddit, there are tons of rumors or comments how local is dead and we are never getting open weight Qwen 4, despite Qwen team saying explicitly they are coming, or that Qwen 4 is the last open weight generation despite, again, Alibaba commiting to more open weight releases at a conference recently.\n\nIt's like people just get off on creating a version of reality that is worse and whining about it, they want to be sad about it in advance.\n\nThe world is certainly not giving us much to be positive about, but let's not go down the rabbithole of learned helplessness and just accept that all things must get worse and you can't do anything about it.\n\nIf people mentally prepare for bad things, bad things become more acceptable and thus more likely to happen and with far less pushback, sort of like a self fulfilling prophecy.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxzk23/i_am_sick_of_doomposting_about_demise_of_local_ai/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 41
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Everywhere I go, Twitter or Reddit, there are tons of rumors or comments how local is dead and we are never getting open weight Qwen 4, despite Qwen team saying explicitly they are coming, or that Qwen 4 is the last open weight generation despite, again, Alibaba commiting to more open weight releases at a conference recently.\n\nIt's like people just get off on creating a version of reality that is",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3585
+          }
+        ]
+      }
+    }
+  ]
+}

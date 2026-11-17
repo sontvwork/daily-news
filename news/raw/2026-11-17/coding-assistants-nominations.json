@@ -1,0 +1,880 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "a601ec7c2a6625f6",
+  "generated_at": "2026-11-16T23:56:49.887315Z",
+  "from_date": "2026-11-15",
+  "to_date": "2026-11-16",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-16T23:56:49.832771Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-16T23:56:49.832777Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-16T23:56:49.663877Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 54,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-16T23:56:49.832602Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "AI-generated Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 651,
+          "points": 1253
+        },
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "AI-generated Open Source",
+        "seed_score": 2324.8612,
+        "summary": "All AI-generated code should be Open Source",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50507303",
+            "source": "hackernews",
+            "title": "All AI-generated code should be Open Source",
+            "body": "All AI-generated code should be Open Source",
+            "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+            "author": "jcubic",
+            "container": "Hacker News",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1253,
+              "comments": 651
+            },
+            "relevance_hint": 0.34,
+            "why_relevant": "HN story about All AI-generated code should be Open Source",
+            "snippet": "All AI-generated code should be Open Source",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50507303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.34,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34600000000000003
+          },
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "I built a free open-source tool that shows where your coding agents (Claude Code, Codex) waste time and money",
+            "body": "I built a free open-source tool that shows where your coding agents (Claude Code, Codex) waste time and money\nI run Claude Code and Codex all day, often as multi-agent workflows with dozens of subagents. I could see each session but never the whole picture: what a run cost, where agents sat idle, whether a change to my setup helped. So I built coding.sh, a local tool for measuring agent cost and quality, and pointed it at my own runs.\n\n**Does that change actually help?**\nI A/B tested a popular \"be concise\" plugin: 10 tasks, 6 runs each, paired, with 95% intervals.\n- Replies: 17% shorter\n- Output tokens: \u22128%\n- Cost per run: **+11%** [+7%, +15%]\n- Pass rate and clarity: no change\n\nThe plugin adds its style guide to every request, and that costs more than the shorter output saves. Most of what a coding agent writes is tool calls and code, not prose. `coding.sh compare` and `exp` run your own tasks with and without a change (a rule, a skill, a plugin, a model) and tell you whether the difference is real or noise.\n\n**Workflows and subagents**\nAcross 57 workflow runs (666 subagents, ~$2,500 API-equivalent):\n- Broken prompt caches cost $106 extra, about 4% of the spend.\n- 41 of those breaks were agents idle at a barrier until their cache expired. That's $21 for doing nothing.\n- 40 subagents failed outright.\n\n**Your own sessions**\nMining 3,600 of my sessions turned up a find-and-replace typo in my AGENTS.md that sent Codex looking for a folder that doesn't exist, in 92 sessions.\n\n**What it is**\n- Hooks into Claude Code, Codex, Gemini CLI, OpenCode, Copilot CLI, Aider and more\n- Stores prompts, tool calls, diffs, test runs, tokens and cost in SQLite on your machine\n- `coding.sh improve` says what to fix first; MCP server lets your agent look up its past sessions\n\nFree, MIT, no account, nothing leaves your machine. `npx coding.sh` to try it. GitHub: https://github.com/jackulau/coding.sh",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xx5hvk/i_built_a_free_opensource_tool_that_shows_where/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.3,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I run Claude Code and Codex all day, often as multi-agent workflows with dozens of subagents. I could see each session but never the whole picture: what a run cost, where agents sat idle, whether a change to my setup helped. So I built coding.sh, a local tool for measuring agent cost and quality, and pointed it at my own runs.\n\n**Does that change actually help?**\nI A/B tested a popular \"be concise",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.222
+          },
+          {
+            "item_id": "R65",
+            "source": "reddit",
+            "title": "Universal Code Intelligence & SDLC RAG Service for AI Agents",
+            "body": "Universal Code Intelligence & SDLC RAG Service for AI Agents\nWe built **ContextCore-MCP** to give coding agents surgical, semantic memory over complex codebases without context pollution.  \nIt operates as an open-source **Model Context Protocol (MCP)** server backed by **Qdrant** for vector retrieval and **Tree-sitter**for AST parsing.\n\nFull blog: Stop Stuffing Whole Repos into Context Windows: How We Built ContextCore-MCP https://medium.com/@venkatramanpandey89/stop-stuffing-whole-repos-into-context-windows-how-we-built-contextcore-mcp-74008477ef52\n\nGitHub: https://github.com/Venkatpandey/ContextCore-MCP\n\nThanks \ud83d\ude4f",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xwtsyo/universal_code_intelligence_sdlc_rag_service_for/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We built **ContextCore-MCP** to give coding agents surgical, semantic memory over complex codebases without context pollution.  \nIt operates as an open-source **Model Context Protocol (MCP)** server backed by **Qdrant** for vector retrieval and **Tree-sitter**for AST parsing.\n\nFull blog: Stop Stuffing Whole Repos into Context Windows: How We Built ContextCore-MCP https://medium.com/@venkatramanpan",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28700000000000003
+          },
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "I built an open-source CLI harness that physically strips JS/TS function bodies with Babel AST to save ~80% context tokens in Cursor & Claude Code",
+            "body": "I built an open-source CLI harness that physically strips JS/TS function bodies with Babel AST to save ~80% context tokens in Cursor & Claude Code\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xwqtin/i_built_an_opensource_cli_harness_that_physically/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1615
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Secret ThinkPad Powerbutton Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 114,
+          "points": 287
+        }
+      },
+      "nomination": {
+        "name": "Secret ThinkPad Powerbutton Code",
+        "seed_score": 601.5,
+        "summary": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50516473",
+            "source": "hackernews",
+            "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "body": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+            "author": "sammatilda",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 287,
+              "comments": 114
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about The Secret ThinkPad Powerbutton Code to Bring Dead Laptops B",
+            "snippet": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50516473",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.8,
+            "local_rank_score": 0.308
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Six AI AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "Six AI AI",
+        "seed_score": 343.5,
+        "summary": "The original post:\n\n[https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/](https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/)\n\nNow, six months later, we have:\n\nClaude writes a neural network's weights by hand, without training, to detect fake legal citations:\n\n[https://www.reddit.com/r/singularity/comments/1xnplmi/claude\\_writes\\_a\\_neural\\_networks\\_weights\\",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "Six months ago someone posted about how frontier AI's were failing at AI research, and a bunch of people said to check back in six months...",
+            "body": "Six months ago someone posted about how frontier AI's were failing at AI research, and a bunch of people said to check back in six months...\nThe original post:\n\n[https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/](https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/)\n\nNow, six months later, we have:\n\nClaude writes a neural network's weights by hand, without training, to detect fake legal citations:\n\n[https://www.reddit.com/r/singularity/comments/1xnplmi/claude\\_writes\\_a\\_neural\\_networks\\_weights\\_by\\_hand/](https://www.reddit.com/r/singularity/comments/1xnplmi/claude_writes_a_neural_networks_weights_by_hand/)\n\nOpus 5.5 can directly edit weights to fix bugs and lower hallucinations in another model:\n\n[https://www.reddit.com/r/LocalLLaMA/comments/1xpls17/tried\\_the\\_weight\\_editing\\_thing\\_from\\_the\\_mit\\_post/](https://www.reddit.com/r/LocalLLaMA/comments/1xpls17/tried_the_weight_editing_thing_from_the_mit_post/)\n\nClaude wrote and trained a language model for DOS that fits on a floppy disk:\n\n[https://www.reddit.com/r/ClaudeAI/comments/1xwpenj/claude\\_wrote\\_and\\_trained\\_a\\_language\\_model\\_for\\_dos/](https://www.reddit.com/r/ClaudeAI/comments/1xwpenj/claude_wrote_and_trained_a_language_model_for_dos/)\n\nAnthropic warns that it's really close to achieving RSI:\n\n[https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/](https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/)\n\nSo, yeah. Here we are. \ud83d\ude42",
+            "url": "https://www.reddit.com/r/singularity/comments/1xxb8fi/six_months_ago_someone_posted_about_how_frontier/",
+            "container": "singularity",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 186,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "The original post:\n\n[https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/](https://www.reddit.com/r/singularity/comments/1thx2kj/comment/omqhwzo/)\n\nNow, six months later, we have:\n\nClaude writes a neural network's weights by hand, without training, to detect fake legal citations:\n\n[https://www.reddit.com/r/singularity/comments/1xnplmi/claude\\_writes\\_a\\_neural\\_networks\\_weights\\",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Open 30",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 54
+        }
+      },
+      "nomination": {
+        "name": "Open 30",
+        "seed_score": 261.0,
+        "summary": "Growing from nearly zero to 30% since July.  Models used mostly to reduce costs on high volume workloads (large batch workloads, coding, etc).\n\n[https://x.com/pwendell/status/2122377964784611636](https://x.com/pwendell/status/2122377964784611636)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "Open weight models account for 30% usage at enterprises to save money",
+            "body": "Open weight models account for 30% usage at enterprises to save money\nGrowing from nearly zero to 30% since July.  Models used mostly to reduce costs on high volume workloads (large batch workloads, coding, etc).\n\n[https://x.com/pwendell/status/2122377964784611636](https://x.com/pwendell/status/2122377964784611636)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxxbt9/open_weight_models_account_for_30_usage_at/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 120,
+              "num_comments": 54
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Growing from nearly zero to 30% since July.  Models used mostly to reduce costs on high volume workloads (large batch workloads, coding, etc).\n\n[https://x.com/pwendell/status/2122377964784611636](https://x.com/pwendell/status/2122377964784611636)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 96,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36650000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "7 2026 63,000 calls",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "7 2026 63,000 calls",
+        "seed_score": 198.3435,
+        "summary": "I've started a series where I take a question I have about prompting or LLMs, find the research paper that tested it, and re-run that test on 2026 models. Questions like: does writing \"You are an expert\" actually help? Does an LLM judge prefer whichever answer comes first? Does a judge prefer a markdown answer over the same answer in plain text? Papers answered these on 2023\u20132024 models, and I wan",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R68",
+            "source": "reddit",
+            "title": "I always started prompts with \"You are an expert\u2026\". I tested it on 7 models from 2026 with 63,000 calls. It didn't help.",
+            "body": "I always started prompts with \"You are an expert\u2026\". I tested it on 7 models from 2026 with 63,000 calls. It didn't help.\nI've started a series where I take a question I have about prompting or LLMs, find the research paper that tested it, and re-run that test on 2026 models. Questions like: does writing \"You are an expert\" actually help? Does an LLM judge prefer whichever answer comes first? Does a judge prefer a markdown answer over the same answer in plain text? Papers answered these on 2023\u20132024 models, and I wanted to know if the answers still hold.\n\nThis one re-tests a 2024 EMNLP paper (Zheng et al., \"When 'A Helpful Assistant' Is Not Really Helpful\") on 7 models from 2026, with reasoning on and off. That's 63,000 calls on MMLU questions, and it cost $10.11. I expected newer models to make better use of a role than the 2024 ones. They don't: the role still made no difference.\n\nWhat I found:\n\n* A matching expert role (\"You are a lawyer.\" on a law question) changed accuracy by \u22121.0 to +1.0 points. Asking the same questions twice with no role at all changed it by about as much.\n* \"You are a helpful assistant.\" never raised accuracy by more than 0.3 points. On Claude Haiku 5.5 with reasoning off, it lowered accuracy by 1.9 points compared with no role.\n* A silly role (\"You are a 4-year-old toddler\u2026\") mostly broke the answer format, not the model's knowledge. With reasoning on, it barely mattered.\n* Takeaway: use a role for tone and style. Don't expect it to make answers more accurate.\n\nFull write-up: [https://talhaanwar.com/blog/role-prompting/](https://talhaanwar.com/blog/role-prompting/)\n\nCode and data: [https://github.com/talhaanwarch/article-experiments/tree/main/role-prompting](https://github.com/talhaanwarch/article-experiments/tree/main/role-prompting)\n\nNext up: the needle-in-a-haystack test at 32K tokens. If there's a prompting question you've always wondered about, tell me and I'll look for a paper to re-test.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xwnfr7/i_always_started_prompts_with_you_are_an_expert_i/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 159,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've started a series where I take a question I have about prompting or LLMs, find the research paper that tested it, and re-run that test on 2026 models. Questions like: does writing \"You are an expert\" actually help? Does an LLM judge prefer whichever answer comes first? Does a judge prefer a markdown answer over the same answer in plain text? Papers answered these on 2023\u20132024 models, and I wan",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 93,
+            "source_quality": 0.6,
+            "local_rank_score": 0.196
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Censorship Local LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "Censorship Local LLM",
+        "seed_score": 187.5,
+        "summary": "451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US bas",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Censorship is turning me into a true Local LLM believer",
+            "body": "Censorship is turning me into a true Local LLM believer\n451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US based inference providers. I suspiciously got a bunch of \"rate limit\" failures, and then just \"failed to complete\" before it gave me, what I assume, is the real error.\n\n\n\nI am only using it to help create my presentation, which is about analyzing algorithmic properties. One key example is a cryptographic algorithm (because it is difficult by design), so I am assuming this is tripping it somehow. But it is absolutely ridiculous, I'm not even doing research with the AI, just trying to make a presentation.\n\n\n\nI have always liked Local LLMs, as a technical exploration opposed to ideological reasons, but this experience really frustrated me. Don't censor me!\n\n\n\nJust wanted to rant, and remind everyone you can only use the cloud on the provider's terms.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxsc7u/censorship_is_turning_me_into_a_true_local_llm/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 93,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "451: {\"message\":\"Provider returned error\",\"code\":451,\"metadata\":{\"raw\":\"{\\\\\"error\\\\\":{\\\\\"message\\\\\":\\\\\"The content you provided or machine outputted is blocked.\\\\\",\\\\\"type\\\\\":\\\\\"censorship\\_blocked\\\\\"}}\",\"provider\\_name\":\"StepFun\",\"is\\_byok\":false}} {\"error\":{\"message\":\"The content you provided or machine outputted is blocked.\",\"type\":\"censorship\\_blocked\"}}\n\n\n\nJust got this from one of the US bas",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.507
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "RSI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "nomination": {
+        "name": "RSI",
+        "seed_score": 72.0,
+        "summary": "RSI is already happening but not fully yet. Anthropic said back in August 25% of model R&D is lead by Claude ([tweet](https://x.com/ChrisGPT/status/2100692455154737479)) and it will likely grow rapidly in the coming months/years. But so many people seem to see this exponential growth and extrapolate to an intelligence explosion where a god-like SI is achieved and our world is radically transformed",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "Can someone explain to me why so many people think RSI will lead to an intelligence explosion?",
+            "body": "Can someone explain to me why so many people think RSI will lead to an intelligence explosion?\nRSI is already happening but not fully yet. Anthropic said back in August 25% of model R&D is lead by Claude ([tweet](https://x.com/ChrisGPT/status/2100692455154737479)) and it will likely grow rapidly in the coming months/years. But so many people seem to see this exponential growth and extrapolate to an intelligence explosion where a god-like SI is achieved and our world is radically transformed overnight, and I don't understand this. I'm an accelerationist but I have a hard time justifying a so called 'intelligence explosion' \n\n\nThese are my main arguments:\n\n**Resource Scarcity**\n\nFirstly let's say RSI increases so that 100% of model development is driven by AI. It creates a smarter model, which creates a smarter model, etc. the training and inference are still constrained by factors that an SI can't change. Namely chips, data centers, and electricity. It doesn't matter how smart the model is if these roadblocks aren't addressed. And before anyone says \"well AI will solve these problems\" perhaps in the long run, but in the short run humans will NOT just sit back and let the AI run everything WALL-E style. There'll still be politics and market constraints. Even if you let SI take over speed would not increase substantially. For example the SI wants more compute to train the next SI so it needs to build another power station. It needs concrete, wiring, plumbing, etc. These things don't appear to be getting replaced any time soon because robotics is proving to be a much harder problem than intelligence. But even if we did have robots to do that stuff where are they sourcing the materials? Will we have robots working in copper mines then shipping it to be refined and manufactured into wiring? Every stage in the supply chain is a bottleneck regardless of if a human is doing it or not. Even if we make robots capable we'd need to build *millions* of them to have global impact, and we don't have the capacity for that either. Humans have never in history been able to quickly increase their energy production. SI won't be able to either.\n\n**Low hanging Fruit Gives the Impression of Exponential Growth**\n\nJust because the curve looks exponential right now doesn't mean it's going to stay exponential. In fact everything points to the fact that it won't. If you look at the period in science from 1800-1960 growth was exponential as well. But the truth is that there's usually one big advancement that unlocks the potential for multiple other advancements, and the easy 'low hanging fruit' can give the impression that it'll be this way forever. Look at physics. Quantum mechanics was theorized in the 1920s which lead to a huge number of innovations including the transistor and from 1930-1980 physicists were discovering new particles left and right. But the 'low hanging fruit' is gone now, advancements in quantum mechanics are less frequent, and they don't translate to a change in everyday life. It's the same with the exponential gains we've seen in AI. The transformer unlocked a quick series of advancements and even though we're nowhere near close to exhausting it, the advancements will slow eventually as all the easier problems get solved.\n\n\n**Scaling Problem**\n\nEven if we drastically increase our chip production, data center buildout, and electricity generation, more capable models generally require more compute. Yes there have been advancements where better models can have lower param counts and use less RAM, but even if we achieve some massive breakthrough in optimization the gains are still bounded. There's a finite amount of intelligence you can squeeze out of a model and chasing more optimization will lead to diminishing returns. That means for these god-like SI models people are imagining they're going to need wayyyyy more compute. Also average consumers will probably not have access unless they paid a huge amount of $$$ which is a far cry from the utopia so many people here are imagining. \n\nI've never seen people address these points and I usually get downvoted for saying them so I'd love for some genuine believers in the 'intelligence explosion' to discuss these problems.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xxn7en/can_someone_explain_to_me_why_so_many_people/",
+            "container": "singularity",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 48
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "RSI is already happening but not fully yet. Anthropic said back in August 25% of model R&D is lead by Claude ([tweet](https://x.com/ChrisGPT/status/2100692455154737479)) and it will likely grow rapidly in the coming months/years. But so many people seem to see this exponential growth and extrapolate to an intelligence explosion where a god-like SI is achieved and our world is radically transformed",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.46950000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Windows 11 Collecting Data Coding Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 11,
+          "points": 33
+        }
+      },
+      "nomination": {
+        "name": "Windows 11 Collecting Data Coding Agents",
+        "seed_score": 66.0,
+        "summary": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50524736",
+            "source": "hackernews",
+            "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+            "body": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+            "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+            "author": "cwaffles",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 33,
+              "comments": 11
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Windows 11 Is Collecting Data on Which Coding Agents and Dev",
+            "snippet": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50524736",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "45 hidden LLM 3",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "45 hidden LLM 3",
+        "seed_score": 60.4576,
+        "summary": "Over the past few months of testing complex workflows across Gemini, ChatGPT, and Claude, I started keeping a log of every time a model took a lazy shortcut, ignored a rule buried in a prompt, or fabricated data just to finish a table.\n\n\n\nIt turned into a full list of 45 distinct cognitive biases and architectural failure modes across 9 categories. Because the full breakdown is nearly an hour long",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R63",
+            "source": "reddit",
+            "title": "I spent the last few months logging 45 hidden LLM biases and architectural blind spots that break complex prompts. Here are the 3 that trip people up the most and how to fix them",
+            "body": "I spent the last few months logging 45 hidden LLM biases and architectural blind spots that break complex prompts. Here are the 3 that trip people up the most and how to fix them\nOver the past few months of testing complex workflows across Gemini, ChatGPT, and Claude, I started keeping a log of every time a model took a lazy shortcut, ignored a rule buried in a prompt, or fabricated data just to finish a table.\n\n\n\nIt turned into a full list of 45 distinct cognitive biases and architectural failure modes across 9 categories. Because the full breakdown is nearly an hour long, I wanted to write out the 3 traps that cause the biggest day-to-day headaches right here in text so you can use the fixes straight away.\n\n\n\nThe first big one is what happens when you upload a 4,000-word document in Turn 1 and ask the model to read it, run live web searches to verify facts, and format an executive summary table in a single go. Three separate failure modes trigger at once here. Because of Stanford's Lost in the Middle U-curve, the attention heads heavily weight the top 20 percent and bottom 20 percent of your prompt while quietly dropping up to half of the middle paragraphs. At the same time, overloaded by the long input, the search router often skips firing live search queries 2 through 5 to beat the single-turn timeout clock and guesses from training memory instead. Finally, forcing a model to construct rigid Markdown or JSON table borders while simultaneously reasoning and searching acts like a 15 to 25 percent tax on reasoning accuracy. The fix is a strict Two-Turn Split. Never combine heavy extraction and live search with formatting in Turn 1. Use Turn 1 strictly to extract raw facts and run web verification. Once those facts are sitting cleanly in the chat history, paste your scoring or summary table instructions fresh in Turn 2.\n\n\n\nThe second trap is the same flawed image regeneration loop. When an AI generates an image or video clip with a mistake, like the wrong side of a car or an extra person in the background, and you reply inside the same chat asking it to fix that detail, it often spits out the exact same image again. This happens because Path of Least Resistance and Token Optimization push the backend router toward the cheapest compute path, while Context Anchoring locks onto the existing visual seed sitting in your chat history. The fix is to stop arguing with a flawed render in the same thread. Open a brand-new chat window to wipe the visual seed from the context window, describe the final corrected scene positively from scratch without mentioning the earlier mistake, and explicitly ban cached renders.\n\n\n\nThe third trap is premature summarization and the \"etc. / N/A\" escape hatch. When you ask a model to audit 15 items in a row, items 1 to 5 get deep analysis, items 6 to 10 get one-liners, and items 11 to 15 get grouped into \"etc.\" or marked \"N/A\". Output tokens cost roughly 3 to 4 times more server compute than input tokens, so RLHF length penalties and tail-item neglect kick in hard as the response grows. To stop it, explicitly ban the strings \"N/A\", \"etc.\", \"and so on\", and \"similarly\", set a minimum word or data-point floor for every single item from 1 to 15, or batch the run into chunks of 5.\n\n\n\nI put all 45 biases, including multimodal OCR row-slip, multi-agent persona collapse, BPE tokenization traps, and a 3-slide 18-point cheat-sheet, into a full 55-slide narrated walkthrough. I will drop the link in the comments below for anyone who wants the whole deck.\n\n\n\nWhich model shortcut or habit has been burning your workflows the most lately?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xwv52o/i_spent_the_last_few_months_logging_45_hidden_llm/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-15",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 24,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Over the past few months of testing complex workflows across Gemini, ChatGPT, and Claude, I started keeping a log of every time a model took a lazy shortcut, ignored a rule buried in a prompt, or fabricated data just to finish a table.\n\n\n\nIt turned into a full list of 45 distinct cognitive biases and architectural failure modes across 9 categories. Because the full breakdown is nearly an hour long",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Windows",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "Windows",
+        "seed_score": 51.0,
+        "summary": "As the title says: what is your experience using all the new inference engines under windows?  \n  \nCurrently I'm using a laptop with this hardware:\n\nCPU: Intel 275HX  \nRAM: 2x32gb of ddr5 5600  \nGPU: RXT 5090 (24gb VRAM)  \nSSD: Samsung 990 pro 2tb + SK Hynix PCB01 1tb\n\nI'm running Windows 11 Home edition with a pretty clean installation.\n\nI've tried quite a lot of the new vibecoded inference engin",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "What is your experience with inference engines under Windows?",
+            "body": "What is your experience with inference engines under Windows?\nAs the title says: what is your experience using all the new inference engines under windows?  \n  \nCurrently I'm using a laptop with this hardware:\n\nCPU: Intel 275HX  \nRAM: 2x32gb of ddr5 5600  \nGPU: RXT 5090 (24gb VRAM)  \nSSD: Samsung 990 pro 2tb + SK Hynix PCB01 1tb\n\nI'm running Windows 11 Home edition with a pretty clean installation.\n\nI've tried quite a lot of the new vibecoded inference engines but I always end up going back to Strata for Qwen 3.8 Flash Next and to beellama.cpp for everthing else.\n\nI've tried nInfer, basalt, rusting strata, exLlamaV3 and pretty much any fork of llama.cpp and they all end up being way slower than what I'm already using. I've lost a little bit of time on each and also tried to use Claude or Codex to optimize the configurations but there is just no way to get decent performance from engines that on paper should be at least as fast as what I'm currently using.\n\nI'm doing something horribly wrong or they work well only on a linux system?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxv9f2/what_is_your_experience_with_inference_engines/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "As the title says: what is your experience using all the new inference engines under windows?  \n  \nCurrently I'm using a laptop with this hardware:\n\nCPU: Intel 275HX  \nRAM: 2x32gb of ddr5 5600  \nGPU: RXT 5090 (24gb VRAM)  \nSSD: Samsung 990 pro 2tb + SK Hynix PCB01 1tb\n\nI'm running Windows 11 Home edition with a pretty clean installation.\n\nI've tried quite a lot of the new vibecoded inference engin",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3585
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 43.5,
+        "summary": "I\u2019ve been using Codex and Claude code to code 1 app, 1 website and 1 internal CRM system and I haven\u2019t learnt a thing.\n\nI\u2019ve fallen into the habit of copying the prompts from the respective AI chatbot and pasting it for it to code and not learning what it\u2019s saying and what it\u2019s doing.\n\nI have a system where it explains the changes but I feel like when the company gets off and running I won\u2019t even",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "How to learn when AI coding?",
+            "body": "How to learn when AI coding?\nI\u2019ve been using Codex and Claude code to code 1 app, 1 website and 1 internal CRM system and I haven\u2019t learnt a thing.\n\nI\u2019ve fallen into the habit of copying the prompts from the respective AI chatbot and pasting it for it to code and not learning what it\u2019s saying and what it\u2019s doing.\n\nI have a system where it explains the changes but I feel like when the company gets off and running I won\u2019t even know the product I even have. \n\nThis is hard for me as I am a person who learns easy and learns everything, but I can\u2019t be a leader who doesn\u2019t know the basics.\n\nSo my questions regardless this is:\n\n1. Has anyone dealt with this and what did they do to start getting better at taking control of the wheel instead of it driving for you?\n\n2. How have you learnt and what helped you learn to become more than an AI promoter and understand coding, building platforms and the system architecture in there.\n\nAny books, courses, YouTube channels that helped you would be appreciated. I\u2019ve tried Freecodecamp but I get bored as it doesn\u2019t hit the spot for me.\n\nThanks.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xxmj6q/how_to_learn_when_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.4,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been using Codex and Claude code to code 1 app, 1 website and 1 internal CRM system and I haven\u2019t learnt a thing.\n\nI\u2019ve fallen into the habit of copying the prompts from the respective AI chatbot and pasting it for it to code and not learning what it\u2019s saying and what it\u2019s doing.\n\nI have a system where it explains the changes but I feel like when the company gets off and running I won\u2019t even",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6695000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "nvidia/Nemotron-Labs-Sigma 8B/3B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "nvidia/Nemotron-Labs-Sigma 8B/3B",
+        "seed_score": 39.0,
+        "summary": "# Model Overview\n\n# [](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B#description)Description\n\nNemotron-Labs-Sigma-8B is a 8-billion-parameter continuous diffusion language model. Instead of generating text one token at a time, it denoises Gaussian noise in a low-dimensional (16-D) continuous token-embedding space, where the denoiser network and the token embeddings are learned jointly by li",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "nvidia/Nemotron-Labs-Sigma 8B/3B",
+            "body": "nvidia/Nemotron-Labs-Sigma 8B/3B\n# Model Overview\n\n# [](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B#description)Description\n\nNemotron-Labs-Sigma-8B is a 8-billion-parameter continuous diffusion language model. Instead of generating text one token at a time, it denoises Gaussian noise in a low-dimensional (16-D) continuous token-embedding space, where the denoiser network and the token embeddings are learned jointly by likelihood optimization. Text is decoded in parallel blocks: each block of tokens is refined over a configurable number of denoising steps (Denoising Diffusion Probabilistic Model (DDPM) or Denoising Diffusion Implicit Model (DDIM) samplers) with self-conditioning, while previously committed tokens are reused through a standard key-value (KV) cache. Fewer steps trade a little quality for large speedups, and the smooth continuous representation makes the model amenable to few-step distillation and trajectory steering.\n\nThis is the *base* (pretrained) model. It is intended as a starting point for research on parallel-decoding language generation, fine-tuning, and distillation, not as an instruction-following assistant; for chat and instruction following, use the corresponding [instruct variant](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B-instruct).\n\nThis model is ready for commercial or non-commercial use.\n\n# [](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B#highlights)Highlights\n\n* Continuous-space diffusion language modeling at 8B scale with reasoning accuracy competitive with state-of-the-art masked (discrete) diffusion LMs.\n* Block-parallel decoding: whole blocks of tokens are denoised together; sampling quality holds up well down to few denoising steps per block.\n* Efficient DDPM/DDIM-based samplers with self-conditioning and optional classifier-free guidance, implemented in plain PyTorch in this repository.\n* Standard `transformers` loading via `trust_remote_code`; no custom kernels, flash-attention, or training framework required for inference.\n\n# [](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B#model-architecture)Model Architecture\n\n* **Architecture Type:** Transformer\n* **Network Architecture:** Other: Ministral-style decoder-only Transformer (grouped-query attention, SwiGLU, rotary position embeddings) with a continuous-diffusion generation head (16-D continuous token-embedding space, learned jointly with the denoiser).\n* **Number of model parameters:** 8 billion (8B)\n\n# [](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B#input)Input\n\n* **Input Type(s):** Text\n* **Input Format(s):** String\n* **Input Parameters:** One-Dimensional (1D): Sequences\n* **Other Properties Related to Input:** Maximum context length of 4,096 tokens (prompt plus generated tokens). Plain-text prompts; the base model is best used with few-shot or benchmark-style prompting. Supported language: English.\n\n# [](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B#output)Output\n\n* **Output Type(s):** Text\n* **Output Format:** String\n* **Output Parameters:** One-Dimensional (1D): Sequences\n* **Other Properties Related to Output:** Up to 4,096 tokens total (prompt plus generation). Text is generated in parallel blocks (default 64 tokens per block) with a configurable number of denoising steps per block (Number of Function Evaluations (NFE) = steps + 1 per block); fewer steps give faster generation at some quality cost.\n\n[https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B)\n\n[https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B-instruct](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B-instruct)\n\n[https://huggingface.co/nvidia/Nemotron-Labs-Sigma-3B](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-3B)\n\n[https://huggingface.co/nvidia/Nemotron-Labs-Sigma-3B-instruct](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-3B-instruct)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxwg6w/nvidianemotronlabssigma_8b3b/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "# Model Overview\n\n# [](https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B#description)Description\n\nNemotron-Labs-Sigma-8B is a 8-billion-parameter continuous diffusion language model. Instead of generating text one token at a time, it denoises Gaussian noise in a low-dimensional (16-D) continuous token-embedding space, where the denoiser network and the token embeddings are learned jointly by li",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.279
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Under 9gb model comparison",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Under 9gb model comparison",
+        "seed_score": 34.5,
+        "summary": "Scores are lab-reported so take them with a grain of salt.\n\n# Specs\n\n|Model|Org|Params (total/active)|Context|Modality|License|\n|:-|:-|:-|:-|:-|:-|\n|K2-Horizon-7B|IFM|7B dense|512K|text|Apache-2.0|\n|Granite 4.2-8B|IBM|8B dense (thinking)|128K (512K ext.)|text|Apache-2.0|\n|Qwen3.5-9B|Qwen|9B hybrid (delta-net, thinking)|262K (\\~1M ext.)|text + vision + video|Apache-2.0|\n|MiMo-V2.6-Distill-Qwen-9B|X",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Under 9gb model comparison",
+            "body": "Under 9gb model comparison\nScores are lab-reported so take them with a grain of salt.\n\n# Specs\n\n|Model|Org|Params (total/active)|Context|Modality|License|\n|:-|:-|:-|:-|:-|:-|\n|K2-Horizon-7B|IFM|7B dense|512K|text|Apache-2.0|\n|Granite 4.2-8B|IBM|8B dense (thinking)|128K (512K ext.)|text|Apache-2.0|\n|Qwen3.5-9B|Qwen|9B hybrid (delta-net, thinking)|262K (\\~1M ext.)|text + vision + video|Apache-2.0|\n|MiMo-V2.6-Distill-Qwen-9B|Xiaomi|9B (SFT of Qwen3.5-9B)|\\~262K (base)|text + vision (visual coding)|MIT|\n|LFM2.5-8B-A1B|Liquid|8.3B / 1.5B active MoE|128K|text|LFM 1.0|\n|Gemma 4 E4B|Google|4.5B effective / 8B total (PLE)|128K|text + image + audio|Apache-2.0|\n|LFM3-VL-2B|Liquid|1.92B (1.73B backbone, thinking)|128K|text + image + video|LFM 1.0|\n\n# Text benchmarks\n\nSuperscripts: a = K2 card (IFM harness), b = Liquid harness, c = MiMo card (Xiaomi harness); no mark = own card; e = from LFM3-1.7B, the text backbone; d/\u2020 = MiMo avg@3 / internal set. Bold = best in row (cross-harness caveat applies).\n\n|Benchmark|K2-7B|Granite 8B|Qwen3.5-9B|MiMo-D-9B|LFM2.5-8B-A1B|Gemma 4 E4B|LFM3-VL-2B|\n|:-|:-|:-|:-|:-|:-|:-|:-|\n|Math||||||||\n|AIME 2026|90.2||92.5||50.0|42.5||\n|AIME 2025|90.3|86.7|56.1\u1d47||42.5|34.3\u1d47||\n|HMMT Feb 2026|77.8|66.5\u1d43|65.7\u1d43|||||\n|MATH-500|||||88.8|65.0\u1d47||\n|Coding||||||||\n|SWE-bench Verified|72.4|47.7|50.8\u1d43|61.1\u1d48||0.5\u1d47|43.4\u1d49|\n|SWE-bench Pro||19.1||44.6\u1d48||||\n|SWE-bench Multilingual||30.8|35.0\u1d47|||0.7\u1d47|23.0\u1d49|\n|Terminal-Bench 2.1|44.6|20.6|29.2\u1d43|37.1||0.0\u1d47|12.9\u1d49|\n|LiveCodeBench v6||73.2|65.6|||52.0|73.5\u1d49|\n|SciCode|33.6|30.4\u1d43|27.5\u1d43|||25.0\u1d47|28.5\u1d49|\n|Agentic||||||||\n|AutomationBench|||15.1\u1d47|30.3||1.9\u1d47|41.3\u1d49|\n|LiveClaw|||35.8\u1d47|||20.4\u1d47|45.6\u1d49|\n|tau/\u03f4-bench Banking|25.8|7.6\u1d43|7.0\u1d43|||4.1\u1d47||\n|tau2-Bench|||79.1||88.1T / 39.8R|42.2||\n|WebArena Verified|||28.9\u1d47|||17.1\u1d47|38.4\u1d49|\n|BrowseComp / BrowseComp-Plus|59.0||38.0\u1d47|||21.0\u1d47|37.0\u1d49|\n|PinchBench|||71.5\u1d47|||55.1\u1d47||\n|Claw-Eval (EN avg)|||66.5\u1d47|||56.1\u1d47|68.6\u1d49|\n|Toolathlon-Verified|||25.9\u1d9c|35.2||||\n|OfficeQA|||9.0\u1d9c|19.5||||\n|JobBench|||2.6\u1d9c|18.3||||\n|BFCL v4 (tool use)||52.4|66.1||49.7|48.3\u1d47|71.4\u1d49|\n|ToolSandbox|||76.4\u1d47|||69.3\u1d47|80.4\u1d49|\n|MCP-Atlas|||42.7\u1d47|||6.2\u1d47|32.6\u1d49|\n|EnterpriseOps-Gym|||29.0\u1d47|||13.4\u1d47|28.2\u1d49|\n|MiMo Code (mini) \u2020|||19.5\u1d9c|51.6||||\n|MiMo Cyber (mini) \u2020|||5.7\u1d9c|31.3||||\n|MiMo General (mini) \u2020|||28.5\u1d9c|62.2||||\n|Knowledge||||||||\n|GPQA Diamond|75.6|64.1|81.7|||58.6|63.4\u1d49|\n|HLE|19.5|9.7\u1d43|14.9\u1d43|||4.8\u1d47|7.2\u1d49|\n|MMLU-Pro||74.0|82.5|||69.4||\n|AA-Omniscience Index|||\\-28.0\u1d47||\\-24.7|\\-15.3\u1d47|0.5\u1d49|\n|Instruction following||||||||\n|IFEval|||91.5||91.8|90.0\u1d47|96.7\u1d49|\n|IFBench|79.3|64.5|||56.5|44.6\u1d47|73.0\u1d49|\n|Multi-IF|||||79.9|81.0\u1d47|89.1\u1d49|\n|IFStruct|||89.2\u1d47|||78.5\u1d47|93.7\u1d49|\n|Long context||||||||\n|LCR / AA-LCR|68.0|43.3\u1d43|63.0|||39.3\u1d47|52.8\u1d49|\n|RULER 128K||71.4|87.1\u1d47|||18.8\u1d47|65.6\u1d49|\n\n# Vision benchmarks\n\n|Benchmark|LFM3-VL-2B|Gemma 4 E4B|Qwen3.5-9B|MiMo-D-9B|\n|:-|:-|:-|:-|:-|\n|MMMU (val)|55.7||78.4||\n|MMMU-Pro|45.7|52.6|70.1||\n|MathVista (mini)|84.2||85.7||\n|MATH-Vision|51.6|59.5|78.9||\n|OCRBench v1|86.3||89.2||\n|RefCOCO (avg)|90.5||89.7||\n|ScreenSpot-Pro|55.5||65.2||\n|RealWorldQA|79.3||80.3||\n|MMStar|74.4||79.7||\n|HallusionBench|65.6||69.3||\n|MVBench (video)|69.4||74.4||\n|Video-MME (subtitles)|69.0||84.5||\n|MedXpertQA-MM||28.7|49.9||\n|MiMo Visual Coding (mini) \u2020|||61.7\u1d9c|64.0|",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxvr5z/under_9gb_model_comparison/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Scores are lab-reported so take them with a grain of salt.\n\n# Specs\n\n|Model|Org|Params (total/active)|Context|Modality|License|\n|:-|:-|:-|:-|:-|:-|\n|K2-Horizon-7B|IFM|7B dense|512K|text|Apache-2.0|\n|Granite 4.2-8B|IBM|8B dense (thinking)|128K (512K ext.)|text|Apache-2.0|\n|Qwen3.5-9B|Qwen|9B hybrid (delta-net, thinking)|262K (\\~1M ext.)|text + vision + video|Apache-2.0|\n|MiMo-V2.6-Distill-Qwen-9B|X",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Weekly Self Promotion Thread",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "Weekly Self Promotion Thread",
+        "seed_score": 34.5,
+        "summary": "Welcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R12",
+            "source": "reddit",
+            "title": "Weekly Self Promotion Thread",
+            "body": "Weekly Self Promotion Thread\nWelcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead of just dropping a link. Tell us:\n\n* What you built?\n* What problem it solves?\n* Which AI models or tools it uses?\n* Who it's for?\n* What kind of feedback you're looking for?\n\nDisclose your affilitation.\n\nPlease avoid posting the same project every week unless you've made meaningful updates. Affiliate links, referral links, scams, and low effort promotions will be removed.\n\nTake some time to check out what others have shared too. If you try someone's project or have feedback, leave a comment. Helping each other improve is what we want this community to be about.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xxjn77/weekly_self_promotion_thread/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Welcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4805
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Karpo-Decision-31B Ranks 1 Decision Index 2x",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Karpo-Decision-31B Ranks 1 Decision Index 2x",
+        "seed_score": 31.5,
+        "summary": "MachinePulse has released Karpo-Decision-31B, a Gemma 4 31B fine-tune for structured decisions over text and images. It scored 73.9 on the Nov 12 Decision Index board, the highest Full score among 300 entries, sharing the #1 rank with GLiDE 27B under the board\u2019s tie rule\n\n**How it works**  \nBuilt on Gemma 4 31B, with a trained linear readout that scores the supplied answer options.\n\nThree question",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "Karpo-Decision-31B: open multimodal decision model. Ranks #1 on full score on Decision Index, 2x faster than Jev, at 20% lower cost",
+            "body": "Karpo-Decision-31B: open multimodal decision model. Ranks #1 on full score on Decision Index, 2x faster than Jev, at 20% lower cost\nMachinePulse has released Karpo-Decision-31B, a Gemma 4 31B fine-tune for structured decisions over text and images. It scored 73.9 on the Nov 12 Decision Index board, the highest Full score among 300 entries, sharing the #1 rank with GLiDE 27B under the board\u2019s tie rule\n\n**How it works**  \nBuilt on Gemma 4 31B, with a trained linear readout that scores the supplied answer options.\n\nThree question types: choice, yes/no, and score. Returns probabilities directly, with up to 255 options per choice question.\n\nMultiple questions about the same input can be answered in one forward pass. Branch attention lets each question read the shared context and its own options while keeping the option branches separate.\n\nSupports text and images, including webpage screenshots. The documented sequence limit is 32,768 tokens; larger requests are split by question with the full state included in each part.\n\nPython API and HTTP server available. BF16 weights take approximately 62.5 GB, plus runtime memory. Use the provided inference code to load the decision head.\n\nOne training detail worth a look: according to the team's write-up, full fine-tuning pushed the public score to 75.09 but reduced accuracy on unfamiliar domains by 2.3 percentage points. The final model averages five checkpoints: three from different stages of full fine-tuning and two from a LoRA run. They report a 1.6-point improvement on unfamiliar domains over the final single checkpoint, with no extra models to run at inference time\n\n**Results**  \nDecision Index Full scores are measured by the benchmark maintainers on private tests, weighted 60% for skills covered by the public suite and 40% for tasks from new domains.  \nFull score: 73.9\n\nPrivate tests, familiar skills: 70.7\n\nPrivate tasks, new domains: 78.6\n\nPublic index: 75.0, reported separately and excluded from the Full score.\n\nThe team also reports the following comparisons against Google\u2019s Gemini Decision 1:\n\nBenchmark              Karpo-31B   Gemini D1  \n\\-------------------------------------------  \nWhen2Call                90.4%       79.9%  \nMind2Web                 90.0%       86.2%  \nNew Yorker Caption       90.5%       79.7%  \nAmazon ESCI (F1)         64.7        58.7\n\nReported median latency is approximately 95 ms per request on the public Decision Index suite using one RTX PRO 6000.\n\nThe 31B weights and inference code are both released under Apache 2.0.\n\nlinks:  \n[https://karpo.ai/models/decision](https://karpo.ai/models/decision)   \n[https://huggingface.co/MachinePulseAI/karpo-decision-31B](https://huggingface.co/MachinePulseAI/karpo-decision-31B)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxrmt4/karpodecision31b_open_multimodal_decision_model/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "MachinePulse has released Karpo-Decision-31B, a Gemma 4 31B fine-tune for structured decisions over text and images. It scored 73.9 on the Nov 12 Decision Index board, the highest Full score among 300 entries, sharing the #1 rank with GLiDE 27B under the board\u2019s tie rule\n\n**How it works**  \nBuilt on Gemma 4 31B, with a trained linear readout that scores the supplied answer options.\n\nThree question",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.46900000000000003
+          }
+        ]
+      }
+    }
+  ]
+}

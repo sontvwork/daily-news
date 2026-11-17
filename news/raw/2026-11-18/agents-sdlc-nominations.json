@@ -1,0 +1,814 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "fc72d69df503f3fc",
+  "generated_at": "2026-11-17T23:56:14.926035Z",
+  "from_date": "2026-11-16",
+  "to_date": "2026-11-17",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-17T23:56:14.868910Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-17T23:56:14.868915Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-11-17T23:56:14.730416Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 58,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-17T23:56:14.868767Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Windows 11",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 588,
+          "points": 708
+        }
+      },
+      "nomination": {
+        "name": "Windows 11",
+        "seed_score": 1374.6156,
+        "summary": "Windows 11 is collecting data on which coding agents and developer tools you use",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50524736",
+            "source": "hackernews",
+            "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "body": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+            "author": "cwaffles",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 708,
+              "comments": 588
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Windows 11 is collecting data on which coding agents and dev",
+            "snippet": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50524736",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Microsoft July",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 332,
+          "points": 437
+        }
+      },
+      "nomination": {
+        "name": "Microsoft July",
+        "seed_score": 815.6477,
+        "summary": "Microsoft blames monster email outage on software defect introduced in July fix",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50517321",
+            "source": "hackernews",
+            "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+            "body": "Microsoft blames monster email outage on software defect introduced in July fix",
+            "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+            "author": "Bender",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 437,
+              "comments": 332
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Microsoft blames monster email outage on software defect int",
+            "snippet": "Microsoft blames monster email outage on software defect introduced in July fix",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50517321",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 82,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Software",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 251,
+          "points": 388
+        }
+      },
+      "nomination": {
+        "name": "Software",
+        "seed_score": 677.7618,
+        "summary": "Software is breaking down at a systemic level",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50520866",
+            "source": "hackernews",
+            "title": "Software is breaking down at a systemic level",
+            "body": "Software is breaking down at a systemic level",
+            "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+            "author": "zero_shift",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 388,
+              "comments": 251
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Software is breaking down at a systemic level",
+            "snippet": "Software is breaking down at a systemic level",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50520866",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 76,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14650000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 196,
+          "points": 251
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 670.5,
+        "summary": "How the Claude Code team thinks about verification",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50529612",
+            "source": "hackernews",
+            "title": "How the Claude Code team thinks about verification",
+            "body": "How the Claude Code team thinks about verification",
+            "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+            "author": "craigmart",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 251,
+              "comments": 196
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about How the Claude Code team thinks about verification",
+            "snippet": "How the Claude Code team thinks about verification",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50529612",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "MAI Code 2 Code 2 Flash",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 122,
+          "points": 260
+        }
+      },
+      "nomination": {
+        "name": "MAI Code 2 Code 2 Flash",
+        "seed_score": 573.0,
+        "summary": "MAI Code 2 and Code 2 Flash",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50535885",
+            "source": "hackernews",
+            "title": "MAI Code 2 and Code 2 Flash",
+            "body": "MAI Code 2 and Code 2 Flash",
+            "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+            "author": "lemonish97",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 260,
+              "comments": 122
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about MAI Code 2 and Code 2 Flash",
+            "snippet": "MAI Code 2 and Code 2 Flash",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50535885",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.8,
+            "local_rank_score": 0.335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Comcast fiber-powered Wi-Fi AT&T",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 246,
+          "points": 252
+        }
+      },
+      "nomination": {
+        "name": "Comcast fiber-powered Wi-Fi AT&T",
+        "seed_score": 528.2088,
+        "summary": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50523025",
+            "source": "hackernews",
+            "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+            "body": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+            "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says/",
+            "author": "jaredwiener",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 252,
+              "comments": 246
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false",
+            "snippet": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50523025",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Secret ThinkPad Powerbutton Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 129,
+          "points": 319
+        }
+      },
+      "nomination": {
+        "name": "Secret ThinkPad Powerbutton Code",
+        "seed_score": 475.1758,
+        "summary": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50516473",
+            "source": "hackernews",
+            "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "body": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+            "author": "sammatilda",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 319,
+              "comments": 129
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about The Secret ThinkPad Powerbutton Code to Bring Dead Laptops B",
+            "snippet": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50516473",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 10,
+            "engagement_score": 63,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1075
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "SenseNova-Loop-9B Preview AutomationBench 14.33 36.67",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 60
+        }
+      },
+      "nomination": {
+        "name": "SenseNova-Loop-9B Preview AutomationBench 14.33 36.67",
+        "seed_score": 348.0,
+        "summary": "[https://huggingface.co/sensenova/SenseNova-Loop-9B](https://huggingface.co/sensenova/SenseNova-Loop-9B)\n\nThe Preview was posted here a few times over the last weeks. This is the full release, same design: 32 layers stored, 24 of them run twice, so a forward pass does 56 layers of work on about 9B params. Apache 2.0.\n\nWhat moved is the scores. Per their README it's ahead of the Preview on all seve",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "SenseNova-Loop-9B vs its own Preview: AutomationBench 14.33 to 36.67, GAIA 37.86 to 69.90 (9B Looped Transformer)",
+            "body": "SenseNova-Loop-9B vs its own Preview: AutomationBench 14.33 to 36.67, GAIA 37.86 to 69.90 (9B Looped Transformer)\n[https://huggingface.co/sensenova/SenseNova-Loop-9B](https://huggingface.co/sensenova/SenseNova-Loop-9B)\n\nThe Preview was posted here a few times over the last weeks. This is the full release, same design: 32 layers stored, 24 of them run twice, so a forward pass does 56 layers of work on about 9B params. Apache 2.0.\n\nWhat moved is the scores. Per their README it's ahead of the Preview on all seven benchmarks in the chart, e.g. AutomationBench 14.33 to 36.67, Terminal-Bench 2.1 40.45 to 59.55 and GAIA 37.86 to 69.90. That 36.67 is also what they list for Qwen3.8-27B.\n\n4-bit weights are about 4.9 GB. Code plus the vLLM and SGLang setup: [https://github.com/OpenSenseNova/SenseNova-Loop](https://github.com/OpenSenseNova/SenseNova-Loop)\n\nHaven't run it myself yet.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xymz9z/sensenovaloop9b_vs_its_own_preview/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 172,
+              "num_comments": 60
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://huggingface.co/sensenova/SenseNova-Loop-9B](https://huggingface.co/sensenova/SenseNova-Loop-9B)\n\nThe Preview was posted here a few times over the last weeks. This is the full release, same design: 32 layers stored, 24 of them run twice, so a forward pass does 56 layers of work on about 9B params. Apache 2.0.\n\nWhat moved is the scores. Per their README it's ahead of the Preview on all seve",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.338
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "ViTs so popular D",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "ViTs so popular D",
+        "seed_score": 189.0,
+        "summary": "I deploy CNN + Attention stack models on edge devices, to great effect. Taking advantage of convs and reducing the spatial dimensionality makes all the sense in the world to me.\n\nHaving vanilla ViTs learning the inductive biases from scratch makes none to me. Is it really a case of \"because I can\"? Avoiding padding along borders is the only advantage I can see to a tokenizer stem, and that has nev",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R65",
+            "source": "reddit",
+            "title": "Why are ViTs so popular? [D]",
+            "body": "Why are ViTs so popular? [D]\nI deploy CNN + Attention stack models on edge devices, to great effect. Taking advantage of convs and reducing the spatial dimensionality makes all the sense in the world to me.\n\nHaving vanilla ViTs learning the inductive biases from scratch makes none to me. Is it really a case of \"because I can\"? Avoiding padding along borders is the only advantage I can see to a tokenizer stem, and that has never been a huge issue to me.\n\n  \nAm I missing something that has people reaching for ViTs instead of hybrid models for e.g. SSL/foundation models? \n\nIn my mind it's just a case of people using the status quo, and more of a historical accident that these models have become so popular. Iirc levit showed data/time efficiency boosts with a convolutional stem. I just don't work on the same datasets or tasks that most research does, so I'm genuinely curious if anyone else thinks vanilla ViTs seem excessive. Guess compute is cheap and the answer would just be distillation.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xyb8q6/why_are_vits_so_popular_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 83,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I deploy CNN + Attention stack models on edge devices, to great effect. Taking advantage of convs and reducing the spatial dimensionality makes all the sense in the world to me.\n\nHaving vanilla ViTs learning the inductive biases from scratch makes none to me. Is it really a case of \"because I can\"? Avoiding padding along borders is the only advantage I can see to a tokenizer stem, and that has nev",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.338
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "ChatGPT Dots Claude Duet GPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 53
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Dots Claude Duet GPU",
+        "seed_score": 162.0,
+        "summary": "Dodaios is a locally installed, open-source Python program that runs as a desktop app or as a headless server with a browser UI on Windows, macOS and Linux. It turns a personal AI assistant into the control center for the work you do on your computer.\n\nAt its core is a \"lead\" assistant you can talk to by voice (wake word, dictation, real-time spoken conversation and, as an early preview, phone cal",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "everyone's hyped about ChatGPT Dots and Claude Duet. I'm a local guy, so I built an open source one that runs on my GPU",
+            "body": "everyone's hyped about ChatGPT Dots and Claude Duet. I'm a local guy, so I built an open source one that runs on my GPU\nDodaios is a locally installed, open-source Python program that runs as a desktop app or as a headless server with a browser UI on Windows, macOS and Linux. It turns a personal AI assistant into the control center for the work you do on your computer.\n\nAt its core is a \"lead\" assistant you can talk to by voice (wake word, dictation, real-time spoken conversation and, as an early preview, phone calls), by chat or from a paired phone. It isn't tied to one provider and works with Claude, OpenAI, Gemini or local Ollama models. It handles tasks itself through tools, computer use, plugins, CLIs and MCP servers. Above all, it hands work off to coding agents. They run side by side in a built-in Agentic IDE as real Claude Code or Codex terminals, on your computer or on your own servers over SSH, each with a call sign you can address by name, plus Git integration and task splitting. There is also a \"society\" of persistent, named agents that message each other.\n\nLong-running work is covered by memory (about you, the people around you and the assistant's own persona), standing tasks, workflows, skills and opt-in life admin. The assistant also makes its own outputs, such as documents, slides, sheets and dashboards, and can propose and build the skills, routines and agents it is missing. A trust layer sets hard limits: outside Bypass permissions, moving money, handling credentials, permanent deletion and first contact with someone new always need your confirmation. In short, Dodaios is a voice-driven, locally running operating system for AI agents that makes one assistant the conductor of your models, your coding agents and your own computer.  \n  \n[https://github.com/Dodaios/Dodaios](https://github.com/Dodaios/Dodaios)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xylrup/everyones_hyped_about_chatgpt_dots_and_claude/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 53
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Dodaios is a locally installed, open-source Python program that runs as a desktop app or as a headless server with a browser UI on Windows, macOS and Linux. It turns a personal AI assistant into the control center for the work you do on your computer.\n\nAt its core is a \"lead\" assistant you can talk to by voice (wake word, dictation, real-time spoken conversation and, as an early preview, phone cal",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.464
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Blue TTS v3 TTS 50x CPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Blue TTS v3 TTS 50x CPU",
+        "seed_score": 118.5,
+        "summary": "Blue TTS v3 is out, an open-source TTS model that runs locally. Almost everything changed since v2.\n\nSpeech is more natural and expressive, with a **MOS of 4.43 out of 5**.\n\nVoice cloning has improved significantly, and the model is fast and lightweight: it runs locally at **50x real-time on a CPU**, no GPU needed.\n\nMIT license, 388 MB, 44.1 kHz output, 7 languages: English, German, Spanish, Itali",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Blue TTS v3: open-source TTS, about 50x real-time on a CPU",
+            "body": "Blue TTS v3: open-source TTS, about 50x real-time on a CPU\nBlue TTS v3 is out, an open-source TTS model that runs locally. Almost everything changed since v2.\n\nSpeech is more natural and expressive, with a **MOS of 4.43 out of 5**.\n\nVoice cloning has improved significantly, and the model is fast and lightweight: it runs locally at **50x real-time on a CPU**, no GPU needed.\n\nMIT license, 388 MB, 44.1 kHz output, 7 languages: English, German, Spanish, Italian, Russian, Hebrew, Yiddish.\n\n- Code: https://github.com/maxmelichov/BlueTTS\n- ONNX weights (v3): https://huggingface.co/notmax123/BlueV3-onnx\n- PyTorch weights (v3): https://huggingface.co/notmax123/BlueV3\n- Live demo: https://huggingface.co/spaces/notmax123/Blue\n- Website: https://bluetts.com\n\nFeedback is welcome.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xytrz9/blue_tts_v3_opensource_tts_about_50x_realtime_on/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 62,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Blue TTS v3 is out, an open-source TTS model that runs locally. Almost everything changed since v2.\n\nSpeech is more natural and expressive, with a **MOS of 4.43 out of 5**.\n\nVoice cloning has improved significantly, and the model is fast and lightweight: it runs locally at **50x real-time on a CPU**, no GPU needed.\n\nMIT license, 388 MB, 44.1 kHz output, 7 languages: English, German, Spanish, Itali",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31300000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "130 LLM 16GB e-waste GPUs V100",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 64
+        }
+      },
+      "nomination": {
+        "name": "130 LLM 16GB e-waste GPUs V100",
+        "seed_score": 117.0,
+        "summary": "The benchmarking journey continues! Continuing the project of seeing how these very old, very cheap, very available enterprise GPUs can be used today.\n\nThe complete results are too long for reddit. [**The complete set of graphs, power analysis and commentary are on my blog**](https://esologic.com/multi-gpu-scaling/).\n\nI've expanded the testing suite to focus heavily on LLM workloads (over 130 new",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "I benchmarked over 130 LLM configs with multiple stacked 16GB \"e-waste\" GPUs (V100, P100, K80)",
+            "body": "I benchmarked over 130 LLM configs with multiple stacked 16GB \"e-waste\" GPUs (V100, P100, K80)\nThe benchmarking journey continues! Continuing the project of seeing how these very old, very cheap, very available enterprise GPUs can be used today.\n\nThe complete results are too long for reddit. [**The complete set of graphs, power analysis and commentary are on my blog**](https://esologic.com/multi-gpu-scaling/).\n\nI've expanded the testing suite to focus heavily on LLM workloads (over 130 new tests!) and integrated power consumption monitoring into the `gpu_box_benchmark` tool. The goal remains: find out if decommissioned enterprise GPUs (Tesla K80, P100, V100) paired with X99 era hardware can still serve as a viable daily driver for self-hosted AI compared to modern commercial setups.\n\n**TL;DR of the new data:**\n\n* **The 3x V100-16GB (\\~$1k build)**: If you are considering building a dedicated homelab box today, this is the sweet spot. Assembling a full setup with two Xeon CPUs, motherboard, PSU, and cooling costs around $1,042 before RAM \ud83d\udc80. This setup comfortably clears my threshold for \"real-time\" chat (70+ tok/s) with impressive models:\n   * **Qwen 3.6 35B**: Ran at **\\~72 tok/s** (at 128k context depth, Q8 quant). For comparison, a brand new Mac Studio M5 ($2,500) hits only \\~44 tok/s on the same model.\n   * **Gemma 4 26B**: Ran at **\\~75 tok/s** (at 64k context depth, Q8 quant).\n   * **Qwen 2.5 3B**: Ran at **\\~79 tok/s**. This proves that for a single-user daily driver, the legacy silicon is still competitively priced against modern hardware.\n* **Scaling is for Context, Not Speed**: Stacking GPUs linearly scales your VRAM (allowing you to fit larger models), but it doesn't magically double your generation speed. Two 16GB cards in Q4 quant allowed fitting \\~32B parameter models, a desirable jump for homelabbers.\n* **Power Efficiency**: I also measured power consumption as well and it's worth noting the efficiency gains across generations. The V100 wins hands down on performance-per-watt compared to the P100s.\n* **The K80 Strategy**: The Tesla K80 isn't dead, but its singular remaining use case is welding a bunch of them together just to squeeze big models in. You essentially have to stack *a lot* of cheap K80s to hit a 72B+ parameter model. Expect speeds of **1\u20135 tok/s**. This is a party trick, but it proves the VRAM scaling is real even on ancient silicon.\n\n>If you decide to build your own GPU appliance, the biggest challenge is cooling these hot cards without fans. I've been working on a custom active air cooler to solve exactly this. If you're interested in helping out by stress-testing a sample, [**you can get involved here**](https://esologic.com/cooler/)**.**\n\nAny models/tests missing? Any other combinations you'd like to see in a follow up?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xymcjb/i_benchmarked_over_130_llm_configs_with_multiple/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 64
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "The benchmarking journey continues! Continuing the project of seeing how these very old, very cheap, very available enterprise GPUs can be used today.\n\nThe complete results are too long for reddit. [**The complete set of graphs, power analysis and commentary are on my blog**](https://esologic.com/multi-gpu-scaling/).\n\nI've expanded the testing suite to focus heavily on LLM workloads (over 130 new",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4555
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AISTATS 2027 paper discussion D",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 68
+        }
+      },
+      "nomination": {
+        "name": "AISTATS 2027 paper discussion D",
+        "seed_score": 110.3087,
+        "summary": "Creating this post since the reviews are supposed to go live today. What do you guys think?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R71",
+            "source": "reddit",
+            "title": "AISTATS 2027 paper discussion [D]",
+            "body": "AISTATS 2027 paper discussion [D]\nCreating this post since the reviews are supposed to go live today. What do you guys think?",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xxqa3i/aistats_2027_paper_discussion_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 36,
+              "num_comments": 68
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Creating this post since the reviews are supposed to go live today. What do you guys think?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10500000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "StarSling YC P25 Self-improving CI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 22,
+          "points": 42
+        }
+      },
+      "nomination": {
+        "name": "StarSling YC P25 Self-improving CI",
+        "seed_score": 96.0,
+        "summary": "Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50536468",
+            "source": "hackernews",
+            "title": "Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos",
+            "body": "Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos",
+            "url": "https://starsling.dev",
+            "author": "yonasb",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 42,
+              "comments": 22
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-",
+            "snippet": "Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50536468",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 1,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2585
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "ICLR 2027 PCs AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "ICLR 2027 PCs AI",
+        "seed_score": 94.5,
+        "summary": "The PCs ran AI detectors on the reviews and left this comment on undisclosed AI usage in reviews:\n\n>AI use in this review\n\n>An AI-text detector assesses this review as likely AI-generated, yet its AI-use documentation field does not mention how AI was used. It is therefore possible that the review contains no human input. We ask the reviewer to update that field with an exclusively human-written a",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "ICLR 2027: PCs ran an AI detector on reviews, peer review is cooked [D]",
+            "body": "ICLR 2027: PCs ran an AI detector on reviews, peer review is cooked [D]\nThe PCs ran AI detectors on the reviews and left this comment on undisclosed AI usage in reviews:\n\n>AI use in this review\n\n>An AI-text detector assesses this review as likely AI-generated, yet its AI-use documentation field does not mention how AI was used. It is therefore possible that the review contains no human input. We ask the reviewer to update that field with an exclusively human-written assessment of the paper, and document any AI interactions. We additionally ask the AC and other reviewers to take this information into account when evaluating the paper.\n\nLuckily, I didn't use any AI for my review, but the rate of undisclosed AI usage was crazy. Every review except for mine and one other review in my batch got the message. AI is allowed, it just needed to be disclosed, so this is just people not admitting they used it.\n\nFrom here on, papers will be written with AI reviews as the objective function.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1xyf1tq/iclr_2027_pcs_ran_an_ai_detector_on_reviews_peer/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 34,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "The PCs ran AI detectors on the reviews and left this comment on undisclosed AI usage in reviews:\n\n>AI use in this review\n\n>An AI-text detector assesses this review as likely AI-generated, yet its AI-use documentation field does not mention how AI was used. It is therefore possible that the review contains no human input. We ask the reviewer to update that field with an exclusively human-written a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.414
+          }
+        ]
+      }
+    }
+  ]
+}

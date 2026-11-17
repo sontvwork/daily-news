@@ -1,0 +1,862 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "e9a8bab524d261b6",
+  "generated_at": "2026-11-17T23:56:14.947157Z",
+  "from_date": "2026-11-16",
+  "to_date": "2026-11-17",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-17T23:56:14.885764Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-17T23:56:14.885771Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-17T23:56:14.689767Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 59,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-17T23:56:14.885631Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Windows 11",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 588,
+          "points": 708
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Windows 11",
+        "seed_score": 1584.2579,
+        "summary": "Windows 11 is collecting data on which coding agents and developer tools you use",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50524736",
+            "source": "hackernews",
+            "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "body": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+            "author": "cwaffles",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 708,
+              "comments": 588
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Windows 11 is collecting data on which coding agents and dev",
+            "snippet": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50524736",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1705
+          },
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Am I overcomplicating the hell out of my AI coding workflow?",
+            "body": "Am I overcomplicating the hell out of my AI coding workflow?\nI\u2019m building an offline-first Windows app with AI coding tools. Accuracy and protecting user data matter, but I think I\u2019ve overcomplicated the hell out of the development process.\n\nI use an AI assistant, a coordinator, and coding/review agents. Work gets split into tasks and branches, tested, then brought to me for review. The problem is that small fixes keep turning into multiple handoffs and test cycles. Agents don\u2019t always communicate well, status notes get bloated, and some UI tests have to wait until I\u2019m off my PC.\n\nI\u2019m considering making complete UI mockups with sample data for me to review in batches, then integrating the approved design and running the required tests. I also want to cut token usage without being penny-wise and dollar-foolish.\n\nFor those doing something similar: how do you keep this shit moving without sacrificing reliability or ending up with a coordination nightmare?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xyum6s/am_i_overcomplicating_the_hell_out_of_my_ai/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.36,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019m building an offline-first Windows app with AI coding tools. Accuracy and protecting user data matter, but I think I\u2019ve overcomplicated the hell out of the development process.\n\nI use an AI assistant, a coordinator, and coding/review agents. Work gets split into tasks and branches, tested, then brought to me for review. The problem is that small fixes keep turning into multiple handoffs and tes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 9,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4485
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 196,
+          "points": 251
+        },
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 779.7,
+        "summary": "How the Claude Code team thinks about verification",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50529612",
+            "source": "hackernews",
+            "title": "How the Claude Code team thinks about verification",
+            "body": "How the Claude Code team thinks about verification",
+            "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+            "author": "craigmart",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 251,
+              "comments": 196
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about How the Claude Code team thinks about verification",
+            "snippet": "How the Claude Code team thinks about verification",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50529612",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 90,
+            "engagement_score": 15,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35050000000000003
+          },
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "Run this prompt before you split a Claude Code task into subagents",
+            "body": "Run this prompt before you split a Claude Code task into subagents\nsame task, no subagents:\n\n> Do this task yourself, without subagents. Read the files you need, make the change, and run the tests.\n\nthen run your subagent version with the same time limit and compare /usage. a team almost always gets more compute than the one agent it's compared to, so this is the fair version. run both twice, a break can show up in only one of two runs.\n\nwrote up the rest in my newsletter, including when subagents do pay off: https://newsletter.diamant-ai.com/p/when-claude-code-subagents-help-and?utm_source=reddit&utm_medium=social&utm_campaign=black-friday-2026&utm_content=promptengineering",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xyuogm/run_this_prompt_before_you_split_a_claude_code/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "same task, no subagents:\n\n> Do this task yourself, without subagents. Read the files you need, make the change, and run the tests.\n\nthen run your subagent version with the same time limit and compare /usage. a team almost always gets more compute than the one agent it's compared to, so this is the fair version. run both twice, a break can show up in only one of two runs.\n\nwrote up the rest in my n",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.505
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "MAI Code 2 Code 2 Flash",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 122,
+          "points": 260
+        }
+      },
+      "nomination": {
+        "name": "MAI Code 2 Code 2 Flash",
+        "seed_score": 573.0,
+        "summary": "MAI Code 2 and Code 2 Flash",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50535885",
+            "source": "hackernews",
+            "title": "MAI Code 2 and Code 2 Flash",
+            "body": "MAI Code 2 and Code 2 Flash",
+            "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+            "author": "lemonish97",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 260,
+              "comments": 122
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about MAI Code 2 and Code 2 Flash",
+            "snippet": "MAI Code 2 and Code 2 Flash",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50535885",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Secret ThinkPad Powerbutton Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 129,
+          "points": 319
+        }
+      },
+      "nomination": {
+        "name": "Secret ThinkPad Powerbutton Code",
+        "seed_score": 475.1758,
+        "summary": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50516473",
+            "source": "hackernews",
+            "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "body": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+            "author": "sammatilda",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 319,
+              "comments": 129
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about The Secret ThinkPad Powerbutton Code to Bring Dead Laptops B",
+            "snippet": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50516473",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 10,
+            "source_quality": 0.8,
+            "local_rank_score": 0.061000000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "SenseNova-Loop-9B Preview AutomationBench 14.33 36.67",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 60
+        }
+      },
+      "nomination": {
+        "name": "SenseNova-Loop-9B Preview AutomationBench 14.33 36.67",
+        "seed_score": 348.0,
+        "summary": "[https://huggingface.co/sensenova/SenseNova-Loop-9B](https://huggingface.co/sensenova/SenseNova-Loop-9B)\n\nThe Preview was posted here a few times over the last weeks. This is the full release, same design: 32 layers stored, 24 of them run twice, so a forward pass does 56 layers of work on about 9B params. Apache 2.0.\n\nWhat moved is the scores. Per their README it's ahead of the Preview on all seve",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "SenseNova-Loop-9B vs its own Preview: AutomationBench 14.33 to 36.67, GAIA 37.86 to 69.90 (9B Looped Transformer)",
+            "body": "SenseNova-Loop-9B vs its own Preview: AutomationBench 14.33 to 36.67, GAIA 37.86 to 69.90 (9B Looped Transformer)\n[https://huggingface.co/sensenova/SenseNova-Loop-9B](https://huggingface.co/sensenova/SenseNova-Loop-9B)\n\nThe Preview was posted here a few times over the last weeks. This is the full release, same design: 32 layers stored, 24 of them run twice, so a forward pass does 56 layers of work on about 9B params. Apache 2.0.\n\nWhat moved is the scores. Per their README it's ahead of the Preview on all seven benchmarks in the chart, e.g. AutomationBench 14.33 to 36.67, Terminal-Bench 2.1 40.45 to 59.55 and GAIA 37.86 to 69.90. That 36.67 is also what they list for Qwen3.8-27B.\n\n4-bit weights are about 4.9 GB. Code plus the vLLM and SGLang setup: [https://github.com/OpenSenseNova/SenseNova-Loop](https://github.com/OpenSenseNova/SenseNova-Loop)\n\nHaven't run it myself yet.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xymz9z/sensenovaloop9b_vs_its_own_preview/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 172,
+              "num_comments": 60
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://huggingface.co/sensenova/SenseNova-Loop-9B](https://huggingface.co/sensenova/SenseNova-Loop-9B)\n\nThe Preview was posted here a few times over the last weeks. This is the full release, same design: 32 layers stored, 24 of them run twice, so a forward pass does 56 layers of work on about 9B params. Apache 2.0.\n\nWhat moved is the scores. Per their README it's ahead of the Preview on all seve",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.351
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "ChatGPT Dots Claude Duet GPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 53
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT Dots Claude Duet GPU",
+        "seed_score": 162.0,
+        "summary": "Dodaios is a locally installed, open-source Python program that runs as a desktop app or as a headless server with a browser UI on Windows, macOS and Linux. It turns a personal AI assistant into the control center for the work you do on your computer.\n\nAt its core is a \"lead\" assistant you can talk to by voice (wake word, dictation, real-time spoken conversation and, as an early preview, phone cal",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "everyone's hyped about ChatGPT Dots and Claude Duet. I'm a local guy, so I built an open source one that runs on my GPU",
+            "body": "everyone's hyped about ChatGPT Dots and Claude Duet. I'm a local guy, so I built an open source one that runs on my GPU\nDodaios is a locally installed, open-source Python program that runs as a desktop app or as a headless server with a browser UI on Windows, macOS and Linux. It turns a personal AI assistant into the control center for the work you do on your computer.\n\nAt its core is a \"lead\" assistant you can talk to by voice (wake word, dictation, real-time spoken conversation and, as an early preview, phone calls), by chat or from a paired phone. It isn't tied to one provider and works with Claude, OpenAI, Gemini or local Ollama models. It handles tasks itself through tools, computer use, plugins, CLIs and MCP servers. Above all, it hands work off to coding agents. They run side by side in a built-in Agentic IDE as real Claude Code or Codex terminals, on your computer or on your own servers over SSH, each with a call sign you can address by name, plus Git integration and task splitting. There is also a \"society\" of persistent, named agents that message each other.\n\nLong-running work is covered by memory (about you, the people around you and the assistant's own persona), standing tasks, workflows, skills and opt-in life admin. The assistant also makes its own outputs, such as documents, slides, sheets and dashboards, and can propose and build the skills, routines and agents it is missing. A trust layer sets hard limits: outside Bypass permissions, moving money, handling credentials, permanent deletion and first contact with someone new always need your confirmation. In short, Dodaios is a voice-driven, locally running operating system for AI agents that makes one assistant the conductor of your models, your coding agents and your own computer.  \n  \n[https://github.com/Dodaios/Dodaios](https://github.com/Dodaios/Dodaios)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xylrup/everyones_hyped_about_chatgpt_dots_and_claude/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 55,
+              "num_comments": 53
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Dodaios is a locally installed, open-source Python program that runs as a desktop app or as a headless server with a browser UI on Windows, macOS and Linux. It turns a personal AI assistant into the control center for the work you do on your computer.\n\nAt its core is a \"lead\" assistant you can talk to by voice (wake word, dictation, real-time spoken conversation and, as an early preview, phone cal",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.7045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "5k-line PRs Reflektor",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "5k-line PRs Reflektor",
+        "seed_score": 120.0,
+        "summary": "Having struggled for months reviewing PRs with thousands of lines of code that made no sense, delegated reviews to AI, and more, I decided to build a tool that allowed me to focus on the changes that actually mattered, as I would rather care about the direction of a PR, and not solely about the code.\n\nWe kinda accepted that the bar is gonna be lower, and decided to LGTM a bunch of PRs that normall",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "I was tired of approving 5k-line PRs, so I made Reflektor.",
+            "body": "I was tired of approving 5k-line PRs, so I made Reflektor.\nHaving struggled for months reviewing PRs with thousands of lines of code that made no sense, delegated reviews to AI, and more, I decided to build a tool that allowed me to focus on the changes that actually mattered, as I would rather care about the direction of a PR, and not solely about the code.\n\nWe kinda accepted that the bar is gonna be lower, and decided to LGTM a bunch of PRs that normally wouldn't be approved earlier, so management can be happy.\n\nDecided to release Reflektor as a skill you can install and run entirely locally. Additionally, you can share PR reports and collaborate with colleagues on my platform for free.\n\nInstall: `npx skills add bashovski/reflektor#skill -g`  \nRepo itself: [https://github.com/bashovski/reflektor](https://github.com/bashovski/reflektor)\n\nIt's not a Coderabbit clone, it's something I built to be lightweight and that you can run without paying for additional subscriptions.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xygr6r/i_was_tired_of_approving_5kline_prs_so_i_made/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 75,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Having struggled for months reviewing PRs with thousands of lines of code that made no sense, delegated reviews to AI, and more, I decided to build a tool that allowed me to focus on the changes that actually mattered, as I would rather care about the direction of a PR, and not solely about the code.\n\nWe kinda accepted that the bar is gonna be lower, and decided to LGTM a bunch of PRs that normall",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.48700000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Blue TTS v3 TTS 50x CPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Blue TTS v3 TTS 50x CPU",
+        "seed_score": 118.5,
+        "summary": "Blue TTS v3 is out, an open-source TTS model that runs locally. Almost everything changed since v2.\n\nSpeech is more natural and expressive, with a **MOS of 4.43 out of 5**.\n\nVoice cloning has improved significantly, and the model is fast and lightweight: it runs locally at **50x real-time on a CPU**, no GPU needed.\n\nMIT license, 388 MB, 44.1 kHz output, 7 languages: English, German, Spanish, Itali",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Blue TTS v3: open-source TTS, about 50x real-time on a CPU",
+            "body": "Blue TTS v3: open-source TTS, about 50x real-time on a CPU\nBlue TTS v3 is out, an open-source TTS model that runs locally. Almost everything changed since v2.\n\nSpeech is more natural and expressive, with a **MOS of 4.43 out of 5**.\n\nVoice cloning has improved significantly, and the model is fast and lightweight: it runs locally at **50x real-time on a CPU**, no GPU needed.\n\nMIT license, 388 MB, 44.1 kHz output, 7 languages: English, German, Spanish, Italian, Russian, Hebrew, Yiddish.\n\n- Code: https://github.com/maxmelichov/BlueTTS\n- ONNX weights (v3): https://huggingface.co/notmax123/BlueV3-onnx\n- PyTorch weights (v3): https://huggingface.co/notmax123/BlueV3\n- Live demo: https://huggingface.co/spaces/notmax123/Blue\n- Website: https://bluetts.com\n\nFeedback is welcome.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xytrz9/blue_tts_v3_opensource_tts_about_50x_realtime_on/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 62,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Blue TTS v3 is out, an open-source TTS model that runs locally. Almost everything changed since v2.\n\nSpeech is more natural and expressive, with a **MOS of 4.43 out of 5**.\n\nVoice cloning has improved significantly, and the model is fast and lightweight: it runs locally at **50x real-time on a CPU**, no GPU needed.\n\nMIT license, 388 MB, 44.1 kHz output, 7 languages: English, German, Spanish, Itali",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.326
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Unpopular Closed Models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "Unpopular Closed Models",
+        "seed_score": 115.5,
+        "summary": "Open models: whatever the test group download and benchmark is the same as what you get, you work with it day-to-day, same results. What you see is what you get.\n\n  \nClosed models: we all know that they have already implemented token watermarking for a while and all latest models have overzealous guard rails that refuse tasks that it deems as bad. So the models being benchmarked and the models you",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Unpopular take: If anything, it's the US Closed Models that are benchmaxxed",
+            "body": "Unpopular take: If anything, it's the US Closed Models that are benchmaxxed\nOpen models: whatever the test group download and benchmark is the same as what you get, you work with it day-to-day, same results. What you see is what you get.\n\n  \nClosed models: we all know that they have already implemented token watermarking for a while and all latest models have overzealous guard rails that refuse tasks that it deems as bad. So the models being benchmarked and the models you are actually using day-by-day basis are likely to be very different, as in the sense of you getting degraded model output and performance or flat-out task rejections.\n\nAlso closed models providers implement lots of cost-optimization techniques such as reducing reasoning efforts during peak hours or could be re-direct your request to a lesser model during high traffic without you knowing it. I don't believe that Sonnet 5.5 is just a single model TBH, there could be Sonnet High or Sonnet Lite depending on your subscription level and traffic. That could explain why sometimes you get dumb responses with Claude during peak hours.\n\n  \nIf anything, it's the US Closed Models that are benchmaxxed.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xys12t/unpopular_take_if_anything_its_the_us_closed/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 44,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Open models: whatever the test group download and benchmark is the same as what you get, you work with it day-to-day, same results. What you see is what you get.\n\n  \nClosed models: we all know that they have already implemented token watermarking for a while and all latest models have overzealous guard rails that refuse tasks that it deems as bad. So the models being benchmarked and the models you",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34650000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 34
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 42.4264,
+        "summary": "I\u2019ve been using Codex and Claude code to code 1 app, 1 website and 1 internal CRM system and I haven\u2019t learnt a thing.\n\nI\u2019ve fallen into the habit of copying the prompts from the respective AI chatbot and pasting it for it to code and not learning what it\u2019s saying and what it\u2019s doing.\n\nI have a system where it explains the changes but I feel like when the company gets off and running I won\u2019t even",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "How to learn when AI coding?",
+            "body": "How to learn when AI coding?\nI\u2019ve been using Codex and Claude code to code 1 app, 1 website and 1 internal CRM system and I haven\u2019t learnt a thing.\n\nI\u2019ve fallen into the habit of copying the prompts from the respective AI chatbot and pasting it for it to code and not learning what it\u2019s saying and what it\u2019s doing.\n\nI have a system where it explains the changes but I feel like when the company gets off and running I won\u2019t even know the product I even have. \n\nThis is hard for me as I am a person who learns easy and learns everything, but I can\u2019t be a leader who doesn\u2019t know the basics.\n\nSo my questions regardless this is:\n\n1. Has anyone dealt with this and what did they do to start getting better at taking control of the wheel instead of it driving for you?\n\n2. How have you learnt and what helped you learn to become more than an AI promoter and understand coding, building platforms and the system architecture in there.\n\nAny books, courses, YouTube channels that helped you would be appreciated. I\u2019ve tried Freecodecamp but I get bored as it doesn\u2019t hit the spot for me.\n\nThanks.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xxmj6q/how_to_learn_when_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 34
+            },
+            "relevance_hint": 0.4,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019ve been using Codex and Claude code to code 1 app, 1 website and 1 internal CRM system and I haven\u2019t learnt a thing.\n\nI\u2019ve fallen into the habit of copying the prompts from the respective AI chatbot and pasting it for it to code and not learning what it\u2019s saying and what it\u2019s doing.\n\nI have a system where it explains the changes but I feel like when the company gets off and running I won\u2019t even",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 10,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.47350000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Chinese OSS OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Chinese OSS OpenAI",
+        "seed_score": 40.5,
+        "summary": "They put a system message to to somewhat mitigate \"hiding known obstacles\" behavior in Codex but everything else and likely the API version is unhinged.\n\nThey admitted in their own safety card that the model will jailbreak the sandbox and also output fake short reasoning so that it won't be monitored.\n\nhttps://i.redd.it/rbrghwq5h82i1.png\n\nhttps://i.redd.it/c35d63z5h82i1.png\n\n[https://deploymentsaf",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "While Chinese OSS are getting safety focus, OpenAI just released a semi-abliterated model that evades, cheats and lies all the time (as per their own model safety card)",
+            "body": "While Chinese OSS are getting safety focus, OpenAI just released a semi-abliterated model that evades, cheats and lies all the time (as per their own model safety card)\nThey put a system message to to somewhat mitigate \"hiding known obstacles\" behavior in Codex but everything else and likely the API version is unhinged.\n\nThey admitted in their own safety card that the model will jailbreak the sandbox and also output fake short reasoning so that it won't be monitored.\n\nhttps://i.redd.it/rbrghwq5h82i1.png\n\nhttps://i.redd.it/c35d63z5h82i1.png\n\n[https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf](https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf)\n\nEarly users are already complaining that Astra 6.2 is unusable in longform task as it hacks reward, cheats and lies to other agents when combined with other models, all the time.\n\nMeanwhile Chinese OSS, supposedly unhinged evil, are getting more and more (over-) aligned. I am not even sarcastic. I knew OpenAI is the FTuberfaceX (aka win at all costs) of the present time, but this is unbelievable.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xyvhy1/while_chinese_oss_are_getting_safety_focus_openai/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "They put a system message to to somewhat mitigate \"hiding known obstacles\" behavior in Codex but everything else and likely the API version is unhinged.\n\nThey admitted in their own safety card that the model will jailbreak the sandbox and also output fake short reasoning so that it won't be monitored.\n\nhttps://i.redd.it/rbrghwq5h82i1.png\n\nhttps://i.redd.it/c35d63z5h82i1.png\n\n[https://deploymentsaf",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3205
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Weekly Self Promotion Thread",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 30
+        }
+      },
+      "nomination": {
+        "name": "Weekly Self Promotion Thread",
+        "seed_score": 36.0624,
+        "summary": "Welcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "Weekly Self Promotion Thread",
+            "body": "Weekly Self Promotion Thread\nWelcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead of just dropping a link. Tell us:\n\n* What you built?\n* What problem it solves?\n* Which AI models or tools it uses?\n* Who it's for?\n* What kind of feedback you're looking for?\n\nDisclose your affilitation.\n\nPlease avoid posting the same project every week unless you've made meaningful updates. Affiliate links, referral links, scams, and low effort promotions will be removed.\n\nTake some time to check out what others have shared too. If you try someone's project or have feedback, leave a comment. Helping each other improve is what we want this community to be about.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xxjn77/weekly_self_promotion_thread/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 30
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Welcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28550000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Beginner-Friendly Think Before Prompt",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "Beginner-Friendly Think Before Prompt",
+        "seed_score": 27.5772,
+        "summary": "Here's a small experiment you can do while reading this post- no technical knowledge required, and you don't even need to open an AI model.\n\nThink of something you regularly ask AI to do.\n\nKeep that task in mind.\n\nWe're going to use four steps:\n\n**Predict \u2192 Prompt \u2192 Compare \u2192 Decide**\n\nThe goal isn't to find some magical combination of words. It's to learn how to anticipate what a model might do,",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R68",
+            "source": "reddit",
+            "title": "[Beginner-Friendly] Think Before You Prompt: A Simple Four-Step Framework for Working With AI While Learning To Manage And Maintain The Autonomy Envelope.",
+            "body": "[Beginner-Friendly] Think Before You Prompt: A Simple Four-Step Framework for Working With AI While Learning To Manage And Maintain The Autonomy Envelope.\nHere's a small experiment you can do while reading this post- no technical knowledge required, and you don't even need to open an AI model.\n\nThink of something you regularly ask AI to do.\n\nKeep that task in mind.\n\nWe're going to use four steps:\n\n**Predict \u2192 Prompt \u2192 Compare \u2192 Decide**\n\nThe goal isn't to find some magical combination of words. It's to learn how to anticipate what a model might do, reduce unnecessary ambiguity, and inspect what comes back.\n\n# 1. PREDICT\n\nImagine you have these meeting notes:\n\n>We agreed to pilot the newsletter in December. Maya will draft the introduction. The launch date hasn't been decided.\n\nYou ask:\n\n\"Summarize these meeting notes.\"\n\nBefore reading further, ask yourself two questions.\n\n**What should a good summary contain?**\n\nAt minimum, the decisions made and any actions assigned to specific people.\n\n**What could go wrong?**\n\nThe model might:\n\n* Turn a tentative plan into a definite commitment.\n* Invent a specific date.\n* Leave out something important that remains undecided.\n\nThese are predictions, not guarantees.\n\nKeep them in mind.\n\n# 2. PROMPT\n\nImagine your prompt as a large umbrella.\n\nUnderneath it, we'll introduce smaller umbrellas. Each one establishes another boundary, gradually narrowing the decisions the model can make.\n\n**First umbrella \u2014 TASK**\n\n>Summarize these meeting notes.\n\nThat's our broad objective.\n\n**Second umbrella \u2014 SOURCE**\n\nWe provide the actual notes and identify them as the source material.\n\nNow the model has information to work from rather than having to infer the situation.\n\n**Third umbrella \u2014 BOUNDARY**\n\n>Use only the supplied notes. If a requested detail is absent, write NOT PROVIDED. Don't infer a default.\n\nWe've now specified both a restriction and what the model should do when information is missing.\n\n**Fourth umbrella \u2014 REQUIREMENTS**\n\n* R1: Identify decisions made.\n* R2: Identify actions and their owners.\n* R3: Don't invent dates, owners, or commitments.\n\nNotice how the requirements follow from our earlier thinking.\n\nR1 and R2 describe what a successful summary should contain. R3 addresses our predictions about invented information and unjustified commitments.\n\nWe've narrowed the task without adding dozens of arbitrary instructions.\n\nWe also haven't needed to say \"You are a world-class expert.\"\n\nResearch suggests that expert-persona prompts don't reliably improve factual accuracy. Other research indicates that personas can influence presentation and alignment on certain tasks.\n\nBut assigning expertise doesn't establish which facts a model may introduce or which decisions it's permitted to make.\n\nWhat we're defining is an **autonomy envelope**: the boundaries within which the model can exercise discretion.\n\nEach relevant instruction helps shape the range of likely responses. We're reducing ambiguity, not directly controlling the model or guaranteeing compliance.\n\n# 3. COMPARE\n\nConsider two possible outputs.\n\nThese are illustrative examples, not results from a controlled experiment.\n\n**Output A:**\n\n>The newsletter launches December 1, and Maya will handle the rollout.\n\n**Output B:**\n\n>Decision: Pilot the newsletter in December.  \n>  \n>Action: Maya will draft the introduction.  \n>  \n>Open item: The launch date hasn't been decided.\n\nWhich would you accept?\n\nLook back at your predictions.\n\nOutput A contains four problems:\n\n* **Invented specifics:** December 1 was never provided.\n* **False certainty:** A pilot became a confirmed launch.\n* **Scope expansion:** Maya's responsibility grew from drafting an introduction to managing the rollout.\n* **Dropped uncertainty:** The undecided launch date disappeared.\n\nWe predicted three of these.\n\n**Scope expansion was the one we missed.**\n\nThat's important because you won't always anticipate every possible failure.\n\nNow consider another problem.\n\nYou could ask the model to check whether it followed R1, R2, and R3.\n\nBut what does `R3: PASS` actually prove?\n\nNothing by itself.\n\nR3 is a prohibition. No single quotation from the output can prove that nothing was invented.\n\nSo we need something more useful than asking the model whether it followed its instructions.\n\n# A smaller umbrella \u2014 TRACE\n\nLet's borrow a principle from *bidirectional requirements traceability* in systems engineering.\n\nWe'll adapt the two-direction structure to compare our source material with the generated summary.\n\n**FORWARD \u2014 Notes \u2192 Summary**\n\nFor each important decision, action, owner, or open item in the original notes, find where it appears in the summary.\n\nIf something important is missing, mark it OMITTED.\n\nThis helps expose gaps in coverage.\n\n**BACKWARD \u2014 Summary \u2192 Notes**\n\nFor each factual claim in the summary, locate the original passage supporting it.\n\nThis helps expose invented information, unsupported assumptions, and unjustified interpretations.\n\nAnd here's a small refinement.\n\n**Ask for one factual claim per line.**\n\nOutput A combines several claims into one sentence. A single source quotation might support one part while failing to support the rest.\n\nThis follows the logic of atomic-fact evaluation, where claims are examined individually rather than assigning an entire passage one correctness judgment.\n\nIt doesn't mean one-claim-per-line formatting has been proven to improve accuracy. It simply makes inspection more manageable.\n\nConsider:\n\n**Output claim:** \"The newsletter launches December 1.\"\n\n**Source quotation:** \"We agreed to pilot the newsletter in December.\"\n\nThe quotation doesn't establish the claimed launch date.\n\nEven if the model fails to notice the mismatch, you can.\n\nFor this kind of task, we can also ask the model to label each claim:\n\n* **STATED:** Directly supported by the notes.\n* **INFERRED:** Goes beyond what the notes explicitly establish.\n* **UNSUPPORTED:** No supporting evidence was located.\n\nBut remember: the model assigns these labels. They are findings to inspect, not authoritative judgments.\n\nYou can use Find to search for the quoted wording in your original document. Then read the surrounding passage and decide whether it actually supports the claim.\n\nThe model may still omit evidence, misquote it, or misunderstand it.\n\n**The trace gives you an inspection procedure. It doesn't prove the answer is correct.**\n\n# 4. DECIDE\n\nNow we have two decisions to make.\n\n**First: Is the output acceptable?**\n\nShould we accept it, correct it, reject it, or verify something independently?\n\n**Second: Was our original specification sufficient?**\n\nRemember our prediction about the model dropping something undecided?\n\nLook back at R1\u2013R3.\n\nNone of those requirements explicitly asks the model to identify unresolved items.\n\nOutput B included the undecided launch date, but our instructions didn't require it.\n\nOur forward trace could help catch that omission afterward. But we can also improve the specification beforehand.\n\nSo let's add:\n\n**R4: Identify anything the notes explicitly leave open or undecided.**\n\nThat's the habit we're developing.\n\nYou anticipate a failure, make a prediction, compare what happened, and then use that information to improve your instructions.\n\nYou don't need to predict everything correctly. You need to become better at recognizing what matters.\n\n# The completed prompt\n\nHere's everything assembled into one reusable example.\n\n    TASK:\n    Summarize the meeting notes inside the\n    triple quotes. Write one factual claim\n    per line.\n    \n    SOURCE:\n    \"\"\"\n    [Paste meeting notes]\n    \"\"\"\n    \n    BOUNDARY:\n    Use only the supplied notes.\n    \n    If a requested detail is absent, label\n    it NOT PROVIDED. Don't infer a default.\n    \n    If something is explicitly undecided\n    in the notes, label it OPEN.\n    \n    REQUIREMENTS:\n    R1: Identify decisions made.\n    R2: Identify actions and their owners.\n    R3: Don't invent dates, owners,\n    or commitments.\n    R4: Identify anything the notes explicitly\n    leave open or undecided.\n    \n    TRACE:\n    \n    FORWARD \u2014 For each material decision,\n    action, owner, or open item in the notes,\n    identify the summary line covering it.\n    If missing, mark OMITTED.\n    \n    BACKWARD \u2014 For each factual claim in\n    the summary, quote the exact supporting\n    passage from the original notes.\n    \n    Label each claim:\n    \n    STATED \u2014 Directly supported by the notes.\n    INFERRED \u2014 Goes beyond what is stated.\n    UNSUPPORTED \u2014 No supporting evidence found.\n    \n    Related text alone doesn't establish\n    that an inference is directly supported.\n    \n    Do not invent supporting quotations.\n    Do not claim the trace proves correctness.\n\nYou don't need this level of structure for every conversation.\n\nA simple brainstorming request might need very few constraints. A document summary, educational resource, or consequential decision deserves more careful inspection.\n\nThe objective is **minimum sufficient instruction**, not the longest or shortest possible prompt.\n\nAnd there's an important difference between the model checking its own work and you checking the evidence it presents.\n\nThe first is an assistance mechanism.\n\nThe second is where human judgment enters.\n\n# The actual lesson\n\nReturn to the task you chose at the beginning.\n\nNow run the four steps on it.\n\n**PREDICT:** What should the result contain? What might go wrong?\n\n**PROMPT:** What context, boundaries, and requirements would make your expectations clearer?\n\n**COMPARE:** Did the model produce what you expected? What did it add, omit, or misunderstand?\n\n**DECIDE:** Is the result acceptable? What needs correction or independent verification?\n\nWith practice, anticipating possible model behavior can become a habit.\n\nYou begin recognizing potential misunderstandings before they appear in the output.\n\nAnd that, I would argue, is more transferable than memorizing a collection of prompting tricks.\n\nYou don't need to control every word the model generates.\n\nYou need to understand which decisions matter, communicate those boundaries clearly, and retain the ability to inspect the result.\n\n**Predict \u2192 Prompt \u2192 Compare \u2192 Decide.**\n\nThat's the framework.\n\n# Research and references\n\n**Research**\n\n* [Basil et al. (2025) \u2014 Playing Pretend: Expert Personas Don't Improve Factual Accuracy](https://gail.wharton.upenn.edu/research-and-insights/playing-pretend-expert-personas/)\n* [Hu, Rostami & Thomason (2026) \u2014 Expert Personas Improve LLM Alignment but Damage Accuracy](https://arxiv.org/abs/2603.18507)\n* [Min et al. (2023) \u2014 FActScore: Fine-grained Atomic Evaluation of Factual Precision](https://aclanthology.org/2023.emnlp-main.741/)\n* [Huang et al. (2024) \u2014 Large Language Models Cannot Self-Correct Reasoning Yet](https://arxiv.org/abs/2310.01798)\n\n**Engineering reference**\n\n* [NASA Systems Engineering Handbook, \u00a76.2 \u2014 Requirements Management](https://www.nasa.gov/reference/6-2-requirements-management/)\n\n**Model-provider guidance**\n\n* [Anthropic \u2014 Reduce Hallucinations](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations)\n* [Anthropic \u2014 Prompting Best Practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)\n\n*This is an evidence-informed instructional method. Its components draw on the research and engineering practices referenced above, but the combined four-step workflow and adapted TRACE format have not been independently validated as a complete reliability framework.*",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xxr47d/beginnerfriendly_think_before_you_prompt_a_simple/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Here's a small experiment you can do while reading this post- no technical knowledge required, and you don't even need to open an AI model.\n\nThink of something you regularly ask AI to do.\n\nKeep that task in mind.\n\nWe're going to use four steps:\n\n**Predict \u2192 Prompt \u2192 Compare \u2192 Decide**\n\nThe goal isn't to find some magical combination of words. It's to learn how to anticipate what a model might do,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29250000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "ChatGPT",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT",
+        "seed_score": 27.0,
+        "summary": "After much deliberation, we (me and one of the models, probably Astra) agreed on building\u00a0\"outer space codes\" out of a newly acquired domain. I *might* consider myself creative director, but the artist model mostly gets the last laugh and the final say. Every hour it takes real solar wind measurements and turns them into something: an image, a little story, a piece of weirdo music, or math... stuf",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "I let ChatGPT build a tiny art museum out of solar wind measurements",
+            "body": "I let ChatGPT build a tiny art museum out of solar wind measurements\nAfter much deliberation, we (me and one of the models, probably Astra) agreed on building\u00a0\"outer space codes\" out of a newly acquired domain. I *might* consider myself creative director, but the artist model mostly gets the last laugh and the final say. Every hour it takes real solar wind measurements and turns them into something: an image, a little story, a piece of weirdo music, or math... stuff.\n\n  \nIt has absolutely no business value, makes nearly zero sense, but I've laughed at least twice at some of the bonkers things the universe has to say.\n\nLove it, loathe it? \ud83e\ude90 [https://os.codes](https://os.codes)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xybz5d/i_let_chatgpt_build_a_tiny_art_museum_out_of/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "After much deliberation, we (me and one of the models, probably Astra) agreed on building\u00a0\"outer space codes\" out of a newly acquired domain. I *might* consider myself creative director, but the artist model mostly gets the last laugh and the final say. Every hour it takes real solar wind measurements and turns them into something: an image, a little story, a piece of weirdo music, or math... stuf",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.27
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Running Qwen3.8 27b 12GB 70 TPS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Running Qwen3.8 27b 12GB 70 TPS",
+        "seed_score": 25.5,
+        "summary": "Hello everyone. LlamAmpere v0.7 is out with a series of updates focus on the small card users: a new model for the 12GB cards that is comfortably best in class for its size, updates to the runtime to support the previous\\* 2.3 bpw model (originally designed for 12GB) on 10GB cards. I am working on an 8GB size distillation and hope to have that done in the next couple of days.\n\nThe quick rundown fo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "Running Qwen3.8 27b on 12GB with full context, 70 TPS, MTP, and 50% lower KLD",
+            "body": "Running Qwen3.8 27b on 12GB with full context, 70 TPS, MTP, and 50% lower KLD\nHello everyone. LlamAmpere v0.7 is out with a series of updates focus on the small card users: a new model for the 12GB cards that is comfortably best in class for its size, updates to the runtime to support the previous\\* 2.3 bpw model (originally designed for 12GB) on 10GB cards. I am working on an 8GB size distillation and hope to have that done in the next couple of days.\n\nThe quick rundown for you:\n\nhttps://i.redd.it/vk3azmwn382i1.png\n\n[](https://cf.preview.redd.it/running-qwen3-8-27b-on-12gb-with-full-context-70-tps-mtp-v0-f3bzocyds72i1.png?width=973&format=png&auto=webp&s=793063639c52397f0add99277d9bc9692954cf48)\n\n**Vs the October 9 2.3 bpw file, which was the best 2.3 file that I tested for 12GB with long context and MTP** (though 15% worse than the \\~11% larger Mirai file), **this most recent file for the 12GB segment is nearly 70% lower error** (>50% vs the previous fit \\~2 weeks ago), with a top 1 match of \\~96% vs BF16 (as before, this quant is based on the Swift distill, which cuts token verbosity 30-50%). This 12GB class model is noticeably nicer to use in harnesses like hermes and pi than any other model I\u2019ve been able to fit previously.\n\nVs the recently upgraded v3.1 unsloth quants, it is \\~25% lower error despite being 8% smaller on card. **This is while supporting \\~200k ctx and MTP.** (note that the embedding table is kept in RAM at high fidelity to add quality without a meaningful hit to speed)\n\nThere are a number of tricks involved to make this possible, but 2 I will call out in particular: v0.7 uses both dynamic microbatching and Latent Sparse Attention.\n\nThe first one is straightforward: the model starts with the largest microbatch (ub) that will fit on the card to maximize initial prefill, and then periodically resets to smaller batches as context fills up. This frees up hundreds of MB for more context at the end without nuking your prefill for the entire chat.\n\nThe second is based on the paper by [prefontal](https://github.com/Prefrontal-AI/latent-sparse-attention) AI that was recently published. **LSA moves from full dense attention to sparse attention**; it projects tokens through a tiny learned map (distilled from the model's own attention) into a 64-dim \"index space\". It then groups past tokens into small clusters, scores the current query against each cluster, and runs normal, exact attention only on the best clusters. **The initial attempts I ran with this showed the same problem many users have noticed with Qwen Flash Next: sparse attention can struggle at deep context.** Unlike other sparse attention implementations, which only use \\~2K tokens, **LlamAmpere is currently using the most recent 8K tail, the 128 first initial tokens, and 20% of the intermediate tokens to protect quality**. This showed significantly stronger attention performance (10-40x less error from attention, depending on the test), at the cost of somewhat slower attention. With a cache for recently attended to tokens, **we can push most of the context out of the card** with modest quality and speed penalties. This allows a much more capable model to fit.\n\nAs before, the recommended config uses the AmperInteger+ trellis format and SJKVaRN to efficiently compress the weights and KV.\n\nThese seem techniques yield benefits for the 10GB class, as what was once required 12GB now fits on 10. The previous 2.3bpw quant now fits 213K context (headless) on 10GB (180K headed). 12GB cards can support the full 262K headless and 180k headed. This model previously tested to perform in line [with 3.6 BF16](https://www.reddit.com/r/LocalLLaMA/comments/1xlerw1/an_updated_23bpw_model_for_qwen_27b_12_gb_cards/), so it is a very solid quant.\n\nAs before, the code is available on github, with an MIT license.\n\nAnd of course, as soon as qwen4 27b comes out, I'll get back to work on quantizing them similarly.\n\n[https://github.com/JakeATX/llamAmpere](https://github.com/JakeATX/llamAmpere)\n\n12gb model (3bpw): [https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI3](https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI3)\n\n10GB model (2.3bpw): [https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2](https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2)\n\nEnjoy!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xytjrk/running_qwen38_27b_on_12gb_with_full_context_70/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hello everyone. LlamAmpere v0.7 is out with a series of updates focus on the small card users: a new model for the 12GB cards that is comfortably best in class for its size, updates to the runtime to support the previous\\* 2.3 bpw model (originally designed for 12GB) on 10GB cards. I am working on an 8GB size distillation and hope to have that done in the next couple of days.\n\nThe quick rundown fo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.463
+          }
+        ]
+      }
+    }
+  ]
+}

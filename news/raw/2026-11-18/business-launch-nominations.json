@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "2c5d3269cfd17407",
+  "generated_at": "2026-11-17T23:56:17.014466Z",
+  "from_date": "2026-11-16",
+  "to_date": "2026-11-17",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-17T23:56:17.013561Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-17T23:56:17.013566Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-17T23:56:17.013418Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-17T23:56:17.013500Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Windows 11",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 588,
+          "points": 708
+        }
+      },
+      "nomination": {
+        "name": "Windows 11",
+        "seed_score": 1374.6156,
+        "summary": "Windows 11 is collecting data on which coding agents and developer tools you use",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50524736",
+            "source": "hackernews",
+            "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "body": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+            "author": "cwaffles",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 708,
+              "comments": 588
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Windows 11 is collecting data on which coding agents and dev",
+            "snippet": "Windows 11 is collecting data on which coding agents and developer tools you use",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50524736",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.19
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Rust changed me as a developer",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 182,
+          "points": 284
+        }
+      },
+      "nomination": {
+        "name": "Rust changed me as a developer",
+        "seed_score": 494.2676,
+        "summary": "Rust changed me as a developer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50522563",
+            "source": "hackernews",
+            "title": "Rust changed me as a developer",
+            "body": "Rust changed me as a developer",
+            "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
+            "author": "speckx",
+            "container": "Hacker News",
+            "published_at": "2026-11-16",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 284,
+              "comments": 182
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Rust changed me as a developer",
+            "snippet": "Rust changed me as a developer",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50522563",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 65,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14200000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "StarSling YC P25 Self-improving CI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 22,
+          "points": 42
+        }
+      },
+      "nomination": {
+        "name": "StarSling YC P25 Self-improving CI",
+        "seed_score": 96.0,
+        "summary": "Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50536468",
+            "source": "hackernews",
+            "title": "Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos",
+            "body": "Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos",
+            "url": "https://starsling.dev",
+            "author": "yonasb",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 42,
+              "comments": 22
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-",
+            "snippet": "Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50536468",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    }
+  ]
+}

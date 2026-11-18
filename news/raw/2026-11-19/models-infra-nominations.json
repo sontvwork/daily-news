@@ -1,0 +1,1209 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "f075575c31e50b29",
+  "generated_at": "2026-11-18T23:55:58.893085Z",
+  "from_date": "2026-11-17",
+  "to_date": "2026-11-18",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-18T23:55:58.816426Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-18T23:55:58.816433Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 136,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-18T23:55:58.813972Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 15,
+      "attempted": true,
+      "at": "2026-11-18T23:55:58.816271Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "GPT\u20116.2 Astra and Sol",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 850,
+          "points": 1336
+        },
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "GPT\u20116.2 Astra and Sol",
+        "seed_score": 3227.0186,
+        "summary": "GPT\u20116.2 Astra and Sol",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50535230",
+            "source": "hackernews",
+            "title": "GPT\u20116.2 Astra and Sol",
+            "body": "GPT\u20116.2 Astra and Sol",
+            "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+            "author": "jasondavies",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1336,
+              "comments": 850
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about GPT\u20116.2 Astra and Sol",
+            "snippet": "GPT\u20116.2 Astra and Sol",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50535230",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1835
+          },
+          {
+            "item_id": "R110",
+            "source": "reddit",
+            "title": "GPT-6.2 Astra just produced what we believe is the first Lean proof of Smoktunowicz\u2019s Gap Theorem",
+            "body": "GPT-6.2 Astra just produced what we believe is the first Lean proof of Smoktunowicz\u2019s Gap Theorem\nhttps://www.vals.ai/blogs/smoktunowicz-gap-theorem",
+            "url": "https://www.reddit.com/r/singularity/comments/1xznrs4/gpt62_astra_just_produced_what_we_believe_is_the/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 247,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://www.vals.ai/blogs/smoktunowicz-gap-theorem",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 91,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3355
+          },
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "GPT 6.2 Astra uses bells as a \"fingerprint\"",
+            "body": "GPT 6.2 Astra uses bells as a \"fingerprint\"\nI've done a ton with this model on the $200 sub. Give it any creative task at all and it will shoehorn bells into it.\n\nUsually I like to allow freedom within a framework to see what the model comes up with. It's typically quite varied and interesting but here, every time, it's bells.\n\nI got so frustrated with all the damn bells that I gave it a hyper-specific, detailed specification detailing everything I want down to minutia thinking to myself \"No way it can add bells to this\"\n\nSomehow it found a way to change the key theme of a character to bells without me noticing.\n\nNobody asked for this.\n\nI get that Bel was it's codename but come on...",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1xzq1zj/gpt_62_astra_uses_bells_as_a_fingerprint/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 30,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've done a ton with this model on the $200 sub. Give it any creative task at all and it will shoehorn bells into it.\n\nUsually I like to allow freedom within a framework to see what the model comes up with. It's typically quite varied and interesting but here, every time, it's bells.\n\nI got so frustrated with all the damn bells that I gave it a hyper-specific, detailed specification detailing ever",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3085
+          },
+          {
+            "item_id": "R93",
+            "source": "reddit",
+            "title": "Debate Benchmark update: 8 new models added",
+            "body": "Debate Benchmark update: 8 new models added\n[https://github.com/lechmazur/debate](https://github.com/lechmazur/debate)\n\n\\- GPT-6.2 Astra scores 1673, up 67 over Astra 6.  \n  \n\\- Claude Fable 5.2 scores 1688, 18 points below Fable 5.1.  \n  \n\\- Gemini 4 Carbon scores 1676, 27 points ahead of Argon.  \n  \n\\- Qwen 4 Max makes the biggest gain: 1535 \u2192 1679 (+144) over Qwen 3.8 Max.  \n  \n\\- Tencent Hy4 (high) gains 85 points over Hy4 Preview, reaching 1646.  \n  \n\\- Step 5 Preview (high) debuts at 1521.  \n  \n\\- MiniMax M3.1 Flash (high) reaches 1509 (+27 over M3).   \n  \n\\- Seed 2.1 Pro reaches 1468 (+34 over Seed 2.0 Pro).  \n  \nThe benchmark now includes 10,928 rated debates across 683 topics, backed by 33,342 judge decisions.  \n  \nDebate Benchmark tests whether a model can defend a position through sustained opposition. A strong opening helps, but a model also has to answer objections, ask pointed questions, and carry its argument through the closing.  \n  \nEvery matchup runs twice on the same motion, with PRO and CON swapped to control for side advantage. Three judges from distinct model families independently evaluate each debate\u2019s winner and margin.  \n  \nThe topic bank spans ten subject areas. Law and regulation form the largest group (135 motions), followed by labor, education, and social policy (122). Of the 683 motions, 419 are global in scope and 48 focus specifically on the U.S.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzshsa/debate_benchmark_update_8_new_models_added/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://github.com/lechmazur/debate](https://github.com/lechmazur/debate)\n\n\\- GPT-6.2 Astra scores 1673, up 67 over Astra 6.  \n  \n\\- Claude Fable 5.2 scores 1688, 18 points below Fable 5.1.  \n  \n\\- Gemini 4 Carbon scores 1676, 27 points ahead of Argon.  \n  \n\\- Qwen 4 Max makes the biggest gain: 1535 \u2192 1679 (+144) over Qwen 3.8 Max.  \n  \n\\- Tencent Hy4 (high) gains 85 points over Hy4 Preview, reac",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37
+          },
+          {
+            "item_id": "R124",
+            "source": "reddit",
+            "title": "Three frontier LLMs asked to design a neural net from scratch all rejected the transformer - and converged on sparse lookup tables 1,800x smaller",
+            "body": "Three frontier LLMs asked to design a neural net from scratch all rejected the transformer - and converged on sparse lookup tables 1,800x smaller\nResearchers at POSTECH (Hyunjong Ok and Jaeho Lee) gave Claude Opus 5.5, GPT-6.1 Sol and GPT-6 Astra ten labeled questions, a code sandbox, and complete freedom to design any neural architecture - with no gradient descent in the loop. All three independently compiled plain-text facts into sparse lookup tables queried by a fixed procedure, instead of building transformer blocks.\n\nThe best design, from Claude Opus 5.5, reached 54.4% test accuracy on the ARC benchmark with 3.35M parameters. A same-sized two-layer transformer trained by gradient descent scored 29.8%. The paper reports the lookup-table model beats the most accurate LLM-written transformer while using about 1,800x fewer parameters, and runs up to 17x faster on GPU, with each prediction traceable to one editable fact row.\n\nCaveats, and they are big: the scope is narrow - MMLU sits near chance at roughly 25% - and these models still lag far behind pretrained baselines (Qwen3.5-0.8B gets 82.1% on the same ARC benchmark). Code is public on the authors' GitHub.\n\nPaper posted Nov 18, 2026. Write-up: https://emergent.sh/news/llms-design-1-800x-smaller-models-beat\n\nDiscussion: if transformers are the default largely because gradient descent needs them, what does it mean that LLMs writing weights by hand do not want them at all?",
+            "url": "https://www.reddit.com/r/artificial/comments/1xzt8ya/three_frontier_llms_asked_to_design_a_neural_net/",
+            "container": "artificial",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Researchers at POSTECH (Hyunjong Ok and Jaeho Lee) gave Claude Opus 5.5, GPT-6.1 Sol and GPT-6 Astra ten labeled questions, a code sandbox, and complete freedom to design any neural architecture - with no gradient descent in the loop. All three independently compiled plain-text facts into sparse lookup tables queried by a fixed procedure, instead of building transformer blocks.\n\nThe best design, f",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3245
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Evidence Shows School Phone Bans",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 642,
+          "points": 1282
+        }
+      },
+      "nomination": {
+        "name": "Evidence Shows School Phone Bans",
+        "seed_score": 2040.7102,
+        "summary": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50530163",
+            "source": "hackernews",
+            "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+            "body": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+            "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+            "author": "donohoe",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1282,
+              "comments": 642
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about New Evidence Shows School Phone Bans Are Gradually Improving",
+            "snippet": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50530163",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 10,
+            "engagement_score": 97,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14150000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google AI 40",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 532,
+          "points": 687
+        }
+      },
+      "nomination": {
+        "name": "Google AI 40",
+        "seed_score": 1828.5,
+        "summary": "Google's AI answers reducing search traffic by 40%",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50540178",
+            "source": "hackernews",
+            "title": "Google's AI answers reducing search traffic by 40%",
+            "body": "Google's AI answers reducing search traffic by 40%",
+            "url": "https://revscope.co/blog/search-seo-geo-2026/",
+            "author": "slashdev",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 687,
+              "comments": 532
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google's AI answers reducing search traffic by 40%",
+            "snippet": "Google's AI answers reducing search traffic by 40%",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50540178",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 89,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34650000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Gemini 4 Neon",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 317,
+          "points": 331
+        },
+        "reddit": {
+          "num_comments": 108
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Neon",
+        "seed_score": 1709.475,
+        "summary": "Gemini 4 Neon",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50552424",
+            "source": "hackernews",
+            "title": "Gemini 4 Neon",
+            "body": "Gemini 4 Neon",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+            "author": "yigitdemirag",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 331,
+              "comments": 317
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Gemini 4 Neon",
+            "snippet": "Gemini 4 Neon",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50552424",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.8,
+            "local_rank_score": 0.381
+          },
+          {
+            "item_id": "R104",
+            "source": "reddit",
+            "title": "Gemini Neon is out.",
+            "body": "Gemini Neon is out.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzqkq4/gemini_neon_is_out/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 111,
+              "num_comments": 62
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Gemini Neon is out.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3725
+          },
+          {
+            "item_id": "R106",
+            "source": "reddit",
+            "title": "Gemini Neon Coming Today",
+            "body": "Gemini Neon Coming Today",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzpdxm/gemini_neon_coming_today/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 122,
+              "num_comments": 46
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Gemini Neon Coming Today",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.35750000000000004
+          },
+          {
+            "item_id": "R100",
+            "source": "reddit",
+            "title": "Gemini Neon Benchmarks",
+            "body": "Gemini Neon Benchmarks",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzrlbh/gemini_neon_benchmarks/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Gemini Neon Benchmarks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2855
+          },
+          {
+            "item_id": "R102",
+            "source": "reddit",
+            "title": "Introducing Gemini 4 Neon.",
+            "body": "Introducing Gemini 4 Neon.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzrjzx/introducing_gemini_4_neon/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Introducing Gemini 4 Neon.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2855
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Seven new models at scalable price-performance",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 284,
+          "points": 410
+        }
+      },
+      "nomination": {
+        "name": "Seven new models at scalable price-performance",
+        "seed_score": 1041.0,
+        "summary": "Seven new models at scalable price-performance",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50548021",
+            "source": "hackernews",
+            "title": "Seven new models at scalable price-performance",
+            "body": "Seven new models at scalable price-performance",
+            "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+            "author": "gmays",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 410,
+              "comments": 284
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Seven new models at scalable price-performance",
+            "snippet": "Seven new models at scalable price-performance",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50548021",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.8,
+            "local_rank_score": 0.36900000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "best harness for each model",
+      "heuristic_junk": true,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 130,
+          "points": 416
+        },
+        "reddit": {
+          "num_comments": 59
+        }
+      },
+      "nomination": {
+        "name": "best harness for each model",
+        "seed_score": 881.6136,
+        "summary": "What is the best harness for each model?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50532191",
+            "source": "hackernews",
+            "title": "What is the best harness for each model?",
+            "body": "What is the best harness for each model?",
+            "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+            "author": "Edward40",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 416,
+              "comments": 130
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about What is the best harness for each model?",
+            "snippet": "What is the best harness for each model?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50532191",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.098
+          },
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "ToRc: a from-scratch Rust engine running Qwen3.8 Flash Next (Q4), a 107 GB model, at 67 tok/s prompt / 17 gen (on a 16k prompt) on two \u00a3300 Snapdragon boxes with 64 GB of RAM between them. CPU + NPU + iGPU, in a 13 MB zip",
+            "body": "ToRc: a from-scratch Rust engine running Qwen3.8 Flash Next (Q4), a 107 GB model, at 67 tok/s prompt / 17 gen (on a 16k prompt) on two \u00a3300 Snapdragon boxes with 64 GB of RAM between them. CPU + NPU + iGPU, in a 13 MB zip\nSo this started because I bought two of the base Snapdragon X boxes for some software  and build testing at work (the cheap ones, about \u00a3300 each, not the Elite) and then they were sitting unused. With fast LPDDR5x (8448 MT/s) in them I thought I'd have a play and see if I could run proper models on them. I tried the usual engines and couldn't get anywhere near the speed I thought the hardware should do... So then my ADHD took over and I got carried away, and this is the result \ud83e\udd23\n\nToRc is an inference engine written from scratch in Rust. Weeks of days and nights measuring, rewriting and measuring again went into it, and the numbers below are all measured on my own kit, different platforms etc... So I hope this proves useful to others \ud83d\ude4f\ud83d\ude43\n\n[ToRc on GitHub](https://github.com/Rendeverance/ToRc)\n\n[Measured performance](https://github.com/Rendeverance/ToRc/blob/main/PERFORMANCE.md)\n\nIf you can unzip a file, you can run your own model on your own machine. The download is a zip of about 13 MB (Windows x64, Windows on ARM, Linux x64 and Linux ARM, plus an experimental Mac one): unzip it, open ToRc, pick a model (a GGUF converts once, and it tells you how much space that takes first), press Auto-tune, and talk. A few minutes from download to chatting, nothing installed, and the app keeps everything (settings, chats, the lot) in that one folder. The only thing outside it is what the engine learns about your machine (Auto-tune's results and the like), in %LOCALAPPDATA%\\\\torc or \\~/.cache/torc.\n\nWhat it can do:\n\n\\- Uses the CPU, the NPU and the integrated GPU at the same time where it's present or faster, per model. Or just NPU + iGPU if you want to leave the machine usable while it runs.\n\n\\- Tunes itself to your machine, and every setting can be overridden if you want to fiddle / let an agent try to wring every last token of performance for your particular setup.\n\n\\- Speaks the OpenAI and Anthropic APIs, so Claude Code, OpenCode and anything else that talks to those just works. Full tool calling and MCP is also built in, and the desktop app has its own chat, tools and MCP servers if you just want to talk to it.\n\n\\- Runs on Windows and Linux, x86 and ARM. (Linux: one user runs it on bare metal on a Snapdragon box under Ubuntu, and I've run it under WSL2, so tell me how it goes on yours.) There's also an EXPERIMENTAL Mac zip (Apple Silicon): one person has built and run it from source, and GitHub builds the zip, but I don't have a Mac to test it myself.\n\n\\- It converts to its own file format for efficient SSD streaming where the model won't fit into memory and can split one model across multiple machines. I've tested two boxes over USB4; in principle it's N boxes. You pool their RAM, memory bandwidth and compute for enhanced performance.\n\nHeadline numbers, engine timed, read (prompt) / write (reply) tok/s:\n\n\\- Qwen3.8 Flash Next, a 107 GB model, on two Snapdragon boxes with 64 GB of RAM between them (the experts that don't fit stream off the SSDs): \\~67 / \\~17.5 on a **16k prompt**, \\~64 / \\~21 on a short one\n\n\\- Qwen3.6 35B A3B, **4k prompt**, two Snapdragon boxes: \\~406 / \\~54 (one box: \\~283 / \\~56)\n\n\\- Same 35B on an i9-13900K (8 threads, CPU only), **4k prompt**: \\~243 / \\~44, where llama.cpp manages \\~143 / \\~24\n\nAgainst llama.cpp on the same hardware (CPU against CPU) it's quicker on most of what I've tried, and the gap grows with the prompt: on a 32k prompt it writes 2 to 10x faster. It isn't ahead everywhere, though. On my laptop llama.cpp reads long prompts slightly faster on GLM-4.7-Flash, and writes short replies a little faster on Moonlight and gpt-oss-20b. On the box, it reads short prompts a bit faster on the small dense Qwen3.5 models, until ToRc's NPU is on (then ToRc is \\~2x). Full matrices, llama.cpp comparisons and every machine tested are in PERFORMANCE.md (link below).\n\nTested on: 2x Snapdragon X (base X1, 32 GB) boxes (1 box and 2), a Ryzen 7 7840HS laptop (Radeon 780M + RTX 4070), an i5-12600K desktop (RTX 3060) and an i9-13900K workstation (96 GB, Radeon AI PRO R9700 used for attention only). Everyday Windows installs with all my apps on them, not streamlined benchmark rigs on minimal Linux.\n\nWhat I'm looking for:\n\n\\- Testers, especially anyone with an X Elite or X2 Elite. This was all done on the base chip, so I'm curious what performance the bigger chips can manage.\n\n\\- Mac people. As above, it builds and runs, but I can't test it myself, so numbers (and fixes) from more Macs would be brilliant.\n\n\\- Linux on more real hardware, x86 especially.\n\n\\- Holes. Find them and tell me what I can add or improve.\n\nOne question for you all: what is one feature you want from a local inference engine that nobody ships yet? I would genuinely like to try building it.\n\nBasically I'm looking for collaboration with other people and projects, I've thoroughly enjoyed this project and I'd really like to see how far it can fly! \ud83d\udd4a\ufe0f\n\nDiscrete GPU expert offload is on the list of my to-dos, but it was never the point of what I was trying to achieve, I use Strata on my big GPU workstation at work, and it's great, but that's a \u00a35k machine, and out of reach of a lot of people. The point was making cheap hardware people are more likely to already have, actually useful - and use these NPUs that we now get with bigger models than the piddly ones we usually see.\n\nEvery model and machine I have measured is in [PERFORMANCE.md](https://github.com/Rendeverance/ToRc/blob/main/PERFORMANCE.md) \ud83d\ude4f\n\n[ToRc on GitHub](https://github.com/Rendeverance/ToRc)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzg3em/torc_a_fromscratch_rust_engine_running_qwen38/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 33,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "So this started because I bought two of the base Snapdragon X boxes for some software  and build testing at work (the cheap ones, about \u00a3300 each, not the Elite) and then they were sitting unused. With fast LPDDR5x (8448 MT/s) in them I thought I'd have a play and see if I could run proper models on them. I tried the usual engines and couldn't get anywhere near the speed I thought the hardware sho",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5065
+          },
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "Caliper Harness, an Open Source coding harness designed to improve small local model quality",
+            "body": "Caliper Harness, an Open Source coding harness designed to improve small local model quality\n**Hi all!**\n\nThis is the first dedicated post I am making about this project. I have mentioned it online a few times before, but I have never properly introduced it. After several months of work, its finally ready to be published, and I'm really excited!\n\nCaliper Harness is a coding harness that runs in your terminal. I built it for small local models. The basic idea is simple. A small local model on its own will rush, skip steps, and tell you something is done when it is not. So the harness does the disciplining for it. It makes the model plan first, get approval, work in checked steps, and prove things with tests and a separate review before anything counts as finished.\n\nRight now it is local only. You point it at a local model server and it works from there. If cloud API support is something a lot of people actually want, I will build it. For now, local is the focus.\n\nThe way I test it is with a benchmark game. I give it an empty folder and tell it to build a small browser game, Space Transporter, from scratch. Then in later runs I ask for bigger and bigger features on top. I judge it on the final game quality and on the full traces of what the model actually did.\n\n**The video attached to this post is the from scratch build, sped up a lot. It is a few hours of work, so you can pause and see how the harness looks and behaves.**\n\nAfter that first build, I used the same game for a harder follow up run. I asked for a bigger feature as a stress test for the harness. I wanted the stations in the game to feel alive, with shortages and emergencies, and I wanted them to remember the player. Before writing any code, the model has to plan. It splits the work into a plan, an approach, and tasks. It writes out the staging, the trade offs, and the risks. I read that in the plan screen and approve it or send it back.\n\nPlans are built through a structured, step by step process called PAT (Plan, Approach, Task). PAT lives in a GraphQL state graph. A plan can have multiple approaches, and an approach has multiple tasks, with each level getting more specific and staying connected to the level above it. It is very time consuming for the model to build. In my testing though, the plans stay coherent from the high level stages all the way down to the small tasks. That structure also makes planning and execution much easier for a smaller model to manage.\n\nIf there is a real decision to make, the model is pushed hard to ask instead of guessing. I have iterated on that behavior a lot. In this run it asked how fast station situations should change, how harsh a station that distrusts you should be, and how much of that state the game should show.\n\nOnce the plan is ready, it claims one task at a time. Every task has its own check command from the project. A task only counts as complete when its check passes and an independent review also passes. The model does not get to decide it is finished just because it says so. Completion has to match what was written in the task during planning.\n\nAfter the checks, a fresh reviewer pass looks at the work with clean context. This part matters to me. It gives the work an adversarial review without carrying all the coding context into it. In this run, the first stage had every test green, and the reviewer still found a real bug. One of the six station situations was drawing with a broken colour, so it never showed on the map. The tests never caught it. The task got sent back, the model fixed it properly, added tests that fail on the old code, and only then did it pass. The harness does this automatically.\n\n**But why?**\n\nA lot of harnesses like OpenCode feel built around large intelligent models, token efficiency and speed. That makes sense for what they are trying to do. Caliper makes a different trade on purpose. It is slow and very deliberate. It makes the model plan, wait for approval, run checks, get reviewed, and fix things properly when it gets sent back. A small model that is left alone will cut corners. A small model inside this is forced to be diligent at the cost of speed. These runs took hours. I leave it running overnight and check the traces in the morning. For me, that trade is worth it, because the work that comes out is work I can trust a lot more.\n\nPart of how that works is the decision judge. It is a second, much smaller decision model that watches the main model while it works. It steps in at certain points, like when the model is stuck in a loop, failing the same way repeatedly, changing phase, failing recurringly at a tool call, or asking for a plan to be marked ready. It gives a simple judgement with a confidence score. Caliper can use that to steer the model, ask for a repair, or hold certain risky steps for approval. If the judge is slow or down, the work carries on and the outage just gets recorded. Between the judge, the planning structure, and the reviewer, a small local model ends up behaving a lot more carefully than it does on its own. Making small local models more capable through structure like this was a big part of the design.\n\n**There are also some user facing features that ended up mattering a lot in day to day use**:\n\n* There are 3 separate draft text boxes, so you can have 3 prompts being built at the same time and send them individually. This has been huge for me despite being so simple. Sometimes I am writing a massive continuation or expansion prompt, and the model does something ridiculously stupid that needs to be fixed immediately. I can keep the big prompt saved in one draft, switch to another draft for the urgent message, and keep a recurring status update prompt in the third one. All of it stays inside the harness. \n* \\`/btw\\` lets you inject a steering note into a run while the model is still working. I use it when I spot it heading in the wrong direction and I do not want to stop the whole run just to correct it.\n* You can browse and open files from across the project without leaving the harness. The Diff view follows model edits across files in real time, \\`/open-diff\\` opens a retained change, and \\`/changes\\` shows the recorded history for a file. With \\`/comment\\`, you can attach direct feedback to specific file lines, plans, approaches, tasks or documents and queue it for the model to address.\n\n**Here is the rest of what is in v0.3.0:**\n\n* Tabs for separate chats and screens for Chat, Diff, Plans, Plan, Library, Sessions, Decisions, Workflows, Files, Tests, Settings, Status, and Models & Servers\n* A plan screen with a short approval summary first, then drill down into the approach and each task\n* Versioned plan elaborations, so staging, trade offs and risks can be read and approved before coding\n* A workflow library. The model can browse and author reusable methods, then attach one to a claimed task as a method lens, using the same step-by-step isolated architecture as the planning mechanism. Caliper checks the library every time work is claimed\n* A \\`wait\\` tool, so the model can sleep and wake up when something finishes, like CI, instead of checking over and over\n* Local server detection for servers that are already running, including llama.cpp, Ollama, Rulith, MLX, vLLM and other OpenAI-compatible endpoints\n* Models & Servers management inside the TUI. You can add, edit, test, select, load and unload saved connections. There is also an assisted setup prompt you can copy if you want help wiring an existing install\n* Separate Coding and Judge roles, with human approval available if you switch the decision model off\n* Auth modes with \\`/auth\\`, plus \\`/tools\\` to switch between coding and full tool exposure\n* Project style rules with \\`/style\\`, shared by the coder and the reviewer, plus \\`behavior.md\\` for how the agent should conduct itself\n* Domain knowledge graphs for areas like testing, UI/UX and code design. The model can read linked sections as needed, and it can author project guides and record preferences into the same graph instead of loading everything into context at once\n* Project memory with \\`/remember\\` and \\`/recall\\`, including shared global notes if you ask for them. The model can also record useful project knowledge itself\n* Notices. While working, the model can save weak spots, brittle code and opportunities it notices, without turning them into surprise tasks\n* A Tests screen for designing, refining and running project test suites, with result history and test guidance built in\n* Full session records. Every reply, tool call, judgement, file effect and final outcome is saved. Past runs can be browsed, and decision judgements can be replayed from the CLI\n* Personal settings that carry across projects, with project config still able to override them\n* Headless \\`run\\` mode for scripts, a plain \\`chat\\` mode with no agent tools, and CLI access to sessions, judgments, plans, approaches, the GraphQL state graph, effective config and hardware limits\n* In app updates with \\`/update\\`, plus managed packages for macOS arm64, Windows amd64, and Linux amd64/arm64\n\nOne thing I still want to build next is a proper tool for turning normal Markdown skills into graph-compatible domain graphs or workflow graphs, using the same step by step style as PAT. That is planned for later, so I am not counting it as a v0.3.0 feature.\n\nIt is still an early release and results depend a lot on the model you give it and what you're using it for. So far I have run it with Qwen3.8 Flash Next, Qwen3.8 27B, Laguna S 2.1, Gemma 4 26B, and a few others. I would really like feedback, especially from people running smaller local models. I am planning on running benchmarks comparing Caliper against other harnesses for both output quality and time cost, and I will post those when they are ready.\n\nThis is a project I am actively working on and iterating, so feel free to give me some feedback or ideas and I'll implement them in the next version.\n\n  \n**Use it now!**\n\nGitHub: [https://github.com/santiagoaraoz2001-sketch/caliper-harness](https://github.com/santiagoaraoz2001-sketch/caliper-harness)\n\nnpm: \\`npm install -g caliper-harness\\`\n\n\n\n**MIT licensed, so feel free to go crazy with it.**",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzoqlj/caliper_harness_an_open_source_coding_harness/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**Hi all!**\n\nThis is the first dedicated post I am making about this project. I have mentioned it online a few times before, but I have never properly introduced it. After several months of work, its finally ready to be published, and I'm really excited!\n\nCaliper Harness is a coding harness that runs in your terminal. I built it for small local models. The basic idea is simple. A small local model",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3725
+          },
+          {
+            "item_id": "R29",
+            "source": "reddit",
+            "title": "What model to use?",
+            "body": "What model to use?\nHi, trying to learn how to best use localllms, but there so much info I'm kind of lost. I have 16gb vram and 32gbddr4. I mainly want to try some local models for fun. The things I'm looking for is browser use and programming(I will be using Claude as an planner)\n\n. The thing I'm wondering is if I should use qwen 27b, and if so what quant. Some of them fit in my vram, some don't. Or should I be using qwen flash next. Or some completely other model. Does not have to be perfect and if it makes mistakes it does not matter, but I want the most amount of intelligence possible obviously.\n\nI'm completely lost and every video I try to watch is just ai slop without any good information.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzfnfo/what_model_to_use/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi, trying to learn how to best use localllms, but there so much info I'm kind of lost. I have 16gb vram and 32gbddr4. I mainly want to try some local models for fun. The things I'm looking for is browser use and programming(I will be using Claude as an planner)\n\n. The thing I'm wondering is if I should use qwen 27b, and if so what quant. Some of them fit in my vram, some don't. Or should I be usi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 44,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34049999999999997
+          },
+          {
+            "item_id": "R134",
+            "source": "reddit",
+            "title": "They ran 27,280 coding-agent trials. The best harness was different for every model.",
+            "body": "They ran 27,280 coding-agent trials. The best harness was different for every model.\nRunta and Baseten tested 22 coding-agent harness configurations with five models. Codex CLI had the lowest cost per passed task with GLM-5.3, at $0.803, but ranked 12th with Muse.\n\nSwitching models changed which harness offered the best value. So a model upgrade is also a reason to test your harness again, rather than carry over the old setup.\n\nThe specific winners were less settled. When the researchers repeatedly resampled their 62 tasks, Codex CLI with GLM-5.3 kept winning in 99.6% of samples. The other four model winners only kept their lead in 25-53%.\n\nThis is a vendor-run benchmark: Runta sells agent runtime infrastructure. I'd treat it as a reason to test your own pairing, not a shopping list of winners.",
+            "url": "https://www.reddit.com/r/artificial/comments/1xzcg62/they_ran_27280_codingagent_trials_the_best/",
+            "container": "artificial",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Runta and Baseten tested 22 coding-agent harness configurations with five models. Codex CLI had the lowest cost per passed task with GLM-5.3, at $0.803, but ranked 12th with Muse.\n\nSwitching models changed which harness offered the best value. So a model upgrade is also a reason to test your harness again, rather than carry over the old setup.\n\nThe specific winners were less settled. When the rese",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29850000000000004
+          },
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "RustingStrata vs Strata on Qwen3.8-Flash-Next with MTP drafts, RTX 3060 12 GB + 32 GB RAM",
+            "body": "RustingStrata vs Strata on Qwen3.8-Flash-Next with MTP drafts, RTX 3060 12 GB + 32 GB RAM\nStrata is the engine that made Qwen3.8-Flash-Next usable on small machines. RustingStrata is my Rust engine built on the same idea. Both now draft tokens with an MTP head on this model, so I ran them against each other on the same file.\n\nQwen3.8-Flash-Next GSQ-RCO IQ2\\_XS (64 GB, two files). RTX 3060 12 GB, Ryzen 5 7600X, 30 GiB usable RAM, NVMe. The model does not fit in RAM or VRAM in either engine: part of the experts sits in VRAM, the others are read from the SSD.\n\nTest: one server per engine, the same OpenAI requests, thinking off. Ten different questions about one 1,273-token passage in a row. Three server sessions per engine, order of the engines rotated.\n\n|Writing speed, 10 questions|Session 1|Session 2|Session 3|Mean|\n|:-|:-|:-|:-|:-|\n|RustingStrata, drafts on (`--mtp 1`)|26.8|29.5|28.7|**28.3 tok/s**|\n|Strata v0.2.13.1, drafts on (`--spec 4 --spec-min-p 0.5`)|23.8|26.0|28.4|26.1 tok/s|\n|RustingStrata, no drafts (`--mtp 0`)|26.4|25.6|27.8|26.6 tok/s|\n\n||RustingStrata, drafts on|Strata, drafts on|\n|:-|:-|:-|\n|Drafted tokens accepted|82%|69%|\n|Wait for the first token, questions 2-10, mean|5.4 s|6.9 s|\n|Same request sent again (runs 2-4, 9 runs)|36.9 tok/s|28.5 tok/s|\n|Reading the first prompt after start (3 starts)|35, 51, 49 tok/s|105, 96, 114 tok/s|\n\nSo: RustingStrata writes a little faster and answers sooner. Strata reads the first prompt after a cold start about twice as fast.\n\nDrafts give RustingStrata about 6% here. Most of the time goes to experts that are not in VRAM and run on the CPU, and a drafted token needs them as well.\n\n**\"Then what is the difference?\"**\n\nStrata's docs list three models: Qwen3.8-Flash-Next, Qwen3.6-35B-A3B and DeepSeek-V4.1-Flash. On those it has things I do not: a desktop app, Mac and Intel Arc support, and a trained drafter.\n\nRustingStrata is a general GGUF engine around the same trick:\n\n* More models: Qwen3 (dense and 30B-A3B), Qwen3.5, Qwen3.8-27B, Qwen3-Next-80B, GLM-5.3-Flash, Recursive Flint and Gemma 4, besides the three above.\n* Any quant of those from Hugging Face, loaded as the plain GGUF. IQ1\\_S to Q8\\_0, BF16, ternary TQ1\\_0/TQ2\\_0.\n* One Rust binary. No Python, no C++ build. The CUDA kernels compile on first start.\n* The same kernels run on Vulkan, so AMD cards and old NVIDIA cards work without a separate build.\n* Image input (Qwen3-VL and Gemma 4), LoRA adapters at run time, layer split over two GPUs.\n* OpenAI and Anthropic APIs, tool calls, and a chat page that can use MCP servers.\n\nSetup: RustingStrata `e11b088`, `serve --gpu --ctx 4096 --mtp 1 --mtp-model mtp-Qwen3.8-Flash-Next-shared-Q8_0.gguf`. Strata v0.2.13.1 (engine 0.1.59.1), `--mmap-experts --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp <dir> --max-context 4096`.\n\nRepo: [RustingStrata](https://github.com/RustingStudio/RustingStrata)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzp7o5/rustingstrata_vs_strata_on_qwen38flashnext_with/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Strata is the engine that made Qwen3.8-Flash-Next usable on small machines. RustingStrata is my Rust engine built on the same idea. Both now draft tokens with an MTP head on this model, so I ran them against each other on the same file.\n\nQwen3.8-Flash-Next GSQ-RCO IQ2\\_XS (64 GB, two files). RTX 3060 12 GB, Ryzen 5 7600X, 30 GiB usable RAM, NVMe. The model does not fit in RAM or VRAM in either eng",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.19,
+            "freshness": 90,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36150000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Gemini 4 Carbon taking so long",
+      "heuristic_junk": true,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 138,
+          "points": 262
+        },
+        "reddit": {
+          "num_comments": 30
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Carbon taking so long",
+        "seed_score": 814.2,
+        "summary": "Why is Gemini 4 Carbon taking so long?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50541790",
+            "source": "hackernews",
+            "title": "Why is Gemini 4 Carbon taking so long?",
+            "body": "Why is Gemini 4 Carbon taking so long?",
+            "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+            "author": "deenadz",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 262,
+              "comments": 138
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Why is Gemini 4 Carbon taking so long?",
+            "snippet": "Why is Gemini 4 Carbon taking so long?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50541790",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.8,
+            "local_rank_score": 0.333
+          },
+          {
+            "item_id": "R103",
+            "source": "reddit",
+            "title": "Gemini 4 Neon is out now, including on Pro plans, sits between Hydrogen and Carbon at $3 / $15 per 1M tokens",
+            "body": "Gemini 4 Neon is out now, including on Pro plans, sits between Hydrogen and Carbon at $3 / $15 per 1M tokens\nAnother release from Google!! Gemini 4 Neon, a new fast reasoning model, arrives less than a week after Gemini 4 Hydrogen.\n\nNeon is available on the paid tier of the Gemini API and with Google AI Pro and Ultra plans in Google AI Studio. Like the other Gemini 4 models, it features a unified 1M-token context window and long decode up to 1M tokens. \n\n$3/1M input and $15/1M output tokens\n\nI\u2019ve also seen names like Krypton, Helix and Cobalt floating around. More models coming soon? Google is cooking",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzqlv8/gemini_4_neon_is_out_now_including_on_pro_plans/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 42,
+              "num_comments": 30
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Another release from Google!! Gemini 4 Neon, a new fast reasoning model, arrives less than a week after Gemini 4 Hydrogen.\n\nNeon is available on the paid tier of the Gemini API and with Google AI Pro and Ultra plans in Google AI Studio. Like the other Gemini 4 models, it features a unified 1M-token context window and long decode up to 1M tokens. \n\n$3/1M input and $15/1M output tokens\n\nI\u2019ve also se",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.387
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Harvard researchers find AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 432,
+          "points": 315
+        }
+      },
+      "nomination": {
+        "name": "Harvard researchers find AI",
+        "seed_score": 792.3131,
+        "summary": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50538303",
+            "source": "hackernews",
+            "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+            "body": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+            "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+            "author": "judahmeek",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 315,
+              "comments": 432
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Harvard researchers find AI coding agents shifted the bottle",
+            "snippet": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50538303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.131
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "We don't need more apps we",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 256,
+          "points": 353
+        }
+      },
+      "nomination": {
+        "name": "We don't need more apps we",
+        "seed_score": 645.942,
+        "summary": "We don't need more apps, we need better open source",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50532086",
+            "source": "hackernews",
+            "title": "We don't need more apps, we need better open source",
+            "body": "We don't need more apps, we need better open source",
+            "url": "https://jordankrueger.com/blog/better-open-source-not-more-apps/",
+            "author": "pandemicsoul",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 353,
+              "comments": 256
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about We don't need more apps, we need better open source",
+            "snippet": "We don't need more apps, we need better open source",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50532086",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 77,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 230,
+          "points": 290
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 551.5433,
+        "summary": "How the Claude Code team thinks about verification",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50529612",
+            "source": "hackernews",
+            "title": "How the Claude Code team thinks about verification",
+            "body": "How the Claude Code team thinks about verification",
+            "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+            "author": "craigmart",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 290,
+              "comments": 230
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about How the Claude Code team thinks about verification",
+            "snippet": "How the Claude Code team thinks about verification",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50529612",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.138
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Google researchers demonstrate AI Claude Gemini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "Google researchers demonstrate AI Claude Gemini",
+        "seed_score": 550.5,
+        "summary": "Google researchers demonstrate AI that improves its own software, remembers what worked, and builds on past improvements even when switching from Claude to Gemini or upgrading to newer models, allowing progress to accumulate instead of starting over.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R115",
+            "source": "reddit",
+            "title": "Google researchers demonstrate AI that improves its own software, remembers what worked, and builds on past improvements even when switching from Claude to Gemini or upgrading to newer models, allowing progress to accumulate instead of starting over.",
+            "body": "Google researchers demonstrate AI that improves its own software, remembers what worked, and builds on past improvements even when switching from Claude to Gemini or upgrading to newer models, allowing progress to accumulate instead of starting over.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzfv9g/google_researchers_demonstrate_ai_that_improves/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 321,
+              "num_comments": 46
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Google researchers demonstrate AI that improves its own software, remembers what worked, and builds on past improvements even when switching from Claude to Gemini or upgrading to newer models, allowing progress to accumulate instead of starting over.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Energy-Based Reasoners 385x more efficient inference",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 51,
+          "points": 297
+        }
+      },
+      "nomination": {
+        "name": "Energy-Based Reasoners 385x more efficient inference",
+        "seed_score": 522.0,
+        "summary": "Energy-Based Reasoners: 385x more efficient inference",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50543989",
+            "source": "hackernews",
+            "title": "Energy-Based Reasoners: 385x more efficient inference",
+            "body": "Energy-Based Reasoners: 385x more efficient inference",
+            "url": "https://energy-based-reasoners.github.io/",
+            "author": "frenchmajesty",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 297,
+              "comments": 51
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Energy-Based Reasoners: 385x more efficient inference",
+            "snippet": "Energy-Based Reasoners: 385x more efficient inference",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50543989",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3195
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Advancing chip design with OpenAI models",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 84,
+          "points": 146
+        }
+      },
+      "nomination": {
+        "name": "Advancing chip design with OpenAI models",
+        "seed_score": 345.0,
+        "summary": "Advancing chip design with OpenAI models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50549493",
+            "source": "hackernews",
+            "title": "Advancing chip design with OpenAI models",
+            "body": "Advancing chip design with OpenAI models",
+            "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+            "author": "vighneshiyer",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 146,
+              "comments": 84
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "HN story about Advancing chip design with OpenAI models",
+            "snippet": "Advancing chip design with OpenAI models",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50549493",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.13,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3685
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "ExitPath Open-source Slack Notion Microsoft 365",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 41,
+          "points": 142
+        }
+      },
+      "nomination": {
+        "name": "ExitPath Open-source Slack Notion Microsoft 365",
+        "seed_score": 274.5,
+        "summary": "Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion and Microsoft 365",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50547980",
+            "source": "hackernews",
+            "title": "Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion and Microsoft 365",
+            "body": "Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion and Microsoft 365",
+            "url": "https://exitpath-ruddy.vercel.app/",
+            "author": "zerocool0101",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 142,
+              "comments": 41
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion an",
+            "snippet": "Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion and Microsoft 365",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50547980",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.304
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Gemini 4 Neon likely",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 33
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Neon likely",
+        "seed_score": 267.0,
+        "summary": "Gemini 4 \u201cNeon\u201d is likely the model being released today",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R118",
+            "source": "reddit",
+            "title": "Gemini 4 \u201cNeon\u201d is likely the model being released today",
+            "body": "Gemini 4 \u201cNeon\u201d is likely the model being released today",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzavqp/gemini_4_neon_is_likely_the_model_being_released/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 145,
+              "num_comments": 33
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Gemini 4 \u201cNeon\u201d is likely the model being released today",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 87,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34450000000000003
+          }
+        ]
+      }
+    }
+  ]
+}

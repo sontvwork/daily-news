@@ -1,0 +1,835 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "a95a21c2be1eced7",
+  "generated_at": "2026-11-18T23:55:40.373805Z",
+  "from_date": "2026-11-17",
+  "to_date": "2026-11-18",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-18T23:55:40.310446Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-18T23:55:40.310452Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-18T23:55:40.171738Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 60,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-18T23:55:40.310332Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Unauthenticated remote code execution in Nginx",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 482,
+          "points": 1051
+        }
+      },
+      "nomination": {
+        "name": "Unauthenticated remote code execution in Nginx",
+        "seed_score": 2299.5,
+        "summary": "Unauthenticated remote code execution in Nginx",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50547374",
+            "source": "hackernews",
+            "title": "Unauthenticated remote code execution in Nginx",
+            "body": "Unauthenticated remote code execution in Nginx",
+            "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+            "author": "speedping",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1051,
+              "comments": 482
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Unauthenticated remote code execution in Nginx",
+            "snippet": "Unauthenticated remote code execution in Nginx",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50547374",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Harvard researchers find AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 432,
+          "points": 315
+        }
+      },
+      "nomination": {
+        "name": "Harvard researchers find AI",
+        "seed_score": 792.3131,
+        "summary": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50538303",
+            "source": "hackernews",
+            "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+            "body": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+            "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+            "author": "judahmeek",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 315,
+              "comments": 432
+            },
+            "relevance_hint": 0.41,
+            "why_relevant": "HN story about Harvard researchers find AI coding agents shifted the bottle",
+            "snippet": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50538303",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.41,
+            "freshness": 10,
+            "engagement_score": 60,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35150000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude Code",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 230,
+          "points": 290
+        },
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Claude Code",
+        "seed_score": 641.5934,
+        "summary": "How the Claude Code team thinks about verification",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50529612",
+            "source": "hackernews",
+            "title": "How the Claude Code team thinks about verification",
+            "body": "How the Claude Code team thinks about verification",
+            "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+            "author": "craigmart",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 290,
+              "comments": 230
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about How the Claude Code team thinks about verification",
+            "snippet": "How the Claude Code team thinks about verification",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50529612",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 10,
+            "engagement_score": 42,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17750000000000002
+          },
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "Run this prompt before you split a Claude Code task into subagents",
+            "body": "Run this prompt before you split a Claude Code task into subagents\nsame task, no subagents:\n\n> Do this task yourself, without subagents. Read the files you need, make the change, and run the tests.\n\nthen run your subagent version with the same time limit and compare /usage. a team almost always gets more compute than the one agent it's compared to, so this is the fair version. run both twice, a break can show up in only one of two runs.\n\nwrote up the rest in my newsletter, including when subagents do pay off: https://newsletter.diamant-ai.com/p/when-claude-code-subagents-help-and?utm_source=reddit&utm_medium=social&utm_campaign=black-friday-2026&utm_content=promptengineering",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1xyuogm/run_this_prompt_before_you_split_a_claude_code/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "same task, no subagents:\n\n> Do this task yourself, without subagents. Read the files you need, make the change, and run the tests.\n\nthen run your subagent version with the same time limit and compare /usage. a team almost always gets more compute than the one agent it's compared to, so this is the fair version. run both twice, a break can show up in only one of two runs.\n\nwrote up the rest in my n",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 21,
+            "source_quality": 0.6,
+            "local_rank_score": 0.30600000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "MAI Code 2 Code 2 Flash",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 169,
+          "points": 415
+        }
+      },
+      "nomination": {
+        "name": "MAI Code 2 Code 2 Flash",
+        "seed_score": 619.4255,
+        "summary": "MAI Code 2 and Code 2 Flash",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50535885",
+            "source": "hackernews",
+            "title": "MAI Code 2 and Code 2 Flash",
+            "body": "MAI Code 2 and Code 2 Flash",
+            "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+            "author": "lemonish97",
+            "container": "Hacker News",
+            "published_at": "2026-11-17",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 415,
+              "comments": 169
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about MAI Code 2 and Code 2 Flash",
+            "snippet": "MAI Code 2 and Code 2 Flash",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50535885",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 46,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Google researchers demonstrate AI Claude Gemini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 46
+        }
+      },
+      "nomination": {
+        "name": "Google researchers demonstrate AI Claude Gemini",
+        "seed_score": 550.5,
+        "summary": "Google researchers demonstrate AI that improves its own software, remembers what worked, and builds on past improvements even when switching from Claude to Gemini or upgrading to newer models, allowing progress to accumulate instead of starting over.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "Google researchers demonstrate AI that improves its own software, remembers what worked, and builds on past improvements even when switching from Claude to Gemini or upgrading to newer models, allowing progress to accumulate instead of starting over.",
+            "body": "Google researchers demonstrate AI that improves its own software, remembers what worked, and builds on past improvements even when switching from Claude to Gemini or upgrading to newer models, allowing progress to accumulate instead of starting over.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzfv9g/google_researchers_demonstrate_ai_that_improves/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 321,
+              "num_comments": 46
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Google researchers demonstrate AI that improves its own software, remembers what worked, and builds on past improvements even when switching from Claude to Gemini or upgrading to newer models, allowing progress to accumulate instead of starting over.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Scottish HTTP Codes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 54,
+          "points": 226
+        }
+      },
+      "nomination": {
+        "name": "Scottish HTTP Codes",
+        "seed_score": 420.0,
+        "summary": "Scottish HTTP Codes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50550062",
+            "source": "hackernews",
+            "title": "Scottish HTTP Codes",
+            "body": "Scottish HTTP Codes",
+            "url": "https://underwood.network/http/scots.html",
+            "author": "mooreds",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 226,
+              "comments": 54
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Scottish HTTP Codes",
+            "snippet": "Scottish HTTP Codes",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50550062",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Goes Koharu AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 25
+        }
+      },
+      "nomination": {
+        "name": "Goes Koharu AI agents",
+        "seed_score": 159.0,
+        "summary": "Hi LocalLLaMA,\n\nI have spent more than two months rebuilding Koharu to be the most powerful manga translator!\n\nTLDR: [https://github.com/koharu-rs/koharu](https://github.com/koharu-rs/koharu) (MIT or Apache 2.0, at your choice)\n\n  \nIt's been a while since I posted the Koharu update here. This time, I have added more features and built an established editor to make it feel more like Photoshop or Cl",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Goes further with Koharu, the local-first manga translator with AI agents built in!",
+            "body": "Goes further with Koharu, the local-first manga translator with AI agents built in!\nHi LocalLLaMA,\n\nI have spent more than two months rebuilding Koharu to be the most powerful manga translator!\n\nTLDR: [https://github.com/koharu-rs/koharu](https://github.com/koharu-rs/koharu) (MIT or Apache 2.0, at your choice)\n\n  \nIt's been a while since I posted the Koharu update here. This time, I have added more features and built an established editor to make it feel more like Photoshop or Clip Studio Paint. \n\nYou can type directly onto the page, restyle selected characters, and reshape text frames. There are also layers, history, marquee and lasso selection, Generative Fill, and a Remove brush. The canvas is GPU-rendered now, so it stays smooth even on big chapters.\n\nEverything still runs locally. LLMs run in-process through llama.cpp (Index-Translate 9B by default, plus Gemma 4, Qwen 3.x and LFM3), and inpainting uses LaMa, or FLUX.3 Klein / Qwen-Image through stable-diffusion.cpp. If you already run Ollama or LM Studio, you can point Koharu at that instead. On my machine, a page goes from raw to lettered in about 1 second once the models are loaded.\n\nI also added an agent you can ask to proofread or fix pages. It's exposed over MCP too, so you can drive Koharu from Claude Code or Codex if you'd rather.\n\nIt works on CUDA, ROCm, Metal, and Vulkan. \n\nI'd like to hear your feedback or any form of suggestion!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzhaao/goes_further_with_koharu_the_localfirst_manga/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 81,
+              "num_comments": 25
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi LocalLLaMA,\n\nI have spent more than two months rebuilding Koharu to be the most powerful manga translator!\n\nTLDR: [https://github.com/koharu-rs/koharu](https://github.com/koharu-rs/koharu) (MIT or Apache 2.0, at your choice)\n\n  \nIt's been a while since I posted the Koharu update here. This time, I have added more features and built an established editor to make it feel more like Photoshop or Cl",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.627
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Codex IDE",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 32
+        }
+      },
+      "nomination": {
+        "name": "Codex IDE",
+        "seed_score": 118.5,
+        "summary": "In their desktop windows app they recently removed the ability to open a chat/session in vscode/ide/file explorer. You used to be able to open the active files/branch/worktree from the active session with two clicks. The latest update removed that and so you have to open your ide and find it manually. It was a intentional decision (I had codex check the codebase to confirm).\n\nSo now it's terribly",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Codex no longer supports 'reading the code` in your IDE - why local is so important",
+            "body": "Codex no longer supports 'reading the code` in your IDE - why local is so important\nIn their desktop windows app they recently removed the ability to open a chat/session in vscode/ide/file explorer. You used to be able to open the active files/branch/worktree from the active session with two clicks. The latest update removed that and so you have to open your ide and find it manually. It was a intentional decision (I had codex check the codebase to confirm).\n\nSo now it's terribly inconvenient to actually read the code. My gut is that if this was an intentional design choice it was made with the intention of reducing user agency and using the power of inconvenience to make users more dependent on the tool. Basically the whole, 'Become sharecroppers for your AI' business model that relies on developer reliance on the tool. I won't insult them by humoring the notion that they removed it accidentally without knowing how important it is to devs to easily access the files - it could only be intentional.\n\nI tried to post about it in /r/codex and the auto-mod deleted the post, and the mod's told me to try again without conspiracy theories (the post was the same as the above). So not only was core developer functionality removed from the tool, but their 'community' is gaslighting us about it. **It's a strong reminder that in the long run, owning your own AI stack is the only viable path.**",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzmou6/codex_no_longer_supports_reading_the_code_in_your/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 47,
+              "num_comments": 32
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "In their desktop windows app they recently removed the ability to open a chat/session in vscode/ide/file explorer. You used to be able to open the active files/branch/worktree from the active session with two clicks. The latest update removed that and so you have to open your ide and find it manually. It was a intentional decision (I had codex check the codebase to confirm).\n\nSo now it's terribly",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5579999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "5 Predictions AI Development End 2027",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 45
+        }
+      },
+      "nomination": {
+        "name": "5 Predictions AI Development End 2027",
+        "seed_score": 111.0,
+        "summary": "By the end of 2027, I think there\u2019s a reasonable chance we\u2019ll see several of the following developments in AI:\n\n1. The original Humanity\u2019s Last Exam and Humanity\u2019s Last Exam Diamond benchmarks become effectively saturated.\n2. AI produces credible proposed solutions to all of the remaining Millennium Prize Problems, including P vs NP, with the solutions receiving serious scrutiny from relevant m",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "5 Predictions for AI Development by the End of 2027",
+            "body": "5 Predictions for AI Development by the End of 2027\nBy the end of 2027, I think there\u2019s a reasonable chance we\u2019ll see several of the following developments in AI:\n\n1. The original Humanity\u2019s Last Exam and Humanity\u2019s Last Exam Diamond benchmarks become effectively saturated.\n2. AI produces credible proposed solutions to all of the remaining Millennium Prize Problems, including P vs NP, with the solutions receiving serious scrutiny from relevant mathematicians.\n3. At one or more frontier AI labs, AI performs or leads the majority of task-level AI R&D, while completing a minority of substantial R&D tasks fully autonomously.\n4. An open-weight model broadly comparable to Claude Opus 5.5 can be run locally at usable speeds on a machine costing no more than $5,000.\n5. A major AI safety incident, significantly more severe than the Hugging Face incident, occurs and directly causes at least one leading AI company to pause frontier-model training.\n\nOf the five, I\u2019m most confident in #1 and least confident in #2.\n\nI\u2019m not predicting that all five will definitely happen but I think there is at least a realistic possibility of them occurring. I\u2019m interested in how plausible people think each one is individually.\n\nWhich do you think happen by the end of 2027? All five, none, or somewhere in between?",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzkcka/5_predictions_for_ai_development_by_the_end_of/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 29,
+              "num_comments": 45
+            },
+            "relevance_hint": 0.28,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "By the end of 2027, I think there\u2019s a reasonable chance we\u2019ll see several of the following developments in AI:\n\n1. The original Humanity\u2019s Last Exam and Humanity\u2019s Last Exam Diamond benchmarks become effectively saturated.\n2. AI produces credible proposed solutions to all of the remaining Millennium Prize Problems, including P vs NP, with the solutions receiving serious scrutiny from relevant m",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "ToRc",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "ToRc",
+        "seed_score": 93.0,
+        "summary": "So this started because I bought two of the base Snapdragon X boxes for some software  and build testing at work (the cheap ones, about \u00a3300 each, not the Elite) and then they were sitting unused. With fast LPDDR5x (8448 MT/s) in them I thought I'd have a play and see if I could run proper models on them. I tried the usual engines and couldn't get anywhere near the speed I thought the hardware sho",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "ToRc: a from-scratch Rust engine running Qwen3.8 Flash Next (Q4), a 107 GB model, at 67 tok/s prompt / 17 gen (on a 16k prompt) on two \u00a3300 Snapdragon boxes with 64 GB of RAM between them. CPU + NPU + iGPU, in a 13 MB zip",
+            "body": "ToRc: a from-scratch Rust engine running Qwen3.8 Flash Next (Q4), a 107 GB model, at 67 tok/s prompt / 17 gen (on a 16k prompt) on two \u00a3300 Snapdragon boxes with 64 GB of RAM between them. CPU + NPU + iGPU, in a 13 MB zip\nSo this started because I bought two of the base Snapdragon X boxes for some software  and build testing at work (the cheap ones, about \u00a3300 each, not the Elite) and then they were sitting unused. With fast LPDDR5x (8448 MT/s) in them I thought I'd have a play and see if I could run proper models on them. I tried the usual engines and couldn't get anywhere near the speed I thought the hardware should do... So then my ADHD took over and I got carried away, and this is the result \ud83e\udd23\n\nToRc is an inference engine written from scratch in Rust. Weeks of days and nights measuring, rewriting and measuring again went into it, and the numbers below are all measured on my own kit, different platforms etc... So I hope this proves useful to others \ud83d\ude4f\ud83d\ude43\n\n[ToRc on GitHub](https://github.com/Rendeverance/ToRc)\n\n[Measured performance](https://github.com/Rendeverance/ToRc/blob/main/PERFORMANCE.md)\n\nIf you can unzip a file, you can run your own model on your own machine. The download is a zip of about 13 MB (Windows x64, Windows on ARM, Linux x64 and Linux ARM, plus an experimental Mac one): unzip it, open ToRc, pick a model (a GGUF converts once, and it tells you how much space that takes first), press Auto-tune, and talk. A few minutes from download to chatting, nothing installed, and the app keeps everything (settings, chats, the lot) in that one folder. The only thing outside it is what the engine learns about your machine (Auto-tune's results and the like), in %LOCALAPPDATA%\\\\torc or \\~/.cache/torc.\n\nWhat it can do:\n\n\\- Uses the CPU, the NPU and the integrated GPU at the same time where it's present or faster, per model. Or just NPU + iGPU if you want to leave the machine usable while it runs.\n\n\\- Tunes itself to your machine, and every setting can be overridden if you want to fiddle / let an agent try to wring every last token of performance for your particular setup.\n\n\\- Speaks the OpenAI and Anthropic APIs, so Claude Code, OpenCode and anything else that talks to those just works. Full tool calling and MCP is also built in, and the desktop app has its own chat, tools and MCP servers if you just want to talk to it.\n\n\\- Runs on Windows and Linux, x86 and ARM. (Linux: one user runs it on bare metal on a Snapdragon box under Ubuntu, and I've run it under WSL2, so tell me how it goes on yours.) There's also an EXPERIMENTAL Mac zip (Apple Silicon): one person has built and run it from source, and GitHub builds the zip, but I don't have a Mac to test it myself.\n\n\\- It converts to its own file format for efficient SSD streaming where the model won't fit into memory and can split one model across multiple machines. I've tested two boxes over USB4; in principle it's N boxes. You pool their RAM, memory bandwidth and compute for enhanced performance.\n\nHeadline numbers, engine timed, read (prompt) / write (reply) tok/s:\n\n\\- Qwen3.8 Flash Next, a 107 GB model, on two Snapdragon boxes with 64 GB of RAM between them (the experts that don't fit stream off the SSDs): \\~67 / \\~17.5 on a **16k prompt**, \\~64 / \\~21 on a short one\n\n\\- Qwen3.6 35B A3B, **4k prompt**, two Snapdragon boxes: \\~406 / \\~54 (one box: \\~283 / \\~56)\n\n\\- Same 35B on an i9-13900K (8 threads, CPU only), **4k prompt**: \\~243 / \\~44, where llama.cpp manages \\~143 / \\~24\n\nAgainst llama.cpp on the same hardware (CPU against CPU) it's quicker on most of what I've tried, and the gap grows with the prompt: on a 32k prompt it writes 2 to 10x faster. It isn't ahead everywhere, though. On my laptop llama.cpp reads long prompts slightly faster on GLM-4.7-Flash, and writes short replies a little faster on Moonlight and gpt-oss-20b. On the box, it reads short prompts a bit faster on the small dense Qwen3.5 models, until ToRc's NPU is on (then ToRc is \\~2x). Full matrices, llama.cpp comparisons and every machine tested are in PERFORMANCE.md (link below).\n\nTested on: 2x Snapdragon X (base X1, 32 GB) boxes (1 box and 2), a Ryzen 7 7840HS laptop (Radeon 780M + RTX 4070), an i5-12600K desktop (RTX 3060) and an i9-13900K workstation (96 GB, Radeon AI PRO R9700 used for attention only). Everyday Windows installs with all my apps on them, not streamlined benchmark rigs on minimal Linux.\n\nWhat I'm looking for:\n\n\\- Testers, especially anyone with an X Elite or X2 Elite. This was all done on the base chip, so I'm curious what performance the bigger chips can manage.\n\n\\- Mac people. As above, it builds and runs, but I can't test it myself, so numbers (and fixes) from more Macs would be brilliant.\n\n\\- Linux on more real hardware, x86 especially.\n\n\\- Holes. Find them and tell me what I can add or improve.\n\nOne question for you all: what is one feature you want from a local inference engine that nobody ships yet? I would genuinely like to try building it.\n\nBasically I'm looking for collaboration with other people and projects, I've thoroughly enjoyed this project and I'd really like to see how far it can fly! \ud83d\udd4a\ufe0f\n\nDiscrete GPU expert offload is on the list of my to-dos, but it was never the point of what I was trying to achieve, I use Strata on my big GPU workstation at work, and it's great, but that's a \u00a35k machine, and out of reach of a lot of people. The point was making cheap hardware people are more likely to already have, actually useful - and use these NPUs that we now get with bigger models than the piddly ones we usually see.\n\nEvery model and machine I have measured is in [PERFORMANCE.md](https://github.com/Rendeverance/ToRc/blob/main/PERFORMANCE.md) \ud83d\ude4f\n\n[ToRc on GitHub](https://github.com/Rendeverance/ToRc)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzg3em/torc_a_fromscratch_rust_engine_running_qwen38/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 33,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "So this started because I bought two of the base Snapdragon X boxes for some software  and build testing at work (the cheap ones, about \u00a3300 each, not the Elite) and then they were sitting unused. With fast LPDDR5x (8448 MT/s) in them I thought I'd have a play and see if I could run proper models on them. I tried the usual engines and couldn't get anywhere near the speed I thought the hardware sho",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.552
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Honest RAM LLMs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "Honest RAM LLMs",
+        "seed_score": 69.0,
+        "summary": "I\u2019m a huge AI enthusiast but I\u2019m running into limits with 32GB DDR5. Between running local models and using coding agents (which fire off scripts and changes super fast), my RAM fills up quickly. How much RAM are you running, and what would you recommend for a smooth setup? Bonus points if you share your GPU/VRAM too.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Honest question: how much RAM do you recommend for running local LLMs alongside coding agents",
+            "body": "Honest question: how much RAM do you recommend for running local LLMs alongside coding agents\nI\u2019m a huge AI enthusiast but I\u2019m running into limits with 32GB DDR5. Between running local models and using coding agents (which fire off scripts and changes super fast), my RAM fills up quickly. How much RAM are you running, and what would you recommend for a smooth setup? Bonus points if you share your GPU/VRAM too.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzf4os/honest_question_how_much_ram_do_you_recommend_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019m a huge AI enthusiast but I\u2019m running into limits with 32GB DDR5. Between running local models and using coding agents (which fire off scripts and changes super fast), my RAM fills up quickly. How much RAM are you running, and what would you recommend for a smooth setup? Bonus points if you share your GPU/VRAM too.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 44,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "RadixArk/DaisyRose-27B \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "RadixArk/DaisyRose-27B \u00b7 Hugging Face",
+        "seed_score": 64.5,
+        "summary": "Seems like a new alternative for 5090 / DGX Spark, post-trained from Qwen 3.8 27B on long-horizon agentic tasks. Model highlights:\n\n  \nDaisyRose-27B is RadixArk's first model: a multimodal reasoning model built on Qwen3.8-27B with reinforcement learning only, without any supervised fine-tuning or distillation. It was trained on about 1,200 curated long-horizon agent tasks, with sessions of up to 1",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "RadixArk/DaisyRose-27B \u00b7 Hugging Face",
+            "body": "RadixArk/DaisyRose-27B \u00b7 Hugging Face\nSeems like a new alternative for 5090 / DGX Spark, post-trained from Qwen 3.8 27B on long-horizon agentic tasks. Model highlights:\n\n  \nDaisyRose-27B is RadixArk's first model: a multimodal reasoning model built on Qwen3.8-27B with reinforcement learning only, without any supervised fine-tuning or distillation. It was trained on about 1,200 curated long-horizon agent tasks, with sessions of up to 1M tokens, for 18 days on 144 H200 GPUs. Terminal Bench 4.1 pass@1 rises from 5.6 to 12.0, and the model also improves on most of the other coding, reasoning and instruction-following benchmarks below.\n\nDaisyRose-27B keeps the base model's architecture, tokenizer and chat template, along with its image understanding and 256K-token context, so it is a drop-in replacement for Qwen3.8-27B in existing inference and post-training stacks. Weights are released under Apache-2.0 in BF16, FP8, and NVFP4.\n\n\n\n|Benchmark|DaisyRose-27B|Qwen3.8-27B|Muse Glimmer-30B|Qwen3.6-35B-A3B|MiMo V2.6 Flash|Inkling 2 Small|Beam 1.0|Muse Spark Open|GPT-6 Luna|\n|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|\n|Activated parameters|27B|27B|30B|3B|15B|17B|23B|42B|\u2013|\n|Total parameters|27B|27B|30B|35B|309B|594B|501B|816B|\u2013|\n|Terminal Bench 4.1|12.0|5.6|0.5|0.0|**16.1**|13.0|6.4|6.6|15.2|\n|Terminal Bench 2.1|75.5|73.0|51.7|44.9|**87.6**|81.3|80.1|76.4|73.0|\n|DeepSWE v1.1|46.2|42.2|4.4|0.0|67.9|**72.1**|43.3|60.0|66.6|\n|SWE Bench Pro v2|94.7|91.3|80.4|73.3|\u2013|**97.7**|\u2013|95.0|\u2013|\n|HLE (text only)|34.3|33.9|22.0|22.2|35.1|**44.1**|34.7|43.9|38.5|\n|IFBench|**82.4**|79.5|77.0|64.4|\u2013|\u2013|79.6|\u2013|\u2013|\n|GPQA Diamond|90.7|89.2|83.5|86.0|88.7|**93.0**|90.6|89.0|90.5|",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzok2t/radixarkdaisyrose27b_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 38,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Seems like a new alternative for 5090 / DGX Spark, post-trained from Qwen 3.8 27B on long-horizon agentic tasks. Model highlights:\n\n  \nDaisyRose-27B is RadixArk's first model: a multimodal reasoning model built on Qwen3.8-27B with reinforcement learning only, without any supervised fine-tuning or distillation. It was trained on about 1,200 curated long-horizon agent tasks, with sessions of up to 1",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "150 299 kB HTML",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "150 299 kB HTML",
+        "seed_score": 55.5,
+        "summary": "[PLAY THE GAME](https://voidstruck.com/) \\- [GitHub](https://github.com/vitaminclaude/voidstruck)\n\nI vibe-coded **Voidstruck** over 4 days. It's a procedural space exploration game with 150 million star systems, fitting into one 299 kB HTML file that runs in your browser.\n\nEvery planet can be landed on (except for gas giants). You can fly low over and step out to explore on foot and by jetpack.\n\nE",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "A game with a galaxy of 150 million star systems in a 299 kB HTML file",
+            "body": "A game with a galaxy of 150 million star systems in a 299 kB HTML file\n[PLAY THE GAME](https://voidstruck.com/) \\- [GitHub](https://github.com/vitaminclaude/voidstruck)\n\nI vibe-coded **Voidstruck** over 4 days. It's a procedural space exploration game with 150 million star systems, fitting into one 299 kB HTML file that runs in your browser.\n\nEvery planet can be landed on (except for gas giants). You can fly low over and step out to explore on foot and by jetpack.\n\nEvery star, planet, moon and name is generated from a seed as the player progresses. There are no images, models, audio files or libraries.\n\nThe story: A jump drive test goes wrong and throws you 2,500 light years from home. You make your way back one jump at a time, but every jump costs years on Earth. Messages from home reach you along the way, and what you find when you land depends on your actions.\n\nOn the way you can refuel in a star\u2019s glow, pass pulsars, white dwarfs and black holes, each with its own look and music. There are eight kinds of worlds, from ocean and lava to crystal and living ones, with plants, animals, weather, and day and night. You can also mine, build bases that earn credits while you travel, upgrade your ship at stations, and fight or flee raiders. The galaxy also features our own solar system. There are four ships to choose from and a one-life hardcore mode, and the ten music pieces are synthesised live in the browser.\n\nThe inspiration came from my obvious passion for space exploration games like No Man\u2019s Sky and Elite Dangerous. But recently, Abyssal Garden, made by a fellow redditor, opened my eyes and gave me a huge push to actually create it.\n\nI made the taste calls, Claude (Fable 5.2) wrote the code. Music was one of the challenges, since Claude can\u2019t \"hear\" what it writes, so I described tracks I love and chose by ear.\n\nIt works best in Chrome or Edge on a desktop, full screen, with sound on. It needs WebGPU, so it won\u2019t run on phones, and I haven\u2019t tested Firefox or Safari.\n\nIt\u2019s free, with no ads and no account, and you can play it offline. If something breaks or feels off, please tell me.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzo81m/a_game_with_a_galaxy_of_150_million_star_systems/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 27,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[PLAY THE GAME](https://voidstruck.com/) \\- [GitHub](https://github.com/vitaminclaude/voidstruck)\n\nI vibe-coded **Voidstruck** over 4 days. It's a procedural space exploration game with 150 million star systems, fitting into one 299 kB HTML file that runs in your browser.\n\nEvery planet can be landed on (except for gas giants). You can fly low over and step out to explore on foot and by jetpack.\n\nE",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.359
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Gemini",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Gemini",
+        "seed_score": 55.5,
+        "summary": "Google's Gemini models dominate the latest [Arena Text leaderboard](https://arena.ai/leaderboard/chat/text), ahead of Claude and OpenAI.\n\nI'm curious whether this reflects actual user experience or something about how Arena evaluates models.\n\nFor those who've used Gemini, ChatGPT and Claude: Do you genuinely prefer Gemini for everyday conversations? What does it do better or worse?\n\nInterested in",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Why does Gemini perform so well on everyday chat leaderboards?",
+            "body": "Why does Gemini perform so well on everyday chat leaderboards?\nGoogle's Gemini models dominate the latest [Arena Text leaderboard](https://arena.ai/leaderboard/chat/text), ahead of Claude and OpenAI.\n\nI'm curious whether this reflects actual user experience or something about how Arena evaluates models.\n\nFor those who've used Gemini, ChatGPT and Claude: Do you genuinely prefer Gemini for everyday conversations? What does it do better or worse?\n\nInterested in real-world experiences, not just benchmarks.",
+            "url": "https://www.reddit.com/r/singularity/comments/1xzpg8p/why_does_gemini_perform_so_well_on_everyday_chat/",
+            "container": "singularity",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Google's Gemini models dominate the latest [Arena Text leaderboard](https://arena.ai/leaderboard/chat/text), ahead of Claude and OpenAI.\n\nI'm curious whether this reflects actual user experience or something about how Arena evaluates models.\n\nFor those who've used Gemini, ChatGPT and Claude: Do you genuinely prefer Gemini for everyday conversations? What does it do better or worse?\n\nInterested in",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4965
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Caliper Harness Open Source",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Caliper Harness Open Source",
+        "seed_score": 40.5,
+        "summary": "**Hi all!**\n\nThis is the first dedicated post I am making about this project. I have mentioned it online a few times before, but I have never properly introduced it. After several months of work, its finally ready to be published, and I'm really excited!\n\nCaliper Harness is a coding harness that runs in your terminal. I built it for small local models. The basic idea is simple. A small local model",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "Caliper Harness, an Open Source coding harness designed to improve small local model quality",
+            "body": "Caliper Harness, an Open Source coding harness designed to improve small local model quality\n**Hi all!**\n\nThis is the first dedicated post I am making about this project. I have mentioned it online a few times before, but I have never properly introduced it. After several months of work, its finally ready to be published, and I'm really excited!\n\nCaliper Harness is a coding harness that runs in your terminal. I built it for small local models. The basic idea is simple. A small local model on its own will rush, skip steps, and tell you something is done when it is not. So the harness does the disciplining for it. It makes the model plan first, get approval, work in checked steps, and prove things with tests and a separate review before anything counts as finished.\n\nRight now it is local only. You point it at a local model server and it works from there. If cloud API support is something a lot of people actually want, I will build it. For now, local is the focus.\n\nThe way I test it is with a benchmark game. I give it an empty folder and tell it to build a small browser game, Space Transporter, from scratch. Then in later runs I ask for bigger and bigger features on top. I judge it on the final game quality and on the full traces of what the model actually did.\n\n**The video attached to this post is the from scratch build, sped up a lot. It is a few hours of work, so you can pause and see how the harness looks and behaves.**\n\nAfter that first build, I used the same game for a harder follow up run. I asked for a bigger feature as a stress test for the harness. I wanted the stations in the game to feel alive, with shortages and emergencies, and I wanted them to remember the player. Before writing any code, the model has to plan. It splits the work into a plan, an approach, and tasks. It writes out the staging, the trade offs, and the risks. I read that in the plan screen and approve it or send it back.\n\nPlans are built through a structured, step by step process called PAT (Plan, Approach, Task). PAT lives in a GraphQL state graph. A plan can have multiple approaches, and an approach has multiple tasks, with each level getting more specific and staying connected to the level above it. It is very time consuming for the model to build. In my testing though, the plans stay coherent from the high level stages all the way down to the small tasks. That structure also makes planning and execution much easier for a smaller model to manage.\n\nIf there is a real decision to make, the model is pushed hard to ask instead of guessing. I have iterated on that behavior a lot. In this run it asked how fast station situations should change, how harsh a station that distrusts you should be, and how much of that state the game should show.\n\nOnce the plan is ready, it claims one task at a time. Every task has its own check command from the project. A task only counts as complete when its check passes and an independent review also passes. The model does not get to decide it is finished just because it says so. Completion has to match what was written in the task during planning.\n\nAfter the checks, a fresh reviewer pass looks at the work with clean context. This part matters to me. It gives the work an adversarial review without carrying all the coding context into it. In this run, the first stage had every test green, and the reviewer still found a real bug. One of the six station situations was drawing with a broken colour, so it never showed on the map. The tests never caught it. The task got sent back, the model fixed it properly, added tests that fail on the old code, and only then did it pass. The harness does this automatically.\n\n**But why?**\n\nA lot of harnesses like OpenCode feel built around large intelligent models, token efficiency and speed. That makes sense for what they are trying to do. Caliper makes a different trade on purpose. It is slow and very deliberate. It makes the model plan, wait for approval, run checks, get reviewed, and fix things properly when it gets sent back. A small model that is left alone will cut corners. A small model inside this is forced to be diligent at the cost of speed. These runs took hours. I leave it running overnight and check the traces in the morning. For me, that trade is worth it, because the work that comes out is work I can trust a lot more.\n\nPart of how that works is the decision judge. It is a second, much smaller decision model that watches the main model while it works. It steps in at certain points, like when the model is stuck in a loop, failing the same way repeatedly, changing phase, failing recurringly at a tool call, or asking for a plan to be marked ready. It gives a simple judgement with a confidence score. Caliper can use that to steer the model, ask for a repair, or hold certain risky steps for approval. If the judge is slow or down, the work carries on and the outage just gets recorded. Between the judge, the planning structure, and the reviewer, a small local model ends up behaving a lot more carefully than it does on its own. Making small local models more capable through structure like this was a big part of the design.\n\n**There are also some user facing features that ended up mattering a lot in day to day use**:\n\n* There are 3 separate draft text boxes, so you can have 3 prompts being built at the same time and send them individually. This has been huge for me despite being so simple. Sometimes I am writing a massive continuation or expansion prompt, and the model does something ridiculously stupid that needs to be fixed immediately. I can keep the big prompt saved in one draft, switch to another draft for the urgent message, and keep a recurring status update prompt in the third one. All of it stays inside the harness. \n* \\`/btw\\` lets you inject a steering note into a run while the model is still working. I use it when I spot it heading in the wrong direction and I do not want to stop the whole run just to correct it.\n* You can browse and open files from across the project without leaving the harness. The Diff view follows model edits across files in real time, \\`/open-diff\\` opens a retained change, and \\`/changes\\` shows the recorded history for a file. With \\`/comment\\`, you can attach direct feedback to specific file lines, plans, approaches, tasks or documents and queue it for the model to address.\n\n**Here is the rest of what is in v0.3.0:**\n\n* Tabs for separate chats and screens for Chat, Diff, Plans, Plan, Library, Sessions, Decisions, Workflows, Files, Tests, Settings, Status, and Models & Servers\n* A plan screen with a short approval summary first, then drill down into the approach and each task\n* Versioned plan elaborations, so staging, trade offs and risks can be read and approved before coding\n* A workflow library. The model can browse and author reusable methods, then attach one to a claimed task as a method lens, using the same step-by-step isolated architecture as the planning mechanism. Caliper checks the library every time work is claimed\n* A \\`wait\\` tool, so the model can sleep and wake up when something finishes, like CI, instead of checking over and over\n* Local server detection for servers that are already running, including llama.cpp, Ollama, Rulith, MLX, vLLM and other OpenAI-compatible endpoints\n* Models & Servers management inside the TUI. You can add, edit, test, select, load and unload saved connections. There is also an assisted setup prompt you can copy if you want help wiring an existing install\n* Separate Coding and Judge roles, with human approval available if you switch the decision model off\n* Auth modes with \\`/auth\\`, plus \\`/tools\\` to switch between coding and full tool exposure\n* Project style rules with \\`/style\\`, shared by the coder and the reviewer, plus \\`behavior.md\\` for how the agent should conduct itself\n* Domain knowledge graphs for areas like testing, UI/UX and code design. The model can read linked sections as needed, and it can author project guides and record preferences into the same graph instead of loading everything into context at once\n* Project memory with \\`/remember\\` and \\`/recall\\`, including shared global notes if you ask for them. The model can also record useful project knowledge itself\n* Notices. While working, the model can save weak spots, brittle code and opportunities it notices, without turning them into surprise tasks\n* A Tests screen for designing, refining and running project test suites, with result history and test guidance built in\n* Full session records. Every reply, tool call, judgement, file effect and final outcome is saved. Past runs can be browsed, and decision judgements can be replayed from the CLI\n* Personal settings that carry across projects, with project config still able to override them\n* Headless \\`run\\` mode for scripts, a plain \\`chat\\` mode with no agent tools, and CLI access to sessions, judgments, plans, approaches, the GraphQL state graph, effective config and hardware limits\n* In app updates with \\`/update\\`, plus managed packages for macOS arm64, Windows amd64, and Linux amd64/arm64\n\nOne thing I still want to build next is a proper tool for turning normal Markdown skills into graph-compatible domain graphs or workflow graphs, using the same step by step style as PAT. That is planned for later, so I am not counting it as a v0.3.0 feature.\n\nIt is still an early release and results depend a lot on the model you give it and what you're using it for. So far I have run it with Qwen3.8 Flash Next, Qwen3.8 27B, Laguna S 2.1, Gemma 4 26B, and a few others. I would really like feedback, especially from people running smaller local models. I am planning on running benchmarks comparing Caliper against other harnesses for both output quality and time cost, and I will post those when they are ready.\n\nThis is a project I am actively working on and iterating, so feel free to give me some feedback or ideas and I'll implement them in the next version.\n\n  \n**Use it now!**\n\nGitHub: [https://github.com/santiagoaraoz2001-sketch/caliper-harness](https://github.com/santiagoaraoz2001-sketch/caliper-harness)\n\nnpm: \\`npm install -g caliper-harness\\`\n\n\n\n**MIT licensed, so feel free to go crazy with it.**",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzoqlj/caliper_harness_an_open_source_coding_harness/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**Hi all!**\n\nThis is the first dedicated post I am making about this project. I have mentioned it online a few times before, but I have never properly introduced it. After several months of work, its finally ready to be published, and I'm really excited!\n\nCaliper Harness is a coding harness that runs in your terminal. I built it for small local models. The basic idea is simple. A small local model",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.6,
+            "local_rank_score": 0.353
+          }
+        ]
+      }
+    }
+  ]
+}

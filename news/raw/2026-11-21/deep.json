@@ -1,0 +1,183 @@
+{
+ "date": "2026-11-21",
+ "runs": [
+  {
+   "started_at": "2026-11-20T23:58:17+00:00",
+   "seconds": 2.9,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 6,
+   "articles_ok": 5,
+   "articles_error": 1,
+   "articles_skipped": 0,
+   "hn_ok": 3,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "CHANGELOG.md không có mục rust-v0.171.0": 1
+   },
+   "summary": "5/6 bài gốc ok (0 bỏ qua), 3/3 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.9s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+   "article": {
+    "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+    "status": "error",
+    "reason": "CHANGELOG.md không có mục rust-v0.171.0"
+   }
+  },
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+    "status": "ok",
+    "title": "",
+    "chars": 18077,
+    "text": "## 2.1.329\n- Added a trust dialog warning that says where a folder's hooks are declared\n- Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed settings fail to load\n- Added this session's scheduled tasks, `/loop` wakeups, the goal and this conversation's forks to `/tasks`; x stops one after asking\n- Added a \"Server message\" row to a server's page in `/mcp` that shows the JSON-RPC error message of a remote HTTP MCP server that refuses the connection\n- Added a \"Marketplace auto-update\" row to `/status` that names managed marketplaces that get no automatic updates, and why\n- Added support for turning on Code Mode while OpenTelemetry events and metrics are enabled; each tool call the code makes sends its events; tracing still keeps it off\n- Fixed `~/.claude.json` sometimes being reset to defaults when a network stall or file lock made it unreadable and cleared during a save\n- Fixed repeated sign-outs on macOS when Claude Code could read the Keychain but not save to it. That session now stops at expiry and says why, and other sessions stay signed in\n- Fixed `/terminal-setup` corrupting VS Code settings or keybindings files around block comments, and reporting success while losing the Shift+Enter binding where keybindings.json has an unclosed string\n- Fixed files accepted through the IDE diff being saved without their last newline, and losing their byte order mark (BOM) when an edit was accepted by saving the diff in VS Code\n- Fixed picking a cloud session in `/teleport` replacing your open conversation: the pick now starts a new session, as `/clear` does, and `/resume` brings the old one back\n- Fixed `/usage-credits` asking Pro and Max users to log in again after opening the browser, and the link disappearing after 8 seconds if the browser doesn't open and a task stops for usage credits\n- Fixed `/usage` saying usage credits are off when they had run out or reached the monthly limit, and `/model` not telling Pro and Max users when that limit blocks a model that runs on usage credits\n- Fixed the spend limit menu showing your spend as your monthly limit and wrapping its rows under the pointer in narrow windows\n- Fixed a status line script that prints without end freezing the prompt and using gigabytes of memory\n- Fixed an empty, frozen screen after approving managed settings while the --resume picker, the trust dialog or another set-up screen was waiting\n- Fixed choosing Default in `/model` replacing your saved model with your organization's default when the Default row already showed your saved model\n- Fixed an MCP server being signed in again after you cleared its authentication while a token refresh was running\n- Fixed background MCP tasks that stalled after a slow reconnect: Claude Code now reconnects most HTTP MCP servers by itself when one is left on an older protocol version\n- Fixed PDFs, images and `.docx`, `.xlsx` or `.pptx` files that MCP servers or websites send as `application/octet-stream` being saved as .bin, which kept Claude from reading the PDFs and images\n- Fixed `/code-review ` sometimes reviewing the checked-out branch instead of the pull request without saying so: it now reads the pull request with `gh pr diff`, or says when it can't\n- Fixed `/code-review` stopping at a permission prompt, on most models, to look for a `~/.claude/CLAUDE.md` that doesn't exist\n- Self-hosted runner: Fixed `--push-outcome-on-release` sometimes deleting a session's branch on the git host\n- Fixed Code Mode hiding a script's finished edits and the stopped command after Esc, and losing them on exit\n- Fixed a runaway loop in Code Mode filling the machine's memory; it is now stopped at a limit\n- Fixed a background agent running on when it was stopped while it was being resumed\n- Fixed background shell commands using memory for the earlier conversation until they exit\n- Fixed Remote Control using memory for the earlier conversation after a compaction or `/clear` in sessions run by…"
+   }
+  },
+  {
+   "url": "https://stripe.dev/blog/stripe-integration-evals-methodology",
+   "article": {
+    "url": "https://stripe.dev/blog/stripe-integration-evals-methodology",
+    "status": "ok",
+    "title": "Stripe evals: Measuring real-world coding agent performance | Stripe Dot Dev Blog",
+    "chars": 17632,
+    "text": "Stripe evals: Measuring real-world coding agent performance\n/Metadata\nDate:2026.11.19\nAuthors:\nKiran PrasadYiing Chau MakManish Kurse\nReading time:13 min read\nCategories:\nAIAI ResearchAnnouncementsMachine LearningTesting\nAgents:\nView as Markdown\nShare:\nTwitter/XLinkedIn\n/Article\nIntegration choices affect how much value a business gets from Stripe. Choosing current integration patterns helps businesses access new capabilities with less custom code and can reduce future migration work. Building an integration well also means handling payment failures, subscription changes, and webhook events.\nAs developers build with coding agents, we have observed that agents bias towards older APIs that are more prevalent in their pretraining corpus, miss key features, and hallucinate. Existing coding benchmarks don't catch this: they check whether the code passes deterministic checks, not whether the API integration is correct. We want developers building with agents to start on the best Stripe setup, and that begins with seeing where agents fall short today. So we built Stripe evals to measure that, and to identify ways to steer agents toward better integrations, through capabilities like the Stripe agent plugin.\nStripe evals measure how well coding agents build high-quality integrations given realistic, well-specified scenarios driven by a roleplaying agent. We ran 69 scenarios across one-time payments, subscriptions, and Connect (marketplaces and platforms), on 14 model and harness pairs, both with and without the Stripe agent plugin. The scenarios include tasks such as building a hosted checkout, implementing metered billing, managing per-seat subscriptions, and splitting marketplace payments.\nThe plugin helps. All 14 coding agents scored higher with it, by roughly 3 to 8 percentage points, and web searches fell 96% as models relied on trusted guidance. Models also behave differently from one another: Fable 5.1 made 53% more tool calls with the plugin, while Gemini 3.8 Flash made 26% fewer. While the headline numbers are high, a strict pass rate requiring all necessary criteria to pass drops the average score across all agents from 78.1% to 29.4%.\nWe are also publishing our Stripe benchmark and eval framework. We will maintain the eval harness and update the results on an ongoing basis with new models, cases, and features.\nDetailed results\nThe results below evaluate the coding agents on our 69 public cases (19 Connect, 24 payments, and 26 Subscriptions) over 2 runs.\nTable 1: Detailed score results\nModel\nHarness\nAverage score: no plugin → plugin\nScore change\nStrict pass rate: no plugin → plugin\nCost per run ($): no plugin → plugin\nMinutes per eval: no plugin → plugin\nHaiku 5.5\nClaude Code\n73.5% → 76.2%\n+2.7%\n23.5% → 30.9%\n0.08 → 0.09\n8.3 → 7.8\nSonnet 5.5\nClaude Code\n78.0% → 82.6%\n+4.6%\n29.4% → 33.1%\n1.07 → 1.16\n8.1 → 7.3\nOpus 5.5\nClaude Code\n83.5% → 86.2%\n+2.7%\n35.3% → 36.0%\n2.77 → 3.15\n12.4 → 12.4\nFable 5.1\nClaude Code\n79.5% → 84.6%\n+5.1%\n25.4% → 36.4%\n5.02 → 6.13\n15.7 → 19.6\nFable 5.2\nClaude Code\n81.1% → 85.2%\n+4.1%\n28.4% → 43.2%\n5.76 → 5.35\n15.2 → 15.1\nGPT-6 Luna\nCodex\n72.0% → 79.1%\n+7.1%\n17.3% → 29.1%\n0.05 → 0.07\n7.2 → 8.8\nGPT-6.1 Sol\nCodex\n85.6% → 89.6%\n+4.0%\n39.0% → 50.7%\n0.51 → 0.61\n6.1 → 6.5\nGPT-6 Astra\nCodex\n85.5% → 90.0%\n+4.5%\n41.9% → 52.9%\n2.93 → 3.63\n6.2 → 7.8\nGemini 4 Argon\nOpenCode\n74.3% → 77.6%\n+3.3%\n20.6% → 31.6%\n1.64 → 3.86\n8.1 → 9.3\nGemini 3.8 Flash\nOpenCode\n64.8% → 72.7%\n+7.9%\n11.2% → 21.6%\n2.21 → 2.67\n11.6 → 9.9\nGrok 4.7\nOpenCode\n72.0% → 75.8%\n+3.8%\n21.3% → 26.5%\n0.70 → 1.37\n5.1 → 5.3\nKimi K3\nOpenCode\n69.2% → 75.0%\n+5.8%\n21.1% → 25.0%\n1.83 → 1.99\n14.8 → 13.3\nGLM 5.3\nOpenCode\n68.1% → 72.6%\n+4.5%\n18.5% → 21.8%\n2.26 → 2.42\n15.7 → 14.7\nMinimax M3.1 Flash\nOpenCode\n73.4% → 80.8%\n+7.4%\n21.5% → 28.6%\n0.49 → 0.65\n28.2 → 27.9\n*This is an aggregation across the Payments, Connect, and Subscriptions cases, which have differing model performance, and so cross-model comparisons should be contextualized with Table 3.\nPlugin helps…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50573886",
+   "hn_url": "https://news.ycombinator.com/item?id=50573886",
+   "hn": {
+    "title": "If you stop writing code, you also get worse at reviewing it",
+    "points": 319,
+    "comments": 157
+   },
+   "comments": [
+    {
+     "author": "JamesLeonis",
+     "replies": 8,
+     "text": "I agree with the author we're in a weird moment where the Best Practices seemingly flipped.\nFive years ago it was common knowledge on HN that moving away from the code (like taking a management position) atrophied your programming skills. The routine suggestion was to get your hands dirty again.\nAI-first folks will tell me I should see my new responsibility as being just such a manager over little agent kiddos running around. However I can turn a flesh-and-blood Junior/Intern developer into…"
+    },
+    {
+     "author": "bengold14",
+     "replies": 4,
+     "text": "I think most people at this point just don't review code. Which is a shame, because:\n1. It was good for collaboration. Sharing how you are changing the codebase pushes everyone to row in the same direction, and provides a sense of team ownership.\n2. It was good as a push for engineers to take pride in their work. Knowing someone is watching gives you subconsciously an extra reason to not cut corners. And when you spend effort not cutting corners you expect that in your teammates, which is a…"
+    },
+    {
+     "author": "snailcoder",
+     "replies": 4,
+     "text": "What about the code you were never able to write because you were time constrained? I have learned so much about the devops process through Claude and ansible playbooks and terraform that I would’ve never known was possible because of a lack of time. I do agree we can’t shut off our brains.\nBut a good bit of software dev was taking the time to go through documentation to understand specific syntax or what was possible with a certain type of tooling. I’m okay with automating the mundane and…"
+    },
+    {
+     "author": "jarjoura",
+     "replies": 1,
+     "text": "Our profession was built on (from its very inception) and is entirely staffed with people obsessed with speed, efficiency, and correctness.\nFor us, it's so core to our nature that when some new tech promises all 3 in one, most of us can't help but dive in full steam and not question it.\nThe fact that Anthropic can so easily go around to tech companies and sell them on \"coding has been solved,\" and \"we just throw more AI at the issues our AI creates\" without anyone normally skeptical of…"
+    },
+    {
+     "author": "bemtevi",
+     "replies": 2,
+     "text": "That's obvious. People claim they understand every line of code their agents write, but there's understanding...and then there's understanding. A cursory idea of how code works does not mean the same deep understanding of the solution nor does it give the feeling of the 'lightbulb' when a thorny problem is solved.\nFor a long time in coding, we've constantly been piling on technical debt, even before AI. With frameworks, layers, etc. But AI is a quantum leap that makes the problem far…"
+    }
+   ],
+   "article": {
+    "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+    "status": "ok",
+    "title": "If you stop writing code, you also get worse at reviewing it · cekrem.github.io",
+    "chars": 4588,
+    "text": "If you stop writing code, you also get worse at reviewing it\nNovember 20, 2026\n4-minute read\nAI\n•\nSoftware Craftsmanship\n•\nCoding-as-Craft\nWhatever skill you’re learning, it won’t take long before someone with experience in that particular field tells you to get your hands dirty. It’s fine to read “Born to Run”, but you won’t be running an ultra marathon any time soon if you don’t start running. Whether it’s muscle memory, technique, physical fitness or problem solving you need to work on to reach your goals, you need to practice. This isn’t a controversial statement in any field at all, and has never really been.\nExcept in software engineering, somehow.\nWhen it comes to software engineering, we somehow lost our way, thinking that our skills won’t stop improving if we stop practicing. Making such a claim in any other field would be sneered at at best. Imagine John Scofield1 saying he stopped practicing his guitar because “he was at a good enough level, musically, to maintain (and even improve!) his expertise” simply by 1) instructing others on how to play (either in vibe general terms, or with a strict spec musical notation), and then 2) listening to what they played and iterating until it sounded good enough for his next record. “My music is better”, he would claim, and moreover “actually playing the guitar was never the point anyway, there’s more to making music.”\nMind you, my point in this post is not to discuss the short term quality of code output (or recorded guitar playing, to continue the proverbial thread), but rather the skill of the craftsman practicing his craft vs the one who doesn’t practice at all.\nTo make another comparison that’s arguably closer to software engineering, or at least the “writing and reasoning about code” part of it, let’s look at authors in other fields. I have no doubt that reading great prose has the potential to nudge a writer towards better writing of his/her own; in fact it’s super important to have creative references to draw upon - no doubt at all. But, imagine an author who 1) stopped writing, and only pursued reading and giving feedback to other writers, and worse yet 2) mostly read AI generated prose!? To be perfectly honest, I would expect a quite steady (if not exponential) decline of this author’s writing skills.\n“There’s more to software engineering than writing code”\nLink to heading\nSure. But if we can at least agree that the code that runs our software is a non-trivial part of it (though, granted, not all of it by far: The other parts of developing and maintaining software speak even louder against using generative AI as a significant tool service!), we should aspire to be proficient in understanding how code works, what good code looks like, what to watch out for and how software architecture plays a vital part in making code Easy To Change.\nSimply “reviewing all the code Claude produced” won’t quite cut it. And who are you trying to fool, after all; at this point you’re not really reading half of it, are you?\nSo I propose something that used to be a no-brainer: Keep practicing!\nWhich brings me to my next point:\nAll engineers(!) need to be good at solving problems\nLink to heading\nif || while you can argue that the need for being hands-on on your software’s code varies, I propose you can’t argue that we’re still solving problems. And the moment you stop practicing solving problems is the moment you stop getting better at it, just like everything else. Simple as that. This is hardly new, btw: you could always tell who beat Doom using cheat codes and who finished the game the real way! If the end goal is to “beat the game”, then by all means cheat; if the end goal is getting good at it, then I’d advice you not to. Some lessons are only learned the hard way (trial and error), and very few are learned without effort at all. Repeated LLM usage for problem solving pounds the following premise into our brain’s wiring: If something is hard, tricky or requires effort, you shouldn’t even…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50568130",
+   "hn_url": "https://news.ycombinator.com/item?id=50568130",
+   "hn": {
+    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+    "points": 365,
+    "comments": 240
+   },
+   "comments": [
+    {
+     "author": "postalcoder",
+     "replies": 19,
+     "text": "I don’t think anyone who have yet commented has used the actual model. But, to be fair to the commenters, google has made it very hard for them to do so without spending a ton of money.\nNeon is a really good model. It’s currently my favorite model to use. Coding-wise, it’s equivalent to Opus 5.5/Fable. Documentation-wise, it is great. If you have access to Neon have it take a crack at simplifying your agents.md. It’s the first model I’ve run that criticized the amount of ceremony in my…"
+    },
+    {
+     "author": "largbae",
+     "replies": 3,
+     "text": "Neon is a contender. Neon \"high\" appears faster and cheaper than Opus 5.5 \"medium\" with similar results on long-running language porting work in a large monorepo.\nThe speed is the biggest win IMO. When Carbon came out, I tried to give it a shot, but it was so slow that I went back to Opus just for productivity, nevermind quality. Today I started Neon on one worktree and Opus on another, and Neon did so well that I have now switched for both.\nCode quality looks great. Comment-wise it has its own…"
+    },
+    {
+     "author": "dowakin",
+     "replies": 2,
+     "text": "Fully agree. Neon is my main model right now. I have a pretty advanced setup with multiple agents, coordinators, etc. It's basically a \"factory\" customized for me. It ran on Claude for a long time, then on Codex for the past three months, and now it runs on Google models. Neon is good, predictable, and smarter than me :)\nAgy has a bunch of good slash commands for different use cases. And the biggest thing for me is that it doesn't annoy me with security refusals. It helped me with my garage…"
+    },
+    {
+     "author": "gregwebs",
+     "replies": 5,
+     "text": "If you watch Youtube much at all, Youtube Premium Lite (no ads) is well worth the $9/month. This is included with their $20/month AI plan. Spending that other $11/month wasn't worth it before Neon, but it might be now.\nThere are 3 different antigravity quotas:\n* gemini (previously just Gemini 3.8 Flash)\n* claude and gpt (very small quota)\n* argon (very small quota)\nThe Gemini quota now includes Neon and Hydrogen. Hydrogen (medium) competes with DeepSeek (high). Its within 2x on cost and more…"
+    },
+    {
+     "author": "YuechenLi",
+     "replies": 2,
+     "text": "Ok, so I can see that this is a benchmark the submitter made and submitted themselves, which is kinda misleading and should at least be disclosed.\nBut my question is, what does this benchmark actually measure about the LLM's engineering abilities? It just looks like a page of random bar graphs to me."
+    }
+   ],
+   "article": {
+    "url": "https://git-aarvin.github.io/mei/",
+    "status": "ok",
+    "title": "Models Engineering Index",
+    "chars": 1506,
+    "text": "Mei—or, the Models Engineering Index—calculates language models' practical performance on engineering tasks.\nMei calculates language models' engineering performance.\nEach model's score is a composite index across 16 coding benchmarks, adjusted for benchmark difficulty and missing results so models average 50. Cost and token use are adjusted the same way and shown relative to the typical model (1×).\nPerformance, cost or tokens.\nPerformance versus\ncost or tokens.\nHelp spread the word with a GitHub star ↗ (opens in a new tab)\nRankings\nIndex bar\n14 Neon Google68.42.1×0.8×\n26.2 Astra OpenAI67.12.1×0.37×\n3Fable 5.2 Anthropic66.75.8×1.4×\n4Opus 5.5 Anthropic61.54.2×1.5×\n56.2 Sol OpenAI60.60.54×0.3×\n64 Carbon Google59.12.4×0.91×\n7Sonnet 5.5 Anthropic58.83.2×2.6×\n84 Hydrogen Google56.01.5×1×\n94-Max Alibaba51.99.5×1.2×\n106.1 Terra OpenAI51.70.8×1.1×\n11Wonder Meta49.72.3×0.79×\n12K3.1 Pro Moonshot49.41.4×0.62×\n13Wonder Full Meta49.32.1×0.69×\n14V4.1 Flash DeepSeek45.90.15×1.3×\n15Ember Meta44.40.061×0.73×\n16Haiku 5.5 Anthropic44.30.53×1.6×\n17Grok 4.7 xAI43.64.1×0.77×\n18Hy4 Tencent42.80.48×1×\n19GLM 5.3 Z.ai42.02.3×1.4×\n20Inkling 2 Small Thinking Machines39.30.53×2.7×\n21V2.6-Pro Xiaomi39.10.14×0.85×\n22M3.1 Flash MiniMax37.10.26×2.4×\n236 Luna OpenAI35.90.064×0.52×\n24Large 4 Mistral35.71×0.93×\nComparing and ……4 Neon6.2 AstraFable 5.2Opus 5.56.2 Sol4 CarbonSonnet 5.54 Hydrogen4-Max6.1 TerraWonderK3.1 ProWonder FullV4.1 FlashEmberHaiku 5.5Grok 4.7Hy4GLM 5.3Inkling 2 SmallV2.6-ProM3.1 Flash6 LunaLarge 4"
+   }
+  },
+  {
+   "url": "https://git-aarvin.github.io/mei/",
+   "hn_url": "https://news.ycombinator.com/item?id=50568130",
+   "hn": {
+    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+    "points": 365,
+    "comments": 240
+   },
+   "comments": [
+    {
+     "author": "postalcoder",
+     "replies": 19,
+     "text": "I don’t think anyone who have yet commented has used the actual model. But, to be fair to the commenters, google has made it very hard for them to do so without spending a ton of money.\nNeon is a really good model. It’s currently my favorite model to use. Coding-wise, it’s equivalent to Opus 5.5/Fable. Documentation-wise, it is great. If you have access to Neon have it take a crack at simplifying your agents.md. It’s the first model I’ve run that criticized the amount of ceremony in my…"
+    },
+    {
+     "author": "largbae",
+     "replies": 3,
+     "text": "Neon is a contender. Neon \"high\" appears faster and cheaper than Opus 5.5 \"medium\" with similar results on long-running language porting work in a large monorepo.\nThe speed is the biggest win IMO. When Carbon came out, I tried to give it a shot, but it was so slow that I went back to Opus just for productivity, nevermind quality. Today I started Neon on one worktree and Opus on another, and Neon did so well that I have now switched for both.\nCode quality looks great. Comment-wise it has its own…"
+    },
+    {
+     "author": "dowakin",
+     "replies": 2,
+     "text": "Fully agree. Neon is my main model right now. I have a pretty advanced setup with multiple agents, coordinators, etc. It's basically a \"factory\" customized for me. It ran on Claude for a long time, then on Codex for the past three months, and now it runs on Google models. Neon is good, predictable, and smarter than me :)\nAgy has a bunch of good slash commands for different use cases. And the biggest thing for me is that it doesn't annoy me with security refusals. It helped me with my garage…"
+    },
+    {
+     "author": "gregwebs",
+     "replies": 5,
+     "text": "If you watch Youtube much at all, Youtube Premium Lite (no ads) is well worth the $9/month. This is included with their $20/month AI plan. Spending that other $11/month wasn't worth it before Neon, but it might be now.\nThere are 3 different antigravity quotas:\n* gemini (previously just Gemini 3.8 Flash)\n* claude and gpt (very small quota)\n* argon (very small quota)\nThe Gemini quota now includes Neon and Hydrogen. Hydrogen (medium) competes with DeepSeek (high). Its within 2x on cost and more…"
+    },
+    {
+     "author": "YuechenLi",
+     "replies": 2,
+     "text": "Ok, so I can see that this is a benchmark the submitter made and submitted themselves, which is kinda misleading and should at least be disclosed.\nBut my question is, what does this benchmark actually measure about the LLM's engineering abilities? It just looks like a page of random bar graphs to me."
+    }
+   ],
+   "article": {
+    "url": "https://git-aarvin.github.io/mei/",
+    "status": "ok",
+    "title": "Models Engineering Index",
+    "chars": 1506,
+    "text": "Mei—or, the Models Engineering Index—calculates language models' practical performance on engineering tasks.\nMei calculates language models' engineering performance.\nEach model's score is a composite index across 16 coding benchmarks, adjusted for benchmark difficulty and missing results so models average 50. Cost and token use are adjusted the same way and shown relative to the typical model (1×).\nPerformance, cost or tokens.\nPerformance versus\ncost or tokens.\nHelp spread the word with a GitHub star ↗ (opens in a new tab)\nRankings\nIndex bar\n14 Neon Google68.42.1×0.8×\n26.2 Astra OpenAI67.12.1×0.37×\n3Fable 5.2 Anthropic66.75.8×1.4×\n4Opus 5.5 Anthropic61.54.2×1.5×\n56.2 Sol OpenAI60.60.54×0.3×\n64 Carbon Google59.12.4×0.91×\n7Sonnet 5.5 Anthropic58.83.2×2.6×\n84 Hydrogen Google56.01.5×1×\n94-Max Alibaba51.99.5×1.2×\n106.1 Terra OpenAI51.70.8×1.1×\n11Wonder Meta49.72.3×0.79×\n12K3.1 Pro Moonshot49.41.4×0.62×\n13Wonder Full Meta49.32.1×0.69×\n14V4.1 Flash DeepSeek45.90.15×1.3×\n15Ember Meta44.40.061×0.73×\n16Haiku 5.5 Anthropic44.30.53×1.6×\n17Grok 4.7 xAI43.64.1×0.77×\n18Hy4 Tencent42.80.48×1×\n19GLM 5.3 Z.ai42.02.3×1.4×\n20Inkling 2 Small Thinking Machines39.30.53×2.7×\n21V2.6-Pro Xiaomi39.10.14×0.85×\n22M3.1 Flash MiniMax37.10.26×2.4×\n236 Luna OpenAI35.90.064×0.52×\n24Large 4 Mistral35.71×0.93×\nComparing and ……4 Neon6.2 AstraFable 5.2Opus 5.56.2 Sol4 CarbonSonnet 5.54 Hydrogen4-Max6.1 TerraWonderK3.1 ProWonder FullV4.1 FlashEmberHaiku 5.5Grok 4.7Hy4GLM 5.3Inkling 2 SmallV2.6-ProM3.1 Flash6 LunaLarge 4"
+   }
+  }
+ ]
+}

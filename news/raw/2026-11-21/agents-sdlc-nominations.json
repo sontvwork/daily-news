@@ -1,0 +1,793 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "e8a71dac94a968a4",
+  "generated_at": "2026-11-20T23:56:14.497641Z",
+  "from_date": "2026-11-19",
+  "to_date": "2026-11-20",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-20T23:56:14.464817Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-20T23:56:14.464827Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-11-20T23:56:14.403105Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 28,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-20T23:56:14.464711Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "If you stop writing code you",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 157,
+          "points": 319
+        }
+      },
+      "nomination": {
+        "name": "If you stop writing code you",
+        "seed_score": 714.0,
+        "summary": "If you stop writing code, you also get worse at reviewing it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50573886",
+            "source": "hackernews",
+            "title": "If you stop writing code, you also get worse at reviewing it",
+            "body": "If you stop writing code, you also get worse at reviewing it",
+            "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 319,
+              "comments": 157
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about If you stop writing code, you also get worse at reviewing it",
+            "snippet": "If you stop writing code, you also get worse at reviewing it",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50573886",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3075
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Reverb-TTS WebGPU 22x M4 Pro MLX",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "Reverb-TTS WebGPU 22x M4 Pro MLX",
+        "seed_score": 241.5,
+        "summary": "Reverb is a small text-to-speech model with zero-shot voice cloning. Give it 3 to 10 seconds of someone speaking plus the transcript, and it reads any text in that voice, with no fine-tuning.\n\n\\- 297M params. We pruned and distilled it from OmniVoice, then retrained it on 7 languages and ran a few rounds of DPO against a judge fitted to human preference rankings\n\n\\- Languages: English, German, Fre",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "Reverb-TTS: open-source zero-shot voice cloning running in the browser on WebGPU, 22x realtime on M4 Pro (MLX)",
+            "body": "Reverb-TTS: open-source zero-shot voice cloning running in the browser on WebGPU, 22x realtime on M4 Pro (MLX)\nReverb is a small text-to-speech model with zero-shot voice cloning. Give it 3 to 10 seconds of someone speaking plus the transcript, and it reads any text in that voice, with no fine-tuning.\n\n\\- 297M params. We pruned and distilled it from OmniVoice, then retrained it on 7 languages and ran a few rounds of DPO against a judge fitted to human preference rankings\n\n\\- Languages: English, German, French, Spanish, Italian, Polish, Portuguese. A voice can speak any of them, but it sounds most natural in its own language\n\n\\- 16 preset voices if you don't want to clone\n\n\\- Weights in fp32, fp16, int8 (307 MB) and int4 (191 MB). On our test set int8 showed no quality loss vs fp32, and int4 lost nothing we could measure\n\n\n\nNumbers\n\nOn the MiniMax set from the Open TTS Leaderboard (7 languages, 100 sentences each):\n\n\\- Reverb (297M): 1.03% WER, 0.817 SIM-o\n\n\\- OmniVoice (634M): 1.13% WER, 0.833 SIM-o\n\n\\- VoxCPM2 (2.3B): 1.20% WER, 0.812 SIM-o\n\n\\- Fish S2 Pro (4.95B): 1.35% WER, 0.761 SIM-o\n\n\\- Chatterbox (0.8B): 2.76% WER, 0.715 SIM-o\n\n\n\nSpeed: 165x real time on an RTX 5090 (batch 32), 21.6x on an M4 Pro and 20.6x on an iPhone 17 (batch 1).\n\n\n\nWhere to run it\n\n\\- In a HuggingFace Space  [https://huggingface.co/spaces/software-mansion/Reverb-TTS-runntime](https://huggingface.co/spaces/software-mansion/Reverb-TTS-runntime) (runs on your own GPU through ruNNtime)\n\n\\- In your own web app with ruNNtime [https://docs.swmansion.com/runntime/zoo/text-to-speech/](https://docs.swmansion.com/runntime/zoo/text-to-speech/)\n\n\\- In a mobile app: React Native ExecuTorch - [https://github.com/software-mansion/react-native-executorch](https://github.com/software-mansion/react-native-executorch)\n\n\\- On your Mac using Nativ [https://runnativ.ai/blog/reverb-on-nativ](https://runnativ.ai/blog/reverb-on-nativ)\n\n\\- Python: pip install reverb-tts\n\nModel: [https://huggingface.co/software-mansion/Reverb-TTS](https://huggingface.co/software-mansion/Reverb-TTS)\n\nGitHub: [https://github.com/software-mansion-labs/Reverb-TTS](https://github.com/software-mansion-labs/Reverb-TTS)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y13mj0/reverbtts_opensource_zeroshot_voice_cloning/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 135,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Reverb is a small text-to-speech model with zero-shot voice cloning. Give it 3 to 10 seconds of someone speaking plus the transcript, and it reads any text in that voice, with no fine-tuning.\n\n\\- 297M params. We pruned and distilled it from OmniVoice, then retrained it on 7 languages and ran a few rounds of DPO against a judge fitted to human preference rankings\n\n\\- Languages: English, German, Fre",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45499999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Qwen3.8-27B rank-96 LoRA 3",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Qwen3.8-27B rank-96 LoRA 3",
+        "seed_score": 115.5,
+        "summary": "Qwen3.8-27B super harness adapter for three agent harnesses (Hermes Agent, OpenCode, pi). Their weight updates turned out to be nearly orthogonal, so we stacked them into a single rank-96 LoRA. The merged adapter beats the base thinking model across harnesses and solves tasks with noticeably fewer tool calls.\n\n**Results (thinking on, xhigh), base \u2192 super-adapter**\n\n|Harness|SWE-Bench Pro (hard 51)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "Qwen3.8-27B \u201csuper adapter\u201d: one rank-96 LoRA that improves 3 agent harnesses at once (SWE-Bench Pro 55% \u2192 63% mean, up to 53\u201373% fewer tool calls)",
+            "body": "Qwen3.8-27B \u201csuper adapter\u201d: one rank-96 LoRA that improves 3 agent harnesses at once (SWE-Bench Pro 55% \u2192 63% mean, up to 53\u201373% fewer tool calls)\nQwen3.8-27B super harness adapter for three agent harnesses (Hermes Agent, OpenCode, pi). Their weight updates turned out to be nearly orthogonal, so we stacked them into a single rank-96 LoRA. The merged adapter beats the base thinking model across harnesses and solves tasks with noticeably fewer tool calls.\n\n**Results (thinking on, xhigh), base \u2192 super-adapter**\n\n|Harness|SWE-Bench Pro (hard 51)|Terminal-Bench 2.1|\n|:-|:-|:-|\n|Hermes Agent|45% \u2192 61%|\\+4 to +6 pts|\n|OpenCode|47% \u2192 67%|\\+4 to +6 pts|\n|pi|74% \u2192 74%|\\+4 to +6 pts|\n\nMean across all 6 harness/benchmark pairs:\u00a0**55.5% \u2192 63.5%**\n\nTo be upfront: pi on SWE-Bench Pro didn't move. The big gains come from Hermes Agent and OpenCode.\n\n**Efficiency**\u00a0(counting only tasks that both base and adapter solve):\n\n* 53\u201373% fewer tool calls with thinking off\n* 19\u201348% fewer tool calls with thinking on\n\n**How the merge works**\n\nThe three adapters' weight updates are almost orthogonal (cosine similarity \\~0.01). We concatenate them along the rank dimension at weight \u00bd each. That gives one rank-96 LoRA that applies all three updates exactly, with no lossy merging step (no TIES/DARE needed).\n\n**Train your own**\n\nThe main point of the blog post is that you can train a harness adapter for your own model, your own harness, and your own tasks. The full recipe, experiments, and open questions are all in there.\n\n* Model:\u00a0[https://huggingface.co/harness-hub/Qwen3.8-27B-super-adapter](https://huggingface.co/harness-hub/Qwen3.8-27B-super-adapter)\n* Blog post:\u00a0[https://huggingface.co/blog/harness-adapters-at-scale](https://huggingface.co/blog/harness-adapters-at-scale)\n\nHappy to answer questions!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y16sam/qwen3827b_super_adapter_one_rank96_lora_that/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 56,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Qwen3.8-27B super harness adapter for three agent harnesses (Hermes Agent, OpenCode, pi). Their weight updates turned out to be nearly orthogonal, so we stacked them into a single rank-96 LoRA. The merged adapter beats the base thinking model across harnesses and solves tasks with noticeably fewer tool calls.\n\n**Results (thinking on, xhigh), base \u2192 super-adapter**\n\n|Harness|SWE-Bench Pro (hard 51)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.309
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Day 15 RTS Neon Astra",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 22
+        }
+      },
+      "nomination": {
+        "name": "Day 15 RTS Neon Astra",
+        "seed_score": 39.0,
+        "summary": "Hey all, thanks for the comments on my last post!!\n\n  \nSince then I've been running agents against my benchmarking CLI that kicks off FULL gameplay matches against a frozen set of bot policies... each having a different difficulty tier (ala StarSkirmish) \n\n  \nTo my surprise, GPT-6.2 Sol is kicking ass against almost all models. In the simulation, agents have to do a BUNCH of highly complex reasoni",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Day 15 of making a proprietary RTS game for agents... Neon is beating old Astra",
+            "body": "Day 15 of making a proprietary RTS game for agents... Neon is beating old Astra\nHey all, thanks for the comments on my last post!!\n\n  \nSince then I've been running agents against my benchmarking CLI that kicks off FULL gameplay matches against a frozen set of bot policies... each having a different difficulty tier (ala StarSkirmish) \n\n  \nTo my surprise, GPT-6.2 Sol is kicking ass against almost all models. In the simulation, agents have to do a BUNCH of highly complex reasoning and decision making, like: \n\n1. Manage four planes of DIFFEREING strategic play style (complex policy writing) \n2. Manage a global pool of shared resources (scarcity) \n3. Decide on queueing units across multiple planes (attention) \n4. Defend, attack, micro, and write bot policies all at once\n5. Possibly work together with different agents that are different models (behavior diversity)\n6. Possibly work with a human (play well with a completely different cognitive architecture) \n\nGoing to continue to throw bots at this.. any models I should run this against? \n\nWhat's unique IMO is the world complexity... matches are symmetric so we can bet on the invariance of each bot behavior per version, so that part it (I think) rigorous. \n\nWould love thoughts and feedback!\n\n\n\nBenchmark [link ](https://agentcommand.gg/benchmarks/authored-policy/acbench-v0-2/2/)\n\nPrev (incomplete) [bench link](https://agentcommand.gg/benchmarks/authored-policy/acbench-v0-1/2/)\n\n[Watch live ](https://agentcommand.gg/?watch=live)\n\n[Github](https://github.com/agent-command)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y19arw/day_15_of_making_a_proprietary_rts_game_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey all, thanks for the comments on my last post!!\n\n  \nSince then I've been running agents against my benchmarking CLI that kicks off FULL gameplay matches against a frozen set of bot policies... each having a different difficulty tier (ala StarSkirmish) \n\n  \nTo my surprise, GPT-6.2 Sol is kicking ass against almost all models. In the simulation, agents have to do a BUNCH of highly complex reasoni",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.298
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Qwen 27b 8GB 200k 92.5 Top-1",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Qwen 27b 8GB 200k 92.5 Top-1",
+        "seed_score": 16.5,
+        "summary": "Happy Friday, y'all.\n\nI continued to get requests for quants + configs to support 8GB card users. It's taken over a month, but I do finally have a 2.1bpw quant (on card) of qwen3.8 27b that I consider *actually* usable. This is using the AmperInteger+ (trellis) quant format, which yields lower KLD than scalar quant formats, especially at this extremely compressed size.\n\nLike the models released fo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Qwen 27b on 8GB: 200k ctx, 92.5% Top-1 match, within 10% of BF16 on LCB, 17% higher benchmark than 9b",
+            "body": "Qwen 27b on 8GB: 200k ctx, 92.5% Top-1 match, within 10% of BF16 on LCB, 17% higher benchmark than 9b\nHappy Friday, y'all.\n\nI continued to get requests for quants + configs to support 8GB card users. It's taken over a month, but I do finally have a 2.1bpw quant (on card) of qwen3.8 27b that I consider *actually* usable. This is using the AmperInteger+ (trellis) quant format, which yields lower KLD than scalar quant formats, especially at this extremely compressed size.\n\nLike the models released for 10/12GB cards earlier this week, this is only possible given the use of Latent Sparse Attention, which pushes most of the context cost off VRAM without nuking speed, and SJKVaRN (protecting KV quality while still going down to 4 bits).\n\n**LlamAmpere is normally forward compatible with Ada/Lovelace (40xx/50xx) series, anyway, but I've specifically tested on 8GB cards for those generation this time**, given the current lack of options for running qwen 27b at that size. The project will obviously remain Ampere as the focus. So no need to FOMO if you're on a 5060 etc.\n\n**This model was not post trained specifically for coding, but its coding scores were still at the top of test cohort** (tied with Mellum, a coding-specific model). It actually was not meaningfully post-trained at all (<10M token heal on general text) to avoid the risk of overfitting. I probably left some performance on the table, and will continue to explore it, but if we're being honest, this is a dry run for Qwen4.\n\nThe data:\n\n![img](ravmwepqkt2i1 \"Mellum 2.1 was the only comparable model at coding (but has lower ctx available, and is not comparable on general tasks)\")\n\n[](https://cf.preview.redd.it/qwen-27b-on-8gb-200k-ctx-92-5-top-1-match-within-10-of-bf16-v0-iwzpa3j10t2i1.png?width=1025&format=png&auto=webp&s=25be92a9d9627cbe1b700f86d770b33cc970b213)\n\nMellum 2.1 was the only comparable model at coding (but has lower ctx available, and is not comparable on general tasks)\n\nAggressive quantization like this is prone to losing rare facts and looping, so those were a focus area (I wanted to release this last weekend, but hard to re-encode the last candidate for this reason). I tested this in hermes and pi code extensively; the loops were not 0, but were rare, and LlamAmpere has a loop halt mechanism for when they do occur. **LlamAmpere and this model also support the recently released HF Pi code adapter, which noticeably improved coding performance with this model** (the scores above were without the adapter). You can see the benchmark data [here](https://huggingface.co/datasets/jakeatx/livecodebench-v6-8gb-context-results)\ud83d\ude04 \n\n![img](9d8j0m5skt2i1 \"Your obligatory Pagoda demo; even medium reasoning was usable in pi\")\n\n[](https://cf.preview.redd.it/qwen-27b-on-8gb-200k-ctx-92-5-top-1-match-within-10-of-bf16-v0-ttt11qps1t2i1.png?width=1028&format=png&auto=webp&s=eb74fef6b91006db1e355e1264756753e51b160f)\n\nYour obligatory Pagoda demo; even medium reasoning was usable in pi\n\nThe top-1 is tied with the UD 2-S (v3.1) quant (which does have a 15% better KLD), but that model will not fit on an 8GB card. Top-1 was slightly better than the larger ISTA GSQ-RCO 2 XS quant, and statistically tied on KLD (again, this model won't run on 8GB).\n\nWithout LSA + SJKVaRN, you're typically stuck running IQ1\\_M, without MTP, to get to less context, with 59-73% worse KLD. So compared to the previous available options, this is a legitimate step change in capability for 8GB cards.\n\nhttps://i.redd.it/33sz5w1tkt2i1.png\n\n[](https://cf.preview.redd.it/qwen-27b-on-8gb-200k-ctx-92-5-top-1-match-within-10-of-bf16-v0-xuhy7kv8it2i1.png?width=1037&format=png&auto=webp&s=e5889edd0a98cb919132dcca4eb2acf875066fbb)\n\nWhat's the catch? Well, **you will need to run your card headless** (or with HDMI into mother board, not GPU) to have enough room. That extra 500+ MB is vital at this size. Error explodes as you drop below 3bpw, and can break the model below 2bpw, even with trellis formats (this quant uses a 1.75 bpw trellis format, operating right at the edge of workability). There's no room for things like vision towers without going to a larger card. And even with dynamic UB, you're usually capped at 512 for the first \\~20k tokens and then pushed down to 256 (so make sure you are using cached prompts on tools like hermes to reduce your startup time). I think these are pretty palatable trade-offs, given the performance gains vs 9b post trains and other models. I did like mellum for coding tasks, but its world knowledge and agentic capabilities were not comparable to 27b, even with this major quantization.\n\nMIT license, as usual.\n\nModel: [https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2-8GB](https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2-8GB)\n\ngithub: [https://github.com/JakeATX/llamAmpere](https://github.com/JakeATX/llamAmpere)\n\nEnjoy!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y1cm3m/qwen_27b_on_8gb_200k_ctx_925_top1_match_within_10/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Happy Friday, y'all.\n\nI continued to get requests for quants + configs to support 8GB card users. It's taken over a month, but I do finally have a 2.1bpw quant (on card) of qwen3.8 27b that I consider *actually* usable. This is using the AmperInteger+ (trellis) quant format, which yields lower KLD than scalar quant formats, especially at this extremely compressed size.\n\nLike the models released fo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.276
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Give LangGraph WhatsApp",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Give LangGraph WhatsApp",
+        "seed_score": 15.0,
+        "summary": "If you\u2019ve built an agent with LangGraph, this open-source starter lets people message it on WhatsApp and get replies in the same chat.\n\n**What it includes**\n\n* Link a WhatsApp account with one QR scan\n* Plug in your agent, or start with the one included (a standard LangGraph createAgent in one file)\n* Text, English voice notes and photos in; text and generated images out\n* A separate conversation",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R2",
+            "source": "reddit",
+            "title": "Give your LangGraph agent its own WhatsApp (open-source starter)",
+            "body": "Give your LangGraph agent its own WhatsApp (open-source starter)\nIf you\u2019ve built an agent with LangGraph, this open-source starter lets people message it on WhatsApp and get replies in the same chat.\n\n**What it includes**\n\n* Link a WhatsApp account with one QR scan\n* Plug in your agent, or start with the one included (a standard LangGraph createAgent in one file)\n* Text, English voice notes and photos in; text and generated images out\n* A separate conversation for each person, with memory\n* Sample replies, so you can test the setup before adding API keys\n\n**How to run it**\n\nClone the repo, start the services with Docker, scan the QR code, and message the agent from a second WhatsApp account.\n\nIt connects through WAHA, not Meta\u2019s official WhatsApp Business API.\n\n**Learn more**: [https://lg-whatsapp.vercel.app](https://lg-whatsapp.vercel.app)\n\n**Code**: [https://github.com/ahmad2b/langgraph-whatsapp](https://github.com/ahmad2b/langgraph-whatsapp)\n\nQuestions are welcome.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y17f5y/give_your_langgraph_agent_its_own_whatsapp/",
+            "container": "LangChain",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "If you\u2019ve built an agent with LangGraph, this open-source starter lets people message it on WhatsApp and get replies in the same chat.\n\n**What it includes**\n\n* Link a WhatsApp account with one QR scan\n* Plug in your agent, or start with the one included (a standard LangGraph createAgent in one file)\n* Text, English voice notes and photos in; text and generated images out\n* A separate conversation",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.274
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 10.6066,
+        "summary": "How do you debug a multi-step AI agent workflow when only the final result is wrong?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "How do you debug a multi-step AI agent workflow when only the final result is wrong?",
+            "body": "How do you debug a multi-step AI agent workflow when only the final result is wrong?",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y02nac/how_do_you_debug_a_multistep_ai_agent_workflow/",
+            "container": "LangChain",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "How do you debug a multi-step AI agent workflow when only the final result is wrong?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.16,
+            "freshness": 10,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.153
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "LangGraph",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "LangGraph",
+        "seed_score": 10.6066,
+        "summary": "Wire a checkpointer into a LangGraph agent and a lot of hard problems go away. You pass a `thread_id` in the config, and after each super-step the graph's state gets written somewhere durable, `MemorySaver` while you're developing and `PostgresSaver` once it's real. The thread can be stopped and picked up later. That's what human-in-the-loop is built on, and time-travel debugging, and an agent sur",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "Your LangGraph checkpointer is working. It still booked the seat twice.",
+            "body": "Your LangGraph checkpointer is working. It still booked the seat twice.\nWire a checkpointer into a LangGraph agent and a lot of hard problems go away. You pass a `thread_id` in the config, and after each super-step the graph's state gets written somewhere durable, `MemorySaver` while you're developing and `PostgresSaver` once it's real. The thread can be stopped and picked up later. That's what human-in-the-loop is built on, and time-travel debugging, and an agent surviving a pod restart. Resume a thread and the completed nodes are skipped, the pending one runs again, and the agent carries on from where it stopped.\n\nWhat a checkpointer does is useful, but there's a gap in what it actually protects you from.\n\n# The window\n\nThe checkpoint is written after the node returns. So for any node that does something irreversible, there's a stretch of time where the thing has happened and nothing durable knows it.\n\nTake a two-node booking agent. Node one reserves a seat in your own inventory, node two confirms that booking with the supplier. The pod gets rescheduled in the middle.\n\n    run 1\n      \u2502\n      \u251c\u2500 node \"reserve\"  \u2500\u2500\u2500\u25ba  seat held in your inventory, checkpoint written\n      \u2502\n      \u251c\u2500 node \"confirm\"\n      \u2502     \u2502\n      \u2502     \u2514\u2500 confirm_booking()  \u2500\u2500\u2500\u25ba  supplier API     seat is booked\n      \u2502\n      \u2573  process dies here\n      \u2502\n      \u2514\u2500 no checkpoint for \"confirm\" was ever written\n    \n    \n    run 2   resumes the same thread_id from cold\n      \u2502\n      \u251c\u2500 node \"reserve\"  \u2500\u2500\u2500\u25ba  skipped. its checkpoint exists.\n      \u2502\n      \u2514\u2500 node \"confirm\"  \u2500\u2500\u2500\u25ba  runs again, because nothing says it ran\n            \u2502\n            \u2514\u2500 confirm_booking()  \u2500\u2500\u2500\u25ba  supplier API     booked a second time\n\nRe-running node two is the only correct thing the checkpointer could do with what it knows. As far as the durable record goes, that node never happened. But it did happen. The confirmation left the process through a socket and the write that would have recorded it never ran. The supplier now holds two bookings for one passenger, and there's no header you can send that would have stopped it.\n\nA checkpointer records what your agent decided. It can't record what your agent did to the outside world, because it never saw it happen. Every checkpointer in every agent framework has this window. None of them sit in the call path of your HTTP client.\n\nWorth saying plainly: your own inventory is fine. Node one committed, so the resumed run skipped it and there's exactly one seat held. Nothing was lost or corrupted. If you read this as a bug report about LangGraph's checkpointer you'll reach for the wrong fix.\n\n# It isn't only restarts\n\nThe pod restart is the easy one to picture. It isn't the only shape.\n\n**Two workers arrive at the same job.** A `thread_id` is a storage key. It doesn't claim anything. Nothing stops two processes invoking the same thread at once, and that happens more than people expect: a retry that fires while the first attempt is still running, a queue that redelivers, two replicas picking up the same message. Five identical invocations of one thread at once and the supplier gets five bookings.\n\nAn advisory lock doesn't fix this, which surprises people. Mutual exclusion and idempotency get treated as the same property. A lock means one worker runs the node at a time. It says nothing about how many times the booking happens across all of them, and the measured answer there is also five.\n\n**The worker holding the job dies and doesn't come back.** Not a crash loop, where the pod restarts and retries. The process is gone: the node was killed, the container was evicted, the host went away. Whatever marked that work as in-progress is now held by something that no longer exists.\n\n**Several agents reach the same conclusion independently.** Five agents working one support ticket, each deciding a refund is owed. They aren't retrying each other, they reasoned separately, and the customer is owed one refund. Nothing in the thread model connects them, because they're five different threads.\n\n# What people already do about it\n\nIf the API provider supports an idempotency key, use that. Stripe has one. If it doesn't and it's an internal API you own, add one. The receiver dedupes on its own side, which beats anything the caller can do about it.\n\nIt buys less than it sounds, because nobody hands you the key. Stripe dedupes a retry only if the retry presents the same key, and your agent has to produce that key twice across a process that died in between. Generate it inside the node and the resumed run generates a different one. Derive it from the model's arguments and two agents that reasoned differently derive two keys, which is a measured result rather than a worry: in a harness where two agents each decided a refund was owed and disagreed on the amount, putting the amount in the key let both of them through. Stripe's keys also expire, at least 24 hours in v1, which covers a retry loop and not a thread somebody resumes on Tuesday.\n\nThe key has to come from somewhere durable, be the same across replicas, and outlive the process. That's the actual work, and you do it whether the receiver dedupes or you do.\n\nWhat's left is the calls with no such header, which for an agent is most of them. A partner endpoint, a Slack message, an internal service another team owns, a tool someone wrote last quarter.\n\nFor those the usual answer is a claims table, the Stripe-style idempotency key written by hand. Insert a row keyed on the operation before you do the work. A second caller's insert conflicts, so it knows someone else owns the operation and waits for their answer, and you store the response against the key when you're done. It's a good answer, it's what teams actually write, and it handles both the restart and the concurrent workers.\n\nIt's the dead holder that breaks it. The row says in-progress and it's held by a process that no longer exists, so nobody else can finish the operation without a human clearing it. The usual next move is a TTL on the claim, and the instinct is right, but a TTL whose expiry is the only thing authorising takeover can't tell a dead holder from a slow one. It takes over from both. From the dead one that's correct. From the paused one you get two workers who each believe they own the operation.\n\nMaking it safe takes a heartbeat, so the holder can say it's still alive, and a fencing token, so a superseded holder's late write gets refused instead of applied. At which point you've written a lease, and you own it.\n\nThis is also where the workflow engines sit, and it's worth being clear that they don't remove the problem. Temporal makes the orchestration durable: the workflow survives, the step re-runs on replay, and you get timers and retries and history for free. Its own documentation says activities execute at least once and that you should make them idempotent, because an activity can run more than once and can partially complete more than once. Run Temporal and you still write something like the claims table inside your activity, since an activity retry is exactly the thing that books the seat twice.\n\nNeither approach solves the case where multiple agents independently decide to perform the same operation. Five agents on five threads derive five different keys, so every guard sees a different operation and lets it through. Catching it means deriving the key from the ticket rather than from the thread, which is a decision you have to make on purpose whatever you're using.\n\n# Which is roughly what I've been building\n\nCellaflow is an engine that holds those leases, and I should say up front that it's mine, so weigh the rest accordingly. A tool call takes a lease before it runs. If a later call derives the same key, it's answered from the record of the first attempt instead of executing. If the holder dies, the lease expires and the work gets reclaimed by whoever takes it, which is the case a claims table can't reach.\n\nFor LangGraph the integration is two things: a decorator on the tool you can't take back, and a context manager around `invoke`.\n\n    from cellaflow import durable_tools\n    from cellaflow import tool as leased\n\nThe tool that hands the parcel to the courier gets leased:\n\n    @langchain_tool\n    @leased(tool_name=\"dispatch_order\")\n    def dispatch_order(order_id: str, courier: str) -> str:\n        \"\"\"Hands `order_id` to `courier` for delivery. Cannot be recalled.\"\"\"\n        DISPATCHES.append(order_id)\n        return f\"dispatched {order_id} with {courier}\"\n\nRead it bottom-up. Cellaflow leases the call, then LangChain builds the model's tool schema from the signature and the docstring. The decorator wraps with `functools.wraps`, so the signature, annotations and docstring survive it and the schema LangChain generates is the one you wrote.\n\nThe agent's other tool isn't leased, because repeating a read costs nothing and a lease on it would buy nothing:\n\n    @langchain_tool\n    def lookup_order(order_id: str) -> str:\n        \"\"\"Returns the customer, item count, and status of an order.\"\"\"\n\nThen the run:\n\n    config = {\"configurable\": {\"thread_id\": f\"dispatch-{uuid.uuid4().hex[:8]}\"}}\n    \n    with durable_tools(config, target=ENGINE):\n        result = app.invoke(\n            {\"messages\": [(\"user\", f\"Dispatch order {ORDER_ID} to the courier.\")]},\n            config,\n        )\n\n`durable_tools` reads `configurable.thread_id` out of the config you're already passing to `invoke` and derives a tool session from it, so the same thread always reaches the same leases. That's what survives the restart. The resumed run derives the same key, and the leased call is answered from the record of the first attempt instead of executing again.\n\nLangGraph needs nothing further because it copies the calling context into the executor it runs a node on, so a tool invoked from the `tools` node reaches the session opened around `invoke`. Other frameworks vary. AutoGen doesn't propagate it at all, and there the session has to be bound inside the tool.\n\n# Does it hold up\n\nThere's a runnable version of that two-node agent in the repo. Hold a seat, confirm the booking with the supplier, kill the process between the confirmation and the checkpoint. Two arms, the same graph, the same `PostgresSaver`, the same crash at the same instant, and the only variable is whether the tool call holds a lease.\n\n|label|seats held|confirmations|\n|:-|:-|:-|\n|`PostgresSaver` alone|1|2|\n|the same graph, leased tool call|1|1|\n\nThe left column is the control, and it's what makes the right one mean anything. One seat held in both arms, because node one committed before the crash and the resumed run skipped it. The lease isn't fixing the checkpointer. It's covering the node that was still mid-call when the process died.\n\n    docker run -d --name cellaflow -p 50051:50051 \\\n      -e CELLAFLOW_ALLOW_UNAUTHENTICATED=true ghcr.io/cellaflow/cellaflow:latest\n    \n    git clone https://github.com/cellaflow/cellaflow-sdks\n    cd cellaflow-sdks/examples/at_most_once_proof\n    \n    docker compose up -d\n    pip install -r requirements.txt\n    python proof.py\n\n`run_arm()` takes the two tool functions and a context manager; one arm passes something that does nothing, the other passes `durable_tools`. The graph, the crash, the resume and the checkpointer are shared, so there's nowhere for a thumb to rest on the scale. Both arms assert their own number and the script exits non-zero if either stops behaving. A proof that cannot fail is not a proof.\n\nThe counters live inside the tool bodies, so they count executions and never cache hits. If the lease works the body is never entered and nothing is appended, which means a suppressed call can't be counted as a success.\n\nSome things it doesn't measure. There's no throughput or latency in it and no comparison of storage engines; it's a correctness demonstration, and a deterministic one, in that the confirmation either repeated or it didn't on any hardware. It runs one writer, one thread, one crash, so the concurrent scenarios above come from a separate harness. It kills a process rather than cutting power to the host. The engine is available in RocksDB and Postgresql variants.\n\n# One thing I'd like to know\n\nIf you've built the claims-table version, and most people with this problem have, I'd like to hear how it went. Specifically whether a dead holder ever cost you anything, or whether it just never came up.\n\n  \nI'll be in the comments answering any questions or thoughts. My DMs are also open.\n\nLive demo: [https://cellaflow.com/#live-demo](https://cellaflow.com/#live-demo)\n\nGithub: [https://github.com/cellaflow/cellaflow-sdks](https://github.com/cellaflow/cellaflow-sdks)",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y0bt5s/your_langgraph_checkpointer_is_working_it_still/",
+            "container": "LangChain",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Wire a checkpointer into a LangGraph agent and a lot of hard problems go away. You pass a `thread_id` in the config, and after each super-step the graph's state gets written somewhere durable, `MemorySaver` while you're developing and `PostgresSaver` once it's real. The thread can be stopped and picked up later. That's what human-in-the-loop is built on, and time-travel debugging, and an agent sur",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 10,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Looking",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Looking",
+        "seed_score": 10.5,
+        "summary": "Hi all! I built an automated LLM evaluation harness in Python for customer support bots and RAG pipelines. It uses a two-pass generation workflow (Pass 1 creates test scenarios/rubrics; Pass 2 defines inclusion/exclusion rules) and an LLM Judge to grade responses automatically.\n\nI'm looking to test the harness against real, live customer support chatbot endpoints instead of synthetic sandboxes. If",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Looking to Validate Chatbot/RAG Agent Automated Test Harness",
+            "body": "Looking to Validate Chatbot/RAG Agent Automated Test Harness\nHi all! I built an automated LLM evaluation harness in Python for customer support bots and RAG pipelines. It uses a two-pass generation workflow (Pass 1 creates test scenarios/rubrics; Pass 2 defines inclusion/exclusion rules) and an LLM Judge to grade responses automatically.\n\nI'm looking to test the harness against real, live customer support chatbot endpoints instead of synthetic sandboxes. If you have an AI bot or RAG endpoint and want a free diagnostic audit on hallucination bounds, prompt injections, and edge-case behavior, drop a comment or DM me your endpoint/API details.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y0rp4c/looking_to_validate_chatbotrag_agent_automated/",
+            "container": "LangChain",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi all! I built an automated LLM evaluation harness in Python for customer support bots and RAG pipelines. It uses a two-pass generation workflow (Pass 1 creates test scenarios/rubrics; Pass 2 defines inclusion/exclusion rules) and an LLM Judge to grade responses automatically.\n\nI'm looking to test the harness against real, live customer support chatbot endpoints instead of synthetic sandboxes. If",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "SenseNova 9B update for NInfer-4080",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "SenseNova 9B update for NInfer-4080",
+        "seed_score": 10.5,
+        "summary": "While waiting for Qwen4 like the rest of us I got intrigued by the release of SenseNova Loop 9B promising us performance roughly en par with Qwen 3.8 27B but with 256k context. I ended up adding support for it in my ninfer port for 4080 (and other 4xxx GPUs with 16GB of VRAM).\n\nI released a new version for it: [https://github.com/roofkid/ninfer-4080](https://github.com/roofkid/ninfer-4080)\n\nIf you",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "SenseNova 9B update for NInfer-4080",
+            "body": "SenseNova 9B update for NInfer-4080\nWhile waiting for Qwen4 like the rest of us I got intrigued by the release of SenseNova Loop 9B promising us performance roughly en par with Qwen 3.8 27B but with 256k context. I ended up adding support for it in my ninfer port for 4080 (and other 4xxx GPUs with 16GB of VRAM).\n\nI released a new version for it: [https://github.com/roofkid/ninfer-4080](https://github.com/roofkid/ninfer-4080)\n\nIf you check out the repo you can just use the convenience scripts if you have Docker available.\n\nscripts/run-ninfer-4080-dflash2.bat (or sh) is still available for the old artifact of Qwen 3.8 27B with the GSQ3 version from ISTA-DASLab with 100k context and text only, less context with vision\n\nscripts/run-sensenova-loop-9b.bat (or sh) is new and will allow you to use SenseNova Loop 9B release version at 256k context with vision\n\nThe scripts download the prebuilt Docker images of the runtime, downloading the correct ninfer artifact and start the runtime, so you do not need to worry about compiling, libraries or anything else. The only prerequisite is Docker.\n\nI based the artifact off of the AWQ version as it gave me higher quality in benchmarks (MBPP in my case) then quantizing with existing quant recipes of ninfer from BF16.\n\nEnjoy a lot more context for us lower VRAM folks while we all wait for Qwen4 27B. Happy weekend everyone.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y1egz9/sensenova_9b_update_for_ninfer4080/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "While waiting for Qwen4 like the rest of us I got intrigued by the release of SenseNova Loop 9B promising us performance roughly en par with Qwen 3.8 27B but with 256k context. I ended up adding support for it in my ninfer port for 4080 (and other 4xxx GPUs with 16GB of VRAM).\n\nI released a new version for it: [https://github.com/roofkid/ninfer-4080](https://github.com/roofkid/ninfer-4080)\n\nIf you",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Past 40 AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Past 40 AI",
+        "seed_score": 9.0,
+        "summary": "I kept adding tools and MCP servers to my coding setup and hit a problem I didn't expect. Context wasn't the issue. The agent started choosing the wrong tool.\n\n\n\nThere was no error. It would call a similar \"search\" tool, get a plausible answer and move on. That's what makes it easy to miss.\n\n\n\nI asked around, and here's what worked for people using Cursor, Claude Code, Codex and custom agents:",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Past ~40 tools, my AI coding agent started picking the wrong one. It didn't fail, it just looked right. Here's what fixed it",
+            "body": "Past ~40 tools, my AI coding agent started picking the wrong one. It didn't fail, it just looked right. Here's what fixed it\nI kept adding tools and MCP servers to my coding setup and hit a problem I didn't expect. Context wasn't the issue. The agent started choosing the wrong tool.\n\n\n\nThere was no error. It would call a similar \"search\" tool, get a plausible answer and move on. That's what makes it easy to miss.\n\n\n\nI asked around, and here's what worked for people using Cursor, Claude Code, Codex and custom agents:\n\n\n\n1. The limit is about choosing, not context size\n\nProblems showed up around 40-50 tools, long before the context window was full. When two tools sound alike, the pick is close to a coin flip.\n\n\n\n2. Say when to use each tool\n\nNot two tools that both say \"search\", but \"search code in this repo\" vs \"search the public docs\".\n\n\n\n3. Flag tools that write\n\nIf the model thinks a tool is read-only, it calls it freely. Never let a short description hide a write.\n\n\n\n4. Load details only when needed\n\nKeep a short summary in context and load the full schema only when a task needs it.\n\n\n\n5. Use a search\\_tools + call\\_tool pair\n\nOne tool finds the right tools, another runs them. Someone said this keeps idle context under \\~1k tokens whether there are 30 tools or 300.\n\n\n\n6. Run the same task twice\n\nIf it picks different tools each time, your descriptions overlap.\n\n\n\nMy question:\n\n\n\nWhen you have similar tools, do you merge them into one tool with a parameter, or keep them separate with very specific descriptions? Merging seems cleaner, but I wonder if it just moves the confusion into the arguments.\n\n\n\nAnd how many tools do you keep enabled day to day? Is anyone running 100+ without issues?",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y10qd0/past_40_tools_my_ai_coding_agent_started_picking/",
+            "container": "LangChain",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.14,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I kept adding tools and MCP servers to my coding setup and hit a problem I didn't expect. Context wasn't the issue. The agent started choosing the wrong tool.\n\n\n\nThere was no error. It would call a similar \"search\" tool, get a plausible answer and move on. That's what makes it easy to miss.\n\n\n\nI asked around, and here's what worked for people using Cursor, Claude Code, Codex and custom agents:",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.391
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Anecdotal Astra GLM 5.3",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Anecdotal Astra GLM 5.3",
+        "seed_score": 7.5,
+        "summary": "Given that it seems to be a slow week here on localllama, I thought I would pass some time sharing an anecdote from the front lines of local llm use.   \n  \nThis compares Chat GPT's default browser harness with GLM using openwebui (v0.10.2) to do a web search to answer a query involving historical analysis and analytical reasoning about AI, democracy, and labor power. The query was: \n\n\"Consider thi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Anecdotal comparison of Astra and GLM 5.3 on a research prompt",
+            "body": "Anecdotal comparison of Astra and GLM 5.3 on a research prompt\nGiven that it seems to be a slow week here on localllama, I thought I would pass some time sharing an anecdote from the front lines of local llm use.   \n  \nThis compares Chat GPT's default browser harness with GLM using openwebui (v0.10.2) to do a web search to answer a query involving historical analysis and analytical reasoning about AI, democracy, and labor power. The query was: \n\n\"Consider this essay and the first paragraph. Consider if there is rational or empirical support for the notion that democracy relies on the existence of labor power. \\[Essay excerpt removed\\]\"\n\nThe essay excerpt in question is the \"Vision 1: Kemalist AI\" section of this larger essay: [https://www.astralcodexten.com/p/against-against-handover](https://www.astralcodexten.com/p/against-against-handover)\n\nGLM 5.3 (mac m3u) and openwebui took about 27 minutes to produce its response. Chat GPT took about 7 minutes. Given that GLM 5.3 only does about 12-15 t/s and Astra is reported to do about 40, I would guess that both models used a roughly similar amount of tokens.\n\nOverall, I rate Astra's response as having found better more relevant historical examples, but GLM as also having found good sources, and having found better high level theoretical sources and ideas. ChatGPT mostly ignored the \"rational support\" component and very early on decided the best approach was to find examples of where withholding of labor defended democracy. A more interesting comparison would be use the API version of Astra, removing openai's system prompt slop that no doubt is not helping it do research.\n\nHere is Astra's reply: [https://chatgpt.com/share/6b00602e-9df0-83ea-a4dd-b9864a8905b4](https://chatgpt.com/share/6b00602e-9df0-83ea-a4dd-b9864a8905b4)\n\nBelow is GLM 5.3 (4 bit dynamic quant) reply: \n\n# Yes \u2014 the claim has both rational and empirical support, though it's a simplification\n\nThe first paragraph of Scott Alexander's \"Kemalist AI\" vision\u00a0Against Against... Alexander\u00a0asserts a specific mechanism: rulers can't be openly tyrannical because they depend on labor buy-in to keep the economy running, and laborers will withdraw that buy-in if democracy is violated. This claim sits on a well-established foundation in political science, and there is real evidence for it \u2014 along with some important qualifications.\n\n# Rational/theoretical support\n\nThe mechanism is essentially the \"de facto political power\" argument from Acemoglu and Robinson's\u00a0*Economic Origins of Dictatorship and Democracy*: autocratic elites extend the franchise or accept democratic constraints precisely when citizens can credibly threaten revolution or mass disorder, and elites democratize only when that threat crosses a threshold while repression is too costly\u00a0\\&lt;!\\[CDATA\\[AI ...ings\\]\\]\\&gt;. Scott's \"labor buy-in\" is a specific version of this \u2014 the threat of economic disruption by workers.\n\nA second rational route is the taxation\u2013accountability argument: governments that depend on extracting revenue from their citizens' productive labor must bargain with them. Ross's rentier-state theory formalizes the inverse \u2014 states funded by oil rents rather than taxation can buy off or ignore their citizens, using low taxes and patronage to avoid accountability, which is why resource-dependent states tend to be more authoritarian\u00a0\\&#39;Handoveris...rt 1 of 3). This is exactly the essay's logic run in reverse: no dependence on labor \u2192 no need for labor's consent \u2192 less democracy.\n\n# Empirical support\n\n* **The Great Reform Act of 1832.**\u00a0Aidt and Franck's Econometrica study geo-referenced the Swing riots near English constituencies and found that MPs facing more violent unrest in their districts were significantly more likely to vote for expanding the franchise \u2014 direct evidence that democratization was driven by the elite's fear of mass unrest\u00a0Against Against... Alexander.\n* **Soviet miners and the 1991 coup.**\u00a0The 1989\u201391 Soviet miners' strikes (Kuzbass, Vorkuta, Donbass) gravely weakened the regime's economic and political control, and during the August 1991 coup attempt, the workers' strike threats and Yeltsin's appeal to the Kuzbass miners were part of the mass resistance that broke the hardliners \u2014 a case where labor's capacity to halt the economy defended a move toward democratic rule\u00a0AI Article Readings.\n* **Political effects of labor displacement.**\u00a0Frey, Berger and Chen found that exposure to industrial robots and automation predicted support for Trump in the 2016 election, presenting some of the first hard evidence that technological displacement of labor feeds political instability and populist backlash\u00a0Democratization... Economics. This suggests labor's economic position does causally shape democratic political outcomes.\n* **Democracy's material base.**\u00a0Przeworski et al. find that democracies are far more likely to survive in wealthy societies\u00a0Democratization...ne Library\u00a0\u2014 consistent with the idea that democracy rests on some material bargaining relationship, though this evidence points to general income rather than labor leverage specifically.\n\n# Complications and counterevidence\n\n* **Labor power is not always democratic.**\u00a0In Egypt in 2013, the independent labor movement that flourished after Mubarak's fall enthusiastically supported the Tamarod campaign against the elected president Morsi, and mass mobilization culminated in a military coup\u00a0Democratization... Great .... Labor unrest can topple elected leaders as easily as tyrants \u2014 the mechanism deters\u00a0*blatant*\u00a0rule-breaking, not necessarily in a pro-democracy direction.\n* **Labor power isn't decisive on its own.**\u00a0The Great Depression produced mass unemployment (removing labor's leverage) in both Weimar Germany and the United States, yet Weimar collapsed into Nazism while American democracy emerged strengthened \u2014 economic devastation of labor was not sufficient to kill democracy, and other factors determined the outcome\u00a0EVIDENCE FROM T...CT OF 1832.\n* **The causal variable may be coercion costs, not labor per se.**\u00a0Przeworski's wealth finding suggests democracy's survival may hinge on development and distribution rather than on labor's strike capacity\u00a0Democratization...ne Library. Note also that Scott himself hedges: his second reason is soldier buy-in, and his core claim is that laborers and soldiers\u00a0*believe in*\u00a0democratic rule\u00a0Against Against... Alexander\u00a0\u2014 i.e., the safeguard is really the human monopoly on force and production, of which labor is one half.\n\n# Verdict\n\nThere is genuine rational and empirical support for the first paragraph's premise: the threat-of-revolution literature\u00a0\\&lt;!\\[CDATA\\[AI ...ings\\]\\]\\&gt;, the 1832 Reform Act evidence\u00a0Against Against... Alexander, rentier-state oil findings\u00a0\\&#39;Handoveris...rt 1 of 3), the Soviet strike history\u00a0AI Article Readings, and automation-backlash studies\u00a0Democratization... Economics\u00a0all converge on the conclusion that democratic restraint on elites depends materially on elites needing the cooperation of workers and soldiers. The claim is a defensible simplification rather than a rigorous law \u2014 labor power is neither sufficient (Egypt, Weimar) nor conceptually independent of soldier loyalty \u2014 but as a summary of why would-be tyrants \"can't get away with it,\" it is far better supported than most claims of its kind. That makes the essay's core worry credible: if AI removes both the economic dependence on labor and the dependence on human soldiers, it removes the two levers on which that empirical support rests.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y15z7i/anecdotal_comparison_of_astra_and_glm_53_on_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Given that it seems to be a slow week here on localllama, I thought I would pass some time sharing an anecdote from the front lines of local llm use.   \n  \nThis compares Chat GPT's default browser harness with GLM using openwebui (v0.10.2) to do a web search to answer a query involving historical analysis and analytical reasoning about AI, democracy, and labor power. The query was: \n\n\"Consider thi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 8,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "516 multi-agent LLM 4.2 74",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "516 multi-agent LLM 4.2 74",
+        "seed_score": 6.364,
+        "summary": "A meta-analysis of 516 multi-agent LLM configurations: once the single agent gets the same samples or compute, multi-agent systems average 4.2 points worse and tie or lose in 74% of comparisons",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R15",
+            "source": "reddit",
+            "title": "A meta-analysis of 516 multi-agent LLM configurations: once the single agent gets the same samples or compute, multi-agent systems average 4.2 points worse and tie or lose in 74% of comparisons",
+            "body": "A meta-analysis of 516 multi-agent LLM configurations: once the single agent gets the same samples or compute, multi-agent systems average 4.2 points worse and tie or lose in 74% of comparisons",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y02rxq/a_metaanalysis_of_516_multiagent_llm/",
+            "container": "LangChain",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A meta-analysis of 516 multi-agent LLM configurations: once the single agent gets the same samples or compute, multi-agent systems average 4.2 points worse and tie or lose in 74% of comparisons",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.05
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Looking Suggestion Expert/OGs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Looking Suggestion Expert/OGs",
+        "seed_score": 6.364,
+        "summary": "Fellow Redditors,  \n  \nHow is everyone using multiple coding agents on the same project without stale context or conflicting changes?\n\nI use the Codex app, OpenCode CLI and Antigravity IDE. Would appreciate a better setup if exists or is preferred.  \n  \nIdeally, I would like to assign five separate issues and have all agents work on them in parallel without overwriting each other\u2019s changes or maki",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "\ud83d\ude4f  Looking for Suggestion - From the Expert/OGs of the fields.",
+            "body": "\ud83d\ude4f  Looking for Suggestion - From the Expert/OGs of the fields.\nFellow Redditors,  \n  \nHow is everyone using multiple coding agents on the same project without stale context or conflicting changes?\n\nI use the Codex app, OpenCode CLI and Antigravity IDE. Would appreciate a better setup if exists or is preferred.  \n  \nIdeally, I would like to assign five separate issues and have all agents work on them in parallel without overwriting each other\u2019s changes or making incompatible decisions.\n\nTwo things I\u2019m struggling with:\n\n* **Keeping context current:** How do you automatically update [`AGENTS.md`](http://AGENTS.md) or other project notes after meaningful changes? Are you using hooks, memory tools or another approach?\n* **Coordinating parallel work:** Do you use separate Git worktrees, a coordinator agent, task ownership or something else? How to work with multiple agents at the same time\n\nI\u2019m especially interested in setups that work across different tools and models.   \n  \nWould love to hear your actual workflow, including what went wrong and what you simplified.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y01emf/looking_for_suggestion_from_the_expertogs_of_the/",
+            "container": "LangChain",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Fellow Redditors,  \n  \nHow is everyone using multiple coding agents on the same project without stale context or conflicting changes?\n\nI use the Codex app, OpenCode CLI and Antigravity IDE. Would appreciate a better setup if exists or is preferred.  \n  \nIdeally, I would like to assign five separate issues and have all agents work on them in parallel without overwriting each other\u2019s changes or maki",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.07
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Anecdotally",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Anecdotally",
+        "seed_score": 6.0,
+        "summary": "I've been building a self-hosted ai workspace to see if i could run the full gpt-style stack \u2014 chat, research with cited sources, coding, agents without a subscription and without glue-coding every provider by hand. still i am not sure determine how i can bring it to ollama sort of freedom and **Everyone benchmarks quants on chat quality what holds up for multi-step tool-calling loops? Anecdotally",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "I tried to replicate sort of gpt suite experience without straining the local hardware much",
+            "body": "I tried to replicate sort of gpt suite experience without straining the local hardware much\nI've been building a self-hosted ai workspace to see if i could run the full gpt-style stack \u2014 chat, research with cited sources, coding, agents without a subscription and without glue-coding every provider by hand. still i am not sure determine how i can bring it to ollama sort of freedom and **Everyone benchmarks quants on chat quality what holds up for multi-step tool-calling loops? Anecdotally qwen3 8B degrades in agentic use faster than in chat as quant drops. Q4\\_K\\_M vs Q5/Q6 on 24GB unified memory what's holding up for you in long tool chains?**\n\nalso though the problem was every provider api is its own dialect different auth headers, different model-list endpoints, different rate-limit behavior and the local side needs the vram to fit weights. qwen3 8b runs fine on my 24gb m4 air, 14b cooked it, while the free tiers (nvidia nim, openrouter, groq) mostly serve exactly those open models i can't host.\n\nso ENZO normalizes any openai-compatible source into one health-checked catalog: free-tier providers sit next to your own local runtime. v1.7.0 added\u00a0`CUSTOM_API_BASE_URL`, so ollama, lm studio, vllm or llama.cpp show up as first-class providers in the same list \u2014 no vendor-specific code paths, no bundled endpoints, keys sealed in the browser (aes-256-gcm), and local runtimes usually need no key at all.\n\ntested on my own m4 air 24gb with qwen3 8b through the ollama lane. tool-calling quality depends on your runtime's openai-compat layer, and i haven't pushed the research pipeline hard on small models yet. \n\nrepo:\u00a0[https://github.com/theguysudo/ENZO](https://github.com/theguysudo/ENZO)\u00a0\u2014 v1.7.0 notes are inside",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y1bcpm/i_tried_to_replicate_sort_of_gpt_suite_experience/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been building a self-hosted ai workspace to see if i could run the full gpt-style stack \u2014 chat, research with cited sources, coding, agents without a subscription and without glue-coding every provider by hand. still i am not sure determine how i can bring it to ollama sort of freedom and **Everyone benchmarks quants on chat quality what holds up for multi-step tool-calling loops? Anecdotally",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 17,
+            "source_quality": 0.6,
+            "local_rank_score": 0.398
+          }
+        ]
+      }
+    }
+  ]
+}

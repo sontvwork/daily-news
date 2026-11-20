@@ -1,0 +1,799 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "5bc2c9c3fea03bf0",
+  "generated_at": "2026-11-20T23:56:15.776311Z",
+  "from_date": "2026-11-19",
+  "to_date": "2026-11-20",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-20T23:56:15.725833Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-20T23:56:15.725840Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 48,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-20T23:56:15.725142Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-20T23:56:15.725718Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "thinkingmachines/Inkling-2-Mini MoE 26b a3B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 182
+        }
+      },
+      "nomination": {
+        "name": "thinkingmachines/Inkling-2-Mini MoE 26b a3B",
+        "seed_score": 1225.5,
+        "summary": "\"Inkling 2 Mini is a general-purpose multimodal model that accepts text and image inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation syste",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "thinkingmachines/Inkling-2-Mini (MoE: 26b, a3B)",
+            "body": "thinkingmachines/Inkling-2-Mini (MoE: 26b, a3B)\n\"Inkling 2 Mini is a general-purpose multimodal model that accepts text and image inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and visual tasks. It is released with open weights to support research, fine-tuning and integration into third-party products by downstream developers.\"\n\n\"Architecture type\n\nA 24-layer decoder-only transformer with sparse Mixture-of-Experts (MoE) feed-forward layers. The middle 12 layers run three times with shared weights, giving 48 layer applications per token from 24 layers of weights. In each layer, each token is routed to 8 of 128 experts. Attention is a hybrid of local and global layers. The model is natively multimodal \u2013 images are encoded via a vision transformer \u2013 with image and text inputs projected into a shared hidden space and processed jointly by the decoder.\n\n# [](https://huggingface.co/thinkingmachines/Inkling-2-Mini#parameters)Parameters\n\n26.2B, 3.4B active\n\nNote: each extra pass through the looped layers adds about 1.0B effective active parameters. Since the model runs with three passes, there are 5.4B effective active parameters per token.\"",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y1diuk/thinkingmachinesinkling2mini_moe_26b_a3b/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 635,
+              "num_comments": 182
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\"Inkling 2 Mini is a general-purpose multimodal model that accepts text and image inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation syste",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.43,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude solves",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 270,
+          "points": 551
+        }
+      },
+      "nomination": {
+        "name": "Claude solves",
+        "seed_score": 870.802,
+        "summary": "Claude solves two open problems in the physics of black holes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50563148",
+            "source": "hackernews",
+            "title": "Claude solves two open problems in the physics of black holes",
+            "body": "Claude solves two open problems in the physics of black holes",
+            "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+            "author": "cybermango",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 551,
+              "comments": 270
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Claude solves two open problems in the physics of black hole",
+            "snippet": "Claude solves two open problems in the physics of black holes",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50563148",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "If you stop writing code you",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 157,
+          "points": 319
+        }
+      },
+      "nomination": {
+        "name": "If you stop writing code you",
+        "seed_score": 714.0,
+        "summary": "If you stop writing code, you also get worse at reviewing it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50573886",
+            "source": "hackernews",
+            "title": "If you stop writing code, you also get worse at reviewing it",
+            "body": "If you stop writing code, you also get worse at reviewing it",
+            "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 319,
+              "comments": 157
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about If you stop writing code, you also get worse at reviewing it",
+            "snippet": "If you stop writing code, you also get worse at reviewing it",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50573886",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.8,
+            "local_rank_score": 0.343
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "DreamCoder Coding IDE Mastering Emacs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 9,
+          "points": 67
+        }
+      },
+      "nomination": {
+        "name": "DreamCoder Coding IDE Mastering Emacs",
+        "seed_score": 114.0,
+        "summary": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50581110",
+            "source": "hackernews",
+            "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "body": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+            "author": "facundo_olano",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 67,
+              "comments": 9
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about DreamCoder: Coding harness and IDE from the author of Master",
+            "snippet": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50581110",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.277
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Cancelled Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 47
+        }
+      },
+      "nomination": {
+        "name": "Cancelled Codex",
+        "seed_score": 63.6396,
+        "summary": "When GPT 6.2 came out. I was very impressed by how token efficient it was. I used it all day running 5-6 agents continuously and it used up 15% of my weekly limit of the Pro 500 plan. Which is very impressive for about 20 hours of running 5+ agents.\n\nI've been orchestrating those agents with Fable 5.2 And I checked the trace today, turns out they screwed up every single time and Fable had to give",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "I just Cancelled Codex",
+            "body": "I just Cancelled Codex\nWhen GPT 6.2 came out. I was very impressed by how token efficient it was. I used it all day running 5-6 agents continuously and it used up 15% of my weekly limit of the Pro 500 plan. Which is very impressive for about 20 hours of running 5+ agents.\n\nI've been orchestrating those agents with Fable 5.2 And I checked the trace today, turns out they screwed up every single time and Fable had to give further instructions for 5-10 times each run for something Fable could've fixed in 1-2 shots itself.\n\nPlus one thing I really liked about my Codex Subscription was the Pro chat mode. Which somehow still uses Astra-6 not 6.2.\n\nI honestly don't understand how they can claim those benchmarks while it misunderstands everything even with Fable Orchestrating it and providing the clearest instructions.\n\nToday I tried using Fable 5.2 and Gemini Neon only and all the issues I had yesterday that a team of Sol + Astra agents couldn't fix (and made it worse because I had to go back a few commits and restart because they really diverged from the task) is now fixed within 2-3 hours this morning.\n\nI'm very disappointed. I've been wondering why they delayed the launch for so long, I guess we have an answer. Because OpenAI didn't want to admit they cannot release frontier models anymore. o1, o3, and Astra-6 were so good for their time that I couldn't justify fully cancelling codex to myself ever. But here we are. They can keep their actually good internal models to themselves.\n\nCongrats to Anthropic on their IPO $1.5T, Mega assists by OpenAI",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y0dy1a/i_just_cancelled_codex/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 47
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "When GPT 6.2 came out. I was very impressed by how token efficient it was. I used it all day running 5-6 agents continuously and it used up 15% of my weekly limit of the Pro 500 plan. Which is very impressive for about 20 hours of running 5+ agents.\n\nI've been orchestrating those agents with Fable 5.2 And I checked the trace today, turns out they screwed up every single time and Fable had to give",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11950000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Regenerative software approach",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Regenerative software approach",
+        "seed_score": 36.0624,
+        "summary": "I came across \\[this blog\\]([https://turri.dev/blog/why-i-built-turri/](https://turri.dev/blog/why-i-built-turri/)) where the author explains how they lost the knowledge of their own software while using coding agents. Their answer was apparently regenerative software, where the idea is to keep the intent as the source of truth so the code can always be regenerated. I'm a bit sceptical about how t",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Regenerative software approach",
+            "body": "Regenerative software approach\nI came across \\[this blog\\]([https://turri.dev/blog/why-i-built-turri/](https://turri.dev/blog/why-i-built-turri/)) where the author explains how they lost the knowledge of their own software while using coding agents. Their answer was apparently regenerative software, where the idea is to keep the intent as the source of truth so the code can always be regenerated. I'm a bit sceptical about how this would scale on larger projects, and there have been several attempts at this in the past - spec driven development, UML etc.\n\nIt feels to me like we are entering a new layer of abstraction, ie. similar to how we went from machine code to higher level programming languages, and I think there will initially be the same kind of push back - \"The code it spits out will be way slower than mine.\", \"How do I debug code I didn't write?\", \"Every machine is different anyway, so why bother being general?\" etc.\n\nWhat's your take on this?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y0a34y/regenerative_software_approach/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I came across \\[this blog\\]([https://turri.dev/blog/why-i-built-turri/](https://turri.dev/blog/why-i-built-turri/)) where the author explains how they lost the knowledge of their own software while using coding agents. Their answer was apparently regenerative software, where the idea is to keep the intent as the source of truth so the code can always be regenerated. I'm a bit sceptical about how t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.14800000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Promptly Mac Windows Friends Before",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Promptly Mac Windows Friends Before",
+        "seed_score": 24.0,
+        "summary": "I'm building a small desktop app called Promptly (Mac and Windows). It started as a tool I made for myself to save, tag and reuse prompts. Friends and colleagues asked to use it too, so I'm turning it into a proper product.\n\n\n\nBefore the beta, I'm curious how people here handle it:\n\n\n\n\\- Where do your go-to prompts live today: notes, docs, a text expander, a repo?\n\n\\- Do you keep variables or temp",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "How do you store and reuse your best prompts?",
+            "body": "How do you store and reuse your best prompts?\nI'm building a small desktop app called Promptly (Mac and Windows). It started as a tool I made for myself to save, tag and reuse prompts. Friends and colleagues asked to use it too, so I'm turning it into a proper product.\n\n\n\nBefore the beta, I'm curious how people here handle it:\n\n\n\n\\- Where do your go-to prompts live today: notes, docs, a text expander, a repo?\n\n\\- Do you keep variables or templates in them, and how do you version them when a prompt gets better?\n\n\\- What breaks for you when you reuse the same prompt in ChatGPT, Claude and other tools?\n\n\n\nIf you'd like to try the early alpha, comment or DM me and I'll share access with a small group.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y12rkw/how_do_you_store_and_reuse_your_best_prompts/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm building a small desktop app called Promptly (Mac and Windows). It started as a tool I made for myself to save, tag and reuse prompts. Friends and colleagues asked to use it too, so I'm turning it into a proper product.\n\n\n\nBefore the beta, I'm curious how people here handle it:\n\n\n\n\\- Where do your go-to prompts live today: notes, docs, a text expander, a repo?\n\n\\- Do you keep variables or temp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Need more prompts like Felix Rieseberg",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Need more prompts like Felix Rieseberg",
+        "seed_score": 21.2132,
+        "summary": "This prompt i came across from Claude engineer Felix Rieseberg on some post on LinkedIn :\n\n  \n\"I want a deeper version of this task, not a bigger one. Before rewriting it: (1) say what a top professional in this field would do here that I\u2019m not asking for; (2) name the rawest material they would start from instead of what has already been digested for me; (3) name the specific methods and tools th",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "Need more prompts like Felix Rieseberg",
+            "body": "Need more prompts like Felix Rieseberg\nThis prompt i came across from Claude engineer Felix Rieseberg on some post on LinkedIn :\n\n  \n\"I want a deeper version of this task, not a bigger one. Before rewriting it: (1) say what a top professional in this field would do here that I\u2019m not asking for; (2) name the rawest material they would start from instead of what has already been digested for me; (3) name the specific methods and tools they would use; (4) say what, other than you or me, would show the result is right. Then rewrite my prompt to ask for exactly that.\"\n\n\n\nI am looking for more generic /useful prompts like this as i found this one very very useful.\n\nThanks in advance.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y09e2t/need_more_prompts_like_felix_rieseberg/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 18,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "This prompt i came across from Claude engineer Felix Rieseberg on some post on LinkedIn :\n\n  \n\"I want a deeper version of this task, not a bigger one. Before rewriting it: (1) say what a top professional in this field would do here that I\u2019m not asking for; (2) name the rawest material they would start from instead of what has already been digested for me; (3) name the specific methods and tools th",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 32,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10250000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "100",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "100",
+        "seed_score": 20.1525,
+        "summary": "There's a vibe coding hackathon happening in my city on the 21st, and I'm planning to participate.I already have ChatGPT Plus so I'm looking for a good AI-assisted coding workflow using tools like AI agents, IDEs, MCPs etc.... without spending extra money on additional subscriptions.\n\nWhat setup would you recommend for building a functional project quickly during a hackathon? I'd love to hear abou",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Any recommendations for 100% free vibe coding workflows for a hackathon?",
+            "body": "Any recommendations for 100% free vibe coding workflows for a hackathon?\nThere's a vibe coding hackathon happening in my city on the 21st, and I'm planning to participate.I already have ChatGPT Plus so I'm looking for a good AI-assisted coding workflow using tools like AI agents, IDEs, MCPs etc.... without spending extra money on additional subscriptions.\n\nWhat setup would you recommend for building a functional project quickly during a hackathon? I'd love to hear about your actual workflows and what tools work best together.\n\nThanks!",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y03ubv/any_recommendations_for_100_free_vibe_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "There's a vibe coding hackathon happening in my city on the 21st, and I'm planning to participate.I already have ChatGPT Plus so I'm looking for a good AI-assisted coding workflow using tools like AI agents, IDEs, MCPs etc.... without spending extra money on additional subscriptions.\n\nWhat setup would you recommend for building a functional project quickly during a hackathon? I'd love to hear abou",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Qwen 27b 8GB 200k 92.5 Top-1",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Qwen 27b 8GB 200k 92.5 Top-1",
+        "seed_score": 16.5,
+        "summary": "Happy Friday, y'all.\n\nI continued to get requests for quants + configs to support 8GB card users. It's taken over a month, but I do finally have a 2.1bpw quant (on card) of qwen3.8 27b that I consider *actually* usable. This is using the AmperInteger+ (trellis) quant format, which yields lower KLD than scalar quant formats, especially at this extremely compressed size.\n\nLike the models released fo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Qwen 27b on 8GB: 200k ctx, 92.5% Top-1 match, within 10% of BF16 on LCB, 17% higher benchmark than 9b",
+            "body": "Qwen 27b on 8GB: 200k ctx, 92.5% Top-1 match, within 10% of BF16 on LCB, 17% higher benchmark than 9b\nHappy Friday, y'all.\n\nI continued to get requests for quants + configs to support 8GB card users. It's taken over a month, but I do finally have a 2.1bpw quant (on card) of qwen3.8 27b that I consider *actually* usable. This is using the AmperInteger+ (trellis) quant format, which yields lower KLD than scalar quant formats, especially at this extremely compressed size.\n\nLike the models released for 10/12GB cards earlier this week, this is only possible given the use of Latent Sparse Attention, which pushes most of the context cost off VRAM without nuking speed, and SJKVaRN (protecting KV quality while still going down to 4 bits).\n\n**LlamAmpere is normally forward compatible with Ada/Lovelace (40xx/50xx) series, anyway, but I've specifically tested on 8GB cards for those generation this time**, given the current lack of options for running qwen 27b at that size. The project will obviously remain Ampere as the focus. So no need to FOMO if you're on a 5060 etc.\n\n**This model was not post trained specifically for coding, but its coding scores were still at the top of test cohort** (tied with Mellum, a coding-specific model). It actually was not meaningfully post-trained at all (<10M token heal on general text) to avoid the risk of overfitting. I probably left some performance on the table, and will continue to explore it, but if we're being honest, this is a dry run for Qwen4.\n\nThe data:\n\n![img](ravmwepqkt2i1 \"Mellum 2.1 was the only comparable model at coding (but has lower ctx available, and is not comparable on general tasks)\")\n\n[](https://cf.preview.redd.it/qwen-27b-on-8gb-200k-ctx-92-5-top-1-match-within-10-of-bf16-v0-iwzpa3j10t2i1.png?width=1025&format=png&auto=webp&s=25be92a9d9627cbe1b700f86d770b33cc970b213)\n\nMellum 2.1 was the only comparable model at coding (but has lower ctx available, and is not comparable on general tasks)\n\nAggressive quantization like this is prone to losing rare facts and looping, so those were a focus area (I wanted to release this last weekend, but hard to re-encode the last candidate for this reason). I tested this in hermes and pi code extensively; the loops were not 0, but were rare, and LlamAmpere has a loop halt mechanism for when they do occur. **LlamAmpere and this model also support the recently released HF Pi code adapter, which noticeably improved coding performance with this model** (the scores above were without the adapter). You can see the benchmark data [here](https://huggingface.co/datasets/jakeatx/livecodebench-v6-8gb-context-results)\ud83d\ude04 \n\n![img](9d8j0m5skt2i1 \"Your obligatory Pagoda demo; even medium reasoning was usable in pi\")\n\n[](https://cf.preview.redd.it/qwen-27b-on-8gb-200k-ctx-92-5-top-1-match-within-10-of-bf16-v0-ttt11qps1t2i1.png?width=1028&format=png&auto=webp&s=eb74fef6b91006db1e355e1264756753e51b160f)\n\nYour obligatory Pagoda demo; even medium reasoning was usable in pi\n\nThe top-1 is tied with the UD 2-S (v3.1) quant (which does have a 15% better KLD), but that model will not fit on an 8GB card. Top-1 was slightly better than the larger ISTA GSQ-RCO 2 XS quant, and statistically tied on KLD (again, this model won't run on 8GB).\n\nWithout LSA + SJKVaRN, you're typically stuck running IQ1\\_M, without MTP, to get to less context, with 59-73% worse KLD. So compared to the previous available options, this is a legitimate step change in capability for 8GB cards.\n\nhttps://i.redd.it/33sz5w1tkt2i1.png\n\n[](https://cf.preview.redd.it/qwen-27b-on-8gb-200k-ctx-92-5-top-1-match-within-10-of-bf16-v0-xuhy7kv8it2i1.png?width=1037&format=png&auto=webp&s=e5889edd0a98cb919132dcca4eb2acf875066fbb)\n\nWhat's the catch? Well, **you will need to run your card headless** (or with HDMI into mother board, not GPU) to have enough room. That extra 500+ MB is vital at this size. Error explodes as you drop below 3bpw, and can break the model below 2bpw, even with trellis formats (this quant uses a 1.75 bpw trellis format, operating right at the edge of workability). There's no room for things like vision towers without going to a larger card. And even with dynamic UB, you're usually capped at 512 for the first \\~20k tokens and then pushed down to 256 (so make sure you are using cached prompts on tools like hermes to reduce your startup time). I think these are pretty palatable trade-offs, given the performance gains vs 9b post trains and other models. I did like mellum for coding tasks, but its world knowledge and agentic capabilities were not comparable to 27b, even with this major quantization.\n\nMIT license, as usual.\n\nModel: [https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2-8GB](https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2-8GB)\n\ngithub: [https://github.com/JakeATX/llamAmpere](https://github.com/JakeATX/llamAmpere)\n\nEnjoy!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y1cm3m/qwen_27b_on_8gb_200k_ctx_925_top1_match_within_10/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Happy Friday, y'all.\n\nI continued to get requests for quants + configs to support 8GB card users. It's taken over a month, but I do finally have a 2.1bpw quant (on card) of qwen3.8 27b that I consider *actually* usable. This is using the AmperInteger+ (trellis) quant format, which yields lower KLD than scalar quant formats, especially at this extremely compressed size.\n\nLike the models released fo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.329
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "45 Competitor Weakness Extractor",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "45 Competitor Weakness Extractor",
+        "seed_score": 12.7279,
+        "summary": "**Most solo founders and freelancers waste hours reading competitor websites and reviews trying to figure out how to position their pitch.**\n\n**Instead of generic \"analyze this company\" prompts that give surface-level fluff, I built a structured extraction prompt that turns raw landing page copy + negative user reviews into actionable positioning angles in 60 seconds.**\n\n**Here is the exact copy-p",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "I stopped spending 45 minutes researching prospects manually\u2014here is the exact \"Competitor Weakness Extractor\" system prompt I use instead",
+            "body": "I stopped spending 45 minutes researching prospects manually\u2014here is the exact \"Competitor Weakness Extractor\" system prompt I use instead\n**Most solo founders and freelancers waste hours reading competitor websites and reviews trying to figure out how to position their pitch.**\n\n**Instead of generic \"analyze this company\" prompts that give surface-level fluff, I built a structured extraction prompt that turns raw landing page copy + negative user reviews into actionable positioning angles in 60 seconds.**\n\n**Here is the exact copy-paste system prompt (works well in Claude, GPT, or Gemini):**\n\n  \nRole: Senior Competitive Intelligence Analyst & B2B Positioning Strategist.\n\n\n\nObjective: Analyze the provided competitor landing page copy and customer complaints to uncover high-leverage positioning gaps and outreach angles.\n\n\n\nInput Data:\n\n\\- Target Competitor: \\[COMPETITOR NAME\\]\n\n\\- Website / Landing Page Copy: \\[PASTE COPY\\]\n\n\\- Customer Reviews / Pain Points: \\[PASTE 3-5 NEGATIVE REVIEWS OR REDDIT COMPLAINTS\\]\n\n\n\nOutput Format:\n\n1. Core Promise vs. Reality Gap (Where their marketing overpromises and delivery underperforms)\n\n2. Top 3 Unmet Customer Frustrations (Ranked by frequency and urgency)\n\n3. The \"Wedge\" Angle (A 2-sentence positioning hook I can use to win their frustrated customers without bashing them)\n\n4. 3 Cold Outreach Openers (Under 45 words each, referencing the exact operational bottleneck)\n\n\n\nConstraints: Zero generic marketing buzzwords. Cite specific phrases from the input data.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y02i1i/i_stopped_spending_45_minutes_researching/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**Most solo founders and freelancers waste hours reading competitor websites and reviews trying to figure out how to position their pitch.**\n\n**Instead of generic \"analyze this company\" prompts that give surface-level fluff, I built a structured extraction prompt that turns raw landing page copy + negative user reviews into actionable positioning angles in 60 seconds.**\n\n**Here is the exact copy-p",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1495
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Codex Claude Code IDE 6",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "Codex Claude Code IDE 6",
+        "seed_score": 12.7279,
+        "summary": "I'm a solo dev. My daily setup was Codex on one task, Claude Code on another, OpenCode on a third, all in separate terminals, and me copy-pasting context between them. Honestly the agents were fine. I was the bottleneck.\n\nso I built Sokudo. It finds the CLIs already on your machine (Codex, Claude Code, OpenCode, Grok, Antigravity, Kiro and more) and runs the real binaries side by side. You stay lo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Codex writes, Claude Code reviews: I built an IDE to run that setup without 6 terminal tabs",
+            "body": "Codex writes, Claude Code reviews: I built an IDE to run that setup without 6 terminal tabs\nI'm a solo dev. My daily setup was Codex on one task, Claude Code on another, OpenCode on a third, all in separate terminals, and me copy-pasting context between them. Honestly the agents were fine. I was the bottleneck.\n\nso I built Sokudo. It finds the CLIs already on your machine (Codex, Claude Code, OpenCode, Grok, Antigravity, Kiro and more) and runs the real binaries side by side. You stay logged into your own accounts, usage bills to your own plan.\n\nMy flow now:\n\n* write a requirement, break it into tickets on a kanban board\n* give each ticket an agent with its own role and rules (codex builds, claude reviews)\n* they run in parallel, I approve every diff before it lands\n\n\"Isn't this free already?\"\n\nrunning agents side by side, yes, there are free tools for that and some are good. That part isn't what I'm charging for. Sokudo is a whole IDE built around the agents: a wiki of your codebase every agent reads so they don't re-learn the repo each session, a database manager, Docker, a design canvas and an in-app browser, all in one window. It's $9.99/mo with no markup on your tokens. I'm solo with no funding, so paid is how it stays alive.\n\nCurious how you split work between Codex and Claude... do you let one review the other, or review everything yourself?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y04cai/codex_writes_claude_code_reviews_i_built_an_ide/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm a solo dev. My daily setup was Codex on one task, Claude Code on another, OpenCode on a third, all in separate terminals, and me copy-pasting context between them. Honestly the agents were fine. I was the bottleneck.\n\nso I built Sokudo. It finds the CLIs already on your machine (Codex, Claude Code, OpenCode, Grok, Antigravity, Kiro and more) and runs the real binaries side by side. You stay lo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 11,
+            "source_quality": 0.6,
+            "local_rank_score": 0.231
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Lesson AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Lesson AI",
+        "seed_score": 10.5,
+        "summary": "Sharing a mistake so others can avoid it. We moved a team from a per-seat plan with weekly usage limits to an enterprise plan with a monthly cap and an annual commitment. Our estimate came from the trial on the cheaper plan. After the move, per-user usage cost ran about 30x above our plan and a large share of the annual commitment went in under a week.\n\nWhat we should have asked first:\n\n1. What li",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R5",
+            "source": "reddit",
+            "title": "Lesson: before you sign an enterprise AI coding plan, ask what limits exist below the monthly cap",
+            "body": "Lesson: before you sign an enterprise AI coding plan, ask what limits exist below the monthly cap\nSharing a mistake so others can avoid it. We moved a team from a per-seat plan with weekly usage limits to an enterprise plan with a monthly cap and an annual commitment. Our estimate came from the trial on the cheaper plan. After the move, per-user usage cost ran about 30x above our plan and a large share of the annual commitment went in under a week.\n\nWhat we should have asked first:\n\n1. What limits exist below a monthly cap? A user can burn a month in days.\n\n2. Can we set budgets by team and by role, and restrict models by group?\n\n3. Can we get usage by user and by bot?\n\n4. What volume discount do we actually get for committing? Ours was single digits.\n\n5. Is a plan change possible mid-term if usage doesn't match the forecast?\n\n6. Forecast cost at full headcount, not the pilot group.\n\nThe vendor's point was that the same workflow uses the same tokens on any plan. True, and exactly why the weekly pacing on the lower plan mattered. Curious what others do to cap spend on enterprise AI plans.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y16jk0/lesson_before_you_sign_an_enterprise_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Sharing a mistake so others can avoid it. We moved a team from a per-seat plan with weekly usage limits to an enterprise plan with a monthly cap and an annual commitment. Our estimate came from the trial on the cheaper plan. After the move, per-user usage cost ran about 30x above our plan and a large share of the annual commitment went in under a week.\n\nWhat we should have asked first:\n\n1. What li",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4585
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "BA",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "BA",
+        "seed_score": 7.4246,
+        "summary": "Changing the code is just a prompt.  So that exponentially sems to be getting easier. That then leads to the next level up with is the business rules which is where the client interaction (humans) take place and is not going anywhere. The coder is the replaceable one.\n\nBAs were so useless at my job 5 years ago.. I felt like any high schooler could do that part.",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "I feel like the BA has all of a sudden becomes the most important person in a project",
+            "body": "I feel like the BA has all of a sudden becomes the most important person in a project\nChanging the code is just a prompt.  So that exponentially sems to be getting easier. That then leads to the next level up with is the business rules which is where the client interaction (humans) take place and is not going anywhere. The coder is the replaceable one.\n\nBAs were so useless at my job 5 years ago.. I felt like any high schooler could do that part.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xzxhg5/i_feel_like_the_ba_has_all_of_a_sudden_becomes/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Changing the code is just a prompt.  So that exponentially sems to be getting easier. That then leads to the next level up with is the business rules which is where the client interaction (humans) take place and is not going anywhere. The coder is the replaceable one.\n\nBAs were so useless at my job 5 years ago.. I felt like any high schooler could do that part.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.07100000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "LLMs MCP API docs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "LLMs MCP API docs",
+        "seed_score": 7.4246,
+        "summary": "When designing tools and context for LLMs, MCP has become the default recommendation. It makes sense for human-in-the-loop IDE copilots where you plug local servers into an interactive session.\n\nOnce you move to autonomous agents running in their own environment on webhooks and schedules, MCP mostly collapses back into two simpler primitives: documented APIs and scoped, revocable tokens.\n\nA few ob",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Do LLMs actually need MCP tool schemas, or just good API docs and scoped tokens?",
+            "body": "Do LLMs actually need MCP tool schemas, or just good API docs and scoped tokens?\nWhen designing tools and context for LLMs, MCP has become the default recommendation. It makes sense for human-in-the-loop IDE copilots where you plug local servers into an interactive session.\n\nOnce you move to autonomous agents running in their own environment on webhooks and schedules, MCP mostly collapses back into two simpler primitives: documented APIs and scoped, revocable tokens.\n\nA few observations from building without MCP:\n\n1. **Good API docs beat rigid tool wrappers.** A capable model can read OpenAPI specs, developer docs, or an llms.txt reference, write working HTTP calls, and reuse them. Wrapping every service in an MCP server adds an extra schema layer that often lags behind the real API.\n\n2. **AI writes the docs anyway.** One of the biggest claims for MCP is that models parse MCP tool manifests better than human-written docs. Today, AI writes both the API documentation and the MCP wrappers, so MCP schemas aren't inherently cleaner for the model.\n\n3. **Context bloat is much easier to avoid in code.** When an agent calls an API via a small sandboxed script, it can filter, paginate, and aggregate fields in code before returning only what matters to the prompt context \u2014 instead of dumping massive raw tool-call JSON payloads into the conversation.\n\n4. **Security belongs in tokens and runtime controls, not MCP sidecars.** If an agent is already trusted to write and run code, hiding API keys behind an MCP process is an inconsistent security boundary. Scoped OAuth, revocable keys, host-allowlisted secret injection, and static verification of outbound calls handle authorization directly.\n\nCurious how folks here are designing tool interfaces for agents now: are you still writing MCP servers, or shifting toward concise API docs/skills and direct script execution?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y02ekc/do_llms_actually_need_mcp_tool_schemas_or_just/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "When designing tools and context for LLMs, MCP has become the default recommendation. It makes sense for human-in-the-loop IDE copilots where you plug local servers into an interactive session.\n\nOnce you move to autonomous agents running in their own environment on webhooks and schedules, MCP mostly collapses back into two simpler primitives: documented APIs and scoped, revocable tokens.\n\nA few ob",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.24
+          }
+        ]
+      }
+    }
+  ]
+}

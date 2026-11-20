@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "a7a9d3a86f209567",
+  "generated_at": "2026-11-20T23:56:18.713859Z",
+  "from_date": "2026-11-19",
+  "to_date": "2026-11-20",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-20T23:56:18.711879Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-20T23:56:18.711887Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-20T23:56:18.711679Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-20T23:56:18.711817Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic Nasdaq debut",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 2290,
+          "points": 1130
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Nasdaq debut",
+        "seed_score": 3627.4578,
+        "summary": "Anthropic\u2019s Nasdaq debut",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50562754",
+            "source": "hackernews",
+            "title": "Anthropic\u2019s Nasdaq debut",
+            "body": "Anthropic\u2019s Nasdaq debut",
+            "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+            "author": "wslh",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1130,
+              "comments": 2290
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Anthropic\u2019s Nasdaq debut",
+            "snippet": "Anthropic\u2019s Nasdaq debut",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50562754",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.19
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Google OEMs against GrapheneOS",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 188,
+          "points": 474
+        }
+      },
+      "nomination": {
+        "name": "Google OEMs against GrapheneOS",
+        "seed_score": 993.0,
+        "summary": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50570479",
+            "source": "hackernews",
+            "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "body": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+            "author": "mraniki",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 474,
+              "comments": 188
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Google is pushing OEMs against GrapheneOS and bootloader unl",
+            "snippet": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50570479",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.8,
+            "local_rank_score": 0.322
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google Workers Tell Employer Punish Schools",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 183,
+          "points": 245
+        }
+      },
+      "nomination": {
+        "name": "Google Workers Tell Employer Punish Schools",
+        "seed_score": 642.0,
+        "summary": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50577901",
+            "source": "hackernews",
+            "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+            "body": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+            "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 245,
+              "comments": 183
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "HN story about Google Workers Tell Their Employer Not to Punish Schools Tha",
+            "snippet": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50577901",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.8,
+            "local_rank_score": 0.40950000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "We promoted developers into architects without",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 160,
+          "points": 252
+        }
+      },
+      "nomination": {
+        "name": "We promoted developers into architects without",
+        "seed_score": 618.0,
+        "summary": "We promoted developers into architects without informing them",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50579331",
+            "source": "hackernews",
+            "title": "We promoted developers into architects without informing them",
+            "body": "We promoted developers into architects without informing them",
+            "url": "https://manidoraisamy.com/developer-to-architect.html",
+            "author": "QueensGambit",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 252,
+              "comments": 160
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about We promoted developers into architects without informing the",
+            "snippet": "We promoted developers into architects without informing them",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50579331",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.8,
+            "local_rank_score": 0.272
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Google DeepMind",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 24,
+          "points": 42
+        }
+      },
+      "nomination": {
+        "name": "Google DeepMind",
+        "seed_score": 99.0,
+        "summary": "A few hours ago Google DeepMind created a math horizon repo",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50582629",
+            "source": "hackernews",
+            "title": "A few hours ago Google DeepMind created a math horizon repo",
+            "body": "A few hours ago Google DeepMind created a math horizon repo",
+            "url": "https://github.com/google-deepmind/math-horizon",
+            "author": "RubenLtke",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 42,
+              "comments": 24
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about A few hours ago Google DeepMind created a math horizon repo",
+            "snippet": "A few hours ago Google DeepMind created a math horizon repo",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50582629",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    }
+  ]
+}

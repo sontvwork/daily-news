@@ -1,0 +1,877 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "1968b53ff6827aed",
+  "generated_at": "2026-11-20T23:56:35.855910Z",
+  "from_date": "2026-11-19",
+  "to_date": "2026-11-20",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-20T23:56:35.766425Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-20T23:56:35.766432Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 15,
+      "attempted": true,
+      "at": "2026-11-20T23:56:35.401819Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 116,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-20T23:56:35.766281Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic Nasdaq debut",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 2290,
+          "points": 1130
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Nasdaq debut",
+        "seed_score": 3627.4578,
+        "summary": "Anthropic\u2019s Nasdaq debut",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50562754",
+            "source": "hackernews",
+            "title": "Anthropic\u2019s Nasdaq debut",
+            "body": "Anthropic\u2019s Nasdaq debut",
+            "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+            "author": "wslh",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1130,
+              "comments": 2290
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Anthropic\u2019s Nasdaq debut",
+            "snippet": "Anthropic\u2019s Nasdaq debut",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50562754",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1835
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Frostbite CPU AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 318,
+          "points": 610
+        },
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Frostbite CPU AI",
+        "seed_score": 1638.75,
+        "summary": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50572503",
+            "source": "hackernews",
+            "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+            "body": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+            "url": "https://architectlabs.com/blog/frostbite",
+            "author": "shioyama",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 610,
+              "comments": 318
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Frostbite: A new CPU architecture discovered, designed and v",
+            "snippet": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50572503",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3245
+          },
+          {
+            "item_id": "R110",
+            "source": "reddit",
+            "title": "An AI swarm designed a new CPU end to end and claims 4.59x perf/watt. Here's what the headline leaves out",
+            "body": "An AI swarm designed a new CPU end to end and claims 4.59x perf/watt. Here's what the headline leaves out\nArchitect Labs posted Frostbite yesterday (link below). It's a general-purpose CPU with a brand-new instruction set, and they say agent swarms took it from idea to final chip layout: compiler, ISA, microarchitecture, RTL, verification and GDS. The headline is 4.59x performance per watt.\n\nThree things in the post that the headline skips:\n\n1. **The baseline is small.** The comparison is one Frostbite \"quad\" against a single core of an undisclosed \"dual-issue, in-order\" CPU, a simple, low-power design class, not a modern out-of-order desktop or server core. They say SPEC/PARSEC runs against bigger out-of-order CPUs are coming.\n2. **It's partly tuned to its own tests.** On the 10 workloads the swarm optimized against it's 6.02x. On the 15 it never saw it's 3.83x. Still a big number, and they reported the split, which is to their credit.\n3. **Nothing is in silicon.** It's 7nm synthesis and layout only, so all power numbers are pre-silicon estimates. Some benchmark kernels ran at 64x smaller than standard sizes.\n\nFor me the most interesting part is how they kept the swarm honest. Their fast simulator was off from the real RTL by almost 250% at first. So a separate automated loop traced the power hotspots in the RTL back to counters in the spec, and kept fitting until simulator and RTL agreed within 5%. Only then did the agents go back to searching on the fast simulator. Every change also had to pass 800k+ lines of Lean \"contracts\" the agents couldn't edit. Their words: that single provable source of truth \"prevents a large class of bugs, silly mistakes, and reward-hacking instances\".\n\nAcross the search, the swarm tried 58 architecture ideas and kept 37. Some features, like tiles stealing work from idle neighbors, were never specified by a human.\n\nSource: https://architectlabs.com/blog/frostbite\n\nI wrote up the full loop (and why the simulator recalibration matters for any agent setup) in r/AI_Loops: https://www.reddit.com/r/AI_Loops/comments/1y13wwp/",
+            "url": "https://www.reddit.com/r/artificial/comments/1y13xk6/an_ai_swarm_designed_a_new_cpu_end_to_end_and/",
+            "container": "artificial",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Architect Labs posted Frostbite yesterday (link below). It's a general-purpose CPU with a brand-new instruction set, and they say agent swarms took it from idea to final chip layout: compiler, ISA, microarchitecture, RTL, verification and GDS. The headline is 4.59x performance per watt.\n\nThree things in the post that the headline skips:\n\n1. **The baseline is small.** The comparison is one Frostbit",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.276
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "thinkingmachines/Inkling-2-Mini MoE 26b a3B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 182
+        }
+      },
+      "nomination": {
+        "name": "thinkingmachines/Inkling-2-Mini MoE 26b a3B",
+        "seed_score": 1225.5,
+        "summary": "\"Inkling 2 Mini is a general-purpose multimodal model that accepts text and image inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation syste",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "thinkingmachines/Inkling-2-Mini (MoE: 26b, a3B)",
+            "body": "thinkingmachines/Inkling-2-Mini (MoE: 26b, a3B)\n\"Inkling 2 Mini is a general-purpose multimodal model that accepts text and image inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and visual tasks. It is released with open weights to support research, fine-tuning and integration into third-party products by downstream developers.\"\n\n\"Architecture type\n\nA 24-layer decoder-only transformer with sparse Mixture-of-Experts (MoE) feed-forward layers. The middle 12 layers run three times with shared weights, giving 48 layer applications per token from 24 layers of weights. In each layer, each token is routed to 8 of 128 experts. Attention is a hybrid of local and global layers. The model is natively multimodal \u2013 images are encoded via a vision transformer \u2013 with image and text inputs projected into a shared hidden space and processed jointly by the decoder.\n\n# [](https://huggingface.co/thinkingmachines/Inkling-2-Mini#parameters)Parameters\n\n26.2B, 3.4B active\n\nNote: each extra pass through the looped layers adds about 1.0B effective active parameters. Since the model runs with three passes, there are 5.4B effective active parameters per token.\"",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y1diuk/thinkingmachinesinkling2mini_moe_26b_a3b/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 635,
+              "num_comments": 182
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\"Inkling 2 Mini is a general-purpose multimodal model that accepts text and image inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation syste",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39649999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Google OEMs against GrapheneOS",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 188,
+          "points": 474
+        }
+      },
+      "nomination": {
+        "name": "Google OEMs against GrapheneOS",
+        "seed_score": 993.0,
+        "summary": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50570479",
+            "source": "hackernews",
+            "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "body": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+            "author": "mraniki",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 474,
+              "comments": 188
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google is pushing OEMs against GrapheneOS and bootloader unl",
+            "snippet": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50570479",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Tencent Hy Team Shunyu Yao Ask",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 375
+        }
+      },
+      "nomination": {
+        "name": "Tencent Hy Team Shunyu Yao Ask",
+        "seed_score": 888.0,
+        "summary": "https://i.redd.it/mzaaslyy9s2i1.png\n\nFresh off launching Hy4 and Hy4 Flash, the Hy research team is here to discuss how they built the models, boosted efficiency, and made them better for everyday workflows.\n\nOur participants today:\n\nu/No-Cherry2850\n\nu/DiWang01\n\nu/aiden\\_agent\n\nu/lydellhuang\n\nu/edwardbai\n\nu/kkelvinchen\n\nu/maxmpan\n\nu/dick112233\n\nu/kkelvinchen\n\nu/GeoMorax",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Tencent Hy Team & Shunyu Yao Here! Ask Us Anything about Hy4 & Hy4 flash!",
+            "body": "Tencent Hy Team & Shunyu Yao Here! Ask Us Anything about Hy4 & Hy4 flash!\nhttps://i.redd.it/mzaaslyy9s2i1.png\n\nFresh off launching Hy4 and Hy4 Flash, the Hy research team is here to discuss how they built the models, boosted efficiency, and made them better for everyday workflows.\n\nOur participants today:\n\nu/No-Cherry2850\n\nu/DiWang01\n\nu/aiden\\_agent\n\nu/lydellhuang\n\nu/edwardbai\n\nu/kkelvinchen\n\nu/maxmpan\n\nu/dick112233\n\nu/kkelvinchen\n\nu/GeoMorax",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 217,
+              "num_comments": 375
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/mzaaslyy9s2i1.png\n\nFresh off launching Hy4 and Hy4 Flash, the Hy research team is here to discuss how they built the models, boosted efficiency, and made them better for everyday workflows.\n\nOur participants today:\n\nu/No-Cherry2850\n\nu/DiWang01\n\nu/aiden\\_agent\n\nu/lydellhuang\n\nu/edwardbai\n\nu/kkelvinchen\n\nu/maxmpan\n\nu/dick112233\n\nu/kkelvinchen\n\nu/GeoMorax",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Claude solves",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 270,
+          "points": 551
+        }
+      },
+      "nomination": {
+        "name": "Claude solves",
+        "seed_score": 870.802,
+        "summary": "Claude solves two open problems in the physics of black holes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50563148",
+            "source": "hackernews",
+            "title": "Claude solves two open problems in the physics of black holes",
+            "body": "Claude solves two open problems in the physics of black holes",
+            "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+            "author": "cybermango",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 551,
+              "comments": 270
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Claude solves two open problems in the physics of black hole",
+            "snippet": "Claude solves two open problems in the physics of black holes",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50563148",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 78,
+            "source_quality": 0.8,
+            "local_rank_score": 0.168
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Ravi Vakil Stanford Riemann Alessadro Masullo",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 194
+        }
+      },
+      "nomination": {
+        "name": "Ravi Vakil Stanford Riemann Alessadro Masullo",
+        "seed_score": 787.5,
+        "summary": "What are the chances anthropic inadvertently plagiarized this?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R83",
+            "source": "reddit",
+            "title": "Ravi Vakil of Stanford claims there is already a proof of Riemann by Alessadro Masullo that is being polished for human readability",
+            "body": "Ravi Vakil of Stanford claims there is already a proof of Riemann by Alessadro Masullo that is being polished for human readability\nWhat are the chances anthropic inadvertently plagiarized this?",
+            "url": "https://www.reddit.com/r/singularity/comments/1y1bugz/ravi_vakil_of_stanford_claims_there_is_already_a/",
+            "container": "singularity",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 331,
+              "num_comments": 194
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "What are the chances anthropic inadvertently plagiarized this?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 93,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3375
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Language Models Rewrite Own Weights",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 106,
+          "points": 318
+        },
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Language Models Rewrite Own Weights",
+        "seed_score": 733.125,
+        "summary": "Language Models Can Rewrite Their Own Weights",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50577265",
+            "source": "hackernews",
+            "title": "Language Models Can Rewrite Their Own Weights",
+            "body": "Language Models Can Rewrite Their Own Weights",
+            "url": "https://arxiv.org/abs/2611.21885",
+            "author": "lwhsiao",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 318,
+              "comments": 106
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Language Models Can Rewrite Their Own Weights",
+            "snippet": "Language Models Can Rewrite Their Own Weights",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50577265",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.8,
+            "local_rank_score": 0.33
+          },
+          {
+            "item_id": "R87",
+            "source": "reddit",
+            "title": "Language Models Can Rewrite Their Own Weights: an open 27B model edits its own weights with no gradients and no training, +6.6 points on unseen problems",
+            "body": "Language Models Can Rewrite Their Own Weights: an open 27B model edits its own weights with no gradients and no training, +6.6 points on unseen problems\n[removed]",
+            "url": "https://www.reddit.com/r/singularity/comments/1y1aydj/language_models_can_rewrite_their_own_weights_an/",
+            "container": "singularity",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.279
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Google Workers Tell Employer Punish Schools",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 183,
+          "points": 245
+        }
+      },
+      "nomination": {
+        "name": "Google Workers Tell Employer Punish Schools",
+        "seed_score": 642.0,
+        "summary": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50577901",
+            "source": "hackernews",
+            "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+            "body": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+            "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 245,
+              "comments": 183
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Google Workers Tell Their Employer Not to Punish Schools Tha",
+            "snippet": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50577901",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.319
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Gemini 4 Neon 1",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 240,
+          "points": 365
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Neon 1",
+        "seed_score": 641.6994,
+        "summary": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50568130",
+            "source": "hackernews",
+            "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+            "body": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+            "url": "https://git-aarvin.github.io/mei/",
+            "author": "hn-aarvin",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 365,
+              "comments": 240
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "HN story about Gemini 4 Neon is the new #1 on the Models Engineering Index",
+            "snippet": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50568130",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.17,
+            "freshness": 10,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.20850000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Riemann Tristan Buckmaster Levent Alp\u00f6ge",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 45
+        }
+      },
+      "nomination": {
+        "name": "Riemann Tristan Buckmaster Levent Alp\u00f6ge",
+        "seed_score": 609.0,
+        "summary": "Saw a few comments mentioning this in the Riemann threads but no actual post yet.\n\nToday Tristan Buckmaster and Levent Alp\u00f6ge also dropped a claimed proof of finite-time blowup for the unforced 3D Navier-Stokes equations.  \n\nFor anyone wondering how this is different from OpenAI's September announcement: OpenAI's proof used a smooth external force, which technically met the Clay prize wording but",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R94",
+            "source": "reddit",
+            "title": "While everyone is talking about Riemann, Tristan Buckmaster and Levent Alp\u00f6ge also just dropped a claimed proof of UNFORCED Navier-Stokes blowup",
+            "body": "While everyone is talking about Riemann, Tristan Buckmaster and Levent Alp\u00f6ge also just dropped a claimed proof of UNFORCED Navier-Stokes blowup\nSaw a few comments mentioning this in the Riemann threads but no actual post yet.\n\nToday Tristan Buckmaster and Levent Alp\u00f6ge also dropped a claimed proof of finite-time blowup for the unforced 3D Navier-Stokes equations.  \n\nFor anyone wondering how this is different from OpenAI's September announcement: OpenAI's proof used a smooth external force, which technically met the Clay prize wording but a lot of mathematicians called it a loophole. This new one is unforced, meaning the fluid blows up on its own with zero external force. Also funny that these are the exact same two guys who had the huge priority beef with OpenAI over Navier-Stokes back in September.  \n\nObviously not independently verified yet since it literally just dropped today, but wild that they dropped both on the same day.\n\n[https://github.com/tristanbuckmaster/navier-stokes](https://github.com/tristanbuckmaster/navier-stokes)",
+            "url": "https://www.reddit.com/r/singularity/comments/1y174f6/while_everyone_is_talking_about_riemann_tristan/",
+            "container": "singularity",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 361,
+              "num_comments": 45
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Saw a few comments mentioning this in the Riemann threads but no actual post yet.\n\nToday Tristan Buckmaster and Levent Alp\u00f6ge also dropped a claimed proof of finite-time blowup for the unforced 3D Navier-Stokes equations.  \n\nFor anyone wondering how this is different from OpenAI's September announcement: OpenAI's proof used a smooth external force, which technically met the Clay prize wording but",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Pete Warden AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 247,
+          "points": 268
+        }
+      },
+      "nomination": {
+        "name": "Pete Warden AI",
+        "seed_score": 546.24,
+        "summary": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50561508",
+            "source": "hackernews",
+            "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+            "body": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+            "url": "https://thedataexchange.media/pete-warden-moonshine/",
+            "author": "datascientist",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 268,
+              "comments": 247
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Pete Warden on local AI, open models, voice interfaces, the",
+            "snippet": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50561508",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 71,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14800000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "PHP 8.6",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 144,
+          "points": 293
+        }
+      },
+      "nomination": {
+        "name": "PHP 8.6",
+        "seed_score": 463.5085,
+        "summary": "What's New in PHP 8.6",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50557870",
+            "source": "hackernews",
+            "title": "What's New in PHP 8.6",
+            "body": "What's New in PHP 8.6",
+            "url": "https://www.php.net/releases/8.6/en.php",
+            "author": "netol",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 293,
+              "comments": 144
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "HN story about What's New in PHP 8.6",
+            "snippet": "What's New in PHP 8.6",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50557870",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 10,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1645
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Incoming Texas Governor Gina Hinojosa HAVE",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 86
+        }
+      },
+      "nomination": {
+        "name": "Incoming Texas Governor Gina Hinojosa HAVE",
+        "seed_score": 451.5,
+        "summary": "[https://fixupx.com/firesidealpha/status/2123575588984353043](https://fixupx.com/firesidealpha/status/2123575588984353043)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R119",
+            "source": "reddit",
+            "title": "Incoming Texas Governor Gina Hinojosa: I WILL HAVE A MORATORIUM ON ANY NEW DATA CENTER PERMITS, ANY PERMITS THAT WE HAVE CONTROL OVER\u2026 WE NEED A BAN ON NEW DATA CENTER PERMITS UNTIL WE CAN PASS LAWS TO PROTECT TEXANS",
+            "body": "Incoming Texas Governor Gina Hinojosa: I WILL HAVE A MORATORIUM ON ANY NEW DATA CENTER PERMITS, ANY PERMITS THAT WE HAVE CONTROL OVER\u2026 WE NEED A BAN ON NEW DATA CENTER PERMITS UNTIL WE CAN PASS LAWS TO PROTECT TEXANS\n[https://fixupx.com/firesidealpha/status/2123575588984353043](https://fixupx.com/firesidealpha/status/2123575588984353043)",
+            "url": "https://www.reddit.com/r/artificial/comments/1y0qjc9/incoming_texas_governor_gina_hinojosa_i_will_have/",
+            "container": "artificial",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 215,
+              "num_comments": 86
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://fixupx.com/firesidealpha/status/2123575588984353043](https://fixupx.com/firesidealpha/status/2123575588984353043)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.321
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI 10 Millennium Prize Problem 2027",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 84
+        }
+      },
+      "nomination": {
+        "name": "AI 10 Millennium Prize Problem 2027",
+        "seed_score": 445.5,
+        "summary": "With today's Riemann Hypothesis and unforced Navier-Stokes drops, it is wild to look back at how fast expert and super forecasters are getting blown out of the water.\n\nBack in November 2025, the Longitudinal Expert AI Panel (LEAP) published their Wave 2 survey asking domain experts (first %) and super forecasters (second %) when AI would solve or substantially assist in solving a Millennium Prize",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R91",
+            "source": "reddit",
+            "title": "Just one year ago, expert forecasters gave AI a 10% chance of helping solve a single Millennium Prize Problem by 2027. Even after Navier-Stokes, they only gave a 20% chance of another one falling in 2026.",
+            "body": "Just one year ago, expert forecasters gave AI a 10% chance of helping solve a single Millennium Prize Problem by 2027. Even after Navier-Stokes, they only gave a 20% chance of another one falling in 2026.\nWith today's Riemann Hypothesis and unforced Navier-Stokes drops, it is wild to look back at how fast expert and super forecasters are getting blown out of the water.\n\nBack in November 2025, the Longitudinal Expert AI Panel (LEAP) published their Wave 2 survey asking domain experts (first %) and super forecasters (second %) when AI would solve or substantially assist in solving a Millennium Prize Problem:\n\n1. By 2027: 10% / 5.4%\n\n2. By 2030: 20.4% / 20%\n\n3. By 2040: 60% / 58%\n\nThen, after OpenAI's forced Navier-Stokes proof in September 2026, LEAP re-asked the question in Wave 13 (\"Short-Term Cruxes\") for the rest of 2026:\n\nChance AI helps solve ANOTHER Millennium Prize Problem (besides Navier-Stokes) by the end of 2026: 20% median\n\n1. By 2026: 20% / 10%\n\n2. By 2030: 80% / 85%\n\nObviously today's claims still need independent verification and auditing, and the Clay Institute has its two-year waiting period. Still, going from \"10% chance of one by 2027\" to potentially seeing multiple claimed solutions before the end of 2026 is a crazy pace of acceleration.\n\nSources:\n\n\\* Wave 2 (Nov 2025): [https://leap.forecastingresearch.org/forecasts/millennium-prize?view=millennium-prize](https://leap.forecastingresearch.org/forecasts/millennium-prize?view=millennium-prize)\n\n\\* Wave 13 (2026): [https://leap.forecastingresearch.org/forecasts/millennium-prize?view=millennium-prize-wave-13](https://leap.forecastingresearch.org/forecasts/millennium-prize?view=millennium-prize-wave-13)",
+            "url": "https://www.reddit.com/r/singularity/comments/1y19ido/just_one_year_ago_expert_forecasters_gave_ai_a_10/",
+            "container": "singularity",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 213,
+              "num_comments": 84
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "With today's Riemann Hypothesis and unforced Navier-Stokes drops, it is wild to look back at how fast expert and super forecasters are getting blown out of the water.\n\nBack in November 2025, the Longitudinal Expert AI Panel (LEAP) published their Wave 2 survey asking domain experts (first %) and super forecasters (second %) when AI would solve or substantially assist in solving a Millennium Prize",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3275
+          }
+        ]
+      }
+    }
+  ]
+}

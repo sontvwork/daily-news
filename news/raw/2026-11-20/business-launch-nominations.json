@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "fea83acbf4ac000c",
+  "generated_at": "2026-11-19T23:56:04.399167Z",
+  "from_date": "2026-11-18",
+  "to_date": "2026-11-19",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-19T23:56:04.398247Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-19T23:56:04.398252Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-19T23:56:04.398098Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-19T23:56:04.398205Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic Nasdaq debut",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1560,
+          "points": 815
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Nasdaq debut",
+        "seed_score": 3562.5,
+        "summary": "Anthropic\u2019s Nasdaq debut",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50562754",
+            "source": "hackernews",
+            "title": "Anthropic\u2019s Nasdaq debut",
+            "body": "Anthropic\u2019s Nasdaq debut",
+            "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+            "author": "wslh",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 815,
+              "comments": 1560
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Anthropic\u2019s Nasdaq debut",
+            "snippet": "Anthropic\u2019s Nasdaq debut",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50562754",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.39
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Google AI 40",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 562,
+          "points": 709
+        }
+      },
+      "nomination": {
+        "name": "Google AI 40",
+        "seed_score": 1348.0991,
+        "summary": "Google's AI answers reducing search traffic by 40%",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50540178",
+            "source": "hackernews",
+            "title": "Google's AI answers reducing search traffic by 40%",
+            "body": "Google's AI answers reducing search traffic by 40%",
+            "url": "https://revscope.co/blog/search-seo-geo-2026/",
+            "author": "slashdev",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 709,
+              "comments": 562
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "HN story about Google's AI answers reducing search traffic by 40%",
+            "snippet": "Google's AI answers reducing search traffic by 40%",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50540178",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.261
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic prices initial public offering",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 773,
+          "points": 411
+        }
+      },
+      "nomination": {
+        "name": "Anthropic prices initial public offering",
+        "seed_score": 1255.8216,
+        "summary": "Anthropic prices initial public offering",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50553843",
+            "source": "hackernews",
+            "title": "Anthropic prices initial public offering",
+            "body": "Anthropic prices initial public offering",
+            "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+            "author": "surprisetalk",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 411,
+              "comments": 773
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Anthropic prices initial public offering",
+            "snippet": "Anthropic prices initial public offering",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50553843",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14450000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Onlook YC W25",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 66,
+          "points": 80
+        }
+      },
+      "nomination": {
+        "name": "Onlook YC W25",
+        "seed_score": 219.0,
+        "summary": "Launch HN: Onlook (YC W25) \u2013 An open-source developer tool for designers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50562320",
+            "source": "hackernews",
+            "title": "Launch HN: Onlook (YC W25) \u2013 An open-source developer tool for designers",
+            "body": "Launch HN: Onlook (YC W25) \u2013 An open-source developer tool for designers",
+            "url": "https://github.com/onlook-dev/onlook/",
+            "author": "D_R_Farrell",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 80,
+              "comments": 66
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Launch HN: Onlook (YC W25) \u2013 An open-source developer tool f",
+            "snippet": "Launch HN: Onlook (YC W25) \u2013 An open-source developer tool for designers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50562320",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.29000000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

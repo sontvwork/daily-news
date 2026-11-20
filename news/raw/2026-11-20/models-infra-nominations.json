@@ -1,0 +1,1057 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "20ff5e66a6163c77",
+  "generated_at": "2026-11-19T23:56:22.440897Z",
+  "from_date": "2026-11-18",
+  "to_date": "2026-11-19",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-19T23:56:22.360859Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-19T23:56:22.360867Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 149,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-19T23:56:22.358628Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 14,
+      "attempted": true,
+      "at": "2026-11-19T23:56:22.360676Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic Nasdaq debut",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1560,
+          "points": 815
+        },
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Nasdaq debut",
+        "seed_score": 4102.05,
+        "summary": "Anthropic\u2019s Nasdaq debut",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50562754",
+            "source": "hackernews",
+            "title": "Anthropic\u2019s Nasdaq debut",
+            "body": "Anthropic\u2019s Nasdaq debut",
+            "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+            "author": "wslh",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 815,
+              "comments": 1560
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about Anthropic\u2019s Nasdaq debut",
+            "snippet": "Anthropic\u2019s Nasdaq debut",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50562754",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.38349999999999995
+          },
+          {
+            "item_id": "R124",
+            "source": "reddit",
+            "title": "The OpenAI vs. Anthropic plot keeps getting thicker. Just days before Anthropic's Wall Street debut, OpenAI launches GPT-6.2 Astra & claims it's better than Anthropic's top Fable model at a lower cost.",
+            "body": "The OpenAI vs. Anthropic plot keeps getting thicker. Just days before Anthropic's Wall Street debut, OpenAI launches GPT-6.2 Astra & claims it's better than Anthropic's top Fable model at a lower cost.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y01ozh/the_openai_vs_anthropic_plot_keeps_getting/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "The OpenAI vs. Anthropic plot keeps getting thicker. Just days before Anthropic's Wall Street debut, OpenAI launches GPT-6.2 Astra & claims it's better than Anthropic's top Fable model at a lower cost.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 5,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3015
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Gemini 4 Neon",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 758,
+          "points": 1010
+        },
+        "reddit": {
+          "num_comments": 65
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Neon",
+        "seed_score": 2789.6093,
+        "summary": "Gemini 4 Neon",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50552424",
+            "source": "hackernews",
+            "title": "Gemini 4 Neon",
+            "body": "Gemini 4 Neon",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+            "author": "yigitdemirag",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1010,
+              "comments": 758
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "HN story about Gemini 4 Neon",
+            "snippet": "Gemini 4 Neon",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50552424",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 10,
+            "engagement_score": 92,
+            "source_quality": 0.8,
+            "local_rank_score": 0.195
+          },
+          {
+            "item_id": "R114",
+            "source": "reddit",
+            "title": "Google Gemini 4 Carbon and Hydrogen score 94.4% and 91.7% on Simplebench respectively.",
+            "body": "Google Gemini 4 Carbon and Hydrogen score 94.4% and 91.7% on Simplebench respectively.\nInterestingly  for cost to performance ratio, Hydrogen scores the same as Argon but costs about 4 times as much to test. Meanwhile, Neon outperforms Carbon by 1.8% and costs less than half to run the test.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y0b7n9/google_gemini_4_carbon_and_hydrogen_score_944_and/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 161,
+              "num_comments": 22
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Interestingly  for cost to performance ratio, Hydrogen scores the same as Argon but costs about 4 times as much to test. Meanwhile, Neon outperforms Carbon by 1.8% and costs less than half to run the test.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 74,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34450000000000003
+          },
+          {
+            "item_id": "R105",
+            "source": "reddit",
+            "title": "Gemini Neon, Carbon, and Hydrogen are now top 3 on Humanity's Sixth Sense",
+            "body": "Gemini Neon, Carbon, and Hydrogen are now top 3 on Humanity's Sixth Sense\n[https://labs.scale.com/leaderboard/hss](https://labs.scale.com/leaderboard/hss)",
+            "url": "https://www.reddit.com/r/singularity/comments/1y0jny4/gemini_neon_carbon_and_hydrogen_are_now_top_3_on/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 130,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://labs.scale.com/leaderboard/hss](https://labs.scale.com/leaderboard/hss)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.324
+          },
+          {
+            "item_id": "R141",
+            "source": "reddit",
+            "title": "Gemini 4 Neon jumps 3x on SWE-sweep (12.8% to 39.0%) solely by changing the harness\u2014are we benchmaxxing the wrong layer?",
+            "body": "Gemini 4 Neon jumps 3x on SWE-sweep (12.8% to 39.0%) solely by changing the harness\u2014are we benchmaxxing the wrong layer?\nGoogle DeepMind dropped Gemini 4 Neon right into Anthropic's $1.5T IPO news cycle\u2014their fourth periodic-table release in two months after Hydrogen, Argon, and Carbon. Headline numbers look impressive on paper: $3 per 1M input tokens ($0.15 cached), $15 per 1M output, 1M context window, 127 tok/s observed on OpenRouter (roughly 2.76x faster than Carbon's 46 tok/s), #3 on the Artificial Analysis Intelligence Index at xhigh, and #1 on the Coding Agent Index.\n\nTwo details in the release deserve much more scrutiny than the leaderboard placement.\n\nFirst, the internal pricing inversion: because Google extended promotional $2/$10 pricing on heavier Carbon and Argon through late November, the mid-tier Neon temporarily costs more per raw token than its larger siblings, even though Neon reduces total cost per task by 32% at default high thinking (and 50% to 80% versus rival frontier models on Vals Index and Agent Arena).\n\nSecond, and far more important for anyone building production coding agents: buried in Google's announcement is the SWE-sweep comparison. On the minimal mini-SWE harness, Gemini 4 Neon scores 12.8%. Inside Google Antigravity, the exact same checkpoint jumps 3x to 39.0%.\n\nMeanwhile, practitioners in the wild are still reporting that despite beating Claude Opus 5.5 on static benchmarks, Neon still stumbles on messy multi-file refactors unless the surrounding loop tightly manages context compaction, tool routing, and file-read budgets.\n\nIf swapping only the harness accounts for a 3x jump on identical model weights, how much of our recent frontier model hype is actually just harness engineering in disguise? For teams running production coding agents right now, where are you seeing bigger real-world gains\u2014upgrading checkpoints or hardening your tool loop and context compaction?",
+            "url": "https://www.reddit.com/r/artificial/comments/1y0btfc/gemini_4_neon_jumps_3x_on_swesweep_128_to_390/",
+            "container": "artificial",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 11,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Google DeepMind dropped Gemini 4 Neon right into Anthropic's $1.5T IPO news cycle\u2014their fourth periodic-table release in two months after Hydrogen, Argon, and Carbon. Headline numbers look impressive on paper: $3 per 1M input tokens ($0.15 cached), $15 per 1M output, 1M context window, 127 tok/s observed on OpenRouter (roughly 2.76x faster than Carbon's 46 tok/s), #3 on the Artificial Analysis Int",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.28,
+            "freshness": 90,
+            "engagement_score": 44,
+            "source_quality": 0.6,
+            "local_rank_score": 0.451
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Anthropic prices initial public offering",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 773,
+          "points": 411
+        },
+        "reddit": {
+          "num_comments": 150
+        }
+      },
+      "nomination": {
+        "name": "Anthropic prices initial public offering",
+        "seed_score": 2356.7198,
+        "summary": "Anthropic prices initial public offering",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50553843",
+            "source": "hackernews",
+            "title": "Anthropic prices initial public offering",
+            "body": "Anthropic prices initial public offering",
+            "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+            "author": "surprisetalk",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 411,
+              "comments": 773
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Anthropic prices initial public offering",
+            "snippet": "Anthropic prices initial public offering",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50553843",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.138
+          },
+          {
+            "item_id": "R126",
+            "source": "reddit",
+            "title": "Anthropic IPO - price per share $83.00",
+            "body": "Anthropic IPO - price per share $83.00\n[Anthropic prices initial public offering \\\\ Anthropic](https://www.anthropic.com/news/anthropic-prices-initial-public-offering)",
+            "url": "https://www.reddit.com/r/singularity/comments/1y00qdz/anthropic_ipo_price_per_share_8300/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 379,
+              "num_comments": 150
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[Anthropic prices initial public offering \\\\ Anthropic](https://www.anthropic.com/news/anthropic-prices-initial-public-offering)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.349
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google AI 40",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 562,
+          "points": 709
+        },
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Google AI 40",
+        "seed_score": 1577.914,
+        "summary": "Google's AI answers reducing search traffic by 40%",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50540178",
+            "source": "hackernews",
+            "title": "Google's AI answers reducing search traffic by 40%",
+            "body": "Google's AI answers reducing search traffic by 40%",
+            "url": "https://revscope.co/blog/search-seo-geo-2026/",
+            "author": "slashdev",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 709,
+              "comments": 562
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google's AI answers reducing search traffic by 40%",
+            "snippet": "Google's AI answers reducing search traffic by 40%",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50540178",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1375
+          },
+          {
+            "item_id": "R149",
+            "source": "reddit",
+            "title": "Randomized experiment: Google's AI answers cut outbound clicks by about 40%",
+            "body": "Randomized experiment: Google's AI answers cut outbound clicks by about 40%\nA randomized experiment on Google's AI answers found they cut outbound clicks to source sites by roughly 40%. That is a hard number for the argument that AI summaries are quietly hollowing out the open web's traffic model.\n\n  \nIf clicks fall that far, what replaces the incentive to publish the source material the models summarize? Do publishers get paid, go behind paywalls, or just stop?\n\n  \nWe follow stories like this in r/AINewsRumors if you want them in one feed.",
+            "url": "https://www.reddit.com/r/artificial/comments/1xzxv24/randomized_experiment_googles_ai_answers_cut/",
+            "container": "artificial",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A randomized experiment on Google's AI answers found they cut outbound clicks to source sites by roughly 40%. That is a hard number for the argument that AI summaries are quietly hollowing out the open web's traffic model.\n\n  \nIf clicks fall that far, what replaces the incentive to publish the source material the models summarize? Do publishers get paid, go behind paywalls, or just stop?\n\n  \nWe fo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33149999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Claude solves",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 155,
+          "points": 344
+        },
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Claude solves",
+        "seed_score": 1354.125,
+        "summary": "Claude solves two open problems in the physics of black holes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50563148",
+            "source": "hackernews",
+            "title": "Claude solves two open problems in the physics of black holes",
+            "body": "Claude solves two open problems in the physics of black holes",
+            "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+            "author": "cybermango",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 344,
+              "comments": 155
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Claude solves two open problems in the physics of black hole",
+            "snippet": "Claude solves two open problems in the physics of black holes",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50563148",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.8,
+            "local_rank_score": 0.333
+          },
+          {
+            "item_id": "R129",
+            "source": "reddit",
+            "title": "Claude Fable 5.2 solves two open problems in the physics of black holes",
+            "body": "Claude Fable 5.2 solves two open problems in the physics of black holes",
+            "url": "https://www.reddit.com/r/artificial/comments/1y0nk83/claude_fable_52_solves_two_open_problems_in_the/",
+            "container": "artificial",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Claude Fable 5.2 solves two open problems in the physics of black holes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29200000000000004
+          },
+          {
+            "item_id": "R113",
+            "source": "reddit",
+            "title": "Fable 5.2 solved two open problems in the physics of black holes",
+            "body": "Fable 5.2 solved two open problems in the physics of black holes\nClaude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity. One was the Hawking-Page phase transition, the question of when a hot gas turns into a black hole. In it, Fable completed a calculation that physicists set up more than 20 years ago but which had never been solved. Claude\u2019s result showed that a sudden transition associated with the formation of black holes persists even where spacetime no longer has a definite shape.\n\nIn the second, Claude found the exact limit of the simplest version of a technique used to test candidate theories of quantum gravity. Claude Fable 5.2 noticed a pattern in the numerical results that physicists had missed and borrowed a method from elsewhere in math and physics to calculate the precise ceiling for the simplest version of this technique and prove that it could not be lowered.\n\nThe results were formally verified in Lean, a computerized proof checker. Claude then wrote the paper with minimal guidance, and a physicist checked every main result.\n\n[https://hexagonmath.org/2611.00175v1](https://hexagonmath.org/2611.00175v1)\n\n[https://hexagonmath.org/2611.00174v1](https://hexagonmath.org/2611.00174v1)\n\n[https://www.anthropic.com/research/claude-black-hole-physics](https://www.anthropic.com/research/claude-black-hole-physics)",
+            "url": "https://www.reddit.com/r/singularity/comments/1y0buih/fable_52_solved_two_open_problems_in_the_physics/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 246,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Claude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity. One was the Hawking-Page phase transition, the question of when a hot gas turns into a black hole. In it, Fable completed a calculation that physicists set up more than 20 years ago but which had never been solved. Claude\u2019s result showed that a sudden transition asso",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3795
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Seven new models at scalable price-performance",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 375,
+          "points": 592
+        }
+      },
+      "nomination": {
+        "name": "Seven new models at scalable price-performance",
+        "seed_score": 1025.6584,
+        "summary": "Seven new models at scalable price-performance",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50548021",
+            "source": "hackernews",
+            "title": "Seven new models at scalable price-performance",
+            "body": "Seven new models at scalable price-performance",
+            "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+            "author": "gmays",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 592,
+              "comments": 375
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about Seven new models at scalable price-performance",
+            "snippet": "Seven new models at scalable price-performance",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50548021",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 69,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15899999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Google teases yet ANOTHER Gemini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 113
+        }
+      },
+      "nomination": {
+        "name": "Google teases yet ANOTHER Gemini",
+        "seed_score": 981.0,
+        "summary": "Google teases yet ANOTHER Gemini model drop!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R116",
+            "source": "reddit",
+            "title": "Google teases yet ANOTHER Gemini model drop!",
+            "body": "Google teases yet ANOTHER Gemini model drop!",
+            "url": "https://www.reddit.com/r/singularity/comments/1y0awmz/google_teases_yet_another_gemini_model_drop/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 541,
+              "num_comments": 113
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Google teases yet ANOTHER Gemini model drop!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.39649999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "PHP 8.6",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 126,
+          "points": 267
+        }
+      },
+      "nomination": {
+        "name": "PHP 8.6",
+        "seed_score": 589.5,
+        "summary": "What's New in PHP 8.6",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50557870",
+            "source": "hackernews",
+            "title": "What's New in PHP 8.6",
+            "body": "What's New in PHP 8.6",
+            "url": "https://www.php.net/releases/8.6/en.php",
+            "author": "netol",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 267,
+              "comments": 126
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "HN story about What's New in PHP 8.6",
+            "snippet": "What's New in PHP 8.6",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50557870",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.8,
+            "local_rank_score": 0.33149999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Pete AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 186,
+          "points": 203
+        }
+      },
+      "nomination": {
+        "name": "Pete AI",
+        "seed_score": 583.5,
+        "summary": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50561508",
+            "source": "hackernews",
+            "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+            "body": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+            "url": "https://thedataexchange.media/pete-warden-moonshine/",
+            "author": "datascientist",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 203,
+              "comments": 186
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Pete warden on local AI, open models, voice interfaces, the",
+            "snippet": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50561508",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.8,
+            "local_rank_score": 0.313
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Gemini 4 Neon Opus 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 78,
+          "points": 250
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Neon Opus 5.5",
+        "seed_score": 492.0,
+        "summary": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50554374",
+            "source": "hackernews",
+            "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+            "body": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+            "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+            "author": "seizethecheese",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 250,
+              "comments": 78
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Gemini 4 Neon looks like an Opus 5.5 competitor",
+            "snippet": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50554374",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.8,
+            "local_rank_score": 0.28900000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Gemini 4 Carbon taking so long",
+      "heuristic_junk": true,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 140,
+          "points": 276
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Carbon taking so long",
+        "seed_score": 441.2346,
+        "summary": "Why is Gemini 4 Carbon taking so long?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50541790",
+            "source": "hackernews",
+            "title": "Why is Gemini 4 Carbon taking so long?",
+            "body": "Why is Gemini 4 Carbon taking so long?",
+            "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+            "author": "deenadz",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 276,
+              "comments": 140
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Why is Gemini 4 Carbon taking so long?",
+            "snippet": "Why is Gemini 4 Carbon taking so long?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50541790",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 37,
+            "source_quality": 0.8,
+            "local_rank_score": 0.101
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Kitten-TTS-2 Pico Nano Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 64
+        }
+      },
+      "nomination": {
+        "name": "Kitten-TTS-2 Pico Nano Mini",
+        "seed_score": 420.0,
+        "summary": "KittenML has just released the code and weights for Kitten-TTS-2 Pico(7M), Nano(17M) and Mini(80M), which is a new family of multilingual Super-tiny TTS models. The smallest model pico, is just 4MB and runs faster than realtime on a single smartphone CPU thread. \n\n  \nGithub:\u00a0[https://github.com/KittenML/KittenTTS](https://github.com/KittenML/KittenTTS)  \nHugging face Demo:\u00a0[https://huggingface.co/",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Kitten-TTS-2 Pico, Nano, Mini: SOTA super-tiny Apache 2.0 TTS, up to 16 languages (Pico is just 4 MB)",
+            "body": "Kitten-TTS-2 Pico, Nano, Mini: SOTA super-tiny Apache 2.0 TTS, up to 16 languages (Pico is just 4 MB)\nKittenML has just released the code and weights for Kitten-TTS-2 Pico(7M), Nano(17M) and Mini(80M), which is a new family of multilingual Super-tiny TTS models. The smallest model pico, is just 4MB and runs faster than realtime on a single smartphone CPU thread. \n\n  \nGithub:\u00a0[https://github.com/KittenML/KittenTTS](https://github.com/KittenML/KittenTTS)  \nHugging face Demo:\u00a0[https://huggingface.co/spaces/KittenML/KittenTTS-2-Tiny-Demo](https://huggingface.co/spaces/KittenML/KittenTTS-2-Tiny-Demo)  \nDiscord: [https://discord.com/invite/VJ86W4SURW](https://discord.com/invite/VJ86W4SURW)\n\n  \nMini HF Weights: [https://huggingface.co/KittenML/kitten-tts-2-mini](https://huggingface.co/KittenML/kitten-tts-2-mini)  \nNano HF weights: [https://huggingface.co/KittenML/kitten-tts-2-nano](https://huggingface.co/KittenML/kitten-tts-2-nano)  \nPico HF Weights: [https://huggingface.co/KittenML/kitten-tts-2-pico](https://huggingface.co/KittenML/kitten-tts-2-pico)  \n\n\nKey Features: \n\n1. Three Super-tiny Multilingual Models \n   * Pico (\\~7M): 4MB, 8 languages\n   * Nano (\\~17M): 8.8 MB, 8 languages, higher-quality\n   * Mini (\\~80M): 48MB, 16 languages\n2. Apache 2.0 Code and Weights (hell yeah)\n3. Can literally run anywhere lol : Forget \u201cNo gpu required.\u201d - this thing can even run on raspberry pi\u2019s and phones on single a single thread.\u00a0\n4. What changed from previous series: new pico series (\\~6x smaller than old 25MB nano), huge upgrade in quality, new multilingual support",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y0e59m/kittentts2_pico_nano_mini_sota_supertiny_apache/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 216,
+              "num_comments": 64
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "KittenML has just released the code and weights for Kitten-TTS-2 Pico(7M), Nano(17M) and Mini(80M), which is a new family of multilingual Super-tiny TTS models. The smallest model pico, is just 4MB and runs faster than realtime on a single smartphone CPU thread. \n\n  \nGithub:\u00a0[https://github.com/KittenML/KittenTTS](https://github.com/KittenML/KittenTTS)  \nHugging face Demo:\u00a0[https://huggingface.co/",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Energy-Based Reasoners 385x more efficient inference",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 57,
+          "points": 315
+        }
+      },
+      "nomination": {
+        "name": "Energy-Based Reasoners 385x more efficient inference",
+        "seed_score": 394.5656,
+        "summary": "Energy-Based Reasoners: 385x more efficient inference",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50543989",
+            "source": "hackernews",
+            "title": "Energy-Based Reasoners: 385x more efficient inference",
+            "body": "Energy-Based Reasoners: 385x more efficient inference",
+            "url": "https://energy-based-reasoners.github.io/",
+            "author": "frenchmajesty",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 315,
+              "comments": 57
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Energy-Based Reasoners: 385x more efficient inference",
+            "snippet": "Energy-Based Reasoners: 385x more efficient inference",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50543989",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 25,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0825
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "LLM assisted reverse engineering",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 76,
+          "points": 296
+        }
+      },
+      "nomination": {
+        "name": "LLM assisted reverse engineering",
+        "seed_score": 394.5656,
+        "summary": "LLM assisted reverse engineering",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50553225",
+            "source": "hackernews",
+            "title": "LLM assisted reverse engineering",
+            "body": "LLM assisted reverse engineering",
+            "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+            "author": "ioma8",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 296,
+              "comments": 76
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about LLM assisted reverse engineering",
+            "snippet": "LLM assisted reverse engineering",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50553225",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 28,
+            "source_quality": 0.8,
+            "local_rank_score": 0.0985
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "ExitPath Open-source Slack Notion Microsoft 365",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 93,
+          "points": 248
+        }
+      },
+      "nomination": {
+        "name": "ExitPath Open-source Slack Notion Microsoft 365",
+        "seed_score": 361.6851,
+        "summary": "Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion and Microsoft 365",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50547980",
+            "source": "hackernews",
+            "title": "Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion and Microsoft 365",
+            "body": "Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion and Microsoft 365",
+            "url": "https://exitpath-ruddy.vercel.app/",
+            "author": "zerocool0101",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 248,
+              "comments": 93
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion an",
+            "snippet": "Show HN: ExitPath \u2013 Open-source ways out of Slack, Notion and Microsoft 365",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50547980",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 28,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07900000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

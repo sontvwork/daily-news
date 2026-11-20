@@ -1,0 +1,858 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "f4b1ed59c7608343",
+  "generated_at": "2026-11-19T23:56:00.560758Z",
+  "from_date": "2026-11-18",
+  "to_date": "2026-11-19",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-19T23:56:00.512610Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-19T23:56:00.512616Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 51,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-19T23:56:00.512013Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-19T23:56:00.512550Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Unauthenticated remote code execution in Nginx",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 636,
+          "points": 1480
+        }
+      },
+      "nomination": {
+        "name": "Unauthenticated remote code execution in Nginx",
+        "seed_score": 2244.3569,
+        "summary": "Unauthenticated remote code execution in Nginx",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50547374",
+            "source": "hackernews",
+            "title": "Unauthenticated remote code execution in Nginx",
+            "body": "Unauthenticated remote code execution in Nginx",
+            "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+            "author": "speedping",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1480,
+              "comments": 636
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Unauthenticated remote code execution in Nginx",
+            "snippet": "Unauthenticated remote code execution in Nginx",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50547374",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude solves",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 155,
+          "points": 344
+        },
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Claude solves",
+        "seed_score": 1352.4,
+        "summary": "Claude solves two open problems in the physics of black holes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50563148",
+            "source": "hackernews",
+            "title": "Claude solves two open problems in the physics of black holes",
+            "body": "Claude solves two open problems in the physics of black holes",
+            "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+            "author": "cybermango",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 344,
+              "comments": 155
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Claude solves two open problems in the physics of black hole",
+            "snippet": "Claude solves two open problems in the physics of black holes",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50563148",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34400000000000003
+          },
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Fable 5.2 solved two open problems in the physics of black holes",
+            "body": "Fable 5.2 solved two open problems in the physics of black holes\nClaude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity. One was the Hawking-Page phase transition, the question of when a hot gas turns into a black hole. In it, Fable completed a calculation that physicists set up more than 20 years ago but which had never been solved. Claude\u2019s result showed that a sudden transition associated with the formation of black holes persists even where spacetime no longer has a definite shape.\n\nIn the second, Claude found the exact limit of the simplest version of a technique used to test candidate theories of quantum gravity. Claude Fable 5.2 noticed a pattern in the numerical results that physicists had missed and borrowed a method from elsewhere in math and physics to calculate the precise ceiling for the simplest version of this technique and prove that it could not be lowered.\n\nThe results were formally verified in Lean, a computerized proof checker. Claude then wrote the paper with minimal guidance, and a physicist checked every main result.\n\n[https://hexagonmath.org/2611.00175v1](https://hexagonmath.org/2611.00175v1)\n\n[https://hexagonmath.org/2611.00174v1](https://hexagonmath.org/2611.00174v1)\n\n[https://www.anthropic.com/research/claude-black-hole-physics](https://www.anthropic.com/research/claude-black-hole-physics)",
+            "url": "https://www.reddit.com/r/singularity/comments/1y0buih/fable_52_solved_two_open_problems_in_the_physics/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 246,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Claude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity. One was the Hawking-Page phase transition, the question of when a hot gas turns into a black hole. In it, Fable completed a calculation that physicists set up more than 20 years ago but which had never been solved. Claude\u2019s result showed that a sudden transition asso",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 97,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36750000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Kitten-TTS-2 Pico Nano Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 64
+        }
+      },
+      "nomination": {
+        "name": "Kitten-TTS-2 Pico Nano Mini",
+        "seed_score": 420.0,
+        "summary": "KittenML has just released the code and weights for Kitten-TTS-2 Pico(7M), Nano(17M) and Mini(80M), which is a new family of multilingual Super-tiny TTS models. The smallest model pico, is just 4MB and runs faster than realtime on a single smartphone CPU thread. \n\n  \nGithub:\u00a0[https://github.com/KittenML/KittenTTS](https://github.com/KittenML/KittenTTS)  \nHugging face Demo:\u00a0[https://huggingface.co/",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "Kitten-TTS-2 Pico, Nano, Mini: SOTA super-tiny Apache 2.0 TTS, up to 16 languages (Pico is just 4 MB)",
+            "body": "Kitten-TTS-2 Pico, Nano, Mini: SOTA super-tiny Apache 2.0 TTS, up to 16 languages (Pico is just 4 MB)\nKittenML has just released the code and weights for Kitten-TTS-2 Pico(7M), Nano(17M) and Mini(80M), which is a new family of multilingual Super-tiny TTS models. The smallest model pico, is just 4MB and runs faster than realtime on a single smartphone CPU thread. \n\n  \nGithub:\u00a0[https://github.com/KittenML/KittenTTS](https://github.com/KittenML/KittenTTS)  \nHugging face Demo:\u00a0[https://huggingface.co/spaces/KittenML/KittenTTS-2-Tiny-Demo](https://huggingface.co/spaces/KittenML/KittenTTS-2-Tiny-Demo)  \nDiscord: [https://discord.com/invite/VJ86W4SURW](https://discord.com/invite/VJ86W4SURW)\n\n  \nMini HF Weights: [https://huggingface.co/KittenML/kitten-tts-2-mini](https://huggingface.co/KittenML/kitten-tts-2-mini)  \nNano HF weights: [https://huggingface.co/KittenML/kitten-tts-2-nano](https://huggingface.co/KittenML/kitten-tts-2-nano)  \nPico HF Weights: [https://huggingface.co/KittenML/kitten-tts-2-pico](https://huggingface.co/KittenML/kitten-tts-2-pico)  \n\n\nKey Features: \n\n1. Three Super-tiny Multilingual Models \n   * Pico (\\~7M): 4MB, 8 languages\n   * Nano (\\~17M): 8.8 MB, 8 languages, higher-quality\n   * Mini (\\~80M): 48MB, 16 languages\n2. Apache 2.0 Code and Weights (hell yeah)\n3. Can literally run anywhere lol : Forget \u201cNo gpu required.\u201d - this thing can even run on raspberry pi\u2019s and phones on single a single thread.\u00a0\n4. What changed from previous series: new pico series (\\~6x smaller than old 25MB nano), huge upgrade in quality, new multilingual support",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y0e59m/kittentts2_pico_nano_mini_sota_supertiny_apache/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 216,
+              "num_comments": 64
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "KittenML has just released the code and weights for Kitten-TTS-2 Pico(7M), Nano(17M) and Mini(80M), which is a new family of multilingual Super-tiny TTS models. The smallest model pico, is just 4MB and runs faster than realtime on a single smartphone CPU thread. \n\n  \nGithub:\u00a0[https://github.com/KittenML/KittenTTS](https://github.com/KittenML/KittenTTS)  \nHugging face Demo:\u00a0[https://huggingface.co/",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.351
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Scottish HTTP Codes",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 58,
+          "points": 254
+        }
+      },
+      "nomination": {
+        "name": "Scottish HTTP Codes",
+        "seed_score": 330.926,
+        "summary": "Scottish HTTP Codes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50550062",
+            "source": "hackernews",
+            "title": "Scottish HTTP Codes",
+            "body": "Scottish HTTP Codes",
+            "url": "https://underwood.network/http/scots.html",
+            "author": "mooreds",
+            "container": "Hacker News",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 254,
+              "comments": 58
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Scottish HTTP Codes",
+            "snippet": "Scottish HTTP Codes",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50550062",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 53,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07800000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Tencent Hy4-flash 85 GB GGUF",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Tencent Hy4-flash 85 GB GGUF",
+        "seed_score": 90.0,
+        "summary": "I found Hy4-flash on OpenRouter, it has like 64T weekly tokens if I am correct, this is insane amount, and in same day I saw how someone said \"I wish it was in Strata\", so I implemented it in RustingStrata, bc this model looks pretty smart for its size.\n\nHy4-flash IQ2\\_S/IQ2\\_XXS is 85 GB in two files (AtomicChat/Hy4-flash-GGUF). My box has an RTX 3060 12 GB, a Ryzen 5 7600X, 30 GiB of usable RAM",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Tencent Hy4-flash (85 GB GGUF) on an RTX 3060 12 GB + 32 GB RAM, with a 20,000-token prompt",
+            "body": "Tencent Hy4-flash (85 GB GGUF) on an RTX 3060 12 GB + 32 GB RAM, with a 20,000-token prompt\nI found Hy4-flash on OpenRouter, it has like 64T weekly tokens if I am correct, this is insane amount, and in same day I saw how someone said \"I wish it was in Strata\", so I implemented it in RustingStrata, bc this model looks pretty smart for its size.\n\nHy4-flash IQ2\\_S/IQ2\\_XXS is 85 GB in two files (AtomicChat/Hy4-flash-GGUF). My box has an RTX 3060 12 GB, a Ryzen 5 7600X, 30 GiB of usable RAM and an NVMe drive. The model is 7 times bigger than the card and almost 3 times bigger than the RAM. I added it to RustingStrata, my Rust GGUF engine, to see what this machine does with it.\n\nThe prompt is 20,000 tokens of real text that never repeats: the project's docs followed by Rust source. Then 64 tokens of output.\n\n| da | CUDA | Vulkan, same card |\n|---|---:|---:|\n| Reading the 20,000-token prompt | 11.6 tok/s (29 min) | 10.6 tok/s (31 min) |\n| Writing after it | 3.3 tok/s | 1.9 tok/s |\n\nAfter a short prompt it writes 4.3 to 5.1 tok/s on CUDA.\n\nSo: half an hour to read 20k tokens, then about 3 tokens a second. Not something for a coding agent. But it is the full model on a 12 GB card, and it answers.\n\nWhy it is this slow: one token needs about 2.6 GB of expert weights, and most of them are on the SSD, not in RAM. The engine keeps as many experts as fit in VRAM, and for the others it splits the work between the CPU and the card, depending on which side is faster at that moment. The prompt is read 1024 tokens at a time, so each expert is loaded once per 1024 tokens and not once per token.\n\nThings I could not test, and where I would like your numbers:\n\n* An AMD card. The Vulkan path is the same code, but I only ran it on the 3060.\n* A machine whose RAM holds the whole 85 GB. The engine then reads the file into RAM at start, so the SSD should stop mattering. I cannot check that here.\n* Two cards (`--device 0,1`).\n\nI wanted to compare with llama.cpp, but Hy4-flash support there is still a draft pull request (#32517), so these are RustingStrata numbers only.\n\nTo try it:\n\n    rustingstrata chat --model Hy4-flash-AD-IQ2_S-IQ2_XXS-00001-of-00002.gguf\n\nNo flags needed. It uses CUDA on NVIDIA and Vulkan on everything else. `serve` gives an OpenAI-style endpoint.\n\nSetup: RustingStrata, `bench --model Hy4-flash-AD-IQ2_S-IQ2_XXS-00001-of-00002.gguf --prompt-file prompt.txt --pp 20000 --tg 64`, Vulkan row with `--backend vulkan`.\n\nRepo: [RustingStrata](https://github.com/RustingStudio/RustingStrata)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y0b8io/tencent_hy4flash_85_gb_gguf_on_an_rtx_3060_12_gb/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 29,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I found Hy4-flash on OpenRouter, it has like 64T weekly tokens if I am correct, this is insane amount, and in same day I saw how someone said \"I wish it was in Strata\", so I implemented it in RustingStrata, bc this model looks pretty smart for its size.\n\nHy4-flash IQ2\\_S/IQ2\\_XXS is 85 GB in two files (AtomicChat/Hy4-flash-GGUF). My box has an RTX 3060 12 GB, a Ryzen 5 7600X, 30 GiB of usable RAM",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.371
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Lawyer GPUs DeepSeek-V4.1-Flash 12x V100 15,360",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "Lawyer GPUs DeepSeek-V4.1-Flash 12x V100 15,360",
+        "seed_score": 85.5,
+        "summary": "Update from the lawyer with the V100 server. Last time it was eight cards and a 2-bit quant. The thing that bugged me about eight was the arithmetic: NVIDIA's NVFP4 pack of DeepSeek-V4.1-Flash has 15,360 routed experts, and in that format all forty layers of experts come to 278.9 GiB. Eight 32 GB cards hold 254. So an eight-card build either compresses some experts or reads them from system RAM. I",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "Lawyer with too many GPUs: DeepSeek-V4.1-Flash on 12x V100, all 15,360 experts in NVFP4 on the cards. 157-184 tok/s on one code stream, faster than any published 4x DGX Spark stack and double 3 Sparks, for half the price of 3 Sparks. 128K file read in 28 s.",
+            "body": "Lawyer with too many GPUs: DeepSeek-V4.1-Flash on 12x V100, all 15,360 experts in NVFP4 on the cards. 157-184 tok/s on one code stream, faster than any published 4x DGX Spark stack and double 3 Sparks, for half the price of 3 Sparks. 128K file read in 28 s.\nUpdate from the lawyer with the V100 server. Last time it was eight cards and a 2-bit quant. The thing that bugged me about eight was the arithmetic: NVIDIA's NVFP4 pack of DeepSeek-V4.1-Flash has 15,360 routed experts, and in that format all forty layers of experts come to 278.9 GiB. Eight 32 GB cards hold 254. So an eight-card build either compresses some experts or reads them from system RAM. I didn't want either. I wanted every expert at the precision NVIDIA shipped, on the cards. That takes twelve.\n\nSo, twelve. Three NVLink boards of four V100-SXM2-32GB, run as three pipeline stages of four tensor-parallel cards, cut at layers 14 and 28. Every one of the 15,360 experts sits in card memory in NVFP4; none is compressed, none lives in host RAM. Four conversations kept warm at once.\n\nThe headline is single-stream speed, because that is how I use it: one lawyer, one question, one long document. One code request decodes at 157 to 184 tok/s from 1K to 128K tokens of context and 153 at 256K. Legal text runs 92 to 102, prose 83 to 95. A 128K-token file is read in 28 seconds cold and the first token comes back in under half a second once the file is cached. For one person working on one matter, nothing I can find published on DGX Sparks matches it, at any node count.\n\nStill a lawyer, still driving the whole thing through Claude Code, and Claude Code ran the benchmarks, built the tables and helped me write this up. The repo, every kit, every window log and the list of what didn't work is public.\n\n**Repo:** https://github.com/ProprietaryLegal/Volta-12X-AmPLIfy-DeepSeek-V4.1-Flash-1017-NVFP4-12xV100-SXM2-PP3xTP4\n\n**What we learned building three of these on 2018 cards** (the long version): https://proprietarylegal.com/research/volta-v100-old-gpus-new-model.html\n\n**The numbers** (MEASURED 2026-11-19, clock cap 1,452 MHz, thinking off, 1,024 tokens out, cold reads, mean of two runs; one request at a time unless it says three)\n\n| prompt | first token (cold) | prefill tok/s | code | legal | prose | three code requests together (summed) | first token, document already cached |\n|:-|:-|:-|:-|:-|:-|:-|:-|\n| 1K | 0.7 s | 1,567 | 184 | 102 | 86 | 443 | 0.2 s |\n| 8K | 2.5 s | 3,267 | 176 | 93 | 90 | 421 | 0.2 s |\n| 32K | 7.3 s | 4,478 | 176 | 92 | 95 | 404 | 0.3 s |\n| 64K | 13.9 s | 4,697 | 157 | 93 | 83 | 364 | 0.3 s |\n| 128K | 28.1 s | 4,670 | 157 | 93 | 86 | 360 | 0.4 s |\n| 256K | 58.0 s | 4,518 | 153 | 92 | 85 | 344 | 0.6 s |\n\nTwo notes on reading that table. A one-stream decode cell is the figure of the text generated in that cell: across texts of one kind a cell spreads about \u00b19 %, and two benches on the same day landed 157 and 175 at 128K code, so the band is the figure, not the digit. And \"three together\" is each stream's own rate while all three stream, summed: the pipeline carries one request per step, so three cold 128K prompts are read one after another (first tokens at 77, 90 and 90 s) and then decode together. Once the document is in the cache the wait is gone: first token under a second at every length, and three streams on one cached 128K file decode 427 tok/s over the whole window.\n\nContext: the server is set to 524,288 tokens per request with four slots. That is a choice, not a ceiling; the KV cache would take a longer limit with fewer slots, and I have never had a workload that needed it. Half a million tokens is about five thousand pages. My longest real matter does not get there.\n\n**Against the Sparks**, because that is the question everyone asks. These are the builders' own published figures (UPSTREAM), read today, each on its own engine and weights, so bands not digits:\n\n| stack | 3x DGX Spark (TP3, SGLang, MXFP4 experts) | 4x DGX Spark (TP4; three stacks) | 12x V100 (this build) |\n|:-|:-|:-|:-|\n| one request, code | not published | 125 (SGLang) / 138 (TensorFold 4.0 bpw) / 136 (vLLM + DSpark) | **153-184** |\n| one request, prose | 38-51 | 79-88 | **83-95** |\n| prefill, long prompt | about 2,000 | 3,100-3,300 (TensorFold) / 4,900-5,000 (SGLang, real text) / 8,500 (vLLM + DSpark, 32K-128K) | 4,500-4,700 |\n| many requests | 85 summed at 4 streams | 290 at 32 (TensorFold) / 340-570 at 16 (SGLang, prose to structured) | 344-443 at 3; it is not a batched-decode engine |\n| context | 256K configured | 1M | 524K configured (see above) |\n\nSo on one stream, this build is the fastest of the four: 15 to 45 % over the best four-Spark stacks on code, ahead on prose, and about double three Sparks on everything they published. On prefill it sits between the four-Spark stacks: ahead of TensorFold, level with SGLang on real text, and behind the vLLM + DSpark ring, which reads a prompt nearly twice as fast. Where the Sparks pull away is batched serving: at eight or sixteen streams they go on scaling and this build serves one request per pipeline step. If you serve a team, that matters. If you serve yourself, it doesn't. I have two Sparks myself and they carry the overflow.\n\n**Where the V100s win, then, is the work most of us actually do.** Office work, computer use, agent loops, anything with a person in the chair waiting for a specific result: those are one stream at a time, one request after another, and every request wants the first token now and the answer fast. Claude Code pointed at this box runs a tool call, reads the result, runs the next; a computer-use loop is the same thing with screenshots; a lawyer reading a draft is the same thing with a slower reader. None of that batches. What it needs is exactly the column this build is best at: 157 to 184 tok/s on the one stream that matters, first token under half a second when the document is already in the cache, and a 128K file read in 28 s when it isn't. The batched numbers are what you need when you are selling tokens. I am not.\n\n**What it costs**, since that is the other question. My V100 numbers are what I actually paid (cards in 2025, used) and what the same cards list for today; the Spark numbers are today's street prices.\n\n| build | memory | cost | basis |\n|:-|:-|:-|:-|\n| 12x V100 SXM2 32 GB, as I paid | 384 GB HBM2 | **$9,450** | 12 cards at $450; three 4-card NVLink boards with PEX switches and cables at $850 each; $1,500 for the server, CPU and RAM |\n| 12x V100, at today's card price | 384 GB HBM2 | **$14,550** | the same, with used cards at about $875 each (eBay asks today run $640 to $1,060) |\n| 2x DGX Spark | 256 GB unified | **$12,160** | two partner GB10 128 GB boxes at $5,999 (ASUS, Gigabyte, Lenovo at $5,480 to $6,000 today) + one QSFP112 200G cable at $159 |\n| 3x DGX Spark | 384 GB unified | **$18,470** | three boxes + three cables (a switchless ring) |\n| 4x DGX Spark | 512 GB unified | **$24,630** | four boxes + four cables |\n| 2x / 3x / 4x DGX Spark, NVIDIA Founders Edition | 256 / 384 / 512 GB | $14,060 / $21,330 / $28,440 | the same boxes and cables at NVIDIA's own price of $6,950 |\n\nThe twelve-card box holds the same 384 GB as three Sparks, cost me half of three Sparks, and bought today comes in a fifth under three Sparks and two fifths under four, while decoding faster than either on one stream. The price of that is the box itself: the cards draw up to 2,100 W at the 175 W cap I run them at, it is loud, and it needs a floor and a circuit that can take it. Mine lives in a room nobody sits in.\n\n**What had to be built.** The engine this descends from (1Cat-vLLM's DeepSeek-V4.1 package) accepted two stages cut at layer 20 and nothing else. The kit teaches it a third stage, fixes the scheduler for a pipeline of three, cuts the middle stage's memory and adds a hard card-memory limit. Then two days of windows, one change per boot, each change either byte-identical on the accepted capture or judged by closeness, the losers written up with their reason. Eleven switches are on. Among the things that lost: a leaner pipeline hand-off, packed expert records, an exact four-card sum (a 2.2x cost for a closeness gain nobody could see).\n\n**Volta reality check.** V100 has FP16 mma.sync only: no FP4, no FP8 tensor cores. Every 4-bit expert is decoded in software into FP16 operands, so NVFP4 pays off by reading fewer bytes, not by faster math. That is what makes the speed above possible on 2018 silicon, and it is also why the newer chips will keep the per-watt crown.\n\n**What I use it for:** the same as before. Private first-pass work on my own case files through Claude Code pointed at this server; the documents never leave the office. Since Monday it is my default DeepSeek box.\n\n**Next:** the conversation store and a cached-token count in the usage block go on today (so Claude Code sees cache hits the way it does with Anthropic), then a proper study of batched decode, which is the one thing the Sparks have that I want.\n\nTell me what I'm doing wrong. Seriously.\n\n(PLI Labs is my side outfit for private, on-prem AI built around a firm's own work product. proprietarylegal.ai if that's your thing.)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y0gvpb/lawyer_with_too_many_gpus_deepseekv41flash_on_12x/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Update from the lawyer with the V100 server. Last time it was eight cards and a 2-bit quant. The thing that bugged me about eight was the arithmetic: NVIDIA's NVFP4 pack of DeepSeek-V4.1-Flash has 15,360 routed experts, and in that format all forty layers of experts come to 278.9 GiB. Eight 32 GB cards hold 254. So an eight-card build either compresses some experts or reads them from system RAM. I",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5469999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Power Limit test R9700 100w-300w llama.cpp",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Power Limit test R9700 100w-300w llama.cpp",
+        "seed_score": 85.5,
+        "summary": "Many R9700 Pro cards probably have a very loud cooling system. So I wondered, how low can you put the power level to get it silent and how much performance do you loose?\n\n  \nBy default it is capped to 210w minimum power level. I know there is this [power\\_limit\\_removal](https://gitlab.com/fpsflow/power_limit_removal), which needs a patched kernel or similar. I let Qwen3.8-27B code a livepatch ker",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Power Limit test R9700 100w-300w llama.cpp",
+            "body": "Power Limit test R9700 100w-300w llama.cpp\nMany R9700 Pro cards probably have a very loud cooling system. So I wondered, how low can you put the power level to get it silent and how much performance do you loose?\n\n  \nBy default it is capped to 210w minimum power level. I know there is this [power\\_limit\\_removal](https://gitlab.com/fpsflow/power_limit_removal), which needs a patched kernel or similar. I let Qwen3.8-27B code a livepatch kernel module to remove the lower power limit.\n\n  \nThe graph shows the pp and tg for power levels from 100w to 300w. I'd say pp is approximately linear until 180w, tg only starts to drop below 140w. At 160w I can run the fan at 45% and it is audible but not annoyingly loud.\n\nI did the tests at -40mV GPU voltage. I actually did tests from -80 to 0mV at 140W limit and the values didn't change at all.\n\nI tested that model and not qwen, because it was simply a lot faster to test. I used a recent llama.cpp compiled with ROCm.\n\n  \nSo from 300w to 210w I loose 10%pp. Going to 160w I loose another 13%. TG stays within 5%. For most cases that's a sacrifice I might be willing to make while I sit at the desk...",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y0a6qr/power_limit_test_r9700_100w300w_llamacpp/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 38,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Many R9700 Pro cards probably have a very loud cooling system. So I wondered, how low can you put the power level to get it silent and how much performance do you loose?\n\n  \nBy default it is capped to 210w minimum power level. I know there is this [power\\_limit\\_removal](https://gitlab.com/fpsflow/power_limit_removal), which needs a patched kernel or similar. I let Qwen3.8-27B code a livepatch ker",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.6,
+            "local_rank_score": 0.318
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Intern Opus+Hy4 Flash match Opus",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Intern Opus+Hy4 Flash match Opus",
+        "seed_score": 66.0,
+        "summary": "hey llamas,\n\ntoday we\u2019re releasing Intern [https://github.com/nace-ai/intern](https://github.com/nace-ai/intern), an open-source coding harness that runs every task on three models instead of one.\n\n1. **Frontier**. The smart, pricey model: Opus, Fable, Sol, Hy4. It reads the code, works out what has to be done and plans the hard part.\n2. **Efficient**. The fast model: Hy4 Flash, DeepSeek Flash, So",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R37",
+            "source": "reddit",
+            "title": "We open-sourced a new mixing harness: Intern. On terminalbench: Opus+Hy4 Flash match Opus performance at ~half the cost",
+            "body": "We open-sourced a new mixing harness: Intern. On terminalbench: Opus+Hy4 Flash match Opus performance at ~half the cost\nhey llamas,\n\ntoday we\u2019re releasing Intern [https://github.com/nace-ai/intern](https://github.com/nace-ai/intern), an open-source coding harness that runs every task on three models instead of one.\n\n1. **Frontier**. The smart, pricey model: Opus, Fable, Sol, Hy4. It reads the code, works out what has to be done and plans the hard part.\n2. **Efficient**. The fast model: Hy4 Flash, DeepSeek Flash, Sonnet. It carries on with the rest of the job. We also proved it can be a local model.\n3. **Decision**. A small model that sits between every turn: Jev or Drex Max like models. It picks the moment to hand over, searches and reranks results, prunes the context and filters tool-call output.\n\nOne model on its own is either too weak for hard tasks or too expensive for the easy parts. Intern splits the work so each model does what it\u2019s good at.\n\n![img](zzjfq6ekol2i1)\n\n**Terminal-Bench 2.1, 87 tasks:** Opus 5.5 \u2192 Hy4 Flash got 92.4% at $0.127/task. Opus 5.5 alone in Pi/Hermes/OpenCode got 91\u201394% at $0.28\u20130.39. Pi on Opus still scores a bit higher. Hy4 Flash did about two-thirds of the turns for \\~1% of the cost.\n\n![img](gi0eu6h5ql2i1)\n\n**open weights, FrontierHarness v1.1 (62 tasks, 1 attempt each):** DeepSeek V4.1 Flash \u2192 Qwen3.8 27B got 65.3% at $0.092, vs 69.4% at $0.182 for DeepSeek alone. Qwen27B on its own gets 40.3%. Qwen was self-hosted, so the cost counts only DeepSeek + Drex.\n\n![img](0vbpxpocpl2i1)\n\n**Single OpenAI vendor, 62 tasks, 1 attempt each:** GPT-6.1 Sol alone in Intern $0.233, Sol \u2192 Luna $0.143, same 44/62 passed in terminalbench. Codex CLI on Sol was $0.274 for the same 44.\n\n|Codex CLI \u00b7 gpt-6.1-sol|44/62|71%|$0.274|\n|:-|:-|:-|:-|\n|Intern \u00b7 gpt-6.1-sol alone|44/62|71.0%|$0.233|\n|**Intern \u00b7 gpt-6.1-sol \u2192 gpt-6-luna (one hand-over)**|**44/62**|**71.0%**|**$0.143**|\n\ntry it: `uv tool install \"intern-agent @ git+https://github.com/nace-ai/intern\"`, then `intern`. setup is simple.\n\nit\u2019s new code, so issues and PRs are very welcome. as usually im pretty active & happy to answer anything in the comments.\n\n  \ncheers",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y0et8t/we_opensourced_a_new_mixing_harness_intern_on/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 33,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "hey llamas,\n\ntoday we\u2019re releasing Intern [https://github.com/nace-ai/intern](https://github.com/nace-ai/intern), an open-source coding harness that runs every task on three models instead of one.\n\n1. **Frontier**. The smart, pricey model: Opus, Fable, Sol, Hy4. It reads the code, works out what has to be done and plans the hard part.\n2. **Efficient**. The fast model: Hy4 Flash, DeepSeek Flash, So",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6100000000000001
+          },
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "Hy4 Flash can beat Opus 5.5 on Terminal Bench with a new Open Source Harness.",
+            "body": "Hy4 Flash can beat Opus 5.5 on Terminal Bench with a new Open Source Harness.\nhey llamas,\n\nit\u2019s alish from nace. we are the team behind Drex (#1 open source decision model on Artificial Analysis) and Kapitsa (a fast open source local inference engine for Qwen on Apple silicon).\n\ntoday we\u2019re releasing **Intern** [**https://github.com/nace-ai/intern**](https://github.com/nace-ai/intern), an open-source coding harness that runs every task on three models instead of one.\n\n**1. Frontier.** The smart, pricey model: Opus, Fable, Sol, Hy4. It reads the code, works out what has to be done and plans the hard part.\n\n**2. Efficient.** The fast model: Hy4 Flash, DeepSeek Flash, Sonnet. It carries on with the rest of the job. We also proved it can be a local model.\n\n**3. Decision.** A small model that sits between every turn: Jev or Drex Max like models. It picks the moment to hand over, searches and reranks results, prunes the context and filters tool-call output.\n\nOne model on its own is either too weak for hard tasks or too expensive for the easy parts. Intern splits the work so each model does what it\u2019s good at.\n\non Terminal-Bench 2.1 (87 tasks), Opus 5.5 handing over to Hy4 Flash scored **92.4% at $0.127 a task**. Opus 5.5 alone scored 91\u201394% at $0.28\u20130.39 in Pi, Hermes and OpenCode. Hy4 Flash did about two-thirds of the turns for 1% of the cost.\n\n![img](hrfm4w15gl2i1 \"How it works.\")\n\n# Try it:\n\n`uv tool install \u201cintern-agent @ git+`[`https://github.com/nace-ai/intern`](https://github.com/nace-ai/intern)`\u201d`  \n`intern`\n\nSetup takes a minute: connect a provider (OpenRouter covers every model with one key), pick a pair like Opus 5.5 \u2192 Hy4 Flash and do the usual. The efficient model can also run locally (Ollama, LM Studio, Kapitsa).  \n\n\n# Experimenting with local models:\n\n**DeepSeek \u2192 Drex \u2192 Qwen** on [FrontierHarness v1.1](https://frontierharness.org/efficiency) (62 tasks, 22 harnesses, same model)\n\nDeepSeek V4.1 Flash alone in Intern: **69.4% at $0.182**\n\nDeepSeek v4.1 Flash+Qwen27B = **65.3% at $0.092**. That\u2019s cheaper than all 22 harnesses, and it still beats 17 of them\n\nSingle Qwen27b on it's own scores **40.3%.** \n\ncost counts only the paid calls (DeepSeek). Qwen/Drex runs locally; we\u2019ve run it on Kapitsa.\n\n![img](qfw4mxzcgl2i1 \"frontier harness on deepseek flash + local qwen\")\n\n**Experimenting with a single OpenAI vendor: Sol \u2192 Luna (62 terminal tasks, 1 attempt each)**\n\n||passed|cost per task|\n|:-|:-|:-|\n|Codex CLI \u00b7 GPT-6.1 Sol|44/62|$0.274|\n|Intern \u00b7 Sol alone|44/62|$0.233|\n|Intern \u00b7 Sol \u2192 Luna|44/62|**$0.143**|\n\nsame tasks passed: 39% cheaper than Sol alone, 48% cheaper than Codex CLI.\n\nTLDR: this is a new code, it might be buggy! please submit issues/PR's! \n\nanyways, thanks for the read. as always i am doing an AMA here in comments. so please feel free to request fetaures/ \n\np.s: check our new GGUF quants for hy4 flash [https://huggingface.co/nace-ai/Hy4-flash-GGUF](https://huggingface.co/nace-ai/Hy4-flash-GGUF)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y0dofp/hy4_flash_can_beat_opus_55_on_terminal_bench_with/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "hey llamas,\n\nit\u2019s alish from nace. we are the team behind Drex (#1 open source decision model on Artificial Analysis) and Kapitsa (a fast open source local inference engine for Qwen on Apple silicon).\n\ntoday we\u2019re releasing **Intern** [**https://github.com/nace-ai/intern**](https://github.com/nace-ai/intern), an open-source coding harness that runs every task on three models instead of one.\n\n**1.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.552
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Rebuilding my local voice assistant pipeline",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 2,
+          "points": 38
+        }
+      },
+      "nomination": {
+        "name": "Rebuilding my local voice assistant pipeline",
+        "seed_score": 60.0,
+        "summary": "Rebuilding my local voice assistant pipeline",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50566261",
+            "source": "hackernews",
+            "title": "Rebuilding my local voice assistant pipeline",
+            "body": "Rebuilding my local voice assistant pipeline",
+            "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+            "author": "todsacerdoti",
+            "container": "Hacker News",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 38,
+              "comments": 2
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Rebuilding my local voice assistant pipeline",
+            "snippet": "Rebuilding my local voice assistant pipeline",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50566261",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "GTA7 5 years",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "GTA7 5 years",
+        "seed_score": 42.0,
+        "summary": "Does anyone think GTA7 will be out within 5 years?\n\nWith the current rate of AI advancement, it's looking like GTA6 could essentially be one shot around.. 2028. \n\nThis would mean R\\\\\\* could take advantage of AI to make GTA7 one of the most realistic games of all time, running millions of concurrent claude agents to achieve insane levels of detail never seen before in a video game.\n\nDo you think G",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "Does anyone think GTA7 will be out within 5 years?",
+            "body": "Does anyone think GTA7 will be out within 5 years?\nDoes anyone think GTA7 will be out within 5 years?\n\nWith the current rate of AI advancement, it's looking like GTA6 could essentially be one shot around.. 2028. \n\nThis would mean R\\\\\\* could take advantage of AI to make GTA7 one of the most realistic games of all time, running millions of concurrent claude agents to achieve insane levels of detail never seen before in a video game.\n\nDo you think GTA7 will be heavily influenced by AI, to the point where it's a completely different beast to GTA6? Or do you think it will just be another step up similar to GTA5>GTA6?",
+            "url": "https://www.reddit.com/r/singularity/comments/1y099he/does_anyone_think_gta7_will_be_out_within_5_years/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Does anyone think GTA7 will be out within 5 years?\n\nWith the current rate of AI advancement, it's looking like GTA6 could essentially be one shot around.. 2028. \n\nThis would mean R\\\\\\* could take advantage of AI to make GTA7 one of the most realistic games of all time, running millions of concurrent claude agents to achieve insane levels of detail never seen before in a video game.\n\nDo you think G",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4625
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Ran 30 Seedream 5.5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Ran 30 Seedream 5.5",
+        "seed_score": 33.0,
+        "summary": "I wanted to try Seedream 5.5 and GPT Image 2.6 since they came out around the same time. I'd been hearing people say 2.6 was worse than 2.5, so I brought 2.5 into the comparison too.\n\nI had all three edit the same scrambled cube for 30 rounds, following the same sequence of 90-degree face turns. Each output became the input for the next round. All images were 2048\u00d72048, with both Image models set",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "Ran 30 rounds of cube edits on Seedream 5.5, GPT Image 2.5 and 2.6, is 2.6 really a downgrade?",
+            "body": "Ran 30 rounds of cube edits on Seedream 5.5, GPT Image 2.5 and 2.6, is 2.6 really a downgrade?\nI wanted to try Seedream 5.5 and GPT Image 2.6 since they came out around the same time. I'd been hearing people say 2.6 was worse than 2.5, so I brought 2.5 into the comparison too.\n\nI had all three edit the same scrambled cube for 30 rounds, following the same sequence of 90-degree face turns. Each output became the input for the next round. All images were 2048\u00d72048, with both Image models set to high.\n\nI used the Atlac Cloud CLI in Codex to quickly call all three models and run the editing chains.\n\nGenerating 30 images cost $1.03 for Seedream, $3.05 for Image 2.5, and $3.02 for Image 2.6. Median generation time per image was 39 seconds, 51 seconds, and 69 seconds, respectively. Seedream was clearly the cheapest and fastest of the three.\n\nLooking through the results, 2.5 gave me the funniest moment. It had been building up all this colorful texture in the background, then suddenly hid it with a clean gray background at round 28. Might have something to do with the \u201ckeep it pure gray\u201d instruction I'd been giving it, but it really looked like it found a shortcut there, haha.\n\n2.6 accumulated noticeably less of that colorful background texture than 2.5 over the repeated edits. The difference became pretty obvious as the rounds went on. It was slower, but for this kind of multi-round editing, that looks like a decent improvement to me.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y0541i/ran_30_rounds_of_cube_edits_on_seedream_55_gpt/",
+            "container": "singularity",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 21,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I wanted to try Seedream 5.5 and GPT Image 2.6 since they came out around the same time. I'd been hearing people say 2.6 was worse than 2.5, so I brought 2.5 into the comparison too.\n\nI had all three edit the same scrambled cube for 30 rounds, following the same sequence of 90-degree face turns. Each output became the input for the next round. All images were 2048\u00d72048, with both Image models set",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3095
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Cancelled Codex",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Cancelled Codex",
+        "seed_score": 31.5,
+        "summary": "When GPT 6.2 came out. I was very impressed by how token efficient it was. I used it all day running 5-6 agents continuously and it used up 15% of my weekly limit of the Pro 500 plan. Which is very impressive for about 20 hours of running 5+ agents.\n\nI've been orchestrating those agents with Fable 5.2 And I checked the trace today, turns out they screwed up every single time and Fable had to give",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "I just Cancelled Codex",
+            "body": "I just Cancelled Codex\nWhen GPT 6.2 came out. I was very impressed by how token efficient it was. I used it all day running 5-6 agents continuously and it used up 15% of my weekly limit of the Pro 500 plan. Which is very impressive for about 20 hours of running 5+ agents.\n\nI've been orchestrating those agents with Fable 5.2 And I checked the trace today, turns out they screwed up every single time and Fable had to give further instructions for 5-10 times each run for something Fable could've fixed in 1-2 shots itself.\n\nPlus one thing I really liked about my Codex Subscription was the Pro chat mode. Which somehow still uses Astra-6 not 6.2.\n\nI honestly don't understand how they can claim those benchmarks while it misunderstands everything even with Fable Orchestrating it and providing the clearest instructions.\n\nToday I tried using Fable 5.2 and Gemini Neon only and all the issues I had yesterday that a team of Sol + Astra agents couldn't fix (and made it worse because I had to go back a few commits and restart because they really diverged from the task) is now fixed within 2-3 hours this morning.\n\nI'm very disappointed. I've been wondering why they delayed the launch for so long, I guess we have an answer. Because OpenAI didn't want to admit they cannot release frontier models anymore. o1, o3, and Astra-6 were so good for their time that I couldn't justify fully cancelling codex to myself ever. But here we are. They can keep their actually good internal models to themselves.\n\nCongrats to Anthropic on their IPO $1.5T, Mega assists by OpenAI",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y0dy1a/i_just_cancelled_codex/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "When GPT 6.2 came out. I was very impressed by how token efficient it was. I used it all day running 5-6 agents continuously and it used up 15% of my weekly limit of the Pro 500 plan. Which is very impressive for about 20 hours of running 5+ agents.\n\nI've been orchestrating those agents with Fable 5.2 And I checked the trace today, turns out they screwed up every single time and Fable had to give",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3125
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Regenerative software approach",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Regenerative software approach",
+        "seed_score": 31.5,
+        "summary": "I came across \\[this blog\\]([https://turri.dev/blog/why-i-built-turri/](https://turri.dev/blog/why-i-built-turri/)) where the author explains how they lost the knowledge of their own software while using coding agents. Their answer was apparently regenerative software, where the idea is to keep the intent as the source of truth so the code can always be regenerated. I'm a bit sceptical about how t",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R10",
+            "source": "reddit",
+            "title": "Regenerative software approach",
+            "body": "Regenerative software approach\nI came across \\[this blog\\]([https://turri.dev/blog/why-i-built-turri/](https://turri.dev/blog/why-i-built-turri/)) where the author explains how they lost the knowledge of their own software while using coding agents. Their answer was apparently regenerative software, where the idea is to keep the intent as the source of truth so the code can always be regenerated. I'm a bit sceptical about how this would scale on larger projects, and there have been several attempts at this in the past - spec driven development, UML etc.\n\nIt feels to me like we are entering a new layer of abstraction, ie. similar to how we went from machine code to higher level programming languages, and I think there will initially be the same kind of push back - \"The code it spits out will be way slower than mine.\", \"How do I debug code I didn't write?\", \"Every machine is different anyway, so why bother being general?\" etc.\n\nWhat's your take on this?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y0a34y/regenerative_software_approach/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I came across \\[this blog\\]([https://turri.dev/blog/why-i-built-turri/](https://turri.dev/blog/why-i-built-turri/)) where the author explains how they lost the knowledge of their own software while using coding agents. Their answer was apparently regenerative software, where the idea is to keep the intent as the source of truth so the code can always be regenerated. I'm a bit sceptical about how t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.349
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Beware 6000 eBay 8000",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Beware 6000 eBay 8000",
+        "seed_score": 27.0,
+        "summary": "Not saying its a scam, but according to Claude, there are many signs out there ... \n\nhttps://i.redd.it/4xatmfjcbm2i1.png",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Beware, beware: rtx pro 6000 listing on eBay for $8000 ... :)",
+            "body": "Beware, beware: rtx pro 6000 listing on eBay for $8000 ... :)\nNot saying its a scam, but according to Claude, there are many signs out there ... \n\nhttps://i.redd.it/4xatmfjcbm2i1.png",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y0hwi2/beware_beware_rtx_pro_6000_listing_on_ebay_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-19",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Not saying its a scam, but according to Claude, there are many signs out there ... \n\nhttps://i.redd.it/4xatmfjcbm2i1.png",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 20,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29050000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Wozniak AI straight-A",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "Wozniak AI straight-A",
+        "seed_score": 26.5165,
+        "summary": "Saw Steve Wozniak\u2019s quote about barely using AI because he\u2019s disappointed by it and thinks it sounds \"too dry and too perfect.\"  \n  \nComing from Woz, that makes total sense. He\u2019s the ultimate hardware-and-code craftsman. If you sit down looking for genuine architectural taste, creative leaps, or intuition, LLMs feel sterile and soulless.  \n  \nBut from a practical delivery standpoint, I think he\u2019s",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Wozniak says AI is \"too dry and too perfect\" - honestly, that\u2019s why I treat coding agents like a straight-A grad with infinite caffeine",
+            "body": "Wozniak says AI is \"too dry and too perfect\" - honestly, that\u2019s why I treat coding agents like a straight-A grad with infinite caffeine\nSaw Steve Wozniak\u2019s quote about barely using AI because he\u2019s disappointed by it and thinks it sounds \"too dry and too perfect.\"  \n  \nComing from Woz, that makes total sense. He\u2019s the ultimate hardware-and-code craftsman. If you sit down looking for genuine architectural taste, creative leaps, or intuition, LLMs feel sterile and soulless.  \n  \nBut from a practical delivery standpoint, I think he\u2019s spotting the exact right symptom and drawing the wrong conclusion.  \n  \nThat \"dry, textbook perfection\" is actually super useful once you stop expecting a Staff Engineer and start treating AI agents like a straight-A college grad with infinite stamina and zero real-world intuition:  \n  \n\\- Give a straight-A grad an ambiguous, open-ended system problem, and they will confidently hand you a beautifully formatted, linter-passing solution that completely misses the domain reality and silently breaks edge cases.  \n\\- Give them a tightly scoped, well-defined module with clear inputs, outputs, and strict automated tests, and they will grind through it at 10x speed without ever getting bored or complaining.  \n  \nWoz sees a lack of soul as a flaw because he loves building things from first principles. For the rest of us shipping production software on a deadline, the trick isn't abandoning the tool - it's learning how to manage an over-eager junior who writes spotless syntax at machine speed.  \n  \nCurious where folks here land: are you closer to the Woz camp (sterile and more trouble than it's worth for serious engineering), or have you found a way to fence it in so the \"straight-A grad\" dynamic actually pays off?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xzcb4r/wozniak_says_ai_is_too_dry_and_too_perfect/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-18",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Saw Steve Wozniak\u2019s quote about barely using AI because he\u2019s disappointed by it and thinks it sounds \"too dry and too perfect.\"  \n  \nComing from Woz, that makes total sense. He\u2019s the ultimate hardware-and-code craftsman. If you sit down looking for genuine architectural taste, creative leaps, or intuition, LLMs feel sterile and soulless.  \n  \nBut from a practical delivery standpoint, I think he\u2019s",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31600000000000006
+          }
+        ]
+      }
+    }
+  ]
+}

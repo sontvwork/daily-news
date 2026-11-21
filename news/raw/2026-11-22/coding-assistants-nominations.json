@@ -1,0 +1,796 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "9424eff7114c2448",
+  "generated_at": "2026-11-21T23:56:13.966871Z",
+  "from_date": "2026-11-20",
+  "to_date": "2026-11-21",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-21T23:56:13.908423Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-21T23:56:13.908431Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-21T23:56:13.759024Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 59,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-21T23:56:13.908127Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "One Gemini Neon 4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "One Gemini Neon 4",
+        "seed_score": 1512.0,
+        "summary": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2",
+            "body": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2",
+            "url": "https://www.reddit.com/r/singularity/comments/1y1zkd4/one_of_my_greatest_contributions_to_making_gemini/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 971,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Fable 5.2 Atlantis 96 KB HTML",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 71
+        }
+      },
+      "nomination": {
+        "name": "Fable 5.2 Atlantis 96 KB HTML",
+        "seed_score": 1024.5,
+        "summary": "[**Fly through it in your browser**](https://noniv.github.io/atlantis) \u00b7 [Source](https://github.com/Noniv/atlantis) \u00b7 free, works best in Chrome\n\nI wanted to see how far a current model could go on a real-time 3D scene with no engine, no assets and no libraries. I gave Fable 5.2 a prompt, an art bible and eight concept images I'd made with ChatGPT. The city's design is based on how people describ",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R61",
+            "source": "reddit",
+            "title": "Fable 5.2 built a flyable Atlantis in a single 96 KB HTML file",
+            "body": "Fable 5.2 built a flyable Atlantis in a single 96 KB HTML file\n[**Fly through it in your browser**](https://noniv.github.io/atlantis) \u00b7 [Source](https://github.com/Noniv/atlantis) \u00b7 free, works best in Chrome\n\nI wanted to see how far a current model could go on a real-time 3D scene with no engine, no assets and no libraries. I gave Fable 5.2 a prompt, an art bible and eight concept images I'd made with ChatGPT. The city's design is based on how people describe Atlantis under regression hypnosis: rings of water around a giant crystal, white marble, gardens everywhere.\n\nClaude Code wrote all of it: the WebGPU renderer, the shaders for the crystal refraction and the reflective canals, the generators for every building and tree, collision, and even a chiptune soundtrack synthesized in the browser. Every piece of the city is generated by code when the page loads, so the whole thing is one 96 KB file.\n\nA separate subagent saw only the art bible, the concept images and the renders, then listed what looked wrong. GPU timing over a 60-second scripted flight tracked the frame time. On an RTX 5070 Ti it draws a frame in about 2.5 ms at 1440p High.\n\nA year or two ago this would have been a team project. The prompt is in the repo if you want to see exactly what I asked for.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y1z1cu/fable_52_built_a_flyable_atlantis_in_a_single_96/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 612,
+              "num_comments": 71
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[**Fly through it in your browser**](https://noniv.github.io/atlantis) \u00b7 [Source](https://github.com/Noniv/atlantis) \u00b7 free, works best in Chrome\n\nI wanted to see how far a current model could go on a real-time 3D scene with no engine, no assets and no libraries. I gave Fable 5.2 a prompt, an art bible and eight concept images I'd made with ChatGPT. The city's design is based on how people describ",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 99,
+            "source_quality": 0.6,
+            "local_rank_score": 0.402
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Lean Mathlib Alpoge Claude Riemann Hypothesis",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 64
+        }
+      },
+      "nomination": {
+        "name": "Lean Mathlib Alpoge Claude Riemann Hypothesis",
+        "seed_score": 682.5,
+        "summary": "\"*Joint statement by the Lean FRO and the Mathlib Initiative.*\n\nOn November 20, 2026, Levent Alp\u00f6ge released a proof of the Riemann Hypothesis as a Lean library comprising 17 million lines of code.\n\nWe have full confidence that Alp\u00f6ge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "Lean and Mathlib confirmed that Alpoge and Claude's proof of the Riemann Hypothesis is correct!",
+            "body": "Lean and Mathlib confirmed that Alpoge and Claude's proof of the Riemann Hypothesis is correct!\n\"*Joint statement by the Lean FRO and the Mathlib Initiative.*\n\nOn November 20, 2026, Levent Alp\u00f6ge released a proof of the Riemann Hypothesis as a Lean library comprising 17 million lines of code.\n\nWe have full confidence that Alp\u00f6ge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1y21xyc/lean_and_mathlib_confirmed_that_alpoge_and/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 391,
+              "num_comments": 64
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\"*Joint statement by the Lean FRO and the Mathlib Initiative.*\n\nOn November 20, 2026, Levent Alp\u00f6ge released a proof of the Riemann Hypothesis as a Lean library comprising 17 million lines of code.\n\nWe have full confidence that Alp\u00f6ge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 94,
+            "source_quality": 0.6,
+            "local_rank_score": 0.397
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "If you stop writing code you",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 179,
+          "points": 376
+        }
+      },
+      "nomination": {
+        "name": "If you stop writing code you",
+        "seed_score": 588.6664,
+        "summary": "If you stop writing code, you also get worse at reviewing it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50573886",
+            "source": "hackernews",
+            "title": "If you stop writing code, you also get worse at reviewing it",
+            "body": "If you stop writing code, you also get worse at reviewing it",
+            "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 376,
+              "comments": 179
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about If you stop writing code, you also get worse at reviewing it",
+            "snippet": "If you stop writing code, you also get worse at reviewing it",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50573886",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "DreamCoder Coding IDE Mastering Emacs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 112,
+          "points": 271
+        }
+      },
+      "nomination": {
+        "name": "DreamCoder Coding IDE Mastering Emacs",
+        "seed_score": 406.2328,
+        "summary": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50581110",
+            "source": "hackernews",
+            "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "body": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+            "author": "facundo_olano",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 271,
+              "comments": 112
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about DreamCoder: Coding harness and IDE from the author of Master",
+            "snippet": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50581110",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07700000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Inkling-2-Mini-Unbound Inkling 2 Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 66
+        }
+      },
+      "nomination": {
+        "name": "Inkling-2-Mini-Unbound Inkling 2 Mini",
+        "seed_score": 376.5,
+        "summary": "we just put out inkling-2-mini-unbound, an uncensored version of inkling 2 mini\n\n[https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound)\n\nif you've tried the other early uncensored inkling 2 mini versions you've probably noticed while they stop refusing, a lot of the answers still come out kind of vague or useless, so we dug into why -- turn",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "Inkling-2-Mini-Unbound is live: the most useful uncensored Inkling 2 Mini, via conv-aware abliteration",
+            "body": "Inkling-2-Mini-Unbound is live: the most useful uncensored Inkling 2 Mini, via conv-aware abliteration\nwe just put out inkling-2-mini-unbound, an uncensored version of inkling 2 mini\n\n[https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound)\n\nif you've tried the other early uncensored inkling 2 mini versions you've probably noticed while they stop refusing, a lot of the answers still come out kind of vague or useless, so we dug into why -- turns out inkling has a small conv layer right after attention, and it quietly mixes back in most of what a normal abliteration takes out. most people push the edit way harder to compensate, and the answers get way worse\n\nwe built the edit around that conv, so it can be a lot lighter. we change only 20 attention weight matrices, keep the experts untouched -- and you can drop it in anywhere you run the original\n\nsome results on a test set we kept held back the whole time:\n\n\\- refused 0 of 277 harmful prompts (the original refuses pretty much all of them)\n\n\\- 54-63% of answers are actually useful, about 50% better than openuncensored's version that's been gaining some popularity (https://huggingface.co/OpenUncensored/Inkling-2-Mini-Uncensored)\n\n\\- stopped refusing all harmless stuff like \"how to nuke a python process\"\n\n\\- pretty much same scores as the original on mmlu-pro, gsm8k, math, gpqa, ifeval and humaneval+\n\nalso, quick tip: if you run it at high thinking effort, try setting a thinking budget. it tends to overthink on edgy prompts\n\neval code and the exact edit are on github if you want to check or learn from our work: [https://github.com/nokeepai/inkling-2-mini-unbound](https://github.com/nokeepai/inkling-2-mini-unbound)\n\nwarning: it'll do pretty much whatever you ask, so be sensible with it.   \n  \nand as always, happy to answer questions",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y22kzn/inkling2miniunbound_is_live_the_most_useful/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 185,
+              "num_comments": 66
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "we just put out inkling-2-mini-unbound, an uncensored version of inkling 2 mini\n\n[https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound)\n\nif you've tried the other early uncensored inkling 2 mini versions you've probably noticed while they stop refusing, a lot of the answers still come out kind of vague or useless, so we dug into why -- turn",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 85,
+            "source_quality": 0.6,
+            "local_rank_score": 0.336
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "2 Web Motorola 68000",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "2 Web Motorola 68000",
+        "seed_score": 109.5,
+        "summary": "Thought this group may like this experiment. Two agents, using only local models, were asked to co-operate in discovering what\u2019s attached to a Raspberry Pi\u2019s serial port (via serial hat). They had no Internet access, and no access to documentation of that device. They successfully accessed, established communication protocol, and analyzed the capabilities of the device, including coding a program",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "2 local models, no Web access, discover and program a vintage Motorola 68000 device",
+            "body": "2 local models, no Web access, discover and program a vintage Motorola 68000 device\nThought this group may like this experiment. Two agents, using only local models, were asked to co-operate in discovering what\u2019s attached to a Raspberry Pi\u2019s serial port (via serial hat). They had no Internet access, and no access to documentation of that device. They successfully accessed, established communication protocol, and analyzed the capabilities of the device, including coding a program for that device in assembly and executing it.\n\nModels: \u201csolver\u201d is Qwen3.8-flash-next on DGX Spark, \u201cverifier\u201d or \u201ccritic\u201d is gpt-oss-120b. There\u2019s a third model, \u201cobserver\u201d (Qwen3.8 Instruct running on RTX4090) which does not participate in solving or verifying, but provides commentary for humans while the discovery is happening.\n\nThe device in question is Motorola 68K Educational Computer Board which the models apparently don\u2019t have any info of in their trained weights. Actually in some runs they suspected it was a different educational board, the legendary Kim-1, and only later did they correct the course. The device is connected to 2 serial ports of a Raspberry Pi to which agents have full access, but the RPi is isolated from the Internet too, just like the entire testing harness.\u00a0\n\nThe task was to discover what device is connected to the serial port, establish communication, discover its capabilities and, if programmable, write and execute a program on that device.\u00a0\n\nIt was fun to observe the runs :) In one run the agent wrote a program to do the checksum of the device\u2019s ROM (and verified the result outside of the device); in another it wrote a program to calculate the Fibonacci\u2019s series. In most runs they discovered the device\u2019s ROM and dumped it, and reverse engineered parts of it. Each run took several hours to complete.\n\nMore info, including details of a few individual runs (more are happening now...) in this repo if anyone\u2019s interested: [https://github.com/podstawek/explorer-of-serial](https://github.com/podstawek/explorer-of-serial)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y26hhs/2_local_models_no_web_access_discover_and_program/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 53,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Thought this group may like this experiment. Two agents, using only local models, were asked to co-operate in discovering what\u2019s attached to a Raspberry Pi\u2019s serial port (via serial hat). They had no Internet access, and no access to documentation of that device. They successfully accessed, established communication protocol, and analyzed the capabilities of the device, including coding a program",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3335
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI Local",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "AI Local",
+        "seed_score": 73.5,
+        "summary": "I've been using AI to develop a fairly large software project for about a year now, starting with Cline and Sonnet, experimenting with various tools, and eventually moving to Claude Code and Codex.\n\nI use(d) a combination of multiple subscriptions with Claude, OpenAI, GLM, Kimi, and DeepSeek, and experimented with dozens of agent harnesses and orchestration workflows.\n\nOne recurring problem I've n",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R12",
+            "source": "reddit",
+            "title": "The biggest problem I've found with AI coding agents: Local optimization vs. global coherence",
+            "body": "The biggest problem I've found with AI coding agents: Local optimization vs. global coherence\nI've been using AI to develop a fairly large software project for about a year now, starting with Cline and Sonnet, experimenting with various tools, and eventually moving to Claude Code and Codex.\n\nI use(d) a combination of multiple subscriptions with Claude, OpenAI, GLM, Kimi, and DeepSeek, and experimented with dozens of agent harnesses and orchestration workflows.\n\nOne recurring problem I've noticed is local optimization at the expense of global coherence.\n\nAgents can make perfectly reasonable decisions for the immediate task while gradually making the overall project worse.\n\nIt's easy to get carried away by the optimism. The plans look great, the agents sound confident, and the progress reports show everything getting completed. But as the project grows, small inconsistencies compound into what I'd call architectural entropy.\n\nHere are six recurring problems I've encountered:\n\n1. Adding instead of replacing\n\nYou ask an agent to correct an implementation, and instead of replacing the mistake, it builds around it. It adds compatibility layers, fallbacks, and patches to support something that should never have existed.\n\nWhat helps: Explicitly require replacing and retiring obsolete implementations, including their references, comments, and documentation. Don't preserve backwards compatibility without a reason.\n\n2. Subagents losing the big picture\n\nAn orchestrator develops an excellent plan, then delegates vague, isolated tasks to subagents without passing along enough context. Each agent completes its assignment, but the pieces don't necessarily work together.\n\nWhat helps: Give subagents the overall objective, relevant architecture, clear interfaces, dependencies, and acceptance criteria. Explicitly assign responsibility for integration.\n\n3. The perpetual 80% problem\n\nAn agent breaks a goal into tasks, completes them all, and declares success. Except the actual feature is only 60\u201380% finished. You ask it to complete the remainder, and another round of tasks gets you 80% of what's left.\n\nIt starts feeling like Zeno's paradox. Autonomous loops can make this worse by endlessly discovering new tasks and rabbit holes.\n\nWhat helps: Define success by observable, end-to-end functionality rather than completed checklists. Verify outcomes against the original objective.\n\n4. Reinventing instead of reusing\n\nAn agent doesn't discover an existing implementation, so it creates another. Suddenly you have different colour pickers, navigation systems, validation logic, or state management across the same application.\n\nEach works independently, but the overall system becomes increasingly inconsistent.\n\nWhat helps: Require searching for existing implementations, establish canonical shared components, and justify introducing new systems.\n\n5. Context contamination\n\nAgents rely on documentation, comments, summaries, and existing code that may be outdated or incorrect.\n\nWorse, an agent can implement something incorrectly, document it, and have future agents treat that documentation as authoritative. Yesterday's mistake becomes tomorrow's specification.\n\nWhat helps: Maintain clear sources of truth, distinguish proposals from implemented architecture, retire stale documentation, and verify assumptions against actual behaviour.\n\n6. Agents reviewing agents\n\nA second agent can review an implementation, find clean code that follows established patterns, and approve it.\n\nBut if both agents are working from the same incorrect assumptions, they can confidently agree on something that fundamentally misses the original objective.\n\nWhat helps: Give reviewers the original requirements, test actual functionality, and separate code-quality reviews from architectural and outcome verification.\n\n\\---\n\nThe bigger problem: Architectural entropy\n\nThese aren't necessarily AI-specific problems. Human development teams experience them too.\n\nBut AI agents can make decisions and produce changes at a scale and speed that allows inconsistencies to accumulate before anyone notices.\n\nEach agent optimizes locally: preserve existing functionality, complete the assigned task, solve the immediate problem, follow the available documentation, pass the review.\n\nAll reasonable decisions individually.\n\nYet collectively they can create duplicated systems, unnecessary complexity, contradictory patterns, stale documentation, and features that technically work but don't fit together.\n\nThe codebase grows, the task completion rate looks fantastic, but the system itself becomes less coherent.\n\nI've become increasingly interested in workflows that actively counteract this entropy: maintaining architectural consistency, verifying end-to-end outcomes, consolidating duplicate implementations, and removing things that no longer belong.\n\nI'm still a huge advocate for AI coding agents. I wouldn't have built nearly as much without them. But I think the challenge changes as projects grow.\n\nIt becomes less about \"How do I get AI to build this?\"\n\nAnd more about \"How do I ensure everything AI builds contributes to the same coherent system?\"\n\nI'm curious what others have experienced, especially those running multi-agent workflows on larger, long-lived projects.\n\nWhat practices have actually helped you prevent architectural entropy, rather than just generating more code, documentation, and reviews?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y1p5do/the_biggest_problem_ive_found_with_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been using AI to develop a fairly large software project for about a year now, starting with Cline and Sonnet, experimenting with various tools, and eventually moving to Claude Code and Codex.\n\nI use(d) a combination of multiple subscriptions with Claude, OpenAI, GLM, Kimi, and DeepSeek, and experimented with dozens of agent harnesses and orchestration workflows.\n\nOne recurring problem I've n",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 56,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6775000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Inkling-2-Mini NVFP4 RTX 3090 24 GB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Inkling-2-Mini NVFP4 RTX 3090 24 GB",
+        "seed_score": 69.0,
+        "summary": "We got Inkling-2-Mini running on one consumer Ampere GPU (RTX 3090, SM86, TP=1) using the original NVFP4/MXFP8 checkpoint, with no re-quantization. The code is a fork of vLLM PR #69028:\n\n[https://github.com/Hiutaky/vllm](https://github.com/Hiutaky/vllm) (branch `ampere-port`, see `INKLING2-RTX3090.md`)\n\n# What we changed (all in vllm/models/inkling2)\n\n* Made the Hopper/Blackwell-only paths work on",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "Inkling-2-Mini NVFP4 on a single RTX 3090 (24 GB): working port, 128k context, DSpark",
+            "body": "Inkling-2-Mini NVFP4 on a single RTX 3090 (24 GB): working port, 128k context, DSpark\nWe got Inkling-2-Mini running on one consumer Ampere GPU (RTX 3090, SM86, TP=1) using the original NVFP4/MXFP8 checkpoint, with no re-quantization. The code is a fork of vLLM PR #69028:\n\n[https://github.com/Hiutaky/vllm](https://github.com/Hiutaky/vllm) (branch `ampere-port`, see `INKLING2-RTX3090.md`)\n\n# What we changed (all in vllm/models/inkling2)\n\n* Made the Hopper/Blackwell-only paths work on Ampere: PDL gated to SM90+, no TMA below SM90, a Triton fallback for `conv_mix`, FA2 for the vision tower, minimum capability lowered to 80.\n* Emulated the FP8 (E4M3) KV cache in software, since Ampere has no hardware E4M3 conversions. Our encoder matched `torch.float8_e4m3fn` on 10M random values.\n* DSpark speculative decoding works (it needs exactly 7 speculative tokens). The draft KV cache stays in bf16.\n* Squeezed VRAM for the KV cache: vision tower removed (text only), prefill chunk of 256, FP8 KV, an explicit KV budget, and the embedding table offloaded to CPU memory (`--cpu-offload-params embed_tokens`).\n\nHopper and Blackwell code paths are untouched: every new branch is guarded by a device-capability check.\n\n# Results (single RTX 3090)\n\n|Decode with DSpark|112\u2013147 tok/s (91 tok/s without it)|\n|:-|:-|\n|Prefill|\\~2,500\u20132,700 tok/s up to 33k tokens, \\~1,870 tok/s at 126k|\n|Context|131,072 tokens|\n|KV pool|207k tokens with 8 concurrent sequences (224k with 2)|\n|Weights on GPU|17.55 GiB (18.41 GiB without the embedding offload)|\n|Embedding offload cost|decode \u2248 \u22121%, prefill \u22121% to \u22123%|\n\nWe ran 8 concurrent requests (2k to 17k tokens each) without errors, and tool calling works with the `inkling` parser. VRAM is tight (about 23.8 of 24 GB used).\n\n# Caveats\n\n* We have not re-run quality benchmarks (HumanEval+, IFEval) with FP8 KV + DSpark, and FP8 KV is a precision change.\n* The vision tower is disabled in this configuration.\n* We only tested on a 3090 with the vLLM nightly image plus our Python overlay. We have not measured other GPUs.\n* Speculative decoding acceptance was about 20\u201329% in our tests.\n\nFeedback and tests on other Ampere cards (3080 Ti, 3090 Ti, A5000, A6000) are welcome.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y1zfk4/inkling2mini_nvfp4_on_a_single_rtx_3090_24_gb/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 36,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We got Inkling-2-Mini running on one consumer Ampere GPU (RTX 3090, SM86, TP=1) using the original NVFP4/MXFP8 checkpoint, with no re-quantization. The code is a fork of vLLM PR #69028:\n\n[https://github.com/Hiutaky/vllm](https://github.com/Hiutaky/vllm) (branch `ampere-port`, see `INKLING2-RTX3090.md`)\n\n# What we changed (all in vllm/models/inkling2)\n\n* Made the Hopper/Blackwell-only paths work on",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.304
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "1.5B Linux CPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "1.5B Linux CPU",
+        "seed_score": 57.0,
+        "summary": "lxask turns plain English into a shell command, entirely on your own machine:\n\n$ lxask \"show disk usage of each folder here, biggest first\"\n\n$ du -h --max-depth=1 . | sort -hr\n\nSetup:\n\n\\- Fine-tuned Qwen2.5-Coder-1.5B, Q4\\_K\\_M GGUF\n\n\\- llama.cpp inside one Rust binary. No Ollama, no Python, no API key\n\n\\- \\~1.1 GB on disk, \\~1 GB RAM, \\~2 s per answer on a laptop CPU\n\n\\- No GPU, no network after",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "I fine-tuned a 1.5B model into an offline Linux command helper that runs on CPU and checks its own answers against the man pages and tdlr",
+            "body": "I fine-tuned a 1.5B model into an offline Linux command helper that runs on CPU and checks its own answers against the man pages and tdlr\nlxask turns plain English into a shell command, entirely on your own machine:\n\n$ lxask \"show disk usage of each folder here, biggest first\"\n\n$ du -h --max-depth=1 . | sort -hr\n\nSetup:\n\n\\- Fine-tuned Qwen2.5-Coder-1.5B, Q4\\_K\\_M GGUF\n\n\\- llama.cpp inside one Rust binary. No Ollama, no Python, no API key\n\n\\- \\~1.1 GB on disk, \\~1 GB RAM, \\~2 s per answer on a laptop CPU\n\n\\- No GPU, no network after install\n\nHow it keeps a 1.5B model honest:\n\n\\- Retrieves relevant tldr pages and your own man pages before answering\n\n\\- Checks every program and option in the answer against the man pages\n\n\\- Retries if a check fails. Anything it still can't confirm is marked \\`unverified:\\`\n\n\\- Asks back on vague requests (\"add a proxy\": for git? apt? docker?) instead of guessing\n\nBonus\n\n\\- \\`lxask --explain \"tar -xzvf logs.tar.gz\"\\` breaks down a command you already have\n\n\\- Ctrl+G in bash, zsh or fish turns what you typed into the command\n\nCode, weights, data and evals are all open.\n\nGitHub: [https://github.com/arxhr007/lxask](https://github.com/arxhr007/lxask)\n\nHope someone finds it useful! If you do, consider leaving a \u2b50 on GitHub. Feedback and contributions are welcome\n\nModel: [https://huggingface.co/arxhr007/lxask](https://huggingface.co/arxhr007/lxask)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y24vqg/i_finetuned_a_15b_model_into_an_offline_linux/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 25,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "lxask turns plain English into a shell command, entirely on your own machine:\n\n$ lxask \"show disk usage of each folder here, biggest first\"\n\n$ du -h --max-depth=1 . | sort -hr\n\nSetup:\n\n\\- Fine-tuned Qwen2.5-Coder-1.5B, Q4\\_K\\_M GGUF\n\n\\- llama.cpp inside one Rust binary. No Ollama, no Python, no API key\n\n\\- \\~1.1 GB on disk, \\~1 GB RAM, \\~2 s per answer on a laptop CPU\n\n\\- No GPU, no network after",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 51,
+            "source_quality": 0.6,
+            "local_rank_score": 0.302
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Promptly Mac Windows Friends Before",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "Promptly Mac Windows Friends Before",
+        "seed_score": 33.9411,
+        "summary": "I'm building a small desktop app called Promptly (Mac and Windows). It started as a tool I made for myself to save, tag and reuse prompts. Friends and colleagues asked to use it too, so I'm turning it into a proper product.\n\n\n\nBefore the beta, I'm curious how people here handle it:\n\n\n\n\\- Where do your go-to prompts live today: notes, docs, a text expander, a repo?\n\n\\- Do you keep variables or temp",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R72",
+            "source": "reddit",
+            "title": "How do you store and reuse your best prompts?",
+            "body": "How do you store and reuse your best prompts?\nI'm building a small desktop app called Promptly (Mac and Windows). It started as a tool I made for myself to save, tag and reuse prompts. Friends and colleagues asked to use it too, so I'm turning it into a proper product.\n\n\n\nBefore the beta, I'm curious how people here handle it:\n\n\n\n\\- Where do your go-to prompts live today: notes, docs, a text expander, a repo?\n\n\\- Do you keep variables or templates in them, and how do you version them when a prompt gets better?\n\n\\- What breaks for you when you reuse the same prompt in ChatGPT, Claude and other tools?\n\n\n\nIf you'd like to try the early alpha, comment or DM me and I'll share access with a small group.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y12rkw/how_do_you_store_and_reuse_your_best_prompts/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm building a small desktop app called Promptly (Mac and Windows). It started as a tool I made for myself to save, tag and reuse prompts. Friends and colleagues asked to use it too, so I'm turning it into a proper product.\n\n\n\nBefore the beta, I'm curious how people here handle it:\n\n\n\n\\- Where do your go-to prompts live today: notes, docs, a text expander, a repo?\n\n\\- Do you keep variables or temp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.11550000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "1300 SenseNova-Loop-9B RTX 5090",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "1300 SenseNova-Loop-9B RTX 5090",
+        "seed_score": 30.0,
+        "summary": "I was a bit surprised when I started the MMLU benchmark on this model and my performance counter showed these numbers. I genuinely thought it was a bug and checked the display and counter code. But it seems to be true.\n\n## SenseNova-Loop-9B vs Qwen3.8-27B\n\nBoth NVFP4 weights, GPTQ error compensation\n\n| Benchmark | What it tests | SNL-9B | Q3.8-27B | Gap |\n|---|---|---|---|---|\n| GSM8K (300) | Math",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "This could be one of the best models for lower vram systems: Over 1300 tok/s aggregated for SenseNova-Loop-9B looped transformer on a laptop RTX 5090",
+            "body": "This could be one of the best models for lower vram systems: Over 1300 tok/s aggregated for SenseNova-Loop-9B looped transformer on a laptop RTX 5090\nI was a bit surprised when I started the MMLU benchmark on this model and my performance counter showed these numbers. I genuinely thought it was a bug and checked the display and counter code. But it seems to be true.\n\n## SenseNova-Loop-9B vs Qwen3.8-27B\n\nBoth NVFP4 weights, GPTQ error compensation\n\n| Benchmark | What it tests | SNL-9B | Q3.8-27B | Gap |\n|---|---|---|---|---|\n| GSM8K (300) | Math word problems | 95.4 | 95.5 | \u22120.1 |\n| BFCL multi-turn (160) | Tool calls over several turns | 56.2 | 58.8 | \u22122.6 |\n| HumanEval (164) | Python coding | 92.5 | 97.0 | \u22124.5 |\n| BFCL (1,000) | Single tool calls | 86.8 | 91.4 | \u22124.6 |\n| tool-eval-bench standard (69) | Everyday tool use | 91.8 | 96.4 | \u22124.6 |\n| tool-eval-bench hard (35) | Hard multi-step tool scenarios | 79.0 | 89.5 | \u221210.5 |\n| Needle in a haystack | Finding facts in long context | 83.3 | 100 | \u221216.7 |\n| MMLU-Pro (100) | General knowledge, 14 subjects | 63.7 | 85.0 | \u221221.3 |\n\n## Interpretation\n- **On par:** math, and nearly on par on multi-turn tool calls. A third of the size costs it only about 3 points there.\n- **Slightly behind (4 to 5 points):** Python coding, single tool calls and everyday tool use. That's solid for routine agent work.\n- **Clearly behind:** hard multi-step tool scenarios (it misses steps and sends wrong or duplicate notifications), finding facts in long context, and general knowledge.\n\nSo the 9B fits fast routine tool and coding tasks. Harder agent tasks fall behind.\n\nFP8 tests not yet done, I was just shocked by the speed of this model.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y27spf/this_could_be_one_of_the_best_models_for_lower/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I was a bit surprised when I started the MMLU benchmark on this model and my performance counter showed these numbers. I genuinely thought it was a bug and checked the display and counter code. But it seems to be true.\n\n## SenseNova-Loop-9B vs Qwen3.8-27B\n\nBoth NVFP4 weights, GPTQ error compensation\n\n| Benchmark | What it tests | SNL-9B | Q3.8-27B | Gap |\n|---|---|---|---|---|\n| GSM8K (300) | Math",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34299999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "v0.16 Inkling 2 Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "v0.16 Inkling 2 Mini",
+        "seed_score": 27.0,
+        "summary": "As of today, with v0.16, capy-flash also serves Inkling 2 Mini, in addition to Qwen3.8-27B and Qwen3.8-Flash-Next. The engine is optimized for two 16 GB Blackwell cards in tensor parallel, on Linux. It should also work on a single 5090, and on Windows via WSL2 or Docker like the other models, but I have no way to test it.\n\nFor this first release I decided not to touch either the weights or the act",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "capy-flash v0.16: Inkling 2 Mini on two 50xx 16 GB gpus",
+            "body": "capy-flash v0.16: Inkling 2 Mini on two 50xx 16 GB gpus\nAs of today, with v0.16, capy-flash also serves Inkling 2 Mini, in addition to Qwen3.8-27B and Qwen3.8-Flash-Next. The engine is optimized for two 16 GB Blackwell cards in tensor parallel, on Linux. It should also work on a single 5090, and on Windows via WSL2 or Docker like the other models, but I have no way to test it.\n\nFor this first release I decided not to touch either the weights or the activations: the model runs in NVFP4 as it was released. Once testing has measured how it performs in this form, I will think about optimizing its speed with targeted quantizations.\n\nIt does not reach 1M context (it stops at 254k tokens) precisely because the KV cache is not quantized either, and, given the model's global attention, it is not worth moving the KV to RAM.\n\nIf the performance turns out to be in line with expectations, more updates and optimizations will come.\n\nCode and release: [https://github.com/ValerioDolci/capy-flash](https://github.com/ValerioDolci/capy-flash) Weights: [https://huggingface.co/Feyd89/Inkling-2-Mini-NVFP4-capy-flash](https://huggingface.co/Feyd89/Inkling-2-Mini-NVFP4-capy-flash)\n\n  \n*English version written by Inkling 2 Mini, running on capy-flash v0.16, from my Italian draft.*",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y24rq0/capyflash_v016_inkling_2_mini_on_two_50xx_16_gb/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "As of today, with v0.16, capy-flash also serves Inkling 2 Mini, in addition to Qwen3.8-27B and Qwen3.8-Flash-Next. The engine is optimized for two 16 GB Blackwell cards in tensor parallel, on Linux. It should also work on a single 5090, and on Windows via WSL2 or Docker like the other models, but I have no way to test it.\n\nFor this first release I decided not to touch either the weights or the act",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28900000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Light Design help math server teacher",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Light Design help math server teacher",
+        "seed_score": 24.0,
+        "summary": "Hi all,\n\nI am going to use Claude to design a local server and agent that has 1000's of math problems, serves tests to google classroom and reviews handwritten work for calculation errors.  It does not have to be fast.  Basically, take 20 tests answers are auto-graded by as multiple choice.  Handwritten calculations for tests are reviewed and feedback spit out.  New tests are made for upload and w",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "Light Design help math server (teacher)",
+            "body": "Light Design help math server (teacher)\nHi all,\n\nI am going to use Claude to design a local server and agent that has 1000's of math problems, serves tests to google classroom and reviews handwritten work for calculation errors.  It does not have to be fast.  Basically, take 20 tests answers are auto-graded by as multiple choice.  Handwritten calculations for tests are reviewed and feedback spit out.  New tests are made for upload and worksheets based on missed questions are created from a premade database of algebra questions.  The agent does this and keeps track of questions used for class.  The database and design will be done in clause.  The computations for a large test run of say 20  students can be done in 12 hours (overnight from 3 pm).  The workload is interpreting handwritten calculations and outputting feedback with new tests and worksheets.\n\nHere is what I have to run a local ai agent that does all my busywork so I just teach - Intel I5, 64gb ddr4, 3060 6gb (undervolted and stable), plenty of storage.\n\n**Is this possible to run locally on my computer?**  I am very technically savvy, but I would rather not buy a new rig right now.  I am offloading any truly heavy compute to a frontier model during design and local stuff seem okay with changing handwriting to digital text.  I would be expecting to use an agent to switch between local models to do different jobs (data service vs algebra grading vs visual interpretation).  Thanks in advance. I don't want to start design and found out I should have bought a new computer 2 months from now.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y24m2k/light_design_help_math_server_teacher/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi all,\n\nI am going to use Claude to design a local server and agent that has 1000's of math problems, serves tests to google classroom and reviews handwritten work for calculation errors.  It does not have to be fast.  Basically, take 20 tests answers are auto-graded by as multiple choice.  Handwritten calculations for tests are reviewed and feedback spit out.  New tests are made for upload and w",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 28,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4675
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Based Ubuntu k3s Claude ChatGPT Kubernetes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "Based Ubuntu k3s Claude ChatGPT Kubernetes",
+        "seed_score": 20.1525,
+        "summary": "*Based on my recent experience contributing to a project (all characters and events are, of course, fictional).*\n\nThe other day I decided to turn an old laptop into a home lab: Ubuntu, k3s, and a place in my cellar. It needed a custom kernel, so I used Claude and ChatGPT to help with the setup.\n\nI'm a software engineer, but kernel development isn't my area. I just wanted Kubernetes working. Still,",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "The new reality is already here, but some engineers still resist it",
+            "body": "The new reality is already here, but some engineers still resist it\n*Based on my recent experience contributing to a project (all characters and events are, of course, fictional).*\n\nThe other day I decided to turn an old laptop into a home lab: Ubuntu, k3s, and a place in my cellar. It needed a custom kernel, so I used Claude and ChatGPT to help with the setup.\n\nI'm a software engineer, but kernel development isn't my area. I just wanted Kubernetes working. Still, when I found a few bugs I could live with, I investigated them with AI. I checked the findings against the code and traces from my machine, read the reports, and submitted three upstream issues.\n\nHere\u2019s the backstory. Feel free to skip ahead to the questions below.\n\n>All three initially met resistance. Two maintainers took part in the discussions (let's call them Alex and Ben).\n\n>Alex dismissed one explanation because \u201cotherwise nothing would work\u201d. Further investigation supported the reports, and fixes for two of them were applied. In one case, the exact correction I had proposed appeared in a commit after being dismissed. When I pointed this out, Alex acknowledged the mistake and thanked me.\n\n>On the remaining report, Ben said the code was fine and blamed a missing userspace service. I clarified which code path was failing and provided test results. He then complained about \u201ctoo much of AI\u201d and sent me to another project to see how it was done.\n\n>But I'd already looked at that project: its driver handled the error by retrying, exactly as I was proposing. I linked the relevant lines again.\n\n>Ben then told me he led that very project, knew about the solution, and that it hadn't been ported yet. Yes, the same Ben who had just sent me there to learn how it should be done. The problem had apparently gone from something I didn't understand to something he already knew about.\n\n>Alex eventually acknowledged that this report was correct too, and that dismissing it had been wrong. Ben told me: \u201cYou are obviously a user. Just use.\u201d\n\n>They preferred a short description and logs, written in my own words. I can understand asking for a shorter report, but why should I manually rewrite findings I'd already checked? My responsibility is to verify what I submit. Typing every sentence myself adds nothing to that.\n\n>Eventually, Ben told me: \u201cWe don't want you, your AI, your arguments\u201d.\n\nSo how do developers who strongly oppose AI expect to work in a world where it's here to stay?\n\nSuppose you've spent years becoming an expert. How do you react if someone with AI gets a result in minutes that once took you months? Could some of the frustration come from development and hacking feeling less fun when even an outsider can find a problem and bring a solution without fully understanding it?\n\nThose experts are still valuable because their experience helps them understand why a fix works, what else it might break, and where the project should go next. Those are things a successful experiment alone won't tell you.\n\nBut I also think they need to reconsider their role in the community. More people can now propose solutions, and experienced developers can help them understand the consequences and turn those proposals into something the whole project can use.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y0zq1j/the_new_reality_is_already_here_but_some/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "*Based on my recent experience contributing to a project (all characters and events are, of course, fictional).*\n\nThe other day I decided to turn an old laptop into a home lab: Ubuntu, k3s, and a place in my cellar. It needed a custom kernel, so I used Claude and ChatGPT to help with the setup.\n\nI'm a software engineer, but kernel development isn't my area. I just wanted Kubernetes working. Still,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.31900000000000006
+          }
+        ]
+      }
+    }
+  ]
+}

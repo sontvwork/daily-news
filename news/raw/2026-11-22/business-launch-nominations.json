@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "ca1a5470190796bd",
+  "generated_at": "2026-11-21T23:56:16.581652Z",
+  "from_date": "2026-11-20",
+  "to_date": "2026-11-21",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-21T23:56:16.580504Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-21T23:56:16.580509Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-21T23:56:16.580360Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-21T23:56:16.580453Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Nasdaq 2026 AI sell-off dampens Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 859,
+          "points": 493
+        }
+      },
+      "nomination": {
+        "name": "Nasdaq 2026 AI sell-off dampens Anthropic",
+        "seed_score": 1434.0126,
+        "summary": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic\u2019s second day",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50574383",
+            "source": "hackernews",
+            "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic\u2019s second day",
+            "body": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic\u2019s second day",
+            "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 493,
+              "comments": 859
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about Nasdaq erases all 2026 gains as AI sell-off dampens Anthropi",
+            "snippet": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic\u2019s second day",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50574383",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.255
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "We promoted developers into architects without",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 308,
+          "points": 576
+        }
+      },
+      "nomination": {
+        "name": "We promoted developers into architects without",
+        "seed_score": 937.6236,
+        "summary": "We promoted developers into architects without informing them",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50579331",
+            "source": "hackernews",
+            "title": "We promoted developers into architects without informing them",
+            "body": "We promoted developers into architects without informing them",
+            "url": "https://manidoraisamy.com/developer-to-architect.html",
+            "author": "QueensGambit",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 576,
+              "comments": 308
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about We promoted developers into architects without informing the",
+            "snippet": "We promoted developers into architects without informing them",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50579331",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 58,
+            "source_quality": 0.8,
+            "local_rank_score": 0.08299999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google OEMs against GrapheneOS",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 205,
+          "points": 502
+        }
+      },
+      "nomination": {
+        "name": "Google OEMs against GrapheneOS",
+        "seed_score": 749.8867,
+        "summary": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50570479",
+            "source": "hackernews",
+            "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "body": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+            "author": "mraniki",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 502,
+              "comments": 205
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Google is pushing OEMs against GrapheneOS and bootloader unl",
+            "snippet": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50570479",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 30,
+            "source_quality": 0.8,
+            "local_rank_score": 0.094
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Google AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 226,
+          "points": 279
+        }
+      },
+      "nomination": {
+        "name": "Google AI",
+        "seed_score": 535.6334,
+        "summary": "Google workers tell their employer not to punish schools that don't want AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50577901",
+            "source": "hackernews",
+            "title": "Google workers tell their employer not to punish schools that don't want AI",
+            "body": "Google workers tell their employer not to punish schools that don't want AI",
+            "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 279,
+              "comments": 226
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "HN story about Google workers tell their employer not to punish schools tha",
+            "snippet": "Google workers tell their employer not to punish schools that don't want AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50577901",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1615
+          }
+        ]
+      }
+    }
+  ]
+}

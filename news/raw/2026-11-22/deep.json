@@ -1,0 +1,236 @@
+{
+ "date": "2026-11-22",
+ "runs": [
+  {
+   "started_at": "2026-11-21T23:58:44+00:00",
+   "seconds": 2.8,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 8,
+   "articles_error": 0,
+   "articles_skipped": 0,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "8/8 bài gốc ok (0 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.8s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://manidoraisamy.com/developer-to-architect.html",
+   "hn_url": "https://news.ycombinator.com/item?id=50579331",
+   "hn": {
+    "title": "We promoted developers into architects without informing them",
+    "points": 576,
+    "comments": 308
+   },
+   "comments": [
+    {
+     "author": "whycombinetor",
+     "replies": 26,
+     "text": "Am I an outlier in that every SWE job I've had has expected you to push back on requirements and design the data model for tickets you are handed? Even when the org was large to have an architect, they just were just a figurehead and designed the original system, and ongoing decisions were made by the dev who picks up the ticket.\nFrom that perspective, engineers are still engineers, just without the hands-on-keyboard coding. If that's all your job was, hands-on-keyboard coding with no decision…"
+    },
+    {
+     "author": "nixpulvis",
+     "replies": 1,
+     "text": "I strongly believe good software teams (very rare) require members to play many roles. Sometimes you're a PM, sometimes you're an architect, sometimes you're the systems engineer. Enough people have enough context on the bigger picture that it's stable and there's a shared vision.\nMore often than not, one person does the majority of this, and does their best to break up the responsibilities. A good CTO does that at the top, and it flows down through the ranks depending on how big the org is.…"
+    },
+    {
+     "author": "bikeshaving",
+     "replies": 4,
+     "text": "I’ve found that the “job” of using AI is mainly foible management. What the author describes here is a habit of coding agents to excessively use and create logging infrastructure, and sloppily leave it in production code even when unnecessary. For instance, I created an IPA IME keyboard (https://ipabet.org/), and I found in review that Claude would leave the debugging tooling around unflagged, which essentially made the program a key-logger.\nThese foibles come and go: early Claude Code refused…"
+    },
+    {
+     "author": "ChrisMarshallNY",
+     "replies": 1,
+     "text": "> But AI will never make that call for you, because it doesn’t know your users and it won’t push back on your requirements.\nIn my case, I have been able to mitigate this. I have an LLM (ChatGPT, but I don't think it matters that much, anymore), that I load with vast amounts of information about the end-users of my apps. It generally makes excellent decisions, and often pushes back on my requests, if they may not deliver a good result. I sometimes think it knows more about my users than I do.…"
+    },
+    {
+     "author": "pjmlp",
+     "replies": 8,
+     "text": "The problem is that usually each team only needs a single architect.\nWhat is happening is no different when developers got promoted into team lead of the offshoring team.\nWhich also didn't require that many team leads onsite, and off they were, everyone else that wasn't leading any offshoring team."
+    }
+   ],
+   "article": {
+    "url": "https://manidoraisamy.com/developer-to-architect.html",
+    "status": "ok",
+    "title": "We promoted developers into architects without informing them",
+    "chars": 6962,
+    "text": "Developer forever\nRead my posts\nAll posts\nWe promoted developers into architects without informing them\nMani Doraisamy\nNov 20, 2026\n5\n5\nYesterday, I was debugging a performance problem with our Google Forms addon. It turned out my colleague had vibe coded the logging part, so that he could monitor the new installs every week. Monitoring new customers is the most important part of running a business, so he is absolutely right in doing that. Except, he was logging the user’s email and Google has severely restricted how much detail you can get about the user since last December. So, AI had written a series of try/catch statements:\nFirst, try to get the email if the user gave consent to share it during installation.\nIf it fails, it would try to fetch his user ID.\nIf that fails, it would log an error saying the user has installed, but we don’t know his email or user ID.\nAll of these are one line of code, but internally each of these makes multiple API calls to Google servers. Since logging was the first line to execute after installation, the welcome screen took 15 seconds to load.\nWhat is the right code for this?\nIf you are a senior developer or architect who understands the number of API calls behind each method, you would have:\nLogged just the timestamp of the install instead of trying to fetch the email or user ID, and told the marketing team they won’t be able to send the follow-up email based on installation alone.\nOr, if marketing wants the user’s email on install, you would have shown the welcome screen first and logged the email or user ID asynchronously from the browser, while the user is looking at the welcome screen. But calling your server from the addon’s welcome screen might require your server to bypass security and log an unauthenticated payload.\nIn other words, your job as an architect is to push back on requirements that can slow down the app. Or, find a way to work around the performance and security issues by making it async or accepting a reasonable hack.\nWhy AI won’t push back\nAI is great at writing code. But it doesn’t know if you are launching the app or have millions of users, which it needs to make the right architecture call to log a timestamp vs email. It is also sycophantic and tries to execute your requirements exactly without pushing back, which means you end up with a slow app that takes 15 seconds to load a static welcome screen.\nEssentially, if you generate code by specifying your requirements instead of specifying your architecture, AI will decide the architecture on your behalf. It is so paranoid about security that it will never write code to accept an unauthenticated payload. Even if you write it yourself, it will rewrite it into an authenticated payload and screw up performance or force users to sign in again on your app.\nYour new job is to architect\nAI coding tools are tuned to implement your functional requirements and two non-functional requirements, i.e. security and backward compatibility to avoid breaking your app. This invariably leads to:\nArchitecture that trades off performance for security and slows down the app.\nMultiple versions of datamodel design with redundant tables, columns and code.\nYou can be the solution to this problem. You can understand the tradeoffs[1], define the architecture, design the datamodel first and ask AI to code within that constraint. Every time you give a requirement to coding tools that changes your architecture or design, they have to ask you before changing it, instead of changing it on their own. You have to tell it when it needs to be backward compatible, so it’s ok to keep multiple versions of logic or database tables, and when to delete the old logic and tables and keep a single version for maintainability.\nIf you are an architect who is used to designing the datamodel, delegating the implementation to developers and then reviewing their code to see if they have implemented it correctly, this should be natural to you. But the problem is that today…"
+   }
+  },
+  {
+   "url": "https://signal.org/blog/protecting-your-privacy/",
+   "hn_url": "https://news.ycombinator.com/item?id=50572348",
+   "hn": {
+    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
+    "points": 570,
+    "comments": 336
+   },
+   "comments": [
+    {
+     "author": "pajamasam",
+     "replies": 7,
+     "text": "I found the Machine Gods interview with Meredith Whittaker really interesting. She specifically talked about this issue of AI apps having too much access on users’ devices and that Signal is struggling to prevent these apps from getting access to users’ Signal chats. And that even if you don’t have an AI app installed, your contact could and thereby still leaks your chat.\nGood to see they’re making some progress towards addressing this issue and that they are “cautiously optimistic that some…"
+    },
+    {
+     "author": "ada-h00k",
+     "replies": 7,
+     "text": "I wish they would go one step further and alert every user of such a system that it contains spyware, and then recommend alternatives like GrapheneOS or Linux for desktop computers. Relying on Apps that meant to remain private to prevent screenshots from being taken won’t work in the long run. Users need to regain control over their operating system."
+    },
+    {
+     "author": "lukeschlather",
+     "replies": 4,
+     "text": "The frustrating thing about this is now you can't take screenshots of a Signal chat on Windows. Yes, you can use screenshotting to get around retention or whatever, but that's a basic feature.\nAnother similar thing recently was I was trying to help a woman send a document to her lawyer, and for whatever reason I couldn't figure out how to share it with him via text or whatsapp. Somehow I was able to share it to my own phone via whatsapp, and from there I made a group text in Whatsapp with me…"
+    },
+    {
+     "author": "cimnine",
+     "replies": 0,
+     "text": "I would appreciate if Signal published the findings of their 'forensics investigation' so that other app developers with fewer resources could profit. If it were something like a living document (wiki or repo), there could even be collaboration, where others share their findings."
+    },
+    {
+     "author": "exceptione",
+     "replies": 1,
+     "text": "As much as I love the idea of Signal, it does not work with vpn's. Adding a new contact when connected to vpn results in endless battles with captcha's. If you take privacy serious, you first make sure you are not forcing users to reveal their IP address. The situation is so bad that people who needs the most protection (like journalists and their sources) have to use other apps. This is a problem that persists for yours by now. Fix your horrendously stupid spam protection first, Signal."
+    }
+   ],
+   "article": {
+    "url": "https://signal.org/blog/protecting-your-privacy/",
+    "status": "ok",
+    "title": "Signal >> Blog >> Signal is Serious About Protecting Your Privacy",
+    "chars": 9504,
+    "text": "Signal is Serious About Protecting Your Privacy\nMeredith Whittaker\non 20 Nov 2026\nPrivacy is our mission; it’s why we exist, and we do everything we can to protect it.\nThis means that we are restricting the latest AI agents built into mobile operating systems from potentially capturing and storing your Signal data.\nWe’ve already had to do this once with Windows. Last year, we used screenshot blocking to prevent Microsoft’s Recall AI from taking and storing screenshots of your Signal messages on Windows 11 operating systems by default.1 We will now be taking similar measures to restrict agentic systems built into iOS 27 and on Android versions where we can detect an AI assistant attempting to read your Signal screen.2\nThe problem is similar to Microsoft Recall on Windows: Google and Apple are integrating agentic capabilities like Gemini Intelligence with Google Gemini and Onscreen Awareness with Siri AI deep into their operating systems. This is a significant move. Google (Android), Apple (iOS/macOS), and Microsoft (Windows) produce the three major consumer operating systems (OS), which comprise the environment that third-party developers – like Signal – build their apps to function and operate within. To put it differently, these three operating systems are the oceans in which Signal, and other applications, must swim; they dictate the conditions of life for the application ecosystem. Right now, these agentic AI integrations are changing this environment in a way that’s making it increasingly hostile to privacy. This is an existential threat to Signal, and our ability to responsibly uphold our mission.\nIn order to gain access to information about you, these OS AI agents “scan” the information that’s on your screen. In doing so, your Signal data is captured, then made available to these agentic systems in order to allow them to answer your questions and do your bidding.\nThe net result is that these AI capabilities in the operating system are undermining Signal’s ability to independently guarantee privacy. For over a decade, this guarantee has been backed by our tried and trusted open source code base and our formally verified encryption protocol. These have been scrutinized by some of the best security experts and hackers across the world, and shown to be robust. Now, in service of AI agentic capabilities, your sensitive data is being captured, stored, and made accessible to whatever local database or remote server an OS-level AI agent is using at that moment. All of this is outside of Signal’s control once the data has been captured, and imperils the privacy of all the participants in a conversation.\nSo, we are blocking such capture by preventing screenshots in the app on iOS 27 and when AI assistants attempt to capture screen data on Android.2\nPeople who want the ability to take screenshots can disable this protection within the Signal app’s settings. However, doing so will potentially expose your (and your contacts’) Signal content to these AI agents, and break our privacy guarantees. Our remedy is also incomplete – while we are doing everything we can, restricting screenshots does not address other more sneaky ways AI agents could potentially access application data, such as retrieving content already present on a user’s device via the filesystem.\nWe want to be very clear: it is a serious problem that Signal – and application developers beyond – lack robust tools to prevent AI agents from undermining application-level privacy. Even where we are able to detect and block AI data access, Google, Apple, Microsoft, and others do not provide ways for developers to easily restrict such AI data access without making drastic compromises to the core user experience. This is also the reason we are currently unable to implement these protections on macOS.3\nWe are also struggling with a significant lack of documentation about how these AI agents actually work. Over the past few months, we’ve spent considerable developer time and energy…"
+   }
+  },
+  {
+   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+   "hn_url": "https://news.ycombinator.com/item?id=50574383",
+   "hn": {
+    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+    "points": 493,
+    "comments": 859
+   },
+   "comments": [
+    {
+     "author": "seiferteric",
+     "replies": 50,
+     "text": "I am trying to understand something about the economy and AI. If AI disrupts an industry that previously had high wages and now can be automated by commodity AI products, would it not actually lower GDP in some way (initially anyway)? What I mean is, if you had an industry that was worth say $1 billion, but now that same industry could be automated and done cheaply then it is no longe worth $1 billion? In some ways this is beneficial to the economy in that has reduced the cost of this industry…"
+    },
+    {
+     "author": "cmiles8",
+     "replies": 8,
+     "text": "Anthropic flirted with the IPO price several times today and is down 21% since the start of trading. It appears the only thing stopping it from going lower are those allocated shares in the IPO not wanting to book losses by letting the price fall further.\nThere’s not lot of fundamentals holding up the likes of ANT and much of the broader tech sector. The lofty valuations are based on hopes and dreams that are looking rather iffy.\nIt’s also sounding like the Fed will issue more rate hikes soon.…"
+    },
+    {
+     "author": "LastTrain",
+     "replies": 9,
+     "text": "On the one hand I completely understand and embrace that there is no stopping progress and adapt or die and all that. On the other hand I understand that we've built a machine that can strip-mine all of human knowledge for the benefit of a very small number of people and that sucks."
+    },
+    {
+     "author": "sega_sai",
+     "replies": 8,
+     "text": "It is such a strange time. The avalanche of discovered vulnerabilities, the record IPO followed by the massive fall in the stock market, the announcement of the solution of Riemann hypothesis. I find the whole combination of events a bit weird."
+    },
+    {
+     "author": "voisin",
+     "replies": 3,
+     "text": "I wonder whether this scuttles OpenAI’s IPO plans (desire or market appetite) and if they fail to raise public capital at an outrageous valuation, does this spell trouble for their cash-hungry business. Perhaps Anthropic is the last through the door before the house goes up in flames."
+    }
+   ],
+   "article": {
+    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+    "status": "ok",
+    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading | Stock markets | The Guardian",
+    "chars": 5427,
+    "text": "Shares in Anthropic, which makes the Claude chatbot, were on Friday worth hardly more than when they listed. Photograph: Leonardo Muñoz/AFP/Getty Images\nShares in Anthropic, which makes the Claude chatbot, were on Friday worth hardly more than when they listed. Photograph: Leonardo Muñoz/AFP/Getty Images\nNasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading\nThe Nasdaq lost trillions in value, with the AI startup’s IPO failing to buoy it as investors question huge sums being poured into AI buildout\nWho are Anthropic’s seven co-founders, now worth $180bn?\nAs Anthropic’s stock dropped during its second day of trading, the wider stock market dipped with it. On Friday, the Nasdaq Composite erased all its gains for 2026 and closed down 5% from its value on 1 January. The Dow Jones Industrial Average and S&P 500 closed in correction territory.\nAnthropic’s record-breaking IPO failed to stem a global sell-off in AI-linked companies, and the tech-heavy Nasdaq erased some $4tn in market value this week, according to the Wall Street Journal.\nShares in the frontier AI company behind the Claude chatbot, which floated in the US on Thursday, fell by 9% on Friday, ceding most of the gains from the biggest initial public offering in history. They dropped to $88.30, towards the $83 level at which Anthropic priced its stock market debut.\nAnthropic’s first two days as a listed company have been volatile. Its shares jumped by 17% on Thursday, after briefly surging by almost 40% when trading in the firm began.\nIs Claude creator Anthropic really worth $1.3 trillion? - The Latest\nUS technology stocks followed Anthropic down on Friday, with the memory chipmaker SanDisk falling 14% and rival Micron down 12%. Nvidia fell 14%, eliminating hundreds of billions of dollars in market cap.\nWho are Anthropic’s seven co-founders, now worth $180bn?\nRead more\nNeil Wilson, a UK investor strategist at Saxo, said there was “just relentless selling in tech”. He warned: “Anthropic shares tumbled to take an $85 handle as the post-IPO euphoria gives way to the reality of a steep sell-off across the tech and AI space that shows no sign of easing just yet.”\nGlobal markets slumped on Friday too; Asian stock markets recorded their worst week since 2020, as shares in big chip companies fell. In Taiwan, stocks dropped 6.7% to hit their lowest point since mid-April, with the chip maker TSMC down about 6%.\nThe scale of the decline in Taiwan prompted the chair of its stock exchange to pledge to ensure the stable operation ⁠of capital markets, and reassure investors they should remain confident in the fundamentals of Taiwanese companies.\nIn Japan, the Nikkei index fell 5%, while South Korea’s tech-heavy Kospi index lost 5.5%. Shares in the tech investor SoftBank had their worst day in more than two years, down 14.5% in Tokyo, amid worries around its aggressive bets on AI.\nEuropean stock markets posted their biggest weekly loss since March 2025, with the pan-European Stoxx 600 dropping 1.9% on Friday. London’s blue-chip stock index hit a five-month low.\nThe sell-off followed losses on Wall Street on Thursday, where the main indices all fell by more than 2% on a day dominated by Anthropic’s IPO.\nSouth Korea’s Kospi index lost 5.5% at end of trading. Photograph: Yonhap/EPA\nChris Beauchamp, the chief market analyst at the investing and trading platform IG, said Anthropic could be “draining market liquidity”, as investors sell shares in other companies to raise funds to pay for stock in the newly floated AI firm.\nskip past newsletter promotion\nafter newsletter promotion\n“The slide from yesterday’s highs sends a message that there might be more at work here than investors realise, and while brokers are scrambling to buy more, that liquidity has to come from somewhere, and the other tech names may be the first ones to feel the pressure,” Beauchamp said.\nAnthropic’s flotation has failed to ease worries around the AI trade, as investors increasingly…"
+   }
+  },
+  {
+   "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+   "hn_url": "https://news.ycombinator.com/item?id=50581110",
+   "hn": {
+    "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+    "points": 271,
+    "comments": 112
+   },
+   "comments": [
+    {
+     "author": "mjdiloreto",
+     "replies": 3,
+     "text": "> DreamCoder is not an Emacs-related application. The reason is unfortunately one of economics and access: I want to build an AI coding harness for everyone.\nI think this is an enormous mistake, and it will completely stop me from using this project. Being emacs compatible software would give this project a shared base of decades of composable interoperable software, and he ditched it. Now DreamCoder is completely indistinguishable from any other vibe coded bullshit IDE.\nIf the author is…"
+    },
+    {
+     "author": "everforward",
+     "replies": 1,
+     "text": "It's interesting (and probably correct) how much this focuses on the UI.\nI also looked (/am looking) at Lisp and AI, but I went with Clojure and zero-ed in on the REPL driven development. The high level idea is that a session maps to a namespace in Clojure. When you create a new session, it makes a new namespace, injects tools that are bound to that session into it, and then swaps you into that namespace. So I can do something like:\n(new!)\n(prompt! \"Write me a script that does ....\")\nThe agent…"
+    },
+    {
+     "author": "spockz",
+     "replies": 1,
+     "text": "I just read the whole announcement and boy I wish more text was written like this. Full of history, facts, and reasoning. Beautifully written. (I recognise it is a tad long of you just want to get cracking with it.) A very nice refresher in this age.\nI’ll be trying it out soon. Hopefully it does sandboxing and dealing with antigravity and codex well."
+    },
+    {
+     "author": "julienchastang",
+     "replies": 0,
+     "text": "Relatedly, I have installed my customized emacs inside a container that also has codex and a bunch of other niceties. In short, having Codex and emacs side-by-side super-charges the concept of emacs. Why? Because you can ask AI to write emacs lisp quickly molding the coding environment you want for whatever task you are trying to achieve. And the container aspect makes the whole development environment portable. Despite its age, in the AI era, emacs is the gift that keeps on giving."
+    },
+    {
+     "author": "spapas82",
+     "replies": 2,
+     "text": "I just tried this. I like the UI and UX. I don't like very much that it's written in Python instead of a compiled language like Rust or Golang, resulting in higher memory consumption (~350 mb without doin anything).\nHowever, I was not able to integrate it with any of my three different subscriptions (I also use DSH but didn’t bother to try it):\n- openCodeGo with api key and Import settings\n- OpenAI codex\n- GitHub Copilot\nI got a different error for each one of them. I consider myself an…"
+    }
+   ],
+   "article": {
+    "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+    "status": "ok",
+    "title": "Announcing DreamCoder - Mastering Emacs",
+    "chars": 28137,
+    "text": "It’s been a little bit quiet around these parts; sorry about that. I’ve been really busy for the past fifteen months with a major project that I am finally ready to formally release. So I’d like to talk about that project, and also a potted history of AI and Emacs.\nIt’s called DreamCoder, an AI coding harness that is very different from the ones you’re probably familiar with already.\nI installed Claude Code a few days after its first release some time in May 2025. I put some coins in the slot machine and I put it to work building a complex piece of enterprise middleware I’d built several times in my career. Wow.. watching this thing chomp its way through the project with that chaotic, early Sonnet energy. It was far, far from perfect; it required a lot of human steering, input and correction, but the speed advantage was undeniable, and seeing it jump between disparate programming languages, frameworks and theoretical and practical programming from one turn to the next was just such a sight to behold.\nOne thing that struck me with Claude Code is that it was the first terminal application I’d used in a long time. I found it an odd choice for a coding agent; then everyone else copied them and made their own terminal coding agents.\nWhy on earth do I have to stare at a shoe rack-sized terminal window to do this? Sure there are GUI versions also; but the terminal interface remains the primary modality for most of these tools. Most GUIs, and most harnesses now have them also, are second-class citizens. And they all look the same. A boring sidebar with chat headings and a chat pane is what most of them look like.\nBut a serious coder needs more than that. Even a casual user will bristle when they try to copy and paste multi-line text in a terminal.\nSo in May 2025 I decreed that I would build a better harness, and surely now that I have AI this should not take more than 2 or 3 months to build.\nAnd so, after 15 months of work, and endless UI and backend iterations, culminating in a successful beta test, I am now ready to release DreamCoder, which is I think the acme of what a coding harness should be.\nDreamCoder is a frontier coding harness with a tiling window manager that runs in your browser on all 3 platforms.\nBefore I get into the meat and potatoes of all of that, I want to talk about AI history and Emacs’s role in it.\nLet’s roll back time to the 1950s.\nPast\nEmacs and LISP, if you did not know, both have a special place in the annals of AI history.\nJohn McCarthy was an AI researcher at MIT, and in the 1950s he set out to create the Advice Taker, a piece of software that envelops a framework for what a basic human should know that he called commonsense reasoning using “mathematical logic”. His postulation was that if we can express with symbolic precision all the aspects of what constitutes humanity like ordinary facts about life, that we can set in motion the rudiments of AI.\nIn the 50s there was little in the way of computer software that could do this. To formalize such a system you need a lot of data, rigorously formatted, and a method of manipulating the data. The data and code itself may intertwine recursively, and so an ordinary programming language would not work.\nTo help him achieve this, McCarthy created the LISt Processing (LISP) language made up of two facets: M-expressions, a functional language in the vein of Algol; and S-expressions, designed for symbolic data representation, and never intended as a method of writing code. S-expressions were dolled up with parentheses. M-expressions meanwhile used square brackets to visually separate the two. Uniquely, the language specification had an eval feature that would prove that the language is also a universal Turing machine… if only McCarthy had the means to do so. It was theoretical because McCarthy lacked, in time, staff and money, what he needed build this recursive evaluator that can take as input its own world state and evaluate it alongside new expressions, a fact made…"
+   }
+  },
+  {
+   "url": "https://github.com/google-antigravity/antigravity-cli/releases/tag/1.5.14",
+   "article": {
+    "url": "https://github.com/google-antigravity/antigravity-cli/releases/tag/1.5.14",
+    "status": "ok",
+    "title": "",
+    "chars": 8025,
+    "text": "## 1.5.14\n- Added `/thinking` (`/thinking [on|off]`, saved as `\"showThinking\"` in `settings.json` and off by default) to stream the model's full thinking live in the transcript while it thinks and keep finished thoughts expanded without pressing `Ctrl+O`.\n- Added a live `Overview` section to `/swarm board` on terminals at least 28 rows tall, showing the swarm's goal, overall task progress (`Overview · N of M tasks done` and any blocked count), and up to six workstream threads with status indicators for which workers are working, in review, waiting on a peer, failed, or done.\n- Added `plan` mode to `--remote-agent` sessions, so a remote agent can research and write a plan for your review before editing files or running commands: switch to it with `Shift+Tab`, start in it with `--mode plan`, or choose `plan` under `Agent Mode` on the `Remote Agent` tab of `/config`.\n- Added an `Agent Mode` setting (`default`, `accept-edits`, and `plan`) to the `Remote Agent` tab of `/config` in `--remote-agent` sessions: choosing a mode saves it as your default for new remote sessions and updates the current conversation, while `Shift+Tab` switches modes for the session without changing your saved default and `--mode` overrides a resumed conversation's saved mode.\n- Added a `Switch to RTL text direction` button to the header of Markdown (`.md`, `.markdown`) and `.txt` file tabs in the side panel of the Remote Control browser view, so right-to-left prose renders cleanly without paragraphs that start with English words snapping left, while code blocks and line numbers stay left-to-right.\n- Improved the `Orchestrator` row in `/model` on consumer plans in local sessions so you can pick both its `Planner` and `Executor` models and each one's thinking `Effort` (saved under `\"orchestrator\"` in `settings.json` and `--settings`): press `Tab` or `Shift+Tab` to move between `Planner`, `Executor`, and their `Effort` sliders, use `←` and `→` to change the focused choice, and see the active planner next to `Orchestrator` in the status line.\n- Improved expanded tool groups in `medium` verbosity: expanding a group with `Ctrl+O` or by clicking now keeps the summary header's colors, including red status markers on failed runs, instead of dimming it to gray, and indents the expanded tool calls behind a `│` gutter.\n- Improved permission prompts for creating or editing a file outside the workspace in the Remote Control browser view: the \"always allow\" options now suggest the enclosing repository or project folder (or the parent folder when there is none) instead of only that single file, while sensitive files such as `.env` or SSH keys and broad folders such as your home directory or `/tmp` stay limited to the exact file, and editing the target path in the prompt overrides the suggestion.\n- Improved turns that launch several subagents in a row in the Remote Control browser view: consecutive subagent launches now collapse into a single `Started N subagents` row (`Starting N subagents` while launching) that you can expand to see and open each subagent.\n- Changed Auto mode (the default `Agent Mode`) to allow reading files outside the workspace without asking for approval; previously Auto mode prompted before reading outside the workspace unless `Non-Workspace Access` was turned on in `/config`. Writing or editing files outside the workspace still asks for approval, and your `ask` and `deny` permission rules, protected configuration files such as `mcp_config.json`, other projects' conversations, and organization policies requiring outside-workspace file review still apply.\n- Fixed a security issue on Windows where network (UNC), device, and NT object paths in workspace permission rules, `@` file mentions, plugins, `sidecars.json`, and custom agents could trigger a lookup that sent Windows credentials to a remote host; those paths are now rejected without being accessed.\n- Fixed model responses that error out, are canceled, or are cut off partway through running partial…"
+   }
+  },
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+    "status": "ok",
+    "title": "",
+    "chars": 19342,
+    "text": "## 2.1.330\n- Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after `claude auth login`, Claude Code applies the organization's settings and uses its cloud provider or gateway\n- Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in `/config`\n- Added `CLAUDE_CODE_FULL_SIGN_IN_LINK=1` to print the full sign-in link, if the short one shows an error or a script reads values from it\n- Self-hosted runner: Added `--start-dir` / `SELF_HOSTED_RUNNER_START_DIR` to have Claude start its work in a folder of a repository, while settings and hooks load as without it\n- Added a notice in cloud and self-hosted runner sessions when a plugin marketplace can't be fetched because its repository isn't one of the session's\n- Self-hosted runner: Added a notice when Anthropic-managed git refuses a plugin's own repository, naming the plugin and what to do\n- Added `commandPrinted` to `claude plugin install --json` results, true when the plugin's install command wrote to stderr, and `commandFailed` when it exited with an error, was killed or timed out\n- Added `claude_code_self_hosted_runner_order_to_registered_seconds` to the self-hosted runner's `/metrics`: seconds from work order issued to registration accepted, on orchestrator-spawned runners\n- Added `claude_code_self_hosted_runner_order_to_first_session_seconds` to the self-hosted runner's `/metrics`: seconds from work order to first session handed over, on runners started for a session\n- Fixed Claude Code freezing for up to several minutes right after compacting a very long conversation\n- Fixed WebFetch freezing the session for minutes on some pages, and returning an empty result for some others\n- Fixed `ExitWorktree` and the worktree exit dialog deleting a worktree that another running Claude Code session was working in\n- Fixed changes to user settings being lost when several Claude Code processes saved them at the same time\n- Fixed `--continue` and `--resume` opening an empty session or failing when the last saved message had a missing or invalid timestamp\n- Fixed the first prompt after a sleep of two minutes or more waiting three minutes on a connection that had died, on Linux and WSL\n- Fixed turns failing with \"JSON schema is invalid\", and session files growing by many megabytes, when many MCP tools have an input schema that the API refuses\n- Linux: Fixed Bash commands waiting seconds and showing no file diff for the rest of a session in slow repositories with large ignored folders such as `node_modules`\n- Windows: Fixed Bash commands running slower for the rest of a session after Git Bash took 10 to 60 seconds to start, on machines with no custom start-up files\n- Fixed `/rewind` sometimes restoring an older version of a file when two queued prompts, or stacked skills, ran together right after a turn that changed it\n- Fixed text and images added when approving a permission prompt being dropped when the approved command or tool then failed\n- Fixed MCP resources from claude.ai connectors and plugin servers not being attached when @-mentioned in the terminal's prompt box\n- Fixed an MCP server that subagents declare being shut down when one of them finished, while other subagents or the session were still using it\n- Fixed Claude in Chrome staying \"not connected\" after a brief connection problem, even though Chrome was open and signed in\n- Fixed terminal sessions on Amazon Bedrock (Mantle) started with no model selected ignoring a pinned Opus model, and still calling an unavailable default model after announcing a fallback\n- Fixed the rest of what you were typing being lost when a plan arrived in fullscreen mode\n- Fixed claude.ai connectors with different names being dropped when they share a server URL (anthropics/claude-code#101856)\n- Fixed plugins going missing from the installed list when several `claude plugin` commands ran at…"
+   }
+  },
+  {
+   "url": "https://github.com/yuuichieguchi/MomongaCode",
+   "article": {
+    "url": "https://github.com/yuuichieguchi/MomongaCode",
+    "status": "ok",
+    "title": "",
+    "chars": 37133,
+    "text": "# MomongaCode\nMomongaCode is a coding agent for the terminal. It works with local and hosted models, keeps its own memory of your repositories, and runs tool calls under a permission system and an operating-system sandbox. The command is `momonga`.\n## 1. Installation\nmacOS and Linux:\n```sh\ncurl -fsSL https://momongacode.com/install.sh | bash\n```\nWindows, in PowerShell:\n```powershell\nirm https://momongacode.com/install.ps1 | iex\n```\nThen add a model and run a first prompt, as [Getting Started](#3-getting-started) shows.\n## 2. Why MomongaCode?\nMomongaCode focuses deeply on two engineering problems that decide whether a terminal coding agent stays accurate and affordable over long sessions:\n- **Adaptive Agent Memory & Context Orchestration**\n- **Agent Token Efficiency Engineering**\n### Adaptive Agent Memory & Context Orchestration\nIn MomongaCode, memory and context are built by the runtime from recorded events, not left to the model alone.\n- **Structured, evidence-backed memories.** Every memory has a kind (`fact`, `episode`, or `procedure`), a scope (`user` or `project`), and a lifecycle state (`active`, `candidate`, `archived`, `duplicate`, or `rejected`). You can attach evidence—a file with its SHA-256 hash, a commit, or a check—and any memory bound to a file is automatically flagged as stale when that file changes.\n- **Human review and automatic decay.** Memories proposed by the agent sit in a review queue until you accept or reject them. Duplicates are flagged, replaced notes keep their full history, and active memories with stale file evidence or no bound file are archived after `memory.forgetAfterDays` without being kept or used (default: `90`).\n- **Adaptive memory budget.** Every 20 runs in a folder, MomongaCode adjusts how much of the context budget goes to memories based on actual usage: halved if fewer than 25% of injected memories were used, doubled if more than 75% were used and memories had to be dropped (clamped between 1/16 and 1/2 of the budget, starting at 1/4). On by default; turn off with `context.adaptiveBudget: false`.\n- **Budgeted context and searchable history.** Each model request is assembled under an explicit token budget from instruction files, rules, memories, active skills, and session history. When older history is compacted, the summary is checked against the content it replaces, and the agent can still look up earlier turns via `HistorySearch` and `HistoryRead`.\n- **Enforced standing rules.** Standing rules (`momonga rule`) apply to a single folder or globally. Rules added with `--deny` or `--ask` are enforced by the permission system—not just pasted into the prompt.\n- **Benchmarked compaction improvements.** `momonga context improve` generates candidate compaction guidelines, benchmarks them against your current guideline, and writes the results to a file. Nothing takes effect until you explicitly adopt a winner with `momonga context guideline adopt`.\n### Agent Token Efficiency Engineering\nEvery token-saving mechanism is on by default; each has a setting only so you can turn it off, and `momonga eval` measures it against a base with it off.\n| Mechanism | Default | Turn off / configure | What it does |\n| --- | --- | --- | --- |\n| **Prompt cache** | On | `context.cachePrefix: false` | Keeps the leading request prefix stable across turns so provider prompt caches hit reliably, and reports a notice if fewer leading items are preserved than expected. |\n| **Tool deferral** | On | `tools.deferral: false` | After 20 runs in a folder, replaces tools never called in the last 20 runs with a one-line catalog and `LoadTools`; full schemas are sent only when loaded. |\n| **Concise tool descriptions** | On | `tools.conciseDescriptions: false` | Sends concise tool descriptions to reduce fixed per-turn token overhead. |\n| **Output formatters** | On | `context.outputFormatters` | Built-in formatters (`log`, `json`, `grep`, `identicalOutput`) trim noisy tool output before it enters context. List a subset to narrow,…"
+   }
+  },
+  {
+   "url": "https://about.gitlab.com/blog/coding-agents-with-gitlab/",
+   "article": {
+    "url": "https://about.gitlab.com/blog/coding-agents-with-gitlab/",
+    "status": "ok",
+    "title": "The best way to use your coding agents with GitLab",
+    "chars": 7261,
+    "text": "To search repositories and projects, login to gitlab.com.\nSuggestions\nGitLab Duo Agent PlatformCode Suggestions (AI)CI/CDGitLab on AWSGitLab on Google CloudWhy GitLab?\nPublished on: November 19, 2026\n6 min read\nThe best way to use your coding agents with GitLab\nUse Claude Code, Codex, Cursor, or other coding agents with GitLab, so every MR gets the same review, CI fixes, security checks, and approvals.\nManav Khurana\nAI\nfeatures\nproduct\nSay you and your team already use Claude Code, Codex, Cursor, Devin, or OpenCode to write code. Maybe even more than one of them.\nWhat happens next depends on everyone’s personal setup.\nSome have their agent review changes, watch CI pipelines and security checks, with a different approach to follow up when something breaks. Others do it by hand. When those steps depend on each engineer’s setup, skill, or time to follow up, even changes in the same project move at different speeds and get different levels of scrutiny.\nWe paired each one of these coding agents to create a recommended configuration that makes your best engineering practices the default for the whole team.\nOne bar for every change. You set security, architecture, and engineering standards once in GitLab. Duo reviews changes against your review instructions, and GitLab enforces required pipelines, security checks, and approvals before merge, whether a coding agent or a person wrote the change.\nGive agents the context they need. Duo can work from the repository, merge request discussion, CI logs, and scanner results. Your team doesn’t have to piece that context back together every time work moves between tools or people.\nDelegation without handing over keys. Composite identity ties every agent action to the agent and the person who started it, and limits access to what both are allowed to do.\nLeave a record the next engineer can use. Reviews, pipeline results, and approvals stay with the merge request. A pipeline fix can link back to its Duo session. Anyone picking up the work can see what ran and what still needs attention without reconstructing someone else’s agent conversation.\nYour models, your cloud. Pick the model for each agentic flow from Anthropic, OpenAI, Google or open-weight providers, and change it when a better one ships.\nWhat’s new\nYour coding agent writes the code. GitLab Duo does the work that starts at the merge request and follows through to deployment.\nYou can now set up code review, pipeline repair, and security triage together from your coding session. The GitLab Duo setup skill connects your agent to GitLab and configures automatic review and failed-pipeline repair. On the Ultimate tier, you can also opt in to security triage and remediation. The skill tells you what, if anything, still needs your attention.\nOnce configured, the work keeps running in GitLab even if you close your editor. When you come back, the optional MR follow-up skill checks what’s already running and brings review and pipeline feedback back into your coding session.\nFor a deep dive on how to use our new skills, please see our detailed guide here.\nWhat you and your team get\nGive every eligible MR a separate review for 25¢\nYour coding agent can check its own work before it pushes. Duo gives the change a second look when the MR is marked ready and posts feedback on the diff. A review costs a flat $0.25 at list price, so 1,000 reviews cost $250. Anthropic's Code Review averages $15–$25 a review, so the same volume would cost $15,000 or more. That makes a first pass practical even for routine changes.\nThen ask your agent to read the comments, fix the ones you agree with, and reply on each thread.\nTurn security findings into fixes you can verify\nOn Ultimate, Duo flags likely false positives from static application security testing and secret detection and opens MRs with fixes for eligible SAST findings, usually about 10 minutes after a scan. Your team gets a proposed change it can test, scan, and review under the same rules as any other…"
+   }
+  }
+ ]
+}

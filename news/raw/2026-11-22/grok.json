@@ -1,0 +1,275 @@
+{
+ "date": "2026-11-22",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-22.json",
+ "fetched_at": "2026-11-21T23:55:56+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T05:25:57+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 11,
+  "ok": 10,
+  "not-found": 1,
+  "items_unverifiable": 1
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Antigravity CLI 1.5.14 adds live thinking stream, swarm overview, and remote plan mode",
+   "category": "feature_update",
+   "event_time": "2026-11-21T07:57:00Z",
+   "primary_url": "https://github.com/google-antigravity/antigravity-cli/releases/tag/1.5.14",
+   "facts": [
+    "Added /thinking to stream the model's full thinking live in the transcript while it thinks and keep finished thoughts expanded without pressing Ctrl+O.",
+    "Added a live Overview section to /swarm board on terminals at least 28 rows tall, showing the swarm's goal, overall task progress (Overview · N of M tasks done and any blocked count), and up to six workstream threads with status indicators.",
+    "Added plan mode to --remote-agent sessions, so a remote agent can research and write a plan for your review before editing files or running commands."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Khaled865412521/status/2124150698023514572",
+     "official": false,
+     "author": "@Khaled865412521",
+     "check": "ok",
+     "created_at": "2026-11-21T14:39:25Z",
+     "text": "Antigravity CLI 1.5.14 lets you watch the agent think live. 4 things worth setting today\n\n1. /thinking on\n   Off by default. Finished thoughts stay expanded, no Ctrl+O\n2. Remote agent can plan first: Shift+Tab into plan, or start with --mode plan\n3. /swarm board adds a live Overview: N of M tasks done (terminals 28+ rows tall)\n4. Auto mode now reads files outside the workspace without asking. Writes still need approval\n\nagy update",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 1,
+     "views": 24
+    },
+    {
+     "url": "https://x.com/antigravity/status/2124201177344582136",
+     "official": true,
+     "author": "@antigravity",
+     "check": "ok",
+     "created_at": "2026-11-21T18:00:01Z",
+     "text": "Make Google Antigravity feel like home. 🛠️\n\nCustomize your keyboard shortcuts to match your muscle memory. Just head to Settings (or type /keybindings in the CLI) to rebind any command.",
+     "likes": 991,
+     "retweets": 47,
+     "replies": 51,
+     "views": 32468
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Claude Code v2.1.330 adds easel chart mod, Enterprise Admin Console sign-in, and worktree safety fixes",
+   "category": "feature_update",
+   "event_time": "2026-11-20T22:32:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "facts": [
+    "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway.",
+    "Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config.",
+    "Fixed ExitWorktree and the worktree exit dialog deleting a worktree that another running Claude Code session was working in."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/aiinfo_x/status/2124259177615053047",
+     "official": false,
+     "author": "@aiinfo_x",
+     "check": "ok",
+     "created_at": "2026-11-21T21:50:29Z",
+     "text": "【Claude実装】Claude Code 2.1.330 で組み込みMod「easel」が追加されました📊 頼めばグラフを描き、MCPのメトリクス結果の下にも自動でグラフを出します。対象はPro・Maxなど、macOSとLinuxです。自動グラフが不要なら /config でオフにできます。\nhttps://code.claude.com/docs/en/changelog",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 1,
+     "views": 83
+    },
+    {
+     "url": "https://x.com/MegaEvolvedFrog/status/2124129737454866594",
+     "official": false,
+     "author": "@MegaEvolvedFrog",
+     "check": "ok",
+     "created_at": "2026-11-21T13:16:08Z",
+     "text": "Most of Claude Code v2.1.330 is bug fixes, and the list says a lot about how people run it now\n\nLook at what got fixed:\n- settings lost when several processes saved at once\n- plugins missing when several plugin commands ran together\n- task metadata lost on parallel updates\n- a worktree deleted while another session was using it\n\nSame root cause: people run many sessions at the same time\n\nIf i were you, i'd stop treating parallel agents as an edge case... update, then check your worktree and settings habits\n\nThe tooling is finally catching up with how it's used\n\nHow many Claude Code sessions do you run in parallel before things start breaking?\n\nFull article here: https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+     "likes": 0,
+     "retweets": 1,
+     "replies": 4,
+     "views": 32
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "MomongaCode v0.1.0 launches as open-source terminal coding agent with evidence-backed memory and token efficiency",
+   "category": "tool_launch",
+   "event_time": "2026-11-21T05:00:00Z",
+   "primary_url": "https://github.com/yuuichieguchi/MomongaCode",
+   "facts": [
+    "MomongaCode is a coding agent for the terminal. It works with local and hosted models, keeps its own memory of your repositories, and runs tool calls under a permission system and an operating-system sandbox.",
+    "Evidence-backed repo memory: memory and context are built by the runtime from recorded events, not left to the model alone.",
+    "Token efficiency ON by default, and a built-in eval command that measures each saving against a baseline with it off."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Pro_Algorithm/status/2124141918175007038",
+     "official": false,
+     "author": "@Pro_Algorithm",
+     "check": "ok",
+     "created_at": "2026-11-21T14:04:32Z",
+     "text": "A brand-new FREE coding agent just landed in the terminal... and it's going straight after the two things that make AI coding agents painful: forgetting context and burning tokens.\n\nIt's called MomongaCode. v0.1.0 just shipped, open-source and MIT licensed.\n\nWhat the developer says it packs:\n- Works with local AND hosted models\n- Evidence-backed repo memory: memory and context are built by the runtime from recorded events, not left to the model alone\n- Token efficiency ON by default, and a built-in eval command that measures each saving against a baseline with it off\n- OS sandbox, permission rules and \"verifiable completion\"\n- MCP, skills, hooks, background jobs and headless mode\n\nmacOS, Linux and Windows. The command is literally \"momonga\".\n\nLocal models + a sandbox + a free license = the kind of agent setup people have been begging for.\n\nIt's v0.1, so it's early days. But this is one to watch.\n\nRepo: http://github.com/yuuichieguchi/MomongaCode\n\n https://x.com/yuuichieguchi/status/2124004883082957280/video/1",
+     "likes": 2,
+     "retweets": 1,
+     "replies": 0,
+     "views": 177
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Developers share Claude Code workflows combining Matt Pocock skills with Beads task graphs for parallel agent work",
+   "category": "discussion",
+   "event_time": "2026-11-21T22:23:35Z",
+   "primary_url": null,
+   "facts": [
+    "Beads gives your agents a task graph they always remember, even across new sessions.",
+    "bd ready shows only the tasks with nothing blocking them; it claims one with bd update --claim, builds it with /implement, which writes tests first and finishes with a code review, then closes it with bd close.",
+    "Claims are atomic, so two agents never grab the same task."
+   ],
+   "x_posts": [],
+   "dropped_posts": [
+    {
+     "url": "https://x.com/Layton_Gott/status/2124267507255062727",
+     "official": false,
+     "check": "not-found",
+     "reason": "HTTP 404 Not Found — {\"code\":404,\"message\":\"NOT_FOUND\",\"tweet\":null}"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "title": "Users report mixed experiences with Antigravity reliability and Neon model performance compared to Claude Code and Codex",
+   "category": "discussion",
+   "event_time": "2026-11-21T21:46:10Z",
+   "primary_url": null,
+   "facts": [
+    "Pros: a much better conversation experience than other models rn; surprisingly an entropic beast, able to diversify approaches; code quality is OOM better.",
+    "Cons: speed? Neon takes 3-4x longer for response; swarm mode will get stuck waiting for prev step completion.",
+    "When I use Codex, OpenCode, or Cursor, the overall workflow generally feels more efficient and predictable."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/rohanxparmar/status/2124258089679638653",
+     "official": false,
+     "author": "@rohanxparmar",
+     "check": "ok",
+     "created_at": "2026-11-21T21:46:10Z",
+     "text": "Insanely cool experience, working on simulating material discovery and verification.\n\nBeen running on Antigravity IDE, swarm mode.\n\nPros:\n\n- a much better conversation experience than other models rn\n- surprisingly an entropic beast, able to diversify approaches. Amazing breadth!\n- code quality is OOM better\n\nCons:\n\n- speed? Haven't measured toks/s yet but typically I run the same prompt on multiple models and compare responses. Neon takes 3-4x longer for response.\n- less model and more harness, swarm mode will get stuck waiting for prev step completjon. Probably because prev agent doesn't update message board the way it's supposed to on long horizon tasks?\n\nSuper close to switching over fully as my daily driver",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 0,
+     "views": 181,
+     "reply_to": "@melvinjohnsonp"
+    },
+    {
+     "url": "https://x.com/jal_eelll/status/2124106585945297179",
+     "official": false,
+     "author": "@jal_eelll",
+     "check": "ok",
+     "created_at": "2026-11-21T11:44:08Z",
+     "text": "I've been a day one user of antigravity. I used it just last night. Also let's crafiy something. I said Antigravity wasn't freat. I never said it was bad. \n\nFor me, it's mainly the agent execution and overall reliability. Unnecessary tool calls, inconsistent subagent behavior, excessive overhead on simple tasks, and context management (for a while some of my chats would just disappear after an update for example) are areas where I still think Antigravity could improve.\n\nWhen I use Codex, OpenCode, or Cursor, the overall workflow generally feels more efficient and predictable. I'm not saying Antigravity lacks good features. I love Remote Control, for example. It's just that I have a better experience using these other tools. In my opinion, it even felt better using Gemini models in Cursor than Antigravity. I love Gemini models so I'll always give them and Antigravity a chance but even now I still don't think its neck and neck with the alternatives",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 1,
+     "views": 835,
+     "reply_to": "@ibs4lif"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Skills Manager tool helps share and update agent skills across Claude Code, Codex, and OpenCode",
+   "category": "tool_launch",
+   "event_time": "2026-11-21T21:48:03Z",
+   "primary_url": null,
+   "facts": [
+    "Found Skills Manager a month ago. It’s open-source and lets you keep skills either per project or as global ones that work across agents.",
+    "This Skills Manager demo shows the part I’d actually use: you can go from the shared library to the Claude Code view and see which skills that agent has."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/0x_CryptoFuture/status/2124258566328463548",
+     "official": false,
+     "author": "@0x_CryptoFuture",
+     "check": "ok",
+     "created_at": "2026-11-21T21:48:03Z",
+     "text": "CLAUDE AND CODEX CAN WRITE MY CODE. SOMEHOW I’M STILL THE GUY COPYING FILES BETWEEN THEM\n\nUpdate your code review checklist in Claude Code, switch to Codex, and now you’re wondering which version it’s using\n\nAdd OpenCode and now you’re checking three folders before you’ve written a line of code\n\nThis Skills Manager demo shows the part I’d actually use: you can go from the shared library to the Claude Code view and see which skills that agent has\n\nI’d keep my code review checklist available across agents and leave deployment instructions inside the repo they belong to. Switching agents shouldn’t mean rebuilding your setup every time\n\nWhat’s one skill you’d want available in every coding agent you use?",
+     "likes": 5,
+     "retweets": 0,
+     "replies": 4,
+     "views": 221,
+     "quote": {
+      "author": "@PanikChannel",
+      "text": "Managing skills across different AI agents is starting to feel like a second job - especially once you have more than a couple.\n\nI use Claude Code, Codex, and OpenCode. I wanted to use the same skills across all of them and keep them up to date. Instead, I kept reinstalling things and losing track of what I had where.\n\nFound Skills Manager a month ago. It’s open-source and lets you keep skills either per project or as global ones that work across agents. Been using it for a bit, and it’s made…"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Codex CLI 0.171.0 enables TUI workspace by default with document previews and adds GPT-6.2 models",
+   "category": "feature_update",
+   "event_time": "2026-11-20T00:44:00Z",
+   "primary_url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+   "facts": [
+    "Added GPT-6.2 Sol and Astra to model catalogs, with Sol as the default catalog selection.",
+    "Enabled the TUI workspace by default, with searchable document previews, image previews, and subagent transcripts alongside the main conversation."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/kaddisdeployed/status/2123988281616441820",
+     "official": false,
+     "author": "@kaddisdeployed",
+     "check": "ok",
+     "created_at": "2026-11-21T03:54:02Z",
+     "text": "CODEX CLI 0.171.0 IS HERE 👀\n\nOpenAI just shipped a new update with some useful changes:\n\n- GPT-6.2 Sol is now the default model\n\n- GPT-6.2 Astra and Sol added to the    model catalog\n\n- TUI workspace is now enabled by default\n\n- preview documents, images and -subagent transcripts directly in the terminal\n\n- new undo and redo shortcuts\n\nupdate with npm:\n\nnpm install -g @openai/codex@0.171.0\n\nrelease notes: https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+     "likes": 15,
+     "retweets": 2,
+     "replies": 12,
+     "views": 1482,
+     "quote": {
+      "author": "@kaddisdeployed",
+      "text": "NVIDIA’S 550B AI MODEL IS FREE ON OPENROUTER 🔥\n\nNemotron 3 Ultra is available for free, with:\n\n1M token context window\n550B total parameters / 55B active\nstrong reasoning and coding capabilities\nbuilt for AI agents and long-running workflows\n\nfree tier rate limits apply.\n\ntry it here: https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free\n\nworth testing if you want a powerful long-context model without paying for API access."
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "GitLab Duo Agent Platform integrates with terminal coding agents like Claude Code, Cursor, and Codex for MR workflows",
+   "category": "feature_update",
+   "event_time": "2026-11-19T12:00:00Z",
+   "primary_url": "https://about.gitlab.com/blog/coding-agents-with-gitlab/",
+   "facts": [
+    "Use Claude Code, Codex, Cursor, or other coding agents with GitLab, so every MR gets the same review, CI fixes, security checks, and approvals.",
+    "You can now set up code review, pipeline repair, and security triage together from your coding session.",
+    "The GitLab Duo setup skill connects your agent to GitLab and configures automatic review and failed-pipeline repair."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/theagenticdaily/status/2123939765645169137",
+     "official": false,
+     "author": "@theagenticdaily",
+     "check": "ok",
+     "created_at": "2026-11-21T00:41:15Z",
+     "text": "GitLab now lets developers trigger its Duo Agent Platform directly from the terminal tools they already use — Claude Code, Cursor, Codex, or Duo CLI. One skill wires these up so agents can turn an issue into a merge request, run automated code review, fix failing pipelines, and triage security findings, all without leaving the terminal. https://about.gitlab.com/blog/agentic-engineering-walkthrough/",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 35
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

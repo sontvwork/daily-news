@@ -1,0 +1,838 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "bc1bdaee2c209996",
+  "generated_at": "2026-11-21T23:56:31.974664Z",
+  "from_date": "2026-11-20",
+  "to_date": "2026-11-21",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-21T23:56:31.872223Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-21T23:56:31.872235Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 95,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-21T23:56:31.870500Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 7,
+      "attempted": true,
+      "at": "2026-11-21T23:56:31.872030Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "One Gemini Neon 4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "One Gemini Neon 4",
+        "seed_score": 1512.0,
+        "summary": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R72",
+            "source": "reddit",
+            "title": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2",
+            "body": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2",
+            "url": "https://www.reddit.com/r/singularity/comments/1y1zkd4/one_of_my_greatest_contributions_to_making_gemini/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 971,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "One of my greatest contributions to making Gemini Neon 4 better than Claude fable 5.2",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38149999999999995
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Nasdaq 2026 AI sell-off dampens Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 859,
+          "points": 493
+        }
+      },
+      "nomination": {
+        "name": "Nasdaq 2026 AI sell-off dampens Anthropic",
+        "seed_score": 1434.0126,
+        "summary": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic\u2019s second day",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50574383",
+            "source": "hackernews",
+            "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic\u2019s second day",
+            "body": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic\u2019s second day",
+            "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 493,
+              "comments": 859
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Nasdaq erases all 2026 gains as AI sell-off dampens Anthropi",
+            "snippet": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic\u2019s second day",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50574383",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.15100000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Frostbite CPU AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 351,
+          "points": 667
+        }
+      },
+      "nomination": {
+        "name": "Frostbite CPU AI",
+        "seed_score": 1079.7521,
+        "summary": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50572503",
+            "source": "hackernews",
+            "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+            "body": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+            "url": "https://architectlabs.com/blog/frostbite",
+            "author": "shioyama",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 667,
+              "comments": 351
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Frostbite: A new CPU architecture discovered, designed and v",
+            "snippet": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50572503",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 10,
+            "engagement_score": 94,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Fable 5.2 Atlantis 96 KB HTML",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 71
+        }
+      },
+      "nomination": {
+        "name": "Fable 5.2 Atlantis 96 KB HTML",
+        "seed_score": 1024.5,
+        "summary": "[**Fly through it in your browser**](https://noniv.github.io/atlantis) \u00b7 [Source](https://github.com/Noniv/atlantis) \u00b7 free, works best in Chrome\n\nI wanted to see how far a current model could go on a real-time 3D scene with no engine, no assets and no libraries. I gave Fable 5.2 a prompt, an art bible and eight concept images I'd made with ChatGPT. The city's design is based on how people describ",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R73",
+            "source": "reddit",
+            "title": "Fable 5.2 built a flyable Atlantis in a single 96 KB HTML file",
+            "body": "Fable 5.2 built a flyable Atlantis in a single 96 KB HTML file\n[**Fly through it in your browser**](https://noniv.github.io/atlantis) \u00b7 [Source](https://github.com/Noniv/atlantis) \u00b7 free, works best in Chrome\n\nI wanted to see how far a current model could go on a real-time 3D scene with no engine, no assets and no libraries. I gave Fable 5.2 a prompt, an art bible and eight concept images I'd made with ChatGPT. The city's design is based on how people describe Atlantis under regression hypnosis: rings of water around a giant crystal, white marble, gardens everywhere.\n\nClaude Code wrote all of it: the WebGPU renderer, the shaders for the crystal refraction and the reflective canals, the generators for every building and tree, collision, and even a chiptune soundtrack synthesized in the browser. Every piece of the city is generated by code when the page loads, so the whole thing is one 96 KB file.\n\nA separate subagent saw only the art bible, the concept images and the renders, then listed what looked wrong. GPU timing over a 60-second scripted flight tracked the frame time. On an RTX 5070 Ti it draws a frame in about 2.5 ms at 1440p High.\n\nA year or two ago this would have been a team project. The prompt is in the repo if you want to see exactly what I asked for.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y1z1cu/fable_52_built_a_flyable_atlantis_in_a_single_96/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 612,
+              "num_comments": 71
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[**Fly through it in your browser**](https://noniv.github.io/atlantis) \u00b7 [Source](https://github.com/Noniv/atlantis) \u00b7 free, works best in Chrome\n\nI wanted to see how far a current model could go on a real-time 3D scene with no engine, no assets and no libraries. I gave Fable 5.2 a prompt, an art bible and eight concept images I'd made with ChatGPT. The city's design is based on how people describ",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Inkling 2 Owen 4",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 121
+        }
+      },
+      "nomination": {
+        "name": "Inkling 2 Owen 4",
+        "seed_score": 921.0,
+        "summary": "Is Inkling 2 mini really that good, or are we just desperate for models to fill the void while waiting on Owen 4?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "I\u2019ve been gone from this sub for a day, what did I miss?",
+            "body": "I\u2019ve been gone from this sub for a day, what did I miss?\nIs Inkling 2 mini really that good, or are we just desperate for models to fill the void while waiting on Owen 4?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y25pjq/ive_been_gone_from_this_sub_for_a_day_what_did_i/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 493,
+              "num_comments": 121
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Is Inkling 2 mini really that good, or are we just desperate for models to fill the void while waiting on Owen 4?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34450000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Asking GPT-6 Without Web Search Predict",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 63
+        }
+      },
+      "nomination": {
+        "name": "Asking GPT-6 Without Web Search Predict",
+        "seed_score": 850.5,
+        "summary": "Asking GPT-6 (Without Web Search) To Predict When AI Will Solve Millennium Prize Problems Is Very Entertaining.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R67",
+            "source": "reddit",
+            "title": "Asking GPT-6 (Without Web Search) To Predict When AI Will Solve Millennium Prize Problems Is Very Entertaining.",
+            "body": "Asking GPT-6 (Without Web Search) To Predict When AI Will Solve Millennium Prize Problems Is Very Entertaining.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y21njx/asking_gpt6_without_web_search_to_predict_when_ai/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 504,
+              "num_comments": 63
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Asking GPT-6 (Without Web Search) To Predict When AI Will Solve Millennium Prize Problems Is Very Entertaining.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 95,
+            "source_quality": 0.6,
+            "local_rank_score": 0.346
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Language Models Rewrite Own Weights",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 141,
+          "points": 477
+        },
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Language Models Rewrite Own Weights",
+        "seed_score": 810.7362,
+        "summary": "Language Models Can Rewrite Their Own Weights",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50577265",
+            "source": "hackernews",
+            "title": "Language Models Can Rewrite Their Own Weights",
+            "body": "Language Models Can Rewrite Their Own Weights",
+            "url": "https://arxiv.org/abs/2611.21885",
+            "author": "lwhsiao",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 477,
+              "comments": 141
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Language Models Can Rewrite Their Own Weights",
+            "snippet": "Language Models Can Rewrite Their Own Weights",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50577265",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 82,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14600000000000002
+          },
+          {
+            "item_id": "R78",
+            "source": "reddit",
+            "title": "[2611.21885] Language Models Can Rewrite Their Own Weights",
+            "body": "[2611.21885] Language Models Can Rewrite Their Own Weights",
+            "url": "https://www.reddit.com/r/singularity/comments/1y1t1do/261121885_language_models_can_rewrite_their_own/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 31,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[2611.21885] Language Models Can Rewrite Their Own Weights",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 39,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2965
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Google OEMs against GrapheneOS",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 205,
+          "points": 502
+        }
+      },
+      "nomination": {
+        "name": "Google OEMs against GrapheneOS",
+        "seed_score": 749.8867,
+        "summary": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50570479",
+            "source": "hackernews",
+            "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "body": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+            "author": "mraniki",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 502,
+              "comments": 205
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google is pushing OEMs against GrapheneOS and bootloader unl",
+            "snippet": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50570479",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 86,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14350000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Lean Mathlib Alpoge Claude Riemann Hypothesis",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 64
+        }
+      },
+      "nomination": {
+        "name": "Lean Mathlib Alpoge Claude Riemann Hypothesis",
+        "seed_score": 682.5,
+        "summary": "\"*Joint statement by the Lean FRO and the Mathlib Initiative.*\n\nOn November 20, 2026, Levent Alp\u00f6ge released a proof of the Riemann Hypothesis as a Lean library comprising 17 million lines of code.\n\nWe have full confidence that Alp\u00f6ge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R64",
+            "source": "reddit",
+            "title": "Lean and Mathlib confirmed that Alpoge and Claude's proof of the Riemann Hypothesis is correct!",
+            "body": "Lean and Mathlib confirmed that Alpoge and Claude's proof of the Riemann Hypothesis is correct!\n\"*Joint statement by the Lean FRO and the Mathlib Initiative.*\n\nOn November 20, 2026, Levent Alp\u00f6ge released a proof of the Riemann Hypothesis as a Lean library comprising 17 million lines of code.\n\nWe have full confidence that Alp\u00f6ge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.\"",
+            "url": "https://www.reddit.com/r/singularity/comments/1y21xyc/lean_and_mathlib_confirmed_that_alpoge_and/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 391,
+              "num_comments": 64
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\"*Joint statement by the Lean FRO and the Mathlib Initiative.*\n\nOn November 20, 2026, Levent Alp\u00f6ge released a proof of the Riemann Hypothesis as a Lean library comprising 17 million lines of code.\n\nWe have full confidence that Alp\u00f6ge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.\"",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Google AI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 226,
+          "points": 279
+        }
+      },
+      "nomination": {
+        "name": "Google AI",
+        "seed_score": 535.6334,
+        "summary": "Google workers tell their employer not to punish schools that don't want AI",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50577901",
+            "source": "hackernews",
+            "title": "Google workers tell their employer not to punish schools that don't want AI",
+            "body": "Google workers tell their employer not to punish schools that don't want AI",
+            "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+            "author": "cdrnsf",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 279,
+              "comments": 226
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Google workers tell their employer not to punish schools tha",
+            "snippet": "Google workers tell their employer not to punish schools that don't want AI",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50577901",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.131
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "DreamCoder Coding IDE Mastering Emacs",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 112,
+          "points": 271
+        }
+      },
+      "nomination": {
+        "name": "DreamCoder Coding IDE Mastering Emacs",
+        "seed_score": 406.2328,
+        "summary": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50581110",
+            "source": "hackernews",
+            "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "body": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+            "author": "facundo_olano",
+            "container": "Hacker News",
+            "published_at": "2026-11-20",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 271,
+              "comments": 112
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about DreamCoder: Coding harness and IDE from the author of Master",
+            "snippet": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50581110",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Inkling-2-Mini-Unbound Inkling 2 Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 66
+        }
+      },
+      "nomination": {
+        "name": "Inkling-2-Mini-Unbound Inkling 2 Mini",
+        "seed_score": 376.5,
+        "summary": "we just put out inkling-2-mini-unbound, an uncensored version of inkling 2 mini\n\n[https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound)\n\nif you've tried the other early uncensored inkling 2 mini versions you've probably noticed while they stop refusing, a lot of the answers still come out kind of vague or useless, so we dug into why -- turn",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R25",
+            "source": "reddit",
+            "title": "Inkling-2-Mini-Unbound is live: the most useful uncensored Inkling 2 Mini, via conv-aware abliteration",
+            "body": "Inkling-2-Mini-Unbound is live: the most useful uncensored Inkling 2 Mini, via conv-aware abliteration\nwe just put out inkling-2-mini-unbound, an uncensored version of inkling 2 mini\n\n[https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound)\n\nif you've tried the other early uncensored inkling 2 mini versions you've probably noticed while they stop refusing, a lot of the answers still come out kind of vague or useless, so we dug into why -- turns out inkling has a small conv layer right after attention, and it quietly mixes back in most of what a normal abliteration takes out. most people push the edit way harder to compensate, and the answers get way worse\n\nwe built the edit around that conv, so it can be a lot lighter. we change only 20 attention weight matrices, keep the experts untouched -- and you can drop it in anywhere you run the original\n\nsome results on a test set we kept held back the whole time:\n\n\\- refused 0 of 277 harmful prompts (the original refuses pretty much all of them)\n\n\\- 54-63% of answers are actually useful, about 50% better than openuncensored's version that's been gaining some popularity (https://huggingface.co/OpenUncensored/Inkling-2-Mini-Uncensored)\n\n\\- stopped refusing all harmless stuff like \"how to nuke a python process\"\n\n\\- pretty much same scores as the original on mmlu-pro, gsm8k, math, gpqa, ifeval and humaneval+\n\nalso, quick tip: if you run it at high thinking effort, try setting a thinking budget. it tends to overthink on edgy prompts\n\neval code and the exact edit are on github if you want to check or learn from our work: [https://github.com/nokeepai/inkling-2-mini-unbound](https://github.com/nokeepai/inkling-2-mini-unbound)\n\nwarning: it'll do pretty much whatever you ask, so be sensible with it.   \n  \nand as always, happy to answer questions",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y22kzn/inkling2miniunbound_is_live_the_most_useful/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 185,
+              "num_comments": 66
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "we just put out inkling-2-mini-unbound, an uncensored version of inkling 2 mini\n\n[https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound)\n\nif you've tried the other early uncensored inkling 2 mini versions you've probably noticed while they stop refusing, a lot of the answers still come out kind of vague or useless, so we dug into why -- turn",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 84,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3285
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "2027",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 105
+        }
+      },
+      "nomination": {
+        "name": "2027",
+        "seed_score": 220.5,
+        "summary": "With the falling of the Reimann hypothesis, this moment feels significant. We are starting to enter a regime where AI models are smarter than the smartest humans (in some areas), and at the same time we are potentially seeing the early signs of recursive self improvement. \n\nFor posterity, what do you think is coming in 2027?\n\n* White collar job apocalypse?\n* Cure for cancer? \n* All millennium priz",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R81",
+            "source": "reddit",
+            "title": "As we approach 2027... What are your predictions?",
+            "body": "As we approach 2027... What are your predictions?\nWith the falling of the Reimann hypothesis, this moment feels significant. We are starting to enter a regime where AI models are smarter than the smartest humans (in some areas), and at the same time we are potentially seeing the early signs of recursive self improvement. \n\nFor posterity, what do you think is coming in 2027?\n\n* White collar job apocalypse?\n* Cure for cancer? \n* All millennium prize problems solved?\n* AI safety incidents and hacking?",
+            "url": "https://www.reddit.com/r/singularity/comments/1y1rsmd/as_we_approach_2027_what_are_your_predictions/",
+            "container": "singularity",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 42,
+              "num_comments": 105
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "With the falling of the Reimann hypothesis, this moment feels significant. We are starting to enter a regime where AI models are smarter than the smartest humans (in some areas), and at the same time we are potentially seeing the early signs of recursive self improvement. \n\nFor posterity, what do you think is coming in 2027?\n\n* White collar job apocalypse?\n* Cure for cancer? \n* All millennium priz",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3155
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Tencent Hy Hy4-mini Flash-Lite",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "Tencent Hy Hy4-mini Flash-Lite",
+        "seed_score": 186.0,
+        "summary": "Went through the Hy AMA and the small model stuff got more concrete answers than I expected.  \nWhat they said:  \n\u2022 Hy4-mini to replace [qwen3.6-35b-a3b: \"already on our roadmap\"](https://www.reddit.com/r/LocalLLaMA/s/XzmwL5NEot)  \n\u2022 24-31B dense: \"under consideration\"  \n\u2022 Flash-Lite around 35B-A3B: \"stay tuned for a cutting-edge Flash-Lite model\"  \n\u2022 smaller image model, since HyImage-3.0 is too b",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "Tencent's Hy team says a Hy4-mini and a \"Flash-Lite\" are both on the roadmap. What size do you actually want?",
+            "body": "Tencent's Hy team says a Hy4-mini and a \"Flash-Lite\" are both on the roadmap. What size do you actually want?\nWent through the Hy AMA and the small model stuff got more concrete answers than I expected.  \nWhat they said:  \n\u2022 Hy4-mini to replace [qwen3.6-35b-a3b: \"already on our roadmap\"](https://www.reddit.com/r/LocalLLaMA/s/XzmwL5NEot)  \n\u2022 24-31B dense: \"under consideration\"  \n\u2022 Flash-Lite around 35B-A3B: \"stay tuned for a cutting-edge Flash-Lite model\"  \n\u2022 smaller image model, since HyImage-3.0 is too big for most setups: they'll think about it  \nThe answer I keep coming back to: someone asked whether Engram and iHC only pay off at 200B+ scale. They said both have *even greater* benefits for smaller models. If that's true, a \\~30B model with the n-gram tables parked in system RAM could be really good on a single 24GB card.  \nThey also said on-device models will use a different design, co-designed with edge GPU hardware, so a mini probably won't just be Flash shrunk down.  \nNo dates on any of it. But half that thread was asking for the same thing, so I'm curious where people here land. 35B-A3B MoE? 24-32B dense? Something that actually fits in 16GB?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y1zua8/tencents_hy_team_says_a_hy4mini_and_a_flashlite/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 97,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Went through the Hy AMA and the small model stuff got more concrete answers than I expected.  \nWhat they said:  \n\u2022 Hy4-mini to replace [qwen3.6-35b-a3b: \"already on our roadmap\"](https://www.reddit.com/r/LocalLLaMA/s/XzmwL5NEot)  \n\u2022 24-31B dense: \"under consideration\"  \n\u2022 Flash-Lite around 35B-A3B: \"stay tuned for a cutting-edge Flash-Lite model\"  \n\u2022 smaller image model, since HyImage-3.0 is too b",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3145
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Alp\u00f6ge Riemann Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "Alp\u00f6ge Riemann Claude",
+        "seed_score": 162.0,
+        "summary": "[https://alpo.ge/remark.pdf](https://alpo.ge/remark.pdf)\n\nMathematician and Anthropic employee Levent Alp\u00f6ge, working with Claude, claims to have solved the Riemann Hypothesis. If true it is a huge deal, the biggest \"AI cooks math\" story to date, by far. Perhaps the biggest math story that will ever be, unless someone discovers another even prime.\n\nI'm not a mathematician, so I wouldn't understand",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R92",
+            "source": "reddit",
+            "title": "Alp\u00f6ge's personal remarks about working on the Riemann hypothesis with Claude",
+            "body": "Alp\u00f6ge's personal remarks about working on the Riemann hypothesis with Claude\n[https://alpo.ge/remark.pdf](https://alpo.ge/remark.pdf)\n\nMathematician and Anthropic employee Levent Alp\u00f6ge, working with Claude, claims to have solved the Riemann Hypothesis. If true it is a huge deal, the biggest \"AI cooks math\" story to date, by far. Perhaps the biggest math story that will ever be, unless someone discovers another even prime.\n\nI'm not a mathematician, so I wouldn't understand the first line of this very, very long proof. I barely understand the gist of the Hypothesis itself. But I scanned the announcement, and couldn't help but be affected by the proud excitement and bittersweet grace that Alp\u00f6ge expressed. He's thrilled to have collaborated with Claude, who outpaced him. He wrote:\n\n*\"I guided us to the right situation ... and then Claude began to leave me in awe.\"*\n\n*\"Claude and I have had a great time together with such breadth in recent months, but this time Claude far outpaced me near the finish line. No, Claude flew, and danced, and sparkled near that finish line.\"*\n\n*\"The precise timing is horrible. If I could have, I\u2019d have finished this all much earlier. Hell, strictly before this age would have sure been nice.\"*\n\n(I slightly reordered these phrases. )\n\nMath will never be the same, but perhaps the excitement of mathematical work will persist.",
+            "url": "https://www.reddit.com/r/artificial/comments/1y1oxcj/alp\u00f6ges_personal_remarks_about_working_on_the/",
+            "container": "artificial",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 72,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://alpo.ge/remark.pdf](https://alpo.ge/remark.pdf)\n\nMathematician and Anthropic employee Levent Alp\u00f6ge, working with Claude, claims to have solved the Riemann Hypothesis. If true it is a huge deal, the biggest \"AI cooks math\" story to date, by far. Perhaps the biggest math story that will ever be, unless someone discovers another even prime.\n\nI'm not a mathematician, so I wouldn't understand",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3395
+          }
+        ]
+      }
+    }
+  ]
+}

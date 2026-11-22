@@ -1,0 +1,216 @@
+{
+ "date": "2026-11-23",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-23.json",
+ "fetched_at": "2026-11-22T23:55:39+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-23",
+  "generated_at": "2026-11-23T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 7,
+  "ok": 6,
+  "not-found": 1,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Claude Code leaking secrets via Don't Ask Again feature",
+   "category": "discussion",
+   "event_time": "2026-11-22T11:00:00Z",
+   "primary_url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/",
+   "facts": [
+    "Agentic security firm Apiiro found that Claude Code has been exposing secrets in public repositories due to how it stores them in local file on developers' machines to implement the \"Don't Ask Again\" feature.",
+    "The company identified 1,122 secrets in claude/settings.local.json files and another 1,160 in git history, in the shared settings.json, and in agent chat transcripts stored in repos.",
+    "Overall 63 organizations were affected, with exposed secrets including cloud API keys, production passwords and access tokens, and npm tokens."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/manoweb/status/2124628074541068434",
+     "official": false,
+     "author": "@manoweb",
+     "check": "ok",
+     "created_at": "2026-11-22T22:16:21Z",
+     "text": "Claude Code: How to Find and Remove Leaked Secrets https://www.ma-no.org/en/security/claude-code-how-to-find-and-remove-leaked-secrets",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 24
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Measured latency and accuracy comparison of Claude Code vs Codex",
+   "category": "adoption_survey",
+   "event_time": "2026-11-22T20:38:00Z",
+   "primary_url": "https://llmlatency.dev/coding-agents/codex-vs-claude-code",
+   "facts": [
+    "As of 2026-11-22 20:38 UTC, median time to answer the same fixed task, end to end, over the last 24 hours — Claude Code with Claude Opus 5.5: 15.5 s (24 runs); Codex CLI with GPT-6 Luna: 20.6 s (24 runs).",
+    "On the 78 hard questions both answered in the last 7 days, Claude Code with Claude Opus 5.5 got 64% right and Codex CLI with GPT-6 Luna 42%."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Claude Code 2.1.330 adds organization sign-in and easel charts",
+   "category": "feature_update",
+   "event_time": "2026-11-20T22:32:00Z",
+   "primary_url": "https://code.claude.com/docs/en/changelog",
+   "facts": [
+    "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway.",
+    "Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux."
+   ],
+   "x_posts": [],
+   "dropped_posts": [
+    {
+     "url": "https://x.com/ClaudeCodeLog/status/2123913167352819712",
+     "official": false,
+     "check": "not-found",
+     "reason": "HTTP 404 Not Found — {\"code\":404,\"message\":\"NOT_FOUND\",\"tweet\":null}"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "title": "Users report Antigravity 2.7.0 in good state with fixed bugs",
+   "category": "discussion",
+   "event_time": "2026-11-22T07:09:00Z",
+   "primary_url": "https://discuss.ai.google.dev/t/google-antigravity-2-7-0-2026-11-22-good-update-state/203669",
+   "facts": [
+    "Antigravity now has many good updates and less bugs related to development. Most of the issues I have been facing is been fixed.",
+    "Repeated file reading is gone. Precision of file changes is higher. There are now swarms you have use to get things done quickly."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/glbaumann/status/2124629864775139589",
+     "official": false,
+     "author": "@glbaumann",
+     "check": "ok",
+     "created_at": "2026-11-22T22:23:28Z",
+     "text": "Like everyone else, I'm using Antigravity for the first time this weekend.\n\nNeon is amazing\n\nBut this is the best feature, IMO. Claude/ChatGPT - where you at? No one else thought to ship this?",
+     "likes": 4,
+     "retweets": 0,
+     "replies": 3,
+     "views": 241
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Open source agent ops stack built around Claude Code",
+   "category": "trend",
+   "event_time": "2026-11-22T18:52:25Z",
+   "primary_url": null,
+   "facts": [
+    "Claude Code on a $100 Max seat. All 10 wrap around it, open source, one job each: run. team. loop. guard. bench.",
+    "Examples include codex for running a coding agent, harnessrouter for routing to 31 harness bases, and failproofai to block bad tool calls."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/birmeya/status/2124576753817354311",
+     "official": false,
+     "author": "@birmeya",
+     "check": "ok",
+     "created_at": "2026-11-22T18:52:25Z",
+     "text": "Actually f*cking unreal, a whole agent ops team in 10 repos.\n\nClaude Code on a $100 Max seat. All 10 wrap around it, open source, one job each.\n\nrun. team. loop. guard. bench.\n\n01 codex → run a coding agent in your terminal, GPT-6.2 just shipped\nhttps://github.com/openai/codex\n\n02 harnessrouter → route one API to 31 harness bases with sessions and cancel\nhttps://github.com/HarnessRouter/harnessrouter\n\n03 gentle-shell → run parallel agents with live diffs in one window\nhttps://github.com/Gentleman-Programming/gentle-shell\n\n04 openrig → keep persistent agent teams defined in YAML on tmux\nhttps://github.com/mvschwarz/openrig\n\n05 SoduWork → assign issues to agents, human signs off on every merge\nhttps://github.com/mdiri-ai/SoduWork\n\n06 munder-difflin → watch the agent team as a live office floor\nhttps://github.com/HarnessMD/munder-difflin\n\n07 loopx → keep goals alive across sessions, 17.3% above plain Codex on LHTB\nhttps://github.com/loopx-project/loopx\n\n08 rocketride-server → build and ship durable agents on a C++ runtime\nhttps://github.com/rocketride-org/rocketride-server\n\n09 failproofai → block bad tool calls before they fire across 12 harnesses\nhttps://github.com/FailproofAI/failproofai\n\n10 harbor → score agents and models on Terminal-Bench\nhttps://github.com/harbor-framework/harbor\n\nrun → team → loop → guard → bench.\n\nOne rule: failproofai is Commons Clause, free for personal and internal work, not for resale.\n\nTen repos. A whole ops team. Actually unreal.",
+     "likes": 46,
+     "retweets": 2,
+     "replies": 15,
+     "views": 1966,
+     "quote": {
+      "author": "@birmeya",
+      "text": "https://x.com/i/article/2120609921175863296"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "GitHub Agentic Workflows allow Markdown-defined coding agent automations",
+   "category": "tool_launch",
+   "event_time": "2026-11-22T09:30:01Z",
+   "primary_url": "https://docs.github.com/copilot/concepts/agents/about-github-agentic-workflows",
+   "facts": [
+    "GitHub can now run coding agents from a Markdown file. Describe triage new issues or analyze failed CI in plain English → Agentic Workflows turns it into GitHub Actions.",
+    "Open source, generally available. Your repo can do its own maintenance."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/mayank_twts/status/2124435220644364774",
+     "official": false,
+     "author": "@mayank_twts",
+     "check": "ok",
+     "created_at": "2026-11-22T09:30:01Z",
+     "text": "GitHub can now run coding agents from a Markdown file.\nDescribe “triage new issues” or “analyze failed CI” in plain English → Agentic Workflows turns it into GitHub Actions.\nOpen source, generally available. Your repo can do its own maintenance.",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 0,
+     "views": 110
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Developers report code quality issues and regressions with Codex and Claude",
+   "category": "discussion",
+   "event_time": "2026-11-22T15:40:22Z",
+   "primary_url": null,
+   "facts": [
+    "I've been running into code problems ever since Codex 5.3. At my day job, these models have consistently introduced regressions that couldn't be merged into production.",
+    "On top of that, they get stuck in infinite loops, hit a wall, and suffer from tunnel vision. Claude has plenty of problems too."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Gegam245074/status/2124528423364116633",
+     "official": false,
+     "author": "@Gegam245074",
+     "check": "ok",
+     "created_at": "2026-11-22T15:40:22Z",
+     "text": "I've been running into code problems ever since Codex 5.3. At my day job, these models have consistently introduced regressions that couldn't be merged into production. On top of that, they get stuck in infinite loops, hit a wall, and suffer from tunnel vision. I don't know a single engineer in my circle who's happy with the code quality. Claude has plenty of problems too. It's not perfect, but its output is cleaner in terms of execution",
+     "likes": 3,
+     "retweets": 0,
+     "replies": 0,
+     "views": 619,
+     "reply_to": "@ingoa_dev"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "forgerun update enables local agent orchestration for coding agents",
+   "category": "feature_update",
+   "event_time": "2026-11-22T16:39:17Z",
+   "primary_url": null,
+   "facts": [
+    "forgerun update: coding agents on your own machines, now. Prime Agent joins Claude Code, Cursor CLI, OpenCode & pi.",
+    "forgerun MCP → any agent can be the orchestrator (start threads, approve plans, read diffs, follow up & push — local agent drives, work runs in sandboxes)."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/depak_7/status/2124543250958836096",
+     "official": false,
+     "author": "@depak_7",
+     "check": "ok",
+     "created_at": "2026-11-22T16:39:17Z",
+     "text": "🚀 forgerun update: coding agents on your own machines, now\n\n• Prime Agent joins Claude Code, Cursor CLI, OpenCode & pi\n• forgerun MCP → any agent can be the orchestrator\n(start threads, approve plans, read diffs, follow up & push — local agent drives, work runs in sandboxes)\n• Hand off a local folder mid-task (uncommitted work too)\n• Start from any branch\n• Simpler self-hosting\nOpen source · Apache-2.0\nhttp://github.com/depak7/forgerun https://x.com/depak_7/status/2115134288060731597/video/1",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 1,
+     "views": 112
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

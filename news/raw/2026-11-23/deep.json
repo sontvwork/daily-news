@@ -1,0 +1,216 @@
+{
+ "date": "2026-11-23",
+ "runs": [
+  {
+   "started_at": "2026-11-22T23:58:11+00:00",
+   "seconds": 2.3,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 8,
+   "articles_error": 0,
+   "articles_skipped": 0,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "8/8 bài gốc ok (0 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.3s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://llmlatency.dev/coding-agents/codex-vs-claude-code",
+   "article": {
+    "url": "https://llmlatency.dev/coding-agents/codex-vs-claude-code",
+    "status": "ok",
+    "title": "Codex vs Claude Code: measured speed, errors & accuracy",
+    "chars": 10007,
+    "text": "Codex vs Claude Code, measured side by side (plus Antigravity CLI)\nAs of 2026-11-22 22:39 UTC · the same fixed task every hour for every agent,\nfrom one EU server, on the plans we have (Claude Max subscription, ChatGPT Free plan, Google AI subscription) · only figures measured the same way for all\nAs of 2026-11-22 22:39 UTC, median time to answer the same fixed task, end to end, over the last 24 hours — Claude Code with Claude Opus 5.5: 15.5 s (24 runs); Claude Code with Claude Sonnet 5.5: 9.1 s (24 runs); Codex CLI with GPT-6 Luna: 20.9 s (24 runs); Antigravity CLI with Gemini 3.8 Flash: 107.4 s (24 runs); Antigravity CLI with GPT-OSS 120B: 14.1 s (23 runs). Claude Code vs Codex CLI over the last 7 days: Claude Code with Claude Opus 5.5 was faster: Codex CLI with GPT-6 Luna took 1.4× as long (15.0 s vs 20.3 s median, p < 0.001). Failed calls in the last 7 days — Claude Code with Claude Opus 5.5: 0 of 168; Claude Code with Claude Sonnet 5.5: 0 of 168; Codex CLI with GPT-6 Luna: 0 of 88; Antigravity CLI with Gemini 3.8 Flash: 1 of 168; Antigravity CLI with GPT-OSS 120B: 4 of 168. On the 78 hard questions both answered in the last 7 days, Claude Code with Claude Opus 5.5 got 64% right and Codex CLI with GPT-6 Luna 42% — Claude Code with Claude Opus 5.5 was more accurate (+21.5 points ± 5.3, z = 4.03).\nEach agent runs on one account on one plan — Claude Code on the Claude Max subscription, Codex CLI on the ChatGPT Free plan and Antigravity CLI on the Google AI subscription — so plan limits, routing and default\nmodels are part of what is measured; another plan or model can be faster or slower. Per-agent pages: Is Claude Code down or slower today? · Is Codex down or slower today? · Is Antigravity CLI down or slower today? ·\nall coding agents.\nWhich one answers faster?\nMedian time from launching the CLI to the complete answer for the same fixed task, by our own clock.\nAgent · model, planMedian, 24 hMedian, 7 daysFailed, 24 hFailed, 7 days\nClaude Code · Claude Opus 5.5\nClaude Max subscription15.5 s\n24 runs15.0 s\n168 runs0 of 240 of 168\nClaude Code · Claude Sonnet 5.5\nClaude Max subscription9.1 s\n24 runs8.9 s\n168 runs0 of 240 of 168\nCodex CLI · GPT-6 Luna\nChatGPT Free plan20.9 s\n24 runs20.3 s\n88 runs0 of 240 of 88\nAntigravity CLI · Gemini 3.8 Flash\nGoogle AI subscription107.4 s\n24 runs109.4 s\n167 runs0 of 241 of 168\nAntigravity CLI · GPT-OSS 120B\nGoogle AI subscription14.1 s\n23 runs15.1 s\n164 runs1 of 244 of 168\n\"Too few\": not enough successful runs yet to compare with other agents (the rule is under the pair table). \"Failed\": calls that errored, timed out, were rate-limited or could not count as a clean measurement.\nFaster or not, last 7 days\nPairMedian, 7 daysRunspVerdict\nClaude Code · Claude Opus 5.5\nvs Codex CLI · GPT-6 Luna15.0 s\nvs 20.3 s168\n/ 88p < 0.001Claude Opus 5.5\nfaster, 1.4×\nClaude Code · Claude Opus 5.5\nvs Claude Code · Claude Sonnet 5.515.0 s\nvs 8.9 s168\n/ 168p < 0.001Claude Sonnet 5.5\nfaster, 1.7×\nClaude Code · Claude Opus 5.5\nvs Antigravity CLI · Gemini 3.8 Flash15.0 s\nvs 109.4 s168\n/ 167p < 0.001Claude Opus 5.5\nfaster, 7.3×\nClaude Code · Claude Opus 5.5\nvs Antigravity CLI · GPT-OSS 120B15.0 s\nvs 15.1 s168\n/ 164p = 0.26no significant\ndifference\nClaude Code · Claude Sonnet 5.5\nvs Codex CLI · GPT-6 Luna8.9 s\nvs 20.3 s168\n/ 88p < 0.001Claude Sonnet 5.5\nfaster, 2.3×\nClaude Code · Claude Sonnet 5.5\nvs Antigravity CLI · Gemini 3.8 Flash8.9 s\nvs 109.4 s168\n/ 167p < 0.001Claude Sonnet 5.5\nfaster, 12.3×\nClaude Code · Claude Sonnet 5.5\nvs Antigravity CLI · GPT-OSS 120B8.9 s\nvs 15.1 s168\n/ 164p < 0.001Claude Sonnet 5.5\nfaster, 1.7×\nCodex CLI · GPT-6 Luna\nvs Antigravity CLI · Gemini 3.8 Flash20.3 s\nvs 109.4 s88\n/ 167p < 0.001GPT-6 Luna\nfaster, 5.4×\nCodex CLI · GPT-6 Luna\nvs Antigravity CLI · GPT-OSS 120B20.3 s\nvs 15.1 s88\n/ 164p < 0.001GPT-OSS 120B\nfaster, 1.3×\nAntigravity CLI · Gemini 3.8 Flash\nvs Antigravity CLI · GPT-OSS 120B109.4 s\nvs 15.1 s167\n/ 164p < 0.001GPT-OSS 120B\nfaster, 7.3×\nRule: only end-to-end time on the same…"
+   }
+  },
+  {
+   "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/",
+   "article": {
+    "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/",
+    "status": "ok",
+    "title": "Claude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature - InfoQ",
+    "chars": 4754,
+    "text": "InfoQ Homepage\nNews\nClaude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature\nDevOps\nClaude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature\nNov 22, 2026\n2\nmin read\nby\nSergio De Simone\nFollow us on\nYoutube232K Followers\nLinkedin26K Followers\nInstagramNew\nRSS19K Readers\nX57.1k Followers\nFacebook21K Likes\nBlueskyNew\nListen to this article - 0:00\nAudio ready to play\nYour browser does not support the audio element.\n0:00\n0:00\nReading list\nAgentic security firm Apiiro found that Claude Code has been exposing secrets in public repositories due to how it stores them in local file on developers' machines to implement the \"Don't Ask Again\" feature. The company identified 1,122 secrets in claude/settings.local.json files and another 1,160 in git history, in the shared settings.json intentionally committed, and in agent chat transcripts stored in repos.\nThe problem lies in how Claude Code handles command approval. When developers reply \"Yes, and don’t ask again\" to approve a shell command, Claude Code saves it as a permanent permission rule in the local configuration file .claude/settings.local.json, which may end up inadvertently containing embedded credentials, passwords and API tokens.\nWhen [Claude Code] creates the file inside a git repo, it adds it to the developer's global git ignore list. That covers the common case. It doesn’t cover a folder that becomes a repo later, a clone on another machine, or a file someone already committed. The rule never goes into the repo's own .gitignore, so nothing travels with the project to protect it.\nOn some occasions, the researchers found, Claude Code itself committed the file. Overall 63 organizations were affected, with exposed secrets including cloud API keys, production passwords and access tokens, and npm tokens. Generic secret scanners such as gitleaks and TruffleHog failed to flag all exposed secrets, mostly because they were embedded inside shell commands.\nThe same password-in-a-command pattern appears wherever an agent records what it ran: transcripts, memory files, handoff notes, and a scanner tuned to key formats misses it in all of them.\nThe researches also note that the way Claude Code manages secrets is a security gap in itself, as to any malware \"it’s a list of the systems the developer can reach and the passwords that open them, one file search away\", available at the same path in every project.\nApiiro's findings were later reinforced by GitGuardian, which found 31,088 secrets in Claude Code’s .claude/settings.local.json on public GitHub, 5,343 of which were still valid at the time of detection, as well as another 613 in Docker Hub images. GitGuardian had previously warned that \"Cursor, Claude Code, and GitHub Copilot leave credentials scattered across config files, logs, and shell history\".\nCommenting on the findings, Reddit user T_Thriller_T observed that \"Somewhere, someone said AI companies are ignoring basic cyber security principles\".\nUser MattV0 suggested an interesting approach to the whole matter of how to deal with AI files:\nWhile this is about secrets, I totally stopped adding AI files into my projects. Means no settings, CLAUDE.md, AGENTS.md or anything else. I even turned off Claude's memory. [...] Nowadays I use a memory/task/docs server through mcp and it really improved such documentation issues.\nAt very very least, Apiiro recommends untracking the json file using git rm --cached .claude/settings.local.json and adding it to the repo's .gitignore, as well as rotating every credentials the file has ever contained. For a sounder approach, the researchers also recommend inspecting the file and deleting any rule that contains a secret, and avoid typing secrets directly into commands, referencing them instead through environment variables.\nAbout the Author\nSergio De Simone\nShow moreShow less\nThis content is in the DevOps topic\nRelated Topics:\nDevelopment\nDevOps\nAI, ML & Data Engineering\nCloud Security\ngit\nClaude\ngithub\nAI Security\nAI…"
+   }
+  },
+  {
+   "url": "https://docs.github.com/copilot/concepts/agents/about-github-agentic-workflows",
+   "article": {
+    "url": "https://docs.github.com/copilot/concepts/agents/about-github-agentic-workflows",
+    "status": "ok",
+    "title": "GitHub Agentic Workflows - GitHub Docs",
+    "chars": 7640,
+    "text": "GitHub Agentic Workflows\nAutomate repetitive repository work with natural language instructions executed by AI coding agents in GitHub Actions.\nIn this article\nAbout agentic workflows\nGitHub Agentic Workflows are AI-powered repository automations that you define in markdown and run as GitHub Actions workflows. Unlike traditional automation with fixed if-then rules, agentic workflows use coding agents to understand context, evaluate decisions, and propose meaningful actions—all from natural language instructions.\nIn practice, compared with traditional workflows that execute predefined steps:\nAgentic workflows execute natural language instructions with contextual reasoning.\nYou still define guardrails in frontmatter, such as triggers, permissions, and safe outputs.\nWith agentic workflows, you can automate tasks like:\nTriaging incoming issues and labeling them by type and priority\nInvestigating CI failures and suggesting fixes\nGenerating daily or weekly repository status reports\nKeeping documentation up to date with code changes\nImproving test coverage\nBenefits of using agentic workflows\nAutomate repetitive repository work. Define issue triage, CI investigation, documentation updates, and reporting in natural language.\nReduce workflow complexity. Write markdown instructions instead of building complex procedural scripts for every scenario.\nKeep human review in the loop. Agentic workflows can generate reviewable outputs, such as issues, comments, and pull requests, while you control approvals and merges.\nRun agents with layered security. Agents run in firewalled containers with read-only tokens by default. Write actions are limited to declared \"safe outputs\" that you have defined, and checked by agentic threat detection.\nRequirements\nTo create and use agentic workflows, you need:\nGitHub Actions enabled for your repository.\nAn account with an AI engine (agent), such as GitHub Copilot, Anthropic Claude, OpenAI Codex, or Google Gemini.\nGitHub CLI installed and authenticated\nHow agentic workflows work\nEach workflow markdown file has two parts:\nFrontmatter (YAML between --- markers): Configures when the workflow runs, what permissions it has, and what write operations are allowed.\nMarkdown body: Contains your natural language instructions that the AI agent follows.\nAt a high level, the process to create and use agentic workflows is:\nDefine the agentic workflow .md file, including YAML frontmatter and markdown instructions.\nCompile the markdown workflow file into a .lock.yml GitHub Actions workflow file.\nCommit and push both files to the default branch of your repository.\nRun the workflow like any other GitHub Actions workflow, on a trigger or in the GitHub web interface for your repository. You can also run it from the GitHub CLI.\nHere's an example of a workflow to create a daily status report issue for a repository:\n---\non: daily\npermissions:\ncontents: read\nissues: read\npull-requests: read\ncopilot-requests: write\nnetwork: defaults\ntools:\ngithub:\ntoolsets: [default]\nsafe-outputs:\ncreate-issue:\n---\n# Daily Repo Status Report\nReview recent activity in the repository, including issues, pull requests, discussions, and code changes.\nCreate a GitHub issue summarizing what changed in the last 24 hours (merged pull requests, closed issues, and new discussions), any blockers or open questions mentioned in comments, progress toward visible goals, and recommended next steps for maintainers.\nKeep the summary concise. Adjust the level of detail based on how much activity occurred.\nFor detailed steps on creating and updating agentic workflows, see Creating GitHub Agentic Workflows.\nSupported coding agents\nGitHub Agentic Workflows support multiple coding agents, including:\nGitHub Copilot (requires a GitHub Copilot plan)\nAnthropic Claude\nOpenAI Codex\nGoogle Gemini\nYou specify which agent to use in the workflow frontmatter property engine. Each engine requires its own authentication secret configured in your repository. GitHub Copilot is the default…"
+   }
+  },
+  {
+   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "hn_url": "https://news.ycombinator.com/item?id=50595554",
+   "hn": {
+    "title": "Data Processing Incidents on Inference Providers",
+    "points": 278,
+    "comments": 95
+   },
+   "comments": [
+    {
+     "author": "usernomdeguerre",
+     "replies": 1,
+     "text": "Wow I missed this story entirely. I'd seriously considered moving to OpenRouter at my next external AI renewal due to the breadth of options and pricing but this has absolutely ended that consideration.\nIt's clear from the breadth and variety of exposures that there's no due diligence or guardrails inside OpenRouter on who they market and how they classify their providers. Their response to this indicates a few first steps but none seem to have the force of law and i'd have expected more from a…"
+    },
+    {
+     "author": "redrix",
+     "replies": 4,
+     "text": "Nice to see this move by OR.\nThat being said, the best ZDR agreement is the one that your company has directly with the inference provider(s). Unfortunately:\n- Not everyone is large enough (or has enough $$) for that.\n- Ultimately you’re in the same position of having to “trust” that they’re doing ZDR; even after auditing their security docs."
+    },
+    {
+     "author": "a012",
+     "replies": 1,
+     "text": "I was affected with just one prompt by this incident, which is non issue to me because I was trying different models at that time so there was nothing serious. The troubling problem I see in this incident is the “providers” in OR just casually forwarding prompts to upstream (MiniMax) instead of providing inference service them selves.\nCoincidentally later on I set my OR settings to only allow some providers that I can rely on, not blindly let OR route to wherever they like."
+    },
+    {
+     "author": "smuhakg",
+     "replies": 3,
+     "text": "I got the email. The tl;dr is MiniMax (the Chinese AI lab) is actively reading your prompts, and a security researcher discovered this by putting decoy URLs into their requests which were accessed by MiniMax.\nMore importantly, many providers (AtlasCloud, Novita and StreamLake were named but there seems to be more implied in the blog post) have been rerouting requests to MiniMax servers on the backend and not processing their own prompts.\nThe obvious question is whether OpenRouter has done any…"
+    },
+    {
+     "author": "mbgerring",
+     "replies": 6,
+     "text": "You should assume that no inference provider is honoring any public commitment they have made about data retention. You should assume that 100% of what you share with an LLM over the wire is being recorded, saved, and used as training data. Any other stance is indefensible naïveté for anyone who has been around the tech industry for more than, let’s say, 5 years."
+    }
+   ],
+   "article": {
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+    "status": "ok",
+    "title": "Data Processing Incidents on Inference Providers",
+    "chars": 2246,
+    "text": "Data Processing Incidents on Inference Providers\nOpenRouter ·11/22/2026\nEarlier this week, security researchers reported that certain inference providers had data compromised or otherwise shown evidence that their data policies were not being upheld. We have been collaborating closely with the researchers and with providers to understand the findings and encourage the providers to address them.\nThese findings did not show any breach or unauthorized access of OpenRouter. The results of this testing revealed new findings about specific inference providers. A live list of the security announcements we have received from providers is below.\nAs the operating layer between customers and a fast-moving ecosystem of models and providers, we take data policy enforcement very seriously. We have taken the following actions:\nOff-boarded three providers from OpenRouter, based on the results of our investigations.\nRemoved 125 endpoints from Zero Data Retention (ZDR) eligibility. The removals included providers flagged by researchers, plus additional endpoints that we removed as a precautionary measure.\nNotified all potentially affected customers.\nThe following work is underway:\nWe are adapting the researchers’ testing approach so we can run these checks on an ongoing basis.\nWe are conducting technical verification of network paths to identify instances where requests and responses may be being forwarded to third parties.\nWe are requiring appropriate assurances and validation before restoring ZDR eligibility to any endpoint removed in this review.\nWe are grateful for the Dragos report. As we integrate similar testing techniques into OpenRouter, we will keep raising the bar, and providers that want to be on OpenRouter will need to meet it.\nProvider security announcements\nAtlas Cloud: Our commitment to your security and privacy\nNovita: Privacy notice regarding MiniMax requests on Novita\nPhala: November preliminary incident report\nTogether: Security event: prompt leakage for requests in June and July of 2026\nNot all affected providers have posted publicly. We have notified affected users regardless of whether there is a public post. We are encouraging all providers to create incident write-ups and will keep this list updated."
+   }
+  },
+  {
+   "url": "https://discuss.ai.google.dev/t/google-antigravity-2-7-0-2026-11-22-good-update-state/203669",
+   "article": {
+    "url": "https://discuss.ai.google.dev/t/google-antigravity-2-7-0-2026-11-22-good-update-state/203669",
+    "status": "ok",
+    "title": "Google Antigravity 2.7.0 - 2026.11.22 (Good Update & State) - Google Antigravity - Google AI Developers Forum",
+    "chars": 2045,
+    "text": "Google AI Developers Forum\nGoogle Antigravity 2.7.0 - 2026.11.22 (Good Update & State)\nGoogle Antigravity\nfeedback\nSuneraX\nNovember 22, 2026, 7:09am\n1\nAntigravity is in a Good State now\nActually I must share my feedback on the google Antigravity we have today as of 2026.11.22. Antigravity now has many good updates and less bugs related to development. Most of the issues I have been facing is been fixed.\nRepeated file reading is gone.\nPrecision of file changes is higher.\nSpeed is now random. Sometimes it’s in a good speed and sometimes it’s very slow. But overall, if you have a good internet connection speed is fine.\nThere are now swarms you have use to get things done quickly (but uses more quota).\nUI issues we had have been fixed with better approaches.\nServer cleared prefixes issue has been fixed as well, so no worries on losing history.\nThe terminal characters becoming invicible has been fixed as well.\nQuota usage issue Resolving\nI found an solution to the issue of how claude models use 80% of the quota with the first request, which is to always start a new conversation thread. You can double the quota to do more work.\nThe only bug I saw\nIt is that after updating the antigravity to latest I faced a bug where I was unable to open the terminal due to Windows Security preventions which I could find a solution by myself, but they could have fixed it now.\nActually it would be amazing if they at least keep this state without messing up.\nRelated topics\nTopic\nReplies\nViews\nActivity\nAntigravity 2.6.0 new update on October 29 is IMPRESSIVE\nGoogle Antigravity\nfeedback\n3\n989\nOctober 30, 2026\nUnpopular opinion - the current Ultra limits are actually great for heavy workloads\nGoogle Antigravity\nfeedback\n1\n314\nMay 9, 2026\nAntigravity 2.0 Mini Review from me\nGoogle Antigravity\nfeedback\n,\nbug\n,\nmodels\n,\ngemini\n0\n98\nMay 21, 2026\nAntigravity's memory usage is now lower\nGoogle Antigravity\nfeedback\n,\nmodels\n,\ngemini\n,\nai\n0\n332\nMay 21, 2026\nBetter today (I admit, hoping not to jinx it)\nGoogle Antigravity\nbug\n1\n120\nMarch 10, 2026"
+   }
+  },
+  {
+   "url": "https://github.com/mjwsolo/localcode",
+   "hn_url": "https://news.ycombinator.com/item?id=50604540",
+   "hn": {
+    "title": "Localcode, open source agentic coding on your Mac with one command",
+    "points": 8,
+    "comments": 1
+   },
+   "comments": [
+    {
+     "author": "mark_l_watson",
+     "replies": 0,
+     "text": "Oh, this has the same name as an app I run on my 64G Mac to run deepseek 4.1 flash 10/17: https://getlocalcode.app"
+    }
+   ],
+   "article": {
+    "url": "https://github.com/mjwsolo/localcode",
+    "status": "ok",
+    "title": "",
+    "chars": 5194,
+    "text": "Agentic coding. Local models. On your Mac.\n## Install\n```bash\nuv pip install localcode\n```\nUpgrade with `uv pip install -U localcode`.\n## Run\n```bash\ncd your-project\nlocalcode\n```\nTo use the running model from another local app, open `/server` or run `localcode api` for its\nOpenAI compatible endpoint. See the [Local API guide](https://mjwsolo.github.io/localcode/guides/local-api/).\n## What it does\n- Reads and edits files in your project\n- Runs your tests, builds, Git and shell commands inside the project on its own, and asks before touching anything outside it\n- Searches code by name, content or structure\n- Scaffolds and launches apps, then checks that they respond\n- Remembers the task across messages\n## Requirements\n- Mac with Apple Silicon, macOS 13 or newer\n- 16 GB unified memory or more\n- Python 3.10 or newer\n- Disk space for LocalCode and your chosen model (download sizes below)\n## Models\nChoose from **12 models and 169 quant options** for coding, image input and typed decisions. Models download from Hugging Face. Downloads run in parallel and can resume if interrupted. Switch with `/models`. LocalCode recommends the most capable one that fits your Mac's memory and marks it with a star.\nSpeed: Gemma 4, Qwen 3.6, Muse Glimmer and Qwen 3.8 draft tokens with the vendor's own speculative drafter, which downloads with the model. The model server's GPU kernels ship precompiled, so the first start after an install is quicker.\n| Model | Smallest download | Largest download |\n| --- | ---: | ---: |\n| [Gemma 4 12B](https://huggingface.co/unsloth/gemma-4-12b-it-GGUF) | 4.7 GB | 24.3 GB |\n| [Qwen 3.8 27B](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF) | 6.2 GB | 54.7 GB |\n| [Inkling 2 Mini 26B-A5B](https://huggingface.co/unsloth/Inkling-2-Mini-GGUF) | 7.8 GB | 22.9 GB |\n| [North-Mini-Code 30B-A3B](https://huggingface.co/unsloth/North-Mini-Code-1.0-GGUF) | 9.4 GB | 61.0 GB |\n| [Gemma 4 26B-A4B](https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF) | 10.4 GB | 51.0 GB |\n| [Qwen 3.6 35B-A3B](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF) | 10.5 GB | 69.8 GB |\n| [Flint 40B-A2.5B](https://huggingface.co/unsloth/flint-GGUF) | 11.4 GB | 79.6 GB |\n| [Muse Glimmer 30B](https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF) | 12.4 GB | 57.4 GB |\n| [Gemma 4 Diffusion 26B-A4B](https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF) | 16.8 GB | 50.5 GB |\n| [OpenJev 27B (decisions)](https://huggingface.co/ggml-org/OpenJev-GGUF) | 19.4 GB | 53.8 GB |\n| [Kolibri 1 78B-A3B](https://huggingface.co/Hob-forge/Kolibri-1-GGUF) | 28.6 GB | 83.1 GB |\n| [DeepSeek V4 Flash 284B-A13B](https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF) | 82.4 GB | 161.9 GB |\n## Optimisations\nWhat LocalCode adds on top of the stock model server to make local models faster and better at coding.\nSpeed\n- Drafting: the vendor's own drafter guesses tokens ahead (about 2x faster replies on Gemma 4, Qwen 3.6, Qwen 3.8 and Muse Glimmer)\n- Copy drafting: when the model rewrites a file it already read, it copies instead of generating (3.5 to 4x faster on rewrites)\n- Prompt cache reuse: the system prompt stays the same every turn, so the model only reads what is new\n- Warm-up: the first request's prompt is read while the model loads, so your first message starts sooner\n- Precompiled GPU kernels: no half-minute shader compile on first start\n- Threads matched to your Mac's performance cores\n- Flash attention on by default\n- Inkling 2: its experts run on the GPU (were silently on the CPU, about 5x slower), banded attention and a fused activation op halve its GPU memory and read prompts 20 to 30% faster\n- Downloads run in parallel, resume if interrupted, and keep going while you use another model\nMemory\n- 8-bit KV cache by default: half the memory of full precision, so longer context fits\n- Inkling 2 uses a 16-bit cache instead: its attention reads it directly, so long prompts read 1.4 to 1.8x faster and it needs 3.3 GB less memory at 128K context\n- Context sized…"
+   }
+  },
+  {
+   "url": "http://ricapar.net/ClawDOS/",
+   "hn_url": "https://news.ycombinator.com/item?id=50586292",
+   "hn": {
+    "title": "ClawDOS – An AI coding agent for DOS",
+    "points": 174,
+    "comments": 52
+   },
+   "comments": [
+    {
+     "author": "linzhangrun",
+     "replies": 7,
+     "text": "Seriously speaking, I feel the market is sorely lacking an Agent for the large number of existing devices running WinXP, Win7, and the like.\nNot for developing on them, but for all kinds of debugging work it would be very useful; nowadays I'm used to just directing an Agent for everything."
+    },
+    {
+     "author": "Tiberium",
+     "replies": 2,
+     "text": "It feels very cute and mischievous to start agents in unusual environments (DOS, Linux running on a feature phone, Windows 95, etc) and see how they react :)"
+    },
+    {
+     "author": "jnpnj",
+     "replies": 2,
+     "text": "I wonder how far people could take DOS with today's knowledge."
+    },
+    {
+     "author": "fsiefken",
+     "replies": 1,
+     "text": "I'd like a freepascal, zig or odin coding agent that can run natively on a pentium3 with 1G ram natively on either cpu or gpu - on dos, freebsd or linux at > 10 t/s.\ncan this conceivably be done and how?\nGemini says it can be done.\nI also think the ai compression algorithms focus on PPM, BWT or CM as these take less cpu and memory then Tr and LSTM\nhttps://mattmahoney.net/dc/text.html"
+    },
+    {
+     "author": "hollowonepl",
+     "replies": 0,
+     "text": "Nice, is it claude only or could it also use codex?"
+    }
+   ],
+   "article": {
+    "url": "http://ricapar.net/ClawDOS/",
+    "status": "ok",
+    "title": "ClawDOS | An AI chat and coding harness for DOS, on a real IBM PC 5160 (8088 at 4.77 MHz)",
+    "chars": 11278,
+    "text": "Ricapar/ClawDOS\nClawDOS\nClawDOS\nAn AI coding agent for DOS.\nIt runs on an IBM PC XT: an 8088 at 4.77 MHz, 640K of RAM, a CGA card.\nA (real) human’s note:\nBackstory: The IBM PC was my first computer. Rather, it was my parents’ first personal computer that I got to use at a very early age.\nIt was already obsolete by the time I was old enough to use it, but at 5 years old it was a magical device that I could make do different things depending on what I typed.\nI learned how to type and use DOS so that I could launch some early “Learn the Alphabet” games that my mom had bought me. I learned some elementary-level use of BASIC, but at the time that didn’t progress much further than making some number guessing games and other small projects.\nFrom there, many years passed but I still have some of the original parts of that PC. I have a collection of vintage machines that mean something to me, with my fully maxed-out IBM PC 5160 being the centerpiece of my collection. It still has a working 20 MB hard drive, but that’s disconnected in favor of a PicoMEM that lets me emulate a hard drive off of an SD card, making experimentation and play much easier.\nOld, meet new. New, meet old: I love intersections of old and new technology. What better way to cross the two than building an AI coding agent to run on DOS on original hardware?\nAnd of course, what better to build it than an AI coding agent?\nI (read: Claude) built this for my own entertainment. I wanted to see how far I could push an AI coding agent to build something given out of the (modern) norm of constraints. Also, can that something it built then build other somethings? 100% of this repo is written by Claude, with the exception of the text within this box.\nAs explained in more detail below, the harness runs on the native OS and hardware and relies on a “bridge” PC in order to handle TLS, which would’ve been more than what an 8088 could handle.\nType CLAWDOS at the C:\\> prompt and talk to Claude. It reads and edits the\nfiles on your disk, writes programs, compiles them with Turbo C, runs them and\nlooks at what they draw on the screen. It keeps notes between conversations and\npicks up where it left off.\nThe whole harness runs on the PC. HARNESS.EXE is a 176 KB DOS program that\nspeaks the Claude Messages API itself: it writes the requests, parses the\nstreamed reply, runs the tools and keeps every conversation on its own disk.\nThe 8088 does everything but TLS.\nSee it work\nEvery screen below comes from a 5160 at 4.77 MHz, emulated in 86Box. The\nconversations are with the live API.\nFrom a sentence to a running program\nOne message: “Write PRIMES.C: print the primes below 100. Compile it with\nTurbo C and run it.” ClawDOS reads its guide to the compilers on this machine,\nwrites the source, then compiles, links and runs it in a single tool call. The\nanswer is on the screen 64 seconds after Enter, 26 of them spent compiling,\nlinking and running.\nThe compiler gets the machine to itself. For a build, ClawDOS saves its state\nand leaves memory, Turbo C runs with about 450K free, and the harness comes\nback on the same conversation with the program’s output in hand.\nWarGames, written on the XT\nClawDOS wrote this tribute to the 1983 film on the PC itself: a vector world\nmap, missiles arcing over the pole, a tic-tac-toe endgame, and a score for the\nPC speaker or an AdLib card. Five files of Turbo C, 15 KB of source, a\nWG.EXE under 10 KB.\nHere it is running on the real 5160, filmed off its IBM monitor:\n▶ Watch the WarGames demo on YouTube\nIt remembers\nStart a new conversation and “your WarGames demo” is all it needs. ClawDOS\nopens the note it saved in C:\\MEMORY, finds the latest build, and recalls\nthe palette trick the war scene plays on the CGA.\nIt sees the screen\nThat Run call asked for a screenshot 25 seconds in. A timer-interrupt hook\ncopies the CGA’s video memory at that moment, the 8088 encodes it as a PNG, and\nthe picture goes to Claude with the tool result. This is the file the PC made,\n320x200…"
+   }
+  },
+  {
+   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+   "hn_url": "https://news.ycombinator.com/item?id=50597612",
+   "hn": {
+    "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+    "points": 851,
+    "comments": 865
+   },
+   "comments": [
+    {
+     "author": "contemporary343",
+     "replies": 6,
+     "text": "Anthropic is a legitimately bad actor here, particularly in leasing Colossus 1 given the local pollution it has caused in Memphis. It is particularly shocking that they've made no renewable commitments in the US - Alphabet has made so many, and has a huge team on this! Just clearly not a priority, and they should be shamed and pressured. They know better."
+    },
+    {
+     "author": "sollewitt",
+     "replies": 11,
+     "text": "This is why we need regulation. Without rules, the cost of the externalities is passed on entirely to communities very far from leadership decision makers or shareholders.\nThe problem with a purely financial accounting is it ignores environmental and social costs entirely."
+    },
+    {
+     "author": "beloch",
+     "replies": 29,
+     "text": "The scale of energy that AI data centres use is huge in a way that most people don't have the ability to visualize. They think of a computer that their cat likes to sit on and multiply that gentle warmth by some number in their head. This is completely unrealistic.\nHere's a quote about a data centre currently being built near Edmonton, Alberta.\n------\n\"Utah State University physicist Robert Davies was hired by SLCN to conduct a preliminary technical assessment. He said if the Wonder Valley…"
+    },
+    {
+     "author": "quaintdev",
+     "replies": 16,
+     "text": "They have most powerful AI systems and yet they can't solve their own power consumption nor climate change.\nEveryone wants to make quick buck with AI powered solutions. The real problems like climate change will remain on back burner with this AI frenzy. There's no reward to solve climate change in short term unlike math problems.\nWe are going to accelerate climate change with AI."
+    },
+    {
+     "author": "gregwebs",
+     "replies": 1,
+     "text": "Now that the US is fracking shale, most of the natural gas production in the US is a byproduct of oil production. In the Permean Basin natural gas sometimes even trades negative. When it doesn't get captured, in the US it is supposed to be flared- burned onsite without any productive use (not flaring has a worse greenhouse effect).\nAs long as we are going to keep pumping every drop of tight oil out of the ground its going to make sense to generate power (or intentional useful heat) from the…"
+    }
+   ],
+   "article": {
+    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+    "status": "ok",
+    "title": "How AI is powered: a breakdown of BYOP and grid power – Better Data Center Project",
+    "chars": 11182,
+    "text": "In The AI Gas Rush: Risks and Implications of “Bring Your Own Power”, we dug into how data centers are increasingly securing their own dedicated primary power generation rather than relying solely on utilities to procure power (“BYOP”). We identified 177 GW of planned BYOP gas capacity—enough to power 65% of all US homes. Conversely, we found renewables are much less common than gas for BYOP: we estimate that for current proposals, less than 20% of energy generation will come from renewable sources by 2032.\nBut BYOP projects aren’t the only new fossil sources that are coming online to meet the skyrocketing energy demands of AI data centers. Another 200 GW of new fossil power plants is being built on the grid to meet growing demand, due in large part to data centers.1\nAs a case study of how the AI buildout is driving both new BYOP and grid fossil infrastructure, we analyzed the compute commitments of a single company: Anthropic.\nMap of Anthropic’s data centers and associated power plants. See our full dataset for details of each site.\nFigure 1. Breakdown of power source for Anthropic’s compute.\nFinding 1: Anthropic has made no direct commitments to renewable energy in the U.S. Though Anthropic has stated “We’re also working to broaden our energy mix with geothermal, wind, solar, and emerging technologies”, its only publicly disclosed commitments, contract, or investments in renewable power are in Norway and Canada (as of November 2026). In contrast, Anthropic is directly procuring fossil power equipment—it recently “bought commitments for 1.7 gigawatts of heavy-duty [gas] generators for $3.4bn”.\nFinding 2: Anthropic’s currently contracted data centers in the U.S. will be overwhelmingly powered by fossil fuels in the near term. By considering on-site gas and the grid power plants which are likely to meet Anthropic’s added load (i.e. marginal generators), we estimate about 87% of the company’s power will come from gas and 11% from coal in 2028. As of October 2026, Anthropic has contracted 15 GW of compute; of this, about 5.9–9.6 GW is contracted to specific data center sites. For a sense of scale, 9.6 GW could power about 7 million homes or cover 18% of the peak power demand of California—the world’s 4th largest economy.\nThis demand will be met with a mix of new on-site gas, new grid gas, and existing grid gas, coal, and nuclear. In the short term, no grid renewables are attributed to Anthropic’s power use, because—without commitments to new renewable capacity—new load on the grid will be met by dispatchable, marginal fossil resources.2 For more details, see our full dataset and our methodology below.\nFigure 2. Anthropic’s emissions from power consumption expected in 2028. Emissions for Google, Microsoft, and Meta are annual Scope 2, location-based emissions from their most recent sustainability reports. California power sector emissions are for all power plants operating within the state (source: EIA).\nFinding 3: Total CO2 emissions from Anthropic’s power use at these sites could reach 17–38 million MtCO2e per year in 2028, when this capacity is expected to be online. This range reflects uncertainty in Anthropic’s average power use, due to factors such as cooling needs and average utilization (see methodology below). In our mid-case, Anthropic will emit 32 million MtCO2e in 2028. These totals will continue to grow—possibly doubling by 2030, as some analysts expect Anthropic to secure 30 GW by 2030.\nTo put these figures in context, Anthropic’s CO2 emissions from power use in 2028:\ncould exceed the emissions of all of California’s power generation (31.1 MMtCO2e in 2024, not including imports).\ncould exceed Meta, Microsoft, and Google’s combined Scope 2 emissions from 2025 (their location-based emissions, before renewable energy offsets, were 5.9 million, 12 million and 15 million MtCO2e, respectively)3\nwould represent a 16–36% increase over 2024 levels of the entire U.S. data center sector (105 MMtCO2e).\nwould increase the entire…"
+   }
+  }
+ ]
+}

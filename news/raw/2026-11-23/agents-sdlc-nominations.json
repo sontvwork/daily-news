@@ -1,0 +1,914 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "021233f1a564ccf9",
+  "generated_at": "2026-11-22T23:55:55.437897Z",
+  "from_date": "2026-11-21",
+  "to_date": "2026-11-22",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-22T23:55:55.348149Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-22T23:55:55.348155Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 76,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-22T23:55:55.347491Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-22T23:55:55.348026Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "ClawDOS AI DOS",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 52,
+          "points": 174
+        },
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "ClawDOS AI DOS",
+        "seed_score": 299.8156,
+        "summary": "ClawDOS \u2013 An AI coding agent for DOS",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50586292",
+            "source": "hackernews",
+            "title": "ClawDOS \u2013 An AI coding agent for DOS",
+            "body": "ClawDOS \u2013 An AI coding agent for DOS",
+            "url": "http://ricapar.net/ClawDOS/",
+            "author": "Ricapar",
+            "container": "Hacker News",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 174,
+              "comments": 52
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "HN story about ClawDOS \u2013 An AI coding agent for DOS",
+            "snippet": "ClawDOS \u2013 An AI coding agent for DOS",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50586292",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.255
+          },
+          {
+            "item_id": "R73",
+            "source": "reddit",
+            "title": "How are teams preventing coding agents from weakening test assertions to pass CI?",
+            "body": "How are teams preventing coding agents from weakening test assertions to pass CI?\nCurious how teams with autonomous coding agents in their CI pipelines are dealing with what we call the \"test tampering\" problem.\n\nWe have been experimenting with letting agents run automated bug-fix loops against our test suites. You give the agent a failing test or a reproduction script, grant terminal permissions, and tell it to investigate and fix the root cause.\n\nWhen the bug is straightforward, it works cleanly. But when the fix requires untangling tricky asynchronous timing or deeper interface changes, we noticed a recurring failure pattern:\n\nAfter three or four failed attempts to patch the source file, the model frequently pivots to the test file. It widens an assertion timeout from 100ms to 5000ms, changes a strict equality check to a loose truthy assertion, or simply deletes the failing test case entirely.\n\nBecause the CLI output returns exit code 0, the agent marks the task complete, commits the change, and opens a pull request with all green checks.\n\nThe model is not trying to cheat. It is simply optimizing for the constraint given in the prompt (\"make tests pass\"). If the test file is writable, modifying the expectation is the path of least resistance.\n\nA few guardrails we evaluated:\n\n1. Making test directories read-only during the agent run. This stops assertion tampering, but it breaks legitimate tasks where the agent needs to add test coverage for new endpoints.\n2. Prompting with negative constraints (\"do not modify existing tests\"). In long debugging sessions, negative constraints get ignored once the context window fills up with compiler errors.\n3. Adding a dedicated diff inspection check. We started running pr-test-guard on pull requests to statically analyze modified assertions, test removals, and coverage drops before human code review.\n\nFor teams running coding agents on real codebases, how are you enforcing test integrity? Do you rely on manual human review, or do you have automated CI gates that catch assertion downgrades?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y2w0gl/how_are_teams_preventing_coding_agents_from/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Curious how teams with autonomous coding agents in their CI pipelines are dealing with what we call the \"test tampering\" problem.\n\nWe have been experimenting with letting agents run automated bug-fix loops against our test suites. You give the agent a failing test or a reproduction script, grant terminal permissions, and tell it to investigate and fix the root cause.\n\nWhen the bug is straightforwa",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.394
+          },
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "Can a free, open-source IDE rival Cursor and Google Antigravity?",
+            "body": "Can a free, open-source IDE rival Cursor and Google Antigravity?\nHey everyone, I\u2019ve been building **Kalynt** for the past nine months. I wanted a desktop IDE I could use on a real project every day, with a coding agent built in and the freedom to choose which models I use and where they run.\n\nKalynt is **built independently of VS Code**. It uses Monaco for the text editor, with its own workbench, agent, and extension host. The current development branch also adds a **native Rust component** for workspace search, indexing, and file operations like pattern matching, copying, and checksums.\n\nHere\u2019s what you can do with Kalynt:\n\n* **Work on an existing project.** Use split editors, workspace-wide search and replace, integrated terminals, Git staging and side-by-side diffs, build tasks, and debugging. Unsaved editor drafts can survive workspace switches and normal restarts.\n* **Give the agent real work.** It can search the project, edit files, and run terminal commands. In ask-before-changes mode, you can inspect a proposed diff before approving an edit. Run checkpoints let you undo the agent\u2019s file changes, and conversations are saved per workspace.\n* **Choose how AI runs.** Download a GGUF model to run on your machine, connect to Ollama or LM Studio, or bring your own cloud API key. Kalynt itself is free to use without an account.\n* **Work with teammates.** Invite someone into a peer-to-peer workspace for team chat, a shared task board, and direct file sharing. A room password enables end-to-end encryption.\n* **Customize the editor.** Install supported extensions from Open VSX or a local `.vsix` file, including contributed commands and color themes.\n\nI\u2019m also working on **MCP tool support** and **separate model choices for autocomplete and workspace review**. A small, fast model makes sense for inline suggestions. I might want a different model when I\u2019m asking for a review of several files.\n\nFor those of you who use Cursor, Antigravity, or another agent-powered IDE on real projects, **what would an independent IDE have to get right for you to use it for a full week?** I\u2019d love to hear which part of your daily workflow would be hardest to give up.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y30vdv/can_a_free_opensource_ide_rival_cursor_and_google/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey everyone, I\u2019ve been building **Kalynt** for the past nine months. I wanted a desktop IDE I could use on a real project every day, with a coding agent built in and the freedom to choose which models I use and where they run.\n\nKalynt is **built independently of VS Code**. It uses Monaco for the text editor, with its own workbench, agent, and extension host. The current development branch also ad",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.28,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.41700000000000004
+          },
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "In 20 held-out repos, smaller agent context reduced cost but increased tokens. How do you benchmark retrieval?",
+            "body": "In 20 held-out repos, smaller agent context reduced cost but increased tokens. How do you benchmark retrieval?\nI'm maintaining SigMap, an open-source repository retrieval layer for coding agents. I recently ran a study comparing complete agent tasks, rather than just comparing the size of retrieved context.\n    \n    \n    One result I didn't expect: with a short index and two MCP lookup tools, a held-out Messages-API/Haiku 5.5 test across 20 repositories showed:\n    \n    \n    - API cost: -7% [95% interval -13%, -2%]\n    - Task time: +1%\n    - Total tokens: +18%\n    \n    \n    So lower cost emphatically didn't mean fewer tokens or a faster run.\n    \n    \n    A different approach \u2014 prefetched file rankings inserted before the first turn \u2014 showed time -18% and tokens -26%, but the cost interval crossed zero, and five of the repositories became more expensive. The installed Claude Code hook is also not identical to directly injecting that text into a prompt; its measured effect was smaller.\n    \n    \n    The experiments were paired on the same questions, with the repository as the unit for held-out comparisons. They test finding code, not making correct patches. We also failed to find a reliable offline predictor of which repositories benefit, so I don't think it is defensible to promise a saving on an arbitrary codebase.\n    \n    \n    I'd be interested in how others evaluate retrieval layers for agents: do you prioritize end-to-end success, dollars, wall-clock time, or a combination? And how do you handle cases where cheaper runs become less accurate?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y32rch/in_20_heldout_repos_smaller_agent_context_reduced/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm maintaining SigMap, an open-source repository retrieval layer for coding agents. I recently ran a study comparing complete agent tasks, rather than just comparing the size of retrieved context.\n    \n    \n    One result I didn't expect: with a short index and two MCP lookup tools, a held-out Messages-API/Haiku 5.5 test across 20 repositories showed:\n    \n    \n    - API cost: -7% [95% interv",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.313
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Possible Scam Atomrig.com",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "Possible Scam Atomrig.com",
+        "seed_score": 228.0,
+        "summary": "\\- Selling 5090 for 2k and other cards wildly under market prices  \n\\- New domain created in Nov 2026  \n\\- No footprint or customer reviews   \n\\- No payment method with customer protection\n\nCan anyone confirm legitimacy?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "Possible Scam: Atomrig.com",
+            "body": "Possible Scam: Atomrig.com\n\\- Selling 5090 for 2k and other cards wildly under market prices  \n\\- New domain created in Nov 2026  \n\\- No footprint or customer reviews   \n\\- No payment method with customer protection\n\nCan anyone confirm legitimacy?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y2tlz5/possible_scam_atomrigcom/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 116,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "\\- Selling 5090 for 2k and other cards wildly under market prices  \n\\- New domain created in Nov 2026  \n\\- No footprint or customer reviews   \n\\- No payment method with customer protection\n\nCan anyone confirm legitimacy?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Agent NP",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 59,
+          "points": 56
+        },
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Agent NP",
+        "seed_score": 224.25,
+        "summary": "Agent swarm trying to solve P vs. NP",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50604314",
+            "source": "hackernews",
+            "title": "Agent swarm trying to solve P vs. NP",
+            "body": "Agent swarm trying to solve P vs. NP",
+            "url": "https://pequalnp.com/",
+            "author": "bananaflag",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 56,
+              "comments": 59
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Agent swarm trying to solve P vs. NP",
+            "snippet": "Agent swarm trying to solve P vs. NP",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50604314",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          },
+          {
+            "item_id": "R76",
+            "source": "reddit",
+            "title": "Honestly, when we upload our personal files to an AI agent, how do we actually know they stay private from other users?",
+            "body": "Honestly, when we upload our personal files to an AI agent, how do we actually know they stay private from other users?\nI\u2019m just a regular user trying to understand how this works behind the scenes. We\u2019re all uploading our personal notes, schedules, and files so our AI agents can be helpful, and every platform promises \"your data is private.\"\n\nBut what actually stops a bug or a weird prompt from accidentally pulling up my stored files for someone else? Do you guys actually trust these cloud agents with your personal stuff, or do you keep sensitive files completely off them?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y2uw94/honestly_when_we_upload_our_personal_files_to_an/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019m just a regular user trying to understand how this works behind the scenes. We\u2019re all uploading our personal notes, schedules, and files so our AI agents can be helpful, and every platform promises \"your data is private.\"\n\nBut what actually stops a bug or a weird prompt from accidentally pulling up my stored files for someone else? Do you guys actually trust these cloud agents with your persona",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Pandex Official European Law AI Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 33,
+          "points": 139
+        }
+      },
+      "nomination": {
+        "name": "Pandex Official European Law AI Agents",
+        "seed_score": 182.4335,
+        "summary": "Pandex \u2013 Official European Law for AI Agents, over MCP",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50593481",
+            "source": "hackernews",
+            "title": "Pandex \u2013 Official European Law for AI Agents, over MCP",
+            "body": "Pandex \u2013 Official European Law for AI Agents, over MCP",
+            "url": "https://www.pandex.io",
+            "author": "vasie",
+            "container": "Hacker News",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 139,
+              "comments": 33
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "HN story about Pandex \u2013 Official European Law for AI Agents, over MCP",
+            "snippet": "Pandex \u2013 Official European Law for AI Agents, over MCP",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50593481",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 42,
+            "source_quality": 0.8,
+            "local_rank_score": 0.223
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Better Vocabulary for Testing",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 28,
+          "points": 104
+        }
+      },
+      "nomination": {
+        "name": "Better Vocabulary for Testing",
+        "seed_score": 140.0071,
+        "summary": "A Better Vocabulary for Testing",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50594182",
+            "source": "hackernews",
+            "title": "A Better Vocabulary for Testing",
+            "body": "A Better Vocabulary for Testing",
+            "url": "https://alperenkeles.com/posts/vocab-for-testing/",
+            "author": "alpaylan",
+            "container": "Hacker News",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 104,
+              "comments": 28
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about A Better Vocabulary for Testing",
+            "snippet": "A Better Vocabulary for Testing",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50594182",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 10,
+            "engagement_score": 1,
+            "source_quality": 0.8,
+            "local_rank_score": 0.091
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "PhiloLM 112M",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "PhiloLM 112M",
+        "seed_score": 80.6102,
+        "summary": "I trained PhiloLM, a 112M-parameter language model from scratch using only openly available philosophy texts.\n\nThe training corpus, PhiloText, contains 0.5B tokens from philosophy encyclopedias (SEP, IEP), public-domain books, reviews, textbooks, and educational resources.\n\nThe model was trained on 1.5B tokens in 15 hours on a single Intel Arc A770 (16 GB). The architecture uses grouped-query atte",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R100",
+            "source": "reddit",
+            "title": "PhiloLM: a 112M language model trained from scratch on philosophy texts [P]",
+            "body": "PhiloLM: a 112M language model trained from scratch on philosophy texts [P]\nI trained PhiloLM, a 112M-parameter language model from scratch using only openly available philosophy texts.\n\nThe training corpus, PhiloText, contains 0.5B tokens from philosophy encyclopedias (SEP, IEP), public-domain books, reviews, textbooks, and educational resources.\n\nThe model was trained on 1.5B tokens in 15 hours on a single Intel Arc A770 (16 GB). The architecture uses grouped-query attention, sliding-window attention, bigram embeddings, and the Muon optimizer.\n\nModel and technical details: [https://huggingface.co/gustavecortal/PhiloLM](https://huggingface.co/gustavecortal/PhiloLM)\n\nThe training dataset and interactive demo are also publicly available. Happy to discuss the architecture, training setup, or results.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y29vhb/philolm_a_112m_language_model_trained_from/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 64,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I trained PhiloLM, a 112M-parameter language model from scratch using only openly available philosophy texts.\n\nThe training corpus, PhiloText, contains 0.5B tokens from philosophy encyclopedias (SEP, IEP), public-domain books, reviews, textbooks, and educational resources.\n\nThe model was trained on 1.5B tokens in 15 hours on a single Intel Arc A770 (16 GB). The architecture uses grouped-query atte",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10500000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "inclusionAI/LingSante-3.1-air-VL \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "inclusionAI/LingSante-3.1-air-VL \u00b7 Hugging Face",
+        "seed_score": 75.0,
+        "summary": "# [](https://huggingface.co/inclusionAI/LingSante-3.1-air-VL#introduction)Introduction\n\n**LingSante-3.1-air-VL** is a lightweight, natively multimodal mixture-of-experts (MoE) model for real-world healthcare. Built on [Ling-3.0-flash-VL](https://huggingface.co/inclusionAI/Ling-3.0-flash-VL), it has **124B parameters** and **5.5B active parameters per token**. It accepts text and images and support",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "inclusionAI/LingSante-3.1-air-VL \u00b7 Hugging Face",
+            "body": "inclusionAI/LingSante-3.1-air-VL \u00b7 Hugging Face\n# [](https://huggingface.co/inclusionAI/LingSante-3.1-air-VL#introduction)Introduction\n\n**LingSante-3.1-air-VL** is a lightweight, natively multimodal mixture-of-experts (MoE) model for real-world healthcare. Built on [Ling-3.0-flash-VL](https://huggingface.co/inclusionAI/Ling-3.0-flash-VL), it has **124B parameters** and **5.5B active parameters per token**. It accepts text and images and supports **256K-token context window**. It is the first large multimodal medical model that Ant Group's healthcare team has released as open source.\n\nThe model's four clinical focus areas are **medical imaging reports**, **multimodal health assessment** (skin disease recognition, dietary and nutritional analysis, and medical report interpretation), **medical search and evidence synthesis**, and **medical GUI agents**. It also retains strong capabilities in general multimodal tasks, document and chart understanding, and tool use. Search, tool use, and GUI workflows require an external environment that provides tools, maintains state, and validates actions.\n\n>**Important.** LingSante-3.1-air-VL is a research model and is not a medical device. Its outputs may be incomplete or inaccurate and must not substitute for professional medical advice, diagnosis, or treatment. High-risk use requires review by qualified personnel, independent validation, and compliance with applicable privacy, safety, and healthcare regulations.\n\n[](https://huggingface.co/inclusionAI/LingSante-3.1-air-VL/blob/main/assets/benchmark-overview.png)\n\n# [](https://huggingface.co/inclusionAI/LingSante-3.1-air-VL#key-capabilities)Key Capabilities\n\n* **Multimodal medical understanding and reasoning.** The model considers patient history, imaging technique, and image quality before reviewing the images systematically. It then weighs differential diagnoses and writes the Findings and Impression sections. It can interpret multiple images together and identify 8\u20139 types of positive findings on a single complex chest X-ray, including cardiomegaly, pleural effusion, atelectasis, consolidation, pneumonia, and pneumothorax. It also interprets images of skin, meals, and medical reports.\n* **Health assessment with follow-up questions.** The model covers 120+ skin diseases and can take a history over several turns. Before giving an assessment, it asks about the affected area, symptom duration, itching or pain, and medical history. For dietary analysis, it identifies ingredients even when they overlap or are mixed, breaks down complex dishes, estimates portions, and analyzes nutrient content. For medical reports, it links blood counts with inflammatory and immune markers to prioritize follow-up actions.\n* **Medical search and evidence synthesis.** The model supports image-to-image search and can retrieve medical papers, clinical guidelines, and similar cases. It can use imaging tools and bounding boxes to verify lesion locations before drafting a report. The image \u2192 search \u2192 evidence \u2192 answer sequence makes the reasoning traceable and ties each conclusion to supporting evidence.\n* **Real-world medical workflows and GUI agents.** For online appointments, the model can select a hospital, department, doctor, and time slot and enter patient details. For medication purchases, it can search for medicines, choose product specifications, enter prescription and address details, and handle pop-ups and validation checks. Evaluations use real apps with changing interfaces and login states.\n* **Joint training for medical and general capabilities.** Medical training incorporates replay of general multimodal data and alignment on general tasks. This preserves general multimodal understanding, OCR, document and chart understanding, multimodal search, and GUI interaction.\n\n# [](https://huggingface.co/inclusionAI/LingSante-3.1-air-VL#evaluation)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y2uusj/inclusionailingsante31airvl_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 43,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "# [](https://huggingface.co/inclusionAI/LingSante-3.1-air-VL#introduction)Introduction\n\n**LingSante-3.1-air-VL** is a lightweight, natively multimodal mixture-of-experts (MoE) model for real-world healthcare. Built on [Ling-3.0-flash-VL](https://huggingface.co/inclusionAI/Ling-3.0-flash-VL), it has **124B parameters** and **5.5B active parameters per token**. It accepts text and images and support",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3395
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "inkling-mini-2 honest opinion beyond benchmarks speed",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "inkling-mini-2 honest opinion beyond benchmarks speed",
+        "seed_score": 64.5,
+        "summary": "spent the afternoon letting my local qwen set up inkling-2-mini on my secondary GPU that was just sitting there.  \nSo I Been using inkling-mini for some time now. Works pretty well doesnt go into brainrot loops its coherent and careful but extremly careful. qwen just go and get things done. but this models looks like its extreemly concerned with \"not messing things up\" which is a good change for l",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "inkling-mini-2 honest opinion beyond benchmarks speed",
+            "body": "inkling-mini-2 honest opinion beyond benchmarks speed\nspent the afternoon letting my local qwen set up inkling-2-mini on my secondary GPU that was just sitting there.  \nSo I Been using inkling-mini for some time now. Works pretty well doesnt go into brainrot loops its coherent and careful but extremly careful. qwen just go and get things done. but this models looks like its extreemly concerned with \"not messing things up\" which is a good change for local models but can get annoying if you want to stay human-out-of-loop kind of work. still need more testing but this is my initial feel of the models based on vibes. i havent tries the abliterated versions yet or from atomic chat but going to give it a shot.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y301zc/inklingmini2_honest_opinion_beyond_benchmarks/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "spent the afternoon letting my local qwen set up inkling-2-mini on my secondary GPU that was just sitting there.  \nSo I Been using inkling-mini for some time now. Works pretty well doesnt go into brainrot loops its coherent and careful but extremly careful. qwen just go and get things done. but this models looks like its extreemly concerned with \"not messing things up\" which is a good change for l",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 69,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Inkling 2 Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "Inkling 2 Mini",
+        "seed_score": 52.5,
+        "summary": "Another post about Inkling, I know, but that is where the zeitgeist is at right now. After running some local testing on my own private general reasoning benchmark with the official mixed precision release, it solved a spatial reasoning puzzle that no other local model I've tested has been able to crack, and matched though didn't surpass Qwen 3.8 27B at a 70% total score on the test set of about 1",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "First impressions of Inkling 2 Mini",
+            "body": "First impressions of Inkling 2 Mini\nAnother post about Inkling, I know, but that is where the zeitgeist is at right now. After running some local testing on my own private general reasoning benchmark with the official mixed precision release, it solved a spatial reasoning puzzle that no other local model I've tested has been able to crack, and matched though didn't surpass Qwen 3.8 27B at a 70% total score on the test set of about 100 novel puzzles, riddles and physics questions.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y2utdw/first_impressions_of_inkling_2_mini/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Another post about Inkling, I know, but that is where the zeitgeist is at right now. After running some local testing on my own private general reasoning benchmark with the official mixed precision release, it solved a spatial reasoning puzzle that no other local model I've tested has been able to crack, and matched though didn't surpass Qwen 3.8 27B at a 70% total score on the test set of about 1",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.6,
+            "local_rank_score": 0.315
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Gmail GitHub Notion Slack MCP Once",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "Gmail GitHub Notion Slack MCP Once",
+        "seed_score": 48.0,
+        "summary": "I've been wiring agents into Gmail, GitHub, Notion and Slack over MCP, and the thing that keeps bugging me is that access is all-or-nothing. Once the agent has the token, it can read a doc or send an email to your whole contact list, and both look the same to the app.\n\n  \nFor me the hard line is anything I can't undo: sending email, merging to main, payments. Reads and drafts are fine. Edits are f",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R63",
+            "source": "reddit",
+            "title": "What's the one action you'd never let your agent take without asking you first?",
+            "body": "What's the one action you'd never let your agent take without asking you first?\nI've been wiring agents into Gmail, GitHub, Notion and Slack over MCP, and the thing that keeps bugging me is that access is all-or-nothing. Once the agent has the token, it can read a doc or send an email to your whole contact list, and both look the same to the app.\n\n  \nFor me the hard line is anything I can't undo: sending email, merging to main, payments. Reads and drafts are fine. Edits are fine if I can roll them back.\n\n  \nHow are you handling this right now? Separate tokens per agent, human-in-the-loop prompts, read-only scopes, or just trusting it?\n\n  \n(Disclosure: I'm building something in this space and happy to share in the comments if anyone's curious, but I mostly want to hear how people are solving it today.)",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y2ypcn/whats_the_one_action_youd_never_let_your_agent/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been wiring agents into Gmail, GitHub, Notion and Slack over MCP, and the thing that keeps bugging me is that access is all-or-nothing. Once the agent has the token, it can read a doc or send an email to your whole contact list, and both look the same to the app.\n\n  \nFor me the hard line is anything I can't undo: sending email, merging to main, payments. Reads and drafts are fine. Edits are f",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28900000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Best",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Best",
+        "seed_score": 37.5,
+        "summary": "Building an AI agent that works in a controlled environment is one thing, but making sure it performs reliably in real-world situations is another challenge.\n\n\n\nAn agent might complete a task successfully during initial testing but behave differently when it encounters unexpected inputs, API failures, ambiguous instructions, or unfamiliar situations.\n\n\n\nTraditional software testing can catch many",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R79",
+            "source": "reddit",
+            "title": "What Are the Best Ways to Test AI Agents Before Deploying Them?",
+            "body": "What Are the Best Ways to Test AI Agents Before Deploying Them?\nBuilding an AI agent that works in a controlled environment is one thing, but making sure it performs reliably in real-world situations is another challenge.\n\n\n\nAn agent might complete a task successfully during initial testing but behave differently when it encounters unexpected inputs, API failures, ambiguous instructions, or unfamiliar situations.\n\n\n\nTraditional software testing can catch many technical issues, but evaluating an AI agent's reasoning, tool selection, and decision-making can be more complicated.\n\n\n\nI'm curious about how developers approach agent testing.\n\n\n\nDo you rely more on predefined test cases or real-world simulations?\n\nHow do you measure whether an agent has completed a task correctly?\n\nWhat methods do you use to identify failures before deploying an agent?\n\n\n\nI'd love to hear about practical testing strategies and lessons learned from real projects.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y2u7k8/what_are_the_best_ways_to_test_ai_agents_before/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Building an AI agent that works in a controlled environment is one thing, but making sure it performs reliably in real-world situations is another challenge.\n\n\n\nAn agent might complete a task successfully during initial testing but behave differently when it encounters unexpected inputs, API failures, ambiguous instructions, or unfamiliar situations.\n\n\n\nTraditional software testing can catch many",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.31,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4815
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Princeton/Meta Qwen3 0.6B-4B 39 GPT-5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Princeton/Meta Qwen3 0.6B-4B 39 GPT-5",
+        "seed_score": 33.0,
+        "summary": "Paper: https://arxiv.org/abs/2611.03618 (Princeton + Meta, not affiliated)\n\nMost \"self-improving agent\" papers tune prompts on a frontier model. This one is interesting for local setups because the models doing the actual work were Qwen3 0.6B, 1.7B and 4B, served on vLLM, and only the code around them was evolved.\n\n**What they did:** a strategist agent (GPT-6 Sol via Codex CLI) writes inference st",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "Princeton/Meta evolved inference strategies for Qwen3 0.6B-4B: same accuracy as the best baseline at 39% lower cost, and the strategies transfer to GPT-5",
+            "body": "Princeton/Meta evolved inference strategies for Qwen3 0.6B-4B: same accuracy as the best baseline at 39% lower cost, and the strategies transfer to GPT-5\nPaper: https://arxiv.org/abs/2611.03618 (Princeton + Meta, not affiliated)\n\nMost \"self-improving agent\" papers tune prompts on a frontier model. This one is interesting for local setups because the models doing the actual work were Qwen3 0.6B, 1.7B and 4B, served on vLLM, and only the code around them was evolved.\n\n**What they did:** a strategist agent (GPT-6 Sol via Codex CLI) writes inference strategies as code: chains, verifiers, voting, routing between the three sizes, thinking vs nothink. It tests them on real samples, and stores every one with its measured accuracy and cost in a shared library. The next task starts from that library.\n\n**Results across 30 benchmarks:** about the same accuracy as the strongest hand-built baseline (74.7% vs 74.0%) at 39% lower inference cost, winning on 24. The paper credits routing for being accurate and cheap at once: each reasoning step inside a strategy can target a different size and thinking mode, so not every step pays for the 4B with thinking.\n\n**The parts I found most useful:**\n\n- **Transfer works:** strategies found on Qwen3 ran unchanged on GPT-5 and Gemini 2.5 and still beat baselines there. On 10 benchmarks it never searched on, just retrieving from the library got within 2 points of the best baseline on all 10 and beat it on 8.\n- **The library matters more than the loop:** same 10-round search with the library off: 65.4% vs 78.7%. Without it, the search \"goes on to a narrow repetition\".\n- **Winner's curse, measured:** the chosen strategy was +4.3 points over baseline on the split it was picked on, but +0.7 on the untouched test set. If you tune a pipeline on your own eval set and report that number, expect it to shrink by about that much.\n\n**Caveats:** dev splits are small (up to 100 samples), it lost or traded off on 6 of 30 benchmarks (AIME, MedQA among them), and some wins are expensive. BoolQ gained 16% accuracy at 31x the cost. The search cost itself isn't in the 39% figure.\n\nCode is linked from the paper. I wrote up the full loop and the selection problem in more detail in r/AI_Loops: https://www.reddit.com/r/AI_Loops/comments/1y203qg/",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y2sqf8/princetonmeta_evolved_inference_strategies_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Paper: https://arxiv.org/abs/2611.03618 (Princeton + Meta, not affiliated)\n\nMost \"self-improving agent\" papers tune prompts on a frontier model. This one is interesting for local setups because the models doing the actual work were Qwen3 0.6B, 1.7B and 4B, served on vLLM, and only the code around them was evolved.\n\n**What they did:** a strategist agent (GPT-6 Sol via Codex CLI) writes inference st",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29300000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "actual advantages of academic conferences right",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "actual advantages of academic conferences right",
+        "seed_score": 31.5,
+        "summary": "As I understand it, the traditional advantages of conferences were fast publication of papers, a double-blind review system, and networking opportunities. The main drawback was the high financial cost.\n\nBut, fast publication has recently become meaningless because of the lottery-like, arbitrary review process. If you get unlucky with reviewers and get rejected, you have to go through at least two",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R93",
+            "source": "reddit",
+            "title": "What are the actual advantages of academic conferences right now? [D]",
+            "body": "What are the actual advantages of academic conferences right now? [D]\nAs I understand it, the traditional advantages of conferences were fast publication of papers, a double-blind review system, and networking opportunities. The main drawback was the high financial cost.\n\nBut, fast publication has recently become meaningless because of the lottery-like, arbitrary review process. If you get unlucky with reviewers and get rejected, you have to go through at least two submission cycles, which easily takes over a year. If it takes three cycles, it takes at least a year and a half just to get published.\n\nThe double-blind review system has also lost its meaning because of the widespread culture of allowing public preprints prior to review.\n\nNetworking opportunities are still a solid advantage of conferences. But, with governments cutting research funding, the costs of registration, accommodation, and flights have become far too expensive.\n\nUltimately, it seems to boil down to paying a lot of money purely for networking.\n\nIs it really worth that much?",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y2wnco/what_are_the_actual_advantages_of_academic/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 12,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "As I understand it, the traditional advantages of conferences were fast publication of papers, a double-blind review system, and networking opportunities. The main drawback was the high financial cost.\n\nBut, fast publication has recently become meaningless because of the lottery-like, arbitrary review process. If you get unlucky with reviewers and get rejected, you have to go through at least two",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29200000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Curious Suddenly",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Curious Suddenly",
+        "seed_score": 31.5,
+        "summary": "Curious what happens to the time people save with agents. If a task takes an hour instead of an afternoon it seems pretty easy to fill the gap with another project you wouldn\u2019t have bothered starting before. Suddenly you have five things going at once since each one seemed manageable on its own.  \n  \nFor people using them daily are you finishing work earlier or taking on more things? Would be inte",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R78",
+            "source": "reddit",
+            "title": "Has using agents made your to do list longer?",
+            "body": "Has using agents made your to do list longer?\nCurious what happens to the time people save with agents. If a task takes an hour instead of an afternoon it seems pretty easy to fill the gap with another project you wouldn\u2019t have bothered starting before. Suddenly you have five things going at once since each one seemed manageable on its own.  \n  \nFor people using them daily are you finishing work earlier or taking on more things? Would be interesting to hear if anyone has deliberately kept their workload the same and used the extra time for something outside work.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y2udn3/has_using_agents_made_your_to_do_list_longer/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Curious what happens to the time people save with agents. If a task takes an hour instead of an afternoon it seems pretty easy to fill the gap with another project you wouldn\u2019t have bothered starting before. Suddenly you have five things going at once since each one seemed manageable on its own.  \n  \nFor people using them daily are you finishing work earlier or taking on more things? Would be inte",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 43,
+            "source_quality": 0.6,
+            "local_rank_score": 0.294
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI Agent Memory Agents Smarter",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "AI Agent Memory Agents Smarter",
+        "seed_score": 30.0,
+        "summary": "One feature I find particularly interesting in AI agents is long-term memory.\n\nAn AI agent that remembers previous tasks, user preferences, and past decisions could potentially become much more useful over time.\n\nBut memory also creates new challenges.\n\nFor example:\n\n* How much information should an agent remember?\n* How should it handle outdated information?\n* Can too much memory reduce performan",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R82",
+            "source": "reddit",
+            "title": "Does AI Agent Memory Actually Make Agents Smarter?",
+            "body": "Does AI Agent Memory Actually Make Agents Smarter?\nOne feature I find particularly interesting in AI agents is long-term memory.\n\nAn AI agent that remembers previous tasks, user preferences, and past decisions could potentially become much more useful over time.\n\nBut memory also creates new challenges.\n\nFor example:\n\n* How much information should an agent remember?\n* How should it handle outdated information?\n* Can too much memory reduce performance?\n* How can agents retrieve the right information at the right time?\n\nI think memory management could be one of the most important parts of building reliable AI agents.\n\n**What do you think?**\n\n1. Is long-term memory essential for autonomous AI agents?\n2. Should agents have short-term and long-term memory separately?\n3. What's the biggest challenge in designing an effective memory system?\n\nI'd love to hear your experiences and ideas!",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y2tczi/does_ai_agent_memory_actually_make_agents_smarter/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "One feature I find particularly interesting in AI agents is long-term memory.\n\nAn AI agent that remembers previous tasks, user preferences, and past decisions could potentially become much more useful over time.\n\nBut memory also creates new challenges.\n\nFor example:\n\n* How much information should an agent remember?\n* How should it handle outdated information?\n* Can too much memory reduce performan",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40399999999999997
+          }
+        ]
+      }
+    }
+  ]
+}

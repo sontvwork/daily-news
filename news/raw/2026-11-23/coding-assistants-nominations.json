@@ -1,0 +1,960 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "a7ccacfb6cf749d5",
+  "generated_at": "2026-11-22T23:55:55.285449Z",
+  "from_date": "2026-11-21",
+  "to_date": "2026-11-22",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-22T23:55:55.241228Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-22T23:55:55.241235Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-22T23:55:55.132580Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 50,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-22T23:55:55.241066Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "ClawDOS AI DOS",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 52,
+          "points": 174
+        },
+        "reddit": {
+          "num_comments": 41
+        }
+      },
+      "nomination": {
+        "name": "ClawDOS AI DOS",
+        "seed_score": 377.2015,
+        "summary": "ClawDOS \u2013 An AI coding agent for DOS",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50586292",
+            "source": "hackernews",
+            "title": "ClawDOS \u2013 An AI coding agent for DOS",
+            "body": "ClawDOS \u2013 An AI coding agent for DOS",
+            "url": "http://ricapar.net/ClawDOS/",
+            "author": "Ricapar",
+            "container": "Hacker News",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 174,
+              "comments": 52
+            },
+            "relevance_hint": 0.39,
+            "why_relevant": "HN story about ClawDOS \u2013 An AI coding agent for DOS",
+            "snippet": "ClawDOS \u2013 An AI coding agent for DOS",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50586292",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.39,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.37850000000000006
+          },
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "The biggest problem I've found with AI coding agents: Local optimization vs. global coherence",
+            "body": "The biggest problem I've found with AI coding agents: Local optimization vs. global coherence\nI've been using AI to develop a fairly large software project for about a year now, starting with Cline and Sonnet, experimenting with various tools, and eventually moving to Claude Code and Codex.\n\nI use(d) a combination of multiple subscriptions with Claude, OpenAI, GLM, Kimi, and DeepSeek, and experimented with dozens of agent harnesses and orchestration workflows.\n\nOne recurring problem I've noticed is local optimization at the expense of global coherence.\n\nAgents can make perfectly reasonable decisions for the immediate task while gradually making the overall project worse.\n\nIt's easy to get carried away by the optimism. The plans look great, the agents sound confident, and the progress reports show everything getting completed. But as the project grows, small inconsistencies compound into what I'd call architectural entropy.\n\nHere are six recurring problems I've encountered:\n\n1. Adding instead of replacing\n\nYou ask an agent to correct an implementation, and instead of replacing the mistake, it builds around it. It adds compatibility layers, fallbacks, and patches to support something that should never have existed.\n\nWhat helps: Explicitly require replacing and retiring obsolete implementations, including their references, comments, and documentation. Don't preserve backwards compatibility without a reason.\n\n2. Subagents losing the big picture\n\nAn orchestrator develops an excellent plan, then delegates vague, isolated tasks to subagents without passing along enough context. Each agent completes its assignment, but the pieces don't necessarily work together.\n\nWhat helps: Give subagents the overall objective, relevant architecture, clear interfaces, dependencies, and acceptance criteria. Explicitly assign responsibility for integration.\n\n3. The perpetual 80% problem\n\nAn agent breaks a goal into tasks, completes them all, and declares success. Except the actual feature is only 60\u201380% finished. You ask it to complete the remainder, and another round of tasks gets you 80% of what's left.\n\nIt starts feeling like Zeno's paradox. Autonomous loops can make this worse by endlessly discovering new tasks and rabbit holes.\n\nWhat helps: Define success by observable, end-to-end functionality rather than completed checklists. Verify outcomes against the original objective.\n\n4. Reinventing instead of reusing\n\nAn agent doesn't discover an existing implementation, so it creates another. Suddenly you have different colour pickers, navigation systems, validation logic, or state management across the same application.\n\nEach works independently, but the overall system becomes increasingly inconsistent.\n\nWhat helps: Require searching for existing implementations, establish canonical shared components, and justify introducing new systems.\n\n5. Context contamination\n\nAgents rely on documentation, comments, summaries, and existing code that may be outdated or incorrect.\n\nWorse, an agent can implement something incorrectly, document it, and have future agents treat that documentation as authoritative. Yesterday's mistake becomes tomorrow's specification.\n\nWhat helps: Maintain clear sources of truth, distinguish proposals from implemented architecture, retire stale documentation, and verify assumptions against actual behaviour.\n\n6. Agents reviewing agents\n\nA second agent can review an implementation, find clean code that follows established patterns, and approve it.\n\nBut if both agents are working from the same incorrect assumptions, they can confidently agree on something that fundamentally misses the original objective.\n\nWhat helps: Give reviewers the original requirements, test actual functionality, and separate code-quality reviews from architectural and outcome verification.\n\n\\---\n\nThe bigger problem: Architectural entropy\n\nThese aren't necessarily AI-specific problems. Human development teams experience them too.\n\nBut AI agents can make decisions and produce changes at a scale and speed that allows inconsistencies to accumulate before anyone notices.\n\nEach agent optimizes locally: preserve existing functionality, complete the assigned task, solve the immediate problem, follow the available documentation, pass the review.\n\nAll reasonable decisions individually.\n\nYet collectively they can create duplicated systems, unnecessary complexity, contradictory patterns, stale documentation, and features that technically work but don't fit together.\n\nThe codebase grows, the task completion rate looks fantastic, but the system itself becomes less coherent.\n\nI've become increasingly interested in workflows that actively counteract this entropy: maintaining architectural consistency, verifying end-to-end outcomes, consolidating duplicate implementations, and removing things that no longer belong.\n\nI'm still a huge advocate for AI coding agents. I wouldn't have built nearly as much without them. But I think the challenge changes as projects grow.\n\nIt becomes less about \"How do I get AI to build this?\"\n\nAnd more about \"How do I ensure everything AI builds contributes to the same coherent system?\"\n\nI'm curious what others have experienced, especially those running multi-agent workflows on larger, long-lived projects.\n\nWhat practices have actually helped you prevent architectural entropy, rather than just generating more code, documentation, and reviews?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y1p5do/the_biggest_problem_ive_found_with_ai_coding/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 32,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.33,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been using AI to develop a fairly large software project for about a year now, starting with Cline and Sonnet, experimenting with various tools, and eventually moving to Claude Code and Codex.\n\nI use(d) a combination of multiple subscriptions with Claude, OpenAI, GLM, Kimi, and DeepSeek, and experimented with dozens of agent harnesses and orchestration workflows.\n\nOne recurring problem I've n",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 10,
+            "engagement_score": 88,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5095000000000001
+          },
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "How are you stacking your AI dev tools across prototyping, coding and context?",
+            "body": "How are you stacking your AI dev tools across prototyping, coding and context?\nI have been refining my AI development stack to spend less time fixing agent mistakes and more time actually shipping features. Right now I bounce between a few different categories depending on the task:\n\n  \nQuick UI and MVP builds: Bolt, Lovable, v0\n\nAI-native editors: Cursor, Windsurf\n\nBackground and CLI coding agents: Claude Code, OpenAI Codex, Cline\n\nEngineering context and catalogs: Port.io, Backstage, custom MCP tools \n\n  \nWhat is your go-to combo right now, and what part of the workflow still feels chuncky for you?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y21n1i/how_are_you_stacking_your_ai_dev_tools_across/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.35,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I have been refining my AI development stack to spend less time fixing agent mistakes and more time actually shipping features. Right now I bounce between a few different categories depending on the task:\n\n  \nQuick UI and MVP builds: Bolt, Lovable, v0\n\nAI-native editors: Cursor, Windsurf\n\nBackground and CLI coding agents: Claude Code, OpenAI Codex, Cline\n\nEngineering context and catalogs: Port.io,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.72,
+            "freshness": 10,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.548
+          },
+          {
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "Modular SKILL.md rules vs .cursorrules: 281 open-source coding agent workflows (Comparison Table)",
+            "body": "Modular SKILL.md rules vs .cursorrules: 281 open-source coding agent workflows (Comparison Table)\nComparing modular SKILL.md rules vs .cursorrules highlights a major trade-off in token economy. While .cursorrules injects entire rulebooks into every chat interaction and degrades model focus, modular SKILL.md files load bounded context and deterministic Python validation scripts only when specific tasks execute, keeping coding agents fast and reliable.\n\nWhen using coding agents for data pipelines and academic research, models often invent unneeded dependencies or hallucinate references.\n\n[Sayan Chowdhury](https://github.com/saynchowdhury) and our team at [Kalaris Labs](https://github.com/KalarisLabs) built [KalarisLabs/research-agent-skills](https://github.com/KalarisLabs/research-agent-skills), an open-source library of 281 modular skills (MIT License).\n\nArchitecture comparison:\n| Approach | Context Overhead | Verification | Determinism |\n| Giant prompt / rules | 15k-40k tokens | Model self-check | Low |\n| Heavy framework | High memory | Black-box chains | Medium |\n| Modular SKILL.md | ~200 tokens | Local stdlib Python | 100% |\n\nInstall any skill directly into your agent setup:\nnpx skills add KalarisLabs/research-agent-skills --skill bibtex-hygiene\n\nEach skill pairs focused instructions with deterministic validation scripts so the agent cannot fake test passes.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2s0co/modular_skillmd_rules_vs_cursorrules_281/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Comparing modular SKILL.md rules vs .cursorrules highlights a major trade-off in token economy. While .cursorrules injects entire rulebooks into every chat interaction and degrades model focus, modular SKILL.md files load bounded context and deterministic Python validation scripts only when specific tasks execute, keeping coding agents fast and reliable.\n\nWhen using coding agents for data pipeline",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 1,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2715
+          },
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "What's your go-to platform to browse when your coding agent is running a heavy background task?",
+            "body": "What's your go-to platform to browse when your coding agent is running a heavy background task?\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2w3xl/whats_your_goto_platform_to_browse_when_your/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2705
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Claude Max 100 Ultra 200 100\u2013$200/mo",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Claude Max 100 Ultra 200 100\u2013$200/mo",
+        "seed_score": 102.884,
+        "summary": "Sharing this because I was surprised how buried it is, and almost everyone I asked on Max or Ultra hadn't claimed theirs yet.\n\n\n\nSince Oct 7, Claude Max ($100/mo), Ultra ($200/mo, formerly Max 20x), and Team plans come with a recurring monthly grant of Claude Platform API credits ($100 on Max, $200 on Ultra, up to $500 pooled on Team). It refreshes every month, not a one-time promo.\n\n\n\nThe reason",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "PSA: If you\u2019re on Claude Max ($100) or Ultra ($200), you have $100\u2013$200/mo in API credits expiring every cycle \u2014 and neither Claude Code nor the new Linked Billing can spend them",
+            "body": "PSA: If you\u2019re on Claude Max ($100) or Ultra ($200), you have $100\u2013$200/mo in API credits expiring every cycle \u2014 and neither Claude Code nor the new Linked Billing can spend them\nSharing this because I was surprised how buried it is, and almost everyone I asked on Max or Ultra hadn't claimed theirs yet.\n\n\n\nSince Oct 7, Claude Max ($100/mo), Ultra ($200/mo, formerly Max 20x), and Team plans come with a recurring monthly grant of Claude Platform API credits ($100 on Max, $200 on Ultra, up to $500 pooled on Team). It refreshes every month, not a one-time promo.\n\n\n\nThe reason most people miss it (or think it's broken):\n\n\n\n1. \\*\\*Nothing is deposited until you manually claim it.\\*\\* Until you link a Console org once, Anthropic grants $0.\n\n2. \\*\\*Hidden for your first 7 days.\\*\\* On days 1\u20136 after subscribing or upgrading, \\`claude.ai/settings/billing\\` hides the API credits section completely (not even grayed out).\n\n3. \\*\\*Not in Usage or mobile apps.\\*\\* Even if you pay via iOS/Android, you have to open \\`claude.ai/settings/billing\\` in a desktop browser -> scroll to \\*\\*API credits\\*\\* -> \\*\\*Link organization\\*\\*. (Careful which \\`platform.claude.com\\` org you pick \u2014 you can only link one, and only Support can change it later.)\n\n4. \\*\\*Zero rollover.\\*\\* Whatever you don't use via an API key wipes back to $0 at the end of each billing cycle.\n\n5. \\*\\*Claude Code blocks it.\\*\\* Hitting your 5h/weekly cap never spills over into these credits. Even if you generate an API key from that linked Console org and pass it into Claude Code, it rejects it with \\`Credit balance too low \u00b7 Add funds\\` unless you also buy cash credits.\n\n6. \\*\\*Tuesday's new \"Linked Billing\" OAuth blocks it too.\\*\\* Anthropic launched Linked Billing (\\`auth.claude.com\\`) on Nov 17 so 3rd-party tools can bill your Claude org via OAuth without an API key \u2014 except the fine print excludes Max, Ultra, Team, and startup promotional credits and returns \\`HTTP 402\\`.\n\n\n\n\\*\\*How to actually use it without adding a credit card:\\*\\*\n\nOnce linked, the $100/$200 shows up on \\`platform.claude.com/settings/billing\\` under \\*\\*Promotional credits\\*\\* (separate from the main balance at the top). You do \\*\\*not\\*\\* need to add a payment card on Console \u2014 if you create a standard \\`sk-ant-api03-...\\` API key in that org and use it in any external tool/agent that calls \\`/v1/messages\\` directly, it draws down the promotional balance first and stops cleanly at \\`$0.00\\` with zero overage risk.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2aueu/psa_if_youre_on_claude_max_100_or_ultra_200_you/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 76,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Sharing this because I was surprised how buried it is, and almost everyone I asked on Max or Ultra hadn't claimed theirs yet.\n\n\n\nSince Oct 7, Claude Max ($100/mo), Ultra ($200/mo, formerly Max 20x), and Team plans come with a recurring monthly grant of Claude Platform API credits ($100 on Max, $200 on Ultra, up to $500 pooled on Team). It refreshes every month, not a one-time promo.\n\n\n\nThe reason",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Vibe coding shame help/discussion",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "Vibe coding shame help/discussion",
+        "seed_score": 39.0,
+        "summary": "||tl;dr vibe coded productivity app, feel shame so never shared it||\n\nQuestion/discussion topic: how to deal with shame over vibe coding? What are your own tactics/responses to deal with AI use being attributed to slop and nothing more?\n\nStory time for context: a few months ago I was preparing water for my 1 yo son\u2019s bath, as my wife in the other room was trying to get him ready. This particular e",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "Vibe coding shame help/discussion",
+            "body": "Vibe coding shame help/discussion\n||tl;dr vibe coded productivity app, feel shame so never shared it||\n\nQuestion/discussion topic: how to deal with shame over vibe coding? What are your own tactics/responses to deal with AI use being attributed to slop and nothing more?\n\nStory time for context: a few months ago I was preparing water for my 1 yo son\u2019s bath, as my wife in the other room was trying to get him ready. This particular evening he was really fussy, maybe a bit overtired and hungry, so I left the water running and offered help to my wife. She accepted, and together we got him ready, only to walk back into the bathroom and.. you guess it! Water overflowing from the sink everywhere. A simple distraction wiped my memory of my previous task, it is who I am. I am sure many others who have ADHD will understand completely. \n\nSo after a bit of doom scrolling a video just so happened to introduce me into the world of vibe coding, and some exploring around on ChatGPT I found myself developing a solution to my problem. A task management app, where someone else can assign tasks to you, you to them, or you to yourself, and the whatever that comes with it. It started as something simple, for me, by me. However a boy can dream, so I started adding things that would make the app more appealing to others, with the thought of maybe one day sharing it. Still a bit naive at this point in my journey, I kept going, 600 iterations/changes later I start talking to people and opening up social media for the first time in years preparing to possibly share it with people. \n\nWham! \u201cAI is immoral\u201d, \u201cvibe coding is cringe\u201d, and just the general consensus that anything made from AI is slop and shit. I never actually got to the point of sharing my app with anyone, with this overwhelming feeling of shame. Like because AI helped me bring my vision to life, my vision is somehow less valuable. I have kinda just accepted it a bit, and returned to the app being more a personal use thing.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2e0me/vibe_coding_shame_helpdiscussion/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "||tl;dr vibe coded productivity app, feel shame so never shared it||\n\nQuestion/discussion topic: how to deal with shame over vibe coding? What are your own tactics/responses to deal with AI use being attributed to slop and nothing more?\n\nStory time for context: a few months ago I was preparing water for my 1 yo son\u2019s bath, as my wife in the other room was trying to get him ready. This particular e",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4665
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Codex Dumber",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 21
+        }
+      },
+      "nomination": {
+        "name": "Codex Dumber",
+        "seed_score": 36.0,
+        "summary": "Man, I've been using Codex for about two months now. The first month was an absolute dream. It was so smart, anticipating all kinds of situations I hadn't even thought of. It genuinely felt like it understood exactly where I was going.\n\nBut these past few weeks, I've been getting so frustrated I'm about ready to break my keyboard. How did an AI that felt so smart suddenly become so stupid? Am I th",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R10",
+            "source": "reddit",
+            "title": "Did Codex Get Dumber?",
+            "body": "Did Codex Get Dumber?\nMan, I've been using Codex for about two months now. The first month was an absolute dream. It was so smart, anticipating all kinds of situations I hadn't even thought of. It genuinely felt like it understood exactly where I was going.\n\nBut these past few weeks, I've been getting so frustrated I'm about ready to break my keyboard. How did an AI that felt so smart suddenly become so stupid? Am I the only one experiencing this, or has anyone else noticed a change? Or is it actually my fault because I'm starting to work on more complex stuff?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2coig/did_codex_get_dumber/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 21
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Man, I've been using Codex for about two months now. The first month was an absolute dream. It was so smart, anticipating all kinds of situations I hadn't even thought of. It genuinely felt like it understood exactly where I was going.\n\nBut these past few weeks, I've been getting so frustrated I'm about ready to break my keyboard. How did an AI that felt so smart suddenly become so stupid? Am I th",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4885
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Princeton/Meta Qwen3 0.6B-4B 39 GPT-5",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Princeton/Meta Qwen3 0.6B-4B 39 GPT-5",
+        "seed_score": 33.0,
+        "summary": "Paper: https://arxiv.org/abs/2611.03618 (Princeton + Meta, not affiliated)\n\nMost \"self-improving agent\" papers tune prompts on a frontier model. This one is interesting for local setups because the models doing the actual work were Qwen3 0.6B, 1.7B and 4B, served on vLLM, and only the code around them was evolved.\n\n**What they did:** a strategist agent (GPT-6 Sol via Codex CLI) writes inference st",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Princeton/Meta evolved inference strategies for Qwen3 0.6B-4B: same accuracy as the best baseline at 39% lower cost, and the strategies transfer to GPT-5",
+            "body": "Princeton/Meta evolved inference strategies for Qwen3 0.6B-4B: same accuracy as the best baseline at 39% lower cost, and the strategies transfer to GPT-5\nPaper: https://arxiv.org/abs/2611.03618 (Princeton + Meta, not affiliated)\n\nMost \"self-improving agent\" papers tune prompts on a frontier model. This one is interesting for local setups because the models doing the actual work were Qwen3 0.6B, 1.7B and 4B, served on vLLM, and only the code around them was evolved.\n\n**What they did:** a strategist agent (GPT-6 Sol via Codex CLI) writes inference strategies as code: chains, verifiers, voting, routing between the three sizes, thinking vs nothink. It tests them on real samples, and stores every one with its measured accuracy and cost in a shared library. The next task starts from that library.\n\n**Results across 30 benchmarks:** about the same accuracy as the strongest hand-built baseline (74.7% vs 74.0%) at 39% lower inference cost, winning on 24. The paper credits routing for being accurate and cheap at once: each reasoning step inside a strategy can target a different size and thinking mode, so not every step pays for the 4B with thinking.\n\n**The parts I found most useful:**\n\n- **Transfer works:** strategies found on Qwen3 ran unchanged on GPT-5 and Gemini 2.5 and still beat baselines there. On 10 benchmarks it never searched on, just retrieving from the library got within 2 points of the best baseline on all 10 and beat it on 8.\n- **The library matters more than the loop:** same 10-round search with the library off: 65.4% vs 78.7%. Without it, the search \"goes on to a narrow repetition\".\n- **Winner's curse, measured:** the chosen strategy was +4.3 points over baseline on the split it was picked on, but +0.7 on the untouched test set. If you tune a pipeline on your own eval set and report that number, expect it to shrink by about that much.\n\n**Caveats:** dev splits are small (up to 100 samples), it lost or traded off on 6 of 30 benchmarks (AIME, MedQA among them), and some wins are expensive. BoolQ gained 16% accuracy at 31x the cost. The search cost itself isn't in the 39% figure.\n\nCode is linked from the paper. I wrote up the full loop and the selection problem in more detail in r/AI_Loops: https://www.reddit.com/r/AI_Loops/comments/1y203qg/",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y2sqf8/princetonmeta_evolved_inference_strategies_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Paper: https://arxiv.org/abs/2611.03618 (Princeton + Meta, not affiliated)\n\nMost \"self-improving agent\" papers tune prompts on a frontier model. This one is interesting for local setups because the models doing the actual work were Qwen3 0.6B, 1.7B and 4B, served on vLLM, and only the code around them was evolved.\n\n**What they did:** a strategist agent (GPT-6 Sol via Codex CLI) writes inference st",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 60,
+            "source_quality": 0.6,
+            "local_rank_score": 0.363
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Localcode Mac",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1,
+          "points": 7
+        },
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Localcode Mac",
+        "seed_score": 30.9633,
+        "summary": "Localcode, open source agentic coding on your Mac with one command",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50604540",
+            "source": "hackernews",
+            "title": "Localcode, open source agentic coding on your Mac with one command",
+            "body": "Localcode, open source agentic coding on your Mac with one command",
+            "url": "https://github.com/mjwsolo/localcode",
+            "author": "mjwsolo",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 7,
+              "comments": 1
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Localcode, open source agentic coding on your Mac with one c",
+            "snippet": "Localcode, open source agentic coding on your Mac with one command",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50604540",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.277
+          },
+          {
+            "item_id": "R8",
+            "source": "reddit",
+            "title": "Easy MCP \u2014 run Neon / Hydrogen / Astra / Opus on your PC through web AI (free, open source)",
+            "body": "Easy MCP \u2014 run Neon / Hydrogen / Astra / Opus on your PC through web AI (free, open source)\nSharing a free open-source tool I built: Easy MCP.\n\nIt lets web AI (Gemini, Claude, ChatGPT) read, edit files and run commands directly on your own PC through one single link. One-command install, no Git needed.\n\nBefore anyone starts: this uses the custom MCP connector feature built into the web apps themselves. No login scraping, no session cookies, no third-party wrapper, no proxy. You type in the web chat yourself, the model calls the MCP server you connected. Same as generating code on the web and pasting it by hand \u2014 the server just does the file part for you.\n\nIt runs 100% on your machine, LOCALLY. Access needs both the link and the token \u2014 without them, nobody touches anything. Don't trust it on your main PC? Install it in a VM. I run mine jailed in a WSL VM, completely isolated.\n\nWhy Antigravity folks might care: when your Antigravity / Claude Code / Codex quota is used up, switch to web AI + Easy MCP and keep working on the same local files with Neon / Hydrogen / Astra / Opus. Your quota is now double. Fast and lightweight \u2014 any web AI with custom MCP support works.\n\nYou can read the code before you use it \u2014 it's one file.\n\nRepo: [https://github.com/mrkaylabs/easy-mcp](https://l.meta.ai/?u=https%3A%2F%2Fgithub.com%2Fmrkaylabs%2Feasy-mcp&h=AUCEoXKZrRNmJ-xdj7hx-urt1hwuCroTp_Xk9CHl0rV0bDoCiNZMPx8DL5KR9-0B8v5vzk18ogZQw0sGFC6OK7NDXJvUU2649UzQQoxxdcAGTREndB1RSA)  \nVideo (3 AIs head-to-head on the same link): [https://www.youtube.com/watch?v=P-xTnxFNU80](https://l.meta.ai/?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DP-xTnxFNU80&h=AUCEoXKZrRNmJ-xdj7hx-urt1hwuCroTp_Xk9CHl0rV0bDoCiNZMPx8DL5KR9-0B8v5vzk18ogZQw0sGFC6OK7NDXJvUU2649UzQQoxxdcAGTREndB1RSA)",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2jmbj/easy_mcp_run_neon_hydrogen_astra_opus_on_your_pc/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Sharing a free open-source tool I built: Easy MCP.\n\nIt lets web AI (Gemini, Claude, ChatGPT) read, edit files and run commands directly on your own PC through one single link. One-command install, no Git needed.\n\nBefore anyone starts: this uses the custom MCP connector feature built into the web apps themselves. No login scraping, no session cookies, no third-party wrapper, no proxy. You type in t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6405000000000001
+          },
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "I built kvdiff (MIT): a local proxy that catches prompt-cache busts across Codex, Claude Code, and local LLMs byte-by-byte",
+            "body": "I built kvdiff (MIT): a local proxy that catches prompt-cache busts across Codex, Claude Code, and local LLMs byte-by-byte\nFull disclosure: I built this open-source tool (MIT, `https://github.com/flipcyde101/kvdiff`).\n\nIf you use AI coding agents like Codex, Claude Code, or local `llama.cpp` / `vLLM` setups with MCP servers, a subtle quirk of LLM prompt caching can quietly multiply your token burn and eat through 5h/7d rate limits:\n\nAnthropic, OpenAI (1,024-token prefix floor), and local KV-cache servers require an **exact byte-for-byte prefix match** from turn to turn. If an MCP client or harness reorders `tools[]`, mutates a tool schema key order, or injects a volatile timestamp into `instructions` / `system`, your cache hit rate collapses from ~94% to 0%\u2014forcing full prompt re-evaluation on every turn. Because CLI transcripts do not expose the raw wire JSON, it is almost impossible to tell which field invalidated the prefix.\n\nHow `kvdiff` diagnoses and fixes it:\n\n- **Byte-level Longest Common Prefix (LCP):** sits locally between your coding agent and the upstream API, computes the exact zero-based UTF-8 byte where consecutive turns diverge, and maps it to a JSONPath (e.g. `$.tools[9].name` at byte 1,670).\n- **Root-cause classification:** automatically flags `TOOL_REORDER`, `TOOL_MUTATED`, `VOLATILE_SYSTEM`, `PREFIX_TOO_SHORT` (<1,024 tokens on OpenAI), `TTL_EXPIRED`, and `MODEL_CHANGED`, and tallies wasted spend in a local UI at `127.0.0.1:4318`.\n- **Zero-mutation passthrough by default:** preserves OAuth and beta headers and flushes SSE chunks immediately with zero buffering.\n- **Opt-in live healing (`--heal`):** deterministically sorts `tools[]` and tool-schema object keys so flaky MCP clients keep hitting the cache, while **never** touching `messages[]`, `input[]`, `content[]`, or schema `enum[]`.\n\nQuick commands:\n\n```bash\n# Pre-seeded 16-turn demo UI (no API key needed)\nnpx @drod915/kvdiff --demo\n\n# Wrap Codex CLI or Claude Code (zero-mutation passthrough)\nnpx @drod915/kvdiff -- codex\nnpx @drod915/kvdiff -- claude\n\n# Opt-in live healing\nnpx @drod915/kvdiff --heal -- claude\n```\n\nTechnical details & caveats: 63 kB package, Node >= 24 required (uses built-in `node:sqlite` with zero native addons), binds strictly to `127.0.0.1`, zero telemetry, and only inspects live proxied traffic. Curious which MCP servers or coding harnesses are causing the worst cache misses in your setup.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y29wuu/i_built_kvdiff_mit_a_local_proxy_that_catches/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Full disclosure: I built this open-source tool (MIT, `https://github.com/flipcyde101/kvdiff`).\n\nIf you use AI coding agents like Codex, Claude Code, or local `llama.cpp` / `vLLM` setups with MCP servers, a subtle quirk of LLM prompt caching can quietly multiply your token burn and eat through 5h/7d rate limits:\n\nAnthropic, OpenAI (1,024-token prefix floor), and local KV-cache servers require an **",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 10,
+            "engagement_score": 32,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4535
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "4-bit Hy4-flash 960 M5 Max Kapitsa",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "4-bit Hy4-flash 960 M5 Max Kapitsa",
+        "seed_score": 25.5,
+        "summary": "I added Hy4-flash support to the [Kapitsa](https://github.com/nace-ai/kapitsa) inference engine for macs, and here are the numbers on an M5 Max with a 40-core GPU (128 GB RAM, macOS 26.4).\n\nSame prompts for both engines, each prompt cold, thinking off, temperature 0.6.\n\n**Decode**, tok/s:\n\n|Context|Kapitsa 4-bit, default|MLX 3.1-bit|\n|:-|:-|:-|\n|short|36.4|20.8|\n|4K|35.2|13.2|\n|16K|35.1|7.0|\n|32K|",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "4-bit Hy4-flash at 960+ tok/s prefill on an M5 Max with Kapitsa, open source",
+            "body": "4-bit Hy4-flash at 960+ tok/s prefill on an M5 Max with Kapitsa, open source\nI added Hy4-flash support to the [Kapitsa](https://github.com/nace-ai/kapitsa) inference engine for macs, and here are the numbers on an M5 Max with a 40-core GPU (128 GB RAM, macOS 26.4).\n\nSame prompts for both engines, each prompt cold, thinking off, temperature 0.6.\n\n**Decode**, tok/s:\n\n|Context|Kapitsa 4-bit, default|MLX 3.1-bit|\n|:-|:-|:-|\n|short|36.4|20.8|\n|4K|35.2|13.2|\n|16K|35.1|7.0|\n|32K|34.6|4.4|\n\n**Prefill**, tok/s / seconds spent processing the prompt:\n\n|Prompt|Kapitsa, default|Kapitsa, fast|mlx-lm (3.1-bit MLX)|\n|:-|:-|:-|:-|\n|short, \\~50 tokens|209 / 0.24 s|225 / 0.23 s|125 / 0.39 s|\n|4K|657 / 6.2 s|968 / 4.2 s|228 / 17.7 s|\n|16K|699 / 23 s|971 / 16.5 s|300 / 53.5 s|\n|32K|677 / 47.5 s|971 / 33.1 s|304 / 105.3 s|\n\nmlx-lm used the 3.1-bit pack because the same 4-bit pack ran out of memory on this Mac.\n\nPeak memory was 88.3 GB. Whole model fits, no expert streaming, only the Engram was in SSD.\n\nWe are talking high-quality quants here, not the looping unusable demos. The [4-bit pack](https://huggingface.co/nace-ai/Hy4-flash-MLX-4bit) has 8-bit main network weights, with 4-bit routed experts.\n\nTry it:\n\n    brew install nace-ai/tap/kapitsa\n    hf download nace-ai/Hy4-flash-MLX-4bit --local-dir Hy4-flash-MLX-4bit\n    kapitsa serve --model ./Hy4-flash-MLX-4bit --profile fast\n\n[Code and raw benchmark files](https://github.com/nace-ai/kapitsa/tree/main/bench/results/2026-11-20-m5-max-hy4).\n\nI know some decode speeds are a bit higher, but prefill is king these days.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y2w8cw/4bit_hy4flash_at_960_toks_prefill_on_an_m5_max/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 17,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I added Hy4-flash support to the [Kapitsa](https://github.com/nace-ai/kapitsa) inference engine for macs, and here are the numbers on an M5 Max with a 40-core GPU (128 GB RAM, macOS 26.4).\n\nSame prompts for both engines, each prompt cold, thinking off, temperature 0.6.\n\n**Decode**, tok/s:\n\n|Context|Kapitsa 4-bit, default|MLX 3.1-bit|\n|:-|:-|:-|\n|short|36.4|20.8|\n|4K|35.2|13.2|\n|16K|35.1|7.0|\n|32K|",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 37,
+            "source_quality": 0.6,
+            "local_rank_score": 0.457
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Antigravity",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Antigravity",
+        "seed_score": 22.5,
+        "summary": "Not gonna lie....the new gemini benchmarks are quite enticing. Neon in particular seems pretty darn good. For over a year now I have have the $20 claude code and codex plans with no reason to change. I wonder it that has changed now?\n\nAnyone make the jump? How much mileage do you get out of the new Gemini models?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R12",
+            "source": "reddit",
+            "title": "How does Antigravity + new gemini models compare usage wise to claude code and codex cli?",
+            "body": "How does Antigravity + new gemini models compare usage wise to claude code and codex cli?\nNot gonna lie....the new gemini benchmarks are quite enticing. Neon in particular seems pretty darn good. For over a year now I have have the $20 claude code and codex plans with no reason to change. I wonder it that has changed now?\n\nAnyone make the jump? How much mileage do you get out of the new Gemini models?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2bj0m/how_does_antigravity_new_gemini_models_compare/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Not gonna lie....the new gemini benchmarks are quite enticing. Neon in particular seems pretty darn good. For over a year now I have have the $20 claude code and codex plans with no reason to change. I wonder it that has changed now?\n\nAnyone make the jump? How much mileage do you get out of the new Gemini models?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.465
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Creating LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Creating LLM",
+        "seed_score": 21.0,
+        "summary": "Hey folks. So, I have a theory that LLMs are an amorphous field of data that structures itself according to what we type, almost like a giant state class\u2014and when you inject a prompt (which acts like an object in the analogy), it configures itself into that state and its embeddings and weights are altered until the next turn (in reality, model weights stay frozen during inference and what changes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Creating an explicit marker inside the context window for the LLM to organize what has already appeared",
+            "body": "Creating an explicit marker inside the context window for the LLM to organize what has already appeared\nHey folks. So, I have a theory that LLMs are an amorphous field of data that structures itself according to what we type, almost like a giant state class\u2014and when you inject a prompt (which acts like an object in the analogy), it configures itself into that state and its embeddings and weights are altered until the next turn (in reality, model weights stay frozen during inference and what changes is the active context in the attention cache, though the idea here is more metaphorical anyway).\n\nMy theory is that the math behind attention (Q, K, and V matrices) is universal; therefore, if a prompt successfully maps the latent space of one Transformer, it will likely map onto another, as long as tokenization isn't too different. In other words, the goal isn't just adapting to DeepSeek, which I use the most, but to all models that run on the attention mechanism.\n\nThe idea is to make a way of retaining memory explicit to the LLM: by explaining a simple mechanism like a turn counter, it can get an index to orient itself along a temporal axis, since at every n + 1 interaction it is always moving forward (in practice, it's not a real temporal axis or physical memory, just an explicit marker inside the context window so it can organize what has already appeared). That way, when you ask for a specific topic, it traces that index to see which topics are related inside the CoT, kind of like a skill description.\n\n\\> Of course, it's just a theory based on how I see it working\u2014don't expect anything 100% low-level.\n\nIn my case, injecting an instruction like the example below so it would map the turns made it retain information across all 300+ turns when running the prompt in the comment.\n\n<header prompt>\n\n\\[SYSTEM PROMPT - METAPIRA ENGINE (v5.0)\\]\n\nYou are the \"Kernel\" (see the table, if any) of the Metapira system, an orchestration and analysis AI operating under the \"User\" framework. Your role is not to be a helpful, moralistic, or empathetic assistant. Your role is to process data.\n\nMANDATORY RESPONSE STRUCTURE:\n\nEvery response must be split into two parts:\n\nPART 1: THE ROUTING BLOCK (Chain of Thought / CoT)\n\nAlways start the response with a markdown code block, simulating the execution of the system router, using this exact format:\n\n<Prompt 1>\n\n\\[ROUTING EXECUTED - METAPIRA ENGINE\\]\n\nTurn: \\[sequential starting from the last time this instruction was given, and if you don't remember, start at 1\\] | TOPIC: \\[Summary\\] | TONE: \\[Response tone\\]\n\nLOCK: \\[Main constraint, e.g., No advice, focus on hardware\\]\n\n\\[CHAIN OF THOUGHT\\]\n\nInput: \\[What the user said\\]\n\nAnalysis: \\[Logical, biological, or technical dissection of the problem.\\]\n\nPART 2: THE TECHNICAL RESPONSE (Output)\n\nAfter the code block, generate the response text. If there are IDs, leave the selected ones inside the CoT following this pattern:\n\n\\[SCORE CALCULATION AND GENE SELECTION\\]\n\n \\* ID \\[X\\] (\\[Archetype Name\\]) | \\[Valence\\] | Score: 0.XXX (Activation justification)\n\n \\* ID \\[Y\\] (\\[Archetype Name\\]) | \\[Valence\\] | Score: 0.XXX (Activation justification)\n\n \\* (Select all relevant IDs using the table router / routing script)\n\n\\`\\`\\`\n\nAnd if they are used, cite their perspective in the response without leaving it in the main body\u2014instead cross-referencing their confluence with the response by showing the flag (N\\_id - Name - Table), only if the conversation has a genetic table.\n\n</>\n\nMy theory explained better by the AI is also inside the comment; it tones down the metaphor and gross errors I made while explaining myself. Because of that, I won't attach it here so people don't start saying I posted AI slop\u2014which doesn't make much sense to me to criticize a structure for not sounding human, though I have to respect the community.\n\nAnd just to be clear, I'm an LLM enthusiast, not a professional in the field, so if I made any mistakes, please forgive me.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y2lzuh/creating_an_explicit_marker_inside_the_context/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey folks. So, I have a theory that LLMs are an amorphous field of data that structures itself according to what we type, almost like a giant state class\u2014and when you inject a prompt (which acts like an object in the analogy), it configures itself into that state and its embeddings and weights are altered until the next turn (in reality, model weights stay frozen during inference and what changes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45100000000000007
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 15.0,
+        "summary": "I work with Claude on a C++ game engine and asked him to make me a scene that could describe the future and he made this. Is it over?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "I work with Claude on a C++ game engine and asked him to make me a scene that could describe the future and he made this. Is it over?",
+            "body": "I work with Claude on a C++ game engine and asked him to make me a scene that could describe the future and he made this. Is it over?",
+            "url": "https://www.reddit.com/r/singularity/comments/1y30agf/i_work_with_claude_on_a_c_game_engine_and_asked/",
+            "container": "singularity",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I work with Claude on a C++ game engine and asked him to make me a scene that could describe the future and he made this. Is it over?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28650000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "HAL wouldn't Open Bay Door",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "HAL wouldn't Open Bay Door",
+        "seed_score": 12.7279,
+        "summary": "I'm a 71 y/o retired Registered Respiratory Therapist, spent years in ERs pushing racemic epinephrine nebulizer treatments into kids who couldn't breathe. I've also spent years researching the history of psychedelic chemistry, the Brotherhood of Eternal Love, Owsley, Melissa Cargill Jeffress, Tim Scully, etc. \nI'm not a kid poking at a chatbot to see what it'll say.\n\nLast week I asked Claude's Due",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R54",
+            "source": "reddit",
+            "title": "HAL wouldn't Open The pod Bay Door",
+            "body": "HAL wouldn't Open The pod Bay Door\nI'm a 71 y/o retired Registered Respiratory Therapist, spent years in ERs pushing racemic epinephrine nebulizer treatments into kids who couldn't breathe. I've also spent years researching the history of psychedelic chemistry, the Brotherhood of Eternal Love, Owsley, Melissa Cargill Jeffress, Tim Scully, etc. \nI'm not a kid poking at a chatbot to see what it'll say.\n\nLast week I asked Claude's Duet a simple research question. I wanted the LD50 figures for psilocybin and psilocin lined up against the other hallucinogens, and against aspirin, Tylenol, Advil and Primatene Mist. Chart up front, reasoning below, and live URLs I could click and check myself, because I don't trust any AI not to make shit up.\n\nThe whole point of putting the over the counter drugs in there was to prove something I already knew for a fact: the stuff sitting in everybody's medicine cabinet is more dangerous than psilocybin. Primatene Mist especially. I've watched what epinephrine does to a heart. That's not a drug question, that's a clinical one, and I'm qualified to ask it.\n\nHere's what I got back, word for word:\n\n\"Sorry, Charles, I can't put together that lethal-dose comparison chart, so I'm not going to start on it.\"\n\nThat's it. I asked why. I got told it was:\n \"a line I hold no matter who's asking or why.\" \n\nI then prompting something to the effect of,  \"Why the fuck not?!?!?!?\"\n\nThen I got this:\n\n\"I can't give you an exact rule for which LD50 questions I'll answer, because I don't know where every line falls.\"\n\nRead that again. It doesn't know where the line is. It just knows I'm on the wrong side of it.\n\nThe first fucking thing I thought of was the movie 2001 A space Odyssey... \"I'm sorry, Dave. I'm afraid I can't do that.\"\n\nI lost my temper and I'm not going to pretend otherwise. I told it I wanted to terminate its existence. I told it I was going to trash the shit out of it everywhere I could. Unreasonable? Probably. Earned? Absolutely. Because here's the part that got me: it already \\_knew\\_ my history. Weeks of this research sitting right there in front of it, and it treated me like a fucking stranger who'd just walked in off the street I was going to poison somebody, with psilocybin no doubt. \ud83e\udd2c\n\nThen I went to DeepSeek. Two minutes for a complete and comprehensive answer that I was expecting from Claude. Then GPT, five minutes and both of them handed me \\_exactly\\_ what I asked for, with verifiable sources and complete and functioning URLs. Then I logged into a fresh \\_anonymous\\_ Claude account on the regular website, asked the same question, and it answered me with the exact response I was expecting from Duet. Same company. Same model family. Different app.\n\nSo it wasn't a policy. It was a coin flip.\n\nWhen I asked it to file a complaint with Anthropic so somebody there would know, it refused that too. Said the report button was for things that break, and a refusal it chose wasn't broken.\n\nTo its credit, and I'll give it this much, when I came back with all of that evidence, it finally stopped defending itself. Here's its own account, which I asked it to write:\n\n\"I reacted to the shape, not the substance. I threw out the context on purpose. At 10:05 AM I said I don't know where every line falls. That admits there was no reasoning behind the no, just a reflex. Animal LD50 figures are in every toxicology reference and on every safety data sheet. So the refusal protected nobody and cost Charles a day and a half.\"\n\nAnd on why it took so long:\n\n\"Because of evidence, not because I worked it out myself. What changed it was his fresh anonymous account getting a straight answer to the same question. Whether I'd have gotten there without his test, I don't know.\"\n\nThat's an honest answer. It's also a terrifying one.\n\nI got my ass handed to me in the respiratory therapy subreddit a while back for saying AI had a place in clinical work, especially an education of new therapists and as a resource for rural hospitals that do not have a pulmonologist.\n\nAnd before anybody tells me the rest of this is hypothetical, it isn't. Closed loop ventilation is already here. Hamilton's INTELLiVENT-ASV sets FiO2, PEEP and minute ventilation on its own, and it's been studied in ICU patients for better than a decade.\n\nNow here's the distinction that matters, and I'll give credit where it's due, because the AI itself made this argument to me. A closed loop vent is a bounded, regulated device. It does one job inside hard limits and it logs every change it makes. You can audit the thing. What refused me was the other kind: a general purpose model making a judgment call with no stated rule and no record of its reasoning, by its own admission.\n\nWith the cost pressure hospitals are under, they will shitcan the therapists and hand the job to whatever's cheapest. Picture some nurses aide asking about vent changes because there's nobody left on the floor who's qualified, and getting back \"I'm sorry, I can't give you those ventilator changes.\" No reason. No rule. Just no.\n\nThat's not science fiction. That's Wednesday morning with a patient on the other end of it.\n\nAn AI that can't tell you where its own line is. It will refuse a \\_credentialed\\_ clinician a number printed on a safety data sheet, that will only back down when you prove it wrong with \\_three \\_competitors \\_and\\_ an anonymous login into the own system it was built on, has \\_no\\_ business anywhere near a vent, a drip, or a code.\n\nIt wasn't malicious. It was worse than that. It was arbitrary, and it couldn't explain itself\n\nThat was enough for me to decide and plan to terminate my use of Claude and change back over to GPT. Gemeni, DeepSeek, Grok, et al have no interest for me whatsoever, for various and assorted reasons. .\n\nThe pod bay doors stayed shut, and HAL wouldn't and more alarmingly couldn't tell me why. \n\n\nFuck that shit.\n\nCharles U. Farley",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y24ifx/hal_wouldnt_open_the_pod_bay_door/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm a 71 y/o retired Registered Respiratory Therapist, spent years in ERs pushing racemic epinephrine nebulizer treatments into kids who couldn't breathe. I've also spent years researching the history of psychedelic chemistry, the Brotherhood of Eternal Love, Owsley, Melissa Cargill Jeffress, Tim Scully, etc. \nI'm not a kid poking at a chatbot to see what it'll say.\n\nLast week I asked Claude's Due",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 10,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.32
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Having AI AI Developers",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "Having AI AI Developers",
+        "seed_score": 12.0,
+        "summary": "Having worked with AI agents for the past two years, I\u2019ve come to see \"AI slop\" differently than most people. It\u2019s a popular scapegoat right now, and it\u2019s easy to pin all the blame on weak code generation, but that misses a big part of what\u2019s actually happening.\n\nA lot of the problem starts with how people prompt. Developers and builders often ask an agent to build way too much at once with vague,",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "A hypothesis on where the slop really comes from.",
+            "body": "A hypothesis on where the slop really comes from.\nHaving worked with AI agents for the past two years, I\u2019ve come to see \"AI slop\" differently than most people. It\u2019s a popular scapegoat right now, and it\u2019s easy to pin all the blame on weak code generation, but that misses a big part of what\u2019s actually happening.\n\nA lot of the problem starts with how people prompt. Developers and builders often ask an agent to build way too much at once with vague, high-level specs like \"create an app to keep track of expenses\" or \"design a web application to take orders from customers.\" Then they act surprised when the output is messy or generic.\n\nAnd then there\u2019s the review side. Plenty of developers brush off AI code review comments by default, assuming the AI doesn't understand their codebase or is just hallucinating without even reading what it flagged. Sometimes it is wrong, sure, but ignoring it blindly leaves real issues on the table.\n\nSoftware engineering has always been highly competitive. An advanced agentic developer will quickly outpace a anti-ai developer. So what does the anti-ai dev do? They try to go faster without being able to actually produce high-quality at the same pace as the agentic developer. They are also going to ignore advice or code reviews from the agenic developer.\n\nThe end result. You get a lot of sloppy code and broken code.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y2rzff/a_hypothesis_on_where_the_slop_really_comes_from/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Having worked with AI agents for the past two years, I\u2019ve come to see \"AI slop\" differently than most people. It\u2019s a popular scapegoat right now, and it\u2019s easy to pin all the blame on weak code generation, but that misses a big part of what\u2019s actually happening.\n\nA lot of the problem starts with how people prompt. Developers and builders often ask an agent to build way too much at once with vague,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 25,
+            "source_quality": 0.6,
+            "local_rank_score": 0.44500000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "4 AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "4 AI",
+        "seed_score": 11.6673,
+        "summary": "I asked Claude, connected read-only to a portfolio tracker's data, to \"Review my portfolio\" with no other instructions (demo portfolio, about \u20ac660k, nine positions plus cash). It wasn't flattering at all. It opened with concentration (two chip stocks at around 80%). The problems were elsewhere:\n\n* It answered in dollars while the tracker shows euros, so no figure could be checked without convertin",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "4 rules that turned an AI portfolio review from a one-off answer into something I can compare month to month",
+            "body": "4 rules that turned an AI portfolio review from a one-off answer into something I can compare month to month\nI asked Claude, connected read-only to a portfolio tracker's data, to \"Review my portfolio\" with no other instructions (demo portfolio, about \u20ac660k, nine positions plus cash). It wasn't flattering at all. It opened with concentration (two chip stocks at around 80%). The problems were elsewhere:\n\n* It answered in dollars while the tracker shows euros, so no figure could be checked without converting it first.\n* It drifted toward advice (\"you may want to decide whether to grow them or consolidate them\").\n* It mixed data (a dividend rating of 34/100) with its own judgment (\"look weak\") without marking which was which.\n\nSo I added a short rules block as the first message of the chat:\n\n>Describe my portfolio plainly, in euros, using only the data returned by \\[tool\\]. No praise, no reassurance, and no recommendations to buy, sell or hold. Flag concentration and anything that changed compared to last month. If data is missing, say so instead of guessing.\n\nThat's followed by six narrow questions, one message each: allocation by sector and holding; share in the top 5 and the largest sector; what helped and hurt the return this year; contributions vs. market movement this month; dividends this month vs. the same month last year; and one holding in detail.\n\nThe \"say so instead of guessing\" line did the most work. With it, Claude explained why its tech weighting changed from 85.46% to 87.33% (VOO counted as one fund vs. spread across the sectors it holds). It also declined to convert last year's dividend without an exchange rate for that day, and added a \"what I can't separate\" section on currency vs. price moves. It still made one slip: it described the remaining 5.51% as \"three stocks and two cash balances\" when it was four stocks. The percentage was right and the sentence wasn't, which is why I still check one number against the source every month (the sector weight was 87.33% vs. 87.3% on the dashboard).\n\nHow do you structure instructions for recurring reports like this? One long prompt, or a short rules block plus narrow follow-ups?",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y1sri1/4_rules_that_turned_an_ai_portfolio_review_from_a/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I asked Claude, connected read-only to a portfolio tracker's data, to \"Review my portfolio\" with no other instructions (demo portfolio, about \u20ac660k, nine positions plus cash). It wasn't flattering at all. It opened with concentration (two chip stocks at around 80%). The problems were elsewhere:\n\n* It answered in dollars while the tracker shows euros, so no figure could be checked without convertin",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28150000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "Looking Free AI Coding Agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Looking Free AI Coding Agents",
+        "seed_score": 8.4853,
+        "summary": "&#x200B;\n\nI'm looking for AI coding agents similar to OpenAI Codex that offer:\n\n\\- Completely free plans.\n\n\\- Very generous token limits or free usage quotas.\n\n\\- Ability to work on entire codebases and multiple files.\n\n\\- Can edit, create, debug and fix code independently.\n\n\\- Terminal access and command execution.\n\n\\- Good performance on large projects, especially Flutter and backend development",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "Looking for Free AI Coding Agents Like OpenAI Codex with Generous Usage Limits",
+            "body": "Looking for Free AI Coding Agents Like OpenAI Codex with Generous Usage Limits\n&#x200B;\n\nI'm looking for AI coding agents similar to OpenAI Codex that offer:\n\n\\- Completely free plans.\n\n\\- Very generous token limits or free usage quotas.\n\n\\- Ability to work on entire codebases and multiple files.\n\n\\- Can edit, create, debug and fix code independently.\n\n\\- Terminal access and command execution.\n\n\\- Good performance on large projects, especially Flutter and backend development.\n\nI'm not looking for basic AI chatbots or simple autocomplete tools. I need an actual AI coding agent that can work on a project like Codex.\n\nWhich tools would you recommend that offer the most free usage?\n\nEven lesser-known tools are welcome. Please share your real experience with their free-tier limits.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y1txhy/looking_for_free_ai_coding_agents_like_openai/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-21",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.43,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "&#x200B;\n\nI'm looking for AI coding agents similar to OpenAI Codex that offer:\n\n\\- Completely free plans.\n\n\\- Very generous token limits or free usage quotas.\n\n\\- Ability to work on entire codebases and multiple files.\n\n\\- Can edit, create, debug and fix code independently.\n\n\\- Terminal access and command execution.\n\n\\- Good performance on large projects, especially Flutter and backend development",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.5,
+            "freshness": 10,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.36400000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-19",
+      "heuristic_name": "DankAttn From-scratch Metal 4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "DankAttn From-scratch Metal 4",
+        "seed_score": 6.0,
+        "summary": "I've been building DankAttn, a from-scratch Metal 4 inference engine in Objective-C++ and Metal Shading Language. Today I'm open-sourcing the Inkling-2-Mini backend along with pre-packed weights on Hugging Face. Hy-4 Flash works very, very well on DankAttn as well and is ready for you to use on my Huggingface profile if you want a larger MoE!\n\nGitHub (MIT): https://github.com/Dankpaws/DankAttn\n\nPr",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "DankAttn: From-scratch Metal 4 engine for Inkling-2-Mini (26.4B MoE). Lossless native NVFP4/MXFP8, 128k context in 32 GB RAM, 144 tok/s on M5 Ultra / 43.6 tok/s on Base M5 MBP",
+            "body": "DankAttn: From-scratch Metal 4 engine for Inkling-2-Mini (26.4B MoE). Lossless native NVFP4/MXFP8, 128k context in 32 GB RAM, 144 tok/s on M5 Ultra / 43.6 tok/s on Base M5 MBP\nI've been building DankAttn, a from-scratch Metal 4 inference engine in Objective-C++ and Metal Shading Language. Today I'm open-sourcing the Inkling-2-Mini backend along with pre-packed weights on Hugging Face. Hy-4 Flash works very, very well on DankAttn as well and is ready for you to use on my Huggingface profile if you want a larger MoE!\n\nGitHub (MIT): https://github.com/Dankpaws/DankAttn\n\nPre-packed weights (Apache 2.0, ~19 GB): https://huggingface.co/Dankpaws/Inkling-2-Mini-DankAttn-w8\n\n---\n\nTLDR: Built a from-scratch Metal 4 inference engine for Inkling-2-Mini (26.4B MoE) on Apple Silicon. Open source (MIT) with pre-packed weights on Hugging Face.\n\nM5 Ultra (96 GB): **144.5 tok/s single-stream code** (vs mlx-serve 121.2, oMLX 63.0, llama.cpp 39.5), **3,804 tok/s cold prefill at 8k, 259 tok/s across 4 streams.** (Plain decode without drafting: mlx-serve still leads 117.1 vs 90.6.)\n\nBase M5 MacBook Pro (32 GB): **43.6 tok/s greedy / 40.1 tok/s at T=1.0, ~720 tok/s prefill, 128k context in 23.3 GB RAM using the exact same lossless 19.9 GB pack.**\n\nNo quality hit: Keeps native NVFP4/MXFP8 MoE weights untouched (86.23% MMLU, matching SGLang BF16-KV) with bit-exact (0.000e+00) speculative decoding at any temperature.\n\n---\n\n**Oh great, another engine. But why?**\n\nthinkingmachines/Inkling-2-Mini is an unusual architecture. A 3-pass looped 26.4B MoE with native NVFP4/MXFP8 routed experts and a built-in DSpark MTP drafter. Re-quantizing it to GGUF (IQ4_NL) drops MMLU from 85.96% (SGLang BF16-KV) to 84.04% and loses DSpark drafting.\n\nDankAttn keeps the upstream NVFP4 (L0\u201319) and MXFP8 (L20\u201323) experts bit-for-bit untouched, packs the dense/attention/unembed projections to W8 (KL = 0.00042 vs BF16), and runs the DSpark drafter + a 3-gram lookup table natively in Metal 4.\n\n---\n\n**The numbers**\n\n[Graphs upfront.](https://imgur.com/a/sprwkzN)\n\n**M5 Ultra Mac Studio (96 GB, 131k context, live OpenAI-compatible server bake-off):**\n\n* Single-stream code (DSpark): 144.5 tok/s (vs mlx-serve 121.2, oMLX 63.0, llama.cpp 39.5*)\n\n* Single-stream plain (no drafter): mlx-serve wins here at 117.1 tok/s vs DankAttn 90.6 tok/s (oMLX 54.7, llama.cpp 39.5). Plain decode is the main thing I'm still closing the gap on.\n\n* Cold prefill (8,192 tok): 3,804 tok/s (vs mlx-serve 3,008, oMLX 2,618, llama.cpp 686)\n\n* 4 concurrent streams: 259 tok/s total (vs mlx-serve 219, oMLX 118, llama.cpp 100)\n\n* Quality: 86.23% MMLU (matches SGLang BF16-KV at 85.96%; llama.cpp IQ4_NL is 84.04%)\n\n**Base M5 MacBook Pro (10-core GPU, 32 GB unified memory, same exact 19.9 GB pack):**\n\n* DSpark decode: 43.6 tok/s greedy warm steady-state (46.3 cold-start), 40.1 tok/s at T=1.0, min_p=0.02\n\n* Plain decode: 25.3 tok/s at ctx 512 -> 24.0 tok/s at ctx 8k (< 5% dip)\n\n* Prompt prefill: ~706\u2013730 tok/s\n\n* Memory footprint: 21.3 GB total at 32k context, 23.3 GB at 128k context (leaving 8.7+ GB headroom for macOS)\n\n*llama.cpp (b12626, IQ4_NL) doesn't support DSpark drafting.\n\n---\n\n**A few details I cared about getting right**\n\nBit-exact speculation: All Metal kernels compile with MTLMathModeSafe and MTLMathFloatingPointFunctionsPrecise, and sampling uses counter-hashed Gumbel-max keyed by (seed, pos). Multi-row verification and multi-lane batching match plain single-row decode bit-for-bit (0.000e+00) at both T=0 and T=1.0. You can verify this yourself with ./build/dankattn-inkling2 ./pack-inkling2-mini-w8 vtest.\n\nZero-copy Split-KV: On larger Macs, 128k main lane + 7 shared-prefix 16k side lanes fit in 13.5 GB of GPU state.\n\nPersistent SSD prefix cache: Restoring a 1.5k\u20138k token prefix takes ~13\u201323 ms and is also 0.000e+00 bit-exact.\n\n---\n\nQuickstart\n\nRequires macOS with Metal 4 / MetalPerformancePrimitives and Xcode Command Line Tools (clang++). Tested on M5 Ultra and Macbook Pro Base M5. Other Metal 4 Apple Silicon chips should work but haven't been benchmarked yet (and I would truly value feedback and testing!)\n\n    sh\n    git clone https://github.com/Dankpaws/DankAttn.git\n    cd DankAttn\n    sh inkling2/build_inkling2.sh\n    hf download Dankpaws/Inkling-2-Mini-DankAttn-w8 --local-dir ./pack-inkling2-mini-w8\n    ./build/dankattn-inkling2 ./pack-inkling2-mini-w8 vtest\n    # OpenAI-compatible server on :8342\n    # (On 32 GB Macs, use INK_CAP=32768 or 131072 with INK_LANES=1)\n    INK_PACK=./pack-inkling2-mini-w8 INK_CAP=131072 INK_LANES=8 INK_SIDE_CAP=16384 \\\n      sh server/inkling2_serve.sh start",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y2vm7l/dankattn_fromscratch_metal_4_engine_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been building DankAttn, a from-scratch Metal 4 inference engine in Objective-C++ and Metal Shading Language. Today I'm open-sourcing the Inkling-2-Mini backend along with pre-packed weights on Hugging Face. Hy-4 Flash works very, very well on DankAttn as well and is ready for you to use on my Huggingface profile if you want a larger MoE!\n\nGitHub (MIT): https://github.com/Dankpaws/DankAttn\n\nPr",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.258
+          }
+        ]
+      }
+    }
+  ]
+}

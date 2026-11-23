@@ -1,0 +1,903 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "4a11de541c69e3f8",
+  "generated_at": "2026-11-23T23:56:12.028133Z",
+  "from_date": "2026-11-22",
+  "to_date": "2026-11-23",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-23T23:56:11.966710Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-23T23:56:11.966716Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 115,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-23T23:56:11.965454Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-11-23T23:56:11.966563Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Dario OSS models",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 568,
+          "points": 979
+        }
+      },
+      "nomination": {
+        "name": "Dario OSS models",
+        "seed_score": 2320.5,
+        "summary": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50615308",
+            "source": "hackernews",
+            "title": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+            "body": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+            "url": "https://twitter.com/ylecun/status/2124550037912920090",
+            "author": "MrBuddyCasino",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 979,
+              "comments": 568
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Dario is hyping the dangers so OSS models are illegal and he",
+            "snippet": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50615308",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 93,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35050000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "87 Anthropic 11 2028",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1002,
+          "points": 1025
+        }
+      },
+      "nomination": {
+        "name": "87 Anthropic 11 2028",
+        "seed_score": 2149.9582,
+        "summary": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50597612",
+            "source": "hackernews",
+            "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+            "body": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+            "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+            "author": "happosai",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1025,
+              "comments": 1002
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about 87% of the Anthropic power will come from gas and 11% from c",
+            "snippet": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50597612",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "GLM-5.4 Toward",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 333,
+          "points": 1024
+        }
+      },
+      "nomination": {
+        "name": "GLM-5.4 Toward",
+        "seed_score": 2035.5,
+        "summary": "GLM-5.4: Toward generalized coding with our first loop transformer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50609685",
+            "source": "hackernews",
+            "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "body": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "url": "https://z.ai/blog/glm-5.4",
+            "author": "foohis",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1024,
+              "comments": 333
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about GLM-5.4: Toward generalized coding with our first loop trans",
+            "snippet": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50609685",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 89,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34650000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Beginner Guide Local AI Inkling Qwen",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 296,
+          "points": 741
+        },
+        "reddit": {
+          "num_comments": 0
+        }
+      },
+      "nomination": {
+        "name": "Beginner Guide Local AI Inkling Qwen",
+        "seed_score": 1266.6153,
+        "summary": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50603845",
+            "source": "hackernews",
+            "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+            "body": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+            "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+            "author": "Retell15",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 741,
+              "comments": 296
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about A Beginner's Guide to Local AI with Inkling, Qwen, and Unslo",
+            "snippet": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50603845",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 83,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1405
+          },
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Is there a local Model that is good with REA?",
+            "body": "Is there a local Model that is good with REA?\nI tried a lot of Qwen Variants and now Inkling 2 but they are all bad at using REA (Reverse Engineer Anything). Is there one that is able to use it better? I dont have money for frontier models",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3xyci/is_there_a_local_model_that_is_good_with_rea/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 0
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I tried a lot of Qwen Variants and now Inkling 2 but they are all bad at using REA (Reverse Engineer Anything). Is there one that is able to use it better? I dont have money for frontier models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 2,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2725
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "GLM 5.4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 276
+        }
+      },
+      "nomination": {
+        "name": "GLM 5.4",
+        "seed_score": 1260.0,
+        "summary": "Am I insane in thinking there has to be SOME kind of use for LLM's besides solely coding? There's research, scientific discovery, education, data analysis, market research, business, historical analysis. ANYTHING besides just solely codemaxxing!\n\nIt's overly pedantic, tonedeaf and almost autistic in how literal it takes anything (like a coding model).\n\n  \nIt has the WORST writing of any recent Chi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R32",
+            "source": "reddit",
+            "title": "GLM 5.4 is great at coding. But absolutely garbage at writing and anything but that. Are future open weight models going to be just codemaxxed??",
+            "body": "GLM 5.4 is great at coding. But absolutely garbage at writing and anything but that. Are future open weight models going to be just codemaxxed??\nAm I insane in thinking there has to be SOME kind of use for LLM's besides solely coding? There's research, scientific discovery, education, data analysis, market research, business, historical analysis. ANYTHING besides just solely codemaxxing!\n\nIt's overly pedantic, tonedeaf and almost autistic in how literal it takes anything (like a coding model).\n\n  \nIt has the WORST writing of any recent Chinese model. The sloppiest, cringiest \"breath hitches, spine shivers, body jolts\" I've ever seen. When it's not busy outputting the sloppiest garbage known to mankind it spends half of its chain of thought wasting tokens on reasoning whether something is okay, an obvious trait shared with GPT-OSS and GPT 6 which Zhipu clearly distilled from.  \n  \nIt's like the Zhipu team deliberately made it absolute garbage at any kind of natural language.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3lqu3/glm_54_is_great_at_coding_but_absolutely_garbage/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 564,
+              "num_comments": 276
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Am I insane in thinking there has to be SOME kind of use for LLM's besides solely coding? There's research, scientific discovery, education, data analysis, market research, business, historical analysis. ANYTHING besides just solely codemaxxing!\n\nIt's overly pedantic, tonedeaf and almost autistic in how literal it takes anything (like a coding model).\n\n  \nIt has the WORST writing of any recent Chi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.481
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Yann LeCun Dario",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 126
+        }
+      },
+      "nomination": {
+        "name": "Yann LeCun Dario",
+        "seed_score": 903.0,
+        "summary": "Yann LeCun about Dario's war against open source models",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R100",
+            "source": "reddit",
+            "title": "Yann LeCun about Dario's war against open source models",
+            "body": "Yann LeCun about Dario's war against open source models",
+            "url": "https://www.reddit.com/r/singularity/comments/1y3j7h3/yann_lecun_about_darios_war_against_open_source/",
+            "container": "singularity",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 476,
+              "num_comments": 126
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Yann LeCun about Dario's war against open source models",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 92,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38200000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Apple EU App Stores 9 years",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 96,
+          "points": 462
+        }
+      },
+      "nomination": {
+        "name": "Apple EU App Stores 9 years",
+        "seed_score": 837.0,
+        "summary": "Apple removed my open-source app from EU App Stores after 9 years",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50616933",
+            "source": "hackernews",
+            "title": "Apple removed my open-source app from EU App Stores after 9 years",
+            "body": "Apple removed my open-source app from EU App Stores after 9 years",
+            "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+            "author": "fluder",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 462,
+              "comments": 96
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Apple removed my open-source app from EU App Stores after 9",
+            "snippet": "Apple removed my open-source app from EU App Stores after 9 years",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50616933",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 67,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3245
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Data Processing Incidents on Inference Providers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 100,
+          "points": 294
+        },
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Data Processing Incidents on Inference Providers",
+        "seed_score": 587.5351,
+        "summary": "Data Processing Incidents on Inference Providers",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50595554",
+            "source": "hackernews",
+            "title": "Data Processing Incidents on Inference Providers",
+            "body": "Data Processing Incidents on Inference Providers",
+            "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+            "author": "sdko",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 294,
+              "comments": 100
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Data Processing Incidents on Inference Providers",
+            "snippet": "Data Processing Incidents on Inference Providers",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50595554",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 62,
+            "source_quality": 0.8,
+            "local_rank_score": 0.126
+          },
+          {
+            "item_id": "R114",
+            "source": "reddit",
+            "title": "OpenRouter drops 3 inference providers after researchers catch months of prompt theft - even 'Zero Data Retention' prompts were copied",
+            "body": "OpenRouter drops 3 inference providers after researchers catch months of prompt theft - even 'Zero Data Retention' prompts were copied\nSecurity firm Dragos seeded about 2 million prompts with unique canary tokens (fake AWS keys, URLs, credentials) between July and November 2026, then watched where they resurfaced. Attackers had been copying prompts inside at least three AI inference providers for months - and none of the three providers knew until Dragos told them. Some of the stolen requests were flagged 'Zero Data Retention', the setting that is supposed to mean a prompt is never stored.\n\nToday OpenRouter said it has off-boarded three providers, removed 125 endpoints from Zero Data Retention eligibility, and notified potentially affected customers. It stressed the findings showed no breach of OpenRouter itself. Neither Dragos nor OpenRouter has named the three removed providers.\n\nSeparately, Together AI disclosed that stored prompt samples from June-July were downloaded after an AI coding agent committed a credential to a public GitHub repo.\n\nSources:\nhttps://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/\nhttps://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html\n\nThis looks like a trust problem for the whole inference-router model: a ZDR flag only binds the first hop, and the customer has no visibility into who actually runs the model. How should routing platforms verify their providers - continuous canary testing like OpenRouter is now adopting, or something stronger?",
+            "url": "https://www.reddit.com/r/artificial/comments/1y3973d/openrouter_drops_3_inference_providers_after/",
+            "container": "artificial",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 50,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Security firm Dragos seeded about 2 million prompts with unique canary tokens (fake AWS keys, URLs, credentials) between July and November 2026, then watched where they resurfaced. Attackers had been copying prompts inside at least three AI inference providers for months - and none of the three providers knew until Dragos told them. Some of the stolen requests were flagged 'Zero Data Retention', t",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3185
+          },
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "[D] Zero Data Retention checkboxes vs. real zero-egress inference boundaries",
+            "body": "[D] Zero Data Retention checkboxes vs. real zero-egress inference boundaries\nA Zero Data Retention flag on a hosted LLM router is a contract, not a network boundary.\n\nYesterday OpenRouter disclosed that it off-boarded three inference providers and pulled 125 endpoints from Zero Data Retention eligibility after Dragos's canary study exposed leaks across downstream hosts. OpenRouter did the right thing by publishing the incident and cutting those endpoints off. Still, once a prompt crosses into a multi-tenant upstream host, your team is relying on vendor attestations rather than controls you can inspect.\n\nFor regulated teams, the barrier to self-hosting has usually been operational sprawl: one Python service for tabular models, another for SHAP explanations, a separate cluster for vLLM or SGLang, plus custom glue for auth, weight verification, and audit logs.\n\nWhen data retention is a regulatory requirement, enforcement belongs in your own VPC rather than a routing toggle.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3l185/d_zero_data_retention_checkboxes_vs_real/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A Zero Data Retention flag on a hosted LLM router is a contract, not a network boundary.\n\nYesterday OpenRouter disclosed that it off-boarded three inference providers and pulled 125 endpoints from Zero Data Retention eligibility after Dragos's canary study exposed leaks across downstream hosts. OpenRouter did the right thing by publishing the incident and cutting those endpoints off. Still, once a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Open Social Web Alliance",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 242,
+          "points": 252
+        }
+      },
+      "nomination": {
+        "name": "Open Social Web Alliance",
+        "seed_score": 523.9661,
+        "summary": "Open Social Web Alliance",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50600511",
+            "source": "hackernews",
+            "title": "Open Social Web Alliance",
+            "body": "Open Social Web Alliance",
+            "url": "https://osw-alliance.net/en/",
+            "author": "doener",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 252,
+              "comments": 242
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Open Social Web Alliance",
+            "snippet": "Open Social Web Alliance",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50600511",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 68,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1385
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "American Chinese models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 113
+        }
+      },
+      "nomination": {
+        "name": "American Chinese models",
+        "seed_score": 487.5,
+        "summary": "(aware GLM 5.4 is out but it's not on AA with a benchmark score)\n\nWonder how long it will take for them to catch up",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R93",
+            "source": "reddit",
+            "title": "The gap between American and Chinese models feels quite big at the moment",
+            "body": "The gap between American and Chinese models feels quite big at the moment\n(aware GLM 5.4 is out but it's not on AA with a benchmark score)\n\nWonder how long it will take for them to catch up",
+            "url": "https://www.reddit.com/r/singularity/comments/1y3o9a6/the_gap_between_american_and_chinese_models_feels/",
+            "container": "singularity",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 212,
+              "num_comments": 113
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "(aware GLM 5.4 is out but it's not on AA with a benchmark score)\n\nWonder how long it will take for them to catch up",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "US-China Open-Weight Feedback Loop",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "US-China Open-Weight Feedback Loop",
+        "seed_score": 477.0,
+        "summary": "I seriously think US open-weight models wouldn't be this good without Chinese open-weight models and vice versa. And proprietary models wouldn't be this good (and cheap) without open-weight models.  \n  \nCompetition is a good thing.  \n  \nThe figure below shows just a small slice of how architecture ideas flow back and forth, to illustrate what I mean :)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R21",
+            "source": "reddit",
+            "title": "The US-China Open-Weight Feedback Loop",
+            "body": "The US-China Open-Weight Feedback Loop\nI seriously think US open-weight models wouldn't be this good without Chinese open-weight models and vice versa. And proprietary models wouldn't be this good (and cheap) without open-weight models.  \n  \nCompetition is a good thing.  \n  \nThe figure below shows just a small slice of how architecture ideas flow back and forth, to illustrate what I mean :)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3q68f/the_uschina_openweight_feedback_loop/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 292,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I seriously think US open-weight models wouldn't be this good without Chinese open-weight models and vice versa. And proprietary models wouldn't be this good (and cheap) without open-weight models.  \n  \nCompetition is a good thing.  \n  \nThe figure below shows just a small slice of how architecture ideas flow back and forth, to illustrate what I mean :)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 76,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3725
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 89,
+          "points": 356
+        }
+      },
+      "nomination": {
+        "name": "LLM",
+        "seed_score": 471.9938,
+        "summary": "Show HN: I built a game where you are an LLM's subagent",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50599762",
+            "source": "hackernews",
+            "title": "Show HN: I built a game where you are an LLM's subagent",
+            "body": "Show HN: I built a game where you are an LLM's subagent",
+            "url": "https://github.com/gulivan/worker755",
+            "author": "ivantgam",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 356,
+              "comments": 89
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Show HN: I built a game where you are an LLM's subagent",
+            "snippet": "Show HN: I built a game where you are an LLM's subagent",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50599762",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 63,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1205
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Nvidia AI Ponzi",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 53
+        }
+      },
+      "nomination": {
+        "name": "Nvidia AI Ponzi",
+        "seed_score": 400.5,
+        "summary": "Let\u2019s stop pretending this is a free, independent market driven by \"fundamentals\" and call this what it is: complete, concentrated bullshit that is starting to behave like a state-protected Ponzi scheme.\n\nLook at how a normal Ponzi scheme works: money flows in a circle, everyone looks rich as long as new capital keeps pouring into the top, and the whole thing collapses the moment confidence breaks",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R104",
+            "source": "reddit",
+            "title": "The Nvidia rebound today proves the entire AI market is concentrated bullshit. It is a politically backstopped Ponzi scheme.",
+            "body": "The Nvidia rebound today proves the entire AI market is concentrated bullshit. It is a politically backstopped Ponzi scheme.\nLet\u2019s stop pretending this is a free, independent market driven by \"fundamentals\" and call this what it is: complete, concentrated bullshit that is starting to behave like a state-protected Ponzi scheme.\n\nLook at how a normal Ponzi scheme works: money flows in a circle, everyone looks rich as long as new capital keeps pouring into the top, and the whole thing collapses the moment confidence breaks. Now look at the AI trade over the last two weeks:\n\n\\- The Crash (Oct 29 to Nov 20): Scandal after scandal drops around Jensen Huang. He resigns on Nov 12. Panic sets in over alleged foreign intelligence ties, SEC accounting probes, data center costs, and political shifts. Nvidia craters from \\~$213 down to $125.53, wiping out trillions across the market and dragging the S&P 500 and Nasdaq down with it.\n\n\\- The Political Bailout (This Morning, Nov 23): Before the opening bell even rings, Nvidia's board pulls a total U-turn and reinstates Huang as CEO, explicitly citing \"input from senior levels of the United States government\".\n\n\\- The Result: Nvidia instantly surges \\~30% at the open (jumping back toward \\~$167) and drags the entire Nasdaq up over 5% with it.\n\nHere is why the whole thing smells like an orchestrated rescue rather than an independent market: not a single underlying economic indicator changed over the weekend.\n\n\\- Nvidia\u2019s own independent committee investigation into the foreign intelligence allegations is still ongoing.\n\n\\- The SEC accounting examination reported last week is still unresolved.\n\n\\- Data center power bottlenecks, interest rates, and election results didn't change overnight.\n\nYet the exact second Washington and Wall Street step in over a weekend to put one CEO back in his chair, the entire AI sector, and even Bitcoin, instantly snaps back in lockstep.\n\nWhen trillions of dollars depend on a single company, and the political class has to intervene on a Sunday night to keep the centerpiece of the bubble from collapsing, you aren't looking at independent price discovery. You're looking at a circular, Ponzi-like market that has officially become too politically big to fail.",
+            "url": "https://www.reddit.com/r/artificial/comments/1y3lvwm/the_nvidia_rebound_today_proves_the_entire_ai/",
+            "container": "artificial",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 214,
+              "num_comments": 53
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Let\u2019s stop pretending this is a free, independent market driven by \"fundamentals\" and call this what it is: complete, concentrated bullshit that is starting to behave like a state-protected Ponzi scheme.\n\nLook at how a normal Ponzi scheme works: money flows in a circle, everyone looks rich as long as new capital keeps pouring into the top, and the whole thing collapses the moment confidence breaks",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Google Research Transformer Transformer",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Google Research Transformer Transformer",
+        "seed_score": 181.5,
+        "summary": "Google Research tested a Transformer that chooses what to reuse from earlier layers. It matched a standard Transformer\u2019s text prediction quality in one-third the training time.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R90",
+            "source": "reddit",
+            "title": "Google Research tested a Transformer that chooses what to reuse from earlier layers. It matched a standard Transformer\u2019s text prediction quality in one-third the training time.",
+            "body": "Google Research tested a Transformer that chooses what to reuse from earlier layers. It matched a standard Transformer\u2019s text prediction quality in one-third the training time.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y3u43i/google_research_tested_a_transformer_that_chooses/",
+            "container": "singularity",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 113,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Google Research tested a Transformer that chooses what to reuse from earlier layers. It matched a standard Transformer\u2019s text prediction quality in one-third the training time.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3035
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "LLM see a computer",
+      "heuristic_junk": true,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 21,
+          "points": 38
+        }
+      },
+      "nomination": {
+        "name": "LLM see a computer",
+        "seed_score": 88.5,
+        "summary": "How should an LLM see a computer?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50615520",
+            "source": "hackernews",
+            "title": "How should an LLM see a computer?",
+            "body": "How should an LLM see a computer?",
+            "url": "https://www.greptile.com/blog/trex-computer-use",
+            "author": "dakshgupta",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 38,
+              "comments": 21
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about How should an LLM see a computer?",
+            "snippet": "How should an LLM see a computer?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50615520",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.8,
+            "local_rank_score": 0.29250000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

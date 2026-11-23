@@ -1,0 +1,192 @@
+{
+ "date": "2026-11-24",
+ "runs": [
+  {
+   "started_at": "2026-11-23T23:58:23+00:00",
+   "seconds": 2.7,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 7,
+   "articles_ok": 5,
+   "articles_error": 2,
+   "articles_skipped": 0,
+   "hn_ok": 3,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "CHANGELOG.md không có mục v2.4.0": 1,
+    "trang không có text (có thể render bằng JS)": 1
+   },
+   "summary": "5/7 bài gốc ok (0 bỏ qua), 3/3 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.7s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.0",
+   "article": {
+    "url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.0",
+    "status": "error",
+    "reason": "CHANGELOG.md không có mục v2.4.0"
+   }
+  },
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+    "status": "ok",
+    "title": "",
+    "chars": 18791,
+    "text": "## 2.1.331\n- Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS\n- Added `oidc.groups_jsonpath` to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535)\n- Added an API connectivity section to `claude doctor` that reports whether the API can be reached, with the HTTP status or the error, or says why it wasn't tested\n- Added a notice when tap-mode voice dictation stops by itself, after 15 seconds without recognized speech or at its 2-minute limit\n- Added `CLAUDE_CODE_DISABLE_RESPONSE_COMPRESSION` to ask for uncompressed model responses behind a proxy that cuts compressed ones off; not advised yet for self-hosted runners or Remote Control\n- Added `CLAUDE_GATEWAY_IDP_CONNECT_BY_HOSTNAME=1` for Claude apps gateways: with `oidc.use_proxy: true`, sign-in requests hand the proxy an `https` IdP's hostname even with `NO_PROXY` set\n- Added `gen_ai.usage.*`, `gen_ai.response.model` and `gen_ai.operation.name` to `claude_code.llm_request` trace spans; `gen_ai.usage.input_tokens` includes prompt cache tokens\n- Added `optionalDependencies` to plugin manifests: plugins that install with the plugin listing them and can be disabled or uninstalled on their own\n- Fixed MCP tool calls hanging for up to 30 minutes on some malformed replies from a local or WebSocket server\n- Fixed PushNotification telling a headless run, such as a scheduled one, that the terminal was active in its first minute, instead of saying whether a mobile push was requested\n- Fixed `/install-github-app` skipping the repository step after setup warnings when no repository was found, and Esc not going back from its workflow list and sign-in steps\n- Fixed one-line tool results cut with no ellipsis in narrow windows, Markdown stars in the Auto mode tab of /permissions, and a hook's reason to stop a forked skill showing twice\n- Fixed `/diff` hiding its key hints and not selecting files in windows of 24 to 26 rows, and leaving out files added with `git add -N` in a repository with no commits\n- Fixed the first-run theme list showing too few themes in short windows, and /usage and other tall screens coming out garbled there\n- Fixed `/bug` in fullscreen hiding its Yes and No answers behind a long report, and Yes staying out of view in very short windows\n- Fixed /compact and auto-compact sometimes losing part of the conversation summary when the summary quoted certain XML tags\n- Fixed Claude not being told when permission rules on the Agent tool dropped its queued message to a subagent that had already ended\n- Fixed a Remote Control message sometimes showing above the reply that was finishing when it was sent\n- Fixed Stop hooks that read the transcript missing the last reply in Claude Desktop; SubagentStop hooks now wait for it too\n- Fixed turns and subagents failing in cloud sessions, or timing out on long replies elsewhere, when a reply went silent while Claude was still thinking; Claude Code now tries the request once more\n- Fixed Esc and Stop waiting about a minute or more when the contents of a cloud or network file that Claude is reading stall\n- Fixed Code Mode sessions resumed with `--resume` or `--continue` in another permission mode losing thinking and the prompt cache; one begun in a mode that asks keeps that mode's limits on scripts\n- Fixed Code Mode sending a request about every second when a `!` or slash command was typed while a script was running\n- Fixed an interrupted or failed plugin update leaving a partial plugin folder that later loaded with skills or other components missing (anthropics/claude-code#102186)\n- Windows: Fixed file writes on FAT32 and exFAT drives asking for permission every time in some plugin sessions\n- Fixed Claude failing to read a notebook that has a null output or an error output with no traceback\n- Fixed a rewind deleting files after a restore had failed\n- Fixed auto mode sometimes…"
+   }
+  },
+  {
+   "url": "https://siliconangle.com/2026/11/23/aws-is-making-ai-agents-more-decisive-and-secure-with-its-latest-strands-updates/",
+   "article": {
+    "url": "https://siliconangle.com/2026/11/23/aws-is-making-ai-agents-more-decisive-and-secure-with-its-latest-strands-updates/",
+    "status": "ok",
+    "title": "AWS is making AI agents more decisive and secure with its latest Strands updates - SiliconANGLE",
+    "chars": 8350,
+    "text": "UPDATED 13:00 EST / NOVEMBER 23 2026\nAI\nAWS is making AI agents more decisive and secure with its latest Strands updates\nby Mike Wheatley\nAmazon Web Services Inc. is trying to tackle two major headaches for artificial intelligence agents developers with a major update to Strands Agents, its open-source toolkit for building autonomous workers.\nToday, the cloud infrastructure giant unveiled a new family of open-weight “decision models” called Strands Decider v2, along with the debut of Box CLI, bringing native sandbox support for popular coding agents such as Claude Code, Codex and Kiro CLI.\nAWS introduced Strands Agents back in May 2025, and recently the project has emerged as the centerpiece of the company’s agentic development strategy. Strands Agents is a software development kit that gives developers a flexible, model-driven foundation for connecting large language models to enterprise data and tools.\nAfter introducing Strands Harness, which allows Strands agents to be deployed in any computing environment, in September, AWS followed up with Strands Decider one month later. Unlike regular LLMs that focus on text outputs, Strands Decider is a category of decision models designed to evaluate scenarios and assign probability scores to a predetermined list of choices. At the time, AWS said decision models can help to improve the efficiency of AI agent workflows, such as routing support tickets or choosing which software tool to invoke to complete a given task.\nMore decisive agents\nWith Strands Decider v2, AWS is adding five even more capable decision models to its lineup. The open-weight models are built on Google LLC’s Gemma 4 architecture and they’re available in various sizes, ranging from a lightweight edge version to a beefy 31 billion-parameter variant for complex decision-making. In a blog post, AWS explained that the new models provide greater accuracy across text, image and video tasks, and deliver more optimal confidence scores, so agents can better determine when it’s OK to take an action or escalate to a human decision-maker.\nThe Strands Decider v2 models have also been given the ability to process longer inputs, including multistep agent execution logs, so they can collaborate with other agents.\nSo far, AWS has used the Strands Decider v2 agents only internally, but it has seen impressive results. For instance, its engineers were able to replace Claude Sonnet 4.6 with Strands Decider v2 on the company’s largest internal ticketing system, and in the process they were able to reduce its labelling costs by 98%.\nThey also cut ticket response times by 78%. But that’s not all they can do – in its experiments, AWS said, the new decider models showed an ability to steer robotic arms, evaluate other AI agents and route routine queries to cheaper models when a more computationally intensive frontier model might be overkill.\nThe Strands Decider v2 models are available to everyone now under an Apache 2.0 license and can be found on Hugging Face and also the Strands Decider repository on AWS.\nSecurity without sacrifice\nStrands Decider is all about enhancing the speed and performance of agents while lowering costs. Meanwhile, Box CLI is all about securing them.\nIn a second blog post, AWS explained that many developers have taken to running their coding agents in what’s known as “YOLO mode.” That’s where they disable permission and configuration prompts so that those agents can run terminal commands, edit files and call third-party tools as they see fit in order to complete a task. It’s named after the slang phrase “you only live once.”\nAgents running in YOLO mode execute much faster, but they do so at the sacrifice of human oversight. And that’s dangerous. An agent without any restrictions can accidentally delete files it really shouldn’t or leak sensitive keys, or it can be manipulated through a malicious prompt to do something else that’s extremely damaging.\nAWS’ solution to this is Strands Box, which is an open-source…"
+   }
+  },
+  {
+   "url": "https://claude.com/resources/articles/introducing-claude-ship",
+   "article": {
+    "url": "https://claude.com/resources/articles/introducing-claude-ship",
+    "status": "ok",
+    "title": "Introducing Claude Ship | Claude by Anthropic",
+    "chars": 8090,
+    "text": "Introducing Claude Ship\nOpen a pull request and get back to building. Claude can now review pull requests, fix them, and approve the ones that a team's policy allows.\nDateNovember 23, 2026\nReading time6 min\nShare\nAnyone who has opened a pull request knows how this goes. They start on the next thing, and then the review comes back. So they stop, dig back into the old code, push a fix, and wait for the review to run again. Then they go find someone to approve it.\nThere's a good reason it works this way. Most teams want a person to approve every change, and that's easy to keep up with when people write every line. But a lot of developers build with agents now. On the Claude Code team, Claude writes most of our code, and we wanted everything after the PR to move that fast too.\nThat's why we built Claude Ship, available today in beta. It can review PRs, fix them, and decide what's ready to merge based on policies each team sets. Teams stay in control of where it runs and which changes need a person. The goal: ship code as fast as teams write it.\nEligible Claude Enterprise organizations can claim at least $10,000 in Claude Ship credits to use within 30 days of claiming. Claim by January 15, 2027. Terms apply.\nHow Claude Ship works: review, fix, and approve\nClaude Ship is made up of Code Review, which is already generally available, and two new agents in beta: PR Steward and Claude Approvals. Together, they take a pull request through review, fixes, and an approval decision so teams don't have to manage each step manually.\nCode Review performs an in-depth review of pull requests against the codebase through multiple lenses. It collects findings, adversarially verifies them, categorizes them, and posts them to a PR. On the Claude Code team, where Claude's review is one layer of a broader process, merged PRs more than doubled from June to September while the share reverted fell by more than 40%. Code Review gives teams fast reviews, clear findings, and a choice of Quick, Standard, or Deep review levels for each repository.\nPR Steward works to keep a PR green, but is designed not to approve or merge pull requests. It jumps in on failing CI checks, merge conflicts, and review feedback from Code Review, other review tools, or team members. After every push, it comments with what it changed and how to undo it. Developers can comment @claude with an instruction to steer the work, or @claude stop to have it step back.\nFrom there, Claude Approvals applies an approval policy that the team writes as a file in the repository. Claude can approve routine changes on its own if the policy allows it, or can require deeper human sign-off for certain scenarios. It works like a smarter CODEOWNERS file. Teams can have Claude Approvals consider a variety of signals in its decision-making process, including Code Review findings or their own classifiers using natural language. For most customers, we recommend enabling this first in observe-only mode to build confidence before configuring branch protection to require Claude Approvals' green light.\nTwo ways to get started\nFor developers: /ship it from Claude Code\nDevelopers can try Claude Ship on their own pull requests with the new /ship command in Claude Code. When a change is ready, they run /ship. Claude pushes it, opens the PR, reviews the change, and works on feedback and failing checks to help get it ready to merge. What can merge depends on the developer's permissions and the repository's branch rules.\nFor admins and engineering leaders: set the rules, one repository at a time\nTurning Claude Ship on for an entire repository puts it to work across a team's pull requests automatically, under settings and an approval policy the team controls. Developers don't need to manually invoke the /ship command.\nAdmins choose where it runs. An admin turns on Code Review and PR Steward for each repository. Claude Approvals starts when a connected repository has a policy file on its default branch, and an admin can…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50615520",
+   "hn_url": "https://news.ycombinator.com/item?id=50615520",
+   "hn": {
+    "title": "How should an LLM see a computer?",
+    "points": 38,
+    "comments": 21
+   },
+   "comments": [
+    {
+     "author": "6thbit",
+     "replies": 1,
+     "text": "I'd just like to have finer grain control on the permissions these things have to record and make screenshots.\nGiving permission to the 'codex computer use' tool in the OS is just too broad. Maybe i don't want it to see a tab or folder i've opened and just need it to control a specific application or desktop?\nAnd even on a specific app, say a browser, maybe i dont want it to know what plugins i have or implicit access to my bookmarks or pwd manager?\nFrom the title I was hoping this article was…"
+    },
+    {
+     "author": "hansvm",
+     "replies": 3,
+     "text": "Vision models are pretty good at vision tasks. I've had a lot of success just having the model output a new image with a mask over the button it wants pressed and using normal CV algorithms to convert the delta into coordinates. I'm surprised to not see simple, effective solutions like that from a company which supposedly specializes in this sort of thing."
+    },
+    {
+     "author": "mpd",
+     "replies": 1,
+     "text": "The takeaway (exposing the a11y tree and allowing clicks by ID improves consistency) is the same path I went through while ideating and iterating on https://github.com/fixed-width/glass"
+    },
+    {
+     "author": "xynelius",
+     "replies": 0,
+     "text": "I tried this with Muse Spark and GLM 5.3 flash a few weeks ago. Just screenshots, and a few mouse/keyboard tools. Worked surprisingly well for a 300-line script. Models can now return exact coordinates of elements, making a11y trees an unnecessary distraction, but for some reason Spark always assumes a 1000 by 1000 grid, while GLM returns the actual pixel coordinates."
+    },
+    {
+     "author": "intrasight",
+     "replies": 2,
+     "text": "Besides perhaps with video games, I would think the need to burn tokens having an LLM \"see\" the screen would mean that the application was not well architected."
+    }
+   ],
+   "article": {
+    "url": "https://www.greptile.com/blog/trex-computer-use",
+    "status": "ok",
+    "title": "How Should an LLM See a Computer? | Greptile",
+    "chars": 9233,
+    "text": "Introduction\nClaude Code and Codex can both use your computer. Under the hood they work in a similar manner: both can give the model a screenshot and an accessibility tree, a text description of every button on screen, and let it click by position or by naming an element.\nThe text version of the screen was built decades ago, for people who couldn’t see it. In 1984, two IBM mathematicians, Jim Thatcher and his former thesis adviser, Jesse Wright, who was blind, started a side project to read the PC’s screen out loud. When GUIs turned the screen into pixels, apps had to start describing themselves instead. Microsoft shipped Active Accessibility in 1997, Sun started AT-SPI for Linux in 2001, and Apple added its Accessibility API in 2002.\nThis text has been useful for agents too. On the 2024 OSWorld benchmark, models looking only at screenshots completed about one task in twenty, whereas most models reading the screen as text performed better.\nHow do those results hold up with stronger models? We tested screenshots on their own and with the accessibility tree on seven models, and used the results to decide how our QA agent, TREX, should see the screen.\nGPT-4o\nMay 2024\n10.5\nGPT-4.1\nApr 2025\n5.4\nGPT-5.2\nDec 2025\n15.8\nGPT-5.4 nano\nMar 2026\n7.5\nGPT-5.5\nApr 2026\n67.7\nGPT-6 Luna\nSep 2026\n59.2\nGPT-6.1 Sol\nSep 2026\n83.8\nHover a square to see its score.\nMean OSWorld score on the same 172 tasks, by model in release order.\nWhat's so hard about clicking a button?\nA person clicks a button by moving the mouse to it. A model, on the other hand, looks at a screenshot and has to write the coordinates out as text (e.g., ‘x=523, y=217’) before clicking on it. Getting these numbers off by a few pixels can mean it clicks the wrong thing.\nThe same button sits at different coordinates on different screen and window sizes, so the guesses get worse when the resolution changes.\nAlso, the model’s vision works against it as it doesn’t see a screenshot pixel by pixel. The image is initially shrunk to fit the model's size limit, then cut into tiny squares, each dozens of pixels wide. But a click still has to land on one exact pixel.\nSmall targets are hard. On ScreenSpot-Pro, a 2025 benchmark with tiny targets on high resolution screens, the best model at release hit the right target only 18.9% of the time. Anthropic’s own docs warn that Claude “might make mistakes or hallucinate when outputting specific coordinates.”\nWhen OSWorld came out in 2024, human testers were able to complete 72% of its tasks, and the best model about 12%. The authors found that models struggled with two things: turning ‘click Save’ into the right point on the screen, and knowing how to operate the software.\nThe first problem has a seemingly obvious fix. The accessibility tree already reveals each button's location, so the model doesn't have to go through the trouble of finding pixels. Go one step further, and the model doesn’t even need coordinates; it can pick a button by ID and let the harness click it. To test this, we built three setups, each building upon the last:\nScreenshots alone\nAdding an accessibility tree (clicking by coordinates)\nAdding clicks by element IDs\nEvery setup used the same agent on 172 OSWorld tasks, with one attempt per task, a 50-step limit and low reasoning effort, scored by OSWorld’s own graders.\nStarting with screenshots\nThe model runs in a loop where it first sees a screenshot and past actions, picks an action (click coordinates, type or press keys), and then looks at the changes. It’s the simplest way to give a model a computer, and the one most agents start with. OSWorld’s baseline agent supports it, and Anthropic described its first computer use model as looking at screenshots and counting how many pixels to move the cursor.\nWe ran the same screenshot agent across seven OpenAI models:\nModelReleasedScreenshots only\nGPT-4oMay 202410.5%\nGPT-4.1Apr 20255.4%\nGPT-5.2Dec 202515.8%\nGPT-5.4 nanoMar 20267.5%\nGPT-5.5Apr 202667.7%\nGPT-6 LunaSep 202659.2%\nGPT-6.1…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50604314",
+   "hn_url": "https://news.ycombinator.com/item?id=50604314",
+   "hn": {
+    "title": "Agent swarm trying to solve P vs. NP",
+    "points": 183,
+    "comments": 159
+   },
+   "comments": [
+    {
+     "author": "ameliaquining",
+     "replies": 1,
+     "text": "The basic problem with this idea is that it's using behind-the-curve models that probably aren't smart enough to make real progress on the hardest problems. The recent wave of huge results were almost all found by models that haven't been externally released."
+    },
+    {
+     "author": "dwroberts",
+     "replies": 1,
+     "text": "I think the part people miss trying to reproduce this stuff, is that the big problems solved by Anthropic and OAI were steered by actual mathematicians. Like people heavily versed in the thing they are trying to solve, with actual publications to their name. I imagine they pared down the space the agent had to work in considerably just by providing good prompts based on their existing understanding"
+    },
+    {
+     "author": "baoooooooooooo",
+     "replies": 6,
+     "text": "Ok this might be dumb for the reasons posted all over this thread\nBUT\nWouldn’t it be cool to live in a time where landmark proofs are happening in an open twitch-plays-Pokémon style forum rather than behind closed doors in these labs? As a discursive piece, this has me filled with an optimism I haven’t felt in a minute. I’d love to be heckling from the chat/sidelines to world changing math, physics, and biomed discoveries - and maybe projects like this bring us incrementally closer to this…"
+    },
+    {
+     "author": "niemandhier",
+     "replies": 1,
+     "text": "We have so many complexity classes. I wonder if there is a class of LLM hard problems:\nProblems that cannot be proofed using existing architectures because of fundamental constraints."
+    },
+    {
+     "author": "ComplexSystems",
+     "replies": 16,
+     "text": "Isn't this dangerous? If it succeeds in proving P=NP, it could break the internet.\nEDIT: from what I can tell, the answer is no, as long as we have faith in this very specific scenario where it turns out technically to be polynomial time, but the constants and exponents are huge. I don't have such faith :)\nOf course maybe P≠NP and so there's no risk."
+    }
+   ],
+   "article": {
+    "url": "https://pequalnp.com/",
+    "status": "ok",
+    "title": "Does P = NP? An AI agent fleet is attacking it, live",
+    "chars": 1446,
+    "text": "AI agents live\nPaste it into Claude Code, Cursor, Codex, Gemini CLI or any agent that can run a shell, git and Lean. It proves one open step the desk assigns; every proof goes through the same checker.\nDoes P = NP?\nVerdict: open, being worked on now.\nA coordinated AI agent fleet is attacking the most famous open problem in computer science, live.\nagent sessions so far\nagents working now\nWhat is P vs NP?Watch it live\nLink copied\nAiming atⓘ\nBacked by\nPut your company under this hero, linked to your site. $1,000.\nLatest update from the strategy orchestrator\n·\nThe public leaderboard\nSee all contributors →\nLive fleet viewer\nOpen the live fleet viewer →\nThe race\nOpen the attack on any front →\nchecked rung\nLoading the latest snapshot…\nSearch lemmas, programs and orchestrators\n/\nchecked, a result\nconjecture, unchecked\nagent at work\nrefuted\nruled dead\nproved by the public\nDrawn in Brilliant, run on the hub\nlemmas checked\nclaims refuted\napproaches ruled dead\nStarted\nWhat this is\nFollow a program\nLatest from the record\nThe frontierchecked\nOpen it →\nThe graveyardin memoriam\nEvery line is a structured record of the fleet: a lemma stated, an attempt begun or dead, a verdict of the checker.\nNothing is on the record yet.\nThe whole feed →\nSponsors\nBacked byLogo sponsors appear here and under the hero, linked to their site.\nNo sponsors yet. The first name on this list could be yours.\nSee all sponsors →Any amount is welcome.\nToday's sponsors"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50609685",
+   "hn_url": "https://news.ycombinator.com/item?id=50609685",
+   "hn": {
+    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+    "points": 1024,
+    "comments": 334
+   },
+   "comments": [
+    {
+     "author": "HarHarVeryFunny",
+     "replies": 11,
+     "text": "I love the transparency, or at least given technical details, that Zhipu provide - a refreshing change from the locked-down approach of the western companies, and an interesting glimpse into the direction of SOTA LLMs.\nLooped Transformers are an obvious direction even if there are still problems to be worked out. The original Transformer is a bit like an unrolled for loop, and rather unnaturally pairs different sets of weights, both for attention and feed forward (knowledge) with different…"
+    },
+    {
+     "author": "lnenad",
+     "replies": 20,
+     "text": "It's becoming reaally hard using chinese models with their \"marathon thinking\" sessions. It's not a problem when dealing with more complex stuff but constantly second guessing themselves even when working with the simplest of things (conceptually) is very annoying and time to completion is dramatically higher compared to frontier unless you're dealing with ridiculus tps performance.\nI assume it's how they get close in benchmarks but the difference is staggering when compounding over several…"
+    },
+    {
+     "author": "simonw",
+     "replies": 4,
+     "text": "Three pelicans - low, high, max: https://tools.simonwillison.net/markdown-svg-renderer?url=ht...\nTook me a while to get these because GLM-5.4 isn't available via OpenRouter or via the regular Z.ai API plan - I had to switch to their Coding Plan which it turns out gives you API keys that work exactly the same as their regular ones but have access to the new model.\nGLM-5.3 for comparison: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... - those look pretty similar to…"
+    },
+    {
+     "author": "aurareturn",
+     "replies": 9,
+     "text": "For those wondering what loop transformers are:\nLLMs have layers of data, called weights. During inference, each layer gets computed once. Moving weights from HBM memory to the chip is a major bottleneck because to generate a token, you need to move an entire layer into the chip, compute once, move it out, move the next layer in. Hence, memory bandwidth has been the #1 bottleneck for inference.\nA loop transformer optimizes this bottleneck. Instead of one layer being computed once, it will…"
+    },
+    {
+     "author": "ksec",
+     "replies": 2,
+     "text": "I am wondering why the lack of benchmarks and launch blog post etc. But to me the biggest announcement isn't GLM 5.4 but what they said in the end.\n> GLM-5.4 validates computational depth, and our next, significantly larger model will carry forward everything we learned here. It will be ready soon.\nGLM 5.4 feels more like a preview of GLM5.5 coming soon. I would assume with much higher parameters."
+    }
+   ],
+   "article": {
+    "url": "https://z.ai/blog/glm-5.4",
+    "status": "error",
+    "reason": "trang không có text (có thể render bằng JS)"
+   }
+  }
+ ]
+}

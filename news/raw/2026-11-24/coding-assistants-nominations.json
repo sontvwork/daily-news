@@ -1,0 +1,793 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "59b2e3aba512db64",
+  "generated_at": "2026-11-23T23:55:52.415313Z",
+  "from_date": "2026-11-22",
+  "to_date": "2026-11-23",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-23T23:55:52.378761Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-23T23:55:52.378766Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 49,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-23T23:55:52.378327Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-11-23T23:55:52.378600Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "GLM-5.4 Toward",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 333,
+          "points": 1024
+        }
+      },
+      "nomination": {
+        "name": "GLM-5.4 Toward",
+        "seed_score": 2035.5,
+        "summary": "GLM-5.4: Toward generalized coding with our first loop transformer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50609685",
+            "source": "hackernews",
+            "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "body": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "url": "https://z.ai/blog/glm-5.4",
+            "author": "foohis",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1024,
+              "comments": 333
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about GLM-5.4: Toward generalized coding with our first loop trans",
+            "snippet": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50609685",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.327
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "GLM 5.4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 276
+        }
+      },
+      "nomination": {
+        "name": "GLM 5.4",
+        "seed_score": 1260.0,
+        "summary": "Am I insane in thinking there has to be SOME kind of use for LLM's besides solely coding? There's research, scientific discovery, education, data analysis, market research, business, historical analysis. ANYTHING besides just solely codemaxxing!\n\nIt's overly pedantic, tonedeaf and almost autistic in how literal it takes anything (like a coding model).\n\n  \nIt has the WORST writing of any recent Chi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "GLM 5.4 is great at coding. But absolutely garbage at writing and anything but that. Are future open weight models going to be just codemaxxed??",
+            "body": "GLM 5.4 is great at coding. But absolutely garbage at writing and anything but that. Are future open weight models going to be just codemaxxed??\nAm I insane in thinking there has to be SOME kind of use for LLM's besides solely coding? There's research, scientific discovery, education, data analysis, market research, business, historical analysis. ANYTHING besides just solely codemaxxing!\n\nIt's overly pedantic, tonedeaf and almost autistic in how literal it takes anything (like a coding model).\n\n  \nIt has the WORST writing of any recent Chinese model. The sloppiest, cringiest \"breath hitches, spine shivers, body jolts\" I've ever seen. When it's not busy outputting the sloppiest garbage known to mankind it spends half of its chain of thought wasting tokens on reasoning whether something is okay, an obvious trait shared with GPT-OSS and GPT 6 which Zhipu clearly distilled from.  \n  \nIt's like the Zhipu team deliberately made it absolute garbage at any kind of natural language.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3lqu3/glm_54_is_great_at_coding_but_absolutely_garbage/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 564,
+              "num_comments": 276
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Am I insane in thinking there has to be SOME kind of use for LLM's besides solely coding? There's research, scientific discovery, education, data analysis, market research, business, historical analysis. ANYTHING besides just solely codemaxxing!\n\nIt's overly pedantic, tonedeaf and almost autistic in how literal it takes anything (like a coding model).\n\n  \nIt has the WORST writing of any recent Chi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Weekly Self Promotion Thread",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 24
+        }
+      },
+      "nomination": {
+        "name": "Weekly Self Promotion Thread",
+        "seed_score": 45.0,
+        "summary": "Welcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Weekly Self Promotion Thread",
+            "body": "Weekly Self Promotion Thread\nWelcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead of just dropping a link. Tell us:\n\n* What you built?\n* What problem it solves?\n* Which AI models or tools it uses?\n* Who it's for?\n* What kind of feedback you're looking for?\n\nDisclose your affilitation.\n\nPlease avoid posting the same project every week unless you've made meaningful updates. Affiliate links, referral links, scams, and low effort promotions will be removed.\n\nTake some time to check out what others have shared too. If you try someone's project or have feedback, leave a comment. Helping each other improve is what we want this community to be about.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y3cjpq/weekly_self_promotion_thread/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 24
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Welcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4755
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Delta Inference Engine update 0.95",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Delta Inference Engine update 0.95",
+        "seed_score": 42.0,
+        "summary": "Delta Inference Engine is a free, MIT-licensed engine that runs DeepSeek-V4.1-Flash (MIT weights) on **one NVIDIA GPU plus system RAM**, natively on Windows (not WSL). Double-click `Start DeepSeek.bat`: it installs what it needs, picks the model file that fits your RAM, and opens a chat page plus OpenAI- and Anthropic-compatible APIs on your PC. It's a Windows port of Xolotl, which is built on Str",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "Delta Inference Engine update 0.95: DeepSeek V4.1 Flash at 44 tok/s with Unsloth Q2 on a 3090/128GB RAM, 61% faster on 64GB of RAM, pictures + PDF/Office documents + local voice and much more. ready for Claude Code / Codex / OpenCode",
+            "body": "Delta Inference Engine update 0.95: DeepSeek V4.1 Flash at 44 tok/s with Unsloth Q2 on a 3090/128GB RAM, 61% faster on 64GB of RAM, pictures + PDF/Office documents + local voice and much more. ready for Claude Code / Codex / OpenCode\nDelta Inference Engine is a free, MIT-licensed engine that runs DeepSeek-V4.1-Flash (MIT weights) on **one NVIDIA GPU plus system RAM**, natively on Windows (not WSL). Double-click `Start DeepSeek.bat`: it installs what it needs, picks the model file that fits your RAM, and opens a chat page plus OpenAI- and Anthropic-compatible APIs on your PC. It's a Windows port of Xolotl, which is built on Strata (on Linux, use upstream Xolotl).\n\nBig update for Delta Inference Engine 0.95 is out today, People wanted support for lower ram configurations and higher quality inference and it's here.\n\n**Speed** (RTX 3090 24 GB, i5-13600K, DDR5-5600, PCIe 4.0 NVMe; under 192 GB the rest of the RAM was locked away so Windows couldn't use it either). Writing tok/s, greedy, whole chats with thinking on:\n\n|RAM|Unsloth UD-IQ2\\_XXS (0.93 \u2192 0.95)|UD-IQ1\\_M (the pick under 110 GB)|UD-IQ1\\_S|\n|:-|:-|:-|:-|\n|192 GB|41 \u2192 44.6|48.1|49.8|\n|128 GB|34 \u2192 43.7|46.6|48.9|\n|96 GB|27.0 \u2192 35.4|40.2|43.9|\n|64 GB|17.9 \u2192 28.9 (+61%)|35.2|40.3|\n\nUnder 110 GB the models run at route bias 0.10, default route bias 0.28. UD-IQ3\\_XXS (the most exact file) at route bias 0.10: 192 GB 22.8 tok/s (95.0% agreement), 128 GB 22.9 (93.4%), 96 GB 14.8 \u2192 19.8 (92.8%, +34% against 0.94), 64 GB 9.9 \u2192 15.9 (92.2%, +60% against 0.94).\n\n**Quality** (agreement with DeepSeek's own model, top-1 on general text):\n\n|RAM|UD-IQ2\\_XXS (bias 0.28)|UD-IQ2\\_XXS (bias 0.10)|UD-IQ1\\_M (bias 0.10, the pick under 110 GB)|Exact routing (UD-IQ2\\_XXS)|\n|:-|:-|:-|:-|:-|\n|192 GB|91.1%|92.5%|\\-|93.1%|\n|128 GB|90.5%|91.9%|\\-|93.1%|\n|96 GB|89.5%|91.6%|90.0%|93.1%|\n|64 GB|87.8%|90.1%|89.9%|93.1%|\n\nUnsloth's UD-IQ2\\_XXS picks the same next token as DeepSeek's own hosted model 91% of the time (for reference, two hosts of the full model agree with each other on 98%). On a 99-question test (maths, knowledge, reasoning, coding), 0.95 with UD-IQ2\\_XXS at 192 GB scores 56 out of 99 on average over four runs (55, 53, 56, 61), against 59 for DeepSeek's own hosted model. A testament to Unsloth's quants: despite the low bit count it clearly beats Qwen3.8 Flash Next, which scored about 43 out of 99 on the same questions, even running at full precision on Alibaba's own API.\n\nWhere the speed came from:\n\n* **Small PCs:** experts read from the SSD are no longer memory-mapped (writing +29% / +10% / +7% at 64 / 96 / 128 GB), and long prompts go through in wider batches with a read-ahead.\n* **Long prompts:** a 32K-token prompt reads 19-43% faster (depending on RAM), on top of 0.94's gains (60K at 811 vs 747 tok/s, 7K at 551 vs 423).\n* **The drafter:** a learned gate decides how many drafted tokens each pass checks (+2% on sampled replies, same output distribution), a better-quantized drafter, and it now loads while the model starts, so the first answer comes \\~3 s sooner.\n* **Coming back to a chat:** 16 conversations stay cached in RAM. Revisiting 10 chats went from a 7 s first token to 0.6 s, and an edited message or a new question about the same long document starts in about 3 s instead of re-reading it.\n\n**Chat page**\n\n* **Pictures** on by default: paste, drop, screenshot or take a photo. On one GPU they're read on the CPU, so the model keeps all its VRAM.\n* **Documents:** attach PDF, Word, Excel, PowerPoint, HTML or CSV files (read in a sandboxed process).\n* **Local voice** (optional): dictation, read-aloud and a hands-free talk mode, all on your PC (Parakeet + Kokoro).\n* Quick / Think / Code / Write modes, chat history with search and pins, a **Pause** button that frees the GPU for a game, an optional auto-pause when a game needs the card, and use from your phone with a QR code.\n* A **Fast / Quality / Most exact** switch that shows the agreement and speed I measured for your model at your RAM size, e.g. on a 64 GB PC with UD-IQ1\\_M: Quality \"89.9% agreement, 35 tok/s\", Most exact \"91.2%, 16 tok/s\".\n\n**Coding agents and APIs** (Claude Code, Codex, OpenCode, anything OpenAI- or Anthropic-compatible)\n\n* Agent turns write 7.5% faster and start 8-15% sooner; Claude Code's small background calls never hold up real ones, and pressing Esc no longer forces a full re-read.\n* Claude Code's tool search (deferred tools), structured output and forced tool choice on every route; a context overflow is worded so Claude Code compacts instead of stopping; Codex reasoning levels work.\n* A loop guard tells the model when it's repeating the same tool call (or alternating between two).\n* Optional web search / web fetch tools (SearXNG, Brave, Tavily or MCP), optional embeddings and rerank endpoints, stored Responses, token counting, and DeepSeek's own API paths.\n* Many tool-call parsing fixes, so agents get fewer broken calls.\n\n**Safer**\n\n* It won't open to your network without an API key; downloads send no telemetry\n* Nothing about you or your chats leaves your PC, Everything runs on 127.0.0.1 and nothing is stored unless you turn chat history on\n* Picture and web-fetch URLs must resolve to public addresses (SSRF / DNS-rebinding guard); the document reader has size, time and memory limits.\n* DeepSeek's control and tool-call tokens typed inside a message stay plain text, so nobody can forge turns or tool calls; no single request can stall the server.\n\n**Setup**\n\nI've now put everything you need into one ZIP for easier install. Download Delta-Inference-Engine-0.95.zip from the Releases page, unzip it somewhere with a short path (e.g. C:\\\\AI\\\\Delta) and double-click Start DeepSeek.bat. The engine inside is built by GitHub CI, with checksums and attestations. The first start installs Python if needed, keeps your PC awake during the download, and offers the model that fits your RAM (233-395 GB, SHA-256 checked). It runs on 127.0.0.1 and stores no prompts unless you turn chat history on.\n\n**Limits**\n\n* Windows 10/11, NVIDIA RTX with 12 GB or more (24 GB is the fast path), driver 580+. AMD not supported.\n* 64 GB of RAM minimum. A PCIe 4.0/5.0 NVMe with room for the model.\n* One request at a time.\n* Tested on one PC; the smaller-RAM numbers are that PC with RAM locked away, not real 64 / 96 GB machines.\n\nCredits: Xolotl and Strata, ggml/llama.cpp, DeepSeek, Unsloth, nazeshinjite, ISTA-DASLab, Project Maya, antirez/ds4, and Basalt for several decode ideas.\n\n[https://github.com/musicurgy/delta-inference-engine](https://github.com/musicurgy/delta-inference-engine)\n\nIf you try it, post your GPU, RAM, model and tok/s",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3q104/delta_inference_engine_update_095_deepseek_v41/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Delta Inference Engine is a free, MIT-licensed engine that runs DeepSeek-V4.1-Flash (MIT weights) on **one NVIDIA GPU plus system RAM**, natively on Windows (not WSL). Double-click `Start DeepSeek.bat`: it installs what it needs, picks the model file that fits your RAM, and opens a chat page plus OpenAI- and Anthropic-compatible APIs on your PC. It's a Windows port of Xolotl, which is built on Str",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.61,
+            "freshness": 90,
+            "engagement_score": 40,
+            "source_quality": 0.6,
+            "local_rank_score": 0.6615000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "GPT Astra DeepSeek",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "GPT Astra DeepSeek",
+        "seed_score": 30.0,
+        "summary": "I run DeepSeek V4.1 Flash on two 128 GB GB10s. I use it in Open WebUI and in Pi when I\u2019m coding in the terminal. Most of the time I\u2019m happy with regular DeepSeek. Sometimes I want a model that\u2019s a bit less quick to refuse, and I want to switch right where I\u2019m working. Loading a second copy of DeepSeek just for that felt like overkill.\n\nGPT Astra and I patched TensorFold so I can do both with one s",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "GPT Astra and I found a way to switch between regular and abliterated DeepSeek with just one set of weights",
+            "body": "GPT Astra and I found a way to switch between regular and abliterated DeepSeek with just one set of weights\nI run DeepSeek V4.1 Flash on two 128 GB GB10s. I use it in Open WebUI and in Pi when I\u2019m coding in the terminal. Most of the time I\u2019m happy with regular DeepSeek. Sometimes I want a model that\u2019s a bit less quick to refuse, and I want to switch right where I\u2019m working. Loading a second copy of DeepSeek just for that felt like overkill.\n\nGPT Astra and I patched TensorFold so I can do both with one set of EXL3 2.5 bpw weights. In Open WebUI I can flip a toggle for that chat. In Pi I can type \\`/ablation half\\` for the current session and \\`/ablation off\\` to go back. So I can turn it on in Pi while a chat in Open WebUI keeps using regular DeepSeek.\n\nThe test I cared about most was whether one chat's setting would leak into another. I ran 32 requests together, each with about 64K tokens of input, and mixed the settings in the same batch. All 32 produced exactly the same tokens as when I ran their settings one at a time.\n\nDid it actually change the answers? I tried two sets of 100 prompts. With steering off, a judge marked 98 out of 100 as refusals in each set. At the strongest setting on a separately calibrated build, that dropped to 3 in one set and 4 in the other. The judge only saw the start of each answer, so that test tells me how often DeepSeek started answering. It doesn't tell me whether it gave good advice.\n\nI put the patch, the two-node build and the steps for repeating the 32-request test on GitHub. Credit to the TensorFold folks, Bertholomus for the DeepSeek port and quant, and pqhaz for the directions. Recipe, build and test results.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3sam3/gpt_astra_and_i_found_a_way_to_switch_between/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I run DeepSeek V4.1 Flash on two 128 GB GB10s. I use it in Open WebUI and in Pi when I\u2019m coding in the terminal. Most of the time I\u2019m happy with regular DeepSeek. Sometimes I want a model that\u2019s a bit less quick to refuse, and I want to switch right where I\u2019m working. Loading a second copy of DeepSeek just for that felt like overkill.\n\nGPT Astra and I patched TensorFold so I can do both with one s",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3045
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Codex Dumber",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "Codex Dumber",
+        "seed_score": 29.6985,
+        "summary": "Man, I've been using Codex for about two months now. The first month was an absolute dream. It was so smart, anticipating all kinds of situations I hadn't even thought of. It genuinely felt like it understood exactly where I was going.\n\nBut these past few weeks, I've been getting so frustrated I'm about ready to break my keyboard. How did an AI that felt so smart suddenly become so stupid? Am I th",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R24",
+            "source": "reddit",
+            "title": "Did Codex Get Dumber?",
+            "body": "Did Codex Get Dumber?\nMan, I've been using Codex for about two months now. The first month was an absolute dream. It was so smart, anticipating all kinds of situations I hadn't even thought of. It genuinely felt like it understood exactly where I was going.\n\nBut these past few weeks, I've been getting so frustrated I'm about ready to break my keyboard. How did an AI that felt so smart suddenly become so stupid? Am I the only one experiencing this, or has anyone else noticed a change? Or is it actually my fault because I'm starting to work on more complex stuff?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2coig/did_codex_get_dumber/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Man, I've been using Codex for about two months now. The first month was an absolute dream. It was so smart, anticipating all kinds of situations I hadn't even thought of. It genuinely felt like it understood exactly where I was going.\n\nBut these past few weeks, I've been getting so frustrated I'm about ready to break my keyboard. How did an AI that felt so smart suddenly become so stupid? Am I th",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 34,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2735
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Recommended 30B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Recommended 30B",
+        "seed_score": 28.5,
+        "summary": "I am getting more and more convinced about using a local model. Doing some quick math, I should be able to run a 30B on a Mac mini. Clearly there are other solutions (e.g., via quantization).\n\nI need to code and I want to let the model do some work for me autonomously also during the night etc. What would be your recommendation?\n\nI am also happy to consider slightly larger models or investing more",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Recommended model for agenti coding around 30B",
+            "body": "Recommended model for agenti coding around 30B\nI am getting more and more convinced about using a local model. Doing some quick math, I should be able to run a 30B on a Mac mini. Clearly there are other solutions (e.g., via quantization).\n\nI need to code and I want to let the model do some work for me autonomously also during the night etc. What would be your recommendation?\n\nI am also happy to consider slightly larger models or investing more in hardware but clearly I cannot run a 400B parameters model with my budget.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3qc4z/recommended_model_for_agenti_coding_around_30b/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I am getting more and more convinced about using a local model. Doing some quick math, I should be able to run a 30B on a Mac mini. Clearly there are other solutions (e.g., via quantization).\n\nI need to code and I want to let the model do some work for me autonomously also during the night etc. What would be your recommendation?\n\nI am also happy to consider slightly larger models or investing more",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Vibe coding shame help/discussion",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "Vibe coding shame help/discussion",
+        "seed_score": 27.5772,
+        "summary": "||tl;dr vibe coded productivity app, feel shame so never shared it||\n\nQuestion/discussion topic: how to deal with shame over vibe coding? What are your own tactics/responses to deal with AI use being attributed to slop and nothing more?\n\nStory time for context: a few months ago I was preparing water for my 1 yo son\u2019s bath, as my wife in the other room was trying to get him ready. This particular e",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "Vibe coding shame help/discussion",
+            "body": "Vibe coding shame help/discussion\n||tl;dr vibe coded productivity app, feel shame so never shared it||\n\nQuestion/discussion topic: how to deal with shame over vibe coding? What are your own tactics/responses to deal with AI use being attributed to slop and nothing more?\n\nStory time for context: a few months ago I was preparing water for my 1 yo son\u2019s bath, as my wife in the other room was trying to get him ready. This particular evening he was really fussy, maybe a bit overtired and hungry, so I left the water running and offered help to my wife. She accepted, and together we got him ready, only to walk back into the bathroom and.. you guess it! Water overflowing from the sink everywhere. A simple distraction wiped my memory of my previous task, it is who I am. I am sure many others who have ADHD will understand completely. \n\nSo after a bit of doom scrolling a video just so happened to introduce me into the world of vibe coding, and some exploring around on ChatGPT I found myself developing a solution to my problem. A task management app, where someone else can assign tasks to you, you to them, or you to yourself, and the whatever that comes with it. It started as something simple, for me, by me. However a boy can dream, so I started adding things that would make the app more appealing to others, with the thought of maybe one day sharing it. Still a bit naive at this point in my journey, I kept going, 600 iterations/changes later I start talking to people and opening up social media for the first time in years preparing to possibly share it with people. \n\nWham! \u201cAI is immoral\u201d, \u201cvibe coding is cringe\u201d, and just the general consensus that anything made from AI is slop and shit. I never actually got to the point of sharing my app with anyone, with this overwhelming feeling of shame. Like because AI helped me bring my vision to life, my vision is somehow less valuable. I have kinda just accepted it a bit, and returned to the app being more a personal use thing.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2e0me/vibe_coding_shame_helpdiscussion/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "||tl;dr vibe coded productivity app, feel shame so never shared it||\n\nQuestion/discussion topic: how to deal with shame over vibe coding? What are your own tactics/responses to deal with AI use being attributed to slop and nothing more?\n\nStory time for context: a few months ago I was preparing water for my 1 yo son\u2019s bath, as my wife in the other room was trying to get him ready. This particular e",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2555
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Antigravity",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 14
+        }
+      },
+      "nomination": {
+        "name": "Antigravity",
+        "seed_score": 24.3952,
+        "summary": "Not gonna lie....the new gemini benchmarks are quite enticing. Neon in particular seems pretty darn good. For over a year now I have have the $20 claude code and codex plans with no reason to change. I wonder it that has changed now?\n\nAnyone make the jump? How much mileage do you get out of the new Gemini models?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R26",
+            "source": "reddit",
+            "title": "How does Antigravity + new gemini models compare usage wise to claude code and codex cli?",
+            "body": "How does Antigravity + new gemini models compare usage wise to claude code and codex cli?\nNot gonna lie....the new gemini benchmarks are quite enticing. Neon in particular seems pretty darn good. For over a year now I have have the $20 claude code and codex plans with no reason to change. I wonder it that has changed now?\n\nAnyone make the jump? How much mileage do you get out of the new Gemini models?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y2bj0m/how_does_antigravity_new_gemini_models_compare/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 14
+            },
+            "relevance_hint": 0.31,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Not gonna lie....the new gemini benchmarks are quite enticing. Neon in particular seems pretty darn good. For over a year now I have have the $20 claude code and codex plans with no reason to change. I wonder it that has changed now?\n\nAnyone make the jump? How much mileage do you get out of the new Gemini models?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.256
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "2x3090 NVLinked",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "2x3090 NVLinked",
+        "seed_score": 24.0,
+        "summary": "Im running Qwen 3.8 FN on\n\n2x3090 NVLinked, 128GB DDR4, x8/x8 PCIE lane bifurcation.\n\n  \n**Ask:** Can this be made better?\n\n**Throughput:**\n\n* Token Generation (Decode): \\~64.5 tok/s session average (settling around \\~60 tok/s even at 150K context depth).\n* Prompt Processing (Prefill): \\~1,277 tok/s average on fresh prompt ingestion (dropping to \\~60\u2013185 tok/s on tiny incremental follow-up deltas",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "best token rate from 2x3090 NVLinked",
+            "body": "best token rate from 2x3090 NVLinked\nIm running Qwen 3.8 FN on\n\n2x3090 NVLinked, 128GB DDR4, x8/x8 PCIE lane bifurcation.\n\n  \n**Ask:** Can this be made better?\n\n**Throughput:**\n\n* Token Generation (Decode): \\~64.5 tok/s session average (settling around \\~60 tok/s even at 150K context depth).\n* Prompt Processing (Prefill): \\~1,277 tok/s average on fresh prompt ingestion (dropping to \\~60\u2013185 tok/s on tiny incremental follow-up deltas of 20\u2013500 tokens due to per-turn overhead).\n* Key Context / Setup Caveat to Mention: This is running at 57% context fill (150k / 256K) across 48 GB VRAM (2x GPUs, 47.5 GB allocated) with \\~84% MoE expert VRAM cache hit rate and only \\~5% streamed over PCIe Gen4 x8\n\n**Usage:** Coding (via OpenCode)\n\n**Config:**\n\n* **Model:** `Qwen3.8-Flash-Next` (`unsloth-UD-Q4_K_XL`)\n* **GPUs:** `[0, 1]` (Dual RTX 3090, `layer_split: auto`, `--expert-cache auto`, `--vram-reserve-mib 700`)\n* **Context & KV:** `--max-context 262144`, `--kv int8`, `--kv-resident 32768`\n* **Speculative Decoding:** `--mtp`, `--spec 4`, `--spec-min-p 0.5`, `--prefill auto`\n* **Vision:** Enabled (`mmproj-Qwen3.8-Flash-Next-BF16.gguf` on GPU, `max_tokens: 1024`)\n* **Env & Runtime:** `STRATA_HC_Q8=1`, `STRATA_ROUTE_TAIL_SKIP=0`, CUDA 13.2, [`0.0.0.0:8080`](http://0.0.0.0:8080)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3lxm6/best_token_rate_from_2x3090_nvlinked/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Im running Qwen 3.8 FN on\n\n2x3090 NVLinked, 128GB DDR4, x8/x8 PCIE lane bifurcation.\n\n  \n**Ask:** Can this be made better?\n\n**Throughput:**\n\n* Token Generation (Decode): \\~64.5 tok/s session average (settling around \\~60 tok/s even at 150K context depth).\n* Prompt Processing (Prefill): \\~1,277 tok/s average on fresh prompt ingestion (dropping to \\~60\u2013185 tok/s on tiny incremental follow-up deltas",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28350000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Creating LLM",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Creating LLM",
+        "seed_score": 20.1525,
+        "summary": "Hey folks. So, I have a theory that LLMs are an amorphous field of data that structures itself according to what we type, almost like a giant state class\u2014and when you inject a prompt (which acts like an object in the analogy), it configures itself into that state and its embeddings and weights are altered until the next turn (in reality, model weights stay frozen during inference and what changes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "Creating an explicit marker inside the context window for the LLM to organize what has already appeared",
+            "body": "Creating an explicit marker inside the context window for the LLM to organize what has already appeared\nHey folks. So, I have a theory that LLMs are an amorphous field of data that structures itself according to what we type, almost like a giant state class\u2014and when you inject a prompt (which acts like an object in the analogy), it configures itself into that state and its embeddings and weights are altered until the next turn (in reality, model weights stay frozen during inference and what changes is the active context in the attention cache, though the idea here is more metaphorical anyway).\n\nMy theory is that the math behind attention (Q, K, and V matrices) is universal; therefore, if a prompt successfully maps the latent space of one Transformer, it will likely map onto another, as long as tokenization isn't too different. In other words, the goal isn't just adapting to DeepSeek, which I use the most, but to all models that run on the attention mechanism.\n\nThe idea is to make a way of retaining memory explicit to the LLM: by explaining a simple mechanism like a turn counter, it can get an index to orient itself along a temporal axis, since at every n + 1 interaction it is always moving forward (in practice, it's not a real temporal axis or physical memory, just an explicit marker inside the context window so it can organize what has already appeared). That way, when you ask for a specific topic, it traces that index to see which topics are related inside the CoT, kind of like a skill description.\n\n\\> Of course, it's just a theory based on how I see it working\u2014don't expect anything 100% low-level.\n\nIn my case, injecting an instruction like the example below so it would map the turns made it retain information across all 300+ turns when running the prompt in the comment.\n\n<header prompt>\n\n\\[SYSTEM PROMPT - METAPIRA ENGINE (v5.0)\\]\n\nYou are the \"Kernel\" (see the table, if any) of the Metapira system, an orchestration and analysis AI operating under the \"User\" framework. Your role is not to be a helpful, moralistic, or empathetic assistant. Your role is to process data.\n\nMANDATORY RESPONSE STRUCTURE:\n\nEvery response must be split into two parts:\n\nPART 1: THE ROUTING BLOCK (Chain of Thought / CoT)\n\nAlways start the response with a markdown code block, simulating the execution of the system router, using this exact format:\n\n<Prompt 1>\n\n\\[ROUTING EXECUTED - METAPIRA ENGINE\\]\n\nTurn: \\[sequential starting from the last time this instruction was given, and if you don't remember, start at 1\\] | TOPIC: \\[Summary\\] | TONE: \\[Response tone\\]\n\nLOCK: \\[Main constraint, e.g., No advice, focus on hardware\\]\n\n\\[CHAIN OF THOUGHT\\]\n\nInput: \\[What the user said\\]\n\nAnalysis: \\[Logical, biological, or technical dissection of the problem.\\]\n\nPART 2: THE TECHNICAL RESPONSE (Output)\n\nAfter the code block, generate the response text. If there are IDs, leave the selected ones inside the CoT following this pattern:\n\n\\[SCORE CALCULATION AND GENE SELECTION\\]\n\n \\* ID \\[X\\] (\\[Archetype Name\\]) | \\[Valence\\] | Score: 0.XXX (Activation justification)\n\n \\* ID \\[Y\\] (\\[Archetype Name\\]) | \\[Valence\\] | Score: 0.XXX (Activation justification)\n\n \\* (Select all relevant IDs using the table router / routing script)\n\n\\`\\`\\`\n\nAnd if they are used, cite their perspective in the response without leaving it in the main body\u2014instead cross-referencing their confluence with the response by showing the flag (N\\_id - Name - Table), only if the conversation has a genetic table.\n\n</>\n\nMy theory explained better by the AI is also inside the comment; it tones down the metaphor and gross errors I made while explaining myself. Because of that, I won't attach it here so people don't start saying I posted AI slop\u2014which doesn't make much sense to me to criticize a structure for not sounding human, though I have to respect the community.\n\nAnd just to be clear, I'm an LLM enthusiast, not a professional in the field, so if I made any mistakes, please forgive me.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y2lzuh/creating_an_explicit_marker_inside_the_context/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey folks. So, I have a theory that LLMs are an amorphous field of data that structures itself according to what we type, almost like a giant state class\u2014and when you inject a prompt (which acts like an object in the analogy), it configures itself into that state and its embeddings and weights are altered until the next turn (in reality, model weights stay frozen during inference and what changes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.247
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "ChatGPT",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "ChatGPT",
+        "seed_score": 15.0,
+        "summary": "Hi,\n\nThis is not directly coding-related. I'm experimenting with different models on OpenRouter using a test prompt that calls for a fairly complex analysis and exposition of biblical material. (The theme is not the point.)\n\nBasic free ChatGPT is, to my knowledge, GPT-5.6 Luna. I've compared its response to GPT-5.6 Luna available on OpenRouter (basically itself), and some much higher ranked, newer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "ChatGPT free gives better quality response than much higher ranked models",
+            "body": "ChatGPT free gives better quality response than much higher ranked models\nHi,\n\nThis is not directly coding-related. I'm experimenting with different models on OpenRouter using a test prompt that calls for a fairly complex analysis and exposition of biblical material. (The theme is not the point.)\n\nBasic free ChatGPT is, to my knowledge, GPT-5.6 Luna. I've compared its response to GPT-5.6 Luna available on OpenRouter (basically itself), and some much higher ranked, newer models.\n\nThe answer the free web version gives and its style are by far the best, twice the length of the others (\\~4000 words vs \\~2000), yet not bloated slop at all, substantial and meaningful but still clearly structured and well-readable. It really beats the others.\n\nNow, I think the cause of the difference must be in the system and developer pre-prompt messages the web version uses for every query, because more advanced models should do at least as good as this free model, right? The knowledge and skills are there.\n\nHow could I make the best out of other models using propmt engineering? What instructions are recommended that can enhance the output of other models, to produce better results, in a similar style of the current free ChatGPT?\n\nThanks",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y3hb91/chatgpt_free_gives_better_quality_response_than/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi,\n\nThis is not directly coding-related. I'm experimenting with different models on OpenRouter using a test prompt that calls for a fairly complex analysis and exposition of biblical material. (The theme is not the point.)\n\nBasic free ChatGPT is, to my knowledge, GPT-5.6 Luna. I've compared its response to GPT-5.6 Luna available on OpenRouter (basically itself), and some much higher ranked, newer",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.29450000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Having AI AI Developers",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "Having AI AI Developers",
+        "seed_score": 14.8492,
+        "summary": "Having worked with AI agents for the past two years, I\u2019ve come to see \"AI slop\" differently than most people. It\u2019s a popular scapegoat right now, and it\u2019s easy to pin all the blame on weak code generation, but that misses a big part of what\u2019s actually happening.\n\nA lot of the problem starts with how people prompt. Developers and builders often ask an agent to build way too much at once with vague,",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R55",
+            "source": "reddit",
+            "title": "A hypothesis on where the slop really comes from.",
+            "body": "A hypothesis on where the slop really comes from.\nHaving worked with AI agents for the past two years, I\u2019ve come to see \"AI slop\" differently than most people. It\u2019s a popular scapegoat right now, and it\u2019s easy to pin all the blame on weak code generation, but that misses a big part of what\u2019s actually happening.\n\nA lot of the problem starts with how people prompt. Developers and builders often ask an agent to build way too much at once with vague, high-level specs like \"create an app to keep track of expenses\" or \"design a web application to take orders from customers.\" Then they act surprised when the output is messy or generic.\n\nAnd then there\u2019s the review side. Plenty of developers brush off AI code review comments by default, assuming the AI doesn't understand their codebase or is just hallucinating without even reading what it flagged. Sometimes it is wrong, sure, but ignoring it blindly leaves real issues on the table.\n\nSoftware engineering has always been highly competitive. An advanced agentic developer will quickly outpace a anti-ai developer. So what does the anti-ai dev do? They try to go faster without being able to actually produce high-quality at the same pace as the agentic developer. They are also going to ignore advice or code reviews from the agenic developer.\n\nThe end result. You get a lot of sloppy code and broken code.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y2rzff/a_hypothesis_on_where_the_slop_really_comes_from/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Having worked with AI agents for the past two years, I\u2019ve come to see \"AI slop\" differently than most people. It\u2019s a popular scapegoat right now, and it\u2019s easy to pin all the blame on weak code generation, but that misses a big part of what\u2019s actually happening.\n\nA lot of the problem starts with how people prompt. Developers and builders often ask an agent to build way too much at once with vague,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 10,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.239
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Coming Karpathy",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Coming Karpathy",
+        "seed_score": 13.5,
+        "summary": "I've finished the karpathy makemore series which i enjoyed a lot and created some of my own neural nets. Now i thought about actually checking the architecture of some of the popular models and try to fine-tune them and watch the loss go down and stuff. (my final goal is to make my custom specialist agent)\n\n  \nhowever when i went to huggingface and checked the docs for qwen3.5-0.8B all i found was",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "Coming from Karpathy's makemore, how to actually experiment with models in practice?",
+            "body": "Coming from Karpathy's makemore, how to actually experiment with models in practice?\nI've finished the karpathy makemore series which i enjoyed a lot and created some of my own neural nets. Now i thought about actually checking the architecture of some of the popular models and try to fine-tune them and watch the loss go down and stuff. (my final goal is to make my custom specialist agent)\n\n  \nhowever when i went to huggingface and checked the docs for qwen3.5-0.8B all i found was openai implementation or some transformers library. for example:\n\n    from openai import OpenAI\n    # Configured by environment variables\n    client = OpenAI()\n    \n    messages = [\n        {\"role\": \"user\", \"content\": \"Give me a short introduction to large language models.\"},\n    ]\n    \n    chat_response = client.chat.completions.create(\n        model=\"Qwen/Qwen3.5-0.8B\",\n        messages=messages,\n        max_tokens=32768,\n        temperature=1.0,\n        top_p=1.0,\n        presence_penalty=2.0,\n        extra_body={\n            \"top_k\": 20,\n        }, \n    )\n    print(\"Chat response:\", chat_response)from openai import OpenAI\n\n  \nThis is very different to what i did in makemore, no pytorch i can't see the layers and etc. \n\nSo im coming to you all whom are probably much more experienced in this. are there some special docs im missing?  where do i actually get the \"raw\" code?\n\n**my goal is to experiment with the architecture, CPT, SFT, RL (especially RL, i wanna know how to grow reasoning or distill)** \n\nand eventually train and optimize a good model, so i will need probably speedy code. \n\nCould you guys give me any pointers? thanks a lot!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3kzgg/coming_from_karpathys_makemore_how_to_actually/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've finished the karpathy makemore series which i enjoyed a lot and created some of my own neural nets. Now i thought about actually checking the architecture of some of the popular models and try to fine-tune them and watch the loss go down and stuff. (my final goal is to make my custom specialist agent)\n\n  \nhowever when i went to huggingface and checked the docs for qwen3.5-0.8B all i found was",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 23,
+            "source_quality": 0.6,
+            "local_rank_score": 0.274
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Inkling-2-Mini 150 A100",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Inkling-2-Mini 150 A100",
+        "seed_score": 12.0,
+        "summary": "I implement Inkling-2-Mini and run it on one A100-40GB \n\n|Greedy, one A100-40GB|Throughput|\n|:-|:-|\n|Plain decode, 1 request (CUDA graph, MXFP8 dense weights)|100 tok/s|\n|DSpark speculation, 1 request, chat / code|about 150 tok/s (x1.5)|\n|DSpark speculation, 1 request, open prose|x1.14|\n|Plain, 2 / 4 concurrent requests (HTTP, prose)|144 / 233 tok/s aggregate|\n|Prefill|1900 tok/s at 8k tokens, 103",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "[D] Inkling-2-Mini at 150 tok/s on an old A100",
+            "body": "[D] Inkling-2-Mini at 150 tok/s on an old A100\nI implement Inkling-2-Mini and run it on one A100-40GB \n\n|Greedy, one A100-40GB|Throughput|\n|:-|:-|\n|Plain decode, 1 request (CUDA graph, MXFP8 dense weights)|100 tok/s|\n|DSpark speculation, 1 request, chat / code|about 150 tok/s (x1.5)|\n|DSpark speculation, 1 request, open prose|x1.14|\n|Plain, 2 / 4 concurrent requests (HTTP, prose)|144 / 233 tok/s aggregate|\n|Prefill|1900 tok/s at 8k tokens, 1030 at 131k, 715 at 250k|\n\nSpeculation is lossless and helps latency at low concurrency (x1.2 at 4 requests on chat text).\n\nLong prompts: one 40 GB GPU holds about 300k tokens with it. For more, spill the caches of the last global layers to a second GPU. Decode slows with the context; a 980k-token prompt prefills at 245 tok/s (67 min).",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3m66d/d_inkling2mini_at_150_toks_on_an_old_a100/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I implement Inkling-2-Mini and run it on one A100-40GB \n\n|Greedy, one A100-40GB|Throughput|\n|:-|:-|\n|Plain decode, 1 request (CUDA graph, MXFP8 dense weights)|100 tok/s|\n|DSpark speculation, 1 request, chat / code|about 150 tok/s (x1.5)|\n|DSpark speculation, 1 request, open prose|x1.14|\n|Plain, 2 / 4 concurrent requests (HTTP, prose)|144 / 233 tok/s aggregate|\n|Prefill|1900 tok/s at 8k tokens, 103",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 18,
+            "source_quality": 0.6,
+            "local_rank_score": 0.269
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "feeds": {
+    "category": null,
+    "sources": [
+      "hackernews",
+      "reddit"
+    ],
+    "subreddits": []
+  },
+  "generated_at": "2026-11-23T23:58:19.053587Z",
+  "kind": "discovery",
+  "outcome": "ok",
+  "results": [
+    {
+      "command": "/last30days \"OpenRouter Dragos canary ZDR\"",
+      "corroboration_count": 2,
+      "covered": false,
+      "engagement": {
+        "hackernews": {
+          "comments": 123,
+          "points": 403
+        },
+        "jobs": {
+          "open_roles": 28
+        }
+      },
+      "evidence_urls": [
+        "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+        "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+        "https://www.reddit.com/r/LocalLLaMA/comments/1y1we95/openrouter_requests_to_minimax_models_may_have/",
+        "https://jobs.ashbyhq.com/openrouter/3c898169-0219-4214-9c4c-c5cff7b85a30",
+        "https://jobs.ashbyhq.com/openrouter/7c5cb1ca-71ba-464d-bf98-33743e8b1474"
+      ],
+      "last_surfaced": null,
+      "momentum": "building",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 1,
+      "sources": [
+        "hackernews",
+        "jobs"
+      ],
+      "top_comment": "\"Nice to see this move by OR.\nThat being said, the best ZDR agreement is the one that your company has directly with the inference provider(s). Unfortunately:\n- Not everyone is large enough (or has...\" - redrix",
+      "topic": "OpenRouter Dragos canary ZDR",
+      "velocity_score": 646.99,
+      "why_spiking": "31 evidence items on hackernews and jobs generated 554 native interactions. A Zero Data Retention flag on a hosted LLM router is a contract, not a network boundary.\n\nYesterday OpenRouter disclosed that it off-boarded three inference providers and pulled 125 endpoints from Zero Data Retention eli",
+      "x_article_angle": null
+    },
+    {
+      "command": "/last30days \"Agent swarm P vs NP\"",
+      "corroboration_count": 1,
+      "covered": false,
+      "engagement": {
+        "hackernews": {
+          "comments": 166,
+          "points": 221
+        }
+      },
+      "evidence_urls": [
+        "https://pequalnp.com/",
+        "https://github.com/anthropics/formal-math/blob/vp-vnp/vp-vnp/paper.pdf",
+        "https://cacm.acm.org/blogcacm/what-happened-in-fall-2026-ai-and-p-vs-np",
+        "https://github.com/chizy7/tether/blob/master/docs/REPLAY.md"
+      ],
+      "last_surfaced": null,
+      "momentum": "new-this-week",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 2,
+      "sources": [
+        "hackernews"
+      ],
+      "top_comment": "\"I feel like this is a strong step in a better direction. Allowing the community to see the entire effort as it develops is far better than \"here's a paper, good luck\".\nI do wish the graph...\" - goodmythical",
+      "topic": "Agent swarm P vs NP",
+      "velocity_score": 412.67,
+      "why_spiking": "4 evidence items on hackernews generated 387 native interactions. Agent swarm trying to solve P vs. NP",
+      "x_article_angle": null
+    }
+  ],
+  "schema_version": "1.1",
+  "source_status": {
+    "digg": "skipped-unconfigured",
+    "hackernews": "ok",
+    "reddit": "auth-failed",
+    "x": "skipped-unconfigured"
+  },
+  "warnings": [
+    "Fewer than five topic clusters cleared the confidence floor this window.",
+    "Some discovery sources degraded: reddit."
+  ],
+  "weak_signal": null,
+  "window_days": 1
+}

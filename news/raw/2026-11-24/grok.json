@@ -1,0 +1,180 @@
+{
+ "date": "2026-11-24",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-24.json",
+ "fetched_at": "2026-11-23T23:55:35+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-24",
+  "generated_at": "2026-11-24T05:26:34+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 6,
+  "posts": 6,
+  "ok": 6,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Anthropic launches Claude Ship to automate GitHub PR review, fixes, and policy-based approvals",
+   "category": "tool_launch",
+   "event_time": "2026-11-23T20:13:04Z",
+   "primary_url": "https://claude.com/resources/articles/introducing-claude-ship",
+   "facts": [
+    "Claude Ship is available today in beta and can review PRs, fix them, and decide what's ready to merge based on policies each team sets.",
+    "It is made up of Code Review, which is already generally available, and two new agents in beta: PR Steward and Claude Approvals.",
+    "Eligible Claude Enterprise organizations can claim at least $10,000 in Claude Ship credits to use within 30 days of claiming. Claim by January 15, 2027."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+     "official": true,
+     "author": "@ClaudeDevs",
+     "check": "ok",
+     "created_at": "2026-11-23T20:13:04Z",
+     "text": "Introducing Claude Ship (beta): Claude can review your pull requests, work on fixes, and approve the ones your team's policy allows.\n\nThe goal is to help you ship code as fast as you can write it.",
+     "likes": 13454,
+     "retweets": 682,
+     "replies": 300,
+     "views": 1132366
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Google expands Gemini 4 Carbon access to AI Pro users on Antigravity",
+   "category": "model_infra",
+   "event_time": "2026-11-23T20:16:58Z",
+   "primary_url": null,
+   "facts": [
+    "Resetting Gemini quotas for everyone on Antigravity because we’re upgrading models across tiers!",
+    "Paid Pro users will now have access to Carbon and Hydrogen will be available to all users as promised!"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/_mohansolo/status/2124960419429458207",
+     "official": true,
+     "author": "@_mohansolo",
+     "check": "ok",
+     "created_at": "2026-11-23T20:16:58Z",
+     "text": "Resetting Gemini quotas for everyone on Antigravity because we’re upgrading models across tiers!\n\nPaid Pro users will now have access to Carbon and Hydrogen will be available to all users as promised!\n\nAnd as always, keep swarming with Neon 🚀",
+     "likes": 11429,
+     "retweets": 662,
+     "replies": 1006,
+     "views": 471397
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Claude Code v2.1.331 released with Code Mode support on cloud platforms and bug fixes",
+   "category": "feature_update",
+   "event_time": "2026-11-23T21:55:05Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+   "facts": [
+    "Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS",
+    "Fixed MCP tool calls hanging for up to 30 minutes on some malformed replies from a local or WebSocket server",
+    "Fixed Code Mode sessions resumed with --resume or --continue in another permission mode losing thinking and the prompt cache"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ClaudeCodeLog/status/2124985109853929758",
+     "official": false,
+     "author": "@ClaudeCodeLog",
+     "check": "ok",
+     "created_at": "2026-11-23T21:55:05Z",
+     "text": "Claude Code 2.1.331 has been released.\n\n135 CLI changes, 1 system prompt change\n\nHighlights:\n• Removed system-prompt risky-action confirmation; agents may run previously blocked risky steps automatically\n• Terminal sessions add Code Mode on cloud platforms, enabling code-focused workflows with syntax highlighting\n• MCP tool calls no longer hang up to 30 minutes due to malformed local or WebSocket replies, avoiding stalls\n\nComplete details in thread ↓",
+     "likes": 92,
+     "retweets": 2,
+     "replies": 10,
+     "views": 9459
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "OpenCode 2.4.0 adds built-in desktop browser, automations, and video generation",
+   "category": "feature_update",
+   "event_time": "2026-11-23T15:22:19Z",
+   "primary_url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.0",
+   "facts": [
+    "Built-In Desktop Browser: Import your sign-ins and browsing history from Chrome, Edge, Firefox or Safari, and add extensions from Chromium browsers or the Chrome and Edge stores.",
+    "Automations: Ask the agent to run a prompt, a script or a shell command on a timer, on a cron schedule or when an MCP server sends an event, and manage them with /automation.",
+    "Generate Videos: When a connected provider has a video model, the agent can make videos with generate_video."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/opencode/status/2124886266835505473",
+     "official": true,
+     "author": "@opencode",
+     "check": "ok",
+     "created_at": "2026-11-23T15:22:19Z",
+     "text": "OpenCode 2.4.0 ships with a new automation tool\n\nyour agent can create automations that run on schedule or react to mcp events\n\nthey can trigger prompts, shell commands, or a code mode script that can access your mcp tools",
+     "likes": 3458,
+     "retweets": 122,
+     "replies": 129,
+     "views": 117595
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "AWS releases Strands Decider v2 models and adds coding agent support to Strands Box",
+   "category": "model_infra",
+   "event_time": "2026-11-23T21:20:48Z",
+   "primary_url": "https://siliconangle.com/2026/11/23/aws-is-making-ai-agents-more-decisive-and-secure-with-its-latest-strands-updates/",
+   "facts": [
+    "Amazon Web Services Inc. unveiled a new family of open-weight “decision models” called Strands Decider v2, along with the debut of Box CLI, bringing native sandbox support for popular coding agents such as Claude Code, Codex and Kiro CLI.",
+    "The open-weight models are built on Google LLC’s Gemma 4 architecture and they’re available in various sizes, ranging from a lightweight edge version to a beefy 31 billion-parameter variant for complex decision-making."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/web_se/status/2124976481537536161",
+     "official": false,
+     "author": "@web_se",
+     "check": "ok",
+     "created_at": "2026-11-23T21:20:48Z",
+     "text": "https://strandsagents.com/blog/strands-box-cli/",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 1,
+     "views": 25
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Claude Code desktop gets redesigned tabbed side panel for files, changes, and terminal",
+   "category": "feature_update",
+   "event_time": "2026-11-23T21:30:01Z",
+   "primary_url": null,
+   "facts": [
+    "We've redesigned the side panel in Claude Code on desktop.",
+    "Files, Changes, Terminal and your other tools now open as tabs beside your session. You can still move a tab to see several at once, or pop it out into its own window.",
+    "Rolling out on Mac. Windows and Linux coming soon!"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ClaudeDevs/status/2124978802006851961",
+     "official": true,
+     "author": "@ClaudeDevs",
+     "check": "ok",
+     "created_at": "2026-11-23T21:30:01Z",
+     "text": "We've redesigned the side panel in Claude Code on desktop.\n\nFiles, Changes, Terminal and your other tools now open as tabs beside your session. You can still move a tab to see several at once, or pop it out into its own window.\n\nRolling out on Mac. Windows and Linux coming soon!",
+     "likes": 2936,
+     "retweets": 105,
+     "replies": 144,
+     "views": 194509
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

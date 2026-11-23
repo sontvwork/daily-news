@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "97ee6841039f9cbf",
+  "generated_at": "2026-11-23T23:55:55.196929Z",
+  "from_date": "2026-11-22",
+  "to_date": "2026-11-23",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-23T23:55:55.196184Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-23T23:55:55.196192Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-23T23:55:55.194457Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-11-23T23:55:55.196105Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "87 Anthropic 11 2028",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1002,
+          "points": 1025
+        }
+      },
+      "nomination": {
+        "name": "87 Anthropic 11 2028",
+        "seed_score": 2149.9582,
+        "summary": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50597612",
+            "source": "hackernews",
+            "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+            "body": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+            "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+            "author": "happosai",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1025,
+              "comments": 1002
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about 87% of the Anthropic power will come from gas and 11% from c",
+            "snippet": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50597612",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.10750000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

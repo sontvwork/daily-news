@@ -1,0 +1,823 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "b596c0c7286548ad",
+  "generated_at": "2026-11-23T23:55:52.229214Z",
+  "from_date": "2026-11-22",
+  "to_date": "2026-11-23",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-23T23:55:52.151955Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-23T23:55:52.151961Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 70,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-23T23:55:52.151506Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 1,
+      "attempted": true,
+      "at": "2026-11-23T23:55:52.151806Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Agent NP",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 159,
+          "points": 183
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Agent NP",
+        "seed_score": 420.6077,
+        "summary": "Agent swarm trying to solve P vs. NP",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50604314",
+            "source": "hackernews",
+            "title": "Agent swarm trying to solve P vs. NP",
+            "body": "Agent swarm trying to solve P vs. NP",
+            "url": "https://pequalnp.com/",
+            "author": "bananaflag",
+            "container": "Hacker News",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 183,
+              "comments": 159
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about Agent swarm trying to solve P vs. NP",
+            "snippet": "Agent swarm trying to solve P vs. NP",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50604314",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 50,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07500000000000001
+          },
+          {
+            "item_id": "R68",
+            "source": "reddit",
+            "title": "Hands-on workshop: Building AI agents with Hybrid RAG, Tools, Memory & Guardrails (Nov 28)",
+            "body": "Hands-on workshop: Building AI agents with Hybrid RAG, Tools, Memory & Guardrails (Nov 28)\nhey everyone! sharing this for anyone building AI agents and trying to move beyond basic prompt-and-response workflows.\n\none of the biggest challenges with agents is that connecting an LLM to a few tools doesn't automatically make it a reliable application.\n\nyou still need to think about what the agent remembers, how it retrieves information, what happens when a tool fails and how you evaluate its decisions.\n\nPackt is hosting a hands-on workshop on November 28 with Brij Kishore Pandey covering these engineering challenges.\n\nsome of the things covered:\n\n* building hybrid RAG pipelines\n* connecting LLMs to external tools\n* implementing persistent memory across interactions\n* adding guardrails and handling failures\n* evaluating application quality and observability\n* working with Google ADK and Gemini\n\nthe focus is on engineering the complete application rather than just building another basic agent demo.\n\nfull details and agenda in the comment\n\nhappy to answer questions about the curriculum!",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y3tbok/handson_workshop_building_ai_agents_with_hybrid/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "hey everyone! sharing this for anyone building AI agents and trying to move beyond basic prompt-and-response workflows.\n\none of the biggest challenges with agents is that connecting an LLM to a few tools doesn't automatically make it a reliable application.\n\nyou still need to think about what the agent remembers, how it retrieves information, what happens when a tool fails and how you evaluate its",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 13,
+            "source_quality": 0.6,
+            "local_rank_score": 0.368
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "actual advantages of academic conferences right",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "actual advantages of academic conferences right",
+        "seed_score": 54.0937,
+        "summary": "As I understand it, the traditional advantages of conferences were fast publication of papers, a double-blind review system, and networking opportunities. The main drawback was the high financial cost.\n\nBut, fast publication has recently become meaningless because of the lottery-like, arbitrary review process. If you get unlucky with reviewers and get rejected, you have to go through at least two",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R96",
+            "source": "reddit",
+            "title": "What are the actual advantages of academic conferences right now? [D]",
+            "body": "What are the actual advantages of academic conferences right now? [D]\nAs I understand it, the traditional advantages of conferences were fast publication of papers, a double-blind review system, and networking opportunities. The main drawback was the high financial cost.\n\nBut, fast publication has recently become meaningless because of the lottery-like, arbitrary review process. If you get unlucky with reviewers and get rejected, you have to go through at least two submission cycles, which easily takes over a year. If it takes three cycles, it takes at least a year and a half just to get published.\n\nThe double-blind review system has also lost its meaning because of the widespread culture of allowing public preprints prior to review.\n\nNetworking opportunities are still a solid advantage of conferences. But, with governments cutting research funding, the costs of registration, accommodation, and flights have become far too expensive.\n\nUltimately, it seems to boil down to paying a lot of money purely for networking.\n\nIs it really worth that much?",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y2wnco/what_are_the_actual_advantages_of_academic/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 33,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "As I understand it, the traditional advantages of conferences were fast publication of papers, a double-blind review system, and networking opportunities. The main drawback was the high financial cost.\n\nBut, fast publication has recently become meaningless because of the lottery-like, arbitrary review process. If you get unlucky with reviewers and get rejected, you have to go through at least two",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.138
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Delta Inference Engine update 0.95",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Delta Inference Engine update 0.95",
+        "seed_score": 42.0,
+        "summary": "Delta Inference Engine is a free, MIT-licensed engine that runs DeepSeek-V4.1-Flash (MIT weights) on **one NVIDIA GPU plus system RAM**, natively on Windows (not WSL). Double-click `Start DeepSeek.bat`: it installs what it needs, picks the model file that fits your RAM, and opens a chat page plus OpenAI- and Anthropic-compatible APIs on your PC. It's a Windows port of Xolotl, which is built on Str",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Delta Inference Engine update 0.95: DeepSeek V4.1 Flash at 44 tok/s with Unsloth Q2 on a 3090/128GB RAM, 61% faster on 64GB of RAM, pictures + PDF/Office documents + local voice and much more. ready for Claude Code / Codex / OpenCode",
+            "body": "Delta Inference Engine update 0.95: DeepSeek V4.1 Flash at 44 tok/s with Unsloth Q2 on a 3090/128GB RAM, 61% faster on 64GB of RAM, pictures + PDF/Office documents + local voice and much more. ready for Claude Code / Codex / OpenCode\nDelta Inference Engine is a free, MIT-licensed engine that runs DeepSeek-V4.1-Flash (MIT weights) on **one NVIDIA GPU plus system RAM**, natively on Windows (not WSL). Double-click `Start DeepSeek.bat`: it installs what it needs, picks the model file that fits your RAM, and opens a chat page plus OpenAI- and Anthropic-compatible APIs on your PC. It's a Windows port of Xolotl, which is built on Strata (on Linux, use upstream Xolotl).\n\nBig update for Delta Inference Engine 0.95 is out today, People wanted support for lower ram configurations and higher quality inference and it's here.\n\n**Speed** (RTX 3090 24 GB, i5-13600K, DDR5-5600, PCIe 4.0 NVMe; under 192 GB the rest of the RAM was locked away so Windows couldn't use it either). Writing tok/s, greedy, whole chats with thinking on:\n\n|RAM|Unsloth UD-IQ2\\_XXS (0.93 \u2192 0.95)|UD-IQ1\\_M (the pick under 110 GB)|UD-IQ1\\_S|\n|:-|:-|:-|:-|\n|192 GB|41 \u2192 44.6|48.1|49.8|\n|128 GB|34 \u2192 43.7|46.6|48.9|\n|96 GB|27.0 \u2192 35.4|40.2|43.9|\n|64 GB|17.9 \u2192 28.9 (+61%)|35.2|40.3|\n\nUnder 110 GB the models run at route bias 0.10, default route bias 0.28. UD-IQ3\\_XXS (the most exact file) at route bias 0.10: 192 GB 22.8 tok/s (95.0% agreement), 128 GB 22.9 (93.4%), 96 GB 14.8 \u2192 19.8 (92.8%, +34% against 0.94), 64 GB 9.9 \u2192 15.9 (92.2%, +60% against 0.94).\n\n**Quality** (agreement with DeepSeek's own model, top-1 on general text):\n\n|RAM|UD-IQ2\\_XXS (bias 0.28)|UD-IQ2\\_XXS (bias 0.10)|UD-IQ1\\_M (bias 0.10, the pick under 110 GB)|Exact routing (UD-IQ2\\_XXS)|\n|:-|:-|:-|:-|:-|\n|192 GB|91.1%|92.5%|\\-|93.1%|\n|128 GB|90.5%|91.9%|\\-|93.1%|\n|96 GB|89.5%|91.6%|90.0%|93.1%|\n|64 GB|87.8%|90.1%|89.9%|93.1%|\n\nUnsloth's UD-IQ2\\_XXS picks the same next token as DeepSeek's own hosted model 91% of the time (for reference, two hosts of the full model agree with each other on 98%). On a 99-question test (maths, knowledge, reasoning, coding), 0.95 with UD-IQ2\\_XXS at 192 GB scores 56 out of 99 on average over four runs (55, 53, 56, 61), against 59 for DeepSeek's own hosted model. A testament to Unsloth's quants: despite the low bit count it clearly beats Qwen3.8 Flash Next, which scored about 43 out of 99 on the same questions, even running at full precision on Alibaba's own API.\n\nWhere the speed came from:\n\n* **Small PCs:** experts read from the SSD are no longer memory-mapped (writing +29% / +10% / +7% at 64 / 96 / 128 GB), and long prompts go through in wider batches with a read-ahead.\n* **Long prompts:** a 32K-token prompt reads 19-43% faster (depending on RAM), on top of 0.94's gains (60K at 811 vs 747 tok/s, 7K at 551 vs 423).\n* **The drafter:** a learned gate decides how many drafted tokens each pass checks (+2% on sampled replies, same output distribution), a better-quantized drafter, and it now loads while the model starts, so the first answer comes \\~3 s sooner.\n* **Coming back to a chat:** 16 conversations stay cached in RAM. Revisiting 10 chats went from a 7 s first token to 0.6 s, and an edited message or a new question about the same long document starts in about 3 s instead of re-reading it.\n\n**Chat page**\n\n* **Pictures** on by default: paste, drop, screenshot or take a photo. On one GPU they're read on the CPU, so the model keeps all its VRAM.\n* **Documents:** attach PDF, Word, Excel, PowerPoint, HTML or CSV files (read in a sandboxed process).\n* **Local voice** (optional): dictation, read-aloud and a hands-free talk mode, all on your PC (Parakeet + Kokoro).\n* Quick / Think / Code / Write modes, chat history with search and pins, a **Pause** button that frees the GPU for a game, an optional auto-pause when a game needs the card, and use from your phone with a QR code.\n* A **Fast / Quality / Most exact** switch that shows the agreement and speed I measured for your model at your RAM size, e.g. on a 64 GB PC with UD-IQ1\\_M: Quality \"89.9% agreement, 35 tok/s\", Most exact \"91.2%, 16 tok/s\".\n\n**Coding agents and APIs** (Claude Code, Codex, OpenCode, anything OpenAI- or Anthropic-compatible)\n\n* Agent turns write 7.5% faster and start 8-15% sooner; Claude Code's small background calls never hold up real ones, and pressing Esc no longer forces a full re-read.\n* Claude Code's tool search (deferred tools), structured output and forced tool choice on every route; a context overflow is worded so Claude Code compacts instead of stopping; Codex reasoning levels work.\n* A loop guard tells the model when it's repeating the same tool call (or alternating between two).\n* Optional web search / web fetch tools (SearXNG, Brave, Tavily or MCP), optional embeddings and rerank endpoints, stored Responses, token counting, and DeepSeek's own API paths.\n* Many tool-call parsing fixes, so agents get fewer broken calls.\n\n**Safer**\n\n* It won't open to your network without an API key; downloads send no telemetry\n* Nothing about you or your chats leaves your PC, Everything runs on 127.0.0.1 and nothing is stored unless you turn chat history on\n* Picture and web-fetch URLs must resolve to public addresses (SSRF / DNS-rebinding guard); the document reader has size, time and memory limits.\n* DeepSeek's control and tool-call tokens typed inside a message stay plain text, so nobody can forge turns or tool calls; no single request can stall the server.\n\n**Setup**\n\nI've now put everything you need into one ZIP for easier install. Download Delta-Inference-Engine-0.95.zip from the Releases page, unzip it somewhere with a short path (e.g. C:\\\\AI\\\\Delta) and double-click Start DeepSeek.bat. The engine inside is built by GitHub CI, with checksums and attestations. The first start installs Python if needed, keeps your PC awake during the download, and offers the model that fits your RAM (233-395 GB, SHA-256 checked). It runs on 127.0.0.1 and stores no prompts unless you turn chat history on.\n\n**Limits**\n\n* Windows 10/11, NVIDIA RTX with 12 GB or more (24 GB is the fast path), driver 580+. AMD not supported.\n* 64 GB of RAM minimum. A PCIe 4.0/5.0 NVMe with room for the model.\n* One request at a time.\n* Tested on one PC; the smaller-RAM numbers are that PC with RAM locked away, not real 64 / 96 GB machines.\n\nCredits: Xolotl and Strata, ggml/llama.cpp, DeepSeek, Unsloth, nazeshinjite, ISTA-DASLab, Project Maya, antirez/ds4, and Basalt for several decode ideas.\n\n[https://github.com/musicurgy/delta-inference-engine](https://github.com/musicurgy/delta-inference-engine)\n\nIf you try it, post your GPU, RAM, model and tok/s",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3q104/delta_inference_engine_update_095_deepseek_v41/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.02,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Delta Inference Engine is a free, MIT-licensed engine that runs DeepSeek-V4.1-Flash (MIT weights) on **one NVIDIA GPU plus system RAM**, natively on Windows (not WSL). Double-click `Start DeepSeek.bat`: it installs what it needs, picks the model file that fits your RAM, and opens a chat page plus OpenAI- and Anthropic-compatible APIs on your PC. It's a Windows port of Xolotl, which is built on Str",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 34.5,
+        "summary": "I'm researching a problem around production AI agents and would like to hear from people actually building them.\n\nHow are you currently handling:\n\n* Failed or interrupted agent executions?\n* Duplicate tool calls and side effects?\n* Agent evaluations and regression testing?\n* Human approval for sensitive actions?\n* Production monitoring and debugging?\n\nAre you using a combination of tools like Temp",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "How are you handling reliability in production AI agents?",
+            "body": "How are you handling reliability in production AI agents?\nI'm researching a problem around production AI agents and would like to hear from people actually building them.\n\nHow are you currently handling:\n\n* Failed or interrupted agent executions?\n* Duplicate tool calls and side effects?\n* Agent evaluations and regression testing?\n* Human approval for sensitive actions?\n* Production monitoring and debugging?\n\nAre you using a combination of tools like Temporal, Inngest, LangSmith, Langfuse, etc., or have you built your own infrastructure?\n\nCurious about what's still painful or missing in your current setup. I'm just researching the problem.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y39222/how_are_you_handling_reliability_in_production_ai/",
+            "container": "LangChain",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm researching a problem around production AI agents and would like to hear from people actually building them.\n\nHow are you currently handling:\n\n* Failed or interrupted agent executions?\n* Duplicate tool calls and side effects?\n* Agent evaluations and regression testing?\n* Human approval for sensitive actions?\n* Production monitoring and debugging?\n\nAre you using a combination of tools like Temp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4625
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Recommended 30B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Recommended 30B",
+        "seed_score": 28.5,
+        "summary": "I am getting more and more convinced about using a local model. Doing some quick math, I should be able to run a 30B on a Mac mini. Clearly there are other solutions (e.g., via quantization).\n\nI need to code and I want to let the model do some work for me autonomously also during the night etc. What would be your recommendation?\n\nI am also happy to consider slightly larger models or investing more",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "Recommended model for agenti coding around 30B",
+            "body": "Recommended model for agenti coding around 30B\nI am getting more and more convinced about using a local model. Doing some quick math, I should be able to run a 30B on a Mac mini. Clearly there are other solutions (e.g., via quantization).\n\nI need to code and I want to let the model do some work for me autonomously also during the night etc. What would be your recommendation?\n\nI am also happy to consider slightly larger models or investing more in hardware but clearly I cannot run a 400B parameters model with my budget.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3qc4z/recommended_model_for_agenti_coding_around_30b/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I am getting more and more convinced about using a local model. Doing some quick math, I should be able to run a 30B on a Mac mini. Clearly there are other solutions (e.g., via quantization).\n\nI need to code and I want to let the model do some work for me autonomously also during the night etc. What would be your recommendation?\n\nI am also happy to consider slightly larger models or investing more",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.269
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 27.0,
+        "summary": "# [](https://www.reddit.com/r/AI_Agents/?f=flair_name%3A%22Discussion%22)\n\nI've been digging into agents that take real actions: booking appointments, updating a CRM, placing orders, sending emails, etc.\n\nOne thing keeps coming up: the agent says \"done\", and sometimes it isn't. No error, the conversation looks perfect, and you only find out later.\n\nThe usual advice is to put a human approval befor",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "Do you actually trust your AI agent when it says \"done\"?",
+            "body": "Do you actually trust your AI agent when it says \"done\"?\n# [](https://www.reddit.com/r/AI_Agents/?f=flair_name%3A%22Discussion%22)\n\nI've been digging into agents that take real actions: booking appointments, updating a CRM, placing orders, sending emails, etc.\n\nOne thing keeps coming up: the agent says \"done\", and sometimes it isn't. No error, the conversation looks perfect, and you only find out later.\n\nThe usual advice is to put a human approval before anything irreversible, and I agree. But approval checks what the agent *wants* to do. It doesn't tell you whether the approved action actually happened.\n\nCurious how people here deal with it:\n\n* Has an agent ever told you (or a customer) it did something it didn't?\n* How did you find out: logs, a customer complaint, by accident?\n* Do you check after the action, or trust it once it's approved?\n* What would you need to see to trust it fully?\n\nStill learning here, so real stories (and mistakes) are very welcome.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y3e8w8/do_you_actually_trust_your_ai_agent_when_it_says/",
+            "container": "LangChain",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.18,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "# [](https://www.reddit.com/r/AI_Agents/?f=flair_name%3A%22Discussion%22)\n\nI've been digging into agents that take real actions: booking appointments, updating a CRM, placing orders, sending emails, etc.\n\nOne thing keeps coming up: the agent says \"done\", and sometimes it isn't. No error, the conversation looks perfect, and you only find out later.\n\nThe usual advice is to put a human approval befor",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.421
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Inkling Mini 2 40 t/s",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Inkling Mini 2 40 t/s",
+        "seed_score": 18.0,
+        "summary": "I am testing Polystrata with Inklink Mini 2 on an Acer Nitro V15 laptop, equipped with an RTX 4060 (8GB VRAM) and 48GB of RAM. I\u2019m achieving an impressive 38\u201340 t/s  and 400\u2013500 pp , with a 120k context window. I was able to set up even larger context windows without any performance degradation. It\u2019s working very well in this initial test!\n\n[https://github.com/simplexai-labs/PolyStrata/blob/main/d",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Inkling Mini 2 - 40 t/s at 8 Gb Vram + 48 Ram - Polystrata",
+            "body": "Inkling Mini 2 - 40 t/s at 8 Gb Vram + 48 Ram - Polystrata\nI am testing Polystrata with Inklink Mini 2 on an Acer Nitro V15 laptop, equipped with an RTX 4060 (8GB VRAM) and 48GB of RAM. I\u2019m achieving an impressive 38\u201340 t/s  and 400\u2013500 pp , with a 120k context window. I was able to set up even larger context windows without any performance degradation. It\u2019s working very well in this initial test!\n\n[https://github.com/simplexai-labs/PolyStrata/blob/main/docs/models/inkling.md](https://github.com/simplexai-labs/PolyStrata/blob/main/docs/models/inkling.md)\n\nhttps://i.redd.it/2ow0c7bh5e3i1.png",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3n6ab/inkling_mini_2_40_ts_at_8_gb_vram_48_ram/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I am testing Polystrata with Inklink Mini 2 on an Acer Nitro V15 laptop, equipped with an RTX 4060 (8GB VRAM) and 48GB of RAM. I\u2019m achieving an impressive 38\u201340 t/s  and 400\u2013500 pp , with a 120k context window. I was able to set up even larger context windows without any performance degradation. It\u2019s working very well in this initial test!\n\n[https://github.com/simplexai-labs/PolyStrata/blob/main/d",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 55,
+            "source_quality": 0.6,
+            "local_rank_score": 0.306
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Inkling-2-Mini Tesla V100 94 Q8 V100",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Inkling-2-Mini Tesla V100 94 Q8 V100",
+        "seed_score": 18.0,
+        "summary": "I've been porting Thinking Machines' Inkling-2-Mini to an old Tesla V100 32 GB in our open-source C++/CUDA engine, ashalliants/ninfer-3090 (https://github.com/ashalliants/ninfer-3090). I collected every single-V100 number I could find for this model and put them next to ours (chart attached).\n\n\n\n\\- \\*\\*Decode: 94 tok/s\\*\\* averaged over 12 chats with the model's own DSpark drafter (up to 120 on si",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R44",
+            "source": "reddit",
+            "title": "Inkling-2-Mini on a single Tesla V100: 94 tok/s with exact speculative decoding, on the full Q8 weights (vs every published V100 figure I could find)",
+            "body": "Inkling-2-Mini on a single Tesla V100: 94 tok/s with exact speculative decoding, on the full Q8 weights (vs every published V100 figure I could find)\nI've been porting Thinking Machines' Inkling-2-Mini to an old Tesla V100 32 GB in our open-source C++/CUDA engine, ashalliants/ninfer-3090 (https://github.com/ashalliants/ninfer-3090). I collected every single-V100 number I could find for this model and put them next to ours (chart attached).\n\n\n\n\\- \\*\\*Decode: 94 tok/s\\*\\* averaged over 12 chats with the model's own DSpark drafter (up to 120 on single chats), and \\*\\*78 tok/s\\*\\* with no drafter at all. That plain figure is still above the best published V100 numbers I found (Strata 70.5 with its drafter on; Lapilli's port 69; llama.cpp 32-51 on Q4).\n\n\\- \\*\\*Exact:\\*\\* the speculative decoding never changes the output. Greedy output was byte-identical to plain decoding on all 12 chats, and sampled requests draw the same tokens as plain sampling at the same seed.\n\n\\- \\*\\*Full-size weights:\\*\\* it runs Unsloth's UD-Q8\\_K\\_XL, repacked byte-exact. That's the largest quant in the chart; everyone else listed runs Q4 or NVFP4.\n\n\\- \\*\\*Full context with images:\\*\\* those decode numbers are at the whole 262,144-token context, on the one card, with vision and two adapters loaded.\n\n\\- \\*\\*Prefill: 2,120-2,140 tok/s\\*\\* on a 12.4K-token prompt with \\`--prefill-chunk 8192\\` (the default chunk gives 1,930).\n\n  Strata's model card claims 2,287 on a V100 without giving the prompt length, so it's in the chart as published and still ahead there. We're working on it.\n\n\n\nThe box is not a nice one: the V100 hangs off a PCIe Gen3 x4 eGPU link with 59 GB of system RAM, power-limited to 200 W.\n\nCaveat: apart from ours, these are other people's published numbers on their own machines, quants and prompts, so read it as a field survey, not a controlled benchmark. Every source and its conditions are in the comment below.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3qawq/inkling2mini_on_a_single_tesla_v100_94_toks_with/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been porting Thinking Machines' Inkling-2-Mini to an old Tesla V100 32 GB in our open-source C++/CUDA engine, ashalliants/ninfer-3090 (https://github.com/ashalliants/ninfer-3090). I collected every single-V100 number I could find for this model and put them next to ours (chart attached).\n\n\n\n\\- \\*\\*Decode: 94 tok/s\\*\\* averaged over 12 chats with the model's own DSpark drafter (up to 120 on si",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "ICLR ICML NeurIPS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "ICLR ICML NeurIPS",
+        "seed_score": 15.9099,
+        "summary": "I read a couple of older posts on ICML still publishing in these kind of cases, but I am interested in knowing more about ICLR and NeurIPS, especially due to issues such as no visa slots from the applicant's country, colliding visa status etc.\n\n\n\nI would be really grateful for any information, as I would feel devastated if my paper is accepted in any of these conferences, but I cannot attend the i",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R100",
+            "source": "reddit",
+            "title": "Will an accepted paper get published at the conferences like ICLR, ICML or NeurIPS if the author pays for the registration, but they are unable to travel to the conference location for the presentation? [R]",
+            "body": "Will an accepted paper get published at the conferences like ICLR, ICML or NeurIPS if the author pays for the registration, but they are unable to travel to the conference location for the presentation? [R]\nI read a couple of older posts on ICML still publishing in these kind of cases, but I am interested in knowing more about ICLR and NeurIPS, especially due to issues such as no visa slots from the applicant's country, colliding visa status etc.\n\n\n\nI would be really grateful for any information, as I would feel devastated if my paper is accepted in any of these conferences, but I cannot attend the in-person conference.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y2lbzr/will_an_accepted_paper_get_published_at_the/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I read a couple of older posts on ICML still publishing in these kind of cases, but I am interested in knowing more about ICLR and NeurIPS, especially due to issues such as no visa slots from the applicant's country, colliding visa status etc.\n\n\n\nI would be really grateful for any information, as I would feel devastated if my paper is accepted in any of these conferences, but I cannot attend the i",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 10,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.086
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Coming Karpathy",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 4
+        }
+      },
+      "nomination": {
+        "name": "Coming Karpathy",
+        "seed_score": 13.5,
+        "summary": "I've finished the karpathy makemore series which i enjoyed a lot and created some of my own neural nets. Now i thought about actually checking the architecture of some of the popular models and try to fine-tune them and watch the loss go down and stuff. (my final goal is to make my custom specialist agent)\n\n  \nhowever when i went to huggingface and checked the docs for qwen3.5-0.8B all i found was",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "Coming from Karpathy's makemore, how to actually experiment with models in practice?",
+            "body": "Coming from Karpathy's makemore, how to actually experiment with models in practice?\nI've finished the karpathy makemore series which i enjoyed a lot and created some of my own neural nets. Now i thought about actually checking the architecture of some of the popular models and try to fine-tune them and watch the loss go down and stuff. (my final goal is to make my custom specialist agent)\n\n  \nhowever when i went to huggingface and checked the docs for qwen3.5-0.8B all i found was openai implementation or some transformers library. for example:\n\n    from openai import OpenAI\n    # Configured by environment variables\n    client = OpenAI()\n    \n    messages = [\n        {\"role\": \"user\", \"content\": \"Give me a short introduction to large language models.\"},\n    ]\n    \n    chat_response = client.chat.completions.create(\n        model=\"Qwen/Qwen3.5-0.8B\",\n        messages=messages,\n        max_tokens=32768,\n        temperature=1.0,\n        top_p=1.0,\n        presence_penalty=2.0,\n        extra_body={\n            \"top_k\": 20,\n        }, \n    )\n    print(\"Chat response:\", chat_response)from openai import OpenAI\n\n  \nThis is very different to what i did in makemore, no pytorch i can't see the layers and etc. \n\nSo im coming to you all whom are probably much more experienced in this. are there some special docs im missing?  where do i actually get the \"raw\" code?\n\n**my goal is to experiment with the architecture, CPT, SFT, RL (especially RL, i wanna know how to grow reasoning or distill)** \n\nand eventually train and optimize a good model, so i will need probably speedy code. \n\nCould you guys give me any pointers? thanks a lot!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3kzgg/coming_from_karpathys_makemore_how_to_actually/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 4
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've finished the karpathy makemore series which i enjoyed a lot and created some of my own neural nets. Now i thought about actually checking the architecture of some of the popular models and try to fine-tune them and watch the loss go down and stuff. (my final goal is to make my custom specialist agent)\n\n  \nhowever when i went to huggingface and checked the docs for qwen3.5-0.8B all i found was",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28500000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Inkling-2-Mini 150 A100",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Inkling-2-Mini 150 A100",
+        "seed_score": 12.0,
+        "summary": "I implement Inkling-2-Mini and run it on one A100-40GB \n\n|Greedy, one A100-40GB|Throughput|\n|:-|:-|\n|Plain decode, 1 request (CUDA graph, MXFP8 dense weights)|100 tok/s|\n|DSpark speculation, 1 request, chat / code|about 150 tok/s (x1.5)|\n|DSpark speculation, 1 request, open prose|x1.14|\n|Plain, 2 / 4 concurrent requests (HTTP, prose)|144 / 233 tok/s aggregate|\n|Prefill|1900 tok/s at 8k tokens, 103",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "[D] Inkling-2-Mini at 150 tok/s on an old A100",
+            "body": "[D] Inkling-2-Mini at 150 tok/s on an old A100\nI implement Inkling-2-Mini and run it on one A100-40GB \n\n|Greedy, one A100-40GB|Throughput|\n|:-|:-|\n|Plain decode, 1 request (CUDA graph, MXFP8 dense weights)|100 tok/s|\n|DSpark speculation, 1 request, chat / code|about 150 tok/s (x1.5)|\n|DSpark speculation, 1 request, open prose|x1.14|\n|Plain, 2 / 4 concurrent requests (HTTP, prose)|144 / 233 tok/s aggregate|\n|Prefill|1900 tok/s at 8k tokens, 1030 at 131k, 715 at 250k|\n\nSpeculation is lossless and helps latency at low concurrency (x1.2 at 4 requests on chat text).\n\nLong prompts: one 40 GB GPU holds about 300k tokens with it. For more, spill the caches of the last global layers to a second GPU. Decode slows with the context; a 980k-token prompt prefills at 245 tok/s (67 min).",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3m66d/d_inkling2mini_at_150_toks_on_an_old_a100/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I implement Inkling-2-Mini and run it on one A100-40GB \n\n|Greedy, one A100-40GB|Throughput|\n|:-|:-|\n|Plain decode, 1 request (CUDA graph, MXFP8 dense weights)|100 tok/s|\n|DSpark speculation, 1 request, chat / code|about 150 tok/s (x1.5)|\n|DSpark speculation, 1 request, open prose|x1.14|\n|Plain, 2 / 4 concurrent requests (HTTP, prose)|144 / 233 tok/s aggregate|\n|Prefill|1900 tok/s at 8k tokens, 103",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.276
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Identifiable NeurIPS 2026",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Identifiable NeurIPS 2026",
+        "seed_score": 11.6673,
+        "summary": "Recent work aligns models without any paired data, even across modalities, and credits the Platonic representation hypothesis (PRH) for it. vec2vec, mini-vec2vec and Rosetta fit a rotation between two sets of representations and it often works. I've been intrigued, impressed and a bit sceptical. Something wasn't adding up, so we tried to work out when unpaired alignment works and why it should.\n\n*",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R94",
+            "source": "reddit",
+            "title": "How much of representational similarity is platonic, and how much is us romanticising a modelling choice? (Identifiable alignment of unpaired representations, NeurIPS 2026) [R]",
+            "body": "How much of representational similarity is platonic, and how much is us romanticising a modelling choice? (Identifiable alignment of unpaired representations, NeurIPS 2026) [R]\nRecent work aligns models without any paired data, even across modalities, and credits the Platonic representation hypothesis (PRH) for it. vec2vec, mini-vec2vec and Rosetta fit a rotation between two sets of representations and it often works. I've been intrigued, impressed and a bit sceptical. Something wasn't adding up, so we tried to work out when unpaired alignment works and why it should.\n\n**The short answer** is that it works when the two models share a notion of similarity, and that is only guaranteed when the similarity is grounded in the data.\n\n**The problem with the PRH as it is tested**\n\nThe PRH sees two models only through their kernels, so what it claims depends entirely on which kernel we pick. The evidence for and against it is almost always measured with cosine similarity, which is a kernel that only contrastive and JEPA models are trained to share. In a contrastive encoder a small distance means two observations often co-occur. In a VAE it means whatever the chart and prior made it. In neither does it measure length along the data manifold. Comparing the two is comparing apples with oranges.\n\nApples and oranges still share the same overall shape, which is why measurements keep finding shared clusters and categories. They part ways within a category, which is exactly where a pointwise alignment needs them to agree. The methods that take their justification from the PRH inherit this. When a rotation is the wrong kind of map, they keep the coarse match and lose the rest.\n\nA claim about all models cannot rest on a kernel that only one kind of training makes meaningful.\n\n**What we show instead**\n\n* Euclidean and cosine distances between representations depend on modelling choices such as the prior or the loss. The metric pulled back from the data space does not. Under a precise form of the manifold hypothesis, any two models of the same data share it.\n* With that distance the alignment map is well-defined. It preserves distances and carries one distribution of representations onto the other.\n* The map is identifiable if and only if the data distribution breaks every symmetry of the data manifold, and we prove that generic data do.\n* It is then the unique optimum of Gromov\u2013Wasserstein. It is recovered exactly when both models encode the same observations, and consistently when they do not.\n\n**Experiments**\n\nOur method, Neural Gromov\u2013Monge Alignment (NGMA), uses no pairs and no labels.\n\n* Two FashionMNIST VAEs with different priors: NGMA retrieves the right test image 87% of the time, Rosetta 6.5%. A rigid map fitted on all the true pairs reaches 7.1%, so the limit is the kind of map and not how it is fitted.\n* Between those two models, Euclidean distances correlate at 0.61 and pullback distances above 0.97. Same data, same architecture, a different prior, and the Euclidean similarity is already a different one.\n* scVI models of lung tissue trained on disjoint sets of cells: NGMA finds the true partner of up to 38% of 10,000 held-out cells, where chance is 1 in 10,000, and the right cell type for nine in ten.\n\n**Limitations**\n\n* One modality. We do not treat cross-modal alignment.\n* The experiments are on VAEs and single-cell models, not on large pretrained encoders.\n* The guarantees hold for global optima, which our solver may not reach. On CelebA a left-right flip nearly preserves the distribution of faces, and 7 of 35 runs align faces to their mirror images. Without pairs we cannot tell which runs those are.\n* The pullback metric is feasible but not free. \n\nBlog post (less maths, interactive figures): [https://syrota.me/identifiable-alignment/](https://syrota.me/identifiable-alignment/)\n\nNeurips 2026 paper: [https://arxiv.org/abs/2611.11460](https://arxiv.org/abs/2611.11460)\n\nCode: [https://github.com/mustass/identifiable-alignment](https://github.com/mustass/identifiable-alignment)\n\nHappy to discuss here.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y2zrb7/how_much_of_representational_similarity_is/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Recent work aligns models without any paired data, even across modalities, and credits the Platonic representation hypothesis (PRH) for it. vec2vec, mini-vec2vec and Rosetta fit a rotation between two sets of representations and it often works. I've been intrigued, impressed and a bit sceptical. Something wasn't adding up, so we tried to work out when unpaired alignment works and why it should.\n\n*",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 10,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08400000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Zero Data Retention checkboxes",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Zero Data Retention checkboxes",
+        "seed_score": 10.5,
+        "summary": "A Zero Data Retention flag on a hosted LLM router is a contract, not a network boundary.\n\nYesterday OpenRouter disclosed that it off-boarded three inference providers and pulled 125 endpoints from Zero Data Retention eligibility after Dragos's canary study exposed leaks across downstream hosts. OpenRouter did the right thing by publishing the incident and cutting those endpoints off. Still, once a",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "[D] Zero Data Retention checkboxes vs. real zero-egress inference boundaries",
+            "body": "[D] Zero Data Retention checkboxes vs. real zero-egress inference boundaries\nA Zero Data Retention flag on a hosted LLM router is a contract, not a network boundary.\n\nYesterday OpenRouter disclosed that it off-boarded three inference providers and pulled 125 endpoints from Zero Data Retention eligibility after Dragos's canary study exposed leaks across downstream hosts. OpenRouter did the right thing by publishing the incident and cutting those endpoints off. Still, once a prompt crosses into a multi-tenant upstream host, your team is relying on vendor attestations rather than controls you can inspect.\n\nFor regulated teams, the barrier to self-hosting has usually been operational sprawl: one Python service for tabular models, another for SHAP explanations, a separate cluster for vLLM or SGLang, plus custom glue for auth, weight verification, and audit logs.\n\nWhen data retention is a regulatory requirement, enforcement belongs in your own VPC rather than a routing toggle.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y3l185/d_zero_data_retention_checkboxes_vs_real/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A Zero Data Retention flag on a hosted LLM router is a contract, not a network boundary.\n\nYesterday OpenRouter disclosed that it off-boarded three inference providers and pulled 125 endpoints from Zero Data Retention eligibility after Dragos's canary study exposed leaks across downstream hosts. OpenRouter did the right thing by publishing the incident and cutting those endpoints off. Still, once a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.6,
+            "local_rank_score": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "0.04/paper LlamaParse 0.005/paper ArXiv RAG chunks",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "0.04/paper LlamaParse 0.005/paper ArXiv RAG chunks",
+        "seed_score": 8.4853,
+        "summary": "Hey everyone,\n\n\n\nLike many of you building RAG pipelines or local agent research monitors, my biggest headache has always been academic PDFs. \n\n\n\nTools like LlamaParse and Unstructured do great work, but they charge \\~$0.003/page. When you're indexing hundreds of 15\u201330 page papers, that quickly runs into $50\u2013$100 bills for simple batch jobs\u2014and vision-based models often hallucinate equation number",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R6",
+            "source": "reddit",
+            "title": "I got tired of paying $0.04/paper for LlamaParse, so I built a deterministic $0.005/paper extractor for ArXiv with citations & RAG chunks",
+            "body": "I got tired of paying $0.04/paper for LlamaParse, so I built a deterministic $0.005/paper extractor for ArXiv with citations & RAG chunks\nHey everyone,\n\n\n\nLike many of you building RAG pipelines or local agent research monitors, my biggest headache has always been academic PDFs. \n\n\n\nTools like LlamaParse and Unstructured do great work, but they charge \\~$0.003/page. When you're indexing hundreds of 15\u201330 page papers, that quickly runs into $50\u2013$100 bills for simple batch jobs\u2014and vision-based models often hallucinate equation numbers or fail on two-column layouts.\n\n\n\nSo I wrote a deterministic, sub-3-second extractor in Python combining PyMuPDF (\\`fitz\\` in C) with the official ArXiv Atom API, and packaged it as a Pay-Per-Event (PPE) Actor on Apify.\n\n\n\n\\### What it extracts cleanly:\n\n1. \\*\\*Authoritative Metadata\\*\\*: Title, authors, affiliations, date, canonical ArXiv ID, and DOI.\n\n2. \\*\\*Decomposed Sections\\*\\*: Headings (\\`1. Introduction\\`, \\`3.2 Methodology\\`) with automatic hyphenation de-wrapping.\n\n3. \\*\\*Analytics\\*\\*: Exact count of display equation blocks and table captions with context.\n\n4. \\*\\*Structured Citations\\*\\*: Parses references into \\`{raw\\_text, title\\_guess, year, arxiv\\_id\\_if\\_present}\\` so you can build paper-citation graphs.\n\n5. \\*\\*RAG-Ready Chunks\\*\\*: Overlapping, token-bounded chunks pre-tagged with section breadcrumbs (\\`\\[Section: Methodology\\]\\\\n...\\`), ready to drop straight into Qdrant/Pinecone/Chroma.\n\n\n\n\\### Cost & Speed Benchmark (15-page Paper: \"Attention Is All You Need\"):\n\n\\- \\*\\*LlamaParse\\*\\*: \\~$0.045 / paper (12\u201325 seconds)\n\n\\- \\*\\*This Actor\\*\\*: $0.005 / paper (3.8 seconds)\n\n\\- \\*\\*Failure Guarantee\\*\\*: If an invalid PDF or 404 occurs, Apify charges $0.00.\n\n\n\nCode is open on GitHub: [https://github.com/ali1556/arxiv-pdf-structured-extractor](https://github.com/ali1556/arxiv-pdf-structured-extractor)\n\nApify Store Actor: [https://apify.com/ali1556/arxiv-pdf-structured-extractor](https://apify.com/ali1556/arxiv-pdf-structured-extractor)\n\n\n\nWould love feedback from anyone running paper RAG pipelines\u2014what fields or chunk formats are you missing most?",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y2tlu5/i_got_tired_of_paying_004paper_for_llamaparse_so/",
+            "container": "LangChain",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hey everyone,\n\n\n\nLike many of you building RAG pipelines or local agent research monitors, my biggest headache has always been academic PDFs. \n\n\n\nTools like LlamaParse and Unstructured do great work, but they charge \\~$0.003/page. When you're indexing hundreds of 15\u201330 page papers, that quickly runs into $50\u2013$100 bills for simple batch jobs\u2014and vision-based models often hallucinate equation number",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 10,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08000000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Tool-calling LangChain scores rank 8/53 ExtractBench",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Tool-calling LangChain scores rank 8/53 ExtractBench",
+        "seed_score": 8.4853,
+        "summary": "Sharing because this was built with LangChain's tool calling and I think the patterns might be useful to others here.\n\n\n\nKYNEX is a document extraction agent. You give it a PDF + JSON schema, it fills the schema by navigating the document with tools. No RAG retrieval step, the agent decides what to read.\n\n\n\nLangChain-specific bits:\n\n\\- Tools defined with u/tool decorator, bound via model.bind\\_too",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Tool-calling agent built on LangChain scores rank 8/53 on ExtractBench - architecture breakdown",
+            "body": "Tool-calling agent built on LangChain scores rank 8/53 on ExtractBench - architecture breakdown\nSharing because this was built with LangChain's tool calling and I think the patterns might be useful to others here.\n\n\n\nKYNEX is a document extraction agent. You give it a PDF + JSON schema, it fills the schema by navigating the document with tools. No RAG retrieval step, the agent decides what to read.\n\n\n\nLangChain-specific bits:\n\n\\- Tools defined with u/tool decorator, bound via model.bind\\_tools()\n\n\\- Agent loop runs up to 30 rounds with AIMessage/ToolMessage cycling\n\n\\- SystemMessage includes a Table of Contents built from parsed headings + table page ranges\n\n\\- Works with ChatOpenAI and AzureChatOpenAI (swappable via config)\n\n\n\nThe agent has a fallback escalation chain for tables: extract\\_table \u2192 reconstruct\\_table \u2192 Azure DI \u2192 vision. Each step is a separate tool. If one fails, the agent tries the next. This was key for handling the 67 different document types in the benchmark.\n\n\n\nResults on ExtractBench (370 docs, verified by LlamaIndex):\n\n\\- 94.6 F1 (rank 8/53)\n\n\\- GPT-5.4 through this agent scored 92.97, beating GPT-6 Astra standalone (91.9)\n\n\n\nOpen source under Apache 2.0. Curious if anyone else has built multi-tool agents with this kind of escalation pattern, found it way more effective than single-tool approaches.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y2q7t5/toolcalling_agent_built_on_langchain_scores_rank/",
+            "container": "LangChain",
+            "published_at": "2026-11-22",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Sharing because this was built with LangChain's tool calling and I think the patterns might be useful to others here.\n\n\n\nKYNEX is a document extraction agent. You give it a PDF + JSON schema, it fills the schema by navigating the document with tools. No RAG retrieval step, the agent decides what to read.\n\n\n\nLangChain-specific bits:\n\n\\- Tools defined with u/tool decorator, bound via model.bind\\_too",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 10,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.08900000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

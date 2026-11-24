@@ -1,0 +1,218 @@
+{
+ "date": "2026-11-25",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-25.json",
+ "fetched_at": "2026-11-24T23:56:08+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T05:30:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 8,
+  "posts": 6,
+  "ok": 6,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Anthropic launches Claude Ship to review, fix and approve GitHub pull requests",
+   "category": "tool_launch",
+   "event_time": "2026-11-23T20:13:04Z",
+   "primary_url": "https://claude.com/resources/articles/introducing-claude-ship",
+   "facts": [
+    "Claude can now review pull requests, fix them, and approve the ones that a team's policy allows.",
+    "Claude Ship is available today in beta on Claude Team and Enterprise plans for repositories on GitHub.",
+    "It consists of Code Review (generally available), PR Steward and Claude Approvals (in beta)."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+     "official": true,
+     "author": "@ClaudeDevs",
+     "check": "ok",
+     "created_at": "2026-11-23T20:13:04Z",
+     "text": "Introducing Claude Ship (beta): Claude can review your pull requests, work on fixes, and approve the ones your team's policy allows.\n\nThe goal is to help you ship code as fast as you can write it.",
+     "likes": 25678,
+     "retweets": 1529,
+     "replies": 636,
+     "views": 3688994
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Anthropic enables Skills over MCP in public beta for Claude and Claude Code",
+   "category": "feature_update",
+   "event_time": "2026-11-24T00:00:00Z",
+   "primary_url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+   "facts": [
+    "Skills over MCP is now in public beta in Claude, so MCP servers can ship skills alongside their tools.",
+    "Tasks and Elicitation are now generally available, and File Uploads is rolling out soon.",
+    "Skills over MCP is on by default for Pro, Max, and Ultra plans and available to Team plans once an admin enables it."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/xiaoli55101427/status/2125344960773787843",
+     "official": false,
+     "author": "@xiaoli55101427",
+     "check": "ok",
+     "created_at": "2026-11-24T21:45:00Z",
+     "text": "Anthropic的Skills over MCP在Claude和Claude Code公测：Pro、Max、Ultra默认开启，Team需管理员启用，Enterprise即将推出。Tasks和Elicitation已在这三档正式可用，另两档陆续推出。前者让服务器后台跑耗时操作，后者可在调用中途用表单或链接找用户确认。博客没提价格变化。\nhttps://x.com/ClaudeDevs/status/2125289794871963935",
+     "likes": 4,
+     "retweets": 0,
+     "replies": 1,
+     "views": 296,
+     "quote": {
+      "author": "@ClaudeDevs",
+      "text": "MCP turns two! What started as a protocol for connecting AI apps to tools and data is evolving to standardize how agents communicate and orchestrate work.\n\nWe’re bringing more of these agentic capabilities to Claude with Skills over MCP and Tasks."
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "T3 Code founder responds to telemetry backlash over reading Claude and Codex auth files",
+   "category": "discussion",
+   "event_time": "2026-11-24T20:55:03Z",
+   "primary_url": null,
+   "facts": [
+    "We just merged a change to remove all usage of your Claude and Codex json files to identify unique users.",
+    "We NEVER uploaded ANY files from a user's device and NEVER received ANY user data, such as prompts, requests/responses, files, file paths, etc.",
+    "We ONLY used the auth files to create a unique hash to identify a user."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/theo/status/2125332390239494211",
+     "official": false,
+     "author": "@theo",
+     "check": "ok",
+     "created_at": "2026-11-24T20:55:03Z",
+     "text": "Okay, let's have an honest conversation about the telemetry data in T3 Code. I'm going to do something that, afaik, has never been done by an open source project before, so read on for a fun drop at the end.\n\nFirst and foremost, we just merged a change to remove all usage of your Claude and Codex json files to identify unique users. We initially did this because it was hard to detect a \"user\" with multiple devices, which caused our user metrics to be insanely inflated (like literally 3 million + users if I counted without this). We moved to a model where connections \"paint\" an installation, so we can more easily know, roughly, how many users we have.\n\nThe change above just merged & I cut a nightly release, should be out by the time you see this post. The stable release will be out in a few hours.\n\nTo be clear:\n- We NEVER uploaded ANY files from a user's device\n- We NEVER received ANY user data, such as prompts, requests/responses, files, file paths, etc\n- We ONLY used the auth files to create a unique hash to identify a user (and for Claude these hashes were broken!)\n- We ONLY collect basic metadata about which models and harnesses are used in T3 Code\n- We ALWAYS allowed you to hard-disable telemetry in T3 Code with env vars, which are the best way to preemptively disable across all environments\n- We recently added managed policy provisioning, to allow even easier app-wide disabling of telementry\n- We have published the vast majority of this data on Slopalytics(.)com for awhile now\n\nIn efforts to show just how transparent we are here, I'm going to publish a link in the first reply. This link is to all 95,789 of my own events published from T3 Code. This is the entirety of my own analytics data for my real world usage. That's over 100mb of my own data.\n\nI encourage you to read through it. Go through all my events. Seriously. If there's anything in here that's identifiable, overly detailed, or otherwise sketchy, tell me. We're happy to adjust accordingly.\n\nAs far as…",
+     "likes": 4131,
+     "retweets": 152,
+     "replies": 332,
+     "views": 331216
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Google Antigravity adds support for MCP Apps with interactive UIs in the workspace",
+   "category": "feature_update",
+   "event_time": "2026-11-24T19:49:29Z",
+   "primary_url": "https://antigravity.google/blog/mcp-apps-in-antigravity/",
+   "facts": [
+    "Today, we are adding MCP Apps support to Google Antigravity.",
+    "MCP Apps let any MCP tool render an interactive HTML interface directly inside the workspace alongside its plain-text output.",
+    "Built on the open MCP Apps extension (SEP-1865)."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/antigravity/status/2125315892695216483",
+     "official": true,
+     "author": "@antigravity",
+     "check": "ok",
+     "created_at": "2026-11-24T19:49:29Z",
+     "text": "MCP Apps are now supported in Google Antigravity. Generate interactive charts, sandboxes, release boards & custom file viewers right into your workspace.",
+     "likes": 2294,
+     "retweets": 126,
+     "replies": 83,
+     "views": 73056
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Study finds AGENTS.md rules file gives no security gain and drops Codex CLI score",
+   "category": "trend",
+   "event_time": "2026-11-24T00:00:00Z",
+   "primary_url": "https://i10x.ai/news/agents-md-rules-file-coding-agents-security-study",
+   "facts": [
+    "One 278-word rules file did not make Claude Code, Codex CLI, Gemini CLI or OpenCode write safer code in any way the study could detect.",
+    "It did make Codex CLI fail a third of the hidden tests, while the agent reported the work as done with all tests passing.",
+    "With the rules file in place, Codex CLI dropped from 99.0% to 67.7% of hidden tests passed."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Claude Code experimental Code Mode lets the agent write JavaScript to chain tool calls",
+   "category": "feature_update",
+   "event_time": "2026-11-12T00:00:00Z",
+   "primary_url": "https://code.claude.com/docs/en/code-mode.md",
+   "facts": [
+    "Code Mode is an experimental feature in which Claude writes JavaScript that makes several tool calls in one step.",
+    "Code Mode is experimental and off by default.",
+    "It shipped in Claude Code 2.1.323."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Kisalay_/status/2125129793683255504",
+     "official": false,
+     "author": "@Kisalay_",
+     "check": "ok",
+     "created_at": "2026-11-24T07:30:00Z",
+     "text": "Stop burning 150,000 tokens watching your coding agent call one tool at a time. Anthropic experimental Code Mode inside Claude Code flips the whole loop upside down.\n\nTraditional AI agents work like slow relay runners: call one tool, wait for a massive raw output, reread the entire conversation history, then call the next tool. On deep codebase audits, that raw tool chatter routinely bloats context past 150,000 tokens.\n\nStarting in Claude Code v2.1.323, Code Mode replaces those serialized round trips with a single JavaScript script executed inside a local session sandbox.\n\nHow the new workflow actually runs in practice:\n\n1. Instead of firing ten separate JSON tool calls, Claude writes one short JavaScript program that chains searches, file reads, and logic checks together.\n2. The script filters out irrelevant logs and intermediate noise locally before handing back only the compact answer the model needs.\n3. In Anthropic code execution benchmarks, shifting from raw tool dumps to scripted loops dropped comparable tasks from roughly 150,000 tokens down to around 2,000 tokens, a 98.7 percent cut in context overhead.\n4. Because Code Mode is still experimental and turned off by default, developers can test it right now by launching Claude Code in the terminal with CLAUDE_CODE_EXPERIMENTAL_CODE_MODE set to 1.\n\nLess latency. Smaller bills. Cleaner reasoning on massive repositories.\n\nHave you flipped on Code Mode inside Claude Code yet, or are you waiting until Anthropic makes it the default? 👇",
+     "likes": 4,
+     "retweets": 0,
+     "replies": 7,
+     "views": 258
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Codenotary expands AgentMon Live to monitor OpenAI Codex and AWS Kiro sessions",
+   "category": "tool_launch",
+   "event_time": "2026-11-23T00:00:00Z",
+   "primary_url": "https://codenotary.com/blog/agentmon-live-turn-steps-feedback-and-sessions-everywhere",
+   "facts": [
+    "The web view lists every Codex chat on the machine beside your Claude Code sessions.",
+    "It reads the session files Codex writes, so this needs nothing installed in Codex.",
+    "AgentMon Live also supports Kiro Crew conversations."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Claude Code desktop app adds draggable tabs for Files, Changes and Terminal",
+   "category": "feature_update",
+   "event_time": "2026-11-24T00:00:00Z",
+   "primary_url": null,
+   "facts": [
+    "Anthropic redesigned the side panel in the Claude Code desktop app: Files, Changes, Terminal and the other tools open as tabs beside your session.",
+    "You can arrange several at once or pop any of them into its own window.",
+    "It's rolling out on Mac first, with Windows and Linux coming soon."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/MartinSzerment/status/2125128069774032915",
+     "official": false,
+     "author": "@MartinSzerment",
+     "check": "ok",
+     "created_at": "2026-11-24T07:23:09Z",
+     "text": "Claude Code started life in a terminal, and now the terminal is one of its tabs. Anthropic redesigned the side panel in the Claude Code desktop app: Files, Changes, Terminal and the other tools open as tabs beside your session, and you can arrange several at once or pop any of them into its own window. It's rolling out on Mac first, with Windows and Linux coming soon.\n\nThe top reaction is \"that's Cursor's sidebar.\" The two tools came at it from opposite ends, though. Cursor started as a VS Code fork and added an agent, while Claude Code started as an agent and has been bolting IDE pieces onto it since the April redesign, from diffs to a browser to subagent views.\n\nOnce you run a few sessions in parallel, your own review becomes the bottleneck. Popping the Changes tab onto a second monitor next to a live session is the simplest way to keep review in step with the agent. And the Linux crowd, where all of this began, is at the back of the line this time.",
+     "likes": 2,
+     "retweets": 0,
+     "replies": 1,
+     "views": 155,
+     "quote": {
+      "author": "@ClaudeDevs",
+      "text": "We've redesigned the side panel in Claude Code on desktop.\n\nFiles, Changes, Terminal and your other tools now open as tabs beside your session. You can still move a tab to see several at once, or pop it out into its own window.\n\nRolling out on Mac. Windows and Linux coming soon!"
+     }
+    }
+   ],
+   "dropped_posts": []
+  }
+ ]
+}

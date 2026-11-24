@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "57a389d371457996",
+  "generated_at": "2026-11-24T23:56:27.530444Z",
+  "from_date": "2026-11-23",
+  "to_date": "2026-11-24",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-24T23:56:27.529369Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-24T23:56:27.529376Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-24T23:56:27.526659Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-24T23:56:27.529302Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic breaks below 83 IPO price",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 617,
+          "points": 312
+        }
+      },
+      "nomination": {
+        "name": "Anthropic breaks below 83 IPO price",
+        "seed_score": 1393.5,
+        "summary": "Anthropic breaks below $83 IPO price",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50627836",
+            "source": "hackernews",
+            "title": "Anthropic breaks below $83 IPO price",
+            "body": "Anthropic breaks below $83 IPO price",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+            "author": "Betelbuddy",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 312,
+              "comments": 617
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Anthropic breaks below $83 IPO price",
+            "snippet": "Anthropic breaks below $83 IPO price",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50627836",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.364
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 161,
+          "points": 214
+        }
+      },
+      "nomination": {
+        "name": "Anthropic",
+        "seed_score": 562.5,
+        "summary": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50630809",
+            "source": "hackernews",
+            "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "body": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "url": "https://news.ycombinator.com/item?id=50630809",
+            "author": "weli",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 214,
+              "comments": 161
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Ask HN: Anthropic is accusing my company of distilling. How",
+            "snippet": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50630809",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 64,
+            "source_quality": 0.8,
+            "local_rank_score": 0.328
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Versine YC F26 MCP",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 31,
+          "points": 54
+        }
+      },
+      "nomination": {
+        "name": "Versine YC F26 MCP",
+        "seed_score": 127.5,
+        "summary": "Launch HN: Versine (YC F26) \u2013 MCP to send and receive money",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50634426",
+            "source": "hackernews",
+            "title": "Launch HN: Versine (YC F26) \u2013 MCP to send and receive money",
+            "body": "Launch HN: Versine (YC F26) \u2013 MCP to send and receive money",
+            "url": "https://news.ycombinator.com/item?id=50634426",
+            "author": "harshithl1777",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 54,
+              "comments": 31
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Launch HN: Versine (YC F26) \u2013 MCP to send and receive money",
+            "snippet": "Launch HN: Versine (YC F26) \u2013 MCP to send and receive money",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50634426",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    }
+  ]
+}

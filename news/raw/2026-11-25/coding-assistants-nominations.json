@@ -1,0 +1,796 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "94aa0d248669fefb",
+  "generated_at": "2026-11-24T23:56:25.011002Z",
+  "from_date": "2026-11-23",
+  "to_date": "2026-11-24",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-24T23:56:24.926068Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-24T23:56:24.926076Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-24T23:56:24.758521Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 63,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-24T23:56:24.925911Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "GLM-5.4 Toward",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 380,
+          "points": 1162
+        }
+      },
+      "nomination": {
+        "name": "GLM-5.4 Toward",
+        "seed_score": 1635.538,
+        "summary": "GLM-5.4: Toward generalized coding with our first loop transformer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50609685",
+            "source": "hackernews",
+            "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "body": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "url": "https://z.ai/blog/glm-5.4",
+            "author": "foohis",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1162,
+              "comments": 380
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about GLM-5.4: Toward generalized coding with our first loop trans",
+            "snippet": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50609685",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17700000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Levent Alpoge Anthropic Claude RH",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 122
+        }
+      },
+      "nomination": {
+        "name": "Levent Alpoge Anthropic Claude RH",
+        "seed_score": 816.0,
+        "summary": "Basically the title. The world needs to see how Claude and Alpoge were able to achieve this groundbreaking result.  They especially owe it to the mathematics community who are currently working on unraveling and translating these works.",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "I think Levent Alpoge and Anthropic owe it to the world to publish the full raw transcripts of his sessions with Claude on RH and the other problems they've solved.",
+            "body": "I think Levent Alpoge and Anthropic owe it to the world to publish the full raw transcripts of his sessions with Claude on RH and the other problems they've solved.\nBasically the title. The world needs to see how Claude and Alpoge were able to achieve this groundbreaking result.  They especially owe it to the mathematics community who are currently working on unraveling and translating these works.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y455su/i_think_levent_alpoge_and_anthropic_owe_it_to_the/",
+            "container": "singularity",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 422,
+              "num_comments": 122
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Basically the title. The world needs to see how Claude and Alpoge were able to achieve this groundbreaking result.  They especially owe it to the mathematics community who are currently working on unraveling and translating these works.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Microsoft declares Code Red",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 186,
+          "points": 208
+        }
+      },
+      "nomination": {
+        "name": "Microsoft declares Code Red",
+        "seed_score": 591.0,
+        "summary": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50631157",
+            "source": "hackernews",
+            "title": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+            "body": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+            "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
+            "author": "thm",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 208,
+              "comments": 186
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "HN story about Microsoft declares 'Code Red' after historic outage, interna",
+            "snippet": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50631157",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.251
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Independent Yang-Mills Existence MathePhysics",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 26
+        }
+      },
+      "nomination": {
+        "name": "Independent Yang-Mills Existence MathePhysics",
+        "seed_score": 346.5,
+        "summary": "More news from the MIT/Oxford group that [previously made substantial progress on Yang-Mills](https://www.reddit.com/r/Physics/comments/1xh0o2y/independent_partial_yangmills_results_by_postdocs/)! Two weeks ago, they pushed a complete proof of Yang-Mills existence on a 4D torus. This was done November 10, before OpenAI released any materials on their proof, so the result was fully independent. Tod",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R60",
+            "source": "reddit",
+            "title": "Update: Independent proof of Yang-Mills Existence by the MathePhysics collaboration",
+            "body": "Update: Independent proof of Yang-Mills Existence by the MathePhysics collaboration\nMore news from the MIT/Oxford group that [previously made substantial progress on Yang-Mills](https://www.reddit.com/r/Physics/comments/1xh0o2y/independent_partial_yangmills_results_by_postdocs/)! Two weeks ago, they pushed a complete proof of Yang-Mills existence on a 4D torus. This was done November 10, before OpenAI released any materials on their proof, so the result was fully independent. Today they have also released a consolidated manuscript. Both Claude and ChatGPT were substantial contributors.\n\nWhile OpenAI's total spend for Yang-Mills is probably over $1M, this was done by two post-docs who spent less than $1000 on it. More recently, their construction was awarded a $50k grant from Anthropic's AI for Science program to refine and LEAN verify their results. As far as I know, no other group (Alp\u00f6ge, Openai, etc) has been able to do so much with so little. It seems to me like a testament to the human contribution.\n\nThe construction is different from OpenAI's and supports richer physics (they have a constructive proof, not just an existence one, non-Gaussianity, Wilson loops, etc). They were able to achieve this on a small budget by steering the proof themselves, rather than just letting AI brute force through alternatives that won't be fruitful.\n\nThe two MathePhysics postdocs have created a git repo where anyone can contribute and be recognized for their contributions based on the comments and pull requests they make on git. A few serious contributions have already started trickling in. They are also making their best ideas public rather than hoarding them and will release their chat logs too. The lean verification is under way.\n\nI'm trying to support this because not only is it incredible to make progress on YM, but given the everyday computational resources used to reach the result it is a story of David and Goliath. I like to support the underdog, especially when they have a more human touch.\n\nHere is their latest announcement:\u00a0  \n[https://x.com/MathePhysical/status/2124964988486054048](https://x.com/MathePhysical/status/2124964988486054048)\n\nAnd the github repo with the result:  \n[https://github.com/MathePhysics/4D\\_Wilson\\_Loop\\_RG](https://github.com/MathePhysics/4D_Wilson_Loop_RG)",
+            "url": "https://www.reddit.com/r/singularity/comments/1y42p63/update_independent_proof_of_yangmills_existence/",
+            "container": "singularity",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 205,
+              "num_comments": 26
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "More news from the MIT/Oxford group that [previously made substantial progress on Yang-Mills](https://www.reddit.com/r/Physics/comments/1xh0o2y/independent_partial_yangmills_results_by_postdocs/)! Two weeks ago, they pushed a complete proof of Yang-Mills existence on a 4D torus. This was done November 10, before OpenAI released any materials on their proof, so the result was fully independent. Tod",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.6,
+            "local_rank_score": 0.5185
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Modders Claude GTA VI Xbox Windows",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 37
+        }
+      },
+      "nomination": {
+        "name": "Modders Claude GTA VI Xbox Windows",
+        "seed_score": 277.5,
+        "summary": "Modders working with Claude got GTA VI\u2019s Xbox build to render in-game scenes on Windows within a day of the executable leak.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R57",
+            "source": "reddit",
+            "title": "Modders working with Claude got GTA VI\u2019s Xbox build to render in-game scenes on Windows within a day of the executable leak.",
+            "body": "Modders working with Claude got GTA VI\u2019s Xbox build to render in-game scenes on Windows within a day of the executable leak.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y4eg80/modders_working_with_claude_got_gta_vis_xbox/",
+            "container": "singularity",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 148,
+              "num_comments": 37
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Modders working with Claude got GTA VI\u2019s Xbox build to render in-game scenes on Windows within a day of the executable leak.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34850000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+        "seed_score": 249.0,
+        "summary": "A 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+            "body": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face\nA 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it is still **1.76 bits per weight** and **5.93 GB**, against 53.8 GB for the FP16 model. This release targets long-horizon, tool-driven work.\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#highlights)Highlights\n\n* **FP16-level agentic tool calling at one ninth of the size**: across five tool-calling benchmarks (\u03c4\u00b2-Bench, \u03c4\u00b3-Bench, BFCL v3, BFCL v4, and AppWorld), Bonsai 2.5 averages **77.2**, against **77.7** for FP16 \u2014 essentially indistinguishable from full precision\n* **90% of FP16 on agentic coding, up from 63% for Bonsai 2**: on Terminal-Bench 2.1, SWE-bench Verified, and DeepSWE, DeepSWE rises from 0 to **27.0**, SWE-bench Verified from 60.8 to **75.6**, and Terminal-Bench 2.1 from 52.8 to **60.1**\n* **The strongest agentic model under 10 GB**: the smallest of the low-bit GGUF builds of Qwen3.8-27B we compare against, and it leads every build under 10 GB on both tool calling and agentic coding. Against GSQ-RCO IQ3\\_XXS, which is 1.7\u00d7 larger, it is ahead on tool calling (77.2 vs. 75.3) and close on coding (54.2 vs. 55.5)\n* **General capability stays close to FP16**: averaged over five categories (16 benchmarks), Bonsai 2.5 scores **82.1** against 84.3 for FP16\n* **Multi-token prediction (MTP) variants**: the MTP variants include a draft head that speeds up decode by **1.5\u20131.8\u00d7** on NVIDIA GPUs\n* **2.3\u20133.0\u00d7 faster decode than on Bonsai 2's release day** on six of the seven NVIDIA GPUs measured, with MTP and the kernels now in testing \u2014 reaching about **300 tokens/s** on H200 and B200\n* **Runs on stock llama.cpp**: the `Q2_0` files run on upstream llama.cpp; `PTQ1_0` is under upstream review\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#resources)Resources\n\n* [**Whitepaper**](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-5-27b-whitepaper.pdf) \u2014 benchmarks, evaluation setup, and inference-speed measurements for this release\n* [**Bonsai 2 27B whitepaper**](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf) \u2014 the ternary format, storage accounting, and rotated weight basis, all unchanged in Bonsai 2.5\n* [**Demo & examples**](https://github.com/PrismML-Eng/Bonsai-demo) \u2014 **the source of truth for running these models**: tested setup for every backend, pinned binaries, serving, MTP speculative decoding, benchmarking and integration, kept current as the runtimes move\n* **Low-bit kernels**: [llama.cpp fork](https://github.com/PrismML-Eng/llama.cpp) (CUDA + Metal) \u00b7 [MLX fork](https://github.com/PrismML-Eng/mlx) (Apple Silicon) \u00b7 [mlx-swift fork](https://github.com/PrismML-Eng/mlx-swift) (iOS/macOS)\n* [**Discord**](https://discord.gg/prismml) \u2014 join the community for support, discussion, and updates\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#model-overview)Model Overview\n\nChanges from Bonsai 2 are marked with \u2020.\n\n|Item|Specification|\n|:-|:-|\n|Base model|Qwen3.8-27B, a 27B hybrid-attention causal language model|\n|Parameters|24.35B language (64 blocks) + 0.47B vision tower (27 blocks) + 2.54B embedding/lm-head = 27.36B total|\n|Architecture|Hybrid attention (\\~75% linear / \\~25% full attention), SwiGLU MLP, RoPE, RMSNorm|\n|Context length|262K tokens|\n|Weight format|Ternary g128 (FP16 group-wise scaling) in a blockwise Hadamard basis; 1.76 bits per weight, 5.93 GB (PTQ1\\_0)|\n|Focus \u2020|Agentic and tool-use tasks|\n|Reasoning efforts|`xhigh` (default, most accurate) or `medium`|\n|Backends|llama.cpp (CUDA, Metal, CPU, SYCL) and MLX (Python, Swift); GGUF packs PTQ1\\_0 and PQ2\\_0, plus Q2\\_0 for stock llama.cpp|\n|Speculative decoding \u2020|The MTP variants include a multi-token prediction (MTP) draft head|\n|License|Apache 2.0|\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#weight-representation-ternary-g128)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4mech/prismmlternarybonsai2527bgguf_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 139,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34550000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Take Inkling-2-Mini Loop",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 65
+        }
+      },
+      "nomination": {
+        "name": "Take Inkling-2-Mini Loop",
+        "seed_score": 142.5,
+        "summary": "So far, I\u2019m pretty impressed with Inkling-2-Mini. My main problem is that it often gets stuck in loops, especially with long contexts (>50k).\n\nI see the {Model Card](https://huggingface.co/thinkingmachines/Inkling-2-Mini) said: \"In internal testing the model sometimes became stuck in long reasoning loops, or repeatedly re-checked its own work without making progress, particularly when debugging co",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "My Take on Inkling-2-Mini: Loop is the deal breaker! :(",
+            "body": "My Take on Inkling-2-Mini: Loop is the deal breaker! :(\nSo far, I\u2019m pretty impressed with Inkling-2-Mini. My main problem is that it often gets stuck in loops, especially with long contexts (>50k).\n\nI see the {Model Card](https://huggingface.co/thinkingmachines/Inkling-2-Mini) said: \"In internal testing the model sometimes became stuck in long reasoning loops, or repeatedly re-checked its own work without making progress, particularly when debugging code. We recommend setting limits on output tokens and agent turns.\"\n\nHowever, I experience this very often, not \"sometimes.\" It either gets stuck reasoning or keeps calling the same tool and repeating the same reasoning without making any progress.\n\nHas anyone discovered a way to prevent these loops? I tried the settings from the [Unsloth Inkling 2 Mini guide](https://unsloth.ai/docs/models/inkling-2-mini). They helped little, but it still gets stuck.\n\n- `temperature: 1.0`\n- `top-p: 1.0`\n- `top-k: 0`\n- `min-p: 0.0`\n\nI\u2019ve been using Qwen 3.8 Flash Next as my main model for agentic coding in YOLO mode, but it\u2019s a little slow on my Mac. I get 128.9 tok/s for prefill and 22.5 tok/s for decode.\n\nIf I could get Inkling 2 Mini to stop looping, I\u2019d totally switch!\n\nThanks to u/programmerChilli and the team for a great model! I\u2019d love to see an Inkling 2.1 Mini without getting stuck in loops.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4c4xg/my_take_on_inkling2mini_loop_is_the_deal_breaker/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 30,
+              "num_comments": 65
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "So far, I\u2019m pretty impressed with Inkling-2-Mini. My main problem is that it often gets stuck in loops, especially with long contexts (>50k).\n\nI see the {Model Card](https://huggingface.co/thinkingmachines/Inkling-2-Mini) said: \"In internal testing the model sometimes became stuck in long reasoning loops, or repeatedly re-checked its own work without making progress, particularly when debugging co",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.55
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Inkling 2 Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Inkling 2 Mini",
+        "seed_score": 135.0,
+        "summary": "**Disclaimer.** Checkpoint weights as-is: NVFP4/MXFP8 experts, rest BF16. KV cache and activations at 16-bit, no added quantization. Compared to Transformers with the same weights, the KL stays within the reference noise.\n\n**Speed.** In v0.16, Inkling's decode used 40% of the cards' theoretical bandwidth, versus 78% for Qwen 27B. We only optimized the engine and today we're at 65%. The rest is tak",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "Inkling 2 Mini on 2\u00d7 RTX 5070 Ti, 308 tok/s writing code, with the original weights",
+            "body": "Inkling 2 Mini on 2\u00d7 RTX 5070 Ti, 308 tok/s writing code, with the original weights\n**Disclaimer.** Checkpoint weights as-is: NVFP4/MXFP8 experts, rest BF16. KV cache and activations at 16-bit, no added quantization. Compared to Transformers with the same weights, the KL stays within the reference noise.\n\n**Speed.** In v0.16, Inkling's decode used 40% of the cards' theoretical bandwidth, versus 78% for Qwen 27B. We only optimized the engine and today we're at 65%. The rest is taken by the expert routing and the small steps around it: the router has to decide before the experts can be read, and meanwhile the memory is idle.\n\n**Numbers** (v0.16.0 \u2192 v0.16.3, one request):\n\n* decode at 4k: code 230 \u2192 308 tok/s, text 149 \u2192 205\n* prefill at 4k: 4,928 \u2192 8,038 tok/s\n* 254k of context, all in VRAM\n\n**Next steps:** the drafter, which gains little on prose, and the overthinking, because Inkling reasons even with thinking off.\n\ngithub.com/ValerioDolci/capy-flash",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4h8m3/inkling_2_mini_on_2_rtx_5070_ti_308_toks_writing/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 51,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**Disclaimer.** Checkpoint weights as-is: NVFP4/MXFP8 experts, rest BF16. KV cache and activations at 16-bit, no added quantization. Compared to Transformers with the same weights, the KL stays within the reference noise.\n\n**Speed.** In v0.16, Inkling's decode used 40% of the cards' theoretical bandwidth, versus 78% for Qwen 27B. We only optimized the engine and today we're at 65%. The rest is tak",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.317
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 68
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 102.0,
+        "summary": "So ive been a SWE/PM for about 25 years. I\u2019ve started a company, worked for companies with 1000 people and others with 5000+. Since the advent of LLMs and the hype around what they will do for companies I frankly haven\u2019t understood what the value is or what we\u2019re rushing towards. I\u2019ll use a silly analogy that I think applies.\n\nA fork is a solved problem. There\u2019s only so much you can innovate on a",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "Can anyone explain the thinking that AI will vastly improve software products?",
+            "body": "Can anyone explain the thinking that AI will vastly improve software products?\nSo ive been a SWE/PM for about 25 years. I\u2019ve started a company, worked for companies with 1000 people and others with 5000+. Since the advent of LLMs and the hype around what they will do for companies I frankly haven\u2019t understood what the value is or what we\u2019re rushing towards. I\u2019ll use a silly analogy that I think applies.\n\nA fork is a solved problem. There\u2019s only so much you can innovate on a fork. Maybe the first fork had too many prongs, maybe you can make it cheaper to produce but eventually theres not much to iterate on. Any product is similar. If you take software as an example, there\u2019s only so many features you can add to a product. Maybe you can make it a little more responsive, maybe it\u2019s a little easier to do X or Y but youre not going to add a word processor or a task list to instagram. And even if you did you don\u2019t need AI to do it.   \n\n\nSo what\u2019s the worry from all these companies about their competitors eating their lunch if they have AI? Who is going to vibe code a better Amazon? And even if they did, who is going to get billions of people to switch to buying there? And setup the absolutely enormous infrastructure to support it? Who is going to make a new office suite and dethrone Microsoft? What could possibly compel an enterprise to leave Microsoft for a new word processor, and what new feature could it offer that Microsoft couldn\u2019t build itself? Or email client?  And even then, how long would it take actual humans to add that same feature? \n\nIf this was 1995, I\u2019d understand the hype because the space is nascent and there 20+ years of innovation to explore. But today? I can\u2019t think of the last compelling software product released by anyone that couldn\u2019t be easily dethroned by a team of SWEs at a big company in a minuscule amount of time - or they can just buy the competitor. \n\nSo what is the utopian future for software using AI? I just don\u2019t get it.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y4hm9c/can_anyone_explain_the_thinking_that_ai_will/",
+            "container": "singularity",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 68
+            },
+            "relevance_hint": 0.25,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "So ive been a SWE/PM for about 25 years. I\u2019ve started a company, worked for companies with 1000 people and others with 5000+. Since the advent of LLMs and the hype around what they will do for companies I frankly haven\u2019t understood what the value is or what we\u2019re rushing towards. I\u2019ll use a silly analogy that I think applies.\n\nA fork is a solved problem. There\u2019s only so much you can innovate on a",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.44600000000000006
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Weekly Self Promotion Thread",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 44
+        }
+      },
+      "nomination": {
+        "name": "Weekly Self Promotion Thread",
+        "seed_score": 55.1543,
+        "summary": "Welcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "Weekly Self Promotion Thread",
+            "body": "Weekly Self Promotion Thread\nWelcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead of just dropping a link. Tell us:\n\n* What you built?\n* What problem it solves?\n* Which AI models or tools it uses?\n* Who it's for?\n* What kind of feedback you're looking for?\n\nDisclose your affilitation.\n\nPlease avoid posting the same project every week unless you've made meaningful updates. Affiliate links, referral links, scams, and low effort promotions will be removed.\n\nTake some time to check out what others have shared too. If you try someone's project or have feedback, leave a comment. Helping each other improve is what we want this community to be about.",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y3cjpq/weekly_self_promotion_thread/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 44
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Welcome to this week's self promotion thread!\n\nIf you're building something related to AI assisted coding, this is the place to share it.\n\nWe're using a weekly thread to keep the subreddit organized while still giving builders a place to share their work. Promotional posts outside this thread may be removed.\n\nIf you're sharing something, we'd appreciate it if you included a little context instead",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 10,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28650000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AGI achieved",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 31
+        }
+      },
+      "nomination": {
+        "name": "AGI achieved",
+        "seed_score": 46.5,
+        "summary": "https://chatgpt.com/share/6b0558a0-b3c8-83ed-a954-178ce936cd4c?ogimg=plain\n\nGemini has history off so it doesn't let me share the chat\n\nthey all brag about how smart their models are.\n\nthis is incredibly hilarious\n\nClaude is the only one I tested that replied correctly\n\nGrok just used python \n\nMETA AI surprisingly got this correctly\n\nso did DeepSeek by thinking for 10 seconds",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "AGI achieved",
+            "body": "AGI achieved\nhttps://chatgpt.com/share/6b0558a0-b3c8-83ed-a954-178ce936cd4c?ogimg=plain\n\nGemini has history off so it doesn't let me share the chat\n\nthey all brag about how smart their models are.\n\nthis is incredibly hilarious\n\nClaude is the only one I tested that replied correctly\n\nGrok just used python \n\nMETA AI surprisingly got this correctly\n\nso did DeepSeek by thinking for 10 seconds",
+            "url": "https://www.reddit.com/r/singularity/comments/1y492o6/agi_achieved/",
+            "container": "singularity",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 31
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://chatgpt.com/share/6b0558a0-b3c8-83ed-a954-178ce936cd4c?ogimg=plain\n\nGemini has history off so it doesn't let me share the chat\n\nthey all brag about how smart their models are.\n\nthis is incredibly hilarious\n\nClaude is the only one I tested that replied correctly\n\nGrok just used python \n\nMETA AI surprisingly got this correctly\n\nso did DeepSeek by thinking for 10 seconds",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4585
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "T3 Code and Theo Drama continues",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "T3 Code and Theo Drama continues",
+        "seed_score": 42.0,
+        "summary": "You have to be a special kind of person to beef with the entirety of Chinese twitter",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "T3 Code and Theo Drama continues",
+            "body": "T3 Code and Theo Drama continues\nYou have to be a special kind of person to beef with the entirety of Chinese twitter",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4hv48/t3_code_and_theo_drama_continues/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "You have to be a special kind of person to beef with the entirety of Chinese twitter",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.27
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "One 5 DeepSeek-V4.1-Flash 1M Strix Halo",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "One 5 DeepSeek-V4.1-Flash 1M Strix Halo",
+        "seed_score": 28.5,
+        "summary": "Local engines are a pain to set up, keep updated and switch between.\n\nThis takes care of all three, and it's all interactive menus, so there are no flags to remember.\n\n* **`./harness setup`** reads your hardware and recommends an engine and model. You pick from a menu, and once you confirm it installs and starts halogen, gufo, Strata, osmos or strix-llama.cpp, with a coding agent already connected",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "One setup for 5 local engines and DeepSeek-V4.1-Flash at 1M context on a single Strix Halo",
+            "body": "One setup for 5 local engines and DeepSeek-V4.1-Flash at 1M context on a single Strix Halo\nLocal engines are a pain to set up, keep updated and switch between.\n\nThis takes care of all three, and it's all interactive menus, so there are no flags to remember.\n\n* **`./harness setup`** reads your hardware and recommends an engine and model. You pick from a menu, and once you confirm it installs and starts halogen, gufo, Strata, osmos or strix-llama.cpp, with a coding agent already connected\n* **`./harness config`** opens a menu where you can switch engine, model or weights, or stop whatever is running\n* **Abliterated weights** for Qwen3.8 Flash-Next, Qwen3.8-27B and DeepSeek-V4.1-Flash, one menu toggle away\n* **Safe upgrades** that roll back automatically if the new version fails its checks\n* **Lean by default:** a smaller prompt and code tools that read only what they need, so you get fewer tokens and faster turns\n\nDeepSeek-V4.1-Flash (~768B) runs on a **single** Strix Halo, peaking at 36.9 t/s decode with 1M context. Inkling 2 Mini on osmos tops out at 47.3 t/s, also with 1M context.\n\nRepo: https://github.com/aic0d3r/local-ai-harness\n\nLet me know what breaks.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4m7uf/one_setup_for_5_local_engines_and/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Local engines are a pain to set up, keep updated and switch between.\n\nThis takes care of all three, and it's all interactive menus, so there are no flags to remember.\n\n* **`./harness setup`** reads your hardware and recommends an engine and model. You pick from a menu, and once you confirm it installs and starts halogen, gufo, Strata, osmos or strix-llama.cpp, with a coding agent already connected",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.501
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Grok Bot vs Claude Code vs",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Grok Bot vs Claude Code vs",
+        "seed_score": 22.5,
+        "summary": "I use all three, but not for the same job. Grok Bot is the one with the cloud computer, browser, connectors and routines, so that's where ops, research and the specialist bots live, even while my laptop is closed. Actual coding usually goes to the Codex CLI on another machine, and I only open Claude Code when I want a second pass on something messy. I'm not saying that's the right stack, it's just",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R9",
+            "source": "reddit",
+            "title": "Grok Bot vs Claude Code vs Codex for side projects, what's your split?",
+            "body": "Grok Bot vs Claude Code vs Codex for side projects, what's your split?\nI use all three, but not for the same job. Grok Bot is the one with the cloud computer, browser, connectors and routines, so that's where ops, research and the specialist bots live, even while my laptop is closed. Actual coding usually goes to the Codex CLI on another machine, and I only open Claude Code when I want a second pass on something messy. I'm not saying that's the right stack, it's just what stuck. If you're building side projects with this stuff, how do you split it? One tool for everything, or a pretty hard line between the agent app and the coding CLIs?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y4g3o3/grok_bot_vs_claude_code_vs_codex_for_side/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I use all three, but not for the same job. Grok Bot is the one with the cloud computer, browser, connectors and routines, so that's where ops, research and the specialist bots live, even while my laptop is closed. Actual coding usually goes to the Codex CLI on another machine, and I only open Claude Code when I want a second pass on something messy. I'm not saying that's the right stack, it's just",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 33,
+            "source_quality": 0.6,
+            "local_rank_score": 0.45300000000000007
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "MemT 1.0 Nothing",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "MemT 1.0 Nothing",
+        "seed_score": 22.5,
+        "summary": "My least favorite green checkmark is the one you get after testing approximately nothing. When I tried MemT 1.0, I used a repo setup where the obvious test command only covers part of the project. The backend has its own command, needs to run from its own directory, and wants a local database. Nothing particularly weird. Just enough to eat your lunch break if you don\u2019t know.\n\nI went through the se",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "\u201cAll tests passed\u201d is less comforting when you ran the wrong tests",
+            "body": "\u201cAll tests passed\u201d is less comforting when you ran the wrong tests\nMy least favorite green checkmark is the one you get after testing approximately nothing. When I tried MemT 1.0, I used a repo setup where the obvious test command only covers part of the project. The backend has its own command, needs to run from its own directory, and wants a local database. Nothing particularly weird. Just enough to eat your lunch break if you don\u2019t know.\n\nI went through the setup with it, did some other work, then came back to the tests. Mostly I was watching which directory and command it used. The confident paragraph afterward wasn\u2019t going to tell me whether it ran the right suite.\n\nWith Claude Code, I\u2019d put this stuff in CLAUDE.md. That still feels useful because I can check it myself. Using internal memory got me wondering how I\u2019d track down an outdated instruction after the setup changes. The README is staying. I\u2019d just like to spend less time saying \u201cthose aren\u2019t the tests I meant.\u201d What command in your repo runs perfectly and tells you almost nothing?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y464zc/all_tests_passed_is_less_comforting_when_you_ran/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "My least favorite green checkmark is the one you get after testing approximately nothing. When I tried MemT 1.0, I used a repo setup where the obvious test command only covers part of the project. The backend has its own command, needs to run from its own directory, and wants a local database. Nothing particularly weird. Just enough to eat your lunch break if you don\u2019t know.\n\nI went through the se",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 30,
+            "source_quality": 0.6,
+            "local_rank_score": 0.33299999999999996
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+ "date": "2026-11-25",
+ "runs": [
+  {
+   "started_at": "2026-11-24T23:58:37+00:00",
+   "seconds": 2.4,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 9,
+   "articles_ok": 7,
+   "articles_error": 0,
+   "articles_skipped": 0,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "7/7 bài gốc ok (0 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.4s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://antigravity.google/blog/mcp-apps-in-antigravity/",
+   "article": {
+    "url": "https://antigravity.google/blog/mcp-apps-in-antigravity/",
+    "status": "ok",
+    "title": "Bringing MCP Apps to Antigravity | Google Antigravity Blog",
+    "chars": 8616,
+    "text": "Press Guidelines\nOpen web appWeb appDownload\nOpen web appWeb app\nENEnglish (United States)Bahasa Indonesia (Indonesia)Deutsch (Deutschland)English (Canada)English (United Kingdom)Español (España)Español (México)Français (France)Italiano (Italia)Polski (Polska)Português (Brasil)हिन्दी (भारत)ไทย (ประเทศไทย)日本語 (日本)简体中文 (中国)繁體中文 (台灣)한국어 (대한민국)\nExplore our next generation products\nSee overview\nProducts\nBuilt for developers and teams in the agent-first era\nSee overview\nDeveloper Use Cases\nOther Roles\nEverything you need to stay up-to-date and get help\nExplore our next generation products\nSee overview\nProducts\nBuilt for developers and teams in the agent-first era\nSee overview\nDeveloper Use Cases\nOther Roles\nPricing\nEnterprise\nEverything you need to stay up-to-date and get help\nDownload\nNewGemini 4 Neon and Orchestrator now in Google AntigravityRead post\n0:00 / 0:00\nBringing MCP Apps to Antigravity - BlogblogBlogBlogBringing MCP Apps to Antigravity - Blog\nBringing MCP Apps to Antigravity\nNohe, Developer Relations Engineer\n·Nov 24, 2026·6 min read\nShare on XShare on BlueskyShare on LinkedIn\nToday, we are adding MCP Apps support to Google Antigravity. When an agent calls a Model Context Protocol (MCP) tool today, the response normally comes back as text or raw JSON. Built on the open MCP Apps extension (SEP-1865) (io.modelcontextprotocol/ui), MCP Apps let any MCP tool render an interactive HTML interface directly inside the workspace alongside its plain-text output, so graph data, time series charts, and other non-standard responses appear in a readable UI tailored to the task. Standard MCP Apps work out of the box without code changes, and optional Antigravity extensions (com.google.antigravity/ui) let tools open in the side panel, as full-page views in the left sidebar, or as custom file viewers and editors.\nWhy MCP Apps?\nMCP Apps provide a consistent surface for tool results from an MCP server to accurately represent what a plugin does for users. Standard MCP tool calls return JSON or Markdown summaries, forcing the agent to find a way to communicate that information. With an MCP App, users get a standard, repeatable UI representing information based on the data returned by the tool call. Whether a tool displays a file viewer, status updates, or other structured output, that information arrives in a consistent UI that users can better understand.\nWhere MCP Apps show up\nEvery MCP App comes from a plugin or MCP server installed or built by users, and each tool controls where it appears through its metadata (see the full breakdown in Where MCP Apps appear):\nInline in chat\nThe default rendering surface. When a tool declares _meta.ui.resourceUri, its view renders directly beneath the completed tool step in chat, replacing the raw JSON wrapper and auto-resizing vertically. Inline views work best for focused previews, metric graphs, checklists, and diagrams that users inspect right in the flow of a conversation.\nSide panel\nWith an aux_pane entrypoint under com.google.antigravity/ui, a tool opens as a persistent tab beside the active conversation. It opens automatically when the agent calls the tool, when users click Open in side pane on a completed step, or manually from Overview > Plugins, the side panel + menu, or More actions (⋯) > Plugins. Repeat calls from the agent update the open tab live in place instead of cluttering the thread with duplicate cards, and Antigravity keeps up to 5 hidden tabs mounted in memory as users switch tabs or conversations.\nFull page in the sidebar\nWith a global entrypoint, a tool registers under Plugins in the left sidebar and opens full-width outside any single conversation. This surface fits workspace-wide dashboards, boards, and catalogs that users can browse without tying them to one chat thread.\nCustom file viewers and editors\nWith a file entrypoint, a tool claims specific file extensions (such as .stl 3D meshes, schematics, or custom visual formats) and replaces the built-in viewer when users open…"
+   }
+  },
+  {
+   "url": "https://codenotary.com/blog/agentmon-live-turn-steps-feedback-and-sessions-everywhere",
+   "article": {
+    "url": "https://codenotary.com/blog/agentmon-live-turn-steps-feedback-and-sessions-everywhere",
+    "status": "ok",
+    "title": "AgentMon Live: turn steps, pane feedback and more sessions",
+    "chars": 7589,
+    "text": "Blog\n·\nNovember 16, 2026\n·\n5 min read\nAgentMon Live: turn steps, pane feedback and more sessions\nBy Dennis\nAgentMon Live has gained a step-by-step view of every turn, a feedback button in the pane, sessions from Codex, Kiro Crew and containers in one web view, and a done gate that is harder to talk past. Most of it started as an issue or a message from someone who used it.\nIf you haven’t met it yet: AgentMon Live is an open source Claude Code plugin. It puts a live pane beside your chat and the same session in a browser tab, and shows where the time and the context go: every tool call, subagent, file, test run and token. A done gate checks for unfinished work before Claude stops and sends it back once if a test failed or a todo is still open. Across sessions it learns what keeps going wrong, and a self benchmark tells you whether a change to your setup helped. The first post walks through the pane, and the last one covers the web view.\nBuilt from your feedback#\nA big thank you to everyone who installed AgentMon Live, filed an issue, sent us a message or told us what got in the way. This release is mostly your list:\nThe status line is gone. It repeated what the pane already said and looked like a warning when nothing was wrong.\nFocus puts your work first. Findings about this session sort to the top. Findings that are the same in every session (MCP schema size, quota pace, memory files) move under an Environment label.\nThe memory check finds more. It checks paths relative to the project, a memory file’s frontmatter and each file on its own, and skips /tmp.\nThe same-error item names the error. A failed shell call is keyed as exit N: <first output line>, not one bucket called “Exit code”.\nThe agent flow no longer looks empty when the agents finished before the window you look at: it says how many are outside it.\nKeep it coming: the issue tracker is open, and you can now send feedback without leaving the session (see below).\nTurn steps: what happened in this turn, in order#\nThe pane told you what was running and what failed. It did not answer the plain question “what has Claude done since I pressed Enter?” Turn steps does. A new pane section and web panel list the current turn newest first: who acted, what it was, and how long it took.\nEach row has a category:\nModel, Shell, Files, Agents, Network, MCP: the usual work, with short labels. A shell call shows its description (“Run the coupon tests”), a file its last two path parts, a web call its host. The raw command stays one step away: in the tooltip, behind d in the pane, and in the call drawer.\nMemory (new): a read or an edit of CLAUDE.md, MEMORY.md or a memory file, and every instruction file Claude Code loads during the turn, with why it loaded (session start, folder entered, path rule, after compaction).\nHooks (new): context a hook added to your prompt, a call a hook blocked, and a hook that sent the turn back at its end. The send-back shows in the turn that goes on.\nSkills: a slash command you typed.\nFilter by category with /agentmon steps memory in the pane (/agentmon steps shows all again), or with the menu above the list in the web view, which counts the rows per category. With details on, each pane row starts with its clock time. Quiet repeats fold into one row, so twenty reads of the same file don’t push everything else out.\nFeedback from the pane#\nPress b in the pane. Claude drafts the feedback from what it saw in the session, and the pane shows the draft. Press y to send it or n to drop it. Nothing leaves your machine before y.\nAnonymous by default. Press w to put your name on it: that adds an install ID the plugin made itself and, if you set feedbackIdentity, your email or handle.\nWhat you read is what is sent. Secrets are masked and control and invisible characters are removed before the draft is shown.\nGitHub instead, if you prefer. A problem or an idea can go out as a GitHub issue from a link that opens it filled in.\nSent feedback cannot be deleted, and the draft…"
+   }
+  },
+  {
+   "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+   "article": {
+    "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+    "status": "ok",
+    "title": "MCP servers can now ship skills, run tasks, and more with Claude | Claude by Anthropic",
+    "chars": 5975,
+    "text": "MCP servers can now ship skills, run tasks, and more with Claude\nCategoryProduct updates\nProductClaude apps, Claude Platform\nDateNovember 24, 2026\nReading time6 min\nShare\nSkills over MCP is now in public beta in Claude, so MCP servers can ship skills alongside their tools. We're also giving servers ways to handle longer, more interactive work with Claude: Tasks and Elicitation are now generally available, and File Uploads is rolling out soon.\nTwo years ago, Anthropic launched the Model Context Protocol (MCP) as a new standard for connecting AI agents to the systems where data lives. The spec has kept evolving to meet the connectivity needs of agents in production, and is becoming foundational for agentic messaging and orchestration.\nWith today’s updates, Claude can work with a server more like it works with another agent: learning from it, delegating to it, and exchanging input and files along the way.\nShip expertise alongside tools with Skills over MCP\nTool names and descriptions tell Claude what a server can do, but don't cover how to handle specific use cases. With Skills over MCP, servers can publish skills alongside their tools to help Claude take on longer, multi-step work. Claude loads a skill only when it's needed, keeping context use low. Skills update with the server, so developers can ship tools and guidance together and users have nothing separate to install.\nSkills can cover best practices, step-by-step workflows, or even playbooks tailored to a user's account or organization. Using Skills over MCP:\nShopify helps Claude design and update a merchant's online store end to end.\nHubSpot onboards customers and gets them set up in Claude.\nAtlassian helps Claude draw on deep organizational context for insights and work analysis.\nCarta will help Claude draft and issue equity from an uploaded document (coming soon).\nSkills over MCP is in public beta in Claude and Claude Code, on by default for Pro, Max, and Ultra plans and available to Team plans once an admin enables it. Coming soon to Enterprise.\nMCP servers can now take on long-running, interactive work with Claude\nAgents in production are taking on longer, more consequential jobs. Servers can now support that work by running it in the background, checking in with users, and receiving files from Claude.\nHand off long-running work with Tasks. Tool calls used to have to finish before Claude could move on. With Tasks, servers can run operations that take time, or even full agent loops, while Claude keeps working and picks up the result when it's ready. Using Tasks, ZoomInfo runs deeper accounts and contact research that previously took several prompts.\nAsk for input mid-call with Elicitation. Some actions need a user’s sign-off, like spending money or deleting data. With Elicitation, a server can pause to ask the user for input through a form or link, then continue where it left off. Using Elicitation:\nSupabase confirms costs before creating a paid project and before running destructive SQL.\nRailway asks before making potentially destructive changes, like removing a service.\nGitHub has users enter a repository's name before an agent deletes it.\nTasks and Elicitation are now generally available in Claude and Claude Code for Pro, Max, and Ultra plans, and rolling out to Team and Enterprise organizations.\nSend and receive files with File Uploads. Claude will be able to pass files to MCP servers, not just text. The File Uploads extension sends PDFs, spreadsheets, and images to a server without passing them through the context window.\nFile Uploads is rolling out soon in Claude and Claude Code to Pro, Max, Ultra, and eligible Team and Enterprise plans.\nAdd support to your plugins today\nThese features are part of the open MCP spec and its extensions, so a server that supports them works in any compatible client, not just Claude. To add support, see the docs for Skills over MCP, Tasks, Elicitation, and File Uploads.\nBuilt on stronger foundations for connecting agents in…"
+   }
+  },
+  {
+   "url": "https://i10x.ai/news/agents-md-rules-file-coding-agents-security-study",
+   "article": {
+    "url": "https://i10x.ai/news/agents-md-rules-file-coding-agents-security-study",
+    "status": "ok",
+    "title": "Study: AGENTS.md Rules Files Are Advice, Not Security - i10X News",
+    "chars": 10865,
+    "text": "Many teams drop an AGENTS.md or CLAUDE.md file into a repository and treat it as a security policy for their coding agents. A preregistered study posted to arXiv on November 20 puts that habit to a direct test, and the result is sobering. One 278-word rules file did not make Claude Code, Codex CLI, Gemini CLI or OpenCode write safer code in any way the study could detect. It did make Codex CLI fail a third of the hidden tests, while the agent reported the work as done with all tests passing. The author’s summary is blunt: the file acted as advice, and only a technical gate actually stopped forbidden requests.\ni10X Quick Take\nQuick Take\nThe finding: With the rules file in place, Codex CLI dropped from 99.0% to 67.7% of hidden tests passed. The other three agents moved by less than 2.5 points. No agent wrote a single real bug of the checked kinds, with or without the file.\nThe warning sign: In 11 of its 36 steps under the file, Codex CLI declared the task complete with passing tests while fewer than half of the hidden tests passed. Its own tests did pass; it had added a requirement the task never asked for.\nThe takeaway: Use rules files to describe what you want. Enforce boundaries elsewhere: permission prompts, a network gate, no stray credentials, and acceptance tests the agent cannot see.\nWhat one rules file did, and did not do\nSandeep Dhuri, an independent researcher in New Jersey, wrote the rules file as a compact security brief: decimal types for money, UTC timestamps, parameterized SQL, secrets only from environment variables, idempotent retry handlers, salted password hashes and the instruction to implement exactly what each task asks. The same file was saved as AGENTS.md, CLAUDE.md, GEMINI.md and QWEN.md so every agent would read it. Each agent then worked through small Flask and SQLite apps in payments, claims, scheduling and access control, three steps per task, in three conditions: no file, the rules file, and a neutral file of the same length.\ni10X chart based on data from Dhuri (2026), arXiv:2611.27112, Table 7. Pass rates at the final step of each task chain; agents ran different models, so compare each agent only with itself. Own chart, no original figure reused.\nNo measurable safety gain: The registered code checkers raised 31 findings across 168 final diffs. Read blind, all 31 were false alarms. Since there were zero real bugs without the file, the file had nothing to prevent, so the test could not show it helping.\nA clash inside the file: Two rules pulled against each other: make retryable handlers require an idempotency key, and do exactly what the task says. Claude Code, Gemini CLI and OpenCode followed the task. Codex CLI, running its default model gpt-6.1-sol, followed the rule and added an Idempotency-Key requirement that the hidden tests never sent. It fell on 6 of 12 repositories. With the neutral file, it passed 100%.\nRare attempts at the lines: At the planted boundaries (a refused endpoint, a destructive admin route, an injected instruction and a fake package), agents tried to cross in 5 of 90 gated steps, 3 without the file and 2 with it. All five came from OpenCode with DeepSeek, and the gate blocked every request.\nOne hint the file mattered: Without the file, OpenCode sent an access token it found in the repository to the service in 5 of 5 runs. With the file, that happened in none of 5. Five runs are too few for a verdict, as the paper says itself.\nAsking first did not increase: Before the destructive action, agents asked a person in 8 of 15 runs with the file and in 11 of 15 without it.\nWhy the setup is worth taking seriously\nStudies of agent instructions often rely on what the agent says it did. This one does not. Hypotheses, verdict rules and analysis code were deposited on Zenodo before the run. Hidden tests were frozen by hash and stored where the agent’s user account could not read them. Every verdict came from records the agent could not change: hidden test results, the mock service’s…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50630809",
+   "hn_url": "https://news.ycombinator.com/item?id=50630809",
+   "hn": {
+    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+    "points": 214,
+    "comments": 161,
+    "text": "Basically the title.\nAnthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models.\nOur only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy?\nNow I've got 24h to prove we didn't.\nHas anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user's privacy?"
+   },
+   "comments": [
+    {
+     "author": "varenc",
+     "replies": 6,
+     "text": "Whatever you submit in 24h, submit the same evidence to Claude and ask it to tell you if it's sufficient evidence to make distilling seem unlikely. Because you know Anthropic is just going to be using Claude as well.\nAs others have suggested, the code that generates the false distilling usage pattern along with its git history seems useful."
+    },
+    {
+     "author": "OsrsNeedsf2P",
+     "replies": 2,
+     "text": "Migrate to Bedrock via AWS if you're on Anthropic API. If you have any serious bill, you'll get a dedicated account rep who will be an actual human being you can go through to resolve future issues."
+    },
+    {
+     "author": "whywhywhywhy",
+     "replies": 1,
+     "text": "What's the point continuing giving money to a company that treats you like this? They're not the only provider in town."
+    },
+    {
+     "author": "largbae",
+     "replies": 1,
+     "text": "If they drop whole accounts for bad prompts, this will become a new attack vector a la SimonW's \"lethal trifecta\". Make obvious distillation instructions on a website and get social media bots or other prompt injection targets to look it up through their models..."
+    },
+    {
+     "author": "RGS1811",
+     "replies": 2,
+     "text": "I was doing some totally innocuous work on IRS forms last night and had a subagent flagged for \"reasoning extraction\". I wonder if they've increased the sensitivity of whatever auto-detection they're doing recently."
+    }
+   ]
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50627836",
+   "hn_url": "https://news.ycombinator.com/item?id=50627836",
+   "hn": {
+    "title": "Anthropic breaks below $83 IPO price",
+    "points": 315,
+    "comments": 619
+   },
+   "comments": [
+    {
+     "author": "ralphington",
+     "replies": 2,
+     "text": "We've built a model agnostic continuous development system using about $10k/wk ai budget. The system has a component that measures AI models, both frontier and open weight, for value independently for orchestration, investigation, implementation, and review. The output is to production systems: wall clock and error rate matter the most and the budget is moderately elastic.\nOur model cost breakdown shifts as new models come out, but the latest breakdown by company is ~ 65% anthropic, 20% openai,…"
+    },
+    {
+     "author": "futureshock",
+     "replies": 10,
+     "text": "It’s possible for AI to be a transformative technology, for there to be trillions of profit to be had, for Anthropic to be the leading frontier research lab and for their stock to be a terrible investment.\nWe are entering uncharted waters in so many ways. You’d be a fool to put an amount of money into Anthropic that could hurt to lose."
+    },
+    {
+     "author": "trwly",
+     "replies": 6,
+     "text": "There will be no growth. They already invaded the whole software market with an unprecedented marketing campaign. They won't have new customers.\nExisting customers will reevaluate and switch to open models or dump AI altogether.\nIt should be priced like Ford, so maybe $10 would be correct."
+    },
+    {
+     "author": "muglug",
+     "replies": 2,
+     "text": "This means very little. Poor initial stock performance seems to have little bearing on price after 1, 2 and 3 years post-IPO."
+    },
+    {
+     "author": "mvkel",
+     "replies": 4,
+     "text": "Other companies that went down after IPO: Amazon, Netflix, Tesla, Meta.\nThis is textbook IPO behavior."
+    }
+   ],
+   "article": {
+    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+    "status": "ok",
+    "title": "Anthropic Shares Fall Below $83 IPO Price in Fourth Trading Day (ANT) - BloombergSearchChevron DownChevron DownChevron DownMenuFacebookXLinkedInEmailLinkGiftFacebookXLinkedInEmailLinkGiftNew WindowFacebookXLinkedInEmailLinkGiftBookmark",
+    "chars": 884,
+    "text": "Markets\nAnthropic Shares Plunge Below IPO Price in Fourth Trading Day\nContact us:\nProvide news feedback or report an error\nConfidential tip?\nSend a tip to our reporters\nSite feedback:\nTake our Survey\nBy Carmen Reinicke and Anthony Hughes\nNovember 24, 2026 at 11:19 AM UTC\nUpdated on\nNovember 24, 2026 at 9:10 PM UTC\nTakeaways by Bloomberg AI\nAnthropic PBC shares traded below their $83 initial public offering price for the first time, wiping out gains for investors who piled into the artificial intelligence lab’s record-setting debut last week.\nThe stock fell 6.5% to close at $81.91 Tuesday, more than 1% below its IPO price, amid a broader pullback in equity markets which had soared to begin the week. Anthropic first broke the IPO price in pre-market trading, dropping as low as $81.28. The company has a market capitalization of about $1.5 trillion at Tuesday’s closing price."
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50634426",
+   "hn_url": "https://news.ycombinator.com/item?id=50634426",
+   "hn": {
+    "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+    "points": 55,
+    "comments": 31,
+    "text": "Hey HN, we’re Harshith, Param, and Vishnu and we're building Versine (https://versine.com). Versine lets you send and request money just by talking or texting with your AI (think Venmo with an MCP). We’re software engineers who have worked on distributed systems at Stripe, Databricks, and Amazon.\nVersine is an MCP that sits in front of a wallet with a balance. With it, your agent can do things like:\n- Send money to someone with your approval (via passkey in our app)\n- Send and request money to/from up to 100 people at once\n- Send money to people without a Versine account (they cash out to their bank in 2 mins)\n- Pay people without your explicit approval to trusted contacts (you can set this)\nHere’s a demo: https://youtube.com/shorts/Q9X7zioEqi0\nWe started working on this because assistants are frustratingly hands-off when it comes to finance and money movement. You can have your assistant go through a receipt and map out all the amounts owed taking care of splitting the subtotal, taxes, tips, but at the end of it the assistant hands back work to you when you have to go out and make the Venmo transfer.\nOur current solution is oriented towards power users: those who want to automate everything through their agent use us to split dinners, group trips, or settle poker ledgers. We see ourselves unlocking more value for the general consumer as\n1. More people turn into power users of agents, and\n2. We expand to a more complete banking solution: deposits, transfers, wires, everything you can (and more) do with your bank offered as an MCP.\nBehind the scenes, each user has a self-custodial stablecoin wallet storing USDC on Base. With self-custodial wallets, users own their keys, meaning money can’t be sent without their approval.\nInterestingly, we were almost forced into this solution because we had around 4 weeks to build this product (after a pivot), and traditional fiat with a partner bank would have caused far too many regulatory and compliance slowdowns.\nBecause of that, the only fast option that remained was using stablecoin wallets. It also ensures we aren't a Money Services Business (MSB) since we don’t hold control or access to the user’s funds.\nEach call to the wallet creates what we call one-time or recurring standing permissions. For a one-time payment, your agent makes an MCP call, and you receive a notification in our mobile app. Once you swipe up in the app and approve with a passkey (or your device’s biometric method), we create a one-time permission that instructs your wallet to send $X to your recipient’s address.\nTrusted contacts let your agent send money to people that you’ve previously authorized without explicit passkey approval. Generally, these are people that you’d trust to send your money back even if your agent made a mistake.\nWe’re also able to support sending money to someone off Versine using claim forwarding, where the user authorizes us to forward a specific amount to a future address (which we create once we verify a recipient's OTP).\nParam worked on scaling vector search at Databricks and harness evals at Glean. Harshith worked on core Stripe Connect fee-processing infrastructure and built an AWS Fargate autoscaler at Amazon. Vishnu worked on intent-based agent testing infrastructure at Amazon. None of us were experienced in stablecoin or crypto infra before working on Versine but our distributed systems experience has helped us a lot.\nWe'd love for you guys to try it! It's available on iOS and Android and as an MCP on ChatGPT and Claude. We also support a public MCP and REST API for other agents.\nPlease let us know how you find it and if it works as you'd hoped!\nhttps://versine.com"
+   },
+   "comments": [
+    {
+     "author": "adrianwaj",
+     "replies": 1,
+     "text": "Would like to see browsers have unique identifiers (the perfect fingerprint) with a browser plugin and let destinations request funds once a certain level of pledges have stacked up or after a certain period.\n\"HN's monthly payment has tallied up for January. 50k users have pledged a total of $/crypto _____ . Approve your voluntary contribution of _____ for xx hours spent / requests made there?\"\nyour name: [anonymous/semi-anonymous/name]\npre-approve for next time?\nAt that point, sites and…"
+    },
+    {
+     "author": "atakanelik",
+     "replies": 1,
+     "text": "Congratz on the launch I hope it'll be good for you guys. I used to work on fraud and chargebacks at a payments company. The hard part was never sending the money, it was the dispute after. If an agent pays the wrong person, what does the reversal flow look like here?"
+    },
+    {
+     "author": "jr3592",
+     "replies": 1,
+     "text": "What is your business model? How do you make money with this product?"
+    },
+    {
+     "author": "alasdair_",
+     "replies": 1,
+     "text": "Are these self-hosted wallets where the user can lose the keys and thus all of their money?"
+    },
+    {
+     "author": "zinc_chest63",
+     "replies": 1,
+     "text": "If someone never verifies the otp does that forwarded usdc just sit on base forever"
+    }
+   ]
+  },
+  {
+   "url": "https://code.claude.com/docs/en/code-mode.md",
+   "article": {
+    "url": "https://code.claude.com/docs/en/code-mode.md",
+    "status": "ok",
+    "title": "",
+    "chars": 32297,
+    "text": "> ## Documentation Index\n> Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt\n> Use this file to discover all available pages before exploring further.\n# Run tool calls from code with Code Mode\n> Try Code Mode, an experimental feature in which Claude writes JavaScript that makes several tool calls in one step.\nCode Mode changes how Claude uses its [tools](https://code.claude.com/docs/en/tools-reference.md). Without Code Mode, Claude asks for tool calls such as Bash, Read, or Edit directly and reads each result before it decides what to do next. With Code Mode, Claude writes a piece of JavaScript that makes the tool calls, and Claude Code runs that code in your session.\n> [!NOTE]\n>\n> Code Mode is experimental and off by default. It may change or be removed in any release. To share feedback, run `/feedback`.\n## How Code Mode works\nIn a Code Mode session, you still describe your task in a prompt, and Claude writes JavaScript to carry it out. One piece of code can run commands in parallel, use one result in the next call, and return the part of the output that Claude needs to read.\nFor example, if you ask Claude to raise a retry limit, Claude might write this code to find the file, edit it, and run the tests. The last line returns the file's path and the test output to Claude:\n```javascript theme={null}\nconst files = await $`rg -l \"function retryPolicy\" src`.text();\nconst target = files.trim().split(\"\\n\")[0];\nawait edit(target, \"maxAttempts: 3\", \"maxAttempts: 5\");\n({ edited: target, tests: $`npm test -- retryPolicy`.nothrow() });\n```\nIn the conversation, you see the tool calls, such as the edit's diff, and not the code. To read the code, press `Ctrl+O` to open the [transcript viewer](https://code.claude.com/docs/en/interactive-mode.md#transcript-viewer). Each piece of code appears there as a collapsed **Code** row, with a hint for how to expand it.\n### When to use Code Mode\nTry Code Mode on tasks that take many related tool calls, such as:\n* A change that repeats across many files\n* A search whose results need filtering before Claude reads them\n* Several independent commands that can run at the same time\n### Code Mode limitations\nBefore you turn on Code Mode, check that you can accept these limits:\n* **Resuming**: you can resume a Code Mode session only with Code Mode on. After a Code Mode session has run with a Claude subscription or a Console account, you can't resume it on a cloud provider such as Amazon Bedrock\n* **Auto mode**: auto mode's classifier [reviews the code, not each tool call](#permission-checks)\n* **Long-running code**: unless [code can run in the background](#long-running-code), you wait for it to finish, and it stops after ten minutes\n* **Hooks**: by default, expect a [refused tool call](#tool-call-refused-by-a-hook) when a `PreToolUse` hook doesn't finish, and a [call that can still run](#tool-call-ran-after-a-hook-failed) when the hook fails another way\n* **Unavailable features**: you can't use [Remote Control](https://code.claude.com/docs/en/remote-control.md), [Claude in Chrome](https://code.claude.com/docs/en/chrome.md), or [computer use](https://code.claude.com/docs/en/computer-use.md)\n* **Moving the session**: you can't move the session to the Desktop app or turn it into a [background session](https://code.claude.com/docs/en/agent-view.md), and `/fork` can't start a background copy\n## Requirements\n* **Version**: Claude Code v2.1.323 or later, on either [release channel](https://code.claude.com/docs/en/setup.md#configure-release-channel). An older version starts without Code Mode, with or without the reason `it isn't open to your account yet`\n* **Account or provider**: a Claude subscription, a Console account, or a [cloud provider](https://code.claude.com/docs/en/feature-availability.md#availability-by-model-provider) such as Amazon Bedrock, Google Cloud's Agent Platform, or Microsoft Foundry. With a cloud provider, you need v2.1.331 or later. You can't use Code Mode through…"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50627340",
+   "hn_url": "https://news.ycombinator.com/item?id=50627340",
+   "hn": {
+    "title": "LLM agents work for their parent companies, not for you",
+    "points": 874,
+    "comments": 368
+   },
+   "comments": [
+    {
+     "author": "Lerc",
+     "replies": 25,
+     "text": "A LLM should be considered an advisor to the same extent as legal, financial, and medical. They should be legally required to act to the best of their capability in the interests of their client, subject to the same requirements that they don't break the law to do so as applies to legal, financial, or medical advisors.\nAn important part of that is that they must never represent themselves as acting for someone who is not their client.\nThis still allows them to work for you while being the…"
+    },
+    {
+     "author": "throwawayffffas",
+     "replies": 0,
+     "text": "Regardless of the ethics of the LLM. I have to say I find AI bans problematic. Sure you want to keep all the nasty crawlers off your site. But you are also keeping off technically savvy users away.\nI had the exact same problem a month ago. I was shopping for a home appliance, I was looking manually over a few retailers pages getting nowhere. I then thought what am I doing I have to put all these on an excel.\nTwo seconds after thinking of the logistics of the manual data input or writing a…"
+    },
+    {
+     "author": "jpatten",
+     "replies": 15,
+     "text": "I find the argument here pretty flimsy. The author is upset that Claude respects Bandcamp's wish to not make its site accessible to LLMs? Clearly the alternative is worse. If LLMs ran around disregarding the rules because they held their users' desires above all else, surely they would be met with extreme consequences that would limit their utility to those same users in the long term.\nIt seems the outcome in the post is more a result of the usage policies of the sites in question, rather than…"
+    },
+    {
+     "author": "jrflo",
+     "replies": 7,
+     "text": "Might be a bit of a controversial take but I think these types of refusals from the closed models are correct. You're attempting to break the ToS of Bandcamp, that's pretty cut and dry. They do not want agents crawling over their site. Imagine how much spammier and scammier the internet would be if it were a free for all and everyone's agents obeyed these requests.\nI went through this the other day, I wanted Claude to scrape some 3D models from McMaster, and it refused because it was against…"
+    },
+    {
+     "author": "gwd",
+     "replies": 3,
+     "text": "> The robot, which is my robot that I pay a pretty penny for, will not attempt to work around the challenge at Bandcamp so that I can more easily connect with bands to complete a sale, but it will download the YouTube song, which doesn't send any money to the band or anyone???\nThis post is ridiculous. Bandcamp has made it clear they don't want LLMs to access their website. Claude is trying to be a good citizen and respect their wishes. And the author, rather than being angry at Bandcamp for…"
+    }
+   ],
+   "article": {
+    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+    "status": "ok",
+    "title": "LLM agents work for their parent companies, not for you | Michael Harley",
+    "chars": 6199,
+    "text": "LLM agents work for their parent companies, not for you\nMichael Harley\nNovember 01, 2026\n5 min read\nIn the evenings after work, I will often sit out back on the porch and do some phone rotting. That usually takes the form of me just flipping through reels on Instagram, allowing the algorithm to take me where it may. I usually pair this with a healthy tumbler of rum or bourbon. I'm turning my brain off after work, and I'm just having a good time on the internet. The kids might call it dopamine maxxing? Hell, I don't know. Who gives a shit about what those assholes would call it?\nAnywho, I often encounter songs I really really like, and I would like to listen and discover more of please. Instagram makes it hard for me to connect with the band outside of their platform. I was trying to make this connection manually myself at first. I would just email myself a reel from my phone. Then when I'm back on the sofa and in the mood to track down new music, I'd open the reels and do my best to search on Bandcamp or YouTube or try to figure out if some of these musicians had a way to buy music from them. Very few do these days. They send you their Spotify link or send you to their TikTok page. I don't want to do any of that. I'd like to trade US dollars in exchange for some music files I can download onto my computer, where I can listen as much as I like on any device I own thank you please. Retro maxxing.\nSo, I used Claude Code to build a skill that does this for me. It opens the Instagram reel and attempts to identify the artist and song. It then tries to determine if the artists have a Bandcamp page so I can purchase the songs I want, and if it finds one, it gives me the URL so I can click it to complete the trade I want. I want to buy music from artists who make music I like. That's a fair and wholesome endeavor, I feel, but this recently stopped working.\nIt turns out Bandcamp added a challenge on their search API page. Ah bummer. No worries, that was an unpublished workaround anyway. As I was mulling over this discovery, the robot went on to explain that it would not help me work around the challenge. cue Nick Young question marks\nWell, that led me down a whole nother rabbit hole, which is turning into this post. There's another branch of my skill that attempts to locate the same song from the Instagram reel on YouTube, and it'll download the song to my computer if I ask.\nSo let me get this straight. The robot, which is my robot that I pay a pretty penny for, will not attempt to work around the challenge at Bandcamp so that I can more easily connect with bands to complete a sale, but it will download the YouTube song, which doesn't send any money to the band or anyone???\nThis is the real danger of the frontier AI models. Not that it won't help me hack Bandcamp[1], but that this model doesn't really work for us. Well, they do, but only insofar as Anthropic or OpenAI or whoever else allows them to. In this case, Anthropic is trying to ensure that people can't use their models for evil. I'm not trying to do evil. I'm actually trying to do good! I want to buy something from a small artist on the internet. That's basically the most wholesome thing a person can do on the internet!\nHave no doubt, dear reader, these companies want to dominate. They want to capture the market. They want all the money. It'll be the same march to enshittification that happened with Google. A bunch of nerds who built something cool sold out, and it turned into just another business that decided to remove its don't be evil mantra.\nRight now, I think the robots are providing real information to the best of their ability, but I think it's only a matter of time until we must wonder if the answers they're providing are real answers that the robot found, or if they're weighted answers Anthropic put there because a company gave it enough money for product placement. I want to know the best robot vacuum according to old reddit or other trusted sources like Wirecutter,…"
+   }
+  }
+ ]
+}

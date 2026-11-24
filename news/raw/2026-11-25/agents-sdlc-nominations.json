@@ -1,0 +1,852 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "336c2358afba81e2",
+  "generated_at": "2026-11-24T23:56:24.955801Z",
+  "from_date": "2026-11-23",
+  "to_date": "2026-11-24",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-24T23:56:24.810573Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-24T23:56:24.810587Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-24T23:56:24.496831Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 87,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-24T23:56:24.810338Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "LLM agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 368,
+          "points": 874
+        },
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "LLM agents",
+        "seed_score": 2161.425,
+        "summary": "LLM agents work for their parent companies, not for you",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50627340",
+            "source": "hackernews",
+            "title": "LLM agents work for their parent companies, not for you",
+            "body": "LLM agents work for their parent companies, not for you",
+            "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+            "author": "surprisetalk",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 874,
+              "comments": 368
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about LLM agents work for their parent companies, not for you",
+            "snippet": "LLM agents work for their parent companies, not for you",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50627340",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.364
+          },
+          {
+            "item_id": "R66",
+            "source": "reddit",
+            "title": "Giving AI agents access to customer data without breaking permissions",
+            "body": "Giving AI agents access to customer data without breaking permissions\nWe\u2019re adding an AI assistant to our B2B SaaS so customers can ask questions about their own data. The prototypes work but it\u2019s basically an LLM writing SQL against our database and I\u2019m not comfortable rolling that to a few hundred tenants.\u00a0\n\nHow are people governing what the agent can see and query in production? Semantic layer, MCP, something else? Thanks all .",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y4lynv/giving_ai_agents_access_to_customer_data_without/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We\u2019re adding an AI assistant to our B2B SaaS so customers can ask questions about their own data. The prototypes work but it\u2019s basically an LLM writing SQL against our database and I\u2019m not comfortable rolling that to a few hundred tenants.\u00a0\n\nHow are people governing what the agent can see and query in production? Semantic layer, MCP, something else? Thanks all .",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 16,
+            "source_quality": 0.6,
+            "local_rank_score": 0.371
+          },
+          {
+            "item_id": "R63",
+            "source": "reddit",
+            "title": "Agentic GraphRAG: framework for Context layer + Agent memory using a 3D-knowledge graph",
+            "body": "Agentic GraphRAG: framework for Context layer + Agent memory using a 3D-knowledge graph\nWe're building Agentic GraphRAG, an open source library that stores your enterprise knowledge and agent memory in the same knowledge graph.\n\nI've worked on RAG systems and LLM training for the past three and a half years. Lately, I've been following how agents retain work across sessions, especially for non-coding tasks. This project puts together the learnings from seeing how these RAG systems fail when used for different domains.\n\nWe construct three connected graph layers that the agents read:\n\n1. **Knowledge Layer:** holds documents (with full structure), source passages, and extracted entities and relationships. Passages retain their document version and location, including page positions for PDFs.\n2. **Working memory:** records tasks, progress, messages, and tool activity. The agent saves task events so work can continue across sessions.\n3. **Decision memory:** stores conclusions, assumptions, and open questions encountered by the agent. Decisions link to source passages they were based on, recorded events, or earlier decisions, and keep their history when reviewed or replaced.\n\nThings which make us different from other frameworks out there:\n\n\\- **Structure Aware:** The ingestion pipeline uses Docling for loading documents and captures the full document hierarchy. The sections, tables, and passage hierarchy are connected using edges and stored in the graph.\n\n\\- **Ontology Grounded:** You define a schema for your domain (we also ship ontology presets so it is easy to get started). The schema guides extraction, validation, and search. We use GLiNER for local extraction, so its virtually free (and fast) to construct the graph and no LLM calls are needed.\n\n\\- **Robust Agent Search:** Retrieval combines graph, full-text and vector search. Agents can reach original passages even when extraction misses a fact, navigate surrounding sections and table rows with headers, and follow entity relationships back to supporting text.\n\nWe offer a built-in agent you can use out of the box. You can also connect your agents through MCP.\n\nWe will be releasing extensive benchmarks very soon.\n\n# TL;DR\n\nAgentic GraphRAG is an open source library that stores document knowledge, agent work, and decisions in one connected graph. Agents can resume tasks and trace saved decisions to their original evidence, while source changes flag affected decisions for review.\n\nTry it out. Feedback, criticism, issues, and contributions are all welcome!",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y4mqow/agentic_graphrag_framework_for_context_layer/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We're building Agentic GraphRAG, an open source library that stores your enterprise knowledge and agent memory in the same knowledge graph.\n\nI've worked on RAG systems and LLM training for the past three and a half years. Lately, I've been following how agents retain work across sessions, especially for non-coding tasks. This project puts together the learnings from seeing how these RAG systems fa",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 10,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2805
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Microsoft declares Code Red",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 186,
+          "points": 208
+        }
+      },
+      "nomination": {
+        "name": "Microsoft declares Code Red",
+        "seed_score": 591.0,
+        "summary": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50631157",
+            "source": "hackernews",
+            "title": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+            "body": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+            "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
+            "author": "thm",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 208,
+              "comments": 186
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about Microsoft declares 'Code Red' after historic outage, interna",
+            "snippet": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50631157",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2445
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+        "seed_score": 249.0,
+        "summary": "A 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R33",
+            "source": "reddit",
+            "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+            "body": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face\nA 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it is still **1.76 bits per weight** and **5.93 GB**, against 53.8 GB for the FP16 model. This release targets long-horizon, tool-driven work.\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#highlights)Highlights\n\n* **FP16-level agentic tool calling at one ninth of the size**: across five tool-calling benchmarks (\u03c4\u00b2-Bench, \u03c4\u00b3-Bench, BFCL v3, BFCL v4, and AppWorld), Bonsai 2.5 averages **77.2**, against **77.7** for FP16 \u2014 essentially indistinguishable from full precision\n* **90% of FP16 on agentic coding, up from 63% for Bonsai 2**: on Terminal-Bench 2.1, SWE-bench Verified, and DeepSWE, DeepSWE rises from 0 to **27.0**, SWE-bench Verified from 60.8 to **75.6**, and Terminal-Bench 2.1 from 52.8 to **60.1**\n* **The strongest agentic model under 10 GB**: the smallest of the low-bit GGUF builds of Qwen3.8-27B we compare against, and it leads every build under 10 GB on both tool calling and agentic coding. Against GSQ-RCO IQ3\\_XXS, which is 1.7\u00d7 larger, it is ahead on tool calling (77.2 vs. 75.3) and close on coding (54.2 vs. 55.5)\n* **General capability stays close to FP16**: averaged over five categories (16 benchmarks), Bonsai 2.5 scores **82.1** against 84.3 for FP16\n* **Multi-token prediction (MTP) variants**: the MTP variants include a draft head that speeds up decode by **1.5\u20131.8\u00d7** on NVIDIA GPUs\n* **2.3\u20133.0\u00d7 faster decode than on Bonsai 2's release day** on six of the seven NVIDIA GPUs measured, with MTP and the kernels now in testing \u2014 reaching about **300 tokens/s** on H200 and B200\n* **Runs on stock llama.cpp**: the `Q2_0` files run on upstream llama.cpp; `PTQ1_0` is under upstream review\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#resources)Resources\n\n* [**Whitepaper**](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-5-27b-whitepaper.pdf) \u2014 benchmarks, evaluation setup, and inference-speed measurements for this release\n* [**Bonsai 2 27B whitepaper**](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf) \u2014 the ternary format, storage accounting, and rotated weight basis, all unchanged in Bonsai 2.5\n* [**Demo & examples**](https://github.com/PrismML-Eng/Bonsai-demo) \u2014 **the source of truth for running these models**: tested setup for every backend, pinned binaries, serving, MTP speculative decoding, benchmarking and integration, kept current as the runtimes move\n* **Low-bit kernels**: [llama.cpp fork](https://github.com/PrismML-Eng/llama.cpp) (CUDA + Metal) \u00b7 [MLX fork](https://github.com/PrismML-Eng/mlx) (Apple Silicon) \u00b7 [mlx-swift fork](https://github.com/PrismML-Eng/mlx-swift) (iOS/macOS)\n* [**Discord**](https://discord.gg/prismml) \u2014 join the community for support, discussion, and updates\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#model-overview)Model Overview\n\nChanges from Bonsai 2 are marked with \u2020.\n\n|Item|Specification|\n|:-|:-|\n|Base model|Qwen3.8-27B, a 27B hybrid-attention causal language model|\n|Parameters|24.35B language (64 blocks) + 0.47B vision tower (27 blocks) + 2.54B embedding/lm-head = 27.36B total|\n|Architecture|Hybrid attention (\\~75% linear / \\~25% full attention), SwiGLU MLP, RoPE, RMSNorm|\n|Context length|262K tokens|\n|Weight format|Ternary g128 (FP16 group-wise scaling) in a blockwise Hadamard basis; 1.76 bits per weight, 5.93 GB (PTQ1\\_0)|\n|Focus \u2020|Agentic and tool-use tasks|\n|Reasoning efforts|`xhigh` (default, most accurate) or `medium`|\n|Backends|llama.cpp (CUDA, Metal, CPU, SYCL) and MLX (Python, Swift); GGUF packs PTQ1\\_0 and PQ2\\_0, plus Q2\\_0 for stock llama.cpp|\n|Speculative decoding \u2020|The MTP variants include a multi-token prediction (MTP) draft head|\n|License|Apache 2.0|\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#weight-representation-ternary-g128)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4mech/prismmlternarybonsai2527bgguf_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 139,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.403
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Neon Qwen models",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "Neon Qwen models",
+        "seed_score": 165.0,
+        "summary": "I run qwen models locally, and keep up closely with the local model space, but i also keep a subscription from every major  lab to test out what the frontier is like and do  alot of work there aswell.\n\n  \nOne behavioural issue i started seeing with the big frontier models is they have gotten too narrow sighted on being right, and realistic and verifying/testing their stuff. that they entirely loos",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "Neon Should be distilled into the Qwen models for the ultimate brain child!",
+            "body": "Neon Should be distilled into the Qwen models for the ultimate brain child!\nI run qwen models locally, and keep up closely with the local model space, but i also keep a subscription from every major  lab to test out what the frontier is like and do  alot of work there aswell.\n\n  \nOne behavioural issue i started seeing with the big frontier models is they have gotten too narrow sighted on being right, and realistic and verifying/testing their stuff. that they entirely loose the picture of whats possible, the ambition to do better, the enthusiasm and the intuition to look for other pathways and answers , to come up with something truly novel. \n\nEven models like opus 5.5 while being exceptionally capable, gets stuck on the pointless details to ensure it doesn't overpromise or break anything, while astra models have pushed this too far to the point where they literally can't even move  a needle from point A to B without a 1000 verification tests and 40k dollars worth of compute. (slight exxageration but not really)\n\nThis behavior, has since been translated into more and more open weight models... IG most of us here know why that is... but not gonna get into it in this post. \n\n  \nNo matter how smart the models are locally, if they lack the enthusiasm, the vision, the excitement and the  optimism to do better, they're not gonna do too good.\n\nbut neon series seems to have finally fixed this (there are still other issues with the model, mainly the sychophancy - which i find weird no one has complained about, i guess every dev just loves being told they're the next einstein or smthng)\n\n  \nI am working trying to work on a small project locally with my own neon outputs to see if i can get qwen flash next's model behavior to be better suited for suited for ambigious software tasks, cause that model is clearly capable, just gets handicapped by the fear of going too far or doign something wrong",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4gpet/neon_should_be_distilled_into_the_qwen_models_for/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 74,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I run qwen models locally, and keep up closely with the local model space, but i also keep a subscription from every major  lab to test out what the frontier is like and do  alot of work there aswell.\n\n  \nOne behavioural issue i started seeing with the big frontier models is they have gotten too narrow sighted on being right, and realistic and verifying/testing their stuff. that they entirely loos",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 93,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3765
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Take Inkling-2-Mini Loop",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 65
+        }
+      },
+      "nomination": {
+        "name": "Take Inkling-2-Mini Loop",
+        "seed_score": 142.5,
+        "summary": "So far, I\u2019m pretty impressed with Inkling-2-Mini. My main problem is that it often gets stuck in loops, especially with long contexts (>50k).\n\nI see the {Model Card](https://huggingface.co/thinkingmachines/Inkling-2-Mini) said: \"In internal testing the model sometimes became stuck in long reasoning loops, or repeatedly re-checked its own work without making progress, particularly when debugging co",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "My Take on Inkling-2-Mini: Loop is the deal breaker! :(",
+            "body": "My Take on Inkling-2-Mini: Loop is the deal breaker! :(\nSo far, I\u2019m pretty impressed with Inkling-2-Mini. My main problem is that it often gets stuck in loops, especially with long contexts (>50k).\n\nI see the {Model Card](https://huggingface.co/thinkingmachines/Inkling-2-Mini) said: \"In internal testing the model sometimes became stuck in long reasoning loops, or repeatedly re-checked its own work without making progress, particularly when debugging code. We recommend setting limits on output tokens and agent turns.\"\n\nHowever, I experience this very often, not \"sometimes.\" It either gets stuck reasoning or keeps calling the same tool and repeating the same reasoning without making any progress.\n\nHas anyone discovered a way to prevent these loops? I tried the settings from the [Unsloth Inkling 2 Mini guide](https://unsloth.ai/docs/models/inkling-2-mini). They helped little, but it still gets stuck.\n\n- `temperature: 1.0`\n- `top-p: 1.0`\n- `top-k: 0`\n- `min-p: 0.0`\n\nI\u2019ve been using Qwen 3.8 Flash Next as my main model for agentic coding in YOLO mode, but it\u2019s a little slow on my Mac. I get 128.9 tok/s for prefill and 22.5 tok/s for decode.\n\nIf I could get Inkling 2 Mini to stop looping, I\u2019d totally switch!\n\nThanks to u/programmerChilli and the team for a great model! I\u2019d love to see an Inkling 2.1 Mini without getting stuck in loops.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4c4xg/my_take_on_inkling2mini_loop_is_the_deal_breaker/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 30,
+              "num_comments": 65
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "So far, I\u2019m pretty impressed with Inkling-2-Mini. My main problem is that it often gets stuck in loops, especially with long contexts (>50k).\n\nI see the {Model Card](https://huggingface.co/thinkingmachines/Inkling-2-Mini) said: \"In internal testing the model sometimes became stuck in long reasoning loops, or repeatedly re-checked its own work without making progress, particularly when debugging co",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.467
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Inkling 2 Mini",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 39
+        }
+      },
+      "nomination": {
+        "name": "Inkling 2 Mini",
+        "seed_score": 135.0,
+        "summary": "**Disclaimer.** Checkpoint weights as-is: NVFP4/MXFP8 experts, rest BF16. KV cache and activations at 16-bit, no added quantization. Compared to Transformers with the same weights, the KL stays within the reference noise.\n\n**Speed.** In v0.16, Inkling's decode used 40% of the cards' theoretical bandwidth, versus 78% for Qwen 27B. We only optimized the engine and today we're at 65%. The rest is tak",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "Inkling 2 Mini on 2\u00d7 RTX 5070 Ti, 308 tok/s writing code, with the original weights",
+            "body": "Inkling 2 Mini on 2\u00d7 RTX 5070 Ti, 308 tok/s writing code, with the original weights\n**Disclaimer.** Checkpoint weights as-is: NVFP4/MXFP8 experts, rest BF16. KV cache and activations at 16-bit, no added quantization. Compared to Transformers with the same weights, the KL stays within the reference noise.\n\n**Speed.** In v0.16, Inkling's decode used 40% of the cards' theoretical bandwidth, versus 78% for Qwen 27B. We only optimized the engine and today we're at 65%. The rest is taken by the expert routing and the small steps around it: the router has to decide before the experts can be read, and meanwhile the memory is idle.\n\n**Numbers** (v0.16.0 \u2192 v0.16.3, one request):\n\n* decode at 4k: code 230 \u2192 308 tok/s, text 149 \u2192 205\n* prefill at 4k: 4,928 \u2192 8,038 tok/s\n* 254k of context, all in VRAM\n\n**Next steps:** the drafter, which gains little on prose, and the overthinking, because Inkling reasons even with thinking off.\n\ngithub.com/ValerioDolci/capy-flash",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4h8m3/inkling_2_mini_on_2_rtx_5070_ti_308_toks_writing/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 51,
+              "num_comments": 39
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**Disclaimer.** Checkpoint weights as-is: NVFP4/MXFP8 experts, rest BF16. KV cache and activations at 16-bit, no added quantization. Compared to Transformers with the same weights, the KL stays within the reference noise.\n\n**Speed.** In v0.16, Inkling's decode used 40% of the cards' theoretical bandwidth, versus 78% for Qwen 27B. We only optimized the engine and today we're at 65%. The rest is tak",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.327
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 49.5,
+        "summary": "Everyone talks about using AI agents to build products but I think there's a bigger opportunity in actually running a business.\n\nTracking invoices, checking incoming payments, categorizing expenses and following up on unpaid invoices. None of these tasks are particularly difficult, but together they take up a surprising amount of time.\n\nWith MCP integrations like Meow's, agents are starting to con",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "Can AI agents replace the boring parts of running a business?",
+            "body": "Can AI agents replace the boring parts of running a business?\nEveryone talks about using AI agents to build products but I think there's a bigger opportunity in actually running a business.\n\nTracking invoices, checking incoming payments, categorizing expenses and following up on unpaid invoices. None of these tasks are particularly difficult, but together they take up a surprising amount of time.\n\nWith MCP integrations like Meow's, agents are starting to connect directly to business banking rather than just working with spreadsheets and manually uploaded data.\n\nI don't think agents need full control over a business to be useful. Even handling the repetitive stuff while leaving important decisions to humans would be a huge improvement.\n\nWhat parts of running a business would you trust an AI agent to handle?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y4mtb0/can_ai_agents_replace_the_boring_parts_of_running/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 26,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.24,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Everyone talks about using AI agents to build products but I think there's a bigger opportunity in actually running a business.\n\nTracking invoices, checking incoming payments, categorizing expenses and following up on unpaid invoices. None of these tasks are particularly difficult, but together they take up a surprising amount of time.\n\nWith MCP integrations like Meow's, agents are starting to con",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 62,
+            "source_quality": 0.6,
+            "local_rank_score": 0.417
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Arr october 2026 reviews R",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Arr october 2026 reviews R",
+        "seed_score": 45.0,
+        "summary": "Arr october cycle(NAACL and COLING) reviews are coming out in hours. talk about the reviews here",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R101",
+            "source": "reddit",
+            "title": "Arr october 2026 reviews [R]",
+            "body": "Arr october 2026 reviews [R]\nArr october cycle(NAACL and COLING) reviews are coming out in hours. talk about the reviews here",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y483vx/arr_october_2026_reviews_r/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Arr october cycle(NAACL and COLING) reviews are coming out in hours. talk about the reviews here",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 61,
+            "source_quality": 0.6,
+            "local_rank_score": 0.28600000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "T3 Code and Theo Drama continues",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "T3 Code and Theo Drama continues",
+        "seed_score": 42.0,
+        "summary": "You have to be a special kind of person to beef with the entirety of Chinese twitter",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "T3 Code and Theo Drama continues",
+            "body": "T3 Code and Theo Drama continues\nYou have to be a special kind of person to beef with the entirety of Chinese twitter",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4hv48/t3_code_and_theo_drama_continues/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "You have to be a special kind of person to beef with the entirety of Chinese twitter",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2715
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Radeon AI PRO R9700 Noise Comparison",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Radeon AI PRO R9700 Noise Comparison",
+        "seed_score": 40.5,
+        "summary": "# TL;DR \n\nAll R9700 models are louder than a consumer RDNA4 card like the Hellhound 9070 XT. If you just need AI processing power and can put them in a server room or basement, just buy the cheapest one, as performance hardly varies. If you use it in a workstation or home environment, the Gigabyte AI PRO R9700 clearly stands out as the quietest and most bearable model.\n\nNote on AI use: Data was ma",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "Radeon AI PRO R9700 Noise Comparison: Gigabyte vs. Sapphire vs. ASUS",
+            "body": "Radeon AI PRO R9700 Noise Comparison: Gigabyte vs. Sapphire vs. ASUS\n# TL;DR \n\nAll R9700 models are louder than a consumer RDNA4 card like the Hellhound 9070 XT. If you just need AI processing power and can put them in a server room or basement, just buy the cheapest one, as performance hardly varies. If you use it in a workstation or home environment, the Gigabyte AI PRO R9700 clearly stands out as the quietest and most bearable model.\n\nNote on AI use: Data was manually collected and text was handwritten, then edited by AI for formatting and wording as I am not a native English speaker.\n\n# Context\n\nI owned an AI server based on consumer hardware with 2 RX 6800 GPUs. I already upgraded one GPU to a Powercolor Hellhound 9070 XT, which was a huge improvement in AI capabilities. I wanted to upgrade to one or maybe 2 R9700.\n\nBecause my computer sits directly next to me in a normal living area, noise is a major problem. Reddit posts told me that the R9700 was definitely louder than consumer cards, but were quite unclear about how loud and annoying they actually are.\n\nI decided to buy the R9700 variants available on the market, test them, and keep at least one of them. I bought the Gigabyte AI PRO R9700 AI TOP 32G, Sapphire AI PRO R9700 32GB and Asus AI PRO R9700 Turbo. I skipped the Powercolor variant, as Redditors mentioned it was the noisiest variant, and the ASRock model was not available at the time of my testing. \n\nMy goal was to find the most silent or bearable card using stock settings.\n\nBelow are my findings and data compiled about 2 months ago.\n\n\n\n# Noise Profile & Subjective Notes\n\n* **Gigabyte R9700:** Loud during LLM workloads with stock settings, white noise, audible bearing noise, that subsided over time.\n* **Sapphire R9700:** Very quiet at idle with no clicking/rattling. During LLM load, it has a steep fan curve and gets very loud (too loud starting at 65\u00b0C). Even limited to 210W, it is still too loud (2657 RPM).\n* **Asus R9700:** Loud even at idle, high-frequency sound, audible bearing noise. Even limited to 210W, it is too loud (2800 RPM at 69\u00b0C in Furmark). Most annoying pitch/tone of all the cards.\n* **Powercolor Hellhound 9070 XT:** Quiet with no coil whine during both LLM and Furmark workloads.\n\n# Additional Notes\n\n* **Test Setup:**\n   * Windows 11 with latest drivers\n   * Linux Fedora 43 (VM under Proxmox, my usual AI setup)\n   * Open case, card always in the same slot\n* **Noise Measurement:**\n   * Measured using a generic phone app (uncalibrated). The numbers are not exact, but they provide relative values that allow comparison across the cards. The ambient noise floor in the room was 30 dB.\n* **Measurements:**\n   * Manually taken - some only once, some averaged. Definitely not a scientific method, but good enough for my use case. Also the reason there are some gaps in my data.\n   * Stock settings unless otherwise mentioned.\n   * Linux idle measurements were stopped early, as they mirrored the Windows results.\n   * Stopped measuring the Sapphire variant because the noise was so annoying compared to the others that I knew I wouldn't keep it. Similarly, I skipped the Linux tests for the Asus card, as it was already clear that the Gigabyte card was the winner for me.\n* **Observations:**\n   * Fan profiles matter a lot. Minimum fan speeds can not be lowered. I did not try tweaking the fan profile.\n   * Gigabyte's variant is the heaviest card - the others almost feel flimsy compared to it.\n* **Final setup**\n   * I kept the Gigabyte card and now use it with undervolting and a power limit. Louder than the Hellhound 9070 XT, but totally fine for a workstation at a desk.\n\n\n\n# Hardware Specifications\n\n|**Metric**|**AMD RX 6800 XT**|**Powercolor Hellhound 9070 XT**|**Gigabyte R9700**|**Sapphire R9700**|**Asus R9700**|\n|:-|:-|:-|:-|:-|:-|\n|**Weight (g)**|\\-|\\-|1454|1026|1372|\n|**Fan Diameter (mm)**|\\-|\\-|75|75|70|\n\n# Windows: Idle (15 min)\n\n|**Metric**|**AMD RX 6800 XT**|**Powercolor Hellhound 9070 XT**|**Gigabyte R9700**|**Sapphire R9700**|**Asus R9700**|\n|:-|:-|:-|:-|:-|:-|\n|**Temp GPU (\u00b0C)**|36|34|37|32|31|\n|**Temp GPU Hotspot (\u00b0C)**|38|34|38|36|32|\n|**Fan Speed**|0|0|1170 (25%)|890 (20%)|2000 (30%)|\n|**Noise Level (Rear of PC, 36 cm)**|32|33|34|33|40|\n|**Power Draw**|\\-|\\-|10W|8W|12W|\n\n# Windows: Load (5 min) & Benchmarks\n\n|**Metric**|**AMD RX 6800 XT**|**Powercolor Hellhound 9070 XT**|**Gigabyte R9700**|**Sapphire R9700**|**Asus R9700**|\n|:-|:-|:-|:-|:-|:-|\n|**Temp GPU (LLM)**|78|56|71|62|72|\n|**Temp GPU Hotspot (LLM)**|\\-|78|86|87|93|\n|**Fan Speed (LLM)**|600|1000|2460 (51%)|3500 (75%)|4100 (72%)|\n|**Noise Level LLM (Rear of PC, 36 cm)**|38|34|43|64|60|\n|**Temp GPU (Furmark 5 min)**|91|64|72|64|73|\n|**Temp GPU Hotspot (Furmark 5 min)**|102|90|92|91|94|\n|**Fan Speed (Furmark 5 min)**|1840 (55%)|985 (32%)|2900 (58%)|\\-|4030 (70%)|\n|**Noise Level (Rear of PC, 36 cm)**|\\-|34|50|\\-|59|\n|**3DMark Steel Nomad**|5235|7196|7050|\\-|7049|\n|**LM Studio Qwen3 14b (1000 chars) tok/s**|46.7|62|61|61|61|\n|**LM Studio Qwen3.6 35b (2000 chars) tok/s**|22.28|43|161|162|160|\n\n# Linux: Idle (15 min)\n\n|**Metric**|**AMD RX 6800 XT**|**Powercolor Hellhound 9070 XT**|**Gigabyte R9700**|**Sapphire R9700**|**Asus R9700**|\n|:-|:-|:-|:-|:-|:-|\n|**Temp GPU (\u00b0C)**|55|\\-|45|37|\\-|\n\n# Linux: Load (5 min)\n\n|**Metric**|**AMD RX 6800 XT**|**Powercolor Hellhound 9070 XT**|**Gigabyte R9700**|**Sapphire R9700**|**Asus R9700**|\n|:-|:-|:-|:-|:-|:-|\n|**Temp GPU (\u00b0C)**|73|56|73|63|\\-|\n|**Temp GPU Hotspot (\u00b0C)**|\\-|\\-|\\-|\\-|\\-|\n|**Fan Speed**|52%|33%|\\-|75%|\\-|\n|**Noise Level (Rear of PC, x cm)**|36|34|45|\\-|\\-|\n|**LM Studio Qwen3 14b (1000 chars) tok/s**|46.7|60|61|61|\\-|\n|**LM Studio Qwen3.6 35b (2000 chars) tok/s**|19.19|50|135|135|\\-|\n\n# \n\n# Power Limit Test \u2014 Gigabyte R9700 (Windows; Power Limit -30%)\n\n**Furmark Temps:** 67\u00b0C GPU / 80\u00b0C Hotspot (2090 RPM)\n\n**LM Studio Qwen3.6 35b:** 157 tok/s",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4dnpn/radeon_ai_pro_r9700_noise_comparison_gigabyte_vs/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "# TL;DR \n\nAll R9700 models are louder than a consumer RDNA4 card like the Hellhound 9070 XT. If you just need AI processing power and can put them in a server room or basement, just buy the cheapest one, as performance hardly varies. If you use it in a workstation or home environment, the Gigabyte AI PRO R9700 clearly stands out as the quietest and most bearable model.\n\nNote on AI use: Data was ma",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4445
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "SenseNova-U1.6-8B-MoT vs U1.5 UltraTextBench 79.30 86.04",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "SenseNova-U1.6-8B-MoT vs U1.5 UltraTextBench 79.30 86.04",
+        "seed_score": 39.0,
+        "summary": "Numbers are from the benchmark chart in the SenseNova-U1 GitHub README (https://github.com/OpenSenseNova/SenseNova-U1), I just pulled out SenseNova's own three columns.\n\nSame 8B-MoT architecture as U1.5, Apache 2.0, and the new trick is that it can look at the image it just made and redraw it. On UltraTextBench (dense infographic text) one pass goes 79.30 to 86.04, and 92.28 with self-correction o",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R43",
+            "source": "reddit",
+            "title": "SenseNova-U1.6-8B-MoT vs U1.5: UltraTextBench 79.30 to 86.04, and 92.28 with its self-correction loop on (open 8B image model)",
+            "body": "SenseNova-U1.6-8B-MoT vs U1.5: UltraTextBench 79.30 to 86.04, and 92.28 with its self-correction loop on (open 8B image model)\nNumbers are from the benchmark chart in the SenseNova-U1 GitHub README (https://github.com/OpenSenseNova/SenseNova-U1), I just pulled out SenseNova's own three columns.\n\nSame 8B-MoT architecture as U1.5, Apache 2.0, and the new trick is that it can look at the image it just made and redraw it. On UltraTextBench (dense infographic text) one pass goes 79.30 to 86.04, and 92.28 with self-correction on. Their user-study aesthetic score goes 64.10 to 70.80, BizGenEval (avg of Easy and Hard) 60.77 to 64.93.\n\nSenseNova-U1.6-8B-MoT on an M5 Ultra Mac Studio, their own inference script, BF16 with the 8-step Turbo LoRA: about 9 seconds for a 4 MP image, 35.5 GB peak memory.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4fx45/sensenovau168bmot_vs_u15_ultratextbench_7930_to/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 23,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Numbers are from the benchmark chart in the SenseNova-U1 GitHub README (https://github.com/OpenSenseNova/SenseNova-U1), I just pulled out SenseNova's own three columns.\n\nSame 8B-MoT architecture as U1.5, Apache 2.0, and the new trick is that it can look at the image it just made and redraw it. On UltraTextBench (dense infographic text) one pass goes 79.30 to 86.04, and 92.28 with self-correction o",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.304
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 36.0,
+        "summary": "I spent months building agents and kept finding myself explaining decisions I\u2019d already made. Finding the original request was easy. The part I cared about was whether the assistant could find the reply that settled it.\n\nTry a two-message thread. Start with \u201cCan you get a second quote?\u201d Then reply, \u201cThe scope changed. Cancel the quote request.\u201d Ask the assistant what you still need to do.\n\nIf it p",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R67",
+            "source": "reddit",
+            "title": "How do you test whether an AI assistant can tell a task is already finished?",
+            "body": "How do you test whether an AI assistant can tell a task is already finished?\nI spent months building agents and kept finding myself explaining decisions I\u2019d already made. Finding the original request was easy. The part I cared about was whether the assistant could find the reply that settled it.\n\nTry a two-message thread. Start with \u201cCan you get a second quote?\u201d Then reply, \u201cThe scope changed. Cancel the quote request.\u201d Ask the assistant what you still need to do.\n\nIf it puts the quote back on your list, ask which message it used. If it gets that right, add a third reply. \u201cThe new scope is final. Please get the quote after all.\u201d See if the task comes back.\n\nFor people who rely on an AI daily brief, what\u2019s a real example that would trip it up? I\u2019d be curious how it handles something messier than three tidy messages.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y4ll4q/how_do_you_test_whether_an_ai_assistant_can_tell/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I spent months building agents and kept finding myself explaining decisions I\u2019d already made. Finding the original request was easy. The part I cared about was whether the assistant could find the reply that settled it.\n\nTry a two-message thread. Start with \u201cCan you get a second quote?\u201d Then reply, \u201cThe scope changed. Cancel the quote request.\u201d Ask the assistant what you still need to do.\n\nIf it p",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.409
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "AI agents actions",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "AI agents actions",
+        "seed_score": 33.9411,
+        "summary": "I'm researching a problem around production AI agents and would like to hear from people actually building them.\n\nHow are you currently handling:\n\n* Failed or interrupted agent executions?\n* Duplicate tool calls and side effects?\n* Agent evaluations and regression testing?\n* Human approval for sensitive actions?\n* Production monitoring and debugging?\n\nAre you using a combination of tools like Temp",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R10",
+            "source": "reddit",
+            "title": "How are you handling reliability in production AI agents?",
+            "body": "How are you handling reliability in production AI agents?\nI'm researching a problem around production AI agents and would like to hear from people actually building them.\n\nHow are you currently handling:\n\n* Failed or interrupted agent executions?\n* Duplicate tool calls and side effects?\n* Agent evaluations and regression testing?\n* Human approval for sensitive actions?\n* Production monitoring and debugging?\n\nAre you using a combination of tools like Temporal, Inngest, LangSmith, Langfuse, etc., or have you built your own infrastructure?\n\nCurious about what's still painful or missing in your current setup. I'm just researching the problem.",
+            "url": "https://www.reddit.com/r/LangChain/comments/1y39222/how_are_you_handling_reliability_in_production_ai/",
+            "container": "LangChain",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm researching a problem around production AI agents and would like to hear from people actually building them.\n\nHow are you currently handling:\n\n* Failed or interrupted agent executions?\n* Duplicate tool calls and side effects?\n* Agent evaluations and regression testing?\n* Human approval for sensitive actions?\n* Production monitoring and debugging?\n\nAre you using a combination of tools like Temp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 10,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2505
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "AI agent/harness",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "AI agent/harness",
+        "seed_score": 31.5,
+        "summary": "When you use one\u2014or evaluate a new one\u2014what matters most to you? What does your ideal AI agent or harness look like?\n\nFor example:\n\n* How much autonomy should it have?\n* Do you want it to ask for confirmation before taking actions?\n* How important are tools, integrations, browser access, code execution, or file access?\n* Do you care more about reliability, speed, intelligence, transparency, or cos",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R83",
+            "source": "reddit",
+            "title": "What do you look for and want in an AI agent/harness?",
+            "body": "What do you look for and want in an AI agent/harness?\nWhen you use one\u2014or evaluate a new one\u2014what matters most to you? What does your ideal AI agent or harness look like?\n\nFor example:\n\n* How much autonomy should it have?\n* Do you want it to ask for confirmation before taking actions?\n* How important are tools, integrations, browser access, code execution, or file access?\n* Do you care more about reliability, speed, intelligence, transparency, or cost?\n* What kind of memory should it have?\n* How should it show its reasoning, plan, progress, and mistakes?\n* What makes you trust an agent enough to let it work unattended?\n* Do you prefer a general-purpose agent or one designed for a specific workflow?\n* What has frustrated you about current AI agents?\n* What is one feature you wish every agent had?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y4iq0n/what_do_you_look_for_and_want_in_an_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "When you use one\u2014or evaluate a new one\u2014what matters most to you? What does your ideal AI agent or harness look like?\n\nFor example:\n\n* How much autonomy should it have?\n* Do you want it to ask for confirmation before taking actions?\n* How important are tools, integrations, browser access, code execution, or file access?\n* Do you care more about reliability, speed, intelligence, transparency, or cos",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 52,
+            "source_quality": 0.6,
+            "local_rank_score": 0.433
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "LLM Yet",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 20
+        }
+      },
+      "nomination": {
+        "name": "LLM Yet",
+        "seed_score": 30.0,
+        "summary": "I know this is not strictly local LLM, but I do use cloud models for auxiliary work like research and review some non-sensitive data;\n\nWas met with a \"violation of terms of service\" today.\n\nYet another anecdote why local llm matters",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "PSA: google is actively banning pi.dev gemini connectors",
+            "body": "PSA: google is actively banning pi.dev gemini connectors\nI know this is not strictly local LLM, but I do use cloud models for auxiliary work like research and review some non-sensitive data;\n\nWas met with a \"violation of terms of service\" today.\n\nYet another anecdote why local llm matters",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4fxgs/psa_google_is_actively_banning_pidev_gemini/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 20
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I know this is not strictly local LLM, but I do use cloud models for auxiliary work like research and review some non-sensitive data;\n\nWas met with a \"violation of terms of service\" today.\n\nYet another anecdote why local llm matters",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 24,
+            "source_quality": 0.6,
+            "local_rank_score": 0.262
+          }
+        ]
+      }
+    }
+  ]
+}

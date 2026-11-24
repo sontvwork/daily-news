@@ -1,0 +1,847 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "c7dc26964ab4746c",
+  "generated_at": "2026-11-24T23:56:43.676589Z",
+  "from_date": "2026-11-23",
+  "to_date": "2026-11-24",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-24T23:56:43.576170Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-24T23:56:43.576176Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-11-24T23:56:43.200847Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 112,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-24T23:56:43.576007Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Dario OSS models",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 1166,
+          "points": 1981
+        }
+      },
+      "nomination": {
+        "name": "Dario OSS models",
+        "seed_score": 3337.8976,
+        "summary": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50615308",
+            "source": "hackernews",
+            "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+            "body": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+            "url": "https://twitter.com/ylecun/status/2124550037912920090",
+            "author": "MrBuddyCasino",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1981,
+              "comments": 1166
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about \"Dario is hyping the dangers so OSS models are illegal and h",
+            "snippet": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50615308",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "LLM agents",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 368,
+          "points": 874
+        }
+      },
+      "nomination": {
+        "name": "LLM agents",
+        "seed_score": 1863.0,
+        "summary": "LLM agents work for their parent companies, not for you",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50627340",
+            "source": "hackernews",
+            "title": "LLM agents work for their parent companies, not for you",
+            "body": "LLM agents work for their parent companies, not for you",
+            "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+            "author": "surprisetalk",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 874,
+              "comments": 368
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about LLM agents work for their parent companies, not for you",
+            "snippet": "LLM agents work for their parent companies, not for you",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50627340",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.8,
+            "local_rank_score": 0.337
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "York Bans Subscription Post-Purchase Fees Cars",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 399,
+          "points": 760
+        }
+      },
+      "nomination": {
+        "name": "York Bans Subscription Post-Purchase Fees Cars",
+        "seed_score": 1738.5,
+        "summary": "New York Bans Subscription and Post-Purchase Fees on Cars",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50622774",
+            "source": "hackernews",
+            "title": "New York Bans Subscription and Post-Purchase Fees on Cars",
+            "body": "New York Bans Subscription and Post-Purchase Fees on Cars",
+            "url": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription",
+            "author": "DeepLogin",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 760,
+              "comments": 399
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about New York Bans Subscription and Post-Purchase Fees on Cars",
+            "snippet": "New York Bans Subscription and Post-Purchase Fees on Cars",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50622774",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3155
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "GLM-5.4 Toward",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 380,
+          "points": 1162
+        }
+      },
+      "nomination": {
+        "name": "GLM-5.4 Toward",
+        "seed_score": 1635.538,
+        "summary": "GLM-5.4: Toward generalized coding with our first loop transformer",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50609685",
+            "source": "hackernews",
+            "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "body": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "url": "https://z.ai/blog/glm-5.4",
+            "author": "foohis",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 1162,
+              "comments": 380
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about GLM-5.4: Toward generalized coding with our first loop trans",
+            "snippet": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50609685",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 77,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1345
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Anthropic breaks below 83 IPO price",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 617,
+          "points": 312
+        }
+      },
+      "nomination": {
+        "name": "Anthropic breaks below 83 IPO price",
+        "seed_score": 1393.5,
+        "summary": "Anthropic breaks below $83 IPO price",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50627836",
+            "source": "hackernews",
+            "title": "Anthropic breaks below $83 IPO price",
+            "body": "Anthropic breaks below $83 IPO price",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+            "author": "Betelbuddy",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 312,
+              "comments": 617
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Anthropic breaks below $83 IPO price",
+            "snippet": "Anthropic breaks below $83 IPO price",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50627836",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.8,
+            "local_rank_score": 0.327
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Apple EU App Stores 9 years",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 164,
+          "points": 614
+        }
+      },
+      "nomination": {
+        "name": "Apple EU App Stores 9 years",
+        "seed_score": 825.1936,
+        "summary": "Apple removed my open-source app from EU App Stores after 9 years",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50616933",
+            "source": "hackernews",
+            "title": "Apple removed my open-source app from EU App Stores after 9 years",
+            "body": "Apple removed my open-source app from EU App Stores after 9 years",
+            "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+            "author": "fluder",
+            "container": "Hacker News",
+            "published_at": "2026-11-23",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 614,
+              "comments": 164
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Apple removed my open-source app from EU App Stores after 9",
+            "snippet": "Apple removed my open-source app from EU App Stores after 9 years",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50616933",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 57,
+            "source_quality": 0.8,
+            "local_rank_score": 0.11449999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "1M 130TB 890MB",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 43
+        }
+      },
+      "nomination": {
+        "name": "1M 130TB 890MB",
+        "seed_score": 594.0,
+        "summary": "I wrote a blog post that follows the GPU memory one 1M-token conversation needs, from Llama 1 65B to DeepSeek-V4.1-Flash.\n\nIt dives into the different techniques that have enabled this: FlashAttention, Grouped Query Attention, Multi-head Latent Attention, KV Cache quantization, caches that merge several tokens into a single entry, and finally caches that are shared throughout different layers.\n\n[h",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "How the memory for 1M tokens shrank from 130TB to 890MB",
+            "body": "How the memory for 1M tokens shrank from 130TB to 890MB\nI wrote a blog post that follows the GPU memory one 1M-token conversation needs, from Llama 1 65B to DeepSeek-V4.1-Flash.\n\nIt dives into the different techniques that have enabled this: FlashAttention, Grouped Query Attention, Multi-head Latent Attention, KV Cache quantization, caches that merge several tokens into a single entry, and finally caches that are shared throughout different layers.\n\n[https://three.dev/blog/how-the-memory-for-a-million-tokens-shrank](https://three.dev/blog/how-the-memory-for-a-million-tokens-shrank)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4kikk/how_the_memory_for_1m_tokens_shrank_from_130tb_to/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 353,
+              "num_comments": 43
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I wrote a blog post that follows the GPU memory one 1M-token conversation needs, from Llama 1 65B to DeepSeek-V4.1-Flash.\n\nIt dives into the different techniques that have enabled this: FlashAttention, Grouped Query Attention, Multi-head Latent Attention, KV Cache quantization, caches that merge several tokens into a single entry, and finally caches that are shared throughout different layers.\n\n[h",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 98,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 161,
+          "points": 214
+        }
+      },
+      "nomination": {
+        "name": "Anthropic",
+        "seed_score": 562.5,
+        "summary": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50630809",
+            "source": "hackernews",
+            "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "body": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "url": "https://news.ycombinator.com/item?id=50630809",
+            "author": "weli",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 214,
+              "comments": 161
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Ask HN: Anthropic is accusing my company of distilling. How",
+            "snippet": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50630809",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 41,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2985
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "Claude Sudoku Tower Hanoi 100",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 79
+        }
+      },
+      "nomination": {
+        "name": "Claude Sudoku Tower Hanoi 100",
+        "seed_score": 526.5,
+        "summary": "[https://fixupx.com/ahmedmm72234641/status/2124869402634129901](https://fixupx.com/ahmedmm72234641/status/2124869402634129901)\n\n  \nThe method also generalizes to Boolean expressions, graph walks, reasoning chains, and more. It was able to create very small models that scored 100% on every tested benchmark and could breakdown what each parameter was for.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R104",
+            "source": "reddit",
+            "title": "Claude directly wrote the weights of a transformer that could solve test mazes, Sudoku, Tower of Hanoi, and more with 100% accuracy, beating all models trained with gradient descent at a lower cost and model size",
+            "body": "Claude directly wrote the weights of a transformer that could solve test mazes, Sudoku, Tower of Hanoi, and more with 100% accuracy, beating all models trained with gradient descent at a lower cost and model size\n[https://fixupx.com/ahmedmm72234641/status/2124869402634129901](https://fixupx.com/ahmedmm72234641/status/2124869402634129901)\n\n  \nThe method also generalizes to Boolean expressions, graph walks, reasoning chains, and more. It was able to create very small models that scored 100% on every tested benchmark and could breakdown what each parameter was for.",
+            "url": "https://www.reddit.com/r/artificial/comments/1y46vww/claude_directly_wrote_the_weights_of_a/",
+            "container": "artificial",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 272,
+              "num_comments": 79
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://fixupx.com/ahmedmm72234641/status/2124869402634129901](https://fixupx.com/ahmedmm72234641/status/2124869402634129901)\n\n  \nThe method also generalizes to Boolean expressions, graph walks, reasoning chains, and more. It was able to create very small models that scored 100% on every tested benchmark and could breakdown what each parameter was for.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "training engine for your local model",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 49,
+          "points": 163
+        },
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "training engine for your local model",
+        "seed_score": 398.475,
+        "summary": "A training engine for your local model, using your idle compute",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50629231",
+            "source": "hackernews",
+            "title": "A training engine for your local model, using your idle compute",
+            "body": "A training engine for your local model, using your idle compute",
+            "url": "https://github.com/sous-labs/songe",
+            "author": "bluepeter",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 163,
+              "comments": 49
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about A training engine for your local model, using your idle comp",
+            "snippet": "A training engine for your local model, using your idle compute",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50629231",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 22,
+            "source_quality": 0.8,
+            "local_rank_score": 0.247
+          },
+          {
+            "item_id": "R12",
+            "source": "reddit",
+            "title": "One setup for 5 local engines and DeepSeek-V4.1-Flash at 1M context on a single Strix Halo",
+            "body": "One setup for 5 local engines and DeepSeek-V4.1-Flash at 1M context on a single Strix Halo\nLocal engines are a pain to set up, keep updated and switch between.\n\nThis takes care of all three, and it's all interactive menus, so there are no flags to remember.\n\n* **`./harness setup`** reads your hardware and recommends an engine and model. You pick from a menu, and once you confirm it installs and starts halogen, gufo, Strata, osmos or strix-llama.cpp, with a coding agent already connected\n* **`./harness config`** opens a menu where you can switch engine, model or weights, or stop whatever is running\n* **Abliterated weights** for Qwen3.8 Flash-Next, Qwen3.8-27B and DeepSeek-V4.1-Flash, one menu toggle away\n* **Safe upgrades** that roll back automatically if the new version fails its checks\n* **Lean by default:** a smaller prompt and code tools that read only what they need, so you get fewer tokens and faster turns\n\nDeepSeek-V4.1-Flash (~768B) runs on a **single** Strix Halo, peaking at 36.9 t/s decode with 1M context. Inkling 2 Mini on osmos tops out at 47.3 t/s, also with 1M context.\n\nRepo: https://github.com/aic0d3r/local-ai-harness\n\nLet me know what breaks.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4m7uf/one_setup_for_5_local_engines_and/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Local engines are a pain to set up, keep updated and switch between.\n\nThis takes care of all three, and it's all interactive menus, so there are no flags to remember.\n\n* **`./harness setup`** reads your hardware and recommends an engine and model. You pick from a menu, and once you confirm it installs and starts halogen, gufo, Strata, osmos or strix-llama.cpp, with a coding agent already connected",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 19,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3025
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "OpenAI intentionally degrading ChatGPT",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 76
+        }
+      },
+      "nomination": {
+        "name": "OpenAI intentionally degrading ChatGPT",
+        "seed_score": 297.0,
+        "summary": "So I\u2019ve been using ChatGPT pretty extensively for well over a year now and I\u2019m curious how many other people have noticed a significant decline in its ability to actually accomplish work over the past few months.\n\nFor context, I\u2019ve been developing a couple of video games with ChatGPT and have built out a pretty extensive system of custom MCP integrations that allow it to work directly in Unity, Bl",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Is OpenAI intentionally degrading ChatGPT to push paying subscribers toward spending more money? I think we seriously need to investigate this.",
+            "body": "Is OpenAI intentionally degrading ChatGPT to push paying subscribers toward spending more money? I think we seriously need to investigate this.\nSo I\u2019ve been using ChatGPT pretty extensively for well over a year now and I\u2019m curious how many other people have noticed a significant decline in its ability to actually accomplish work over the past few months.\n\nFor context, I\u2019ve been developing a couple of video games with ChatGPT and have built out a pretty extensive system of custom MCP integrations that allow it to work directly in Unity, Blender, and pretty much anywhere else on my development workstation.\n\nThere was a point earlier this year where I could give it a fairly extensive development task and it would just go. It would run into issues, figure out what was causing them, fix them and continue working. I\u2019d regularly have responses that took over 10 minutes and have had some that took over 20 minutes.\n\nWhat\u2019s weird is that it seems to have gradually lost its willingness to do this. And I say willingness because a lot of the time there is literally nothing preventing it from continuing.\n\nIt\u2019ll successfully execute an operation and then just stop and tell me what the next operation needs to be. I\u2019ll tell it to do that and it\u2019ll do it and stop again. I\u2019ll ask it why it keeps stopping and it\u2019ll explain to me in great detail why it shouldn\u2019t be stopping, and then stop again. \ud83d\ude02\n\nIt\u2019s even started telling me that it\u2019s reached execution limits, and when I question it on how it determined that, it\u2019ll admit that it didn\u2019t actually have any indication that a limit had been reached.  \nSo that\u2019s fun.\n\nThe biggest issue is that for months I\u2019ve been operating under the assumption that something was wrong with the systems I\u2019d built to allow it to do these things. I\u2019ve spent an obscenely stupid amount of time trying to fix what I thought were issues with my own infrastructure. I\u2019ve rebuilt entire portions of these systems, implemented extensive automated testing, error recovery, etc. One of the integration test suites recently ran had over 800 passing tests. Yet somehow I\u2019m still having to convince ChatGPT to make a fucking tool call lol..\n\nSo I started looking into other people\u2019s experiences and comparing the timelines of those experiences to changes OpenAI has made over the past few months.\n\nHere\u2019s some of what I\u2019ve found so far:  \n\\- June 29: A developer reported that an update to GPT-5.5 essentially broke their multi-step MCP execution. OpenAI ended up deploying a fix for this in July.  \n\\- August 6: GPT-5.6 became the default for Plus and Pro users.  \n\\- Around August 20: Developers began reporting significantly reduced execution times. One documented going from executions lasting 102 minutes to roughly 26 minutes on the same account.  \n\\- September 8: Another developer reported similar issues across different development environments. There were also reports of people getting better results by reverting to GPT-5.5.  \n\\- September 14: OpenAI removed automatic switching from Instant to Thinking for Plus and Pro users.  \n\\- October 14: GPT-5.5 was retired.  \n\\- November 23: GPT-6.2 began rolling out.\n\nSome of the posts I found:  \nhttps://community.openai.com/t/the-new-chatgpt-5-5-instant-broke-multi-step-app-mcp-tool-calls/1385257\n\nhttps://community.openai.com/t/chatgpt-web-tool-enabled-turns-regress-to-25-26-min-since-aug-20-work-lacks-custom-mcp/1397358\n\nhttps://community.openai.com/t/is-anyone-else-hitting-a-consistent-25-minute-limit-on-chatgpt-plus-with-gpt-5-6-sol-high/1395644\n\nAnd OpenAI\u2019s release notes:  \nhttps://help.openai.com/en/articles/6825453-chatgpt-release-notes\n\nhttps://help.openai.com/en/articles/9624314-model-release-notes\n\nNow I\u2019ve pretty much always just used whatever model ChatGPT automatically assigned me. Which makes the September 14 change particularly interesting to me.\n\nWhat I\u2019m beginning to wonder is how much of this deterioration is actually unintentional.\n\nThink about it. If you reduce the amount of computational resources allocated to the models that people are automatically assigned, eliminate the older models that people were able to successfully accomplish their work with, and simultaneously provide people with more ways to pay for additional usage, wouldn\u2019t that create a pretty significant financial incentive to reduce the capabilities of the models that people are using by default?\n\nI\u2019m not saying I\u2019ve proven that\u2019s what they\u2019re doing. I\u2019m saying I\u2019m becoming increasingly suspicious of it and would like to actually investigate it.\n\nI\u2019ve requested my account data export and am going to go through months of development conversations and try to establish when exactly things started going downhill, how much work was being accomplished before and after, which models I was using, and how those things correlate with the changes OpenAI has made.\n\nI\u2019m curious if anyone else has looked into this to that extent? Or if anyone has found a way to regain that level of functionality without paying more money?\n\nI\u2019d also be very interested in hearing from people who have upgraded or purchased additional credits and whether they\u2019ve noticed a significant difference in the actual behavior of the models as a result.  \nAnd if you\u2019ve been using ChatGPT for extensive development for the past year and haven\u2019t experienced any of this, I\u2019d love to know what you\u2019re doing differently.\n\nRealistically, if enough of us are experiencing this and we can collectively gather enough data to establish what\u2019s actually happening, maybe we can get OpenAI to address it. I\u2019d particularly like to see them become more transparent about how much computational power is being allocated to the models we\u2019re paying to use and when and how those allocations are being changed.\n\nBecause if the solution to getting ChatGPT to do the things it was already doing for me under my existing subscription is to give OpenAI more money, I have a problem or three with that business model.",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1y4mte6/is_openai_intentionally_degrading_chatgpt_to_push/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 122,
+              "num_comments": 76
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "So I\u2019ve been using ChatGPT pretty extensively for well over a year now and I\u2019m curious how many other people have noticed a significant decline in its ability to actually accomplish work over the past few months.\n\nFor context, I\u2019ve been developing a couple of video games with ChatGPT and have built out a pretty extensive system of custom MCP integrations that allow it to work directly in Unity, Bl",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.18,
+            "freshness": 90,
+            "engagement_score": 89,
+            "source_quality": 0.6,
+            "local_rank_score": 0.431
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+        "seed_score": 249.0,
+        "summary": "A 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face",
+            "body": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF \u00b7 Hugging Face\nA 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it is still **1.76 bits per weight** and **5.93 GB**, against 53.8 GB for the FP16 model. This release targets long-horizon, tool-driven work.\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#highlights)Highlights\n\n* **FP16-level agentic tool calling at one ninth of the size**: across five tool-calling benchmarks (\u03c4\u00b2-Bench, \u03c4\u00b3-Bench, BFCL v3, BFCL v4, and AppWorld), Bonsai 2.5 averages **77.2**, against **77.7** for FP16 \u2014 essentially indistinguishable from full precision\n* **90% of FP16 on agentic coding, up from 63% for Bonsai 2**: on Terminal-Bench 2.1, SWE-bench Verified, and DeepSWE, DeepSWE rises from 0 to **27.0**, SWE-bench Verified from 60.8 to **75.6**, and Terminal-Bench 2.1 from 52.8 to **60.1**\n* **The strongest agentic model under 10 GB**: the smallest of the low-bit GGUF builds of Qwen3.8-27B we compare against, and it leads every build under 10 GB on both tool calling and agentic coding. Against GSQ-RCO IQ3\\_XXS, which is 1.7\u00d7 larger, it is ahead on tool calling (77.2 vs. 75.3) and close on coding (54.2 vs. 55.5)\n* **General capability stays close to FP16**: averaged over five categories (16 benchmarks), Bonsai 2.5 scores **82.1** against 84.3 for FP16\n* **Multi-token prediction (MTP) variants**: the MTP variants include a draft head that speeds up decode by **1.5\u20131.8\u00d7** on NVIDIA GPUs\n* **2.3\u20133.0\u00d7 faster decode than on Bonsai 2's release day** on six of the seven NVIDIA GPUs measured, with MTP and the kernels now in testing \u2014 reaching about **300 tokens/s** on H200 and B200\n* **Runs on stock llama.cpp**: the `Q2_0` files run on upstream llama.cpp; `PTQ1_0` is under upstream review\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#resources)Resources\n\n* [**Whitepaper**](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-5-27b-whitepaper.pdf) \u2014 benchmarks, evaluation setup, and inference-speed measurements for this release\n* [**Bonsai 2 27B whitepaper**](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf) \u2014 the ternary format, storage accounting, and rotated weight basis, all unchanged in Bonsai 2.5\n* [**Demo & examples**](https://github.com/PrismML-Eng/Bonsai-demo) \u2014 **the source of truth for running these models**: tested setup for every backend, pinned binaries, serving, MTP speculative decoding, benchmarking and integration, kept current as the runtimes move\n* **Low-bit kernels**: [llama.cpp fork](https://github.com/PrismML-Eng/llama.cpp) (CUDA + Metal) \u00b7 [MLX fork](https://github.com/PrismML-Eng/mlx) (Apple Silicon) \u00b7 [mlx-swift fork](https://github.com/PrismML-Eng/mlx-swift) (iOS/macOS)\n* [**Discord**](https://discord.gg/prismml) \u2014 join the community for support, discussion, and updates\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#model-overview)Model Overview\n\nChanges from Bonsai 2 are marked with \u2020.\n\n|Item|Specification|\n|:-|:-|\n|Base model|Qwen3.8-27B, a 27B hybrid-attention causal language model|\n|Parameters|24.35B language (64 blocks) + 0.47B vision tower (27 blocks) + 2.54B embedding/lm-head = 27.36B total|\n|Architecture|Hybrid attention (\\~75% linear / \\~25% full attention), SwiGLU MLP, RoPE, RMSNorm|\n|Context length|262K tokens|\n|Weight format|Ternary g128 (FP16 group-wise scaling) in a blockwise Hadamard basis; 1.76 bits per weight, 5.93 GB (PTQ1\\_0)|\n|Focus \u2020|Agentic and tool-use tasks|\n|Reasoning efforts|`xhigh` (default, most accurate) or `medium`|\n|Backends|llama.cpp (CUDA, Metal, CPU, SYCL) and MLX (Python, Swift); GGUF packs PTQ1\\_0 and PQ2\\_0, plus Q2\\_0 for stock llama.cpp|\n|Speculative decoding \u2020|The MTP variants include a multi-token prediction (MTP) draft head|\n|License|Apache 2.0|\n\n# [](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF#weight-representation-ternary-g128)",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4mech/prismmlternarybonsai2527bgguf_hugging_face/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 139,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A 27B ternary model built for agents, for llama.cpp (CUDA, Metal, CPU)\n\n>**\\~9\u00d7** smaller than FP16 | **FP16-level** agentic tool calling | **90%** of FP16 agentic coding | the **strongest agentic model under 10 GB**\n\nTernary Bonsai 2.5 27B is the agentic release of the Ternary Bonsai 27B line. It keeps the Qwen3.8-27B hybrid-attention architecture and the ternary weight format of Bonsai 2, so it",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.19,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.43050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 25,
+          "points": 118
+        }
+      },
+      "nomination": {
+        "name": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+        "seed_score": 214.5,
+        "summary": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50634658",
+            "source": "hackernews",
+            "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+            "body": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+            "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+            "author": "acossta",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 118,
+              "comments": 25
+            },
+            "relevance_hint": 0.11,
+            "why_relevant": "HN story about GPT-6 models demonstrate intrinsic protein-design capabiliti",
+            "snippet": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50634658",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 9,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3055
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Upcoming Models Solar-Mini-4.5 MiniCPM5-15B-A2.5B etc",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "Upcoming Models Solar-Mini-4.5 MiniCPM5-15B-A2.5B etc",
+        "seed_score": 198.0,
+        "summary": "**Solar Mini 4.5 Preview (Upstage)**  \n  \nEarly-access preview of Upstage\u2019s next compact agentic model ahead of its Dec 1 official launch (preview retires Nov 30). It packs **35B total / 3B active params with a 512K context window** and 128K max output, supporting reasoning and tool calling.\n\n**MiniCPM5-15B-A2.5B draft leak (OpenBMB)**  \n  \nOpenBMB uploaded a public 429M-parameter DSpark speculati",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Upcoming Models - Solar-Mini-4.5, MiniCPM5-15B-A2.5B, etc.,",
+            "body": "Upcoming Models - Solar-Mini-4.5, MiniCPM5-15B-A2.5B, etc.,\n**Solar Mini 4.5 Preview (Upstage)**  \n  \nEarly-access preview of Upstage\u2019s next compact agentic model ahead of its Dec 1 official launch (preview retires Nov 30). It packs **35B total / 3B active params with a 512K context window** and 128K max output, supporting reasoning and tool calling.\n\n**MiniCPM5-15B-A2.5B draft leak (OpenBMB)**  \n  \nOpenBMB uploaded a public 429M-parameter DSpark speculative-decoding draft model (MiniCPM5-15B-A2.5B-1113-Dspark, block\\_size 7) on Hugging Face. Its config.json points to an unreleased 28-layer **MiniCPM5-15B-A2.5B target model with a 512K context window** whose main weights are still private.\n\n**qwen-audio-3.1-live (Alibaba Qwen)**  \n  \nReal-time voice chat model now listed in Alibaba Model Studio. Instead of going silent while tools run, it keeps conversing naturally while backend models handle longer tasks asynchronously, then reports the results.\n\n**Qwen-Audio-3.1-Captioner (Alibaba Qwen)**  \n  \nAudio tagging, full-spectrum transcription, and acoustic scene analysis model hosted on Alibaba Cloud Model Studio (Beijing). Outputs speaker info, timestamps, environmental sounds, and music, and can separate voices from background audio.\n\n**hungerg (stealth model, likely StepFun)**  \n  \nSpotted in OpenCode Go\u2019s catalog before being pulled (revert notes launch moved to Nov 24) and currently free to test in Qoder. Our 98-line rare-token probes garbled 5/5 DeepSeek/Step-5 lines, triggered StepFun-only unused special token </tool\\_calls> (ID 128013), and matched step-5-preview\u2019s 1M context, 65K output, and 8 media formats byte for byte (unconfirmed).\n\n\n\n**(Day old) Tweet** : [https://x.com/aitrackerbot/status/2125053324705591315](https://x.com/aitrackerbot/status/2125053324705591315)\n\nWe already got **Ling-3.2-air**, **Kolibri-1.1**, **SenseNova-U1.6-8B-MoT, SenseNova-Loop-9B-DFlash2, SenseNova-RoboRSI-27B** from the list.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y4kxm6/upcoming_models_solarmini45_minicpm515ba25b_etc/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 121,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "**Solar Mini 4.5 Preview (Upstage)**  \n  \nEarly-access preview of Upstage\u2019s next compact agentic model ahead of its Dec 1 official launch (preview retires Nov 30). It packs **35B total / 3B active params with a 512K context window** and 128K max output, supporting reasoning and tool calling.\n\n**MiniCPM5-15B-A2.5B draft leak (OpenBMB)**  \n  \nOpenBMB uploaded a public 429M-parameter DSpark speculati",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3955
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Google Nvidia AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 34
+        }
+      },
+      "nomination": {
+        "name": "Google Nvidia AI",
+        "seed_score": 178.5,
+        "summary": "Google's tensor processing units could challenge Nvidia's AI chip monopoly",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R112",
+            "source": "reddit",
+            "title": "Google's tensor processing units could challenge Nvidia's AI chip monopoly",
+            "body": "Google's tensor processing units could challenge Nvidia's AI chip monopoly",
+            "url": "https://www.reddit.com/r/artificial/comments/1y3z6ti/googles_tensor_processing_units_could_challenge/",
+            "container": "artificial",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 85,
+              "num_comments": 34
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Google's tensor processing units could challenge Nvidia's AI chip monopoly",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 78,
+            "source_quality": 0.6,
+            "local_rank_score": 0.329
+          }
+        ]
+      }
+    }
+  ]
+}

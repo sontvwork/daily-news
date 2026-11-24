@@ -28,5 +28,22 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: news
+      # Artifact vừa upload đôi khi chưa hiện ngay (deploy-pages báo "Found 0 artifact(s)"); chờ một chút.
+      - run: sleep 15
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  # deploy lỗi tạm thời (push) → tự dispatch một run mới, đúng như chạy tay `gh workflow run pages.yml`.
+  # Không dùng `gh run rerun`: nó giữ artifact cũ nên dễ ra 2 artifact trùng tên. Chỉ retry khi event là push,
+  # nên run do dispatch sinh ra không retry tiếp (không lặp vô hạn).
+  retry:
+    needs: deploy
+    if: failure() && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - run: gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}

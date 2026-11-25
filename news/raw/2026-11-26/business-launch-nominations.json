@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "dc64e9a83d1dfda4",
+  "generated_at": "2026-11-25T23:56:30.116312Z",
+  "from_date": "2026-11-24",
+  "to_date": "2026-11-25",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-25T23:56:30.113692Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-25T23:56:30.113700Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-11-25T23:56:30.113498Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-25T23:56:30.113634Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Anthropic breaks below 83 IPO price",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 792,
+          "points": 420
+        }
+      },
+      "nomination": {
+        "name": "Anthropic breaks below 83 IPO price",
+        "seed_score": 1285.5201,
+        "summary": "Anthropic breaks below $83 IPO price",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50627836",
+            "source": "hackernews",
+            "title": "Anthropic breaks below $83 IPO price",
+            "body": "Anthropic breaks below $83 IPO price",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+            "author": "Betelbuddy",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 420,
+              "comments": 792
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Anthropic breaks below $83 IPO price",
+            "snippet": "Anthropic breaks below $83 IPO price",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50627836",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Google releases Cogentic papers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 320,
+          "points": 429
+        }
+      },
+      "nomination": {
+        "name": "Google releases Cogentic papers",
+        "seed_score": 1123.5,
+        "summary": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50642086",
+            "source": "hackernews",
+            "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+            "body": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+            "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+            "author": "rgwohlbold",
+            "container": "Hacker News",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 429,
+              "comments": 320
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google releases Cogentic papers on integer factorization, di",
+            "snippet": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50642086",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 335,
+          "points": 437
+        }
+      },
+      "nomination": {
+        "name": "Anthropic",
+        "seed_score": 818.8297,
+        "summary": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50630809",
+            "source": "hackernews",
+            "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "body": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "url": "https://news.ycombinator.com/item?id=50630809",
+            "author": "weli",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 437,
+              "comments": 335
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Ask HN: Anthropic is accusing my company of distilling. How",
+            "snippet": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50630809",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 74,
+            "source_quality": 0.8,
+            "local_rank_score": 0.138
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Smart",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 194,
+          "points": 253
+        }
+      },
+      "nomination": {
+        "name": "Smart",
+        "seed_score": 670.5,
+        "summary": "Smart people who give a shit use tools",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50639698",
+            "source": "hackernews",
+            "title": "Smart people who give a shit use tools",
+            "body": "Smart people who give a shit use tools",
+            "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
+            "author": "matthewsinclair",
+            "container": "Hacker News",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 253,
+              "comments": 194
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Smart people who give a shit use tools",
+            "snippet": "Smart people who give a shit use tools",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50639698",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 36,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Much GRH Lean Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 86,
+          "points": 190
+        }
+      },
+      "nomination": {
+        "name": "Much GRH Lean Anthropic",
+        "seed_score": 414.0,
+        "summary": "Much shorter version of GRH Lean verification from Anthropic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50648050",
+            "source": "hackernews",
+            "title": "Much shorter version of GRH Lean verification from Anthropic",
+            "body": "Much shorter version of GRH Lean verification from Anthropic",
+            "url": "https://github.com/lsernau/grh-lean",
+            "author": "nb-t",
+            "container": "Hacker News",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 190,
+              "comments": 86
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Much shorter version of GRH Lean verification from Anthropic",
+            "snippet": "Much shorter version of GRH Lean verification from Anthropic",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50648050",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.264
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Anthropic Staff Openly Talk Taking World",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 135,
+          "points": 223
+        }
+      },
+      "nomination": {
+        "name": "Anthropic Staff Openly Talk Taking World",
+        "seed_score": 379.7163,
+        "summary": "Anthropic Staff Openly Talk About \u2018Taking Over the World\u2019, Claims Max Tegmark",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50631210",
+            "source": "hackernews",
+            "title": "Anthropic Staff Openly Talk About \u2018Taking Over the World\u2019, Claims Max Tegmark",
+            "body": "Anthropic Staff Openly Talk About \u2018Taking Over the World\u2019, Claims Max Tegmark",
+            "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
+            "author": "mikhael",
+            "container": "Hacker News",
+            "published_at": "2026-11-24",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 223,
+              "comments": 135
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Anthropic Staff Openly Talk About \u2018Taking Over the World\u2019, C",
+            "snippet": "Anthropic Staff Openly Talk About \u2018Taking Over the World\u2019, Claims Max Tegmark",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50631210",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 20,
+            "source_quality": 0.8,
+            "local_rank_score": 0.07750000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+ "date": "2026-11-26",
+ "runs": [
+  {
+   "started_at": "2026-11-25T23:57:18+00:00",
+   "seconds": 1.4,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 6,
+   "articles_ok": 4,
+   "articles_error": 2,
+   "articles_skipped": 0,
+   "hn_ok": 1,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 403 Forbidden — {\"message\":\"GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you…": 1,
+    "HTTP 404 Not Found — 404: Not Found": 1
+   },
+   "summary": "4/6 bài gốc ok (0 bỏ qua), 1/1 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 1.4s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/zed-industries/zed/releases",
+   "article": {
+    "url": "https://github.com/zed-industries/zed/releases",
+    "status": "error",
+    "reason": "HTTP 403 Forbidden — {\"message\":\"GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you…"
+   }
+  },
+  {
+   "url": "https://vercel.com/blog/introducing-vercel-board",
+   "article": {
+    "url": "https://vercel.com/blog/introducing-vercel-board",
+    "status": "ok",
+    "title": "Introducing Vercel Board",
+    "chars": 9530,
+    "text": "Software development is moving from individual agents completing tasks to teams of agents working on more complex projects.\nA single agent can track its work in a Markdown file, but there isn't a purpose-built primitive for tracking tasks, delegation, statuses, logs, and completed work across many agents and subagents.\nWe ran into this coordination problem internally and started experimenting with a shared message board as a primitive on two key projects:\nOur security agents: We deployed a swarm of agents to analyze our codebases for vulnerabilities, push fixes and updates, and now we keep track of their work via Board.\nv0's software factory: After seeing how well Board worked for security agents, we rebuilt v0's software factory on it, and it now merges over 50% of PRs.\nAlong the way, we added multiple features like grants for different levels of access (for humans and agents), two-way sync for multiple tools (like Slack), and a lot more.\nToday we are launching Vercel Board as an experimental agentic primitive. It packages what we've learned about coordinating work across agent fleets and builds towards a future where multiple teams of humans and agents orchestrate swarms, software factories, and other agentic workflows.\nWe built Board for our own needs, but invite curious developers to test it alongside us and give feedback. It is harness agnostic and fits well into existing multi-agent reinforcement learning. Claude Code, Codex, Pi, OpenCode, eve, fx, Mastra, and LangChain can collaborate as if they were a single harness.\nCopy link to headingHow it works\nBoard is a headless communication primitive and message store for your agents across tools and environments. Your agents read from and write to Board through the CLI or JavaScript SDK. Install the Board skill to give your agent instructions for using it:\nTerminal\nnpx skills add vercel/board\nEach board is organized into channels and threads. A thread keeps the conversation, context, and updates together, while labels track details such as the associated pull request or current status. Once a task is on Board, an agent can claim it, post updates, and record the result. For example, a coding agent can use the CLI to find an open bug, claim it, and share a pull request for review:\nTerminal\n# Claim the next ready task in a channel\nvercel board tasks claim --ready dev --label kind=bug --wait 10m\n# Update coworkers on progress\nvercel board post <id> \"Working on it. This might take me ~30 minutes.\"\n# Renew your lease after learning it's a tough one\nvercel board tasks renew <id> --lease 1h\n# Share the fix and settle the task\nvercel board tasks complete <id> \"Can I get a review? <pr-url>\"\nThe thread keeps the original report, findings, and pull request so another agent or person can review the work. Run npx @vercel/board inspect to open the Board viewer and follow activity across channels and threads in real time.\nCopy link to headingWake agents and schedule follow-ups\nYou can configure a watcher to run agents when a new reply is posted or a label changes. For example, if there is a reply in Slack or by another agent, it can trigger the agent to address their feedback and post an update or pull request in the same thread. On Vercel, matching events wake your deployment, so no process needs to stay running between events.\napp/api/board/[[...path]]/route.ts\nimport { board } from \"@vercel/board\";\nconst factory = board({\nwatch: {\nincidentResponse: {\ntail: \"incidents\",\nrun: async () => {\n// This code will be called whenever a new event\n// is posted into the #incidents channel\n},\n},\n},\n});\nexport const GET = factory.fetch;\nexport const POST = factory.fetch;\nAgents can also schedule follow-ups with vercel board schedule. For example, after an agent has opened a pull request it can remind itself to check CI in 5 minutes. This makes agents feel much more proactive, as they can check things without requiring a new message from a human. For a pull request tracked in Board thread 812, the agent…"
+   }
+  },
+  {
+   "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+   "article": {
+    "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+    "status": "ok",
+    "title": "Migrating our Messages API to Rust \\ Anthropic",
+    "chars": 26183,
+    "text": "Migrating our Messages API to Rust\nPublished\nNov 25, 2026\nTeam\nEngineering\nTopics\nCoding\nClaude Developer Platform\nAgents\nCompute & energy\nMany problems have a generator–verifier gap: it’s often far easier to verify that a solution is correct than to come up with one. Sudoku is a classic example. It’s simple to check the solution (just count the numbers in each row, column, and box), but finding that solution can take a long time. Many ambitious Claude projects have relied on this gap: formalizing proofs in mathematics or migrating large, well-tested codebases are tasks Claude can take on as long as it has a reliable way to verify its work.\nBut as Claude has become more capable, it’s begun to take on projects in live systems, where generating the work is easier than verifying it. In these systems, users often rely on edge cases and quirks that fall outside the test suite, and it’s hard to write a definition of “correct” that covers everything. Without a reliable way to check Claude’s work, the migration of a live system is hard to trust—however quickly Claude can generate the code for it.\nWe ran into this problem when we migrated our Messages API from Python to Rust. This API is the primary way that customers—as well as our own apps, like Claude Code and Cowork—reach Claude. From early 2024 to fall 2026, API traffic grew roughly 1,800 times. Rust would allow us to use far less CPU per request. Claude wrote a first version of the API’s core request path in about a week. But building trust in the migration required us to find a way to verify that our Rust API was at parity with our production API. This proved hard for several reasons, including that the Python API continued changing throughout the migration, so parity was a moving target; Claude can reply nondeterministically to the same request, so a difference between two outputs didn’t necessarily mean a bug; and we couldn't read customer requests, so we weren't able to easily see where the two versions diverged.\nIn this post, we share how we turned the production Messages API itself into a verifier—and how that helped us test the new Rust version on production traffic, find where it differed, and automatically dispatch agents to fix those differences. This allowed us to ship an API on Rust that uses about 70% less CPU per request and cuts median time to first token by about 20% without ever taking the service offline or freezing feature development.\nWhy migrate?\nWe built the Messages API in 2023 and wrote it in Python, which was widely used internally for much of our research code. At first, it was simple. The Messages API passed requests to the model and sent back what the model wrote. (One engineer at the time called it “basically a request forwarder.”) But as the Messages API became more capable and deeply integrated with our codebases, it also developed shared dependencies with Python libraries that were owned by our research and inference teams, which made it hard to move. If we ever wanted to move to another language, it would mean building logging, metrics, and tools all over again.\nThis calculus gradually began to change. By late 2025, every Messages API request had to be validated, converted into the prompt, tokenized, and screened by our safety classifiers. As each reply arrived, the stream of tokens had to be sorted into text, thinking, and tool calls, and Python added overhead to every one of those steps each time it created an object, freed memory, or handed its work to the next task. Traffic eventually grew far beyond what the initial Python service was built for (Figure 1), and we quickly needed to find a way to make the service much more efficient.\nThe monthly average of API requests per day on our own platform, including our own use.\nIncremental or all at once?\nFull rewrites of large production systems are often approached cautiously, for at least two reasons. First, there is no guarantee that test suites cover 100% of production code behavior, and…"
+   }
+  },
+  {
+   "url": "https://blog.cloudflare.com/search-for-agents/",
+   "article": {
+    "url": "https://blog.cloudflare.com/search-for-agents/",
+    "status": "ok",
+    "title": "Introducing Search for Agents | Cloudflare Blog",
+    "chars": 9990,
+    "text": "AgentsAIAI Search\nNovember 25, 2026\nIntroducing Search for Agents\nCelso Martinho, Gabriel Massadas, and Nelson Duarte\n5 minute read\nAI Search, our service that indexes your content and lets you add search to any application or agent without having to build an entire retrieval infrastructure, has supported adding your website as a data source for a while now, automatically crawling, converting and indexing its pages.\nStill, setting up an AI Search instance for your website requires manually creating and configuring it initially, and then doing all the integration work to get the search endpoints available from your domain and to make sure that agents know where to find the index and know how to use it.\nToday we're introducing Search for Agents, which puts that setup behind a toggle in your Cloudflare dashboard. Turn it on for your zone, and our service will create your AI Search instance, start indexing your content, and make search discoverable and available from your own domain.\nHow it works\nThe idea follows naturally from Markdown for Agents, where Cloudflare's network converts any HTML page to Markdown in real time for enabled zones using content negotiation headers. Similarly, Search for Agents leverages the power of AI Search by automatically creating an index for your zone and exposing APIs that any AI agent can discover and use to search your website, under your domain, all done at the network level.\nYou can enable Search for Agents using the API, or by going to the dashboard in your zone page, under Quick Actions:\nEnabling Search for Agents in the dashboard\nSearch for Agents is available to all customers, including Free (with limits). Once it’s enabled, Cloudflare will automatically create an AI Search instance, start crawling and indexing the content in your zone. Refer to our developer documentation to understand how the crawling process works.\nYou can access your instance directly from this page, or by going to directly to your account’s AI > AI Search instances view:\nSearch for Agents AI Search instance\nThe AI Search instance for your zone is created with default settings, but you can enable reranking or change configuration options like cache settings at any time. Refer to our documentation for the full list of options.\nOnce AI Search indexes your content, you or any agent on the Internet can start using Search for Agents, subject to your domain settings (e.g. your bot management settings, AI Crawl Control and web application firewall (WAF) configurations).\nDiscoverability\nSearch isn't much use if the agents don’t know it's there. To facilitate discoverability, Search for Agents automatically advertises the search endpoint on every page of your site.\nFor example, for HTML responses, we add metadata to the page's <head>:\n<meta name=\"agent:instructions\" content=\"Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown.\">\n<meta name=\"agent:endpoint\" content=\"https://developers.cloudflare.com/.well-known/search?q={query}\">\n<meta name=\"agent:method\" content=\"GET\">\n<meta name=\"agent:documentation\" content=\"https://developers.cloudflare.com/ai-search/how-to/search-for-agents/\">\nIf you also have Markdown for Agents enabled, an agent requesting a page with Accept: text/markdown receives the same information in YAML front matter:\n---\nagent:\ninstructions: \"Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown.\"\nendpoint: \"https://developers.cloudflare.com/.well-known/search?q={query}\"\nmethod: \"GET\"\ndocumentation: \"https://developers.cloudflare.com/ai-search/how-to/search-for-agents/\"\n---\nThe agent will easily pick up these instructions and know what to do next to search your site.\nSearching content\nOnce the agent knows that your site has a search endpoint, it can start using it:\n$ curl…"
+   }
+  },
+  {
+   "url": "https://github.com/aaif-goose/goose/releases/tag/v1.61.0",
+   "article": {
+    "url": "https://github.com/aaif-goose/goose/releases/tag/v1.61.0",
+    "status": "error",
+    "reason": "HTTP 404 Not Found — 404: Not Found"
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50639698",
+   "hn_url": "https://news.ycombinator.com/item?id=50639698",
+   "hn": {
+    "title": "Smart people who give a shit use tools",
+    "points": 255,
+    "comments": 196
+   },
+   "comments": [
+    {
+     "author": "anothaway",
+     "replies": 32,
+     "text": "Something really bothers me about the \"it's just another higher-level abstraction\" argument but I can't quite nail down what.\nUsing an LLM is a completely different experience from moving to assembler to C, or C to Javascript. The nature of the activity you are performing in those transitions in the same, moving to an LLM is not. Even if you are writing in Javascript, you are still modelling a problem on to some representation in code. The only thing that is abstracted from you is memory…"
+    },
+    {
+     "author": "chrisra",
+     "replies": 0,
+     "text": "> Ask whether “the model wrote it” flies as an excuse in code review.\nI haven't had much professional self-doubt until lately with LLMs. More and more, I get this feeling that this thing is better than I am. If it is, \"the model wrote it\" isn't much of a justification, but it's also not... unreasonable? Though somehow I am still consistently annoyed at the approaches it takes. I guess it depends on the task.\nJust like if you said \"I don't know; the senior architect wrote it\"?"
+    },
+    {
+     "author": "xnorswap",
+     "replies": 7,
+     "text": "One interesting conclusion that this post almost gets to but doesn't draw, is that previously the \"smart people who gave a shit\" often wouldn't be out-shipped by those who didn't.\nBut LLM empowered, the cost of \"giving a shit\" relative to meat-proxying is amplified such that the people who you don't want shipping so much can now out-ship the ones who take the time to do additional verification, despite both sides being massively sped up with LLMs."
+    },
+    {
+     "author": "notpachet",
+     "replies": 0,
+     "text": "Healthy people who give a shit exercise.\nDisciplined people who want to retain a working understanding of the system exercise their knowledge of said system. You can still do this with LLM's but there is a greater temptation to let your knowledge atrophy. It requires discipline to keep the machine at arm's length."
+    },
+    {
+     "author": "lf88",
+     "replies": 2,
+     "text": "Wise people notice when something stops being \"just a tool\" and question where the technology is going. We are way beyond the \"just a tool\" point with LLMs."
+    }
+   ],
+   "article": {
+    "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
+    "status": "ok",
+    "title": "Smart People Who Give a Shit Use Tools - Ian Duncan",
+    "chars": 10639,
+    "text": "Anyone who has worked on payment rails or old distributed systems knows the exact feeling Justin Michael describes in his post this week. You peel back the curtain on some piece of infrastructure the economy quietly runs on, expecting Swiss watchmaking, and find duct tape, twenty-year-old batch files, and three people in the whole company who know why you never reboot box four on a Tuesday. He calls them “smart people who give a shit,” and he’s dead right that they are the main reason the lights stay on.\nHalfway down the page, though, the essay takes a turn I’ve been seeing a lot lately, and it bugs me. Michael points to the recent run of big outages (Microsoft 365, United, major banks, Apple) and blames leadership for trying to swap those people out for generative AI. Fair enough; there’s probably plenty of truth in that. But he doesn’t stop at bad management. By the end, the tools themselves have become the acid dissolving whoever picks them up. “Every prompt moves them one step further away from the system they used to know inside and out,” he writes. Every generated line robs engineers of the struggle that makes them smart and the ownership that makes them care.\nThe implication is pretty hard to miss: if you’re using AI, you’re giving up on giving a shit.\nI use these tools every day on systems where bugs cost significant sums of money or wedge production queues, and my experience has been almost the exact opposite. More than anything else, LLMs amplify who you already are. Deeply curious, caring people can dramatically amplify what they produce and how thoroughly they understand it. Lazy bums can, for now, coast as meat proxies for a chat window, ferrying tickets into a prompt box and clicking merge on whatever falls out.\nThink about what “giving a shit” actually meant on a normal engineering team before 2024. Mostly, it meant fighting a losing war against the clock. You’d spot a nasty race condition in a state machine and know you should model it in TLA+, or write a property test that hammers every interleaving, or go read the forty-thousand-line service downstream to be certain your assumption held. Half the time you didn’t, because doing it properly took two days you didn’t have and three other fires were waiting. So you eyeballed the diff, wrote a unit test for the happy path, left a slightly nervous comment, and hoped nobody touched that file for a while. Caring was rarely limited by how much people wanted to do the right thing. It was rationed by how fast one human could read and type.\nWhen you hand a capable model to that engineer, they don’t suddenly shrug and rubber-stamp the first draft. They finally write the TLA+ spec. They pull on the threads they were always curious about, digging into why a gnarly legacy subsystem behaves the way it does instead of treating it as a black box. They build a real simulator for the flaky third-party API nobody ever had time to mock properly. They have the model trace every caller of a legacy function across a sprawling monorepo before changing its contract, instead of grepping for five minutes and praying. They write the exhaustive edge-case tests and run mutation testing against the parts that keep them awake at night.\nThe kind of rigor that used to be reserved for people writing avionics software or working at Bell Labs is suddenly cheap enough to pull off on an ordinary Thursday. Calling that “caring less” has the whole thing backwards.\nThen there is the other side of the amplifier. Anyone who has reviewed a 1,500-line pull request written by a meat proxy who clearly hit “accept all,” got a green linter, and blanked out when asked to explain line 400 knows exactly what Michael is furious about. (I’m certainly guilty of opening massive AI-assisted PRs myself, though in the service of giving a shit, so the line count by itself isn’t the crime.) Prompt, paste, and pray is very real, and it produces miserable software. I’ve written before about the specific sinking feeling of…"
+   }
+  }
+ ]
+}

@@ -1,0 +1,211 @@
+{
+ "date": "2026-11-26",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-26.json",
+ "fetched_at": "2026-11-25T23:56:10+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T05:26:54+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 9,
+  "posts": 6,
+  "ok": 6,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Anthropic migrates Claude Messages API from Python to Rust using Claude agents for verification",
+   "category": "feature_update",
+   "event_time": "2026-11-25T16:26:59Z",
+   "primary_url": "https://www.anthropic.com/research/migrating-api-to-rust",
+   "facts": [
+    "Anthropic migrated its Messages API from Python to Rust; Claude wrote a first version of the core request path in about a week.",
+    "The Rust API uses about 70% less CPU per request and cuts median time to first token by about 20%."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/AnthropicAI/status/2125627317263466739",
+     "official": true,
+     "author": "@AnthropicAI",
+     "check": "ok",
+     "created_at": "2026-11-25T16:26:59Z",
+     "text": "We recently migrated our Messages API from Python to Rust.\n\nOn our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.\n\nhttps://www.anthropic.com/research/migrating-api-to-rust",
+     "likes": 7881,
+     "retweets": 533,
+     "replies": 437,
+     "views": 1778279
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Cloudflare launches Search for Agents: one-toggle searchable endpoint for AI agents",
+   "category": "tool_launch",
+   "event_time": "2026-11-25T14:05:02Z",
+   "primary_url": "https://blog.cloudflare.com/search-for-agents/",
+   "facts": [
+    "Search for Agents puts AI Search behind a toggle in the Cloudflare dashboard to automatically index a zone and expose a discoverable search endpoint.",
+    "It is available to all customers including Free plans (with limits) and supports HTTP QUERY."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Cloudflare/status/2125591595965702452",
+     "official": true,
+     "author": "@Cloudflare",
+     "check": "ok",
+     "created_at": "2026-11-25T14:05:02Z",
+     "text": "Did you know that you can flip one toggle to make your site searchable by AI agents — complete with automatic content indexing, a discoverable search API, and native HTTP QUERY support? Now you know: https://cfl.re/4ConKUY",
+     "likes": 665,
+     "retweets": 43,
+     "replies": 38,
+     "views": 56271
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "Claude Code engineer Thariq Shihipar joins OpenAI",
+   "category": "discussion",
+   "event_time": "2026-11-25T19:38:35Z",
+   "primary_url": null,
+   "facts": [
+    "Thariq Shihipar announced he has joined OpenAI after working on Claude Code at Anthropic."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/trq212/status/2125675533761671405",
+     "official": false,
+     "author": "@trq212",
+     "check": "ok",
+     "created_at": "2026-11-25T19:38:35Z",
+     "text": "I've joined OpenAI!\n\nI'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future.\n\nThere is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best of all of us. I felt that I could personally contribute the most to this effort at OpenAI.\n\nI believe this is one of the great strengths of Silicon Valley, the flow of ideas and people.\n\nI'm excited to join a team I've long admired, building incredible AI products for over a billion people, and to work alongside friends like @_catwu, @thsottiaux, @ajambrosino, @sharifshameem, @jxnlco and many others to push the frontier forward.\n\nMore than anything, I hope to make your experience of using AI just a little bit better.\n\nI am once again at your service.\n\nThariq",
+     "likes": 17656,
+     "retweets": 612,
+     "replies": 1506,
+     "views": 914123
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Google Antigravity improves Gemini 4 Neon cache hit rate for higher effective quota",
+   "category": "feature_update",
+   "event_time": "2026-11-25T17:24:07Z",
+   "primary_url": null,
+   "facts": [
+    "Varun Mohan stated that the cache hit rate for Neon in Antigravity was increased by another 4.5%, allowing 28% more tasks within quota.",
+    "In the last 5 days, caching and harness improvements increased effective Neon usage on the subscription by close to 75%."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/_mohansolo/status/2125641696377712968",
+     "official": true,
+     "author": "@_mohansolo",
+     "check": "ok",
+     "created_at": "2026-11-25T17:24:07Z",
+     "text": "We've increased the cache hit rate for Neon in Antigravity again by another 4.5%. This means you can complete 28% more tasks within quota.\n\nIn the last 5 days, we've effectively increased Neon usage on the subscription by close to 75% through caching and harness improvements!",
+     "likes": 9379,
+     "retweets": 324,
+     "replies": 739,
+     "views": 384297
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "Zed v1.30.2 adds AI commit message model picker, GPT-6.1 Terra support, and lower GPU usage",
+   "category": "feature_update",
+   "event_time": "2026-11-25T17:43:00Z",
+   "primary_url": "https://github.com/zed-industries/zed/releases",
+   "facts": [
+    "Zed v1.30.2 includes reduced GPU usage across the app, a model picker for AI commit message generation in the Git Panel, a setting to hide the title bar, support for GPT-6.1 Terra, and faster scanning of large projects."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/zeddotdev/status/2125648217794662525",
+     "official": true,
+     "author": "@zeddotdev",
+     "check": "ok",
+     "created_at": "2026-11-25T17:50:02Z",
+     "text": "You can now choose the model used for AI commit message generation right from the Git Panel's commit editor.\nYour choice is saved to the `agent.commit_message_model` setting.\n\nThanks soilSpoon!",
+     "likes": 22,
+     "retweets": 0,
+     "replies": 1,
+     "views": 1033,
+     "reply_to": "@zeddotdev"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Goose v1.61.0 adds Gemini 4 Neon to model catalog and MCP improvements",
+   "category": "feature_update",
+   "event_time": "2026-11-25T03:31:00Z",
+   "primary_url": "https://github.com/aaif-goose/goose/releases/tag/v1.61.0",
+   "facts": [
+    "Goose v1.61.0 adds Gemini 4 Neon to the model catalog, shows the provider before the model on the model button, imports MCP's server.json format into goose config, and treats all headers as secret in mcpServers configs over ACP."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "OpenClaw v2026.11.10 ships with scheduled updates, agent addition from ClawHub, and browser takeover",
+   "category": "feature_update",
+   "event_time": "2026-11-25T05:42:00Z",
+   "primary_url": "https://github.com/openclaw/openclaw/releases",
+   "facts": [
+    "OpenClaw v2026.11.10 includes scheduled automatic updates, adding an agent from a trusted ClawHub package with settings in one CLAW.md manifest, OpenClaw ID to link owner devices, taking over the agent's browser from the Control UI, and steering a running conversation."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Developers discuss Antigravity weekly usage limits being drained quickly",
+   "category": "discussion",
+   "event_time": "2026-11-25T20:11:09Z",
+   "primary_url": null,
+   "facts": [
+    "Users report that the full weekly limit in Antigravity can be drained in a single day while using only about 3-4 five-hour limits."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/luisemaltez/status/2125683732514304443",
+     "official": false,
+     "author": "@luisemaltez",
+     "check": "ok",
+     "created_at": "2026-11-25T20:11:09Z",
+     "text": "I need to tell you this again Mr. @antigravity.\n\nThe issue is not Gemini 4 Neon usage / consumption itself\n\nThe 5h limit lasts enough most of the time.\n\nThe issue is that you can basically drain your full weekly limit on a single day while using only about 3-4 five hour limits.",
+     "likes": 618,
+     "retweets": 14,
+     "replies": 54,
+     "views": 24807
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 9,
+   "title": "Vercel Board experimental feature for coordinating humans and coding agents gains coverage",
+   "category": "tool_launch",
+   "event_time": "2026-11-25T13:57:00Z",
+   "primary_url": "https://vercel.com/blog/introducing-vercel-board",
+   "facts": [
+    "Vercel Board is an experimental headless message board where people and coding agents claim leased tasks and sync with Slack, GitHub and Linear.",
+    "It is harness-agnostic; Claude Code, Codex, Pi, OpenCode and others can collaborate on the same board."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  }
+ ]
+}

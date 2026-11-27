@@ -1,0 +1,796 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "3171877c3d81558b",
+  "generated_at": "2026-11-26T23:56:26.357835Z",
+  "from_date": "2026-11-25",
+  "to_date": "2026-11-26",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-26T23:56:26.281123Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-26T23:56:26.281128Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 3,
+      "attempted": true,
+      "at": "2026-11-26T23:56:26.083457Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 81,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-26T23:56:26.280969Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Google AI Agents Use MCP Servers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 185,
+          "points": 206
+        }
+      },
+      "nomination": {
+        "name": "Google AI Agents Use MCP Servers",
+        "seed_score": 586.5,
+        "summary": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50653477",
+            "source": "hackernews",
+            "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "body": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+            "author": "ritzaco",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 206,
+              "comments": 185
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "HN story about Google Will Make AI Agents Use Its MCP Servers. The Gmail On",
+            "snippet": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50653477",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.368
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "72-hour USC",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 212,
+          "points": 273
+        }
+      },
+      "nomination": {
+        "name": "72-hour USC",
+        "seed_score": 514.4202,
+        "summary": "72-hour fasting can reset your immune system, USC study shows",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50647158",
+            "source": "hackernews",
+            "title": "72-hour fasting can reset your immune system, USC study shows",
+            "body": "72-hour fasting can reset your immune system, USC study shows",
+            "url": "https://scienceinhand.com/72-hour-fasting-can-reset-your-entire-immune-system-usc-study-shows/",
+            "author": "handfuloflight",
+            "container": "Hacker News",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 273,
+              "comments": 212
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about 72-hour fasting can reset your immune system, USC study show",
+            "snippet": "72-hour fasting can reset your immune system, USC study shows",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50647158",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1575
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Pi Agent OpenCode",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 64
+        }
+      },
+      "nomination": {
+        "name": "Pi Agent OpenCode",
+        "seed_score": 144.0,
+        "summary": "I came across harness leaderboard on Hugging Face [https://huggingface.co/spaces/joelniklaus/harness-leaderboard](https://huggingface.co/spaces/joelniklaus/harness-leaderboard) .\n\nI know on this sub and other similar subs Pi is often the default recommendation when doing local inference but I barely see anyone recommending opencode yet on leaderboards it seems to perform on average much better tha",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "Why is Pi Agent the default harness recommendation and not OpenCode?",
+            "body": "Why is Pi Agent the default harness recommendation and not OpenCode?\nI came across harness leaderboard on Hugging Face [https://huggingface.co/spaces/joelniklaus/harness-leaderboard](https://huggingface.co/spaces/joelniklaus/harness-leaderboard) .\n\nI know on this sub and other similar subs Pi is often the default recommendation when doing local inference but I barely see anyone recommending opencode yet on leaderboards it seems to perform on average much better than other harnesses?\n\nIs there something about opencode thats not reflected on the leaderboard like higher context bloat, difficulty in setting things up or something else?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y68xtx/why_is_pi_agent_the_default_harness/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 32,
+              "num_comments": 64
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I came across harness leaderboard on Hugging Face [https://huggingface.co/spaces/joelniklaus/harness-leaderboard](https://huggingface.co/spaces/joelniklaus/harness-leaderboard) .\n\nI know on this sub and other similar subs Pi is often the default recommendation when doing local inference but I barely see anyone recommending opencode yet on leaderboards it seems to perform on average much better tha",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Release Inkling 2 Mini GSQ-RCO quants",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Release Inkling 2 Mini GSQ-RCO quants",
+        "seed_score": 123.0,
+        "summary": "We have released Inkling-2-Mini quantized with GSQ and RCO, at 2.75 to 3.50 bits per weight.\n\nInkling-2-Mini is a looped sparse mixture-of-experts model: 24 layers, of which the middle 12 run three times with the same weights, 128 routed experts per layer, of which 8 are active per token, 26.4B parameters and a 1M-token context window. It is released with its routed experts in NVFP4 and MXFP8.\n\n**",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R35",
+            "source": "reddit",
+            "title": "[Release] Inkling 2 Mini GSQ-RCO quants",
+            "body": "[Release] Inkling 2 Mini GSQ-RCO quants\nWe have released Inkling-2-Mini quantized with GSQ and RCO, at 2.75 to 3.50 bits per weight.\n\nInkling-2-Mini is a looped sparse mixture-of-experts model: 24 layers, of which the middle 12 run three times with the same weights, 128 routed experts per layer, of which 8 are active per token, 26.4B parameters and a 1M-token context window. It is released with its routed experts in NVFP4 and MXFP8.\n\n**What's inside**\n\n* Four quantized GGUFs: IQ2\\_S (2.75 bpw, 8.98 GB), Q2\\_K\\_XL (3.00 bpw, 9.79 GB), IQ3\\_XXS (3.25 bpw, 10.61 GB) and IQ3\\_S (3.50 bpw, 11.43 GB). The bit-width is the average over the whole file.\n* The token embedding is BF16 in every build (0.93 GB of each file). It is a lookup table that llama.cpp always keeps in system memory, so it takes no VRAM: 8.05 to 10.50 GB of each file go to the GPU. Quantizing it would shrink the download by about 0.7 GB and free no VRAM.\n* One shared vision projector (0.64 GB) for image input. It is identical for every build and needs to be downloaded only once.\n* GSQ (Gumbel-Softmax Quantization): post-training scalar quantization that jointly learns grid assignments and group scales, closing most of the gap between scalar and vector quantization at low bit-widths while remaining deployable in standard GGUF types.\n* RCO (Riemannian Constrained Optimization): enforces exact budgets by gradient descent on the task loss, without per-constraint tuning. Here it assigns a quantization type to each of 169 tensors under the target file size, with separate ladders for the attention tensors and the output head (IQ4\\_XS to Q8\\_0) and the routed experts (IQ1\\_S to IQ3\\_S for the gate/up matrices, Q2\\_0 or IQ4\\_NL for the down matrices).\n* An embedded chat template with the base model's reasoning effort (none, minimal, low, medium, high, xhigh or max).\n\n**Results**\n\nIQ3\\_S keeps 99.2% of the base model's task average and stays within 1.0 point of it on every benchmark. All numbers were measured at reasoning effort xhigh; AIME25 is averaged over 10 runs, GPQA-Diamond and LiveCodeBench v6 over 3 runs each.\n\n|Model|bpw|Size|AIME25|GPQA-Diamond|LiveCodeBench v6|Task average|Share of base|\n|:-|:-|:-|:-|:-|:-|:-|:-|\n|Base|n/a|n/a|99.33|86.87|79.62|88.61|100.0%|\n|IQ2\\_S|2.75|8.98 GB|92.33|84.34|73.90|83.52|94.3%|\n|Q2\\_K\\_XL|3.00|9.79 GB|97.00|86.53|76.95|86.83|98.0%|\n|IQ3\\_XXS|3.25|10.61 GB|96.00|85.86|77.90|86.59|97.7%|\n|IQ3\\_S|3.50|11.43 GB|98.33|86.20|79.05|87.86|99.2%|\n\nThe setup and the commands to reproduce these numbers are in [https://github.com/IST-DASLab/GSQ-RCO-eval](https://github.com/IST-DASLab/GSQ-RCO-eval).\n\n**Running it**\n\nThe files are standard GGUF and run in llama.cpp b12611 or newer, the first build with the fix for the layer loop.\n\n    hf download ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF --include \"*IQ3_S.gguf\" --local-dir .\n    llama-server -m Inkling-2-Mini-GSQ-RCO-IQ3_S.gguf -ngl 99 --reasoning-effort xhigh\n\nFor image input, download `mmproj-Inkling-2-Mini-BF16.gguf` from the same repository and pass it with `--mmproj`.\n\n**Links**\n\n* Quantized models: [https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF](https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF)\n* Evaluation setup: [https://github.com/IST-DASLab/GSQ-RCO-eval](https://github.com/IST-DASLab/GSQ-RCO-eval)\n* GSQ: paper [https://arxiv.org/abs/2604.18556](https://arxiv.org/abs/2604.18556) | code [https://github.com/IST-DASLab/GSQ](https://github.com/IST-DASLab/GSQ)\n* RCO: paper [https://arxiv.org/abs/2605.00649](https://arxiv.org/abs/2605.00649) | code [https://github.com/IST-DASLab/RCO](https://github.com/IST-DASLab/RCO)\n\nThe repository ships the complete per-tensor RCO allocation for every build (704 tensors each).\n\nFeedback is welcome, particularly on capabilities that the three benchmarks do not cover. Requests for models to quantize are also welcome.\n\nFor more updates follow us on X too: [https://x.com/mhelcig/status/2126048821583188286](https://x.com/mhelcig/status/2126048821583188286)\n\nFrom the ISTA Deep Algorithms and Systems Lab.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y6b8yu/release_inkling_2_mini_gsqrco_quants/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 65,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We have released Inkling-2-Mini quantized with GSQ and RCO, at 2.75 to 3.50 bits per weight.\n\nInkling-2-Mini is a looped sparse mixture-of-experts model: 24 layers, of which the middle 12 run three times with the same weights, 128 routed experts per layer, of which 8 are active per token, 26.4B parameters and a 1M-token context window. It is released with its routed experts in NVFP4 and MXFP8.\n\n**",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 96,
+            "source_quality": 0.6,
+            "local_rank_score": 0.334
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude Code Every Claude Code Switch",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 49
+        }
+      },
+      "nomination": {
+        "name": "Claude Code Every Claude Code Switch",
+        "seed_score": 78.0,
+        "summary": "I use Claude Code for heavy work, and I also run agents in other tools. Every one of them starts from zero each session: re-explain the project, re-explain the preferences, re-explain the decisions. The fixes I keep finding are all per-tool \u2014 a notes file Claude Code reads, a memory feature inside one chat app, a local store wired to one client. Switch tools and the memory stays behind. Get rate-l",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R66",
+            "source": "reddit",
+            "title": "My agents forget everything between sessions \u2014 and every fix I find is tied to one tool. How are you handling memory across tools?",
+            "body": "My agents forget everything between sessions \u2014 and every fix I find is tied to one tool. How are you handling memory across tools?\nI use Claude Code for heavy work, and I also run agents in other tools. Every one of them starts from zero each session: re-explain the project, re-explain the preferences, re-explain the decisions. The fixes I keep finding are all per-tool \u2014 a notes file Claude Code reads, a memory feature inside one chat app, a local store wired to one client. Switch tools and the memory stays behind. Get rate-limited or change plans and it's not yours to take with you.\n\n\n\nThe thing I can't find is a straight answer to a simple question: is there a way to keep an agent's memory \u2014 decisions, corrections, constraints, preferences \u2014 in one place that every tool I use can read from, instead of each tool keeping its own little notebook? Or is everyone just accepting that memory is per-tool and re-teaching every time?\n\n\n\nGenuinely asking: if you've solved cross-tool memory, what does your setup look like, and what breaks first?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y674by/my_agents_forget_everything_between_sessions_and/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 49
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I use Claude Code for heavy work, and I also run agents in other tools. Every one of them starts from zero each session: re-explain the project, re-explain the preferences, re-explain the decisions. The fixes I keep finding are all per-tool \u2014 a notes file Claude Code reads, a memory feature inside one chat app, a local store wired to one client. Switch tools and the memory stays behind. Get rate-l",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 59,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Hoping AI GPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 49
+        }
+      },
+      "nomination": {
+        "name": "Hoping AI GPU",
+        "seed_score": 73.5,
+        "summary": "If there were an AI bubble and it popped, companies would likely no longer invest millions to create models we have any chance of running locally. These models are just hype vehicles for the most part. It's appalling to see this particular crowd, half of whom are Zeitgeist movie socialists, practically praying for the implosion of the data center market. When the type I Kardashev scifi future civi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R38",
+            "source": "reddit",
+            "title": "Hoping \"the AI bubble pops\" so you can have a cheaper GPU is irrational short term thinking",
+            "body": "Hoping \"the AI bubble pops\" so you can have a cheaper GPU is irrational short term thinking\nIf there were an AI bubble and it popped, companies would likely no longer invest millions to create models we have any chance of running locally. These models are just hype vehicles for the most part. It's appalling to see this particular crowd, half of whom are Zeitgeist movie socialists, practically praying for the implosion of the data center market. When the type I Kardashev scifi future civilization requires a sacrifice on par with *expensive hardware for a while*, it's \"NO, WAIFU NOW\". \n\nUltimately I don't care about GPUs or agents. I want to live forever in a spaceship. Laugh, but there is a non-zero chance this becomes reality. The kind of intelligence that changes the human condition to this degree in a single lifetime is not going to come from a garage, or even from a million disorganized contributors. It requires massive institutions running profitable data centers.\n\nThankfully, there is no AI bubble. It's an anti-bubble. There is infinite demand and simultaneously a market that refuses to accept the demand is real. If you are anti-compute market, you are anti-AI. This attitude is impacting equities and even has a small chance of halting the singularity through legislation and other social hazards. We should be the salesmen of AI and data centers, expressing the as yet unseen benefits of infinite intelligence to civilians. We should *not* be celebrating five minutes after there's a minor drop in GPU pricing, creating post after post drooling over slightly discounted hardware in two years. Wait for the second marshmallow.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y69f04/hoping_the_ai_bubble_pops_so_you_can_have_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 49
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "If there were an AI bubble and it popped, companies would likely no longer invest millions to create models we have any chance of running locally. These models are just hype vehicles for the most part. It's appalling to see this particular crowd, half of whom are Zeitgeist movie socialists, practically praying for the implosion of the data center market. When the type I Kardashev scifi future civi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38999999999999996
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Inkling 2 Mini 3136 tok/s Aggregate",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Inkling 2 Mini 3136 tok/s Aggregate",
+        "seed_score": 70.5,
+        "summary": "I've been working on Betelgeuse, a custom inference engine for running MoE models on relatively low-end consumer hardware.\n\nOver the past few days I've been working extensively on native Inkling 2 Mini support, originally based on baptisterajaut's work in Strata and subsequently integrated into Betelgeuse.\n\nI think I've finally reached a point where it's worth releasing.\n\n**Hardware:**\n\n* RTX 3060",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "Inkling 2 Mini running at 3136 tok/s Aggregate , 45\u201347 tok/s (Per User) and 1,233 pp/s on a single RTX 3060 12GB + 16GB RAM, using the original checkpoint. Betelgeuse v0.7.0.",
+            "body": "Inkling 2 Mini running at 3136 tok/s Aggregate , 45\u201347 tok/s (Per User) and 1,233 pp/s on a single RTX 3060 12GB + 16GB RAM, using the original checkpoint. Betelgeuse v0.7.0.\nI've been working on Betelgeuse, a custom inference engine for running MoE models on relatively low-end consumer hardware.\n\nOver the past few days I've been working extensively on native Inkling 2 Mini support, originally based on baptisterajaut's work in Strata and subsequently integrated into Betelgeuse.\n\nI think I've finally reached a point where it's worth releasing.\n\n**Hardware:**\n\n* RTX 3060 12GB\n* Intel i5-12400\n* 16GB single-channel DDR4\n* Linux\n\nThe important part is that this uses the original NVFP4/MXFP8/BF16 checkpoint.\n\nNo additional weight quantisation. No expert skipping. No speculative decoding. All three recurrent passes are executed.\n\n# Results\n\nAll of these are real programming and reasoning tasks running through bel-server, generating 512 tokens each.\n\n|Task|Generation speed|\n|:-|:-|\n|LRU cache + TTL|44.51 tok/s|\n|Directed cycle detection|45.52 tok/s|\n|Race conditions|47.11 tok/s|\n|Token-bucket rate limiter|44.33 tok/s|\n|Serializability reasoning|45.27 tok/s|\n|Median|45.27 tok/s|\n\nWith an actual 16,338-token source-review prompt:\n\n* Prefill: 1,232.8 tok/s\n* Generation: 42.03 tok/s\n* Prefill-to-decode transition: 203.4 ms\n\nThe prefill measurement is from a warm server but with an uncached prompt. All 16K tokens are processed again.\n\nCold prefill is around 819 tok/s, and the first request incurs approximately 11 seconds of one-time pinned expert arena preparation. Subsequent requests don't incur that full cost.\n\n# What i added :\n\nPrefill uses its own temporary workspace and batched tensor-core computation. Once prefill finishes, the engine reclaims that workspace and uses it to expand expert residency for decode.\n\nOther changes include native Ampere NVFP4/MXFP8 kernels, fused GQA, GPU-side greedy sampling, decayed-LFU eviction, staged PCIe transfers and context-aware expert placement.\n\n# Comparison with other implementations\n\nSome of the community benchmarks I've been following:\n\n|Engine / configuration|Hardware|Generation|\n|:-|:-|:-|\n|Original Strata-style CPU expert execution, my earlier local tests|RTX 3060 12GB|\\~25\u201329 tok/s|\n|Unsloth llama.cpp, 4-bit, RAM experts|RTX 3060 12GB|\\~18 tok/s|\n|Unsloth llama.cpp, 4-bit, RAM experts|RTX 5060 Ti 16GB|\\~20 tok/s|\n|Unsloth llama.cpp, dual GPU|Two GPUs|\\~46\u201347 tok/s|\n|Strata SQ-10, more aggressively compressed weights|RTX 3060 12GB|\\~35 tok/s|\n|Strata, approximately 14GB quant|RTX 5060 Ti 16GB|\\~44 tok/s|\n|Betelgeuse, original checkpoint|RTX 3060 12GB|45.27 tok/s median|\n\n# What about long context?\n\nEarlier development builds achieved the following with actual populated prompts:\n\n|Context|Decode|\n|:-|:-|\n|16K|41.1 tok/s|\n|32K|37.8 tok/s|\n|64K|32.8 tok/s|\n|128K, K8/V4|28.6 tok/s|\n|251K, K8/V4|15.8 tok/s|\n\nThe main problem at longer contexts is that KV storage starts displacing recurrent experts from VRAM.\n\nWhich brings me to something I've been experimenting with separately.\n\n# Training-free MLA for Inkling\n\nInspired by Telperion's recent training-free GQA-to-MLA conversion, I've implemented an activation-aware latent KV compression experiment specifically for Inkling's global attention layers.\n\nNo gradient-based training so far. Just calibration, covariance collection and low-rank factorisation of the original K/V activations.\n\nUsing a rank-512 FP8 latent representation:\n\n|Context|Native K8/V4 global KV|Latent global KV|\n|:-|:-|:-|\n|16K|0.22 GiB|0.08 GiB|\n|64K|0.80 GiB|0.27 GiB|\n|128K|1.59 GiB|0.52 GiB|\n\n  \nThat's approximately 3.06x compression, projecting to around 1 GiB of global KV at 262K.\n\nDense latent attention retrieved all five test needles at 16K and 64K, and four out of five at 128K.\n\nI've also experimented with combining this with CISA, a training-free chunk-indexed sparse attention approach.\n\nThe combined prototype reached 31.4 tok/s at 128K while retaining the 0.52 GiB global KV footprint. Unfortunately, retrieval currently fails. There's an unresolved issue in the sparse latent attention implementation, so I'm not shipping it yet.  \n  \nTheoretical storage calculations :\n\n|Global cache format|262K context|1M context|\n|:-|:-|:-|\n|Original BF16|8 GiB|32.77 GB|\n|Current K8/V4|3 GiB|12.29 GB|\n|Rank-1024 latent FP8|2 GiB|8.19 GB|\n|Rank-512 latent FP8|1 GiB|4.10 GB|\n|Rank-512 latent FP4|576 MiB|2.30 GB|\n|Rank-256 latent FP4|288 MiB|1.15 GB|\n|Rank-192 latent FP4|216 MiB|864 MB|\n\nMemory compression alone isn't sufficient if the model can no longer retrieve information correctly.  \n\n\n# Future plans\n\n* Experiment with Intel integrated GPU expert execution using shared system memory and OpenVINO.\n* Develop a learned routing oracle that predicts upcoming experts from earlier hidden states.\n* Use those predictions to asynchronously prefetch experts before the original router selects them.\n* Integrate DSpark for speculative decoding.\n* Continue the training-free MLA and sparse attention research.\n* Improve actual long-context performance rather than merely supporting larger allocated context windows.\n\nAt this point, ordinary native decoding on my 3060 is approaching the measured weight-streaming and host-memory bandwidth limits. I think prediction, weight reuse and better attention architectures are more interesting than spending another week shaving microseconds off GEMV kernels.\n\nThe release is Betelgeuse v0.7.0 (Alpha-Orionis).\n\n[https://github.com/Betelgeuse-AI/Betelgeuse](https://github.com/Betelgeuse-AI/Betelgeuse)\n\nI'd be particularly interested in benchmarks from other people running the original checkpoint on 3060s, 4060 Tis and 5060 Tis, especially with dual-channel memory.\n\nThere's quite a lot more I want to do with this. But for now, I think it's finally time to ship :0",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y67qpu/inkling_2_mini_running_at_3136_toks_aggregate/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 31,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been working on Betelgeuse, a custom inference engine for running MoE models on relatively low-end consumer hardware.\n\nOver the past few days I've been working extensively on native Inkling 2 Mini support, originally based on baptisterajaut's work in Strata and subsequently integrated into Betelgeuse.\n\nI think I've finally reached a point where it's worth releasing.\n\n**Hardware:**\n\n* RTX 3060",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 83,
+            "source_quality": 0.6,
+            "local_rank_score": 0.464
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "Research agents set 50",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 5
+        }
+      },
+      "nomination": {
+        "name": "Research agents set 50",
+        "seed_score": 65.7609,
+        "summary": "We told a research agent to work on any problem it wanted.  \n  \n4 days later it had beaten 50 records on packing problems. The current leaderboard can be found [here](https://erich-friedman.github.io/packing/) (our results are pending verification from the maintainers).\n\nOur agent spawned 64 sub-agents in total. It approached 2D and 3D packing problems, including circles in triangles, tans in squa",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R89",
+            "source": "reddit",
+            "title": "Research agents set 50 packing problem records [R]",
+            "body": "Research agents set 50 packing problem records [R]\nWe told a research agent to work on any problem it wanted.  \n  \n4 days later it had beaten 50 records on packing problems. The current leaderboard can be found [here](https://erich-friedman.github.io/packing/) (our results are pending verification from the maintainers).\n\nOur agent spawned 64 sub-agents in total. It approached 2D and 3D packing problems, including circles in triangles, tans in squares, and cubes in cubes. One of them: 376 unit cubes in a cube of side 7 + 1/\u221a2 where the best known was 373.  \n  \nThe full project, including prompts, traces, artifacts, and code is available now: [https://openresearch.sh/p/xZeKt3JQPpB7](https://openresearch.sh/p/xZeKt3JQPpB7)",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y5fvzz/research_agents_set_50_packing_problem_records_r/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 57,
+              "num_comments": 5
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "We told a research agent to work on any problem it wanted.  \n  \n4 days later it had beaten 50 records on packing problems. The current leaderboard can be found [here](https://erich-friedman.github.io/packing/) (our results are pending verification from the maintainers).\n\nOur agent spawned 64 sub-agents in total. It approached 2D and 3D packing problems, including circles in triangles, tans in squa",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 80,
+            "source_quality": 0.6,
+            "local_rank_score": 0.15050000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "whats the dumbest thing your agent",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 28
+        }
+      },
+      "nomination": {
+        "name": "whats the dumbest thing your agent",
+        "seed_score": 57.0,
+        "summary": "mine decided a meeting was cancelled because the invite had a typo, and just never told anyone. it was so sure about it too. i only found out when someone asked why i wasnt there. whats yours? bonus points if it stayed confident the whole time",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R81",
+            "source": "reddit",
+            "title": "whats the dumbest thing your agent confidently did this week",
+            "body": "whats the dumbest thing your agent confidently did this week\nmine decided a meeting was cancelled because the invite had a typo, and just never told anyone. it was so sure about it too. i only found out when someone asked why i wasnt there. whats yours? bonus points if it stayed confident the whole time",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y62l5h/whats_the_dumbest_thing_your_agent_confidently/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 10,
+              "num_comments": 28
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "mine decided a meeting was cancelled because the invite had a typo, and just never told anyone. it was so sure about it too. i only found out when someone asked why i wasnt there. whats yours? bonus points if it stayed confident the whole time",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI Receptionist",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "AI Receptionist",
+        "seed_score": 51.0,
+        "summary": "Call it an AI Receptionist, Speed-to-lead, AI Appointment Setter or whatever you want.\n\nI've been reflecting on this and I feel like this has already become oversaturated to the extreme and it's a race to the bottom for everyone including me.\n\nI didn't exactly build just an AI Receptionist system, my Automation system is a lot more than that, but even then I still believe it's a dead-end.\n\nIf you",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R68",
+            "source": "reddit",
+            "title": "AI Receptionist is about to become a dead-end",
+            "body": "AI Receptionist is about to become a dead-end\nCall it an AI Receptionist, Speed-to-lead, AI Appointment Setter or whatever you want.\n\nI've been reflecting on this and I feel like this has already become oversaturated to the extreme and it's a race to the bottom for everyone including me.\n\nI didn't exactly build just an AI Receptionist system, my Automation system is a lot more than that, but even then I still believe it's a dead-end.\n\nIf you ask ChatGPT or Claude for AI Automation Agency suggestions, the number one suggestion is this AI 99% of the time, in different words and forms, but its all the same thing. Every course-seller and AI guru has been telling people to build this since like 2024-2025.\n\nI built this for Roofers and Home-services. Now I feel like it's a big mistake because home-services, real estate, dental clinics etc are literally always the top most suggested niches by every agency owner, course-seller, ChatGPT and Claude. They have been pitched to death, constantly get pitches like this all the time.\n\nEven if your pitch is focused on the outcomes and results, you still cannot compete with other existing tools especially from bigger companies and softwares they already use (like CRMs offering it as an add-on).\n\nYou will still never be able to command high prices, unless you can convince some unaware business owner who has never been pitched this before and doesn't know about other existing cheaper platforms that this is some special thing that can make them a lot of money and have them pay you $5k-$10k, which is only happening in the world of Agency gurus.\n\nThe most you can charge is in the very low 3 figures. I've seen people selling it for $45/month, $99/month. Probably the highest you can go to is around $1,000 which some established SaaS and agencies are charging.\n\nI believe larger companies, especially CRMs which already contain the necessary knowledge base and data of the businesses for such AI to work properly, will eat out this space. They already offer it at dirt cheap prices as an add-on.\n\nI just can't think of any other narrower niches that have not been pitched to death like Roofers, HVAC, Dental Clinics, Med Spas etc have been. It would take insane amounts of outreach volume to find business owners in these saturated niches who will show interest and not tell you to fuck off.\n\nAny niche which would benefit from this AI has already been pitched to death.\n\nI'm considering leaving this AI completely and pivot to a different Automation or go for another niche. But it's hard to come up with something that is practical, has real value, can be built without requiring massive teams of software engineers and doesn't already have existing competitors.\n\nThese are just my thoughts.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y66rkq/ai_receptionist_is_about_to_become_a_deadend/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Call it an AI Receptionist, Speed-to-lead, AI Appointment Setter or whatever you want.\n\nI've been reflecting on this and I feel like this has already become oversaturated to the extreme and it's a race to the bottom for everyone including me.\n\nI didn't exactly build just an AI Receptionist system, my Automation system is a lot more than that, but even then I still believe it's a dead-end.\n\nIf you",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.6,
+            "local_rank_score": 0.427
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "New to agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 15
+        }
+      },
+      "nomination": {
+        "name": "New to agents",
+        "seed_score": 45.0,
+        "summary": "Hi, all.  As the title says, I'm new to AI agents and have only used Muse and chatGPT for a few things.  Mainly price watch on items I need/want and pre and post stock market briefs with focus on certain stocks.  I know I'm not scratching the surface of using agents.  \n\nMy questions are, from your experience, which agents work best for you and in what areas?  I understand some platforms are better",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R84",
+            "source": "reddit",
+            "title": "New to agents",
+            "body": "New to agents\nHi, all.  As the title says, I'm new to AI agents and have only used Muse and chatGPT for a few things.  Mainly price watch on items I need/want and pre and post stock market briefs with focus on certain stocks.  I know I'm not scratching the surface of using agents.  \n\nMy questions are, from your experience, which agents work best for you and in what areas?  I understand some platforms are better for coding or current affairs, etc.  What's been the best and worst in your experience. \n\nSecond, is Grok Bots worth the subscription price?  Is there any real advantages to subscriptions for any bots?\n\nThanks for reading and helping out",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y622ti/new_to_agents/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 15
+            },
+            "relevance_hint": 0.13,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Hi, all.  As the title says, I'm new to AI agents and have only used Muse and chatGPT for a few things.  Mainly price watch on items I need/want and pre and post stock market briefs with focus on certain stocks.  I know I'm not scratching the surface of using agents.  \n\nMy questions are, from your experience, which agents work best for you and in what areas?  I understand some platforms are better",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.6,
+            "local_rank_score": 0.425
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Honest",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 23
+        }
+      },
+      "nomination": {
+        "name": "Honest",
+        "seed_score": 40.5,
+        "summary": "Simple question for anyone using agents for real work: when it says it sent the email, booked the thing, posted it, or updated the file, do you go look? Every time, sometimes, or only when it feels important?\n\n  \nI ask because I've been caught a few times by agents that sounded completely sure and were wrong. Nothing dramatic, but I only found out after the fact, when I went back and checked. Now",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R75",
+            "source": "reddit",
+            "title": "Honest question: do you check your agents' \"done,\" or just trust it?",
+            "body": "Honest question: do you check your agents' \"done,\" or just trust it?\nSimple question for anyone using agents for real work: when it says it sent the email, booked the thing, posted it, or updated the file, do you go look? Every time, sometimes, or only when it feels important?\n\n  \nI ask because I've been caught a few times by agents that sounded completely sure and were wrong. Nothing dramatic, but I only found out after the fact, when I went back and checked. Now I'm not sure whether my \"spot-check when it feels important\" habit is normal or whether I'm missing the ones that matter.\n\n  \nIf you've been burned by a false \"done,\" how did you first notice, and did it change how you check?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y64fzq/honest_question_do_you_check_your_agents_done_or/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 4,
+              "num_comments": 23
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Simple question for anyone using agents for real work: when it says it sent the email, booked the thing, posted it, or updated the file, do you go look? Every time, sometimes, or only when it feels important?\n\n  \nI ask because I've been caught a few times by agents that sounded completely sure and were wrong. Nothing dramatic, but I only found out after the fact, when I went back and checked. Now",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 54,
+            "source_quality": 0.6,
+            "local_rank_score": 0.305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Letting LoomFormer",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "Letting LoomFormer",
+        "seed_score": 39.2444,
+        "summary": "In a Transformer, a head chooses which tokens to attend to, but which earlier heads it reads from is fixed by the weights once training is done. When two circuits share heads, the only thing the model can do per token is switch a whole head off, usually by parking its attention on a sink token.\n\nWe tried making that second choice per token too. Each token carries a small matrix next to the residua",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R96",
+            "source": "reddit",
+            "title": "Letting each attention head choose which earlier heads it reads from, per token (LoomFormer) [R]",
+            "body": "Letting each attention head choose which earlier heads it reads from, per token (LoomFormer) [R]\nIn a Transformer, a head chooses which tokens to attend to, but which earlier heads it reads from is fixed by the weights once training is done. When two circuits share heads, the only thing the model can do per token is switch a whole head off, usually by parking its attention on a sink token.\n\nWe tried making that second choice per token too. Each token carries a small matrix next to the residual stream (2n slots, each as wide as one head). Heads write their outputs into slots, later heads read from slots, and the read/write addresses are computed from the residual stream at every token. The q, k and v of ordinary attention are then read from this matrix instead of from the residual stream. This vertical attention (warp) is interwoven with the conventional horizontal attention (weft), and the wiring pattern is controlled by the residual stream, working just like a drawloom.\n\nTrained on the same 300B Pile tokens as Pythia with the same parameter budget, the 2.8B model ends up level with Pythia-12B on a 10-task average: 59.9 vs 59.9 zero-shot, 61.6 vs 60.8 five-shot, also significantly outperforms mHC. In layers 17-32 of Pythia-2.8B only 23% of heads are attending to something other than a sink token; in ours it is 74%.\n\nThe cost: FLOPs go up by 2-4%, but wall-clock is 8-16% slower than a plain Transformer even with fused kernels, because of memory traffic on the matrix and many small projections. The largest model we trained is 2.8B.\n\nThe paper is \"Rewirable Circuits in Transformers with Loom Attention\", arXiv 2611.30634. Code and the 2.8B weights are public.\n\nStatic residual (Transformer) -> static dense (Denseformer) -> dynamic dense (HC/mHC, AttnRes) -> dynamic dense per QKV input (our MUDDFormer) -> dynamic dense per head (our LoomFormer). Can we advance further along the residual enhancement axis? How far away are we from the ultimate architecture?",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y50x62/letting_each_attention_head_choose_which_earlier/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 34,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "In a Transformer, a head chooses which tokens to attend to, but which earlier heads it reads from is fixed by the weights once training is done. When two circuits share heads, the only thing the model can do per token is switch a whole head off, usually by parking its attention on a sink token.\n\nWe tried making that second choice per token too. Each token carries a small matrix next to the residua",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 10,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.10400000000000001
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "LLM ACs ICLR",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "LLM ACs ICLR",
+        "seed_score": 37.5,
+        "summary": "I am a bit salty. Since the end of the review phase, two ACs sent messages to start a discussion. Both messages summarized the status, asked individual reviewers to take positions/do work, and both were 100% AI generated. Of course these summaries included factual errors.\n\nSo now we have LLM papers being reviewed by LLM reviewers, discussed by LLM agents and moderated by LLM ACs. Is it LLMs all th",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R85",
+            "source": "reddit",
+            "title": "Do we really need LLM ACs at ICLR? [D]",
+            "body": "Do we really need LLM ACs at ICLR? [D]\nI am a bit salty. Since the end of the review phase, two ACs sent messages to start a discussion. Both messages summarized the status, asked individual reviewers to take positions/do work, and both were 100% AI generated. Of course these summaries included factual errors.\n\nSo now we have LLM papers being reviewed by LLM reviewers, discussed by LLM agents and moderated by LLM ACs. Is it LLMs all the way down?\n\nWhere exactly does this involve scientific integrity? What are we even doing here? Don't get me wrong, I understand AC is a lot of work and now with extended length LLM discussions it is borderline impossible to follow the status of a paper, let alone 10. I am painfully aware. But the solution cannot be to outsource the moderation activity to LLMs and let the few remaining human reviewers also correct the wrong AC summary.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y67spi/do_we_really_need_llm_acs_at_iclr_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 14,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I am a bit salty. Since the end of the review phase, two ACs sent messages to start a discussion. Both messages summarized the status, asked individual reviewers to take positions/do work, and both were 100% AI generated. Of course these summaries included factual errors.\n\nSo now we have LLM papers being reviewed by LLM reviewers, discussed by LLM agents and moderated by LLM ACs. Is it LLMs all th",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 65,
+            "source_quality": 0.6,
+            "local_rank_score": 0.446
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "AI",
+        "seed_score": 31.5,
+        "summary": "Say an agent is halfway through a task, then the API times out, the session crashes, or the machine restarts.\n\nWhen you bring it back, does it know exactly where it left off?\n\nI've noticed something odd when I interrupt an agent and ask it to continue. Sometimes it finishes the remaining work surprisingly quickly, almost as if it skips parts of the original process.\n\nDoes this happen because some",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R77",
+            "source": "reddit",
+            "title": "What happens when your AI agent gets interrupted halfway through a task?",
+            "body": "What happens when your AI agent gets interrupted halfway through a task?\nSay an agent is halfway through a task, then the API times out, the session crashes, or the machine restarts.\n\nWhen you bring it back, does it know exactly where it left off?\n\nI've noticed something odd when I interrupt an agent and ask it to continue. Sometimes it finishes the remaining work surprisingly quickly, almost as if it skips parts of the original process.\n\nDoes this happen because some context or intermediate reasoning gets lost? Does the agent reconstruct the task differently, or does it simply take a shortcut based on what it remembers?\n\nHas anyone looked into this? How do you make sure the agent actually resumes the task rather than just producing a quick conclusion?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y63hdv/what_happens_when_your_ai_agent_gets_interrupted/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 8,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.17,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Say an agent is halfway through a task, then the API times out, the session crashes, or the machine restarts.\n\nWhen you bring it back, does it know exactly where it left off?\n\nI've noticed something odd when I interrupt an agent and ask it to continue. Sometimes it finishes the remaining work surprisingly quickly, almost as if it skips parts of the original process.\n\nDoes this happen because some",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 58,
+            "source_quality": 0.6,
+            "local_rank_score": 0.374
+          }
+        ]
+      }
+    }
+  ]
+}

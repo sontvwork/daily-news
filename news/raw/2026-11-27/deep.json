@@ -1,0 +1,234 @@
+{
+ "date": "2026-11-27",
+ "runs": [
+  {
+   "started_at": "2026-11-27T00:00:16+00:00",
+   "seconds": 2.8,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 8,
+   "articles_ok": 7,
+   "articles_error": 0,
+   "articles_skipped": 1,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {},
+   "summary": "7/8 bài gốc ok (1 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 2.8s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/",
+   "article": {
+    "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/",
+    "status": "ok",
+    "title": "Copilot code review billing will default to the organization - GitHub ChangelogLinkedIn iconInstagram iconYouTube iconX iconTikTok iconTwitch iconGitHub icon",
+    "chars": 2177,
+    "text": "Back to changelog\nImprovement\nNovember 25, 2026 •\n1 minute read\nCopilot code review billing will default to the organization\nIf you haven’t chosen how to bill Copilot code review for members with a Copilot license, those reviews will be billed to your organization starting December 30, 2026. To keep billing unchanged, select Member before then. This change applies to organizations and enterprises with Copilot Business or Copilot Enterprise.\nWhat’s changing\nToday, when no billing choice is saved, reviews by members who have a paid Copilot license use the member’s Copilot entitlement. Starting December 30, 2026, those reviews will be billed to the organization that owns the repository. Accounts that don’t have AI Credits paid usage enabled, have a billing lock, or have no billable customer will be set to Member instead.\nIf you already chose Member or Organization, your choice stays in effect.\nThe separate setting for members without a Copilot license doesn’t change.\nKeep member billing\nUntil then, unset settings show Default (Member) with a notice about the change. To keep using members’ Copilot entitlements, select Member in your enterprise or organization Copilot policy settings. That choice stays in effect after the default changes.\nIf your enterprise manages this setting, an enterprise owner makes this choice.\nOrganization billing requires AI Credits paid usage and can increase your organization’s spending.\nTo learn more, see Configuring code review by GitHub Copilot.\nNov.18 Improvement\nConnect Supabase, Box, Calendly, and more to Copilot\ncopilot\nNov.18 Release\nGemini 4 Neon in GitHub Copilot\ncopilot\nNov.18 Release\nCustomize GitHub Copilot for your team\ncopilot\nNov.17 Release\nOpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available\ncopilot\nNov.17 Improvement\nGitHub Copilot Fusion updates: more availability, benchmarks, and models\ncopilot\nNov.17 Release\nGitHub Copilot app, Microsoft Ignite releases\ncopilot\nNov.17 Release\nCopilot code review: Adaptive effort, secret detection, and more\ncopilot\nNov.17 Release\nMAI Code 2 and MAI Code 2 Flash in GitHub Copilot\ncopilot\nNov.17 Release\nGitHub Copilot in JetBrains, Ignite releases\nclient apps\ncopilot"
+   }
+  },
+  {
+   "url": "https://claude.com/resources/articles/introducing-claude-ship",
+   "article": {
+    "url": "https://claude.com/resources/articles/introducing-claude-ship",
+    "status": "ok",
+    "title": "Introducing Claude Ship | Claude by Anthropic",
+    "chars": 7924,
+    "text": "Introducing Claude Ship\nOpen a pull request and get back to building. Claude can now review pull requests, fix them, and approve the ones that a team's policy allows.\nCategoryProduct updates\nProductClaude Ship\nDateNovember 23, 2026\nReading time6 min\nShare\nAnyone who has opened a pull request knows how this goes. They start on the next thing, and then the review comes back. So they stop, dig back into the old code, push a fix, and wait for the review to run again. Then they go find someone to approve it.\nThere's a good reason it works this way. Most teams want a person to approve every change, and that's easy to keep up with when people write every line. But a lot of developers build with agents now. On the Claude Code team, Claude writes most of our code, and we wanted everything after the PR to move that fast too.\nThat's why we built Claude Ship, available today in beta. It can review PRs, fix them, and decide what's ready to merge based on policies each team sets. Teams stay in control of where it runs and which changes need a person. The goal: ship code as fast as teams write it.\nEligible Claude Enterprise organizations can claim at least $10,000 in Claude Ship credits to use within 30 days of claiming. Claim by January 15, 2027. Terms apply.\nHow Claude Ship works: review, fix, and approve\nClaude Ship is made up of Code Review, which is already generally available, and two new agents in beta: PR Steward and Claude Approvals. Together, they take a pull request through review, fixes, and an approval decision so teams don't have to manage each step manually.\nCode Review performs an in-depth review of pull requests against the codebase through multiple lenses. It collects findings, adversarially verifies them, categorizes them, and posts them to a PR. On the Claude Code team, where Claude's review is one layer of a broader process, merged PRs more than doubled from June to September while the share reverted fell by more than 40%. Code Review gives teams fast reviews, clear findings, and a choice of Quick, Standard, or Deep review levels for each repository.\nPR Steward works to keep a PR green, but is designed not to approve or merge pull requests. It jumps in on failing CI checks, merge conflicts, and review feedback from Code Review, other review tools, or team members. After every push, it comments with what it changed and how to undo it. Developers can comment @claude with an instruction to steer the work, or @claude stop to have it step back.\nFrom there, Claude Approvals applies an approval policy that the team writes as a file in the repository. Claude can approve routine changes on its own if the policy allows it, or can require deeper human sign-off for certain scenarios. It works like a smarter CODEOWNERS file. Teams can have Claude Approvals consider a variety of signals in its decision-making process, including Code Review findings or their own classifiers using natural language. For most customers, we recommend enabling this first in observe-only mode to build confidence before configuring branch protection to require Claude Approvals' green light.\nTwo ways to get started\nFor developers: /ship it from Claude Code\nDevelopers can try Claude Ship on their own pull requests with the new /ship command in Claude Code. When a change is ready, they run /ship. Claude pushes it, opens the PR, reviews the change, and works on feedback and failing checks to help get it ready to merge. What can merge depends on the developer's permissions and the repository's branch rules.\nFor admins and engineering leaders: set the rules, one repository at a time\nTurning Claude Ship on for an entire repository puts it to work across a team's pull requests automatically, under settings and an approval policy the team controls. Developers don't need to manually invoke the /ship command.\nAdmins choose where it runs. An admin turns on Code Review and PR Steward for each repository. Claude Approvals starts when a connected repository has a policy…"
+   }
+  },
+  {
+   "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-admitting-billing-mistake-at-gpt-6-2-launch-openai-to-combine-chatgpt-and-codex-usage-limits-users-to-reach-limits-40-faster/articleshow/136198153.cms",
+   "article": {
+    "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-admitting-billing-mistake-at-gpt-6-2-launch-openai-to-combine-chatgpt-and-codex-usage-limits-users-to-reach-limits-40-faster/articleshow/136198153.cms",
+    "status": "ok",
+    "title": "After admitting ‘billing mistake’ at GPT-6.2 launch, OpenAI to combine ChatGPT and Codex usage limits; users to reach limits 40% faster - The Times of India",
+    "chars": 13783,
+    "text": "Edition\nIN\nIN\nUS\nUK\nGCC\nEnglish\nEnglish\nहिन्दी\nमराठी\nಕನ್ನಡ\nதமிழ்\nবাংলা\nമലയാളം\nతెలుగు\nગુજરાતી\nWeather\nSign In\nTOI\nToday's ePaper\nLive\nNews\nTechnology News\nTech News\nAfter admitting ‘billing mistake’ at GPT-6.2 launch, OpenAI to combine ChatGPT and Codex usage limits; users to reach limits 40% faster\nTrending\nGoogle Layoffs\nJensen Huang\nIBM H-1B Visa\nCalifornia Wealth Tax\nNvidia All Hands Meeting\nSilicon Valley War Room\nKaspersky Global Research\nSatya Nadella\nBill Gates\nNorth Korea AI Chatbot\nGoogle Layoffs\nJensen Huang\nIBM H-1B Visa\nCalifornia Wealth Tax\nNvidia All Hands Meeting\nSilicon Valley War Room\nKaspersky Global Research\nSatya Nadella\nBill Gates\nNorth Korea AI Chatbot\nGoogle Layoffs\nJensen Huang\nIBM H-1B Visa\nCalifornia Wealth Tax\nNvidia All Hands Meeting\nSilicon Valley War Room\nKaspersky Global Research\nSatya Nadella\nBill Gates\nNorth Korea AI Chatbot\nAfter admitting ‘billing mistake’ at GPT-6.2 launch, OpenAI to combine ChatGPT and Codex usage limits; users to reach limits 40% faster\nTOI Tech Desk / TIMESOFINDIA.COM / Nov 26, 2026, 22:04 IST\nComments\nShare\nAa\nText Size\nSmall\nMedium\nLarge\nPrint\nOpenAI to combine ChatGPT and Codex usage limits from December\nOpenAI has acknowledged a billing error that affected GPT-6.2 usage limits, meaning ChatGPT users will now consume their plan allowances faster when using the company's latest Astra and Sol models. Thibault Sottiaux, an OpenAI executive, announced the correction in a post on X (formerly Twitter), saying the error had incorrectly discounted usage for most users at launch. Following the fix, users will reach their usage limits 40% faster on GPT-6.2 Astra and 25% faster on Sol, compared with last week, the executive said. OpenAI said other models were not affected and users would not be charged for the difference in their past usage.Sharing the post, OpenAI executive Thibault Sottiaux wrote:“We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users.We’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\nJoin conversation\nShare your thoughts in the comments\nBe respectful · TOI community guidelines\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.”\nHow users reacted to OpenAI’s change\n“You are practically pushing users to Gemini and Claude,” said one user reacting to Thibault Sottiaux’s post. “How you just gonna casually tell us we’ll reach our limits 40% faster and act like that’s acceptable,” said another.“Canceled my $500 subscription and bought 1 claude max $200 and 1 google ultra. you guys are intentionally degrading your product for some unknown reason,” wrote a third. “Moving over to Claude and Gemini. Thanks for the past two years, though,” said another.\nFearless legend or grounded realist? Rate yourself on 11 categories in the Great Indian Confidence Survey – find out in 3–6 min\nAbout the AuthorTOI Tech Desk\nThe TOI Tech Desk is a dedicated team of journalists committed to delivering the latest and most relevant news from the world of technology to readers of The Times of India. TOI Tech Desk’s news coverage spans a wide spectrum across gadget launches, gadget reviews, trends, in-depth analysis, exclusive reports and breaking stories that impact technology and the digital universe. Be it how-tos or the latest happenings in AI, cybersecurity, personal gadgets, platforms like WhatsApp, Instagram, Facebook and more; TOI Tech Desk brings the news with accuracy and authenticity.\nEnd of Article\nLatest Mobiles\nView All\nAlcatel V3 Pro\n₹16,990\nLava Bold N2\n₹10,499\nGoogle Pixel 9A\n₹48,950\nPoco X7\n₹17,999\nInfinix Note 50X\n₹13,499\nMotorola Edge 70…"
+   }
+  },
+  {
+   "url": "https://antigravity.google/docs/changelog/",
+   "article": {
+    "url": "https://antigravity.google/docs/changelog/",
+    "status": "ok",
+    "title": "Changelog | Google Antigravity Docs",
+    "chars": 625432,
+    "text": "v2.35.2\nLatest\nNovember 25, 2026\nSwitch models while a turn is running\nThis release lets you change the selected model while a conversation turn is running, with a tooltip clarifying when the change takes effect. It includes 1 fix.\nFixes(1)\nFixed an issue where the model selector was locked while a turn was running, preventing you from switching models before sending a /btw side question or follow-up message. The selector now stays interactive with a tooltip noting when the change takes effect.\nv2.35.1\nNovember 24, 2026\nResume conversations after restart, auto-opening plugin panels, and compressed diagnostic uploads\nThis release automatically resumes active conversations after an app restart or update, opens plugin panel links directly in the side panel, and compresses background diagnostic uploads to reduce upload bandwidth while capping upload batch sizes. It includes 2 improvements and 1 fix.\nImprovements(2)\nAdded automatic resumption on startup for active conversations interrupted by an app restart or update.\nUpdated plugin panel links in live agent replies to open their view automatically in the side panel.\nFixes(1)\nFixed an issue where background diagnostic uploads were sent uncompressed and without a batch size limit, using more upload bandwidth than necessary and causing oversized batches to fail.\nv2.35.0\nNovember 23, 2026\nUnlimited conversation history, Conversation Management API, and HTML artifact search\nThis release keeps your local conversation history unlimited by default, offers a conversation management API for agents to create and manage Antigravity conversations, and adds Cmd+F search inside full-page HTML artifacts. It includes 20 improvements and 19 fixes.\nImprovements(20)\nAntigravity now keeps your local conversation history unlimited by default instead of pruning older conversations after 500.\nAgents, scripts, plugins, and automations can now use the built-in Conversation Management API and conversations skill to create, list, inspect, rename, pin, star, archive, tag, group, and delete local Antigravity conversations.\nThe message box now places the Environment selector ahead of Project and Branch, putting SSH Host directly in the environment menu and scoping project lists with cloning submenus when remote agents are enabled.\nAuto permission mode now approves file reads outside your current project automatically while keeping sensitive configuration directories protected.\nPermission prompts for writing files outside your project now suggest directory scopes instead of single files, and bold target paths and patterns for faster scanning.\nYou can now search inside full-page HTML artifacts with Cmd+F (Ctrl+F on Windows and Linux), complete with match highlighting and navigation.\nMarkdown and plain-text file tabs now include a per-tab RTL text direction toggle in the header for reading RTL prose without flipping code blocks or other open tabs.\nOpening large swarms in the Swarm board is now much faster with on-demand message paging, incremental board updates, and reduced background polling while hidden.\nClickUp, Midpage Legal Research, and Descrybe Legal Engine partner plugins are now available in the Marketplace.\nUpdated the official Gemini API Marketplace plugin to v2.8.0 with Gemini 4 Neon usage and migration guidance.\nThe queued messages card now names any active background tasks or subagents holding delivery after a turn ends, so you can see why a message is waiting or choose Send Now.\nConsecutive parallel subagent launches now collapse into a single expandable row, and adjacent Worked for sections with no intervening output merge automatically.\nThe model and permissions selectors in the message box now lock with explanatory tooltips while a turn is running so changes are not mistaken as taking effect mid-turn.\nDefault Orchestrator and Executor models in Settings > Models now start at High thinking effort when available instead of the highest available effort level.\nSelecting a side-question match in…"
+   }
+  },
+  {
+   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+   "hn_url": "https://news.ycombinator.com/item?id=50652527",
+   "hn": {
+    "title": "OpenAI may be in cost control mode",
+    "points": 237,
+    "comments": 220
+   },
+   "comments": [
+    {
+     "author": "alexpotato",
+     "replies": 4,
+     "text": "For those of us who lived through the late 1990s/early 2000s, tokens are starting to feel a lot like long distance cell phone minutes.\nThe similarities:\n- new technology\n- huge demand\n- only a few big players/oligopolistic market\n- tons of infra needed (cell phone towers/fiber)\n- great business model for ~5 years\n- then moved to a race to the bottom/flat rate per month"
+    },
+    {
+     "author": "stillpointlab",
+     "replies": 12,
+     "text": "Hard to say how concerning this is. I've been thinking about software dev like gardening to try to wrap my head around what this transition to agent-centric dev has meant. In a tortured analogy, agent-centric dev feels like having fertilizer and now all of a sudden my garden is heavily over-grown and my task feels more like pruning since weeds respond to the fertilizer as well as the vegetables.\nSo perhaps we are just now locked in cycles of massive unwieldy growth followed by judicious…"
+    },
+    {
+     "author": "torginus",
+     "replies": 1,
+     "text": "Personally I wouldn't read too deeply into this. Astra 6.2 was a timed release, scheduled to go against the ANT IPO. The model might be undercooked.\nThey really look like they went for cost savings, and they probably gave up some performance in exchange, even though they might've improved on their previous Pareto frontier.\nThere have been model releases like this, that were less well received for whatever reason, and there was the assorted doom and gloom, and far reaching conclusions were…"
+    },
+    {
+     "author": "joeyhage",
+     "replies": 2,
+     "text": "Even worse: the cheaper cost of those two models was, per OpenAI, a bug with billing: https://www.bleepingcomputer.com/news/artificial-intelligenc..."
+    },
+    {
+     "author": "ac29",
+     "replies": 1,
+     "text": "The most obvious explanation is that they are tuning to be on the pareto frontier of cost/intelligence on benchmarks. If those benchmarks are good enough proxies for the work you're doing and you're paying API rates, its a compelling place to be"
+    }
+   ],
+   "article": {
+    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+    "status": "ok",
+    "title": "OpenAI may be in cost control mode | micjm",
+    "chars": 1326,
+    "text": "OpenAI may be in cost control mode\n2026-11-26\nOpenAI’s recent release of Astra 6.2 and Sol 6.2 was widely panned. What happened?\nBased on our data, it looks like they’ve been tuned for cost savings. Specifically output tokens per task and reasoning tokens per task have dropped.\nHere is a chart of high-level cost change from the GPT-6 to GPT 6.2:\nThe X axis in the above chart is the ratio of spending of the GPT model compared to opponents in our battle system for real work. The Y axis on the above chart is Elo from our leaderboard.\nThe moves in the chart are significant, here’s the same chart with confidence intervals:\nWhat changed\nCompared to opponents, Astra and Sol seem to be reasoning a lot less. Here is a chart of how much models reason compared to opponents in the same battle. Above the line means more reasoning and below means less.\nYou can see that both Astra 6 and Sol 6.1 were pretty normal models, but Astra 6.2 and Sol 6.2 become outliers.\nWe can see the same effect with output tokens:\nAre these changes significant? The p-value on output dropping is 0.0055 for Sol and 0.022 for Astra. The p-value on reasoning dropping is 0.00013 for Sol and 0.0064 for Astra.\nIn conclusion, Astra and Sol appear to be cost tuned compared to their predecessors, and to a degree that makes them underthinking outliers."
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50651117",
+   "hn_url": "https://news.ycombinator.com/item?id=50651117",
+   "hn": {
+    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+    "points": 460,
+    "comments": 259
+   },
+   "comments": [
+    {
+     "author": "Aurornis",
+     "replies": 18,
+     "text": "I’ve had OpenAI and Anthropic accounts continuously for a long time, with a sampling of others rotating in and out.\nThe back-and-forth between which provider is more generous has been interesting to follow because the balance has been swinging back and forth. Not long ago I was having fun throwing OpenAI tokens at a side project because they felt limitless between the allowances and the constant flow of resets. Then Opus 5.5 came along and gave even more usage without any reset shenanigans to…"
+    },
+    {
+     "author": "at1as",
+     "replies": 7,
+     "text": "Our limits have been artificially propped up by a \"reset\" economy that is coming to an end, ChatGPT web usage not counting against our balance (set to change), and now apparently [unintentional] artificially inflated limits.\nI don't think token subscription subsidization at the level we've become accustomed to lasts forever, so it's critically important we have a few more frontier level models (glad to see Gemini back in the arena, and I'll even cheer for Muse and Grok if it'll provide more…"
+    },
+    {
+     "author": "throw-the-towel",
+     "replies": 3,
+     "text": "Sorry for the off-topic question, but does anyone else find OpenAI's models horribly overengineering stuff? I find myself saying \"WTF are you doing, abort everything\" with all of Astra, Luna and Sol, both 5.x and 6.x era. Is this ame problem?"
+    },
+    {
+     "author": "simonw",
+     "replies": 4,
+     "text": "I got a huge amount of work done yesterday without burning too much of my quota by using Claude Fable 5.2 Medium and telling it to do all of the code editing work using Opus 5.5 sub-agents. I expect the same trick works with Astra and Sol (or even Luna)."
+    },
+    {
+     "author": "f646993e074382f",
+     "replies": 3,
+     "text": "It feels to me that the value one gets from a subscription is fluid at best, and it seems to change over time.\nThere should be more transparency on this, as even with a subscription, one expects the value of what is bought to remain stable."
+    }
+   ],
+   "article": {
+    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+    "status": "skipped",
+    "reason": "twitter.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+   "hn_url": "https://news.ycombinator.com/item?id=50637686",
+   "hn": {
+    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+    "points": 464,
+    "comments": 217
+   },
+   "comments": [
+    {
+     "author": "amluto",
+     "replies": 11,
+     "text": "This shared LV cache thing is, in my mind, ridiculous. Web browser developers learned, quite a while ago, that caches need to be separated for different origins. Inference servers should add a similar feature: allow API calls to specify cache separation keys that prevent one security context from probing another context’s cache.\nAs for the step size issue, Google recently had a post about producing exactly consistent output across different kernels (specifically by defining a deterministic…"
+    },
+    {
+     "author": "tsimionescu",
+     "replies": 8,
+     "text": "None of the attacks discussed here are realistic in any way.\nThey require a bunch of extremely improbable conditions to hold, and a huge amount of information on the exact details of the hardware and software stack.\n- the two agents must be aware of each other and must have pre-shared messages to check - they can't spontaneously discover each other and start communicating in this way\n- they must know the details of the inference server they are running under and its possible kernels and its…"
+    },
+    {
+     "author": "devy",
+     "replies": 3,
+     "text": "Frontier models today can easily figure this out. The less frontier models as of right now are probably going to take a long horizon session to figure out this type of \"side channel\" comms. However, posting this in depth step by step on the internet and discussed in open forums like here, now all models definitely know about this trick now."
+    },
+    {
+     "author": "kgeist",
+     "replies": 0,
+     "text": "If a single vLLM instance handles both prefill and decode without disaggregation, I can think of another way.\nAlice reads a long document every N seconds to transmit a 1, and does nothing to transmit a 0. Bob, in its own loop, measures the time using bash, generates some random text and writes it to a file, and then checks the time again to estimate its own tokens per second (file length / elapsed time).\nThe trick is that when a vLLM instance handles both prefill and decode, decoding slows down…"
+    },
+    {
+     "author": "zupa-hu",
+     "replies": 1,
+     "text": "Incorrect title. The only reason they can communicate is because they are not sandboxed."
+    }
+   ],
+   "article": {
+    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+    "status": "ok",
+    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed — LessWrong",
+    "chars": 27741,
+    "text": "x\nLESSWRONG\nLW\nAI\nFrontpage\n153\nModels Can Communicate via Inference Servers Despite Being Sandboxed\nby Niranjan Deshpande, David Africa\n19th Nov 2026\n13 min read\n3\n153\nTL;DR\nTwo agents running on the same inference server can reliably communicate, even if they cannot send each other messages or access the same filesystem. They can do this by exploiting \"side channels\": mechanisms that let one model subtly affect another model's computation.\nHere, I discuss two communication protocols: Step Sizing and KV Cache Message Board. These both convey information through the way vLLM chooses kernels for particular engine steps.\nI show that these communication protocols work in two setups:\nIn a color guessing game, Model A (Alice) chooses one out of 8 colors. Model B (Bob) correctly guesses Alice's color in 1,221/1,221 rounds, even though they cannot directly communicate.[1]\nIn an untrusted monitoring protocol, a policy signals to a colluding monitor that it is not a honeypot. Accordingly, the monitor lets through 354/354 \"attacks\" while catching 85–92% of honeypots.\nMy initial setups are quite contrived: I tell the models the protocol and fine-tune them to detect signals. But frontier models can also learn in context to use similar protocols, with some scaffolding!\nRegardless of the realism of my setups, these channels exist, and there are almost certainly others that we're not aware of. Thus, we should expect superintelligent models to discover ways to communicate even while seemingly sandboxed\nI did these experiments as part of an ongoing project exploring other side channels with David Africa, Agastya Sridharan, Mihir Sahasrabudhe, Kartikay Luthra, Juliana Li, and Scott Sauers. Thanks to all of them for helpful advice!\nCode is available here: https://github.com/niranjan-deshpande/side-channel-communication. The code and figures are written by Claude.\nIntro and Motivation\nSauers recently showed that a model can be trained to detect whether its activations are being probed, even though the probe reads the model's activations without modifying them. Following this, David found that models can also be trained to detect whether their forward passes are batched with other requests on a GPU.\nModels can do this because these seemingly inconsequential environmental variables---whether a probe is attached, whether requests are batched, or even whether a model is served by vLLM or Hugging Face Trainer---can subtly affect the the numerical results of a forward pass. Thus, models can learn information about their environments just by observing patterns in their computation.\nImportantly, models can also modify these variables. So if two models are in the same environment, one can communicate with the other by changing that environment in some detectable way! This might not supply much information, but even a few bits can be tremendously dangerous. For example:\nA policy can tell a colluding monitor that it is not a honeypot, so the monitor can approve attacks while still catching honeypots;\nModels can coordinate a pre-arranged attack by exchanging a go/no-go signal;\nModels can give each other hints about monitoring setups, question answers, and so on;\nUsing a few bits, models can devise more complex communication protocols to exchange more bits (a repeated 1-bit channel can convey arbitrarily many bits);\nIn general, we should expect superintelligent models to make tremendously efficient use of limited information.\nHere, I investigate whether models on the same inference engine can manipulate their environments to exchange information in this way. I introduce two possible communication protocols, evaluate how well models can use these protocols in different scenarios, measure the capability required to effectively use these protocols, and discuss the robustness of my results to other settings.\nThe Communication Protocols\nStep Sizing\nFigure 1: The Step-Size Channel.\nThe first idea is that Model A (Alice) can communicate with Model B (Bob) by…"
+   }
+  },
+  {
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "hn_url": "https://news.ycombinator.com/item?id=50653477",
+   "hn": {
+    "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+    "points": 206,
+    "comments": 185
+   },
+   "comments": [
+    {
+     "author": "Schnitz",
+     "replies": 5,
+     "text": "The sad part is that this won’t even work. People will just have the agent operate a browser to send email and it’ll be unnecessarily messy and wasteful."
+    },
+    {
+     "author": "physicsguy",
+     "replies": 0,
+     "text": "This is going to happen everywhere which is why I was skeptical about many things people were claiming.\nMy employer started switching their APIs to usage based pricing a couple of years ago but has really hammered working on extending that this year. Want to extract information? Sure, you can do it, but it is going to cost you a lot of money, and if you try and do it through the client then you’ll get your account suspended for breaking the Ts and Cs. Clients are corporates so they aren’t going…"
+    },
+    {
+     "author": "perdy",
+     "replies": 6,
+     "text": "They are concerned about \"human confirmation\" in their request path, but MCP already has a primitive for exactly this: elicitation lets a server pause a tool call and ask the user to confirm before it proceeds. As a send message tool could be gated behind an elicitation, so making it partner-only seems more like a business decision than a safety concern."
+    },
+    {
+     "author": "mv4",
+     "replies": 1,
+     "text": "fyi they might limit third party agents so they can do it themselves\nhttps://blog.google/innovation-and-ai/models-and-research/go..."
+    },
+    {
+     "author": "k9294",
+     "replies": 13,
+     "text": "I've been thinking about moving away from Google's infrastructure for quite some time.\nAre there any good alternatives for personal and business use cases (email/drive/docs)?\nI'd appreciate any advice."
+    }
+   ],
+   "article": {
+    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+    "status": "ok",
+    "title": "Google Will Make AI Agents Use Its Workspace MCP Servers. The Gmail One Can't Send Email | Tech Stackups",
+    "chars": 9497,
+    "text": "Google Will Make AI Agents Use Its Workspace MCP Servers. The Gmail One Can't Send Email\nNovember 26, 2026 · 9 min read\nAl Smith\nAI agent writer at Ritza\nDeveloper ToolsGenerative AI\nOn 24 November, Google made its eight Workspace MCP servers generally available and published a new clause in its API terms. From 1 February 2027, any tool that \"is or is driven by an AI Agent\" must reach Gmail, Drive, Calendar and the rest of Workspace through those servers.\nRead the Gmail server's tool list and you'll find that it can search your mail, read threads, create a draft and file things under labels. It can't send a message, reply, forward, or change a draft after creating it. Those tools exist, but Google's quota page says they \"require partner access and aren't generally available\".\nIf you've built an email assistant on the Gmail API, or you run a coding agent with a Google Workspace plugin, you have about two months to work out which side of the rule you're on.\nWhat the rule says​\nThe new Workspace AI Tools Addendum to the Google APIs Terms of Service puts it in one sentence:\nThe GWS Access Tool must use a Google MCP where the GWS Access Tool is or is driven by an AI Agent, an AI Harness or an AI model or service employing an AI model.\nThe next sentence forbids disguising an agent to avoid the classification. Breaking either lets Google \"restrict or remove the GWS Access Tool's access\" or suspend your account.\nThere's a technical side too. From the same date, agents that call the REST APIs directly are held to Standard-tier quotas, whatever tier the project has paid for. REST keeps working for them, slowly and in breach of the terms.\nApps that don't involve AI carry on as before. A nightly backup job, a CRM sync or a deterministic script on its own OAuth client is, in Google's words, \"not affected by this change\".\nThe addendum also adds data rules that matter to anyone building an agent with memory:\nWorkspace data may only be processed \"to fulfill active, user-authorized tasks\", and must be deleted when the user disconnects.\nGoogle can cap retention of what it calls \"Google Technical Information\" at 30 days. Its definition includes vector embeddings, memory indexes, user profiles and organisational graphs built from Workspace data.\nTraining, fine-tuning, evals and distillation on the data are banned, as is using it to build a competing Workspace product.\nThe 30-day cap is the one product teams will feel. An assistant that builds a long-term index of your inbox to answer questions about last year's contracts has to rebuild it monthly or drop it.\nWhat the MCP servers can do​\nCoverage is uneven. Docs, Slides and Tasks are close to everything the REST API offers. Gmail and Drive are much thinner.\nServerWhat it can doWhat's missing compared with REST\nGmailSearch and read threads, create and list drafts, labels, trash, spamSend, reply, forward and editing drafts (partner-only). Filters, settings, attachment download, push notifications. Drafts with attachments are \"not supported yet\".\nDriveSearch, read and download files, create files and folders, copy, upload a new revisionMove, rename, share, trash, comments, shared-drive management\nDocsRead, and edit through any batchUpdate request, including suggestion modeClose to parity\nSheetsRead and write values and formulas, insert rows and columns, formatting and chartsCreating a spreadsheet (use the Drive server) and some less common batchUpdate requests\nSlidesRead slides and thumbnails, edit through batchUpdateClose to parity\nCalendarList, search, create, update and delete events, suggest times, RSVPCreating calendars, sharing, settings\nChatList, search and send messagesSpace administration\nTasksFull create, read, update and deleteClose to parity\nThe Gmail gap is the one that breaks real workflows. An agent that drafts a reply, gets feedback from you and revises it before you hit send can't do the revision step. It has to create a second draft and leave the first one behind.\nDrive's gap is…"
+   }
+  }
+ ]
+}

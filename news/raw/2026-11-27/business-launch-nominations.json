@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "6044ae4dc728bf0a",
+  "generated_at": "2026-11-26T23:56:28.526967Z",
+  "from_date": "2026-11-25",
+  "to_date": "2026-11-26",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-26T23:56:28.525699Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-26T23:56:28.525704Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-11-26T23:56:28.525573Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-26T23:56:28.525648Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "OpenAI cuts GPT-6.2",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 259,
+          "points": 460
+        }
+      },
+      "nomination": {
+        "name": "OpenAI cuts GPT-6.2",
+        "seed_score": 1078.5,
+        "summary": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50651117",
+            "source": "hackernews",
+            "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "body": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+            "author": "Herrera",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 460,
+              "comments": 259
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol",
+            "snippet": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50651117",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 72,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3295
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "Much GRH Lean Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 346,
+          "points": 545
+        }
+      },
+      "nomination": {
+        "name": "Much GRH Lean Anthropic",
+        "seed_score": 945.0482,
+        "summary": "Much shorter version of GRH Lean verification from Anthropic",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50648050",
+            "source": "hackernews",
+            "title": "Much shorter version of GRH Lean verification from Anthropic",
+            "body": "Much shorter version of GRH Lean verification from Anthropic",
+            "url": "https://github.com/lsernau/grh-lean",
+            "author": "nb-t",
+            "container": "Hacker News",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 545,
+              "comments": 346
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Much shorter version of GRH Lean verification from Anthropic",
+            "snippet": "Much shorter version of GRH Lean verification from Anthropic",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50648050",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.164
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google releases Cogentic papers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 369,
+          "points": 502
+        }
+      },
+      "nomination": {
+        "name": "Google releases Cogentic papers",
+        "seed_score": 923.835,
+        "summary": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50642086",
+            "source": "hackernews",
+            "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+            "body": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+            "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+            "author": "rgwohlbold",
+            "container": "Hacker News",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 502,
+              "comments": 369
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google releases Cogentic papers on integer factorization, di",
+            "snippet": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50642086",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 98,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1555
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Smart",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 290,
+          "points": 371
+        }
+      },
+      "nomination": {
+        "name": "Smart",
+        "seed_score": 701.0964,
+        "summary": "Smart people who give a shit use tools",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50639698",
+            "source": "hackernews",
+            "title": "Smart people who give a shit use tools",
+            "body": "Smart people who give a shit use tools",
+            "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
+            "author": "matthewsinclair",
+            "container": "Hacker News",
+            "published_at": "2026-11-25",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 371,
+              "comments": 290
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about Smart people who give a shit use tools",
+            "snippet": "Smart people who give a shit use tools",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50639698",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 64,
+            "source_quality": 0.8,
+            "local_rank_score": 0.128
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 218,
+          "points": 235
+        }
+      },
+      "nomination": {
+        "name": "OpenAI",
+        "seed_score": 679.5,
+        "summary": "OpenAI may be in cost control mode",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50652527",
+            "source": "hackernews",
+            "title": "OpenAI may be in cost control mode",
+            "body": "OpenAI may be in cost control mode",
+            "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+            "author": "seizethecheese",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 235,
+              "comments": 218
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about OpenAI may be in cost control mode",
+            "snippet": "OpenAI may be in cost control mode",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50652527",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 17,
+            "source_quality": 0.8,
+            "local_rank_score": 0.28750000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Google AI Agents Use MCP Servers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 185,
+          "points": 206
+        }
+      },
+      "nomination": {
+        "name": "Google AI Agents Use MCP Servers",
+        "seed_score": 586.5,
+        "summary": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50653477",
+            "source": "hackernews",
+            "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "body": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+            "author": "ritzaco",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 206,
+              "comments": 185
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "HN story about Google Will Make AI Agents Use Its MCP Servers. The Gmail On",
+            "snippet": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50653477",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.36150000000000004
+          }
+        ]
+      }
+    }
+  ]
+}

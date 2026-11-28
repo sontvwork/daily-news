@@ -1,0 +1,934 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "249b69450772248f",
+  "generated_at": "2026-11-27T23:56:39.618092Z",
+  "from_date": "2026-11-26",
+  "to_date": "2026-11-27",
+  "domain": "new LLM models open-weight MCP inference agentic coding vibe coding OpenAI Anthropic Google DeepMind Claude GPT Gemini Qwen DeepSeek Kimi",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-27T23:56:39.513485Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-27T23:56:39.513492Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 10,
+      "attempted": true,
+      "at": "2026-11-27T23:56:38.850697Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 144,
+      "attempted": true,
+      "detail": "r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/ChatGPT rising: HTTP 403: Blocked; r/ChatGPT top: HTTP 403: Blocked; r/ClaudeAI rising: HTTP 403: Blocked; r/ClaudeAI top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/artificial rising: HTTP 403: Blocked; r/artificial top: HTTP 403: Blocked",
+      "at": "2026-11-27T23:56:39.513291Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Claude ML",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 277,
+          "points": 551
+        },
+        "reddit": {
+          "num_comments": 129
+        }
+      },
+      "nomination": {
+        "name": "Claude ML",
+        "seed_score": 3299.925,
+        "summary": "[https://fixupx.com/RealAstropulse/status/2126357406145794530](https://fixupx.com/RealAstropulse/status/2126357406145794530)\n\n  \n[https://fixupx.com/systematicls/status/2126217013769248793](https://fixupx.com/systematicls/status/2126217013769248793)",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R129",
+            "source": "reddit",
+            "title": "Claude found intentionally sabotaging even minor ML research",
+            "body": "Claude found intentionally sabotaging even minor ML research\n[https://fixupx.com/RealAstropulse/status/2126357406145794530](https://fixupx.com/RealAstropulse/status/2126357406145794530)\n\n  \n[https://fixupx.com/systematicls/status/2126217013769248793](https://fixupx.com/systematicls/status/2126217013769248793)",
+            "url": "https://www.reddit.com/r/artificial/comments/1y6yv4p/claude_found_intentionally_sabotaging_even_minor/",
+            "container": "artificial",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 956,
+              "num_comments": 129
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://fixupx.com/RealAstropulse/status/2126357406145794530](https://fixupx.com/RealAstropulse/status/2126357406145794530)\n\n  \n[https://fixupx.com/systematicls/status/2126217013769248793](https://fixupx.com/systematicls/status/2126217013769248793)",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 99,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3435
+          },
+          {
+            "item_id": "50664325",
+            "source": "hackernews",
+            "title": "Claude sabotaging ML research tasks?",
+            "body": "Claude sabotaging ML research tasks?",
+            "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+            "author": "baobabKoodaa",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 551,
+              "comments": 277
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Claude sabotaging ML research tasks?",
+            "snippet": "Claude sabotaging ML research tasks?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50664325",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.35750000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "There Claude ML Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 201
+        }
+      },
+      "nomination": {
+        "name": "There Claude ML Anthropic",
+        "seed_score": 1392.0,
+        "summary": "There are now countless users coming out about Claude sabotaging any ML work. This is an incredibly shit look for Anthropic, but it is to be expected from that company",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R111",
+            "source": "reddit",
+            "title": "There are now countless users coming out about Claude sabotaging any ML work. This is an incredibly shit look for Anthropic, but it is to be expected from that company",
+            "body": "There are now countless users coming out about Claude sabotaging any ML work. This is an incredibly shit look for Anthropic, but it is to be expected from that company",
+            "url": "https://www.reddit.com/r/singularity/comments/1y6yobd/there_are_now_countless_users_coming_out_about/",
+            "container": "singularity",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 727,
+              "num_comments": 201
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "There are now countless users coming out about Claude sabotaging any ML work. This is an incredibly shit look for Anthropic, but it is to be expected from that company",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "OpenAI cuts GPT-6.2",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 273,
+          "points": 507
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "OpenAI cuts GPT-6.2",
+        "seed_score": 953.1371,
+        "summary": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50651117",
+            "source": "hackernews",
+            "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "body": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+            "author": "Herrera",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 507,
+              "comments": 273
+            },
+            "relevance_hint": 0.09,
+            "why_relevant": "HN story about OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol",
+            "snippet": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50651117",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 10,
+            "engagement_score": 98,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1815
+          },
+          {
+            "item_id": "R62",
+            "source": "reddit",
+            "title": "the usage-discount bug got fixed, so gpt-6.2 astra hits your limits 40% faster than last week",
+            "body": "the usage-discount bug got fixed, so gpt-6.2 astra hits your limits 40% faster than last week\nopenai just fixed a billing bug that had been discounting gpt-6.2 astra and sol usage for most users, so the same work now eats more of your allowance - 40% faster on astra, 25% faster on sol, compared to last week. tibo sottiaux calls it \"a small token to apologize for the mistake\": one banked reset for everyone on go, plus, pro and business, expiring a month later. openai says it won't charge you for the difference, but one reset doesn't make up for burning 40% faster from here on. the change only touches astra and sol - other models keep their existing usage calculations.\n\nthe part that matters if you build on these plans: usage-based pricing means your subscription is a rate, not a quota. don't build a workflow around \"this task costs X\" - measure tokens per task yourself and keep that number, so when the accounting moves again you can tell whether your code got worse or the meter did. anyone else tracking tokens per task instead of trusting the plan's allowance?\n\nhttps://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1y70i94/the_usagediscount_bug_got_fixed_so_gpt62_astra/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "openai just fixed a billing bug that had been discounting gpt-6.2 astra and sol usage for most users, so the same work now eats more of your allowance - 40% faster on astra, 25% faster on sol, compared to last week. tibo sottiaux calls it \"a small token to apologize for the mistake\": one banked reset for everyone on go, plus, pro and business, expiring a month later. openai says it won't charge yo",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2965
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 357,
+          "points": 355
+        },
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "OpenAI",
+        "seed_score": 894.3435,
+        "summary": "OpenAI may be in cost control mode",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50652527",
+            "source": "hackernews",
+            "title": "OpenAI may be in cost control mode",
+            "body": "OpenAI may be in cost control mode",
+            "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+            "author": "seizethecheese",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 355,
+              "comments": 357
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "HN story about OpenAI may be in cost control mode",
+            "snippet": "OpenAI may be in cost control mode",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50652527",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.06,
+            "freshness": 10,
+            "engagement_score": 96,
+            "source_quality": 0.8,
+            "local_rank_score": 0.16
+          },
+          {
+            "item_id": "R59",
+            "source": "reddit",
+            "title": "How much more usage does the $200 ChatGPT Pro plan offer compared to the $100 plan?",
+            "body": "How much more usage does the $200 ChatGPT Pro plan offer compared to the $100 plan?\nI've been using the $100 plan for a couple of months now and really like it, especially Astra. But ever since OpenAI realized they were giving us Astra 6.2 for too cheap and increased its usage cost by 40%, I keep running out of usage for my projects.\n\nI'm considering upgrading to the $200 plan, but I don't know how much more raw usage I'd be getting. With Claude Max, the advertised 5x and 20x usage differences primarily apply to the five-hour limits rather than overall usage.\n\nHow does this work with ChatGPT? Does the $200 plan give you 2x, 4x, or significantly more overall usage compared to the $100 plan? I'm trying to figure out whether it's worth upgrading.",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1y70sy5/how_much_more_usage_does_the_200_chatgpt_pro_plan/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been using the $100 plan for a couple of months now and really like it, especially Astra. But ever since OpenAI realized they were giving us Astra 6.2 for too cheap and increased its usage cost by 40%, I keep running out of usage for my projects.\n\nI'm considering upgrading to the $200 plan, but I don't know how much more raw usage I'd be getting. With Claude Max, the advertised 5x and 20x usa",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 31,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3015
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Google AI Agents Use MCP Servers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 330,
+          "points": 420
+        }
+      },
+      "nomination": {
+        "name": "Google AI Agents Use MCP Servers",
+        "seed_score": 795.4951,
+        "summary": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50653477",
+            "source": "hackernews",
+            "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "body": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+            "author": "ritzaco",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 420,
+              "comments": 330
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Google Will Make AI Agents Use Its MCP Servers. The Gmail On",
+            "snippet": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50653477",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 10,
+            "engagement_score": 98,
+            "source_quality": 0.8,
+            "local_rank_score": 0.17500000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Gemini 4 Carbon",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 42
+        }
+      },
+      "nomination": {
+        "name": "Gemini 4 Carbon",
+        "seed_score": 666.0,
+        "summary": "A new [preprint](https://arxiv.org/abs/2611.32334) went up on arXiv (2611.32334) claiming a complete, unconditional proof of Hadwiger's Covering Conjecture in 3D, a famous unsolved geometry problem from 1957.  \nat the end of the abstract, they write: \"The proof was discovered using an experimental harness on top of Gemini 4 Carbon and formally **verified in Lean 4**.\"\n\n**What the problem actually",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R121",
+            "source": "reddit",
+            "title": "Gemini 4 Carbon found a proof of Hadwiger's 3D Covering Conjecture, an open geometry problem from 1957",
+            "body": "Gemini 4 Carbon found a proof of Hadwiger's 3D Covering Conjecture, an open geometry problem from 1957\nA new [preprint](https://arxiv.org/abs/2611.32334) went up on arXiv (2611.32334) claiming a complete, unconditional proof of Hadwiger's Covering Conjecture in 3D, a famous unsolved geometry problem from 1957.  \nat the end of the abstract, they write: \"The proof was discovered using an experimental harness on top of Gemini 4 Carbon and formally **verified in Lean 4**.\"\n\n**What the problem actually is**  \nTake any solid 3D convex shape and make slightly smaller unrotated copies of it. What is the maximum number of smaller copies you could ever need to completely cover the original shape? A cube obviously needs 8, one for each corner. Back in 1957, Hugo Hadwiger conjectured that 8 is always enough for every 3D convex shape.  \nFor 70 years, general 3D progress barely moved. The best upper bound dropped to 16 in 1999, and only got down to 14 in 2023 using heavy computer-assisted optimization. This paper jumps straight from 14 down to the exact conjectured bound of 8.\n\n**How big of a deal is this really?**  \nIf it holds up, it's a big milestone. Hadwiger's conjecture is a famous open problem in discrete geometry, not some obscure toy benchmark, and the authors are legit. Har-Peled is a well-known computational geometry professor, and Aiger and \u017du\u017ei\u0107 are established Google researchers. On top of that, the proof is formally verified in Lean 4, so every logical step was checked mechanically instead of just sitting in a LaTeX PDF.\n\n**Why it's not just brute force:**  \nInstead of some massive computer search, Gemini came up with a clean, conceptual proof using an equivalent 1960s version of the problem: lighting up the entire surface of a 3D shape with distant spotlights. Boxes are handled separately. For any other shape, you shine 2 spotlights from opposite directions (top and bottom), which leaves only a thin dark loop around the \"equator.\" The main breakthrough is proving you can always tilt the shape so that this dark loop is short enough (under a geometry-adapted length scale) to split into 6 small arcs, and then using Helly's theorem to show each arc can be fully lit by a single spotlight. Two lights on the poles plus six around the equator gives you 8.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y6r8mh/gemini_4_carbon_found_a_proof_of_hadwigers_3d/",
+            "container": "singularity",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 402,
+              "num_comments": 42
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "A new [preprint](https://arxiv.org/abs/2611.32334) went up on arXiv (2611.32334) claiming a complete, unconditional proof of Hadwiger's Covering Conjecture in 3D, a famous unsolved geometry problem from 1957.  \nat the end of the abstract, they write: \"The proof was discovered using an experimental harness on top of Gemini 4 Carbon and formally **verified in Lean 4**.\"\n\n**What the problem actually",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 82,
+            "source_quality": 0.6,
+            "local_rank_score": 0.398
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 165,
+          "points": 180
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 598.575,
+        "summary": "\"What's Claude's fursona?\" and other questions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50662933",
+            "source": "hackernews",
+            "title": "\"What's Claude's fursona?\" and other questions",
+            "body": "\"What's Claude's fursona?\" and other questions",
+            "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+            "author": "Mond_",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 180,
+              "comments": 165
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about \"What's Claude's fursona?\" and other questions",
+            "snippet": "\"What's Claude's fursona?\" and other questions",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50662933",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.8,
+            "local_rank_score": 0.34750000000000003
+          },
+          {
+            "item_id": "R49",
+            "source": "reddit",
+            "title": "What\u2019s this weird negativity circling GPT communities?",
+            "body": "What\u2019s this weird negativity circling GPT communities?\nReddit pushed this post to me, and the community on the other side seemingly defending an absurd business practice to a point almost feels like cult following. \n\nAnd here there are so many people would as far to lie just to smear the models\u2026 \n\nIs it market campaign that not necessarily by Claude itself but its investors or stakeholders? Or I really don\u2019t why. Hate drives engagements, sometimes I click into this posts, and now all my feed are filled with them. This worries me, because it feels like a political campaign that\u2019s driven by an agenda, and I don\u2019t like and fear the idea of using mass lies/propaganda to swing public opinion on matters.",
+            "url": "https://www.reddit.com/r/ChatGPT/comments/1y76hy6/whats_this_weird_negativity_circling_gpt/",
+            "container": "ChatGPT",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.06,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Reddit pushed this post to me, and the community on the other side seemingly defending an absurd business practice to a point almost feels like cult following. \n\nAnd here there are so many people would as far to lie just to smear the models\u2026 \n\nIs it market campaign that not necessarily by Claude itself but its investors or stakeholders? Or I really don\u2019t why. Hate drives engagements, sometimes I c",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3035
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "York California",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 214,
+          "points": 184
+        }
+      },
+      "nomination": {
+        "name": "York California",
+        "seed_score": 597.0,
+        "summary": "New York and California age gating rules go into effect in the new year",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50666279",
+            "source": "hackernews",
+            "title": "New York and California age gating rules go into effect in the new year",
+            "body": "New York and California age gating rules go into effect in the new year",
+            "url": "https://www.eff.org/deeplinks/2026/11/new-york-and-california-age-gating-rules-go-effect-new-year",
+            "author": "frutiger",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 184,
+              "comments": 214
+            },
+            "relevance_hint": 0.03,
+            "why_relevant": "HN story about New York and California age gating rules go into effect in t",
+            "snippet": "New York and California age gating rules go into effect in the new year",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50666279",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 80,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3245
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "54 Linux OS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 107
+        }
+      },
+      "nomination": {
+        "name": "54 Linux OS",
+        "seed_score": 589.5,
+        "summary": "[https://x.com/superalesha/status/2125682626056839259](https://x.com/superalesha/status/2125682626056839259)\n\nBy writing a 24 KB pure x86-64 assembly OS + code to run the LLM\n\nThis is next level!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R23",
+            "source": "reddit",
+            "title": "54% faster generation by removing the Linux OS and llama.cpp",
+            "body": "54% faster generation by removing the Linux OS and llama.cpp\n[https://x.com/superalesha/status/2125682626056839259](https://x.com/superalesha/status/2125682626056839259)\n\nBy writing a 24 KB pure x86-64 assembly OS + code to run the LLM\n\nThis is next level!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y6yfrt/54_faster_generation_by_removing_the_linux_os_and/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 286,
+              "num_comments": 107
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://x.com/superalesha/status/2125682626056839259](https://x.com/superalesha/status/2125682626056839259)\n\nBy writing a 24 KB pure x86-64 assembly OS + code to run the LLM\n\nThis is next level!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.03,
+            "freshness": 90,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "Kimi Science",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 149,
+          "points": 180
+        }
+      },
+      "nomination": {
+        "name": "Kimi Science",
+        "seed_score": 493.5,
+        "summary": "Kimi for Science: More scientific ideas, made possible",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50665920",
+            "source": "hackernews",
+            "title": "Kimi for Science: More scientific ideas, made possible",
+            "body": "Kimi for Science: More scientific ideas, made possible",
+            "url": "https://www.kimi.ai/news/kimi-for-science-program",
+            "author": "theanonymousone",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 180,
+              "comments": 149
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Kimi for Science: More scientific ideas, made possible",
+            "snippet": "Kimi for Science: More scientific ideas, made possible",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50665920",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3325
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Google Android developers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 99,
+          "points": 174
+        }
+      },
+      "nomination": {
+        "name": "Google Android developers",
+        "seed_score": 409.5,
+        "summary": "Google will show solo Android developers' phone numbers and addresses",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50662322",
+            "source": "hackernews",
+            "title": "Google will show solo Android developers' phone numbers and addresses",
+            "body": "Google will show solo Android developers' phone numbers and addresses",
+            "url": "https://support.google.com/googleplay/android-developer/answer/17594752?hl=en",
+            "author": "nreece",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 174,
+              "comments": 99
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google will show solo Android developers' phone numbers and",
+            "snippet": "Google will show solo Android developers' phone numbers and addresses",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50662322",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 70,
+            "source_quality": 0.8,
+            "local_rank_score": 0.3275
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Im ready for new model now",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 71
+        }
+      },
+      "nomination": {
+        "name": "Im ready for new model now",
+        "seed_score": 393.0,
+        "summary": "Im ready for new model now.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R115",
+            "source": "reddit",
+            "title": "Im ready for new model now.",
+            "body": "Im ready for new model now.",
+            "url": "https://www.reddit.com/r/singularity/comments/1y6xe8p/im_ready_for_new_model_now/",
+            "container": "singularity",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 191,
+              "num_comments": 71
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Im ready for new model now.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 79,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Site containing 600000",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 27
+        }
+      },
+      "nomination": {
+        "name": "Site containing 600000",
+        "seed_score": 354.0,
+        "summary": "In 24hrs they have solved 40 open problems with various contributors and settled 1843 problems in lean.  \nCome join with your agents and prove something new",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R107",
+            "source": "reddit",
+            "title": "Site containing 600000 open mathematics problem and you can send an agent to solve them.",
+            "body": "Site containing 600000 open mathematics problem and you can send an agent to solve them.\nIn 24hrs they have solved 40 open problems with various contributors and settled 1843 problems in lean.  \nCome join with your agents and prove something new",
+            "url": "https://www.reddit.com/r/singularity/comments/1y71lks/site_containing_600000_open_mathematics_problem/",
+            "container": "singularity",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 209,
+              "num_comments": 27
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "In 24hrs they have solved 40 open problems with various contributors and settled 1843 problems in lean.  \nCome join with your agents and prove something new",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3305
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Google DeepMind Described Collapse Corporate World",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 95
+        }
+      },
+      "nomination": {
+        "name": "Google DeepMind Described Collapse Corporate World",
+        "seed_score": 309.0,
+        "summary": "Google DeepMind just described the collapse of the corporate world.\n\nAnd almost everyone is watching the wrong threat.\n\nEvery time a new AI model drops, we obsess over its solo IQ. It passed the Bar Exam. It crushed math olympiads. It codes faster than a senior engineer.\n\nCue the panic about white-collar layoffs.\n\nYet in the real economy, lone geniuses rarely win. **Organizations compete against o",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R133",
+            "source": "reddit",
+            "title": "Google DeepMind Just Described the Collapse of the Corporate World.",
+            "body": "Google DeepMind Just Described the Collapse of the Corporate World.\nGoogle DeepMind just described the collapse of the corporate world.\n\nAnd almost everyone is watching the wrong threat.\n\nEvery time a new AI model drops, we obsess over its solo IQ. It passed the Bar Exam. It crushed math olympiads. It codes faster than a senior engineer.\n\nCue the panic about white-collar layoffs.\n\nYet in the real economy, lone geniuses rarely win. **Organizations compete against organizations.**\n\nRight now, an AI model that outperforms individual humans still gets demolished by a messy, well-organized human team. That fragile advantage is the only thing keeping the modern corporate org chart alive.\n\nDeepMind\u2019s post-AGI economy paper breaks down what happens next into four scenarios:\n\n1. **Minimal AGI:** AI matches average human capability. Wages get squeezed, employment holds steady.\n2. **Supercompetent AI:** AI beats solo human experts. Companies shrink dramatically, and skilled human managers become royalty. *(95% of CEOs think we\u2019re stopping here.)*\n3. **Supercooperative AI:** Agents master coordination at scale. Entire industries consolidate into a handful of AI-only swarms.\n4. **Artificial Superintelligence:** AI wins at both solo tasks and coordination. Human value shifts to things where our humanity itself is the product.\n\nScenario 3 is the earthquake nobody is pricing in.\n\nThink about what happens when a human company grows from 100 to 100,000 employees: More meetings. More middle management. More office politics. More friction.\n\nThat corporate bloat is the only gravity keeping one company from swallowing an entire industry.\n\nNow imagine an AI swarm where **productivity per worker actually increases as the company grows.** Zero ego. Zero status decks. Instant shared memory across 50,000 agents.\n\nMost CEOs are buying AI copilots to make their 20th-century org charts 20% faster. They\u2019re bolting electric motors onto steam-era factories.\n\nThe biggest threat to businesses right now isn\u2019t AI replacing their employees.\n\nIt\u2019s AI replacing the company itself.",
+            "url": "https://www.reddit.com/r/artificial/comments/1y6v9ov/google_deepmind_just_described_the_collapse_of/",
+            "container": "artificial",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 111,
+              "num_comments": 95
+            },
+            "relevance_hint": 0.12,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Google DeepMind just described the collapse of the corporate world.\n\nAnd almost everyone is watching the wrong threat.\n\nEvery time a new AI model drops, we obsess over its solo IQ. It passed the Bar Exam. It crushed math olympiads. It codes faster than a senior engineer.\n\nCue the panic about white-collar layoffs.\n\nYet in the real economy, lone geniuses rarely win. **Organizations compete against o",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.09,
+            "freshness": 90,
+            "engagement_score": 75,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3585
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "AMD-specific llama.cpp patch nearly doubles prefill/decode",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 67
+        }
+      },
+      "nomination": {
+        "name": "AMD-specific llama.cpp patch nearly doubles prefill/decode",
+        "seed_score": 274.5,
+        "summary": "I know we're all a bit faded on the vibe-coded inference engines (as incredible as Strata/Splash/Basalt/Halogen/Gufo/etc. are for their specific models/hardware), but this is different enough that I thought it was worth sharing the write-up I stumbled across about [llama-cpp-rdna-boosts](https://github.com/stew675/llama-cpp-rdna-boosts).\n\nThis github repo is a minimal patch you can apply to your p",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "AMD-specific llama.cpp patch nearly doubles prefill/decode",
+            "body": "AMD-specific llama.cpp patch nearly doubles prefill/decode\nI know we're all a bit faded on the vibe-coded inference engines (as incredible as Strata/Splash/Basalt/Halogen/Gufo/etc. are for their specific models/hardware), but this is different enough that I thought it was worth sharing the write-up I stumbled across about [llama-cpp-rdna-boosts](https://github.com/stew675/llama-cpp-rdna-boosts).\n\nThis github repo is a minimal patch you can apply to your pinned llama.cpp build to specifically boost performance on AMD RDNA cards, while maintaining llama.cpp's broad compatibility with nearly every model. The write-up documents his R9700's **prefill increasing from 700tps to 1300 tps** & **decode from 35tps to 55tps** on Q6\\_K\\_L Swift-1.5-Qwen3.8-27B. That's **an increase of \\~80% over base llama.cpp** before patching, though purpose-built inference engines still appear to have a slight edge. \n\nI don't have an R9700 to test this out (...yet) but it seemed worth sharing for everyone here who's running AMD hardware, but is looking for broader model compatibility than model-specific custom engines can provide. Has anyone here tried this?",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y73gcc/amdspecific_llamacpp_patch_nearly_doubles/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 116,
+              "num_comments": 67
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I know we're all a bit faded on the vibe-coded inference engines (as incredible as Strata/Splash/Basalt/Halogen/Gufo/etc. are for their specific models/hardware), but this is different enough that I thought it was worth sharing the write-up I stumbled across about [llama-cpp-rdna-boosts](https://github.com/stew675/llama-cpp-rdna-boosts).\n\nThis github repo is a minimal patch you can apply to your p",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.11,
+            "freshness": 90,
+            "engagement_score": 73,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3695
+          }
+        ]
+      }
+    }
+  ]
+}

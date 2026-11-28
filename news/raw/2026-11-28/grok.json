@@ -1,0 +1,305 @@
+{
+ "date": "2026-11-28",
+ "source": "https://raw.githubusercontent.com/sontvwork/daily-news-inbox/main/grok/2026-11-28.json",
+ "fetched_at": "2026-11-27T23:56:02+00:00",
+ "inbox": {
+  "schema": "grok-inbox/2",
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28T05:25:00+07:00",
+  "status": "ok"
+ },
+ "status": "ok",
+ "checks": {
+  "items": 10,
+  "posts": 11,
+  "ok": 11,
+  "items_unverifiable": 0
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "GitHub Copilot CLI 1.0.117 fixes MCP approval leakage",
+   "category": "feature_update",
+   "event_time": "2026-11-27T13:04:00Z",
+   "primary_url": "https://github.com/github/copilot-cli/releases/tag/v1.0.117",
+   "facts": [
+    "Approving an MCP server's tools for the session or for a location no longer also approves Copilot's built-in requests, such as shell commands or memory stores, when the server's name matches a built-in permission type.",
+    "The approval still covers that server's tools, including after the session is resumed.",
+    "Added sandbox.userPolicy.network.extraCaCertificates to trust custom CA certificates for sandboxed commands through TLS-intercepting proxies."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/fernandogomes/status/2126424456583073931",
+     "official": false,
+     "author": "@fernandogomes",
+     "check": "ok",
+     "created_at": "2026-11-27T21:14:32Z",
+     "text": "GitHub Copilot CLI 1.0.117 came out this morning with a permission fix worth knowing about.\n\nBefore it, approving an MCP server's tools for the session or for a location could also approve Copilot's own built-in requests, like shell commands or memory stores, when the server's name matched a built-in permission type. Now the approval covers only that server's tools.\n\nWhen you approve an MCP server for a whole session, do you know exactly what that approval covers?",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 5
+    },
+    {
+     "url": "https://x.com/thomas_rehmer/status/2126398649550942423",
+     "official": false,
+     "author": "@thomas_rehmer",
+     "check": "ok",
+     "created_at": "2026-11-27T19:31:59Z",
+     "text": "GitHub Copilot CLI 1.0.117, the AI coding agent that works in your terminal, changes how far a single yes from you reaches.\n\nUntil now, allowing the tools of an MCP server (an add-on that gives the agent extra tools) also allowed shell commands (commands that run directly on your computer), when the add-on's name matched one of Copilot's built-in permission types.\n\nNow that yes covers the add-on's own tools, also when you pick the session up again, and no longer Copilot's built-in requests.\n\nThink of an add-on that happens to share its name with a built-in permission: allowing it no longer lets the agent run shell commands as well.\n\nA yes now belongs to the add-on it was given for, not to a name that happens to match.\n\nhttps://github.com/github/copilot-cli/releases/tag/v1.0.117",
+     "likes": 1,
+     "retweets": 0,
+     "replies": 2,
+     "views": 39
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 2,
+   "title": "Antigravity CLI 1.5.18 resolves file:/// permission gaps and image handling",
+   "category": "feature_update",
+   "event_time": "2026-11-26T05:52:00Z",
+   "primary_url": "https://github.com/google-antigravity/antigravity-cli/releases/tag/1.5.18",
+   "facts": [
+    "Fixed the agent attaching truncated or corrupt images to the conversation when viewing files; it now rejects them with an error, so a half-written image no longer makes later model requests fail and retry.",
+    "Fixed file permission rules and approval prompts not applying to files the agent reads or edits through file:/// URIs; those paths now resolve to the real file before permissions are checked.",
+    "Fixed plugins not loading on Windows when your workspace is on a different drive than your Antigravity configuration directory."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/erintwalsh_/status/2126411148584968475",
+     "official": true,
+     "author": "@erintwalsh_",
+     "check": "ok",
+     "created_at": "2026-11-27T20:21:39Z",
+     "text": "Check out the latest Antigravity CLI v1.5.13 - v1.5.18 releases! https://x.com/i/article/2126410111740694528",
+     "likes": 304,
+     "retweets": 14,
+     "replies": 29,
+     "views": 24759
+    },
+    {
+     "url": "https://x.com/logbydavid/status/2126441812751450169",
+     "official": false,
+     "author": "@logbydavid",
+     "check": "ok",
+     "created_at": "2026-11-27T22:23:30Z",
+     "text": "Antigravity CLI v1.5.18 has added two new model names to its list: nemosreef and pureprism. 👀\n\nGoogle is also planning to introduce banked resets, similar to the mechanism already available in Codex.\n\nGoogle is unstoppable.",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 24
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 3,
+   "title": "OpenCode 2.4.2 limits Always allow web fetches and adds GPT-6.2 prompts",
+   "category": "feature_update",
+   "event_time": "2026-11-26T00:59:00Z",
+   "primary_url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.2",
+   "facts": [
+    "\"Always allow\" for a web fetch allows that site only. It used to allow every URL.",
+    "GPT-6.2 Sol and Astra, and the gpt-latest aliases, use a system prompt written for GPT-6.2.",
+    "generate_image and generate_video run inside Code Mode instead of as top-level tools, so their definitions no longer add about 700 tokens to every request."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  },
+  {
+   "id": 4,
+   "title": "Pydantic launches Pax, a plugin-first terminal coding agent",
+   "category": "tool_launch",
+   "event_time": "2026-11-25T20:15:08Z",
+   "primary_url": "https://pydantic.dev/articles/pax-harness-beta",
+   "facts": [
+    "Pax is the official Pydantic AI coding agent for your terminal, built on the Harness SDK.",
+    "Everything in Pax is a plugin, including the coding agent itself.",
+    "You can run your own Pydantic AI agent with pax --agent."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/pydantic/status/2125684732532777140",
+     "official": true,
+     "author": "@pydantic",
+     "check": "ok",
+     "created_at": "2026-11-25T20:15:08Z",
+     "text": "We just released Pax, the official Pydantic AI coding agent for your terminal.\n\nEverything in it is a plugin, even the coding agent. Already built your own? Run it with pax --agent, then ship the same Agent in your service.\n\nuvx pydantic-ai-pax\n\nhttps://pydantic.io/AQyc8",
+     "likes": 271,
+     "retweets": 30,
+     "replies": 36,
+     "views": 24163
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 5,
+   "title": "enhance-qa brings independent QA teams inside coding agents",
+   "category": "tool_launch",
+   "event_time": "2026-11-27T22:17:25Z",
+   "primary_url": "https://github.com/rohanvijaykumar/enhance-qa",
+   "facts": [
+    "A scout maps every screen and control and writes the test checklist.",
+    "Only the fixer touches your code. Nobody grades their own work.",
+    "Works with Claude Code and Codex, plus Cursor, GitHub Copilot, Gemini CLI and Antigravity."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/rohanvijaykumar/status/2126440282845564997",
+     "official": true,
+     "author": "@rohanvijaykumar",
+     "check": "ok",
+     "created_at": "2026-11-27T22:17:25Z",
+     "text": "Your coding agent is grading its own homework.\n\nIt writes the feature, tests it, fixes what fails, then tells you it's ready to ship. Of course it passes.\n\nI started in QA, testing DVD and Blu-ray menus. Every disc went through the same cycle: a smoke test when a build arrived, a full regression pass on the first build, confirmation testing on every fix, regression around whatever changed, then a release-candidate pass and sign-off.\n\nAnd one rule was never broken: whoever fixes a bug never gets to close it.\n\nCoding agents skip almost all of that. So I built enhance-qa, a QA team inside your coding agent:\n\n→ A scout maps every screen and control and writes the test checklist\n→ Testers run black-box and exploratory tests like real users, with evidence for every bug\n→ A fresh verifier reproduces every bug before it's filed, then does confirmation testing on every fix\n→ A fixer makes one commit per bug, starting from a failing test\n→ A lead runs the pass and gives you a straight go/no-go\n\nOnly the fixer touches your code. Nobody grades their own work.\n\nIt also keeps the build-by-build rhythm. A qa/ record lives in your repo, so each new build gets a smoke test, fix verification and regression testing scoped to what changed (halo testing). Before you ship, a release pass runs full regression and ends in a go/no-go report.\n\nIt tests web apps, iOS and Android, desktop apps, CLIs, APIs, browser extensions, bots, games and AI features.\n\nBugs only, never feature wishes. It asks before touching data, auth or payments, and never pushes or deploys.\n\nWorks with Claude Code and Codex, plus Cursor, GitHub Copilot, Gemini CLI and Antigravity.\n\nFree and open source:\nhttp://github.com/rohanvijaykumar/enhance-qa",
+     "likes": 6,
+     "retweets": 0,
+     "replies": 10,
+     "views": 260
+    },
+    {
+     "url": "https://x.com/rohanvijaykumar/status/2126441377685012935",
+     "official": true,
+     "author": "@rohanvijaykumar",
+     "check": "ok",
+     "created_at": "2026-11-27T22:21:46Z",
+     "text": "Get it here:\n\nhttps://github.com/rohanvijaykumar/enhance-qa",
+     "likes": 0,
+     "retweets": 0,
+     "replies": 0,
+     "views": 19,
+     "reply_to": "@rohanvijaykumar"
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 6,
+   "title": "Community highlights Claude Code /ship and steward PR repair loops",
+   "category": "discussion",
+   "event_time": "2026-11-27T22:19:59Z",
+   "primary_url": null,
+   "facts": [
+    "/code-review before the PR. add --fix and it repairs what it finds.",
+    "/ship when the change is done. opens the PR, reviews it, then keeps watching.",
+    "/steward 41 for a PR that already exists. starts the watch, skips the opening review."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/Klarsynx/status/2126440929414553929",
+     "official": false,
+     "author": "@Klarsynx",
+     "check": "ok",
+     "created_at": "2026-11-27T22:19:59Z",
+     "text": "HOLY F*CK. YOUR PR IS NOT THE FINISH LINE. IT'S WHERE CLAUDE CODE STARTS WORKING.\n\nmost devs open a pull request and walk away\n\nthen CI goes red. a reviewer drops six comments. the branch sits for a week and rots\n\nclaude code has a whole workflow for the part everyone skips, and almost nobody uses it\n\n4 COMMANDS. 1 REPAIR LOOP. ONE HUMAN MERGE GATE.\n\n→ /code-review before the PR. add --fix and it repairs what it finds\n→ /ship when the change is done. opens the PR, reviews it, then keeps watching\n→ /steward 41 for a PR that already exists. starts the watch, skips the opening review\n→ /ship stop ends it. /tasks shows what's still running\n\nTHE WATCH IS A LOOP, NOT A PROMISE\n\nreview → watch CI and comments → small patch → fresh evidence → back to watching\n\nevery new push, every new check, every new comment restarts the loop\n\nand it never merges for you. when it's ready, the decision goes to your repo rules and a human\n\nnext action ∈ { inspect, patch, verify, wait, escalate }\n\nTHE GUARDRAILS THAT MAKE IT SAFE\n\n→ redesigns, scope creep and security questions go straight back to the author\n→ three pushes on one issue, then a human takes over\n→ up to seven days per watch, then it stops and tells you why\n\nBEFORE YOU WALK AWAY\n\n→ github cli signed in, branch checked out, next task in a separate worktree\n→ machine awake, session open. watches spend your quota\n→ on native windows the PR still opens, but the local watch won't start\n\nNOW THE PART THAT ACTUALLY COMPOUNDS: STOP FIXING THE SAME BUG TWICE\n\n5 FILES. EACH ONE HAS EXACTLY ONE READER.\n\n→ CLAUDE.md: shared conventions. claude code and local review read it\n→ REVIEW.md: severity and exclusions. only managed review reads it, /code-review doesn't\n→ skills/verify: how to actually run and check the change\n→ skills/steward: house rules for keeping a PR alive\n→ approvals.yml: who signs off on which paths. read from the default branch, so a PR can't approve its own policy\n\nTHE RULE FOR WRITING RULES:\n\nrule = repeated friction +…",
+     "likes": 17,
+     "retweets": 3,
+     "replies": 5,
+     "views": 395,
+     "quote": {
+      "author": "@beamnxw",
+      "text": "Your agent can spend all night repeating the same mistake\n\nPrompt, Context, Loop, and Harness Engineering\n\nFind the failing layer and learn exactly what to fix\n\nThe four-layer playbook for agents that finish the job ↓ https://x.com/i/article/2119469016557187072"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 7,
+   "title": "Developers share Grok Bot workflows that hire Cursor cloud agents",
+   "category": "trend",
+   "event_time": "2026-11-27T22:23:29Z",
+   "primary_url": null,
+   "facts": [
+    "Grok Bot can now hire Cursor agents as its own developers.",
+    "Cloud Agents must be on in Cursor and your repo connected.",
+    "Never merge without my OK."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/choopyplug1/status/2126441810914422945",
+     "official": false,
+     "author": "@choopyplug1",
+     "check": "ok",
+     "created_at": "2026-11-27T22:23:29Z",
+     "text": "HOLY SH*T... Grok Bot can now hire Cursor agents as its own developers\n\none text from your phone and a whole AI dev team starts coding. you never open the IDE again\n\nit's already inside your Grok Bot. you just never told it to do this\n\nhow to set it up in 2 minutes:\n\n1. spin up a new Grok Bot. this one never writes code, it only gives orders\n\n2. paste the prompt from the reply. now it knows how to brief, check and reject\n\n3. hand it your repo. it splits every ask into tasks and hires an agent for each\n\n4. text it what you want built. then go to sleep\n\nit checks every screenshot and sends back bad code before you ever see it\n\nyou stop writing code. you just say \"ok\" to the PR\n\nprompt in the reply ↓",
+     "likes": 24,
+     "retweets": 4,
+     "replies": 10,
+     "views": 1629,
+     "quote": {
+      "author": "@choopyplug1",
+      "text": "20 Grok Bots that cost less to run than 3\n\nmost people burn their weekly limit in 3 days. this system gets cheaper with every bot you add\n\n→ idle is free\n→ pointers, not payloads\n→ code over thinking\n\n20 bots, every prompt inside ↓ https://x.com/i/article/2124519992410460161"
+     }
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 8,
+   "title": "Antigravity DevRel summarizes CLI releases v1.5.13 to v1.5.18",
+   "category": "feature_update",
+   "event_time": "2026-11-27T20:21:39Z",
+   "primary_url": "https://github.com/google-antigravity/antigravity-cli/releases",
+   "facts": [
+    "Check out the latest Antigravity CLI v1.5.13 - v1.5.18 releases."
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/erintwalsh_/status/2126411148584968475",
+     "official": true,
+     "author": "@erintwalsh_",
+     "check": "ok",
+     "created_at": "2026-11-27T20:21:39Z",
+     "text": "Check out the latest Antigravity CLI v1.5.13 - v1.5.18 releases! https://x.com/i/article/2126410111740694528",
+     "likes": 304,
+     "retweets": 14,
+     "replies": 29,
+     "views": 24759
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 9,
+   "title": "Real Python publishes guide on GitHub Copilot CLI autonomy and /yolo",
+   "category": "discussion",
+   "event_time": "2026-11-27T21:30:26Z",
+   "primary_url": "https://realpython.com/github-copilot-cli/",
+   "facts": [
+    "How much should GitHub Copilot CLI, the coding agent in your terminal, do without asking you first?",
+    "Do you approve every command a coding agent runs, or turn on /yolo?"
+   ],
+   "x_posts": [
+    {
+     "url": "https://x.com/realpython/status/2126428460591546686",
+     "official": true,
+     "author": "@realpython",
+     "check": "ok",
+     "created_at": "2026-11-27T21:30:26Z",
+     "text": "How much should GitHub Copilot CLI, the coding agent in your terminal, do without asking you first?\n\n1. Why Autopilot can stall halfway\n\n2. What /yolo survives\n\n3. The mode that can't touch your files\n\n4. Where your CLAUDE.md has to live\n\n5. The rewind key\n\n🧵",
+     "likes": 4,
+     "retweets": 1,
+     "replies": 2,
+     "views": 1166
+    }
+   ],
+   "dropped_posts": []
+  },
+  {
+   "id": 10,
+   "title": "Claude Code 2.1.332 adds beta MCP server skills and PreSkillShellCommand hook",
+   "category": "feature_update",
+   "event_time": "2026-11-25T01:32:00Z",
+   "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+   "facts": [
+    "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names.",
+    "Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads."
+   ],
+   "x_posts": [],
+   "dropped_posts": []
+  }
+ ]
+}

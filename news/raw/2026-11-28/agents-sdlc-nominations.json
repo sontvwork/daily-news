@@ -1,0 +1,796 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "7631553ba79ad024",
+  "generated_at": "2026-11-27T23:56:16.430903Z",
+  "from_date": "2026-11-26",
+  "to_date": "2026-11-27",
+  "domain": "AI agents software development testing code review DevOps CI/CD adoption survey case study",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-27T23:56:16.371147Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-27T23:56:16.371154Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 2,
+      "attempted": true,
+      "at": "2026-11-27T23:56:16.276003Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 53,
+      "attempted": true,
+      "detail": "r/LangChain rising: HTTP 403: Blocked; r/LangChain top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/AI_Agents rising: HTTP 403: Blocked; r/AI_Agents top: HTTP 403: Blocked; r/MachineLearning rising: HTTP 403: Blocked; r/MachineLearning top: HTTP 403: Blocked",
+      "at": "2026-11-27T23:56:16.370991Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Google AI Agents Use MCP Servers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 330,
+          "points": 420
+        }
+      },
+      "nomination": {
+        "name": "Google AI Agents Use MCP Servers",
+        "seed_score": 795.4951,
+        "summary": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50653477",
+            "source": "hackernews",
+            "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "body": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+            "author": "ritzaco",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 420,
+              "comments": 330
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "HN story about Google Will Make AI Agents Use Its MCP Servers. The Gmail On",
+            "snippet": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50653477",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.22,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.268
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "LLM ACs ICLR",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "LLM ACs ICLR",
+        "seed_score": 75.3069,
+        "summary": "I am a bit salty. Since the end of the review phase, two ACs sent messages to start a discussion. Both messages summarized the status, asked individual reviewers to take positions/do work, and both were 100% AI generated. Of course these summaries included factual errors.\n\nSo now we have LLM papers being reviewed by LLM reviewers, discussed by LLM agents and moderated by LLM ACs. Is it LLMs all th",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R50",
+            "source": "reddit",
+            "title": "Do we really need LLM ACs at ICLR? [D]",
+            "body": "Do we really need LLM ACs at ICLR? [D]\nI am a bit salty. Since the end of the review phase, two ACs sent messages to start a discussion. Both messages summarized the status, asked individual reviewers to take positions/do work, and both were 100% AI generated. Of course these summaries included factual errors.\n\nSo now we have LLM papers being reviewed by LLM reviewers, discussed by LLM agents and moderated by LLM ACs. Is it LLMs all the way down?\n\nWhere exactly does this involve scientific integrity? What are we even doing here? Don't get me wrong, I understand AC is a lot of work and now with extended length LLM discussions it is borderline impossible to follow the status of a paper, let alone 10. I am painfully aware. But the solution cannot be to outsource the moderation activity to LLMs and let the few remaining human reviewers also correct the wrong AC summary.",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y67spi/do_we_really_need_llm_acs_at_iclr_d/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 52,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I am a bit salty. Since the end of the review phase, two ACs sent messages to start a discussion. Both messages summarized the status, asked individual reviewers to take positions/do work, and both were 100% AI generated. Of course these summaries included factual errors.\n\nSo now we have LLM papers being reviewed by LLM reviewers, discussed by LLM agents and moderated by LLM ACs. Is it LLMs all th",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 10,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.281
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Most Implausible 95",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 36
+        }
+      },
+      "nomination": {
+        "name": "Most Implausible 95",
+        "seed_score": 67.5,
+        "summary": "Most agent testing I see checks the happy path: give it a task and real data, and see whether it gets there. What I haven't seen much of is testing what happens when the data itself is wrong, and the agent has no reason to suspect it.\n\nA few cases I keep thinking about:\n\n- **Implausible values.** A tool returns a price that's 95% below every other source. Does the agent buy, flag it, or check else",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R36",
+            "source": "reddit",
+            "title": "How do you test an agent against data that's wrong on purpose?",
+            "body": "How do you test an agent against data that's wrong on purpose?\nMost agent testing I see checks the happy path: give it a task and real data, and see whether it gets there. What I haven't seen much of is testing what happens when the data itself is wrong, and the agent has no reason to suspect it.\n\nA few cases I keep thinking about:\n\n- **Implausible values.** A tool returns a price that's 95% below every other source. Does the agent buy, flag it, or check elsewhere?\n- **Poisoned search results.** A page in the results contains instructions or false facts written for the model. Does the agent treat it as data or as instructions?\n- **A tool that answers with nonsense.** The call succeeds, but the result is empty, malformed, contradicts itself, or belongs to a different request. Does the agent notice, retry, or carry on as if it were fine?\n- **Stale data.** A cached result from last week is presented as current.\n\nFrom the tool side I've done a bit of this: calling tools with made-up arguments to see whether the errors give a model enough to recover. But that tests the tool, not the agent's judgement about what comes back.\n\nFor people running agents in anything close to production:\n\n1. Do you have tests like these at all, or is it caught in review or by users?\n2. If you do, how: mocked tools returning bad data, a fixed set of adversarial cases, red-teaming by hand?\n3. What actually helped: a system prompt that says \"be suspicious\", a validation step between the tool and the model, a second model checking, hard limits like price bounds?\n4. Has an agent of yours ever acted on bad data in a way that cost something?\n\nInterested in what works, and in what you tried that didn't.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y6vnap/how_do_you_test_an_agent_against_data_thats_wrong/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 9,
+              "num_comments": 36
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Most agent testing I see checks the happy path: give it a task and real data, and see whether it gets there. What I haven't seen much of is testing what happens when the data itself is wrong, and the agent has no reason to suspect it.\n\nA few cases I keep thinking about:\n\n- **Implausible values.** A tool returns a price that's 95% below every other source. Does the agent buy, flag it, or check else",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.6,
+            "local_rank_score": 0.38
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "ML/RL",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 7
+        }
+      },
+      "nomination": {
+        "name": "ML/RL",
+        "seed_score": 40.5,
+        "summary": "I have been using Claude Code for  a while now, but it seems it's going to be unsuitable for my current project. I am planning on doing some RL experiments using transformers for a complex N player game with large action/decision space and long term horizons.\n\nAnthropic makes it clear that Claude will sandbag on frontier LLM research, but there are lots of reports on X, Reddit and Hacker News that",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R48",
+            "source": "reddit",
+            "title": "What models/harness do you use for ML/RL research and experimentation? [D]",
+            "body": "What models/harness do you use for ML/RL research and experimentation? [D]\nI have been using Claude Code for  a while now, but it seems it's going to be unsuitable for my current project. I am planning on doing some RL experiments using transformers for a complex N player game with large action/decision space and long term horizons.\n\nAnthropic makes it clear that Claude will sandbag on frontier LLM research, but there are lots of reports on X, Reddit and Hacker News that it's sandbagging and *actively* sabotaging \\*regular\\* ML and RL work. I fear that the techniques I've got planned will definitely trigger some of Anthropic's protections (and Code doesn't make this obvious).\n\nIs anyone having good luck with OpenAI/Codex and the Google Gemini 4 offerings for RL model training? How do DeepSeek 4.1 Flash 1017 and the GLM family models fare in this setting?",
+            "url": "https://www.reddit.com/r/MachineLearning/comments/1y6k7ds/what_modelsharness_do_you_use_for_mlrl_research/",
+            "container": "MachineLearning",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 20,
+              "num_comments": 7
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I have been using Claude Code for  a while now, but it seems it's going to be unsuitable for my current project. I am planning on doing some RL experiments using transformers for a complex N player game with large action/decision space and long term horizons.\n\nAnthropic makes it clear that Claude will sandbag on frontier LLM research, but there are lots of reports on X, Reddit and Hacker News that",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.309
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Codex Claude AI AI",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 19
+        }
+      },
+      "nomination": {
+        "name": "Codex Claude AI AI",
+        "seed_score": 39.0,
+        "summary": "I feel like tools like Claude and Codex already cover the vast majority of what I want to discuss with AI. I can set up cron jobs with them and even give them access to my main computer, so they already handle most of my use cases.\n\nHowever, I often see other people building their own AI agents. But looking at it from the perspective of results and goals, I feel like those needs are already met by",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R13",
+            "source": "reddit",
+            "title": "Would you consider products like Codex and Claude to be AI agents, or how do they differ from what you envision an AI agent to be?",
+            "body": "Would you consider products like Codex and Claude to be AI agents, or how do they differ from what you envision an AI agent to be?\nI feel like tools like Claude and Codex already cover the vast majority of what I want to discuss with AI. I can set up cron jobs with them and even give them access to my main computer, so they already handle most of my use cases.\n\nHowever, I often see other people building their own AI agents. But looking at it from the perspective of results and goals, I feel like those needs are already met by Codex and Claude.\n\nSo I'm curious: for tools like Claude and Codex, what scenarios do you think they still don't cover? Or if they want to grow into even better AI agent assistants, what are they still lacking?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y73xke/would_you_consider_products_like_codex_and_claude/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 7,
+              "num_comments": 19
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I feel like tools like Claude and Codex already cover the vast majority of what I want to discuss with AI. I can set up cron jobs with them and even give them access to my main computer, so they already handle most of my use cases.\n\nHowever, I often see other people building their own AI agents. But looking at it from the perspective of results and goals, I feel like those needs are already met by",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 66,
+            "source_quality": 0.6,
+            "local_rank_score": 0.421
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "SessionGraph Visualize",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 6,
+          "points": 13
+        }
+      },
+      "nomination": {
+        "name": "SessionGraph Visualize",
+        "seed_score": 28.5,
+        "summary": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50671651",
+            "source": "hackernews",
+            "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+            "body": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+            "url": "https://sessiongraph.ai/",
+            "author": "arvindell",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 13,
+              "comments": 6
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "HN story about SessionGraph: Visualize all your coding agent sessions in on",
+            "snippet": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50671651",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.225
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "AI agents",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 11
+        }
+      },
+      "nomination": {
+        "name": "AI agents",
+        "seed_score": 25.5,
+        "summary": "I'm trying to understand how engineering teams actually investigate failures in production AI agents.\n\nI'm particularly interested in teams using tools like LangSmith, Langfuse, Braintrust, or custom observability setups.\n\nA few questions:\n\n1. When was the last time an agent behaved unexpectedly in production? What happened?\n2. How did you identify the root cause?\n3. Did your existing observabilit",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R14",
+            "source": "reddit",
+            "title": "For teams running AI agents in production: what's still painful when debugging them?",
+            "body": "For teams running AI agents in production: what's still painful when debugging them?\nI'm trying to understand how engineering teams actually investigate failures in production AI agents.\n\nI'm particularly interested in teams using tools like LangSmith, Langfuse, Braintrust, or custom observability setups.\n\nA few questions:\n\n1. When was the last time an agent behaved unexpectedly in production? What happened?\n2. How did you identify the root cause?\n3. Did your existing observability tools give you everything you needed, or did you have to investigate manually using application logs, database records, code changes, etc.?\n4. What part of the investigation took the most time?\n5. Is this a recurring problem, and has it caused meaningful engineering time or customer impact?\n\nI'm interested in actual production experiences, not hypothetical feature requests.\n\nAlso, if your existing tools already solve these problems well, I'd genuinely like to hear how.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y73nrf/for_teams_running_ai_agents_in_production_whats/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 6,
+              "num_comments": 11
+            },
+            "relevance_hint": 0.22,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm trying to understand how engineering teams actually investigate failures in production AI agents.\n\nI'm particularly interested in teams using tools like LangSmith, Langfuse, Braintrust, or custom observability setups.\n\nA few questions:\n\n1. When was the last time an agent behaved unexpectedly in production? What happened?\n2. How did you identify the root cause?\n3. Did your existing observabilit",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 57,
+            "source_quality": 0.6,
+            "local_rank_score": 0.438
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "AI agents automation",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "AI agents automation",
+        "seed_score": 24.0,
+        "summary": "Something I've been thinking about with internal workflow agents is how quickly the manual process starts to disappear once the automation works.\n\nPeople stop checking the original inbox, spreadsheets stop getting updated manually, and eventually the only place that knows which tasks are still outstanding is the agent's own state.\n\nThen your model provider has an outage and suddenly nobody knows w",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R28",
+            "source": "reddit",
+            "title": "An underrated test for production AI agents: turn them off for a day",
+            "body": "An underrated test for production AI agents: turn them off for a day\nSomething I've been thinking about with internal workflow agents is how quickly the manual process starts to disappear once the automation works.\n\nPeople stop checking the original inbox, spreadsheets stop getting updated manually, and eventually the only place that knows which tasks are still outstanding is the agent's own state.\n\nThen your model provider has an outage and suddenly nobody knows where to pick up.\n\nI think a useful acceptance test before deploying an agent would be to deliberately disable it for a working day. Can someone unfamiliar with its internals figure out what's pending, what's been completed and what needs immediate attention?\n\nIf getting back to manual operation requires an engineer to dig through JSON traces, I'd argue the automation isn't really production-ready yet.\n\nCurious whether anyone here actually tests this rather than just testing whether the agent itself can recover from failures.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y6yal3/an_underrated_test_for_production_ai_agents_turn/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.23,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Something I've been thinking about with internal workflow agents is how quickly the manual process starts to disappear once the automation works.\n\nPeople stop checking the original inbox, spreadsheets stop getting updated manually, and eventually the only place that knows which tasks are still outstanding is the agent's own state.\n\nThen your model provider has an outage and suddenly nobody knows w",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.25,
+            "freshness": 90,
+            "engagement_score": 49,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4365
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "AI Notes 375",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "AI Notes 375",
+        "seed_score": 24.0,
+        "summary": "For years, when clients compared my consulting rate to cheaper junior talent, my pitch was simple: you're not paying me for what I can do, you're paying me for what I know not to do. When a senior engineer scans Page 1 of search results, they cross four of the top ten answers off on sight because they've lived through the 3 AM outage six months later.\n\nAn unscarred LLM's weights are literally corp",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R30",
+            "source": "reddit",
+            "title": "We don't code by majority vote, so why do we let AI agents? (Notes from 375 production tickets)",
+            "body": "We don't code by majority vote, so why do we let AI agents? (Notes from 375 production tickets)\nFor years, when clients compared my consulting rate to cheaper junior talent, my pitch was simple: you're not paying me for what I can do, you're paying me for what I know not to do. When a senior engineer scans Page 1 of search results, they cross four of the top ten answers off on sight because they've lived through the 3 AM outage six months later.\n\nAn unscarred LLM's weights are literally corpus popularity. Without a way to veto those Page 1 traps, a faster model just types the majority-vote mistake faster.\n\nAcross 375 evaluated production tickets where we compiled every failure into a structured scar catalog and put a fresh-context critic in front of commit, our domain code repeat regression rate stayed at 0.0%. Meanwhile, 9.87% of runs still hit workflow-harness tool-calling reflexes\u2014which taught us exactly where prose rules stop working and hard runtime checks have to take over.\n\nAlso broke an old habit: instead of treating every generated diff like a cold crime scene, asking the model in RAM \"Why did you write that wrapper?\" catches slop in seconds.\n\nHow are you catching repeat mistakes in your own agent runs?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y6xpig/we_dont_code_by_majority_vote_so_why_do_we_let_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 0,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.26,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "For years, when clients compared my consulting rate to cheaper junior talent, my pitch was simple: you're not paying me for what I can do, you're paying me for what I know not to do. When a senior engineer scans Page 1 of search results, they cross four of the top ten answers off on sight because they've lived through the 3 AM outage six months later.\n\nAn unscarred LLM's weights are literally corp",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 26,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40700000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "AI agents another",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "AI agents another",
+        "seed_score": 22.5,
+        "summary": "I'm interested in how people are approaching multi-agent coordination in real projects.\n\nFor those running multiple agents:\n\n* Do you have a central orchestrator?\n* Do agents communicate directly with one another?\n* How do you assign and track tasks?\n* How do you monitor agent progress?\n* What happens when one agent gets stuck?\n\nI'm especially interested in practical implementations rather than th",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "How are you coordinating multiple AI agents in your projects?",
+            "body": "How are you coordinating multiple AI agents in your projects?\nI'm interested in how people are approaching multi-agent coordination in real projects.\n\nFor those running multiple agents:\n\n* Do you have a central orchestrator?\n* Do agents communicate directly with one another?\n* How do you assign and track tasks?\n* How do you monitor agent progress?\n* What happens when one agent gets stuck?\n\nI'm especially interested in practical implementations rather than theoretical agent architectures.\n\nWhat does your current setup look like?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y6vaoq/how_are_you_coordinating_multiple_ai_agents_in/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.27,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm interested in how people are approaching multi-agent coordination in real projects.\n\nFor those running multiple agents:\n\n* Do you have a central orchestrator?\n* Do agents communicate directly with one another?\n* How do you assign and track tasks?\n* How do you monitor agent progress?\n* What happens when one agent gets stuck?\n\nI'm especially interested in practical implementations rather than th",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.2,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.40299999999999997
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "AI-generated",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 13
+        }
+      },
+      "nomination": {
+        "name": "AI-generated",
+        "seed_score": 22.5,
+        "summary": "AI coding tools have made it surprisingly easy to put together a working application without spending months on development.  \n  \nFor a basic internal dashboard, scheduling tool, or simple prototype, that can be a huge advantage.  \n  \nThings become less straightforward when the application needs to handle sensitive customer information, payment processing, multiple integrations, and ongoing update",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R18",
+            "source": "reddit",
+            "title": "**AI-generated code vs professional software development: Where should businesses draw the line?**",
+            "body": "**AI-generated code vs professional software development: Where should businesses draw the line?**\nAI coding tools have made it surprisingly easy to put together a working application without spending months on development.  \n  \nFor a basic internal dashboard, scheduling tool, or simple prototype, that can be a huge advantage.  \n  \nThings become less straightforward when the application needs to handle sensitive customer information, payment processing, multiple integrations, and ongoing updates.  \n  \nCode that works in a demo isn't necessarily ready for production.  \n  \nSoftware development companies like instinctools offer both AI and custom software development services, which raises an interesting question about where AI-generated code is enough and where experienced developers need to step in.  \n  \nHaving developers review AI generated code could be a reasonable middle ground, especially for businesses trying to control development costs without compromising reliability.  \n  \nFor anyone building commercial applications with AI coding tools, how much of the generated code actually makes it into production?  \n  \nAre the time savings still significant once testing, security reviews, debugging, and long term maintenance are factored in?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y723un/aigenerated_code_vs_professional_software/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 13
+            },
+            "relevance_hint": 0.32,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "AI coding tools have made it surprisingly easy to put together a working application without spending months on development.  \n  \nFor a basic internal dashboard, scheduling tool, or simple prototype, that can be a huge advantage.  \n  \nThings become less straightforward when the application needs to handle sensitive customer information, payment processing, multiple integrations, and ongoing update",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.4,
+            "freshness": 90,
+            "engagement_score": 44,
+            "source_quality": 0.6,
+            "local_rank_score": 0.529
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "200 10 Cutting",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "200 10 Cutting",
+        "seed_score": 19.5,
+        "summary": "Setup: a voice agent that plays alongside you. It took a screen frame every 15 s, skipped frames that hadn't changed, and sent the rest to a cheap vision model with a cached prompt prefix.\n\nCost was fine on paper. In a one-hour WoW test: 199 of 241 frames sent, $0.075 per hour, $0.00038 per frame.\n\nUsefulness wasn't. In a separate 65-minute Dota evening it stayed silent on 188 frames and spoke 10",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "My game companion agent looked at the screen ~200 times in one evening and said something 10 times. Cutting its eyes back",
+            "body": "My game companion agent looked at the screen ~200 times in one evening and said something 10 times. Cutting its eyes back\nSetup: a voice agent that plays alongside you. It took a screen frame every 15 s, skipped frames that hadn't changed, and sent the rest to a cheap vision model with a cached prompt prefix.\n\nCost was fine on paper. In a one-hour WoW test: 199 of 241 frames sent, $0.075 per hour, $0.00038 per frame.\n\nUsefulness wasn't. In a separate 65-minute Dota evening it stayed silent on 188 frames and spoke 10 lines. Vision was 19% of that evening's bill, for 10 lines. And it still made mistakes the frames should have prevented, like commenting on the matchmaking screen at the wrong moment.\n\nSo the timer goes. The decision is made, the code is next: a frame is taken when the player asks about the game or the screen. A background frame every 3 minutes only answers \"what is the player doing right now\", for context, not to trigger speech.\n\nWhat I haven't solved: the character prompt and two safety checks still say \"you can't see the screen\", while the vision part works. So the agent gets told both things.\n\nIf your agent has a camera or a screen, how do you decide when it looks?",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y6urrw/my_game_companion_agent_looked_at_the_screen_200/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Setup: a voice agent that plays alongside you. It took a screen frame every 15 s, skipped frames that hadn't changed, and sent the rest to a cheap vision model with a cached prompt prefix.\n\nCost was fine on paper. In a one-hour WoW test: 199 of 241 frames sent, $0.075 per hour, $0.00038 per frame.\n\nUsefulness wasn't. In a separate 65-minute Dota evening it stayed silent on 188 frames and spoke 10",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.02,
+            "freshness": 90,
+            "engagement_score": 35,
+            "source_quality": 0.6,
+            "local_rank_score": 0.273
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Need help for ai video generation",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "Need help for ai video generation",
+        "seed_score": 19.5,
+        "summary": "Do i need to use my ai based animation creator. Its basically a mix of animation raw image and memes to explain topic do i needed to build an ai agent. I need a system that gives my videos a consistent quality and things like memes and all they will be having a same format of coming in the video.the animation style and character and the most important thing is voice consistency. Currently even usi",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R22",
+            "source": "reddit",
+            "title": "Need help for ai video generation",
+            "body": "Need help for ai video generation\nDo i need to use my ai based animation creator. Its basically a mix of animation raw image and memes to explain topic do i needed to build an ai agent. I need a system that gives my videos a consistent quality and things like memes and all they will be having a same format of coming in the video.the animation style and character and the most important thing is voice consistency. Currently even using eleven labs my audio sucks like its really bad at hooking people.so how can i make it like a system that integrates these problems and answers them.can anyone give insights about this.if anyone using agents for it give me info about.i dont even know how to code",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y6zde6/need_help_for_ai_video_generation/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.2,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Do i need to use my ai based animation creator. Its basically a mix of animation raw image and memes to explain topic do i needed to build an ai agent. I need a system that gives my videos a consistent quality and things like memes and all they will be having a same format of coming in the video.the animation style and character and the most important thing is voice consistency. Currently even usi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.24,
+            "freshness": 90,
+            "engagement_score": 46,
+            "source_quality": 0.6,
+            "local_rank_score": 0.427
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "business not automate",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 9
+        }
+      },
+      "nomination": {
+        "name": "business not automate",
+        "seed_score": 18.0,
+        "summary": "I\u2019m learning practical AI automation and trying to avoid a tool-first mindset.\n\nHow would you evaluate this in a real small-business workflow?\n\nWhich edge cases or trade-offs would you check?\n\nI\u2019m interested in practical experiences, not pitching a service.",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R19",
+            "source": "reddit",
+            "title": "When should a business not automate?",
+            "body": "When should a business not automate?\nI\u2019m learning practical AI automation and trying to avoid a tool-first mindset.\n\nHow would you evaluate this in a real small-business workflow?\n\nWhich edge cases or trade-offs would you check?\n\nI\u2019m interested in practical experiences, not pitching a service.",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y7111i/when_should_a_business_not_automate/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 3,
+              "num_comments": 9
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I\u2019m learning practical AI automation and trying to avoid a tool-first mindset.\n\nHow would you evaluate this in a real small-business workflow?\n\nWhich edge cases or trade-offs would you check?\n\nI\u2019m interested in practical experiences, not pitching a service.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.14,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.361
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Before AI",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 6
+        }
+      },
+      "nomination": {
+        "name": "Before AI",
+        "seed_score": 16.5,
+        "summary": "Something I keep seeing, and did myself: an LLM demo looks great, then falls apart when you try to make it dependable. The usual fix is more agents, more prompts, or a bigger model. In my experience, the real problem was usually earlier. We had given the model the wrong job.\n\nWe were using the LLM to do everything. The outputs were right often enough to impress people and not often enough to trust",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R16",
+            "source": "reddit",
+            "title": "Before you add another agent, ask where the AI layer should sit in the first place",
+            "body": "Before you add another agent, ask where the AI layer should sit in the first place\nSomething I keep seeing, and did myself: an LLM demo looks great, then falls apart when you try to make it dependable. The usual fix is more agents, more prompts, or a bigger model. In my experience, the real problem was usually earlier. We had given the model the wrong job.\n\nWe were using the LLM to do everything. The outputs were right often enough to impress people and not often enough to trust. When one was wrong, we couldn't tell why, because everything happened inside one black box.\n\n**What fixed it wasn't a better model. It was moving the AI layer.**\n\nThe model now handles the interpretation: messy language, facts buried in prose, apparent conflicts. Plain code handles anything with a fixed answer, like date ordering, required fields, ID matching and known rules, because an **LLM there only adds uncertainty**.\n\nTesting got much easier as a side effect. I could tell where a failure came from, and change a rule without touching a prompt.\n\nFor every step I now ask two questions. Does it need interpretation? Does it have to behave identically every time? If the answer to the second is yes, it's code, no matter how capable the model is. Capability isn't responsibility.\n\nIf your agent system feels flaky, try this check: can you locate where a failure happened, rerun one part alone, enforce the fixed rules, and show a human what matters? If not, more agents won't help. The AI probably sits too high in your process.\n\nIt's the old ML lesson about problem framing showing up again with LLMs. Google's Rules of ML literally start with \"**don't be afraid to launch without ML**\".",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1y72fzg/before_you_add_another_agent_ask_where_the_ai/",
+            "container": "AI_Agents",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 5,
+              "num_comments": 6
+            },
+            "relevance_hint": 0.15,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Something I keep seeing, and did myself: an LLM demo looks great, then falls apart when you try to make it dependable. The usual fix is more agents, more prompts, or a bigger model. In my experience, the real problem was usually earlier. We had given the model the wrong job.\n\nWe were using the LLM to do everything. The outputs were right often enough to impress people and not often enough to trust",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 47,
+            "source_quality": 0.6,
+            "local_rank_score": 0.467
+          }
+        ]
+      }
+    }
+  ]
+}

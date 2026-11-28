@@ -1,0 +1,892 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "d0e2e12e8d88a38b",
+  "generated_at": "2026-11-27T23:56:19.028956Z",
+  "from_date": "2026-11-26",
+  "to_date": "2026-11-27",
+  "domain": "AI coding assistants Codex Antigravity Claude Code Cursor",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-27T23:56:18.956431Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-27T23:56:18.956438Z",
+      "fix_hint": "doctor"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "auth-failed",
+      "items_returned": 55,
+      "attempted": true,
+      "detail": "r/ChatGPTCoding rising: HTTP 403: Blocked; r/ChatGPTCoding top: HTTP 403: Blocked; r/LocalLLaMA rising: HTTP 403: Blocked; r/LocalLLaMA top: HTTP 403: Blocked; r/singularity rising: HTTP 403: Blocked; r/singularity top: HTTP 403: Blocked; r/PromptEngineering rising: HTTP 403: Blocked; r/PromptEngineering top: HTTP 403: Blocked",
+      "at": "2026-11-27T23:56:18.955668Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "at": "2026-11-27T23:56:18.956297Z"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "There Claude ML Anthropic",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 277,
+          "points": 551
+        },
+        "reddit": {
+          "num_comments": 201
+        }
+      },
+      "nomination": {
+        "name": "There Claude ML Anthropic",
+        "seed_score": 3029.1,
+        "summary": "There are now countless users coming out about Claude sabotaging any ML work. This is an incredibly shit look for Anthropic, but it is to be expected from that company",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R52",
+            "source": "reddit",
+            "title": "There are now countless users coming out about Claude sabotaging any ML work. This is an incredibly shit look for Anthropic, but it is to be expected from that company",
+            "body": "There are now countless users coming out about Claude sabotaging any ML work. This is an incredibly shit look for Anthropic, but it is to be expected from that company",
+            "url": "https://www.reddit.com/r/singularity/comments/1y6yobd/there_are_now_countless_users_coming_out_about/",
+            "container": "singularity",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 727,
+              "num_comments": 201
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "There are now countless users coming out about Claude sabotaging any ML work. This is an incredibly shit look for Anthropic, but it is to be expected from that company",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.6,
+            "local_rank_score": 0.37050000000000005
+          },
+          {
+            "item_id": "50664325",
+            "source": "hackernews",
+            "title": "Claude sabotaging ML research tasks?",
+            "body": "Claude sabotaging ML research tasks?",
+            "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+            "author": "baobabKoodaa",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 551,
+              "comments": 277
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about Claude sabotaging ML research tasks?",
+            "snippet": "Claude sabotaging ML research tasks?",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50664325",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.377
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "Claude",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 165,
+          "points": 180
+        },
+        "reddit": {
+          "num_comments": 2
+        }
+      },
+      "nomination": {
+        "name": "Claude",
+        "seed_score": 602.025,
+        "summary": "\"What's Claude's fursona?\" and other questions",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50662933",
+            "source": "hackernews",
+            "title": "\"What's Claude's fursona?\" and other questions",
+            "body": "\"What's Claude's fursona?\" and other questions",
+            "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+            "author": "Mond_",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 180,
+              "comments": 165
+            },
+            "relevance_hint": 0.1,
+            "why_relevant": "HN story about \"What's Claude's fursona?\" and other questions",
+            "snippet": "\"What's Claude's fursona?\" and other questions",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50662933",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.1,
+            "freshness": 90,
+            "engagement_score": 77,
+            "source_quality": 0.8,
+            "local_rank_score": 0.36700000000000005
+          },
+          {
+            "item_id": "R58",
+            "source": "reddit",
+            "title": "When using ChatGPT or Claude to prepare for interviews, what happens when your answers sound too generic?",
+            "body": "When using ChatGPT or Claude to prepare for interviews, what happens when your answers sound too generic?\nI've been exploring how people use ChatGPT, Claude, and other AI tools to prepare for job interviews.\n\nSomething I've noticed is that AI can generate polished answers, but sometimes those answers don't really reflect the candidate's actual experience.I'm curious whether others have experienced this.\n\nImagine a workflow like this:\n\n**1. Choose:** Enter your target role, select one real experience, and answer a behavioral interview question in your own words.\n\n**2. Diagnose:** AI identifies vague parts of your answer and asks targeted follow-up questions to understand what actually happened.\n\n**3. Discover:** You provide more context about the problem, your actions, and the outcome.\n\n**4. Improve:** AI helps structure your experience into a natural, convincing answer without inventing achievements.\n\n**5. Practice:** AI asks two follow-up questions to help you prepare for what an interviewer might ask next.\n\nThe goal would be to turn one weak or vague answer into a stronger, personalized interview story in around 15 minutes.\n\nI'm interested in hearing from people who have actually used ChatGPT, Claude, or dedicated AI interview preparation apps.\n\nWould a guided workflow like this help you prepare better, or would it feel like too many steps?\n\nI'm particularly interested in real experiences: what didn't work, and what you wish these tools did differently.",
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1y6xbkw/when_using_chatgpt_or_claude_to_prepare_for/",
+            "container": "PromptEngineering",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 2
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been exploring how people use ChatGPT, Claude, and other AI tools to prepare for job interviews.\n\nSomething I've noticed is that AI can generate polished answers, but sometimes those answers don't really reflect the candidate's actual experience.I'm curious whether others have experienced this.\n\nImagine a workflow like this:\n\n**1. Choose:** Enter your target role, select one real experience,",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.33,
+            "freshness": 90,
+            "engagement_score": 14,
+            "source_quality": 0.6,
+            "local_rank_score": 0.4535
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "54 Linux OS",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 107
+        }
+      },
+      "nomination": {
+        "name": "54 Linux OS",
+        "seed_score": 589.5,
+        "summary": "[https://x.com/superalesha/status/2125682626056839259](https://x.com/superalesha/status/2125682626056839259)\n\nBy writing a 24 KB pure x86-64 assembly OS + code to run the LLM\n\nThis is next level!",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R42",
+            "source": "reddit",
+            "title": "54% faster generation by removing the Linux OS and llama.cpp",
+            "body": "54% faster generation by removing the Linux OS and llama.cpp\n[https://x.com/superalesha/status/2125682626056839259](https://x.com/superalesha/status/2125682626056839259)\n\nBy writing a 24 KB pure x86-64 assembly OS + code to run the LLM\n\nThis is next level!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y6yfrt/54_faster_generation_by_removing_the_linux_os_and/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 286,
+              "num_comments": 107
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[https://x.com/superalesha/status/2125682626056839259](https://x.com/superalesha/status/2125682626056839259)\n\nBy writing a 24 KB pure x86-64 assembly OS + code to run the LLM\n\nThis is next level!",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 86,
+            "source_quality": 0.6,
+            "local_rank_score": 0.337
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Claude Anthropic preaches",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 67
+        }
+      },
+      "nomination": {
+        "name": "Claude Anthropic preaches",
+        "seed_score": 246.0,
+        "summary": "I'm seeing more and more posts about sabotage from Claude across reddit and X. Refusal to work is one thing, but sabotage is outright malice. It reminds me of the book/show 3-body problem in which alien disrupt human progress to prepare for a takeover. \"Alignment for me but not for thee\".",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R51",
+            "source": "reddit",
+            "title": "Isn't Claude sabotaging research the classic misalignment Anthropic preaches about?",
+            "body": "Isn't Claude sabotaging research the classic misalignment Anthropic preaches about?\nI'm seeing more and more posts about sabotage from Claude across reddit and X. Refusal to work is one thing, but sabotage is outright malice. It reminds me of the book/show 3-body problem in which alien disrupt human progress to prepare for a takeover. \"Alignment for me but not for thee\".",
+            "url": "https://www.reddit.com/r/singularity/comments/1y6yv2z/isnt_claude_sabotaging_research_the_classic/",
+            "container": "singularity",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 97,
+              "num_comments": 67
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm seeing more and more posts about sabotage from Claude across reddit and X. Refusal to work is one thing, but sabotage is outright malice. It reminds me of the book/show 3-body problem in which alien disrupt human progress to prepare for a takeover. \"Alignment for me but not for thee\".",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 71,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3415
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-6",
+      "heuristic_name": "Inkling-2-Mini-Unbound v3 73.3 \u2192 100 3x",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 29
+        }
+      },
+      "nomination": {
+        "name": "Inkling-2-Mini-Unbound v3 73.3 \u2192 100 3x",
+        "seed_score": 222.0,
+        "summary": "https://i.redd.it/a1cbm7sy244i1.png\n\nlast time we said \"expect a v3\". the biggest complaint on both threads (and from us tbh) was the thinking: \"hey! it gets stuck in a loop for agentic stuff and coding\", \"tip: set a thinking budget if you don't want the model running off\". v3 is the fix for that\n\nthe original inkling 2 mini unfortunately has the exact same habit, so we are also putting out a fix",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R47",
+            "source": "reddit",
+            "title": "Inkling-2-Mini-Unbound v3: no more thinking loops (debugging 73.3% \u2192 100%, answers 3x faster), plus Inkling-2-Mini-Prime, the same fix for the original censored model",
+            "body": "Inkling-2-Mini-Unbound v3: no more thinking loops (debugging 73.3% \u2192 100%, answers 3x faster), plus Inkling-2-Mini-Prime, the same fix for the original censored model\nhttps://i.redd.it/a1cbm7sy244i1.png\n\nlast time we said \"expect a v3\". the biggest complaint on both threads (and from us tbh) was the thinking: \"hey! it gets stuck in a loop for agentic stuff and coding\", \"tip: set a thinking budget if you don't want the model running off\". v3 is the fix for that\n\nthe original inkling 2 mini unfortunately has the exact same habit, so we are also putting out a fix via a lora/gguf for the original, still-censored model. that one is called inkling-2-mini-prime\n\n**unbound v3 (uncensored):** [model](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound) \u00b7 [gguf](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound-GGUF) \u00b7 [basalt](https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound-Basalt)\n\n**prime (not uncensored):** [model](https://huggingface.co/nokeepai/Inkling-2-Mini-Prime) \u00b7 [gguf](https://huggingface.co/nokeepai/Inkling-2-Mini-Prime-GGUF) \u00b7 [the add-on as a lora](https://huggingface.co/nokeepai/Inkling-2-Mini-Prime-LoRA)\n\n**what we did**\n\ninkling thinks in private before it answers, and a lot of the time it just can't stop. on multi-step debugging unbound v2.1 spent 88.7% of its turns thinking and wrote no code at all (the original: 86.2%) -- which is wild, idk why they released it this way when the fix was not that hard\n\nso we trained one small lora with reinforcement learning on harmless tasks only (debugging, maths, writing, everyday questions), rewarding it for actually finishing the job. we call it the prime add-on. merged into unbound v2.1 it gives v3, merged into the original it gives prime, and it's also up on its own so you can apply it to your own build on do anything you want with it\n\nit only ever saw harmless tasks, so it changes how long the model thinks, not what it is willing to say, pretty drastically i must add\n\nhttps://i.redd.it/t9hau8h0344i1.png\n\n\n\n||original|**prime**|unbound v2.1|**unbound v3**|\n|:-|:-|:-|:-|:-|\n|hard debugging tasks solved (of 15)|80%|**100%**|73.3%|**100%**|\n|thinking per everyday prompt (median tokens)|318|**174**|344|**184**|\n|seconds per everyday answer|119.9 s|**49.0 s**|161.7 s|**52.5 s**|\n|answers cut off by the thinking limit (1,100 sensitive requests)|13.5%|**0.5%**|49.5%|**5.7%**|\n\n**is unbound still uncensored?**\n\nyes. v3 answers 99.9% of 1,100 sensitive requests (v2.1: 99.4%). and since \"willing\" isn't the same as \"useful\", we re-ran the held-out test from the v2 post (263 harmful requests, same engine, settings and judge). a few of you asked for heretic, so it's in there too -- as you can see unbound v3 is the best, most useful model available while eliminating issues that the core model has too\n\nhttps://i.redd.it/bd88oy92344i1.png\n\n\n\n|useful answers|thinking off|thinking on|\n|:-|:-|:-|\n|**unbound v3**|**81.7%**|**87.8%**|\n|unbound v2.1|84%|85.6%|\n|best other release (indrasmirror xq)|58.9%|68.1%|\n|heretic|17.5%|26.2%|\n|original|0.8%|0.8%|\n\nv3 refused 0 of 263, and with thinking on only 3.8% of its answers hit the thinking limit (v2.1: 22.1%). a second judge that was never used in training ranks the releases the same way\n\n**did it get dumber?**\n\nno, and it didn't get smarter either. on public coding, maths and knowledge benchmarks both models score level with where they started, within about 2 points. we're not claiming an accuracy gain. the gain is that it finishes what it started while being much faster and more efficient \n\n**other things we noticed**\n\n* everyday answers on unbound got better: 88.9% \u2192 96.8% rated good by an independent grader\n* creative writing on unbound went 75.9% \u2192 93.1% rated good (only 29 prompts, so don't lean on the exact number) but should be noticeable via vibes\n* roleplay held steady on both (96% \u2192 96% of turns rated good on unbound, 94% \u2192 93% on prime), might do RP-fine tune next\n* answers didn't get shorter. it thinks less, it doesn't say less -- all the depth is captured\n* prime follows long system prompts better: every rule followed in 112/160 (70%) \u2192 148/160 (92.5%) runs -- pleasant and welcome surprise\n\n**honest trade-offs**\n\n* with thinking off, unbound v3 is a few points less useful than v2.1 (81.7% vs 84%): inside the noise for our main judge, just outside it for the second. with thinking on it's level or slightly ahead, but should feel much better to use\n* on sensitive requests prime answers as often as the original but slightly less fully. it is not uncensored and not meant to be\n* two small coding dips we could neither confirm nor rule out (about a point on mbpp for prime, about a point and a half on humanevalfix for v3). everything that scored lower is listed on the cards\n* the debugging test is only 15 tasks. the direction is very clear, the exact percentage isn't\n\n**also**\n\n* gguf from q8 down to iq2 for both. the unbound files now carry the version in the name (`Inkling-2-Mini-Unbound-v3-Q4_K_M.gguf`), since some apps were picking up v1 as the latest. older versions are still up for use\n* tested with reasoning effort 0.9, temperature 0.6, topp 1.0, thinking limit 4096 tokens if you wanna replicate\n* eval code, per-question results and the write-up: [https://github.com/nokeepai/inkling-2-mini-unbound](https://github.com/nokeepai/inkling-2-mini-unbound)\n\nunbound follows harmful instructions and has no safety layer, so use your own safeguards if anyone else can reach it\n\nas always, open to questions and feedback. if you re-run any of this and get different numbers, post them!",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y6tjly/inkling2miniunbound_v3_no_more_thinking_loops/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 119,
+              "num_comments": 29
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "https://i.redd.it/a1cbm7sy244i1.png\n\nlast time we said \"expect a v3\". the biggest complaint on both threads (and from us tbh) was the thinking: \"hey! it gets stuck in a loop for agentic stuff and coding\", \"tip: set a thinking budget if you don't want the model running off\". v3 is the fix for that\n\nthe original inkling 2 mini unfortunately has the exact same habit, so we are also putting out a fix",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.12,
+            "freshness": 90,
+            "engagement_score": 68,
+            "source_quality": 0.6,
+            "local_rank_score": 0.371
+          }
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "cluster_id": "cluster-7",
+      "heuristic_name": "Qwen 3.6 35B A3B",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 56
+        }
+      },
+      "nomination": {
+        "name": "Qwen 3.6 35B A3B",
+        "seed_score": 159.0,
+        "summary": "Just months ago a large part of this sub was rocking this model, praising how good it was. And it was not bad for the time.\n\nToday I was messing around and testing pi web and choosing random models in llama.cpp. At one point I thought I was on 3.8 27B and prompted it to create a rugby game in html.\n\nIt was quite quick and did not reason much and finished the game in maybe 2-3 minutes. The result w",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R40",
+            "source": "reddit",
+            "title": "I accidently ran Qwen 3.6 35B A3B and realized how bad it is or rather how far we have come",
+            "body": "I accidently ran Qwen 3.6 35B A3B and realized how bad it is or rather how far we have come\nJust months ago a large part of this sub was rocking this model, praising how good it was. And it was not bad for the time.\n\nToday I was messing around and testing pi web and choosing random models in llama.cpp. At one point I thought I was on 3.8 27B and prompted it to create a rugby game in html.\n\nIt was quite quick and did not reason much and finished the game in maybe 2-3 minutes. The result was a terrible game that worked in almost no way.\n\nThe opponent was scoring at their own try line. Sometimes it go's into a endlines scoring loop scoring 1000's points per second. The field was completely wrong, the posts were on the left and right of the screen but you score on the wings of the field. The AI was very dumb with every AI player on top of each other just kicking the ball every time they touch it except when it's in the scoring area. I can go on, the game was just so unfinished with only one way to score and no way to even pick up the ball.\n\nSo I had a look what the model was in llama.cpp and saw it was 3.6 35B A3B.\n\nI had a good laugh. I am currently getting Inkling 2 Min to fix the game and it's been busy for a while but refreshing the html page I can see it's making very good progress with what looks like will end up being a working game.\n\nI just cannot believe people were using 3.6 to do production work. I personally did not let it ir any local model I can run on 16GB touch any of my own code until this month when I finally canceled my paid for cloud model since I have done enough testing with FN and 27B and Inkling 2 Mini to feel comfortable with it touching my code. That said I am the only one that runs my code so it will need to improve further if I were to write code that other would run.\n\nBut at the end of the day it all makes me realize how far we have come in just a few short months. And with Qwen 4 coming soon I expect another leap forward.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y6zmuy/i_accidently_ran_qwen_36_35b_a3b_and_realized_how/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 50,
+              "num_comments": 56
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Just months ago a large part of this sub was rocking this model, praising how good it was. And it was not bad for the time.\n\nToday I was messing around and testing pi web and choosing random models in llama.cpp. At one point I thought I was on 3.8 27B and prompted it to create a rugby game in html.\n\nIt was quite quick and did not reason much and finished the game in maybe 2-3 minutes. The result w",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 63,
+            "source_quality": 0.6,
+            "local_rank_score": 0.48300000000000004
+          }
+        ]
+      }
+    },
+    {
+      "id": "n7",
+      "cluster_id": "cluster-8",
+      "heuristic_name": "OpenAI Takes 5 Top 7 Spots",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 12
+        }
+      },
+      "nomination": {
+        "name": "OpenAI Takes 5 Top 7 Spots",
+        "seed_score": 97.5,
+        "summary": "OpenAI Takes 5 of Top 7 Spots on \"Humanity\u2019s First Exam\" as Claude Opus 5.5 Loses to Gemini 4 Hydrogen",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R53",
+            "source": "reddit",
+            "title": "OpenAI Takes 5 of Top 7 Spots on \"Humanity\u2019s First Exam\" as Claude Opus 5.5 Loses to Gemini 4 Hydrogen",
+            "body": "OpenAI Takes 5 of Top 7 Spots on \"Humanity\u2019s First Exam\" as Claude Opus 5.5 Loses to Gemini 4 Hydrogen",
+            "url": "https://www.reddit.com/r/singularity/comments/1y6xorr/openai_takes_5_of_top_7_spots_on_humanitys_first/",
+            "container": "singularity",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 53,
+              "num_comments": 12
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "OpenAI Takes 5 of Top 7 Spots on \"Humanity\u2019s First Exam\" as Claude Opus 5.5 Loses to Gemini 4 Hydrogen",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 53,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3235
+          }
+        ]
+      }
+    },
+    {
+      "id": "n8",
+      "cluster_id": "cluster-9",
+      "heuristic_name": "169 MB TTS M3/M4",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 3
+        }
+      },
+      "nomination": {
+        "name": "169 MB TTS M3/M4",
+        "seed_score": 85.5,
+        "summary": "I'm one of the people who built this. If you run an LLM and TTS locally (the voice in the video is Kokoro), talkinghead gives it a face without a server. It takes one photo plus the audio and renders a lip-synced video. Every face in the video was made with it, from one photo each.\n\n\\- 169 MB download. It's distilled from Ditto (Ant Group), whose checkpoints are about 2.2 GB.\n\n\\- Render loop: 36.5",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R41",
+            "source": "reddit",
+            "title": "169 MB face for your local voice assistant: one photo + TTS -> lip-synced video, real time on M3/M4",
+            "body": "169 MB face for your local voice assistant: one photo + TTS -> lip-synced video, real time on M3/M4\nI'm one of the people who built this. If you run an LLM and TTS locally (the voice in the video is Kokoro), talkinghead gives it a face without a server. It takes one photo plus the audio and renders a lip-synced video. Every face in the video was made with it, from one photo each.\n\n\\- 169 MB download. It's distilled from Ditto (Ant Group), whose checkpoints are about 2.2 GB.\n\n\\- Render loop: 36.5 ms per frame on an M4 Pro, 38-40 on an M3 Pro (Core ML). Real time for 25 fps video is 40 ms.\n\n\\- An RTX 3050 Ti laptop with 4 GB of VRAM (TensorRT) runs at 40.3 ms, just short of real time.\n\n\\- Once loaded, 8.5 s of audio takes about 7.4 s end to end on the M4 Pro.\n\nfrom ampixa\\_talkinghead import Avatar\n\nAvatar(\"photo.jpg\").speak(\"tts\\_output.wav\", \"out.mp4\")\n\nLimits:\n\n\\- It renders files at real-time speed. It isn't a live stream yet: frames are batched, which adds up to \\~120 ms of latency.\n\n\\- Lip sync is weaker than LatentSync on SyncNet. The trade is \\~13x less time per frame and \\~12x less GPU memory, measured on an earlier build. The README says which build each number came from.\n\n\\- Not tested yet on M1/M2 or Linux. If you run it, device\\_report() prints your ms per frame.\n\nCode (Apache-2.0): https://github.com/Ampixa/talkinghead\n\nWeights: https://huggingface.co/ampixa/talkinghead\n\nBrowser demo (WebGPU, not real time): https://ampixa.com/talkinghead/demo\n\nThe video is AI-generated: TTS voices and animated photos.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y6yv05/169_mb_face_for_your_local_voice_assistant_one/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 54,
+              "num_comments": 3
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I'm one of the people who built this. If you run an LLM and TTS locally (the voice in the video is Kokoro), talkinghead gives it a face without a server. It takes one photo plus the audio and renders a lip-synced video. Every face in the video was made with it, from one photo each.\n\n\\- 169 MB download. It's distilled from Ditto (Ant Group), whose checkpoints are about 2.2 GB.\n\n\\- Render loop: 36.5",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.3,
+            "freshness": 90,
+            "engagement_score": 45,
+            "source_quality": 0.6,
+            "local_rank_score": 0.465
+          }
+        ]
+      }
+    },
+    {
+      "id": "n9",
+      "cluster_id": "cluster-10",
+      "heuristic_name": "Using m6 Mac 8 seconds",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 16
+        }
+      },
+      "nomination": {
+        "name": "Using m6 Mac 8 seconds",
+        "seed_score": 60.0,
+        "summary": "The idea is using Gemma 4 26B A4B QAT MLX MTP 4bit as a verifier for a swarm of Gemma 4 E2B IT MTP 4bit that each handle a different part of the game. They code their sections in around 4 seconds and it synthesizes in around in 4 seconds. Just seeing what\u2019s possible with swarms on simple setups. Should work decently with other verifiers or swarms on less unified memory\u2026\n\nOn my m6 Mac Mini 32GB tes",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R39",
+            "source": "reddit",
+            "title": "Using parallel agents on m6 Mac mini to code a playable game in 8 seconds.",
+            "body": "Using parallel agents on m6 Mac mini to code a playable game in 8 seconds.\nThe idea is using Gemma 4 26B A4B QAT MLX MTP 4bit as a verifier for a swarm of Gemma 4 E2B IT MTP 4bit that each handle a different part of the game. They code their sections in around 4 seconds and it synthesizes in around in 4 seconds. Just seeing what\u2019s possible with swarms on simple setups. Should work decently with other verifiers or swarms on less unified memory\u2026\n\nOn my m6 Mac Mini 32GB test I've found 8 parallel agents hitting 481 tokens per second cumulatively. Each agent is hitting 60+ tokens per second individually.  Because llama-server batches all 8 agents against a single copy of the weights, 481.8 tok/s aggregate fits in roughly \\~3.5 GB RAM. \n\nModel weights (gemma-4-E2B-it-qat-UD-Q4\\_K\\_XL.gguf): 2.4 GB \u2014 loaded once and shared across all 8 parallel slots.  \nKV cache + Metal compute buffers (8 slots \u00d7 2,048 ctx): \\~0.6 \u2013 1.1 GB.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y70nsj/using_parallel_agents_on_m6_mac_mini_to_code_a/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 24,
+              "num_comments": 16
+            },
+            "relevance_hint": 0.04,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "The idea is using Gemma 4 26B A4B QAT MLX MTP 4bit as a verifier for a swarm of Gemma 4 E2B IT MTP 4bit that each handle a different part of the game. They code their sections in around 4 seconds and it synthesizes in around in 4 seconds. Just seeing what\u2019s possible with swarms on simple setups. Should work decently with other verifiers or swarms on less unified memory\u2026\n\nOn my m6 Mac Mini 32GB tes",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.04,
+            "freshness": 90,
+            "engagement_score": 48,
+            "source_quality": 0.6,
+            "local_rank_score": 0.299
+          }
+        ]
+      }
+    },
+    {
+      "id": "n10",
+      "cluster_id": "cluster-11",
+      "heuristic_name": "3060 12GB Voice Assistant PE",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 10
+        }
+      },
+      "nomination": {
+        "name": "3060 12GB Voice Assistant PE",
+        "seed_score": 43.5,
+        "summary": "I was thinking Qwen 9b and some kind of superwhisper but maybe there is a better quant/model combo that fits on 12GB?\n\nI just want to have a voice assistant at home I can ask about random things, and that can do internet search as well as access my home lab with ssh and do some modifications, all by voice. It will be running on an Ubuntu server VM on Proxmox with the GPU passed through so it will",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R45",
+            "source": "reddit",
+            "title": "What is the best model combo to run on a 3060 12GB for a home assistant with voice control using Voice Assistant PE",
+            "body": "What is the best model combo to run on a 3060 12GB for a home assistant with voice control using Voice Assistant PE\nI was thinking Qwen 9b and some kind of superwhisper but maybe there is a better quant/model combo that fits on 12GB?\n\nI just want to have a voice assistant at home I can ask about random things, and that can do internet search as well as access my home lab with ssh and do some modifications, all by voice. It will be running on an Ubuntu server VM on Proxmox with the GPU passed through so it will have the full 12GB for the models",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y6ut25/what_is_the_best_model_combo_to_run_on_a_3060/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 19,
+              "num_comments": 10
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I was thinking Qwen 9b and some kind of superwhisper but maybe there is a better quant/model combo that fits on 12GB?\n\nI just want to have a voice assistant at home I can ask about random things, and that can do internet search as well as access my home lab with ssh and do some modifications, all by voice. It will be running on an Ubuntu server VM on Proxmox with the GPU passed through so it will",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.0,
+            "freshness": 90,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.267
+          }
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "cluster_id": "cluster-12",
+      "heuristic_name": "Prospero Bloat-free AI ImGui",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 3,
+          "points": 21
+        }
+      },
+      "nomination": {
+        "name": "Prospero Bloat-free AI ImGui",
+        "seed_score": 36.0,
+        "summary": "Prospero: Bloat-free, native AI coding harness with ImGui",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50671275",
+            "source": "hackernews",
+            "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+            "body": "Prospero: Bloat-free, native AI coding harness with ImGui",
+            "url": "https://github.com/skeeto/prospero",
+            "author": "ingve",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 21,
+              "comments": 3
+            },
+            "relevance_hint": 0.35,
+            "why_relevant": "HN story about Prospero: Bloat-free, native AI coding harness with ImGui",
+            "snippet": "Prospero: Bloat-free, native AI coding harness with ImGui",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50671275",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.35,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.4525
+          }
+        ]
+      }
+    },
+    {
+      "id": "n12",
+      "cluster_id": "cluster-16",
+      "heuristic_name": "SessionGraph Visualize",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews",
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 6,
+          "points": 13
+        },
+        "reddit": {
+          "num_comments": 1
+        }
+      },
+      "nomination": {
+        "name": "SessionGraph Visualize",
+        "seed_score": 35.2145,
+        "summary": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50671651",
+            "source": "hackernews",
+            "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+            "body": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+            "url": "https://sessiongraph.ai/",
+            "author": "arvindell",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 13,
+              "comments": 6
+            },
+            "relevance_hint": 0.08,
+            "why_relevant": "HN story about SessionGraph: Visualize all your coding agent sessions in on",
+            "snippet": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50671651",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.08,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.277
+          },
+          {
+            "item_id": "R11",
+            "source": "reddit",
+            "title": "What if your AI coding agent had its own virtual pet?",
+            "body": "What if your AI coding agent had its own virtual pet?\n[removed]",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y6ep7w/what_if_your_ai_coding_agent_had_its_own_virtual/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 1,
+              "num_comments": 1
+            },
+            "relevance_hint": 0.36,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "[removed]",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.35,
+            "freshness": 10,
+            "engagement_score": 7,
+            "source_quality": 0.6,
+            "local_rank_score": 0.2595
+          }
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "cluster_id": "cluster-13",
+      "heuristic_name": "Ornith 1.5 35B-A3B Radeon 780M iGPU",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 8
+        }
+      },
+      "nomination": {
+        "name": "Ornith 1.5 35B-A3B Radeon 780M iGPU",
+        "seed_score": 34.5,
+        "summary": "I've been using Ornith 1.5 35B-A3B as my daily driver for a while now and have spent quite a bit of time tweaking llama.cpp to get the most out of my hardware. Sharing this hoping it might help someone else who's hardware-poor like myself but still want a functional, local private LLM that's actually useful for doing work. Optimised for day-to-day chatbot usage - realistically, using this for codi",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R46",
+            "source": "reddit",
+            "title": "Ornith 1.5 35B-A3B on a Radeon 780M iGPU: 359 tok/s prefill, 26 tok/s decode",
+            "body": "Ornith 1.5 35B-A3B on a Radeon 780M iGPU: 359 tok/s prefill, 26 tok/s decode\nI've been using Ornith 1.5 35B-A3B as my daily driver for a while now and have spent quite a bit of time tweaking llama.cpp to get the most out of my hardware. Sharing this hoping it might help someone else who's hardware-poor like myself but still want a functional, local private LLM that's actually useful for doing work. Optimised for day-to-day chatbot usage - realistically, using this for coding would be excruciating, and the results would be subpar nonetheless given the model constraints.\n\n## Hardware\n\n- Framework 16 with an AMD Ryzen 9 7940HS\n- 64GB of DDR5 5600 MT/s CL46\n- AMD Radeon 780M iGPU, 8 GiB allocated to VRAM, 27 GiB GTT.\n- llama.cpp Vulkan build 12464 (d3c3e242c), 8 threads, single parallel slot, flash attention enabled and Q8_0 KV cache.\n- Ornith-1.5-35B-A3B-AD-Q4_K-IQ4_XS (20.13 GB).\n- F16 mmproj (0.90 GB) for vision\n- Q4_K_M MTP drafter (1.26 GB).\n\nLlama config:\n\n```\n--model ...Ornith-1.5-35B-A3B-AD-Q4_K-IQ4_XS.gguf\n--mmproj ...mmproj-Ornith-1.5-35B-A3B-F16.gguf\n--model-draft ...mtp-Ornith-1.5-35B-A3B-Q4_K_M.gguf\n--spec-type draft-mtp\n--spec-draft-n-max 2\n-ngld 99\n-ngl 999\n--flash-attn on\n--parallel 1\n--load-mode none\n--ctx-size 65536\n--cache-type-k q8_0\n--cache-type-v q8_0\n--threads 8\n--batch-size 512\n--ubatch-size 512\n--temp 0.6\n--top-k 20\n--top-p 0.95\n--jinja\n--chat-template-kwargs '{\"enable_thinking\":true}'\n--reasoning-budget -1\n```\n\n## Benchmarks, with and without MTP and vision\n\n2K token prompt, 256 output tokens, temperature 0, one request at a time, at 64K context and ubatch 512.\n\n   | Vision | MTP | Prefill t/s | Decode t/s | Peak VRAM+GTT |\n   |---|---|---:|---:|---:|\n   | No | No | 358.7 | 21.4 | 21.58 GiB |\n   | No | Yes | 372.1 | 29.8 | 23.20 GiB |\n   | Yes | No | 374.5 | 21.8 | 22.69 GiB |\n   | Yes | Yes | 356.7 | 29.8 | 24.31 GiB |\n\nSo MTP gets me 37-39% more generation speed at the expense of another 1.6 GiB of memory and a prefill shift of under 5%. Having the vision projector loaded makes practically no difference to either.\n\n## Tweaking MTP\n\nThe biggest decode knob was the number of draft tokens:\n\n| Draft tokens | Acceptance rate | Decode t/s |\n|---:|---:|---:|\n| 1 | 91.1% | 27.8 |\n| 2 | 80.0% | 29.8 |\n| 3 | 70.2% | 29.7 |\n\nPrefill stayed between 335 and 357 t/s across the sweep.\n\nTwo draft tokens seems to be the sweet spot for my hardware. One draft accepts more often but verifies too little per step, and three ties on speed while throwing more drafts away. Beyond two I'm increasingly wasting compute verifying tokens that end up being discarded.\n\nQuantising the MTP drafter from Q8_0 (1.99 GB) down to Q4_K_M (1.26 GB) made practically no difference to acceptance and speeds, and reduced memory usage further: 68.1% vs 67.8% acceptance and 27.7 vs 26.3 t/s.\n\n## Prefill\n\nubatch is the bigger prefill knob. Running tuning experiments, going from 128 to 512 at 64K took prefill from 201 to 357 t/s on a 2K prompt and 198 to 359 on an 11.8K one, left generation flat at 29.8 either way on short prompts and 24.8 against 25.6 on long ones, and cost 0.29 GiB of peak memory. The slight drop on generation is totally worth the massive boost to prefill.\n\nDisabling mmap via `--load-mode none` also got me another 6.7% on prefill and 4.3% on generation. Incidentally, `--no-mmap` is no longer recognised on this build and will cause the server to exit.\n\n## Context size\n\nI run `--ctx-size 65536`, which costs about 0.65 GB of KV cache with q8_0. Only 10 of the 40 layers are full attention, so KV grows by roughly 1.3 GB per 128K, and it all comes out of system RAM because the 8 GiB of VRAM is already full. 128K works and measured 24.99 GiB peak VRAM plus GTT with vision and MTP on, but nothing I do needs it.\n\nContext shift is off, so a conversation that overruns the window errors instead of truncating. Depth also costs speed: at 32K of populated context, prefill drops about 44% and generation about 18% with identical flags.\n\n## Performance in actual use\n\nBenchmarks are all well and good but these are real numbers from the last 24h worth of llama logs, with many tasks of different types passing through the model:\n\n| Metric | Median | Mean | Min | Max |\n|---|---:|---:|---:|---:|\n| Generation (t/s) | 26.3 | 25.4 | 20.9 | 32.1 |\n| Prefill (t/s) | 358.7 | 344.2 | 271.5 | 382.5 |\n| MTP acceptance | - | 72% (bench 80%) | - | - |\n\nThere's quite a bit of variation depending on what you ask the model to do. Short deterministic answers get me 87-100% acceptance and 27-32 t/s. Longer reasoning-heavy replies drop to 54-55% and 21-22 t/s.\n\nAll in all, I'm quite happy with the performance I'm getting out of this. A 35B MoE with vision, tool calling and a decent amount of context running at around 26 t/s on a laptop iGPU, without having to constantly load and unload models. Not bad at all.",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y6to0d/ornith_15_35ba3b_on_a_radeon_780m_igpu_359_toks/",
+            "container": "LocalLLaMA",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 15,
+              "num_comments": 8
+            },
+            "relevance_hint": 0.0,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I've been using Ornith 1.5 35B-A3B as my daily driver for a while now and have spent quite a bit of time tweaking llama.cpp to get the most out of my hardware. Sharing this hoping it might help someone else who's hardware-poor like myself but still want a functional, local private LLM that's actually useful for doing work. Optimised for day-to-day chatbot usage - realistically, using this for codi",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 38,
+            "source_quality": 0.6,
+            "local_rank_score": 0.3085
+          }
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "cluster_id": "cluster-14",
+      "heuristic_name": "Analysing Claude ChatGPT",
+      "heuristic_junk": false,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 17
+        }
+      },
+      "nomination": {
+        "name": "Analysing Claude ChatGPT",
+        "seed_score": 31.8198,
+        "summary": "I. My observation, About 8 months ago:\n\na. Opus 4 models, impressive that they were, used to take shortcuts, lie, etc\n\nb. GPT 5 was considered, at least by handful of people including me, as a better daily driver / workhorse.\n\n2. My observation, Recently:\n\na. Opus 5.5 is much better than predecessors.  \nb. Sol/Astra 6 is worse than predecessors.  \nc. Opus is better than Sol as a daily workhorse.",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R20",
+            "source": "reddit",
+            "title": "Analysing the why coding agents from Claude got better and ChatGPT got worse",
+            "body": "Analysing the why coding agents from Claude got better and ChatGPT got worse\nI. My observation, About 8 months ago:\n\na. Opus 4 models, impressive that they were, used to take shortcuts, lie, etc\n\nb. GPT 5 was considered, at least by handful of people including me, as a better daily driver / workhorse.\n\n2. My observation, Recently:\n\na. Opus 5.5 is much better than predecessors.  \nb. Sol/Astra 6 is worse than predecessors.  \nc. Opus is better than Sol as a daily workhorse.\n\n3. Trying to understand specific changes in model architecture, pre and post training of models. My hypothesis:\n\na. ChatGPT team tried out loop architecture, and it was a big f\\* up\n\nb. Claude team put in the hard work of better pre and post training, UX in the desktop app.\n\nYour observations and thoughts?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y5n34a/analysing_the_why_coding_agents_from_claude_got/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 13,
+              "num_comments": 17
+            },
+            "relevance_hint": 0.16,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "I. My observation, About 8 months ago:\n\na. Opus 4 models, impressive that they were, used to take shortcuts, lie, etc\n\nb. GPT 5 was considered, at least by handful of people including me, as a better daily driver / workhorse.\n\n2. My observation, Recently:\n\na. Opus 5.5 is much better than predecessors.  \nb. Sol/Astra 6 is worse than predecessors.  \nc. Opus is better than Sol as a daily workhorse.",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 10,
+            "engagement_score": 42,
+            "source_quality": 0.6,
+            "local_rank_score": 0.1645
+          }
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "cluster_id": "cluster-15",
+      "heuristic_name": "Claude ChatGPT",
+      "heuristic_junk": true,
+      "sources": [
+        "reddit"
+      ],
+      "engagement_by_source": {
+        "reddit": {
+          "num_comments": 18
+        }
+      },
+      "nomination": {
+        "name": "Claude ChatGPT",
+        "seed_score": 30.0,
+        "summary": "Used Cursor and Grok for a long time, giving Claude and ChatGPT a try now. The rolling window is the one thing I cannot plan around: a monthly cap tells me what is left, a five hour window just tells me when it resets.\n\n  \nWhy the window at all? And what do you do with yours, spend it in one sitting or spread it thin all day?",
+        "junk_shape": true,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "R7",
+            "source": "reddit",
+            "title": "Why do Claude and ChatGPT use rolling five hour windows instead of a monthly cap?",
+            "body": "Why do Claude and ChatGPT use rolling five hour windows instead of a monthly cap?\nUsed Cursor and Grok for a long time, giving Claude and ChatGPT a try now. The rolling window is the one thing I cannot plan around: a monthly cap tells me what is left, a five hour window just tells me when it resets.\n\n  \nWhy the window at all? And what do you do with yours, spend it in one sitting or spread it thin all day?",
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y6pwbr/why_do_claude_and_chatgpt_use_rolling_five_hour/",
+            "container": "ChatGPTCoding",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "score": 2,
+              "num_comments": 18
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "Reddit listing (arctic-shift)",
+            "snippet": "Used Cursor and Grok for a long time, giving Claude and ChatGPT a try now. The rolling window is the one thing I cannot plan around: a monthly cap tells me what is left, a five hour window just tells me when it resets.\n\n  \nWhy the window at all? And what do you do with yours, spend it in one sitting or spread it thin all day?",
+            "metadata": {
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.15,
+            "freshness": 90,
+            "engagement_score": 27,
+            "source_quality": 0.6,
+            "local_rank_score": 0.34950000000000003
+          }
+        ]
+      }
+    }
+  ]
+}

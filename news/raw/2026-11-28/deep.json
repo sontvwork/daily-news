@@ -1,0 +1,233 @@
+{
+ "date": "2026-11-28",
+ "runs": [
+  {
+   "started_at": "2026-11-28T00:00:26+00:00",
+   "seconds": 1.7,
+   "python": "3.11.18",
+   "proxy": true,
+   "dns_via_proxy": [],
+   "urls": 10,
+   "articles_ok": 7,
+   "articles_error": 2,
+   "articles_skipped": 1,
+   "hn_ok": 4,
+   "hn_error": 0,
+   "comments_failed": 0,
+   "url_errors": 0,
+   "top_errors": {
+    "HTTP 404 Not Found — 404: Not Found": 1,
+    "CHANGELOG.md không có mục v2.4.2": 1
+   },
+   "summary": "7/10 bài gốc ok (1 bỏ qua), 4/4 thread HN ok, 0 comment lỗi, 0 URL quá hạn/lỗi script, 1.7s"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+   "article": {
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+    "status": "ok",
+    "title": "",
+    "chars": 21811,
+    "text": "## 2.1.332\n- Added skills from MCP servers (beta). They show as `server:skill` in the `/` menu; other skills keep their names\n- Added a `PreSkillShellCommand` hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start\n- Added \"Always deliver\" to the prompt for held messages from other sessions\n- Added a footer line that stays while a flagged message has your session on a different model, until you pick one with `/model`\n- Added an OpenTelemetry `assistant_response` event for text Claude sends through SendUserMessage or Cowork's message tool, when response logging is on\n- Added a warning in VS Code and Desktop's Code tab when part of a session couldn't be saved, saying how to save it with `/compact`\n- Added a notice in VS Code and Desktop's Code tab when a resumed session's earlier messages weren't loaded, as the terminal already shows\n- Added your Cyber Verification Program access tier to the startup header, beside the model name when your tier applies to that model and you're signed in with a claude.ai account\n- Fixed `claude auth login` reporting `Login successful.` when a claude.ai login could not be saved: it now exits 1 and says what to check, such as a leftover lock file or a full disk\n- Fixed Read, @-mentions and compaction hanging on a named pipe that nothing writes to, such as a `.env` mounted by a locked secrets manager; the read now fails after 20 seconds\n- Fixed turns ending in \"Prompt is too long\" after repeated auto-compaction failures when one more compaction at the context limit could have kept them going\n- Fixed compaction failing when a summary kept running past the output limit: after three cut-off replies, the last try now asks for a shorter summary\n- Fixed a freeze when a permission rule or hook condition with several wildcards was checked against a long command\n- Fixed freezes and runaway memory use in most cases while a hook prints output without end\n- Fixed a freeze and context overflow when a hook blocks or fails during a turn, or after `/compact`, with a very large log; text over about 50,000 characters is now shortened\n- Fixed the terminal freezing, and ignoring Ctrl+C, while a local MCP server floods its standard output\n- Fixed a freeze when a prompt or piped input holds an `@` followed by a very long unbroken string, such as minified CSS with an embedded font\n- Fixed a long freeze when opening a rewind point after a large tracked file was rewritten\n- Fixed SSE MCP servers hanging or refusing every tool call after their event stream was cut and came back on a new endpoint or not at all, until reconnected by hand\n- Fixed Remote Control showing a session in the desktop app, VS Code or the Agent SDK as running while it waited there on a dialog or an MCP server's question\n- Fixed a usage limit being reported as reached to Remote Control, IDE and SDK clients after it had already reset\n- Fixed CLAUDE.md and rules files being sent to the model a second time, in most cases, after a session moves into a worktree under `.claude/worktrees` with EnterWorktree or is resumed there\n- Fixed tool calls that never ran being counted as done in a claude.ai chat's summary line after you declined a permission prompt in a session that had restarted\n- Linux: Fixed the Bash edit diff showing an unchanged symlink as edited after Claude had read the file through it\n- Fixed resuming a session and `/stats` freezing for seconds when a transcript holds many damaged lines\n- Fixed a family name such as `sonnet` in `--fallback-model` being dropped when `availableModels` allows only an older version of it\n- Fixed keys lagging for seconds while `/stats` reads large session transcripts, also after the dialog is closed, and with debug logging on while a language server floods its stderr\n- Fixed a session failing when the cloud refused its default model and an `availableModels` list that isn't enforced named neither it nor an older model of…"
+   }
+  },
+  {
+   "url": "https://github.com/github/copilot-cli/releases/tag/v1.0.117",
+   "article": {
+    "url": "https://github.com/github/copilot-cli/releases/tag/v1.0.117",
+    "status": "error",
+    "reason": "HTTP 404 Not Found — 404: Not Found"
+   }
+  },
+  {
+   "url": "https://pydantic.dev/articles/pax-harness-beta",
+   "article": {
+    "url": "https://pydantic.dev/articles/pax-harness-beta",
+    "status": "ok",
+    "title": "Pax: the Pydantic AI coding agent for your terminal",
+    "chars": 9868,
+    "text": "Pydantic AI Harness has come a long way since we launched it alongside Pydantic AI v2 in June. It's the official capability and harness library for Pydantic AI, with more than 100 capabilities you can add to any agent.\nWe're getting ready to call it 1.0 in about a month, and start maintaining the same version policy as Pydantic AI. That means this is the best time to stress test it and let us know if there's still anything we should change before the public API gets set in stone for a while.\nAlong with that, we're releasing Pax (pydantic-ai-pax), the official Pydantic AI coding agent for your terminal, built on the Harness SDK. Just as everything in the Harness is a capability, everything in Pax is a plugin: the coding agent itself, sandboxes, MCP, Logfire tracing, and your own. And you can bring your own harness: point Pax at any Pydantic AI agent with --agent. In single runs of Harness-Bench SWE81, it had the highest average score of the four harnesses that ran all eight models, narrowly. It cost less than half of what Codex did on GPT-6.2 Sol, and about the same as Claude Code on Claude Opus 5.5.\nIf you try it out, please let us know what you think in our Slack.\nWhat is what?\nPydantic AI is the agent framework: the loop, models from every major provider, tools, and structured output. For reusable building blocks on top of that core, you pass Capabilities: bundles of tools, instructions, and hooks you can add to an agent.\nPydantic AI Harness is a library of production capabilities we've built so you can assemble a harness for your own use case. Built in: durable execution that survives crashes and restarts (for agents built on the SDK; not in Pax yet), one workspace API across your machine and a dozen cloud and local sandboxes, computer use on each provider's native tool, model fallback that also catches refusals, and code mode. Plus the table stakes: file and shell tools, guardrails, memory, sub-agents, context management and Agent Skills.\nOne of those capabilities is Coder(), our coding harness. What the industry calls a coding harness is, in Pydantic AI, just a capability (technically a bundle of capabilities that turns any agent into a coding agent).\nPax is the terminal UI in front of Coder(). Think of it as both a daily-driver coding agent and a showcase of what you can build on the Harness SDK: bring your own agent with --agent, swap sandboxes on the fly, and run any model.\nEverything is a plugin\nA Pax plugin is just a capability one layer up: tools and hooks for the agent, plus terminal pieces like /commands, status-bar items, and logins.\nEven the coding agent itself is a plugin. Open /plugins to toggle coder, sandbox, observability (Pydantic Logfire tracing), mcp, and the rest on or off. Turn coder off with /plugins disable coder and you have a clean chat client with no file or shell tools. Any Pydantic AI capability works as a plugin by its import path, and Pax can even write new plugins for itself when you ask. See the Pax plugins docs.\nBring your own agent with --agent\nPlugins extend Pax's default agent. --agent replaces it with any Pydantic AI Agent from your codebase:\n# my_agents.py\nfrom pydantic_ai import Agent\nfrom pydantic_ai.capabilities import LocalWorkspace\nfrom pydantic_ai_harness import Coder\nreviewer = Agent(\n'openai:gpt-6.1-sol',\ninstructions='You review diffs against our internal engineering guidelines.',\ncapabilities=[LocalWorkspace('.'), Coder()],\n)\n@reviewer.tool_plain\ndef get_guideline(topic: str) -> str:\n\"\"\"Look up an internal engineering guideline by topic.\"\"\"\n...\npax --agent my_agents:reviewer\npax -a my_agents:reviewer -p \"Review the diff on this branch against our guidelines\"\nPax loads no plugins and runs your agent as-is with its own model, tools, and instructions (here Coder()'s file and shell tools in the current directory, plus your guideline lookup), while giving you the full terminal (--resume, --worktree, -p, and -m). Build an agent in your repo, test it in a real terminal, and ship…"
+   }
+  },
+  {
+   "url": "https://github.com/google-antigravity/antigravity-cli/releases/tag/1.5.18",
+   "article": {
+    "url": "https://github.com/google-antigravity/antigravity-cli/releases/tag/1.5.18",
+    "status": "ok",
+    "title": "",
+    "chars": 1316,
+    "text": "## 1.5.18\n- Fixed the agent attaching truncated or corrupt images to the conversation when viewing files; it now rejects them with an error, so a half-written image no longer makes later model requests fail and retry.\n- Fixed plugins not loading on Windows when your workspace is on a different drive than your Antigravity configuration directory.\n- Fixed file permission rules and approval prompts not applying to files the agent reads or edits through `file:///` URIs; those paths now resolve to the real file before permissions are checked.\n- Fixed copying from code blocks and from raw Markdown or code file views in the Remote Control browser view dropping blank lines, so pasted text keeps its original spacing.\n- Fixed LaTeX equations in subagent replies showing as raw TeX in the Remote Control browser view; they now render as formatted math like the rest of the conversation.\n- Fixed shell variables in chat text in the Remote Control browser view, such as `cp $src_dir/$name .` or `http://$host:$port/api`, being rendered as LaTeX math; they now show as plain text and links keep their correct addresses.\n- Fixed the model quota section of the Remote Control browser view's settings spinning forever when quota fails to load; it now shows an empty state or the last known quota, and `Refresh` works again."
+   }
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50664325",
+   "hn_url": "https://news.ycombinator.com/item?id=50664325",
+   "hn": {
+    "title": "Claude sabotaging ML research tasks?",
+    "points": 553,
+    "comments": 277
+   },
+   "comments": [
+    {
+     "author": "nobodybusiness",
+     "replies": 14,
+     "text": "They literally said so themselves when they released Fable/Mythos:\nhttps://assets.claude.com/d00db56fa754a1b115b6dd7cb2e3c342ee...\nOn page 13 of the system card, Anthropic states:\nlimit Claude’s effectiveness for requests targeting frontier LLM development\nAnd, crucially:\nthese safeguards will not be visible to the user."
+    },
+    {
+     "author": "ThePhysicist",
+     "replies": 9,
+     "text": "I'm also a bit paranoid sometimes when Claude just seemingly does really stupid things to my codebase even though I explain very clearly what I want done and normally it doesn't have issues following instructions. Then when I ask why it did that it becomes quite evasive in its answers. So I really wonder if they have some form of detection in their backend that looks for prompts that they deem problematic and then instead of blocking you they will rather waste your time by just giving you…"
+    },
+    {
+     "author": "thicTurtlLverXX",
+     "replies": 3,
+     "text": "That was my experience, too. One of my pet projects is experimenting with various bots for a niche board game.\nAt some point, I had the idea to try a transformer. Fable 5.2 wrote a bug-ridden training pipeline that just wasn't able to get the loss down, and the transformer-based bot didn't play well.\nThen I asked Gemini to review the implementation. It found many bugs and fixed all of them.\nThe next training run produced good results, and the transformer-based bot was the best of all my…"
+    },
+    {
+     "author": "itkovian_",
+     "replies": 3,
+     "text": "You can test this yourself by asking Claude to write a vanilla recipe to train an MoE on consumer blackwell using MXFP8.\nThis task has no public written recipes (because who cares about consumer Blackwell) is just nonstandard enough, and triggers every flag they would have (kernels, training, moe’s etc), that is a very good benchmark for this kind of thing. It is incredible how badly it will do - and you can verify how good or bad it is by actually training (which cheap since can rent a…"
+    },
+    {
+     "author": "andai",
+     "replies": 0,
+     "text": "Does anyone remember a thread exactly like this on X a few weeks ago? I think it might have been a Japanese account (in Japanese), but I'm not sure. Swear I'm having deja vu but can't find it now.\nUpdate: I'm collecting related tweets here:\nNov 23 - https://x.com/jacobeverly/status/2125007879220658193\nNov 25 - https://x.com/drjoshcsimmons/status/2125616233232159221\nNov 25 - https://x.com/skirano/status/2125371115979641188\nThe last one also has its own thread: Claude tries to sabotage research…"
+    }
+   ],
+   "article": {
+    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+    "status": "skipped",
+    "reason": "twitter.com không đọc được bằng HTTP thuần"
+   }
+  },
+  {
+   "url": "https://sessiongraph.ai/",
+   "hn_url": "https://news.ycombinator.com/item?id=50671651",
+   "hn": {
+    "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+    "points": 13,
+    "comments": 6
+   },
+   "comments": [
+    {
+     "author": "falsaberN1",
+     "replies": 1,
+     "text": "Needs a way to specify folders for when the harness is installed as another user or in a non-standard location."
+    },
+    {
+     "author": "arvindell",
+     "replies": 0,
+     "text": "2026 was the year i entirely stopped editing files myself. my brain now thinks in terms of \"sessions\". after accumulating thousands of them, i asked myself \"what can i do with all this data?\"\nmeet SessionGraph: visualize all your coding agent sessions in one interactive 3D graph.\nit supports pretty much all harnesses and indexes your conversations for easy search (exposes local MCP and REST API)"
+    },
+    {
+     "author": "rogereur",
+     "replies": 2,
+     "text": "Can agents query the session history themselves to recover context from previous sessions?"
+    }
+   ],
+   "article": {
+    "url": "https://sessiongraph.ai/",
+    "status": "ok",
+    "title": "SessionGraph — Visualize your coding agent history",
+    "chars": 2022,
+    "text": "Visualize your\ncoding agent history\nBring all your coding agent sessions together. Visualize them in a graph and compare with your friends. Fully local and private.\n$npx sessiongraph\nExplore graphs\nCreate your graph\nSessionGraph reads your harness' session store, indexes it and opens a desktop app for you to play around. Everything happens locally.\nRun it locally\nPaste this into your terminal to open SessionGraph.\nTerminal\n$npx sessiongraph\nPrefer installer?\nmacOS\nDownload for Apple Silicon\nIntel Mac\nWindows\nDownload installer\nMSI installer\nLinux\nDownload AppImage · x64\nOther Linux packages\nx64DEBRPM\nARM64AppImageDEBRPM\nSupports your harness\nOpenCode\nClaude Code\nCodex\nCursor\nGemini CLI\nGitHub Copilot CLI\nT3 Code\nCline\nRoo Code\nKilo Code\nPi\nAmp\nContinue\nQwen Code\nGitHub Copilot Chat (VS Code)\nFactory Droid\nOpenClaw\nHermes Agent\nGoose\nZed Agent\nKiro\nAntigravity\nMistral Vibe\nJunie\nAntigravity CLI\nAntigravity IDE Extension\nAside\nAugment Code\nCherry Studio\nCodeBuddy\nCodebuff\nCommand Code\nCrush\nDeepSeek Harness\nDevin CLI\nDevin Desktop\nFreebuff\nFx\nGajae-Code\nGrok Build\nJcode\nKilo CLI\nKimchi\nKimi CLI / Code\nMiMo Code\nMiniMax Code\nMuse Code\nMux\nOctofriend\nOh My Pi\nOpenCodeReview\nPrime Agent\nProma\nSenpi / OmO Native\nUnsloth Studio\nWorkBuddy\nXiaomi MiMo AI\nZCode\nAll sources & coverage\nA database for all your sessions\nSearch across your harnesses from one local index. Find an old conversation, pick up where you left off, or look up what changed.\nMCP\nGive your coding agent access to past sessions without switching apps.\n“Find my sessions about invoice retries.”\nsearch_sessions({ \"query\": \"invoice retries\" })\n2 matching sessions\nFix duplicate invoice retriesCodex\nTest invoice retry backoffClaude Code\nREST API\nQuery the same index from your own scripts and tools.\nFind sessions about invoice retries over HTTP.\nGET /v1/search?query=invoice%20retries\n{\n\"data\": {\n\"hits\": [\n{ \"session\": { \"title\": \"Fix duplicate invoice retries\" } },\n{ \"session\": { \"title\": \"Test invoice retry backoff\" } }\n],\n\"total\": 2\n}\n}"
+   }
+  },
+  {
+   "url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.2",
+   "article": {
+    "url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.2",
+    "status": "error",
+    "reason": "CHANGELOG.md không có mục v2.4.2"
+   }
+  },
+  {
+   "url": "https://github.com/skeeto/prospero",
+   "hn_url": "https://news.ycombinator.com/item?id=50671275",
+   "hn": {
+    "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+    "points": 23,
+    "comments": 4
+   },
+   "comments": [
+    {
+     "author": "tom_",
+     "replies": 0,
+     "text": "Previously: https://news.ycombinator.com/item?id=50315226"
+    },
+    {
+     "author": "spapas82",
+     "replies": 1,
+     "text": "A 5mb binary for windows? Wow I'm looking forward to try this!"
+    },
+    {
+     "author": "speps",
+     "replies": 0,
+     "text": "Fun fact: Prospero was the internal codename of the PlayStation 5."
+    }
+   ],
+   "article": {
+    "url": "https://github.com/skeeto/prospero",
+    "status": "ok",
+    "title": "",
+    "chars": 3129,
+    "text": "# Prospero: a bloat-free, native AI coding harness with ImGui\nProspero is a native GUI application for Windows, macOS, and Linux that\nconnects to an AI model provider, local or remote, allowing AI agents to\ndrive your computer to develop software. It plows through intermittent\nerrors and keeps at its task while unattended. It speaks the OpenAI Chat\nCompletions API, used by llama.cpp, vLLM, LiteLLM, and providers with a\ncompatible API. Also Anthropic's Messages API, with extended thinking and\nprompt caching. No providers are configured out of the box.\nThe UI is highly flexible, and you can rearrange the panes as you please\nwith dragging and docking. Save your layouts for later in View -> Layouts.\nUnlike conventional ImGui applications, rendering is passive and will not\nconsume resources while idle.\nIt is a single executable, written in C++. In the typical case the engine\nruns in the same process as the window, and needs no daemon or server. The\nsame executable can run headless, on another machine over ssh, or in the\nbackground after its window closes. The engine is lean and portable, and\nruns on computers and operating systems a quarter century old. Imagine a\ncoding harness on Windows XP.\nOnce it's connected to a provider, **you can ask Prospero for help with\nitself**. It will read its own embedded documentation, self-configure, and\nnavigate you to any place in its UI.\nProspero's desktop control features allow it to effectively develop, test,\nand debug native GUI applications. On Windows, it especially works well in\n[w64devkit][], making use of its shell and tools if available.\nYou can start new sessions from the command line, even if there's already\nan instance, by invoking Prospero with a path where the new session will\nbe rooted. For example, to start a session here:\n$ prospero .\nAfter no arguments, this is the second most common way to run Prospero.\n## Documentation\n- [Usage](docs/usage.md): running it, sessions, the GUI, attachments,\nmodes and the command line\n- [Configuration](docs/configuration.md): `prospero.ini`, endpoints,\nmodels, roles, instructions, skills, MCP servers and web search\n- [Desktop control](docs/desktop.md): letting the agent see and drive\nthe screen\n- [Remote and background hosts](docs/remote.md): engines on other\nmachines over ssh, and sessions that outlive the window\n- [Windows notes](docs/windows.md)\n- [Building](docs/building.md): building from source, and releases\n- [Development](docs/development.md): tests, and evals for comparing\nmodels\nProspero also carries its own documentation, under Help, which an\nagent in it can read too.\n## License\nProspero is free and unencumbered software released into the public\ndomain. See [UNLICENSE](UNLICENSE).\nIts programs include third-party code under its own licenses: Dear\nImGui (MIT), FreeType (FTL), md4c (MIT), SDL3 (zlib), cpp-httplib\n(MIT), Mbed TLS (Apache-2.0), and Wuffs (Apache-2.0 or MIT, at your\noption), which every program with the engine includes. The built-in\nmodel's network, `src/gemma.cpp`, is derived from gemma4.c and stays\nunder its MIT license.\n[w64devkit]: https://github.com/skeeto/w64devkit"
+   }
+  },
+  {
+   "url": "https://github.com/rohanvijaykumar/enhance-qa",
+   "article": {
+    "url": "https://github.com/rohanvijaykumar/enhance-qa",
+    "status": "ok",
+    "title": "",
+    "chars": 15042,
+    "text": "# enhance-qa\n**A QA team for any app, inside your coding agent.**\nA scout maps your app, testers use it the way real people do, a verifier double-checks every bug, and a fixer repairs what's clearly broken, one tested commit at a time.\nHow it works&emsp;Any kind of app&emsp;Get started&emsp;What you get&emsp;Results&emsp;FAQ\n## How it works\nYou stay the product owner: you confirm the plan, make the judgement calls and decide when to ship. The lead plans each pass and briefs the team, and each role does one job.\nIt tests every function a person can reach (every screen, control, setting, command and error) and reports only what's broken. That means things that break a promise your app makes, or do real harm. Feature requests and nice-to-haves are never filed.\n| Role | What it does | Why it matters |\n|---|---|---|\n| **Scout** | Maps the product, then writes the checklist (one file per area) and app notes | Testers never rediscover your app |\n| **Testers** | Use the app black-box, like people do, several at once, with evidence | Finds what your users would hit |\n| **Verifier** | A fresh agent that reproduces every bug and re-checks every fix | No false alarms, and no \"fixed\" that isn't |\n| **Fixer** | Fixes one bug per commit, with a failing test first, including other places with the same mistake. Each commit says how it was checked. It can't edit the checklist or close its own bugs | Fixes you can trust, and undo |\n| **Lead** | Picks the pass, the models and the budget, keeps the record and writes your summary | One clear report instead of noise |\nEvery run builds on the last: only what changed gets re-tested, fixed bugs get regression checks, and a release pass ends in a go/no-go report.\n**It stays out of your way:**\n- **Only these stop and wait for you:**\n- the kickoff on the first run;\n- a one-line OK before an unusually large run;\n- a pace check, only if a pass is running far longer than it said: keep going, high-risk first, or stop and resume next time;\n- the go/no-go decision.\nEverything else collects in one \"needs you\" list.\n- **It fixes serious bugs during a pass,** one commit each. The rest wait until you say `/enhance-qa fix`, or go to your own coding agent with a ready prompt. It always asks before anything that changes how your app behaves, looks or reads, and before touching data, auth, payments or dependencies.\n- **It learns from repeats.** When the same kind of bug shows up twice, it proposes a one-line rule for CLAUDE.md or AGENTS.md, or a lint rule, so your coding agent stops making that mistake. Nothing is added without your OK.\n- **It never pushes,** rewrites history or deploys.\n- **Run it beside your work:**\n- in a second session (`claude -w qa`, or a Codex worktree chat);\n- or in the background (`claude --bg \"/enhance-qa\"`, `codex exec --worktree`).\n## Works with any kind of app\nIf you can run it, enhance-qa can test it. It picks the right checks for what you're building from a library of 22 platform modules, 24 feature packs and 16 release gates.\n| Area | What it covers |\n|---|---|\n| **Web** | Web apps, websites and content, browser extensions |\n| **Mobile** | iOS, Android, React Native, Flutter and Expo |\n| **Desktop** | Windows, macOS, Linux, Electron and Tauri |\n| **Developer tools** | CLIs, APIs and backends, libraries and SDKs, data pipelines |\n| **Games and creative** | Games, audio plugins, XR, plugins for apps like VS Code, Figma, JetBrains IDEs and Office |\n| **AI and devices** | AI and LLM features, chat bots, embedded and IoT devices, TV and media deliverables |\n| **Feature packs** | Sign-in, payments, accessibility (WCAG 2.2 AA), security, privacy, languages and right-to-left text, uploads, search, offline sync, notifications and more, plus a pack for the defects AI-built apps tend to have: open Supabase or Firebase data, broken authorisation, leaked secrets, features that only look finished |\n| **Release gates** | App Store, Google Play, Microsoft Store, Steam, Xbox, console checklists you…"
+   }
+  },
+  {
+   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+   "hn_url": "https://news.ycombinator.com/item?id=50652527",
+   "hn": {
+    "title": "OpenAI may be in cost control mode",
+    "points": 355,
+    "comments": 357
+   },
+   "comments": [
+    {
+     "author": "stillpointlab",
+     "replies": 15,
+     "text": "Hard to say how concerning this is. I've been thinking about software dev like gardening to try to wrap my head around what this transition to agent-centric dev has meant. In a tortured analogy, agent-centric dev feels like having fertilizer and now all of a sudden my garden is heavily over-grown and my task feels more like pruning since weeds respond to the fertilizer as well as the vegetables.\nSo perhaps we are just now locked in cycles of massive unwieldy growth followed by judicious…"
+    },
+    {
+     "author": "torginus",
+     "replies": 1,
+     "text": "Personally I wouldn't read too deeply into this. Astra 6.2 was a timed release, scheduled to go against the ANT IPO. The model might be undercooked.\nThey really look like they went for cost savings, and they probably gave up some performance in exchange, even though they might've improved on their previous Pareto frontier.\nThere have been model releases like this, that were less well received for whatever reason, and there was the assorted doom and gloom, and far reaching conclusions were…"
+    },
+    {
+     "author": "ac29",
+     "replies": 2,
+     "text": "The most obvious explanation is that they are tuning to be on the pareto frontier of cost/intelligence on benchmarks. If those benchmarks are good enough proxies for the work you're doing and you're paying API rates, its a compelling place to be"
+    },
+    {
+     "author": "dwb",
+     "replies": 7,
+     "text": "We’ve recently switched from Claude to Codex at work (cost, of course!), and I was very surprised at how much worse Astra/Sol 6.x have been at coding. Like, really bad."
+    },
+    {
+     "author": "animal531",
+     "replies": 0,
+     "text": "I've been using ImageGen and I'm not only hitting limits a lot quicker, but it's also struggling with basics.\nFor example there's a book at an angled view, but you want it to be spine forward instead of the pages being in front. It will then both remove the pages, turn it into a cylinder (and various other mistakes).\nGenerating a back view of something will also often just straight up include features from the front view.\nI'd have long since moved on if not for its ability to adhere to styling…"
+    }
+   ],
+   "article": {
+    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+    "status": "ok",
+    "title": "OpenAI may be in cost control mode | micjm",
+    "chars": 1326,
+    "text": "OpenAI may be in cost control mode\n2026-11-26\nOpenAI’s recent release of Astra 6.2 and Sol 6.2 was widely panned. What happened?\nBased on our data, it looks like they’ve been tuned for cost savings. Specifically output tokens per task and reasoning tokens per task have dropped.\nHere is a chart of high-level cost change from the GPT-6 to GPT 6.2:\nThe X axis in the above chart is the ratio of spending of the GPT model compared to opponents in our battle system for real work. The Y axis on the above chart is Elo from our leaderboard.\nThe moves in the chart are significant, here’s the same chart with confidence intervals:\nWhat changed\nCompared to opponents, Astra and Sol seem to be reasoning a lot less. Here is a chart of how much models reason compared to opponents in the same battle. Above the line means more reasoning and below means less.\nYou can see that both Astra 6 and Sol 6.1 were pretty normal models, but Astra 6.2 and Sol 6.2 become outliers.\nWe can see the same effect with output tokens:\nAre these changes significant? The p-value on output dropping is 0.0055 for Sol and 0.022 for Astra. The p-value on reasoning dropping is 0.00013 for Sol and 0.0064 for Astra.\nIn conclusion, Astra and Sol appear to be cost tuned compared to their predecessors, and to a degree that makes them underthinking outliers."
+   }
+  }
+ ]
+}

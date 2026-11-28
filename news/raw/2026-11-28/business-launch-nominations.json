@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0",
+  "kind": "discovery-nominations",
+  "bundle_id": "b7d232ee9265c22e",
+  "generated_at": "2026-11-27T23:56:21.204698Z",
+  "from_date": "2026-11-26",
+  "to_date": "2026-11-27",
+  "domain": "AI developer tools funding acquisition raises launch announces pricing OpenAI Anthropic Google Cursor Cognition",
+  "tier": "deep",
+  "mock": false,
+  "warnings": [],
+  "source_status": {
+    "digg": {
+      "source": "digg",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-27T23:56:21.203131Z",
+      "fix_hint": "doctor"
+    },
+    "x": {
+      "source": "x",
+      "state": "skipped-unconfigured",
+      "items_returned": 0,
+      "attempted": false,
+      "detail": "Source is not configured for discovery.",
+      "at": "2026-11-27T23:56:21.203138Z",
+      "fix_hint": "doctor"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 5,
+      "attempted": true,
+      "at": "2026-11-27T23:56:21.202985Z"
+    },
+    "reddit": {
+      "source": "reddit",
+      "state": "schema-drift",
+      "items_returned": 0,
+      "attempted": true,
+      "detail": "r/all rising: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/rising/; r/all top: Unrecognized response (Reddit r/all listing schema drift: HTTP 2xx with no post cards): https://www.reddit.com/r/all/top/?t=week",
+      "at": "2026-11-27T23:56:21.203074Z",
+      "fix_hint": "doctor"
+    }
+  },
+  "context": {
+    "enrichment_source_boundary": null,
+    "requested_sources": null,
+    "lookback_days": 1
+  },
+  "nominations": [
+    {
+      "id": "n1",
+      "cluster_id": "cluster-1",
+      "heuristic_name": "Hard Drive pricing has gotten bad",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 465,
+          "points": 548
+        }
+      },
+      "nomination": {
+        "name": "Hard Drive pricing has gotten bad",
+        "seed_score": 1519.5,
+        "summary": "Hard Drive pricing has gotten bad",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50661646",
+            "source": "hackernews",
+            "title": "Hard Drive pricing has gotten bad",
+            "body": "Hard Drive pricing has gotten bad",
+            "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+            "author": "zdw",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 548,
+              "comments": 465
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about Hard Drive pricing has gotten bad",
+            "snippet": "Hard Drive pricing has gotten bad",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50661646",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 90,
+            "engagement_score": 100,
+            "source_quality": 0.8,
+            "local_rank_score": 0.37050000000000005
+          }
+        ]
+      }
+    },
+    {
+      "id": "n2",
+      "cluster_id": "cluster-2",
+      "heuristic_name": "OpenAI cuts GPT-6.2",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 273,
+          "points": 507
+        }
+      },
+      "nomination": {
+        "name": "OpenAI cuts GPT-6.2",
+        "seed_score": 827.3149,
+        "summary": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50651117",
+            "source": "hackernews",
+            "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "body": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+            "author": "Herrera",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 507,
+              "comments": 273
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol",
+            "snippet": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50651117",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 10,
+            "engagement_score": 78,
+            "source_quality": 0.8,
+            "local_rank_score": 0.1355
+          }
+        ]
+      }
+    },
+    {
+      "id": "n3",
+      "cluster_id": "cluster-3",
+      "heuristic_name": "Google AI Agents Use MCP Servers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 330,
+          "points": 420
+        }
+      },
+      "nomination": {
+        "name": "Google AI Agents Use MCP Servers",
+        "seed_score": 795.4951,
+        "summary": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50653477",
+            "source": "hackernews",
+            "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "body": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+            "author": "ritzaco",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 420,
+              "comments": 330
+            },
+            "relevance_hint": 0.21,
+            "why_relevant": "HN story about Google Will Make AI Agents Use Its MCP Servers. The Gmail On",
+            "snippet": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50653477",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.21,
+            "freshness": 10,
+            "engagement_score": 77,
+            "source_quality": 0.8,
+            "local_rank_score": 0.23850000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "cluster_id": "cluster-4",
+      "heuristic_name": "OpenAI",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 357,
+          "points": 355
+        }
+      },
+      "nomination": {
+        "name": "OpenAI",
+        "seed_score": 755.19,
+        "summary": "OpenAI may be in cost control mode",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50652527",
+            "source": "hackernews",
+            "title": "OpenAI may be in cost control mode",
+            "body": "OpenAI may be in cost control mode",
+            "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+            "author": "seizethecheese",
+            "container": "Hacker News",
+            "published_at": "2026-11-26",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 355,
+              "comments": 357
+            },
+            "relevance_hint": 0.07,
+            "why_relevant": "HN story about OpenAI may be in cost control mode",
+            "snippet": "OpenAI may be in cost control mode",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50652527",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.07,
+            "freshness": 10,
+            "engagement_score": 72,
+            "source_quality": 0.8,
+            "local_rank_score": 0.14250000000000002
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "cluster_id": "cluster-5",
+      "heuristic_name": "Google Android developers",
+      "heuristic_junk": false,
+      "sources": [
+        "hackernews"
+      ],
+      "engagement_by_source": {
+        "hackernews": {
+          "comments": 99,
+          "points": 174
+        }
+      },
+      "nomination": {
+        "name": "Google Android developers",
+        "seed_score": 409.5,
+        "summary": "Google will show solo Android developers' phone numbers and addresses",
+        "junk_shape": false,
+        "worthiness": null,
+        "items": [
+          {
+            "item_id": "50662322",
+            "source": "hackernews",
+            "title": "Google will show solo Android developers' phone numbers and addresses",
+            "body": "Google will show solo Android developers' phone numbers and addresses",
+            "url": "https://support.google.com/googleplay/android-developer/answer/17594752?hl=en",
+            "author": "nreece",
+            "container": "Hacker News",
+            "published_at": "2026-11-27",
+            "date_confidence": "high",
+            "engagement": {
+              "points": 174,
+              "comments": 99
+            },
+            "relevance_hint": 0.05,
+            "why_relevant": "HN story about Google will show solo Android developers' phone numbers and",
+            "snippet": "Google will show solo Android developers' phone numbers and addresses",
+            "metadata": {
+              "hn_url": "https://news.ycombinator.com/item?id=50662322",
+              "top_comments": [],
+              "comment_insights": []
+            },
+            "local_relevance": 0.05,
+            "freshness": 90,
+            "engagement_score": 0,
+            "source_quality": 0.8,
+            "local_rank_score": 0.2575
+          }
+        ]
+      }
+    }
+  ]
+}
